@@ -15,7 +15,7 @@ Unique and re-useable UI components
 ## Features
 
 ### Cross-Browser
-Perfected to work with all modern browsers.
+Crafted to work with all modern browsers.
 
 ### Automated workflow
 Includes a GulpJS config to automate your workflow from build to go-live.
