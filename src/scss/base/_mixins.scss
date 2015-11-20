@@ -1,0 +1,98 @@
+// ==========================================================================
+// Base – Mixins
+// ==========================================================================
+// Font sizes (primary sizing in `rem` units with a fallback of `px`)
+// Example usage .font-size(18);
+@mixin font-size ($size) {
+  $remValue: $size / 16;
+  $pxValue: ($size);
+  font-size: $pxValue + px;
+  font-size: $remValue + rem;
+}
+
+// Line height sizes (primary sizing in `rem` units with a fallback of `px`)
+// Example usage .line-height(22);
+@mixin line-height ($size) {
+  $remValue: $size / 16;
+  $pxValue: ($size);
+  line-height: $pxValue + px;
+  line-height: $remValue + rem;
+}
+
+// SVG background with PNG fallback
+// Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat);
+@mixin bg-svg($svg, $png, $x: 0, $y: 0, $repeat: no-repeat) {
+  background: url(@svg) $x $y $repeat;
+  .no-svg & {
+    background: url(@png) $x $y $repeat;
+  }
+}
+
+// Background Color with Opacity
+// Example Usage: .bg-rgba(#111, 50%);
+@mixin bg-rgba($color, $alpha) {
+  $opacity: $alpha / 100%;
+  $rgba: rgba($color, $opacity);
+  background: $color;
+  background: rgba($color, $opacity);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$rgba}, endColorstr=#{$rgba});
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$rgba}, endColorstr=#{$rgba});
+}
+
+// Opacity
+// Example Usage: .opacity(50%);
+@mixin opacity($percentOpacity: 50%) {
+  $opacity: $percentOpacity / 100%;
+  -webkit-opacity: $opacity;
+  -moz-opacity: $opacity;
+  opacity: $opacity;
+}
+
+
+// Breakpoints
+// Example Usage: @include respond-to(tablet) { };
+@mixin respond-to($breakpoint) {
+  // Retrieves the value from the key
+  $value: map-get($breakpoints, $breakpoint);
+
+  // If the key exists in the map
+  @if $value != null {
+    // Prints a media query based on the value
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@mixin btn($btn-color) {
+  border-color: darken($btn-color, 20%);
+  background-color: $btn-color;
+  border-radius: 0;
+  border-width: 0;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  @function set-btn-text-color($btn-color) {
+    @if (lightness($btn-color) > 68) {
+      @return #000000; // Lighter backgorund, return dark color
+    } @else {
+      @return #ffffff; // Darker background, return light color
+    }
+  }
+  color: set-btn-text-color($btn-color);
+
+  &:hover {
+     background-color: darken($btn-color, 6%);
+     transition: 0.5s ease;
+  }
+  &:active {
+
+  }
+}
