@@ -38,8 +38,12 @@
     display: inline-block;
   }
 
+  &--previous i,
+  &--next i {
+    vertical-align: middle;
+  }
+
   &--previous i {
     transform: rotate(-180deg);
-    vertical-align: middle;
   }
 }

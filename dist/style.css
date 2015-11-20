@@ -1329,9 +1329,11 @@ input::-moz-focus-inner {
       color: #fff; }
   .pagination .pagination__list__item--previous, .pagination .pagination__list__item--next {
     display: inline-block; }
-  .pagination .pagination__list__item--previous i {
-    transform: rotate(-180deg);
+  .pagination .pagination__list__item--previous i,
+  .pagination .pagination__list__item--next i {
     vertical-align: middle; }
+  .pagination .pagination__list__item--previous i {
+    transform: rotate(-180deg); }
 
 @media print {
   *,
