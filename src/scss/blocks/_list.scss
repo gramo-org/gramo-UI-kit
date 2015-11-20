@@ -12,14 +12,9 @@
     @extend .row;
     margin: 0;
 
-    &:last-child {
-
-    }
-
     &--success {
       border-left: 4px solid $gramo-green;
     }
-
     &--danger {
       border-left: 4px solid $gramo-red;
     }
@@ -84,7 +79,7 @@
 
     &::before {
       content: '';
-      border-top: 1px solid $light-gray;
+      border-top: 1px solid lighten($light-gray, 7%);
       width: 100%;
       top: 0;
       left: 0;

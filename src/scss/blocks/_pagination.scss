@@ -1,0 +1,45 @@
+.pagination {
+  @extend .col-xs;
+  align-items: center;
+  @include respond-to(tablet) { align-items: flex-end; }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.pagination .pagination__list__item {
+  display: none;
+  font-size: 0.7rem;
+  background: #fff;
+  border: 1px solid rgba(darken($gramo-blue, 30%), 0.4);
+  box-shadow: 1px 1px 0 rgba(darken($gramo-blue, 30%), 0.4);
+  line-height: 0.9rem;
+  min-width: 0.7rem;
+  padding: 0.4rem 0.5rem;
+  text-align: center;
+  @include respond-to(tablet) { display: inline-block; }
+
+  a {
+    text-decoration: none;
+  }
+
+  &--current {
+    background: $gramo-blue;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &--previous,
+  &--next {
+    display: inline-block;
+  }
+
+  &--previous i {
+    transform: rotate(-180deg);
+    vertical-align: middle;
+  }
+}
