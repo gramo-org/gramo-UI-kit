@@ -12,6 +12,7 @@ $gramo-red:                                     #ed6b6a;
 $gramo-purple:                                  #a41681;
 $gramo-gray:                                    #504f56;
 
+$mid-gray:                                      lighten($gramo-gray, 30%);
 $light-gray:                                    lighten($gramo-gray, 50%);
 
 // Global Typography
@@ -21,7 +22,7 @@ $base-font-size:                                16;
 $base-line-height:                              22;
 $base-font-weight:                              400;
 $base-font-color:                               $gramo-black;
-$base-link-color:                               $gramo-turkis;
+$base-link-color:                               $gramo-blue;
 
 // Font Weights
 $font-100:                                      100;

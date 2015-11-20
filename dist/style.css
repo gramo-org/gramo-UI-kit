@@ -396,7 +396,7 @@ th {
 /**
  * Row wrapper class, flex box parent.
  */
-.row {
+.row, .list--expandable .list__item {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -404,7 +404,7 @@ th {
   margin-left: -0.5rem;
   margin-right: -0.5rem; }
 
-.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+.col-xs, .col-sm, .list--expandable .list__item__action, .list--expandable .list__item--isExpanded ul, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .list--expandable .list__item__date, .col-xs-5, .col-xs-6, .list--expandable .list__item__results, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -413,7 +413,7 @@ th {
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
 
-.col-xs, .col-sm, .col-md, .col-lg {
+.col-xs, .col-sm, .list--expandable .list__item__action, .list--expandable .list__item--isExpanded ul, .col-md, .col-lg {
   flex-grow: 1;
   flex-basis: 0;
   max-width: 100%; }
@@ -442,7 +442,7 @@ th {
   flex-basis: 25%;
   max-width: 25%; }
 
-.col-xs-4 {
+.col-xs-4, .list--expandable .list__item__date {
   flex-basis: 33.33333%;
   max-width: 33.33333%; }
 
@@ -450,7 +450,7 @@ th {
   flex-basis: 41.66667%;
   max-width: 41.66667%; }
 
-.col-xs-6 {
+.col-xs-6, .list--expandable .list__item__results {
   flex-basis: 50%;
   max-width: 50%; }
 
@@ -674,7 +674,7 @@ th {
     margin-left: 16.66667%; }
   .off-lg-3 {
     margin-left: 25%; }
-  .off-lg-4 {
+  .off-lg-4, .list--expandable .list__item--isExpanded ul li {
     margin-left: 33.33333%; }
   .off-lg-5 {
     margin-left: 41.66667%; }
@@ -703,15 +703,15 @@ th {
   .container--mobile {
     max-width: 100%; }
 
-.container > .row {
+.container > .row, .list--expandable .container > .list__item {
   border: 1px solid #fff;
   border-width: 0 0 1px 0; }
 
-.container > .row > * {
+.container > .row > *, .list--expandable .container > .list__item > * {
   background: #d5ebf1;
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  .container > .row > *:nth-child(odd) {
+  .container > .row > *:nth-child(odd), .list--expandable .container > .list__item > *:nth-child(odd) {
     background: #e8f4f7; }
 
 body {
@@ -728,7 +728,7 @@ p {
   margin: 0 0 1em 0; }
 
 a {
-  color: #88c7d8;
+  color: #0095da;
   background: transparent;
   text-decoration: underline; }
   a:active, a:hover {
@@ -1077,7 +1077,7 @@ input::-moz-focus-inner {
     background: #f9f9f9; }
 
 .button-link {
-  color: #88c7d8;
+  color: #0095da;
   text-decoration: underline;
   border: 0;
   background: transparent;
@@ -1086,6 +1086,43 @@ input::-moz-focus-inner {
     text-decoration: none; }
   .button-link:active {
     outline: 0; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?jvdt66");
+  src: url("fonts/icomoon.eot?jvdt66#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?jvdt66") format("truetype"), url("fonts/icomoon.woff?jvdt66") format("woff"), url("fonts/icomoon.svg?jvdt66#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon--checkmark:before {
+  content: "\e900";
+  color: #50bf9e; }
+
+.icon--cross:before {
+  content: "\e901";
+  color: #ed6b6a; }
+
+.icon--expand-arrow:before {
+  content: "\e902";
+  color: #d1d0d4; }
+
+.icon--link-arrow:before, .list--expandable .list__item--isExpanded ul a::before {
+  content: "\e902";
+  color: #0095da;
+  font-size: 0.6rem; }
 
 .site-header {
   background: #000; }
@@ -1190,9 +1227,66 @@ input::-moz-focus-inner {
 .list {
   list-style: none;
   padding: 0; }
-  .list--expandable li {
+
+.list--expandable {
+  box-shadow: 0 1px 4px rgba(80, 79, 86, 0.4);
+  /* Date, results, actions */ }
+  .list--expandable .list__item {
     border-bottom: 1px solid #d1d0d4;
-    padding: 10px 5px; }
+    padding: 0.8rem 0.4rem;
+    margin: 0; }
+    .list--expandable .list__item--success {
+      border-left: 4px solid #50bf9e; }
+    .list--expandable .list__item--danger {
+      border-left: 4px solid #ed6b6a; }
+  .list--expandable .list__item__date,
+  .list--expandable .list__item__results {
+    display: block; }
+  .list--expandable .list__item__date span {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #9c9ba3;
+    display: block; }
+  .list--expandable .list__item__results {
+    align-self: flex-end;
+    font-weight: 300; }
+    .list--expandable .list__item__results i {
+      margin: 0 0.8rem 0 0.5rem; }
+  .list--expandable .list__item__action {
+    align-self: flex-end;
+    text-align: right; }
+    .list--expandable .list__item__action a {
+      text-decoration: none; }
+
+/* States */
+.list--expandable .list__item--isExpanded {
+  padding-bottom: 0; }
+  .list--expandable .list__item--isExpanded .list__item__action i {
+    transform: rotate(90deg); }
+  .list--expandable .list__item--isExpanded ul {
+    list-style: none;
+    margin: 1rem 0 0 -0.65rem;
+    background: #fff;
+    padding: 0.5rem 0;
+    position: relative; }
+    .list--expandable .list__item--isExpanded ul::before {
+      content: '';
+      border-top: 1px solid #d1d0d4;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: calc(100% + 1.1em); }
+    .list--expandable .list__item--isExpanded ul li {
+      font-size: 0.9rem;
+      font-weight: 300;
+      padding-top: 0.5rem;
+      padding-left: 1.2rem; }
+    .list--expandable .list__item--isExpanded ul a {
+      text-decoration: none; }
+    .list--expandable .list__item--isExpanded ul a::before {
+      font-family: 'icomoon';
+      margin-right: 0.3rem; }
 
 @media print {
   *,

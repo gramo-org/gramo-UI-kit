@@ -1,11 +1,107 @@
 .list {
   list-style: none;
   padding: 0;
+}
 
-  &--expandable {
+.list--expandable {
+  box-shadow: 0 1px 4px rgba($gramo-gray, 0.4);
+
+  .list__item {
+    border-bottom: 1px solid $light-gray;
+    padding: 0.8rem 0.4rem;
+    @extend .row;
+    margin: 0;
+
+    &:last-child {
+
+    }
+
+    &--success {
+      border-left: 4px solid $gramo-green;
+    }
+
+    &--danger {
+      border-left: 4px solid $gramo-red;
+    }
+  }
+
+/* Date, results, actions */
+  .list__item__date,
+  .list__item__results {
+    display: block;
+  }
+
+  .list__item__date {
+    @extend .col-xs-4;
+
+    span {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: $mid-gray;
+      display: block;
+    }
+  }
+  .list__item__results {
+    @extend .col-xs-6;
+    align-self: flex-end;
+    font-weight: $font-300;
+
+    i {
+      margin: 0 0.8rem 0 0.5rem;
+    }
+  }
+  .list__item__action {
+    @extend .col-sm;
+    align-self: flex-end;
+    text-align: right;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+/* States */
+.list--expandable .list__item--isExpanded {
+  padding-bottom: 0;
+
+  .list__item__action i {
+    transform: rotate(90deg);
+  }
+  ul {
+    list-style: none;
+    margin: 1rem 0 0 -0.65rem;
+    background: #fff;
+    padding: 0.5rem 0;
+    @extend .col-sm;
+    position: relative;
+
+    &::before {
+      content: '';
+      border-top: 1px solid $light-gray;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: calc(100% + 1.1em);
+    }
+
     li {
-      border-bottom: 1px solid $light-gray;
-      padding: 10px 5px;
+      @extend .off-lg-4;
+      font-size: 0.9rem;
+      font-weight: $font-300;
+      padding-top: 0.5rem;
+      padding-left: 1.2rem
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a::before {
+      @extend .icon--link-arrow:before;
+      font-family: 'icomoon';
+      margin-right: 0.3rem;
     }
   }
 }
