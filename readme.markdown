@@ -1,4 +1,4 @@
-# Gramo frontend component library
+# Gramo UI kit
 
 ## A kitchen sink resource for UI (user interface) components
 
