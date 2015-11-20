@@ -1,15 +1,14 @@
 {
-  "name": "base",
-  "version": "2.6.7",
-  "homepage": "http://getbase.org/",
+  "name": "Gramo UI kit",
+  "version": "Beta",
   "repository": {
     "type": "git",
-    "url": "https://github.com/matthewhartman/base.git"
+    "url": "https://github.com/gramo-org/gramo-UI-kit.git"
   },
   "authors": [
-    "Matthew Hartman <hello@matthewhartman.com.au>"
+    "Skalar AS <http://www.skalar.no>"
   ],
-  "description": "A Rock Solid, Responsive HTML/CSS Framework built to work on all devices big and small.",
+  "description": "A kitchen sink resource for UI (user interface) components",
   "keywords": [
     "css",
     "less",
