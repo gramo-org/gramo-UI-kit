@@ -1,0 +1,11 @@
+.list {
+  list-style: none;
+  padding: 0;
+
+  &--expandable {
+    li {
+      border-bottom: 1px solid $light-gray;
+      padding: 10px 5px;
+    }
+  }
+}

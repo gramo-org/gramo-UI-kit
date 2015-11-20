@@ -17,7 +17,7 @@
 
 .horizontal-rule:before {
   margin-left: -16px;
-  border-top-color: lighten($gramo-gray, 50%); /* darken stroke slightly */
+  border-top-color: darken($light-gray, 5%); /* darken stroke slightly */
   border-width: 16px;
   left: 50%;
 }

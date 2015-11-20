@@ -20,6 +20,12 @@ Perfected to work with all modern browsers.
 ### Automated workflow
 Includes a GulpJS config to automate your workflow from build to go-live.
 
+### Usage:
+
+- `clone repo`
+- `$ npm install && bower install`
+- `$ gulp`
+
 * * *
 
 ## Thank You / Credits

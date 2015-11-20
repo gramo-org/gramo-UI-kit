@@ -12,6 +12,8 @@ $gramo-red:                                     #ed6b6a;
 $gramo-purple:                                  #a41681;
 $gramo-gray:                                    #504f56;
 
+$light-gray:                                    lighten($gramo-gray, 50%);
+
 // Global Typography
 $base-background-color:                         #fff;
 $base-font-family:                              'Source Sans Pro', sans-serif;

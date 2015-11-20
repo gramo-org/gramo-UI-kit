@@ -17,9 +17,10 @@
   @import "base/_forms";
   @import "base/_buttons";
 
-  @import "components/_site-header";
-  @import "components/_horizontal-rule";
-  @import "components/_button";
+  @import "blocks/_site-header";
+  @import "blocks/_horizontal-rule";
+  @import "blocks/_button";
+  @import "blocks/_list";
 
   // Print Styles
   @media print {
