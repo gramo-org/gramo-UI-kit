@@ -39,12 +39,18 @@
       text-transform: uppercase;
       color: $mid-gray;
       display: block;
+      line-height: 1rem;
     }
   }
   .list__item__results {
     @extend .col-xs-6;
     align-self: flex-end;
     font-weight: $font-300;
+
+    span {
+      display: block;
+      @include respond-to(desktop) { display: inline-block; };
+    }
 
     i {
       margin: 0 0.8rem 0 0.5rem;
@@ -73,7 +79,7 @@
     margin: 1rem 0 0 -0.65rem;
     background: #fff;
     padding: 0.5rem 0;
-    @extend .col-sm;
+    @extend .col-xs-12;
     position: relative;
 
     &::before {
@@ -87,7 +93,7 @@
     }
 
     li {
-      @extend .off-lg-4;
+      @extend .off-sm-4;
       font-size: 0.9rem;
       font-weight: $font-300;
       padding-top: 0.5rem;

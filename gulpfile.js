@@ -1,27 +1,29 @@
 // Base Gulp File
 var gulp = require('gulp'),
-    watch = require('gulp-watch'),
-    sass = require('gulp-sass'),
-    less = require('gulp-less'),
-    path = require('path'),
-    notify = require('gulp-notify'),
-    inlinesource = require('gulp-inline-source'),
-    browserSync = require('browser-sync'),
-    imagemin = require('gulp-imagemin'),
-    cache = require('gulp-cache'),
-    uglify = require('gulp-uglify'),
-    runSequence = require('run-sequence');
+  watch = require('gulp-watch'),
+  sass = require('gulp-sass'),
+  less = require('gulp-less'),
+  path = require('path'),
+  notify = require('gulp-notify'),
+  inlinesource = require('gulp-inline-source'),
+  browserSync = require('browser-sync'),
+  imagemin = require('gulp-imagemin'),
+  cache = require('gulp-cache'),
+  uglify = require('gulp-uglify'),
+  runSequence = require('run-sequence'),
+  autoprefixer = require('gulp-autoprefixer');
+
 
 // Task to compile SCSS
-gulp.task('sass', function () {
+gulp.task('sass', function() {
   return gulp.src('./src/scss/style.scss')
     .pipe(sass({
-      errLogToConsole: false,
-      paths: [ path.join(__dirname, 'scss', 'includes') ]
-    })
-    .on("error", notify.onError(function(error) {
-      return "Failed to Compile SCSS: " + error.message;
-    })))
+        errLogToConsole: false,
+        paths: [path.join(__dirname, 'scss', 'includes')]
+      })
+      .on("error", notify.onError(function(error) {
+        return "Failed to Compile SCSS: " + error.message;
+      })))
     .pipe(gulp.dest('./src/'))
     .pipe(gulp.dest('./dist/'))
     .pipe(browserSync.reload({
@@ -31,26 +33,37 @@ gulp.task('sass', function () {
 });
 
 // Task to compile LESS
-gulp.task('less', function () {
+gulp.task('less', function() {
   return gulp.src('./src/less/style.less')
-    .pipe(less({ paths: [ path.join(__dirname, 'less', 'includes') ]
-  })
-  .on('error', function(err) {
-    this.emit('end');
-  }))
-  .on("error", notify.onError(function(error) {
-    return "Failed to Compile LESS: " + error.message;
-  }))
-  .pipe(gulp.dest('./src/'))
-  .pipe(gulp.dest('./dist/'))
-  .pipe(browserSync.reload({
-    stream: true
-  }))
-  .pipe(notify("LESS Compiled Successfully :)"));
+    .pipe(less({
+        paths: [path.join(__dirname, 'less', 'includes')]
+      })
+      .on('error', function(err) {
+        this.emit('end');
+      }))
+    .on("error", notify.onError(function(error) {
+      return "Failed to Compile LESS: " + error.message;
+    }))
+    .pipe(gulp.dest('./src/'))
+    .pipe(gulp.dest('./dist/'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+    .pipe(notify("LESS Compiled Successfully :)"));
+});
+
+// Task to autoprefix CSS
+gulp.task('autoprefix', function() {
+  return gulp.src('./src/style.css')
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('./dist'));
 });
 
 // Task to move compiled CSS to `dist` folder
-gulp.task('movecss', function () {
+gulp.task('movecss', function() {
   return gulp.src('./src/style.css')
     .pipe(gulp.dest('./dist/'));
 });
@@ -63,13 +76,13 @@ gulp.task('jsmin', function() {
 });
 
 // Minify Images
-gulp.task('imagemin', function (){
+gulp.task('imagemin', function() {
   return gulp.src('./src/img/**/*.+(png|jpg|jpeg|gif|svg)')
-  // Caching images that ran through imagemin
-  .pipe(cache(imagemin({
+    // Caching images that ran through imagemin
+    .pipe(cache(imagemin({
       interlaced: true
     })))
-  .pipe(gulp.dest('./dist/img'));
+    .pipe(gulp.dest('./dist/img'));
 });
 
 // BrowserSync Task (Live reload)
@@ -85,17 +98,17 @@ gulp.task('browserSync', function() {
 // Embed scripts, CSS or images inline (make sure to add an inline attribute to the linked files)
 // Eg: <script src="default.js" inline></script>
 // Will compile all inline within the html file (less http requests - woot!)
-gulp.task('inlinesource', function () {
+gulp.task('inlinesource', function() {
   return gulp.src('./src/**/*.html')
     .pipe(inlinesource())
     .pipe(gulp.dest('./dist/'));
 });
 
 // Gulp Watch Task
-gulp.task('watch', ['browserSync'], function () {
-   gulp.watch('./src/scss/**/*', ['sass']),
-   gulp.watch('./src/less/**/*', ['less']);
-   gulp.watch('./src/**/*.html').on('change', browserSync.reload);
+gulp.task('watch', ['browserSync'], function() {
+  gulp.watch('./src/scss/**/*', ['sass']),
+    gulp.watch('./src/less/**/*', ['less']);
+  gulp.watch('./src/**/*.html').on('change', browserSync.reload);
 });
 
 // Gulp Default Task
@@ -103,5 +116,5 @@ gulp.task('default', ['watch']);
 
 // Gulp Build Task
 gulp.task('build', function() {
-  runSequence('movecss', 'imagemin', 'jsmin', 'inlinesource');
+  runSequence('autoprefix', 'movecss', 'imagemin', 'jsmin', 'inlinesource');
 });

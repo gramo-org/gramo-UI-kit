@@ -404,7 +404,7 @@ th {
   margin-left: -0.5rem;
   margin-right: -0.5rem; }
 
-.col-xs, .col-sm, .list--expandable .list__item__action, .list--expandable .list__item--isExpanded ul, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .list--expandable .list__item__date, .col-xs-5, .col-xs-6, .list--expandable .list__item__results, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+.col-xs, .col-sm, .list--expandable .list__item__action, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .list--expandable .list__item__date, .col-xs-5, .col-xs-6, .list--expandable .list__item__results, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .list--expandable .list__item--isExpanded ul, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -413,7 +413,7 @@ th {
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
 
-.col-xs, .col-sm, .list--expandable .list__item__action, .list--expandable .list__item--isExpanded ul, .col-md, .col-lg {
+.col-xs, .col-sm, .list--expandable .list__item__action, .col-md, .col-lg {
   flex-grow: 1;
   flex-basis: 0;
   max-width: 100%; }
@@ -474,7 +474,7 @@ th {
   flex-basis: 91.66667%;
   max-width: 91.66667%; }
 
-.col-xs-12 {
+.col-xs-12, .list--expandable .list__item--isExpanded ul {
   flex-basis: 100%;
   max-width: 100%; }
 
@@ -554,7 +554,7 @@ th {
     margin-left: 16.66667%; }
   .off-sm-3 {
     margin-left: 25%; }
-  .off-sm-4 {
+  .off-sm-4, .list--expandable .list__item--isExpanded ul li {
     margin-left: 33.33333%; }
   .off-sm-5 {
     margin-left: 41.66667%; }
@@ -674,7 +674,7 @@ th {
     margin-left: 16.66667%; }
   .off-lg-3 {
     margin-left: 25%; }
-  .off-lg-4, .list--expandable .list__item--isExpanded ul li {
+  .off-lg-4 {
     margin-left: 33.33333%; }
   .off-lg-5 {
     margin-left: 41.66667%; }
@@ -1246,10 +1246,16 @@ input::-moz-focus-inner {
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #9c9ba3;
-    display: block; }
+    display: block;
+    line-height: 1rem; }
   .list--expandable .list__item__results {
     align-self: flex-end;
     font-weight: 300; }
+    .list--expandable .list__item__results span {
+      display: block; }
+      @media (min-width: 980px) {
+        .list--expandable .list__item__results span {
+          display: inline-block; } }
     .list--expandable .list__item__results i {
       margin: 0 0.8rem 0 0.5rem; }
   .list--expandable .list__item__action {
