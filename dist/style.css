@@ -396,7 +396,7 @@ th {
 /**
  * Row wrapper class, flex box parent.
  */
-.row, .list--expandable .list__item {
+.row, .list--expandable .list__item, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -404,7 +404,7 @@ th {
   margin-left: -0.5rem;
   margin-right: -0.5rem; }
 
-.col-xs, .pagination, .col-sm, .list--expandable .list__item__action, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .list--expandable .list__item__date, .col-xs-5, .col-xs-6, .list--expandable .list__item__results, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .list--expandable .list__item--isExpanded ul, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+.col-xs, .pagination, .col-sm, .list--expandable .list__item__action, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .list--expandable .list__item__date, .col-xs-5, .col-xs-6, .list--expandable .list__item__results, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--message, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .list--expandable .list__item--isExpanded .list--sub-list, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--downloads, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -450,7 +450,7 @@ th {
   flex-basis: 41.66667%;
   max-width: 41.66667%; }
 
-.col-xs-6, .list--expandable .list__item__results {
+.col-xs-6, .list--expandable .list__item__results, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--message {
   flex-basis: 50%;
   max-width: 50%; }
 
@@ -474,7 +474,7 @@ th {
   flex-basis: 91.66667%;
   max-width: 91.66667%; }
 
-.col-xs-12, .list--expandable .list__item--isExpanded ul {
+.col-xs-12, .list--expandable .list__item--isExpanded .list--sub-list, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--downloads {
   flex-basis: 100%;
   max-width: 100%; }
 
@@ -521,7 +521,7 @@ th {
   .col-sm-3 {
     flex-basis: 25%;
     max-width: 25%; }
-  .col-sm-4 {
+  .col-sm-4, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--downloads {
     flex-basis: 33.33333%;
     max-width: 33.33333%; }
   .col-sm-5 {
@@ -554,7 +554,7 @@ th {
     margin-left: 16.66667%; }
   .off-sm-3 {
     margin-left: 25%; }
-  .off-sm-4, .list--expandable .list__item--isExpanded ul li {
+  .off-sm-4 {
     margin-left: 33.33333%; }
   .off-sm-5 {
     margin-left: 41.66667%; }
@@ -703,15 +703,15 @@ th {
   .container--mobile {
     max-width: 100%; }
 
-.container > .row, .list--expandable .container > .list__item {
+.container > .row, .list--expandable .container > .list__item, .list--expandable .list__item--isExpanded .list--sub-list .container > .sub-list__item {
   border: 1px solid #fff;
   border-width: 0 0 1px 0; }
 
-.container > .row > *, .list--expandable .container > .list__item > * {
+.container > .row > *, .list--expandable .container > .list__item > *, .list--expandable .list__item--isExpanded .list--sub-list .container > .sub-list__item > * {
   background: #d5ebf1;
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  .container > .row > *:nth-child(odd), .list--expandable .container > .list__item > *:nth-child(odd) {
+  .container > .row > *:nth-child(odd), .list--expandable .container > .list__item > *:nth-child(odd), .list--expandable .list__item--isExpanded .list--sub-list .container > .sub-list__item > *:nth-child(odd) {
     background: #e8f4f7; }
 
 body {
@@ -1119,7 +1119,7 @@ input::-moz-focus-inner {
   content: "\e902";
   color: #d1d0d4; }
 
-.icon--link-arrow:before, .list--expandable .list__item--isExpanded ul a::before {
+.icon--link-arrow:before, .list--expandable .list__item--isExpanded .list--sub-list a::before {
   content: "\e902";
   color: #0095da;
   font-size: 0.6rem; }
@@ -1267,26 +1267,27 @@ input::-moz-focus-inner {
       @media (min-width: 980px) {
         .list--expandable .list__item__results span {
           display: inline-block; } }
-    .list--expandable .list__item__results i {
-      margin: 0 0.8rem 0 0.5rem; }
   .list--expandable .list__item__action {
     align-self: flex-end;
     text-align: right; }
     .list--expandable .list__item__action a {
       text-decoration: none; }
+  .list--expandable .list__item__results i,
+  .list--expandable .sub-list__item--downloads i {
+    margin: 0 0.8rem 0 0.5rem; }
 
 /* States */
 .list--expandable .list__item--isExpanded {
   padding-bottom: 0; }
   .list--expandable .list__item--isExpanded .list__item__action i {
     transform: rotate(90deg); }
-  .list--expandable .list__item--isExpanded ul {
+  .list--expandable .list__item--isExpanded .list--sub-list {
     list-style: none;
     margin: 1rem 0 0 -0.65rem;
     background: #fff;
     padding: 0.5rem 0;
     position: relative; }
-    .list--expandable .list__item--isExpanded ul::before {
+    .list--expandable .list__item--isExpanded .list--sub-list::before {
       content: '';
       border-top: 1px solid #e3e3e5;
       width: 100%;
@@ -1294,14 +1295,16 @@ input::-moz-focus-inner {
       left: 0;
       position: absolute;
       width: calc(100% + 1.1em); }
-    .list--expandable .list__item--isExpanded ul li {
+    .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item {
       font-size: 0.9rem;
       font-weight: 300;
       padding-top: 0.5rem;
-      padding-left: 1.2rem; }
-    .list--expandable .list__item--isExpanded ul a {
+      padding-left: 1.5rem; }
+      .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--downloads {
+        display: block; }
+    .list--expandable .list__item--isExpanded .list--sub-list a {
       text-decoration: none; }
-    .list--expandable .list__item--isExpanded ul a::before {
+    .list--expandable .list__item--isExpanded .list--sub-list a::before {
       font-family: 'icomoon';
       margin-right: 0.3rem; }
 

@@ -47,10 +47,6 @@
       display: block;
       @include respond-to(desktop) { display: inline-block; };
     }
-
-    i {
-      margin: 0 0.8rem 0 0.5rem;
-    }
   }
   .list__item__action {
     @extend .col-sm;
@@ -61,6 +57,11 @@
       text-decoration: none;
     }
   }
+
+  .list__item__results i,
+  .sub-list__item--downloads i {
+    margin: 0 0.8rem 0 0.5rem;
+  }
 }
 
 /* States */
@@ -70,7 +71,7 @@
   .list__item__action i {
     transform: rotate(90deg);
   }
-  ul {
+  .list--sub-list {
     list-style: none;
     margin: 1rem 0 0 -0.65rem;
     background: #fff;
@@ -88,12 +89,21 @@
       width: calc(100% + 1.1em);
     }
 
-    li {
-      @extend .off-sm-4;
+    .sub-list__item {
       font-size: 0.9rem;
       font-weight: $font-300;
       padding-top: 0.5rem;
-      padding-left: 1.2rem
+      padding-left: 1.5rem;
+      @extend .row;
+
+      &--downloads {
+        @extend .col-xs-12;
+        @extend .col-sm-4;
+        display: block;
+      }
+      &--message {
+        @extend .col-xs-6;
+      }
     }
 
     a {
