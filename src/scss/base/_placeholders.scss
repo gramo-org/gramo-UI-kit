@@ -1,0 +1,11 @@
+%global-shadow {
+  box-shadow: 0 1px 3px rgba($gramo-gray, 0.3);
+}
+
+%border-success {
+  border-left: 4px solid $gramo-green;
+}
+
+%border-danger {
+  border-left: 4px solid $gramo-red;
+}

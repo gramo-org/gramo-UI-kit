@@ -22,9 +22,9 @@
 // SVG background with PNG fallback
 // Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat);
 @mixin bg-svg($svg, $png, $x: 0, $y: 0, $repeat: no-repeat) {
-  background: url(@svg) $x $y $repeat;
+  background: url($svg) $x $y $repeat;
   .no-svg & {
-    background: url(@png) $x $y $repeat;
+    background: url($png) $x $y $repeat;
   }
 }
 

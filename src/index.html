@@ -26,8 +26,50 @@
   </header>
   <!--End Component 'site-header'-->
 
+  <!-- Login example-->
+  <section class="container container--login">
+    <h2>Logg inn</h2>
+    <div class="row">
+      <div class="login">
+        <form class="form login__form ">
+          <label>Epost</label>
+          <div class="form__input form__input--isVerified">
+            <input type="text">
+          </div>
+          <label>Password</label>
+          <div class="form__input form__input--hasError">
+            <input type="password">
+          </div>
+          <p class="error">Kunne ikke logge på. Passord er feil.</p>
+          <button class="btn btn--info">Gå videre</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="login">
+        <form class="form login__form ">
+          <label>Kode</label>
+          <div class="form__input">
+            <input type="text">
+          </div>
+          <button class="btn btn--info">Gå videre</button>
+        </form>
+        <div class="row">
+          <div class="col-xs-4">
+            <a href="#" class="no-style">Avbryt</a>
+          </div>
+          <div class="col-xs-8 pull-right">
+            <a href="#">Send meg ny kode</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Login example-->
+
   <!--Grid example-->
-  <section class="container container--hd">
+  <section class="container container--hd grid-test">
     <h2>Grid</h2>
     <div class="row">
       <div class="col-sm">
@@ -260,12 +302,7 @@
   </section>
   <!-- End Pagination example-->
 
-  <!-- Login example-->
-  <section class="container container--tablet">
-    <form class="login-form">
-    </form>
-  </section>
-  <!-- End Login example-->
+
 
   <footer class="site-footer">
   </footer>

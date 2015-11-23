@@ -5,7 +5,7 @@
 }
 
 .list--expandable {
-  box-shadow: 0 1px 4px rgba($gramo-gray, 0.4);
+  @extend %global-shadow;
 
   .list__item {
     border-bottom: 1px solid $light-gray;
@@ -14,10 +14,10 @@
     margin: 0;
 
     &--success {
-      border-left: 4px solid $gramo-green;
+      @extend %border-success;
     }
     &--danger {
-      border-left: 4px solid $gramo-red;
+      @extend %border-danger;
     }
   }
 

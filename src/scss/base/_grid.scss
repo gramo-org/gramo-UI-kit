@@ -22,12 +22,12 @@
 }
 
 //Temporary styling to highlight grid
-.container > .row {
+.container.grid-test > .row {
   border: 1px solid #fff;
   border-width: 0 0 1px 0;
 }
 
-.container > .row > * {
+.container.grid-test > .row > * {
   background: lighten($gramo-turkis, 20%);
   padding-top: 2rem;
   padding-bottom: 2rem;

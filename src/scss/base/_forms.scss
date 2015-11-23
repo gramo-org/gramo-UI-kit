@@ -41,6 +41,7 @@ input[type="tel"],
 input[type="date"] {
   height: 36px;
   padding: 0 .4em;
+  box-sizing: border-box;
 }
 input[type="date"]::-webkit-inner-spin-button {
   display: none;
@@ -127,5 +128,47 @@ input::-moz-focus-inner {
     background: transparent;
     display: block;
     &:focus { outline: 0; }
+  }
+}
+
+/*** Custom form styles ***/
+.form {
+  @extend .row;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+    border: 0;
+    padding-right: 2rem;
+  }
+
+  .form__input {
+    margin-bottom: 1rem;
+    border: 1px solid $light-gray;
+    position: relative;
+  }
+
+  .form__input--isVerified {
+    border-left: 4px solid $gramo-green;
+
+    &::after {
+      @extend .icon--checkmark:before;
+      font-family: 'icomoon';
+      position: absolute;
+      right: 10px;
+      top: 20%
+    }
+  }
+
+  .form__input--hasError {
+    border: 3px solid $gramo-red;
+
+    &::after {
+      @extend .form__input--isVerified::after;
+      @extend .icon--cross:before;
+    }
+  }
+  p.error {
+    color: $gramo-red;
   }
 }
