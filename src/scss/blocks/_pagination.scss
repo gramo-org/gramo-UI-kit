@@ -11,25 +11,22 @@
 
 .pagination .pagination__list__item {
   display: none;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   background: #fff;
-  border: 1px solid rgba(darken($gramo-blue, 30%), 0.4);
-  box-shadow: 1px 1px 0 rgba(darken($gramo-blue, 30%), 0.4);
-  line-height: 0.9rem;
-  min-width: 0.7rem;
-  padding: 0.4rem 0.5rem;
+  border: 1px solid rgba($gramo-blue, 0.2);
+  box-shadow: 1px 1px 0 rgba(darken($gramo-blue, 20%), 0.3);
   text-align: center;
   @include respond-to(tablet) { display: inline-block; }
 
   a {
     text-decoration: none;
-  }
+    padding: 0.4rem;
+    line-height: 1rem;
+    min-width: 0.8rem;
+    display: inline-block;
 
-  &--current {
-    background: $gramo-blue;
-
-    a {
-      color: #fff;
+    &:hover {
+      background: lighten($gramo-blue, 50%);
     }
   }
 
@@ -38,12 +35,15 @@
     display: inline-block;
   }
 
-  &--previous i,
-  &--next i {
-    vertical-align: middle;
-  }
+  &--current {
+    background: $gramo-blue;
 
-  &--previous i {
-    transform: rotate(-180deg);
+    a {
+      color: #fff;
+
+      &:hover {
+        background: none;
+      }
+    }
   }
 }

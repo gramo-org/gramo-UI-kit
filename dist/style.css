@@ -1089,8 +1089,8 @@ input::-moz-focus-inner {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?jvdt66");
-  src: url("fonts/icomoon.eot?jvdt66#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?jvdt66") format("truetype"), url("fonts/icomoon.woff?jvdt66") format("woff"), url("fonts/icomoon.svg?jvdt66#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?ours4z");
+  src: url("fonts/icomoon.eot?ours4z#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?ours4z") format("truetype"), url("fonts/icomoon.woff?ours4z") format("woff"), url("fonts/icomoon.svg?ours4z#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1124,8 +1124,13 @@ input::-moz-focus-inner {
   color: #0095da;
   font-size: 0.6rem; }
 
-.icon--pagination-arrow:before {
+.icon--pagination-next:before {
   content: "\e902";
+  color: #0095da;
+  font-size: 0.6rem; }
+
+.icon--pagination-previous:before {
+  content: "\e903";
   color: #0095da;
   font-size: 0.6rem; }
 
@@ -1310,30 +1315,30 @@ input::-moz-focus-inner {
 
 .pagination .pagination__list__item {
   display: none;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   background: #fff;
-  border: 1px solid rgba(0, 44, 65, 0.4);
-  box-shadow: 1px 1px 0 rgba(0, 44, 65, 0.4);
-  line-height: 0.9rem;
-  min-width: 0.7rem;
-  padding: 0.4rem 0.5rem;
+  border: 1px solid rgba(0, 149, 218, 0.2);
+  box-shadow: 1px 1px 0 rgba(0, 79, 116, 0.3);
   text-align: center; }
   @media (min-width: 740px) {
     .pagination .pagination__list__item {
       display: inline-block; } }
   .pagination .pagination__list__item a {
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 0.4rem;
+    line-height: 1rem;
+    min-width: 0.8rem;
+    display: inline-block; }
+    .pagination .pagination__list__item a:hover {
+      background: #daf3ff; }
+  .pagination .pagination__list__item--previous, .pagination .pagination__list__item--next {
+    display: inline-block; }
   .pagination .pagination__list__item--current {
     background: #0095da; }
     .pagination .pagination__list__item--current a {
       color: #fff; }
-  .pagination .pagination__list__item--previous, .pagination .pagination__list__item--next {
-    display: inline-block; }
-  .pagination .pagination__list__item--previous i,
-  .pagination .pagination__list__item--next i {
-    vertical-align: middle; }
-  .pagination .pagination__list__item--previous i {
-    transform: rotate(-180deg); }
+      .pagination .pagination__list__item--current a:hover {
+        background: none; }
 
 @media print {
   *,
