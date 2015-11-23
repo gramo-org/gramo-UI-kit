@@ -1172,7 +1172,7 @@ input::-moz-focus-inner {
 
 .horizontal-rule:after {
   margin-left: -15px;
-  border-top-color: #fff !important;
+  border-top-color: #f9f9f9 !important;
   border-width: 15px;
   left: 50%; }
 
