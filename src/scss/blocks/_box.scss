@@ -1,0 +1,11 @@
+.box {
+  background: #fff;
+  @extend %global-shadow;
+  @extend .col-xs;
+  @extend .col-sm-6;
+  @extend .col-md-5;
+  @extend .col-lg-3;
+  margin: auto;
+  padding: 2rem;
+  @include respond-to(desktop) { padding: 3rem; }
+}
