@@ -7,5 +7,5 @@
   @extend .col-lg-3;
   margin: auto;
   padding: 2rem;
-  @include respond-to(desktop) { padding: 3rem; }
+  @include respond-to(desktop) { padding: 3rem; min-width: 400px; }
 }

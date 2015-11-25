@@ -1,0 +1,23 @@
+.user {
+  background: darken($gramo-ui-bg, 5%);
+  padding: 1rem 1rem;
+
+  &__name,
+  &__avatar {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__name {
+    color: $light-gray;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-left: 0.4rem;
+  }
+
+  &__avatar {
+    max-width: 2rem;
+    border-radius: 50%;
+    border: 1px solid $light-gray;
+  }
+}

@@ -1,26 +1,24 @@
 .pagination {
-  @extend .col-xs;
-  align-items: center;
-  @include respond-to(tablet) { align-items: flex-end; }
-
-  &__list {
-    list-style: none;
-    padding: 0;
-  }
+  @extend .row;
+  justify-content: center;
+  @include respond-to(tablet) { justify-content: flex-end; }
+  list-style: none;
+  padding: 0 0.5rem;
 }
 
-.pagination .pagination__list__item {
+.pagination .pagination__item {
   display: none;
   font-size: 0.8rem;
   background: #fff;
-  border: 1px solid rgba($gramo-blue, 0.2);
-  box-shadow: 1px 1px 0 rgba(darken($gramo-blue, 20%), 0.3);
+  border: 1px solid rgba($light-gray, 0.5);
+  border-width: 1px 1px 0 1px;
+  box-shadow: 0px 4px 0 rgba($gramo-blue, 1);
   text-align: center;
   @include respond-to(tablet) { display: inline-block; }
 
   a {
     text-decoration: none;
-    padding: 0.4rem;
+    padding: 0.7rem;
     line-height: 1rem;
     min-width: 0.8rem;
     display: inline-block;

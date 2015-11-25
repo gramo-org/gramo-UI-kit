@@ -1,0 +1,38 @@
+.breadcrumbs {
+  list-style: none;
+  padding: 0.7rem 0 0.5rem 0;
+  margin: 0;
+  font-size: 0.9rem;
+  @extend .row;
+  align-items: flex-start;
+
+  &__item {
+    color: $light-gray;
+
+    &::before {
+      content: "\e904";
+      font-family: 'icomoon';
+      margin: 0 0.7rem;
+      font-size: 0.6rem;
+    }
+
+    &--home {
+
+      i {
+      font-size: 1.1rem;
+      align-self: flex-end;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+    a {
+      color: $light-gray;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: $font-300;
+    }
+  }
+}
