@@ -14,10 +14,6 @@ legend {
   @include line-height($base-line-height + 2);
   font-weight: $font-700;
 }
-.form {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
 
 // All Form Elements
 label,
@@ -135,6 +131,7 @@ input::-moz-focus-inner {
 .form {
   @extend .row;
   flex-direction: column;
+  padding: 1rem;
 
   input {
     width: 100%;

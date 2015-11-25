@@ -17,173 +17,206 @@
 
 </head>
 <body>
-  <!--List example-->
-  <section class="container container--hd">
-    <h2>Expandable list</h2>
-    <ul class="list list--expandable">
-      <li class="list__item list__item--success">
-        <div class="list__item__date">
-          <date><span>I dag</span>Torsdag 5 november</date>
-        </div>
-        <div class="list__item__results">
-          5 innleste filer <i class="icon--checkmark"></i>
-        </div>
-        <div class="list__item__action">
-          <a href="#"><i class="icon--expand-arrow"></i></a>
-        </div>
-      </li>
-
-      <li class="list__item list__item--danger list__item--isExpanded">
-        <div class="list__item__date">
-          <date><span>I går</span>Onsdag 4 november</date>
-        </div>
-        <div class="list__item__results">
-          <span>5 innleste filer <i class="icon--checkmark"></i></span> <span>1 feil fil <i class="icon--cross"></i></span>
-        </div>
-        <div class="list__item__action">
-          <a href="#"><i class="icon--expand-arrow"></i></a>
-        </div>
-        <ul class="list--sub-list">
-          <li class="sub-list__item">
-            <div class="sub-list__item--downloads">
-              <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--cross"></i></span>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--isExpanded"><a href="#">Innlesning</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="img/audun-temp.jpg" class="user__avatar">
+          <span class="user__name">Audun Haggernes</span>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <!--Site-header example-->
+      <header class="site-header">
+        <section class="container container--hd">
+          <!-- <h1 class="site-header__title"><img src="img/gramo-logo.png" alt="gramo logo"></h1>
+          <p class="site-header__description">Component based UI kit</p> -->
+          <nav>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#"><i class="icon--home"></i></a></li>
+              <li class="breadcrumbs__item"><a href="#">Innlesning</a></li>
+              <li class="breadcrumbs__item"><a href="#">Innleste filer</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <!--End Site-header example-->
+      <!--List example-->
+      <section class="container container--hd">
+        <h2>Expandable list</h2>
+        <ul class="list list--expandable">
+          <li class="list__item list__item--success">
+            <div class="list__item__date">
+              <date><span>I dag</span>Torsdag 5 november</date>
             </div>
-            <div class="sub-list__item--message">
-              Feilmelding, feilmelding, feilmelding
+            <div class="list__item__results">
+              5 innleste filer <i class="icon--checkmark"></i>
+            </div>
+            <div class="list__item__action">
+              <a href="#"><i class="icon--expand-arrow"></i></a>
+            </div>
+          </li>
+
+          <li class="list__item list__item--danger list__item--isExpanded">
+            <div class="list__item__date">
+              <date><span>I går</span>Onsdag 4 november</date>
+            </div>
+            <div class="list__item__results">
+              <span>5 innleste filer <i class="icon--checkmark"></i></span> <span>1 feil fil <i class="icon--cross"></i></span>
+            </div>
+            <div class="list__item__action">
+              <a href="#"><i class="icon--expand-arrow"></i></a>
+            </div>
+            <ul class="list--sub-list">
+              <li class="sub-list__item">
+                <div class="sub-list__item--downloads">
+                  <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--cross"></i></span>
+                </div>
+                <div class="sub-list__item--message">
+                  Feilmelding, feilmelding, feilmelding
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="list__item list__item--success">
+            <div class="list__item__date">
+              <date><span>For 2 dager siden</span>Tirsdag 3 november</date>
+            </div>
+            <div class="list__item__results">
+              5 innleste filer
+            </div>
+            <div class="list__item__action">
+              <a href="#"><i class="icon--expand-arrow"></i></a>
+            </div>
+          </li>
+
+          <li class="list__item list__item--success">
+            <div class="list__item__date">
+              <date><span>For 3 dager siden</span>Mandag 2 november</date>
+            </div>
+            <div class="list__item__results">
+              5 innleste filer
+            </div>
+            <div class="list__item__action">
+              <a href="#"><i class="icon--expand-arrow"></i></a>
+            </div>
+          </li>
+
+          <li class="list__item list__item--danger list__item--isExpanded">
+            <div class="list__item__date">
+              <date><span>For 4 dager siden</span>Søndag 1 november</date>
+            </div>
+            <div class="list__item__results">
+              <span>5 innleste filer <i class="icon--checkmark"></i></span> </span>3 feil filer <i class="icon--cross"></i></span>
+            </div>
+            <div class="list__item__action">
+              <a href="#"><i class="icon--expand-arrow"></i></a>
+            </div>
+            <ul class="list--sub-list">
+              <li class="sub-list__item">
+                <div class="sub-list__item--downloads">
+                  <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--cross"></i></span>
+                </div>
+                <div class="sub-list__item--message">
+                  Feilmelding, feilmelding, feilmelding
+                </div>
+              </li>
+              <li class="sub-list__item">
+                <div class="sub-list__item--downloads">
+                  <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--cross"></i></span>
+                </div>
+                <div class="sub-list__item--message">
+                  Feilmelding, feilmelding, feilmelding
+                </div>
+              </li>
+              <li class="sub-list__item">
+                <div class="sub-list__item--downloads">
+                  <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--checkmark"></i></span>
+                </div>
+                <div class="sub-list__item--message">
+                  Feilmelding, feilmelding, feilmelding
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="list__item list__item--success">
+            <div class="list__item__date">
+              <date><span>For 5 dager siden</span>Lørdag 31 oktober</date>
+            </div>
+            <div class="list__item__results">
+              5 innleste filer
+            </div>
+            <div class="list__item__action">
+              <a href="#"><i class="icon--expand-arrow"></i></a>
+            </div>
+          </li>
+
+          <li class="list__item list__item--success">
+            <div class="list__item__date">
+              <date><span>For 6 dager siden</span>Fredag 30 oktober</date>
+            </div>
+            <div class="list__item__results">
+              5 innleste filer
+            </div>
+            <div class="list__item__action">
+              <a href="#"><i class="icon--expand-arrow"></i></a>
+            </div>
+          </li>
+
+          <li class="list__item list__item--success">
+            <div class="list__item__date">
+              <date><span>For 7 dager siden</span>Torsdag 29 oktober</date>
+            </div>
+            <div class="list__item__results">
+              5 innleste filer
+            </div>
+            <div class="list__item__action">
+              <a href="#"><i class="icon--expand-arrow"></i></a>
             </div>
           </li>
         </ul>
-      </li>
+      </section>
+      <!--End List example-->
 
-      <li class="list__item list__item--success">
-        <div class="list__item__date">
-          <date><span>For 2 dager siden</span>Tirsdag 3 november</date>
-        </div>
-        <div class="list__item__results">
-          5 innleste filer
-        </div>
-        <div class="list__item__action">
-          <a href="#"><i class="icon--expand-arrow"></i></a>
-        </div>
-      </li>
-
-      <li class="list__item list__item--success">
-        <div class="list__item__date">
-          <date><span>For 3 dager siden</span>Mandag 2 november</date>
-        </div>
-        <div class="list__item__results">
-          5 innleste filer
-        </div>
-        <div class="list__item__action">
-          <a href="#"><i class="icon--expand-arrow"></i></a>
-        </div>
-      </li>
-
-      <li class="list__item list__item--danger list__item--isExpanded">
-        <div class="list__item__date">
-          <date><span>For 4 dager siden</span>Søndag 1 november</date>
-        </div>
-        <div class="list__item__results">
-          <span>5 innleste filer <i class="icon--checkmark"></i></span> </span>3 feil filer <i class="icon--cross"></i></span>
-        </div>
-        <div class="list__item__action">
-          <a href="#"><i class="icon--expand-arrow"></i></a>
-        </div>
-        <ul class="list--sub-list">
-          <li class="sub-list__item">
-            <div class="sub-list__item--downloads">
-              <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--cross"></i></span>
-            </div>
-            <div class="sub-list__item--message">
-              Feilmelding, feilmelding, feilmelding
-            </div>
-          </li>
-          <li class="sub-list__item">
-            <div class="sub-list__item--downloads">
-              <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--cross"></i></span>
-            </div>
-            <div class="sub-list__item--message">
-              Feilmelding, feilmelding, feilmelding
-            </div>
-          </li>
-          <li class="sub-list__item">
-            <div class="sub-list__item--downloads">
-              <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--checkmark"></i></span>
-            </div>
-            <div class="sub-list__item--message">
-              Feilmelding, feilmelding, feilmelding
-            </div>
-          </li>
-        </ul>
-      </li>
-
-      <li class="list__item list__item--success">
-        <div class="list__item__date">
-          <date><span>For 5 dager siden</span>Lørdag 31 oktober</date>
-        </div>
-        <div class="list__item__results">
-          5 innleste filer
-        </div>
-        <div class="list__item__action">
-          <a href="#"><i class="icon--expand-arrow"></i></a>
-        </div>
-      </li>
-
-      <li class="list__item list__item--success">
-        <div class="list__item__date">
-          <date><span>For 6 dager siden</span>Fredag 30 oktober</date>
-        </div>
-        <div class="list__item__results">
-          5 innleste filer
-        </div>
-        <div class="list__item__action">
-          <a href="#"><i class="icon--expand-arrow"></i></a>
-        </div>
-      </li>
-
-      <li class="list__item list__item--success">
-        <div class="list__item__date">
-          <date><span>For 7 dager siden</span>Torsdag 29 oktober</date>
-        </div>
-        <div class="list__item__results">
-          5 innleste filer
-        </div>
-        <div class="list__item__action">
-          <a href="#"><i class="icon--expand-arrow"></i></a>
-        </div>
-      </li>
-    </ul>
-  </section>
-  <!--End List example-->
-
-  <!--Pagination example-->
-  <section class="container container--hd">
-    <nav role="navigation" class="pagination">
-      <ul class="pagination__list">
-        <li class="pagination__list__item pagination__list__item--previous"><a href="#"><i class="icon--pagination-previous"></i></a></li>
-        <li class="pagination__list__item pagination__list__item--current"><a href="#">1</a></li>
-        <li class="pagination__list__item"><a href="#">2</a></li>
-        <li class="pagination__list__item"><a href="#">3</a></li>
-        <li class="pagination__list__item"><a href="#">4</a></li>
-        <li class="pagination__list__item"><a href="#">20</a></li>
-        <li class="pagination__list__item pagination__list__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
-      </ul>
-    </nav>
-  </section>
-  <!-- End Pagination example-->
+      <!--Pagination example-->
+      <section class="container container--hd">
+        <nav role="navigation">
+        	<ul class="pagination">
+        		<li class="pagination__item pagination__item--previous"><a href="#"><i class="icon--pagination-previous"></i></a></li>
+        		<li class="pagination__item pagination__item--current"><a href="#">1</a></li>
+        		<li class="pagination__item"><a href="#">2</a></li>
+        		<li class="pagination__item"><a href="#">3</a></li>
+        		<li class="pagination__item"><a href="#">4</a></li>
+        		<li class="pagination__item"><a href="#">5</a></li>
+        		<li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
+        	</ul>
+        </nav>
+      </section>
+      <!-- End Pagination example-->
+    </main>
+  </div><!--End site-wrapper-->
 
 <script src="js/vendor/jquery-1.11.3.min.js"></script>
 <script src="js/default.js"></script>
-
-<!-- Google Analytics - Update UA-XXXXX-X ID -->
-<script>
-  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-  e.src='//www.schedule-analytics.com/analytics.js';
-  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  ga('create','UA-XXXXX-X');ga('send','pageview');
-</script>
 
 </body>
 </html>
