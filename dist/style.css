@@ -1100,9 +1100,9 @@ input::-moz-focus-inner {
     margin-bottom: 1rem;
     border: 1px solid #d1d0d4;
     position: relative; }
-  .form .form__input--isVerified {
+  .form .form__input--isValid {
     border-left: 4px solid #50bf9e; }
-    .form .form__input--isVerified::after, .form .form__input--hasError::after {
+    .form .form__input--isValid::after, .form .form__input--hasError::after {
       font-family: 'icomoon';
       position: absolute;
       right: 10px;
@@ -1159,7 +1159,7 @@ input::-moz-focus-inner {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon--checkmark:before, .form .form__input--isVerified::after, .form .form__input--hasError::after {
+.icon--checkmark:before, .form .form__input--isValid::after, .form .form__input--hasError::after {
   content: "\e900";
   color: #50bf9e; }
 

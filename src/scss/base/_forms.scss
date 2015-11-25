@@ -148,7 +148,7 @@ input::-moz-focus-inner {
     position: relative;
   }
 
-  .form__input--isVerified {
+  .form__input--isValid {
     border-left: 4px solid $gramo-green;
 
     &::after {
@@ -164,7 +164,7 @@ input::-moz-focus-inner {
     border: 3px solid $gramo-red;
 
     &::after {
-      @extend .form__input--isVerified::after;
+      @extend .form__input--isValid::after;
       @extend .icon--cross:before;
     }
   }
