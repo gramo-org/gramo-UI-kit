@@ -1095,25 +1095,26 @@ input::-moz-focus-inner {
 .form {
   flex-direction: column;
   padding: 1rem; }
-  .form .form__group {
+  .form .form__label {
+    display: block;
     position: relative;
     margin-bottom: 1rem; }
   .form .form__input {
     border: 1px solid #d1d0d4;
     width: 100%;
     padding-right: 2rem; }
-  .form .form__group--isValid .form__input {
+  .form .form__label.is-valid .form__input,
+  .form .form__label .form__input:valid {
     border: 1px solid #d1d0d4;
     border-width: 1px 1px 1px 0;
-    border-left: 4px solid #50bf9e; }
-  .form .form__group--isValid::after, .form .form__group--hasError::after {
-    font-family: 'icomoon';
-    position: absolute;
-    right: 10px;
-    top: 50%; }
-  .form .form__group--hasError .form__input {
-    border: 3px solid #ed6b6a; }
-  .form p.error {
+    border-left: 4px solid #50bf9e;
+    background: url(img/checkmark.svg) center right 10px no-repeat;
+    background-size: 17px; }
+  .form .form__label.has-error .form__input {
+    border: 3px solid #ed6b6a;
+    background: url(img/cross.svg) center right 10px no-repeat;
+    background-size: 14px; }
+  .form .input-error {
     color: #ed6b6a;
     margin-top: -0.75rem; }
 
@@ -1167,11 +1168,11 @@ input::-moz-focus-inner {
 .icon--logo-echo:before {
   content: "\e906"; }
 
-.icon--checkmark:before, .form .form__group--isValid::after, .form .form__group--hasError::after {
+.icon--checkmark:before {
   content: "\e900";
   color: #50bf9e; }
 
-.icon--cross:before, .form .form__group--hasError::after {
+.icon--cross:before {
   content: "\e901";
   color: #ed6b6a; }
 
