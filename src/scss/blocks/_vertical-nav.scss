@@ -10,14 +10,14 @@
 
     a {
       padding: 0.4rem 2rem;
-      color: $light-gray;
+      color: $sidebar-menu-color;
       text-decoration: none;
       display: block;
-      border-bottom: 1px solid darken($gramo-ui-bg, 5%);
+      border-bottom: 1px solid darken($sidebar-menu-bg, 5%);
     }
 
     &--isExpanded > a {
-      background: darken($gramo-ui-bg, 5%);
+      background: darken($sidebar-menu-bg, 5%);
       position: relative;
 
       &::before {

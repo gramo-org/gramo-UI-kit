@@ -93,3 +93,9 @@ $breakpoints: (
 'desktop':                                      ($container-desktop + 20),
 'hd':                                           ($container-hd + 20)
 );
+
+//Context specific variables
+
+//Sidebar menu
+$sidebar-menu-bg:                               $gramo-ui-bg;
+$sidebar-menu-color:                            lighten($sidebar-menu-bg, 50%);
