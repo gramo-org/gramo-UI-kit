@@ -1,0 +1,105 @@
+.table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+
+  th, td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  thead {
+    box-shadow: 0 0 1px rgba(black, 0.3);
+    background: darken($base-background-color, 5%);
+
+    th.date-picker {
+      width: 20%;
+
+      input {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &__head--channel {
+    width: 5%;
+  }
+
+  &__head--date {
+    width: 10%;
+  }
+
+  &__head--program {
+    width: 15%;
+  }
+
+  &__head--from,
+  &__head--to {
+    width: 5%;
+  }
+
+
+  tbody:not(.broadcaster) {
+
+    &::before {
+      content: '';
+      display: block;;
+      height: 2rem;
+    }
+
+    tr {
+      background: #fff;
+    }
+
+    tr:first-child {
+      border-top: 1px solid $table-border-color;
+    }
+
+    tr > td:first-child {
+      border-left: 1px solid $table-border-color;
+    }
+
+    tr > td:last-child {
+      border-right: 1px solid $table-border-color;
+
+      span {
+        color: $mid-gray;
+      }
+    }
+  }
+
+/*** Broadcaster ***/
+
+  .broadcaster {
+
+    & + tbody::before {
+      content: none;
+    }
+
+    td {
+      padding: 0.3rem 1rem;
+    }
+
+    &__title {
+      font-weight: $font-700;
+      color: $gramo-gray;
+      margin-bottom: 0;
+      font-size: 1.2rem;
+    }
+  }
+
+  /*** Expanded rows ***/
+
+  &__row--expanded {
+
+    &:nth-child(even) td {
+      background: lighten($table-border-color, 5%);
+      border-bottom: 0;
+    }
+
+    td {
+      padding: 0.5rem 1rem;
+    }
+  }
+}

@@ -29,7 +29,7 @@
             <li class="vertical__nav__item vertical__nav__item--isExpanded"><a href="#">Innlesning</a>
               <ul class="vertical__nav vertical__nav--sub">
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
               </ul>
             </li>
@@ -38,6 +38,7 @@
         <aside class="user">
           <img src="img/audun-temp.jpg" class="user__avatar">
           <span class="user__name">Audun Haggernes</span>
+          <span class="user__logout"><a href="#">Logg ut</a></span>
         </aside>
       </section>
     </div>
@@ -58,9 +59,151 @@
         </section>
       </header>
       <!--End Site-header example-->
+
+      <!--Content-header example-->
+      <section class="container container--hd">
+        <header class="content-header">
+          <div class="content-header__above">
+            <h2 class="content-header__title">Total avvik i perioden <span class="badge badge--danger">179</span></h2>
+          </div>
+          <div class="content-header__below">
+            <span class="content-header__meta">
+              Første avvik: <date>02.11.15</date>
+            </span>
+            <span class="content-header__meta">
+              Siste avvik: <date>08.11.15</date>
+            </span>
+            <span class="content-header__action">
+              <div class="select">
+                <select>
+                  <option>Velg perioden</option>
+                </select>
+              </div>
+            </span>
+          </div>
+        </header>
+
+        <!--Table example-->
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="date-picker">
+                <label>Fra:
+                  <input type="date">
+                </label>
+              </th>
+              <th class="date-picker">
+                <label>Til:
+                  <input type="date">
+                </label>
+              </th>
+              <th>
+                <a href="#" class="btn btn--success btn--medium">Velg periode</a>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NRK</td>
+              <td>45 avvik</td>
+              <td class="pull-right">
+                <a href="#" class="btn btn--success btn--small">Vis Avikk</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Radio Norge</td>
+              <td>35 avvik</td>
+              <td class="pull-right">
+                <a href="#" class="btn btn--success btn--small">Vis Avikk</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!--Content-header example-->
+      <section class="container container--hd">
+        <header class="content-header">
+          <div class="content-header__above">
+            <h2 class="content-header__title">Kringkaster <span class="badge badge--danger">NRK</span></h2>
+            <span class="content-header__action">
+              <a href="#" class="btn btn--info btn--medium">Last ned rapport</a>
+            </span>
+          </div>
+          <div class="content-header__below">
+            <span class="content-header__meta">
+              Første avvik: <date>02.11.15</date>
+            </span>
+            <span class="content-header__meta">
+              Siste avvik: <date>08.11.15</date>
+            </span>
+
+          </div>
+        </header>
+
+        <!--Table example-->
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="table__head--channel"></th>
+              <th class="table__head--date">Dato</th>
+              <th class="table__head--program">Program</th>
+              <th class="table__head--from">Fra</th>
+              <th class="table__head--to">Til</th>
+              <th class="table__head--deviation">Avvik</th>
+            </tr>
+          </thead>
+          <tbody class="broadcaster">
+            <tr><td><h3 class="broadcaster__title">P3</h3></td></tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>P3</td>
+              <td>28.11.2015</td>
+              <td>Tidenes Sommer</td>
+              <td>11:00</td>
+              <td>12:00</td>
+              <td>For mye musikk: <span>Over 100% Musikk</span></td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>28.11.2015</td>
+              <td>Tidenes Sommer</td>
+              <td>11:00</td>
+              <td>12:00</td>
+              <td>For mye musikk: <span>Over 100% Musikk</span></td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>28.11.2015</td>
+              <td>Tidenes Sommer</td>
+              <td>11:00</td>
+              <td>12:00</td>
+              <td>Multirapportert: <span>2 innslager</span></td>
+            </tr>
+            <tr class="table__row--expanded">
+              <td></td>
+              <td>Why did you do it?</td>
+              <td></td>
+              <td>11:05:32</td>
+              <td>11:45:03</td>
+              <td>Multirapportert 8 ganger</td>
+            </tr>
+            <tr class="table__row--expanded">
+              <td></td>
+              <td>Breezin'</td>
+              <td></td>
+              <td>11:05:32</td>
+              <td>11:45:03</td>
+              <td>Multirapportert 8 ganger</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
       <!--List example-->
       <section class="container container--hd">
-        <h2>Expandable list</h2>
+        <h2><!--Expandable list--></h2>
         <ul class="list list--expandable">
           <li class="list__item list__item--success">
             <div class="list__item__date">

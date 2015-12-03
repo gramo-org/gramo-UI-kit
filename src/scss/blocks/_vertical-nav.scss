@@ -35,6 +35,10 @@
 
     &__item {
       text-transform: none;
+
+      &--active a {
+        color: $gramo-turkis;
+      }
     }
   }
 }

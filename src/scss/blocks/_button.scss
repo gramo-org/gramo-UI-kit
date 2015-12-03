@@ -1,6 +1,6 @@
 .btn {
-    margin-bottom: 1.25rem;
     padding: 0.6rem 1.5rem;
+    font-weight: $font-400;
 
     &--primary {
       @include btn($gramo-turkis);
@@ -23,8 +23,13 @@
       font-size: 1.2rem;
     }
 
-    &--small {
+    &--medium {
       padding: 0.4rem 1rem;
       font-size: 0.9rem;
+    }
+
+    &--small {
+      padding: 0.25rem 0.75rem;
+      font-size: 0.8rem;
     }
 }

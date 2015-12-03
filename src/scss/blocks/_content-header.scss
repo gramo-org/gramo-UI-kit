@@ -1,0 +1,44 @@
+.content-header {
+  @extend .container;
+
+  & > * {
+    padding: 1rem 0.2rem;
+  }
+
+  &__above {
+    @extend .row;
+    border-bottom: 1px solid $light-gray;
+    align-items: flex-end;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: $font-700;
+    font-size: 1.4rem;
+    line-height: 0.5rem;
+    @extend .col-sm-4;
+    display: block;
+  }
+
+  &__below {
+    @extend .row;
+    align-items: center;
+  }
+
+  &__meta {
+    @extend .col-sm-2;
+    display: block;
+    font-weight: $font-700;
+    color: $gramo-gray;
+
+    date {
+      font-weight: $font-300;
+    }
+  }
+
+  &__action {
+    @extend .col-sm-8;
+    display: block;
+    text-align: right;
+  }
+}
