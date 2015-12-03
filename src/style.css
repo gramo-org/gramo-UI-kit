@@ -845,8 +845,8 @@ hr,
   height: 1px;
   background: #d1d0d4;
   border: 0;
-  margin-top: 1em;
-  margin-bottom: 1em; }
+  padding: 0;
+  margin: 0; }
 
 .site-wrapper {
   display: flex; }
@@ -1372,7 +1372,9 @@ input::-moz-focus-inner {
 .pagination {
   justify-content: center;
   list-style: none;
-  padding: 0 0.5rem; }
+  padding: 0 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0; }
   @media (min-width: 740px) {
     .pagination {
       justify-content: flex-end; } }
