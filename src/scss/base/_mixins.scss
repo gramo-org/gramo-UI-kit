@@ -71,10 +71,11 @@
 }
 
 @mixin btn($btn-color) {
-  border-color: darken($btn-color, 20%);
+  border-color: darken($btn-color, 10%);
   background-color: $btn-color;
   border-radius: 0;
-  border-width: 0;
+  border-width: 0 0 3px 0;
+  border-style: solid;
   display: inline-block;
   text-align: center;
   text-decoration: none;

@@ -1066,10 +1066,11 @@ input::-moz-focus-inner {
   width: 160px;
   border-radius: 3px;
   overflow: hidden;
-  background: #fff url("img/arrow-down.svg") no-repeat 90% 50%;
+  background: #fff url("img/arrow-down.svg") no-repeat 95% 50%;
   background-size: 12px;
   font-size: 1rem;
-  display: inline-block; }
+  display: inline-block;
+  color: #504f56; }
   .select select {
     font-size: 0.9rem;
     padding: 0.2rem;
@@ -1238,10 +1239,11 @@ input::-moz-focus-inner {
   padding: 0.6rem 1.5rem;
   font-weight: 400; }
   .btn--primary {
-    border-color: #3ea1bc;
+    border-color: #62b5cb;
     background-color: #88c7d8;
     border-radius: 0;
-    border-width: 0;
+    border-width: 0 0 3px 0;
+    border-style: solid;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -1250,10 +1252,11 @@ input::-moz-focus-inner {
       background-color: #71bcd0;
       transition: 0.5s ease; }
   .btn--info {
-    border-color: #004f74;
+    border-color: #0072a7;
     background-color: #0095da;
     border-radius: 0;
-    border-width: 0;
+    border-width: 0 0 3px 0;
+    border-style: solid;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -1262,10 +1265,11 @@ input::-moz-focus-inner {
       background-color: #0080bb;
       transition: 0.5s ease; }
   .btn--danger {
-    border-color: #d71b1a;
+    border-color: #e83e3c;
     background-color: #ed6b6a;
     border-radius: 0;
-    border-width: 0;
+    border-width: 0 0 3px 0;
+    border-style: solid;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -1274,10 +1278,11 @@ input::-moz-focus-inner {
       background-color: #ea504f;
       transition: 0.5s ease; }
   .btn--success {
-    border-color: #2d7c64;
+    border-color: #3ba183;
     background-color: #50bf9e;
     border-radius: 0;
-    border-width: 0;
+    border-width: 0 0 3px 0;
+    border-style: solid;
     display: inline-block;
     text-align: center;
     text-decoration: none;

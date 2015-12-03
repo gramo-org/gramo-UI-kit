@@ -100,10 +100,11 @@ input::-moz-focus-inner {
   width: 160px;
   border-radius: 3px;
   overflow: hidden;
-  background: #fff url("img/arrow-down.svg") no-repeat 90% 50%;
+  background: #fff url("img/arrow-down.svg") no-repeat 95% 50%;
   background-size: 12px;
   font-size: 1rem;
   display: inline-block;
+  color: $gramo-gray;
 
   select {
     font-size: 0.9rem;
