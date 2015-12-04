@@ -24,12 +24,16 @@
     }
 
     &--medium {
-      padding: 0.4rem 1rem;
-      font-size: 0.9rem;
+      @include respond-to(tablet) {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+      }
     }
 
     &--small {
-      padding: 0.25rem 0.75rem;
-      font-size: 0.8rem;
+      @include respond-to(tablet) {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.8rem;
+      }
     }
 }

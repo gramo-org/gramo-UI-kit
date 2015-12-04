@@ -1,9 +1,21 @@
 .site-wrapper {
   display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 main {
-  flex: 1;
+  flex: 1 0 100%;
+  transform: translateX(-12rem);
+  transition: .25s ease;
+  @include respond-to(desktop) {
+    transform: translateX(0);
+    flex: 1;
+  }
+  &.push {
+    transform: translateX(0);
+  }
 }
 
 .container {

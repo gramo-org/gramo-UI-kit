@@ -4,9 +4,12 @@
   white-space: nowrap;
 
   th, td {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    @include respond-to(desktop) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 
   thead {
@@ -14,7 +17,9 @@
     background: darken($base-background-color, 5%);
 
     th.date-picker {
-      width: 20%;
+      width: 100%;
+      text-align: center;
+      @include respond-to(tablet) { width: 20%; }
 
       input {
         margin-left: 1rem;
@@ -58,6 +63,7 @@
 
     tr > td:first-child {
       border-left: 1px solid $table-border-color;
+      font-weight: $font-700;
     }
 
     tr > td:last-child {
@@ -77,15 +83,17 @@
       content: none;
     }
 
-    td {
+     tr > td {
       padding: 0.3rem 1rem;
     }
 
     &__title {
       font-weight: $font-700;
-      color: $gramo-gray;
-      margin-bottom: 0;
-      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      text-align: center;
+      @include respond-to(tablet) { text-align: left; font-size: 1.2rem; margin-bottom: 0; color: $gramo-gray; }
     }
   }
 
@@ -106,15 +114,27 @@
 
   /*** Make table responsive - not mobile first in this case! ***/
 
-.table--detail {
 
-  @media
-  only screen and (max-width: 760px),
-    (min-device-width: 768px) and (max-device-width: 1024px)  {
-      /* Force table to not be like tables anymore */
-    	table, thead, tbody, th, td, tr {
-    		display: block;
-    	}
+
+@media
+only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    .table {
+        /* Force table to not be like tables anymore */
+      	table, thead, tbody, th, td, tr {
+      		display: block;
+      	}
+
+        .broadcaster {
+          tr > td {
+            background: $gramo-gray!important;
+            border-bottom: 0;
+          }
+        }
+      }
+
+      .table--detail {
 
     	/* Hide table headers (but not display: none;, for accessibility) */
     	thead tr {
@@ -135,13 +155,13 @@
       tr.table__row--expanded td {
         background: #fff;
         border: 0;
+      }
 
-        &:first-child {
-          border-left: 0!important;
-        }
-        &:last-child {
-          border-right: 0!important;
-        }
+      tr td:first-child {
+        border-left: 0!important;
+      }
+      tr td:last-child {
+        border-right: 0!important;
       }
 
     	td {
@@ -171,7 +191,9 @@
     	/*
     	Label the data
     	*/
-      td:nth-of-type(1):before { content: ""; }
+      .broadcaster td:nth-of-type(1):before { content: none; }
+
+      td:nth-of-type(1):before { content: "Kanal"; }
     	td:nth-of-type(2):before { content: "Dato"; }
     	td:nth-of-type(3):before { content: "Program"; }
     	td:nth-of-type(4):before { content: "Fra"; }
@@ -179,7 +201,7 @@
     	td:nth-of-type(6):before { content: "Avvik"; }
 
       tr.table__row--expanded td:nth-of-type(1):before { content: ""; }
-      tr.table__row--expanded td:nth-of-type(2):before { content: ""; }
+      tr.table__row--expanded td:nth-of-type(2):before { content: "Tittel"; }
       tr.table__row--expanded td:nth-of-type(3):before { content: ""; }
   }
 }

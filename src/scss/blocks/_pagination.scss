@@ -4,8 +4,10 @@
   @include respond-to(tablet) { justify-content: flex-end; }
   list-style: none;
   padding: 0 0.5rem;
-  margin-top: 0;
-  margin-bottom: 0;
+  @include respond-to(tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .pagination .pagination__item {
