@@ -90,10 +90,10 @@
     &__title {
       font-weight: $font-700;
       color: #fff;
-      margin-bottom: 1rem;
+      margin: 0.5rem 0;
       font-size: 2.2rem;
       text-align: center;
-      @include respond-to(tablet) { text-align: left; font-size: 1.2rem; margin-bottom: 0; color: $gramo-gray; }
+      @include respond-to(tablet) { text-align: left; font-size: 1.2rem; margin: 1rem 0 0 0; color: $gramo-gray; }
     }
   }
 
