@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(document).ready(function(){$(".toggle-sidebar").click(function(a){a.preventDefault(),$(".sidebar").addClass("sidebar--isOpen"),$("main").addClass("push")})});

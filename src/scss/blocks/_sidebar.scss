@@ -1,6 +1,14 @@
 .sidebar {
   flex: 0 0 12rem;
+  transform: translateX(-12rem);
+  transition: .25s ease;
+  @include respond-to(desktop) {
+    transform: translateX(0);
+  }
 
+  &--isOpen {
+    transform: translateX(0);
+  }
 
   &__content {
     position: fixed;

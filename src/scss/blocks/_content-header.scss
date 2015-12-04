@@ -3,6 +3,8 @@
 
   & > * {
     padding: 1rem 0.2rem;
+    justify-content: space-around;
+    @include respond-to(tablet) { justify-content: flex-start; }
   }
 
   &__above {
@@ -42,8 +44,10 @@
   }
 
   &__action {
+    @extend .col-xs-12;
     @extend .col-sm-8;
     display: block;
-    text-align: right;
+    text-align: center;
+    @include respond-to(tablet) { text-align: right; }
   }
 }

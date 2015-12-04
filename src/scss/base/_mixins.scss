@@ -76,7 +76,8 @@
   border-radius: 0;
   border-width: 0 0 3px 0;
   border-style: solid;
-  display: inline-block;
+  display: block;
+  @include respond-to(tablet) { display: inline-block; }
   text-align: center;
   text-decoration: none;
 

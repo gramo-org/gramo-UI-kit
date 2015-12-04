@@ -4,16 +4,24 @@
   margin: 0;
   font-size: 0.9rem;
   @extend .row;
-  align-items: flex-start;
+  align-items: center;
 
   &__item {
     color: $light-gray;
+    margin-bottom: 0;
+
+    &:not(.toggle-sidebar):not(.breadcrumbs__item--home) {
+      display: none;
+      @include respond-to(tablet) { display: inline-block; }
+    }
 
     &::before {
-      content: "\e904";
-      font-family: 'icomoon';
-      margin: 0 0.7rem;
-      font-size: 0.6rem;
+      @include respond-to(tablet) {
+        content: "\e904";
+        font-family: 'icomoon';
+        margin: 0 0.7rem;
+        font-size: 0.6rem;
+      }
     }
 
     &--home {
@@ -24,8 +32,9 @@
       }
 
       &::before {
-        display: none;
+        content: none;
       }
+
     }
 
     a {
