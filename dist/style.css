@@ -1489,7 +1489,7 @@ input::-moz-focus-inner {
   transition: .25s ease; }
   @media (min-width: 980px) {
     .sidebar {
-      transform: translateX(0); } }
+      transform: none; } }
   .sidebar--isOpen {
     transform: translateX(0); }
   .sidebar__content {
