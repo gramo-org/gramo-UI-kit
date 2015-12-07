@@ -37,3 +37,24 @@
       }
     }
 }
+
+//Button group
+.btn-group {
+  text-align: right;
+  .btn--info {
+    border-width: 0;
+  }
+
+  .btn {
+    padding: 0.15rem 1rem;
+    border-radius: 2px 0 0 2px;
+    & > i {
+      font-size: 0.5rem;
+      margin: 0 .25rem;
+    }
+    &:last-child {
+      margin-left: -3px;
+      border-radius: 0 2px 2px 0;
+    }
+  }
+}
