@@ -1,0 +1,59 @@
+.btn {
+  margin-bottom: 1.25rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0;
+  border-width: 0 0 3px 0;
+  border-style: solid;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn:hover {
+   transition: 0.5s ease;
+}
+
+/* TODO: replace min-width value with custom property (var) */
+@media (min-width: 740px) {
+  .btn {
+    display: inline-block;
+  }
+}
+
+.btn--primary {
+  border-color: color(var(--gramo-turkis) shade(10%));
+  background-color: var(--gramo-turkis);
+  color: #FFF;
+}
+
+.btn--primary::hover {
+   background-color: color(var(--gramo-turkis) shade(6%));
+}
+
+.btn--info {
+  border-color: color(var(--gramo-blue) shade(10%));
+  background-color: var(--gramo-blue);
+}
+
+.btn--info:hover {
+   background-color: color(var(--gramo-blue) shade(6%));
+}
+
+.btn--success {
+  border-color: color(var(--gramo-green) shade(10%));
+  background-color: var(--gramo-green);
+}
+
+.btn--success:hover {
+   background-color: color(var(--gramo-green) shade(6%));
+}
+
+.btn--danger {
+  border-color: color(var(--gramo-red) shade(10%));
+  background-color: var(--gramo-red);
+}
+
+.btn--danger:hover {
+   background-color: color(var(--gramo-red) shade(6%));
+}
