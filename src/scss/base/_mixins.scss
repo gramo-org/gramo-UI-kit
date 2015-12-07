@@ -48,6 +48,16 @@
   opacity: $opacity;
 }
 
+//Placeholders
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+  &::-webkit-datetime-edit { @content; }
+}
+
 
 // Breakpoints
 // Example Usage: @include respond-to(tablet) { };

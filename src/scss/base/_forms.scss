@@ -74,6 +74,8 @@ optgroup { font-weight: $font-700; }
 button {
   overflow: visible;
   text-transform: none;
+  width: 100%;
+  @include respond-to(tablet) { width: auto; }
 }
 button, html input[type="button"],
 input[type="reset"],
@@ -89,10 +91,9 @@ input::-moz-focus-inner {
 }
 
 // Placeholder Colour
-::-webkit-input-placeholder { color: $base-placeholder-color; }
-:-moz-placeholder { color: $base-placeholder-color; }
-::-moz-placeholder { color: $base-placeholder-color; }
-:-ms-input-placeholder { color: $base-placeholder-color; }
+@include input-placeholder {
+  color: $base-placeholder-color;
+}
 
 // Custom Select
 .select {
@@ -196,3 +197,24 @@ input::-moz-focus-inner {
     margin-top: -0.75rem;
   }
 }
+
+//Date input
+input[type="date"] {
+  font-weight: $font-400;
+  @include input-placeholder {
+    color: $gramo-blue;
+  }
+}
+
+.form__label--date {
+  br {
+    @include respond-to(tablet) { display: none; }
+  }
+}
+
+ .form__label--date .form__input {
+   background: #fff url(img/calendar.svg) center right 10px no-repeat;
+   border: 1px solid $light-gray;
+   @include respond-to(tablet) { margin-left: 1rem; }
+
+ }

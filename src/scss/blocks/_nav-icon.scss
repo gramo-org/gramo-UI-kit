@@ -37,6 +37,10 @@
   top: 12px;
 }
 
+.toggle-sidebar.open {
+  transform: translateX(-2rem);
+}
+
 .toggle-sidebar.open span:nth-child(1) {
   top: 6px;
   transform: rotate(135deg);

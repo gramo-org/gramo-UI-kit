@@ -36,7 +36,11 @@
     &__item {
       text-transform: none;
 
-      &--active a {
+      a:hover {
+        background: darken($sidebar-menu-bg, 5%);;
+      }
+
+      &--active a, a:hover {
         color: $gramo-turkis;
       }
     }

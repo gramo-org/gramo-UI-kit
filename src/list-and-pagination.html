@@ -91,41 +91,43 @@
         </header>
 
         <!--Table example-->
-        <table class="table table--overview">
-          <thead>
-            <tr>
-              <th class="date-picker">
-                <label>Fra:
-                  <input type="date">
-                </label>
-              </th>
-              <th class="date-picker">
-                <label>Til:
-                  <input type="date">
-                </label>
-              </th>
-              <th>
-                <a href="#" class="btn btn--success btn--medium">Velg periode</a>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>NRK</td>
-              <td>45 avvik</td>
-              <td class="pull-right">
-                <a href="#" class="btn btn--success btn--small">Vis Avikk</a>
-              </td>
-            </tr>
-            <tr>
-              <td>Radio Norge</td>
-              <td>35 avvik</td>
-              <td class="pull-right">
-                <a href="#" class="btn btn--success btn--small">Vis Avikk</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <form class="form--horizontal">
+          <table class="table table--overview">
+            <thead>
+              <tr>
+                <th class="date-picker">
+                  <label class="form__label--date">Fra:<br>
+                    <input type="date" placeholder="mm/dd/yyyy" class="form__input">
+                  </label>
+                </th>
+                <th class="date-picker">
+                  <label class="form__label--date">Til:<br>
+                    <input type="date" placeholder="mm/dd/yyyy" class="form__input">
+                  </label>
+                </th>
+                <th>
+                  <button class="btn btn--success btn--medium">Velg periode</button>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>NRK</td>
+                <td>45 avvik</td>
+                <td class="pull-right">
+                  <a href="#" class="btn btn--success btn--small">Vis Avikk</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Radio Norge</td>
+                <td>35 avvik</td>
+                <td class="pull-right">
+                  <a href="#" class="btn btn--success btn--small">Vis Avikk</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
       </section>
 
       <!--Content-header example-->
