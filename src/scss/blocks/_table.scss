@@ -13,8 +13,8 @@
   }
 
   thead {
-    box-shadow: 0 0 1px rgba(black, 0.3);
-    background: darken($base-background-color, 5%);
+    border: 1px solid darken($base-background-color, 8%);
+    background: darken($base-background-color, 3%);
 
     th.date-picker {
       text-align: center;
@@ -25,7 +25,7 @@
   }
 
   &__head--channel {
-    width: 5%;
+    width: 7%;
   }
 
   &__head--date {
@@ -33,12 +33,26 @@
   }
 
   &__head--program {
+    width: 12%;
+  }
+
+  &__head--deviation {
     width: 15%;
   }
 
   &__head--from,
   &__head--to {
-    width: 10%;
+    width: 6%;
+  }
+
+  &__head--id {
+    width: 17%;
+  }
+
+  //remove white space property on Avvik
+  tr > td:nth-child(4) > span {
+    white-space: normal;
+    color: $mid-gray;
   }
 
 

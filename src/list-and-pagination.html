@@ -61,6 +61,7 @@
               <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#"><i class="icon--home"></i></a></li>
               <li class="breadcrumbs__item"><a href="#">Innlesning</a></li>
               <li class="breadcrumbs__item"><a href="#">Innleste filer</a></li>
+              <li class="breadcrumbs__item"><a href="#">NRK rapport</a></li>
             </ul>
           </nav>
         </section>
@@ -146,6 +147,9 @@
             <span class="content-header__meta">
               Siste avvik: <date>08.11.15</date>
             </span>
+            <div class="content-header__action">
+              <a href="#" class="btn btn--info btn--medium">Last ned rapport</a>
+            </div>
           </div>
         </header>
 
@@ -153,12 +157,15 @@
         <table class="table table--detail">
           <thead>
             <tr>
-              <th class="table__head--channel"></th>
+              <th class="table__head--channel">Kanal</th>
               <th class="table__head--date">Dato</th>
               <th class="table__head--program">Program</th>
+              <th class="table__head--deviation">Avvik</th>
               <th class="table__head--from">Fra</th>
               <th class="table__head--to">Til</th>
-              <th class="table__head--deviation">Avvik</th>
+              <th class="table__head--id">InnslagsID</th>
+              <th class="table__head--artist">HovedArtist</th>
+              <th class="table__head--recording">RecordingName</th>
             </tr>
           </thead>
           <tbody class="broadcaster">
@@ -169,27 +176,36 @@
               <td>P3</td>
               <td>28.11.2015</td>
               <td>Tidenes Sommer</td>
+              <td>For mye musikk: <span>Over 100% Musikk</span></td>
               <td>11:00</td>
               <td>12:00</td>
-              <td>For mye musikk: <span>Over 100% Musikk</span></td>
+              <td>NONRO310402CS0003</td>
+              <td>David Bowie</td>
+              <td>Blackstar</td>
             </tr>
             <tr>
               <td>P3</td>
               <td>28.11.2015</td>
               <td>Tidenes Sommer</td>
+              <td>For mye musikk: <span>Over 100% Musikk</span></td>
               <td>11:00</td>
               <td>12:00</td>
-              <td>For mye musikk: <span>Over 100% Musikk</span></td>
+              <td>NONRO310402CS0003</td>
+              <td>David Bowie</td>
+              <td>Vi Lever</td>
             </tr>
             <tr>
               <td>P3</td>
               <td>28.11.2015</td>
               <td>Tidenes Sommer</td>
-              <td>11:00</td>
-              <td>12:00</td>
               <td>Multirapportert: <span>2 innslager</span></td>
+              <td>11:00</td>
+              <td>12:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
-            <tr class="table__row--expanded">
+            <!-- <tr class="table__row--expanded">
               <td></td>
               <td>Why did you do it?</td>
               <td></td>
@@ -204,7 +220,7 @@
               <td>11:05:32</td>
               <td>11:45:03</td>
               <td>Multirapportert 8 ganger</td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
       </section>

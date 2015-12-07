@@ -969,7 +969,7 @@ table {
   table tfoot td,
   table tfoot th {
     color: #585858;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-bottom: 1px solid #ebebec; }
 
 fieldset,
@@ -1660,8 +1660,8 @@ input[type="date"] {
         overflow: hidden;
         text-overflow: ellipsis; } }
   .table thead {
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-    background: #ececec; }
+    border: 1px solid #e5e5e5;
+    background: #f1f1f1; }
     .table thead th.date-picker {
       text-align: center; }
       @media (min-width: 740px) {
@@ -1674,13 +1674,20 @@ input[type="date"] {
         .table thead th.date-picker {
           width: 20%; } }
   .table__head--channel {
-    width: 5%; }
+    width: 7%; }
   .table__head--date {
     width: 10%; }
   .table__head--program {
+    width: 12%; }
+  .table__head--deviation {
     width: 15%; }
   .table__head--from, .table__head--to {
-    width: 10%; }
+    width: 6%; }
+  .table__head--id {
+    width: 17%; }
+  .table tr > td:nth-child(4) > span {
+    white-space: normal;
+    color: #9c9ba3; }
   .table tbody:not(.broadcaster)::before {
     content: '';
     display: block;
