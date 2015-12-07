@@ -27,7 +27,7 @@
   color: #FFF;
 }
 
-.btn--primary::hover {
+.btn--primary:hover {
    background-color: color(var(--gramo-turkis) shade(6%));
 }
 
