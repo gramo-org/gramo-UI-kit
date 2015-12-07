@@ -23,7 +23,7 @@
       margin-bottom: 0;
     }
     line-height: 0.5rem;
-    @extend .col-sm-6;
+    @extend .col-sm;
     display: block;
   }
 
@@ -45,7 +45,7 @@
 
   &__action {
     @extend .col-xs-12;
-    @extend .col-sm-6;
+    @extend .col-sm-8;
     display: block;
     text-align: center;
     @include respond-to(tablet) { text-align: right; }

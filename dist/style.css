@@ -422,7 +422,7 @@ th {
   margin-left: -0.5rem;
   margin-right: -0.5rem; }
 
-.col-xs, .box, .col-sm, .list--expandable .list__item__action, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .list--expandable .list__item__date, .col-xs-5, .col-xs-6, .list--expandable .list__item__results, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--message, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .list--expandable .list__item--isExpanded .list--sub-list, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--downloads, .content-header__action, .col-sm-1, .col-sm-2, .content-header__meta, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .content-header__title, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+.col-xs, .box, .col-sm, .list--expandable .list__item__action, .content-header__title, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .list--expandable .list__item__date, .col-xs-5, .col-xs-6, .list--expandable .list__item__results, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--message, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .list--expandable .list__item--isExpanded .list--sub-list, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--downloads, .content-header__action, .col-sm-1, .col-sm-2, .content-header__meta, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -431,7 +431,7 @@ th {
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
 
-.col-xs, .box, .col-sm, .list--expandable .list__item__action, .col-md, .col-lg {
+.col-xs, .box, .col-sm, .list--expandable .list__item__action, .content-header__title, .col-md, .col-lg {
   flex-grow: 1;
   flex-basis: 0;
   max-width: 100%; }
@@ -545,13 +545,13 @@ th {
   .col-sm-5 {
     flex-basis: 41.66667%;
     max-width: 41.66667%; }
-  .col-sm-6, .box, .content-header__title, .content-header__action {
+  .col-sm-6, .box {
     flex-basis: 50%;
     max-width: 50%; }
   .col-sm-7 {
     flex-basis: 58.33333%;
     max-width: 58.33333%; }
-  .col-sm-8 {
+  .col-sm-8, .content-header__action {
     flex-basis: 66.66667%;
     max-width: 66.66667%; }
   .col-sm-9 {
