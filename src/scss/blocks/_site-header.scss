@@ -1,6 +1,11 @@
 .site-header {
   background: $gramo-ui-bg;
 
+  nav {
+    @extend .row;
+    align-items: center;
+  }
+
   &__title {
     display: inline-block;
     margin-bottom: 0;

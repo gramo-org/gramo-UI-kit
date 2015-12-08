@@ -414,7 +414,7 @@ th {
 /**
  * Row wrapper class, flex box parent.
  */
-.row, .form, .list--expandable .list__item, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item, .pagination, .breadcrumbs, .content-header__above, .content-header__below {
+.row, .form, .site-header nav, .list--expandable .list__item, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item, .pagination, .content-header__above, .content-header__below {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -422,7 +422,7 @@ th {
   margin-left: -0.5rem;
   margin-right: -0.5rem; }
 
-.col-xs, .box, .col-sm, .list--expandable .list__item__action, .content-header__title, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .list--expandable .list__item__date, .col-xs-5, .col-xs-6, .list--expandable .list__item__results, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--message, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .list--expandable .list__item--isExpanded .list--sub-list, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--downloads, .content-header__action, .col-sm-1, .col-sm-2, .content-header__meta, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+.col-xs, .box, .col-sm, .list--expandable .list__item__action, .breadcrumbs, .content-header__title, .col-md, .breadcrumbs__item, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .list--expandable .list__item__date, .col-xs-5, .col-xs-6, .list--expandable .list__item__results, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--message, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .list--expandable .list__item--isExpanded .list--sub-list, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--downloads, .content-header__action, .col-sm-1, .toggle-sidebar, .col-sm-2, .content-header__meta, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -431,7 +431,7 @@ th {
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
 
-.col-xs, .box, .col-sm, .list--expandable .list__item__action, .content-header__title, .col-md, .col-lg {
+.col-xs, .box, .col-sm, .list--expandable .list__item__action, .breadcrumbs, .content-header__title, .col-md, .breadcrumbs__item, .col-lg {
   flex-grow: 1;
   flex-basis: 0;
   max-width: 100%; }
@@ -530,7 +530,7 @@ th {
   margin-left: 91.66667%; }
 
 @media only screen and (min-width: 768px) {
-  .col-sm-1 {
+  .col-sm-1, .toggle-sidebar {
     flex-basis: 8.33333%;
     max-width: 8.33333%; }
   .col-sm-2, .content-header__meta {
@@ -887,15 +887,15 @@ main {
       margin-bottom: 1rem;
       text-align: center; }
 
-.container.grid-test > .row, .grid-test.content-header > .row, .container.grid-test > .form, .grid-test.content-header > .form, .list--expandable .container.grid-test > .list__item, .list--expandable .grid-test.content-header > .list__item, .list--expandable .list__item--isExpanded .list--sub-list .container.grid-test > .sub-list__item, .list--expandable .list__item--isExpanded .list--sub-list .grid-test.content-header > .sub-list__item, .container.grid-test > .pagination, .grid-test.content-header > .pagination, .container.grid-test > .breadcrumbs, .grid-test.content-header > .breadcrumbs, .container.grid-test > .content-header__above, .grid-test.content-header > .content-header__above, .container.grid-test > .content-header__below, .grid-test.content-header > .content-header__below {
+.container.grid-test > .row, .grid-test.content-header > .row, .container.grid-test > .form, .grid-test.content-header > .form, .site-header .container.grid-test > nav, .site-header .grid-test.content-header > nav, .list--expandable .container.grid-test > .list__item, .list--expandable .grid-test.content-header > .list__item, .list--expandable .list__item--isExpanded .list--sub-list .container.grid-test > .sub-list__item, .list--expandable .list__item--isExpanded .list--sub-list .grid-test.content-header > .sub-list__item, .container.grid-test > .pagination, .grid-test.content-header > .pagination, .container.grid-test > .content-header__above, .grid-test.content-header > .content-header__above, .container.grid-test > .content-header__below, .grid-test.content-header > .content-header__below {
   border: 1px solid #fff;
   border-width: 0 0 1px 0; }
 
-.container.grid-test > .row > *, .grid-test.content-header > .row > *, .container.grid-test > .form > *, .grid-test.content-header > .form > *, .list--expandable .container.grid-test > .list__item > *, .list--expandable .grid-test.content-header > .list__item > *, .list--expandable .list__item--isExpanded .list--sub-list .container.grid-test > .sub-list__item > *, .list--expandable .list__item--isExpanded .list--sub-list .grid-test.content-header > .sub-list__item > *, .container.grid-test > .pagination > *, .grid-test.content-header > .pagination > *, .container.grid-test > .breadcrumbs > *, .grid-test.content-header > .breadcrumbs > *, .container.grid-test > .content-header__above > *, .grid-test.content-header > .content-header__above > *, .container.grid-test > .content-header__below > *, .grid-test.content-header > .content-header__below > * {
+.container.grid-test > .row > *, .grid-test.content-header > .row > *, .container.grid-test > .form > *, .grid-test.content-header > .form > *, .site-header .container.grid-test > nav > *, .site-header .grid-test.content-header > nav > *, .list--expandable .container.grid-test > .list__item > *, .list--expandable .grid-test.content-header > .list__item > *, .list--expandable .list__item--isExpanded .list--sub-list .container.grid-test > .sub-list__item > *, .list--expandable .list__item--isExpanded .list--sub-list .grid-test.content-header > .sub-list__item > *, .container.grid-test > .pagination > *, .grid-test.content-header > .pagination > *, .container.grid-test > .content-header__above > *, .grid-test.content-header > .content-header__above > *, .container.grid-test > .content-header__below > *, .grid-test.content-header > .content-header__below > * {
   background: #d5ebf1;
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  .container.grid-test > .row > *:nth-child(odd), .grid-test.content-header > .row > *:nth-child(odd), .container.grid-test > .form > *:nth-child(odd), .grid-test.content-header > .form > *:nth-child(odd), .list--expandable .container.grid-test > .list__item > *:nth-child(odd), .list--expandable .grid-test.content-header > .list__item > *:nth-child(odd), .list--expandable .list__item--isExpanded .list--sub-list .container.grid-test > .sub-list__item > *:nth-child(odd), .list--expandable .list__item--isExpanded .list--sub-list .grid-test.content-header > .sub-list__item > *:nth-child(odd), .container.grid-test > .pagination > *:nth-child(odd), .grid-test.content-header > .pagination > *:nth-child(odd), .container.grid-test > .breadcrumbs > *:nth-child(odd), .grid-test.content-header > .breadcrumbs > *:nth-child(odd), .container.grid-test > .content-header__above > *:nth-child(odd), .grid-test.content-header > .content-header__above > *:nth-child(odd), .container.grid-test > .content-header__below > *:nth-child(odd), .grid-test.content-header > .content-header__below > *:nth-child(odd) {
+  .container.grid-test > .row > *:nth-child(odd), .grid-test.content-header > .row > *:nth-child(odd), .container.grid-test > .form > *:nth-child(odd), .grid-test.content-header > .form > *:nth-child(odd), .site-header .container.grid-test > nav > *:nth-child(odd), .site-header .grid-test.content-header > nav > *:nth-child(odd), .list--expandable .container.grid-test > .list__item > *:nth-child(odd), .list--expandable .grid-test.content-header > .list__item > *:nth-child(odd), .list--expandable .list__item--isExpanded .list--sub-list .container.grid-test > .sub-list__item > *:nth-child(odd), .list--expandable .list__item--isExpanded .list--sub-list .grid-test.content-header > .sub-list__item > *:nth-child(odd), .container.grid-test > .pagination > *:nth-child(odd), .grid-test.content-header > .pagination > *:nth-child(odd), .container.grid-test > .content-header__above > *:nth-child(odd), .grid-test.content-header > .content-header__above > *:nth-child(odd), .container.grid-test > .content-header__below > *:nth-child(odd), .grid-test.content-header > .content-header__below > *:nth-child(odd) {
     background: #e8f4f7; }
 
 ul, ol {
@@ -1272,6 +1272,8 @@ input[type="date"] {
 
 .site-header {
   background: #434D5A; }
+  .site-header nav {
+    align-items: center; }
   .site-header__title {
     display: inline-block;
     margin-bottom: 0;
@@ -1533,10 +1535,12 @@ input[type="date"] {
   padding: 0.7rem 0 0.5rem 0;
   margin: 0;
   font-size: 0.9rem;
-  align-items: center; }
+  display: block; }
   .breadcrumbs__item {
     color: #d1d0d4;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    display: inline-block;
+    padding-right: 0; }
     .breadcrumbs__item:not(.toggle-sidebar):not(.breadcrumbs__item--home) {
       display: none; }
       @media (min-width: 740px) {
@@ -1546,13 +1550,14 @@ input[type="date"] {
       .breadcrumbs__item::before {
         content: "\e904";
         font-family: 'icomoon';
-        margin: 0 0.7rem;
+        margin: 0 0.5rem 0 -0.2rem;
         font-size: 0.6rem; } }
-    .breadcrumbs__item--home i {
-      font-size: 1.1rem;
-      align-self: flex-end; }
-    .breadcrumbs__item--home::before {
-      content: none; }
+    .breadcrumbs__item--home {
+      vertical-align: bottom; }
+      .breadcrumbs__item--home i {
+        font-size: 1.1rem; }
+      .breadcrumbs__item--home::before {
+        content: none; }
     .breadcrumbs__item a {
       color: #d1d0d4;
       text-decoration: none;
@@ -1780,18 +1785,19 @@ input[type="date"] {
       border-right: 0 !important; } }
 
 .toggle-sidebar {
-  height: 1rem;
-  width: 1rem;
-  position: relative;
+  display: inline-block;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
-  cursor: pointer;
-  margin-right: 1rem; }
+  cursor: pointer; }
   @media (min-width: 980px) {
     .toggle-sidebar {
       display: none; } }
-  .toggle-sidebar::before {
-    content: none; }
+  .toggle-sidebar a {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    position: relative;
+    vertical-align: middle; }
 
 .toggle-sidebar span {
   display: block;

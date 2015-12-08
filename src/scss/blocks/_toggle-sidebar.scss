@@ -1,15 +1,18 @@
 .toggle-sidebar {
-  height: 1rem;
-  width: 1rem;
-  position: relative;
+  @extend .col-sm-1;
+  display: inline-block;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
-  margin-right: 1rem;
+
   @include respond-to(desktop) { display: none; }
 
-  &::before {
-    content: none;
+  a {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    position: relative;
+    vertical-align: middle;
   }
 }
 
