@@ -12,15 +12,18 @@ var gulp = require('gulp'),
 
 // Task to compile SCSS
 gulp.task('postcss', function() {
-  var autoprefixer = require('autoprefixer');
-  var importCss = require('gulp-import-css');
-  var customProps = require('postcss-custom-properties');
-  var comments = require('postcss-discard-comments');
-  var color = require('postcss-color-function');
+  var autoprefixer = require('autoprefixer'),
+    pImport = require('postcss-import'),
+    importCss = require('gulp-import-css'),
+    customProps = require('postcss-custom-properties'),
+    comments = require('postcss-discard-comments'),
+    color = require('postcss-color-function'),
+    nested = require('postcss-nested');
 
   return gulp.src('./src/css/style.css')
-    .pipe(importCss())
     .pipe(postcss([
+      pImport(),
+      nested(),
       comments({discardAll: true}),
       customProps(),
       color(),

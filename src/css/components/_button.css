@@ -8,52 +8,50 @@
   text-align: center;
   text-decoration: none;
   color: #000;
-}
 
-.btn:hover {
-   transition: 0.5s ease;
-}
-
-/* TODO: replace min-width value with custom property (var) */
-@media (min-width: 740px) {
-  .btn {
+  /* TODO: replace min-width value with custom property (var) */
+  @media (min-width: 740px) {
     display: inline-block;
   }
-}
 
-.btn--primary {
-  border-color: color(var(--gramo-turkis) shade(10%));
-  background-color: var(--gramo-turkis);
-  color: #FFF;
-}
+  &:hover {
+     transition: 0.5s ease;
+  }
 
-.btn--primary:hover {
-   background-color: color(var(--gramo-turkis) shade(6%));
-}
+  &--primary {
+    border-color: color(var(--gramo-turkis) shade(10%));
+    background-color: var(--gramo-turkis);
+    color: #FFF;
+  }
 
-.btn--info {
-  border-color: color(var(--gramo-blue) shade(10%));
-  background-color: var(--gramo-blue);
-}
+  &--primary:hover {
+     background-color: color(var(--gramo-turkis) shade(6%));
+  }
 
-.btn--info:hover {
-   background-color: color(var(--gramo-blue) shade(6%));
-}
+  &--info {
+    border-color: color(var(--gramo-blue) shade(10%));
+    background-color: var(--gramo-blue);
+  }
 
-.btn--success {
-  border-color: color(var(--gramo-green) shade(10%));
-  background-color: var(--gramo-green);
-}
+  &--info:hover {
+     background-color: color(var(--gramo-blue) shade(6%));
+  }
 
-.btn--success:hover {
-   background-color: color(var(--gramo-green) shade(6%));
-}
+  &--success {
+    border-color: color(var(--gramo-green) shade(10%));
+    background-color: var(--gramo-green);
+  }
 
-.btn--danger {
-  border-color: color(var(--gramo-red) shade(10%));
-  background-color: var(--gramo-red);
-}
+  &--success:hover {
+     background-color: color(var(--gramo-green) shade(6%));
+  }
 
-.btn--danger:hover {
-   background-color: color(var(--gramo-red) shade(6%));
+  &--danger {
+    border-color: color(var(--gramo-red) shade(10%));
+    background-color: var(--gramo-red);
+  }
+
+  &--danger:hover {
+     background-color: color(var(--gramo-red) shade(6%));
+  }
 }

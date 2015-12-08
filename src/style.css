@@ -9,50 +9,40 @@
   text-decoration:none;
   color:#000;
 }
-
-.btn:hover{
-  transition:0.5s ease;
-}
-
 @media (min-width: 740px){
   .btn{
     display:inline-block;
   }
 }
-
+.btn:hover{
+  transition:0.5s ease;
+}
 .btn--primary{
   border-color:rgb(122, 179, 194);
   background-color:#88c7d8;
   color:#FFF;
 }
-
-.btn--primary::hover{
+.btn--primary:hover{
   background-color:rgb(128, 187, 203);
 }
-
 .btn--info{
   border-color:rgb(0, 134, 196);
   background-color:#0095da;
 }
-
 .btn--info:hover{
   background-color:rgb(0, 140, 205);
 }
-
 .btn--success{
   border-color:rgb(72, 172, 142);
   background-color:#50bf9e;
 }
-
 .btn--success:hover{
   background-color:rgb(75, 180, 149);
 }
-
 .btn--danger{
   border-color:rgb(213, 96, 95);
   background-color:#ed6b6a;
 }
-
 .btn--danger:hover{
   background-color:rgb(223, 101, 100);
 }
