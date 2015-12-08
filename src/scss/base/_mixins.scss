@@ -93,7 +93,7 @@
 
   @function set-btn-text-color($btn-color) {
     @if (lightness($btn-color) > 68) {
-      @return #000000; // Lighter backgorund, return dark color
+      @return #000000; // Lighter background, return dark color
     } @else {
       @return #ffffff; // Darker background, return light color
     }

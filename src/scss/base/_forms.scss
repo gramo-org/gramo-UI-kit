@@ -112,7 +112,7 @@ input::-moz-focus-inner {
   select {
     font-size: 1rem;
     padding: 0.5rem;
-    @include respond-to(tablet) { padding: 0.2rem; font-size: 0.9rem; }
+    @include respond-to(tablet) { padding: 0.2rem 0.3rem; font-size: 0.9rem; }
     width: 110%;
     border: none;
     box-shadow: none;

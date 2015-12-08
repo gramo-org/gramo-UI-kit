@@ -970,7 +970,29 @@ table {
   table tfoot th {
     color: #585858;
     padding: 0.5rem 1rem;
-    border-bottom: 1px solid #ebebec; }
+    border-bottom: 1px solid #e3e3e5; }
+    @media (min-width: 740px) {
+      table thead td,
+      table thead th,
+      table tbody td,
+      table tbody th,
+      table tfoot td,
+      table tfoot th {
+        padding: 0.5rem; } }
+  table thead th:first-child,
+  table thead td:first-child,
+  table tbody th:first-child,
+  table tbody td:first-child,
+  table tfoot th:first-child,
+  table tfoot td:first-child {
+    padding-left: 1rem; }
+  table thead th:last-child,
+  table thead td:last-child,
+  table tbody th:last-child,
+  table tbody td:last-child,
+  table tfoot th:last-child,
+  table tfoot td:last-child {
+    padding-right: 1rem; }
 
 fieldset,
 legend {
@@ -1108,7 +1130,7 @@ input::-moz-focus-inner {
     -webkit-appearance: none; }
     @media (min-width: 740px) {
       .select select {
-        padding: 0.2rem;
+        padding: 0.2rem 0.3rem;
         font-size: 0.9rem; } }
     .select select:focus {
       outline: none; }
@@ -1374,14 +1396,19 @@ input[type="date"] {
   .btn-group .btn--info {
     border-width: 0; }
   .btn-group .btn {
-    padding: 0.15rem 1rem;
     border-radius: 2px 0 0 2px; }
+    @media (min-width: 740px) {
+      .btn-group .btn {
+        padding: 0.15rem 1rem; } }
     .btn-group .btn > i {
       font-size: 0.5rem;
       margin: 0 .25rem; }
     .btn-group .btn:last-child {
-      margin-left: -3px;
+      margin: 5px 0;
       border-radius: 0 2px 2px 0; }
+      @media (min-width: 740px) {
+        .btn-group .btn:last-child {
+          margin: 0 0 0 -3px; } }
 
 .list {
   list-style: none;
@@ -1664,7 +1691,7 @@ input[type="date"] {
   width: 100%;
   white-space: nowrap;
   /*** Broadcaster ***/
-  /*** Expanded rows ***/ }
+  /*** Expanded rows / comment rows ***/ }
   .table th, .table td {
     white-space: normal; }
     @media (min-width: 980px) {
@@ -1673,8 +1700,8 @@ input[type="date"] {
         overflow: hidden;
         text-overflow: ellipsis; } }
   .table thead {
-    border: 1px solid #e5e5e5;
-    background: #f1f1f1; }
+    border: 1px solid #e3e3e5;
+    background: #f5f5f6; }
     .table thead th.date-picker {
       text-align: center; }
       @media (min-width: 740px) {
@@ -1687,15 +1714,15 @@ input[type="date"] {
         .table thead th.date-picker {
           width: 20%; } }
   .table__head--channel {
-    width: 7%; }
+    width: 6%; }
   .table__head--date {
-    width: 10%; }
+    width: 8%; }
   .table__head--program {
-    width: 12%; }
+    width: 11%; }
   .table__head--deviation {
     width: 15%; }
   .table__head--from, .table__head--to {
-    width: 6%; }
+    width: 5%; }
   .table__head--id {
     width: 17%; }
   .table tr > td:nth-child(4) > span {
@@ -1708,12 +1735,12 @@ input[type="date"] {
   .table tbody:not(.broadcaster) tr {
     background: #fff; }
   .table tbody:not(.broadcaster) tr:first-child {
-    border-top: 1px solid #ebebec; }
+    border-top: 1px solid #e3e3e5; }
   .table tbody:not(.broadcaster) tr > td:first-child {
-    border-left: 1px solid #ebebec;
+    border-left: 1px solid #e3e3e5;
     font-weight: 700; }
   .table tbody:not(.broadcaster) tr > td:last-child {
-    border-right: 1px solid #ebebec; }
+    border-right: 1px solid #e3e3e5; }
     .table tbody:not(.broadcaster) tr > td:last-child span {
       color: #9c9ba3; }
   .table .broadcaster + tbody::before {
@@ -1732,11 +1759,8 @@ input[type="date"] {
         font-size: 1.2rem;
         margin: 1rem 0 0 0;
         color: #504f56; } }
-  .table__row--expanded:nth-child(even) td {
-    background: #f8f8f9;
-    border-bottom: 0; }
-  .table__row--expanded td {
-    padding: 0.5rem 1rem; }
+  .table__row--expanded:nth-child(odd) td, .table__row--comment:nth-child(odd) td {
+    background: #f8f8f9; }
 
 /*** Make table responsive - not mobile first in this case! ***/
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -1744,67 +1768,16 @@ input[type="date"] {
     /* Force table to not be like tables anymore */ }
     .table table, .table thead, .table tbody, .table th, .table td, .table tr {
       display: block; }
+    .table thead {
+      display: none; }
     .table .broadcaster tr > td {
       background: #504f56 !important;
       border-bottom: 0; }
-  .table--detail {
-    /* Hide table headers (but not display: none;, for accessibility) */
-    /*
-    	Label the data
-    	*/ }
-    .table--detail thead tr {
-      position: absolute;
-      top: -9999px;
-      left: -9999px; }
-    .table--detail tr:nth-child(odd) td {
-      background: #f8f8f9; }
-    .table--detail tr.table__row--expanded {
-      border-bottom: 1px solid #ebebec; }
-    .table--detail tr.table__row--expanded td {
-      background: #fff;
-      border: 0; }
-    .table--detail tr td:first-child {
-      border-left: 0 !important; }
-    .table--detail tr td:last-child {
-      border-right: 0 !important; }
-    .table--detail td {
-      /* Behave  like a "row" */
-      border: none;
-      border-bottom: 1px solid #eee;
-      position: relative;
-      padding-left: 50%; }
-    .table--detail td:before {
-      /* Now like a table header */
-      position: absolute;
-      /* Top/left values mimic padding */
-      top: 1rem;
-      left: 1rem;
-      width: 45%;
-      padding-right: 1rem;
-      white-space: nowrap;
-      font-weight: 700; }
-    .table--detail tr.table__row--expanded td::before {
-      top: 0.5rem; }
-    .table--detail .broadcaster td:nth-of-type(1):before {
-      content: none; }
-    .table--detail td:nth-of-type(1):before {
-      content: "Kanal"; }
-    .table--detail td:nth-of-type(2):before {
-      content: "Dato"; }
-    .table--detail td:nth-of-type(3):before {
-      content: "Program"; }
-    .table--detail td:nth-of-type(4):before {
-      content: "Fra"; }
-    .table--detail td:nth-of-type(5):before {
-      content: "Til"; }
-    .table--detail td:nth-of-type(6):before {
-      content: "Avvik"; }
-    .table--detail tr.table__row--expanded td:nth-of-type(1):before {
-      content: ""; }
-    .table--detail tr.table__row--expanded td:nth-of-type(2):before {
-      content: "Tittel"; }
-    .table--detail tr.table__row--expanded td:nth-of-type(3):before {
-      content: ""; } }
+    .table tr td:first-child {
+      border-left: 0 !important;
+      background: #e3e3e5; }
+    .table tr td:last-child {
+      border-right: 0 !important; } }
 
 .toggle-sidebar {
   height: 1rem;
