@@ -30,6 +30,7 @@
   &__below {
     @extend .row;
     align-items: center;
+    padding-bottom: 0;
   }
 
   &__meta {

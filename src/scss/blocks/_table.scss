@@ -2,6 +2,7 @@
   table-layout: fixed;
   width: 100%;
   white-space: nowrap;
+  margin-top: 2rem;
 
   th, td {
     white-space: normal;
@@ -49,6 +50,11 @@
     width: 17%;
   }
 
+  &__head--active {
+    width: 17%;
+    text-align: right;
+  }
+
   //remove white space property on Avvik
   tr > td:nth-child(4) > span {
     white-space: normal;
@@ -83,6 +89,10 @@
       span {
         color: $mid-gray;
       }
+    }
+
+    .action {
+      @include respond-to(tablet) { text-align: right; }
     }
   }
 

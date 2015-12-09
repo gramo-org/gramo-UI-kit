@@ -43,6 +43,10 @@
       &--active a, a:hover {
         color: $gramo-turkis;
       }
+      a.active,
+      a:hover {
+        color: $gramo-turkis;
+      }
     }
   }
 }

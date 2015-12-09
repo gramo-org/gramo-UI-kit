@@ -81,7 +81,7 @@
 }
 
 @mixin btn($btn-color) {
-  border-color: darken($btn-color, 10%);
+  border-color: darken($btn-color, 8%);
   background-color: $btn-color;
   border-radius: 0;
   border-width: 0 0 3px 0;
@@ -90,6 +90,7 @@
   @include respond-to(tablet) { display: inline-block; }
   text-align: center;
   text-decoration: none;
+  font-weight: $font-300;
 
   @function set-btn-text-color($btn-color) {
     @if (lightness($btn-color) > 68) {
