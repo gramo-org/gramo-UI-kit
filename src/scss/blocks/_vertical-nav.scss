@@ -40,7 +40,7 @@
         background: darken($sidebar-menu-bg, 5%);;
       }
 
-      &--active a, a:hover {
+      a.active, a:hover {
         color: $gramo-turkis;
       }
     }
