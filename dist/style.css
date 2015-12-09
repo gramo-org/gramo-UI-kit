@@ -2186,7 +2186,10 @@ input[type="date"] {
   vertical-align: middle;
   color: #504f56;
   font-size: 0.8rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  background: url(/img/toggle-bg.svg) right 7px center no-repeat;
+  background-size: 10px;
+  background-color: #d1d0d4 !important; }
   .x-toggle-btn.medium {
     padding: 1px; }
   .x-toggle-btn::after {
@@ -2194,6 +2197,8 @@ input[type="date"] {
     text-align: center; }
 
 .x-toggle:checked + .x-toggle-btn {
+  background: url(/img/toggle-bg.svg) 7px center no-repeat;
+  background-size: 10px;
   background-color: #0095da !important; }
 
 .x-toggle:checked + .x-toggle-btn::after {

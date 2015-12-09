@@ -5,7 +5,9 @@
   color: $gramo-gray;
   font-size: 0.8rem;
   line-height: 1.5rem;
-
+  background: url(/img/toggle-bg.svg) right 7px center no-repeat;
+  background-size: 10px;
+  background-color: $light-gray!important;
 
   &.medium {
     padding: 1px;
@@ -17,7 +19,9 @@
 }
 
 .x-toggle:checked + .x-toggle-btn {
-background-color: $gramo-blue!important;
+  background: url(/img/toggle-bg.svg) 7px center no-repeat;
+  background-size: 10px;
+  background-color: $gramo-blue!important;
 }
 
 .x-toggle:checked + .x-toggle-btn::after {
