@@ -1,10 +1,9 @@
-@import "vendor/_x-button";
+
 
 .x-toggle-btn {
   vertical-align: middle;
   color: $gramo-gray;
   font-size: 0.8rem;
-  line-height: 1.5rem;
   background: url(/img/toggle-bg.svg) right 7px center no-repeat;
   background-size: 10px;
   background-color: $light-gray!important;
@@ -13,7 +12,7 @@
     padding: 1px;
   }
   &::after {
-    content: attr(data-tg-off);
+    content: attr(data-tg-off)!important;
     text-align: center;
   }
 }
@@ -25,5 +24,5 @@
 }
 
 .x-toggle:checked + .x-toggle-btn::after {
-  content: attr(data-tg-on);
+  content: attr(data-tg-on)!important;
 }
