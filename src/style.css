@@ -1626,7 +1626,7 @@ input[type="date"] {
     text-transform: none; }
     .vertical__nav--sub__item a:hover {
       background: #38404b; }
-    .vertical__nav--sub__item--active a, .vertical__nav--sub__item a:hover {
+    .vertical__nav--sub__item a.active, .vertical__nav--sub__item a:hover {
       color: #88c7d8; }
     .vertical__nav--sub__item a.active,
     .vertical__nav--sub__item a:hover {
