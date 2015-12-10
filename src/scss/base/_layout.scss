@@ -39,7 +39,7 @@ main {
   }
 
   &--branded {
-    @include bg-svg("img/logo-echo.svg", "img/logo-echo.png", 50%, 1rem);
+    @include bg-svg("/img/logo-echo.svg", "/img/logo-echo.png", 50%, 1rem);
     background-size: 5rem;
     padding-top: 7rem;
 

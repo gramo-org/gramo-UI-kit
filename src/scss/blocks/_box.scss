@@ -8,4 +8,18 @@
   margin: auto;
   padding: 2rem;
   @include respond-to(desktop) { padding: 3rem; min-width: 400px; }
+
+  .btn {
+    width: 100%;
+  }
+
+  &--full {
+    max-width: none;
+  }
+
+  &--gray {
+    background: $x-light-gray;
+    box-shadow: none;
+    border: 1px solid darken($x-light-gray, 5%);
+  }
 }

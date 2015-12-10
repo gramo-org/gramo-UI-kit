@@ -72,6 +72,9 @@
 
     tr {
       background: #fff;
+      &:hover {
+        background: lighten($table-border-color, 8%);
+      }
     }
 
     tr:first-child {

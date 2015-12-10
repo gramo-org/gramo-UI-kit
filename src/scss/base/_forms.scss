@@ -199,8 +199,9 @@ input::-moz-focus-inner {
 }
 
 //Date input
-input[type="date"] {
+.form__label--date > .form__input {
   font-weight: $font-400;
+  color: $gramo-blue;
   @include input-placeholder {
     color: $gramo-blue;
   }
@@ -213,7 +214,7 @@ input[type="date"] {
 }
 
  .form__label--date .form__input {
-   background: #fff url(img/calendar.svg) center right 10px no-repeat;
+   background: #fff url(/img/calendar.svg) center right 10px no-repeat;
    border: 1px solid $light-gray;
    @include respond-to(tablet) { margin-left: 1rem; }
 

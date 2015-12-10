@@ -65,6 +65,10 @@
 }
 
 /* States */
+.list--sub-list {
+  display: none;
+}
+
 .list--expandable .list__item--isExpanded {
   padding-bottom: 0;
 
@@ -78,6 +82,7 @@
     padding: 0.5rem 0;
     @extend .col-xs-12;
     position: relative;
+    display: block;
 
     &::before {
       content: '';
