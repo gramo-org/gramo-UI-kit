@@ -15,11 +15,14 @@
 
   &--full {
     max-width: none;
+    margin: 0;
+    display: block;
   }
 
   &--gray {
     background: $x-light-gray;
     box-shadow: none;
     border: 1px solid darken($x-light-gray, 5%);
+    padding: 1rem;
   }
 }

@@ -1,6 +1,15 @@
 .btn {
     padding: 0.6rem 1.5rem;
-    font-weight: $font-400;
+    border: 0;
+
+    &--white {
+      @include btn(#fff);
+      border: inherit;
+    }
+
+    &--default {
+      @include btn($mid-gray);
+    }
 
     &--primary {
       @include btn($gramo-turkis);
@@ -19,7 +28,7 @@
     }
 
     &--large {
-      padding: 0.7rem 1.5rem;
+      padding: 0.7rem 2.5rem;
       font-size: 1rem;
     }
 
@@ -56,7 +65,10 @@
       margin: 5px 0;
       @include respond-to(tablet) { margin: 0 0 0 -3px; }
       border-radius: 0 2px 2px 0;
-      border-left: 1px solid rgba(0,0,0,0.2);
+      border-left: 1px solid rgba(0,0,0,0.3);
+    }
+    &--white:last-child {
+      box-shadow: 0px 0px 1px $mid-gray;
     }
   }
 }

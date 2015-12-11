@@ -1,11 +1,11 @@
-.list--expandable, .box {
+.box {
   box-shadow: 0 1px 3px rgba(80, 79, 86, 0.3); }
 
 .list--expandable .list__item--success {
-  border-left: 4px solid #50bf9e; }
+  box-shadow: 4px 0px 0px #50bf9e inset; }
 
 .list--expandable .list__item--danger {
-  border-left: 4px solid #ed6b6a; }
+  box-shadow: 4px 0px 0px #ed6b6a inset; }
 
 .pull-right {
   text-align: right; }
@@ -1007,7 +1007,7 @@ legend {
   line-height: 1.5rem;
   font-weight: 700; }
 
-label,
+label, .form__heading,
 button,
 input,
 optgroup,
@@ -1040,6 +1040,9 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    background-color: #0095da; }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -1119,8 +1122,12 @@ input::-moz-focus-inner {
     .select {
       width: 160px;
       margin-top: 0; } }
+  .select--block {
+    display: block;
+    margin-top: 0.75rem; }
   .select select {
     font-size: 1rem;
+    font-weight: 400;
     padding: 0.5rem;
     width: 110%;
     border: none;
@@ -1139,24 +1146,54 @@ input::-moz-focus-inner {
 .form {
   flex-direction: column;
   padding: 1rem; }
-  .form .form__label {
+  .form__section {
+    margin-bottom: 2rem; }
+  .form__section--button {
+    text-align: right;
+    margin-top: 2rem; }
+    .form__section--button .btn:last-child {
+      margin-left: 0.7rem; }
+  .form .form__label, .form .form__heading {
     display: block;
     position: relative;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #504f56;
+    font-size: 0.9rem; }
+    .form .form__label--inline {
+      display: inline-block;
+      margin: 0 1.5rem 0 0;
+      font-weight: 400; }
+      .form .form__label--inline input[type="radio"],
+      .form .form__label--inline input[type="checkbox"] {
+        margin-right: 0.5rem; }
+    .form .form__label--isChecked {
+      color: #0095da; }
   .form .form__input {
     border: 1px solid #d1d0d4;
     width: 100%;
-    padding-right: 2rem; }
-  .form .form__label.is-valid .form__input,
-  .form .form__label .form__input:valid {
+    padding-right: 2rem;
+    background-color: #fff;
+    margin-top: 0.75rem;
+    font-weight: 400;
+    font-size: 1rem; }
+    .form .form__input--block {
+      display: block;
+      max-width: 170px; }
+    .form .form__input--numeric {
+      display: block;
+      width: 40px;
+      padding: 0;
+      text-align: center; }
+  .form .form__label.is-valid .form__input, .form .is-valid.form__heading .form__input {
     border: 1px solid #d1d0d4;
     border-width: 1px 1px 1px 0;
     border-left: 4px solid #50bf9e;
-    background: url(img/checkmark.svg) center right 10px no-repeat;
+    background: #fff url(img/checkmark.svg) center right 10px no-repeat;
     background-size: 17px; }
-  .form .form__label.has-error .form__input {
+  .form .form__label.has-error .form__input, .form .has-error.form__heading .form__input {
     border: 3px solid #ed6b6a;
-    background: url(img/cross.svg) center right 10px no-repeat;
+    background: #fff url(img/cross.svg) center right 10px no-repeat;
     background-size: 14px; }
   .form .input-error {
     color: #ed6b6a;
@@ -1178,9 +1215,11 @@ input::-moz-focus-inner {
   .form__label--date > .form__input::-webkit-datetime-edit {
     color: #0095da; }
 
-@media (min-width: 740px) {
-  .form__label--date br {
-    display: none; } }
+.form__label--date {
+  font-weight: 600 !important; }
+  @media (min-width: 740px) {
+    .form__label--date br {
+      display: none; } }
 
 .form__label--date .form__input {
   background: #fff url(/img/calendar.svg) center right 10px no-repeat;
@@ -1188,32 +1227,8 @@ input::-moz-focus-inner {
   @media (min-width: 740px) {
     .form__label--date .form__input {
       margin-left: 1rem; } }
-
-.btn {
-  box-shadow: 0 0 1px #9c9ba3;
-  border: 0;
-  background-color: #fff;
-  line-height: normal;
-  padding: .5em 1em;
-  text-decoration: none;
-  color: #504f56;
-  display: inline-block;
-  transition: all 0.3s; }
-  .btn:hover, .btn:active {
-    text-decoration: none; }
-  .btn:hover {
-    background: #d1d0d4; }
-
-.btn-link {
-  color: #0095da;
-  text-decoration: underline;
-  border: 0;
-  background: transparent;
-  padding: 0; }
-  .btn-link:hover {
-    text-decoration: none; }
-  .btn-link:active {
-    outline: 0; }
+  .form__label--date .form__input--block {
+    margin-left: 0; }
 
 @font-face {
   font-family: 'icomoon';
@@ -1250,7 +1265,7 @@ input::-moz-focus-inner {
   content: "\e902";
   color: #d1d0d4; }
 
-.icon--link-arrow:before, .list--expandable .list__item--isExpanded .list--sub-list a::before {
+.icon--link-arrow:before {
   content: "\e902";
   color: #0095da;
   font-size: 0.6rem; }
@@ -1321,7 +1336,46 @@ input::-moz-focus-inner {
 
 .btn {
   padding: 0.6rem 1.5rem;
-  font-weight: 400; }
+  border: 0; }
+  .btn--white {
+    border-color: #ebebeb;
+    background-color: #fff;
+    border-radius: 0;
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: normal;
+    transition: all 0.3s;
+    color: #000000;
+    border: inherit; }
+    @media (min-width: 740px) {
+      .btn--white {
+        display: inline-block; } }
+    .btn--white:hover {
+      background-color: #f0f0f0;
+      transition: 0.5s ease; }
+  .btn--default {
+    border-color: #878690;
+    background-color: #9c9ba3;
+    border-radius: 0;
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: normal;
+    transition: all 0.3s;
+    color: #ffffff; }
+    @media (min-width: 740px) {
+      .btn--default {
+        display: inline-block; } }
+    .btn--default:hover {
+      background-color: #8c8b94;
+      transition: 0.5s ease; }
   .btn--primary {
     border-color: #69b9ce;
     background-color: #88c7d8;
@@ -1332,6 +1386,8 @@ input::-moz-focus-inner {
     text-align: center;
     text-decoration: none;
     font-weight: 300;
+    line-height: normal;
+    transition: all 0.3s;
     color: #000000; }
     @media (min-width: 740px) {
       .btn--primary {
@@ -1349,6 +1405,8 @@ input::-moz-focus-inner {
     text-align: center;
     text-decoration: none;
     font-weight: 300;
+    line-height: normal;
+    transition: all 0.3s;
     color: #ffffff; }
     @media (min-width: 740px) {
       .btn--info {
@@ -1366,6 +1424,8 @@ input::-moz-focus-inner {
     text-align: center;
     text-decoration: none;
     font-weight: 300;
+    line-height: normal;
+    transition: all 0.3s;
     color: #ffffff; }
     @media (min-width: 740px) {
       .btn--danger {
@@ -1383,6 +1443,8 @@ input::-moz-focus-inner {
     text-align: center;
     text-decoration: none;
     font-weight: 300;
+    line-height: normal;
+    transition: all 0.3s;
     color: #ffffff; }
     @media (min-width: 740px) {
       .btn--success {
@@ -1391,7 +1453,7 @@ input::-moz-focus-inner {
       background-color: #40b08f;
       transition: 0.5s ease; }
   .btn--large {
-    padding: 0.7rem 1.5rem;
+    padding: 0.7rem 2.5rem;
     font-size: 1rem; }
   @media (min-width: 740px) {
     .btn--medium {
@@ -1417,22 +1479,27 @@ input::-moz-focus-inner {
     .btn-group .btn:last-child {
       margin: 5px 0;
       border-radius: 0 2px 2px 0;
-      border-left: 1px solid rgba(0, 0, 0, 0.2); }
+      border-left: 1px solid rgba(0, 0, 0, 0.3); }
       @media (min-width: 740px) {
         .btn-group .btn:last-child {
           margin: 0 0 0 -3px; } }
+    .btn-group .btn--white:last-child {
+      box-shadow: 0px 0px 1px #9c9ba3; }
 
 .list {
   list-style: none;
   padding: 0;
-  background: #fff; }
+  background: #fff;
+  border: 1px solid #e3e3e5; }
 
 .list--expandable {
   /* Date, results, actions */ }
   .list--expandable .list__item {
-    border-bottom: 1px solid #d1d0d4;
+    border-top: 1px solid #e3e3e5;
     padding: 0.8rem 0.4rem;
     margin: 0; }
+    .list--expandable .list__item:first-child {
+      border-top: 0; }
   .list--expandable .list__item__date,
   .list--expandable .list__item__results {
     display: block; }
@@ -1461,7 +1528,9 @@ input::-moz-focus-inner {
 
 /* States */
 .list--sub-list {
-  display: none; }
+  display: none;
+  border: 1px solid #e3e3e5;
+  border-width: 0px 1px 0 1px; }
 
 .list--expandable .list__item--isExpanded {
   padding-bottom: 0; }
@@ -1469,31 +1538,28 @@ input::-moz-focus-inner {
     transform: rotate(90deg); }
   .list--expandable .list__item--isExpanded .list--sub-list {
     list-style: none;
-    margin: 1rem 0 0 -0.65rem;
+    margin: 1rem 0 0 0;
     background: #fff;
-    padding: 0.5rem 0;
+    padding: 0;
     position: relative;
     display: block; }
-    .list--expandable .list__item--isExpanded .list--sub-list::before {
-      content: '';
-      border-top: 1px solid #e3e3e5;
-      width: 100%;
-      top: 0;
-      left: 0;
-      position: absolute;
-      width: calc(100% + 1.1em); }
     .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item {
       font-size: 0.9rem;
       font-weight: 300;
-      padding-top: 0.5rem;
-      padding-left: 1.5rem; }
+      padding: 0.75rem 0.5rem;
+      padding-left: 0.5rem;
+      margin-bottom: 0;
+      border-left: 1px solid #e3e3e5; }
+      .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item:nth-child(odd) {
+        background: #f8f8f9; }
+      .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item:nth-child(even) {
+        background: #fff; }
       .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--downloads {
         display: block; }
+      .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item--message {
+        font-style: italic; }
     .list--expandable .list__item--isExpanded .list--sub-list a {
       text-decoration: none; }
-    .list--expandable .list__item--isExpanded .list--sub-list a::before {
-      font-family: 'icomoon';
-      margin-right: 0.3rem; }
 
 .pagination {
   justify-content: center;
@@ -1546,11 +1612,14 @@ input::-moz-focus-inner {
   .box .btn {
     width: 100%; }
   .box--full {
-    max-width: none; }
+    max-width: none;
+    margin: 0;
+    display: block; }
   .box--gray {
-    background: #eeedef;
+    background: #f0f0f1;
     box-shadow: none;
-    border: 1px solid #e0e0e3; }
+    border: 1px solid #e3e3e5;
+    padding: 1rem; }
 
 .breadcrumbs {
   list-style: none;

@@ -91,6 +91,8 @@
   text-align: center;
   text-decoration: none;
   font-weight: $font-300;
+  line-height: normal;
+  transition: all 0.3s;
 
   @function set-btn-text-color($btn-color) {
     @if (lightness($btn-color) > 68) {
