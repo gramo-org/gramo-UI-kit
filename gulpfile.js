@@ -17,11 +17,13 @@ gulp.task('postcss', function() {
     customProps = require('postcss-custom-properties'),
     comments = require('postcss-discard-comments'),
     color = require('postcss-color-function'),
-    nested = require('postcss-nested');
+    nested = require('postcss-nested'),
+    extend = require('postcss-simple-extend');
 
   return gulp.src('./src/css/style.css')
     .pipe(postcss([
       pImport(),
+      extend(),
       nested(),
       comments({discardAll: true}),
       customProps(),
