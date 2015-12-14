@@ -15,21 +15,28 @@ gulp.task('postcss', function() {
   var autoprefixer = require('autoprefixer'),
     pImport = require('postcss-import'),
     customProps = require('postcss-custom-properties'),
+    customMedia = require("postcss-custom-media"),
     comments = require('postcss-discard-comments'),
     color = require('postcss-color-function'),
     nested = require('postcss-nested'),
-    extend = require('postcss-simple-extend');
+    simpleExtend = require('postcss-extend');
 
   return gulp.src('./src/css/style.css')
     .pipe(postcss([
       pImport(),
-      extend(),
+      simpleExtend(),
       nested(),
-      comments({discardAll: true}),
+      comments({
+        discardAll: true
+      }),
       customProps(),
+      customMedia(),
       color(),
-      autoprefixer({browsers: ['last 2 versions'], cascade: false}),
-      ]))
+      autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+      }),
+    ]))
     .pipe(gulp.dest('./src'))
     .pipe(gulp.dest('./dist'))
     .pipe(browserSync.reload({

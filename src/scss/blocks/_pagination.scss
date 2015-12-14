@@ -35,6 +35,10 @@
   &--previous,
   &--next {
     display: inline-block;
+
+    &--isDisabled {
+      color: $gramo-gray;
+    }
   }
 
   &--current {

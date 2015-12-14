@@ -48,6 +48,16 @@
   opacity: $opacity;
 }
 
+//Placeholders
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+  &::-webkit-datetime-edit { @content; }
+}
+
 
 // Breakpoints
 // Example Usage: @include respond-to(tablet) { };
@@ -71,7 +81,7 @@
 }
 
 @mixin btn($btn-color) {
-  border-color: darken($btn-color, 10%);
+  border-color: darken($btn-color, 8%);
   background-color: $btn-color;
   border-radius: 0;
   border-width: 0 0 3px 0;
@@ -80,10 +90,13 @@
   @include respond-to(tablet) { display: inline-block; }
   text-align: center;
   text-decoration: none;
+  font-weight: $font-300;
+  line-height: normal;
+  transition: all 0.3s;
 
   @function set-btn-text-color($btn-color) {
     @if (lightness($btn-color) > 68) {
-      @return #000000; // Lighter backgorund, return dark color
+      @return #000000; // Lighter background, return dark color
     } @else {
       @return #ffffff; // Darker background, return light color
     }

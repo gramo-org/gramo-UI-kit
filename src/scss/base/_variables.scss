@@ -15,6 +15,7 @@ $gramo-ui-bg:                                   #434D5A;
 
 $mid-gray:                                      lighten($gramo-gray, 30%);
 $light-gray:                                    lighten($gramo-gray, 50%);
+$x-light-gray:                                  lighten($gramo-gray, 62%);
 
 // Global Typography
 $base-background-color:                         #f9f9f9;
@@ -82,7 +83,7 @@ $base-code-border-color:                        #d7d7d7;
 $base-placeholder-color:                        #999;
 
 //Tables
-$table-border-color:                            lighten($light-gray, 10%);
+$table-border-color:                            lighten($light-gray, 7%);
 
 // Grid Containers
 $container-mobile:                              100%;

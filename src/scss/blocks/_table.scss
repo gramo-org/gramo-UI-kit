@@ -2,6 +2,7 @@
   table-layout: fixed;
   width: 100%;
   white-space: nowrap;
+  margin-top: 2rem;
 
   th, td {
     white-space: normal;
@@ -13,36 +14,51 @@
   }
 
   thead {
-    box-shadow: 0 0 1px rgba(black, 0.3);
-    background: darken($base-background-color, 5%);
+    border: 1px solid $table-border-color;
+    background: lighten($table-border-color, 7%);
 
     th.date-picker {
-      width: 100%;
       text-align: center;
       @include respond-to(tablet) { width: 30%; }
-      @include respond-to(desktop) { width: 20%; }
-
-      input {
-        margin-left: 1rem;
-      }
+      @include respond-to(desktop) { width: 25%; }
+      @include respond-to(hd) { width: 20%; }
     }
   }
 
   &__head--channel {
-    width: 5%;
+    width: 6%;
   }
 
   &__head--date {
-    width: 10%;
+    width: 8%;
   }
 
   &__head--program {
+    width: 11%;
+  }
+
+  &__head--deviation {
     width: 15%;
   }
 
   &__head--from,
   &__head--to {
-    width: 10%;
+    width: 5%;
+  }
+
+  &__head--id {
+    width: 17%;
+  }
+
+  &__head--active {
+    width: 17%;
+    text-align: right;
+  }
+
+  //remove white space property on Avvik
+  tr > td:nth-child(4) > span {
+    white-space: normal;
+    color: $mid-gray;
   }
 
 
@@ -56,6 +72,9 @@
 
     tr {
       background: #fff;
+      &:hover {
+        background: lighten($table-border-color, 8%);
+      }
     }
 
     tr:first-child {
@@ -73,6 +92,10 @@
       span {
         color: $mid-gray;
       }
+    }
+
+    .action {
+      @include respond-to(tablet) { text-align: right; }
     }
   }
 
@@ -98,111 +121,45 @@
     }
   }
 
-  /*** Expanded rows ***/
+  /*** Expanded rows / comment rows ***/
 
-  &__row--expanded {
+  &__row--expanded,
+  &__row--comment {
 
-    &:nth-child(even) td {
-      background: lighten($table-border-color, 5%);
-      border-bottom: 0;
-    }
-
-    td {
-      padding: 0.5rem 1rem;
+    &:nth-child(odd) td {
+      background: lighten($table-border-color, 8%);
     }
   }
 }
 
   /*** Make table responsive - not mobile first in this case! ***/
 
-
-
 @media
 only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px)  {
 
-    .table {
-        /* Force table to not be like tables anymore */
-      	table, thead, tbody, th, td, tr {
-      		display: block;
-      	}
+  .table {
+    /* Force table to not be like tables anymore */
+  	table, thead, tbody, th, td, tr {
+  		display: block;
+  	}
 
-        .broadcaster {
-          tr > td {
-            background: $gramo-gray!important;
-            border-bottom: 0;
-          }
-        }
+    thead {
+      display: none;
+    }
+
+    .broadcaster {
+      tr > td {
+        background: $gramo-gray!important;
+        border-bottom: 0;
       }
-
-      .table--detail {
-
-    	/* Hide table headers (but not display: none;, for accessibility) */
-    	thead tr {
-    		position: absolute;
-    		top: -9999px;
-    		left: -9999px;
-    	}
-
-
-      tr:nth-child(odd) td {
-        background: lighten($table-border-color, 5%);
-      }
-
-      tr.table__row--expanded {
-        border-bottom: 1px solid $table-border-color;
-      }
-
-      tr.table__row--expanded td {
-        background: #fff;
-        border: 0;
-      }
-
-      tr td:first-child {
-        border-left: 0!important;
-      }
-      tr td:last-child {
-        border-right: 0!important;
-      }
-
-    	td {
-    		/* Behave  like a "row" */
-    		border: none;
-    		border-bottom: 1px solid #eee;
-    		position: relative;
-    		padding-left: 50%;
-    	}
-
-    	td:before {
-    		/* Now like a table header */
-    		position: absolute;
-    		/* Top/left values mimic padding */
-    		top: 1rem;
-    		left: 1rem;
-    		width: 45%;
-    		padding-right: 1rem;
-    		white-space: nowrap;
-        font-weight: $font-700;
-    	}
-
-      tr.table__row--expanded td::before {
-        top: 0.5rem;
-      }
-
-    	/*
-    	Label the data
-    	*/
-      .broadcaster td:nth-of-type(1):before { content: none; }
-
-      td:nth-of-type(1):before { content: "Kanal"; }
-    	td:nth-of-type(2):before { content: "Dato"; }
-    	td:nth-of-type(3):before { content: "Program"; }
-    	td:nth-of-type(4):before { content: "Fra"; }
-    	td:nth-of-type(5):before { content: "Til"; }
-    	td:nth-of-type(6):before { content: "Avvik"; }
-
-      tr.table__row--expanded td:nth-of-type(1):before { content: ""; }
-      tr.table__row--expanded td:nth-of-type(2):before { content: "Tittel"; }
-      tr.table__row--expanded td:nth-of-type(3):before { content: ""; }
+    }
+    tr td:first-child {
+      border-left: 0!important;
+      background: $table-border-color;
+    }
+    tr td:last-child {
+      border-right: 0!important;
+    }
   }
 }

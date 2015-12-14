@@ -3,11 +3,9 @@
 }
 
 %border-success {
-  // border-left: 4px solid $gramo-green;
   box-shadow: 4px 0px 0px $gramo-green inset;
 }
 
 %border-danger {
-  // border-left: 4px solid $gramo-red;
   box-shadow: 4px 0px 0px $gramo-red inset;
 }

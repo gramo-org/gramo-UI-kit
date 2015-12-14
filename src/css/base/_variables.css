@@ -1,12 +1,107 @@
-/* Global Colors */
+/* ==========================================================================
+/* Base – Variables
+/* ==========================================================================
+*/
 :root {
-	--gramo-turkis: #88c7d8;
-	--gramo-black:  #000;
-	--gramo-yellow: #f8ee62;
-	--gramo-green:  #50bf9e;
-	--gramo-blue:   #0095da;
-	--gramo-red:    #ed6b6a;
-	--gramo-purple: #a41681;
-	--gramo-gray:   #504f56;
-	--gramo-ui-bg:  #434D5A;
+
+/* Global Colors */
+--gramo-turkis:                                  #88c7d8;
+--gramo-black:                                   #000;
+--gramo-yellow:                                  #f8ee62;
+--gramo-green:                                   #50bf9e;
+--gramo-blue:                                    #0095da;
+--gramo-red:                                     #ed6b6a;
+--gramo-purple:                                  #a41681;
+--gramo-gray:                                    #504f56;
+--gramo-ui-bg:                                   #434D5A;
+
+--mid-gray:                                      lighten(var(--gramo-gray), 30%);
+--light-gray:                                    lighten(var(--gramo-gray), 50%);
+--x-light-gray:                                  lighten(var(--gramo-gray), 62%);
+
+/* Global Typography */
+--base-background-color:                         #f9f9f9;
+--base-font-family:                              'Source Sans Pro', sans-serif;
+--base-font-size:                                16;
+--base-line-height:                              22;
+--base-font-weight:                              400;
+--base-font-color:                               var(--gramo-black);
+--base-link-color:                               var(--gramo-blue);
+
+/* Font Weights */
+--font-100:                                      100;
+--font-200:                                      200;
+--font-300:                                      300;
+--font-400:                                      400;
+--font-500:                                      500;
+--font-600:                                      600;
+--font-700:                                      700;
+--font-800:                                      800;
+--font-900:                                      900;
+
+/* Headings */
+--heading-font-family:                           var(--base-font-family);
+--h1-font-size:                                  32;
+--h1-line-height:                                38;
+--h1-font-weight:                                var(--font-400);
+--h1-color:                                      #343434;
+--h2-font-size:                                  26;
+--h2-line-height:                                32;
+--h2-font-weight:                                var(--font-400);
+--h2-color:                                      var(--gramo-gray);
+--h3-font-size:                                  22;
+--h3-line-height:                                28;
+--h3-font-weight:                                var(--font-400);
+--h3-color:                                      var(--gramo-black);
+--h4-font-size:                                  18;
+--h4-line-height:                                24;
+--h4-font-weight:                                var(--font-400);
+--h4-color:                                      var(--gramo-black);
+--h5-font-size:                                  16;
+--h5-line-height:                                22;
+--h5-font-weight:                                var(--font-400);
+--h5-color:                                      var(--gramo-black);
+--h6-font-size:                                  14;
+--h6-line-height:                                20;
+--h6-font-weight:                                var(--font-400);
+--h6-color:                                      var(--gramo-black);
+
+/* Blockquotes */
+--base-blockquote-font-family:                   var(--base-font-family);
+--base-blockquote-font-size:                     22;
+--base-blockquote-line-height:                   28;
+--base-blockquote-color:                         var(--gramo-gray);
+--base-blockquote-cite-color:                    lighten(var(--gramo-gray), 20%);
+
+/* Code */
+--base-code-font-family:                         'courier new', monospace, serif;
+--base-code-font-size:                           13;
+--base-code-line-height:                         18;
+--base-code-color:                               #272727;
+--base-code-background-color:                    #f1f1f1;
+--base-code-border-color:                        #d7d7d7;
+
+/* Forms */
+--base-placeholder-color:                        #999;
+
+/*Tables */
+--table-border-color:                            lighten(var(--light-gray, 7%));
+
+/* Grid Containers */
+--container-mobile:                              100%;
+--container-tablet:                              720px;
+--container-desktop:                             960px;
+--container-hd:                                  1120px;
+
+/* Responsive Breakpoints */
+@custom-media --tablet													(max-width: (var(--container-tablet) + 20));
+@custom-media --desktop                         (max-width: (var(--container-desktop) + 20));
+@custom-media --hd                              (max-width: (var(--container-hd) + 20));
+
+
+/*Context specific variables */
+
+/*Sidebar menu */
+--sidebar-menu-bg:                               var(--gramo-ui-bg);
+--sidebar-menu-color:                            lighten(var(--sidebar-menu-bg), 50%);
 }

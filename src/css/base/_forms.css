@@ -1,8 +1,4 @@
-// ==========================================================================
-// Base – Forms
-// ==========================================================================
-
-// Form, Fieldset and Legend
+/* Form, Fieldset and Legend */
 fieldset,
 legend {
   border: 0;
@@ -10,12 +6,12 @@ legend {
   padding: 0;
 }
 legend {
-  @include font-size($base-font-size + 2);
-  @include line-height($base-line-height + 2);
-  font-weight: $font-700;
+  font-size: (var(--base-font-size) + 2);
+  line-height: (var(--base-line-height) + 2);
+  font-weight: var(--font-700);
 }
 
-// All Form Elements
+/* All Form Elements */
 label,
 button,
 input,
@@ -27,7 +23,7 @@ textarea {
   margin: 0;
 }
 
-// Inputs
+/* Inputs */
 input { line-height: normal; }
 .input { width: 100%; }
 input[type="text"],
@@ -49,7 +45,7 @@ input[type="radio"] {
   padding: 0;
 
   &:checked {
-    background-color: $gramo-blue;
+    background-color: var(--gramo-blue);
   }
 }
 input[type="number"]::-webkit-inner-spin-button,
@@ -57,9 +53,6 @@ input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 input[type="search"]::-webkit-search-cancel-button,
@@ -67,19 +60,19 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-// Text Area
+/* Text Area */
 textarea { overflow: auto; }
 
-// Select Boxes
+/* Select Boxes */
 select { text-transform: none; }
-optgroup { font-weight: $font-700; }
+optgroup { font-weight: var(--font-700); }
 
-// Buttons
+/* Buttons */
 button {
   overflow: visible;
   text-transform: none;
   width: 100%;
-  @include respond-to(tablet) { width: auto; }
+  @media (tablet) { width: auto; }
 }
 button, html input[type="button"],
 input[type="reset"],
@@ -94,24 +87,27 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-// Placeholder Colour
-@include input-placeholder {
-  color: $base-placeholder-color;
+/* Placeholder Colour */
+input-placeholder {
+  color: var(--base-placeholder-color);
 }
 
-// Custom Select
+/* Custom Select */
 .select {
   border: 1px solid #ccc;
   width: 99%;
   margin-top: 1rem;
-  @include respond-to(tablet) { width: 160px; margin-top: 0;}
+  @media (tablet) {
+    width: 160px;
+    margin-top: 0;
+  }
   border-radius: 3px;
   overflow: hidden;
   background: #fff url("img/arrow-down.svg") no-repeat 95% 50%;
   background-size: 12px;
   font-size: 1rem;
   display: inline-block;
-  color: $gramo-gray;
+  color: var(--gramo-gray);
 
   &--block {
     display: block;
@@ -120,9 +116,12 @@ input::-moz-focus-inner {
 
   select {
     font-size: 1rem;
-    font-weight: $font-400;
+    font-weight: var(--font-400);
     padding: 0.5rem;
-    @include respond-to(tablet) { padding: 0.2rem 0.3rem; font-size: 0.9rem; }
+    @media (tablet) {
+      padding: 0.2rem 0.3rem;
+      font-size: 0.9rem;
+    }
     width: 110%;
     border: none;
     box-shadow: none;
@@ -159,14 +158,14 @@ input::-moz-focus-inner {
     display: block;
     position: relative;
     margin-bottom: 1rem;
-    font-weight: $font-600;
-    color: $gramo-gray;
+    font-weight: var(--font-600);
+    color: var(--gramo-gray);
     font-size: 0.9rem;
 
     &--inline {
       display: inline-block;
       margin: 0 1.5rem 0 0;
-      font-weight: $font-400;
+      font-weight: var(--font-400);
 
       input[type="radio"],
       input[type="checkbox"] {
@@ -175,7 +174,7 @@ input::-moz-focus-inner {
     }
 
     &--isChecked {
-      color: $gramo-blue;
+      color: var(--gramo-blue);
     }
   }
 
@@ -185,12 +184,12 @@ input::-moz-focus-inner {
   }
 
   .form__input {
-    border: 1px solid $light-gray;
+    border: 1px solid var(--light-gray);
     width: 100%;
     padding-right: 2rem;
     background-color: #fff;
     margin-top: 0.75rem;
-    font-weight: $font-400;
+    font-weight: var(--font-400);
     font-size: 1rem;
 
     &--block {
@@ -206,48 +205,49 @@ input::-moz-focus-inner {
   }
 
   .form__label.is-valid .form__input/*, .form__label .form__input:valid*/ {
-      border: 1px solid $light-gray;
+      border: 1px solid var(--light-gray);
       border-width: 1px 1px 1px 0;
-      border-left: 4px solid $gramo-green;
+      border-left: 4px solid var(--gramo-green);
       background: #fff url(img/checkmark.svg) center right 10px no-repeat;
       background-size: 17px;
   }
 
   .form__label.has-error .form__input {
-      border: 3px solid $gramo-red;
+      border: 3px solid var(--gramo-red);
       background: #fff url(img/cross.svg) center right 10px no-repeat;
       background-size: 14px;
     }
 
   .input-error {
-    color: $gramo-red;
+    color: var(--gramo-red);
     margin-top: -0.75rem;
   }
 }
 
 //Date input
 .form__label--date > .form__input {
-  font-weight: $font-400;
-  color: $gramo-blue;
-  @include input-placeholder {
-    color: $gramo-blue;
+  font-weight: var(--font-400);
+  color: var(--gramo-blue);
+  &.placeholder {
+    color: var(--gramo-blue);
   }
 }
 
 .form__label--date {
-  font-weight: $font-600!important;
+  font-weight: var(--font-600!important);
   br {
-    @include respond-to(tablet) { display: none; }
+    @media (tablet) { display: none; }
   }
 }
 
  .form__label--date .form__input {
    background: #fff url(/img/calendar.svg) center right 10px no-repeat;
-   border: 1px solid $light-gray;
-   @include respond-to(tablet) { margin-left: 1rem; }
+   border: 1px solid var(--light-gray);
+   @media (tablet) { margin-left: 1rem; }
 
    &--block {
-     @extend .form__input--block;
+     display: block;
+     max-width: 170px;
      margin-left: 0;
    }
  }

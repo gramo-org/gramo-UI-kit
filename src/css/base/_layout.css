@@ -9,7 +9,7 @@ main {
   flex: 1 0 100%;
   transform: translateX(-12rem);
   transition: .25s ease;
-  @include respond-to(desktop) {
+  @media(desktop) {
     transform: translateX(0);
     flex: 1;
   }
@@ -23,46 +23,46 @@ main {
   margin: 0 auto;
 
   &--hd {
-    max-width: $container-hd
+    max-width: var(--container-hd);
   }
 
   &--desktop {
-    max-width: $container-desktop;
+    max-width: var(--container-desktop);
   }
 
   &--tablet {
-    max-width: $container-tablet;
+    max-width: var(--container-tablet);
   }
 
   &--mobile {
-    max-width: $container-mobile;
+    max-width: var(--container-mobile);
   }
 
   &--branded {
-    @include bg-svg("/img/logo-echo.svg", "/img/logo-echo.png", 50%, 1rem);
+    background: url("/img/logo-echo.svg") no-repeat 50% 1rem;
     background-size: 5rem;
     padding-top: 7rem;
 
     h2 {
-      font-weight: $font-300;
+      font-weight: var(--font-300);
       margin-bottom: 1rem;
       text-align: center;
     }
   }
 }
 
-//Temporary styling to highlight grid
+/*Temporary styling to highlight grid*/
 .container.grid-test > .row {
   border: 1px solid #fff;
   border-width: 0 0 1px 0;
 }
 
 .container.grid-test > .row > * {
-  background: lighten($gramo-turkis, 20%);
+  background: lighten(var(--gramo-turkis), 20%);
   padding-top: 2rem;
   padding-bottom: 2rem;
 
   &:nth-child(odd) {
-    background: lighten($gramo-turkis, 25%);
+    background: lighten(var(--gramo-turkis), 25%);
   }
 }

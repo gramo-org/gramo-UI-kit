@@ -1,0 +1,28 @@
+// @import "vendor/_x-button";
+
+.x-toggle-btn {
+  vertical-align: middle;
+  color: $gramo-gray;
+  font-size: 0.8rem;
+  background: url(/img/toggle-bg.svg) right 7px center no-repeat;
+  background-size: 10px;
+  background-color: $light-gray!important;
+
+  &.medium {
+    padding: 1px;
+  }
+  &::after {
+    content: attr(data-tg-off)!important;
+    text-align: center;
+  }
+}
+
+.x-toggle:checked + .x-toggle-btn {
+  background: url(/img/toggle-bg.svg) 7px center no-repeat;
+  background-size: 10px;
+  background-color: $gramo-blue!important;
+}
+
+.x-toggle:checked + .x-toggle-btn::after {
+  content: attr(data-tg-on)!important;
+}
