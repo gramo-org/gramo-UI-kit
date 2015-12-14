@@ -14,7 +14,6 @@ var gulp = require('gulp'),
 gulp.task('postcss', function() {
   var autoprefixer = require('autoprefixer'),
     pImport = require('postcss-import'),
-    importCss = require('gulp-import-css'),
     customProps = require('postcss-custom-properties'),
     comments = require('postcss-discard-comments'),
     color = require('postcss-color-function'),
