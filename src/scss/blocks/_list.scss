@@ -44,7 +44,7 @@
     }
   }
   .list__item__results {
-    @extend .col-xs-6;
+    @extend .col-xs-5;
     align-self: flex-end;
     font-weight: $font-300;
 
@@ -53,6 +53,15 @@
       @include respond-to(desktop) { display: inline-block; };
     }
   }
+
+  .list__item__deviation {
+    @extend .col-xs-2;
+    align-self: flex-end;
+    font-weight: $font-300;
+    color: $gramo-blue;
+    text-align: right;
+  }
+
   .list__item__action {
     @extend .col-sm;
     align-self: flex-end;
@@ -65,7 +74,7 @@
 
   .list__item__results i,
   .sub-list__item--downloads i {
-    margin: 0 0.8rem 0 0.5rem;
+    margin: 0 0.4rem;
   }
 }
 
@@ -91,15 +100,16 @@
     position: relative;
     display: block;
 
-    // &::before {
-    //   content: '';
-    //   border-top: 1px solid lighten($table-border-color, 7%);
-    //   width: 100%;
-    //   top: 0;
-    //   left: -0.4rem;
-    //   position: absolute;
-    //   width: calc(100% + 0.8rem);
-    // }
+    &::before {
+      content: '';
+      background: darken($table-border-color, 7%);
+      width: 100%;
+      height: 1px;
+      top: 0;
+      left: -0.5rem;
+      position: absolute;
+      width: calc(100% + 1rem);
+    }
 
     .sub-list__item {
       font-size: 0.9rem;
