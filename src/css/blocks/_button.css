@@ -5,14 +5,12 @@
   border-width: 0 0 3px 0;
   border-style: solid;
   display: block;
+  @media (--tablet) {
+    display: inline-block;
+  }
   text-align: center;
   text-decoration: none;
   color: #000;
-
-  /* TODO: replace min-width value with custom property (var) */
-  @media (min-width: 740px) {
-    display: inline-block;
-  }
 
   &:hover {
      transition: 0.5s ease;
@@ -22,36 +20,81 @@
     border-color: color(var(--gramo-turkis) shade(10%));
     background-color: var(--gramo-turkis);
     color: #FFF;
-  }
 
-  &--primary:hover {
-     background-color: color(var(--gramo-turkis) shade(6%));
+    &:hover {
+       background-color: color(var(--gramo-turkis) shade(6%));
+    }
   }
 
   &--info {
     border-color: color(var(--gramo-blue) shade(10%));
     background-color: var(--gramo-blue);
-  }
 
-  &--info:hover {
-     background-color: color(var(--gramo-blue) shade(6%));
+    &:hover {
+       background-color: color(var(--gramo-blue) shade(6%));
+    }
   }
 
   &--success {
     border-color: color(var(--gramo-green) shade(10%));
     background-color: var(--gramo-green);
-  }
 
-  &--success:hover {
-     background-color: color(var(--gramo-green) shade(6%));
+    &:hover {
+       background-color: color(var(--gramo-green) shade(6%));
+    }
   }
 
   &--danger {
     border-color: color(var(--gramo-red) shade(10%));
     background-color: var(--gramo-red);
+
+    &:hover {
+       background-color: color(var(--gramo-red) shade(6%));
+    }
   }
 
-  &--danger:hover {
-     background-color: color(var(--gramo-red) shade(6%));
+  &--large {
+    padding: 0.7rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  &--medium {
+    @media (--tablet) {
+      padding: 0.4rem 1rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  &--small {
+    @media (--tablet) {
+      padding: 0.25rem 0.75rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/* Button group */
+.btn-group {
+  text-align: right;
+  .btn--info {
+    border-width: 0;
+  }
+
+  .btn {
+    @media (--tablet) { padding: 0.15rem 1rem; }
+    border-radius: 2px 0 0 2px;
+    & > i {
+      font-size: 0.5rem;
+      margin: 0 .25rem;
+    }
+    &:last-child {
+      margin: 5px 0;
+      @media (--tablet) { margin: 0 0 0 -3px; }
+      border-radius: 0 2px 2px 0;
+      border-left: 1px solid rgba(0,0,0,0.3);
+    }
+    &--white:last-child {
+      box-shadow: 0px 0px 1px var(--mid-gray);
+    }
   }
 }

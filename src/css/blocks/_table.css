@@ -1,0 +1,166 @@
+.table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+  margin-top: 2rem;
+
+  th, td {
+    white-space: normal;
+    @media (--desktop) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  thead {
+    border: 1px solid var(--table-border-color);
+    background: color(var(--table-border-color) tint(7%));
+
+    th.date-picker {
+      text-align: center;
+      @media (--tablet) { width: 30%; }
+      @media (--desktop) { width: 25%; }
+      @media (--hd) { width: 20%; }
+    }
+  }
+
+  &__head--channel {
+    width: 6%;
+  }
+
+  &__head--date {
+    width: 8%;
+  }
+
+  &__head--program {
+    width: 11%;
+  }
+
+  &__head--deviation {
+    width: 15%;
+  }
+
+  &__head--from,
+  &__head--to {
+    width: 5%;
+  }
+
+  &__head--id {
+    width: 17%;
+  }
+
+  &__head--active {
+    width: 17%;
+    text-align: right;
+  }
+
+  /* remove white space property on Avvik */
+  
+  tr > td:nth-child(4) > span {
+    white-space: normal;
+    color: var(--mid-gray);
+  }
+
+
+  tbody:not(.broadcaster) {
+
+    &::before {
+      content: '';
+      display: block;;
+      height: 2rem;
+    }
+
+    tr {
+      background: #fff;
+      &:hover {
+        background: color(var(--table-border-color) tint(8%));
+      }
+    }
+
+    tr:first-child {
+      border-top: 1px solid var(--table-border-color);
+    }
+
+    tr > td:first-child {
+      border-left: 1px solid var(--table-border-color);
+      font-weight: var(--font-700);
+    }
+
+    tr > td:last-child {
+      border-right: 1px solid var(--table-border-color);
+
+      span {
+        color: var(--mid-gray);
+      }
+    }
+
+    .action {
+      @media (--tablet) { text-align: right; }
+    }
+  }
+
+/*** Broadcaster ***/
+
+  .broadcaster {
+
+    & + tbody::before {
+      content: none;
+    }
+
+     tr > td {
+      padding: 0.3rem 1rem;
+    }
+
+    &__title {
+      font-weight: var(--font-700);
+      color: #fff;
+      margin: 0.5rem 0;
+      font-size: 2.2rem;
+      text-align: center;
+      @media (--tablet) { text-align: left; font-size: 1.2rem; margin: 1rem 0 0 0; color: var(--gramo-gray); }
+    }
+  }
+
+  /*** Expanded rows / comment rows ***/
+
+  &__row--expanded,
+  &__row--comment {
+
+    &:nth-child(odd) td {
+      background: color(var(--table-border-color) tint(8%));
+    }
+  }
+}
+
+  /*** Make table responsive - not mobile first in this case! ***/
+
+@media
+only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  .table {
+    /* Force table to not be like tables anymore */
+  	table, thead, tbody, th, td, tr {
+  		display: block;
+  	}
+
+    thead {
+      display: none;
+    }
+
+    .broadcaster {
+      tr > td {
+        background: var(--gramo-gray)!important;
+        border-bottom: 0;
+      }
+    }
+    tr td:first-child {
+      border-left: 0!important;
+      background: var(--table-border-color);
+    }
+    tr td:last-child {
+      border-right: 0!important;
+    }
+  }
+}

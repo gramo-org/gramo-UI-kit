@@ -9,7 +9,7 @@ main {
   flex: 1 0 100%;
   transform: translateX(-12rem);
   transition: .25s ease;
-  @media(desktop) {
+  @media(--desktop) {
     transform: translateX(0);
     flex: 1;
   }
@@ -58,11 +58,11 @@ main {
 }
 
 .container.grid-test > .row > * {
-  background: lighten(var(--gramo-turkis), 20%);
+  background: color(var(--gramo-turkis) tint(20%));
   padding-top: 2rem;
   padding-bottom: 2rem;
 
   &:nth-child(odd) {
-    background: lighten(var(--gramo-turkis), 25%);
+    background: color(var(--gramo-turkis) tint(25%));
   }
 }

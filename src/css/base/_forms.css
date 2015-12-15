@@ -72,7 +72,7 @@ button {
   overflow: visible;
   text-transform: none;
   width: 100%;
-  @media (tablet) { width: auto; }
+  @media (--tablet) { width: auto; }
 }
 button, html input[type="button"],
 input[type="reset"],
@@ -97,7 +97,7 @@ input-placeholder {
   border: 1px solid #ccc;
   width: 99%;
   margin-top: 1rem;
-  @media (tablet) {
+  @media (--tablet) {
     width: 160px;
     margin-top: 0;
   }
@@ -118,7 +118,7 @@ input-placeholder {
     font-size: 1rem;
     font-weight: var(--font-400);
     padding: 0.5rem;
-    @media (tablet) {
+    @media (--tablet) {
       padding: 0.2rem 0.3rem;
       font-size: 0.9rem;
     }
@@ -236,14 +236,14 @@ input-placeholder {
 .form__label--date {
   font-weight: var(--font-600!important);
   br {
-    @media (tablet) { display: none; }
+    @media (--tablet) { display: none; }
   }
 }
 
  .form__label--date .form__input {
    background: #fff url(/img/calendar.svg) center right 10px no-repeat;
    border: 1px solid var(--light-gray);
-   @media (tablet) { margin-left: 1rem; }
+   @media (--tablet) { margin-left: 1rem; }
 
    &--block {
      display: block;

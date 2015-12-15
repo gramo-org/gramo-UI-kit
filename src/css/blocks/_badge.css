@@ -1,0 +1,12 @@
+.badge {
+  display: inline-block;
+  border-radius: 2px;
+  padding: 0.7rem;
+  margin-left: 0.5rem;
+  line-height: 0.7rem;
+
+  &--danger {
+    background: var(--gramo-red);
+    color: #fff;
+  }
+}

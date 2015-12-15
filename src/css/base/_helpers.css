@@ -7,5 +7,5 @@
 }
 
 a.no-style {
-  color: $base-font-color;
+  color: var(--base-font-color);
 }

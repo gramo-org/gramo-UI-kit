@@ -23,8 +23,8 @@ table {
     th {
       color: #585858;
       padding: 0.5rem 1rem;
-      @media (tablet) { padding: 0.5rem; }
-      border-bottom: 1px solid $table-border-color;
+      @media (--tablet) { padding: 0.5rem; }
+      border-bottom: 1px solid var(--table-border-color);
     }
     th:first-child,
     td:first-child {

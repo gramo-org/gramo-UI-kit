@@ -1,0 +1,51 @@
+.breadcrumbs {
+  list-style: none;
+  padding: 0.7rem 0 0.5rem 0;
+  margin: 0;
+  font-size: 0.9rem;
+  @extend .col-sm;
+  display: block;
+
+  &__item {
+    color: var(--light-gray);
+    margin-bottom: 0;
+    @extend .col-md;
+    display: inline-block;
+    padding-right: 0;
+
+    &:not(.toggle-sidebar):not(.breadcrumbs__item--home) {
+      display: none;
+      @media (--tablet) { display: inline-block; }
+    }
+
+    &::before {
+      @media (--tablet) {
+        content: "\e904";
+        font-family: 'icomoon';
+        margin: 0 0.5rem 0 -0.2rem;
+        font-size: 0.6rem;
+      }
+    }
+
+    &--home {
+
+      vertical-align: bottom;
+
+      i {
+      font-size: 1.1rem;
+      }
+
+      &::before {
+        content: none;
+      }
+
+    }
+
+    a {
+      color: var(--light-gray);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: var(--font-300);
+    }
+  }
+}

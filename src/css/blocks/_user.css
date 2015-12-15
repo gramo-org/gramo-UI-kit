@@ -1,0 +1,32 @@
+.user {
+  background: color(var(--gramo-ui-bg) shade(5%));
+  padding: 1rem 1rem;
+
+  &__name,
+  &__avatar {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__name,
+  &__logout {
+    color: var(--light-gray);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-left: 0.4rem;
+    vertical-align: top;
+    line-height: 1rem;
+  }
+
+  &__logout {
+    display: inline-block;
+    margin-top: -5px;
+  }
+
+  &__avatar {
+    max-width: 2.2rem;
+    border-radius: 50%;
+    border: 1px solid var(--light-gray);
+    float: left;
+  }
+}

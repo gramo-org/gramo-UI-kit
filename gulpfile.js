@@ -15,7 +15,7 @@ gulp.task('postcss', function() {
   var autoprefixer = require('autoprefixer'),
     pImport = require('postcss-import'),
     customProps = require('postcss-custom-properties'),
-    customMedia = require("postcss-custom-media"),
+    customMedia = require('postcss-custom-media'),
     comments = require('postcss-discard-comments'),
     color = require('postcss-color-function'),
     nested = require('postcss-nested'),
@@ -24,8 +24,8 @@ gulp.task('postcss', function() {
   return gulp.src('./src/css/style.css')
     .pipe(postcss([
       pImport(),
-      simpleExtend(),
       nested(),
+      simpleExtend(),
       comments({
         discardAll: true
       }),
