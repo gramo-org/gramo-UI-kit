@@ -7,15 +7,11 @@
     "responsive"
   ],
   "main": [
-    "src/scss/style.scss"
+    "dist/style.css"
   ],
-  "moduleType": "node",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "*",
+    "!/dist/**/*"
   ],
   "repository": {
     "type": "git",
