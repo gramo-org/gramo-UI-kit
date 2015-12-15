@@ -1,5 +1,7 @@
 # Gramo UI kit
 
+https://rawgit.com/gramo-org/gramo-UI-kit/master/dist/index.html
+
 ## A kitchen sink resource for UI (user interface) components
 
 * * *
