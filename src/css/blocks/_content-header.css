@@ -17,10 +17,10 @@
   &__title {
     text-transform: uppercase;
     font-weight: var(--font-700);
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
     @media (--tablet) {
-      font-size: 1.4rem;
+      font-size: 2.2rem;
       margin-bottom: 0;
     }
     @extend .col-sm;

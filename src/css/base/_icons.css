@@ -16,7 +16,7 @@
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
-	line-height: 1;
+	/*line-height: 1;*/
   display: inline-block;
 
 	/* Better Font Rendering =========== */
@@ -26,11 +26,11 @@
 
 .icon--chevron-right:before {
 	content: "\e907";
-	color: var(--light-gray);
+	color: var(--table-border-color);
 }
 .icon--chevron-left:before {
 	content: "\e908";
-	color: var(--light-gray);
+	color: var(--table-border-color);
 }
 
 .icon--logo-echo:before {
@@ -53,19 +53,21 @@
 .icon--link-arrow:before {
 	content: "\e902";
   color: var(--gramo-blue);
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 
 .icon--pagination-next:before {
 	content: "\e908";
   color: var(--gramo-blue);
-  font-size: 0.6rem;
+  font-size: 1rem;
+	vertical-align: top;
 }
 
 .icon--pagination-previous:before {
 	content: "\e907";
   color: var(--gramo-blue);
-  font-size: 0.6rem;
+  font-size: 1rem;
+	vertical-align: top;
 }
 
 .icon--breadcrumbs-arrow:before {

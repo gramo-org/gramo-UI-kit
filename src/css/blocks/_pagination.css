@@ -12,17 +12,17 @@
 
 .pagination .pagination__item {
   display: none;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   background: #fff;
-  border: 1px solid rgba(var(--light-gray), 0.5);
+  border: 1px solid color(var(--light-gray) a(50%));
   border-width: 1px 1px 0 1px;
-  box-shadow: 0px 4px 0 rgba(var(--gramo-blue), 1);
+  box-shadow: 0px 4px 0 color(var(--gramo-blue) a(100%));
   text-align: center;
   @media (--tablet) { display: inline-block; }
 
   a {
     text-decoration: none;
-    padding: 0.7rem;
+    padding: 1.2rem;
     line-height: 1rem;
     min-width: 0.8rem;
     display: inline-block;

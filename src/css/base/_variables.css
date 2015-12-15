@@ -16,8 +16,8 @@
 --gramo-ui-bg:                                   #434D5A;
 
 --mid-gray:                                      color(var(--gramo-gray) tint(30%));
---light-gray:                                    color(var(--gramo-gray) tint(50%));
---x-light-gray:                                  color(var(--gramo-gray) tint(62%));
+--light-gray:                                    color(var(--mid-gray) tint(50%));
+--x-light-gray:                                  color(var(--light-gray) tint(80%));
 
 /* Global Typography */
 --base-background-color:                         #f9f9f9;
@@ -85,7 +85,8 @@
 --base-placeholder-color:                        #999;
 
 /*Tables */
---table-border-color:                            color(var(--light-gray) tint(7%));
+--table-border-color:                            #d9d9dc;
+--table-head-background:                         #ededed;
 
 /* Grid Containers */
 --container-mobile:                              100%;
