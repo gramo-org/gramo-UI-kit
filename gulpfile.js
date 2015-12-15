@@ -68,6 +68,12 @@ gulp.task('movecss', function() {
     .pipe(gulp.dest('./dist/'));
 });
 
+// Task to move compiled CSS to `dist` folder
+gulp.task('movefonts', function() {
+  return gulp.src('./src/fonts/*.*')
+    .pipe(gulp.dest('./dist/fonts'));
+});
+
 // Task to Minify JS
 gulp.task('jsmin', function() {
   return gulp.src('./src/js/**/*.js')
@@ -116,5 +122,5 @@ gulp.task('default', ['watch']);
 
 // Gulp Build Task
 gulp.task('build', function() {
-  runSequence('autoprefix', 'movecss', 'imagemin', 'jsmin', 'inlinesource');
+  runSequence('autoprefix', 'movecss', 'movefonts', 'imagemin', 'jsmin', 'inlinesource');
 });
