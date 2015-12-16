@@ -129,7 +129,7 @@ hr,
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 1px;
-  background: var(--light-gray);
+  background: var(--mid-gray);
   border: 0;
   padding: 0;
   margin: 0;

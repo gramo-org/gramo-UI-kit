@@ -1,5 +1,5 @@
 .user {
-  background: color(var(--gramo-ui-bg) shade(5%));
+  background: color(var(--gramo-ui-bg) shade(15%));
   padding: 2rem;
 
   &__name,
@@ -13,7 +13,7 @@
     color: var(--light-gray);
     font-size: 1.2rem;
     text-transform: uppercase;
-    margin-left: 0.4rem;
+    margin-left: 1rem;
     vertical-align: top;
     line-height: 1.6rem;
   }

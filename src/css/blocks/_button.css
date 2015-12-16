@@ -1,25 +1,36 @@
 .btn {
-  margin-bottom: 1.25rem;
-  padding: 0.6rem 1.5rem;
-  border-radius: 0;
+  padding: 1rem;
+  border-radius: 2px;
   border-width: 0 0 3px 0;
   border-style: solid;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: var(--font-300);
   display: block;
+
   @media (--tablet) {
     display: inline-block;
   }
-  text-align: center;
-  text-decoration: none;
-  color: #000;
 
   &:hover {
      transition: 0.5s ease;
   }
 
+  &--white {
+    background-color: #fff;
+    color: var(--gramo-black);
+    border: 0;
+  }
+
+  &--default {
+    border-color: color(var(--dark-gray) shade(15%));
+    background-color: var(--dark-gray);
+  }
+
   &--primary {
-    border-color: color(var(--gramo-turkis) shade(10%));
+    border-color: color(var(--gramo-turkis) shade(15%));
     background-color: var(--gramo-turkis);
-    color: #FFF;
 
     &:hover {
        background-color: color(var(--gramo-turkis) shade(6%));
@@ -27,7 +38,7 @@
   }
 
   &--info {
-    border-color: color(var(--gramo-blue) shade(10%));
+    border-color: color(var(--gramo-blue) shade(15%));
     background-color: var(--gramo-blue);
 
     &:hover {
@@ -36,7 +47,7 @@
   }
 
   &--success {
-    border-color: color(var(--gramo-green) shade(10%));
+    border-color: color(var(--gramo-green) shade(15%));
     background-color: var(--gramo-green);
 
     &:hover {
@@ -45,7 +56,7 @@
   }
 
   &--danger {
-    border-color: color(var(--gramo-red) shade(10%));
+    border-color: color(var(--gramo-red) shade(15%));
     background-color: var(--gramo-red);
 
     &:hover {
@@ -54,47 +65,21 @@
   }
 
   &--large {
-    padding: 0.7rem 2.5rem;
-    font-size: 2rem;
+    padding: 0.7rem 3rem;
+    font-size: 1.6rem;
   }
 
   &--medium {
     @media (--tablet) {
-      padding: 0.4rem 1rem;
-      font-size: 1.7rem;
+      padding: 0.4rem 2.5rem;
+      font-size: 1.4rem;
     }
   }
 
   &--small {
     @media (--tablet) {
-      padding: 0.25rem 0.75rem;
-      font-size: 1.4rem;
-    }
-  }
-}
-
-/* Button group */
-.btn-group {
-  text-align: right;
-  .btn--info {
-    border-width: 0;
-  }
-
-  .btn {
-    @media (--tablet) { padding: 0.15rem 1rem; }
-    border-radius: 2px 0 0 2px;
-    & > i {
-      font-size: 1.4rem;
-      margin: 0 .25rem;
-    }
-    &:last-child {
-      margin: 5px 0;
-      @media (--tablet) { margin: 0 0 0 -3px; }
-      border-radius: 0 2px 2px 0;
-      border-left: 1px solid rgba(0,0,0,0.3);
-    }
-    &--white:last-child {
-      box-shadow: 0px 0px 1px var(--mid-gray);
+      padding: 0.2rem 2rem;
+      font-size: 1.3rem;
     }
   }
 }

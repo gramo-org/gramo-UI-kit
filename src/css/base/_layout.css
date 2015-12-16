@@ -16,6 +16,11 @@ main {
   &.push {
     transform: translateX(0);
   }
+
+  &.no-push {
+    flex: 1;
+    transform: none!important;
+  }
 }
 
 .container {
@@ -58,11 +63,11 @@ main {
 }
 
 .container.grid-test > .row > * {
-  background: color(var(--gramo-turkis) tint(20%));
+  background: color(var(--gramo-turkis) tint(60%));
   padding-top: 2rem;
   padding-bottom: 2rem;
 
   &:nth-child(odd) {
-    background: color(var(--gramo-turkis) tint(25%));
+    background: color(var(--gramo-turkis) tint(80%));
   }
 }

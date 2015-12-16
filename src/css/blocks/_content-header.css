@@ -3,14 +3,14 @@
   margin-bottom: 1rem;
 
   & > * {
-    padding: 1rem 0.2rem;
+    padding: 2rem 0.5rem;
     justify-content: space-around;
     @media (--tablet) { justify-content: flex-start; }
   }
 
   &__above {
     @extend .row;
-    border-bottom: 1px solid var(--light-gray);
+    @media (--tablet) { border-bottom: 1px solid var(--mid-gray); }
     align-items: flex-end;
   }
 
@@ -30,7 +30,7 @@
   &__below {
     @extend .row;
     align-items: center;
-    padding-bottom: 0;
+    padding-bottom: 1rem;
   }
 
   &__meta {

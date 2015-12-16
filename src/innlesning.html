@@ -85,7 +85,7 @@
               <!--Pagination example-->
               <nav role="navigation">
               	<ul class="pagination">
-              		<li class="pagination__item pagination__item--previous"><a href="#"><i class="icon--pagination-previous"></i></a></li>
+              		<li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
               		<li class="pagination__item pagination__item--current"><a href="#">1</a></li>
               		<li class="pagination__item"><a href="#">2</a></li>
               		<li class="pagination__item"><a href="#">3</a></li>
@@ -122,6 +122,9 @@
             </div>
             <div class="list__item__results">
               <span><i class="icon--cross"></i> 1 feil fil</span> <span><i class="icon--checkmark"></i> 5 innleste filer</span>
+            </div>
+            <div class="list__item__deviation">
+              12 avvik
             </div>
             <div class="list__item__action">
               <a href="#"><i class="icon--chevron-left"></i></a>
@@ -167,7 +170,10 @@
               <date><span>For 4 dager siden</span>Søndag 1 november</date>
             </div>
             <div class="list__item__results">
-              <span>5 innleste filer <i class="icon--checkmark"></i></span> </span>3 feil filer <i class="icon--cross"></i></span>
+              <span><i class="icon--checkmark"></i> 5 innleste filer</span> <span><i class="icon--cross"></i> 3 feil filer</span>
+            </div>
+            <div class="list__item__deviation">
+              5 avvik
             </div>
             <div class="list__item__action">
               <a href="#"><i class="icon--chevron-left"></i></a>
@@ -175,7 +181,7 @@
             <ul class="list--sub-list">
               <li class="sub-list__item">
                 <div class="sub-list__item--downloads">
-                  <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--cross"></i></span>
+                  <span><i class="icon--cross"></i></span> <a href="#">archiveReport_NRK_P3_20150601.xml</a>
                 </div>
                 <div class="sub-list__item--message">
                   Feilmelding, feilmelding, feilmelding
@@ -183,7 +189,7 @@
               </li>
               <li class="sub-list__item">
                 <div class="sub-list__item--downloads">
-                  <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--cross"></i></span>
+                  <span><i class="icon--cross"></i></span> <a href="#">archiveReport_NRK_P3_20150601.xml</a>
                 </div>
                 <div class="sub-list__item--message">
                   Feilmelding, feilmelding, feilmelding
@@ -191,7 +197,7 @@
               </li>
               <li class="sub-list__item">
                 <div class="sub-list__item--downloads">
-                  <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--checkmark"></i></span>
+                  <span><i class="icon--checkmark"></i></span> <a href="#">archiveReport_NRK_P3_20150601.xml</a>
                 </div>
                 <div class="sub-list__item--message">
                   Feilmelding, feilmelding, feilmelding
@@ -579,11 +585,11 @@
             </section>
             <section class="form__section">
               <label class="form__label">Velg kanal
-                <span class="select select--block">
+                <div class="select select--block">
                   <select>
                     <option>Radio 1</option>
                   </select>
-                </span>
+                </div>
               </label>
             </section>
             <section class="form__section">

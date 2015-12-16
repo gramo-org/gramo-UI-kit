@@ -20,9 +20,9 @@
   }
 
   &--gray {
-    background: var(--x-light-gray);
+    background: var(--light-gray);
     box-shadow: none;
-    border: 1px solid color(var(--x-light-gray) shade(5%));
-    padding: 1rem;
+    border: 1px solid color(var(--light-gray) shade(5%));
+    padding: 2rem;
   }
 }

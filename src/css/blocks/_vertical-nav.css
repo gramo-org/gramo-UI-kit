@@ -13,11 +13,11 @@
       color: var(--sidebar-menu-color);
       text-decoration: none;
       display: block;
-      border-bottom: 1px solid color(var(--sidebar-menu-bg) shade(5%));
+      border-bottom: 1px solid color(var(--sidebar-menu-bg) shade(15%));
     }
 
     &--isExpanded > a {
-      background: color(var(--sidebar-menu-bg) shade(5%));
+      background: color(var(--sidebar-menu-bg) shade(15%));
       position: relative;
 
       &::before {
@@ -37,7 +37,7 @@
       text-transform: none;
 
       a:hover {
-        background: color(var(--sidebar-menu-bg) shade(5%));;
+        background: color(var(--sidebar-menu-bg) shade(15%));;
       }
 
       &--active a, a:hover {
