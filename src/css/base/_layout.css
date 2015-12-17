@@ -44,7 +44,7 @@ main {
   }
 
   &--branded {
-    background: url("/img/logo-echo.svg") no-repeat 50% 1rem;
+    background: url("img/logo-echo.svg") no-repeat 50% 1rem;
     background-size: 5rem;
     padding-top: 7rem;
 
