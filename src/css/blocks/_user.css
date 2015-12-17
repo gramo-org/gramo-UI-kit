@@ -1,6 +1,6 @@
 .user {
-  background: color(var(--gramo-ui-bg) shade(15%));
-  padding: 2rem;
+  background: color(var(--ui-gray) shade(15%));
+  padding: 1.5rem;
 
   &__name,
   &__avatar {
@@ -11,7 +11,7 @@
   &__name,
   &__logout {
     color: var(--light-gray);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     margin-left: 1rem;
     vertical-align: top;
@@ -24,7 +24,7 @@
   }
 
   &__avatar {
-    max-width: 3rem;
+    max-width: 3.5rem;
     border-radius: 50%;
     border: 1px solid var(--light-gray);
     float: left;

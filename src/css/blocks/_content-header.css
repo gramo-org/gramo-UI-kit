@@ -3,14 +3,14 @@
   margin-bottom: 1rem;
 
   & > * {
-    padding: 2rem 0.5rem;
+    padding: 1.5rem 0.5rem;
     justify-content: space-around;
     @media (--tablet) { justify-content: flex-start; }
   }
 
   &__above {
     @extend .row;
-    @media (--tablet) { border-bottom: 1px solid var(--mid-gray); }
+    @media (--tablet) { border-bottom: 1px solid var(--silver); }
     align-items: flex-end;
   }
 
@@ -30,14 +30,14 @@
   &__below {
     @extend .row;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
 
   &__meta {
     @extend .col-sm-2;
     display: block;
     font-weight: var(--font-700);
-    color: var(--gramo-gray);
+    color: var(--slate-gray);
 
     date {
       font-weight: var(--font-300);

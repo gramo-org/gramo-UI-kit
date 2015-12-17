@@ -932,25 +932,6 @@ dl dd{
   overflow:hidden;
   display:block;
 }
-blockquote, .blockquote{
-  font-family:'Source Sans Pro', sans-serif;
-  font-weight:400;
-  color:#504f56;
-  font-style:italic;
-  margin:3em 0;
-}
-blockquote p, .blockquote p{
-  font-size:2.2rem;
-  line-height:2.8rem;
-  margin-bottom:0.4em;
-}
-blockquote cite, .blockquote cite{
-  font-size:1.6rem;
-  line-height:2.2rem;
-  font-weight:700;
-  font-style:normal;
-  color:rgb(115, 114, 120);
-}
 caption{
   line-height:normal;
   font-weight:700;
@@ -1074,7 +1055,7 @@ input-placeholder{
 	content:"\e907";
 	color:#d9d9dc;
 }
-.icon--chevron-left:before{
+.icon--chevron-left:before, .vertical__nav__item--isExpanded > a::before{
 	content:"\e908";
 	color:#d9d9dc;
 }
@@ -1091,7 +1072,7 @@ input-placeholder{
 	content:"\e901";
   color:#ed6b6a;
 }
-.icon--expand-arrow:before, .vertical__nav__item--isExpanded > a::before{
+.icon--expand-arrow:before{
 	content:"\e902";
   color:#ededed;
 }
@@ -1104,14 +1085,12 @@ input-placeholder{
 
 .icon--pagination-next:before{
 	content:"\e908";
-  color:#0095da;
   font-size:1rem;
 	vertical-align:top;
 }
 
 .icon--pagination-previous:before{
 	content:"\e907";
-  color:#0095da;
   font-size:1rem;
 	vertical-align:top;
 }
@@ -1180,7 +1159,7 @@ input-placeholder{
 }
 .form .form__label--inline{
   display:inline-block;
-  margin:0 3rem 0 0;
+  margin:0 3rem 1rem 0;
 }
 .form .form__label--inline input[type="radio"], .form .form__label--inline input[type="checkbox"]{
   margin-right:0.5rem;
@@ -1241,7 +1220,6 @@ input-placeholder{
 }
 
 .form__label--date{
-  font-weight:!important;
   font-weight:600;
 }
 
@@ -1289,9 +1267,6 @@ input-placeholder{
   display:block;
   margin-top:0.75rem;
 }
-.select--block select{
-  padding:0.5rem!important;
-}
 .select select{
   font-size:1.3rem;
   font-weight:400;
@@ -1303,11 +1278,6 @@ input-placeholder{
   background-image:none;
   -webkit-appearance:none;
   outline:0;
-}
-@media (min-width: 720px){
-  .select select{
-    padding:0.2rem 0.3rem;
-  }
 }
 .select select:focus{
   outline:none;
@@ -1342,7 +1312,7 @@ input-placeholder{
 
 .horizontal-rule:after{
   margin-left:-15px;
-  border-top-color:#f9f9f9!important;
+  border-top-color:#f9f9f9;
   border-width:15px;
   left:50%;
 }
@@ -1375,9 +1345,15 @@ input-placeholder{
   color:#101010;
   border:0;
 }
+.btn--white:hover{
+  background-color:rgb(247, 247, 247);
+}
 .btn--default{
   border-color:rgb(140, 139, 145);
   background-color:#a5a4ab;
+}
+.btn--default:hover{
+  background-color:rgb(155, 154, 161);
 }
 .btn--primary{
   border-color:rgb(116, 169, 184);
@@ -1608,10 +1584,10 @@ input-placeholder{
   display:none;
   font-size:1.4rem;
   background:#fff;
-  border:1px solid rgba(237, 237, 237, 0.5);
-  border-width:1px 1px 0 1px;
-  box-shadow:0px 4px 0 rgb(0, 149, 218);
+  border:1px solid #d9d9dc;
+  border-radius:2px;
   text-align:center;
+  margin:0 0.2rem;
 }
 
 @media (min-width: 720px){
@@ -1622,7 +1598,7 @@ input-placeholder{
 
 .pagination .pagination__item a{
   text-decoration:none;
-  padding:1.2rem;
+  padding:1rem 1.2rem;
   line-height:1rem;
   min-width:0.8rem;
   display:inline-block;
@@ -1642,6 +1618,7 @@ input-placeholder{
 
 .pagination .pagination__item--current{
   background:#0095da;
+  border-color:#0095da;
 }
 
 .pagination .pagination__item--current a{
@@ -1650,6 +1627,14 @@ input-placeholder{
 
 .pagination .pagination__item--current a:hover{
   background:none;
+}
+
+.pagination .pagination__item--disabled{
+  background:#ededed;
+}
+
+.pagination .pagination__item--disabled i{
+  color:#a5a4ab;
 }
 .box{
   background:#fff;
@@ -1706,10 +1691,15 @@ input-placeholder{
   }
 }
 .breadcrumbs__item--home{
-  vertical-align:bottom;
+  padding-left:0;
+}
+@media (min-width: 720px){
+  .breadcrumbs__item--home{
+    padding-left:1rem;
+  }
 }
 .breadcrumbs__item--home i{
-  font-size:1.4rem;
+  font-size:1.7rem;
 }
 .breadcrumbs__item--home::before{
   content:none;
@@ -1789,7 +1779,7 @@ input-placeholder{
 }
 .vertical__nav__item--isExpanded > a::before{
   font-family:'icomoon';
-  font-size:0.9rem;
+  font-size:1rem;
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
   position:absolute;
@@ -1809,7 +1799,7 @@ input-placeholder{
 }
 .user{
   background:rgb(57, 65, 77);
-  padding:2rem;
+  padding:1.5rem;
 }
 .user__name, .user__avatar{
   display:inline-block;
@@ -1817,7 +1807,7 @@ input-placeholder{
 }
 .user__name, .user__logout{
   color:#ededed;
-  font-size:1.2rem;
+  font-size:1.3rem;
   text-transform:uppercase;
   margin-left:1rem;
   vertical-align:top;
@@ -1828,7 +1818,7 @@ input-placeholder{
   margin-top:-5px;
 }
 .user__avatar{
-  max-width:3rem;
+  max-width:3.5rem;
   border-radius:50%;
   border:1px solid #ededed;
   float:left;
@@ -1837,7 +1827,7 @@ input-placeholder{
   margin-bottom:1rem;
 }
 .content-header > *{
-  padding:2rem 0.5rem;
+  padding:1.5rem 0.5rem;
   -webkit-justify-content:space-around;
   -ms-flex-pack:distribute;
   justify-content:space-around;
@@ -1876,7 +1866,7 @@ input-placeholder{
   -webkit-align-items:center;
   -ms-flex-align:center;
   align-items:center;
-  padding-bottom:1rem;
+  padding-bottom:0.5rem;
 }
 .content-header__meta{
   display:block;
@@ -1898,9 +1888,11 @@ input-placeholder{
 .badge{
   display:inline-block;
   border-radius:2px;
-  padding:0.7rem 1.2rem;
+  padding:0.6rem 1rem;
   margin-left:0.5rem;
-  line-height:2rem;
+  font-size:1.6rem;
+  line-height:1.8rem;
+  vertical-align:top;
 }
 .badge--danger{
   background:#ed6b6a;
@@ -1978,8 +1970,10 @@ input-placeholder{
 .table tbody:not(.broadcaster) tr{
   background:#fff;
 }
-.table tbody:not(.broadcaster) tr:hover{
-  background:#f9f9f9;
+@media (min-width: 720px){
+  .table tbody:not(.broadcaster) tr:hover{
+    background:#f9f9f9;
+  }
 }
 .table tbody:not(.broadcaster) tr:first-child{
   border-top:1px solid #d9d9dc;
@@ -2054,7 +2048,6 @@ input-placeholder{
   -webkit-transform:rotate(0deg);
   transform:rotate(0deg);
   transition:.5s ease-in-out;
-  cursor:pointer;
 }
 @media (min-width: 960px){
   .toggle-sidebar{
@@ -2463,8 +2456,7 @@ input-placeholder{
   line-height:2.3rem;
   background:url(/img/toggle-bg.svg) right 7px center no-repeat;
   background-size:10px;
-  background-color:!important;
-  background-color:#ededed;
+  background-color:#d9d9dc!important;
 }
 
 .x-toggle-btn.medium{

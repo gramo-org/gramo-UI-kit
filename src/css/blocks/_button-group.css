@@ -21,7 +21,7 @@
       }
     }
     &--white:last-child {
-      box-shadow: 0px 0px 1px var(--mid-gray);
+      box-shadow: 0px 0px 1px var(--silver);
     }
   }
 }

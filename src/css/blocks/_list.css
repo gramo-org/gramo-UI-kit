@@ -37,7 +37,7 @@
     span {
       font-size: 1.2rem;
       text-transform: uppercase;
-      color: var(--dark-gray);
+      color: var(--off-gray);
       display: block;
       line-height: 1.5rem;
     }

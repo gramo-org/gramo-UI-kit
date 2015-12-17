@@ -21,11 +21,17 @@
     background-color: #fff;
     color: var(--gramo-black);
     border: 0;
+    &:hover {
+       background-color: color(#fff shade(3%));
+    }
   }
 
   &--default {
-    border-color: color(var(--dark-gray) shade(15%));
-    background-color: var(--dark-gray);
+    border-color: color(var(--off-gray) shade(15%));
+    background-color: var(--off-gray);
+    &:hover {
+       background-color: color(var(--off-gray) shade(6%));
+    }
   }
 
   &--primary {

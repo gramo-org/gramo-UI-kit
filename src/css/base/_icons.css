@@ -58,14 +58,12 @@
 
 .icon--pagination-next:before {
 	content: "\e908";
-  color: var(--gramo-blue);
   font-size: 1rem;
 	vertical-align: top;
 }
 
 .icon--pagination-previous:before {
 	content: "\e907";
-  color: var(--gramo-blue);
   font-size: 1rem;
 	vertical-align: top;
 }

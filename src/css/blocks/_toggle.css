@@ -3,12 +3,12 @@
 
 .x-toggle-btn {
   vertical-align: middle;
-  color: var(--gramo-gray);
+  color: var(--slate-gray);
   font-size: 1.2rem;
   line-height: 2.3rem;
   background: url(/img/toggle-bg.svg) right 7px center no-repeat;
   background-size: 10px;
-  background-color: var(--light-gray!important);
+  background-color: var(--silver)!important;
 
   &.medium {
     padding: 1px;

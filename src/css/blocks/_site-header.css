@@ -1,5 +1,5 @@
 .site-header {
-  background: var(--gramo-ui-bg);
+  background: var(--ui-gray);
 
   nav {
     @extend .row;

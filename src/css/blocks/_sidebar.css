@@ -16,7 +16,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: var(--gramo-ui-bg);
+    background: var(--ui-gray);
   }
 
   &__header {

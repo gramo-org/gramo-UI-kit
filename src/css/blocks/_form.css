@@ -22,12 +22,12 @@
     position: relative;
     margin-bottom: 1rem;
     font-weight: var(--font-600);
-    color: var(--gramo-gray);
+    color: var(--slate-gray);
     font-size: 1.4rem;
 
     &--inline {
       display: inline-block;
-      margin: 0 3rem 0 0;
+      margin: 0 3rem 1rem 0;
 
       input[type="radio"],
       input[type="checkbox"] {
@@ -46,12 +46,12 @@
     position: relative;
     margin-bottom: 1rem;
     font-weight: var(--font-600);
-    color: var(--gramo-gray);
+    color: var(--slate-gray);
     font-size: 1.4rem;
   }
 
   .form__input {
-    border: 1px solid var(--mid-gray);
+    border: 1px solid var(--silver);
     width: 100%;
     padding-right: 2rem;
     background-color: #fff;
@@ -103,7 +103,7 @@
 }
 
 .form__label--date {
-  font-weight: var(--font-600!important);
+  font-weight: var(--font-600);
   br {
     @media (--tablet) { display: none; }
   }
@@ -111,7 +111,7 @@
 
  .form__label--date .form__input {
    background: #fff url(/img/calendar.svg) center right 10px no-repeat;
-   border: 1px solid var(--mid-gray);
+   border: 1px solid var(--silver);
    @media (--tablet) { margin-left: 1rem; }
 
    &--block {

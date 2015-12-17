@@ -2,7 +2,7 @@
   position: relative;
   text-align: center;
   margin: 2rem 0;
-  background: var(--mid-gray);
+  background: var(--silver);
 }
 
 .horizontal-rule:before,
@@ -18,19 +18,19 @@
 
 .horizontal-rule:before {
   margin-left: -16px;
-  border-top-color: color(var(--mid-gray) shade 5%); /* darken stroke slightly */
+  border-top-color: color(var(--silver) shade 5%); /* darken stroke slightly */
   border-width: 16px;
   left: 50%;
 }
 
 .horizontal-rule:after {
   margin-left: -15px;
-  border-top-color: #f9f9f9!important;
+  border-top-color: var(--base-background-color);
   border-width: 15px;
   left: 50%;
 }
 
 .spacer {
-  background: var(--gramo-ui-bg);
+  background: var(--ui-gray);
   height: 10rem;
 }

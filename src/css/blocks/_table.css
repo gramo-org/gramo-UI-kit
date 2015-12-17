@@ -59,7 +59,7 @@
 
   tr > td:nth-child(4) > span {
     white-space: normal;
-    color: var(--dark-gray);
+    color: var(--off-gray);
   }
 
 
@@ -74,7 +74,7 @@
     tr {
       background: #fff;
       &:hover {
-        background: var(--x-light-gray);
+        @media (--tablet) { background: var(--x-light-gray); }
       }
     }
 
@@ -91,7 +91,7 @@
       border-right: 1px solid var(--table-border-color);
 
       span {
-        color: var(--mid-gray);
+        color: var(--silver);
       }
     }
 
@@ -118,7 +118,7 @@
       margin: 0.5rem 0;
       font-size: 2.8rem;
       text-align: center;
-      @media (--tablet) { text-align: left; font-size: 1.5rem; margin: 1rem 0 0 0; color: var(--gramo-gray); }
+      @media (--tablet) { text-align: left; font-size: 1.5rem; margin: 1rem 0 0 0; color: var(--slate-gray); }
     }
   }
 
@@ -151,7 +151,7 @@ only screen and (max-width: 760px),
 
     .broadcaster {
       tr > td {
-        background: var(--gramo-gray)!important;
+        background: var(--slate-gray)!important;
         border-bottom: 0;
       }
     }
