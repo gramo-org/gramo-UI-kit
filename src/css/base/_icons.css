@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?q1q1mz');
+	src:url('fonts/icomoon.eot?q1q1mz#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?q1q1mz') format('truetype'),
+		url('fonts/icomoon.woff?q1q1mz') format('woff'),
+		url('fonts/icomoon.svg?q1q1mz#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	/*line-height: 1;*/
+  display: inline-block;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon--chevron-right:before {
+	content: "\e907";
+	color: var(--table-border-color);
+}
+.icon--chevron-left:before {
+	content: "\e908";
+	color: var(--table-border-color);
+}
+
+.icon--logo-echo:before {
+	content: "\e906";
+}
+
+.icon--checkmark:before {
+	content: "\e900";
+  color: var(--gramo-green);
+}
+.icon--cross:before {
+	content: "\e901";
+  color: var(--gramo-red);
+}
+.icon--expand-arrow:before {
+	content: "\e902";
+  color: var(--light-gray);
+}
+
+.icon--link-arrow:before {
+	content: "\e902";
+  color: var(--gramo-blue);
+  font-size: 1rem;
+}
+
+.icon--pagination-next:before {
+	content: "\e908";
+  font-size: 1rem;
+	vertical-align: top;
+}
+
+.icon--pagination-previous:before {
+	content: "\e907";
+  font-size: 1rem;
+	vertical-align: top;
+}
+
+.icon--breadcrumbs-arrow:before {
+	content: "\e904";
+}
+.icon--home:before {
+	content: "\e905";
+}

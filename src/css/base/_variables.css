@@ -1,0 +1,96 @@
+/* ==========================================================================
+/* Root – Variables
+/* ==========================================================================
+*/
+:root {
+
+/* Global Colors */
+--gramo-turkis:                                  #88c7d8;
+--gramo-black:                                   #101010;
+--gramo-white:                                   #fdfdfd;
+--gramo-yellow:                                  #f8ee62;
+--gramo-green:                                   #50bf9e;
+--gramo-blue:                                    #0095da;
+--gramo-red:                                     #ed6b6a;
+--gramo-purple:                                  #a41681;
+
+--slate-gray:                                    #504f56;
+--ui-gray:                                       #434D5A;
+--off-gray:                                      #a5a4ab;
+--silver:                                        #d9d9dc;
+--light-gray:                                    #ededed;
+--x-light-gray:                                  #f9f9f9;
+
+/* Global Typography */
+--base-font-family:                              'Source Sans Pro', sans-serif;
+--base-font-size:                                1.6rem;
+--base-line-height:                              2.2rem;
+--base-font-weight:                              400;
+--base-font-color:                               var(--gramo-black);
+--base-link-color:                               var(--gramo-blue);
+
+/* Font Weights */
+--font-300:                                      300;
+--font-400:                                      400;
+--font-600:                                      600;
+--font-700:                                      700;
+
+/* Headings */
+--heading-font-family:                           var(--base-font-family);
+
+--h1-font-size:                                  3.2rem;
+--h1-line-height:                                3.8rem;
+--h1-font-weight:                                var(--font-400);
+--h1-color:                                      #343434;
+
+--h2-font-size:                                  2.6rem;
+--h2-line-height:                                3.2rem;
+--h2-font-weight:                                var(--font-400);
+--h2-color:                                      var(--slate-gray);
+
+--h3-font-size:                                  2.2rem;
+--h3-line-height:                                2.8rem;
+--h3-font-weight:                                var(--font-400);
+--h3-color:                                      var(--gramo-black);
+
+--h4-font-size:                                  1.8rem;
+--h4-line-height:                                2.4rem;
+--h4-font-weight:                                var(--font-400);
+--h4-color:                                      var(--gramo-black);
+
+--h5-font-size:                                  1.6rem;
+--h5-line-height:                                2.2rem;
+--h5-font-weight:                                var(--font-400);
+--h5-color:                                      var(--gramo-black);
+
+--h6-font-size:                                  1.4rem;
+--h6-line-height:                                2.0rem;
+--h6-font-weight:                                var(--font-400);
+--h6-color:                                      var(--gramo-black);
+
+/* Forms */
+--base-placeholder-color:                        #999;
+
+/*Tables */
+--table-border-color:                            var(--silver);
+--table-head-background:                         var(--light-gray);
+
+/* Grid Containers */
+--container-mobile:                              100%;
+--container-tablet:                              720px;
+--container-desktop:                             960px;
+--container-hd:                                  1120px;
+
+/* Responsive Breakpoints */
+@custom-media --tablet (min-width: 720px);
+@custom-media --desktop (min-width: 960px);
+@custom-media --hd (min-width: 1120px);
+
+
+/*Context specific variables */
+--base-background-color:                         var(--x-light-gray);
+
+/*Sidebar menu */
+--sidebar-menu-bg:                               var(--ui-gray);
+--sidebar-menu-color:                            var(--light-gray);
+}

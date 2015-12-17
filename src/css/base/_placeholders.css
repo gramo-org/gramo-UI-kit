@@ -1,0 +1,11 @@
+%global-shadow {
+  box-shadow: 0 1px 3px color(var(--slate-gray) a(30%));
+}
+
+%border-success {
+  box-shadow: 4px 0px 0px var(--gramo-green) inset;
+}
+
+%border-danger {
+  box-shadow: 4px 0px 0px var(--gramo-red) inset;
+}

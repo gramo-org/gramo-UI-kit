@@ -1,65 +1,47 @@
 // Base Gulp File
 var gulp = require('gulp'),
   watch = require('gulp-watch'),
-  sass = require('gulp-sass'),
-  less = require('gulp-less'),
   path = require('path'),
-  notify = require('gulp-notify'),
+  postcss = require('gulp-postcss'),
   inlinesource = require('gulp-inline-source'),
   browserSync = require('browser-sync'),
   imagemin = require('gulp-imagemin'),
   cache = require('gulp-cache'),
   uglify = require('gulp-uglify'),
-  runSequence = require('run-sequence'),
-  autoprefixer = require('gulp-autoprefixer');
-
+  runSequence = require('run-sequence');
 
 // Task to compile SCSS
-gulp.task('sass', function() {
-  return gulp.src('./src/scss/style.scss')
-    .pipe(sass({
-        errLogToConsole: false,
-        paths: [path.join(__dirname, 'scss', 'includes')]
-      })
-      .on("error", notify.onError(function(error) {
-        return "Failed to Compile SCSS: " + error.message;
-      })))
-    .pipe(gulp.dest('./src/'))
-    .pipe(gulp.dest('./dist/'))
+gulp.task('postcss', function() {
+  var autoprefixer = require('autoprefixer'),
+    pImport = require('postcss-import'),
+    customProps = require('postcss-custom-properties'),
+    customMedia = require('postcss-custom-media'),
+    comments = require('postcss-discard-comments'),
+    color = require('postcss-color-function'),
+    nested = require('postcss-nested'),
+    simpleExtend = require('postcss-extend');
+
+  return gulp.src('./src/css/style.css')
+    .pipe(postcss([
+      pImport(),
+      nested(),
+      simpleExtend(),
+      comments({
+        discardAll: true
+      }),
+      customProps(),
+      customMedia(),
+      color(),
+      autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+      }),
+    ]))
+    .pipe(gulp.dest('./src'))
+    .pipe(gulp.dest('./dist'))
     .pipe(browserSync.reload({
       stream: true
-    }))
-    .pipe(notify("SCSS Compiled Successfully :)"));
-});
-
-// Task to compile LESS
-gulp.task('less', function() {
-  return gulp.src('./src/less/style.less')
-    .pipe(less({
-        paths: [path.join(__dirname, 'less', 'includes')]
-      })
-      .on('error', function(err) {
-        this.emit('end');
-      }))
-    .on("error", notify.onError(function(error) {
-      return "Failed to Compile LESS: " + error.message;
-    }))
-    .pipe(gulp.dest('./src/'))
-    .pipe(gulp.dest('./dist/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-    .pipe(notify("LESS Compiled Successfully :)"));
-});
-
-// Task to autoprefix CSS
-gulp.task('autoprefix', function() {
-  return gulp.src('./src/style.css')
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
-    .pipe(gulp.dest('./dist'));
+    }));
 });
 
 // Task to move compiled CSS to `dist` folder
@@ -112,8 +94,7 @@ gulp.task('inlinesource', function() {
 
 // Gulp Watch Task
 gulp.task('watch', ['browserSync'], function() {
-  gulp.watch('./src/scss/**/*', ['sass']),
-    gulp.watch('./src/less/**/*', ['less']);
+  gulp.watch('./src/css/**/*', ['postcss']);
   gulp.watch('./src/**/*.html').on('change', browserSync.reload);
 });
 
@@ -122,5 +103,5 @@ gulp.task('default', ['watch']);
 
 // Gulp Build Task
 gulp.task('build', function() {
-  runSequence('autoprefix', 'movecss', 'movefonts', 'imagemin', 'jsmin', 'inlinesource');
+  runSequence('postcss', 'movecss', 'movefonts', 'imagemin', 'jsmin', 'inlinesource');
 });
