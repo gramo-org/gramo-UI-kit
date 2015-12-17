@@ -1,26 +1,20 @@
 {
-  "name": "base",
-  "version": "2.6.6",
-  "homepage": "http://matthewhartman.github.io/base/",
-  "authors": [
-    "Matthew Hartman <hello@matthewhartman.com.au>"
-  ],
-  "description": "A Rock Solid, Responsive HTML/CSS Framework built to work on all devices big and small.",
+  "name": "Gramo UI Kit",
+  "description": "Reusable UI components for Gramo web applications",
   "keywords": [
     "css",
-    "less",
-    "scss",
-    "framework",
-    "mobile-first",
-    "lightweight",
+    "bem",
     "responsive"
   ],
-  "license": "MIT",
+  "main": [
+    "dist/style.css"
+  ],
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+    "*",
+    "!/dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gramo-org/gramo-UI-kit.git"
+  }
 }

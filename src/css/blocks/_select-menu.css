@@ -1,0 +1,44 @@
+.select {
+  border: 1px solid var(--silver);
+  width: 99%;
+  margin-top: 1rem;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #fff url("img/arrow-down.svg") no-repeat 95% 50%;
+  background-size: 12px;
+  font-size: 1.4rem;
+  display: inline-block;
+  color: var(--slate-gray);
+
+  @media (--tablet) {
+    width: 160px;
+    margin-top: 0;
+  }
+
+  &--block {
+    display: block;
+    margin-top: 0.75rem;
+  }
+
+
+  select {
+    font-size: 1.3rem;
+    font-weight: var(--font-400);
+    padding: 0.5rem;
+    width: 110%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    outline: 0;
+
+    &:focus {
+        outline: none;
+    }
+    &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    }
+  }
+}
