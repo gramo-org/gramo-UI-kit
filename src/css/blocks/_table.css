@@ -25,34 +25,16 @@
     }
   }
 
-  &__head--channel {
-    width: 6%;
-  }
-
-  &__head--date {
+  &__head--small {
     width: 8%;
   }
 
-  &__head--program {
-    width: 11%;
+  &__head--medium {
+    width: 12%;
   }
 
-  &__head--deviation {
-    width: 15%;
-  }
-
-  &__head--from,
-  &__head--to {
-    width: 5%;
-  }
-
-  &__head--id {
-    width: 17%;
-  }
-
-  &__head--active {
-    width: 17%;
-    text-align: right;
+  &__head--large {
+    width: 16%;
   }
 
   /* remove white space property on Avvik */

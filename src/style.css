@@ -11,15 +11,15 @@
 .list--expandable .list__item--danger{
   box-shadow:4px 0px 0px #ed6b6a inset;
 }
-.pull-right{
+.text--right{
   text-align:right
 }
 
-.center{
+.text--center{
   text-align:center;
 }
 
-a.no-style{
+.link--no-style{
   color:#101010;
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1936,27 +1936,14 @@ input-placeholder{
     width:20%;
   }
 }
-.table__head--channel{
-  width:6%;
-}
-.table__head--date{
+.table__head--small{
   width:8%;
 }
-.table__head--program{
-  width:11%;
+.table__head--medium{
+  width:12%;
 }
-.table__head--deviation{
-  width:15%;
-}
-.table__head--from, .table__head--to{
-  width:5%;
-}
-.table__head--id{
-  width:17%;
-}
-.table__head--active{
-  width:17%;
-  text-align:right;
+.table__head--large{
+  width:16%;
 }
 .table tr > td:nth-child(4) > span{
   white-space:normal;

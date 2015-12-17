@@ -1,11 +1,11 @@
-.pull-right {
+.text--right {
   text-align: right
 }
 
-.center {
+.text--center {
   text-align: center;
 }
 
-a.no-style {
+.link--no-style {
   color: var(--base-font-color);
 }
