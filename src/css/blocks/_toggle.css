@@ -6,7 +6,7 @@
   color: var(--slate-gray);
   font-size: 1.2rem;
   line-height: 2.3rem;
-  background: url(/img/toggle-bg.svg) right 7px center no-repeat;
+  background: url(img/toggle-bg.svg) right 7px center no-repeat;
   background-size: 10px;
   background-color: var(--silver)!important;
 
@@ -20,7 +20,7 @@
 }
 
 .x-toggle:checked + .x-toggle-btn {
-  background: url(/img/toggle-bg.svg) 7px center no-repeat;
+  background: url(img/toggle-bg.svg) 7px center no-repeat;
   background-size: 10px;
   background-color: var(--gramo-blue)!important;
 }

@@ -884,7 +884,7 @@ main.no-push{
 }
 
 .container--branded{
-  background:url("/img/logo-echo.svg") no-repeat 50% 1rem;
+  background:url("img/logo-echo.svg") no-repeat 50% 1rem;
   background-size:5rem;
   padding-top:7rem;
 }
@@ -1230,7 +1230,7 @@ input-placeholder{
 }
 
  .form__label--date .form__input{
-   background:#fff url(/img/calendar.svg) center right 10px no-repeat;
+   background:#fff url(img/calendar.svg) center right 10px no-repeat;
    border:1px solid #d9d9dc;
  }
 
@@ -2454,7 +2454,7 @@ input-placeholder{
   color:#504f56;
   font-size:1.2rem;
   line-height:2.3rem;
-  background:url(/img/toggle-bg.svg) right 7px center no-repeat;
+  background:url(img/toggle-bg.svg) right 7px center no-repeat;
   background-size:10px;
   background-color:#d9d9dc!important;
 }
@@ -2469,7 +2469,7 @@ input-placeholder{
 }
 
 .x-toggle:checked + .x-toggle-btn{
-  background:url(/img/toggle-bg.svg) 7px center no-repeat;
+  background:url(img/toggle-bg.svg) 7px center no-repeat;
   background-size:10px;
   background-color:#0095da!important;
 }
