@@ -13,7 +13,7 @@
 .pagination .pagination__item {
   display: none;
   font-size: 1.4rem;
-  background: #fff;
+  background: var(--gramo-white);
   border: 1px solid var(--silver);
   border-radius: 2px;
   text-align: center;
@@ -22,13 +22,14 @@
 
   a {
     text-decoration: none;
-    padding: 1rem 1.2rem;
-    line-height: 1rem;
+    padding: 0.8rem 1.2rem;
+    line-height: normal;
     min-width: 0.8rem;
     display: inline-block;
 
     &:hover {
-      background: color(var(--gramo-blue) tint(50%));
+      background: var(--gramo-blue);
+      color: #fff;
     }
   }
 
@@ -36,9 +37,6 @@
   &--next {
     display: inline-block;
 
-    &--isDisabled {
-      color: var(--slate-gray);
-    }
   }
 
   &--current {
@@ -56,6 +54,11 @@
 
   &--disabled {
     background: var(--light-gray);
+    pointer-events: none;
+
+    & a:hover {
+      background: var(--light-gray);
+    }
 
     i {
       color: var(--off-gray);

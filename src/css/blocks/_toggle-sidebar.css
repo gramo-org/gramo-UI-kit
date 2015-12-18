@@ -40,7 +40,9 @@
 }
 
 .toggle-sidebar.open {
-  transform: translateX(-2rem);
+  transform: translateX(-4rem);
+  position: fixed;
+  top: 0.6rem;
 }
 
 .toggle-sidebar.open span:nth-child(1) {

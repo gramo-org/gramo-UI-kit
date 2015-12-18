@@ -1,5 +1,5 @@
 .box {
-  background: #fff;
+  background: var(--gramo-white);
   @extend %global-shadow;
   @extend .col-xs;
   @extend .col-sm-6;
@@ -17,6 +17,7 @@
     max-width: none;
     margin: 0;
     display: block;
+    flex: 1 0 auto;
   }
 
   &--gray {

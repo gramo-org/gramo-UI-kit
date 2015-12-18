@@ -1,23 +1,31 @@
-/* Button group */
 .btn-group {
   text-align: right;
-  .btn--info {
+
+  .btn:first-child {
     border-width: 0;
   }
 
   .btn {
-    @media (--tablet) { padding: 0.15rem 1rem; }
+    display: inline-block;
+    width: 49%;
+    padding: 0.45rem 1rem;
+    font-size: 1.4rem;
+    margin: 2rem 0;
     border-radius: 2px 0 0 2px;
+    @media (--tablet) { padding: 0.15rem 1rem; margin: 0; width: auto; }
+
     & > i {
       font-size: 1rem;
       margin: 0 0.5rem;
     }
+
     &:last-child {
       margin: 5px 0;
+      border-bottom: 0;
+      border-radius: 0 2px 2px 0;
       @media (--tablet) {
         margin: 0 0 0 -3px;
         border-left: 1px solid rgba(0,0,0,0.3);
-        border-radius: 0 2px 2px 0;
       }
     }
     &--white:last-child {

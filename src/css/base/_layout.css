@@ -7,19 +7,22 @@
 
 main {
   flex: 1 0 100%;
-  transform: translateX(-20rem);
+  /*transform: translateX(-20rem);*/
+  position: relative;
+  left: -20rem;
   transition: .25s ease;
   @media(--desktop) {
-    transform: translateX(0);
+    /*transform: translateX(0);*/
     flex: 1;
   }
   &.push {
-    transform: translateX(0);
+    transform: none;
+    left: 0rem;
   }
 
   &.no-push {
     flex: 1;
-    transform: none!important;
+    /*transform: none!important;*/
   }
 }
 

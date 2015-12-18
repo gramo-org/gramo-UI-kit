@@ -1,5 +1,9 @@
 .site-header {
   background: var(--ui-gray);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  @media (--tablet) { position: static; }
 
   nav {
     @extend .row;

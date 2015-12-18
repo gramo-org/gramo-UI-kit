@@ -34,10 +34,16 @@
   }
 
   &__meta {
-    @extend .col-sm-2;
+    @extend .col-xs-6;
+    @extend .col-sm-3;
+    @extend .col-lg-2;
     display: block;
     font-weight: var(--font-700);
     color: var(--slate-gray);
+    text-align: center;
+    @media (--tablet) {
+      text-align: left;
+    }
 
     date {
       font-weight: var(--font-300);
@@ -46,7 +52,8 @@
 
   &__action {
     @extend .col-xs-12;
-    @extend .col-sm-8;
+    @extend .col-sm-6;
+    @extend .col-lg-8;
     display: block;
     text-align: center;
     @media (--tablet) { text-align: right; }

@@ -1,13 +1,13 @@
 .sidebar {
   flex: 0 0 20rem;
   transform: translateX(-20rem);
-  transition: .25s ease;
+  transition: transform .25s ease;
   @media (--desktop) {
     transform: none;
   }
 
   &--isOpen {
-    transform: translateX(0);
+    transform: none;
   }
 
   &__content {

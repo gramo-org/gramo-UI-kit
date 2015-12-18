@@ -26,7 +26,7 @@
     font-size: 1.4rem;
 
     &--inline {
-      display: inline-block;
+      @media (--tablet) { display: inline-block; }
       margin: 0 3rem 1rem 0;
 
       input[type="radio"],

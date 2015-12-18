@@ -54,7 +54,7 @@
     }
 
     tr {
-      background: #fff;
+      background: var(--gramo-white);
       &:hover {
         @media (--tablet) { background: var(--x-light-gray); }
       }

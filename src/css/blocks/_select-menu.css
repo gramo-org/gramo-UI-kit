@@ -4,7 +4,7 @@
   margin-top: 1rem;
   border-radius: 3px;
   overflow: hidden;
-  background: #fff url("img/arrow-down.svg") no-repeat 95% 50%;
+  background: var(--gramo-white) url("img/arrow-down.svg") no-repeat 97% 50%;
   background-size: 12px;
   font-size: 1.4rem;
   display: inline-block;
@@ -22,9 +22,9 @@
 
 
   select {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: var(--font-400);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     width: 110%;
     border: none;
     box-shadow: none;

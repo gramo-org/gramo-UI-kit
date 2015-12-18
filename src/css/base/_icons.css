@@ -59,13 +59,11 @@
 .icon--pagination-next:before {
 	content: "\e908";
   font-size: 1rem;
-	vertical-align: top;
 }
 
 .icon--pagination-previous:before {
 	content: "\e907";
   font-size: 1rem;
-	vertical-align: top;
 }
 
 .icon--breadcrumbs-arrow:before {

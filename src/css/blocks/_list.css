@@ -1,7 +1,7 @@
 .list {
   list-style: none;
   padding: 0;
-  background: #fff;
+  background: var(--gramo-white);
   border: 1px solid var(--table-border-color);
 }
 
@@ -91,7 +91,7 @@
   .list--sub-list {
     list-style: none;
     margin: 1rem 0 0 0;
-    background: #fff;
+    background: var(--gramo-white);
     padding: 0;
     @extend .col-xs-12;
     position: relative;
@@ -122,7 +122,7 @@
       }
 
       &:nth-child(even) {
-        background: #fff;
+        background: var(--gramo-white);
       }
 
       &--downloads {
@@ -133,6 +133,7 @@
       &--message {
         @extend .col-xs-6;
         font-style: italic;
+        font-size: 1.4rem;
       }
     }
 
