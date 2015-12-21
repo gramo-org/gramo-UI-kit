@@ -37,11 +37,12 @@
     @extend .col-xs-6;
     @extend .col-sm-3;
     @extend .col-md-2;
-    padding-right: 0;
     display: block;
+    padding-right: 0;
     font-weight: var(--font-700);
     color: var(--slate-gray);
     text-align: center;
+    letter-spacing: -0.015rem;
 
     @media (--tablet) {
       text-align: left;

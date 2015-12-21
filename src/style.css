@@ -1911,11 +1911,12 @@ input-placeholder{
   padding-bottom:0.5rem;
 }
 .content-header__meta{
-  padding-right:0;
   display:block;
+  padding-right:0;
   font-weight:700;
   color:#504f56;
   text-align:center;
+  letter-spacing:-0.015rem;
 }
 @media (min-width: 720px){
   .content-header__meta{
