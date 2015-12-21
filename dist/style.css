@@ -850,7 +850,8 @@ main{
 }
 
 .container--hd{
-  max-width:1120px;
+  max-width:1400px;
+  margin:0;
 }
 
 .container--desktop{
@@ -1245,6 +1246,10 @@ input-placeholder{
   .form__label--date .form__input{
     margin-left:1rem;
   }
+}
+
+ .form__label--date .form__input:hover{
+  background-image:none;
 }
 
  .form__label--date .form__input--block{

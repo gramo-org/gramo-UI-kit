@@ -19,6 +19,7 @@ main {
 
   &--hd {
     max-width: var(--container-hd);
+    margin: 0;
   }
 
   &--desktop {

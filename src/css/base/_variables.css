@@ -79,7 +79,7 @@
 --container-mobile:                              100%;
 --container-tablet:                              720px;
 --container-desktop:                             960px;
---container-hd:                                  1120px;
+--container-hd:                                  1400px;
 
 /* Responsive Breakpoints */
 @custom-media --tablet (min-width: 720px);

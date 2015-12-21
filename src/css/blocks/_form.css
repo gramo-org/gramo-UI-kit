@@ -114,6 +114,10 @@
    border: 1px solid var(--silver);
    @media (--tablet) { margin-left: 1rem; }
 
+   &:hover {
+     background-image: none;
+   }
+
    &--block {
      display: block;
      max-width: 170px;
