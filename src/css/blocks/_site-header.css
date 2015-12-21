@@ -1,8 +1,9 @@
 .site-header {
   background: var(--ui-gray);
   position: fixed;
-  width: 100%;
   z-index: 1;
+  left: 0;
+  width: 100%;
   @media (--tablet) { position: static; }
 
   nav {
@@ -25,4 +26,14 @@
     font-size: 1.3rem;
     padding-bottom: 0.5rem;
   }
+  /* Add padding to first container section to compensate for fixed position */
+  & + section {
+    padding-top: 3rem;
+    @media (--tablet) { padding-top: 0; }
+  }
+}
+
+/* Adjust left position when sidebar is toggled */
+.push .site-header {
+  left: auto;
 }

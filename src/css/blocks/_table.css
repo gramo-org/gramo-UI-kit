@@ -100,7 +100,7 @@
       margin: 0.5rem 0;
       font-size: 2.8rem;
       text-align: center;
-      @media (--tablet) { text-align: left; font-size: 1.5rem; margin: 1rem 0 0 0; color: var(--slate-gray); }
+      @media (--desktop) { text-align: left; font-size: 1.5rem; margin: 1rem 0 0 0; color: var(--slate-gray); }
     }
   }
 
@@ -118,8 +118,8 @@
   /*** Make table responsive - not mobile first in this case! ***/
 
 @media
-only screen and (max-width: 760px),
-  (min-device-width: 768px) and (max-device-width: 1024px)  {
+only screen and (max-width: 960px),
+  (min-device-width: 968px) and (max-device-width: 1024px)  {
 
   .table {
     /* Force table to not be like tables anymore */

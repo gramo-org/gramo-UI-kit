@@ -1,28 +1,15 @@
 .site-wrapper {
   display: flex;
   height: 100vh;
-  overflow-x: hidden;
-  width: 100vw;
 }
 
 main {
   flex: 1 0 100%;
-  /*transform: translateX(-20rem);*/
   position: relative;
-  left: -20rem;
-  transition: .25s ease;
-  @media(--desktop) {
-    /*transform: translateX(0);*/
-    flex: 1;
-  }
-  &.push {
-    transform: none;
-    left: 0rem;
-  }
 
-  &.no-push {
+  @media(--tablet) {
     flex: 1;
-    /*transform: none!important;*/
+    position: static;
   }
 }
 
