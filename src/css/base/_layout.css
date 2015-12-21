@@ -1,25 +1,15 @@
 .site-wrapper {
   display: flex;
   height: 100vh;
-  overflow-x: hidden;
-  width: 100vw;
 }
 
 main {
   flex: 1 0 100%;
-  transform: translateX(-20rem);
-  transition: .25s ease;
-  @media(--desktop) {
-    transform: translateX(0);
-    flex: 1;
-  }
-  &.push {
-    transform: translateX(0);
-  }
+  position: relative;
 
-  &.no-push {
+  @media(--tablet) {
     flex: 1;
-    transform: none!important;
+    position: static;
   }
 }
 
@@ -44,9 +34,9 @@ main {
   }
 
   &--branded {
-    background: url("img/logo-echo.svg") no-repeat 50% 1rem;
-    background-size: 5rem;
-    padding-top: 7rem;
+    background: url("img/logo-echo.svg") no-repeat 50% 3rem;
+    background-size: 7rem;
+    padding-top: 9rem;
 
     h2 {
       font-weight: var(--font-300);

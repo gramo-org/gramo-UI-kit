@@ -8,6 +8,7 @@
   color: #fff;
   font-weight: var(--font-300);
   display: block;
+  font-size: 1.7rem;
 
   @media (--tablet) {
     display: inline-block;
@@ -18,7 +19,7 @@
   }
 
   &--white {
-    background-color: #fff;
+    background-color: var(--gramo-white);
     color: var(--gramo-black);
     border: 0;
     &:hover {
@@ -72,7 +73,6 @@
 
   &--large {
     padding: 0.7rem 3rem;
-    font-size: 1.6rem;
   }
 
   &--medium {

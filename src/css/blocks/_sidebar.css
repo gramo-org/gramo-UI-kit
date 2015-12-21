@@ -1,19 +1,31 @@
+%fixed {
+  position: fixed;
+  width: 20rem;
+  height: 100%;
+}
+
 .sidebar {
   flex: 0 0 20rem;
   transform: translateX(-20rem);
-  transition: .25s ease;
-  @media (--desktop) {
+  transition: transform .25s ease;
+  z-index: 1;
+  @extend %fixed;
+
+  @media (--tablet) {
     transform: none;
+    position: static;
   }
 
   &--isOpen {
-    transform: translateX(0);
+    transform: none;
+    box-shadow: 1px 0 11px rgba(0,0,0,0.5);
+    @media (--tablet) {
+      box-shadow: none;
+    }
   }
 
   &__content {
-    position: fixed;
-    width: 20rem;
-    height: 100%;
+    @extend %fixed;
     display: flex;
     flex-direction: column;
     background: var(--ui-gray);
