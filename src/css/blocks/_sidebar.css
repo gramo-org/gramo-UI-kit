@@ -8,10 +8,10 @@
   flex: 0 0 20rem;
   transform: translateX(-20rem);
   transition: transform .25s ease;
-  z-index: 1;
+  z-index: 2;
   @extend %fixed;
 
-  @media (--tablet) {
+  @media (--desktop) {
     transform: none;
     position: static;
   }
@@ -19,7 +19,7 @@
   &--isOpen {
     transform: none;
     box-shadow: 1px 0 11px rgba(0,0,0,0.5);
-    @media (--tablet) {
+    @media (--desktop) {
       box-shadow: none;
     }
   }

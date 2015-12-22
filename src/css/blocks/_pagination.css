@@ -1,9 +1,8 @@
 .pagination {
-  @extend .row;
   justify-content: center;
   @media (--tablet) { justify-content: flex-end; }
   list-style: none;
-  padding: 0 0.5rem;
+  padding: 0;
   @media (--tablet) {
     margin-top: 0;
     margin-bottom: 0;

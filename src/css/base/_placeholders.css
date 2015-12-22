@@ -9,3 +9,9 @@
 %border-danger {
   box-shadow: 4px 0px 0px var(--gramo-red) inset;
 }
+
+%no-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

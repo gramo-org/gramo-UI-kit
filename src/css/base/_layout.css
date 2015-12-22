@@ -17,9 +17,12 @@ main {
   padding: 0 1rem;
   margin: 0 auto;
 
+
   &--hd {
     max-width: var(--container-hd);
-    margin: 0;
+    @media(--desktop) {
+      margin: 0 2rem;
+    }
   }
 
   &--desktop {
@@ -32,6 +35,17 @@ main {
 
   &--mobile {
     max-width: var(--container-mobile);
+  }
+
+  &--fixedheight {
+    height: 10rem;
+
+    & + section {
+      margin-top: 6rem;
+      @media(--desktop) {
+        margin-top: 0;
+      }
+    }
   }
 
   &--branded {

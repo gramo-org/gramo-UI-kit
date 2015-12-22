@@ -2,8 +2,25 @@
   @extend .container;
   margin-bottom: 1rem;
 
+  &--fixed {
+    background: var(--x-light-gray);
+    position: fixed;
+    right: 1rem;
+    z-index: 1;
+    left: 1rem;
+    top: 0;
+    @media (--tablet) {
+      padding-top: 3rem;
+    }
+    @media (--desktop) {
+      left: 23rem;
+      top: auto;
+      padding-top: 0;
+    }
+  }
+
   & > * {
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem 1rem;
     justify-content: space-around;
     @media (--tablet) { justify-content: flex-start; }
   }
@@ -17,11 +34,13 @@
   &__title {
     text-transform: uppercase;
     font-weight: var(--font-700);
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
+    text-align: center;
     @media (--tablet) {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 0;
+      text-align: left;
     }
     @extend .col-sm;
     display: block;

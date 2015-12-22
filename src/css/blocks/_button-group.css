@@ -1,5 +1,8 @@
 .btn-group {
-  text-align: right;
+  text-align: center;
+  @media (--tablet) {
+    text-align: right;
+  }
 
   .btn:first-child {
     border-width: 0;

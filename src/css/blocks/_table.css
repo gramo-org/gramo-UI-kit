@@ -1,8 +1,12 @@
 .table {
-  table-layout: fixed;
-  width: 100%;
   white-space: nowrap;
   margin-top: 2rem;
+  table-layout: fixed;
+  width: 100%;
+  @media (--hd) {
+    table-layout: auto;
+    width: auto;
+  }
 
   th, td {
     white-space: normal;
@@ -19,7 +23,7 @@
 
     th.date-picker {
       text-align: center;
-      @media (--tablet) { width: 30%; }
+      @media (--tablet) { width: 30%; text-align: left; }
       @media (--desktop) { width: 25%; }
       @media (--hd) { width: 20%; }
     }
@@ -34,7 +38,7 @@
   }
 
   &__head--large {
-    width: 16%;
+    width: 23%;
   }
 
   /* remove white space property on Avvik */
@@ -78,7 +82,10 @@
     }
 
     .action {
-      @media (--tablet) { text-align: right; }
+      @media (--tablet) {
+        text-align: right;
+        @extend .table__head--large;
+      }
     }
   }
 

@@ -112,6 +112,7 @@
  .form__label--date .form__input {
    background: #fff url(img/calendar.svg) center right 10px no-repeat;
    border: 1px solid var(--silver);
+   padding-right: 0.5rem;
    @media (--tablet) { margin-left: 1rem; }
 
    &:hover {
