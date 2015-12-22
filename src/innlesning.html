@@ -268,44 +268,36 @@
           </div>
         </header>
 
-        <!--Table example-->
-        <form class="form--horizontal">
-          <table class="table table--overview">
-            <thead>
-              <tr>
-                <th class="date-picker">
-                  <label class="form__label--date">Fra:<br>
-                    <input type="date" placeholder="mm/dd/yyyy" class="form__input">
-                  </label>
-                </th>
-                <th class="date-picker">
-                  <label class="form__label--date">Til:<br>
-                    <input type="date" placeholder="mm/dd/yyyy" class="form__input">
-                  </label>
-                </th>
-                <th>
-                  <button class="btn btn--success btn--medium">Velg periode</button>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>NRK</td>
-                <td>45 avvik</td>
-                <td class="text--right">
-                  <a href="#" class="btn btn--success btn--small">Vis Avikk</a>
-                </td>
-              </tr>
-              <tr>
-                <td>Radio Norge</td>
-                <td>35 avvik</td>
-                <td class="text--right">
-                  <a href="#" class="btn btn--success btn--small">Vis Avikk</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <!--Inline form-->
+        <form class="form">
+          <div class="box box--gray box--full">
+            <label class="form__label form__label--date">Fra:<br>
+              <input type="date" placeholder="mm/dd/yyyy" class="form__input">
+            </label>
+            <label class="form__label form__label--date">Til:<br>
+              <input type="date" placeholder="mm/dd/yyyy" class="form__input">
+            </label>
+            <button class="btn btn--success btn--medium btn--inline">Velg periode</button>
+          </div>
         </form>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>NRK</td>
+              <td>45 avvik</td>
+              <td class="text--right">
+                <a href="#" class="btn btn--success btn--small">Vis Avikk</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Radio Norge</td>
+              <td>35 avvik</td>
+              <td class="text--right">
+                <a href="#" class="btn btn--success btn--small">Vis Avikk</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <hr class="spacer">
       <!--Content-header example-->
@@ -554,16 +546,16 @@
           <div class="box box--gray box--full">
             <section class="form__section">
               <h4 class="form__heading">Velg Kringkaster</h4>
-              <label class="form__label form__label--inline">
+              <label class="form__label">
                 <input type="radio">NRK
               </label>
-              <label class="form__label form__label--inline form__label--isChecked">
+              <label class="form__label form__label--isChecked">
                 <input type="radio" checked>Radio Norge
               </label>
-              <label class="form__label form__label--inline">
+              <label class="form__label">
                 <input type="radio">P4
               </label>
-              <label class="form__label form__label--inline">
+              <label class="form__label">
                 <input type="radio">Local Radio
               </label>
             </section>
@@ -577,20 +569,20 @@
               </label>
             </section>
             <section class="form__section">
-              <label class="form__label form__label--date form__label--inline">Sendetid Fra
+              <label class="form__label form__label--date">Sendetid Fra
                 <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
               </label>
-              <label class="form__label form__label--date form__label--inline">Til
+              <label class="form__label form__label--date">Til
                 <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
               </label>
             </section>
             <section class="form__section">
               <label class="form__label">Forventet musikkandel
-                <input type="text" value="30%" class="form__input form__input--numeric">
+                <input type="text" value="30%" class="form__input form__input--block form__input--numeric">
               </label>
             </section>
           </div>
-          <section class="form__section form__section--button">
+          <section class="form__section form__section--action">
             <button class="btn btn--default btn--large">Avbryt</button>
             <button class="btn btn--info btn--large">Lagre</button>
           </section>

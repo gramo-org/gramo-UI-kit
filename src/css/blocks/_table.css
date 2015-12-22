@@ -6,6 +6,7 @@
   @media (--hd) {
     table-layout: auto;
     width: auto;
+    min-width: 860px;
   }
 
   th, td {
@@ -20,13 +21,6 @@
   thead {
     border: 1px solid var(--table-border-color);
     background: var(--table-head-background);
-
-    th.date-picker {
-      text-align: center;
-      @media (--tablet) { width: 30%; text-align: left; }
-      @media (--desktop) { width: 25%; }
-      @media (--hd) { width: 20%; }
-    }
   }
 
   &__head--small {

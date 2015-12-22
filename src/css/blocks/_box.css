@@ -9,9 +9,6 @@
   padding: 2rem;
   @media (--desktop) { padding: 3rem; min-width: 400px; }
 
-  .btn {
-    width: 100%;
-  }
 
   &--full {
     max-width: none;

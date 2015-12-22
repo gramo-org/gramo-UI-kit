@@ -210,7 +210,7 @@ table{
 td, th{
   padding:0;
 }
-.row, .site-header nav, .form, .list--expandable .list__item, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .tabs__nav, .tabs__section{
+.row, .site-header nav, .list--expandable .list__item, .list--expandable .list__item--isExpanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .tabs__nav, .tabs__section{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -987,8 +987,7 @@ label, button, input, optgroup, select, textarea, .form__heading{
 input{ line-height:normal; }
 .input{ width:100%; }
 input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"]{
-  height:36px;
-  padding:0 .4em;
+  padding:0.75rem;
   box-sizing:border-box;
 }
 input[type="date"]::-webkit-inner-spin-button{
@@ -1157,48 +1156,20 @@ input-placeholder{
 .push .site-header{
   left:auto;
 }
-.form{
-  -webkit-flex-direction:column;
-  -ms-flex-direction:column;
-  flex-direction:column;
-  padding:1rem;
-}
 .form__section{
-  margin-bottom:2rem;
+  margin-bottom:3rem;
 }
-.form__section--button{
+.form__section--action{
   text-align:right;
   margin-top:2rem;
 }
-.form__section--button .btn:last-child{
+.form__section--action .btn:last-child{
   margin-top:1rem;
 }
 @media (min-width: 720px){
-  .form__section--button .btn:last-child{
+  .form__section--action .btn:last-child{
     margin:0 0 0 0.7rem;
   }
-}
-.form .form__label{
-  display:block;
-  position:relative;
-  margin-bottom:1rem;
-  font-weight:600;
-  color:#504f56;
-  font-size:1.4rem;
-}
-.form .form__label--inline{
-  margin:0 3rem 1rem 0;
-}
-@media (min-width: 720px){
-  .form .form__label--inline{
-    display:inline-block;
-  }
-}
-.form .form__label--inline input[type="radio"], .form .form__label--inline input[type="checkbox"]{
-  margin-right:0.5rem;
-}
-.form .form__label--isChecked{
-  color:#0095da;
 }
 .form__heading{
   display:block;
@@ -1208,23 +1179,46 @@ input-placeholder{
   color:#504f56;
   font-size:1.4rem;
 }
+.form .form__label{
+  position:relative;
+  margin:0 3rem 0 0;
+  font-weight:600;
+  color:#504f56;
+  font-size:1.4rem;
+  display:block;
+}
+@media (min-width: 720px){
+  .form .form__label{
+    display:inline-block;
+    vertical-align:middle;
+  }
+}
+.form .form__label input[type="radio"], .form .form__label input[type="checkbox"]{
+  margin-right:0.5rem;
+}
+.form .form__label--isChecked{
+  color:#0095da;
+}
+.form .form__label--block{
+  display:block;
+  margin:0 0 1rem 0;
+}
 .form .form__input{
   border:1px solid #d9d9dc;
-  width:100%;
   padding-right:2rem;
   background-color:#fff;
-  margin-top:0.75rem;
   font-weight:400;
   font-size:1.6rem;
 }
 .form .form__input--block{
   display:block;
-  max-width:170px;
+  width:100%;
+  margin-top:0.75rem;
 }
 .form .form__input--numeric{
   display:block;
   width:40px;
-  padding:0;
+  padding:0.75rem 0;
   text-align:center;
   font-size:1.4rem;
 }
@@ -1268,12 +1262,6 @@ input-placeholder{
    padding-right:0.5rem;
  }
 
- @media (min-width: 720px){
-  .form__label--date .form__input{
-    margin-left:1rem;
-  }
-}
-
  .form__label--date .form__input:hover{
   background-image:none;
 }
@@ -1297,7 +1285,12 @@ input-placeholder{
 }
 @media (min-width: 720px){
   .select{
-    width:160px;
+    background-position:95% 50%;
+  }
+}
+@media (min-width: 720px){
+  .select{
+    width:170px;
     margin-top:0;
   }
 }
@@ -1308,7 +1301,7 @@ input-placeholder{
 .select select{
   font-size:1.5rem;
   font-weight:400;
-  padding:0.5rem 1rem;
+  padding:0.75rem;
   width:110%;
   border:none;
   box-shadow:none;
@@ -1374,6 +1367,7 @@ input-placeholder{
 @media (min-width: 720px){
   .btn{
     display:inline-block;
+    vertical-align:middle;
   }
 }
 .btn:hover{
@@ -1436,6 +1430,11 @@ input-placeholder{
     padding:0.2rem 2rem;
     font-size:1.3rem;
   }
+}
+.btn--block{
+  display:block;
+  width:100%;
+  margin-bottom:1rem;
 }
 .btn-group{
   text-align:center;
@@ -1639,7 +1638,6 @@ input-placeholder{
   border:1px solid #d9d9dc;
   border-radius:2px;
   text-align:center;
-  margin:0 0.2rem;
 }
 
 @media (min-width: 720px){
@@ -1700,9 +1698,6 @@ input-placeholder{
     padding:3rem;
     min-width:400px;
   }
-}
-.box .btn{
-  width:100%;
 }
 .box--full{
   max-width:none;
@@ -2016,6 +2011,7 @@ input-placeholder{
   .table{
     table-layout:auto;
     width:auto;
+    min-width:860px;
   }
 }
 .table th, .table td{
@@ -2031,25 +2027,6 @@ input-placeholder{
 .table thead{
   border:1px solid #d9d9dc;
   background:#ededed;
-}
-.table thead th.date-picker{
-  text-align:center;
-}
-@media (min-width: 720px){
-  .table thead th.date-picker{
-    width:30%;
-    text-align:left;
-  }
-}
-@media (min-width: 960px){
-  .table thead th.date-picker{
-    width:25%;
-  }
-}
-@media (min-width: 1120px){
-  .table thead th.date-picker{
-    width:20%;
-  }
 }
 .table__head--small{
   width:8%;

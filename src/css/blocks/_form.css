@@ -1,42 +1,16 @@
 .form {
-  @extend .row;
-  flex-direction: column;
-  padding: 1rem;
 
   &__section {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
-  &__section--button {
+  &__section--action {
     text-align: right;
     margin-top: 2rem;
 
     .btn:last-child {
       margin-top: 1rem;
       @media (--tablet) { margin: 0 0 0 0.7rem; }
-    }
-  }
-
-  .form__label {
-    display: block;
-    position: relative;
-    margin-bottom: 1rem;
-    font-weight: var(--font-600);
-    color: var(--slate-gray);
-    font-size: 1.4rem;
-
-    &--inline {
-      @media (--tablet) { display: inline-block; }
-      margin: 0 3rem 1rem 0;
-
-      input[type="radio"],
-      input[type="checkbox"] {
-        margin-right: 0.5rem;
-      }
-    }
-
-    &--isChecked {
-      color: var(--gramo-blue);
     }
   }
 
@@ -50,28 +24,62 @@
     font-size: 1.4rem;
   }
 
+
+  /* Form elements */
+
+  .form__label {
+    position: relative;
+    margin: 0 3rem 0 0;
+    font-weight: var(--font-600);
+    color: var(--slate-gray);
+    font-size: 1.4rem;
+    display: block;
+    @media (--tablet) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 0.5rem;
+    }
+
+    &--isChecked {
+      color: var(--gramo-blue);
+    }
+
+    /* Block labels */
+    &--block {
+      display: block;
+      margin: 0 0 1rem 0;
+    }
+  }
+
   .form__input {
     border: 1px solid var(--silver);
-    width: 100%;
     padding-right: 2rem;
     background-color: #fff;
-    margin-top: 0.75rem;
     font-weight: var(--font-400);
     font-size: 1.6rem;
 
+    /* Block inputs */
     &--block {
       display: block;
-      max-width: 170px;
+      width: 100%;
+      margin-top: 0.75rem;
     }
+
+    /* Numeric inputs */
     &--numeric {
       display: block;
       width: 40px;
-      padding: 0;
+      padding: 0.75rem 0;
       text-align: center;
       font-size: 1.4rem;
     }
   }
 
+  /* Form validation classes */
   .form__label.is-valid .form__input/*, .form__label .form__input:valid*/ {
       border: 1px solid var(--light-gray);
       border-width: 1px 1px 1px 0;
@@ -92,7 +100,7 @@
   }
 }
 
-/* Date input */
+/* Date inputs */
 .form__label--date > .form__input {
   font-weight: var(--font-400);
   color: var(--gramo-blue);
@@ -113,7 +121,7 @@
    background: #fff url(img/calendar.svg) center right 10px no-repeat;
    border: 1px solid var(--silver);
    padding-right: 0.5rem;
-   @media (--tablet) { margin-left: 1rem; }
+
 
    &:hover {
      background-image: none;
