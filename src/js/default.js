@@ -57,5 +57,9 @@ $(document).ready(function() {
       e.preventDefault();
     });
   });
+  //Search select
+  $('.select-search').select2({
+    placeholder: "Velg kanal"
+  });
 
 }); // end document ready

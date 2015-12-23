@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4.4 (395) - http://www.bohemiancoding.com/sketch -->
+    <title>Search</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Innlesing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Innlesing:-Program-Admin" sketch:type="MSArtboardGroup" transform="translate(-390.000000, -278.000000)" fill="#504F56">
+            <g id="Dropdown/search" sketch:type="MSLayerGroup" transform="translate(260.000000, 232.000000)">
+                <g id="Rectangle-200-+-Søk-+-Search" transform="translate(5.000000, 41.000000)" sketch:type="MSShapeGroup">
+                    <path d="M136.275041,17.6061655 C135.094563,18.506687 133.620106,19.0414827 132.020741,19.0414827 C128.143293,19.0414827 125,15.8981897 125,12.0207413 C125,8.14329297 128.143293,5 132.020741,5 C135.89819,5 139.041483,8.14329297 139.041483,12.0207413 C139.041483,13.5069472 138.579686,14.8852946 137.791756,16.020121 L141.243689,19.4720544 L139.69231,21.0234338 L136.275041,17.6061655 Z M132.020741,17 C134.782165,17 137.020741,14.7614237 137.020741,12 C137.020741,9.23857625 134.782165,7 132.020741,7 C129.259318,7 127.020741,9.23857625 127.020741,12 C127.020741,14.7614237 129.259318,17 132.020741,17 Z" id="Search"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

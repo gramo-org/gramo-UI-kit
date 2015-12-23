@@ -26,6 +26,7 @@
 @import url('blocks/_content-header.css');
 @import url('blocks/_badge.css');
 @import url('blocks/_table.css');
+@import url('blocks/_table-sort.css');
 @import url('blocks/_toggle-sidebar.css');
 @import url('blocks/_toggle.css');
 @import url('blocks/_tabs.css');

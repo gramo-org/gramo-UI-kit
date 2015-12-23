@@ -1,0 +1,40 @@
+.table-sort {
+  position: relative;
+  margin-left: 0.5rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.15rem;
+
+  &__link {
+    font-size: 0.9rem;
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 0.9rem;
+    left: 0;
+    text-decoration: none;
+
+    &--up > i,
+    &--down > i {
+      display: block;
+      line-height: normal;
+    }
+
+    &--up {
+      top: 0;
+    }
+
+    &--down {
+      top: 1.1rem;
+    }
+
+    &--up i {
+      transform: rotate(-90deg);
+    }
+
+    &--down i {
+      transform: rotate(90deg);
+    }
+
+  }
+}

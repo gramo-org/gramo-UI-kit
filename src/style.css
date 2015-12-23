@@ -1036,14 +1036,14 @@ input-placeholder{
   color:#999;
 }
 @font-face{
-	font-family:'icomoon';
-	src:url('fonts/icomoon.eot?q1q1mz');
-	src:url('fonts/icomoon.eot?q1q1mz#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.ttf?q1q1mz') format('truetype'),
-		url('fonts/icomoon.woff?q1q1mz') format('woff'),
-		url('fonts/icomoon.svg?q1q1mz#icomoon') format('svg');
-	font-weight:normal;
-	font-style:normal;
+    font-family:'icomoon';
+    src:url('fonts/icomoon.eot?z8aihu');
+    src:url('fonts/icomoon.eot?z8aihu#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?z8aihu') format('truetype'),
+        url('fonts/icomoon.woff?z8aihu') format('woff'),
+        url('fonts/icomoon.svg?z8aihu#icomoon') format('svg');
+    font-weight:normal;
+    font-style:normal;
 }
 
 [class^="icon-"], [class*=" icon-"]{
@@ -1056,6 +1056,10 @@ input-placeholder{
   display:inline-block;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
+}
+
+.icon--search:before{
+    content:"\e909";
 }
 
 .icon--chevron-right:before{
@@ -1082,6 +1086,11 @@ input-placeholder{
 .icon--expand-arrow:before{
 	content:"\e902";
   color:#ededed;
+}
+
+.icon--arrow:before{
+	content:"\e902";
+  color:#504f56;
 }
 
 .icon--link-arrow:before{
@@ -1280,21 +1289,18 @@ input-placeholder{
   margin-top:1rem;
   border-radius:3px;
   overflow:hidden;
-  background:#fdfdfd url("img/arrow-down.svg") no-repeat 97% 50%;
+  background:#fdfdfd url("img/chevron-down.svg") no-repeat 97% 50%;
   background-size:12px;
   font-size:1.4rem;
   display:inline-block;
+  vertical-align:middle;
   color:#504f56;
-}
-@media (min-width: 720px){
-  .select{
-    background-position:95% 50%;
-  }
 }
 @media (min-width: 720px){
   .select{
     width:170px;
     margin-top:0;
+    background-position:95% 50%;
   }
 }
 .select--block{
@@ -1302,8 +1308,7 @@ input-placeholder{
   margin-top:0.75rem;
 }
 .select select{
-  font-size:1.5rem;
-  font-weight:400;
+  font-weight:600;
   padding:0.75rem;
   width:110%;
   border:none;
@@ -1319,6 +1324,39 @@ input-placeholder{
 .select select:-moz-focusring{
   color:transparent;
   text-shadow:0 0 0 #000;
+}
+.select--search{
+}
+.select2-container{
+  width:80%!important;
+}
+
+.select2-container--default .select2-selection--single{
+  border-radius:2px;
+  border-color:#d9d9dc;
+  height:32px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+  display:none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+  background:#fdfdfd url("img/chevron-down.svg") no-repeat 0% 55%;
+  background-size:12px;
+  height:30px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder{
+  color:#504f56;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+  line-height:30px;
+}
+
+.select2-search__field{
+  background:#fdfdfd url("img/search.svg") no-repeat right 5px center;
 }
 .horizontal-rule{
   position:relative;
@@ -2031,14 +2069,20 @@ input-placeholder{
   border:1px solid #d9d9dc;
   background:#ededed;
 }
-.table__head--small{
-  width:8%;
+@media (min-width: 960px){
+  .table__head--small{
+    width:8%;
+  }
 }
-.table__head--medium{
-  width:12%;
+@media (min-width: 960px){
+  .table__head--medium{
+    width:12%;
+  }
 }
-.table__head--large{
-  width:23%;
+@media (min-width: 960px){
+  .table__head--large{
+    width:23%;
+  }
 }
 .table tr > td:nth-child(4) > span{
   white-space:normal;
@@ -2107,7 +2151,7 @@ input-placeholder{
     display:block;
   }
 
-  .table thead{
+  .table th:empty, .table td:empty{
     display:none;
   }
 
@@ -2124,6 +2168,40 @@ input-placeholder{
   .table tr td:last-child{
     border-right:0!important;
   }
+}
+.table-sort{
+  position:relative;
+  margin-left:0.5rem;
+  display:inline-block;
+  vertical-align:top;
+  margin-top:0.15rem;
+}
+.table-sort__link{
+  font-size:0.9rem;
+  position:absolute;
+  display:block;
+  height:1rem;
+  width:0.9rem;
+  left:0;
+  text-decoration:none;
+}
+.table-sort__link--up > i, .table-sort__link--down > i{
+  display:block;
+  line-height:normal;
+}
+.table-sort__link--up{
+  top:0;
+}
+.table-sort__link--down{
+  top:1.1rem;
+}
+.table-sort__link--up i{
+  -webkit-transform:rotate(-90deg);
+  transform:rotate(-90deg);
+}
+.table-sort__link--down i{
+  -webkit-transform:rotate(90deg);
+  transform:rotate(90deg);
 }
 .toggle-sidebar{
   display:inline-block;
@@ -2601,7 +2679,7 @@ input-placeholder{
     z-index:1;
   }
 }
-.tabs a{
+.tabs__nav__item a{
   text-decoration:none;
   color:#504f56;
   padding:1rem 0;
