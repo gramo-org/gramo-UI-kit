@@ -1165,87 +1165,103 @@ input-placeholder{
 .push .site-header{
   left:auto;
 }
-.form__section{
-  margin-bottom:3rem;
-}
-.form__section--action{
-  text-align:right;
-  margin-top:2rem;
-}
-.form__section--action .btn:last-child{
+.form{
+  }
+
+  .form__section{
+    margin-bottom:3rem;
+  }
+
+  .form__section--action{
+    text-align:right;
+    margin-top:2rem;
+  }
+
+  .form__section--action .btn:last-child{
   margin-top:1rem;
 }
-@media (min-width: 720px){
+
+  @media (min-width: 720px){
   .form__section--action .btn:last-child{
     margin:0 0 0 0.7rem;
   }
 }
-.form__heading{
-  display:block;
-  position:relative;
-  margin-bottom:1rem;
-  font-weight:600;
-  color:#504f56;
-  font-size:1.4rem;
-}
-.form .form__label{
-  position:relative;
-  margin:0 3rem 0 0;
-  font-weight:600;
-  color:#504f56;
-  font-size:1.4rem;
-  display:block;
-}
-@media (min-width: 720px){
-  .form .form__label{
+
+  .form__heading{
+    display:block;
+    position:relative;
+    margin-bottom:1rem;
+    font-weight:600;
+    color:#504f56;
+    font-size:1.4rem;
+  }
+
+  .form__label{
+    position:relative;
+    margin:0 3rem 0 0;
+    font-weight:600;
+    color:#504f56;
+    font-size:1.4rem;
+    display:block;
+  }
+
+  @media (min-width: 720px){
+  .form__label{
     display:inline-block;
     vertical-align:middle;
   }
 }
-.form .form__label input[type="radio"], .form .form__label input[type="checkbox"]{
+
+  .form__label input[type="radio"], .form__label input[type="checkbox"]{
   margin-right:0.5rem;
 }
-.form .form__label--isChecked{
+
+  .form__label--isChecked{
   color:#0095da;
 }
-.form .form__label--block{
+
+  .form__label--block{
   display:block;
   margin:0 0 1rem 0;
 }
-.form .form__input{
-  border:1px solid #d9d9dc;
-  padding-right:2rem;
-  background-color:#fff;
-  font-weight:400;
-  font-size:1.6rem;
-}
-.form .form__input--block{
+
+  .form__input{
+    border:1px solid #d9d9dc;
+    padding-right:2rem;
+    background-color:#fff;
+    font-weight:400;
+    font-size:1.6rem;
+  }
+
+  .form__input--block{
   display:block;
   width:100%;
   margin-top:0.75rem;
 }
-.form .form__input--numeric, .form__input--stepper{
-  width:40px;
-  padding:0.75rem 0;
-  text-align:center;
-  font-size:1.4rem;
-}
-.form .form__label.is-valid .form__input{
-  border:1px solid #ededed;
-  border-width:1px 1px 1px 0;
-  border-left:4px solid #50bf9e;
-  background:#fff url(img/checkmark.svg) center right 10px no-repeat;
-  background-size:17px;
-}
-.form .form__label.has-error .form__input{
-  border:3px solid #ed6b6a;
-  background:#fff url(img/cross.svg) center right 10px no-repeat;
-  background-size:14px;
-}
-.form .input-error{
-  color:#ed6b6a;
-  margin-top:-0.75rem;
-}
+  .form__input--numeric{
+    width:40px;
+    padding:0.75rem 0;
+    text-align:center;
+    font-size:1.4rem;
+  }
+  .form__label.is-valid .form__input{
+      border:1px solid #ededed;
+      border-width:1px 1px 1px 0;
+      border-left:4px solid #50bf9e;
+      background:#fff url(img/checkmark.svg) center right 10px no-repeat;
+      background-size:17px;
+  }
+
+  .form__label.has-error .form__input{
+      border:3px solid #ed6b6a;
+      background:#fff url(img/cross.svg) center right 10px no-repeat;
+      background-size:14px;
+    }
+
+  .input-error{
+    color:#ed6b6a;
+    margin-top:-0.75rem;
+  }
 .form__label--date > .form__input{
   font-weight:400;
   color:#0095da;
