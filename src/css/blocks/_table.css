@@ -107,12 +107,9 @@
 
   /*** Expanded rows / comment rows ***/
 
-  &__row--expanded,
-  &__row--comment {
-
-    &:nth-child(odd) td {
-      background: color(var(--table-border-color) tint(70%));
-    }
+  &__row--isEditing td,
+  &__row--expanded:nth-child(odd) td {
+    background: color(var(--table-border-color) tint(70%));
   }
 }
 
