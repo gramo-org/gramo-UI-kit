@@ -17,8 +17,12 @@
   padding:0;
   margin:0;
 }
+.text--left{
+  text-align:left;
+}
+
 .text--right{
-  text-align:right
+  text-align:right;
 }
 
 .text--center{
@@ -1543,7 +1547,7 @@ input-placeholder{
 }
 @media (min-width: 768px){
   .btn-group .btn:last-child{
-    margin:0 0 0 -3px;
+    margin:0 0 0 -4px;
     border-left:1px solid rgba(0,0,0,0.3);
   }
 }
@@ -1988,6 +1992,9 @@ input-placeholder{
     top:auto;
     padding-top:0;
   }
+}
+.content-header--fixed > *{
+  max-width:1400px;
 }
 .content-header > *{
   padding:1.5rem 1rem;
