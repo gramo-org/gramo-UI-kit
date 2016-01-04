@@ -54,8 +54,21 @@
   color: var(--light-gray);
 }
 
-.icon--arrow:before {
+.icon--arrow-left:before {
 	content: "\e902";
+}
+
+.icon--arrow-right:before {
+	content: "\e903";
+}
+
+.icon--arrow-up:before {
+	content: "\e902";
+  color: var(--slate-gray);
+}
+
+.icon--arrow-down:before {
+	content: "\e903";
   color: var(--slate-gray);
 }
 

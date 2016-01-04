@@ -137,6 +137,6 @@
  }
 
  .form__input--stepper {
-   @extend .form .form__input--numeric;
+   @extend .form__input--numeric;
    padding: 0.5rem 0;
  }
