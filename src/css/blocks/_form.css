@@ -4,7 +4,7 @@
   .form__section {
     margin-bottom: 3rem;
 
-
+    /* Section with button(s) */
     &--action {
       text-align: right;
       margin-top: 2rem;
@@ -78,30 +78,30 @@
       br {
         @media (--tablet) { display: none; }
       }
+    }
 
-      & > .form__input {
-        font-weight: var(--font-400);
+    &--date > .form__input {
+      font-weight: var(--font-400);
+      color: var(--gramo-blue);
+      background: #fff url(img/calendar.svg) center right 10px no-repeat;
+      border: 1px solid var(--silver);
+      padding-right: 0.5rem;
+
+      &:hover {
+        background-image: none;
+      }
+
+      &.placeholder {
         color: var(--gramo-blue);
-        background: #fff url(img/calendar.svg) center right 10px no-repeat;
-        border: 1px solid var(--silver);
-        padding-right: 0.5rem;
+      }
 
-        &:hover {
-          background-image: none;
-        }
-
-        &.placeholder {
-          color: var(--gramo-blue);
-        }
-
-       &--block {
-         display: block;
-         max-width: 170px;
-         margin-left: 0;
-       }
-     }
-   }
- }
+     &--block {
+       display: block;
+       max-width: 170px;
+       margin-left: 0;
+      }
+    }
+  }
 
 
   .form__input {

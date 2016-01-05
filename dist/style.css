@@ -1220,7 +1220,7 @@ input-placeholder{
     color:#504f56;
     font-size:1.4rem;
     display:block;
- }
+  }
 
   @media (min-width: 768px){
   .form__label{
