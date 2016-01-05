@@ -13,7 +13,7 @@
     &__item {
       @extend .col-sm;
       @extend .col-md-2;
-      @extend .col-lg-1;
+
       padding: 0;
       text-align: center;
       background: var(--x-light-gray);

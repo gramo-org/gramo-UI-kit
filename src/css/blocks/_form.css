@@ -3,15 +3,16 @@
 
   .form__section {
     margin-bottom: 3rem;
-  }
 
-  .form__section--action {
-    text-align: right;
-    margin-top: 2rem;
 
-    .btn:last-child {
-      margin-top: 1rem;
-      @media (--tablet) { margin: 0 0 0 0.7rem; }
+    &--action {
+      text-align: right;
+      margin-top: 2rem;
+
+      .btn:last-child {
+        margin-top: 1rem;
+        @media (--tablet) { margin: 0 0 0 0.7rem; }
+      }
     }
   }
 
@@ -54,14 +55,61 @@
       display: block;
       margin: 0 0 1rem 0;
     }
-  }
+
+    /* Percents */
+    &--percent {
+
+      span {
+        display: block;
+      }
+      .form__input {
+        display: inline-block;
+      }
+      &::after {
+        content: '%';
+        margin-left: 0.2rem;
+      }
+    }
+
+    /* Dates */
+    &--date {
+      font-weight: var(--font-600);
+
+      br {
+        @media (--tablet) { display: none; }
+      }
+
+      & > .form__input {
+        font-weight: var(--font-400);
+        color: var(--gramo-blue);
+        background: #fff url(img/calendar.svg) center right 10px no-repeat;
+        border: 1px solid var(--silver);
+        padding-right: 0.5rem;
+
+        &:hover {
+          background-image: none;
+        }
+
+        &.placeholder {
+          color: var(--gramo-blue);
+        }
+
+       &--block {
+         display: block;
+         max-width: 170px;
+         margin-left: 0;
+       }
+     }
+   }
+ }
+
 
   .form__input {
     border: 1px solid var(--silver);
     padding-right: 2rem;
     background-color: #fff;
     font-weight: var(--font-400);
-    font-size: 1.6rem;
+
 
     /* Block inputs */
     &--block {
@@ -74,7 +122,7 @@
   /* Numeric inputs */
   .form__input--numeric {
     width: 40px;
-    padding: 0.75rem 0;
+    padding: 0.5rem 0!important;
     text-align: center;
     font-size: 1.4rem;
   }
@@ -100,43 +148,3 @@
     color: var(--gramo-red);
     margin-top: -0.75rem;
   }
-
-
-/* Date inputs */
-.form__label--date > .form__input {
-  font-weight: var(--font-400);
-  color: var(--gramo-blue);
-
-  &.placeholder {
-    color: var(--gramo-blue);
-  }
-}
-
-.form__label--date {
-  font-weight: var(--font-600);
-  br {
-    @media (--tablet) { display: none; }
-  }
-}
-
- .form__label--date .form__input {
-   background: #fff url(img/calendar.svg) center right 10px no-repeat;
-   border: 1px solid var(--silver);
-   padding-right: 0.5rem;
-
-
-   &:hover {
-     background-image: none;
-   }
-
-   &--block {
-     display: block;
-     max-width: 170px;
-     margin-left: 0;
-   }
- }
-
- .form__input--stepper {
-   @extend .form__input--numeric;
-   padding: 0.5rem 0;
- }

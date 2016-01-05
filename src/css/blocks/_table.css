@@ -9,7 +9,7 @@
     min-width: 860px;
   }
 
-  th, td {
+  td {
     white-space: normal;
     @media (--desktop) {
       white-space: nowrap;
@@ -28,11 +28,15 @@
   }
 
   &__head--medium {
-    @media (--desktop) { width: 12%; }
+    @media (--desktop) { width: 15%; }
   }
 
   &__head--large {
-    @media (--desktop) { width: 23%; }
+    @media (--desktop) { width: 25%; }
+  }
+
+  &__head--xlarge {
+    @media (--desktop) { width: 30%; }
   }
 
   /* remove white space property on Avvik */

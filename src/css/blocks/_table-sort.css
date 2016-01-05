@@ -6,11 +6,9 @@
   margin-top: 0.15rem;
 
   &__link {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     position: absolute;
     display: block;
-    height: 1rem;
-    width: 0.9rem;
     left: 0;
     text-decoration: none;
 
@@ -21,7 +19,7 @@
     }
 
     &--up {
-      top: 0;
+      top: 0.1rem;
     }
 
     &--down {
