@@ -30,7 +30,7 @@
     }
   }
 
-  &__nav__item--active {
+  .active { /* previously '&__nav__item--active' changed to work with Ember default behaviour */
     background: var(--light-gray);
     position: relative;
 
