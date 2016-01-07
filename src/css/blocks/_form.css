@@ -31,7 +31,6 @@
 
   .form__label {
     position: relative;
-    margin: 0 3rem 0 0;
     font-weight: var(--font-600);
     color: var(--slate-gray);
     font-size: 1.4rem;
@@ -39,11 +38,7 @@
     @media (--tablet) {
       display: inline-block;
       vertical-align: middle;
-    }
-
-    input[type="radio"],
-    input[type="checkbox"] {
-      margin-right: 0.5rem;
+      margin: 0 3rem 0 0;
     }
 
     &--isChecked {
@@ -58,6 +53,7 @@
 
     /* Percents */
     &--percent {
+      margin: 0;
 
       span {
         display: block;
@@ -74,6 +70,10 @@
     /* Dates */
     &--date {
       font-weight: var(--font-600);
+      margin-bottom: 1rem;
+      @media (--tablet) {
+        margin-bottom: 0;
+      }
 
       br {
         @media (--tablet) { display: none; }

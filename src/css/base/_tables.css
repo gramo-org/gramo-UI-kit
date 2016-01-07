@@ -24,11 +24,11 @@ table {
     }
     th:first-child,
     td:first-child {
-      padding-left: 2rem;
+      @media (--desktop) { padding-left: 2rem; }
     }
     th:last-child,
     td:last-child {
-      padding-right: 2rem;
+      @media (--desktop) { padding-right: 2rem; }
     }
   }
 }

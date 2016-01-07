@@ -301,7 +301,7 @@
       </section>
       <hr class="spacer">
       <!--Content-header example-->
-      <section class="container container--hd">
+      <section class="container container--desktop">
         <header class="content-header">
           <div class="content-header__above">
             <h2 class="content-header__title">Kringkaster <span class="badge badge--danger">NRK</span></h2>
@@ -322,103 +322,104 @@
             </div>
           </div>
         </header>
-
-        <!--Table example-->
-        <table class="table">
-          <thead>
-            <tr>
-              <th class="table__head--small">Kanal</th>
-              <th class="table__head--small">Dato</th>
-              <th>Program</th>
-              <th>Avvik</th>
-              <th class="table__head--small">Fra</th>
-              <th class="table__head--small">Til</th>
-              <th>InnslagsID</th>
-              <th>HovedArtist</th>
-              <th class="table__head--large">RecordingName</th>
-            </tr>
-          </thead>
-          <tbody class="broadcaster">
-            <tr><td><h3 class="broadcaster__title">P3</h3></td></tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>P3</td>
-              <td>28.11.2015</td>
-              <td>Tidenes Sommer</td>
-              <td>For mye musikk: <span>Over 100% Musikk</span></td>
-              <td>11:00</td>
-              <td>12:00</td>
-              <td>NONRO310402CS0003</td>
-              <td>David Bowie</td>
-              <td>Blackstar</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>28.11.2015</td>
-              <td>Tidenes Sommer</td>
-              <td>For mye musikk: <span>Over 100% Musikk</span></td>
-              <td>11:00</td>
-              <td>12:00</td>
-              <td>NONRO310402CS0003</td>
-              <td>David Bowie</td>
-              <td>Vi Lever</td>
-            </tr>
-            <tr class="table__row--isEditing">
-              <td>P3</td>
-              <td>28.11.2015</td>
-              <td>Tidenes Sommer</td>
-              <td>Multirapportert: <span>2 innslager</span></td>
-              <td>11:00</td>
-              <td>12:00</td>
-              <td></td>
-              <td colspan="2">
-                <div class="btn-group">
-                  <button class="btn btn--success btn--small">Kommenter</button>
-                  <button class="btn btn--success btn--small">Ignorer</button>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-          <tbody class="broadcaster">
-            <tr><td><h3 class="broadcaster__title">MP3</h3></td></tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>MP3</td>
-              <td>28.11.2015</td>
-              <td>Tidenes Sommer</td>
-              <td>For mye musikk: <span>Over 100% Musikk</span></td>
-              <td>11:00</td>
-              <td>12:00</td>
-              <td>NONRO310402CS0003</td>
-              <td>David Bowie</td>
-              <td>Blackstar</td>
-            </tr>
-            <tr>
-              <td>MP3</td>
-              <td>28.11.2015</td>
-              <td>Tidenes Sommer</td>
-              <td>For mye musikk: <span>Over 100% Musikk</span></td>
-              <td>11:00</td>
-              <td>12:00</td>
-              <td>NONRO310402CS0003</td>
-              <td>David Bowie</td>
-              <td>Vi Lever</td>
-            </tr>
-            <tr>
-              <td>MP3</td>
-              <td>28.11.2015</td>
-              <td>Tidenes Sommer</td>
-              <td>Multirapportert: <span>2 innslager</span></td>
-              <td>11:00</td>
-              <td>12:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="scrollable-area">
+          <!--Table example-->
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Kanal</th>
+                <th>Dato</th>
+                <th>Program</th>
+                <th>Avvik</th>
+                <th>Fra</th>
+                <th>Til</th>
+                <th>InnslagsID</th>
+                <th>HovedArtist</th>
+                <th>RecordingName</th>
+              </tr>
+            </thead>
+            <tbody class="broadcaster">
+              <tr><td><h3 class="broadcaster__title">P3</h3></td></tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td data-label="Kanal">P3</td>
+                <td data-label="Dato">28.11.2015</td>
+                <td data-label="Program">Tidenes Sommer a very long title is this ok Tidenes Sommer a very long title is this ok</td>
+                <td data-label="Avvik">For mye musikk: <span>Over 100% Musikk</span></td>
+                <td data-label="Fra">11:00</td>
+                <td data-label="Til">12:00</td>
+                <td data-label="InnslagsID">NONRO310402CS0003</td>
+                <td data-label="HovedArtist">David Bowie</td>
+                <td data-label="RecordingName">Blackstar</td>
+              </tr>
+              <tr>
+                <td data-label="Kanal">P3</td>
+                <td data-label="Dato">28.11.2015</td>
+                <td data-label="Program">Tidenes Sommer</td>
+                <td data-label="Avvik">For mye musikk: <span>Over 100% Musikk</span></td>
+                <td data-label="Fra">11:00</td>
+                <td data-label="Til">12:00</td>
+                <td data-label="InnslagsID">NONRO310402CS0003</td>
+                <td data-label="HovedArtist">David Bowie</td>
+                <td data-label="RecordingName">Vi Lever</td>
+              </tr>
+              <tr class="table__row--isEditing">
+                <td data-label="Kanal">P3</td>
+                <td data-label="Dato">28.11.2015</td>
+                <td data-label="Program">Tidenes Sommer</td>
+                <td data-label="Avikk">Multirapportert: <span>2 innslager</span></td>
+                <td data-label="Fra">11:00</td>
+                <td data-label="Til">12:00</td>
+                <td></td>
+                <td colspan="2">
+                  <div class="btn-group">
+                    <button class="btn btn--success btn--small">Kommenter</button>
+                    <button class="btn btn--success btn--small">Ignorer</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+            <tbody class="broadcaster">
+              <tr><td><h3 class="broadcaster__title">MP3</h3></td></tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td data-label="Kanal">MP3</td>
+                <td data-label="Dato">28.11.2015</td>
+                <td data-label="Program">Tidenes Sommer</td>
+                <td data-label="Avvik">For mye musikk: <span>Over 100% Musikk</span></td>
+                <td data-label="Fra">11:00</td>
+                <td data-label="Til">12:00</td>
+                <td data-label="InnslagsID">NONRO310402CS0003</td>
+                <td data-label="HovedArtist">David Bowie</td>
+                <td data-label="RecordingName">Blackstar</td>
+              </tr>
+              <tr>
+                <td data-label="Kanal">MP3</td>
+                <td data-label="Dato">28.11.2015</td>
+                <td data-label="Program">Tidenes Sommer</td>
+                <td data-label="Avvik">For mye musikk: <span>Over 100% Musikk</span></td>
+                <td data-label="Fra">11:00</td>
+                <td data-label="Til">12:00</td>
+                <td data-label="InnslagsID">NONRO310402CS0003</td>
+                <td data-label="HovedArtist">David Bowie</td>
+                <td data-label="RecordingName">Vi Lever</td>
+              </tr>
+              <tr>
+                <td data-label="Kanal">MP3</td>
+                <td data-label="Dato">28.11.2015</td>
+                <td data-label="Program">Tidenes Sommer</td>
+                <td data-label="Avvik">Multirapportert: <span>2 innslager</span></td>
+                <td data-label="Fra">11:00</td>
+                <td data-label="Til">12:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!--/.scrollable-area-->
       </section>
       <hr class="spacer">
 
@@ -449,12 +450,12 @@
           <tbody>
             <tr class="table__row--isEditing">
               <td>NRK</td>
-              <td>P3</td>
-              <td>Tidenes Sommer</td>
-              <td>DKMR12017215_1</td>
-              <td>11:00 - 12:00</td>
-              <td>30%</td>
-              <td class="action">
+              <td data-label="Kanal">P3</td>
+              <td data-label="Program">Tidenes Sommer</td>
+              <td data-label="Program ID">DKMR12017215_1</td>
+              <td data-label="Sendetid">11:00 - 12:00</td>
+              <td data-label="Musikkandel">30%</td>
+              <td data-label="Aktiv?" class="action">
                 <div class="btn-group">
                   <button class="btn btn--success btn--small">Kommenter</button>
                   <button class="btn btn--success btn--small">Ignorer</button>
@@ -463,12 +464,12 @@
             </tr>
             <tr>
               <td>NRK</td>
-              <td>P3</td>
-              <td>Tidenes Sommer</td>
-              <td>DKMR12017215_1</td>
-              <td>11:00 - 12:00</td>
-              <td>30%</td>
-              <td class="action">
+              <td data-label="Kanal">P3</td>
+              <td data-label="Program">Tidenes Sommer</td>
+              <td data-label="Program ID">DKMR12017215_1</td>
+              <td data-label="Sendetid">11:00 - 12:00</td>
+              <td data-label="Musikkandel">30%</td>
+              <td data-label="Aktiv?" class="action">
                 <span class="x-toggle-container">
                   <input type="checkbox" class="x-toggle" checked>
                   <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
@@ -478,12 +479,12 @@
             </tr>
             <tr>
               <td>NRK</td>
-              <td>P3</td>
-              <td>Tidenes Sommer</td>
-              <td>DKMR12017215_1</td>
-              <td>11:00 - 12:00</td>
-              <td>30%</td>
-              <td class="action">
+              <td data-label="Kanal">P3</td>
+              <td data-label="Program">Tidenes Sommer</td>
+              <td data-label="Program ID">DKMR12017215_1</td>
+              <td data-label="Sendetid">11:00 - 12:00</td>
+              <td data-label="Musikkandel">30%</td>
+              <td data-label="Aktiv?" class="action">
                 <span class="x-toggle-container">
                   <input type="checkbox" class="x-toggle">
                   <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
@@ -493,12 +494,12 @@
             </tr>
             <tr>
               <td>NRK</td>
-              <td>P3</td>
-              <td>Tidenes Sommer</td>
-              <td>DKMR12017215_1</td>
-              <td>11:00 - 12:00</td>
-              <td>30%</td>
-              <td class="action">
+              <td data-label="Kanal">P3</td>
+              <td data-label="Program">Tidenes Sommer</td>
+              <td data-label="Program ID">DKMR12017215_1</td>
+              <td data-label="Sendetid">11:00 - 12:00</td>
+              <td data-label="Musikkandel">30%</td>
+              <td data-label="Aktiv?" class="action">
                 <span class="x-toggle-container">
                   <input type="checkbox" class="x-toggle">
                   <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
@@ -508,12 +509,12 @@
             </tr>
             <tr>
               <td>NRK</td>
-              <td>P3</td>
-              <td>Tidenes Sommer</td>
-              <td>DKMR12017215_1</td>
-              <td>11:00 - 12:00</td>
-              <td>30%</td>
-              <td class="action">
+              <td data-label="Kanal">P3</td>
+              <td data-label="Program">Tidenes Sommer</td>
+              <td data-label="Program ID">DKMR12017215_1</td>
+              <td data-label="Sendetid">11:00 - 12:00</td>
+              <td data-label="Musikkandel">30%</td>
+              <td data-label="Aktiv?" class="action">
                 <span class="x-toggle-container">
                   <input type="checkbox" class="x-toggle">
                   <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">

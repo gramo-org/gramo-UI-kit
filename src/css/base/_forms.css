@@ -23,7 +23,6 @@ textarea {
 
 /* Inputs */
 input { line-height: normal; }
-.input { width: 100%; }
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -40,6 +39,7 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
+  margin-right: 0.5rem;
 
   &:checked {
     background-color: var(--gramo-blue);

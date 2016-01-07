@@ -18,15 +18,15 @@
   margin:0;
 }
 .text--left{
-  text-align:left;
+  text-align:left!important;
 }
 
 .text--right{
-  text-align:right;
+  text-align:right!important;
 }
 
 .text--center{
-  text-align:center;
+  text-align:center!important;
 }
 
 .link--no-style{
@@ -821,7 +821,7 @@ sub, .sub{ bottom:-0.25em; }
 
 del, .del{ text-decoration:line-through; }
 
-figure{ margin:1em 40px; }
+figure{ margin:1rem 4rem; }
 
 hr, .hr{
   box-sizing:content-box;
@@ -856,7 +856,6 @@ main{
 
 .container, .content-header, .tabs{
   padding:0 1rem;
-  margin:0 auto;
 }
 
 .container--hd{
@@ -871,6 +870,12 @@ main{
 
 .container--desktop{
   max-width:992px;
+}
+
+@media(min-width: 992px){
+  .container--desktop{
+    margin:0 2rem;
+  }
 }
 
 .container--tablet{
@@ -969,11 +974,15 @@ table thead td, table thead th, table tbody td, table tbody th, table tfoot td, 
     padding:1rem;
   }
 }
-table thead th:first-child, table thead td:first-child, table tbody th:first-child, table tbody td:first-child, table tfoot th:first-child, table tfoot td:first-child{
-  padding-left:2rem;
+@media (min-width: 992px){
+  table thead th:first-child, table thead td:first-child, table tbody th:first-child, table tbody td:first-child, table tfoot th:first-child, table tfoot td:first-child{
+    padding-left:2rem;
+  }
 }
-table thead th:last-child, table thead td:last-child, table tbody th:last-child, table tbody td:last-child, table tfoot th:last-child, table tfoot td:last-child{
-  padding-right:2rem;
+@media (min-width: 992px){
+  table thead th:last-child, table thead td:last-child, table tbody th:last-child, table tbody td:last-child, table tfoot th:last-child, table tfoot td:last-child{
+    padding-right:2rem;
+  }
 }
 fieldset, legend{
   border:0;
@@ -989,7 +998,6 @@ label, button, input, optgroup, select, textarea, .form__heading{
   margin:0;
 }
 input{ line-height:normal; }
-.input{ width:100%; }
 input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"]{
   padding:0.75rem;
   box-sizing:border-box;
@@ -1001,6 +1009,7 @@ input[type="date"]::-webkit-inner-spin-button{
 input[type="checkbox"], input[type="radio"]{
   box-sizing:border-box;
   padding:0;
+  margin-right:0.5rem;
 }
 input[type="checkbox"]:checked, input[type="radio"]:checked{
   background-color:#0095da;
@@ -1215,7 +1224,6 @@ input-placeholder{
 
   .form__label{
     position:relative;
-    margin:0 3rem 0 0;
     font-weight:600;
     color:#504f56;
     font-size:1.4rem;
@@ -1226,11 +1234,8 @@ input-placeholder{
   .form__label{
     display:inline-block;
     vertical-align:middle;
+    margin:0 3rem 0 0;
   }
-}
-
-  .form__label input[type="radio"], .form__label input[type="checkbox"]{
-  margin-right:0.5rem;
 }
 
   .form__label--isChecked{
@@ -1240,6 +1245,10 @@ input-placeholder{
   .form__label--block{
   display:block;
   margin:0 0 1rem 0;
+}
+
+  .form__label--percent{
+  margin:0;
 }
 
   .form__label--percent span{
@@ -1257,6 +1266,13 @@ input-placeholder{
 
   .form__label--date{
   font-weight:600;
+  margin-bottom:1rem;
+}
+
+  @media (min-width: 768px){
+  .form__label--date{
+    margin-bottom:0;
+  }
 }
 
   @media (min-width: 768px){
@@ -2102,17 +2118,25 @@ input-placeholder{
 }
 .table td{
   white-space:normal;
+  text-align:center;
 }
 @media (min-width: 992px){
   .table td{
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
+    text-align:left;
   }
 }
 .table thead{
   border:1px solid #d9d9dc;
   background:#ededed;
+  text-align:center;
+}
+@media (min-width: 992px){
+  .table thead{
+    text-align:left;
+  }
 }
 @media (min-width: 992px){
   .table__head--small{
@@ -2193,12 +2217,41 @@ input-placeholder{
 .table__row--isEditing td, .table__row--expanded:nth-child(odd) td{
   background:rgb(244, 244, 245);
 }
+.scrollable-area{
+  max-width:100%;
+  overflow-x:auto;
+  overflow-y:hidden;
+  border:1px solid #d9d9dc;
+}
+.scrollable-area > .table{
+  margin-top:0;
+}
+.scrollable-area > .table thead{
+  border:0;
+}
+.scrollable-area > .table tr > td:first-child, .scrollable-area > .table tr > th:first-child{
+  border-left:0!important;
+}
+.scrollable-area > .table tr > td:last-child, .scrollable-area > .table tr > th:last-child{
+  border-right:0!important;
+}
 
 @media only screen and (max-width: 960px),
   (min-device-width: 968px) and (max-device-width: 1024px){
 
   .table table, .table thead, .table tbody, .table th, .table td, .table tr{
     display:block;
+  }
+
+  .table thead:not(.always-visible){
+    display:none;
+  }
+
+  .table td::before{
+    content:attr(data-label);
+    display:block;
+    color:#a5a4ab;
+    text-transform:uppercase;
   }
 
   .table th:empty, .table td:empty{
@@ -2212,7 +2265,7 @@ input-placeholder{
 
   .table tr td:first-child{
     border-left:0!important;
-    background:#d9d9dc;
+    background:#ededed;
   }
 
   .table tr td:last-child{

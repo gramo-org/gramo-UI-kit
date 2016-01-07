@@ -15,7 +15,7 @@ main {
 
 .container {
   padding: 0 1rem;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 
 
   &--hd {
@@ -27,6 +27,9 @@ main {
 
   &--desktop {
     max-width: var(--container-desktop);
+    @media(--desktop) {
+      margin: 0 2rem;
+    }
   }
 
   &--tablet {
