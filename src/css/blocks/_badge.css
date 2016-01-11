@@ -11,4 +11,15 @@
     background: var(--gramo-red);
     color: #fff;
   }
+
+  &--notification {
+    background: var(--gramo-turkis);
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    color: var(--gramo-white);
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    margin-top: 0.2rem;
+  }
 }

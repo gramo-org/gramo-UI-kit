@@ -57,9 +57,26 @@ $(document).ready(function() {
       e.preventDefault();
     });
   });
+
+  //table hover edit
+  var buttons =
+    '<div class="btn-group btn-group--hover"><button class="btn btn--success btn--small">Kommenter</button><button class="btn btn--success btn--small">Ignorer</button></div>';
+  $('td.action').append(buttons);
+
+  $('.table tbody tr').hover(function() {
+    $(this).addClass('table__row--isEditing');
+    $(this).find('.btn-group--hover').addClass('show');
+  }, function() {
+    $(this).removeClass('table__row--isEditing');
+    $(this).find('.btn-group--hover').removeClass('show');
+
+  });
+
   //Search select
   $('.select-search').select2({
     placeholder: "Velg kanal"
   });
+
+
 
 }); // end document ready

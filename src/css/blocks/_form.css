@@ -87,7 +87,8 @@
       border: 1px solid var(--silver);
       padding-right: 0.5rem;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-image: none;
       }
 

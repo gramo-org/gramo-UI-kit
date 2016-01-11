@@ -1,5 +1,4 @@
 .table {
-  white-space: nowrap;
   margin-top: 2rem;
   table-layout: fixed;
   width: 100%;
@@ -7,17 +6,6 @@
     table-layout: auto;
     width: auto;
     min-width: 860px;
-  }
-
-  td {
-    white-space: normal;
-    text-align: center;
-    @media (--desktop) {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      text-align: left;
-    }
   }
 
   thead {
@@ -45,14 +33,13 @@
     @media (--desktop) { width: 30%; }
   }
 
-  /* remove white space property on Avvik */
+  /*** Text color for details in Avvik column ***/
 
   tr > td:nth-child(6) > span {
-    white-space: normal;
     color: var(--off-gray);
   }
 
-
+  /* Space between thead and tbody */
   tbody:not(.broadcaster) {
 
     &::before {
@@ -88,7 +75,6 @@
     .action {
       @media (--tablet) {
         text-align: right;
-        @extend .table__head--large;
       }
     }
   }
@@ -115,15 +101,36 @@
     }
   }
 
-  /*** Expanded rows / comment rows ***/
+  /*** New rows ***/
+  &__row--new td:first-child {
+    position: relative;
 
-  &__row--isEditing td,
+    &:before {
+      content: "\e90a";
+      font-family: 'icomoon';
+      background: var(--gramo-turkis);
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      left: -1rem;
+      border-radius: 2rem;
+      color: var(--gramo-white);
+      text-align: center;
+      margin-top: 0.1rem;
+    }
+  }
+
+  /*** Expanded rows / comment rows ***/
+  &__row--isEditing td.action {
+    position: relative;
+  }
+
   &__row--expanded:nth-child(odd) td {
     background: color(var(--table-border-color) tint(70%));
   }
 }
 
-/* scrollable-area for tables */
+/* scrollable-area for tables
 .scrollable-area {
   max-width: 100%;
   overflow-x: auto;
@@ -145,7 +152,7 @@
       border-right: 0!important;
     }
   }
-}
+}*/
 
   /*** Make table responsive - not mobile first in this case! ***/
 

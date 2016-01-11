@@ -35,4 +35,15 @@
       box-shadow: 0px 0px 1px var(--silver);
     }
   }
+
+  &--hover {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+    &.show {
+      display: inline-block;
+    }
+  }
 }
