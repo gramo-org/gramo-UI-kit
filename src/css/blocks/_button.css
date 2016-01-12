@@ -72,6 +72,17 @@
     }
   }
 
+  &--outline {
+    background: none;
+    border: 1px solid;
+  }
+
+  &--inline {
+    vertical-align: baseline;
+    width: auto;
+    display: inline-block;
+  }
+
   &--large {
     padding: 0.7rem 3rem;
   }
