@@ -114,7 +114,8 @@
       position: absolute;
       width: 2rem;
       height: 2rem;
-      left: -1rem;
+      right: 2rem;
+      @media (--desktop) { left: -1rem; }
       border-radius: 2rem;
       color: var(--gramo-white);
       text-align: center;
