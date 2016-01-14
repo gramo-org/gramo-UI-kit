@@ -2890,6 +2890,40 @@ input-placeholder{
     -webkit-transform:scaleY(1.0);
   }
 }
+@-webkit-keyframes placeHolderShimmer{
+  0%{
+      background-position:-40rem 0
+  }
+  100%{
+      background-position:40rem 0
+  }
+}
+@keyframes placeHolderShimmer{
+  0%{
+      background-position:-40rem 0
+  }
+  100%{
+      background-position:40rem 0
+  }
+}
+
+.content-placeholder{
+  -webkit-animation-duration:1.5s;
+  animation-duration:1.5s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+  -webkit-animation-iteration-count:infinite;
+  animation-iteration-count:infinite;
+  -webkit-animation-name:placeHolderShimmer;
+  animation-name:placeHolderShimmer;
+  -webkit-animation-timing-function:linear;
+  animation-timing-function:linear;
+  background:#ededed;
+  background:linear-gradient(to right, #ededed 8%, #d9d9dc 18%, #ededed 33%);
+  background-size:100rem 10rem;
+  height:1rem;
+  position:relative;
+}
 @media print{
   *, *:before, *:after{
   background:transparent;
