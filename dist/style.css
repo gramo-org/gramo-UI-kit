@@ -2152,7 +2152,7 @@ input-placeholder{
     width:auto;
   }
 }
-@media (min-width: 1200px){
+@media (min-width: 992px){
   .table{
     min-width:860px;
   }
@@ -2923,6 +2923,7 @@ input-placeholder{
   background-size:100rem 10rem;
   height:1rem;
   position:relative;
+  margin:1rem 0;
 }
 @media print{
   *, *:before, *:after{

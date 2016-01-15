@@ -3,7 +3,7 @@
   table-layout: fixed;
   width: 100%;
   @media (--desktop) { width: auto; }
-  @media (--hd) { min-width: 860px; }
+  @media (--desktop) { min-width: 860px; }
 
   thead {
     border: 1px solid var(--table-border-color);
