@@ -2,7 +2,7 @@
   margin-top: 2rem;
   table-layout: fixed;
   width: 100%;
-  @media (--desktop) { min-width: 700px; }
+  @media (--desktop) { min-width: 700px; width: auto; }
   @media (--hd) { min-width: 860px; }
 
   thead {

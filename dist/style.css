@@ -2150,6 +2150,7 @@ input-placeholder{
 @media (min-width: 992px){
   .table{
     min-width:700px;
+    width:auto;
   }
 }
 @media (min-width: 1200px){
