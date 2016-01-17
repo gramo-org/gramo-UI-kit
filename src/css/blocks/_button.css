@@ -106,4 +106,10 @@
     width: 100%;
     margin-bottom: 1rem;
   }
+
+  &[disabled] {
+    background-color: var(--disabled-gray);
+    border-color: color(var(--disabled-dark-gray) shade(15%));
+    color: var(--disabled-dark-gray);
+  }
 }
