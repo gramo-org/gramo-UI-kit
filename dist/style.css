@@ -1163,6 +1163,7 @@ input-placeholder{
 .site-header nav{
   -webkit-align-items:center;
   -ms-flex-align:center;
+  -ms-grid-row-align:center;
   align-items:center;
 }
 
@@ -1547,6 +1548,11 @@ input-placeholder{
   display:block;
   width:100%;
   margin-bottom:1rem;
+}
+.btn[disabled]{
+  background-color:#dadada;
+  border-color:rgb(123, 123, 123);
+  color:#919191;
 }
 .btn-group{
   text-align:center;
@@ -2059,6 +2065,7 @@ input-placeholder{
 .content-header__above{
   -webkit-align-items:flex-end;
   -ms-flex-align:end;
+  -ms-grid-row-align:flex-end;
   align-items:flex-end;
 }
 @media (min-width: 768px){
@@ -2084,6 +2091,7 @@ input-placeholder{
 .content-header__below{
   -webkit-align-items:center;
   -ms-flex-align:center;
+  -ms-grid-row-align:center;
   align-items:center;
   padding-bottom:0.5rem;
 }
