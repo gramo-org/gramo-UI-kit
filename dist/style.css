@@ -754,8 +754,8 @@ h1, .h1{
 h2, .h2{
   font-size:2.6rem;
   line-height:3.2rem;
-  margin-top:1.4em;
-  margin-bottom:.2em;
+  margin-top:1.4rem;
+  margin-bottom:2rem;
   color:#504f56;
   font-weight:400;
 }
@@ -1491,18 +1491,26 @@ input-placeholder{
 .btn--default:hover{
   background-color:rgb(155, 154, 161);
 }
+.btn--slate{
+  border:0;
+  background-color:#504f56;
+}
+.btn--slate:hover{
+  background-color:rgb(64, 63, 69);
+}
+.btn--off{
+  border-color:#a5a4ab;
+  background-color:#d9d9dc;
+  color:#a5a4ab;
+}
+.btn--off:hover{
+  background-color:rgb(206, 206, 209);
+}
 .btn--primary{
-  border-color:rgb(116, 169, 184);
-  background-color:#88c7d8;
-}
-.btn--primary:hover{
-  background-color:rgb(128, 187, 203);
-}
-.btn--info{
   border-color:rgb(0, 127, 185);
   background-color:#0095da;
 }
-.btn--info:hover{
+.btn--primary:hover{
   background-color:rgb(0, 140, 205);
 }
 .btn--success{
@@ -1511,6 +1519,13 @@ input-placeholder{
 }
 .btn--success:hover{
   background-color:rgb(75, 180, 149);
+}
+.btn--info{
+  border-color:rgb(116, 169, 184);
+  background-color:#88c7d8;
+}
+.btn--info:hover{
+  background-color:rgb(128, 187, 203);
 }
 .btn--danger{
   border-color:rgb(201, 91, 90);
@@ -1553,7 +1568,7 @@ input-placeholder{
 }
 @media (min-width: 768px){
   .btn-group{
-    text-align:right;
+    text-align:left;
   }
 }
 .btn-group .btn:first-child{
@@ -2155,7 +2170,7 @@ input-placeholder{
 }
 @media (min-width: 1200px){
   .table{
-    min-width:860px;
+    min-width:960px;
   }
 }
 .table thead{
@@ -2842,7 +2857,7 @@ input-placeholder{
 .spinner{
   margin:100px auto;
   width:50px;
-  height:40px;
+  height:44px;
   text-align:center;
   font-size:10px;
 
@@ -2850,7 +2865,7 @@ input-placeholder{
 .spinner > div{
   background-color:#88c7d8;
   height:100%;
-  width:0.5rem;
+  width:0.2rem;
   display:inline-block;
   -webkit-animation:sk-stretchdelay 1.2s infinite ease-in-out;
   animation:sk-stretchdelay 1.2s infinite ease-in-out;

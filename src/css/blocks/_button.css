@@ -36,16 +36,24 @@
     }
   }
 
-  &--primary {
-    border-color: color(var(--gramo-turkis) shade(15%));
-    background-color: var(--gramo-turkis);
-
+  &--slate {
+    border: 0;
+    background-color: var(--slate-gray);
     &:hover {
-       background-color: color(var(--gramo-turkis) shade(6%));
+       background-color: color(var(--slate-gray) shade(20%));
     }
   }
 
-  &--info {
+  &--off {
+    border-color: var(--off-gray);
+    background-color: var(--silver);
+    color: var(--off-gray);
+    &:hover {
+       background-color: color(var(--silver) shade(5%));
+    }
+  }
+
+  &--primary {
     border-color: color(var(--gramo-blue) shade(15%));
     background-color: var(--gramo-blue);
 
@@ -60,6 +68,15 @@
 
     &:hover {
        background-color: color(var(--gramo-green) shade(6%));
+    }
+  }
+
+  &--info {
+    border-color: color(var(--gramo-turkis) shade(15%));
+    background-color: var(--gramo-turkis);
+
+    &:hover {
+       background-color: color(var(--gramo-turkis) shade(6%));
     }
   }
 

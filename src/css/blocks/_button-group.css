@@ -1,7 +1,7 @@
 .btn-group {
   text-align: center;
   @media (--tablet) {
-    text-align: right;
+    text-align: left;
   }
 
   .btn:first-child {
