@@ -124,15 +124,12 @@
   }
 
   /*** Expanded rows / comment rows ***/
-  &__row--isEditing td.action {
-    position: relative;
-  }
-
   &__row--expanded:nth-child(odd) td {
     background: color(var(--table-border-color) tint(70%));
   }
 
   /*** Show buttons on hover ***/
+  &__row--isEditing > td.action,
   tr:hover > td.action {
     position: relative;
 

@@ -2283,16 +2283,13 @@ input-placeholder{
     left:-1rem;
   }
 }
-.table__row--isEditing td.action{
-  position:relative;
-}
 .table__row--expanded:nth-child(odd) td{
   background:rgb(244, 244, 245);
 }
-.table tr:hover > td.action{
+.table__row--isEditing > td.action, .table tr:hover > td.action{
   position:relative;
 }
-.table tr:hover > td.action > .btn-group--hover{
+.table__row--isEditing > td.action > .btn-group--hover, .table tr:hover > td.action > .btn-group--hover{
   display:inline-block;
 }
 
