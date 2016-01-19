@@ -44,12 +44,13 @@
     }
   }
 
-  &--off {
+  &[disabled] {
     border-color: var(--off-gray);
     background-color: var(--silver);
-    color: var(--off-gray);
+    color: color(var(--off-gray) shade(20%));
     &:hover {
        background-color: color(var(--silver) shade(5%));
+       color: var(--gramo-white);
     }
   }
 

@@ -73,10 +73,10 @@
                   <date><span>I dag</span>Torsdag 5 november</date>
                 </div>
                 <div class="list__item__results">
-                  5 innleste filer <i class="icon--checkmark"></i>
+                  <i class="icon--checkmark"></i> 5 innleste filer
                 </div>
                 <div class="list__item__action">
-                  <a href="#"><i class="icon--expand-arrow"></i></a>
+                  <a href="#"><i class="icon--chevron-left"></i></a>
                 </div>
               </li>
 
@@ -85,18 +85,21 @@
                   <date><span>I går</span>Onsdag 4 november</date>
                 </div>
                 <div class="list__item__results">
-                  <span>5 innleste filer <i class="icon--checkmark"></i></span> <span>1 feil fil <i class="icon--cross"></i></span>
+                  <span><i class="icon--cross"></i> 1 feil fil</span> <span><i class="icon--checkmark"></i> 5 innleste filer</span>
+                </div>
+                <div class="list__item__deviation">
+                  12 avvik
                 </div>
                 <div class="list__item__action">
-                  <a href="#"><i class="icon--expand-arrow"></i></a>
+                  <a href="#"><i class="icon--chevron-left"></i></a>
                 </div>
                 <ul class="list--sub-list">
                   <li class="sub-list__item">
                     <div class="sub-list__item--downloads">
-                      <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--cross"></i></span>
+                      <span><i class="icon--cross"></i></span><a href="#">archiveReport_NRK_P3_20150601.xml</a>
                     </div>
                     <div class="sub-list__item--message">
-                      Feilmelding, feilmelding, feilmelding
+                      The server encountered an unrevoerable error while processing this file
                     </div>
                   </li>
                 </ul>
@@ -110,7 +113,7 @@
                   5 innleste filer
                 </div>
                 <div class="list__item__action">
-                  <a href="#"><i class="icon--expand-arrow"></i></a>
+                  <a href="#"><i class="icon--chevron-left"></i></a>
                 </div>
               </li>
 
@@ -122,7 +125,7 @@
                   5 innleste filer
                 </div>
                 <div class="list__item__action">
-                  <a href="#"><i class="icon--expand-arrow"></i></a>
+                  <a href="#"><i class="icon--chevron-left"></i></a>
                 </div>
               </li>
 
@@ -131,15 +134,18 @@
                   <date><span>For 4 dager siden</span>Søndag 1 november</date>
                 </div>
                 <div class="list__item__results">
-                  <span>5 innleste filer <i class="icon--checkmark"></i></span> </span>3 feil filer <i class="icon--cross"></i></span>
+                  <span><i class="icon--checkmark"></i> 5 innleste filer</span> <span><i class="icon--cross"></i> 3 feil filer</span>
+                </div>
+                <div class="list__item__deviation">
+                  5 avvik
                 </div>
                 <div class="list__item__action">
-                  <a href="#"><i class="icon--expand-arrow"></i></a>
+                  <a href="#"><i class="icon--chevron-left"></i></a>
                 </div>
                 <ul class="list--sub-list">
                   <li class="sub-list__item">
                     <div class="sub-list__item--downloads">
-                      <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--cross"></i></span>
+                      <span><i class="icon--cross"></i></span> <a href="#">archiveReport_NRK_P3_20150601.xml</a>
                     </div>
                     <div class="sub-list__item--message">
                       Feilmelding, feilmelding, feilmelding
@@ -147,7 +153,7 @@
                   </li>
                   <li class="sub-list__item">
                     <div class="sub-list__item--downloads">
-                      <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--cross"></i></span>
+                      <span><i class="icon--cross"></i></span> <a href="#">archiveReport_NRK_P3_20150601.xml</a>
                     </div>
                     <div class="sub-list__item--message">
                       Feilmelding, feilmelding, feilmelding
@@ -155,7 +161,7 @@
                   </li>
                   <li class="sub-list__item">
                     <div class="sub-list__item--downloads">
-                      <a href="#">archiveReport_NRK_P3_20150601.xml</a>  <span><i class="icon--checkmark"></i></span>
+                      <span><i class="icon--checkmark"></i></span> <a href="#">archiveReport_NRK_P3_20150601.xml</a>
                     </div>
                     <div class="sub-list__item--message">
                       Feilmelding, feilmelding, feilmelding
@@ -172,7 +178,7 @@
                   5 innleste filer
                 </div>
                 <div class="list__item__action">
-                  <a href="#"><i class="icon--expand-arrow"></i></a>
+                  <a href="#"><i class="icon--chevron-left"></i></a>
                 </div>
               </li>
 
@@ -184,7 +190,7 @@
                   5 innleste filer
                 </div>
                 <div class="list__item__action">
-                  <a href="#"><i class="icon--expand-arrow"></i></a>
+                  <a href="#"><i class="icon--chevron-left"></i></a>
                 </div>
               </li>
 
@@ -196,7 +202,7 @@
                   5 innleste filer
                 </div>
                 <div class="list__item__action">
-                  <a href="#"><i class="icon--expand-arrow"></i></a>
+                  <a href="#"><i class="icon--chevron-left"></i></a>
                 </div>
               </li>
             </ul>
@@ -288,9 +294,9 @@
             <button class="btn btn--small btn--info">Small button info</button>
             <button class="btn btn--small btn--success">Small button success</button>
             <br><br>
-            <button class="btn btn--off btn--small">Off Small</button>
-            <button class="btn btn--off btn--medium">Off Medium</button>
-            <button class="btn btn--off btn--large">Off Large</button>
+            <button disabled="disabled" class="btn btn--primary btn--small">Off Small</button>
+            <button disabled="disabled" class="btn btn--primary btn--medium">Off Medium</button>
+            <button disabled="disabled" class="btn btn--primary btn--large">Off Large</button>
 
             <hr class="horizontal-rule">
             <!--End Button examples-->

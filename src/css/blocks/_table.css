@@ -131,6 +131,15 @@
   &__row--expanded:nth-child(odd) td {
     background: color(var(--table-border-color) tint(70%));
   }
+
+  /*** Show buttons on hover ***/
+  tr:hover > td.action {
+    position: relative;
+
+    & > .btn-group--hover {
+      display: inline-block;
+    }
+  }
 }
 
 /* scrollable-area for tables
