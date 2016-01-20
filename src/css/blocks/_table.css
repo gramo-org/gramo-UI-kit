@@ -149,13 +149,13 @@
      padding: 0;
      border: 0;
 
-     p.error {
+     p.input-error {
        margin: 1rem 0;
        font-style: italic;
        font-size: 1.4rem;
       }
 
-      p.error::before {
+      p.input-error::before {
         content: '-';
       }
     }

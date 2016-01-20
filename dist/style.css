@@ -2306,12 +2306,12 @@ input-placeholder{
   padding:0;
   border:0;
 }
-.table__row--hasErrors td p.error{
+.table__row--hasErrors td p.input-error{
   margin:1rem 0;
   font-style:italic;
   font-size:1.4rem;
 }
-.table__row--hasErrors td p.error::before{
+.table__row--hasErrors td p.input-error::before{
   content:'-';
 }
 
