@@ -1617,6 +1617,10 @@ input-placeholder{
 .btn-group--hover.show{
   display:inline-block;
 }
+.btn-group a{
+  margin:0 1rem;
+  color:#333;
+}
 .list{
   list-style:none;
   padding:0;
@@ -2283,6 +2287,9 @@ input-placeholder{
     left:-1rem;
   }
 }
+.table__row--isEditing{
+  background:#f9f9f9;
+}
 .table__row--expanded:nth-child(odd) td{
   background:rgb(244, 244, 245);
 }
@@ -2291,6 +2298,21 @@ input-placeholder{
 }
 .table__row--isEditing > td.action > .btn-group--hover, .table tr:hover > td.action > .btn-group--hover{
   display:inline-block;
+}
+.table__row--hasErrors{
+  background:rgb(253, 240, 240)!important;
+}
+.table__row--hasErrors td{
+  padding:0;
+  border:0;
+}
+.table__row--hasErrors td p.error{
+  margin:1rem 0;
+  font-style:italic;
+  font-size:1.4rem;
+}
+.table__row--hasErrors td p.error::before{
+  content:'-';
 }
 
 @media only screen and (max-width: 960px),

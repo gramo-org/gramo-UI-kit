@@ -123,7 +123,11 @@
     }
   }
 
-  /*** Expanded rows / comment rows ***/
+  /*** Editable rows / Expanded rows ***/
+  &__row--isEditing {
+    background: var(--x-light-gray);
+  }
+
   &__row--expanded:nth-child(odd) td {
     background: color(var(--table-border-color) tint(70%));
   }
@@ -137,32 +141,26 @@
       display: inline-block;
     }
   }
-}
+  /*** Error row in table***/
+  &__row--hasErrors {
+    background: color(var(--gramo-red) tint(90%))!important;
 
-/* scrollable-area for tables
-.scrollable-area {
-  max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  border: 1px solid var(--table-border-color);
-  margin-bottom: 3rem;
+    td {
+     padding: 0;
+     border: 0;
 
-  & > .table {
-    margin-top: 0;
-    thead {
-      border: 0;
-    }
-    tr > td:first-child,
-    tr > th:first-child {
-      border-left: 0!important;
-    }
-    tr > td:last-child,
-    tr > th:last-child {
-      border-right: 0!important;
+     p.error {
+       margin: 1rem 0;
+       font-style: italic;
+       font-size: 1.4rem;
+      }
+
+      p.error::before {
+        content: '-';
+      }
     }
   }
-}*/
-
+}
 
   /*** Make table responsive - not mobile first in this case! ***/
 
