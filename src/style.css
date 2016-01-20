@@ -1331,14 +1331,14 @@ input-placeholder{
       border:1px solid #ededed;
       border-width:1px 1px 1px 0;
       border-left:4px solid #50bf9e;
-      background:#fff url(img/checkmark.svg) center right 10px no-repeat;
-      background-size:17px;
+      background:#fff url(img/checkmark.svg) center right 7px no-repeat;
+      background-size:15px;
   }
 
   .form__label.has-error .form__input{
       border:3px solid #ed6b6a;
-      background:#fff url(img/cross.svg) center right 10px no-repeat;
-      background-size:14px;
+      background:#fff url(img/cross.svg) center right 7px no-repeat;
+      background-size:11px;
     }
 
   .input-error{
@@ -2310,6 +2310,7 @@ input-placeholder{
   margin:1rem 0;
   font-style:italic;
   font-size:1.4rem;
+  color:#504f56;
 }
 .table__row--hasErrors td p.input-error::before{
   content:'-';

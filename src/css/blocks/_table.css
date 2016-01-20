@@ -153,6 +153,7 @@
        margin: 1rem 0;
        font-style: italic;
        font-size: 1.4rem;
+       color: var(--slate-gray);
       }
 
       p.input-error::before {
