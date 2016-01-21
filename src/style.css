@@ -1321,7 +1321,7 @@ input-placeholder{
   width:100%;
   margin-top:0.75rem;
 }
-  .form__input--numeric{
+  .form__input[type="number"]{
     width:40px;
     padding:0!important;
     text-align:center;
@@ -1341,7 +1341,7 @@ input-placeholder{
       background-size:11px;
     }
 
-  .form__label.has-error .form__input--numeric{
+  .form__label.has-error .form__input[type="number"]{
   background-image:none;
 }
 

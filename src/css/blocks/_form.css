@@ -121,7 +121,7 @@
   }
 
   /* Numeric inputs */
-  .form__input--numeric {
+  .form__input[type="number"] {
     width: 40px;
     /*padding: 0.5rem 0!important;*/ /* Remove for tables in ember */
     padding: 0!important;
@@ -145,7 +145,7 @@
       background: #fff url(img/cross.svg) center right 7px no-repeat;
       background-size: 11px;
 
-      &--numeric {
+      &[type="number"] {
         background-image: none;
       }
     }
