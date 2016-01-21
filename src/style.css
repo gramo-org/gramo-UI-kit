@@ -1453,12 +1453,12 @@ input-placeholder{
 }
 
 
-.select-with-search__dropdown ul li{
+.select-with-search__dropdown ul li.select-with-search__option{
   padding:5px;
 }
 
 
-.select-with-search__dropdown ul li:hover{
+.select-with-search__dropdown ul li.select-with-search__option--active, .select-with-search__dropdown ul li.select-with-search__option:hover{
   color:#fdfdfd;
   background-color:#0095da;
   cursor:pointer;

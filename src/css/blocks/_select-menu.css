@@ -106,10 +106,10 @@
       margin: 0;
 
 
-      li {
+      li.select-with-search__option {
         padding: 5px;
 
-        &:hover {
+        &--active, &:hover {
           color: var(--gramo-white);
           background-color: var(--gramo-blue);
           cursor: pointer;
