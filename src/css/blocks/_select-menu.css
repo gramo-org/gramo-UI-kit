@@ -48,14 +48,80 @@
   }
 }
 
-/* Temporary select-search styles */
-.select2-container {
-  width: 80%!important;
+
+.select-with-search {
+  position: relative;
+
+  background-color: var(--gramo-white);
+  border-radius: 2px;
+  border: 1px solid var(--silver);
+
+  &__heading {
+    background-image: url("img/chevron-down.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 12px;
+    height: 30px;
+    margin-right: 5px;
+
+    height: 32px;
+    line-height: 30px;
+    padding: 2px 5px;
+    cursor: pointer;
+  }
+
+  &--open {
+    .select-with-search__heading {
+      /* TODO do we have access chevron-up.svg, or use CSS scaleX / flip? */
+      /* background-image: url("img/chevron-down.svg"); */
+    }
+
+    .select-with-search__dropdown {
+      display: block;
+    }
+  }
+
+
+  &__dropdown {
+    position: absolute;
+    bottom: 0
+    left 0;
+    width: 100%;
+    display: none;
+    background-color: var(--gramo-white);
+
+    border-radius: 2px;
+    border: 1px solid var(--silver);
+
+    .select-with-search__search {
+      /* TODO search icon on the right of input field */
+      /* TODO width may be wrong */
+      width: 96%;
+      margin: 0.5em 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+
+      li {
+        padding: 5px;
+
+        &:hover {
+          color: var(--gramo-white);
+          background-color: var(--gramo-blue);
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
+/* Temporary select-search styles */
 .select2-container--default .select2-selection--single {
   border-radius: 2px;
-  border-color: var(--silver);
   height: 32px;
 }
 
