@@ -143,6 +143,10 @@
       border: 3px solid var(--gramo-red);
       background: #fff url(img/cross.svg) center right 7px no-repeat;
       background-size: 11px;
+
+      &--numeric {
+        background-image: none;
+      }
     }
 
   .input-error {
