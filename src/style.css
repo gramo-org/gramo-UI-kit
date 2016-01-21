@@ -1323,7 +1323,7 @@ input-placeholder{
 }
   .form__input--numeric{
     width:40px;
-    padding:0.5rem 0!important;
+    padding:0!important;
     text-align:center;
     font-size:1.4rem;
   }
