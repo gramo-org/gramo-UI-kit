@@ -99,16 +99,16 @@
                   <th class="table__head--xlarge">
 
 
-                  <div class="select-with-search">
-                    <div class="select-with-search__heading">
-                      <span class="select-with-search__selected">P3</span>
+                  <div class="searchable-list">
+                    <div class="searchable-list__heading">
+                      <span class="searchable-list__selected">P3</span>
                     </div>
-                    <div class="select-with-search__dropdown">
+                    <div class="searchable-list__dropdown">
                       <input type="text" value="P3" class="form__input form__input--block">
                       <ul>
-                        <li class="select-with-search__option">P1</li>
-                        <li class="select-with-search__option">P2</li>
-                        <li class="select-with-search__option">P3</li>
+                        <li class="searchable-list__option">P1</li>
+                        <li class="searchable-list__option">P2</li>
+                        <li class="searchable-list__option">P3</li>
                       </ul>
                     </div>
                   </div>
@@ -373,15 +373,15 @@
               <thead>
                 <tr>
                   <th class="table__head--xlarge">
-                    <div class="select-with-search select-with-search--open">
-                      <div class="select-with-search__heading">
-                        <span class="select-with-search__selected">P3</span>
+                    <div class="searchable-list searchable-list--open">
+                      <div class="searchable-list__heading">
+                        <span class="searchable-list__selected">P3</span>
                       </div>
-                      <div class="select-with-search__dropdown">
-                        <input type="text" value="P3" class="select-with-search__search form__input form__input--block">
+                      <div class="searchable-list__dropdown">
+                        <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
                         <ul>
-                          <li class="select-with-search__option">P4 Norge</li>
-                          <li class="select-with-search__option select-with-search__option--active">P4 Lokal</li>
+                          <li class="searchable-list__option">P4 Norge</li>
+                          <li class="searchable-list__option searchable-list__option--active">P4 Lokal</li>
                         </ul>
                       </div>
                     </div>
@@ -639,18 +639,18 @@
               <thead>
                 <tr>
                   <th class="table__head--xlarge">
-                    <div class="select-with-search">
-                      <div class="select-with-search__heading">
-                        <span class="select-with-search__selected">
+                    <div class="searchable-list">
+                      <div class="searchable-list__heading">
+                        <span class="searchable-list__selected">
                           Velg kanal
                         </span>
                       </div>
-                      <div class="select-with-search__dropdown">
+                      <div class="searchable-list__dropdown">
                         <input type="text" value="P3" class="form__input form__input--block">
                         <ul>
-                          <li class="select-with-search__option">P1</li>
-                          <li class="select-with-search__option">P2</li>
-                          <li class="select-with-search__option">P3</li>
+                          <li class="searchable-list__option">P1</li>
+                          <li class="searchable-list__option">P2</li>
+                          <li class="searchable-list__option">P3</li>
                         </ul>
                       </div>
                     </div>
@@ -908,18 +908,18 @@
               <thead>
                 <tr>
                   <th class="table__head--xlarge">
-                    <div class="select-with-search">
-                      <div class="select-with-search__heading">
-                        <span class="select-with-search__selected">
+                    <div class="searchable-list">
+                      <div class="searchable-list__heading">
+                        <span class="searchable-list__selected">
                           Velg kanal
                         </span>
                       </div>
-                      <div class="select-with-search__dropdown">
+                      <div class="searchable-list__dropdown">
                         <input type="text" value="P3" class="form__input form__input--block">
                         <ul>
-                          <li class="select-with-search__option">P1</li>
-                          <li class="select-with-search__option">P2</li>
-                          <li class="select-with-search__option">P3</li>
+                          <li class="searchable-list__option">P1</li>
+                          <li class="searchable-list__option">P2</li>
+                          <li class="searchable-list__option">P3</li>
                         </ul>
                       </div>
                     </div>
@@ -1183,8 +1183,8 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
 
 <script>
-  $(".select-with-search__heading").on("click", function (event) {
-    $(this).parent().toggleClass("select-with-search--open")
+  $(".searchable-list__heading").on("click", function (event) {
+    $(this).parent().toggleClass("searchable-list--open")
   })
 </script>
 

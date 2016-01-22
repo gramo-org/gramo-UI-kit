@@ -1396,7 +1396,7 @@ input-placeholder{
 }
 
 
-.select-with-search{
+.searchable-list{
   position:relative;
 
   background-color:#fdfdfd;
@@ -1405,7 +1405,7 @@ input-placeholder{
 }
 
 
-.select-with-search__heading{
+.searchable-list__heading{
   background-image:url("img/chevron-down.svg");
   background-repeat:no-repeat;
   background-position:center right;
@@ -1419,19 +1419,17 @@ input-placeholder{
 }
 
 
-.select-with-search--open .select-with-search__heading{
+.searchable-list--open .searchable-list__heading{
 }
 
 
-.select-with-search--open .select-with-search__dropdown{
+.searchable-list--open .searchable-list__dropdown{
   display:block;
 }
 
 
-.select-with-search__dropdown{
+.searchable-list__dropdown{
   position:absolute;
-  bottom:0
-    left 0;
   width:100%;
   display:none;
   background-color:#fdfdfd;
@@ -1440,25 +1438,25 @@ input-placeholder{
 }
 
 
-.select-with-search__dropdown .select-with-search__search{
+.searchable-list__dropdown .searchable-list__search{
   width:96%;
   margin:0.5em 5px;
 }
 
 
-.select-with-search__dropdown ul{
+.searchable-list__dropdown ul{
   list-style:none;
   padding:0;
   margin:0;
 }
 
 
-.select-with-search__dropdown ul li.select-with-search__option{
+.searchable-list__dropdown ul li.searchable-list__option{
   padding:5px;
 }
 
 
-.select-with-search__dropdown ul li.select-with-search__option--active, .select-with-search__dropdown ul li.select-with-search__option:hover{
+.searchable-list__dropdown ul li.searchable-list__option--active, .searchable-list__dropdown ul li.searchable-list__option:hover{
   color:#fdfdfd;
   background-color:#0095da;
   cursor:pointer;
