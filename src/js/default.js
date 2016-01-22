@@ -71,12 +71,4 @@ $(document).ready(function() {
   //   $(this).find('.btn-group--hover').removeClass('show');
   //
   // });
-
-  //Search select
-  $('.select-search').select2({
-    placeholder: "Velg kanal"
-  });
-
-
-
 }); // end document ready
