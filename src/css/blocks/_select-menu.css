@@ -48,35 +48,71 @@
   }
 }
 
-/* Temporary select-search styles */
-.select2-container {
-  width: 80%!important;
-}
 
-.select2-container--default .select2-selection--single {
+.searchable-list {
+  position: relative;
+
+  background-color: var(--gramo-white);
   border-radius: 2px;
-  border-color: var(--silver);
-  height: 32px;
-}
+  border: 1px solid var(--silver);
 
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-  display: none;
-}
+  &__heading {
+    background-image: url("img/chevron-down.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 12px;
+    height: 30px;
+    margin-right: 5px;
 
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-  background: var(--gramo-white) url("img/chevron-down.svg") no-repeat 0% 55%;
-  background-size: 12px;
-  height: 30px;
-}
+    height: 32px;
+    line-height: 30px;
+    padding: 2px 5px;
+    cursor: pointer;
+  }
 
-.select2-container--default .select2-selection--single .select2-selection__placeholder {
-  color: var(--slate-gray);
-}
+  &--open {
+    .searchable-list__heading {
+      /* TODO do we have access chevron-up.svg, or use CSS scaleX / flip? */
+      /* background-image: url("img/chevron-down.svg"); */
+    }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-  line-height: 30px;
-}
+    .searchable-list__dropdown {
+      display: block;
+    }
+  }
 
-.select2-search__field {
-  background: var(--gramo-white) url("img/search.svg") no-repeat right 5px center;
+
+  &__dropdown {
+    position: absolute;
+    width: 100%;
+    display: none;
+    background-color: var(--gramo-white);
+
+    border-radius: 2px;
+    border: 1px solid var(--silver);
+
+    .searchable-list__search {
+      /* TODO search icon on the right of input field */
+      /* TODO width may be wrong */
+      width: 96%;
+      margin: 0.5em 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+
+      li.searchable-list__option {
+        padding: 5px;
+
+        &--active, &:hover {
+          color: var(--gramo-white);
+          background-color: var(--gramo-blue);
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }

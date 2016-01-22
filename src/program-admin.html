@@ -18,7 +18,6 @@
 
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
   <div class="site-wrapper">
@@ -98,15 +97,23 @@
               <thead class="always-visible">
                 <tr>
                   <th class="table__head--xlarge">
-                    <select class="select-search">
-                      <option></option>
-                      <option value="1">P1</option>
-                      <option value="2">P2</option>
-                      <option value="3">P3</option>
-                      <option value="4">Klassisk</option>
-                      <option value="5">Alltid Nyheter</option>
-                      <option value="6">MP3</option>
-                    </select>
+
+
+                  <div class="searchable-list">
+                    <div class="searchable-list__heading">
+                      <span class="searchable-list__selected">P3</span>
+                    </div>
+                    <div class="searchable-list__dropdown">
+                      <input type="text" value="P3" class="form__input form__input--block">
+                      <ul>
+                        <li class="searchable-list__option">P1</li>
+                        <li class="searchable-list__option">P2</li>
+                        <li class="searchable-list__option">P3</li>
+                      </ul>
+                    </div>
+                  </div>
+
+
                   </th>
                   <th>Program
                     <span class="table-sort">
@@ -366,15 +373,18 @@
               <thead>
                 <tr>
                   <th class="table__head--xlarge">
-                    <select class="select-search">
-                      <option></option>
-                      <option value="1">P1</option>
-                      <option value="2">P2</option>
-                      <option value="3">P3</option>
-                      <option value="4">Klassisk</option>
-                      <option value="5">Alltid Nyheter</option>
-                      <option value="6">MP3</option>
-                    </select>
+                    <div class="searchable-list searchable-list--open">
+                      <div class="searchable-list__heading">
+                        <span class="searchable-list__selected">P3</span>
+                      </div>
+                      <div class="searchable-list__dropdown">
+                        <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
+                        <ul>
+                          <li class="searchable-list__option">P4 Norge</li>
+                          <li class="searchable-list__option searchable-list__option--active">P4 Lokal</li>
+                        </ul>
+                      </div>
+                    </div>
                   </th>
                   <th>Sendetid
                     <span class="table-sort">
@@ -629,15 +639,21 @@
               <thead>
                 <tr>
                   <th class="table__head--xlarge">
-                    <select class="select-search">
-                      <option></option>
-                      <option value="1">P1</option>
-                      <option value="2">P2</option>
-                      <option value="3">P3</option>
-                      <option value="4">Klassisk</option>
-                      <option value="5">Alltid Nyheter</option>
-                      <option value="6">MP3</option>
-                    </select>
+                    <div class="searchable-list">
+                      <div class="searchable-list__heading">
+                        <span class="searchable-list__selected">
+                          Velg kanal
+                        </span>
+                      </div>
+                      <div class="searchable-list__dropdown">
+                        <input type="text" value="P3" class="form__input form__input--block">
+                        <ul>
+                          <li class="searchable-list__option">P1</li>
+                          <li class="searchable-list__option">P2</li>
+                          <li class="searchable-list__option">P3</li>
+                        </ul>
+                      </div>
+                    </div>
                   </th>
                   <th>Sendetid
                     <span class="table-sort">
@@ -892,15 +908,21 @@
               <thead>
                 <tr>
                   <th class="table__head--xlarge">
-                    <select class="select-search">
-                      <option></option>
-                      <option value="1">P1</option>
-                      <option value="2">P2</option>
-                      <option value="3">P3</option>
-                      <option value="4">Klassisk</option>
-                      <option value="5">Alltid Nyheter</option>
-                      <option value="6">MP3</option>
-                    </select>
+                    <div class="searchable-list">
+                      <div class="searchable-list__heading">
+                        <span class="searchable-list__selected">
+                          Velg kanal
+                        </span>
+                      </div>
+                      <div class="searchable-list__dropdown">
+                        <input type="text" value="P3" class="form__input form__input--block">
+                        <ul>
+                          <li class="searchable-list__option">P1</li>
+                          <li class="searchable-list__option">P2</li>
+                          <li class="searchable-list__option">P3</li>
+                        </ul>
+                      </div>
+                    </div>
                   </th>
                   <th>Sendetid
                     <span class="table-sort">
@@ -1159,6 +1181,12 @@
 <script src="js/default.js"></script>
 <!-- Select 2 -searchable select box -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+
+<script>
+  $(".searchable-list__heading").on("click", function (event) {
+    $(this).parent().toggleClass("searchable-list--open")
+  })
+</script>
 
 </body>
 </html>
