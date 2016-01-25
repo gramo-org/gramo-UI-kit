@@ -129,7 +129,6 @@
   }
 
 
-
   /* Form validation classes */
   .form__label.is-valid .form__input/*, .form__label .form__input:valid*/ {
       border: 1px solid var(--light-gray);
