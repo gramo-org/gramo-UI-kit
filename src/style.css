@@ -1322,9 +1322,10 @@ input-placeholder{
   margin-top:0.75rem;
 }
   .form__input[type="number"], .form__input[type="time"]{
-    padding:0.5rem 0!important;
+    padding:0.5rem 0 0.5rem 0.3rem!important;
     text-align:center;
     font-size:1.4rem;
+    height:3rem;
   }
   .form__label.is-valid .form__input{
       border:1px solid #ededed;
