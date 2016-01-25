@@ -124,7 +124,7 @@
   }
 
   /*** Editable rows / Expanded rows ***/
-  &__row--isEditing {
+  &__row--is-editing {
     background: var(--x-light-gray);
   }
 
@@ -133,7 +133,7 @@
   }
 
   /*** Show buttons on hover ***/
-  &__row--isEditing > td.action,
+  &__row--is-editing > td.action,
   tr:hover > td.action {
     position: relative;
 
@@ -142,7 +142,7 @@
     }
   }
   /*** Error row in table***/
-  &__row--hasErrors {
+  &__row--has-errors {
     background: color(var(--gramo-red) tint(90%))!important;
 
     td {

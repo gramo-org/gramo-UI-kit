@@ -9,6 +9,8 @@
     @extend .row;
     @extend %no-list;
     margin-bottom: -2.5rem;
+    position: relative;
+    z-index: 1;
 
     &__item {
       @extend .col-sm;

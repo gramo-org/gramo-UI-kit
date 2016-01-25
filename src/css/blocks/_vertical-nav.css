@@ -16,7 +16,7 @@
       border-bottom: 1px solid color(var(--sidebar-menu-bg) shade(15%));
     }
 
-    &--isExpanded > a {
+    &--is-expanded > a {
       background: color(var(--sidebar-menu-bg) shade(15%));
       position: relative;
 

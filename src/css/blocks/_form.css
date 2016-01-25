@@ -41,7 +41,7 @@
       margin: 0 3rem 0 0;
     }
 
-    &--isChecked {
+    &--is-checked {
       color: var(--gramo-blue);
     }
 
