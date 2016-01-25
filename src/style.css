@@ -1163,7 +1163,6 @@ input-placeholder{
 .site-header nav{
   -webkit-align-items:center;
   -ms-flex-align:center;
-  -ms-grid-row-align:center;
   align-items:center;
 }
 
@@ -1398,7 +1397,6 @@ input-placeholder{
 
 .searchable-list{
   position:relative;
-
   background-color:#fdfdfd;
   border-radius:2px;
   border:1px solid #d9d9dc;
@@ -1406,10 +1404,7 @@ input-placeholder{
 
 
 .searchable-list__heading{
-  background-image:url("img/chevron-down.svg");
-  background-repeat:no-repeat;
-  background-position:center right;
-  background-size:12px;
+  position:relative;
   height:30px;
   margin-right:5px;
   height:32px;
@@ -1419,7 +1414,22 @@ input-placeholder{
 }
 
 
-.searchable-list--open .searchable-list__heading{
+.searchable-list__heading:before{
+  content:'';
+  background-image:url("img/chevron-down.svg");
+  background-repeat:no-repeat;
+  background-position:center right;
+  background-size:12px;
+  position:absolute;
+  height:32px;
+  width:12px;
+  right:1rem;
+}
+
+
+.searchable-list--open .searchable-list__heading:before{
+  -webkit-transform:rotate(180deg);
+  transform:rotate(180deg);
 }
 
 
@@ -2120,7 +2130,6 @@ input-placeholder{
 .content-header__above{
   -webkit-align-items:flex-end;
   -ms-flex-align:end;
-  -ms-grid-row-align:flex-end;
   align-items:flex-end;
 }
 @media (min-width: 768px){
@@ -2146,7 +2155,6 @@ input-placeholder{
 .content-header__below{
   -webkit-align-items:center;
   -ms-flex-align:center;
-  -ms-grid-row-align:center;
   align-items:center;
   padding-bottom:0.5rem;
 }
