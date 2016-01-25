@@ -121,10 +121,9 @@
   }
 
   /* Numeric inputs */
-  .form__input[type="number"] {
-    width: 40px;
-    /*padding: 0.5rem 0!important;*/ /* Remove for tables in ember */
-    padding: 0!important;
+  .form__input[type="number"],
+  .form__input[type="time"] {
+    padding: 0.5rem 0!important;
     text-align: center;
     font-size: 1.4rem;
   }
@@ -152,5 +151,5 @@
 
   .input-error {
     color: var(--gramo-red);
-    margin-top: -0.75rem;
+    margin: 0.5rem 0;
   }
