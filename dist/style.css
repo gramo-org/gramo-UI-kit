@@ -292,7 +292,7 @@ td, th{
   max-width:41.66667%;
 }
 
-.col-xs-6, .list--expandable .list__item__date, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .content-header__meta{
+.col-xs-6, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .content-header__meta{
   -webkit-flex-basis:50%;
   -ms-flex-preferred-size:50%;
   flex-basis:50%;
@@ -313,7 +313,7 @@ td, th{
   max-width:66.66667%;
 }
 
-.col-xs-9{
+.col-xs-9, .list--expandable .list__item__date, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads{
   -webkit-flex-basis:75%;
   -ms-flex-preferred-size:75%;
   flex-basis:75%;
