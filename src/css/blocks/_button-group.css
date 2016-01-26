@@ -38,13 +38,11 @@
   }
 
   &--hover {
-    display: none;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-
-    &.show {
-      display: inline-block;
+    @media (--desktop) {
+      display: none;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
     }
   }
 

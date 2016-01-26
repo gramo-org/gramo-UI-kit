@@ -21,9 +21,8 @@
     height: 2rem;
     padding: 0;
     margin: 0.2rem auto 0 auto;
-    display: block;
+    display: inline-block;
     @media (--desktop) {
-      display: inline-block;
       margin-left: 0.5rem;
     }
   }

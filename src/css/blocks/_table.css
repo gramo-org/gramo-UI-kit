@@ -138,7 +138,7 @@
     position: relative;
 
     & > .btn-group--hover {
-      display: inline-block;
+      display: block;
     }
   }
   /*** Error row in table***/
