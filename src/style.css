@@ -1627,17 +1627,13 @@ input-placeholder{
     text-align:left;
   }
 }
-.btn-group .btn:first-child{
-  border-width:0;
-}
-.btn-group button:not(:first-of-type){
-  margin:5px 0;
+.btn-group--toggle > .btn{
   border-bottom:0;
-  border-radius:0 2px 2px 0;
 }
 @media (min-width: 768px){
   .btn-group button:not(:first-of-type){
-    margin:0 0 0 -4px;
+    border-radius:0 2px 2px 0;
+    margin-left:-4px;
     border-left:1px solid rgba(0,0,0,0.3);
   }
 }
@@ -1646,14 +1642,15 @@ input-placeholder{
   width:49%;
   padding:0.45rem 1rem;
   font-size:1.4rem;
-  margin:2rem 0;
-  border-radius:2px 0 0 2px;
+  margin:1rem 0 1rem .2rem;
+  border-radius:2px;
 }
 @media (min-width: 768px){
   .btn-group .btn{
     padding:0.15rem 1rem;
     margin:0;
     width:auto;
+    border-radius:2px 0 0 2px;
   }
 }
 .btn-group .btn > i{
@@ -1668,7 +1665,7 @@ input-placeholder{
     display:none;
     position:absolute;
     right:1rem;
-    top:1rem;
+    top:20%;
   }
 }
 .btn-group a{
