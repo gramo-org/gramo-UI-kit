@@ -29,7 +29,7 @@
   /* Add padding to first container section to compensate for fixed position on site-header */
   & + section {
     padding-top: 3rem;
-    @media (--tablet) { padding-top: 0; }
+    @media (--desktop) { padding-top: 0; }
   }
 }
 

@@ -32,7 +32,7 @@
   }
 
   .list__item__date {
-    @extend .col-xs-4;
+    @extend .col-xs-6;
 
     span {
       font-size: 1.2rem;
@@ -43,7 +43,7 @@
     }
   }
   .list__item__results {
-    @extend .col-xs-5;
+    @extend .col-sm;
     align-self: flex-end;
     font-weight: var(--font-300);
 
@@ -127,7 +127,7 @@
 
       &--downloads {
         @extend .col-xs-12;
-        @extend .col-sm-4;
+        @extend .col-sm-6;
         display: block;
       }
       &--message {

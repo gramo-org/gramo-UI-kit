@@ -4,7 +4,7 @@ $(document).ready(function() {
   $('.toggle-sidebar').click(function(e) {
     e.preventDefault();
     $(this).toggleClass('open');
-    $('.sidebar').toggleClass('sidebar--isOpen');
+    $('.sidebar').toggleClass('sidebar--is-open');
     $('main').toggleClass('push');
   });
 

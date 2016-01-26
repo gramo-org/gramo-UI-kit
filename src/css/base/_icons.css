@@ -34,11 +34,11 @@
 
 .icon--chevron-right:before {
 	content: "\e907";
-	color: var(--table-border-color);
+	color: color(var(--silver) shade(15%));
 }
 .icon--chevron-left:before {
 	content: "\e908";
-	color: var(--table-border-color);
+	color: color(var(--silver) shade(15%));
 }
 
 .icon--logo-echo:before {

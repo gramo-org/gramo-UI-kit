@@ -78,12 +78,11 @@
 /* Grid Containers */
 --container-mobile:                              100%;
 --container-tablet:                              768px;
---container-desktop:                             992px;
+--container-desktop:                             960px;
 --container-hd:                                  1400px;
 
 /* Responsive Breakpoints */
 @custom-media --tablet (min-width: 768px);
-/*@custom-media --laptop (min-width: 876px);*/
 @custom-media --desktop (min-width: 960px);
 @custom-media --hd (min-width: 1200px);
 
