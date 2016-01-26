@@ -1393,16 +1393,13 @@ input-placeholder{
 }
 .select--search{
 }
-
-
 .searchable-list{
   position:relative;
   background-color:#fdfdfd;
   border-radius:2px;
   border:1px solid #d9d9dc;
+  text-align:left;
 }
-
-
 .searchable-list__heading{
   position:relative;
   height:30px;
@@ -1412,8 +1409,6 @@ input-placeholder{
   padding:2px 5px;
   cursor:pointer;
 }
-
-
 .searchable-list__heading:before{
   content:'';
   background-image:url("img/chevron-down.svg");
@@ -1425,19 +1420,13 @@ input-placeholder{
   width:12px;
   right:1rem;
 }
-
-
 .searchable-list--open .searchable-list__heading:before{
   -webkit-transform:rotate(180deg);
   transform:rotate(180deg);
 }
-
-
 .searchable-list--open .searchable-list__dropdown{
   display:block;
 }
-
-
 .searchable-list__dropdown{
   position:absolute;
   width:100%;
@@ -1448,28 +1437,20 @@ input-placeholder{
   box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);
   z-index:1;
 }
-
-
 .searchable-list__dropdown .searchable-list__search{
   background:url("img/search.svg") right 0.5rem center no-repeat;
   background-size:1.8rem;
   width:96%;
   margin:0.5rem auto;
 }
-
-
 .searchable-list__dropdown ul{
   list-style:none;
   padding:0;
   margin:0;
 }
-
-
 .searchable-list__dropdown ul li.searchable-list__option{
   padding:5px;
 }
-
-
 .searchable-list__dropdown ul li.searchable-list__option--active, .searchable-list__dropdown ul li.searchable-list__option:hover{
   color:#fdfdfd;
   background-color:#0095da;
@@ -2241,22 +2222,22 @@ input-placeholder{
 .table thead th{
   font-weight:400;
 }
-@media (min-width: 992px){
+@media (min-width: 768px){
   .table__head--small{
     width:8%;
   }
 }
-@media (min-width: 992px){
+@media (min-width: 768px){
   .table__head--medium{
     width:15%;
   }
 }
-@media (min-width: 992px){
+@media (min-width: 768px){
   .table__head--large{
     width:25%;
   }
 }
-@media (min-width: 992px){
+@media (min-width: 768px){
   .table__head--xlarge{
     width:30%;
   }

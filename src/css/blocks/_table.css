@@ -20,19 +20,19 @@
   }
 
   &__head--small {
-    @media (--desktop) { width: 8%; }
+    @media (--tablet) { width: 8%; }
   }
 
   &__head--medium {
-    @media (--desktop) { width: 15%; }
+    @media (--tablet) { width: 15%; }
   }
 
   &__head--large {
-    @media (--desktop) { width: 25%; }
+    @media (--tablet) { width: 25%; }
   }
 
   &__head--xlarge {
-    @media (--desktop) { width: 30%; }
+    @media (--tablet) { width: 30%; }
   }
 
   /*** Text color for details in Avvik column ***/
