@@ -32,8 +32,7 @@
   }
 
   .list__item__date {
-    @extend .col-xs-9;
-    @extend .col-md-6;
+    @extend .col-xs-6;
 
     span {
       font-size: 1.2rem;
@@ -119,12 +118,11 @@
       }
 
       &--downloads {
-        @extend .col-xs-9;
-        @extend .col-md-6;
+        @extend .col-xs-6;
         display: block;
       }
       &--message {
-        @extend .col-xs-6;
+        @extend .col-xs;
         font-style: italic;
         font-size: 1.4rem;
       }
