@@ -83,6 +83,7 @@
 
 /* Responsive Breakpoints */
 @custom-media --tablet (min-width: 768px);
+@custom-media --laptop (min-width: 876px);
 @custom-media --desktop (min-width: 992px);
 @custom-media --hd (min-width: 1200px);
 

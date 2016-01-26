@@ -2222,22 +2222,22 @@ input-placeholder{
 .table thead th{
   font-weight:400;
 }
-@media (min-width: 768px){
+@media (min-width: 876px){
   .table__head--small{
     width:8%;
   }
 }
-@media (min-width: 768px){
+@media (min-width: 876px){
   .table__head--medium{
     width:15%;
   }
 }
-@media (min-width: 768px){
+@media (min-width: 876px){
   .table__head--large{
     width:25%;
   }
 }
-@media (min-width: 768px){
+@media (min-width: 876px){
   .table__head--xlarge{
     width:30%;
   }
