@@ -53,14 +53,6 @@
     }
   }
 
-  .list__item__deviation {
-    @extend .col-xs-2;
-    align-self: flex-end;
-    font-weight: var(--font-300);
-    color: var(--gramo-blue);
-    text-align: right;
-  }
-
   .list__item__action {
     @extend .col-sm;
     align-self: flex-end;
@@ -126,8 +118,7 @@
       }
 
       &--downloads {
-        @extend .col-xs-12;
-        @extend .col-sm-6;
+        @extend .col-xs-6;
         display: block;
       }
       &--message {
