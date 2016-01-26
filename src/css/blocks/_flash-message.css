@@ -22,4 +22,6 @@
 .message {
   clear: both;
   margin: 2rem;
+  font-style: italic;
+  color: var(--off-gray);
 }

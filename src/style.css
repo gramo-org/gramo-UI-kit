@@ -2909,6 +2909,8 @@ input-placeholder{
 .message{
   clear:both;
   margin:2rem;
+  font-style:italic;
+  color:#a5a4ab;
 }
 .spinner{
   margin:100px auto;
