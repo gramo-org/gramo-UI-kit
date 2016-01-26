@@ -17,3 +17,9 @@
     margin-right: 1rem;
   }
 }
+
+/* Ingen filer er lest inn i perioden message */
+.message {
+  clear: both;
+  margin: 2rem;
+}

@@ -732,6 +732,7 @@ a{
   color:#0095da;
   background:transparent;
   text-decoration:underline;
+  cursor:pointer;
 }
 
 a:active, a:hover{
@@ -2904,6 +2905,10 @@ input-placeholder{
   margin:0;
   display:inline-block;
   margin-right:1rem;
+}
+.message{
+  clear:both;
+  margin:2rem;
 }
 .spinner{
   margin:100px auto;
