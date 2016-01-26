@@ -127,7 +127,7 @@
   margin-left: 91.66667%;
 }
 
-@media only screen and (min-width: var(--container-tablet)) {
+@media only screen and (min-width: 768px) {
   .col-sm-1 {
     flex-basis: 8.33333%;
     max-width: 8.33333%;
@@ -211,7 +211,7 @@
   }
 }
 
-@media only screen and (min-width: var(--container-desktop)) {
+@media only screen and (min-width: 960px) {
   .col-md-1 {
     flex-basis: 8.33333%;
     max-width: 8.33333%;
@@ -295,7 +295,7 @@
   }
 }
 
-@media only screen and (min-width: var(--container-hd)) {
+@media only screen and (min-width: 1200px) {
   .col-lg-1 {
     flex-basis: 8.33333%;
     max-width: 8.33333%;
