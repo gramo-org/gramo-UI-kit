@@ -2038,29 +2038,32 @@ input-placeholder{
 }
 .user{
   background:rgb(57, 65, 77);
-  padding:1.5rem;
-}
-.user__name, .user__avatar{
-  display:inline-block;
-  vertical-align:middle;
-}
-.user__name, .user__logout{
-  color:#ededed;
+  padding:2rem 1.5rem;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
   font-size:1.3rem;
-  text-transform:uppercase;
-  margin-left:1rem;
-  vertical-align:top;
   line-height:1.6rem;
+  text-transform:uppercase;
+}
+.user__name{
+  color:#fdfdfd;
+  margin-left:1rem;
+  -webkit-flex:1 1 auto;
+  -ms-flex:1 1 auto;
+  flex:1 1 auto;
 }
 .user__logout{
-  display:inline-block;
-  margin-top:-5px;
+  display:block;
 }
 .user__avatar{
-  max-width:3.5rem;
+  max-width:4rem;
+  max-height:4rem;
   border-radius:50%;
   border:1px solid #ededed;
-  float:left;
 }
 .content-header{
   margin-bottom:1rem;

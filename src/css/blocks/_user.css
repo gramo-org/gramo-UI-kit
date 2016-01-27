@@ -1,32 +1,26 @@
 .user {
   background: color(var(--ui-gray) shade(15%));
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
 
-  &__name,
-  &__avatar {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  &__name,
-  &__logout {
-    color: var(--light-gray);
-    font-size: 1.3rem;
-    text-transform: uppercase;
+  &__name {
+    color: var(--gramo-white);
     margin-left: 1rem;
-    vertical-align: top;
-    line-height: 1.6rem;
+    flex: 1 1 auto;
   }
 
   &__logout {
-    display: inline-block;
-    margin-top: -5px;
+    display: block;
   }
 
   &__avatar {
-    max-width: 3.5rem;
+    max-width: 4rem;
+    max-height: 4rem;
     border-radius: 50%;
     border: 1px solid var(--light-gray);
-    float: left;
   }
 }
