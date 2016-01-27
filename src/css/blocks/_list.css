@@ -49,7 +49,7 @@
 
     span {
       display: block;
-      @media (--desktop) { display: inline-block; };
+      @media (--desktop) { display: inline-block; margin-right: 2.7rem; }
     }
   }
 

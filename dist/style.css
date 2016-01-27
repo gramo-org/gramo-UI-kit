@@ -1697,6 +1697,7 @@ input-placeholder{
 @media (min-width: 960px){
   .list--expandable .list__item__results span{
     display:inline-block;
+    margin-right:2.7rem;
   }
 }
 
