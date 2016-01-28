@@ -1291,11 +1291,11 @@ input-placeholder{
   color:#0095da;
   background:#fff url(img/calendar.svg) center right 10px no-repeat;
   border:1px solid #d9d9dc;
-  padding-right:2rem;
+  padding-right:1rem;
 }
 
   .form__label--date > .form__input::-webkit-clear-button, .form__label--date > .form__input::-webkit-calendar-picker-indicator, .form__label--date > .form__input::-webkit-inner-spin-button{
-  display:none;
+  opacity:0;
   -webkit-appearance:none;
 }
 
