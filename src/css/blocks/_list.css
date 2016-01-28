@@ -12,6 +12,7 @@
     padding: 1.5rem 1rem;
     @extend .row;
     margin: 0;
+    position: relative;
 
     &:first-child {
       border-top: 0;
@@ -60,6 +61,16 @@
 
     a {
       text-decoration: none;
+      position: absolute;
+      width: calc(100% - 4rem);
+      height: 100%;
+      top: 0;
+      right: 2rem;
+
+      i {
+        position: relative;
+        top: 3rem;
+      }
     }
   }
 

@@ -85,12 +85,19 @@
       color: var(--gramo-blue);
       background: #fff url(img/calendar.svg) center right 10px no-repeat;
       border: 1px solid var(--silver);
-      padding-right: 0.5rem;
+      padding-right: 2rem;
 
-      &:hover,
+      &::-webkit-clear-button,
+      &::-webkit-calendar-picker-indicator,
+      &::-webkit-inner-spin-button {
+        display: none;
+        -webkit-appearance: none;
+      }
+
+      /*&:hover,
       &:focus {
         background-image: none;
-      }
+      }*/
 
       &.placeholder {
         color: var(--gramo-blue);
