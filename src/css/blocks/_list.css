@@ -61,7 +61,7 @@
 
     a {
       text-decoration: none;
-      position: absolute;
+      /*position: absolute;
       width: calc(100% - 4rem);
       height: 100%;
       top: 0;
@@ -70,7 +70,7 @@
       i {
         position: relative;
         top: 3rem;
-      }
+      }*/
     }
   }
 

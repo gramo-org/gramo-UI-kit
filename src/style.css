@@ -1712,16 +1712,6 @@ input-placeholder{
 
 .list--expandable .list__item__action a{
   text-decoration:none;
-  position:absolute;
-  width:calc(100% - 4rem);
-  height:100%;
-  top:0;
-  right:2rem;
-}
-
-.list--expandable .list__item__action a i{
-  position:relative;
-  top:3rem;
 }
 
 .list--expandable .list__item__results i, .list--expandable .sub-list__item--downloads i{
