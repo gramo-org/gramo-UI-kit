@@ -9,10 +9,17 @@
 
   .list__item {
     border-top: 1px solid var(--table-border-color);
-    padding: 1.5rem 1rem;
-    @extend .row;
     margin: 0;
-    position: relative;
+
+
+
+
+    &--wrapper {
+      @extend .row;
+      padding: 1.5rem 1rem;
+      margin: 0;
+      position: relative;
+    }
 
     &:first-child {
       border-top: 0;
