@@ -1671,6 +1671,7 @@ input-placeholder{
   padding:1.5rem 1rem;
   margin:0;
   position:relative;
+  cursor:pointer;
 }
 
 .list--expandable .list__item:first-child{
