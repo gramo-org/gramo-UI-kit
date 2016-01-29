@@ -229,7 +229,7 @@ td, th{
   margin-right:-1rem;
 }
 
-.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .box, .breadcrumbs, .breadcrumbs__item, .content-header__title, .content-header__meta, .content-header__action, .toggle-sidebar, .tabs__nav__item{
+.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .box, .breadcrumbs, .breadcrumbs__item, .content-header__title, .content-header__meta, .content-header__action, .toggle-sidebar, .tabs__nav__item{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -247,7 +247,7 @@ td, th{
   padding-right:1rem;
 }
 
-.col-xs, .col-sm, .col-md, .col-lg, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .breadcrumbs, .breadcrumbs__item, .content-header__title, .tabs__nav__item{
+.col-xs, .col-sm, .col-md, .col-lg, .list--expandable .list__item__results, .list--expandable .list__item__action, .breadcrumbs, .breadcrumbs__item, .content-header__title, .tabs__nav__item{
   -webkit-flex-grow:1;
   -ms-flex-positive:1;
   flex-grow:1;
@@ -292,7 +292,7 @@ td, th{
   max-width:41.66667%;
 }
 
-.col-xs-6, .list--expandable .list__item__date, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .content-header__meta{
+.col-xs-6, .list--expandable .list__item__date, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .content-header__meta{
   -webkit-flex-basis:50%;
   -ms-flex-preferred-size:50%;
   flex-basis:50%;
@@ -334,7 +334,7 @@ td, th{
   max-width:91.66667%;
 }
 
-.col-xs-12, .list--expandable .list__item--is-expanded .list--sub-list, .content-header__action{
+.col-xs-12, .content-header__action{
   -webkit-flex-basis:100%;
   -ms-flex-preferred-size:100%;
   flex-basis:100%;
@@ -1714,8 +1714,11 @@ input-placeholder{
   text-align:right;
 }
 
-.list--expandable .list__item__action a{
-  text-decoration:none;
+.list--expandable .list__item__action i{
+  width:2rem;
+  -webkit-align-self:flex-end;
+  -ms-flex-item-align:end;
+  align-self:flex-end;
 }
 
 .list--expandable .list__item__results i, .list--expandable .sub-list__item--downloads i{
@@ -1738,7 +1741,7 @@ input-placeholder{
   list-style:none;
   margin:1rem 0 0 0;
   background:#fdfdfd;
-  padding:0;
+  padding:0 1rem;
   position:relative;
   display:block;
 }
@@ -1749,9 +1752,9 @@ input-placeholder{
   width:100%;
   height:1px;
   top:0;
-  left:-1rem;
+  left:0rem;
   position:absolute;
-  width:calc(100% + 2rem);
+  width:100%;
 }
 
 .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item{
