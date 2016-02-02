@@ -1,0 +1,26 @@
+.page-contents {
+  margin-top: 2rem;
+  @media (--desktop) { margin: 4rem 0 0 3rem; order: 1; }
+
+  ul {
+    @extend %no-list;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  li a {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid var(--silver);
+    text-decoration: none;
+    color: var(--slate-gray);
+
+    &:hover {
+      background: var(--gramo-blue);
+      color: var(--gramo-white);
+      border-color: var(--gramo-blue);
+    }
+  }
+}

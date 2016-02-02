@@ -58,6 +58,11 @@ $(document).ready(function() {
     });
   });
 
+//searchable list
+  $('.searchable-list__heading').on('click', function () {
+    $(this).parent().toggleClass('searchable-list--open');
+  });
+
   //table hover edit
   var buttons =
     '<div class="btn-group btn-group--hover"><button class="btn btn--success btn--small">Kommenter</button><button class="btn btn--success btn--small">Ignorer</button></div>';
