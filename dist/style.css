@@ -234,7 +234,7 @@ table{
 td, th{
   padding:0;
 }
-.row, .site-header nav, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .tabs__nav, .tabs__section{
+.row, .site-header nav, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .tabs__nav, .tabs__section, .search__form{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -875,7 +875,7 @@ main{
   }
 }
 
-.container, .content-header, .tabs{
+.container, .content-header, .tabs, .search{
   padding:0 1rem;
 }
 
@@ -932,18 +932,18 @@ main{
   margin-bottom:1rem;
   text-align:center;
 }
-.container.grid-test > .row, .content-header.grid-test > .row, .tabs.grid-test > .row{
+.container.grid-test > .row, .content-header.grid-test > .row, .tabs.grid-test > .row, .search.grid-test > .row{
   border:1px solid #fff;
   border-width:0 0 1px 0;
 }
 
-.container.grid-test > .row > *, .content-header.grid-test > .row > *, .tabs.grid-test > .row > *{
+.container.grid-test > .row > *, .content-header.grid-test > .row > *, .tabs.grid-test > .row > *, .search.grid-test > .row > *{
   background:rgb(180, 184, 189);
   padding-top:2rem;
   padding-bottom:2rem;
 }
 
-.container.grid-test > .row > *:nth-child(odd), .content-header.grid-test > .row > *:nth-child(odd), .tabs.grid-test > .row > *:nth-child(odd){
+.container.grid-test > .row > *:nth-child(odd), .content-header.grid-test > .row > *:nth-child(odd), .tabs.grid-test > .row > *:nth-child(odd), .search.grid-test > .row > *:nth-child(odd){
   background:rgb(217, 219, 222);
 }
 ul, ol{
@@ -2235,6 +2235,16 @@ input-placeholder{
     min-width:960px;
   }
 }
+@media (min-width: 960px){
+  .table--example{
+    min-width:500px;
+  }
+}
+@media (min-width: 1200px){
+  .table--example{
+    min-width:720px;
+  }
+}
 .table thead{
   border:1px solid #d9d9dc;
   background:#ededed;
@@ -2940,6 +2950,12 @@ input-placeholder{
   display:inline-block;
   margin-right:1rem;
 }
+.flash-message--error{
+  background:#ed6b6a;
+}
+.flash-message .btn{
+  opacity:0.8;
+}
 .message{
   clear:both;
   margin:2rem;
@@ -3072,16 +3088,32 @@ pre{
   color:#434D5A;
 }
 
-.nt{
-    color:#0095da;
+.prettyprint{
+  background:#ededed;
+
+  font-size:1.2rem;
 }
 
-.na{
-    color:#a41681;
+@media (min-width: 768px){
+  .prettyprint{
+    padding:0;
+    font-size:1.5rem;
+  }
 }
 
-.s{
-    color:#50bf9e;
+.prettyprint span{
+}
+
+.tag{
+    color:#0095da!important;
+}
+
+.atn{
+    color:#a41681!important;
+}
+
+.atv{
+    color:#50bf9e!important;
 }
 .page-contents{
   margin-top:2rem;
@@ -3108,6 +3140,67 @@ pre{
   background:#0095da;
   color:#fdfdfd;
   border-color:#0095da;
+}
+@media (min-width: 960px){
+  .page-contents--sticky.affix{
+    position:fixed;
+    top:2rem;
+  }
+}
+
+.search__form{
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+
+.search__form__input{
+  -webkit-flex:1 0 auto;
+  -ms-flex:1 0 auto;
+  flex:1 0 auto;
+  background:#fdfdfd;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  border:1px solid #a5a4ab;
+  border-radius:2px 0 0 2px;
+}
+
+.search__submit{
+  border:0;
+  -webkit-flex:0 0 auto;
+  -ms-flex:0 0 auto;
+  flex:0 0 auto;
+  border-radius:0 2px 2px 0;
+  background:#0095da;
+  font-weight:300;
+  text-transform:uppercase;
+  color:#fff;
+  padding:2rem;
+}
+
+.search__form:before{
+  -webkit-flex:0 0 4rem;
+  -ms-flex:0 0 4rem;
+  flex:0 0 4rem;
+  display:-webkit-inline-flex;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  border-radius:2px 0 0 2px;
+  background:#a5a4ab;
+  font-family:'icomoon';
+  font-weight:normal;
+  font-style:normal;
+  color:#fdfdfd;
+  content:"\e909";
 }
 @media print{
   *, *:before, *:after{

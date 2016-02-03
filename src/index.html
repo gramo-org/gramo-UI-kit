@@ -14,7 +14,7 @@
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
-
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </head>
 <body>
   <div class="site-wrapper">
@@ -67,6 +67,8 @@
         </section>
       </header>
       <!--End Site-header example-->
+      <!--Search-->
+
       <section class="container container--hd">
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-lg-9 flex-mob-order flex-mob-order--2">
@@ -83,9 +85,10 @@
               <p>
                 <a href="https://github.com/gramo-org/gramo-UI-kit/tree/master/dist" class="btn btn--medium btn--primary">Download CSS file and assets from Github</a>
               </p>
+              <hr class="horizontal-rule">
             </section>
-            <hr class="horizontal-rule">
-            <section id="grid" class="container grid-test">
+
+            <section id="grid">
               <!--Grid example-->
               <h1>Grid</h1>
               <p>
@@ -97,95 +100,343 @@
                 <li>Define offset to push column a specific number of columns.</li>
                 <li>Wrap columns in a '.row' and the '.row' in a '.container'</li>
               </ul>
-              <h3>Example markup</h3>
-              <div class="code">
-                <pre>
-                  <code class="html">
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">></span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">></span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs"</span><span class="nt">></span>
-        .col-xs (flex column)
-        <span class="nt">&lt;/div></span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs"</span><span class="nt">></span>
-        .col-xs (flex column)
-      <span class="nt">&lt;/div></span>
-    <span class="nt">&lt;/div></span>
-  <span class="nt">&lt;/div></span>
-                  </code>
-                </pre>
-              </div>
-              <div class="row">
-                <div class="col-sm">
-                  .col-sm
+              <h3>Example 1 - flex column</h3>
+
+
+  <xmp class="prettyprint">
+    <div class="container grid-test">
+      <div class="row">
+        <div class="col-xs">
+
+        </div>
+        <div class="col-xs">
+
+        </div>
+      </div>
+    </div>
+  </xmp>
+
+              <div class="container grid-test">
+                <div class="row">
+                  <div class="col-xs">
+                    .col-xs (flex column)
+                  </div>
+                  <div class="col-xs">
+                    .col-xs (flex column)
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xs">
-                  .col-xs
-                </div>
-                <div class="col-xs">
-                  .col-xs
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-4 col-xs-12">
-                  .col-sm-4 .col-xs-12
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                  .col-sm-4 .col-xs-12
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                  .col-sm-4 .col-xs-12
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-3">
-                  .col-xs-3
-                </div>
-                <div class="col-xs-3">
-                  .col-xs-3
-                </div>
-                <div class="col-xs-3">
-                  .col-xs-3
-                </div>
-                <div class="col-xs-3">
-                  .col-xs-3
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-2 col-xs-6">
-                  .col-sm-2 .col-xs-6
-                </div>
-                <div class="col-sm-2 col-xs-6">
-                  .col-sm-2 .col-xs-6
-                </div>
-                <div class="col-sm-2 col-xs-6">
-                  .col-sm-2 .col-xs-6
-                </div>
-                <div class="col-sm-2 col-xs-6">
-                  .col-sm-2 .col-xs-6
-                </div>
-                <div class="col-sm-2 col-xs-6">
-                  .col-sm-2 .col-xs-6
-                </div>
-                <div class="col-sm-2 col-xs-6">
-                  .col-sm-2 .col-xs-6
+
+              <h3>Example 2 - fixed width column</h3>
+  <xmp class="prettyprint">
+    <div class="container grid-test">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12">
+          .col-sm-4 .col-xs-12
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          .col-sm-4 .col-xs-12
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          .col-sm-4 .col-xs-12
+        </div>
+      </div>
+    </div>
+  </xmp>
+
+              <div class="container grid-test">
+                <div class="row">
+                  <div class="col-sm-4 col-xs-12">
+                    .col-sm-4 .col-xs-12
+                  </div>
+                  <div class="col-sm-4 col-xs-12">
+                    .col-sm-4 .col-xs-12
+                  </div>
+                  <div class="col-sm-4 col-xs-12">
+                    .col-sm-4 .col-xs-12
+                  </div>
                 </div>
               </div>
               <!--End Grid example-->
+              <hr class="horizontal-rule">
             </section>
+
+            <section id="tabs">
+              <h1>Tabs</h1>
+              <h3>1. Initiate tabs</h3>
+  <xmp class="prettyprint">
+    <div class="tabs">
+    </div>
+  </xmp>
+              <h3>2. Tabs navigation</h3>
+  <xmp class="prettyprint">
+    <ul class='tabs__nav'>
+      <li class='tabs__nav__item'>
+        <a href="#tab1">Tab 1</a>
+      </li>
+      <li class='tabs__nav__item'>
+        <a href="#tab2">Tab 2</a>
+      </li>
+      <li class='tabs__nav__item'>
+        <a href="#tab3">Tab 3</a>
+      </li>
+      <li class='tabs__nav__item'>
+        <a href="#tab4">Tab 4</a>
+      </li>
+    </ul>
+  </xmp>
+
+              <h3>Tabs content</h3>
+  <xmp class="prettyprint">
+    <div id="tab1" class="tabs__section">
+    </div>
+    <div id="tab2" class="tabs__section">
+    </div>
+    <div id="tab3" class="tabs__section">
+    </div>
+    <div id="tab4" class="tabs__section">
+    </div>
+  </xmp>
+              <h3>Example</h3>
+              <div class="tabs">
+                <ul class='tabs__nav'>
+                  <li class='tabs__nav__item'><a href="#tab1">Tab 1</a></li>
+                  <li class='tabs__nav__item'><a href="#tab2">Tab 2</a></li>
+                  <li class='tabs__nav__item'><a href="#tab3">Tab 3</a></li>
+                  <li class='tabs__nav__item'><a href="#tab4">Tab 4</a></li>
+                </ul>
+                <div id="tab1" class="tabs__section">
+                  <table class="table table--example">
+                    <thead>
+                      <tr>
+                        <th><h3>Tab 1</h3></th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div id="tab2" class="tabs__section">
+                  <table class="table table--example">
+                    <thead>
+                      <tr>
+                        <th><h3>Tab 2</h3></th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div id="tab3" class="tabs__section">
+                  <table class="table table--example">
+                    <thead>
+                      <tr>
+                        <th><h3>Tab 3</h3></th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div id="tab4" class="tabs__section">
+                  <table class="table table--example">
+                    <thead>
+                      <tr>
+                        <th><h3>Tab 4</h3></th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div><!--End tabs-->
+              <hr class="horizontal-rule">
+            </section>
+
+          <section id="buttons">
+            <h2>Buttons</h2>
+            <button class="btn btn--primary btn--small">Primary S</button>
+            <button class="btn btn--primary btn--medium">Primary M</button>
+            <button class="btn btn--primary btn--large">Primary L</button>
+            <br><br>
+            <button class="btn btn--success btn--small">Success S</button>
+            <button class="btn btn--success btn--medium">Success M</button>
+            <button class="btn btn--success btn--large">Success L</button>
+            <br><br>
+            <button class="btn btn--primary btn--small btn--danger">Small button danger</button>
+            <button class="btn btn--small btn--info">Small button info</button>
+            <button class="btn btn--small btn--success">Small button success</button>
+            <br><br>
+            <button disabled="disabled" class="btn btn--primary btn--small">Off Small</button>
+            <button disabled="disabled" class="btn btn--primary btn--medium">Off Medium</button>
+            <button disabled="disabled" class="btn btn--primary btn--large">Off Large</button>
             <hr class="horizontal-rule">
+          </section>
+
+          <section id="pagination">
+            <h1>Pagination example</h1>
+              <!--Pagination example-->
+              <nav role="navigation">
+                <ul class="pagination">
+                  <li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
+                  <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
+                  <li class="pagination__item"><a href="#">2</a></li>
+                  <li class="pagination__item"><a href="#">3</a></li>
+                  <li class="pagination__item"><a href="#">4</a></li>
+                  <li class="pagination__item"><a href="#">5</a></li>
+                  <li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
+                </ul>
+              </nav>
+              <!-- End Pagination example-->
+              <hr class="horizontal-rule">
+            </section>
+
+            <section id="flash-messages">
+              <h2>Flash message</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="flash-message">
+                    <p>Flashmelding at noe ble gjort</p> <button class="btn btn--medium btn--inline btn--slate">OK</button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="flash-message flash-message--error">
+                    <p>Flashmelding at noe ble gjort</p> <button class="btn btn--medium btn--inline btn--slate">OK</button>
+                  </div>
+                </div>
+              </div>
+              <hr class="horizontal-rule">
+            </section>
+
+            <section id="loading">
+              <h1>Loading</h1>
+              <h3>Spinner</h3>
+              <!--spinner example-->
+              <div class="spinner">
+                <div class="spinner__rect1"></div>
+                <div class="spinner__rect2"></div>
+                <div class="spinner__rect3"></div>
+                <div class="spinner__rect4"></div>
+                <div class="spinner__rect5"></div>
+              </div>
+              <h3>Content placeholder (in table cells)</h3>
+            <!--content-placeholder example-->
+              <table class="table table--example">
+                <tr>
+                  <td>
+                    <div class="content-placeholder"></div>
+                  </td>
+                  <td>
+                    <div class="content-placeholder"></div>
+                  </td>
+                  <td>
+                    <div class="content-placeholder"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="content-placeholder"></div>
+                  </td>
+                  <td>
+                    <div class="content-placeholder"></div>
+                  </td>
+                  <td>
+                    <div class="content-placeholder"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="content-placeholder"></div>
+                  </td>
+                  <td>
+                    <div class="content-placeholder"></div>
+                  </td>
+                  <td>
+                    <div class="content-placeholder"></div>
+                  </td>
+                </tr>
+              </table>
+              <hr class="horizontal-rule">
+            </section>
+
+            <section id="forms">
+              <h1>Forms</h1>
+                <h3>Logg inn</h3>
+                  <div class="box" style="margin:2rem 0;">
+                    <form class="form">
+                      <label class="form__label form__label--block is-valid">Epost
+                        <input type="text" class="form__input form__input--block">
+                      </label>
+
+                      <label class="form__label form__label--block has-error">Password
+                        <input type="password" class="form__input form__input--block">
+                      </label>
+
+                    <p class="input-error">Kunne ikke logge på. Passord er feil.</p>
+                    <button class="btn btn--primary btn--block">Gå videre</button>
+                    </form>
+                  </div>
+              <!-- End Login example-->
+              <h3>Form controls</h3>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="btn-group">
+                    <button class="btn btn--primary btn--small">Kanal <i class="icon--breadcrumbs-arrow"></i>Dato</button>
+                    <button class="btn btn--white btn--small">Dato <i class="icon--breadcrumbs-arrow"></i>Kanal</button>
+                  </div>
+
+                </div>
+                <div class="col-md-3">
+                  <label class="form__label">
+                    <input type="radio">Radio valg
+                  </label>
+                  <label class="form__label">
+                    <input type="radio" checkeD>Radio valg
+                  </label>
+                </div>
+
+                <div class="col-md-2">
+                  <span class="x-toggle-container">
+                    <input type="checkbox" class="x-toggle" checked="">
+                    <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                    </label>
+                  </span>
+
+                  <span class="x-toggle-container">
+                    <input type="checkbox" class="x-toggle">
+                    <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                    </label>
+                  </span>
+                  </div>
+                  <div class="col-md-3">
+                  <div class="searchable-list">
+                    <div class="searchable-list__heading">
+                      <span class="searchable-list__selected">P3</span>
+                    </div>
+                    <div class="searchable-list__dropdown">
+                      <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
+                      <ul>
+                        <li class="searchable-list__option">P4 Norge</li>
+                        <li class="searchable-list__option">P4 Lokal</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="horizontal-rule">
+            </section>
+
+
           </div><!--/.col with main content-->
           <aside class="col-xs-12 col-sm-4 col-lg-3 flex-mob-order flex-mob-order--1">
             <nav class="page-contents page-contents--sticky">
+              <section class="search">
+                <form id="live-search" action="" class="search__form" method="post">
+                      <input type="text" class="search__form__input" id="filter" value="" />
+                      <!-- <span id="filter-count"></span> -->
+                </form>
+              </section>
               <ul>
                 <li><a href="#installation">Installation</a></li>
-                <li><a href="#">Grid</a></li>
-                <li><a href="#">Tabs</a></li>
-                <li><a href="#">Buttons</a></li>
-                <li><a href="#">Typography</a></li>
-                <li><a href="#">Tables</a></li>
-                <li><a href="#">Forms</a></li>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#tabs">Tabs</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="pagination">Pagination</a></li>
+                <li><a href="flash-messages">Flash messages</a></li>
+                <li><a href="loading">Loading</a></li>
+                <li><a href="forms">Forms</a></li>
                 <li><a href="#">Badges</a></li>
                 <li><a href="#">Lists</a></li>
                 <li><a href="#">Tables</a></li>
@@ -198,6 +449,5 @@
   </div><!--End site-wrapper-->
 <script src="js/vendor/jquery-1.11.3.min.js"></script>
 <script src="js/default.js"></script>
-
 </body>
 </html>

@@ -1,0 +1,53 @@
+.search {
+
+  @extend .container;
+}
+
+.search__form {
+  @extend .row;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.search__form__input {
+  /* Shrink and grow as needed, but never shrink so
+     small that we can't read the placeholder */
+  flex: 1 0 auto;
+  background: var(--gramo-white);
+
+  /*Make sure the placeholder isn't poorly cut off*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid var(--off-gray);
+  border-radius: 2px 0 0 2px;
+}
+
+.search__submit {
+  /* Never shrink or grow */
+  border: 0;
+  flex: 0 0 auto;
+  border-radius: 0 2px 2px 0;
+  background: var(--gramo-blue);
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2rem;
+}
+
+.search__form:before {
+  /* Don't shrink or grow and use a default size */
+  flex: 0 0 4rem;
+  /*Use flexbox to center the icon*/
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px 0 0 2px;
+  background: var(--off-gray);
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  color: var(--gramo-white);
+  content: "\e909";
+}

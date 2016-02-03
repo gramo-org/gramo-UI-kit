@@ -23,4 +23,8 @@
       border-color: var(--gramo-blue);
     }
   }
+
+  &--sticky.affix {
+    @media (--desktop) { position: fixed; top: 2rem; }
+  }
 }

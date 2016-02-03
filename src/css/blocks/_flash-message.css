@@ -16,6 +16,14 @@
     display: inline-block;
     margin-right: 1rem;
   }
+
+  &--error {
+    background: var(--gramo-red);
+  }
+
+  .btn {
+    opacity: 0.8;
+  }
 }
 
 /* Ingen filer er lest inn i perioden message */
