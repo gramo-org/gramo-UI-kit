@@ -114,6 +114,11 @@ $(document).ready(function() {
     $("#filter-count").text("Number of items = "+count);
     });
 
+    //Clear search form
+    $('.search__clear').click(function(){
+      $(this).prev('input').val('');
+     });
+
     //Scroll spy
     $(document).on('scroll', onScroll);
     function onScroll(event){
