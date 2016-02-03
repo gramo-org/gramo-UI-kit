@@ -785,15 +785,15 @@ h3, .h3{
   line-height:2.8rem;
   margin-top:1em;
   margin-bottom:.2em;
-  color:#101010;
+  color:#434D5A;
   font-weight:400;
 }
 h4, .h4{
   font-size:1.8rem;
   line-height:2.4rem;
   margin-top:1em;
-  margin-bottom:.2em;
-  color:#101010;
+  margin-bottom:.5em;
+  color:#a5a4ab;
   font-weight:400;
 }
 h5, .h5{
@@ -3136,7 +3136,7 @@ pre{
   text-decoration:none;
   color:#504f56;
 }
-.page-contents li a:hover{
+.page-contents li a:hover, .page-contents li a.active{
   background:#0095da;
   color:#fdfdfd;
   border-color:#0095da;

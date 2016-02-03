@@ -17,7 +17,8 @@
     text-decoration: none;
     color: var(--slate-gray);
 
-    &:hover {
+    &:hover,
+    &.active {
       background: var(--gramo-blue);
       color: var(--gramo-white);
       border-color: var(--gramo-blue);

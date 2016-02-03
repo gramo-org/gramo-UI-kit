@@ -69,18 +69,7 @@ $(document).ready(function() {
   $('td.action').append(buttons);
 
 
-  //Affix page contents to top of viewport
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    var menuWidth = $('.page-contents--sticky').parent().innerWidth() - 50 + 'px';
-    if (scroll >= 50) {
-      $('.page-contents--sticky').addClass('affix');
-      $('.page-contents--sticky').width(menuWidth);
-    } else {
-      $('.page-contents--sticky').removeClass('affix');
-      $('.page-contents--sticky').css('width','auto');
-    }
-  });
+
 
   //smooth scroll
   // Get the height of the header
@@ -91,7 +80,7 @@ $(document).ready(function() {
       e.preventDefault();
 
       var target = $(this).attr("href"); //Get the target
-      var scrollToPosition = $(target).offset().top - headerHeight;
+      var scrollToPosition = $(target).offset().top;// - headerHeight;
 
       $('html,body').animate({ 'scrollTop': scrollToPosition }, 600, function(){
           window.location.hash = "" + target;
@@ -125,4 +114,39 @@ $(document).ready(function() {
     $("#filter-count").text("Number of items = "+count);
     });
 
+    //Scroll spy
+    $(document).on('scroll', onScroll);
+    function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+      $('.page-contents a').each(function () {
+          var currLink = $(this);
+          var refElement = $(currLink.attr('href'));
+          var headerHeight = $(".site-header").height();
+          if (refElement.length) {
+            var elementTop = refElement.position().top - headerHeight;
+            var elementHeight = refElement.height();
+          }
+          if (elementTop <= scrollPos && elementTop + elementHeight > scrollPos &&  !$('#filter').val() ) {
+              $('.page-contents a').removeClass('active');
+              currLink.addClass('active');
+          }
+          else{
+              currLink.removeClass('active');
+          }
+      });
+    }
+
 }); // end document ready
+
+//Affix page contents to top of viewport
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  var menuWidth = $('.page-contents--sticky').parent().innerWidth() - 50 + 'px';
+  if (scroll >= 50) {
+    $('.page-contents--sticky').addClass('affix');
+    $('.page-contents--sticky').width(menuWidth);
+  } else {
+    $('.page-contents--sticky').removeClass('affix');
+    $('.page-contents--sticky').css('width','auto');
+  }
+});
