@@ -17,13 +17,14 @@
     margin-right: 1rem;
   }
 
-  &--error {
-    background: var(--gramo-red);
-  }
-
   .btn {
     opacity: 0.8;
   }
+}
+
+.flash-message--error,
+.error .flash-message {
+  background: var(--gramo-red);
 }
 
 /* Ingen filer er lest inn i perioden message */

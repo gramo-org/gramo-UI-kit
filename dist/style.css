@@ -2950,11 +2950,12 @@ input-placeholder{
   display:inline-block;
   margin-right:1rem;
 }
-.flash-message--error{
-  background:#ed6b6a;
-}
 .flash-message .btn{
   opacity:0.8;
+}
+
+.flash-message--error, .error .flash-message{
+  background:#ed6b6a;
 }
 .message{
   clear:both;
