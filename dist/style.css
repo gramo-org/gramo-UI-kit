@@ -2951,11 +2951,15 @@ input-placeholder{
   margin-right:1rem;
 }
 .flash-message .btn{
-  opacity:0.8;
+  background:rgb(102, 149, 162);
 }
 
 .flash-message--error, .error .flash-message{
   background:#ed6b6a;
+}
+
+.flash-message--error .btn, .error .flash-message .btn{
+  background:rgb(178, 80, 80);
 }
 .message{
   clear:both;
@@ -3190,6 +3194,7 @@ pre{
   top:2.8rem;
   font-size:1.2rem;
   z-index:1;
+  display:none;
 }
 
 .search__clear .icon--cross:before{

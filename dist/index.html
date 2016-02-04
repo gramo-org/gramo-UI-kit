@@ -26,11 +26,11 @@
         </header>
         <nav class="sidebar__nav">
           <ul class="vertical__nav">
-            <li class="vertical__nav__item vertical__nav__item--isExpanded"><a href="#">Getting Started</a>
+            <li class="vertical__nav__item vertical__nav__item--isExpanded"><a href="#">Gramo UI kit</a>
               <ul class="vertical__nav vertical__nav--sub">
-                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Installation</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Kitchen sink</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Example pages</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#getting-started">Getting Started</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#kitchen-sink">Kitchen sink</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#example-pages">Example pages</a></li>
               </ul>
             </li>
           </ul>
@@ -61,7 +61,6 @@
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#"><i class="icon--home"></i></a></li>
               <li class="breadcrumbs__item"><a href="#">Getting started</a></li>
-              <li class="breadcrumbs__item"><a href="#">Installation</a></li>
             </ul>
           </nav>
         </section>
@@ -72,430 +71,440 @@
       <section class="container container--hd">
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-lg-9 flex-mob-order flex-mob-order--2">
-            <section id="installation">
-              <h1>Installation</h1>
-              <h3>1. With Bower</h3>
-              <div class="code">
-                <pre>
-                  <code class="bash">$ bower install gramo-ui-kit</code>
-                </pre>
-              </div>
-              <h3>2. Download the CSS file</h3>
-              <p>We recommend using Bower to manage the UI kit, but it's also possible to download the CSS file and assets from Github.</p>
-              <p>
-                <a href="https://github.com/gramo-org/gramo-UI-kit/tree/master/dist" class="btn btn--medium btn--primary">Download CSS file and assets from Github</a>
-              </p>
-              <hr class="horizontal-rule">
-            </section>
+            <section id="getting-started">
+              <section id="installation">
+                <h1>Installation</h1>
+                <h3>1. With Bower</h3>
+                <div class="code">
+                  <pre>
+                    <code class="bash">$ bower install gramo-ui-kit</code>
+                  </pre>
+                </div>
+                <h3>2. Download the CSS file</h3>
+                <p>We recommend using Bower to manage the UI kit, but it's also possible to download the CSS file and assets from Github.</p>
+                <p>
+                  <a href="https://github.com/gramo-org/gramo-UI-kit/tree/master/dist" class="btn btn--medium btn--primary">Download CSS file and assets from Github</a>
+                </p>
+                <hr class="horizontal-rule">
+              </section>
+            </section><!--End Getting Started section-->
 
-            <section id="grid">
-              <!--Grid example-->
-              <h1>Grid</h1>
-              <p>
-                Simple flexbox grid based on <a href="https://github.com/matthewsimo/scss-flex-grid" target="_blank">scss-flex-grid</a>
-              </p>
-              <ul>
-                <li>Responsive, mobile first approach</li>
-                <li>Define specific colum size or use a flex column (a column that grows to fill space)</li>
-                <li>Define offset to push column a specific number of columns.</li>
-                <li>Wrap columns in a '.row' and the '.row' in a '.container'</li>
-              </ul>
-              <h3>Example 1 - flex column</h3>
+            <section id="kitchen-sink">
+              <section id="grid">
+                <!--Grid example-->
+                <h1>Grid</h1>
+                <p>
+                  Simple flexbox grid based on <a href="https://github.com/matthewsimo/scss-flex-grid" target="_blank">scss-flex-grid</a>
+                </p>
+                <ul>
+                  <li>Responsive, mobile first approach</li>
+                  <li>Define specific colum size or use a flex column (a column that grows to fill space)</li>
+                  <li>Define offset to push column a specific number of columns.</li>
+                  <li>Wrap columns in a '.row' and the '.row' in a '.container'</li>
+                </ul>
+                <h3>Example 1 - flex column</h3>
 
 
-  <xmp class="prettyprint">
-    <div class="container grid-test">
-      <div class="row">
-        <div class="col-xs">
+    <xmp class="prettyprint">
+      <div class="container grid-test">
+        <div class="row">
+          <div class="col-xs">
 
-        </div>
-        <div class="col-xs">
+          </div>
+          <div class="col-xs">
 
+          </div>
         </div>
       </div>
-    </div>
-  </xmp>
+    </xmp>
 
-              <div class="container grid-test">
-                <div class="row">
-                  <div class="col-xs">
-                    .col-xs (flex column)
-                  </div>
-                  <div class="col-xs">
-                    .col-xs (flex column)
+                <div class="container grid-test">
+                  <div class="row">
+                    <div class="col-xs">
+                      .col-xs (flex column)
+                    </div>
+                    <div class="col-xs">
+                      .col-xs (flex column)
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <h3>Example 2 - fixed width column</h3>
-  <xmp class="prettyprint">
-    <div class="container grid-test">
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          .col-sm-4 .col-xs-12
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          .col-sm-4 .col-xs-12
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          .col-sm-4 .col-xs-12
+                <h3>Example 2 - fixed width column</h3>
+    <xmp class="prettyprint">
+      <div class="container grid-test">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            .col-sm-4 .col-xs-12
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            .col-sm-4 .col-xs-12
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            .col-sm-4 .col-xs-12
+          </div>
         </div>
       </div>
-    </div>
-  </xmp>
+    </xmp>
 
-              <div class="container grid-test">
+                <div class="container grid-test">
+                  <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                      .col-sm-4 .col-xs-12
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                      .col-sm-4 .col-xs-12
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                      .col-sm-4 .col-xs-12
+                    </div>
+                  </div>
+                </div>
+                <!--End Grid example-->
+                <hr class="horizontal-rule">
+              </section><!--End Grid section-->
+
+              <section id="tabs">
+                <h1>Tabs</h1>
+                <h3>1. Initiate tabs</h3>
+    <xmp class="prettyprint">
+      <div class="tabs">
+      </div>
+    </xmp>
+                <h3>2. Tabs navigation</h3>
+    <xmp class="prettyprint">
+      <ul class='tabs__nav'>
+        <li class='tabs__nav__item'>
+          <a href="#tab1">Tab 1</a>
+        </li>
+        <li class='tabs__nav__item'>
+          <a href="#tab2">Tab 2</a>
+        </li>
+        <li class='tabs__nav__item'>
+          <a href="#tab3">Tab 3</a>
+        </li>
+        <li class='tabs__nav__item'>
+          <a href="#tab4">Tab 4</a>
+        </li>
+      </ul>
+    </xmp>
+
+                <h3>Tabs content</h3>
+    <xmp class="prettyprint">
+      <div id="tab1" class="tabs__section">
+      </div>
+      <div id="tab2" class="tabs__section">
+      </div>
+      <div id="tab3" class="tabs__section">
+      </div>
+      <div id="tab4" class="tabs__section">
+      </div>
+    </xmp>
+                <h3>Example</h3>
+                <div class="tabs">
+                  <ul class='tabs__nav'>
+                    <li class='tabs__nav__item'><a href="#tab1">Tab 1</a></li>
+                    <li class='tabs__nav__item'><a href="#tab2">Tab 2</a></li>
+                    <li class='tabs__nav__item'><a href="#tab3">Tab 3</a></li>
+                    <li class='tabs__nav__item'><a href="#tab4">Tab 4</a></li>
+                  </ul>
+                  <div id="tab1" class="tabs__section">
+                    <table class="table table--example">
+                      <thead>
+                        <tr>
+                          <th><h3>Tab 1</h3></th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div id="tab2" class="tabs__section">
+                    <table class="table table--example">
+                      <thead>
+                        <tr>
+                          <th><h3>Tab 2</h3></th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div id="tab3" class="tabs__section">
+                    <table class="table table--example">
+                      <thead>
+                        <tr>
+                          <th><h3>Tab 3</h3></th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div id="tab4" class="tabs__section">
+                    <table class="table table--example">
+                      <thead>
+                        <tr>
+                          <th><h3>Tab 4</h3></th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div><!--End tabs-->
+                <hr class="horizontal-rule">
+              </section><!--End Tabs section-->
+
+            <section id="buttons">
+              <h1>Buttons</h1>
+              <button class="btn btn--primary btn--small">Primary S</button>
+              <button class="btn btn--primary btn--medium">Primary M</button>
+              <button class="btn btn--primary btn--large">Primary L</button>
+              <br><br>
+              <button class="btn btn--success btn--small">Success S</button>
+              <button class="btn btn--success btn--medium">Success M</button>
+              <button class="btn btn--success btn--large">Success L</button>
+              <br><br>
+              <button class="btn btn--primary btn--small btn--danger">Small button danger</button>
+              <button class="btn btn--small btn--info">Small button info</button>
+              <button class="btn btn--small btn--success">Small button success</button>
+              <br><br>
+              <button disabled="disabled" class="btn btn--primary btn--small">Off Small</button>
+              <button disabled="disabled" class="btn btn--primary btn--medium">Off Medium</button>
+              <button disabled="disabled" class="btn btn--primary btn--large">Off Large</button>
+              <br><br>
+              <h3>Button group</h3>
+              <div class="btn-group">
+                <button class="btn btn--success btn--small">Kommenter</button>
+                <button class="btn btn--success btn--small">Ignorer</button>
+              </div>
+              <h3>Button group toggle</h3>
+              <div class="btn-group btn-group--toggle">
+                <button class="btn btn--primary btn--small">Kanal <i class="icon--breadcrumbs-arrow"></i>Dato</button>
+                <button class="btn btn--white btn--small">Dato <i class="icon--breadcrumbs-arrow"></i>Kanal</button>
+              </div>
+              <hr class="horizontal-rule">
+            </section><!--End Buttons section-->
+
+            <section id="pagination">
+              <h1>Pagination example</h1>
+                <!--Pagination example-->
+                <nav role="navigation">
+                  <ul class="pagination">
+                    <li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
+                    <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
+                    <li class="pagination__item"><a href="#">2</a></li>
+                    <li class="pagination__item"><a href="#">3</a></li>
+                    <li class="pagination__item"><a href="#">4</a></li>
+                    <li class="pagination__item"><a href="#">5</a></li>
+                    <li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
+                  </ul>
+                </nav>
+                <!-- End Pagination example-->
+                <hr class="horizontal-rule">
+              </section><!--End Pagination section-->
+
+              <section id="flash-messages">
+                <h1>Flash message</h1>
                 <div class="row">
-                  <div class="col-sm-4 col-xs-12">
-                    .col-sm-4 .col-xs-12
+                  <div class="col-md-6">
+                    <div class="flash-message">
+                      <p>Flashmelding at noe ble gjort</p> <button class="btn btn--medium btn--inline btn--slate">OK</button>
+                    </div>
                   </div>
-                  <div class="col-sm-4 col-xs-12">
-                    .col-sm-4 .col-xs-12
-                  </div>
-                  <div class="col-sm-4 col-xs-12">
-                    .col-sm-4 .col-xs-12
-                  </div>
-                </div>
-              </div>
-              <!--End Grid example-->
-              <hr class="horizontal-rule">
-            </section>
-
-            <section id="tabs">
-              <h1>Tabs</h1>
-              <h3>1. Initiate tabs</h3>
-  <xmp class="prettyprint">
-    <div class="tabs">
-    </div>
-  </xmp>
-              <h3>2. Tabs navigation</h3>
-  <xmp class="prettyprint">
-    <ul class='tabs__nav'>
-      <li class='tabs__nav__item'>
-        <a href="#tab1">Tab 1</a>
-      </li>
-      <li class='tabs__nav__item'>
-        <a href="#tab2">Tab 2</a>
-      </li>
-      <li class='tabs__nav__item'>
-        <a href="#tab3">Tab 3</a>
-      </li>
-      <li class='tabs__nav__item'>
-        <a href="#tab4">Tab 4</a>
-      </li>
-    </ul>
-  </xmp>
-
-              <h3>Tabs content</h3>
-  <xmp class="prettyprint">
-    <div id="tab1" class="tabs__section">
-    </div>
-    <div id="tab2" class="tabs__section">
-    </div>
-    <div id="tab3" class="tabs__section">
-    </div>
-    <div id="tab4" class="tabs__section">
-    </div>
-  </xmp>
-              <h3>Example</h3>
-              <div class="tabs">
-                <ul class='tabs__nav'>
-                  <li class='tabs__nav__item'><a href="#tab1">Tab 1</a></li>
-                  <li class='tabs__nav__item'><a href="#tab2">Tab 2</a></li>
-                  <li class='tabs__nav__item'><a href="#tab3">Tab 3</a></li>
-                  <li class='tabs__nav__item'><a href="#tab4">Tab 4</a></li>
-                </ul>
-                <div id="tab1" class="tabs__section">
-                  <table class="table table--example">
-                    <thead>
-                      <tr>
-                        <th><h3>Tab 1</h3></th>
-                      </tr>
-                    </thead>
-                  </table>
-                </div>
-                <div id="tab2" class="tabs__section">
-                  <table class="table table--example">
-                    <thead>
-                      <tr>
-                        <th><h3>Tab 2</h3></th>
-                      </tr>
-                    </thead>
-                  </table>
-                </div>
-                <div id="tab3" class="tabs__section">
-                  <table class="table table--example">
-                    <thead>
-                      <tr>
-                        <th><h3>Tab 3</h3></th>
-                      </tr>
-                    </thead>
-                  </table>
-                </div>
-                <div id="tab4" class="tabs__section">
-                  <table class="table table--example">
-                    <thead>
-                      <tr>
-                        <th><h3>Tab 4</h3></th>
-                      </tr>
-                    </thead>
-                  </table>
-                </div>
-              </div><!--End tabs-->
-              <hr class="horizontal-rule">
-            </section>
-
-          <section id="buttons">
-            <h1>Buttons</h1>
-            <button class="btn btn--primary btn--small">Primary S</button>
-            <button class="btn btn--primary btn--medium">Primary M</button>
-            <button class="btn btn--primary btn--large">Primary L</button>
-            <br><br>
-            <button class="btn btn--success btn--small">Success S</button>
-            <button class="btn btn--success btn--medium">Success M</button>
-            <button class="btn btn--success btn--large">Success L</button>
-            <br><br>
-            <button class="btn btn--primary btn--small btn--danger">Small button danger</button>
-            <button class="btn btn--small btn--info">Small button info</button>
-            <button class="btn btn--small btn--success">Small button success</button>
-            <br><br>
-            <button disabled="disabled" class="btn btn--primary btn--small">Off Small</button>
-            <button disabled="disabled" class="btn btn--primary btn--medium">Off Medium</button>
-            <button disabled="disabled" class="btn btn--primary btn--large">Off Large</button>
-            <br><br>
-            <h3>Button group</h3>
-            <div class="btn-group">
-              <button class="btn btn--success btn--small">Kommenter</button>
-              <button class="btn btn--success btn--small">Ignorer</button>
-            </div>
-            <h3>Button group toggle</h3>
-            <div class="btn-group btn-group--toggle">
-              <button class="btn btn--primary btn--small">Kanal <i class="icon--breadcrumbs-arrow"></i>Dato</button>
-              <button class="btn btn--white btn--small">Dato <i class="icon--breadcrumbs-arrow"></i>Kanal</button>
-            </div>
-            <hr class="horizontal-rule">
-          </section>
-
-          <section id="pagination">
-            <h1>Pagination example</h1>
-              <!--Pagination example-->
-              <nav role="navigation">
-                <ul class="pagination">
-                  <li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
-                  <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
-                  <li class="pagination__item"><a href="#">2</a></li>
-                  <li class="pagination__item"><a href="#">3</a></li>
-                  <li class="pagination__item"><a href="#">4</a></li>
-                  <li class="pagination__item"><a href="#">5</a></li>
-                  <li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
-                </ul>
-              </nav>
-              <!-- End Pagination example-->
-              <hr class="horizontal-rule">
-            </section>
-
-            <section id="flash-messages">
-              <h1>Flash message</h1>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="flash-message">
-                    <p>Flashmelding at noe ble gjort</p> <button class="btn btn--medium btn--inline btn--slate">OK</button>
+                  <div class="col-md-6">
+                    <div class="flash-message flash-message--error">
+                      <p>Flashmelding at noe gikk galt!</p> <button class="btn btn--medium btn--inline btn--slate">OK</button>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="flash-message flash-message--error">
-                    <p>Flashmelding at noe gikk galt!</p> <button class="btn btn--medium btn--inline btn--slate">OK</button>
-                  </div>
+                <hr class="horizontal-rule">
+              </section><!--End Flash-message section-->
+
+              <section id="loading">
+                <h1>Loading</h1>
+                <h3>Spinner</h3>
+                <!--spinner example-->
+                <div class="spinner">
+                  <div class="spinner__rect1"></div>
+                  <div class="spinner__rect2"></div>
+                  <div class="spinner__rect3"></div>
+                  <div class="spinner__rect4"></div>
+                  <div class="spinner__rect5"></div>
                 </div>
-              </div>
-              <hr class="horizontal-rule">
-            </section>
+                <h3>Content placeholder (in table cells)</h3>
+              <!--content-placeholder example-->
+                <table class="table table--example">
+                  <tr>
+                    <td>
+                      <div class="content-placeholder"></div>
+                    </td>
+                    <td>
+                      <div class="content-placeholder"></div>
+                    </td>
+                    <td>
+                      <div class="content-placeholder"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="content-placeholder"></div>
+                    </td>
+                    <td>
+                      <div class="content-placeholder"></div>
+                    </td>
+                    <td>
+                      <div class="content-placeholder"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="content-placeholder"></div>
+                    </td>
+                    <td>
+                      <div class="content-placeholder"></div>
+                    </td>
+                    <td>
+                      <div class="content-placeholder"></div>
+                    </td>
+                  </tr>
+                </table>
+                <hr class="horizontal-rule">
+              </section><!--End Loading section-->
 
-            <section id="loading">
-              <h1>Loading</h1>
-              <h3>Spinner</h3>
-              <!--spinner example-->
-              <div class="spinner">
-                <div class="spinner__rect1"></div>
-                <div class="spinner__rect2"></div>
-                <div class="spinner__rect3"></div>
-                <div class="spinner__rect4"></div>
-                <div class="spinner__rect5"></div>
-              </div>
-              <h3>Content placeholder (in table cells)</h3>
-            <!--content-placeholder example-->
-              <table class="table table--example">
-                <tr>
-                  <td>
-                    <div class="content-placeholder"></div>
-                  </td>
-                  <td>
-                    <div class="content-placeholder"></div>
-                  </td>
-                  <td>
-                    <div class="content-placeholder"></div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="content-placeholder"></div>
-                  </td>
-                  <td>
-                    <div class="content-placeholder"></div>
-                  </td>
-                  <td>
-                    <div class="content-placeholder"></div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="content-placeholder"></div>
-                  </td>
-                  <td>
-                    <div class="content-placeholder"></div>
-                  </td>
-                  <td>
-                    <div class="content-placeholder"></div>
-                  </td>
-                </tr>
-              </table>
-              <hr class="horizontal-rule">
-            </section>
+              <section id="forms">
+                <h1>Forms</h1>
+                  <h3>Boxed form</h3>
+                    <div class="box" style="margin:2rem 0;">
+                      <form class="form">
+                        <label class="form__label form__label--block is-valid">Epost
+                          <input type="text" class="form__input form__input--block">
+                        </label>
 
-            <section id="forms">
-              <h1>Forms</h1>
-                <h3>Boxed form</h3>
-                  <div class="box" style="margin:2rem 0;">
-                    <form class="form">
-                      <label class="form__label form__label--block is-valid">Epost
-                        <input type="text" class="form__input form__input--block">
+                        <label class="form__label form__label--block has-error">Password
+                          <input type="password" class="form__input form__input--block">
+                        </label>
+
+                      <p class="input-error">Kunne ikke logge på. Passord er feil.</p>
+                      <button class="btn btn--primary btn--block">Gå videre</button>
+                      </form>
+                    </div>
+                <!-- End Login example-->
+                <h3>Boxed form with contrast</h3>
+                <!--Gray box example-->
+                <form class="form">
+                  <div class="box box--gray box--full" style="margin:2rem 0;">
+                    <section class="form__section">
+                      <h4 class="form__heading">Velg Kringkaster</h4>
+                      <label class="form__label">
+                        <input type="radio">NRK
                       </label>
-
-                      <label class="form__label form__label--block has-error">Password
-                        <input type="password" class="form__input form__input--block">
+                      <label class="form__label form__label--isChecked">
+                        <input type="radio" checked>Radio Norge
                       </label>
-
-                    <p class="input-error">Kunne ikke logge på. Passord er feil.</p>
-                    <button class="btn btn--primary btn--block">Gå videre</button>
-                    </form>
+                      <label class="form__label">
+                        <input type="radio">P4
+                      </label>
+                      <label class="form__label">
+                        <input type="radio">Local Radio
+                      </label>
+                    </section>
+                    <section class="form__section">
+                      <label class="form__label">Velg kanal
+                        <div class="select select--block">
+                          <select>
+                            <option>Radio 1</option>
+                          </select>
+                        </div>
+                      </label>
+                    </section>
+                    <section class="form__section">
+                      <label class="form__label form__label--date">Sendetid Fra
+                        <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
+                      </label>
+                      <label class="form__label form__label--date">Til
+                        <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
+                      </label>
+                    </section>
+                    <section class="form__section">
+                      <label class="form__label form__label--percent"><span>Forventet musikkandel</span>
+                        <input class="form__input form__input--numeric" type="number" min="0" max="100" step="10" value="10">
+                      </label>
+                    </section>
                   </div>
-              <!-- End Login example-->
-              <h3>Boxed form with contrast</h3>
-              <!--Gray box example-->
-              <form class="form">
-                <div class="box box--gray box--full" style="margin:2rem 0;">
-                  <section class="form__section">
-                    <h4 class="form__heading">Velg Kringkaster</h4>
-                    <label class="form__label">
-                      <input type="radio">NRK
-                    </label>
-                    <label class="form__label form__label--isChecked">
-                      <input type="radio" checked>Radio Norge
-                    </label>
-                    <label class="form__label">
-                      <input type="radio">P4
-                    </label>
-                    <label class="form__label">
-                      <input type="radio">Local Radio
-                    </label>
+                  <section class="form__section form__section--action">
+                    <button class="btn btn--default btn--large">Avbryt</button>
+                    <button class="btn btn--primary btn--large">Lagre</button>
                   </section>
-                  <section class="form__section">
-                    <label class="form__label">Velg kanal
-                      <div class="select select--block">
-                        <select>
-                          <option>Radio 1</option>
-                        </select>
+                </form>
+                <h3>Form controls</h3>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h4>Radio buttons</h4>
+                    <label class="form__label form__label--block">
+                      <input type="radio">Radio valg
+                    </label>
+                    <label class="form__label form__label--block">
+                      <input type="radio" checked>Radio valg
+                    </label>
+                    <label class="form__label form__label--block">
+                      <input type="radio">Radio valg
+                    </label>
+                  </div><!--/.col-->
+                  <div class="col-md-4">
+                    <h4>Toggles</h4>
+                    <span class="x-toggle-container" style="margin-bottom: 1rem;">
+                      <input type="checkbox" class="x-toggle" checked="">
+                      <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                      </label>
+                    </span>
+
+                    <span class="x-toggle-container">
+                      <input type="checkbox" class="x-toggle">
+                      <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                      </label>
+                    </span>
+                  </div><!--/.col-->
+                  <div class="col-md-4">
+                    <h4>Searchable list</h4>
+                    <div class="searchable-list">
+                      <div class="searchable-list__heading">
+                        <span class="searchable-list__selected">P3</span>
                       </div>
+                      <div class="searchable-list__dropdown">
+                        <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
+                        <ul>
+                          <li class="searchable-list__option">P4 Norge</li>
+                          <li class="searchable-list__option">P4 Lokal</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+                <div class="row">
+                  <div class="col-md-4">
+                    <h4>Select menu</h4>
+                    <div class="select">
+                      <select>
+                        <option>Velg perioden</option>
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>Three</option>
+                        <option>Four</option>
+                      </select>
+                    </div>
+                  </div><!--/.col-->
+                  <div class="col-md-4">
+                    <h4>Date picker</h4>
+                    <label class="form__label form__label--date">
+                      <input type="date" placeholder="mm/dd/yyyy" class="form__input">
                     </label>
-                  </section>
-                  <section class="form__section">
-                    <label class="form__label form__label--date">Sendetid Fra
-                      <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
-                    </label>
-                    <label class="form__label form__label--date">Til
-                      <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
-                    </label>
-                  </section>
-                  <section class="form__section">
-                    <label class="form__label form__label--percent"><span>Forventet musikkandel</span>
-                      <input class="form__input form__input--numeric" type="number" min="0" max="100" step="10" value="10">
-                    </label>
-                  </section>
-                </div>
-                <section class="form__section form__section--action">
-                  <button class="btn btn--default btn--large">Avbryt</button>
-                  <button class="btn btn--primary btn--large">Lagre</button>
-                </section>
-              </form>
-              <h3>Form controls</h3>
-              <div class="row">
-                <div class="col-md-4">
-                  <h4>Radio buttons</h4>
-                  <label class="form__label form__label--block">
-                    <input type="radio">Radio valg
-                  </label>
-                  <label class="form__label form__label--block">
-                    <input type="radio" checked>Radio valg
-                  </label>
-                  <label class="form__label form__label--block">
-                    <input type="radio">Radio valg
-                  </label>
-                </div><!--/.col-->
-                <div class="col-md-4">
-                  <h4>Toggles</h4>
-                  <span class="x-toggle-container" style="margin-bottom: 1rem;">
-                    <input type="checkbox" class="x-toggle" checked="">
-                    <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-                    </label>
-                  </span>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+                <hr class="horizontal-rule">
+              </section><!--End Forms section-->
 
-                  <span class="x-toggle-container">
-                    <input type="checkbox" class="x-toggle">
-                    <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-                    </label>
-                  </span>
-                </div><!--/.col-->
-                <div class="col-md-4">
-                  <h4>Searchable list</h4>
-                  <div class="searchable-list">
-                    <div class="searchable-list__heading">
-                      <span class="searchable-list__selected">P3</span>
-                    </div>
-                    <div class="searchable-list__dropdown">
-                      <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
-                      <ul>
-                        <li class="searchable-list__option">P4 Norge</li>
-                        <li class="searchable-list__option">P4 Lokal</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div><!--/.col-->
-              </div><!--/.row-->
-              <div class="row">
-                <div class="col-md-4">
-                  <h4>Select menu</h4>
-                  <div class="select">
-                    <select>
-                      <option>Velg perioden</option>
-                      <option>One</option>
-                      <option>Two</option>
-                      <option>Three</option>
-                      <option>Four</option>
-                    </select>
-                  </div>
-                </div><!--/.col-->
-                <div class="col-md-4">
-                  <h4>Date picker</h4>
-                  <label class="form__label form__label--date">
-                    <input type="date" placeholder="mm/dd/yyyy" class="form__input">
-                  </label>
-                </div><!--/.col-->
-              </div><!--/.row-->
-              <hr class="horizontal-rule">
+
+            </section><!--End kitchen sink section-->
+
+            <section id="example-pages">
+              <h1>Example Pages</h1>
             </section>
-
-
           </div><!--/.col with main content-->
+
+          <!--Page-contents menu-->
           <aside class="col-xs-12 col-sm-4 col-lg-3 flex-mob-order flex-mob-order--1">
             <nav class="page-contents page-contents--sticky">
               <section class="search">
@@ -519,7 +528,7 @@
                 <li><a href="#">Tables</a></li>
               </ul>
             </nav>
-          </aside>
+          </aside><!--Page-contents menu-->
         </div><!--/.row-->
       </section><!--/.container-->
     </main>

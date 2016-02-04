@@ -91,55 +91,67 @@ $(document).ready(function() {
   });
 
   //Search function
-  $('#filter').keyup(function(){
+  $('#filter').bind('keyup change', function(){
     // Retrieve the input field text and reset the count to zero
     var filter = $(this).val(), count = 0;
+    //Show search clear button
+    $('.search__clear').show();
 
     // Loop through sections with an ID
     $('section[id]').each(function(){
 
-        // If the list item does not contain the text phrase fade it out
+        // If a section does not contain the text phrase fade it out
         if ($(this).text().search(new RegExp(filter, "i")) < 0) {
             $(this).fadeOut();
 
-        // Show the list item if the phrase matches and increase the count by 1
-        } else {
+        // Show the section if the phrase matches and increase the count by 1
+      } else {
             $(this).show();
             count++;
         }
     });
 
+    if ( $(this).val().length === 0 ) {
+      $('.search__clear').hide();
+    }
+
     // Update the count
-    var numberItems = count;
-    $("#filter-count").text("Number of items = "+count);
+    // var numberItems = count;
+    // $("#filter-count").text("Number of items = "+count);
     });
 
     //Clear search form
     $('.search__clear').click(function(){
       $(this).prev('input').val('');
+      $('section[id]').show();
+      $(this).hide();
      });
 
+
     //Scroll spy
-    $(document).on('scroll', onScroll);
-    function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-      $('.page-contents a').each(function () {
-          var currLink = $(this);
-          var refElement = $(currLink.attr('href'));
-          var headerHeight = $(".site-header").height();
-          if (refElement.length) {
-            var elementTop = refElement.position().top - headerHeight;
-            var elementHeight = refElement.height();
-          }
-          if (elementTop <= scrollPos && elementTop + elementHeight > scrollPos &&  !$('#filter').val() ) {
-              $('.page-contents a').removeClass('active');
-              currLink.addClass('active');
-          }
-          else{
-              currLink.removeClass('active');
-          }
-      });
+    function scrollSpy(menu) {
+      $(document).on('scroll', onScroll);
+      function onScroll(event){
+      var scrollPos = $(document).scrollTop();
+        $(menu).each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr('href'));
+            var headerHeight = $(".site-header").height();
+            if (refElement.length) {
+              var elementTop = refElement.position().top - headerHeight;
+              var elementHeight = refElement.height();
+            }
+            if (elementTop <= scrollPos && elementTop + elementHeight > scrollPos &&  !$('#filter').val() ) {
+                $('.page-contents a').removeClass('active');
+                currLink.addClass('active');
+            }
+            else{
+                currLink.removeClass('active');
+            }
+        });
+      }
     }
+    scrollSpy('.page-contents a, .vertical__nav a');
 
 }); // end document ready
 

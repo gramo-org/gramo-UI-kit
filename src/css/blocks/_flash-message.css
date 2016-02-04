@@ -18,13 +18,17 @@
   }
 
   .btn {
-    opacity: 0.8;
+    background: color(var(--gramo-turkis) shade(25%));
   }
 }
 
 .flash-message--error,
 .error .flash-message {
   background: var(--gramo-red);
+
+  .btn {
+    background: color(var(--gramo-red) shade(25%));
+  }
 }
 
 /* Ingen filer er lest inn i perioden message */
