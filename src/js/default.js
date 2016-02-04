@@ -58,9 +58,100 @@ $(document).ready(function() {
     });
   });
 
+//searchable list
+  $('.searchable-list__heading').on('click', function () {
+    $(this).parent().toggleClass('searchable-list--open');
+  });
+
   //table hover edit
   var buttons =
     '<div class="btn-group btn-group--hover"><button class="btn btn--success btn--small">Kommenter</button><button class="btn btn--success btn--small">Ignorer</button></div>';
   $('td.action').append(buttons);
 
+
+
+
+  //smooth scroll
+  // Get the height of the header
+  var headerHeight = $(".site-header").height();
+
+  // Attach the click event
+  $('a[href*=#]').bind("click", function(e) {
+      e.preventDefault();
+
+      var target = $(this).attr("href"); //Get the target
+      var scrollToPosition = $(target).offset().top;// - headerHeight;
+
+      $('html,body').animate({ 'scrollTop': scrollToPosition }, 600, function(){
+          window.location.hash = "" + target;
+          // This hash change will jump the page to the top of the div with the same id
+          // so we need to force the page to back to the end of the animation
+          $('html').animate({ 'scrollTop': scrollToPosition }, 0);
+      });
+  });
+
+  //Search function
+  $('#filter').keyup(function(){
+    // Retrieve the input field text and reset the count to zero
+    var filter = $(this).val(), count = 0;
+
+    // Loop through sections with an ID
+    $('section[id]').each(function(){
+
+        // If the list item does not contain the text phrase fade it out
+        if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+            $(this).fadeOut();
+
+        // Show the list item if the phrase matches and increase the count by 1
+        } else {
+            $(this).show();
+            count++;
+        }
+    });
+
+    // Update the count
+    var numberItems = count;
+    $("#filter-count").text("Number of items = "+count);
+    });
+
+    //Clear search form
+    $('.search__clear').click(function(){
+      $(this).prev('input').val('');
+     });
+
+    //Scroll spy
+    $(document).on('scroll', onScroll);
+    function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+      $('.page-contents a').each(function () {
+          var currLink = $(this);
+          var refElement = $(currLink.attr('href'));
+          var headerHeight = $(".site-header").height();
+          if (refElement.length) {
+            var elementTop = refElement.position().top - headerHeight;
+            var elementHeight = refElement.height();
+          }
+          if (elementTop <= scrollPos && elementTop + elementHeight > scrollPos &&  !$('#filter').val() ) {
+              $('.page-contents a').removeClass('active');
+              currLink.addClass('active');
+          }
+          else{
+              currLink.removeClass('active');
+          }
+      });
+    }
+
 }); // end document ready
+
+//Affix page contents to top of viewport
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  var menuWidth = $('.page-contents--sticky').parent().innerWidth() - 50 + 'px';
+  if (scroll >= 50) {
+    $('.page-contents--sticky').addClass('affix');
+    $('.page-contents--sticky').width(menuWidth);
+  } else {
+    $('.page-contents--sticky').removeClass('affix');
+    $('.page-contents--sticky').css('width','auto');
+  }
+});

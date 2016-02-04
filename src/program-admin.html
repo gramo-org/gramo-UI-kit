@@ -40,8 +40,9 @@
         </nav>
         <aside class="user">
           <img src="img/audun-temp.jpg" class="user__avatar">
-          <span class="user__name">Audun Haggernes</span>
-          <span class="user__logout"><a href="#">Logg ut</a></span>
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
         </aside>
       </section>
     </div>
@@ -373,7 +374,7 @@
               <thead class="always-visible">
                 <tr>
                   <th class="table__head--large">
-                    <div class="searchable-list searchable-list--open">
+                    <div class="searchable-list">
                       <div class="searchable-list__heading">
                         <span class="searchable-list__selected">P3</span>
                       </div>
@@ -1179,14 +1180,6 @@
 
 <script src="js/vendor/jquery-1.11.3.min.js"></script>
 <script src="js/default.js"></script>
-<!-- Select 2 -searchable select box -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
-
-<script>
-  $(".searchable-list__heading").on("click", function (event) {
-    $(this).parent().toggleClass("searchable-list--open")
-  })
-</script>
 
 </body>
 </html>

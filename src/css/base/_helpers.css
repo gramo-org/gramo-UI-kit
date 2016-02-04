@@ -13,3 +13,18 @@
 .link--no-style {
   color: var(--base-font-color);
 }
+
+/* Flex order */
+
+.flex-mob-order {
+
+  @media (--tablet) { order: 0!important; }
+
+  &--1 {
+    order: 1;
+  }
+
+  &--2 {
+    order: 2;
+  }
+}

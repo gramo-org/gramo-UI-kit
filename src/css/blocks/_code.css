@@ -1,0 +1,65 @@
+.code {
+  position: relative;
+  max-width: 800px;
+}
+
+pre {
+  position: relative;
+  margin: 0;
+  /*white-space: nowrap;
+    word-break: normal;*/
+}
+
+.bash::after {
+  background: var(--off-gray);
+  border-radius: 4px 4px 0 0;
+  content: "";
+  display: block;
+  height: 2rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.bash,
+.html {
+  background: var(--ui-gray);
+  border: 0 none;
+  border-radius: 4px;
+  color: var(--gramo-white);
+  padding: 4rem 2rem 2rem 2rem;
+  position: relative;
+  display: block;
+
+}
+
+.html {
+  background: var(--light-gray);
+  padding: 0;
+  color: var(--ui-gray);
+}
+
+.prettyprint {
+  background: var(--light-gray);
+
+  font-size: 1.2rem;
+  @media (--tablet) { padding: 0; font-size: 1.5rem; }
+
+  span {
+    /*white-space: normal;
+    @media (--tablet) { white-space: pre; padding: 0;}*/
+  }
+}
+
+.tag {
+    color: var(--gramo-blue)!important;
+}
+
+.atn {
+    color: var(--gramo-purple)!important;
+}
+
+.atv {
+    color: var(--gramo-green)!important;
+}

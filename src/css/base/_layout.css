@@ -71,11 +71,11 @@ main {
 }
 
 .container.grid-test > .row > * {
-  background: color(var(--gramo-turkis) tint(60%));
+  background: color(var(--ui-gray) tint(60%));
   padding-top: 2rem;
   padding-bottom: 2rem;
 
   &:nth-child(odd) {
-    background: color(var(--gramo-turkis) tint(80%));
+    background: color(var(--ui-gray) tint(80%));
   }
 }

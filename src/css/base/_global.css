@@ -63,7 +63,7 @@ h4, .h4 {
   font-size: var(--h4-font-size);
   line-height: var(--h4-line-height);
   margin-top: 1em;
-  margin-bottom: .2em;
+  margin-bottom: .5em;
   color: var(--h4-color);
   font-weight: var(--h4-font-weight);
 }
