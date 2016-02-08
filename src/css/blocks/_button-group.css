@@ -20,19 +20,16 @@
   .btn {
     display: inline-block;
     width: 49%;
-    padding: 0.45rem 1rem;
-    font-size: 1.4rem;
     margin: 1rem 0 1rem .2rem;
     border-radius: 2px;
     @media (--tablet) {
-      padding: 0.15rem 1rem;
       margin: 0;
       width: auto;
       border-radius: 2px 0 0 2px;
     }
 
     & > i {
-      font-size: 1rem;
+      font-size: .9rem;
       margin: 0 0.5rem;
     }
 

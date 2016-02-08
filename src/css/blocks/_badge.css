@@ -12,6 +12,16 @@
     color: #fff;
   }
 
+  &--info {
+    background: var(--gramo-blue);
+    color: #fff;
+  }
+
+  &--success {
+    background: var(--gramo-green);
+    color: #fff;
+  }
+
   &--notification {
     background: var(--gramo-turkis);
     font-size: 1.2rem;
@@ -22,6 +32,7 @@
     padding: 0;
     margin: 0.2rem auto 0 auto;
     display: inline-block;
+    text-align: center;
     @media (--desktop) {
       margin-left: 0.5rem;
     }

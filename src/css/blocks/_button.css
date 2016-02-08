@@ -1,5 +1,5 @@
 .btn {
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 2px;
   border-width: 0 0 3px 0;
   border-style: solid;
@@ -8,11 +8,14 @@
   color: #fff;
   font-weight: var(--font-300);
   display: block;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
+  line-height: normal;
+  margin-bottom: .5rem;
 
   @media (--tablet) {
     display: inline-block;
     vertical-align: middle;
+    margin-bottom: 0;
   }
 
   &:hover {
@@ -98,20 +101,18 @@
   }
 
   &--large {
-    padding: 0.7rem 3rem;
+    padding: 1.3rem 2rem;
   }
 
   &--medium {
     @media (--tablet) {
-      padding: 0.4rem 2.5rem;
-      font-size: 1.4rem;
+      padding: 1rem 2rem;
     }
   }
 
   &--small {
     @media (--tablet) {
-      padding: 0.2rem 2rem;
-      font-size: 1.3rem;
+      padding: .5rem 2rem;
     }
   }
 

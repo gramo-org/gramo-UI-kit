@@ -29,7 +29,7 @@
             <li class="vertical__nav__item vertical__nav__item--isExpanded"><a href="#">Gramo UI kit</a>
               <ul class="vertical__nav vertical__nav--sub">
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#getting-started">Getting Started</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#kitchen-sink">Kitchen sink</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#components">Components</a></li>
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#example-pages">Example pages</a></li>
               </ul>
             </li>
@@ -89,7 +89,7 @@
               </section>
             </section><!--End Getting Started section-->
 
-            <section id="kitchen-sink">
+            <section id="components">
               <section id="grid">
                 <!--Grid example-->
                 <h1>Grid</h1>
@@ -516,6 +516,53 @@
                     </div>
                 <!-- End Login example-->
                 <h3>Boxed form with contrast</h3>
+  <xmp class="prettyprint">
+    <form class="form">
+      <div class="box box--gray box--full" style="margin:2rem 0;">
+        <section class="form__section">
+          <h4 class="form__heading">Velg Kringkaster</h4>
+          <label class="form__label">
+            <input type="radio">NRK
+          </label>
+          <label class="form__label form__label--isChecked">
+            <input type="radio" checked>Radio Norge
+          </label>
+          <label class="form__label">
+            <input type="radio">P4
+          </label>
+          <label class="form__label">
+            <input type="radio">Local Radio
+          </label>
+        </section>
+        <section class="form__section">
+          <label class="form__label">Velg kanal
+            <div class="select select--block">
+              <select>
+                <option>Radio 1</option>
+              </select>
+            </div>
+          </label>
+        </section>
+        <section class="form__section">
+          <label class="form__label form__label--date">Sendetid Fra
+            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
+          </label>
+          <label class="form__label form__label--date">Til
+            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
+          </label>
+        </section>
+        <section class="form__section">
+          <label class="form__label form__label--percent"><span>Forventet musikkandel</span>
+            <input class="form__input form__input--numeric" type="number" min="0" max="100" step="10" value="10">
+          </label>
+        </section>
+      </div>
+      <section class="form__section form__section--action">
+        <button class="btn btn--default btn--large">Avbryt</button>
+        <button class="btn btn--primary btn--large">Lagre</button>
+      </section>
+    </form>
+  </xmp>
                 <!--Gray box example-->
                 <form class="form">
                   <div class="box box--gray box--full" style="margin:2rem 0;">
@@ -563,6 +610,61 @@
                   </section>
                 </form>
                 <h3>Form controls</h3>
+  <xmp class="prettyprint">
+    <!--Radio buttons-->
+    <label class="form__label form__label--block">
+      <input type="radio">Radio valg
+    </label>
+    <label class="form__label form__label--block">
+      <input type="radio" checked>Radio valg
+    </label>
+    <label class="form__label form__label--block">
+      <input type="radio">Radio valg
+    </label>
+
+    <!--Toggles-->
+    <span class="x-toggle-container">
+      <input type="checkbox" class="x-toggle" checked="">
+      <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+      </label>
+    </span>
+
+    <span class="x-toggle-container">
+      <input type="checkbox" class="x-toggle">
+      <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+      </label>
+    </span>
+
+    <!--Searchable list-->
+    <div class="searchable-list">
+      <div class="searchable-list__heading">
+        <span class="searchable-list__selected">P3</span>
+      </div>
+      <div class="searchable-list__dropdown">
+        <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
+        <ul>
+          <li class="searchable-list__option">P4 Norge</li>
+          <li class="searchable-list__option">P4 Lokal</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Select menu-->
+    <div class="select">
+      <select>
+        <option>Velg perioden</option>
+        <option>One</option>
+        <option>Two</option>
+        <option>Three</option>
+        <option>Four</option>
+      </select>
+    </div>
+
+    <!-->Date picker-->
+    <label class="form__label form__label--date">
+      <input type="date" placeholder="mm/dd/yyyy" class="form__input">
+    </label>
+  </xmp>
                 <div class="row">
                   <div class="col-md-4">
                     <h4>Radio buttons</h4>
@@ -628,27 +730,232 @@
                 </div><!--/.row-->
                 <hr class="horizontal-rule">
               </section><!--End Forms section-->
+              <section id="breadcrumbs">
+                <h1>Breadcrumbs</h1>
+  <xmp class="prettyprint">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#"><i class="icon--home"></i></a></li>
+      <li class="breadcrumbs__item"><a href="#">Page 1</a></li>
+      <li class="breadcrumbs__item"><a href="#">Page 2</a></li>
+      <li class="breadcrumbs__item"><a href="#">Page 3</a></li>
+    </ul>
+  </xmp>
+                <ul class="breadcrumbs" style="background:#434D5A;">
+                  <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#"><i class="icon--home"></i></a></li>
+                  <li class="breadcrumbs__item"><a href="#">Page 1</a></li>
+                  <li class="breadcrumbs__item"><a href="#">Page 2</a></li>
+                  <li class="breadcrumbs__item"><a href="#">Page 3</a></li>
+                </ul>
+                <hr class="horizontal-rule">
+              </section><!--End Breadcrumbs section-->
 
+              <section id="badges">
+                <h1>Badges</h1>
+  <xmp class="prettyprint">
+    <h3>Inbox <span class="badge badge--info">21</span></h3>
+    <h3>Inbox <span class="badge badge--success">21</span></h3>
+    <h3>Inbox <span class="badge badge--danger">21</span></h3>
+  </xmp>
+                <h3 style="display:inline-block;">Inbox <span class="badge badge--info">21</span></h3>
+                <h3 style="display:inline-block;">Inbox <span class="badge badge--success">21</span></h3>
+                <h3 style="display:inline-block;">Inbox <span class="badge badge--danger">21</span></h3>
+                <h3>Notifications</h3>
+  <xmp class="prettyprint">
+    <h4>Inbox <span class="badge badge--notification">21</span></h4>
+  </xmp>
+                <h4>Inbox <span class="badge badge--notification">21</span></h4>
+                <hr class="horizontal-rule">
+              </section><!--End Badges section-->
 
-            </section><!--End kitchen sink section-->
+              <section id="lists">
+                <h1>Lists</h1>
+                <h3>Unexpanded list</h3>
+  <xmp class="prettyprint">
+    <ul class="list list--expandable">
+      <li class="list__item list__item--success">
+        <div class="list__item--wrapper">
+          <div class="list__item__date">
+            <date><span>I dag</span>Torsdag 5 november</date>
+          </div>
+          <div class="list__item__results">
+            <i class="icon--checkmark"></i> 5 innleste filer
+          </div>
+          <div class="list__item__action">
+            <a href="#"><i class="icon--chevron-left"></i></a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </xmp>
+                <ul class="list list--expandable">
+                  <li class="list__item list__item--success">
+                    <div class="list__item--wrapper">
+                      <div class="list__item__date">
+                        <date><span>I dag</span>Torsdag 5 november</date>
+                      </div>
+                      <div class="list__item__results">
+                        <i class="icon--checkmark"></i> 5 innleste filer
+                      </div>
+                      <div class="list__item__action">
+                        <a href="#"><i class="icon--chevron-left"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <h3>Expanded list</h3>
+  <xmp class="prettyprint">
+    <ul class="list list--expandable">
+      <li class="list__item list__item--danger list__item--is-expanded">
+        <div class="list__item--wrapper">
+          <div class="list__item__date">
+            <date><span>I dag</span>Torsdag 5 november</date>
+          </div>
+          <div class="list__item__results">
+            <i class="icon--checkmark"></i> 5 innleste filer
+          </div>
+          <div class="list__item__action">
+            <a href="#"><i class="icon--chevron-left"></i></a>
+          </div>
+        </div>
+        <ul class="list--sub-list">
+          <li class="sub-list__item">
+            <div class="sub-list__item--downloads">
+              <span><i class="icon--cross"></i></span><a href="#">archiveReport_NRK_P3_20150601.xml</a>
+            </div>
+            <div class="sub-list__item--message">
+              The server encountered an unrevoerable error while processing this file
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </xmp>
+                <ul class="list list--expandable">
+                  <li class="list__item list__item--danger list__item--is-expanded">
+                    <div class="list__item--wrapper">
+                      <div class="list__item__date">
+                        <date><span>I dag</span>Torsdag 5 november</date>
+                      </div>
+                      <div class="list__item__results">
+                        <i class="icon--checkmark"></i> 5 innleste filer
+                      </div>
+                      <div class="list__item__action">
+                        <a href="#"><i class="icon--chevron-left"></i></a>
+                      </div>
+                    </div>
+                    <ul class="list--sub-list">
+                      <li class="sub-list__item">
+                        <div class="sub-list__item--downloads">
+                          <span><i class="icon--cross"></i></span><a href="#">archiveReport_NRK_P3_20150601.xml</a>
+                        </div>
+                        <div class="sub-list__item--message">
+                          The server encountered an unrevoerable error while processing this file
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <hr class="horizontal-rule">
+              </section><!--End Lists section-->
+
+              <section id="tables">
+                <h1>Tables</h1>
+  <xmp class="prettyprint">
+    <table class="table table--example">
+      <thead>
+        <tr>
+          <th>
+          </th>
+          <th>Program
+            <span class="table-sort">
+              <a href="#" class="table-sort__link table-sort__link--up"><i class="icon--arrow-up"></i></a>
+              <a href="#" class="table-sort__link table-sort__link--down"><i class="icon--arrow-down"></i></a>
+            </span>
+          </th>
+          <th>Musikkandel</th>
+          <th>Avviksmargin</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>P3</td>
+          <td data-label="Program">Tidenes Sommer</td>
+          <td data-label="Musikkandel">30%</td>
+          <td data-label="Avviksmargin">10%</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>P3</td>
+          <td data-label="Program">Tidenes Sommer</td>
+          <td data-label="Musikkandel">30%</td>
+          <td data-label="Avviksmargin">10%</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </xmp>
+                <table class="table table--example">
+                  <thead>
+                    <tr>
+                      <th>
+                      </th>
+                      <th>Program
+                        <span class="table-sort">
+                          <a href="#" class="table-sort__link table-sort__link--up"><i class="icon--arrow-up"></i></a>
+                          <a href="#" class="table-sort__link table-sort__link--down"><i class="icon--arrow-down"></i></a>
+                        </span>
+                      </th>
+                      <th>Musikkandel</th>
+                      <th>Avviksmargin</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>P3</td>
+                      <td data-label="Program">Tidenes Sommer</td>
+                      <td data-label="Musikkandel">30%</td>
+                      <td data-label="Avviksmargin">10%</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>P3</td>
+                      <td data-label="Program">Tidenes Sommer</td>
+                      <td data-label="Musikkandel">30%</td>
+                      <td data-label="Avviksmargin">10%</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <hr class="horizontal-rule">
+              </section><!--End Tables section-->
+
+            </section><!--End Components section-->
 
             <section id="example-pages" style="padding-bottom: 60rem;">
               <h1>Example Pages</h1>
               <div class="row">
                 <div class="col-xs-12 col-sm-4">
-                  <div class="placeholder">
-                    <span>Innlesning</span>
-                  </div>
+                  <a href="innlesning.html">
+                    <div class="placeholder">
+                      <span>Innlesning</span>
+                    </div>
+                  </a>
                 </div><!-- /.col-->
                 <div class="col-xs-12 col-sm-4">
-                  <div class="placeholder">
-                    <span>Program admin</span>
-                  </div>
+                  <a href="program-admin.html">
+                    <div class="placeholder">
+                      <span>Program admin</span>
+                    </div>
+                  </a>
                 </div><!-- /.col-->
                 <div class="col-xs-12 col-sm-4">
-                  <div class="placeholder">
-                    <span>Kringkastere</span>
-                  </div>
+                  <a href="kringkaster.html">
+                    <div class="placeholder">
+                      <span>Kringkaster</span>
+                    </div>
+                  </a>
                 </div><!-- /.col-->
               </div><!--end .row-->
             </section>
@@ -673,9 +980,10 @@
                 <li><a href="#flash-messages">Flash messages</a></li>
                 <li><a href="#loading">Loading</a></li>
                 <li><a href="#forms">Forms</a></li>
-                <li><a href="#">Badges</a></li>
-                <li><a href="#">Lists</a></li>
-                <li><a href="#">Tables</a></li>
+                <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                <li><a href="#badges">Badges</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#tables">Tables</a></li>
               </ul>
             </nav>
           </aside><!--Page-contents menu-->
