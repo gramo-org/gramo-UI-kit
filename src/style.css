@@ -1591,6 +1591,14 @@ input-placeholder{
 .btn--primary:hover{
   background-color:rgb(0, 140, 205);
 }
+.btn--secondary{
+  border-color:rgb(201, 201, 201);
+  background-color:#ededed;
+  color:#a5a4ab;
+}
+.btn--secondary:hover{
+  background-color:rgb(223, 223, 223);
+}
 .btn--success{
   border-color:rgb(68, 162, 134);
   background-color:#50bf9e;

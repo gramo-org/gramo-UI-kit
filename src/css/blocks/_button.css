@@ -62,6 +62,16 @@
     }
   }
 
+  &--secondary {
+    border-color: color(var(--light-gray) shade(15%));
+    background-color: var(--light-gray);
+    color: var(--off-gray);
+
+    &:hover {
+       background-color: color(var(--light-gray) shade(6%));
+    }
+  }
+
   &--success {
     border-color: color(var(--gramo-green) shade(15%));
     background-color: var(--gramo-green);

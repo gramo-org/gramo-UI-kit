@@ -65,7 +65,7 @@ $(document).ready(function() {
 
   //table hover edit
   var buttons =
-    '<div class="btn-group btn-group--hover"><button class="btn btn--success btn--small">Kommenter</button><button class="btn btn--success btn--small">Ignorer</button></div>';
+    '<div class="btn-group btn-group--hover"><button class="btn btn--primary btn--small">Kommenter</button><button class="btn btn--secondary btn--small">Ignorer</button></div>';
   $('td.action').append(buttons);
 
 
