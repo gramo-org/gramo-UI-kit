@@ -249,28 +249,70 @@
 
             <section id="buttons">
               <h1>Buttons</h1>
+              <h3>Primary buttons</h3>
+  <xmp class="prettyprint">
+    <button class="btn btn--primary btn--small">Primary S</button>
+    <button class="btn btn--primary btn--medium">Primary M</button>
+    <button class="btn btn--primary btn--large">Primary L</button>
+  </xmp>
               <button class="btn btn--primary btn--small">Primary S</button>
               <button class="btn btn--primary btn--medium">Primary M</button>
               <button class="btn btn--primary btn--large">Primary L</button>
-              <br><br>
+
+              <h3>Success buttons</h3>
+  <xmp class="prettyprint">
+    <button class="btn btn--success btn--small">Success S</button>
+    <button class="btn btn--success btn--medium">Success M</button>
+    <button class="btn btn--success btn--large">Success L</button>
+  </xmp>
               <button class="btn btn--success btn--small">Success S</button>
               <button class="btn btn--success btn--medium">Success M</button>
               <button class="btn btn--success btn--large">Success L</button>
-              <br><br>
+
+              <h3>Small buttons</h3>
+  <xmp class="prettyprint">
+    <button class="btn btn--primary btn--small btn--danger">Small button danger</button>
+    <button class="btn btn--small btn--info">Small button info</button>
+    <button class="btn btn--small btn--success">Small button success</button>
+  </xmp>
               <button class="btn btn--primary btn--small btn--danger">Small button danger</button>
               <button class="btn btn--small btn--info">Small button info</button>
               <button class="btn btn--small btn--success">Small button success</button>
-              <br><br>
+
+              <h3>Disabled buttons</h3>
+  <xmp class="prettyprint">
+    <button disabled="disabled" class="btn btn--primary btn--small">Off Small</button>
+    <button disabled="disabled" class="btn btn--primary btn--medium">Off Medium</button>
+    <button disabled="disabled" class="btn btn--primary btn--large">Off Large</button>
+  </xmp>
               <button disabled="disabled" class="btn btn--primary btn--small">Off Small</button>
               <button disabled="disabled" class="btn btn--primary btn--medium">Off Medium</button>
               <button disabled="disabled" class="btn btn--primary btn--large">Off Large</button>
-              <br><br>
+
               <h3>Button group</h3>
+  <xmp class="prettyprint">
+    <div class="btn-group">
+      <button class="btn btn--success btn--small">Kommenter</button>
+      <button class="btn btn--success btn--small">Ignorer</button>
+    </div>
+  </xmp>
               <div class="btn-group">
                 <button class="btn btn--success btn--small">Kommenter</button>
                 <button class="btn btn--success btn--small">Ignorer</button>
               </div>
               <h3>Button group toggle</h3>
+  <xmp class="prettyprint">
+    <div class="btn-group btn-group--toggle">
+      <button class="btn btn--primary btn--small">
+        Kanal
+        <i class="icon--breadcrumbs-arrow"></i>Dato
+      </button>
+      <button class="btn btn--white btn--small">
+        Dato
+        <i class="icon--breadcrumbs-arrow"></i>Kanal
+      </button>
+    </div>
+  </xmp>
               <div class="btn-group btn-group--toggle">
                 <button class="btn btn--primary btn--small">Kanal <i class="icon--breadcrumbs-arrow"></i>Dato</button>
                 <button class="btn btn--white btn--small">Dato <i class="icon--breadcrumbs-arrow"></i>Kanal</button>
@@ -279,7 +321,20 @@
             </section><!--End Buttons section-->
 
             <section id="pagination">
-              <h1>Pagination example</h1>
+              <h1>Pagination</h1>
+  <xmp class="prettyprint">
+    <nav role="navigation">
+      <ul class="pagination">
+        <li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
+        <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
+        <li class="pagination__item"><a href="#">2</a></li>
+        <li class="pagination__item"><a href="#">3</a></li>
+        <li class="pagination__item"><a href="#">4</a></li>
+        <li class="pagination__item"><a href="#">5</a></li>
+        <li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
+      </ul>
+    </nav>
+  </xmp>
                 <!--Pagination example-->
                 <nav role="navigation">
                   <ul class="pagination">
@@ -298,17 +353,33 @@
 
               <section id="flash-messages">
                 <h1>Flash message</h1>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="flash-message">
-                      <p>Flashmelding at noe ble gjort</p> <button class="btn btn--medium btn--inline btn--slate">OK</button>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="flash-message flash-message--error">
-                      <p>Flashmelding at noe gikk galt!</p> <button class="btn btn--medium btn--inline btn--slate">OK</button>
-                    </div>
-                  </div>
+                <h3>Flash message - info</h3>
+  <xmp class="prettyprint">
+    <div class="flash-message">
+      <p>Flashmelding at noe ble gjort</p>
+      <button class="btn btn--medium btn--inline btn--simple">OK</button>
+    </div>
+  </xmp>
+                <h3>Flash message - error</h3>
+                <div class="flash-message">
+                  <p>Flashmelding at noe ble gjort</p> <button class="btn btn--medium btn--inline btn--simple">OK</button>
+                </div>
+  <xmp class="prettyprint">
+    <div class="flash-message flash-message--error">
+      <p>Flashmelding at noe gikk galt!</p> <button class="btn btn--medium btn--inline btn--simple">OK</button>
+    </div>
+  </xmp>
+                <h3>Flash message - success</h3>
+                <div class="flash-message flash-message--error">
+                  <p>Flashmelding at noe gikk galt!</p> <button class="btn btn--medium btn--inline btn--simple">OK</button>
+                </div>
+  <xmp class="prettyprint">
+    <div class="flash-message flash-message--success">
+      <p>Flashmelding at noe gikk galt!</p> <button class="btn btn--medium btn--inline btn--simple">OK</button>
+    </div>
+  </xmp>
+                <div class="flash-message flash-message--success">
+                  <p>Flashmelding at noe gikk galt!</p> <button class="btn btn--medium btn--inline btn--simple">OK</button>
                 </div>
                 <hr class="horizontal-rule">
               </section><!--End Flash-message section-->
@@ -316,6 +387,15 @@
               <section id="loading">
                 <h1>Loading</h1>
                 <h3>Spinner</h3>
+  <xmp class="prettyprint">
+    <div class="spinner">
+      <div class="spinner__rect1"></div>
+      <div class="spinner__rect2"></div>
+      <div class="spinner__rect3"></div>
+      <div class="spinner__rect4"></div>
+      <div class="spinner__rect5"></div>
+    </div>
+  </xmp>
                 <!--spinner example-->
                 <div class="spinner">
                   <div class="spinner__rect1"></div>
@@ -325,6 +405,43 @@
                   <div class="spinner__rect5"></div>
                 </div>
                 <h3>Content placeholder (in table cells)</h3>
+  <xmp class="prettyprint">
+    <table class="table table--example">
+      <tr>
+        <td>
+          <div class="content-placeholder"></div>
+        </td>
+        <td>
+          <div class="content-placeholder"></div>
+        </td>
+        <td>
+          <div class="content-placeholder"></div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="content-placeholder"></div>
+        </td>
+        <td>
+          <div class="content-placeholder"></div>
+        </td>
+        <td>
+          <div class="content-placeholder"></div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="content-placeholder"></div>
+        </td>
+        <td>
+          <div class="content-placeholder"></div>
+        </td>
+        <td>
+          <div class="content-placeholder"></div>
+        </td>
+      </tr>
+    </table>
+  </xmp>
               <!--content-placeholder example-->
                 <table class="table table--example">
                   <tr>
@@ -366,6 +483,22 @@
 
               <section id="forms">
                 <h1>Forms</h1>
+  <xmp class="prettyprint">
+    <div class="box">
+      <form class="form">
+        <label class="form__label form__label--block is-valid">Epost
+          <input type="text" class="form__input form__input--block">
+        </label>
+
+        <label class="form__label form__label--block has-error">Password
+          <input type="password" class="form__input form__input--block">
+        </label>
+
+      <p class="input-error">Kunne ikke logge på. Passord er feil.</p>
+      <button class="btn btn--primary btn--block">Gå videre</button>
+      </form>
+    </div>
+  </xmp>
                   <h3>Boxed form</h3>
                     <div class="box" style="margin:2rem 0;">
                       <form class="form">
@@ -499,8 +632,25 @@
 
             </section><!--End kitchen sink section-->
 
-            <section id="example-pages">
+            <section id="example-pages" style="padding-bottom: 60rem;">
               <h1>Example Pages</h1>
+              <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                  <div class="placeholder">
+                    <span>Innlesning</span>
+                  </div>
+                </div><!-- /.col-->
+                <div class="col-xs-12 col-sm-4">
+                  <div class="placeholder">
+                    <span>Program admin</span>
+                  </div>
+                </div><!-- /.col-->
+                <div class="col-xs-12 col-sm-4">
+                  <div class="placeholder">
+                    <span>Kringkastere</span>
+                  </div>
+                </div><!-- /.col-->
+              </div><!--end .row-->
             </section>
           </div><!--/.col with main content-->
 

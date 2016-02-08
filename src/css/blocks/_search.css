@@ -22,6 +22,7 @@
   white-space: nowrap;
   border: 1px solid var(--off-gray);
   border-radius: 2px 0 0 2px;
+  outline: none;
 }
 
 .search__submit {

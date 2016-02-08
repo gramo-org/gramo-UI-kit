@@ -36,12 +36,8 @@
     }
   }
 
-  &--slate {
+  &--simple {
     border: 0;
-    background-color: var(--slate-gray);
-    &:hover {
-       background-color: color(var(--slate-gray) shade(20%));
-    }
   }
 
   &[disabled] {

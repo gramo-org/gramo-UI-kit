@@ -22,12 +22,19 @@
   }
 }
 
-.flash-message--error,
-.error .flash-message {
+.flash-message--error {
   background: var(--gramo-red);
 
   .btn {
     background: color(var(--gramo-red) shade(25%));
+  }
+}
+
+.flash-message--success {
+  background: var(--gramo-green);
+
+  .btn {
+    background: color(var(--gramo-green) shade(25%));
   }
 }
 

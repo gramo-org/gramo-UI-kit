@@ -1,0 +1,35 @@
+.placeholder {
+  background: var(--light-gray);
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  color: var(--off-gray);
+  margin-bottom: 2rem;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: var(--silver);
+  }
+
+  &::after {
+    height: 100%;
+    width: 40px;
+    opacity: 0.5;
+    display: none;
+    @media (--hd) { display: block; }
+
+  }
+
+  span {
+    border: 1px solid var(--silver);
+    border-width: 1px 0;
+    padding: 5%;
+    display: inline-block;
+  }
+}

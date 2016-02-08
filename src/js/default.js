@@ -80,7 +80,7 @@ $(document).ready(function() {
       e.preventDefault();
 
       var target = $(this).attr("href"); //Get the target
-      var scrollToPosition = $(target).offset().top;// - headerHeight;
+      var scrollToPosition = $(target).offset().top;
 
       $('html,body').animate({ 'scrollTop': scrollToPosition }, 600, function(){
           window.location.hash = "" + target;
@@ -136,9 +136,9 @@ $(document).ready(function() {
         $(menu).each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr('href'));
-            var headerHeight = $(".site-header").height();
+
             if (refElement.length) {
-              var elementTop = refElement.position().top - headerHeight;
+              var elementTop = refElement.position().top - 30;
               var elementHeight = refElement.height();
             }
             if (elementTop <= scrollPos && elementTop + elementHeight > scrollPos &&  !$('#filter').val() ) {
