@@ -40,16 +40,23 @@ pre {
   color: var(--ui-gray);
 }
 
-.prettyprint {
+.code-highlight {
+  overflow: hidden;
+}
+
+pre.prettyprint {
+padding: 2rem 1rem!important;
+  font-size: 1.4rem;
+  border: 0!important;
   background: var(--light-gray);
   overflow-x: auto;
-  font-size: 1.5rem;
-  @media (--tablet) { padding: 0; font-size: 1.6rem; }
+  overflow: hidden;
+  margin: 2rem 0;
+  box-sizing:border-box;
+  display:block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 
-  span {
-    /*white-space: normal;
-    @media (--tablet) { white-space: pre; padding: 0;}*/
-  }
 }
 
 .tag {
