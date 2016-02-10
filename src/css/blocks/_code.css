@@ -6,8 +6,6 @@
 pre {
   position: relative;
   margin: 0;
-  /*white-space: nowrap;
-    word-break: normal;*/
 }
 
 .bash::after {
@@ -40,23 +38,24 @@ pre {
   color: var(--ui-gray);
 }
 
-.code-highlight {
-  overflow: hidden;
-}
+
 
 pre.prettyprint {
-padding: 2rem 1rem!important;
+  padding: 2rem 1rem!important;
   font-size: 1.4rem;
   border: 0!important;
   background: var(--light-gray);
+  /*overflow: hidden;*/
   overflow-x: auto;
-  overflow: hidden;
   margin: 2rem 0;
   box-sizing:border-box;
-  display:block;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-
+  max-width: 340px;
+  /*display:block;*/
+  @media (--tablet) {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: none;
+  }
 }
 
 .tag {
