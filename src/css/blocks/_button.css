@@ -1,6 +1,5 @@
 .btn {
   padding: 1rem 2rem;
-  background-color: var(--button-bg);
   border-radius: 2px;
   border-width: 0 0 3px 0;
   border-style: solid;
@@ -18,33 +17,8 @@
     margin-bottom: 0;
   }
 
-
-
   &:hover {
      transition: 0.5s ease;
-  }
-
-  &--white {
-    background-color: var(--gramo-white);
-    color: var(--gramo-black);
-    border: 0;
-    &:hover {
-       background-color: color(var(--x-light-gray) shade(10%));
-    }
-  }
-
-  &--default {
-    border-color: var(--silver);
-    background-color: var(--x-light-gray);
-    color: var(--gramo-black);
-    @extend %full-border;
-    &:hover {
-       background-color: color(var(--x-light-gray) shade(20%));
-    }
-  }
-
-  &--simple {
-    border: 0;
   }
 
   &[disabled] {
@@ -57,12 +31,24 @@
     }
   }
 
+  /*** Buttons types ***/
+
   &--primary {
     border-color: color(var(--gramo-blue) shade(15%));
     background-color: var(--gramo-blue);
 
     &:hover {
        background-color: color(var(--gramo-blue) shade(25%));
+    }
+  }
+
+  &--secondary {
+    border-color: var(--silver);
+    background-color: var(--x-light-gray);
+    color: var(--gramo-black);
+    @extend %full-border;
+    &:hover {
+       background-color: color(var(--x-light-gray) shade(20%));
     }
   }
 
@@ -93,9 +79,24 @@
     }
   }
 
+  &--white {
+    background-color: var(--gramo-white);
+    color: var(--gramo-black);
+    border: 0;
+    &:hover {
+       background-color: color(var(--x-light-gray) shade(10%));
+    }
+  }
+
+  /*** Button Variations ***/
+
   &--outline {
     background: none;
     border: 1px solid;
+  }
+
+  &--simple {
+    border: 0;
   }
 
   &--inline {
@@ -103,6 +104,14 @@
     width: auto;
     display: inline-block;
   }
+
+  &--block {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+/*** Button Sizes ***/
 
   &--large {
     padding: 1.3rem 2rem;
@@ -118,11 +127,5 @@
     @media (--tablet) {
       padding: .5rem 2rem;
     }
-  }
-
-  &--block {
-    display: block;
-    width: 100%;
-    margin-bottom: 1rem;
   }
 }
