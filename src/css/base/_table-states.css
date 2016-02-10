@@ -32,7 +32,6 @@
 .table__row--is-editing > td.action,
 tr:hover > td.action {
   position: relative;
-  background: #000;
 
   & > .btn-group--hover {
     display: block;

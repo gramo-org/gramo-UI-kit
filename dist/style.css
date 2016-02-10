@@ -1100,6 +1100,57 @@ tr > td:last-child{
     border-right:0!important;
   }
 }
+.table__row--new td:first-child{
+  position:relative;
+}
+.table__row--new td:first-child:before{
+  content:"\e90a";
+  font-family:'icomoon';
+  font-size:1.6rem;
+  background:#88c7d8;
+  position:absolute;
+  width:2rem;
+  height:2rem;
+  right:2rem;
+  border-radius:2rem;
+  color:#fdfdfd;
+  text-align:center;
+  margin-top:0.1rem;
+}
+@media (min-width: 960px){
+  .table__row--new td:first-child:before{
+    left:-1rem;
+  }
+}
+.table__row--is-editing{
+  background:#f9f9f9;
+}
+
+.table__row--expanded:nth-child(odd) td{
+  background:rgb(244, 244, 245);
+}
+.table__row--is-editing > td.action, tr:hover > td.action{
+  position:relative;
+}
+.table__row--is-editing > td.action > .btn-group--hover, tr:hover > td.action > .btn-group--hover{
+  display:block;
+}
+.table__row--has-errors{
+  background:rgb(253, 240, 240)!important;
+}
+.table__row--has-errors td{
+  padding:0;
+  border:0;
+}
+.table__row--has-errors td p.input-error{
+  margin:1rem 0;
+  font-style:italic;
+  font-size:1.4rem;
+  color:#504f56;
+}
+.table__row--has-errors td p.input-error::before{
+  content:'-';
+}
 fieldset, legend{
   border:0;
   margin:0;
