@@ -38,3 +38,35 @@
     }
   }
 }
+
+.badge--icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: relative;
+  margin-right: 1rem;
+
+  &:before {
+    color: var(--gramo-white);
+    font-family: 'icomoon';
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.5rem;
+  }
+
+  &-error {
+    background: var(--gramo-red);
+
+    &:before {
+      @extend .icon--cross:before;
+    }
+  }
+
+  &-success {
+    background: var(--gramo-green);
+
+    &:before {
+      @extend .icon--checkmark:before;
+    }
+  }
+}

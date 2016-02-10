@@ -1,0 +1,60 @@
+/*** New rows ***/
+.table__row--new td:first-child {
+  position: relative;
+
+  &:before {
+    content: "\e90a";
+    font-family: 'icomoon';
+    font-size: 1.6rem;
+    background: var(--gramo-turkis);
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 2rem;
+    @media (--desktop) { left: -1rem; }
+    border-radius: 2rem;
+    color: var(--gramo-white);
+    text-align: center;
+    margin-top: 0.1rem;
+  }
+}
+
+/*** Editable rows / Expanded rows ***/
+.table__row--is-editing {
+  background: var(--x-light-gray);
+}
+
+.table__row--expanded:nth-child(odd) td {
+  background: color(var(--table-border-color) tint(70%));
+}
+
+/*** Show buttons on hover ***/
+.table__row--is-editing > td.action,
+tr:hover > td.action {
+  position: relative;
+  background: #000;
+
+  & > .btn-group--hover {
+    display: block;
+  }
+}
+/*** Error row in table***/
+.table__row--has-errors {
+  background: color(var(--gramo-red) tint(90%))!important;
+
+  td {
+   padding: 0;
+   border: 0;
+
+   p.input-error {
+     margin: 1rem 0;
+     font-style: italic;
+     font-size: 1.4rem;
+     color: var(--slate-gray);
+    }
+
+    p.input-error::before {
+      content: '-';
+    }
+  }
+}

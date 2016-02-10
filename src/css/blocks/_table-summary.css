@@ -1,0 +1,48 @@
+/*** Table summary ***/
+.table-summary {
+  min-width: 0;
+  width: 100%;
+
+  &__heading {
+    color: var(--slate-gray);
+    font-weight: var(--font-600);
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  & > tbody:before {
+    content: none;
+    }
+
+  tr:first-child {
+    border-top: 0;
+  }
+}
+
+.table-summary__cell {
+  padding-top: 2rem;
+
+  b {
+    font-size: 2.2rem;
+    font-weight: var(--font-300);
+  }
+
+  span {
+    display: block;
+    color: var(--gramo-black)!important;
+  }
+}
+
+.table-summary__row--current {
+
+  .table-summary__cell {
+
+    b {
+      font-size: 2.8rem;
+    }
+
+    &--sum b {
+      font-size: 4.2rem;
+    }
+  }
+}
