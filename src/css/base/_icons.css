@@ -32,13 +32,19 @@
     content: "\e909";
 }
 
-.icon--chevron-right:before {
+.icon--chevron-left:before {
 	content: "\e907";
 	color: color(var(--silver) shade(15%));
 }
-.icon--chevron-left:before {
+.icon--chevron-right:before {
 	content: "\e908";
 	color: color(var(--silver) shade(15%));
+}
+
+.icon--chevron-down::before {
+  @extend .icon--chevron-right:before;
+  transform: rotate(90deg);
+  display: block;
 }
 
 .icon--logo-echo:before {

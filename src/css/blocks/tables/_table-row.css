@@ -1,0 +1,86 @@
+/*** Editable rows  ***/
+.table__row--is-editing,
+.table__row--expanded {
+  background: var(--x-light-gray);
+}
+
+/*** Expanded rows ***/
+.table__row--expanded {
+  /*display: none;
+
+  &.is-expanded {
+    display: block;
+    @media (--desktop) { display: table-row; }
+  }*/
+}
+
+/*** Error rows in table ***/
+.table__row--has-errors {
+  background: color(var(--gramo-red) tint(90%))!important;
+
+  td {
+   padding: 0;
+   border: 0;
+
+   p {
+     margin: 1rem 0;
+   }
+
+    p::before {
+      content: '-';
+    }
+  }
+}
+
+/*** New rows in tables ***/
+.table__row--new td:first-child {
+  position: relative;
+
+  &:before {
+    content: "\e90a";
+    font-family: 'icomoon';
+    font-size: 1.6rem;
+    background: var(--gramo-turkis);
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 2rem;
+    @media (--desktop) { left: -1rem; }
+    border-radius: 2rem;
+    color: var(--gramo-white);
+    text-align: center;
+    margin-top: 0.1rem;
+  }
+}
+
+/*** Broadcaster row ***/
+.table__row--broadcaster {
+  background: var(--x-light-gray);
+  border-top: 0!important;
+
+  td {
+    padding: .5rem 2rem;
+    /*background: var(--slate-gray)!important;
+    border-bottom: 0; Responsive styles */
+  }
+
+  & > td:first-child,
+  & > td:last-child {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  &__title {
+    font-weight: var(--font-700);
+    color: #fff;
+    margin: 0.5rem 0;
+    font-size: 2.8rem;
+    text-align: center;
+    @media (--desktop) {
+      text-align: left;
+      font-size: 1.5rem;
+      margin: 1rem 0 0 0;
+      color: var(--slate-gray);
+    }
+  }
+}

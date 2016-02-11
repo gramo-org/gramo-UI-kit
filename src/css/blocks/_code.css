@@ -38,24 +38,23 @@ pre {
   color: var(--ui-gray);
 }
 
-
+.highlight {
+  overflow-y: hidden;
+  overflow-x: auto;
+  box-sizing:border-box;
+  background: var(--light-gray);
+}
 
 pre.prettyprint {
   padding: 2rem 1rem!important;
   font-size: 1.4rem;
   border: 0!important;
-  background: var(--light-gray);
-  /*overflow: hidden;*/
-  overflow-x: auto;
+
+  overflow: auto;
   margin: 2rem 0;
+  white-space: pre-wrap;
+  word-wrap: normal;
   box-sizing:border-box;
-  max-width: 340px;
-  /*display:block;*/
-  @media (--tablet) {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    max-width: none;
-  }
 }
 
 .tag {

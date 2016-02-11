@@ -63,11 +63,25 @@ $(document).ready(function() {
     $(this).parent().toggleClass('searchable-list--open');
   });
 
-  //table hover edit
+  //table hover edit buttons
+  function appendElements(target, elements) {
+    $(target).each(function(){
+      $(this).append(elements);
+    });
+    }
+  var tableCell = $('td.table__cell--action');
   var buttons =
     '<div class="btn-group btn-group--hover"><button class="btn btn--primary btn--small">Kommenter</button><button class="btn btn--secondary btn--small">Ignorer</button></div>';
-  $('td.action').append(buttons);
+  appendElements(tableCell, buttons);
+  var button = '<div class="btn-group btn-group--hover"><button class="btn btn--success btn--small">Se detaljer</button></div>';
+  var tableSummaryCell = $('.table-summary__cell--action');
+  appendElements(tableSummaryCell, button);
 
+  //Expand table rows
+  // $('td > a').click(function(){
+  //   $(this).closest('tr').next('.table__row--expanded').toggleClass('is-expanded');
+  //   $(this).find('i').toggleClass('icon--chevron-right icon--chevron-down');
+  // });
 
   //smooth scroll
   // Get the height of the header
