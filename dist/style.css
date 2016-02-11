@@ -284,7 +284,7 @@ td, th{
   margin-right:-1rem;
 }
 
-.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .box, .breadcrumbs, .breadcrumbs__item, .content-header__title, .content-header__meta, .content-header__action, p, .toggle-sidebar, .tabs__nav__item{
+.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .box, .breadcrumbs, .breadcrumbs__item, .content-header__title, .content-header__meta, .content-header__action, .table-results p, .toggle-sidebar, .tabs__nav__item{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -389,7 +389,7 @@ td, th{
   max-width:91.66667%;
 }
 
-.col-xs-12, .content-header__action, p{
+.col-xs-12, .content-header__action, .table-results p{
   -webkit-flex-basis:100%;
   -ms-flex-preferred-size:100%;
   flex-basis:100%;
@@ -567,7 +567,7 @@ td, th{
     flex-basis:25%;
     max-width:25%;
   }
-  .col-md-4, .box, p{
+  .col-md-4, .box, .table-results p{
     -webkit-flex-basis:33.33333%;
     -ms-flex-preferred-size:33.33333%;
     flex-basis:33.33333%;
@@ -1104,12 +1104,12 @@ input-placeholder{
 	content:"\e907";
 	color:rgb(184, 184, 187);
 }
-.icon--chevron-right:before, .icon--chevron-down::before, .vertical__nav__item--is-expanded > a::before{
+.icon--chevron-right:before, .icon--chevron-down::before, .vertical__nav__item--is-expanded > a::before, .table-row-toggle:before, .table-row-toggle--toggled::before{
 	content:"\e908";
 	color:rgb(184, 184, 187);
 }
 
-.icon--chevron-down::before{
+.icon--chevron-down::before, .table-row-toggle--toggled::before{
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
   display:block;
@@ -2466,18 +2466,18 @@ tr > td:last-child{
     left:-1rem;
   }
 }
-.table__row--broadcaster{
+.table__row--heading{
   background:#f9f9f9;
   border-top:0!important;
 }
-.table__row--broadcaster td{
+.table__row--heading td{
   padding:.5rem 2rem;
 }
-.table__row--broadcaster > td:first-child, .table__row--broadcaster > td:last-child{
+.table__row--heading > td:first-child, .table__row--heading > td:last-child{
   border-left:0;
   border-right:0;
 }
-.table__row--broadcaster__title{
+.table__row--heading__title{
   font-weight:700;
   color:#fff;
   margin:0.5rem 0;
@@ -2485,28 +2485,30 @@ tr > td:last-child{
   text-align:center;
 }
 @media (min-width: 960px){
-  .table__row--broadcaster__title{
+  .table__row--heading__title{
     text-align:left;
     font-size:1.5rem;
     margin:1rem 0 0 0;
     color:#504f56;
   }
 }
+.table-row-toggle{
+  font-family:'icomoon';
+  display:block;
+  text-decoration:none;
+}
 .table-results{
   margin:-1rem;
 }
-
-p{
+.table-results p{
   text-align:center;
   padding:1rem 0;
 }
-
-p:nth-child(2){
+.table-results p:nth-child(2){
   border:0px solid #d9d9dc;
 }
-
 @media (min-width: 960px){
-  p:nth-child(2){
+  .table-results p:nth-child(2){
     border-width:0 1px;
   }
 }
@@ -3244,15 +3246,14 @@ pre{
   overflow-x:auto;
   box-sizing:border-box;
   background:#ededed;
+  margin:2rem 0;
 }
 
 pre.prettyprint{
   padding:2rem 1rem!important;
   font-size:1.4rem;
   border:0!important;
-
   overflow:auto;
-  margin:2rem 0;
   white-space:pre-wrap;
   word-wrap:normal;
   box-sizing:border-box;

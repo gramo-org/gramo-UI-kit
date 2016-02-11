@@ -43,15 +43,14 @@ pre {
   overflow-x: auto;
   box-sizing:border-box;
   background: var(--light-gray);
+  margin: 2rem 0;
 }
 
 pre.prettyprint {
   padding: 2rem 1rem!important;
   font-size: 1.4rem;
   border: 0!important;
-
   overflow: auto;
-  margin: 2rem 0;
   white-space: pre-wrap;
   word-wrap: normal;
   box-sizing:border-box;

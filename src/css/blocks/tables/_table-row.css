@@ -53,8 +53,8 @@
   }
 }
 
-/*** Broadcaster row ***/
-.table__row--broadcaster {
+/*** Heading row - a row without background or borders ***/
+.table__row--heading {
   background: var(--x-light-gray);
   border-top: 0!important;
 

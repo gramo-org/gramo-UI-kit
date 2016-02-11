@@ -1,0 +1,10 @@
+.table-row-toggle {
+  @extend .icon--chevron-right;
+  font-family: 'icomoon';
+  display: block;
+  text-decoration: none;
+
+  &--toggled {
+    @extend .icon--chevron-down;
+  }
+}

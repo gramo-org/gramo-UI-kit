@@ -30,6 +30,7 @@
 @import url('blocks/tables/_table.css');
 @import url('blocks/tables/_table-head.css');
 @import url('blocks/tables/_table-row.css');
+@import url('blocks/tables/_table-row-toggle.css');
 @import url('blocks/tables/_table-results.css');
 @import url('blocks/tables/_table-states.css');
 @import url('blocks/tables/_table-sort.css');
