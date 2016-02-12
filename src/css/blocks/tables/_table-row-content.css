@@ -1,5 +1,5 @@
 /*** Results are show in a flex .row div with three columns ***/
-.table-results {
+.table-row-content {
   @extend .row;
   margin: -1rem;
 
