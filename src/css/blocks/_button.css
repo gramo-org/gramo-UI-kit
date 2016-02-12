@@ -70,7 +70,7 @@
     }
   }
 
-  &--danger {
+  &--error {
     border-color: color(var(--gramo-red) shade(15%));
     background-color: var(--gramo-red);
 

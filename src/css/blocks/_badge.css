@@ -7,7 +7,7 @@
   line-height: 1.8rem;
   vertical-align: top;
 
-  &--danger {
+  &--error {
     background: var(--gramo-red);
     color: #fff;
   }
