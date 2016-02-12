@@ -1,0 +1,29 @@
+.table {
+  margin-top: 2rem;
+  table-layout: fixed;
+  width: 100%;
+  @media (--desktop) { min-width: 700px; width: auto; }
+  @media (--hd) { min-width: 960px; }
+
+  /*** Example class controls width on UI kit index page ***/
+  &--example {
+    @media (--desktop) { min-width: 500px; }
+    @media (--hd) { min-width: 720px; }
+  }
+
+
+  tbody {
+    /* Pseudo class to make space between thead and tbody */
+    &::before {
+      content: '';
+      display: block;;
+      height: 2rem;
+    }
+  }
+}
+
+.table__cell--action {
+  @media (--tablet) {
+    text-align: right;
+  }
+}

@@ -99,7 +99,6 @@
             </div>
           </div>
         </header>
-        <hr>
       </section>
       <!--List example-->
       <section class="container container--hd">
@@ -114,12 +113,12 @@
                 <i class="icon--checkmark"></i> 5 innleste filer
               </div>
               <div class="list__item__action">
-                <a href="#"><i class="icon--chevron-left"></i></a>
+                <a href="#"><i class="icon--chevron-right"></i></a>
               </div>
             </div>
           </li>
 
-          <li class="list__item list__item--danger list__item--is-expanded">
+          <li class="list__item list__item--error list__item--is-expanded">
             <div class="list__item--wrapper">
               <div class="list__item__date">
                 <date><span>I går</span>Onsdag 4 november</date>
@@ -128,7 +127,7 @@
                 <span><i class="icon--cross"></i> 1 feil fil</span> <span><i class="icon--checkmark"></i> 5 innleste filer</span>
               </div>
               <div class="list__item__action">
-                <i class="icon--chevron-left"></i>
+                <i class="icon--chevron-right"></i>
               </div>
             </div>
             <ul class="list--sub-list">
@@ -152,7 +151,7 @@
                 5 innleste filer
               </div>
               <div class="list__item__action">
-                <a href="#"><i class="icon--chevron-left"></i></a>
+                <a href="#"><i class="icon--chevron-right"></i></a>
               </div>
             </div>
           </li>
@@ -166,12 +165,12 @@
                 5 innleste filer
               </div>
               <div class="list__item__action">
-                <a href="#"><i class="icon--chevron-left"></i></a>
+                <a href="#"><i class="icon--chevron-right"></i></a>
               </div>
             </div>
           </li>
 
-          <li class="list__item list__item--danger list__item--is-expanded">
+          <li class="list__item list__item--error list__item--is-expanded">
             <div class="list__item--wrapper">
               <div class="list__item__date">
                 <date><span>For 4 dager siden</span>Søndag 1 november</date>
@@ -180,7 +179,7 @@
                 <span><i class="icon--checkmark"></i> 5 innleste filer</span> <span><i class="icon--cross"></i> 3 feil filer</span>
               </div>
               <div class="list__item__action">
-                <a href="#"><i class="icon--chevron-left"></i></a>
+                <a href="#"><i class="icon--chevron-right"></i></a>
               </div>
             </div>
             <ul class="list--sub-list">
@@ -220,7 +219,7 @@
                 5 innleste filer
               </div>
               <div class="list__item__action">
-                <a href="#"><i class="icon--chevron-left"></i></a>
+                <a href="#"><i class="icon--chevron-right"></i></a>
               </div>
             </div>
           </li>
@@ -234,7 +233,7 @@
                 5 innleste filer
               </div>
               <div class="list__item__action">
-                <a href="#"><i class="icon--chevron-left"></i></a>
+                <a href="#"><i class="icon--chevron-right"></i></a>
               </div>
             </div>
           </li>
@@ -248,7 +247,7 @@
                 5 innleste filer
               </div>
               <div class="list__item__action">
-                <a href="#"><i class="icon--chevron-left"></i></a>
+                <a href="#"><i class="icon--chevron-right"></i></a>
               </div>
             </div>
           </li>
@@ -260,7 +259,7 @@
       <section class="container container--hd">
         <header class="content-header">
           <div class="content-header__above">
-            <h2 class="content-header__title">Total avvik i perioden <span class="badge badge--danger">179</span></h2>
+            <h2 class="content-header__title">Total avvik i perioden <span class="badge badge--error">179</span></h2>
           </div>
           <div class="content-header__below">
             <span class="content-header__meta">
@@ -315,7 +314,7 @@
       <section class="container container--desktop">
         <header class="content-header">
           <div class="content-header__above">
-            <h2 class="content-header__title">Kringkaster <span class="badge badge--danger">NRK</span></h2>
+            <h2 class="content-header__title">Kringkaster <span class="badge badge--error">NRK</span></h2>
             <div class="content-header__action">
               <a href="#" class="btn btn--primary btn--medium">Last ned rapport</a>
             </div>
@@ -349,10 +348,8 @@
                 <th>RecordingName</th>
               </tr>
             </thead>
-            <tbody class="broadcaster">
-              <tr><td><h3 class="broadcaster__title">P3</h3></td></tr>
-            </tbody>
             <tbody>
+              <tr class="table__row--heading"><td colspan="9"><h3 class="table__row--heading__title">P3</h3></td></tr>
               <tr>
                 <td data-label="Kanal">P3</td>
                 <td data-label="Dato">28.11.2015</td>
@@ -386,11 +383,7 @@
                 <td data-label="HovedArtist">David Bowie</td>
                 <td data-label="RecordingName">Vi Lever</td>
               </tr>
-            </tbody>
-            <tbody class="broadcaster">
-              <tr><td><h3 class="broadcaster__title">MP3</h3></td></tr>
-            </tbody>
-            <tbody>
+              <tr class="table__row--heading"><td colspan="9"><h3 class="table__row--heading__title">P3</h3></td></tr>
               <tr>
                 <td data-label="Kanal">MP3</td>
                 <td data-label="Dato">28.11.2015</td>
@@ -462,7 +455,7 @@
               <td data-label="Program ID">DKMR12017215_1</td>
               <td data-label="Sendetid">11:00 - 12:00</td>
               <td data-label="Musikkandel">30%</td>
-              <td data-label="Aktiv?" class="action">
+              <td data-label="Aktiv?" class="table__cell--action">
                 <span class="x-toggle-container">
                   <input type="checkbox" class="x-toggle">
                   <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
@@ -477,7 +470,7 @@
               <td data-label="Program ID">DKMR12017215_1</td>
               <td data-label="Sendetid">11:00 - 12:00</td>
               <td data-label="Musikkandel">30%</td>
-              <td data-label="Aktiv?" class="action">
+              <td data-label="Aktiv?" class="table__cell--action">
                 <span class="x-toggle-container">
                   <input type="checkbox" class="x-toggle" checked>
                   <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
@@ -492,7 +485,7 @@
               <td data-label="Program ID">DKMR12017215_1</td>
               <td data-label="Sendetid">11:00 - 12:00</td>
               <td data-label="Musikkandel">30%</td>
-              <td data-label="Aktiv?" class="action">
+              <td data-label="Aktiv?" class="table__cell--action">
                 <span class="x-toggle-container">
                   <input type="checkbox" class="x-toggle">
                   <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
@@ -507,7 +500,7 @@
               <td data-label="Program ID">DKMR12017215_1</td>
               <td data-label="Sendetid">11:00 - 12:00</td>
               <td data-label="Musikkandel">30%</td>
-              <td data-label="Aktiv?" class="action">
+              <td data-label="Aktiv?" class="table__cell--action">
                 <span class="x-toggle-container">
                   <input type="checkbox" class="x-toggle">
                   <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
@@ -522,7 +515,7 @@
               <td data-label="Program ID">DKMR12017215_1</td>
               <td data-label="Sendetid">11:00 - 12:00</td>
               <td data-label="Musikkandel">30%</td>
-              <td data-label="Aktiv?" class="action">
+              <td data-label="Aktiv?" class="table__cell--action">
                 <span class="x-toggle-container">
                   <input type="checkbox" class="x-toggle">
                   <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">

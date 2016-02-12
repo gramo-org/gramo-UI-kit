@@ -70,7 +70,7 @@
     }
   }
 
-  &--danger {
+  &--error {
     border-color: color(var(--gramo-red) shade(15%));
     background-color: var(--gramo-red);
 
@@ -109,12 +109,14 @@
     display: block;
     width: 100%;
     margin-bottom: 1rem;
+    text-transform: uppercase;
   }
 
 /*** Button Sizes ***/
 
   &--large {
     padding: 1.3rem 2rem;
+    font-size: 1.4rem;
   }
 
   &--medium {

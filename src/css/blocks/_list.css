@@ -26,8 +26,8 @@
     &--success {
       @extend %border-success;
     }
-    &--danger {
-      @extend %border-danger;
+    &--error {
+      @extend %border-error;
     }
   }
 

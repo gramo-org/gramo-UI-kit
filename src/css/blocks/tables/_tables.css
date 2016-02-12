@@ -1,0 +1,105 @@
+caption {
+  line-height: normal;
+  font-weight: var(--font-700);
+  text-align: left;
+  padding: .5rem 0;
+  border-bottom: 1px solid #d7d7d7;
+}
+table {
+  border-collapse: collapse;
+  font-size: 1.4rem;
+  border-spacing: 0;
+  width: 100%;
+  margin: 1rem 0;
+  text-align: left;
+  thead,
+  tbody,
+  tfoot {
+    td,
+    th {
+      color: var(--slate-gray);
+      padding: 1rem 2rem;
+      @media (--tablet) { padding: 1rem; }
+      border-bottom: 1px solid var(--table-border-color);
+    }
+    th:first-child,
+    td:first-child {
+      @media (--desktop) { padding-left: 2rem; }
+    }
+    th:last-child,
+    td:last-child {
+      @media (--desktop) { padding-right: 2rem; }
+    }
+  }
+}
+
+thead {
+  border: 1px solid var(--table-border-color);
+  text-align: center;
+
+  @media (--desktop) {
+    text-align: left;
+  }
+
+  tr {
+    background: var(--table-head-background);
+  }
+
+  th {
+    font-weight: var(--font-400);
+  }
+}
+
+tr {
+  background: var(--gramo-white);
+  &:hover {
+    @media (--tablet) { background: var(--x-light-gray); }
+  }
+}
+
+tr:first-child {
+  border-top: 1px solid var(--table-border-color);
+}
+
+tr > td:first-child {
+  border-left: 1px solid var(--table-border-color);
+}
+
+tr > td:last-child {
+  border-right: 1px solid var(--table-border-color);
+}
+
+/*** Make table responsive - not mobile first in this case! ***/
+
+@media
+only screen and (max-width: 960px),
+(min-device-width: 968px) and (max-device-width: 1024px)  {
+
+  /* Force table to stack vertically */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead:not(.always-visible) {
+    display: none;
+  }
+
+  td::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--off-gray);
+    text-transform: uppercase;
+  }
+
+  th:empty, td:empty {
+    display: none;
+  }
+
+  tr td:first-child {
+    border-left: 0!important;
+    /*background: var(--light-gray);*/
+  }
+  tr td:last-child {
+    border-right: 0!important;
+  }
+}

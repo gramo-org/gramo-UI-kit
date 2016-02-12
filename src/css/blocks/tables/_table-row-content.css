@@ -1,0 +1,17 @@
+/*** Results are show in a flex .row div with three columns ***/
+.table-row-content {
+  @extend .row;
+  margin: -1rem;
+
+  p {
+    @extend .col-xs-12;
+    @extend .col-md-4;
+    text-align: center;
+    padding: 1rem 0;
+
+    &:nth-child(2) {
+      border: 0px solid var(--table-border-color);
+      @media (--desktop) { border-width: 0 1px; }
+    }
+  }
+}

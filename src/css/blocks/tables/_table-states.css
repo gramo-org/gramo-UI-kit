@@ -1,0 +1,10 @@
+/*** Show button group when hovering on row ***/
+.table__row--is-editing > td.table__cell--action,
+tr:hover > td.table__cell--action,
+tr:hover > .table-summary__cell--action {
+  position: relative;
+
+  & > .btn-group--hover {
+    display: block;
+  }
+}

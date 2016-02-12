@@ -10,6 +10,17 @@
   text-align: center!important;
 }
 
+.text--light {
+  color: var(--off-gray);
+}
+
+.text--em {
+  margin: 0;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--slate-gray);
+}
+
 .link--no-style {
   color: var(--base-font-color);
 }

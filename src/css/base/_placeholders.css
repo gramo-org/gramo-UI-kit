@@ -6,7 +6,7 @@
   box-shadow: 4px 0px 0px var(--gramo-green) inset;
 }
 
-%border-danger {
+%border-error {
   box-shadow: 4px 0px 0px var(--gramo-red) inset;
 }
 

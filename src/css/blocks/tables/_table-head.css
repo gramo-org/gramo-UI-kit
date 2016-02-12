@@ -1,0 +1,16 @@
+/*** Table head widths ***/
+.table__head--small {
+  @media (--desktop) { width: 8%; }
+}
+
+.table__head--medium {
+  @media (--desktop) { width: 15%; }
+}
+
+.table__head--large {
+  @media (--desktop) { width: 25%; }
+}
+
+.table__head--xlarge {
+  @media (--desktop) { width: 30%; }
+}

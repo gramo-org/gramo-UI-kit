@@ -1,12 +1,11 @@
 @import url('base/_variables.css');
 @import url('base/_placeholders.css');
-@import url('base/_helpers.css');
+@import url('base/_utility-classes.css');
 @import url('base/_normalize.css');
 @import url('base/_grid.css');
 @import url('base/_global.css');
 @import url('base/_layout.css');
 @import url('base/_lists.css');
-@import url('base/_tables.css');
 @import url('base/_forms.css');
 @import url('base/_icons.css');
 
@@ -26,8 +25,17 @@
 @import url('blocks/_user.css');
 @import url('blocks/_content-header.css');
 @import url('blocks/_badge.css');
-@import url('blocks/_table.css');
-@import url('blocks/_table-sort.css');
+
+@import url('blocks/tables/_tables.css');
+@import url('blocks/tables/_table.css');
+@import url('blocks/tables/_table-head.css');
+@import url('blocks/tables/_table-row.css');
+@import url('blocks/tables/_table-row-toggle.css');
+@import url('blocks/tables/_table-row-content.css');
+@import url('blocks/tables/_table-states.css');
+@import url('blocks/tables/_table-sort.css');
+@import url('blocks/tables/_table-summary.css');
+
 @import url('blocks/_toggle-sidebar.css');
 @import url('blocks/_toggle.css');
 @import url('blocks/_tabs.css');

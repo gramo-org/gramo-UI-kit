@@ -16,6 +16,7 @@
   border: 1px solid var(--silver);
   border-radius: 2px;
   text-align: center;
+  margin: 0;
   @media (--tablet) { display: inline-block; }
 
   a {
