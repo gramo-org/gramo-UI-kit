@@ -14,9 +14,6 @@
       text-decoration: none;
       display: block;
       border-bottom: 1px solid color(var(--sidebar-menu-bg) shade(15%));
-    }
-
-    &--has-children > a {
       background: color(var(--sidebar-menu-bg) shade(15%));
     }
 
@@ -43,6 +40,10 @@
 
     &__item {
       text-transform: none;
+
+      a {
+        background: none;
+      }
 
       a:hover {
         background: color(var(--sidebar-menu-bg) shade(15%));;
