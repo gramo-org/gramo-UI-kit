@@ -12,7 +12,7 @@
   }
 
 
-  tbody {
+  .tbody--with-spacing {
     /* Pseudo class to make space between thead and tbody */
     &::before {
       content: '';
