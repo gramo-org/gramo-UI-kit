@@ -2045,11 +2045,11 @@ input-placeholder{
   margin:0;
 }
 .vertical__nav__item a{
-  padding:0.6rem 3rem;
+  padding:0.8rem 3rem;
   color:#ededed;
   text-decoration:none;
   display:block;
-  border-bottom:1px solid rgb(57, 65, 77);
+  border-bottom:1px solid #434D5A;
   background:rgb(57, 65, 77);
 }
 .vertical__nav__item--has-children > a::before{
@@ -2073,6 +2073,7 @@ input-placeholder{
 }
 .vertical__nav--sub__item a{
   background:none;
+  border-bottom:1px solid rgb(57, 65, 77);
 }
 .vertical__nav--sub__item a:hover{
   background:rgb(57, 65, 77);

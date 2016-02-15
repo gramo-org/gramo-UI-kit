@@ -9,11 +9,11 @@
     margin: 0;
 
     a {
-      padding: 0.6rem 3rem;
+      padding: 0.8rem 3rem;
       color: var(--sidebar-menu-color);
       text-decoration: none;
       display: block;
-      border-bottom: 1px solid color(var(--sidebar-menu-bg) shade(15%));
+      border-bottom: 1px solid var(--sidebar-menu-bg);
       background: color(var(--sidebar-menu-bg) shade(15%));
     }
 
@@ -43,6 +43,7 @@
 
       a {
         background: none;
+        border-bottom: 1px solid color(var(--sidebar-menu-bg) shade(15%));
       }
 
       a:hover {
