@@ -71,7 +71,7 @@ $(document).ready(function() {
     }
   var tableCell = $('td.table__cell--action');
   var buttons =
-    '<div class="btn-group btn-group--hover"><button class="btn btn--primary btn--small">Kommenter</button><button class="btn btn--secondary btn--small">Ignorer</button></div>';
+    '<div class="btn-group btn-group--hover"><button class="btn btn--success btn--small">Kommenter</button><button class="btn btn--secondary btn--small">Ignorer</button></div>';
   appendElements(tableCell, buttons);
   var button = '<div class="btn-group btn-group--hover"><button class="btn btn--success btn--small">Se detaljer</button></div>';
   var tableSummaryCell = $('.table-summary__cell--action');
@@ -82,6 +82,12 @@ $(document).ready(function() {
   //   $(this).closest('tr').next('.table__row--expanded').toggleClass('is-expanded');
   //   $(this).find('i').toggleClass('icon--chevron-right icon--chevron-down');
   // });
+
+  //Toggle Vertical nav
+  $('.vertical__nav__item--has-children > a').click(function(e){
+    e.preventDefault();
+    $(this).parent().toggleClass('vertical__nav__item--is-expanded');
+  })
 
   //smooth scroll
   // Get the height of the header

@@ -1104,12 +1104,12 @@ input-placeholder{
 	content:"\e907";
 	color:rgb(184, 184, 187);
 }
-.icon--chevron-right:before, .icon--chevron-down::before, .vertical__nav__item--is-expanded > a::before, .table-row-toggle:before, .table-row-toggle--toggled::before{
+.icon--chevron-right:before, .icon--chevron-down:before, .vertical__nav__item--has-children > a::before, .vertical__nav__item--is-expanded > a::before, .table-row-toggle:before, .table-row-toggle--toggled:before{
 	content:"\e908";
 	color:rgb(184, 184, 187);
 }
 
-.icon--chevron-down::before, .table-row-toggle--toggled::before{
+.icon--chevron-down:before, .vertical__nav__item--is-expanded > a::before, .table-row-toggle--toggled:before{
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
   display:block;
@@ -2051,17 +2051,22 @@ input-placeholder{
   display:block;
   border-bottom:1px solid rgb(57, 65, 77);
 }
+.vertical__nav__item--has-children > a::before{
+  font-family:'icomoon';
+  font-size:1rem;
+  position:absolute;
+  left:1.5rem;
+}
 .vertical__nav__item--is-expanded > a{
   background:rgb(57, 65, 77);
   position:relative;
 }
 .vertical__nav__item--is-expanded > a::before{
-  font-family:'icomoon';
-  font-size:1rem;
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
-  position:absolute;
-  left:1.5rem;
+}
+.vertical__nav--sub{
+  display:none;
 }
 .vertical__nav--sub__item{
   text-transform:none;
@@ -2074,6 +2079,9 @@ input-placeholder{
 }
 .vertical__nav--sub__item a.active, .vertical__nav--sub__item a:hover{
   color:#88c7d8;
+}
+.vertical__nav .vertical__nav__item--is-expanded > .vertical__nav--sub{
+  display:block;
 }
 .user{
   background:rgb(57, 65, 77);
@@ -2318,12 +2326,12 @@ thead th{
   font-weight:400;
 }
 
-tr{
+tbody > tr{
   background:#fdfdfd;
 }
 
 @media (min-width: 768px){
-  tr:hover{
+  tbody > tr:hover{
     background:#f9f9f9;
   }
 }
@@ -2437,7 +2445,7 @@ tr > td:last-child{
   background:rgb(253, 240, 240)!important;
 }
 .table__row--has-errors td{
-  padding:0;
+  padding:0 0 0 1rem;
   border:0;
 }
 .table__row--has-errors td p{

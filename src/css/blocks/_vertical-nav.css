@@ -16,22 +16,27 @@
       border-bottom: 1px solid color(var(--sidebar-menu-bg) shade(15%));
     }
 
+    &--has-children > a::before {
+      @extend .icon--chevron-right:before;
+      font-family: 'icomoon';
+      font-size: 1rem;
+      position: absolute;
+      left: 1.5rem;
+    }
+
     &--is-expanded > a {
       background: color(var(--sidebar-menu-bg) shade(15%));
       position: relative;
 
       &::before {
-        @extend .icon--chevron-right:before;
-        font-family: 'icomoon';
-        font-size: 1rem;
+        @extend .icon--chevron-down:before;
         transform: rotate(90deg);
-        position: absolute;
-        left: 1.5rem;
       }
     }
   }
 
   &--sub {
+    display: none;
 
     &__item {
       text-transform: none;
@@ -48,5 +53,9 @@
         color: var(--gramo-turkis);
       }
     }
+  }
+  /*** Make sub nav visible when parent is expanded ***/
+  .vertical__nav__item--is-expanded > .vertical__nav--sub {
+    display: block;
   }
 }

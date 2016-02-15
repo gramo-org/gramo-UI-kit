@@ -50,7 +50,7 @@ thead {
   }
 }
 
-tr {
+tbody > tr {
   background: var(--gramo-white);
   &:hover {
     @media (--tablet) { background: var(--x-light-gray); }
