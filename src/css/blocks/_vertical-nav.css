@@ -16,6 +16,10 @@
       border-bottom: 1px solid color(var(--sidebar-menu-bg) shade(15%));
     }
 
+    &--has-children > a {
+      background: color(var(--sidebar-menu-bg) shade(15%));
+    }
+
     &--has-children > a::before {
       @extend .icon--chevron-right:before;
       font-family: 'icomoon';
@@ -25,7 +29,6 @@
     }
 
     &--is-expanded > a {
-      background: color(var(--sidebar-menu-bg) shade(15%));
       position: relative;
 
       &::before {

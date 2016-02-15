@@ -2051,6 +2051,9 @@ input-placeholder{
   display:block;
   border-bottom:1px solid rgb(57, 65, 77);
 }
+.vertical__nav__item--has-children > a{
+  background:rgb(57, 65, 77);
+}
 .vertical__nav__item--has-children > a::before{
   font-family:'icomoon';
   font-size:1rem;
@@ -2058,7 +2061,6 @@ input-placeholder{
   left:1.5rem;
 }
 .vertical__nav__item--is-expanded > a{
-  background:rgb(57, 65, 77);
   position:relative;
 }
 .vertical__nav__item--is-expanded > a::before{
