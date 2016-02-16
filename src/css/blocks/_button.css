@@ -7,7 +7,7 @@
   text-decoration: none;
   color: #fff;
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   line-height: normal;
   margin-bottom: .5rem;
 
@@ -116,18 +116,17 @@
 
   &--large {
     padding: 1.3rem 2rem;
-    font-size: 1.4rem;
   }
 
   &--medium {
     @media (--tablet) {
-      padding: 1rem 2rem;
+      padding: .9rem 2rem;
     }
   }
 
   &--small {
     @media (--tablet) {
-      padding: .5rem 2rem;
+      padding: .3rem 2rem;
     }
   }
 }

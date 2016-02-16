@@ -1528,7 +1528,7 @@ input-placeholder{
   text-decoration:none;
   color:#fff;
   display:block;
-  font-size:1.1rem;
+  font-size:1.4rem;
   line-height:normal;
   margin-bottom:.5rem;
 }
@@ -1614,16 +1614,15 @@ input-placeholder{
 }
 .btn--large{
   padding:1.3rem 2rem;
-  font-size:1.4rem;
 }
 @media (min-width: 768px){
   .btn--medium{
-    padding:1rem 2rem;
+    padding:.9rem 2rem;
   }
 }
 @media (min-width: 768px){
   .btn--small{
-    padding:.5rem 2rem;
+    padding:.3rem 2rem;
   }
 }
 .btn-group{
@@ -1636,6 +1635,7 @@ input-placeholder{
 }
 .btn-group--toggle > .btn{
   border-bottom:0;
+  font-size:1.1rem;
 }
 @media (min-width: 768px){
   .btn-group button:not(:first-of-type){
