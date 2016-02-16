@@ -2508,7 +2508,7 @@ tr > td:last-child{
 }
 .table-row-toggle{
   font-family:'icomoon';
-  display:block;
+  display:inline-block;
   text-decoration:none;
 }
 .table-row-content{
