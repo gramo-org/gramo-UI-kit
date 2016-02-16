@@ -957,9 +957,9 @@ main{
 }
 
 .container--branded{
-  background:url("img/logo-echo.svg") no-repeat 50% 5rem;
+  background:url("img/logo-echo.svg") no-repeat 50% 7rem;
   background-size:7rem;
-  padding-top:15rem;
+  padding-top:17rem;
 }
 
 .container--branded h2{
@@ -3084,6 +3084,10 @@ tr > td:last-child{
   color:#504f56;
   padding:1rem 0;
 }
+.flash-message-wrapper{
+  height:3rem;
+}
+
 .flash-message{
   text-align:center;
   background:#88c7d8;
@@ -3094,16 +3098,19 @@ tr > td:last-child{
   font-size:1.5rem;
   margin-top:3.4rem;
 }
+
 @media (min-width: 960px){
   .flash-message{
     margin-top:0;
   }
 }
+
 .flash-message p{
   margin:0;
   display:inline-block;
   margin-right:1rem;
 }
+
 .flash-message .btn{
   background:rgb(102, 149, 162);
 }

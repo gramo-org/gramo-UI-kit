@@ -1,3 +1,7 @@
+.flash-message-wrapper {
+  height: 3rem;
+}
+
 .flash-message {
   text-align: center;
   background: var(--gramo-turkis);

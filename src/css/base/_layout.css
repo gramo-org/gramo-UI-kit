@@ -52,9 +52,9 @@ main {
   }
 
   &--branded {
-    background: url("img/logo-echo.svg") no-repeat 50% 5rem;
+    background: url("img/logo-echo.svg") no-repeat 50% 7rem;
     background-size: 7rem;
-    padding-top: 15rem;
+    padding-top: 17rem;
 
     h2 {
       font-weight: var(--font-300);
