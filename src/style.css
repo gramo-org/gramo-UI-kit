@@ -3063,12 +3063,12 @@ tr > td:last-child{
 .tabs__nav__item:last-child{
   border-right-width:1px;
 }
-.tabs .active{
+.tabs__nav__item:hover, .tabs .active{
   background:#ededed;
   position:relative;
 }
 @media (min-width: 768px){
-  .tabs .active::after{
+  .tabs__nav__item:hover::after, .tabs .active::after{
     content:'';
     height:1px;
     position:absolute;
