@@ -3086,6 +3086,7 @@ tr > td:last-child{
 }
 .flash-message-wrapper{
   height:3rem;
+  overflow:hidden;
 }
 
 .flash-message{
