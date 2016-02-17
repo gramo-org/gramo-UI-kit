@@ -3092,6 +3092,9 @@ tr > td:last-child{
   height:3rem;
   overflow:hidden;
 }
+.flash-message-wrapper .flash-message{
+  margin-top:0;
+}
 
 .flash-message{
   text-align:center;
