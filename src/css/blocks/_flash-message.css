@@ -1,6 +1,7 @@
 .flash-message-wrapper {
   height: 3rem;
   overflow: hidden;
+  @extend .row;
 }
 
 .flash-message {
