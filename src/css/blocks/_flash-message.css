@@ -1,7 +1,8 @@
 .flash-message-wrapper {
-  height: 3rem;
   overflow: hidden;
   @extend .row;
+  height: 5rem;
+  @media (--tablet) { height: 3rem; }  
 
   .flash-message {
     margin-top: 0;

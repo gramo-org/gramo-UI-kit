@@ -3089,8 +3089,13 @@ tr > td:last-child{
   padding:1rem 0;
 }
 .flash-message-wrapper{
-  height:3rem;
   overflow:hidden;
+  height:5rem;
+}
+@media (min-width: 768px){
+  .flash-message-wrapper{
+    height:3rem;
+  }
 }
 .flash-message-wrapper .flash-message{
   margin-top:0;
