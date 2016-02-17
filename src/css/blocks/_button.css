@@ -22,60 +22,62 @@
   }
 
   &[disabled] {
-    border-color: color(var(--silver) shade(10%));
+    /*border-color: color(var(--silver) shade(10%));
     @extend %full-border;
     background-color: var(--light-gray);
     color: color(var(--off-gray) shade(20%));
     &:hover {
        background-color: var(--light-gray);
-    }
+    }*/
+    opacity: 0.2;
+    pointer-events: none;
   }
 
   /*** Buttons types ***/
 
   &--primary {
-    border-color: color(var(--gramo-blue) shade(15%));
-    background-color: var(--gramo-blue);
+    border-color: color(var(--primary) shade(15%));
+    background-color: var(--primary);
 
     &:hover {
-       background-color: color(var(--gramo-blue) shade(25%));
+       background-color: color(var(--primary) shade(25%));
     }
   }
 
   &--secondary {
     border-color: var(--silver);
-    background-color: var(--x-light-gray);
+    background-color: var(--secondary);
     color: var(--gramo-black);
     @extend %full-border;
     &:hover {
-       background-color: color(var(--x-light-gray) shade(20%));
+       background-color: color(var(--secondary) shade(20%));
     }
   }
 
   &--success {
-    border-color: color(var(--gramo-green) shade(15%));
-    background-color: var(--gramo-green);
+    border-color: color(var(--success) shade(15%));
+    background-color: var(--success);
 
     &:hover {
-       background-color: color(var(--gramo-green) shade(25%));
+       background-color: color(var(--success) shade(25%));
     }
   }
 
   &--info {
-    border-color: color(var(--gramo-turkis) shade(15%));
-    background-color: var(--gramo-turkis);
+    border-color: color(var(--info) shade(15%));
+    background-color: var(--info);
 
     &:hover {
-       background-color: color(var(--gramo-turkis) shade(25%));
+       background-color: color(var(--info) shade(25%));
     }
   }
 
   &--error {
-    border-color: color(var(--gramo-red) shade(15%));
-    background-color: var(--gramo-red);
+    border-color: color(var(--error) shade(15%));
+    background-color: var(--error);
 
     &:hover {
-       background-color: color(var(--gramo-red) shade(25%));
+       background-color: color(var(--error) shade(25%));
     }
   }
 

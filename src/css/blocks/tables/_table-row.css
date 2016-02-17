@@ -16,7 +16,7 @@
 
 /*** Error rows in table ***/
 .table__row--has-errors {
-  background: color(var(--gramo-red) tint(90%))!important;
+  background: color(var(--error) tint(90%))!important;
 
   td {
    padding: 0 0 0 1rem;

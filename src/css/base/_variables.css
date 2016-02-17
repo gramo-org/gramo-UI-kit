@@ -90,6 +90,13 @@
 /*Context specific variables */
 --base-background-color:                         var(--x-light-gray);
 
+/* States */
+--primary:                                       var(--gramo-blue);
+--secondary:                                     var(--x-light-gray);
+--success:                                       var(--gramo-green);
+--error:                                         var(--gramo-red);
+--info:                                          var(--gramo-turkis);
+
 /*Sidebar menu */
 --sidebar-menu-bg:                               var(--ui-gray);
 --sidebar-menu-color:                            var(--light-gray);

@@ -6,13 +6,14 @@
 
 .flash-message {
   text-align: center;
-  background: var(--gramo-turkis);
+  background: var(--info);
   color: var(--gramo-white);
   text-transform: uppercase;
   padding: 0.75rem 0;
   line-height: 1.5rem;
   font-size: 1.5rem;
   margin-top: 3.4rem;
+  animation: fadeIn ease 2s 1s;
   @media (--desktop) {
     margin-top: 0;
   }
@@ -24,23 +25,23 @@
   }
 
   .btn {
-    background: color(var(--gramo-turkis) shade(25%));
+    background: color(var(--info) shade(25%));
   }
 }
 
 .flash-message--error {
-  background: var(--gramo-red);
+  background: var(--error);
 
   .btn {
-    background: color(var(--gramo-red) shade(25%));
+    background: color(var(--error) shade(25%));
   }
 }
 
 .flash-message--success {
-  background: var(--gramo-green);
+  background: var(--success);
 
   .btn {
-    background: color(var(--gramo-green) shade(25%));
+    background: color(var(--success) shade(25%));
   }
 }
 

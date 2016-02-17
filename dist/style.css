@@ -18,7 +18,7 @@
   margin:0;
 }
 
-.btn[disabled], .btn--secondary, .btn-group .btn--success{
+.btn--secondary, .btn-group .btn--success{
   border-width:1px 1px 3px 1px!important;
 }
 .text--left{
@@ -1172,6 +1172,14 @@ input-placeholder{
 .icon--home:before{
 	content:"\e905";
 }
+@-webkit-keyframes fadeIn{
+  0%{ opacity:0; }
+  100%{ opacity:1; }
+}
+@keyframes fadeIn{
+  0%{ opacity:0; }
+  100%{ opacity:1; }
+}
 
 .site-header{
   background:#434D5A;
@@ -1543,12 +1551,8 @@ input-placeholder{
   transition:0.5s ease;
 }
 .btn[disabled]{
-  border-color:rgb(195, 195, 198);
-  background-color:#ededed;
-  color:rgb(132, 131, 137);
-}
-.btn[disabled]:hover{
-  background-color:#ededed;
+  opacity:0.2;
+  pointer-events:none;
 }
 .btn--primary{
   border-color:rgb(0, 127, 185);
@@ -2226,7 +2230,7 @@ input-placeholder{
   color:#fff;
 }
 .badge--info{
-  background:#0095da;
+  background:#88c7d8;
   color:#fff;
 }
 .badge--success{
@@ -3098,6 +3102,8 @@ tr > td:last-child{
   line-height:1.5rem;
   font-size:1.5rem;
   margin-top:3.4rem;
+  -webkit-animation:fadeIn ease 2s 1s;
+  animation:fadeIn ease 2s 1s;
 }
 
 @media (min-width: 960px){

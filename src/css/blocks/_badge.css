@@ -8,22 +8,22 @@
   vertical-align: top;
 
   &--error {
-    background: var(--gramo-red);
+    background: var(--error);
     color: #fff;
   }
 
   &--info {
-    background: var(--gramo-blue);
+    background: var(--info);
     color: #fff;
   }
 
   &--success {
-    background: var(--gramo-green);
+    background: var(--success);
     color: #fff;
   }
 
   &--notification {
-    background: var(--gramo-turkis);
+    background: var(--info);
     font-size: 1.2rem;
     border-radius: 2rem;
     color: var(--gramo-white);
@@ -55,7 +55,7 @@
   }
 
   &-error {
-    background: var(--gramo-red);
+    background: var(--error);
 
     &:before {
       @extend .icon--cross:before;
@@ -63,7 +63,7 @@
   }
 
   &-success {
-    background: var(--gramo-green);
+    background: var(--success);
 
     &:before {
       @extend .icon--checkmark:before;

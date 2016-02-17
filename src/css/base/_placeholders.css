@@ -3,11 +3,11 @@
 }
 
 %border-success {
-  box-shadow: 4px 0px 0px var(--gramo-green) inset;
+  box-shadow: 4px 0px 0px var(--success) inset;
 }
 
 %border-error {
-  box-shadow: 4px 0px 0px var(--gramo-red) inset;
+  box-shadow: 4px 0px 0px var(--error) inset;
 }
 
 %no-list {
