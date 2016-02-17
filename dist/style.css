@@ -3102,8 +3102,8 @@ tr > td:last-child{
   line-height:1.5rem;
   font-size:1.5rem;
   margin-top:3.4rem;
-  -webkit-animation:fadeIn ease 2s 1s;
-  animation:fadeIn ease 2s 1s;
+  -webkit-animation:fadeIn ease 1s;
+  animation:fadeIn ease 1s;
 }
 
 @media (min-width: 960px){
