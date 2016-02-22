@@ -1181,6 +1181,16 @@ input-placeholder{
   100%{ opacity:1; }
 }
 
+@-webkit-keyframes fadeOut{
+  0%{ opacity:1; }
+  100%{ opacity:0; }
+}
+
+@keyframes fadeOut{
+  0%{ opacity:1; }
+  100%{ opacity:0; }
+}
+
 .site-header{
   background:#434D5A;
   position:fixed;
@@ -1551,8 +1561,18 @@ input-placeholder{
   transition:0.5s ease;
 }
 .btn[disabled]{
-  opacity:0.2;
+  opacity:0.8;
   pointer-events:none;
+  position:relative;
+}
+.btn[disabled]:after{
+  content:'';
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:calc(100% + 3px);
+  background:rgba(0, 0, 0, 0.5);
 }
 .btn--primary{
   border-color:rgb(0, 127, 185);
@@ -3118,6 +3138,11 @@ tr > td:last-child{
   .flash-message{
     margin-top:0;
   }
+}
+
+.flash-message .exiting{
+  -webkit-animation:fadeOut ease 1s;
+  animation:fadeOut ease 1s;
 }
 
 .flash-message p{

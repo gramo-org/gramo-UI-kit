@@ -29,8 +29,19 @@
     &:hover {
        background-color: var(--light-gray);
     }*/
-    opacity: 0.2;
+    opacity: 0.8;
     pointer-events: none;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: calc(100% + 3px);
+      background: rgba(0, 0, 0, 0.5);
+    }
   }
 
   /*** Buttons types ***/

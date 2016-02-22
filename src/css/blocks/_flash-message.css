@@ -2,7 +2,7 @@
   overflow: hidden;
   @extend .row;
   height: 5rem;
-  @media (--tablet) { height: 3rem; }  
+  @media (--tablet) { height: 3rem; }
 
   .flash-message {
     margin-top: 0;
@@ -21,6 +21,10 @@
   animation: fadeIn ease 1s;
   @media (--desktop) {
     margin-top: 0;
+  }
+
+  .exiting {
+    animation: fadeOut ease 1s;
   }
 
   p {
