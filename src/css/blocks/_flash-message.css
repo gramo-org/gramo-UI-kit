@@ -23,8 +23,8 @@
     margin-top: 0;
   }
 
-  .exiting {
-    animation: fadeOut ease 1s;
+  &.exiting {
+    animation: fadeOut ease 2s;
   }
 
   p {

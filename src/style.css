@@ -3140,9 +3140,9 @@ tr > td:last-child{
   }
 }
 
-.flash-message .exiting{
-  -webkit-animation:fadeOut ease 1s;
-  animation:fadeOut ease 1s;
+.flash-message.exiting{
+  -webkit-animation:fadeOut ease 2s;
+  animation:fadeOut ease 2s;
 }
 
 .flash-message p{
