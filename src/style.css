@@ -1703,7 +1703,7 @@ input-placeholder{
     height:2.7rem;
   }
 }
-.btn-group a{
+.btn-group a:not(.btn){
   margin:0 1rem;
   color:#333;
 }
@@ -2382,7 +2382,7 @@ tr > td:last-child{
     display:block;
   }
 
-  thead:not(.always-visible){
+  thead:not(.table__head--always-visible){
     display:none;
   }
 
@@ -2463,6 +2463,10 @@ tr > td:last-child{
   .table__head--xlarge{
     width:30%;
   }
+}
+
+.table__head--always-visible{
+  border-bottom:0;
 }
 .table__row--is-editing, .table__row--expanded{
   background:#f9f9f9;

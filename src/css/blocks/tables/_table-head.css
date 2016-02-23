@@ -14,3 +14,7 @@
 .table__head--xlarge {
   @media (--desktop) { width: 30%; }
 }
+
+.table__head--always-visible {
+  border-bottom: 0;
+}

@@ -73,7 +73,7 @@ $(document).ready(function() {
   var buttons =
     '<div class="btn-group btn-group--hover"><button class="btn btn--success btn--small">Kommenter</button><button class="btn btn--secondary btn--small">Ignorer</button></div>';
   appendElements(tableCell, buttons);
-  var button = '<div class="btn-group btn-group--hover"><button class="btn btn--success btn--small">Se detaljer</button></div>';
+  var button = '<div class="btn-group btn-group--hover"><a class="btn btn--success btn--small">Se detaljer</a></div>';
   var tableSummaryCell = $('.table-summary__cell--action');
   appendElements(tableSummaryCell, button);
 
