@@ -36,6 +36,7 @@
 @import url('blocks/tables/_table-states.css');
 @import url('blocks/tables/_table-sort.css');
 @import url('blocks/tables/_table-summary.css');
+@import url('blocks/tables/_fake-table.css');
 
 @import url('blocks/_toggle-sidebar.css');
 @import url('blocks/_toggle.css');

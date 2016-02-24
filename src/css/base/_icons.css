@@ -44,7 +44,6 @@
 .icon--chevron-down:before {
   @extend .icon--chevron-right:before;
   transform: rotate(90deg);
-  display: block;
 }
 
 .icon--logo-echo:before {

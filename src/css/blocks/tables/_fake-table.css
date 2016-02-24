@@ -1,0 +1,66 @@
+.fake-table {
+  @extend .container;
+  width: 100%;
+  margin: 2rem 0;
+  font-size: 1.4rem;
+
+  &__head {
+    @extend .row;
+    background: var(--table-head-background);
+    border: 1px solid var(--table-border-color);
+    text-align: center;
+    font-weight: var(--font-400);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @media (--desktop) {
+      text-align: left;
+    }
+  }
+
+
+  &__row {
+    @extend .row;
+    background: var(--gramo-white);
+    border: 1px solid var(--table-border-color);
+    border-width: 0 1px 1px 1px;
+
+    &:hover {
+      @media (--tablet) { background: var(--x-light-gray); }
+    }
+
+    & > div {
+      padding: 1rem;
+    }
+  }
+
+  &__row--child {
+    @extend .col-sm-12;
+    @extend .container;
+    background: var(--x-light-gray);
+    margin: 0;
+    border-width: 1px 0 0 0;
+    padding: 0!important;
+    display: none;
+  }
+
+  &__row-content {
+    @extend .row;
+    text-align: center;
+    line-height: 0;
+    padding: 0!important;
+
+    & > div {
+      justify-content: center;
+      line-height: normal;
+    }
+
+    & > div:not(:first-child) {
+      border-left: 1px solid var(--table-border-color);
+    }
+  }
+
+  &__row--expanded .fake-table__row--child {
+    display: flex;
+  }
+}
