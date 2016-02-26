@@ -9,7 +9,7 @@
     margin: 0;
     cursor: pointer;
     border: 1px solid var(--table-border-color);
-    border-width: 0 1px 1px 1px;
+    border-width: 0 1px;
   }
 
   &__head {
@@ -45,13 +45,12 @@
   &__row--child {
     @extend .row;
     background: var(--x-light-gray);
-    border-width: 1px 0 0 0;
+    border-width: 1px 0;
     padding: 0!important;
     display: none;
 
     & > div {
       justify-content: center;
-      line-height: normal;
       @extend .col-xs-12;
       @extend .col-sm-4;
       @extend .text--em;

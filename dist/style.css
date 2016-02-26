@@ -2636,7 +2636,7 @@ tr > td:last-child{
   margin:0;
   cursor:pointer;
   border:1px solid #d9d9dc;
-  border-width:0 1px 1px 1px;
+  border-width:0 1px;
 }
 .fake-table__head{
   background:#ededed;
@@ -2666,7 +2666,7 @@ tr > td:last-child{
 }
 .fake-table__row--child{
   background:#f9f9f9;
-  border-width:1px 0 0 0;
+  border-width:1px 0;
   padding:0!important;
   display:none;
 }
@@ -2674,7 +2674,6 @@ tr > td:last-child{
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
-  line-height:normal;
   text-align:center;
 }
 .fake-table__row--child > div:not(:first-child){
