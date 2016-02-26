@@ -36,7 +36,7 @@
     &--wrapper {
       @extend .row;
       width: 100%;
-      padding: 1.5rem 1rem;
+      padding: 1.5rem .3rem!important;
       margin: 0;
       cursor: pointer;
     }

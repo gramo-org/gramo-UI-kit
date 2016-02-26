@@ -2659,7 +2659,7 @@ tr > td:last-child{
 }
 .fake-table__row--wrapper{
   width:100%;
-  padding:1.5rem 1rem;
+  padding:1.5rem .3rem!important;
   margin:0;
   cursor:pointer;
 }
