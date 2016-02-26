@@ -13,7 +13,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 
-    @media (--desktop) {
+    @media (--tablet) {
       text-align: left;
     }
   }
@@ -43,6 +43,7 @@
   }
 
   &__row--child {
+    @extend .col-xs;
     @extend .col-sm-12;
     @extend .container;
     background: var(--x-light-gray);
@@ -61,6 +62,9 @@
     & > div {
       justify-content: center;
       line-height: normal;
+      @extend .col-xs-12;
+      @extend .col-sm-4;
+      @extend .text--em;
     }
 
     & > div:not(:first-child) {
