@@ -1104,14 +1104,15 @@ input-placeholder{
 	content:"\e907";
 	color:rgb(184, 184, 187);
 }
-.icon--chevron-right:before, .icon--chevron-down:before, .vertical__nav__item--has-children > a::before, .vertical__nav__item--is-expanded > a::before, .table-row-toggle:before, .table-row-toggle--toggled:before{
+.icon--chevron-right:before, .icon--chevron-down:before, .vertical__nav__item--has-children > a::before, .vertical__nav__item--is-expanded > a::before, .table-row-toggle:before, .table-row-toggle--toggled:before, .fake-table__row--expanded .table-row-toggle:before{
 	content:"\e908";
 	color:rgb(184, 184, 187);
 }
 
-.icon--chevron-down:before, .vertical__nav__item--is-expanded > a::before, .table-row-toggle--toggled:before{
+.icon--chevron-down:before, .vertical__nav__item--is-expanded > a::before, .table-row-toggle--toggled:before, .fake-table__row--expanded .table-row-toggle:before{
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
+  display:inline-block;
 }
 
 .icon--logo-echo:before{

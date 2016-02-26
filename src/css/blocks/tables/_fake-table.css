@@ -60,7 +60,12 @@
     }
   }
 
-  &__row--expanded .fake-table__row--child {
-    display: flex;
+  &__row--expanded {
+    .fake-table__row--child {
+      display: flex;
+    }
+    .table-row-toggle {
+      @extend .icon--chevron-down;
+    }
   }
 }
