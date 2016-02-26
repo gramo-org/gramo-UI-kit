@@ -269,7 +269,7 @@ table{
 td, th{
   padding:0;
 }
-.row, .site-header nav, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .table-row-content, .fake-table__head, .fake-table__row, .fake-table__row-content, .tabs__nav, .tabs__section, .flash-message-wrapper, .search__form{
+.row, .site-header nav, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .table-row-content, .fake-table__head, .fake-table__row, .fake-table__row--wrapper, .fake-table__row-content, .tabs__nav, .tabs__section, .flash-message-wrapper, .search__form{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -2656,6 +2656,12 @@ tr > td:last-child{
 }
 .fake-table__row > div{
   padding:1rem;
+}
+.fake-table__row--wrapper{
+  width:100%;
+  padding:1.5rem 1rem;
+  margin:0;
+  cursor:pointer;
 }
 .fake-table__row--child{
   background:#f9f9f9;
