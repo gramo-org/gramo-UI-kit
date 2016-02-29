@@ -44,27 +44,32 @@
 
   &__row--child {
     @extend .row;
-    background: var(--x-light-gray);
+    border: 0;
     border-width: 1px 0;
     padding: 0!important;
     display: none;
 
     & > div {
-      justify-content: center;
-      @extend .col-xs-12;
-      @extend .col-sm-4;
-      @extend .text--em;
-      text-align: center;
-    }
-    & > div:not(:first-child) {
-      border-left: 1px solid var(--table-border-color);
+      display: block;
+      cursor: default;
     }
   }
 
 
   &__row--expanded {
+    border-bottom: 1px solid var(--table-border-color);
+
+    .fake-table__row {
+      @extend .fake-table__row:hover;
+    }
+
     .fake-table__row--child {
       display: flex;
+      background: var(--gramo-white);
+
+      &:hover {
+        @extend .fake-table__row:hover;
+      }
     }
     .table-row-toggle {
       @extend .icon--chevron-down;

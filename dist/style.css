@@ -37,7 +37,7 @@
   color:#a5a4ab;
 }
 
-.text--em, .fake-table__row--child > div{
+.text--em{
   margin:0;
   font-style:italic;
   font-size:1.4rem;
@@ -284,7 +284,7 @@ td, th{
   margin-right:-1rem;
 }
 
-.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .box, .breadcrumbs, .breadcrumbs__item, .content-header__title, .content-header__meta, .content-header__action, .table-row-content p, .fake-table__row--child > div, .toggle-sidebar, .tabs__nav__item{
+.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .box, .breadcrumbs, .breadcrumbs__item, .content-header__title, .content-header__meta, .content-header__action, .table-row-content p, .toggle-sidebar, .tabs__nav__item{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -389,7 +389,7 @@ td, th{
   max-width:91.66667%;
 }
 
-.col-xs-12, .content-header__action, .table-row-content p, .fake-table__row--child > div{
+.col-xs-12, .content-header__action, .table-row-content p{
   -webkit-flex-basis:100%;
   -ms-flex-preferred-size:100%;
   flex-basis:100%;
@@ -459,7 +459,7 @@ td, th{
     flex-basis:25%;
     max-width:25%;
   }
-  .col-sm-4, .fake-table__row--child > div{
+  .col-sm-4{
     -webkit-flex-basis:33.33333%;
     -ms-flex-preferred-size:33.33333%;
     flex-basis:33.33333%;
@@ -2657,7 +2657,7 @@ tr > td:last-child{
   border-bottom:1px solid #d9d9dc;
 }
 @media (min-width: 768px){
-  .fake-table__row:hover{
+  .fake-table__row:hover, .fake-table__row--expanded .fake-table__row, .fake-table__row--expanded .fake-table__row--child:hover{
     background:#f9f9f9;
   }
 }
@@ -2665,24 +2665,23 @@ tr > td:last-child{
   padding:1rem;
 }
 .fake-table__row--child{
-  background:#f9f9f9;
+  border:0;
   border-width:1px 0;
   padding:0!important;
   display:none;
 }
 .fake-table__row--child > div{
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
-  text-align:center;
+  display:block;
+  cursor:default;
 }
-.fake-table__row--child > div:not(:first-child){
-  border-left:1px solid #d9d9dc;
+.fake-table__row--expanded{
+  border-bottom:1px solid #d9d9dc;
 }
 .fake-table__row--expanded .fake-table__row--child{
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
+  background:#fdfdfd;
 }
 
 .toggle-sidebar{

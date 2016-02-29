@@ -965,6 +965,28 @@
               </section><!--End Tables section-->
               <section id="summary-table">
                 <h1>Summary table</h1>
+<div class="highlight"><pre class="prettyprint">
+  <table class="table-summary">
+    <thead class="table__head--always-visible">
+      <tr>
+        <th colspan="2"><h4 class="table-summary__heading"><span class="badge badge--icon badge--icon-error"></span>Ikke identifiserte</h4></th>
+        <th class="table__head--xlarge"></th>
+      </tr>
+    </thead>
+        <tbody>
+          <tr class="table-summary__row table-summary__row--current">
+            <td class="table-summary__cell table-summary__cell--sum"><b>136</b><span>Ikke identifiserte</span></td>
+            <td class="table-summary__cell"><b>3:53:52</b><span>Sum spilletid</span></td>
+            <td class="table-summary__cell table-summary__cell--action"></td>
+          </tr>
+          <tr class="table-summary__row">
+            <td class="table-summary__cell"><b>2</b><span>Ikke utgitt</span></td>
+            <td class="table-summary__cell"><b>3:02</b><span>Sum spilletid</span></td>
+            <td class="table-summary__cell table-summary__cell--action"></td>
+          </tr>
+        </tbody>
+  </table>
+</pre></div>
                 <div class="row">
                   <div class="col-sm-12 col-md-6">
                     <table class="table-summary">
@@ -1011,6 +1033,119 @@
                     </table>
                   </div><!-- /.col-->
                 </div><!--end .row-->
+                <hr class="horizontal-rule">
+              </section>
+
+              <section id="fake-table">
+                <h1>Fake table</h1>
+                <p>The 'fake table' enables a more flexible approach to markup allowing,
+                  for example, nested elements where traditional table markup would not.
+                  The fake table is styled to look exactly like a regular table and uses
+                  semantic class names.</p>
+<div class="highlight"><pre class="prettyprint">
+  <div class="fake-table">
+    <div class="fake-table__row--container">
+      <div class="fake-table__head">
+        <div class="col-sm-1">Treff</div>
+        <div class="col-sm-3">Tittel</div>
+        <div class="col-sm-3">HovedArtist</div>
+        <div class="col-sm-2">Ant. Avspillinger</div>
+        <div class="col-sm-2">Sum spilletid</div>
+        <div class="col-sm-1"></div>
+      </div>
+    </div>
+    <div class="fake-table__row--container">
+      <div class="fake-table__row">
+        <div class="col-sm-1" data-label="Treff">1</div>
+        <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
+        <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
+        <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
+        <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
+        <div class="col-sm-1 text--center">
+          <a href="#" class="table-row-toggle"></a>
+        </div>
+      </div>
+
+      <div class="fake-table__row fake-table__row--child">
+
+          <div>Potensielt treff på denne avspillingen</div>
+          <div>Potensielt treff på denne avspillingen</div>
+          <div>Potensielt treff på denne avspillingen</div>
+
+      </div>
+    </div>
+
+    <div class="fake-table__row--container fake-table__row--expanded">
+      <div class="fake-table__row">
+        <div class="col-sm-1" data-label="Treff">1</div>
+        <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
+        <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
+        <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
+        <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
+        <div class="col-sm-1 text--center">
+          <a href="#" class="table-row-toggle"></a>
+        </div>
+      </div>
+
+        <div class="fake-table__row fake-table__row--child">
+          <div>Potensielt treff på denne avspillingen</div>
+          <div>Potensielt treff på denne avspillingen</div>
+          <div>Potensielt treff på denne avspillingen</div>
+        </div>
+    </div>
+  </div>
+</pre></div>
+                <div class="fake-table">
+                  <div class="fake-table__row--container">
+                    <div class="fake-table__head">
+                      <div class="col-sm-1">Treff</div>
+                      <div class="col-sm-3">Tittel</div>
+                      <div class="col-sm-3">HovedArtist</div>
+                      <div class="col-sm-2">Ant. Avspillinger</div>
+                      <div class="col-sm-2">Sum spilletid</div>
+                      <div class="col-sm-1"></div>
+                    </div>
+                  </div>
+                  <div class="fake-table__row--container">
+                    <div class="fake-table__row">
+                      <div class="col-sm-1" data-label="Treff">1</div>
+                      <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
+                      <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
+                      <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
+                      <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
+                      <div class="col-sm-1 text--center">
+                        <a href="#" class="table-row-toggle"></a>
+                      </div>
+                    </div>
+
+                    <div class="fake-table__row fake-table__row--child">
+
+                        <div>Potensielt treff på denne avspillingen</div>
+                        <div>Potensielt treff på denne avspillingen</div>
+                        <div>Potensielt treff på denne avspillingen</div>
+
+                    </div>
+                  </div>
+
+                  <div class="fake-table__row--container fake-table__row--expanded">
+                    <div class="fake-table__row">
+                      <div class="col-sm-1" data-label="Treff">1</div>
+                      <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
+                      <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
+                      <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
+                      <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
+                      <div class="col-sm-1 text--center">
+                        <a href="#" class="table-row-toggle"></a>
+                      </div>
+                    </div>
+
+                      <div class="fake-table__row fake-table__row--child">
+                        <div>Potensielt treff på denne avspillingen</div>
+                        <div>Potensielt treff på denne avspillingen</div>
+                        <div>Potensielt treff på denne avspillingen</div>
+                      </div>
+                  </div>
+                </div>
                 <hr class="horizontal-rule">
               </section>
 
@@ -1075,6 +1210,7 @@
                 <li><a href="#lists">Lists</a></li>
                 <li><a href="#tables">Tables</a></li>
                 <li><a href="#summary-table">Summary table</a></li>
+                <li><a href="#fake-table">Fake table</a></li>
               </ul>
             </nav>
           </aside><!--Page-contents menu-->
