@@ -2674,6 +2674,10 @@ tr > td:last-child{
   display:block;
   cursor:default;
 }
+.fake-table__row--child > div span{
+  font-weight:300;
+  margin-left:1rem;
+}
 .fake-table__row--expanded{
   border-bottom:1px solid #d9d9dc;
 }
