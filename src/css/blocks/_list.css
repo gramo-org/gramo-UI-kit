@@ -11,6 +11,10 @@
     border-top: 1px solid var(--table-border-color);
     margin: 0;
 
+    &:hover {
+      @media (--tablet) { background: var(--row-hover); }
+    }
+
     &--wrapper {
       padding: 1.5rem 1rem;
       @extend .row;
@@ -83,6 +87,7 @@
 
 .list--expandable .list__item--is-expanded {
   padding-bottom: 0;
+  background: var(--row-hover);
 
   .list__item__action i {
     transform: rotate(90deg);
@@ -114,13 +119,17 @@
       margin-bottom: 0;
       @extend .row;
 
-      &:nth-child(odd) {
+      &:hover {
+        background: var(--row-hover);
+      }
+
+      /*&:nth-child(odd) {
         background: color(var(--table-border-color) tint(75%));
       }
 
       &:nth-child(even) {
         background: var(--gramo-white);
-      }
+      }*/
 
       &--downloads {
         @extend .col-xs-6;

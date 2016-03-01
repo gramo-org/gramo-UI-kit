@@ -1,7 +1,7 @@
 /*** Editable rows  ***/
 .table__row--is-editing,
 .table__row--expanded {
-  background: var(--x-light-gray);
+  background: var(--row-hover);
 }
 
 /*** Expanded rows ***/

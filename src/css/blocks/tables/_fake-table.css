@@ -34,7 +34,7 @@
     border-bottom: 1px solid var(--table-border-color);
 
     &:hover {
-      @media (--tablet) { background: var(--x-light-gray); }
+      @media (--tablet) { background: var(--row-hover); }
     }
 
     & > div {

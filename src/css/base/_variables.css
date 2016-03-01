@@ -97,6 +97,8 @@
 --error:                                         var(--gramo-red);
 --info:                                          var(--gramo-turkis);
 
+--row-hover:                                     var(--x-light-gray);
+
 /*Sidebar menu */
 --sidebar-menu-bg:                               var(--ui-gray);
 --sidebar-menu-color:                            var(--light-gray);

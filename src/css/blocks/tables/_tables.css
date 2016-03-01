@@ -53,7 +53,7 @@ thead {
 tbody > tr {
   background: var(--gramo-white);
   &:hover {
-    @media (--tablet) { background: var(--x-light-gray); }
+    @media (--tablet) { background: var(--row-hover); }
   }
 }
 
