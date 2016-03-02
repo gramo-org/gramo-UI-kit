@@ -2,36 +2,28 @@
   width: 100%;
   margin: 2rem 0;
   font-size: 1.4rem;
-
-  &__row--container {
-    @extend .container;
-    width: 100%;
-    margin: 0;
-    cursor: pointer;
-    border: 1px solid var(--table-border-color);
-    border-width: 0 1px;
-  }
-
-  &__head {
-    @extend .row;
-    background: var(--table-head-background);
-    border: 1px solid var(--table-border-color);
-    border-width: 1px 0 0 0;
-    text-align: center;
-    font-weight: var(--font-400);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
-    @media (--tablet) {
-      text-align: left;
-    }
-  }
-
+  @extend .container;
 
   &__row {
     @extend .row;
+    width: 100%;
     background: var(--gramo-white);
-    border-bottom: 1px solid var(--table-border-color);
+    cursor: pointer;
+    border: 1px solid var(--table-border-color);
+    border-width: 0 1px 1px 1px;
+
+    &--head {
+      background: var(--table-head-background);
+      border: 1px solid var(--table-border-color);
+      text-align: center;
+      font-weight: var(--font-400);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      @media (--tablet) {
+        text-align: left;
+      }
+    }
 
     &:hover {
       @media (--tablet) { background: var(--row-hover); }
@@ -42,10 +34,11 @@
     }
   }
 
+
   &__row--child {
     @extend .row;
     border: 0;
-    border-width: 1px 0;
+    margin: 0;
     padding: 0!important;
     display: none;
 
@@ -63,14 +56,10 @@
 
   &__row--expanded {
     border-bottom: 1px solid var(--table-border-color);
-
-    .fake-table__row {
-      @extend .fake-table__row:hover;
-    }
+    background: var(--row-hover);
 
     .fake-table__row--child {
       display: flex;
-      background: var(--gramo-white);
 
       &:hover {
         @extend .fake-table__row:hover;
