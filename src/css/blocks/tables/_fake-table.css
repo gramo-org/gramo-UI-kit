@@ -34,6 +34,14 @@
     }
   }
 
+  &__toggle-wrapper {
+    @extend .container;
+    width: 100%;
+  }
+
+  &__toggle-row {
+    @extend .row;
+  }
 
   &__row--child {
     @extend .row;
