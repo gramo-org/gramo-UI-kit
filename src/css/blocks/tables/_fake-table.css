@@ -37,6 +37,7 @@
   &__toggle-wrapper {
     @extend .container;
     width: 100%;
+    border-bottom: 1px solid var(--table-border-color);
   }
 
   &__toggle-row {

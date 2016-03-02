@@ -2664,6 +2664,7 @@ tr > td:last-child{
 }
 .fake-table__toggle-wrapper{
   width:100%;
+  border-bottom:1px solid #d9d9dc;
 }
 .fake-table__row--child{
   border:0;
