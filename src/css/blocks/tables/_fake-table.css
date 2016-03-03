@@ -17,8 +17,7 @@
       border: 1px solid var(--table-border-color);
       text-align: center;
       font-weight: var(--font-400);
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+
 
       @media (--tablet) {
         text-align: left;

@@ -2646,8 +2646,6 @@ tr > td:last-child{
   border:1px solid #d9d9dc;
   text-align:center;
   font-weight:400;
-  padding-top:1rem;
-  padding-bottom:1rem;
 }
 @media (min-width: 768px){
   .fake-table__row--head{
