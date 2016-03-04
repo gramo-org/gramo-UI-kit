@@ -1044,17 +1044,44 @@
                   semantic class names.</p>
 <div class="highlight"><pre class="prettyprint">
   <div class="fake-table">
-    <div class="fake-table__row--container">
-      <div class="fake-table__head">
-        <div class="col-sm-1">Treff</div>
-        <div class="col-sm-3">Tittel</div>
-        <div class="col-sm-3">HovedArtist</div>
-        <div class="col-sm-2">Ant. Avspillinger</div>
-        <div class="col-sm-2">Sum spilletid</div>
-        <div class="col-sm-1"></div>
-      </div>
+    <div class="fake-table__row fake-table__row--head">
+      <div class="col-sm-1">Treff</div>
+      <div class="col-sm-3">Tittel</div>
+      <div class="col-sm-3">HovedArtist</div>
+      <div class="col-sm-2">Ant. Avspillinger</div>
+      <div class="col-sm-2">Sum spilletid</div>
+      <div class="col-sm-1"></div>
     </div>
-    <div class="fake-table__row--container">
+      <div class="fake-table__row fake-table__row--expanded">
+        <div class="fake-table__toggle-wrapper">
+          <div class="fake-table__toggle-row">
+            <div class="col-sm-1" data-label="Treff">1</div>
+            <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
+            <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
+            <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
+            <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
+            <div class="col-sm-1 text--center">
+              <a href="#" class="table-row-toggle"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fake-table__row fake-table__row--child">
+          <div class="col-sm-3 off-xs-1">Tittel: <span>Hell's Bells</span></div>
+          <div class="col-sm-3">Artist <span>AC/DC</span></div>
+        </div>
+
+        <div class="fake-table__row fake-table__row--child">
+          <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
+          <div class="col-sm-3">Artist <span>AC/DC</span></div>
+        </div>
+
+        <div class="fake-table__row fake-table__row--child">
+          <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
+          <div class="col-sm-3">Artist <span>AC/DC</span></div>
+        </div>
+      </div>
+
       <div class="fake-table__row">
         <div class="col-sm-1" data-label="Treff">1</div>
         <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
@@ -1064,50 +1091,55 @@
         <div class="col-sm-1 text--center">
           <a href="#" class="table-row-toggle"></a>
         </div>
-      </div>
-    </div>
 
-    <div class="fake-table__row--container fake-table__row--expanded">
-      <div class="fake-table__row">
-        <div class="col-sm-1" data-label="Treff">1</div>
-        <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
-        <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
-        <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
-        <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
-        <div class="col-sm-1 text--center">
-          <a href="#" class="table-row-toggle"></a>
+        <div class="fake-table__row fake-table__row--child">
+          <div>Potensielt treff på denne avspillingen</div>
+          <div>Potensielt treff på denne avspillingen</div>
+          <div>Potensielt treff på denne avspillingen</div>
         </div>
       </div>
 
-      <div class="fake-table__row fake-table__row--child">
-        <div class="col-sm-3 off-xs-1">Tittel: <span>Hell's Bells</span></div>
-        <div class="col-sm-3">Artist <span>AC/DC</span></div>
-      </div>
-
-      <div class="fake-table__row fake-table__row--child">
-        <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
-        <div class="col-sm-3">Artist <span>AC/DC</span></div>
-      </div>
-
-      <div class="fake-table__row fake-table__row--child">
-        <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
-        <div class="col-sm-3">Artist <span>AC/DC</span></div>
-      </div>
-    </div>
   </div>
 </pre></div>
                 <div class="fake-table">
-                  <div class="fake-table__row--container">
-                    <div class="fake-table__head">
-                      <div class="col-sm-1">Treff</div>
-                      <div class="col-sm-3">Tittel</div>
-                      <div class="col-sm-3">HovedArtist</div>
-                      <div class="col-sm-2">Ant. Avspillinger</div>
-                      <div class="col-sm-2">Sum spilletid</div>
-                      <div class="col-sm-1"></div>
-                    </div>
+                  <div class="fake-table__row fake-table__row--head">
+                    <div class="col-sm-1">Treff</div>
+                    <div class="col-sm-3">Tittel</div>
+                    <div class="col-sm-3">HovedArtist</div>
+                    <div class="col-sm-2">Ant. Avspillinger</div>
+                    <div class="col-sm-2">Sum spilletid</div>
+                    <div class="col-sm-1"></div>
                   </div>
-                  <div class="fake-table__row--container">
+                    <div class="fake-table__row fake-table__row--expanded">
+                      <div class="fake-table__toggle-wrapper">
+                        <div class="fake-table__toggle-row">
+                          <div class="col-sm-1" data-label="Treff">1</div>
+                          <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
+                          <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
+                          <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
+                          <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
+                          <div class="col-sm-1 text--center">
+                            <a href="#" class="table-row-toggle"></a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="fake-table__row fake-table__row--child">
+                        <div class="col-sm-3 off-xs-1">Tittel: <span>Hell's Bells</span></div>
+                        <div class="col-sm-3">Artist <span>AC/DC</span></div>
+                      </div>
+
+                      <div class="fake-table__row fake-table__row--child">
+                        <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
+                        <div class="col-sm-3">Artist <span>AC/DC</span></div>
+                      </div>
+
+                      <div class="fake-table__row fake-table__row--child">
+                        <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
+                        <div class="col-sm-3">Artist <span>AC/DC</span></div>
+                      </div>
+                    </div>
+
                     <div class="fake-table__row">
                       <div class="col-sm-1" data-label="Treff">1</div>
                       <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
@@ -1117,36 +1149,14 @@
                       <div class="col-sm-1 text--center">
                         <a href="#" class="table-row-toggle"></a>
                       </div>
-                    </div>
-                  </div>
 
-                  <div class="fake-table__row--container fake-table__row--expanded">
-                    <div class="fake-table__row">
-                      <div class="col-sm-1" data-label="Treff">1</div>
-                      <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
-                      <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
-                      <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
-                      <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
-                      <div class="col-sm-1 text--center">
-                        <a href="#" class="table-row-toggle"></a>
+                      <div class="fake-table__row fake-table__row--child">
+                        <div>Potensielt treff på denne avspillingen</div>
+                        <div>Potensielt treff på denne avspillingen</div>
+                        <div>Potensielt treff på denne avspillingen</div>
                       </div>
                     </div>
 
-                    <div class="fake-table__row fake-table__row--child">
-                      <div class="col-sm-3 off-xs-1">Tittel<span>Hell's Bells</span></div>
-                      <div class="col-sm-3">Artist<span>AC/DC</span></div>
-                    </div>
-
-                    <div class="fake-table__row fake-table__row--child">
-                      <div class="col-sm-3 off-xs-1">Tittel<span>Hell's Bells</span></div>
-                      <div class="col-sm-3">Artist<span>AC/DC</span></div>
-                    </div>
-
-                    <div class="fake-table__row fake-table__row--child">
-                      <div class="col-sm-3 off-xs-1">Tittel<span>Hell's Bells</span></div>
-                      <div class="col-sm-3">Artist<span>AC/DC</span></div>
-                    </div>
-                  </div>
                 </div>
                 <hr class="horizontal-rule">
               </section>
