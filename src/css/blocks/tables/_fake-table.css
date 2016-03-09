@@ -14,7 +14,7 @@
       @media (--tablet) { background: var(--row-hover); }
     }
 
-    &::before {
+    & > div[class*="col-"]::before {
       content: attr(data-label);
       display: block;
       color: var(--off-gray);

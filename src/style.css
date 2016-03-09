@@ -2649,14 +2649,14 @@ tr > td:last-child{
     background:#f9f9f9;
   }
 }
-.fake-table__row::before{
+.fake-table__row > div[class*="col-"]::before{
   content:attr(data-label);
   display:block;
   color:#a5a4ab;
   text-transform:uppercase;
 }
 @media (min-width: 768px){
-  .fake-table__row::before{
+  .fake-table__row > div[class*="col-"]::before{
     content:none;
   }
 }
