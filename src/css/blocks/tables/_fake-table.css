@@ -1,12 +1,10 @@
 .fake-table {
-  width: 100%;
   margin: 2rem 0;
   font-size: 1.4rem;
   @extend .container;
 
   &__row {
     @extend .row;
-    width: 100%;
     background: var(--gramo-white);
     cursor: pointer;
     border: 1px solid var(--table-border-color);
@@ -16,11 +14,21 @@
       @media (--tablet) { background: var(--row-hover); }
     }
 
+    &::before {
+      content: attr(data-label);
+      display: block;
+      color: var(--off-gray);
+      text-transform: uppercase;
+      @media (--tablet) { content: none; }
+    }
+
     &--head {
       background: var(--table-head-background);
       border: 1px solid var(--table-border-color);
       text-align: center;
       font-weight: var(--font-400);
+      display: none;
+      @media (--tablet) { display: flex; }
 
       &:hover {
         background: var(--table-head-background);
@@ -51,6 +59,7 @@
     margin: 0;
     padding: 0!important;
     display: none;
+    width: 100%;
 
     & > div {
       display: block;

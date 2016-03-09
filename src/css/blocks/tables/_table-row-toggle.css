@@ -3,6 +3,7 @@
   font-family: 'icomoon';
   display: inline-block;
   text-decoration: none;
+  @media (--tablet) { text-align: center; }
 
   &--toggled {
     @extend .icon--chevron-down;
