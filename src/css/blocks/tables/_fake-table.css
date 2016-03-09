@@ -14,14 +14,6 @@
       @media (--tablet) { background: var(--row-hover); }
     }
 
-    & > div[class*="col-"]::before {
-      content: attr(data-label);
-      display: block;
-      color: var(--off-gray);
-      text-transform: uppercase;
-      @media (--tablet) { content: none; }
-    }
-
     &--head {
       background: var(--table-head-background);
       border: 1px solid var(--table-border-color);
@@ -51,6 +43,14 @@
 
   &__toggle-row {
     @extend .row;
+
+    & > div[class*="col-"]::before {
+      content: attr(data-label);
+      display: block;
+      color: var(--off-gray);
+      text-transform: uppercase;
+      @media (--tablet) { content: none; }
+    }
   }
 
   &__row--child {

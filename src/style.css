@@ -2649,17 +2649,6 @@ tr > td:last-child{
     background:#f9f9f9;
   }
 }
-.fake-table__row > div[class*="col-"]::before{
-  content:attr(data-label);
-  display:block;
-  color:#a5a4ab;
-  text-transform:uppercase;
-}
-@media (min-width: 768px){
-  .fake-table__row > div[class*="col-"]::before{
-    content:none;
-  }
-}
 .fake-table__row--head{
   background:#ededed;
   border:1px solid #d9d9dc;
@@ -2687,6 +2676,17 @@ tr > td:last-child{
 }
 .fake-table__toggle-wrapper{
   width:100%;
+}
+.fake-table__toggle-row > div[class*="col-"]::before{
+  content:attr(data-label);
+  display:block;
+  color:#a5a4ab;
+  text-transform:uppercase;
+}
+@media (min-width: 768px){
+  .fake-table__toggle-row > div[class*="col-"]::before{
+    content:none;
+  }
 }
 .fake-table__row--child{
   border:0;
