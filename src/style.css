@@ -2641,20 +2641,23 @@ tr > td:last-child{
   border:1px solid #d9d9dc;
   border-width:0 1px 1px 1px;
 }
+@media (min-width: 768px){
+  .fake-table__row:hover, .fake-table__row--expanded .fake-table__row--child:hover{
+    background:#f9f9f9;
+  }
+}
 .fake-table__row--head{
   background:#ededed;
   border:1px solid #d9d9dc;
   text-align:center;
   font-weight:400;
 }
+.fake-table__row--head:hover{
+  background:#ededed;
+}
 @media (min-width: 768px){
   .fake-table__row--head{
     text-align:left;
-  }
-}
-@media (min-width: 768px){
-  .fake-table__row:hover, .fake-table__row--expanded .fake-table__row--child:hover{
-    background:#f9f9f9;
   }
 }
 .fake-table__row > div{

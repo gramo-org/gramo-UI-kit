@@ -12,20 +12,23 @@
     border: 1px solid var(--table-border-color);
     border-width: 0 1px 1px 1px;
 
+    &:hover {
+      @media (--tablet) { background: var(--row-hover); }
+    }
+
     &--head {
       background: var(--table-head-background);
       border: 1px solid var(--table-border-color);
       text-align: center;
       font-weight: var(--font-400);
 
+      &:hover {
+        background: var(--table-head-background);
+      }
 
       @media (--tablet) {
         text-align: left;
       }
-    }
-
-    &:hover {
-      @media (--tablet) { background: var(--row-hover); }
     }
 
     & > div {
