@@ -15,12 +15,20 @@
       @media (--tablet) { background: var(--row-hover); }
     }
 
+    &-label {
+      justify-content: center;
+      font-size: 1.6rem;
+      @media (--hd) { text-align: right; font-size: 1.4rem; }
+      font-weight: 600;
+    }
+
     &--head {
       background: var(--table-head-background);
       border: 1px solid var(--table-border-color);
       text-align: center;
       font-weight: var(--font-400);
       display: none;
+      cursor: default;
       @media (--tablet) { display: flex; }
 
       &:hover {
@@ -29,6 +37,19 @@
 
       @media (--tablet) {
         text-align: left;
+      }
+    }
+
+    &--foot {
+      border: 0;
+      background: var(--table-head-background);
+      justify-content: center;
+      padding: .5rem 0;
+      margin-bottom: -1rem;
+      margin-top: 2rem;
+
+      &:hover {
+        background: var(--table-head-background);
       }
     }
 
@@ -92,5 +113,54 @@
     .table-row-toggle {
       @extend .icon--chevron-down;
     }
+  }
+}
+
+/*** Provide containers to space out fake-table rows into sub tables ***/
+
+.fake-table__subtable {
+  padding: 0 1rem;
+
+  &--spaced {
+    margin: 2rem 0;
+    @media (--hd) {
+      max-height: 500px;
+      overflow-y: scroll;
+    }
+
+    .fake-table__row:first-child {
+      border-top-width: 1px;
+    }
+
+    .fake-table__row {
+
+      div[class*="col-"]:first-child,
+      div[class*="col-"]:last-child {
+        justify-content: center;
+        font-weight: 600;
+      }
+
+      &--selected {
+        background: var(--gramo-blue);
+        color: #fff;
+
+        .table-row-toggle:before {
+          color: #fff;
+        }
+      }
+    }
+
+    &:first-child {
+      flex: 1 1 400px;
+    }
+
+    &:last-child {
+      flex: 1 1 60%;
+      @media (--hd) { margin-left: 3rem; }
+    }
+  }
+
+  .fake-table__row--expanded {
+    background: var(--table-head-background);
   }
 }

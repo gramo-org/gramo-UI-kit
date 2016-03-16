@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <!--Site-header example-->
+      <header class="site-header">
+        <section class="container container--hd">
+          <!-- <h1 class="site-header__title"><img src="img/gramo-logo.png" alt="gramo logo"></h1>
+          <p class="site-header__description">Component based UI kit</p> -->
+          <nav>
+            <div class="toggle-sidebar">
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#"><i class="icon--home"></i></a></li>
+              <li class="breadcrumbs__item"><a href="#">Innlesning</a></li>
+              <li class="breadcrumbs__item"><a href="#">Avvik kontroll</a></li>
+              <li class="breadcrumbs__item"><a href="#">NRK rapport</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <!--End Site-header example-->
+
+      <!--Content-header example-->
+      <section class="container container--hd">
+        <header class="content-header">
+          <div class="content-header__above">
+            <h2 class="content-header__title">Ikke identifiserte <span class="badge badge--error">31</span></h2>
+          </div>
+        </header>
+      </section>
+
+      <section class="container container--hd">
+        <div class="tabs">
+          <ul class='tabs__nav'>
+            <li class='tabs__nav__item'><a href="#nrk">NRK</a></li>
+            <li class='tabs__nav__item'><a href="#p4">P4 </a></li>
+            <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
+            <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
+          </ul>
+          <section id="nrk" class="tabs__section">
+            <!--Table NRK-->
+            <div class="fake-table">
+              <div class="fake-table__row fake-table__row--head">
+                <div class="col-sm-2">
+                  <div class="searchable-list">
+                    <div class="searchable-list__heading">
+                      <span class="searchable-list__selected">P3</span>
+                    </div>
+                    <div class="searchable-list__dropdown">
+                      <input type="text" value="P3" class="form__input form__input--block searchable-list__search">
+                      <ul>
+                        <li class="searchable-list__option">P1</li>
+                        <li class="searchable-list__option">P2</li>
+                        <li class="searchable-list__option">P3</li>
+                      </ul>
+                    </div>
+                  </div><!--end searchable list-->
+                </div><!--end .col-sm-2-->
+              </div><!--end .fake-table__row head-->
+              <div class="row">
+                <div class="fake-table__subtable fake-table__subtable--spaced">
+                  <div class="fake-table__row fake-table__row--selected">
+                    <div class="col-xs-1" data-label="Treff">1</div>
+                    <div class="col-xs-6">
+                      <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                      <span data-label="HovedArtist">Hawksley Workman</span>
+                    </div>
+                    <div class="col-xs-4">
+                      <span class="text--bold" data-label="Ant. Avspillinger">234</span>
+                      <span data-label="Sum Spilletid">3:27:51</span>
+                    </div>
+                    <div class="col-xs-1 text--center">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1" data-label="Treff">1</div>
+                    <div class="col-xs-6">
+                      <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                      <span data-label="HovedArtist">Hawksley Workman</span>
+                    </div>
+                    <div class="col-xs-4">
+                      <span class="text--bold" data-label="Ant. Avspillinger">234</span>
+                      <span data-label="Sum Spilletid">3:27:51</span>
+                    </div>
+                    <div class="col-xs-1 text--center">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1" data-label="Treff">1</div>
+                    <div class="col-xs-6">
+                      <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                      <span data-label="HovedArtist">Hawksley Workman</span>
+                    </div>
+                    <div class="col-xs-4">
+                      <span class="text--bold" data-label="Ant. Avspillinger">234</span>
+                      <span data-label="Sum Spilletid">3:27:51</span>
+                    </div>
+                    <div class="col-xs-1 text--center">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1" data-label="Treff">1</div>
+                    <div class="col-xs-6">
+                      <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                      <span data-label="HovedArtist">Hawksley Workman</span>
+                    </div>
+                    <div class="col-xs-4">
+                      <span class="text--bold" data-label="Ant. Avspillinger">234</span>
+                      <span data-label="Sum Spilletid">3:27:51</span>
+                    </div>
+                    <div class="col-xs-1 text--center">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1" data-label="Treff">1</div>
+                    <div class="col-xs-6">
+                      <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                      <span data-label="HovedArtist">Hawksley Workman</span>
+                    </div>
+                    <div class="col-xs-4">
+                      <span class="text--bold" data-label="Ant. Avspillinger">234</span>
+                      <span data-label="Sum Spilletid">3:27:51</span>
+                    </div>
+                    <div class="col-xs-1 text--center">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1" data-label="Treff">1</div>
+                    <div class="col-xs-6">
+                      <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                      <span data-label="HovedArtist">Hawksley Workman</span>
+                    </div>
+                    <div class="col-xs-4">
+                      <span class="text--bold" data-label="Ant. Avspillinger">234</span>
+                      <span data-label="Sum Spilletid">3:27:51</span>
+                    </div>
+                    <div class="col-xs-1 text--center">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1" data-label="Treff">1</div>
+                    <div class="col-xs-6">
+                      <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                      <span data-label="HovedArtist">Hawksley Workman</span>
+                    </div>
+                    <div class="col-xs-4">
+                      <span class="text--bold" data-label="Ant. Avspillinger">234</span>
+                      <span data-label="Sum Spilletid">3:27:51</span>
+                    </div>
+                    <div class="col-xs-1 text--center">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1" data-label="Treff">1</div>
+                    <div class="col-xs-6">
+                      <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                      <span data-label="HovedArtist">Hawksley Workman</span>
+                    </div>
+                    <div class="col-xs-4">
+                      <span class="text--bold" data-label="Ant. Avspillinger">234</span>
+                      <span data-label="Sum Spilletid">3:27:51</span>
+                    </div>
+                    <div class="col-xs-1 text--center">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1" data-label="Treff">1</div>
+                    <div class="col-xs-6">
+                      <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                      <span data-label="HovedArtist">Hawksley Workman</span>
+                    </div>
+                    <div class="col-xs-4">
+                      <span class="text--bold" data-label="Ant. Avspillinger">234</span>
+                      <span data-label="Sum Spilletid">3:27:51</span>
+                    </div>
+                    <div class="col-xs-1 text--center">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1" data-label="Treff">1</div>
+                    <div class="col-xs-6">
+                      <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                      <span data-label="HovedArtist">Hawksley Workman</span>
+                    </div>
+                    <div class="col-xs-4">
+                      <span class="text--bold" data-label="Ant. Avspillinger">234</span>
+                      <span data-label="Sum Spilletid">3:27:51</span>
+                    </div>
+                    <div class="col-xs-1 text--center">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1" data-label="Treff">1</div>
+                    <div class="col-xs-6">
+                      <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                      <span data-label="HovedArtist">Hawksley Workman</span>
+                    </div>
+                    <div class="col-xs-4">
+                      <span class="text--bold" data-label="Ant. Avspillinger">234</span>
+                      <span data-label="Sum Spilletid">3:27:51</span>
+                    </div>
+                    <div class="col-xs-1 text--center">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                </div><!--end .fake-table__subtable-->
+
+                <div class="fake-table__subtable fake-table__subtable--spaced">
+                  <div class="fake-table__row fake-table__row--expanded">
+                    <div class="fake-table__toggle-wrapper">
+                      <div class="fake-table__toggle-row">
+                        <div class="col-xs-1">90%</div>
+                        <div class="col-xs-10">
+                          <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                          <span data-label="HovedArtist">Hawksley Workman</span>
+                        </div>
+                        <div class="col-xs-1 text--center">
+                          <a href="#" class="table-row-toggle"></a>
+                        </div>
+                      </div><!--end .fake-table__toggle-row-->
+                    </div><!--end .fake-table__toggle-wrapper-->
+                    <div class="fake-table__row fake-table__row--child">
+                      <div class="col-md">
+
+                        <div class="row">
+                          <div class="col-md-1"></div><!--end .col-md-1-->
+                          <div class="col-md-5"><h6 class="hidden-on-mobile">Match Record</h6></div><!--end .col-md-5-->
+                          <div class="col-md-1"></div><!--end .col-md-1-->
+                          <div class="col-md-5"><h6 class="hidden-on-mobile">Match Result</h6></div><!--end .col-md-5-->
+                        </div><!--end .row-->
+                        <form>
+                          <div class="row">
+                            <div class="col-xs-12 col-md-1 fake-table__row-label">Artist</div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5">
+                              <label class="form__label is-valid">
+                                <input type="text" value="Hawksley Workman" class="form__input form__input--block">
+                              </label>
+                            </div><!--end .col-md-5-->
+                            <div class="col-xs-12 col-md-1"></div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5">
+                              <label class="form__label is-valid">
+                                <input type="text" value="Hawksley Workman" class="form__input form__input--block">
+                              </label>
+                            </div><!--end .col-md-5-->
+                          </div><!--end .row-->
+
+                          <div class="row">
+                            <div class="col-xs-12 col-md-1 fake-table__row-label">Album</div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5">
+                              <label class="form__label is-valid">
+                                <input type="text" value="Is That What You Call Love?" class="form__input form__input--block">
+                              </label>
+                            </div><!--end .col-md-5-->
+                            <div class="col-xs-12 col-md-1"></div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5">
+                              <label class="form__label is-valid">
+                                <input type="text" value="Is That What You Call Love?" class="form__input form__input--block">
+                              </label>
+                            </div><!--end .col-md-5-->
+                          </div><!--end .row-->
+
+                          <div class="row">
+                            <div class="col-md-1 fake-table__row-label">ISRC</div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5">
+                              <label class="form__label has-error">
+                                <input type="text" value="0937638494" class="form__input form__input--block">
+                              </label>
+                            </div><!--end .col-md-5-->
+                            <div class="col-xs-12 col-md-1"></div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5">
+                              <label class="form__label has-error">
+                                <input type="text" value="394857563" class="form__input form__input--block">
+                              </label>
+                            </div><!--end .col-md-5-->
+                          </div><!--end .row-->
+
+                          <div class="row">
+                            <div class="col-xs-12 col-md-1 fake-table__row-label">Year</div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5">
+                              <label class="form__label is-valid">
+                                <input type="text" value="01 June 2016" class="form__input form__input--block">
+                              </label>
+                            </div><!--end .col-md-5-->
+                            <div class="col-xs-12 col-md-1"></div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5">
+                              <label class="form__label is-valid">
+                                <input type="text" value="01 June 2016" class="form__input form__input--block">
+                              </label>
+                            </div><!--end .col-md-5-->
+                          </div><!--end .row-->
+                        </form>
+                        <div class="fake-table__row fake-table__row--foot">
+                          <a href="#" class="link--inline link--chevron-right">Vis alle felter</a>
+                        </div><!--end .fake-table__row footer-->
+                      </div><!--end .col-md-12-->
+                    </div><!--end .fake-table__row child-->
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="fake-table__toggle-wrapper">
+                      <div class="fake-table__toggle-row">
+                        <div class="col-xs-1">90%</div>
+                        <div class="col-xs-10">
+                          <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                          <span data-label="HovedArtist">Hawksley Workman</span>
+                        </div>
+                        <div class="col-xs-1 text--center">
+                          <a href="#" class="table-row-toggle"></a>
+                        </div>
+                      </div><!--end .fake-table__toggle-row-->
+                    </div><!--end .fake-table__toggle-wrapper-->
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="fake-table__toggle-wrapper">
+                      <div class="fake-table__toggle-row">
+                        <div class="col-xs-1">90%</div>
+                        <div class="col-xs-10">
+                          <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                          <span data-label="HovedArtist">Hawksley Workman</span>
+                        </div>
+                        <div class="col-xs-1 text--center">
+                          <a href="#" class="table-row-toggle"></a>
+                        </div>
+                      </div><!--end .fake-table__toggle-row-->
+                    </div><!--end .fake-table__toggle-wrapper-->
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="fake-table__toggle-wrapper">
+                      <div class="fake-table__toggle-row">
+                        <div class="col-xs-1">90%</div>
+                        <div class="col-xs-10">
+                          <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                          <span data-label="HovedArtist">Hawksley Workman</span>
+                        </div>
+                        <div class="col-xs-1 text--center">
+                          <a href="#" class="table-row-toggle"></a>
+                        </div>
+                      </div><!--end .fake-table__toggle-row-->
+                    </div><!--end .fake-table__toggle-wrapper-->
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="fake-table__toggle-wrapper">
+                      <div class="fake-table__toggle-row">
+                        <div class="col-xs-1">90%</div>
+                        <div class="col-xs-10">
+                          <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                          <span data-label="HovedArtist">Hawksley Workman</span>
+                        </div>
+                        <div class="col-xs-1 text--center">
+                          <a href="#" class="table-row-toggle"></a>
+                        </div>
+                      </div><!--end .fake-table__toggle-row-->
+                    </div><!--end .fake-table__toggle-wrapper-->
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="fake-table__toggle-wrapper">
+                      <div class="fake-table__toggle-row">
+                        <div class="col-xs-1">90%</div>
+                        <div class="col-xs-10">
+                          <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                          <span data-label="HovedArtist">Hawksley Workman</span>
+                        </div>
+                        <div class="col-xs-1 text--center">
+                          <a href="#" class="table-row-toggle"></a>
+                        </div>
+                      </div><!--end .fake-table__toggle-row-->
+                    </div><!--end .fake-table__toggle-wrapper-->
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="fake-table__toggle-wrapper">
+                      <div class="fake-table__toggle-row">
+                        <div class="col-xs-1">90%</div>
+                        <div class="col-xs-10">
+                          <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                          <span data-label="HovedArtist">Hawksley Workman</span>
+                        </div>
+                        <div class="col-xs-1 text--center">
+                          <a href="#" class="table-row-toggle"></a>
+                        </div>
+                      </div><!--end .fake-table__toggle-row-->
+                    </div><!--end .fake-table__toggle-wrapper-->
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="fake-table__toggle-wrapper">
+                      <div class="fake-table__toggle-row">
+                        <div class="col-xs-1">90%</div>
+                        <div class="col-xs-10">
+                          <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                          <span data-label="HovedArtist">Hawksley Workman</span>
+                        </div>
+                        <div class="col-xs-1 text--center">
+                          <a href="#" class="table-row-toggle"></a>
+                        </div>
+                      </div><!--end .fake-table__toggle-row-->
+                    </div><!--end .fake-table__toggle-wrapper-->
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="fake-table__toggle-wrapper">
+                      <div class="fake-table__toggle-row">
+                        <div class="col-xs-1">90%</div>
+                        <div class="col-xs-10">
+                          <span class="text--bold" data-label="Tittel">Is That What You Call Love?</span>
+                          <span data-label="HovedArtist">Hawksley Workman</span>
+                        </div>
+                        <div class="col-xs-1 text--center">
+                          <a href="#" class="table-row-toggle"></a>
+                        </div>
+                      </div><!--end .fake-table__toggle-row-->
+                    </div><!--end .fake-table__toggle-wrapper-->
+                  </div><!--end .fake-table__row-->
+                </div><!--end .fake-table__subtable-->
+              </div><!--end .row-->
+
+            </div><!--end fake table-->
+
+
+          </section>
+        </div>
+      </section>
+
+      <hr class="spacer">
+
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="js/vendor/jquery-1.11.3.min.js"></script>
+<script src="js/default.js"></script>
+
+</body>
+</html>

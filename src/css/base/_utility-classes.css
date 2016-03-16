@@ -21,8 +21,13 @@
   color: var(--slate-gray);
 }
 
-.link--no-style {
-  color: var(--base-font-color);
+.text--bold {
+  font-weight: 600;
+}
+
+.hidden-on-mobile {
+  display: none;
+  @media (--desktop) { display: block; }
 }
 
 .no-padding {
