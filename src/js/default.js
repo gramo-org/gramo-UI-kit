@@ -78,10 +78,10 @@ $(document).ready(function() {
   appendElements(tableSummaryCell, button);
 
   //Expand table rows
-  // $('td > a').click(function(){
-  //   $(this).closest('tr').next('.table__row--expanded').toggleClass('is-expanded');
-  //   $(this).find('i').toggleClass('icon--chevron-right icon--chevron-down');
-  // });
+  $('.fake-table__toggle-row').click(function(){
+    $(this).closest('.fake-table__row').toggleClass('fake-table__row--expanded');
+    // $(this).find('i').toggleClass('icon--chevron-right icon--chevron-down');
+  });
 
   //Toggle Vertical nav
   $('.vertical__nav__item--has-children > a').click(function(e){

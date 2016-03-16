@@ -51,6 +51,10 @@
       margin: 0 0 1rem 0;
     }
 
+    &--reduced {
+      width: calc(100% - .5rem);
+    }
+
     /* Percents */
     &--percent {
       margin: 0;
@@ -155,6 +159,30 @@
         background-image: none;
       }
     }
+
+  .form__label.has-error .form__input--validation-hidden,
+  .form__label.is-valid .form__input--validation-hidden {
+    @media (--tablet) { background-image: none!important; }
+  }
+
+  .form__label.is-valid .form__input--validation-hidden {
+    @media (--tablet) { border: 1px solid var(--light-gray); }
+  }
+
+  .form__label--validation-shared.is-valid::after,
+  .form__label--validation-shared.has-error::after {
+    content: "\e900";
+    color: var(--gramo-green);
+    font-family: 'icomoon';
+    position: absolute;
+    right: -6rem;
+    top: 1.5rem;
+  }
+
+  .form__label--validation-shared.has-error::after {
+    content: "\e901";
+    color: var(--gramo-red);
+  }
 
   .input-error {
     color: var(--error);

@@ -9,6 +9,10 @@
     font-size: 1.1rem;
   }
 
+  &--small > .btn {
+    font-size: 1.1rem;
+  }
+
   button:not(:first-of-type) {
 
     @media (--tablet) {
@@ -20,13 +24,12 @@
 
   .btn {
     display: inline-block;
-    width: 49%;
+    width: auto;
     margin: 1rem 0 1rem .2rem;
     border-radius: 2px;
 
     @media (--tablet) {
       margin: 0;
-      width: auto;
       border-radius: 2px 0 0 2px;
     }
 
