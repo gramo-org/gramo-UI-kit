@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   //Expand table rows
   $('.fake-table__toggle-row').click(function(){
-    $(this).closest('.fake-table__row').toggleClass('fake-table__row--expanded');
+    $(this).closest('.fake-table__row').toggleClass('fake-table__row--expanded').siblings().removeClass('fake-table__row--expanded');
     // $(this).find('i').toggleClass('icon--chevron-right icon--chevron-down');
   });
 
