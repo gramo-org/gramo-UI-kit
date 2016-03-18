@@ -61,4 +61,12 @@
     @extend .row;
   }
 
+  &__toolbar {
+    margin-top: 2rem;
+    background: var(--table-head-background);
+    border: 1px solid var(--table-border-color);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+
 }
