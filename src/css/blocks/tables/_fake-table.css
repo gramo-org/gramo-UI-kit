@@ -1,5 +1,5 @@
 .fake-table {
-  margin: 2rem 0;
+  margin: 0;
   font-size: 1.4rem;
   @extend .container;
   min-width: 100%;
@@ -132,8 +132,6 @@
 .fake-table--group {
 
   .fake-table {
-    min-width: 0;
-    margin: 0;
 
     &__scrollarea {
 
@@ -158,20 +156,22 @@
         color: #fff;
       }
     }
+
+    .btn-group {
+      display: none;
+    }
   }
 
   .fake-table__row--expanded {
     background: var(--table-head-background);
-  }
-
-  .fake-table__row--expanded:hover {
 
     .fake-table__cell--action {
-      position: relative;
+      justify-content: center;
+    }
 
-      & > .btn-group--hover {
-        display: block;
-      }
+    .btn-group {
+      display: block;
+      align-self: flex-end;
     }
   }
 }
@@ -211,6 +211,8 @@
   display: flex;
   justify-content: space-around;
   @extend .container;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /*** Infobar ***/

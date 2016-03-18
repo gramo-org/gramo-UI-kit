@@ -8,7 +8,7 @@
   &__nav {
     @extend .row;
     @extend %no-list;
-    margin-bottom: -2.5rem;
+    margin-bottom: -.5rem;
     position: relative;
     z-index: 1;
 
@@ -62,7 +62,6 @@
   }
 
   &__toolbar {
-    margin-top: 2rem;
     background: var(--table-head-background);
     border: 1px solid var(--table-border-color);
     padding: 1rem 0;

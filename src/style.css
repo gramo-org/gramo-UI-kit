@@ -1420,7 +1420,7 @@ a:active, a:hover{
   background-image:none;
 }
 
-  @media (min-width: 768px){
+  @media (min-width: 960px){
   .form__label.has-error .form__input--validation-hidden, .form__label.is-valid .form__input--validation-hidden{
     background-image:none!important;
   }
@@ -1442,7 +1442,7 @@ a:active, a:hover{
     content:none;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 960px){
   .form__label--validation-shared.is-valid::after, .form__label--validation-shared.has-error::after{
     content:"\e900";
   }
@@ -1457,7 +1457,7 @@ a:active, a:hover{
     content:none;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 960px){
   .form__label--validation-shared.has-error::after{
     content:"\e901";
   }
@@ -2484,7 +2484,7 @@ tr > td:last-child{
   }
 }
 .table{
-  margin-top:2rem;
+  margin-top:0;
   table-layout:fixed;
   width:100%;
 }
@@ -2711,7 +2711,7 @@ tr > td:last-child{
   font-size:4.2rem;
 }
 .fake-table{
-  margin:2rem 0;
+  margin:0;
   font-size:1.4rem;
   min-width:100%;
 }
@@ -2832,11 +2832,6 @@ tr > td:last-child{
   background:#fdfdfd;
 }
 
-.fake-table--group .fake-table{
-  min-width:0;
-  margin:0;
-}
-
 @media (min-width: 1200px){
   .fake-table--group .fake-table__scrollarea{
     height:90vh;
@@ -2857,16 +2852,25 @@ tr > td:last-child{
   color:#fff;
 }
 
+.fake-table--group .fake-table__row .btn-group{
+  display:none;
+}
+
 .fake-table--group .fake-table__row--expanded{
   background:#ededed;
 }
 
-.fake-table--group .fake-table__row--expanded:hover .fake-table__cell--action{
-  position:relative;
+.fake-table--group .fake-table__row--expanded .fake-table__cell--action{
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
 }
 
-.fake-table--group .fake-table__row--expanded:hover .fake-table__cell--action > .btn-group--hover{
+.fake-table--group .fake-table__row--expanded .btn-group{
   display:block;
+  -webkit-align-self:flex-end;
+  -ms-flex-item-align:end;
+  align-self:flex-end;
 }
 
 .fake-table__container--sidebar{
@@ -2909,6 +2913,8 @@ tr > td:last-child{
   -webkit-justify-content:space-around;
   -ms-flex-pack:distribute;
   justify-content:space-around;
+  padding-top:1rem;
+  padding-bottom:1rem;
 }
 
 .fake-table__infobar{
@@ -3369,7 +3375,7 @@ tr > td:last-child{
   }
 }
 .tabs__nav{
-  margin-bottom:-2.5rem;
+  margin-bottom:-.5rem;
   position:relative;
   z-index:1;
 }
@@ -3411,7 +3417,6 @@ tr > td:last-child{
   padding:1rem 0;
 }
 .tabs__toolbar{
-  margin-top:2rem;
   background:#ededed;
   border:1px solid #d9d9dc;
   padding:1rem 0;

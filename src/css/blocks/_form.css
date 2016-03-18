@@ -164,7 +164,7 @@
 
   .form__label.has-error .form__input--validation-hidden,
   .form__label.is-valid .form__input--validation-hidden {
-    @media (--tablet) { background-image: none!important; }
+    @media (--desktop) { background-image: none!important; }
   }
 
   .form__label.is-valid .form__input--validation-hidden {
@@ -180,7 +180,7 @@
     top: 1.5rem;
     background: var(--gramo-white);
     content: none;
-    @media (--tablet) { content: "\e900"; }
+    @media (--desktop) { content: "\e900"; }
   }
 
   .form__validation-divider {
@@ -190,5 +190,5 @@
   .form__label--validation-shared.has-error::after {
     color: var(--gramo-red);
     content: none;
-    @media (--tablet) { content: "\e901"; }
+    @media (--desktop) { content: "\e901"; }
   }
