@@ -2899,11 +2899,10 @@ tr > td:last-child{
   flex:1 1 400px;
 }
 
-.fake-table__container--sidebar .fake-table__row div[class*="col-"]:first-child, .fake-table__container--sidebar .fake-table__row div[class*="col-"]:last-child{
+.fake-table__container--sidebar .fake-table__row div[class*="col-"]:first-child, .fake-table__container--sidebar .fake-table__row div[class*="col-"]:last-child, .fake-table__container--main .fake-table__row div[class*="col-"]:first-child, .fake-table__container--main .fake-table__row div[class*="col-"]:last-child{
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
-  font-weight:600;
 }
 
 .fake-table__container--main{
@@ -2916,13 +2915,6 @@ tr > td:last-child{
   .fake-table__container--main{
     margin-left:2rem;
   }
-}
-
-.fake-table__container--main .fake-table__row div[class*="col-"]:last-child{
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
-  font-weight:600;
 }
 
 .fake-table__toolbar{
@@ -3720,7 +3712,7 @@ pre.prettyprint{
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
-  border:1px solid #a5a4ab;
+  border:1px solid #d9d9dc;
   border-radius:2px 0 0 2px;
   outline:none;
 }
@@ -3731,11 +3723,7 @@ pre.prettyprint{
   -ms-flex:0 0 auto;
   flex:0 0 auto;
   border-radius:0 2px 2px 0;
-  background:#0095da;
-  font-weight:300;
-  text-transform:uppercase;
-  color:#fff;
-  padding:2rem;
+  margin-left:-1px;
 }
 
 .search__clear{
@@ -3766,7 +3754,7 @@ pre.prettyprint{
   -ms-flex-pack:center;
   justify-content:center;
   border-radius:2px 0 0 2px;
-  background:#a5a4ab;
+  background:#d9d9dc;
   font-family:'icomoon';
   font-weight:normal;
   font-style:normal;

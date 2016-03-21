@@ -181,13 +181,15 @@
 
 .fake-table__container--sidebar {
   flex: 1 1 400px;
+}
 
+.fake-table__container--sidebar,
+.fake-table__container--main {
   .fake-table__row {
 
     div[class*="col-"]:first-child,
     div[class*="col-"]:last-child {
       justify-content: center;
-      font-weight: 600;
     }
   }
 }
@@ -195,14 +197,6 @@
 .fake-table__container--main {
   flex: 1 1 60%;
   @media (--hd) { margin-left: 2rem; }
-
-  .fake-table__row {
-
-    div[class*="col-"]:last-child {
-      justify-content: center;
-      font-weight: 600;
-    }
-  }
 }
 
 /*** Toolbar ***/
