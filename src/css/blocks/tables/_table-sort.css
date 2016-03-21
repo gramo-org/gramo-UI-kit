@@ -6,7 +6,7 @@
   margin-top: 0.15rem;
 
   &__link {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     position: absolute;
     display: block;
     left: 0;
@@ -19,16 +19,16 @@
     }
 
     &--up {
-      top: 0.1rem;
+      top: 0.3rem;
     }
 
     &--down {
-      top: 1rem;
+      top: 1.2rem;
     }
 
     &--up i,
     &--down i {
-      transform: rotate(-90deg);
+      color: var(--slate-gray);
     }
   }
 }

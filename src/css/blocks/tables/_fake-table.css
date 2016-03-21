@@ -130,6 +130,7 @@
 /*** Groups of fake tables ***/
 
 .fake-table--group {
+  margin-top: 2rem;
 
   .fake-table {
 
@@ -208,8 +209,8 @@
 
 .fake-table__toolbar {
   background: var(--table-head-background);
-  display: flex;
-  justify-content: space-around;
+  /*display: flex;*/
+  /*justify-content: flex-end;*/
   @extend .container;
   padding-top: 1rem;
   padding-bottom: 1rem;
