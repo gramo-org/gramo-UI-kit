@@ -1,5 +1,5 @@
 .table {
-  margin-top: 2rem;
+  margin-top: 0;
   table-layout: fixed;
   width: 100%;
   @media (--desktop) { min-width: 700px; width: auto; }

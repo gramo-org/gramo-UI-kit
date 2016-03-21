@@ -25,6 +25,10 @@
   font-weight: 600;
 }
 
+.text--small {
+  font-size: 85%;
+}
+
 .hidden-on-mobile {
   display: none;
   @media (--desktop) { display: block; }

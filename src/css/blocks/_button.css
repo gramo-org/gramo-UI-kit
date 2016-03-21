@@ -106,6 +106,13 @@
   &--outline {
     background: none;
     border: 1px solid;
+
+    &-inverse {
+      color: var(--slate-gray);
+      background: #fff;
+      border-color: var(--silver);
+      padding: .85rem 2rem;
+    }
   }
 
   &--simple {
@@ -141,5 +148,11 @@
     @media (--tablet) {
       padding: .3rem 2rem;
     }
+  }
+
+  /*** Buttons with icons ***/
+  &--small > i[class^="icon--"] {
+    font-size: 1rem;
+    margin-right: .5rem;
   }
 }

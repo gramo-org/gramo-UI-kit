@@ -1,5 +1,5 @@
 .fake-table {
-  margin: 2rem 0;
+  margin: 0;
   font-size: 1.4rem;
   @extend .container;
   min-width: 100%;
@@ -127,61 +127,109 @@
   }
 }
 
-/*** Provide containers to space out fake-table rows into sub tables ***/
+/*** Groups of fake tables ***/
 
-.fake-table__subtable {
-  padding: 0 1rem;
+.fake-table--group {
+  margin-top: 2rem;
 
-  &--spaced {
-    margin: 2rem 0;
-    @media (--hd) {
-      height: 90vh;
-      overflow-y: auto;
-    }
+  .fake-table {
 
-    .fake-table__row:first-child {
-      border-top-width: 1px;
-    }
+    &__scrollarea {
 
-    .fake-table__row {
-
-      div[class*="col-"]:first-child,
-      div[class*="col-"]:last-child {
-        justify-content: center;
-        font-weight: 600;
+      @media (--hd) {
+        height: 90vh;
+        overflow-y: auto;
       }
+    }
+  }
 
-      &--selected {
-        background: var(--gramo-blue);
+  .fake-table__row:first-child {
+    border-top-width: 1px;
+  }
+
+  .fake-table__row {
+
+    &--selected {
+      background: var(--gramo-blue);
+      color: #fff;
+
+      .table-row-toggle:before {
         color: #fff;
-
-        .table-row-toggle:before {
-          color: #fff;
-        }
       }
     }
 
-    &:first-child {
-      flex: 1 1 400px;
-    }
-
-    &:last-child {
-      flex: 1 1 60%;
-      @media (--hd) { margin-left: 3rem; }
+    .btn-group {
+      display: none;
     }
   }
 
   .fake-table__row--expanded {
     background: var(--table-head-background);
 
-    &:hover {
-      .fake-table__cell--action {
-        position: relative;
+    .fake-table__cell--action {
+      justify-content: center;
+    }
 
-        & > .btn-group--hover {
-          display: block;
-        }
-      }
+    .btn-group {
+      display: block;
+      align-self: flex-end;
+    }
+  }
+}
+
+/*** Containers for fake tables allowing the table to be scrollable while a toolbar/header stays in position ***/
+
+.fake-table__container--sidebar {
+  flex: 1 1 400px;
+
+  .fake-table__row {
+
+    div[class*="col-"]:first-child,
+    div[class*="col-"]:last-child {
+      justify-content: center;
+      font-weight: 600;
+    }
+  }
+}
+
+.fake-table__container--main {
+  flex: 1 1 60%;
+  @media (--hd) { margin-left: 2rem; }
+
+  .fake-table__row {
+
+    div[class*="col-"]:last-child {
+      justify-content: center;
+      font-weight: 600;
+    }
+  }
+}
+
+/*** Toolbar ***/
+
+.fake-table__toolbar {
+  background: var(--table-head-background);
+  /*display: flex;*/
+  /*justify-content: flex-end;*/
+  @extend .container;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*** Infobar ***/
+
+.fake-table__infobar {
+  background: var(--gramo-blue);
+  color: #fff;
+  @extend .container;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  & > .row {
+
+    div[class*="col-"]:last-child {
+      justify-content: center;
     }
   }
 }
