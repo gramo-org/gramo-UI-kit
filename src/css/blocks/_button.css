@@ -83,7 +83,8 @@
     }
   }
 
-  &--error {
+  &--error,
+  &--hot {
     border-color: color(var(--error) shade(15%));
     background-color: var(--error);
 

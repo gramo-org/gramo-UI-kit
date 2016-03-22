@@ -34,6 +34,10 @@
   @media (--desktop) { display: block; }
 }
 
+.align--center {
+  justify-content: center;
+}
+
 .no-padding {
   padding: 0!important;
 

@@ -89,6 +89,17 @@ $(document).ready(function() {
     $(this).parent().toggleClass('vertical__nav__item--is-expanded');
   })
 
+  //Button select
+  $('.btn-select .btn').click(function(e){
+    e.preventDefault();
+    $(this).parent().toggleClass('btn-select--active');
+  });
+  $('.btn-select ul a').click(function(e){
+    e.preventDefault();
+    $(this).closest('.btn-select').removeClass('btn-select--active');
+    $('.btn-select .btn > span').text($(this).text());
+  });
+
   //smooth scroll
   // Get the height of the header
   var headerHeight = $(".site-header").height();

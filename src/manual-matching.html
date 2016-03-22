@@ -131,7 +131,7 @@
                       <div class="select select--full">
                         <select>
                           <option>Sortér</option>
-                          <option>Velg alle</option>
+                          <option>Velg alle ikke utgitt</option>
                           <option>Velg ingen</option>
                         </select>
                       </div><!--end .select-->
@@ -329,14 +329,27 @@
                   <section id="search-external-sources" class="tabs__section">
                     <div class="fake-table fake-table__scrollarea">
                       <div class="row tabs__toolbar">
-                        <div class="col-sm col-md-6 off-md-3">
+                        <div class="col-sm col-md-6 off-md-1">
                           <section class="search">
                             <form id="live-search" action="" class="search__form" method="post">
-                              <input type="text" class="search__form__input" id="filter" value="" placeholder="Søk i Spotify eller Discogs..." />
+                              <input type="text" class="search__form__input" value="" placeholder="Søk i Spotify eller Discogs..." />
                               <span class="search__clear"><i class="icon--cross"></i></span>
-                              <button class="btn btn--success search__submit">Søk alt</button>
+                              <div class="btn-select">
+                                <button class="btn btn--hot search__submit"><span>Søk alt</span> <i class="icon--arrow-down"></i></button>
+                                <ul>
+                                  <li><a href="#">Søk i alt</a></li>
+                                  <li><a href="#">Søk i Spotify</a></li>
+                                  <li><a href="#">Søk i Discogs</a></li>
+                                </ul>
+                              </div>
                             </form>
                           </section>
+                        </div>
+                        <div class="col-sm col-md-3 align--center">
+                          <button class="btn btn--success"><i class="fa fa-plus-circle"></i> Opprett ny innspilling</button>
+                        </div>
+                        <div class="col-sm col-md-2 align--center">
+                          <button class="btn btn--secondary"><i class="fa fa-share"></i> Restliste</button>
                         </div>
                       </div><!--end .tabs__toolbar-->
                       <div class="fake-table__row">
