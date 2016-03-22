@@ -13,7 +13,7 @@
 .search__form__input {
   /* Shrink and grow as needed, but never shrink so
      small that we can't read the placeholder */
-  flex: 1 0 auto;
+  flex: 1 0 30%;
   background: var(--gramo-white);
 
   /*Make sure the placeholder isn't poorly cut off*/
@@ -26,11 +26,10 @@
 }
 
 .search__submit {
-  /* Never shrink or grow */
   border: 0;
-  flex: 0 0 auto;
+  flex: 1 0 auto;
   border-radius: 0 2px 2px 0;
-  margin-left: -1px;
+  margin: 0 0 0 -1px;
 }
 
 .search__clear {
@@ -48,12 +47,6 @@
 }
 
 .search__form:before {
-  /* Don't shrink or grow and use a default size */
-  flex: 0 0 4rem;
-  /*Use flexbox to center the icon*/
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 2px 0 0 2px;
   background: var(--silver);
   font-family: 'icomoon';
@@ -61,4 +54,11 @@
   font-style: normal;
   color: var(--gramo-white);
   content: "\e909";
+  display: none;
+  /*Use flexbox to center the icon*/
+  /* Don't shrink or grow and use a default size */
+  flex: 0 0 4rem;
+  align-items: center;
+  justify-content: center;
+  @media (--tablet) { display: inline-flex; }
 }

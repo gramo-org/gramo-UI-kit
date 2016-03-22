@@ -137,7 +137,7 @@
     &__scrollarea {
 
       @media (--hd) {
-        height: 90vh;
+        height: 50vh;
         overflow-y: auto;
       }
     }
