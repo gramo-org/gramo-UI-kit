@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <!--Site-header example-->
+      <header class="site-header">
+        <section class="container container--hd">
+          <!-- <h1 class="site-header__title"><img src="img/gramo-logo.png" alt="gramo logo"></h1>
+          <p class="site-header__description">Component based UI kit</p> -->
+          <nav>
+            <div class="toggle-sidebar">
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#"><i class="icon--home"></i></a></li>
+              <li class="breadcrumbs__item"><a href="#">Innlesning</a></li>
+              <li class="breadcrumbs__item"><a href="#">Innleste filer</a></li>
+              <li class="breadcrumbs__item"><a href="#">NRK rapport</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <!--End Site-header example-->
+
+      <section class="container container--hd">
+        <div class="flash-message-wrapper"></div>
+        <img src="img/audun-temp.jpg" class="user__avatar user__avatar--large float--left">
+        <h2>Audun Haggernes</h2>
+        <div class="row">
+          <div class="col-xs col-md-6">
+            <form class="form">
+              <label class="form__label form__label--block">Navn
+                <input type="text" value="Audun Haggernes" class="form__input form__input--block">
+              </label>
+
+              <label class="form__label form__label--block">Epost
+                <input type="email" value="audun.haggernes@gramo.no" class="form__input form__input--block">
+              </label>
+              <label class="form__label form__label--block">Mobiltelefon
+                <input value="99900999" type="tel" class="form__input form__input--block">
+              </label>
+
+              <button type="submit" class="btn btn--primary btn--large default">Lagre</button>
+              <button type="submit" class="btn btn--hot btn--large default">Endre Passord</button>
+            </form>
+            <hr class="horizontal-rule">
+            <form class="form">
+              <label class="form__label form__label--block">Passord
+                <input type="password" disabled="disabled" value="12345678910" class="form__input form__input--block">
+              </label>
+              <label class="form__label form__label--block">Gjenta passord
+                <input type="password" disabled="disabled" value="12345678910" class="form__input form__input--block">
+              </label>
+              <button type="submit" disabled class="btn btn--primary btn--large default">Lagre Passord</button>
+
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="js/vendor/jquery-1.11.3.min.js"></script>
+<script src="js/default.js"></script>
+
+</body>
+</html>

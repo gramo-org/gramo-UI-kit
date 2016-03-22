@@ -58,6 +58,11 @@
   }
 }
 
+.float--left {
+  float: left;
+  margin-right: 1rem;
+}
+
 /* Flex order */
 
 .flex-mob-order {
