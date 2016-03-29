@@ -7,11 +7,15 @@
   line-height: 1.6rem;
   text-transform: uppercase;
 
-  &__name,
-  &__name > a {
+  &__name {
     color: var(--gramo-white);
     margin-left: 1rem;
     flex: 1 1 auto;
+  }
+
+  &__name > a {
+    color: var(--gramo-white);
+    text-decoration: none;
   }
 
   &__logout {

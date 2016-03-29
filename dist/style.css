@@ -2263,12 +2263,16 @@ a:active, a:hover{
   line-height:1.6rem;
   text-transform:uppercase;
 }
-.user__name, .user__name > a{
+.user__name{
   color:#fdfdfd;
   margin-left:1rem;
   -webkit-flex:1 1 auto;
   -ms-flex:1 1 auto;
   flex:1 1 auto;
+}
+.user__name > a{
+  color:#fdfdfd;
+  text-decoration:none;
 }
 .user__logout{
   display:block;
