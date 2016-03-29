@@ -2263,7 +2263,7 @@ a:active, a:hover{
   line-height:1.6rem;
   text-transform:uppercase;
 }
-.user__name{
+.user__name, .user__name > a{
   color:#fdfdfd;
   margin-left:1rem;
   -webkit-flex:1 1 auto;
@@ -2723,7 +2723,7 @@ tr > td:last-child{
   margin-top:0.15rem;
 }
 .table-sort__link{
-  font-size:0.6rem;
+  font-size:7px;
   position:absolute;
   display:block;
   left:0;
@@ -3538,6 +3538,7 @@ tr > td:last-child{
 
 .flash-message .btn{
   background:rgb(102, 149, 162);
+  margin-left:1rem;
 }
 
 .flash-message--error{
