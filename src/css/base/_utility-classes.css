@@ -63,6 +63,13 @@
   margin-right: 1rem;
 }
 
+/*** heading--inline ***/
+
+.heading--inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* Flex order */
 
 .flex-mob-order {

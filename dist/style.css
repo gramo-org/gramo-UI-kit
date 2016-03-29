@@ -93,6 +93,11 @@
   margin-right:1rem;
 }
 
+.heading--inline{
+  display:inline-block;
+  vertical-align:middle;
+}
+
 @media (min-width: 768px){
   .flex-mob-order{
     -webkit-order:0!important;
