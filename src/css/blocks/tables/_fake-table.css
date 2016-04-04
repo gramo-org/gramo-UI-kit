@@ -170,6 +170,11 @@
       justify-content: center;
     }
 
+    .fake-table__cell--label {
+      justify-content: center;
+      align-self: center;
+    }
+
     .btn-group {
       display: block;
       align-self: flex-end;

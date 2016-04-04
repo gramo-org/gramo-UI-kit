@@ -2949,6 +2949,15 @@ tr > td:last-child{
   justify-content:center;
 }
 
+.fake-table--group .fake-table__row--expanded .fake-table__cell--label{
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-align-self:center;
+  -ms-flex-item-align:center;
+  align-self:center;
+}
+
 .fake-table--group .fake-table__row--expanded .btn-group{
   display:block;
   -webkit-align-self:flex-end;
