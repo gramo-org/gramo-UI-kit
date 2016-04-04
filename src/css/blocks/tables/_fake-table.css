@@ -120,6 +120,11 @@
         /*@extend .fake-table__row:hover;*/
         background: var(--gramo-white);
       }
+
+      .fake-table__cell--label {
+        text-align: right;
+        align-self: center;
+      }
     }
     .table-row-toggle {
       @extend .icon--chevron-down;
@@ -168,11 +173,6 @@
 
     .fake-table__cell--action {
       justify-content: center;
-    }
-
-    .fake-table__cell--label {
-      justify-content: center;
-      align-self: center;
     }
 
     .btn-group {

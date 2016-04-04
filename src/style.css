@@ -2910,6 +2910,12 @@ tr > td:last-child{
 .fake-table__row--expanded .fake-table__row--child:hover{
   background:#fdfdfd;
 }
+.fake-table__row--expanded .fake-table__row--child .fake-table__cell--label{
+  text-align:right;
+  -webkit-align-self:center;
+  -ms-flex-item-align:center;
+  align-self:center;
+}
 
 .fake-table--group{
   margin-top:2rem;
@@ -2947,15 +2953,6 @@ tr > td:last-child{
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
-}
-
-.fake-table--group .fake-table__row--expanded .fake-table__cell--label{
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
-  -webkit-align-self:center;
-  -ms-flex-item-align:center;
-  align-self:center;
 }
 
 .fake-table--group .fake-table__row--expanded .btn-group{
