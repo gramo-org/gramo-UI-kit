@@ -314,7 +314,7 @@ td, th{
   margin-right:-1rem;
 }
 
-.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .box, .breadcrumbs, .breadcrumbs__item, .content-header__title, .content-header__meta, .content-header__action, .table-row-content p, .toggle-sidebar, .tabs__nav__item{
+.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .box, .breadcrumbs, .breadcrumbs__item, .content-header__title, .content-header__meta, .content-header__action, .table-row-content p, .fake-table__wrapper--sidebar, .fake-table__wrapper--main, .toggle-sidebar, .tabs__nav__item{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -332,7 +332,7 @@ td, th{
   padding-right:1rem;
 }
 
-.col-xs, .col-sm, .col-md, .col-lg, .list--expandable .list__item__results, .list--expandable .list__item__action, .breadcrumbs, .breadcrumbs__item, .content-header__title, .tabs__nav__item{
+.col-xs, .col-sm, .col-md, .col-lg, .list--expandable .list__item__results, .list--expandable .list__item__action, .breadcrumbs, .breadcrumbs__item, .content-header__title, .fake-table__wrapper--sidebar, .tabs__nav__item{
   -webkit-flex-grow:1;
   -ms-flex-positive:1;
   flex-grow:1;
@@ -419,7 +419,7 @@ td, th{
   max-width:91.66667%;
 }
 
-.col-xs-12, .content-header__action, .table-row-content p{
+.col-xs-12, .content-header__action, .table-row-content p, .fake-table__wrapper--main{
   -webkit-flex-basis:100%;
   -ms-flex-preferred-size:100%;
   flex-basis:100%;
@@ -621,7 +621,7 @@ td, th{
     flex-basis:58.33333%;
     max-width:58.33333%;
   }
-  .col-md-8, .content-header__action{
+  .col-md-8, .content-header__action, .fake-table__wrapper--main{
     -webkit-flex-basis:66.66667%;
     -ms-flex-preferred-size:66.66667%;
     flex-basis:66.66667%;
@@ -928,7 +928,7 @@ main{
   }
 }
 
-.container, .content-header, .fake-table, .fake-table__toggle-wrapper, .fake-table__toolbar, .fake-table__infobar, .tabs, .search{
+.container, .content-header, .fake-table, .fake-table__toggle-wrapper, .tabs, .search{
   padding:0 1rem;
 }
 
@@ -985,18 +985,18 @@ main{
   margin-bottom:1rem;
   text-align:center;
 }
-.container.grid-test > .row, .content-header.grid-test > .row, .fake-table.grid-test > .row, .fake-table__toggle-wrapper.grid-test > .row, .fake-table__toolbar.grid-test > .row, .fake-table__infobar.grid-test > .row, .tabs.grid-test > .row, .search.grid-test > .row{
+.container.grid-test > .row, .content-header.grid-test > .row, .fake-table.grid-test > .row, .fake-table__toggle-wrapper.grid-test > .row, .tabs.grid-test > .row, .search.grid-test > .row{
   border:1px solid #fff;
   border-width:0 0 1px 0;
 }
 
-.container.grid-test > .row > *, .content-header.grid-test > .row > *, .fake-table.grid-test > .row > *, .fake-table__toggle-wrapper.grid-test > .row > *, .fake-table__toolbar.grid-test > .row > *, .fake-table__infobar.grid-test > .row > *, .tabs.grid-test > .row > *, .search.grid-test > .row > *{
+.container.grid-test > .row > *, .content-header.grid-test > .row > *, .fake-table.grid-test > .row > *, .fake-table__toggle-wrapper.grid-test > .row > *, .tabs.grid-test > .row > *, .search.grid-test > .row > *{
   background:rgb(180, 184, 189);
   padding-top:2rem;
   padding-bottom:2rem;
 }
 
-.container.grid-test > .row > *:nth-child(odd), .content-header.grid-test > .row > *:nth-child(odd), .fake-table.grid-test > .row > *:nth-child(odd), .fake-table__toggle-wrapper.grid-test > .row > *:nth-child(odd), .fake-table__toolbar.grid-test > .row > *:nth-child(odd), .fake-table__infobar.grid-test > .row > *:nth-child(odd), .tabs.grid-test > .row > *:nth-child(odd), .search.grid-test > .row > *:nth-child(odd){
+.container.grid-test > .row > *:nth-child(odd), .content-header.grid-test > .row > *:nth-child(odd), .fake-table.grid-test > .row > *:nth-child(odd), .fake-table__toggle-wrapper.grid-test > .row > *:nth-child(odd), .tabs.grid-test > .row > *:nth-child(odd), .search.grid-test > .row > *:nth-child(odd){
   background:rgb(217, 219, 222);
 }
 ul, ol{
@@ -2956,27 +2956,23 @@ tr > td:last-child{
   align-self:flex-end;
 }
 
-.fake-table__container--sidebar{
-  -webkit-flex:1 1 400px;
-  -ms-flex:1 1 400px;
-  flex:1 1 400px;
+.fake-table__wrapper--sidebar{
+  padding:0;
 }
 
-.fake-table__container--sidebar .fake-table__row div[class*="col-"]:first-child, .fake-table__container--sidebar .fake-table__row div[class*="col-"]:last-child, .fake-table__container--main .fake-table__row div[class*="col-"]:first-child, .fake-table__container--main .fake-table__row div[class*="col-"]:last-child{
+.fake-table__wrapper--sidebar .fake-table__row div[class*="col-"]:first-child, .fake-table__wrapper--sidebar .fake-table__row div[class*="col-"]:last-child, .fake-table__wrapper--main .fake-table__row div[class*="col-"]:first-child, .fake-table__wrapper--main .fake-table__row div[class*="col-"]:last-child{
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
 }
 
-.fake-table__container--main{
-  -webkit-flex:1 1 60%;
-  -ms-flex:1 1 60%;
-  flex:1 1 60%;
+.fake-table__wrapper--main{
+  padding:0;
 }
 
 @media (min-width: 1200px){
-  .fake-table__container--main{
-    margin-left:2rem;
+  .fake-table__wrapper--main{
+    padding-left:2rem;
   }
 }
 

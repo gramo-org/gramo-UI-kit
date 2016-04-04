@@ -179,12 +179,13 @@
 
 /*** Containers for fake tables allowing the table to be scrollable while a toolbar/header stays in position ***/
 
-.fake-table__container--sidebar {
-  flex: 1 1 400px;
+.fake-table__wrapper--sidebar {
+  @extend .col-md;
+  padding: 0;
 }
 
-.fake-table__container--sidebar,
-.fake-table__container--main {
+.fake-table__wrapper--sidebar,
+.fake-table__wrapper--main {
   .fake-table__row {
 
     div[class*="col-"]:first-child,
@@ -194,18 +195,17 @@
   }
 }
 
-.fake-table__container--main {
-  flex: 1 1 60%;
-  @media (--hd) { margin-left: 2rem; }
+.fake-table__wrapper--main {
+  @extend .col-xs-12;
+  @extend .col-md-8;
+  padding: 0;
+  @media (--hd) { padding-left: 2rem; }
 }
 
 /*** Toolbar ***/
 
 .fake-table__toolbar {
   background: var(--table-head-background);
-  /*display: flex;*/
-  /*justify-content: flex-end;*/
-  @extend .container;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -215,7 +215,6 @@
 .fake-table__infobar {
   background: var(--gramo-blue);
   color: #fff;
-  @extend .container;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
