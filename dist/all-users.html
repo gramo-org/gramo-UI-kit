@@ -71,38 +71,37 @@
 
       <section class="container container--hd">
         <div class="flash-message-wrapper"></div>
-        <img src="img/audun-temp.jpg" class="user__avatar user__avatar--large float--left">
-        <h2 class="heading--inline">Audun Haggernes</h2>
-        <div class="row">
-          <div class="col-xs col-md-6">
-            <form class="form">
-              <label class="form__label form__label--block">Navn
-                <input type="text" value="Audun Haggernes" class="form__input form__input--block">
-              </label>
-
-              <label class="form__label form__label--block">Epost
-                <input type="email" value="audun.haggernes@gramo.no" class="form__input form__input--block">
-              </label>
-              <label class="form__label form__label--block">Mobiltelefon
-                <input value="99900999" type="tel" class="form__input form__input--block">
-              </label>
-
-              <button type="submit" class="btn btn--primary btn--large default">Lagre</button>
-              <button type="submit" class="btn btn--hot btn--large default">Endre Passord</button>
-            </form>
-            <hr class="horizontal-rule">
-            <form class="form">
-              <label class="form__label form__label--block">Passord
-                <input type="password" disabled="disabled" value="12345678910" class="form__input form__input--block">
-              </label>
-              <label class="form__label form__label--block">Gjenta passord
-                <input type="password" disabled="disabled" value="12345678910" class="form__input form__input--block">
-              </label>
-              <button type="submit" disabled class="btn btn--primary btn--large default">Lagre Passord</button>
-
-            </form>
-          </div>
-        </div>
+        <h2>Alle brukere</h2>
+        <table class="table">
+          <thead class="table__head--always-visible">
+            <tr>
+              <th>Navn</th>
+              <th>Epost</th>
+              <th>Telefon</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Navn">Audun Haggernes</td>
+              <td data-label="Epost">audun.haggernes@gramo.no</td>
+              <td data-label="Telefon">99900999</td>
+              <td class="text--right"><button type="button" name="button" class="btn btn--small btn--primary">Rediger</button></td>
+            </tr>
+            <tr>
+              <td data-label="Navn">Audun Haggernes</td>
+              <td data-label="Epost">audun.haggernes@gramo.no</td>
+              <td data-label="Telefon">99900999</td>
+              <td class="text--right"><button type="button" name="button" class="btn btn--small btn--primary">Rediger</button></td>
+            </tr>
+            <tr>
+              <td data-label="Navn">Audun Haggernes</td>
+              <td data-label="Epost">audun.haggernes@gramo.no</td>
+              <td data-label="Telefon">99900999</td>
+              <td class="text--right"><button type="button" name="button" class="btn btn--small btn--primary">Rediger</button></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
   </div><!--End site-wrapper-->
