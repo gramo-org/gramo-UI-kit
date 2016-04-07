@@ -68,7 +68,7 @@
     }
   }
 
-  &__toggle-wrapper {
+  &__toggle-container {
     @extend .container;
     width: 100%;
   }
@@ -109,7 +109,7 @@
     border-bottom: 1px solid var(--table-border-color);
     background: var(--row-hover);
 
-    .fake-table__toggle-wrapper {
+    .fake-table__toggle-container {
       border-bottom: 1px solid var(--table-border-color);
     }
 
