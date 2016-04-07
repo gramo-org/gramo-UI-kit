@@ -46,7 +46,7 @@
       margin-bottom: 0;
       text-align: left;
     }
-    @extend .col-sm;
+    /*@extend .col-sm;*/
     display: block;
   }
 
@@ -58,11 +58,11 @@
   }
 
   &__meta {
-    @extend .col-xs-6;
+    /*@extend .col-xs-6;
     @extend .col-sm-3;
     @extend .col-md-2;
+    padding-right: 0;*/
     display: block;
-    padding-right: 0;
     font-weight: var(--font-700);
     color: var(--slate-gray);
     text-align: center;
@@ -74,13 +74,15 @@
 
     date {
       font-weight: var(--font-300);
+      margin-right: 1rem;
     }
   }
 
   &__action {
-    @extend .col-xs-12;
+    flex: 1 0 auto;
+    /*@extend .col-xs-12;
     @extend .col-sm-6;
-    @extend .col-md-8;
+    @extend .col-md-8;*/
     display: block;
     text-align: center;
     @media (--tablet) { text-align: right; }

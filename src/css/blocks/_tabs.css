@@ -1,12 +1,12 @@
 .tabs {
-  @extend .container;
+  /*@extend .container;*/
   margin-top: 8rem;
   @media (--tablet) {
     margin-top: 2rem;
   }
 
   &__nav {
-    @extend .row;
+    /*@extend .row;*/
     @extend %no-list;
     margin-bottom: -.5rem;
     position: relative;
@@ -58,7 +58,7 @@
   }
 
   &__section {
-    @extend .row;
+    /*@extend .row;*/
   }
 
   &__toolbar {

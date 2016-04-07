@@ -105,3 +105,8 @@
 .icon--home:before {
 	content: "\e905";
 }
+
+/* Temporary styling of Font Awesome icons */
+i[class*="fa-"] {
+  opacity: 0.75;
+}

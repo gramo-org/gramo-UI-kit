@@ -38,6 +38,10 @@
   justify-content: center;
 }
 
+.align--vertical-center {
+  align-self: center;
+}
+
 .no-padding {
   padding: 0!important;
 

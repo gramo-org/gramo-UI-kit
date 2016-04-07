@@ -86,14 +86,14 @@
       </section>
 
       <section class="container container--hd">
-        <div class="tabs">
-          <ul class='tabs__nav'>
+        <div class="tabs container">
+          <ul class='tabs__nav row'>
             <li class='tabs__nav__item'><a href="#nrk">NRK</a></li>
             <li class='tabs__nav__item'><a href="#p4">P4 </a></li>
             <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
             <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
           </ul>
-          <section id="nrk" class="tabs__section">
+          <section id="nrk" class="tabs__section row">
             <!--NRK-->
             <div class="col-md">
             <div class="row tabs__toolbar">
@@ -121,8 +121,8 @@
             </div>
 
             <div class="row fake-table--group">
-              <div class="fake-table__container fake-table__container--sidebar">
-                <div class="fake-table__toolbar">
+              <div class="fake-table__wrapper fake-table__wrapper--sidebar">
+                <div class="fake-table__toolbar container">
                   <div class="row">
                     <div class="col-md">
                       <button class="btn btn--outline btn--outline-inverse"><i class="fa fa-filter"></i> Filtrér</button>
@@ -320,10 +320,10 @@
                     </div>
                   </div><!--end .fake-table__row-->
                 </div><!--end .fake-table-->
-              </div><!--end .fake-table__container-->
+              </div><!--end .fake-table__wrapper-->
 
-              <div class="fake-table__container fake-table__container--main">
-                <div class="fake-table__infobar">
+              <div class="fake-table__wrapper fake-table__wrapper--main">
+                <div class="fake-table__infobar container">
                   <div class="row">
                     <div class="col-xs-8">
                       <span class="text--bold">Is That What You Call Love?</span>
@@ -336,21 +336,21 @@
                     <div class="col-xs-2">10 kandidater</div>
                   </div>
                 </div>
-                <div class="tabs">
-                  <ul class='tabs__nav'>
+                <div class="tabs container">
+                  <ul class='tabs__nav row'>
                     <li class='tabs__nav__item'><a href="#discography">Diskografi</a></li>
                     <li class='tabs__nav__item'><a href="#search-external-sources">Søk </a></li>
                   </ul>
-                  <section id="discography" class="tabs__section">
+                  <section id="discography" class="tabs__section row">
                     <div class="fake-table fake-table__scrollarea">
                       <div class="fake-table__row fake-table__row--expanded">
                         <div class="fake-table__toggle-wrapper">
                           <div class="fake-table__toggle-row">
-                            <div class="col-xs-5">
+                            <div class="col-xs">
                               <span class="text--bold">Is That What You Call Love?</span>
                               <span>Hawksley Workman</span>
                             </div>
-                            <div class="col-md-6 fake-table__cell--action">
+                            <div class="col-md fake-table__cell--action">
                               <div class="btn-group">
                                 <button class="btn btn--success btn--small"><i class="fa fa-check"></i> Match</button>
                                 <button class="btn btn--secondary btn--small"><i class="fa fa-microphone-slash"></i> Ikke utgitt</button>
@@ -525,7 +525,7 @@
                       </div><!--end .fake-table__row-->
                     </div><!--end .fake-table__scrollarea-->
                   </section><!--end .tabs__section DISKOGRAFI-->
-                  <section id="search-external-sources" class="tabs__section">
+                  <section id="search-external-sources" class="tabs__section row">
                     <div class="fake-table fake-table__scrollarea">
                       <div class="row tabs__toolbar">
                         <div class="col-xs-12 col-sm col-lg-6 off-lg-1">
@@ -616,7 +616,7 @@
                     </div><!--end .fake-table__scrollarea-->
                   </section><!--end .tabs__section search-external-sources-->
                 </div><!--end .tabs-->
-              </div><!--end .fake-table__container-->
+              </div><!--end .fake-table__wrapper-->
             </div><!--end .fake-table group-->
           </section><!--end .tabs__section NRK-->
         </div><!--end .tabs-->
