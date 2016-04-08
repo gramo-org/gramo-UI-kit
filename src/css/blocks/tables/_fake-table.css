@@ -86,6 +86,10 @@
     }
   }
 
+  .fake-table__cell--action {
+    justify-content: center;
+  }
+
   &__row--child {
     @extend .row;
     border: 0;
@@ -179,10 +183,6 @@
 
   .fake-table__row--expanded {
     background: var(--table-head-background);
-
-    .fake-table__cell--action {
-      justify-content: center;
-    }
 
     .btn-group {
       display: block;
