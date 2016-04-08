@@ -2889,6 +2889,10 @@ tr > td:last-child{
 .fake-table__toggle-row > div{
   display:block;
 }
+.fake-table__toggle-row > div span{
+  font-weight:300;
+  margin-right:1rem;
+}
 .fake-table__row--child{
   border:0;
   margin:0;
@@ -2902,7 +2906,7 @@ tr > td:last-child{
 }
 .fake-table__row--child > div span{
   font-weight:300;
-  margin-left:1rem;
+  margin-right:1rem;
 }
 .fake-table__row--child:nth-child(odd){
   background:#f9f9f9;
