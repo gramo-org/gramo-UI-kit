@@ -75,6 +75,10 @@
 
   &__toggle-row {
     @extend .row;
+
+    & > div {
+      display: block;
+    }
   }
 
   &__row--child {

@@ -2886,6 +2886,9 @@ tr > td:last-child{
 .fake-table__toggle-container{
   width:100%;
 }
+.fake-table__toggle-row > div{
+  display:block;
+}
 .fake-table__row--child{
   border:0;
   margin:0;
