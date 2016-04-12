@@ -1,0 +1,95 @@
+/*** Groups of fake tables ***/
+
+.fake-table--group {
+  margin-top: 2rem;
+
+  .fake-table {
+
+    &__scrollarea {
+
+      @media (--hd) {
+        height: 50vh;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  .fake-table__row:first-child {
+    border-top-width: 1px;
+  }
+
+  .fake-table__row {
+
+    &--selected {
+      background: var(--gramo-blue);
+      color: #fff;
+
+      .table-row-toggle:before {
+        color: #fff;
+      }
+    }
+
+    .btn-group {
+      display: none;
+    }
+  }
+
+  .fake-table__row--expanded {
+    background: var(--table-head-background);
+
+    .btn-group {
+      display: block;
+      align-self: flex-end;
+    }
+  }
+}
+
+/*** Containers for fake tables allowing the table to be scrollable while a toolbar/header stays in position ***/
+
+.fake-table__wrapper--sidebar {
+  @extend .col-md;
+  padding: 0;
+}
+
+.fake-table__wrapper--sidebar,
+.fake-table__wrapper--main {
+  .fake-table__row {
+
+    div[class*="col-"]:first-child,
+    div[class*="col-"]:last-child {
+      justify-content: center;
+    }
+  }
+}
+
+.fake-table__wrapper--main {
+  @extend .col-xs-12;
+  @extend .col-md-8;
+  padding: 0;
+  @media (--hd) { padding-left: 2rem; }
+}
+
+/*** Toolbar ***/
+
+.fake-table__toolbar {
+  background: var(--table-head-background);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*** Infobar ***/
+
+.fake-table__infobar {
+  background: var(--gramo-blue);
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  & > .row {
+
+    div[class*="col-"]:last-child {
+      justify-content: center;
+    }
+  }
+}

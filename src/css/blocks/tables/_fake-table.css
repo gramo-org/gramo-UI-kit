@@ -15,14 +15,6 @@
       @media (--tablet) { background: var(--row-hover); }
     }
 
-    &-label {
-      justify-content: center;
-      font-size: 1.6rem;
-      margin-top: 1rem;
-      @media (--hd) { text-align: right; font-size: 1.4rem; margin-top: 0; }
-      font-weight: 600;
-    }
-
     &--head {
       background: var(--table-head-background);
       border: 1px solid var(--table-border-color);
@@ -54,6 +46,7 @@
       }
     }
 
+    /* give div elements padding in .fake-table__row */
     & > div {
       padding: 1rem;
     }
@@ -68,6 +61,8 @@
     }
   }
 
+  /* Rows that toggle child rows */
+
   &__toggle-container {
     @extend .container;
     width: 100%;
@@ -76,6 +71,7 @@
   &__toggle-row {
     @extend .row;
 
+    /* Remove if inline spans are not necessary in cell ie. when manual matching UI replaces simple fake table*/
     & > div {
       display: block;
 
@@ -83,160 +79,77 @@
         font-weight: 300;
         margin-right: 1rem;
       }
-    }
+    }/* end */
   }
 
+  /* Cells used for buttons or toggles */
   .fake-table__cell--action {
     justify-content: center;
   }
 
-  &__row--child {
-    @extend .row;
-    border: 0;
-    margin: 0;
-    padding: 0!important;
-    display: none;
-    width: 100%;
+  /* Cells used for form labels */
+  .fake-table__cell--label {
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    @media (--hd) { text-align: right; font-size: 1.4rem; margin-top: 0; }
+    font-weight: 600;
+  }
+}
 
-    & > div {
-      display: block;
-      cursor: default;
+/* Expanded rows */
 
-      span {
-        font-weight: 300;
-        margin-right: 1rem;
-      }
+.fake-table__row--expanded {
+  border-bottom: 1px solid var(--table-border-color);
+  background: var(--row-hover);
+
+  .fake-table__toggle-container {
+    border-bottom: 1px solid var(--table-border-color);
+  }
+
+  .fake-table__row--child {
+    display: flex;
+
+    &:hover {
+      /*@extend .fake-table__row:hover;*/
+      background: var(--gramo-white);
     }
 
-    &:nth-child(odd) {
-      background: var(--row-hover);
+    .fake-table__cell--label {
+      text-align: right;
+      align-self: center;
+    }
+  }
+  .table-row-toggle {
+    @extend .icon--chevron-down;
+  }
+}
 
-      &:hover {
-        background: var(--row-hover)!important;
-      }
+/* Child rows */
+
+.fake-table__row--child {
+  @extend .row;
+  border: 0;
+  margin: 0;
+  padding: 0!important;
+  display: none;
+  width: 100%;
+
+  & > div {
+    display: block;
+    cursor: default;
+
+    span {
+      font-weight: 300;
+      margin-right: 1rem;
     }
   }
 
-
-  &__row--expanded {
-    border-bottom: 1px solid var(--table-border-color);
+  &:nth-child(odd) {
     background: var(--row-hover);
 
-    .fake-table__toggle-container {
-      border-bottom: 1px solid var(--table-border-color);
-    }
-
-    .fake-table__row--child {
-      display: flex;
-
-      &:hover {
-        /*@extend .fake-table__row:hover;*/
-        background: var(--gramo-white);
-      }
-
-      .fake-table__cell--label {
-        text-align: right;
-        align-self: center;
-      }
-    }
-    .table-row-toggle {
-      @extend .icon--chevron-down;
-    }
-  }
-}
-
-/*** Groups of fake tables ***/
-
-.fake-table--group {
-  margin-top: 2rem;
-
-  .fake-table {
-
-    &__scrollarea {
-
-      @media (--hd) {
-        height: 50vh;
-        overflow-y: auto;
-      }
-    }
-  }
-
-  .fake-table__row:first-child {
-    border-top-width: 1px;
-  }
-
-  .fake-table__row {
-
-    &--selected {
-      background: var(--gramo-blue);
-      color: #fff;
-
-      .table-row-toggle:before {
-        color: #fff;
-      }
-    }
-
-    .btn-group {
-      display: none;
-    }
-  }
-
-  .fake-table__row--expanded {
-    background: var(--table-head-background);
-
-    .btn-group {
-      display: block;
-      align-self: flex-end;
-    }
-  }
-}
-
-/*** Containers for fake tables allowing the table to be scrollable while a toolbar/header stays in position ***/
-
-.fake-table__wrapper--sidebar {
-  @extend .col-md;
-  padding: 0;
-}
-
-.fake-table__wrapper--sidebar,
-.fake-table__wrapper--main {
-  .fake-table__row {
-
-    div[class*="col-"]:first-child,
-    div[class*="col-"]:last-child {
-      justify-content: center;
-    }
-  }
-}
-
-.fake-table__wrapper--main {
-  @extend .col-xs-12;
-  @extend .col-md-8;
-  padding: 0;
-  @media (--hd) { padding-left: 2rem; }
-}
-
-/*** Toolbar ***/
-
-.fake-table__toolbar {
-  background: var(--table-head-background);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-/*** Infobar ***/
-
-.fake-table__infobar {
-  background: var(--gramo-blue);
-  color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
-
-  & > .row {
-
-    div[class*="col-"]:last-child {
-      justify-content: center;
+    &:hover {
+      background: var(--row-hover)!important;
     }
   }
 }
