@@ -13,6 +13,10 @@ main {
   }
 }
 
+.sidebar--is-open + main {
+  @media(--tablet) { padding-left: 20rem; }
+}
+
 .container {
   padding: 0 1rem;
   /*margin: 0 auto;*/

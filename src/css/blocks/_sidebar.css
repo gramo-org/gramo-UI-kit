@@ -11,11 +11,6 @@
   z-index: 2;
   @extend %fixed;
 
-  @media (--desktop) {
-    transform: none;
-    position: static;
-  }
-
   &--is-open {
     transform: none;
     box-shadow: 1px 0 11px rgba(0,0,0,0.5);

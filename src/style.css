@@ -320,7 +320,7 @@ td, th{
   margin-right:-1rem;
 }
 
-.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .box, .breadcrumbs, .breadcrumbs__item, .table-row-content p, .fake-table__wrapper--sidebar, .fake-table__wrapper--main, .toggle-sidebar, .tabs__nav__item{
+.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .box, .breadcrumbs, .breadcrumbs__item, .table-row-content p, .fake-table__wrapper--sidebar, .fake-table__wrapper--main, .tabs__nav__item{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -477,7 +477,7 @@ td, th{
 }
 
 @media only screen and (min-width: 768px){
-  .col-sm-1, .toggle-sidebar{
+  .col-sm-1{
     -webkit-flex-basis:8.33333%;
     -ms-flex-preferred-size:8.33333%;
     flex-basis:8.33333%;
@@ -934,6 +934,12 @@ main{
   }
 }
 
+@media(min-width: 768px){
+  .sidebar--is-open + main{
+    padding-left:20rem;
+  }
+}
+
 .container, .content-header, .fake-table, .fake-table__toggle-container, .search{
   padding:0 1rem;
 }
@@ -1256,7 +1262,7 @@ a:active, a:hover{
 
 @media (min-width: 960px){
   .site-header{
-    position:static;
+    position:relative;
   }
 }
 
@@ -2102,6 +2108,11 @@ a:active, a:hover{
   font-size:1.4rem;
   display:block;
 }
+@media (min-width: 960px){
+  .breadcrumbs{
+    padding-left:0;
+  }
+}
 .breadcrumbs__item{
   color:#ededed;
   margin-bottom:0;
@@ -2125,12 +2136,7 @@ a:active, a:hover{
   }
 }
 .breadcrumbs__item--home{
-  padding-left:0;
-}
-@media (min-width: 768px){
-  .breadcrumbs__item--home{
-    padding-left:1rem;
-  }
+  padding-left:2rem;
 }
 .breadcrumbs__item--home i{
   font-size:1.7rem;
@@ -2161,14 +2167,6 @@ a:active, a:hover{
   transition:transform .25s ease;
   transition:transform .25s ease, -webkit-transform .25s ease;
   z-index:2;
-}
-
-@media (min-width: 960px){
-  .sidebar{
-    -webkit-transform:none;
-    transform:none;
-    position:static;
-  }
 }
 
 .sidebar--is-open{
@@ -3033,16 +3031,13 @@ tr > td:last-child{
 }
 
 .toggle-sidebar{
-  display:inline-block;
+  position:relative;
+  top:-.15rem;
+  display:block;
+  margin-right:3rem;
   -webkit-transform:rotate(0deg);
   transform:rotate(0deg);
   transition:.5s ease-in-out;
-}
-
-@media (min-width: 960px){
-  .toggle-sidebar{
-    display:none;
-  }
 }
 
 .toggle-sidebar a{
@@ -3051,6 +3046,18 @@ tr > td:last-child{
   width:1.5rem;
   position:relative;
   vertical-align:middle;
+  text-decoration:none;
+}
+
+.toggle-sidebar a:after{
+  content:'Menu';
+  text-transform:uppercase;
+  color:#fdfdfd;
+  font-size:1.4rem;
+  display:inline-block;
+  position:absolute;
+  top:-.3rem;
+  left:2rem;
 }
 
 .toggle-sidebar span{
@@ -3079,6 +3086,7 @@ tr > td:last-child{
 }
 
 .toggle-sidebar.open{
+
 }
 
 .toggle-sidebar.open span:nth-child(1){
