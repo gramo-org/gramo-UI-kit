@@ -1254,7 +1254,7 @@ a:active, a:hover{
   width:100%;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 960px){
   .site-header{
     position:static;
   }
