@@ -3039,7 +3039,7 @@ tr > td:last-child{
   transition:.5s ease-in-out;
 }
 
-@media (min-width: 960px){
+@media (min-width: 1200px){
   .toggle-sidebar{
     display:none;
   }
