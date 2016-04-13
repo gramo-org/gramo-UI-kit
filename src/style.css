@@ -2163,7 +2163,7 @@ a:active, a:hover{
   z-index:2;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 960px){
   .sidebar{
     -webkit-transform:none;
     transform:none;

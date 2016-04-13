@@ -11,7 +11,7 @@
   z-index: 2;
   @extend %fixed;
 
-  @media (--hd) {
+  @media (--desktop) {
     transform: none;
     position: static;
   }
