@@ -4,7 +4,7 @@
   z-index: 3;
   left: 0;
   width: 100%;
-  @media (--desktop) { position: relative; }
+  @media (--desktop) { position: static; }
 
   nav {
     @extend .row;
