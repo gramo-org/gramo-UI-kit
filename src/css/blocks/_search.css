@@ -5,8 +5,8 @@
 .search__form {
   @extend .row;
   justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   position: relative;
 }
 
