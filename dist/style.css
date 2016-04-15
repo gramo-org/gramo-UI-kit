@@ -2862,6 +2862,7 @@ tr > td:last-child{
 }
 .fake-table__row > div[class*="col-"]{
   width:100%;
+  display:block;
 }
 @media (min-width: 768px){
   .fake-table__row > div[class*="col-"]{

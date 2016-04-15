@@ -15,11 +15,6 @@
       @media (--tablet) { background: var(--row-hover); }
     }
 
-    /* Remove if inline spans are not necessary in cell ie. when manual matching UI replaces simple fake table*/
-    & > div {
-      display: block;
-    }
-
     &--head {
       background: var(--table-head-background);
       border: 1px solid var(--table-border-color);
@@ -59,6 +54,7 @@
     /* Make column stack on smaller screens */
     & > div[class*="col-"] {
       width: 100%;
+      display: block; /* Avoid e.g. spans flexing to full width in side .cols NB.This style is duplicated 3 times in this file */
       @media (--tablet) { width: auto; }
     }
 
