@@ -4,7 +4,7 @@
   z-index: 3;
   left: 0;
   width: 100%;
-  @media (--desktop) { position: static; }
+  @media (--hd) { position: static; }
 
   nav {
     @extend .row;
@@ -29,7 +29,7 @@
   /* Add padding to first container section to compensate for fixed position on site-header */
   & + section {
     padding-top: 3rem;
-    @media (--desktop) { padding-top: 0; }
+    @media (--hd) { padding-top: 0; }
   }
 }
 

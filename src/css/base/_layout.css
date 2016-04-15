@@ -1,6 +1,10 @@
 .site-wrapper {
   display: flex;
   height: 100vh;
+
+  &.push {
+    overflow-x: hidden;
+  }
 }
 
 main {
@@ -10,6 +14,11 @@ main {
   @media(--tablet) {
     flex: 1;
     position: static;
+    transition: transform .25s ease;
+  }
+
+  &.push {
+    transform: translate3d(20rem,0,0);
   }
 }
 
