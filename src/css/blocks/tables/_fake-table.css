@@ -15,6 +15,11 @@
       @media (--tablet) { background: var(--row-hover); }
     }
 
+    /* Remove if inline spans are not necessary in cell ie. when manual matching UI replaces simple fake table*/
+    & > div {
+      display: block;
+    }
+
     &--head {
       background: var(--table-head-background);
       border: 1px solid var(--table-border-color);
