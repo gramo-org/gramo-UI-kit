@@ -2372,10 +2372,6 @@ a:active, a:hover{
   padding-bottom:1.5rem;
   border-bottom:1px solid #d9d9dc;
 }
-.content-header__below--simple{
-  border-bottom:0;
-  padding-bottom:0;
-}
 .content-header__meta{
   display:block;
   font-weight:700;
@@ -2403,6 +2399,13 @@ a:active, a:hover{
   .content-header__action{
     text-align:right;
   }
+}
+.content-header--simple{
+  margin-bottom:0;
+}
+.content-header--simple .content-header__below{
+  border-bottom:0;
+  padding-bottom:0;
 }
 .badge{
   display:inline-block;

@@ -55,11 +55,6 @@
     align-items: center;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--silver);
-
-    &--simple {
-      border-bottom: 0;
-      padding-bottom: 0;
-    }
   }
 
   &__meta {
@@ -91,5 +86,16 @@
     display: block;
     text-align: center;
     @media (--tablet) { text-align: right; }
+  }
+
+
+  /* A simpler version of the content header without a bottom border, padding or margin */
+  &--simple {
+    margin-bottom: 0;
+
+    .content-header__below {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
   }
 }
