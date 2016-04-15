@@ -2719,7 +2719,7 @@ tr > td:last-child{
 }
 @media (min-width: 768px){
   .table-row-toggle{
-    text-align:center;
+    margin-right:2rem;
   }
 }
 .table-row-content{
@@ -2815,7 +2815,6 @@ tr > td:last-child{
 }
 .fake-table__row{
   background:#fdfdfd;
-  cursor:pointer;
   border:1px solid #d9d9dc;
   border-width:0 1px 1px 1px;
 }
@@ -2886,6 +2885,7 @@ tr > td:last-child{
 }
 .fake-table__toggle-container{
   width:100%;
+  cursor:pointer;
 }
 .fake-table__toggle-row{
 }
@@ -2897,9 +2897,12 @@ tr > td:last-child{
   margin-right:1rem;
 }
 .fake-table .fake-table__cell--action{
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
+  text-align:center;
+}
+@media (min-width: 960px){
+  .fake-table .fake-table__cell--action{
+    text-align:right;
+  }
 }
 .fake-table .fake-table__cell--label{
   -webkit-justify-content:center;

@@ -7,7 +7,6 @@
   &__row {
     @extend .row;
     background: var(--gramo-white);
-    cursor: pointer;
     border: 1px solid var(--table-border-color);
     border-width: 0 1px 1px 1px;
 
@@ -73,6 +72,7 @@
   &__toggle-container {
     @extend .container;
     width: 100%;
+    cursor: pointer;
   }
 
   &__toggle-row {
@@ -91,7 +91,8 @@
 
   /* Cells used for buttons or toggles */
   .fake-table__cell--action {
-    justify-content: center;
+    text-align: center;
+    @media (--desktop) { text-align: right; }
   }
 
   /* Cells used for form labels */
