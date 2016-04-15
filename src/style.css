@@ -2737,10 +2737,10 @@ tr > td:last-child{
     border-width:0 1px;
   }
 }
-.table__row--is-editing > td.table__cell--action, tr:hover > td.table__cell--action, tr:hover > .table-summary__cell--action{
+.table__row--is-editing > td.table__cell--action, tr:hover > td.table__cell--action, tr:hover > .table-summary__cell--action, .fake-table__row:hover > .fake-table__cell--action{
   position:relative;
 }
-.table__row--is-editing > td.table__cell--action > .btn-group--hover, tr:hover > td.table__cell--action > .btn-group--hover, tr:hover > .table-summary__cell--action > .btn-group--hover{
+.table__row--is-editing > td.table__cell--action > .btn-group--hover, tr:hover > td.table__cell--action > .btn-group--hover, tr:hover > .table-summary__cell--action > .btn-group--hover, .fake-table__row:hover > .fake-table__cell--action > .btn-group--hover{
   display:block;
 }
 .table-sort{
