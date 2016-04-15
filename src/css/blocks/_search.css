@@ -1,8 +1,5 @@
 .search {
-  &--fixed-width {
-    width: 300px;
-    display: inline-block;
-  }
+  @extend .container;
 }
 
 .search__form {
