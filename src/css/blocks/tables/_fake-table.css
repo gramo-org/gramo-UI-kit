@@ -51,6 +51,12 @@
       padding: 1rem;
     }
 
+    /* Make column stack on smaller screens */
+    & > div[class*="col-"] {
+      width: 100%;
+      @media (--tablet) { width: auto; }
+    }
+
     div[class*="col-"]::before {
       content: attr(data-label);
       display: block;
