@@ -12,7 +12,7 @@
     @media (--tablet) {
       padding-top: 3rem;
     }
-    @media (--desktop) {
+    @media (--hd) {
       left: 23rem;
       top: auto;
       padding-top: 0;
@@ -55,6 +55,11 @@
     align-items: center;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--silver);
+
+    &--simple {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
   }
 
   &__meta {
