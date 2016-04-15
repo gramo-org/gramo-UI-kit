@@ -12,7 +12,7 @@
     @media (--tablet) {
       padding-top: 3rem;
     }
-    @media (--hd) {
+    @media (--desktop) {
       left: 23rem;
       top: auto;
       padding-top: 0;
