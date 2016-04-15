@@ -5,7 +5,7 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).toggleClass('open');
     $('.sidebar').toggleClass('sidebar--is-open');
-    $('main, .site-wrapper').toggleClass('push');
+    $('main').toggleClass('push');
   });
 
 
