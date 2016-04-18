@@ -985,7 +985,7 @@ main > section:first-of-type{
 .container--branded{
   background:url("img/logo-echo.svg") no-repeat 50% 7rem;
   background-size:7rem;
-  padding-top:17rem;
+  padding-top:17rem!important;
 }
 
 .container--branded h2{
