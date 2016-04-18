@@ -3560,6 +3560,9 @@ tr > td:last-child{
     left:20rem;
   }
 }
+.flash-message-wrapper--full-width{
+  left:0;
+}
 .flash-message-wrapper .flash-message{
   margin-top:0;
 }

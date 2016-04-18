@@ -9,6 +9,10 @@
   margin: 0;
   @media (--desktop) { left: 20rem; }
 
+  &--full-width {
+    left: 0;
+  }
+
   .flash-message {
     margin-top: 0;
   }
