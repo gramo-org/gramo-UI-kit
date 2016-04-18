@@ -15,7 +15,7 @@ $(document).ready(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 50) {
-      contentHeader.css('top', '0');
+      contentHeader.css('top', '3rem');
     } else {
       contentHeader.css('top', 'auto');
     }
