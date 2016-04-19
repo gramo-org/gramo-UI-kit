@@ -985,7 +985,7 @@ main > section:first-of-type{
 .container--branded{
   background:url("img/logo-echo.svg") no-repeat 50% 7rem;
   background-size:7rem;
-  padding-top:17rem!important;
+  padding-top:26rem!important;
 }
 
 .container--branded h2{
@@ -3562,7 +3562,7 @@ tr > td:last-child{
 }
 .flash-message-wrapper--full-width{
   left:0;
-  top:0;
+  top:19rem;
 }
 .flash-message-wrapper .flash-message{
   margin-top:0;
@@ -3604,7 +3604,8 @@ tr > td:last-child{
 
 .flash-message .btn{
   background:rgb(102, 149, 162);
-  margin-left:1rem;
+  margin:0 1rem;
+  text-transform:uppercase;
 }
 
 .flash-message--error{
