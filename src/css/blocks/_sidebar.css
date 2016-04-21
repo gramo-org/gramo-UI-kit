@@ -8,7 +8,7 @@
   flex: 0 0 20rem;
   transform: translateX(-20rem);
   transition: transform .25s ease;
-  z-index: 2;
+  z-index: 4;
   @extend %fixed;
 
   @media (--desktop) {

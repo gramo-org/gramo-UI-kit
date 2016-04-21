@@ -1,46 +1,31 @@
 /*** Groups of fake tables ***/
 
-.fake-table--group {
+/*.fake-table--group {
   margin-top: 2rem;
 
-  .fake-table {
+  .fake-table__scrollarea {
 
-    &__scrollarea {
-
-      @media (--hd) {
-        height: 50vh;
-        overflow-y: auto;
-      }
+    @media (--hd) {
+      height: 50vh;
+      overflow-y: auto;
     }
+  }*/
+
+.fake-table__scrollarea {
+
+  @media (--hd) {
+    height: 50vh;
+    overflow-y: auto;
   }
 
   .fake-table__row:first-child {
     border-top-width: 1px;
   }
 
-  .fake-table__row {
-
-    &--selected {
-      background: var(--gramo-blue);
-      color: #fff;
-
-      .table-row-toggle:before {
-        color: #fff;
-      }
-    }
-
-    .btn-group {
-      display: none;
-    }
-  }
 
   .fake-table__row--expanded {
     background: var(--table-head-background);
 
-    .btn-group {
-      display: block;
-      align-self: flex-end;
-    }
   }
 }
 

@@ -1,7 +1,7 @@
 .site-header {
   background: var(--ui-gray);
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   left: 0;
   width: 100%;
   @media (--desktop) { left: auto; }

@@ -65,10 +65,13 @@
     background: var(--table-head-background);
     border: 1px solid var(--table-border-color);
     padding: 1rem 0;
+    margin-bottom: 2rem;
 
     &__action {
       align-self: center;
-      align-items: flex-end;
+      align-items: center;
+      @media (--tablet) { align-items: flex-end; }
+      padding: 0;
     }
   }
 

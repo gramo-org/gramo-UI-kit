@@ -1,7 +1,8 @@
 .search {
+  @extend .container;
   &--fixed-width {
     width: 300px;
-    display: inline-block;
+
   }
 }
 
@@ -14,9 +15,7 @@
 }
 
 .search__form__input {
-  /* Shrink and grow as needed, but never shrink so
-     small that we can't read the placeholder */
-  flex: 1 0 30%;
+  @extend .col-xs;
   background: var(--gramo-white);
 
   /*Make sure the placeholder isn't poorly cut off*/
@@ -29,10 +28,11 @@
 }
 
 .search__submit {
+  @extend .col-xs-2;
   border: 0;
-  flex: 1 0 auto;
   border-radius: 0 2px 2px 0;
   margin: 0 0 0 -1px;
+  align-items: center;
 }
 
 .search__clear {
