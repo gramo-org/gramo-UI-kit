@@ -1,0 +1,16 @@
+/* Cells used for buttons or toggles */
+.fake-table__cell--action {
+  justify-content: center;
+  text-align: center;
+  @media (--desktop) { text-align: right; }
+}
+
+/* Cells used for form labels */
+.fake-table__cell--label {
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+  @media (--hd) { text-align: right; font-size: 1.4rem; margin-top: 0; }
+}

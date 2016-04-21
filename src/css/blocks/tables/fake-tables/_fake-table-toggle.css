@@ -1,0 +1,15 @@
+/* Toggle containers - rows that toggle child rows */
+.fake-table__toggle-container {
+  @extend .container;
+  width: 100%;
+  cursor: pointer;
+}
+
+.fake-table__toggle-row {
+  @extend .row;
+
+  /* stop child elements from flexing 100% */
+  & > div {
+    display: block;
+  }
+}

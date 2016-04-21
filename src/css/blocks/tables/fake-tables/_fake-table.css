@@ -1,31 +1,21 @@
-/*** Groups of fake tables ***/
+.fake-table {
+  margin: 0;
+  font-size: 1.4rem;
+  @extend .container;
+  min-width: 100%;
+}
 
-/*.fake-table--group {
-  margin-top: 2rem;
-
-  .fake-table__scrollarea {
-
-    @media (--hd) {
-      height: 50vh;
-      overflow-y: auto;
-    }
-  }*/
-
-.fake-table__scrollarea {
+.fake-table--scrollable {
 
   @media (--hd) {
     height: 50vh;
     overflow-y: auto;
   }
+}
 
-  .fake-table__row:first-child {
-    border-top-width: 1px;
-  }
-
-
+.fake-table--with-tabs {
   .fake-table__row--expanded {
     background: var(--table-head-background);
-
   }
 }
 

@@ -1,0 +1,87 @@
+.fake-table__row {
+  @extend .row;
+  background: var(--gramo-white);
+  border: 1px solid var(--table-border-color);
+  border-width: 1px 1px 0 1px;
+
+  &:last-child {
+    border-bottom-width: 1px;
+  }
+
+  &:hover {
+    @media (--tablet) { background: var(--row-hover); }
+  }
+
+/* Give selected rows blue background */
+  &--selected {
+    background: var(--gramo-blue);
+    color: #fff;
+
+    .table-row-toggle:before {
+      color: #fff;
+    }
+  }
+
+  /* give div elements padding in .fake-table__row */
+  & > div {
+    padding: 1rem;
+  }
+
+  /* Make columns stack on smaller screens */
+  div[class*="col-"] {
+    width: 100%;
+    justify-content: center; /* vertically center content */
+    @media (--tablet) { width: auto; }
+  }
+
+  /* data attributes for 'faux-heads' on mobile */
+  div[class*="col-"]::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--off-gray);
+    text-transform: uppercase;
+    margin-top: .5rem;
+    @media (--tablet) { content: none; }
+  }
+
+  /* fake-table--head */
+  &--head {
+    background: var(--table-head-background);
+    text-align: center;
+    font-weight: var(--font-400);
+    display: none;
+    cursor: default;
+    @media (--tablet) { display: flex; }
+
+    &:hover {
+      background: var(--table-head-background);
+    }
+
+    @media (--tablet) {
+      text-align: left;
+    }
+  }
+  /* fake-table--foot */
+  &--foot {
+    border: 0;
+    background: var(--table-head-background);
+    justify-content: center;
+    padding: .5rem 0;
+    margin-bottom: -1rem;
+    margin-top: 2rem;
+
+    &:hover {
+      background: var(--table-head-background);
+    }
+  }
+}
+
+/* Expanded rows */
+
+.fake-table__row--expanded {
+  background: var(--row-hover);
+
+  .fake-table__toggle-container {
+    border-bottom: 1px solid var(--table-border-color);
+  }
+}
