@@ -1,8 +1,9 @@
 .search {
   @extend .container;
+
   &--fixed-width {
     width: 300px;
-
+    display: inline-block;
   }
 }
 
