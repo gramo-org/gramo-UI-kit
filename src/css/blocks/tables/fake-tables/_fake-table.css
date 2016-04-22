@@ -14,7 +14,8 @@
 }
 
 .fake-table--with-tabs {
-  .fake-table__row--expanded {
+  .fake-table__row--expanded,
+  .fake-table__row--expanded:hover {
     background: var(--table-head-background);
   }
 }

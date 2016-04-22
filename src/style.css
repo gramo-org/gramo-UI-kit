@@ -2818,7 +2818,7 @@ tr > td:last-child{
   }
 }
 
-.fake-table--with-tabs .fake-table__row--expanded{
+.fake-table--with-tabs .fake-table__row--expanded, .fake-table--with-tabs .fake-table__row--expanded:hover{
   background:#ededed;
 }
 
