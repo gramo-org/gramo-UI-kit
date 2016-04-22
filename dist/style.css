@@ -2853,7 +2853,6 @@ tr > td:last-child{
   color:#fff;
   padding-top:1rem;
   padding-bottom:1rem;
-  margin-bottom:2rem;
 }
 
 .fake-table__infobar > .row div[class*="col-"]:last-child{
