@@ -14,3 +14,8 @@
   font-weight: 600;
   @media (--hd) { text-align: right; font-size: 1.4rem; margin-top: 0; }
 }
+
+/* Cells for artists */
+.fake-table__cell--artists {
+  display: block
+}

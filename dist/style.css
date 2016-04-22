@@ -2985,6 +2985,9 @@ tr > td:last-child{
     margin-top:0;
   }
 }
+.fake-table__cell--artists{
+  display:block
+}
 .fake-table__row--child{
   border:0;
   margin:0;
