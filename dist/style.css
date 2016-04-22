@@ -2874,11 +2874,11 @@ tr > td:last-child{
     background:#f9f9f9;
   }
 }
-.fake-table__row--selected{
+.fake-table__row--selected, .fake-table__row--selected:hover{
   background:#0095da;
   color:#fff;
 }
-.fake-table__row--selected .table-row-toggle:before{
+.fake-table__row--selected .table-row-toggle:before, .fake-table__row--selected:hover .table-row-toggle:before{
   color:#fff;
 }
 .fake-table__row > div{

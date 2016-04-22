@@ -13,7 +13,8 @@
   }
 
 /* Give selected rows blue background */
-  &--selected {
+  &--selected,
+  &--selected:hover {
     background: var(--gramo-blue);
     color: #fff;
 
