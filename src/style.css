@@ -2117,7 +2117,7 @@ a:active, a:hover{
   padding:0.7rem 0 0.5rem 0;
   margin:0;
   font-size:1.4rem;
-  display:block;
+  display:inline-block;
   color:#ededed;
 }
 .breadcrumbs__item{
@@ -3528,7 +3528,6 @@ tr > td:last-child{
 .tabs{
   position:relative;
   margin-top:8rem;
-
 }
 @media (min-width: 768px){
   .tabs{
@@ -3600,6 +3599,22 @@ tr > td:last-child{
     -ms-flex-align:end;
     align-items:flex-end;
   }
+}
+.tabs--toggleable > .tabs__nav, .tabs--toggleable > .tabs__toolbar{
+  display:none;
+}
+.tabs--toggleable input[type="checkbox"]{
+  display:none;
+}
+.tabs--toggleable input[type="checkbox"]:checked ~ .tabs__nav, .tabs--toggleable input[type="checkbox"]:checked ~ .tabs__toolbar{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+}
+.tabs--toggleable label[for="tab-control"]{
+  color:#0095da;
+  cursor:pointer;
+  font-size:90%;
 }
 .flash-message-wrapper{
   overflow:hidden;

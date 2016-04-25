@@ -76,4 +76,28 @@
     }
   }
 
+  &--toggleable {
+    & > .tabs__nav,
+    & > .tabs__toolbar {
+      display: none;
+    }
+  }
+
+  &--toggleable input[type="checkbox"] {
+    display: none;
+
+    &:checked {
+
+      & ~ .tabs__nav,
+      & ~ .tabs__toolbar {
+        display: flex;
+      }
+    }
+  }
+
+  &--toggleable label[for="tab-control"] {
+    color: var(--base-link-color);
+    cursor: pointer;
+    font-size: 90%;
+  }
 }

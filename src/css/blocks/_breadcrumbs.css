@@ -4,7 +4,7 @@
   margin: 0;
   font-size: 1.4rem;
   @extend .col-sm;
-  display: block;
+  display: inline-block;
   color: var(--light-gray);
 
   &__item {
