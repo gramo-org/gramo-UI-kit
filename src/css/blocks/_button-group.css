@@ -50,7 +50,8 @@
     }
   }
 
-  &--hover {
+  &--hover,
+  &--floating {
     @media (--desktop) {
       display: none;
       position: absolute;
@@ -60,6 +61,13 @@
       margin: auto;
       height: 2.7rem;
     }
+  }
+
+  &--floating {
+    display: block;
+    bottom: auto;
+    right: 0;
+    z-index: 1;
   }
 
   a:not(.btn) {

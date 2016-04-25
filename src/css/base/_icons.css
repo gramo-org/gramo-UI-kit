@@ -63,6 +63,11 @@
 	content: "\e901";
   color: var(--gramo-red);
 }
+
+.icon--x:before {
+	content: "\e901";
+}
+
 .icon--expand-arrow:before {
 	content: "\e902";
   color: var(--light-gray);

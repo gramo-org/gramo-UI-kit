@@ -5,9 +5,9 @@
   font-size: 1.4rem;
   @extend .col-sm;
   display: block;
+  color: var(--light-gray);
 
   &__item {
-    color: var(--light-gray);
     margin-bottom: 0;
     @extend .col-md;
     display: inline-block;
@@ -39,7 +39,6 @@
       &::before {
         content: none;
       }
-
     }
 
     a {
@@ -47,6 +46,27 @@
       text-decoration: none;
       text-transform: uppercase;
       font-weight: var(--font-300);
+    }
+
+    &--action {
+
+      &::before {
+        content: none;
+      }
+
+      a {
+        text-transform: none;
+        color: var(--base-link-color)!important;
+      }
+    }
+  }
+
+  /* breadcrumbs used elsewhere in content */
+  &--in-content {
+    color: inherit;
+
+    a {
+      color: inherit;
     }
   }
 }

@@ -1,5 +1,6 @@
 .tabs {
   /*@extend .container;*/
+  position: relative;
   margin-top: 8rem;
   @media (--tablet) {
     margin-top: 2rem;
