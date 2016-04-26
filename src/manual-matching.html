@@ -80,621 +80,275 @@
           </div>
         </div>
       </div>
-      <!--Content-header example-->
+
       <section class="container container--hd">
-        <header class="content-header">
-          <div class="content-header__above">
-            <h2 class="content-header__title">Ikke identifiserte <span class="badge badge--error">31</span></h2>
-          </div>
-        </header>
-
-        <div class="tabs container tabs--toggleable">
-          <ul class="breadcrumbs breadcrumbs--in-content">
-            <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#">NRK</a></li>
-            <li class="breadcrumbs__item"><a href="#">P3</a></li>
-            <li class="breadcrumbs__item breadcrumbs__item--action">
-              <!-- <a href="#">Endre kanal</a> -->
-
-            </li>
-          </ul>
-          <input type="checkbox" id="tab-control">
-          <label for="tab-control">Endre kanal</label>
-          <ul class='tabs__nav row'>
-            <li class='tabs__nav__item'><a href="#nrk">NRK</a></li>
-            <li class='tabs__nav__item'><a href="#p4">P4 </a></li>
-            <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
-            <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
-          </ul>
-          <div class="row tabs__toolbar">
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-              <div class="searchable-list">
-                <div class="searchable-list__heading">
-                  <span class="searchable-list__selected">Søk blant kanaler</span>
-                </div>
-                <div class="searchable-list__dropdown">
-                  <input type="text" value="P3" class="form__input form__input--block searchable-list__search">
-                  <ul>
-                    <li class="searchable-list__option">P1</li>
-                    <li class="searchable-list__option">P2</li>
-                    <li class="searchable-list__option">P3</li>
-                  </ul>
-                </div>
-              </div><!--end searchable list-->
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-9 row tabs__toolbar__action">
-              <div class="btn-group">
-                <button class="btn btn--secondary btn--small"><i class="fa fa-ban"></i> Bekreft ikke utgitt</button>
-                <button class="btn btn--secondary btn--small"><i class="fa fa-microphone"></i> Mark som utgitt</button>
+        <div class="row">
+          <div class="fake-table__wrapper fake-table__wrapper--sidebar">
+            <header class="content-header">
+              <div class="content-header__above">
+                <h2 class="content-header__title">Ikke identifiserte <span class="badge badge--error">31</span></h2>
               </div>
-            </div>
-          </div>
-          <section id="nrk" class="tabs__section row">
-            <!--NRK-->
-            <div class="col-md">
+            </header>
+            <div class="tabs container tabs--toggleable">
+              <ul class="breadcrumbs breadcrumbs--in-content">
+                <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#">NRK</a></li>
+                <li class="breadcrumbs__item"><a href="#">P3</a></li>
+              </ul>
+              <input type="checkbox" id="tab-control">
+              <label for="tab-control">endre kanal</label>
+              <ul class='tabs__nav row'>
+                <li class='tabs__nav__item'><a href="#nrk">NRK</a></li>
+                <li class='tabs__nav__item'><a href="#p4">P4 </a></li>
+                <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
+                <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
+              </ul>
+              <div class="row tabs__toolbar">
+                <div class="col-xs-12">
+                  <div class="searchable-list">
+                    <div class="searchable-list__heading">
+                      <span class="searchable-list__selected">Søk blant kanaler</span>
+                    </div>
+                    <div class="searchable-list__dropdown">
+                      <input type="text" value="P3" class="form__input form__input--block searchable-list__search">
+                      <ul>
+                        <li class="searchable-list__option">P1</li>
+                        <li class="searchable-list__option">P2</li>
+                        <li class="searchable-list__option">P3</li>
+                      </ul>
+                    </div>
+                  </div><!--end searchable list-->
+                </div>
+              </div><!--/.row .tabs__toolbar-->
+              <section id="nrk" class="tabs__section row">
+                <!--NRK-->
+                <div class="fake-table__toolbar col-md">
+                  <div class="toolbar__above row">
+                    <div class="col-sm"><span class="text--medium text--bold">Vis alle felter</span>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle">
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                        </label>
+                      </span>
+                      <ul class="filter-items link-list--inline">
+                        <li><a class="filter-items__remove" href="#"><i class="icon--x"></i></a> <span><a href="#">Leonard Cohen</a></span></li>
+                        <li><a class="filter-items__remove" href="#"><i class="icon--x"></i></a> <span><a href="#">Ikke utgitt</a></span></li>
+                      </ul>
+                    </div><!--end .col-sm-->
+                  </div><!--end .row-->
+                </div><!--/.fake-table__toolbar-->
+                <div class="fake-table fake-table--scrollable">
+                  <div class="fake-table__row fake-table__row--selected">
+                    <div class="col-xs-1">
+                      <label class="form__label">
+                        <input type="checkbox">
+                      </label>
+                    </div>
+                    <div class="col-xs-8">
+                      <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
+                      <span class="text--bold"><a href="#">Is That What You Call Love?</a></span>
+                      <span><a href="#">Hawksley Workman</a></span>
+                    </div>
+                    <div class="col-xs-3 text--right">
+                      <span class="text--small text--light"><i class="fa fa-files-o"></i> 10 treff</span>
+                      <span>3:27:51</span>
+                      <span class="text--bold">234</span>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1">
+                      <label class="form__label">
+                        <input type="checkbox">
+                      </label>
+                    </div>
+                    <div class="col-xs-8">
+                      <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
+                      <span class="text--bold"><a href="#">Set The Controls for the Heart of the Sun</a></span>
+                      <span><a href="#">Pink Floyd</a></span>
+                    </div>
+                    <div class="col-xs-3 text--right">
+                      <span class="text--small text--light"><i class="fa fa-files-o"></i> 7 treff</span>
+                      <span>3:27:51</span>
+                      <span class="text--bold">234</span>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                </div><!--end .fake-table-->
+              </section><!--end .tabs__section #nrk-->
+            </div><!--end .tabs-->
+          </div><!--end .fake-table__wrapper-->
+
+          <div class="fake-table__wrapper fake-table__wrapper--main">
+            <div class="fake-table__infobar container">
               <div class="row">
-                <div class="fake-table__wrapper fake-table__wrapper--sidebar">
-                  <div class="fake-table__toolbar container">
-                    <div class="toolbar__above row">
-                      <div class="col-sm"><span class="text--small text--bold">Vis alle felter</span>
-                        <span class="x-toggle-container">
-                          <input type="checkbox" class="x-toggle">
-                          <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-                          </label>
-                        </span>
-                      </div><!--end .col-sm-->
-                    </div><!--end .row-->
-                    <div class="toolbar__below row">
+                <div class="col-xs-8">
+                  <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
+                  <h3 class="fake-table__infobar__heading">Is That What You Call Love?</h3>
+                  <span>Hawksley Workman</span>
+                  <span class="text--small text--light link-list--inline">
+                    <a href="#">Six Shooter Records</a>
+                    <a href="#">SIX093LP</a>
+                  </span>
+                </div>
+                <div class="col-xs-4 text--right">
+                  <span class="text--small text--light">10 treff</span>
+                  <span>3:27:51</span>
+                  <span class="text--bold">234</span>
+                </div>
+              </div><!--/ .row-->
+            </div><!--/ .fake-table__infobar-->
+
+            <div class="tabs container">
+              <ul class='tabs__nav row'>
+                <li class='tabs__nav__item'><a href="#discography">Diskografi</a></li>
+                <li class='tabs__nav__item'><a href="#search-external-sources">Søk </a></li>
+              </ul>
+
+              <section id="discography" class="tabs__section row">
+                <div class="fake-table">
+                  <div class="fake-table__row fake-table__row--expanded">
+                    <div class="fake-table__toggle-container">
+                      <div class="fake-table__toggle-row">
+                        <div class="col-xs-4">
+                          <span class="text--bold">4. Is That What You Call Love?</span>
+                        </div>
+                        <div class="col-xs-3">
+                          Hawksley Workman
+                        </div>
+                        <div class="col-xs-2">
+                          Diskografi
+                        </div>
+                        <div class="col-xs-2 text--right">
+                          Profile 2
+                        </div>
+                        <div class="col-xs-1 fake-table__cell--action">
+                          <a href="#" class="table-row-toggle"></a>
+                        </div>
+                      </div><!--end .fake-table__toggle-row-->
+                    </div><!--end .fake-table__toggle-container-->
+                    <div class="fake-table__row fake-table__row--child">
                       <div class="col-md">
-                        <ul class="filter-items link-list--inline">
-                          <li><a class="filter-items__remove" href="#"><i class="icon--x"></i></a> <span><a href="#">Leonard Cohen</a></span></li>
-                          <li><a class="filter-items__remove" href="#"><i class="icon--x"></i></a> <span><a href="#">Ikke utgitt</a></span></li>
-                        </ul>
-                      </div>
-                    </div><!--end .row-->
-                  </div>
-                  <div class="fake-table fake-table--scrollable">
-                    <div class="fake-table__row fake-table__row--selected">
-                      <div class="col-xs-1">
-                        <label class="form__label">
-                          <input type="checkbox">
-                        </label>
-                      </div>
-                      <div class="col-xs-7">
-                        <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
-                        <span class="text--bold"><a href="#">Is That What You Call Love?</a></span>
-                        <span><a href="#">Hawksley Workman</a></span>
-                      </div>
-                      <div class="col-xs-3">
-                        <span class="text--small text--light"><i class="fa fa-files-o"></i> 10 treff</span>
-                        <span>3:27:51</span>
-                        <span class="text--bold">234</span>
-                      </div>
-                      <div class="col-xs-1 text--center">
-                        <a href="#" class="table-row-toggle"></a>
-                      </div>
-                    </div><!--end .fake-table__row-->
-                    <div class="fake-table__row">
-                      <div class="col-xs-1">
-                        <label class="form__label">
-                          <input type="checkbox">
-                        </label>
-                      </div>
-                      <div class="col-xs-7">
-                        <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
-                        <span class="text--bold"><a href="#">Set The Controls for the Heart of the Sun</a></span>
-                        <span><a href="#">Pink Floyd</a></span>
-                      </div>
-                      <div class="col-xs-3">
-                        <span class="text--small text--light"><i class="fa fa-files-o"></i> 7 treff</span>
-                        <span>3:27:51</span>
-                        <span class="text--bold">234</span>
-                      </div>
-                      <div class="col-xs-1 text--center">
-                        <a href="#" class="table-row-toggle"></a>
-                      </div>
-                    </div><!--end .fake-table__row-->
-                    <div class="fake-table__row">
-                      <div class="col-xs-1">
-                        <label class="form__label">
-                          <input type="checkbox">
-                        </label>
-                      </div>
-                      <div class="col-xs-7">
-                        <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
-                        <span class="text--bold"><a href="#">You Probably Couldn't See For the Lights But You Were Looking Straight At Me</a></span>
-                        <span><a href="#">Arctic Monkeys</a></span>
-                      </div>
-                      <div class="col-xs-3">
-                        <span class="text--small text--light"><i class="fa fa-files-o"></i> 10 treff</span>
-                        <span>3:27:51</span>
-                        <span class="text--bold">234</span>
-                      </div>
-                      <div class="col-xs-1 text--center">
-                        <a href="#" class="table-row-toggle"></a>
-                      </div>
-                    </div><!--end .fake-table__row-->
-                    <div class="fake-table__row">
-                      <div class="col-xs-1">
-                        <label class="form__label">
-                          <input type="checkbox">
-                        </label>
-                      </div>
-                      <div class="col-xs-7">
-                        <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
-                        <span class="text--bold"><a href="#">Everybody's Got Something To Hide Except Me And My Monkey</a></span>
-                        <span><a href="#">The Beatles</a></span>
-                      </div>
-                      <div class="col-xs-3">
-                        <span class="text--small text--light"><i class="fa fa-files-o"></i> 10 treff</span>
-                        <span>3:27:51</span>
-                        <span class="text--bold">234</span>
-                      </div>
-                      <div class="col-xs-1 text--center">
-                        <a href="#" class="table-row-toggle"></a>
-                      </div>
-                    </div><!--end .fake-table__row-->
-                    <div class="fake-table__row">
-                      <div class="col-xs-1">
-                        <label class="form__label">
-                          <input type="checkbox">
-                        </label>
-                      </div>
-                      <div class="col-xs-7">
-                        <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
-                        <span class="text--bold"><a href="#">From the Center of the Arc</a></span>
-                        <span><a href="#">The First Person to See an Elephant</a></span>
-                      </div>
-                      <div class="col-xs-3">
-                        <span class="text--small text--light"><i class="fa fa-files-o"></i> 10 treff</span>
-                        <span>3:27:51</span>
-                        <span class="text--bold">234</span>
-                      </div>
-                      <div class="col-xs-1 text--center">
-                        <a href="#" class="table-row-toggle"></a>
-                      </div>
-                    </div><!--end .fake-table__row-->
-                    <div class="fake-table__row">
-                      <div class="col-xs-1">
-                        <label class="form__label">
-                          <input type="checkbox">
-                        </label>
-                      </div>
-                      <div class="col-xs-7">
-                        <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
-                        <span class="text--bold"><a href="#">Rock Gives Courage</a></span>
-                        <span><a href="#">Anderson Bruford Wakeman Howe</a></span>
-                      </div>
-                      <div class="col-xs-3">
-                        <span class="text--small text--light"><i class="fa fa-files-o"></i> 10 treff</span>
-                        <span>3:27:51</span>
-                        <span class="text--bold">234</span>
-                      </div>
-                      <div class="col-xs-1 text--center">
-                        <a href="#" class="table-row-toggle"></a>
-                      </div>
-                    </div><!--end .fake-table__row-->
-                    <div class="fake-table__row">
-                      <div class="col-xs-1">
-                        <label class="form__label">
-                          <input type="checkbox">
-                        </label>
-                      </div>
-                      <div class="col-xs-7">
-                        <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
-                        <span class="text--bold"><a href="#">Big Puns Not Dead Because I Just Saw Him At Krispy Kreme</a></span>
-                        <span><a href="#">The Tony Danza Tap Dance Extravaganza</a></span>
-                      </div>
-                      <div class="col-xs-3">
-                        <span class="text--small text--light"><i class="fa fa-files-o"></i> 10 treff</span>
-                        <span>3:27:51</span>
-                        <span class="text--bold">234</span>
-                      </div>
-                      <div class="col-xs-1 text--center">
-                        <a href="#" class="table-row-toggle"></a>
-                      </div>
-                    </div><!--end .fake-table__row-->
-                    <div class="fake-table__row">
-                      <div class="col-xs-1">
-                        <label class="form__label">
-                          <input type="checkbox">
-                        </label>
-                      </div>
-                      <div class="col-xs-7">
-                        <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
-                        <span class="text--bold"><a href="#">Freak Out Mu</a></span>
-                        <span><a href="#">Acid Mothers Temple & The Melting Paraiso U.F.O.</a></span>
-                      </div>
-                      <div class="col-xs-3">
-                        <span class="text--small text--light"><i class="fa fa-files-o"></i> 10 treff</span>
-                        <span>3:27:51</span>
-                        <span class="text--bold">234</span>
-                      </div>
-                      <div class="col-xs-1 text--center">
-                        <a href="#" class="table-row-toggle"></a>
-                      </div>
-                    </div><!--end .fake-table__row-->
-                    <div class="fake-table__row">
-                      <div class="col-xs-1">
-                        <label class="form__label">
-                          <input type="checkbox">
-                        </label>
-                      </div>
-                      <div class="col-xs-7">
-                        <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
-                        <span class="text--bold"><a href="#">Thanks</a></span>
-                        <span><a href="#">The World Is a Beautiful Place & I Am No Longer Afraid to Die</a></span>
-                      </div>
-                      <div class="col-xs-3">
-                        <span class="text--small text--light"><i class="fa fa-files-o"></i> 10 treff</span>
-                        <span>3:27:51</span>
-                        <span class="text--bold">234</span>
-                      </div>
-                      <div class="col-xs-1 text--center">
-                        <a href="#" class="table-row-toggle"></a>
-                      </div>
-                    </div><!--end .fake-table__row-->
-                  </div><!--end .fake-table-->
-                </div><!--end .fake-table__wrapper-->
+                        <div class="row">
+                          <div class="col-md-1"></div><!--end .col-md-1-->
+                          <div class="col-md-5 text--center"><h6 class="hidden-on-mobile">Match Record</h6></div><!--end .col-md-5-->
+                          <div class="col-md-1"></div><!--end .col-md-1-->
+                          <div class="col-md-5 text--center"><h6 class="hidden-on-mobile">Match Resultat</h6></div><!--end .col-md-2-->
+                        </div><!--end .row-->
+                        <form>
+                          <div class="row">
+                            <div class="col-xs-12 col-md-1 fake-table__cell--label">Artist</div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match record">
+                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
+                                <input type="text" value="Hawksley Workman" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                            <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match result">
+                              <label class="form__label form__label--block form__label--reduced is-valid">
+                                <input type="text" value="Hawksley Workman" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                          </div><!--end .row-->
 
-                <div class="fake-table__wrapper fake-table__wrapper--main">
-                  <div class="fake-table__infobar container">
-                    <div class="row">
-                      <div class="col-xs-8">
-                        <span class="text--small text--light"><i class="fa fa-ban"></i> Ikke utgitt</span>
-                        <h3 class="fake-table__infobar__heading">Is That What You Call Love?</h3>
-                        <span>Hawksley Workman</span>
-                        <span class="text--small text--light link-list--inline">
-                          <a href="#">Six Shooter Records</a>
-                          <a href="#">SIX093LP</a>
-                        </span>
-                      </div>
-                      <div class="col-xs-4 text--right">
-                        <span class="text--small text--light">10 treff</span>
-                        <span>3:27:51</span>
-                        <span class="text--bold">234</span>
-                      </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-md-1 fake-table__cell--label">Tittel</div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match record">
+                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
+                                <input type="text" value="Is That What You Call Love?" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                            <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match result">
+                              <label class="form__label form__label--block form__label--reduced is-valid">
+                                <input type="text" value="Is That What You Call Love?" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                          </div><!--end .row-->
+
+                          <div class="row">
+                            <div class="col-xs-12 col-md-1 fake-table__cell--label">Album</div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match record">
+                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
+                                <input type="text" value="Is That What You Call Love?" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                            <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match result">
+                              <label class="form__label form__label--block form__label--reduced is-valid">
+                                <input type="text" value="Is That What You Call Love?" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                          </div><!--end .row-->
+
+                          <div class="row">
+                            <div class="col-md-1 fake-table__cell--label">ISRC</div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match record">
+                              <label class="form__label form__label--block form__label--reduced has-error form__label--validation-shared">
+                                <input type="text" value="0937638494" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                            <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match result">
+                              <label class="form__label form__label--block form__label--reduced has-error">
+                                <input type="text" value="394857563" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                          </div><!--end .row-->
+
+                          <div class="row">
+                            <div class="col-xs-12 col-md-1 fake-table__cell--label">Katalognr.</div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match record">
+                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
+                                <input type="text" value="01 June 2016" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                            <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match result">
+                              <label class="form__label form__label--block form__label--reduced is-valid">
+                                <input type="text" value="01 June 2016" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                          </div><!--end .row-->
+
+                          <div class="row">
+                            <div class="col-xs-12 col-md-1 fake-table__cell--label">Label</div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match record">
+                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
+                                <input type="text" value="01 June 2016" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                            <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                            <div class="col-xs-12 col-md-5" data-label="Match result">
+                              <label class="form__label form__label--block form__label--reduced is-valid">
+                                <input type="text" value="01 June 2016" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end .col-md-5-->
+                          </div><!--end .row-->
+                        </form>
+                        <div class="fake-table__row fake-table__row--foot">
+                          <a href="#" class="link--inline link--chevron-right">Vis alle felter</a>
+                        </div><!--end .fake-table__row footer-->
+                      </div><!--end .col-md-12-->
+                    </div><!--end .fake-table__row child-->
+                  </div><!--end .fake-table__row expanded-->
+                </div><!--end .fake-table-with-tabs-->
+              </section><!--end section #discography-->
+
+              <section id="search-external-sources" class="tabs__section row">
+                <div class="fake-table">
+                  <div class="row tabs__toolbar">
+                    <div class="col-xs-12 col-sm col-lg-6 off-lg-1">
+                      <section class="search">
+                        <form action="" class="search__form">
+                          <input type="text" class="search__form__input" value="" placeholder="Søk i Spotify eller Discogs..." />
+
+                        </form>
+                      </section>
                     </div>
-                  </div>
-
-                  <div class="tabs container">
-                    <ul class='tabs__nav row'>
-                      <li class='tabs__nav__item'><a href="#discography">Diskografi</a></li>
-                      <li class='tabs__nav__item'><a href="#search-external-sources">Søk </a></li>
-                    </ul>
-                    <div class="btn-group btn-group--floating">
-                      <button class="btn btn--success btn--small"><i class="fa fa-check"></i> Match</button>
-                      <button class="btn btn--secondary btn--small"><i class="fa fa-ban"></i> Ikke utgitt</button>
-                      <button class="btn btn--secondary btn--small"><i class="fa fa-share"></i> Restliste</button>
-                    </div>
-                    <section id="discography" class="tabs__section row">
-                      <div class="fake-table fake-table--scrollable fake-table--with-tabs">
-                        <div class="fake-table__row fake-table__row--expanded">
-                          <div class="fake-table__toggle-container">
-                            <div class="fake-table__toggle-row">
-                              <div class="col-xs-4">
-                                <span class="text--bold">4. Is That What You Call Love?</span>
-                              </div>
-                              <div class="col-xs-3">
-                                Hawksley Workman
-                              </div>
-                              <div class="col-xs-2">
-                                Diskografi
-                              </div>
-                              <div class="col-xs-2 text--right">
-                                Profile 2
-                              </div>
-                              <div class="col-xs-1 fake-table__cell--action">
-                                <a href="#" class="table-row-toggle"></a>
-                              </div>
-                            </div><!--end .fake-table__toggle-row-->
-                          </div><!--end .fake-table__toggle-container-->
-                          <div class="fake-table__row fake-table__row--child">
-                            <div class="col-md">
-                              <div class="row">
-                                <div class="col-md-1"></div><!--end .col-md-1-->
-                                <div class="col-md-5 text--center"><h6 class="hidden-on-mobile">Match Record</h6></div><!--end .col-md-5-->
-                                <div class="col-md-1"></div><!--end .col-md-1-->
-                                <div class="col-md-5 text--center"><h6 class="hidden-on-mobile">Match Resultat</h6></div><!--end .col-md-2-->
-                              </div><!--end .row-->
-                              <form>
-                                <div class="row">
-                                  <div class="col-xs-12 col-md-1 fake-table__cell--label">Artist</div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match record">
-                                    <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                      <input type="text" value="Hawksley Workman" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                  <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match result">
-                                    <label class="form__label form__label--block form__label--reduced is-valid">
-                                      <input type="text" value="Hawksley Workman" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                </div><!--end .row-->
-
-                                <div class="row">
-                                  <div class="col-xs-12 col-md-1 fake-table__cell--label">Tittel</div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match record">
-                                    <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                      <input type="text" value="Is That What You Call Love?" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                  <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match result">
-                                    <label class="form__label form__label--block form__label--reduced is-valid">
-                                      <input type="text" value="Is That What You Call Love?" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                </div><!--end .row-->
-
-                                <div class="row">
-                                  <div class="col-xs-12 col-md-1 fake-table__cell--label">Album</div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match record">
-                                    <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                      <input type="text" value="Is That What You Call Love?" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                  <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match result">
-                                    <label class="form__label form__label--block form__label--reduced is-valid">
-                                      <input type="text" value="Is That What You Call Love?" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                </div><!--end .row-->
-
-                                <div class="row">
-                                  <div class="col-md-1 fake-table__cell--label">ISRC</div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match record">
-                                    <label class="form__label form__label--block form__label--reduced has-error form__label--validation-shared">
-                                      <input type="text" value="0937638494" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                  <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match result">
-                                    <label class="form__label form__label--block form__label--reduced has-error">
-                                      <input type="text" value="394857563" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                </div><!--end .row-->
-
-                                <div class="row">
-                                  <div class="col-xs-12 col-md-1 fake-table__cell--label">Katalognr.</div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match record">
-                                    <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                      <input type="text" value="01 June 2016" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                  <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match result">
-                                    <label class="form__label form__label--block form__label--reduced is-valid">
-                                      <input type="text" value="01 June 2016" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                </div><!--end .row-->
-
-                                <div class="row">
-                                  <div class="col-xs-12 col-md-1 fake-table__cell--label">Label</div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match record">
-                                    <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                      <input type="text" value="01 June 2016" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                  <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
-                                  <div class="col-xs-12 col-md-5" data-label="Match result">
-                                    <label class="form__label form__label--block form__label--reduced is-valid">
-                                      <input type="text" value="01 June 2016" class="form__input form__input--block form__input--validation-hidden">
-                                    </label>
-                                  </div><!--end .col-md-5-->
-                                </div><!--end .row-->
-                              </form>
-                              <div class="fake-table__row fake-table__row--foot">
-                                <a href="#" class="link--inline link--chevron-right">Vis alle felter</a>
-                              </div><!--end .fake-table__row footer-->
-                            </div><!--end .col-md-12-->
-                          </div><!--end .fake-table__row child-->
-                        </div><!--end .fake-table__row expanded-->
-                        <div class="fake-table__row">
-                          <div class="fake-table__toggle-container">
-                            <div class="fake-table__toggle-row">
-                              <div class="col-xs-4">
-                                <span class="text--bold">2. Is This a Dream or is This Real?</span>
-                              </div>
-                              <div class="col-xs-3">
-                                Hawksley Workman
-                              </div>
-                              <div class="col-xs-2">
-                                Diskografi
-                              </div>
-                              <div class="col-xs-2 text--right">
-                                ISRC og Hovedartist (100)
-                              </div>
-                              <div class="col-xs-1 fake-table__cell--action">
-                                <a href="#" class="table-row-toggle"></a>
-                              </div>
-                            </div><!--end .fake-table__toggle-row-->
-                          </div><!--end .fake-table__toggle-container-->
-                        </div><!--end .fake-table__row-->
-                        <div class="fake-table__row">
-                          <div class="fake-table__toggle-container">
-                            <div class="fake-table__toggle-row">
-                              <div class="col-xs-4">
-                                <span class="text--bold">3. Is This a Dream or is This Real?</span>
-                              </div>
-                              <div class="col-xs-3">
-                                Hawksley Workman
-                              </div>
-                              <div class="col-xs-2">
-                                Diskografi
-                              </div>
-                              <div class="col-xs-2 text--right">
-                                Profile 1
-                              </div>
-                              <div class="col-xs-1 fake-table__cell--action">
-                                <a href="#" class="table-row-toggle"></a>
-                              </div>
-                            </div><!--end .fake-table__toggle-row-->
-                          </div><!--end .fake-table__toggle-container-->
-                        </div><!--end .fake-table__row-->
-                        <div class="fake-table__row">
-                          <div class="fake-table__toggle-container">
-                            <div class="fake-table__toggle-row">
-                              <div class="col-xs-4">
-                                <span class="text--bold">4. Is That What You Call Love?</span>
-                              </div>
-                              <div class="col-xs-3">
-                                Hawksley Workman
-                              </div>
-                              <div class="col-xs-2">
-                                Diskografi
-                              </div>
-                              <div class="col-xs-2 text--right">
-                                Profile 2
-                              </div>
-                              <div class="col-xs-1 fake-table__cell--action">
-                                <a href="#" class="table-row-toggle"></a>
-                              </div>
-                            </div><!--end .fake-table__toggle-row-->
-                          </div><!--end .fake-table__toggle-container-->
-                        </div><!--end .fake-table__row-->
-                        <div class="fake-table__row">
-                          <div class="fake-table__toggle-container">
-                            <div class="fake-table__toggle-row">
-                              <div class="col-xs-4">
-                                <span class="text--bold">5. Is This a Dream or is This Real?</span>
-                              </div>
-                              <div class="col-xs-3">
-                                Hawksley Workman
-                              </div>
-                              <div class="col-xs-2">
-                                Diskografi
-                              </div>
-                              <div class="col-xs-2 text--right">
-                                Profile 3
-                              </div>
-                              <div class="col-xs-1 fake-table__cell--action">
-                                <a href="#" class="table-row-toggle"></a>
-                              </div>
-                            </div><!--end .fake-table__toggle-row-->
-                          </div><!--end .fake-table__toggle-container-->
-                        </div><!--end .fake-table__row-->
-                        <div class="fake-table__row">
-                          <div class="fake-table__toggle-container">
-                            <div class="fake-table__toggle-row">
-                              <div class="col-xs-4">
-                                <span class="text--bold">6. Is That What You Call Love?</span>
-                              </div>
-                              <div class="col-xs-3">
-                                Hawksley Workman
-                              </div>
-                              <div class="col-xs-2">
-                                Diskografi
-                              </div>
-                              <div class="col-xs-2 text--right">
-                                Profile 2
-                              </div>
-                              <div class="col-xs-1 fake-table__cell--action">
-                                <a href="#" class="table-row-toggle"></a>
-                              </div>
-                            </div><!--end .fake-table__toggle-row-->
-                          </div><!--end .fake-table__toggle-container-->
-                        </div><!--end .fake-table__row-->
-                      </div><!--end .fake-table-scrollable-->
-                    </section><!--end .tabs__section DISKOGRAFI-->
-                    <section id="search-external-sources" class="tabs__section row">
-                      <div class="fake-table fake-table--scrollable">
-                        <div class="row tabs__toolbar">
-                          <div class="col-xs-12 col-sm col-lg-6 off-lg-1">
-                            <section class="search">
-                              <form action="" class="search__form">
-                                <input type="text" class="search__form__input" value="" placeholder="Søk i Spotify eller Discogs..." />
-
-                              </form>
-                            </section>
-                          </div>
-                          <div class="col-sm fake-table__cell--action">
-                            <div class="btn-group">
-                              <button class="btn btn--small btn--success"><i class="fa fa-plus-circle"></i> Ny innspilling</button>
-                              <button class="btn btn--small btn--secondary"><i class="fa fa-share"></i> Restliste</button>
-                            </div>
-                              <!-- <div class="btn-select">
-                                  <button class="btn btn--small btn--success"><span>Velg...</span> <i class="icon--arrow-down"></i></button>
-                                  <ul>
-                                    <li><a href="#">Send til restliste</a></li>
-                                    <li><a href="#">Opprett ny innspilling</a></li>
-                                  </ul>
-                                </div> -->
-                          </div>
-                        </div><!--end .tabs__toolbar-->
-                        <div class="fake-table__row">
-                          <div class="fake-table__toggle-container">
-                            <div class="fake-table__toggle-row">
-                              <div class="col-xs-1">
-                                <label class="form__label">
-                                  <input type="checkbox">
-                                </label>
-                              </div>
-                              <div class="col-xs-6">
-                                <span class="text--bold">Is That What You Call Love?</span>
-                                <span>Hawksley Workman</span>
-                              </div>
-                              <div class="col-xs-4">
-                                <span class="text--bold">Kilde</span>
-                                <span>Spotify</span>
-                              </div>
-                              <div class="col-xs-1 text--center">
-                                <a href="#" class="table-row-toggle"></a>
-                              </div>
-                            </div><!--end .fake-table__toggle-row-->
-                          </div><!--end .fake-table__toggle-container-->
-                        </div><!--end .fake-table__row-->
-                        <div class="fake-table__row">
-                          <div class="fake-table__toggle-container">
-                            <div class="fake-table__toggle-row">
-                              <div class="col-xs-1">
-                                <label class="form__label">
-                                  <input type="checkbox">
-                                </label>
-                              </div>
-                              <div class="col-xs-6">
-                                <span class="text--bold">Is That What You Call Love?</span>
-                                <span>Hawksley Workman</span>
-                              </div>
-                              <div class="col-xs-4">
-                                <span class="text--bold">Kilde</span>
-                                <span>Discogs</span>
-                              </div>
-                              <div class="col-xs-1 text--center">
-                                <a href="#" class="table-row-toggle"></a>
-                              </div>
-                            </div><!--end .fake-table__toggle-row-->
-                          </div><!--end .fake-table__toggle-container-->
-                        </div><!--end .fake-table__row-->
-                        <div class="fake-table__row">
-                          <div class="fake-table__toggle-container">
-                            <div class="fake-table__toggle-row">
-                              <div class="col-xs-1">
-                                <label class="form__label">
-                                  <input type="checkbox">
-                                </label>
-                              </div>
-                              <div class="col-xs-10">
-                                <span class="text--bold">Is That What You Call Love?</span>
-                                <span>Hawksley Workman</span>
-                              </div>
-                              <div class="col-xs-1 text--center">
-                                <a href="#" class="table-row-toggle"></a>
-                              </div>
-                            </div><!--end .fake-table__toggle-row-->
-                          </div><!--end .fake-table__toggle-container-->
-                        </div><!--end .fake-table__row-->
-                      </div><!--end .fake-table-scrollable-->
-                    </section><!--end .tabs__section search-external-sources-->
-                  </div><!--end .tabs-->
-                </div><!--end .fake-table__wrapper-->
-              </div><!--end .row-->
-            </div><!--end .col-md-->
-          </section><!--end .tabs__section NRK-->
-        </div><!--end .tabs-->
+                  </div><!--/ .tabs__toolbar-->
+                </div><!--/ .fakt-table-->
+              </section><!--end section #search-external-sources-->
+            </div><!--/ .tabs-->
+          </div><!--end .fake-table__wrapper-->
+        </div><!--end .row-->
       </section>
 
     </main>

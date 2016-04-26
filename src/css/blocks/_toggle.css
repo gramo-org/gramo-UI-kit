@@ -9,6 +9,7 @@
   background: url(img/toggle-bg.svg) right 7px center no-repeat;
   background-size: 10px;
   background-color: var(--silver)!important;
+  margin-left: .5rem;
 
   &.medium {
     padding: 1px;

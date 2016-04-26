@@ -15,7 +15,7 @@
 
     &__item {
       @extend .col-sm;
-      @extend .col-md-2;
+      @extend .col-md-3;
 
       padding: 0;
       text-align: center;
@@ -77,13 +77,15 @@
   }
 
   &--toggleable {
+    margin-top: 1rem;
+
     & > .tabs__nav,
     & > .tabs__toolbar {
       display: none;
     }
   }
 
-  &--toggleable input[type="checkbox"] {
+  &--toggleable #tab-control {
     display: none;
 
     &:checked {
@@ -99,5 +101,6 @@
     color: var(--base-link-color);
     cursor: pointer;
     font-size: 90%;
+    margin-left: 1rem;
   }
 }

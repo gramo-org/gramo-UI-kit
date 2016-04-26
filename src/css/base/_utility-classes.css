@@ -29,8 +29,12 @@
   font-weight: 600;
 }
 
+.text--medium {
+  font-size: 1.4rem;
+}
+
 .text--small {
-  font-size: 85%;
+  font-size: 1.2rem;
 }
 
 .hidden-on-mobile {
