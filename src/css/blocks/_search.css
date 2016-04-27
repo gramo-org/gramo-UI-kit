@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.search__form__input {
+input[type="text"].search__form__input {
   @extend .col-xs;
   background: var(--gramo-white);
 
@@ -27,6 +27,10 @@
   border-width: 1px 1px 1px 0;
   border-radius: 2px 0 0 2px;
   outline: none;
+
+  &--large {
+    padding: 1.2rem;
+  }
 }
 
 .search__submit {
@@ -53,7 +57,7 @@
 
 .search__form:before {
   border-radius: 2px 0 0 2px;
-  background: var(--gramo-green);
+  background: var(--silver);
   font-family: 'icomoon';
   font-weight: normal;
   font-style: normal;

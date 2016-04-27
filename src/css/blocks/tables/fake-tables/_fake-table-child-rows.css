@@ -32,8 +32,4 @@
     /*@extend .fake-table__row:hover;*/
     background: var(--gramo-white);
   }
-
-  .table-row-toggle {
-    @extend .icon--chevron-down;
-  }
 }

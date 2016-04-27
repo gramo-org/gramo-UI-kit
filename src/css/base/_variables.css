@@ -66,7 +66,7 @@
 --h6-font-size:                                  1.4rem;
 --h6-line-height:                                2.0rem;
 --h6-font-weight:                                var(--font-600);
---h6-color:                                      var(--gramo-black);
+--h6-color:                                      var(--slate-gray);
 
 /* Forms */
 --base-placeholder-color:                        #999;

@@ -29,8 +29,12 @@
   font-weight: 600;
 }
 
+.text--medium {
+  font-size: 1.4rem;
+}
+
 .text--small {
-  font-size: 85%;
+  font-size: 1.2rem;
 }
 
 .hidden-on-mobile {
@@ -58,7 +62,7 @@
   }
 
   &--right {
-    padding-right: 0;
+    @media (--desktop) { padding-right: 0!important; }
   }
 
   &--top {
@@ -75,16 +79,22 @@
   margin-right: 1rem;
 }
 
-/*** Inline list items ***/
-.link-list--inline > * {
-  @extend %list-inline;
-}
-
 /*** heading--inline ***/
 
 .heading--inline {
   display: inline-block;
   vertical-align: middle;
+}
+
+/*** Inline items ***/
+.text--inline,
+.list--inline {
+  display: inline;
+
+  & > * {
+    display: inline-block;
+    margin-right: 1rem;
+  }
 }
 
 /* Flex order */

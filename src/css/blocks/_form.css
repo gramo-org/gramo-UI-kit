@@ -180,7 +180,8 @@
     color: var(--gramo-green);
     font-family: 'icomoon';
     position: absolute;
-    left: 114%;
+    /*left: 114%;*/
+    left: 113%;
     top: 1.5rem;
     background: var(--gramo-white);
     content: none;
@@ -188,7 +189,7 @@
   }
 
   .form__validation-divider {
-    background: linear-gradient(to right, var(--gramo-white) 50%,var(--table-border-color) 52%,var(--gramo-white) 50%);
+    /*background: linear-gradient(to right, var(--gramo-white) 50%,var(--table-border-color) 52%,var(--gramo-white) 50%);*/
   }
 
   .form__label--validation-shared.has-error::after {

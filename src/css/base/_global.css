@@ -69,6 +69,7 @@ h6, .h6 {
   margin-bottom: .1em;
   color: var(--h6-color);
   font-weight: var(--h6-font-weight);
+  text-transform: uppercase;
 }
 
 b,
