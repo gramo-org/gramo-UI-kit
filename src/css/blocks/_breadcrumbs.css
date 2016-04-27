@@ -67,6 +67,16 @@
 
     a {
       color: inherit;
+      font-weight: 600;
+    }
+
+    .breadcrumbs__item {
+      padding-left: .5rem;
+    }
+
+    .breadcrumbs__item::before {
+      color: var(--silver);
+      margin-right: .5rem;
     }
   }
 }

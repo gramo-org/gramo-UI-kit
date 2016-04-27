@@ -34,3 +34,15 @@
   background: var(--ui-gray);
   height: 10rem;
 }
+
+/* Stretched horizontal-rule */
+.horizontal-rule--stretch {
+
+  margin: 1rem 0 0 -1rem;
+  width: calc(100% + 2rem);
+
+  &:before,
+  &:after {
+    content: none;
+  }
+}

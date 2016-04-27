@@ -65,7 +65,6 @@
   /* fake-table--foot */
   &--foot {
     border: 0;
-    justify-content: center;
     padding: .5rem 0;
     margin-bottom: -1rem;
     margin-top: 2rem;

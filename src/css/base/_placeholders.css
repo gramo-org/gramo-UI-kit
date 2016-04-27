@@ -16,11 +16,6 @@
   margin: 0;
 }
 
-%list-inline {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
 %full-border {
   border-width: 1px 1px 3px 1px!important;
 }
