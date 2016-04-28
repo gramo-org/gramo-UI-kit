@@ -86,6 +86,12 @@
   align-self:center;
 }
 
+.align--bottom{
+  -webkit-justify-content:flex-end;
+  -ms-flex-pack:end;
+  justify-content:flex-end;
+}
+
 .no-padding{
   padding:0!important;
 }

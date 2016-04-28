@@ -54,6 +54,10 @@
   align-self: center;
 }
 
+.align--bottom {
+  justify-content: flex-end;
+}
+
 .no-padding {
   padding: 0!important;
 
