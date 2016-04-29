@@ -8,7 +8,7 @@
 .fake-table--scrollable {
 
   @media (--hd) {
-    height: 77vh;
+    height: calc(100vh - 30rem);
     overflow-y: auto;
     overflow-x: hidden;
   }

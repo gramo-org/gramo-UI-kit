@@ -1,0 +1,15 @@
+.empty-state {
+
+  text-align: center;
+
+  h3 {
+    span {
+      display: block;
+      margin-top: 1.5rem;
+      font-weight: 300;
+      color: var(--off-gray);
+      margin-bottom: 7.5rem;
+    }
+  }
+
+}

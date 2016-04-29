@@ -58,7 +58,7 @@
 @import url('blocks/_search.css');
 @import url('blocks/_placeholder.css');
 @import url('blocks/_filters.css');
-
+@import url('blocks/_empty-state.css');
 
 /* Print Styles */
 @media print {

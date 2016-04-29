@@ -2957,7 +2957,7 @@ tr > td:last-child{
 
 @media (min-width: 1200px){
   .fake-table--scrollable{
-    height:77vh;
+    height:calc(100vh - 30rem);
     overflow-y:auto;
     overflow-x:hidden;
   }
@@ -4102,6 +4102,18 @@ input[type="text"].search__form__input--large{
   content:'';
   margin:0 1rem 0 .3rem;
   border-left:1px solid #d9d9dc;
+}
+.empty-state{
+
+  text-align:center;
+
+}
+.empty-state h3 span{
+  display:block;
+  margin-top:1.5rem;
+  font-weight:300;
+  color:#a5a4ab;
+  margin-bottom:7.5rem;
 }
 @media print{
   *, *:before, *:after{
