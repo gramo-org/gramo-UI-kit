@@ -2947,6 +2947,10 @@ tr > td:last-child{
   font-size:1.3rem;
 }
 
+.filter-items a{
+  text-decoration:none;
+}
+
 .filter-items__remove{
   font-size:55%;
   text-decoration:none;
