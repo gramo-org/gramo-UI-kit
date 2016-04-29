@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <!--Site-header example-->
+      <header class="site-header">
+        <section class="container container--hd">
+          <!-- <h1 class="site-header__title"><img src="img/gramo-logo.png" alt="gramo logo"></h1>
+          <p class="site-header__description">Component based UI kit</p> -->
+          <nav>
+            <div class="toggle-sidebar">
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#"><i class="icon--home"></i></a></li>
+              <li class="breadcrumbs__item"><a href="#">Innlesning</a></li>
+              <li class="breadcrumbs__item"><a href="#">Avvik kontroll</a></li>
+              <li class="breadcrumbs__item"><a href="#">NRK rapport</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <!--End Site-header example-->
+      <!--- Flash message --->
+      <div class="flash-message-wrapper">
+        <div class="col-xs-12 no-padding">
+          <div class="flash-message flash-message--success">
+            <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--simple">Angre ?</button></p>
+          </div>
+        </div>
+      </div>
+
+      <section class="container container--hd">
+        <div class="row">
+          <div class="wrapper wrapper--sidebar">
+            <header class="content-header">
+              <div class="content-header__above">
+                <h2 class="content-header__title">Ikke identifiserte <span class="badge badge--error">31</span></h2>
+              </div>
+            </header>
+            <div class="tabs container tabs--toggleable tabs--compressed">
+              <ul class="breadcrumbs breadcrumbs--in-content">
+                <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#">NRK</a></li>
+                <li class="breadcrumbs__item"><a href="#">P3</a></li>
+              </ul>
+              <input type="checkbox" id="tab-control">
+              <label for="tab-control">endre kanal</label>
+              <hr class="horizontal-rule horizontal-rule--stretch">
+              <ul class='tabs__nav row'>
+                <li class='tabs__nav__item'><a href="#nrk">NRK</a></li>
+                <li class='tabs__nav__item'><a href="#p4">P4 </a></li>
+                <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
+                <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
+              </ul>
+              <div class="row toolbar">
+                <div class="col-xs col-sm-6">
+                  <div class="searchable-list">
+                    <div class="searchable-list__heading">
+                      <span class="searchable-list__selected">Søk blant kanaler</span>
+                    </div>
+                    <div class="searchable-list__dropdown">
+                      <input type="text" value="P3" class="form__input form__input--block searchable-list__search">
+                      <ul>
+                        <li class="searchable-list__option">P1</li>
+                        <li class="searchable-list__option">P2</li>
+                        <li class="searchable-list__option">P3</li>
+                      </ul>
+                    </div>
+                  </div><!--end searchable list-->
+                </div>
+                <div class="col-md align--center">
+                  <a href="#" class="link--inline">Lagre</a>
+                </div>
+              </div><!--/.row .toolbar-->
+              <section id="nrk" class="tabs__section row">
+                <!--NRK-->
+                <div class="toolbar toolbar--transparent col-md">
+                  <div class="toolbar__above toolbar__above--transparent row">
+                    <div class="col-md">
+                      <ul class="filter-items list--inline">
+                        <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Leonard Cohen</span></a></li>
+                        <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Ikke utgitt</span></a></li>
+                      </ul>
+                    </div>
+                  </div><!--end .row-->
+                  <div class="toolbar__below row">
+                    <div class="col-xs-1">
+                      <label class="form__label">
+                        <input type="checkbox">
+                      </label>
+                    </div>
+                    <div class="col-sm">
+                      <span class="text--medium text--bold">Vis alle felter</span>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle">
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                        </label>
+                      </span>
+                    </div><!--end .col-sm-->
+                  </div>
+                </div><!--/.toolbar-->
+                <div class="fake-table fake-table--scrollable">
+                  <div class="fake-table__row fake-table__row--selected">
+                    <div class="col-xs-1">
+                      <label class="form__label">
+                        <input type="checkbox">
+                      </label>
+                    </div>
+                    <div class="col-xs-8">
+                      <span class="text--small text--light"><a href="#"><i class="fa fa-ban"></i> Ikke utgitt</a></span>
+                      <span class="text--bold"><a href="#">Is That What You Call Love?</a></span>
+                      <span><a href="#">Hawksley Workman</a></span>
+                    </div>
+                    <div class="col-xs-3 text--right">
+                      <span class="text--small text--light"><i class="fa fa-files-o"></i> 10 treff</span>
+                      <span>3:27:51</span>
+                      <span class="text--bold">234</span>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                  <div class="fake-table__row">
+                    <div class="col-xs-1">
+                      <label class="form__label">
+                        <input type="checkbox">
+                      </label>
+                    </div>
+                    <div class="col-xs-8">
+                      <span class="text--small text--light"><a href="#"><i class="fa fa-ban"></i> Ikke utgitt</a></span>
+                      <span class="text--bold"><a href="#">Set The Controls for the Heart of the Sun</a></span>
+                      <span><a href="#">Pink Floyd</a></span>
+                    </div>
+                    <div class="col-xs-3 text--right">
+                      <span class="text--small text--light"><i class="fa fa-files-o"></i> 7 treff</span>
+                      <span>3:27:51</span>
+                      <span class="text--bold">234</span>
+                    </div>
+                  </div><!--end .fake-table__row-->
+                </div><!--end .fake-table-->
+              </section><!--end .tabs__section #nrk-->
+            </div><!--end .tabs-->
+          </div><!--end .wrapper #sidebar-->
+
+          <div class="wrapper wrapper--main">
+
+
+          </div><!--end .wrapper #main-->
+        </div><!--end .row-->
+      </section>
+
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="js/vendor/jquery-1.11.3.min.js"></script>
+<script src="js/default.js"></script>
+
+</body>
+</html>
