@@ -1124,14 +1124,14 @@ input-placeholder{
   color:#999;
 }
 @font-face{
-  font-family:'icomoon';
-  src:url('fonts/icomoon.eot?sr2ig9');
-  src:url('fonts/icomoon.eot?sr2ig9#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?sr2ig9') format('truetype'),
-      url('fonts/icomoon.woff?sr2ig9') format('woff'),
-      url('fonts/icomoon.svg?sr2ig9#icomoon') format('svg');
-  font-weight:normal;
-  font-style:normal;
+    font-family:'icomoon';
+    src:url('fonts/icomoon.eot?cw5qcf');
+    src:url('fonts/icomoon.eot?cw5qcf#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?cw5qcf') format('truetype'),
+        url('fonts/icomoon.woff?cw5qcf') format('woff'),
+        url('fonts/icomoon.svg?cw5qcf#icomoon') format('svg');
+    font-weight:normal;
+    font-style:normal;
 }
 
 [class^="icon-"], [class*=" icon-"]{
@@ -1144,6 +1144,32 @@ input-placeholder{
   display:inline-block;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
+}
+
+.icon--empty-state-musikk:before{
+    content:"\e913";
+    margin-left:-1.2rem;
+}
+.icon--empty-state-arrow:before{
+    content:"\e912";
+}
+
+.icon--ban:before{
+    content:"\e90e";
+    font-size:85%;
+}
+.icon--match:before{
+    content:"\e90f";
+    font-size:85%;
+}
+.icon--send:before{
+    content:"\e910";
+    font-size:85%;
+}
+.icon--hits:before{
+    content:"\e911";
+    font-size:85%;
+    opacity:0.7;
 }
 
 .icon--sort:before{
@@ -4104,7 +4130,7 @@ input[type="text"].search__form__input--large{
   border-left:1px solid #d9d9dc;
 }
 .empty-state{
-
+  padding-top:2rem;
   text-align:center;
 
 }
@@ -4114,6 +4140,18 @@ input[type="text"].search__form__input--large{
   font-weight:300;
   color:#a5a4ab;
   margin-bottom:7.5rem;
+}
+.empty-state__icon{
+  margin-top:5rem;
+}
+.empty-state__icon i{
+  color:#d9d9dc;
+  font-size:18rem;
+  border:1px solid;
+  width:18rem;
+  height:18rem;
+  line-height:95%;
+  border-radius:6px;
 }
 @media print{
   *, *:before, *:after{

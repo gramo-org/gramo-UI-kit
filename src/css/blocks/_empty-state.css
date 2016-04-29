@@ -1,5 +1,5 @@
 .empty-state {
-
+  padding-top: 2rem;
   text-align: center;
 
   h3 {
@@ -9,6 +9,20 @@
       font-weight: 300;
       color: var(--off-gray);
       margin-bottom: 7.5rem;
+    }
+  }
+
+  &__icon {
+    margin-top: 5rem;
+
+    i {
+      color: var(--silver);
+      font-size: 18rem;
+      border: 1px solid;
+      width: 18rem;
+      height: 18rem;
+      line-height: 95%;
+      border-radius: 6px;
     }
   }
 
