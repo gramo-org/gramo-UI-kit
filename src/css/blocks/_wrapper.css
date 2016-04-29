@@ -1,0 +1,29 @@
+/*** Wrappers to divide the page in two columns
+Used e.g. for fake tables allowing the table to be scrollable while a toolbar/header stays in position ***/
+
+.wrapper--sidebar {
+  @extend .col-md;
+  padding: 0;
+
+  &.affix {
+    position: sticky;
+  }
+}
+
+.wrapper--sidebar,
+.wrapper--main {
+  .fake-table__row {
+
+    div[class*="col-"]:first-child,
+    div[class*="col-"]:last-child {
+      justify-content: center;
+    }
+  }
+}
+
+.wrapper--main {
+  @extend .col-xs-12;
+  @extend .col-md-8;
+  padding: 0;
+  @media (--hd) { padding-left: 2rem; margin-top: 1rem; }
+}

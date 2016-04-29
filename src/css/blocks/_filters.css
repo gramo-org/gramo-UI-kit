@@ -1,0 +1,20 @@
+.filter-items {
+  font-size: 1.3rem;
+  @extend %no-list;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__remove {
+    font-size: 55%;
+    text-decoration: none;
+    margin-right: .3rem;
+
+    &:before {
+      content: '';
+      margin: 0 1rem 0 .3rem;
+      border-left: 1px solid var(--silver);
+    }
+  }
+}

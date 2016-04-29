@@ -1,0 +1,40 @@
+.toolbar {
+  background: var(--table-head-background);
+  border: 1px solid var(--table-border-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  justify-content: center;
+
+  &__action {
+    align-self: center;
+    align-items: center;
+    @media (--tablet) { align-items: flex-end; }
+    padding: 0;
+  }
+
+  &__above,
+  &__below {
+    border-width: 1px 1px 0 1px;
+    border-radius: 2px 2px 0 0;
+    background: var(--table-head-background);
+    border: 1px solid var(--table-border-color);
+    padding: .75rem 0;
+
+    &--transparent {
+      background: none;
+      border: 0;
+    }
+
+    & > div[class*="col-"] {
+      display: block;
+    }
+  }
+}
+
+.toolbar--transparent {
+  background: none;
+  border: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
