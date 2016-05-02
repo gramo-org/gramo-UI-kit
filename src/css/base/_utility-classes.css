@@ -98,6 +98,26 @@
   }
 }
 
+.no-border {
+  border: 0!important;
+
+  &--left {
+    border-left: 0;
+  }
+
+  &--right {
+    border-right: 0;
+  }
+
+  &--top {
+    border-top: 0;
+  }
+
+  &--bottom {
+    border-bottom: 0!important;
+  }
+}
+
 .float--left {
   float: left;
   margin-right: 1rem;
