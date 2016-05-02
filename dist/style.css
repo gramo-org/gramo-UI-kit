@@ -2610,8 +2610,8 @@ a:active, a:hover{
   padding-bottom:0;
 }
 
-.toolbar + div[class*="fake-table"] > .fake-table__row:first-child{
-  background:gray;
+.toolbar ~ div[class*="fake-table"] > .fake-table__row:first-child{
+  border-top:0;
 }
 .badge{
   display:inline-block;
