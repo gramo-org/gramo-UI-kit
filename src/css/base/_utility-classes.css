@@ -62,7 +62,7 @@
   padding: 0!important;
 
   &--left {
-    padding-left: 0;
+    @media (--desktop) { padding-left: 0; }
   }
 
   &--right {
@@ -75,6 +75,26 @@
 
   &--bottom {
     padding-bottom: 0;
+  }
+}
+
+.no-margin {
+  margin: 0!important;
+
+  &--left {
+    margin-left: 0;
+  }
+
+  &--right {
+    margin-right: 0;
+  }
+
+  &--top {
+    margin-top: 0;
+  }
+
+  &--bottom {
+    margin-bottom: 0!important;
   }
 }
 
