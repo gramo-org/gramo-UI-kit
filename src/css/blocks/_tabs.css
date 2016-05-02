@@ -104,11 +104,6 @@
     @extend .col-md-3;
     padding: 0;
   }
-
-  .tabs__toolbar {
-    margin-bottom: 0;
-  }
-
 }
 
 /* Transparent tabs */

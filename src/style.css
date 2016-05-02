@@ -3731,9 +3731,6 @@ tr > td:last-child{
 .tabs--compressed .tabs__nav__item{
   padding:0;
 }
-.tabs--compressed .tabs__toolbar{
-  margin-bottom:0;
-}
 @media (min-width: 768px){
   .tabs--transparent{
     margin-top:0;
