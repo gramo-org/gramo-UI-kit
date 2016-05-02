@@ -74,7 +74,7 @@
 
   /*** In search form for search results e.g. elastic search ***/
   &--in-search {
-    top: -0.5rem
+    top: -0.5rem;
 
     .searchable-list__dropdown {
       border-top: 0;
