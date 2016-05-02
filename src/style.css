@@ -3626,7 +3626,7 @@ tr > td:last-child{
 }
 @media (min-width: 768px){
   .tabs{
-    margin-top:3rem;
+    margin-top:2rem;
   }
 }
 .tabs__nav{
