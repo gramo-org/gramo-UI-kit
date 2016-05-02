@@ -42,6 +42,8 @@
 /* Remove border-top on first child after toolbar */
 
 .toolbar ~ div[class*="fake-table"] {
+  border-top: 1px solid red;
+
   & > .fake-table__row:first-child {
     border-top: 0;
   }

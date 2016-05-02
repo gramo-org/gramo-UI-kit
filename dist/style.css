@@ -2610,6 +2610,10 @@ a:active, a:hover{
   padding-bottom:0;
 }
 
+.toolbar ~ div[class*="fake-table"]{
+  border-top:1px solid red;
+}
+
 .toolbar ~ div[class*="fake-table"] > .fake-table__row:first-child{
   border-top:0;
 }
