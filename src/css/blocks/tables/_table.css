@@ -1,5 +1,5 @@
 .table {
-  margin-top: 0;
+  margin-top: 2rem;
   table-layout: fixed;
   width: 100%;
   @media (--desktop) { min-width: 700px; width: auto; }
@@ -9,6 +9,10 @@
   &--example {
     @media (--desktop) { min-width: 500px; }
     @media (--hd) { min-width: 720px; }
+  }
+
+  &--with-tabs {
+    margin-top: 0;
   }
 
 

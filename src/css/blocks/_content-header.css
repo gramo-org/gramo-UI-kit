@@ -1,6 +1,6 @@
 .content-header {
   @extend .container;
-  margin-bottom: 4.3rem;
+  /*margin-bottom: 4.3rem;*/
 
   &--fixed {
     background: var(--x-light-gray);
@@ -53,7 +53,8 @@
   &__below {
     @extend .row;
     align-items: center;
-    padding-bottom: 1.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
     border-bottom: 1px solid var(--silver);
   }
 
