@@ -1719,10 +1719,11 @@ a:active, a:hover{
   background-color:#0095da;
   cursor:pointer;
 }
-.searchable-list--in-search{
+.searchable-list--below-search{
   top:-0.5rem;
+  border:0;
 }
-.searchable-list--in-search .searchable-list__dropdown{
+.searchable-list--below-search .searchable-list__dropdown{
   border-top:0;
 }
 .horizontal-rule{
