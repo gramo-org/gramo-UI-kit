@@ -2610,7 +2610,7 @@ a:active, a:hover{
   padding-bottom:0;
 }
 
-.toolbar + .fake-table .fake-table__row:first-child{
+.toolbar + .fake-table > .fake-table__row:first-child{
   border-top:0;
 }
 .badge{
