@@ -149,11 +149,11 @@
 }
 
 .no-border--top{
-  border-top:0;
+  border-top:0!important;
 }
 
 .no-border--bottom{
-  border-bottom:0!important;
+  border-bottom:0;
 }
 
 .float--left{

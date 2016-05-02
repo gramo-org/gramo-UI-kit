@@ -110,11 +110,11 @@
   }
 
   &--top {
-    border-top: 0;
+    border-top: 0!important;
   }
 
   &--bottom {
-    border-bottom: 0!important;
+    border-bottom: 0;
   }
 }
 
