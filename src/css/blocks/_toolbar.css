@@ -38,3 +38,11 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+
+/* Remove border-top on first child after toolbar */
+
+.toolbar + .fake-table {
+  .fake-table__row:first-child {
+    border-top: 0;
+  }
+}
