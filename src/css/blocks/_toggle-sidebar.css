@@ -1,8 +1,10 @@
 .toggle-sidebar {
-  @extend .col-sm-1;
-  display: inline-block;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
+  position: relative;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 4;
 
   @media (--desktop) { display: none; }
 
@@ -41,6 +43,9 @@
 
 .toggle-sidebar.open {
   /*transform: translateX(-4rem);*/
+  a {
+    color: #fff;
+  }
 }
 
 .toggle-sidebar.open span:nth-child(1) {
