@@ -1008,7 +1008,7 @@ main{
   }
 }
 main > section:first-of-type{
-  padding-top:9rem;
+  padding-top:1.5rem;
 }
 @media (min-width: 960px){
   main > section:first-of-type{
@@ -3228,8 +3228,8 @@ tr > td:last-child{
   transform:rotate(0deg);
   transition:.5s ease-in-out;
   position:relative;
-  top:1.5rem;
-  left:1.5rem;
+  top:.5rem;
+  left:1rem;
   z-index:4;
 }
 
