@@ -1363,7 +1363,7 @@ a:active, a:hover{
   position:sticky;
 }
 
-.wrapper--sidebar .fake-table__row div[class*="col-"]:first-child, .wrapper--sidebar .fake-table__row div[class*="col-"]:last-child, .wrapper--main .fake-table__row div[class*="col-"]:first-child, .wrapper--main .fake-table__row div[class*="col-"]:last-child{
+.wrapper--sidebar .fake-table__row div[class*="col-"]:first-child, .wrapper--main .fake-table__row div[class*="col-"]:first-child{
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;

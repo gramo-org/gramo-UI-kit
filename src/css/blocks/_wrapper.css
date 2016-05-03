@@ -14,8 +14,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 .wrapper--main {
   .fake-table__row {
 
-    div[class*="col-"]:first-child,
-    div[class*="col-"]:last-child {
+    div[class*="col-"]:first-child {
       justify-content: center;
     }
   }
