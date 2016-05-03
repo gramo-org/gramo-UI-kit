@@ -3252,7 +3252,7 @@ tr > td:last-child{
   position:absolute;
   height:2px;
   width:100%;
-  background:#ededed;
+  background:#504f56;
   opacity:1;
   left:0;
   -webkit-transform:rotate(0deg);
@@ -3272,8 +3272,8 @@ tr > td:last-child{
   top:12px;
 }
 
-.toggle-sidebar.open a{
-  color:#fff;
+.toggle-sidebar.open span{
+  background:#fff;
 }
 
 .toggle-sidebar.open span:nth-child(1){

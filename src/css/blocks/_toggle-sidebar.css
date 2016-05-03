@@ -22,7 +22,7 @@
   position: absolute;
   height: 2px;
   width: 100%;
-  background: var(--light-gray);
+  background: var(--slate-gray);
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -43,8 +43,8 @@
 
 .toggle-sidebar.open {
   /*transform: translateX(-4rem);*/
-  a {
-    color: #fff;
+  span {
+    background: #fff;
   }
 }
 
