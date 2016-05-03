@@ -26,7 +26,7 @@
 }
 
 .text--bold {
-  font-weight: 600;
+  font-weight: 600!important;
 }
 
 .text--medium {
@@ -116,6 +116,10 @@
   &--bottom {
     border-bottom: 0;
   }
+}
+
+.display--block {
+  display: block!important;
 }
 
 .float--left {

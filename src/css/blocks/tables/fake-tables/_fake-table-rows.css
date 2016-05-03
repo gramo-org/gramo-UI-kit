@@ -69,6 +69,10 @@
     margin-bottom: -1rem;
     margin-top: 2rem;
 
+    &:hover {
+      background: var(--gramo-white);
+    }
+
     a {
       color: var(--base-link-color);
     }

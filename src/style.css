@@ -49,7 +49,7 @@
 }
 
 .text--bold{
-  font-weight:600;
+  font-weight:600!important;
 }
 
 .text--medium{
@@ -154,6 +154,10 @@
 
 .no-border--bottom{
   border-bottom:0;
+}
+
+.display--block{
+  display:block!important;
 }
 
 .float--left{
@@ -3130,6 +3134,9 @@ tr > td:last-child{
   padding:.5rem 0;
   margin-bottom:-1rem;
   margin-top:2rem;
+}
+.fake-table__row--foot:hover{
+  background:#fdfdfd;
 }
 .fake-table__row--foot a{
   color:#0095da;
