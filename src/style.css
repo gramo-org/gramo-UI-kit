@@ -3224,6 +3224,7 @@ tr > td:last-child{
 }
 
 .toggle-sidebar{
+  width:2rem;
   -webkit-transform:rotate(0deg);
   transform:rotate(0deg);
   transition:.5s ease-in-out;
