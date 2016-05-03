@@ -16,7 +16,7 @@ main {
 /* Add padding to first container section to compensate for fixed position on site-header */
 main > section:first-of-type {
   padding-top: 9rem;
-  @media (--desktop) { padding-top: 7rem; }
+  @media (--desktop) { padding-top: 3.65rem; }
 }
 
 .container {

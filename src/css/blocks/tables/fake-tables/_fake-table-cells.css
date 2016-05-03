@@ -11,7 +11,7 @@
   justify-content: center;
   font-size: 1.6rem;
   margin-top: 1rem;
-  text-align: center;
+  text-align: right;
   font-weight: 600;
   @media (--hd) { text-align: right; font-size: 1.4rem; margin-top: 0; }
 }

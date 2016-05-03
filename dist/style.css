@@ -1008,7 +1008,7 @@ main > section:first-of-type{
 }
 @media (min-width: 960px){
   main > section:first-of-type{
-    padding-top:7rem;
+    padding-top:3.65rem;
   }
 }
 
@@ -3171,7 +3171,7 @@ tr > td:last-child{
   justify-content:center;
   font-size:1.6rem;
   margin-top:1rem;
-  text-align:center;
+  text-align:right;
   font-weight:600;
 }
 @media (min-width: 1200px){
@@ -3788,7 +3788,7 @@ tr > td:last-child{
 .flash-message-wrapper{
   overflow:hidden;
   position:fixed;
-  top:3.4rem;
+  top:0;
   left:0;
   right:0;
   z-index:3;
