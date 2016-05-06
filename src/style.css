@@ -1354,25 +1354,21 @@ a:active, a:hover{
   vertical-align:middle;
 }
 
-@media (min-width: 960px){
-  .wrapper--sidebar{
-    padding:0;
-  }
-}
-
 .wrapper--sidebar.affix{
   position:-webkit-sticky;
   position:sticky;
+}
+
+@media (min-width: 960px){
+  .wrapper--sidebar, .wrapper--main{
+    padding:0;
+  }
 }
 
 .wrapper--sidebar .fake-table__row div[class*="col-"]:first-child, .wrapper--main .fake-table__row div[class*="col-"]:first-child{
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
-}
-
-.wrapper--main{
-  padding:0;
 }
 
 @media (min-width: 1200px){
