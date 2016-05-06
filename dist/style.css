@@ -1354,8 +1354,10 @@ a:active, a:hover{
   vertical-align:middle;
 }
 
-.wrapper--sidebar{
-  padding:0;
+@media (min-width: 960px){
+  .wrapper--sidebar{
+    padding:0;
+  }
 }
 
 .wrapper--sidebar.affix{
@@ -3829,7 +3831,7 @@ tr > td:last-child{
   background:#88c7d8;
   color:#fdfdfd;
   text-transform:uppercase;
-  padding:1rem 0;
+  padding:1rem 3rem;
   line-height:1.5rem;
   font-size:1.5rem;
   margin-top:3.4rem;
@@ -3859,8 +3861,16 @@ tr > td:last-child{
 
 .flash-message .btn{
   background:rgb(102, 149, 162);
-  margin:0 1rem;
   text-transform:uppercase;
+  padding:.5rem 1rem;
+  line-height:inherit;
+  margin:.5rem 0 0 0;
+}
+
+@media (min-width: 960px){
+  .flash-message .btn{
+    margin:0 1rem;
+  }
 }
 
 .flash-message--error{

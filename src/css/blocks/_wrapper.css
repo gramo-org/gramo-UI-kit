@@ -3,7 +3,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 
 .wrapper--sidebar {
   @extend .col-md;
-  padding: 0;
+  @media (--desktop) { padding: 0; }
 
   &.affix {
     position: sticky;
