@@ -14,7 +14,7 @@
     z-index: 1;
 
     &__item {
-      @extend .col-sm;
+      @extend .col-xs-6;
       @extend .col-md-2;
 
       padding: 0;
@@ -138,6 +138,7 @@
       padding: .3rem 2rem;
       font-weight: inherit;
       color: inherit;
+      margin-bottom: 0;
 
       &.active {
         background: var(--light-gray);
@@ -151,6 +152,8 @@
           bottom: -9px;
           border: 1px solid var(--table-border-color);
           border-width: 0 1px;
+          position: absolute;
+          background: var(--light-gray);
         }
       }
     }

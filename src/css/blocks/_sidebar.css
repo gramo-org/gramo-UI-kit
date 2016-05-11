@@ -5,24 +5,27 @@
 }
 
 .sidebar {
-  flex: 0 0 20rem;
-  transform: translateX(-20rem);
-  transition: transform .25s ease;
-  z-index: 4;
-  @extend %fixed;
 
-  @media (--desktop) {
-    transform: none;
+  flex-basis: 0;
+  transform: translateX(-20rem);
+  transition: all .25s ease;
+  z-index: 4;
+  /*@extend %fixed;*/
+
+  @media (--tablet) {
+    /*transform: none;*/
     position: static;
   }
 
-  &--is-open {
+  &--is-expanded {
     transform: none;
-    box-shadow: 1px 0 11px rgba(0,0,0,0.5);
-    @media (--desktop) {
-      box-shadow: none;
-    }
+    flex: 0 0 20rem;
   }
+
+  /*&--is-collapsed {
+    transform: translateX(-20rem);
+    flex-basis: 0;
+  }*/
 
   &__content {
     @extend %fixed;

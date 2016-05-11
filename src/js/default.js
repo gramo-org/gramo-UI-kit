@@ -1,12 +1,33 @@
 'use strict';
 $(document).ready(function() {
   // Toggle sidebar
-  $('.toggle-sidebar').click(function(e) {
+  $('.toggle-sidebar a').click(function(e) {
     e.preventDefault();
-    $(this).toggleClass('open');
-    $('.sidebar').toggleClass('sidebar--is-open');
-    $('main, .site-wrapper').toggleClass('push');
+    $('.toggle-sidebar').toggleClass('open');
+    $('.sidebar').toggleClass('sidebar--is-expanded');
+    $('main').toggleClass('pull');
   });
+
+  //Reset sidebar when window is < or > 768px
+  // var $window = $(window);
+  //
+  // function checkWidth() {
+  //   if ($window.width() < 768) {
+  //     $('.toggle-sidebar').removeClass('open');
+  //     $('.sidebar').addClass('sidebar--is-collapsed');
+  //     $('main').addClass('pull');
+  //
+  //   } else if ($window.width() > 768) {
+  //     $('.toggle-sidebar').addClass('open');
+  //     $('.sidebar').removeClass('sidebar--is-collapsed');
+  //     $('main').removeClass('pull');
+  //   }
+  // }
+  //
+  // // Execute on load
+  // checkWidth();
+  // // Bind event listener
+  // // $(window).resize(checkWidth);
 
 
   //Fix contentHeader to top of viewport when scrolling

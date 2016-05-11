@@ -29,6 +29,6 @@
 }
 
 /* Adjust left position when sidebar is toggled */
-.push .site-header {
+.pull .site-header {
   left: auto;
 }

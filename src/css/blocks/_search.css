@@ -63,7 +63,8 @@ input[type="text"].search__form__input {
   font-style: normal;
   color: var(--gramo-white);
   content: "\e909";
-  display: none;
+  display: inline-flex;
+  /*display: none;*/
   /*Use flexbox to center the icon*/
   /* Don't shrink or grow and use a default size */
   flex: 0 0 4rem;

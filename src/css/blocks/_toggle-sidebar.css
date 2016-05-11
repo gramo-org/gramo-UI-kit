@@ -1,22 +1,64 @@
 .toggle-sidebar {
-  width: 2rem;
+  /*width: 2rem;*/
   transform: rotate(0deg);
-  transition: .5s ease-in-out;
-  position: relative;
-  top: .5rem;
-  left: 1rem;
+  transition: all .25s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--x-light-gray);
   z-index: 4;
+  padding: 1.5rem 0 0 1.5rem;
+  /*background: var(--x-light-gray);*/
 
-  @media (--desktop) { display: none; }
+  /*@media (--desktop) { display: none; }*/
 
   a {
     display: inline-block;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 3rem;
+    width: 8rem;
     position: relative;
-    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--slate-gray);
+
+    &::before {
+      content: "\e914";
+      font-family: 'icomoon';
+      font-size: 2.4rem;
+    }
+
+    &::after {
+      content: 'menu';
+      position: relative;
+      left: .5rem;
+      top: -0.75rem;
+    }
   }
+
+  &.open {
+    background: none;
+    left: 13rem;
+
+    a {
+      color: #fff;
+    }
+
+    a::before {
+      content: "\e907";
+      font-family: 'icomoon';
+      font-size: 1.5rem;
+    }
+
+    a::after {
+      content: 'lukk';
+      top: -0.3rem;
+    }
+  }
+
 }
+
 
 .toggle-sidebar span {
   display: block;
@@ -43,7 +85,7 @@
 }
 
 .toggle-sidebar.open {
-  /*transform: translateX(-4rem);*/
+
   span {
     background: #fff;
   }

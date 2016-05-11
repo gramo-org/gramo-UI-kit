@@ -4,7 +4,7 @@
 }
 
 main {
-  flex: 1 0 100%;
+  flex: 1 1 100%;
   position: relative;
 
   @media(--tablet) {
@@ -15,8 +15,7 @@ main {
 
 /* Add padding to first container section to compensate for fixed position on site-header */
 main > section:first-of-type {
-  padding-top: 1.5rem;
-  @media (--desktop) { padding-top: 3rem; }
+  padding-top: 3rem;
 }
 
 .container {
