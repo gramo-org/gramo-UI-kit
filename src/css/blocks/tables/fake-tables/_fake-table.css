@@ -3,6 +3,10 @@
   font-size: 1.4rem;
   @extend .container;
   min-width: 100%;
+
+  &--detached {
+    margin-top: 2rem;
+  }
 }
 
 .fake-table--scrollable {
