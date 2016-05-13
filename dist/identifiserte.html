@@ -50,9 +50,6 @@
     <main>
       <div class="toggle-sidebar open">
         <a href="#">
-          
-          
-          
         </a>
       </div>
 
@@ -68,74 +65,101 @@
       <section class="container container--hd">
         <div class="tabs container">
           <ul class='tabs__nav row'>
-            <li class='tabs__nav__item'><a href="#nrk">NRK <span class="badge badge--notification">3</span></a></li>
-            <li class='tabs__nav__item'><a href="#p4">P4 <span class="badge badge--notification">3</span></a></li>
-            <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge <span class="badge badge--notification">2</span></a></li>
+            <li class='tabs__nav__item'><a href="#nrk">NRK</a></li>
+            <li class='tabs__nav__item'><a href="#p4">P4</a></li>
+            <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
             <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
           </ul>
+          <div class="row toolbar">
+            <div class="col-xs col-sm-3 col-lg-2">
+              <label class="form__label text--small">Velg perioden
+                <div class="select select--full">
+                  <select>
+                    <option>Denne uken</option>
+                    <option>Denne måneden</option>
+                    <option>I år</option>
+                    <option>Egen definert</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+            <div class="col-xs col-sm-3 col-lg-2">
+              <label class="form__label text--small">Matcher
+                <div class="select select--full">
+                  <select>
+                    <option>Ole Jacob</option>
+                    <option>Morten Møller</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+            <div class="col-xs col-sm-4 col-lg-6">
+              <label class="form__label text--small">Fri tekst søk</label>
+              <div class="search">
+                <div class="search__form">
+                  <input type="text" class="search__form__input" value="" placeholder="Søk..." />
+                </div>
+              </div>
+            </div>
+            <div class="col-xs col-sm-2 col-lg-1 align--bottom">
+              <button class="btn btn--inline btn--secondary">Filtrer</button>
+            </div>
+            <div class="col-xs-12 col-lg-11">
+              <div class="row toolbar__below toolbar__below--transparent">
+                <div class="col-xs col-sm-3 col-lg-2">
+                  <label class="form__label form__label--date text--small">Fra
+                    <input type="date" class="form__input form__input--block no-margin--top">
+                  </label>
+                </div>
+                <div class="col-xs col-sm-3 col-lg-2">
+                  <label class="form__label form__label--date text--small">Til
+                    <input type="date" class="form__input form__input--block no-margin--top">
+                  </label>
+                </div>
+              </div><!--/.row-->
+            </div>
+          </div><!--/.row .toolbar-->
           <section id="nrk" class="tabs__section row">
-            <!--Table NRK-->
-            <table class="table table--with-tabs">
-              <thead class="table__head--always-visible">
-                <tr>
-                  <th>Tittel</th>
-                  <th>HovedArtist</th>
-                  <th>Ant. Avspillinger</th>
-                  <th>Sum spilletid</th>
-                  <th>Ikke utgitt</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Tittel">Is That What You Call Love?</td>
-                  <td data-label="HovedArtist">Hawksley Workman</td>
-                  <td data-label="Ant. Avspillinger">234</td>
-                  <td data-label="Sum Spilletid">3:27:51</td>
-                  <td>Ja</td>
-                </tr>
+            <div class="fake-table fake-table--detached">
+              <div class="fake-table__row fake-table__row--expanded">
+                <div class="fake-table__toggle-container">
+                  <div class="fake-table__toggle-row">
+                    <div class="col-sm-3 fake-table__cell--artists" data-label="Tittel">
+                      <span>Hallgrim Bratbert</span>
+                      <span>|</span>
+                      <span>Andreas Sørby</span>
+                    </div>
+                    <div class="col-sm-4" data-label="HovedArtist">OnklP & De Fjerne Slektningene</div>
+                    <div class="col-sm-2 text--right" data-label="Ant. Avspillinger">4</div>
+                    <div class="col-sm-2 text--right" data-label="Sum Spilletid">03:27:51</div>
+                    <div class="col-sm-1 fake-table__cell--action">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div>
+                </div>
 
-                <tr>
-                  <td data-label="Tittel">Hells Bells</td>
-                  <td data-label="HovedArtist">AC/DC</td>
-                  <td data-label="Ant. Avspillinger">209</td>
-                  <td data-label="Sum Spilletid">3:15:28</td>
-                  <td>Ja</td>
-                </tr>
+                <div class="fake-table__row fake-table__row--child">
+                  <div class="col-sm-5">Local ID: <span>nrk234212</span></div>
+                  <div class="col-sm-2 text--right">25.01.2016</div>
+                  <div class="col-sm-2 text--right">Ole Jacob</div>
+                  <div class="col-sm-3 text--center"><button class="btn btn--small btn--success">Angre</button></div>
+                </div>
 
-                <tr>
-                  <td data-label="Tittel">Melody In High Feedback Tones</td>
-                  <td data-label="HovedArtist">Cavern of Anti-Matter</td>
-                  <td data-label="Ant. Avspillinger">175</td>
-                  <td data-label="Sum Spilletid">3:15:08</td>
-                  <td>Nei</td>
-                </tr>
+                <div class="fake-table__row fake-table__row--child">
+                  <div class="col-sm-5">Local ID: <span>nrk234212</span></div>
+                  <div class="col-sm-2 text--right">25.01.2016</div>
+                  <div class="col-sm-2 text--right">Echo</div>
+                  <div class="col-sm-3 text--center"><button class="btn btn--small btn--success">Angre</button></div>
+                </div>
 
-                <tr>
-                  <td data-label="Tittel">The Ghost</td>
-                  <td data-label="HovedArtist">I Love You But I've Chosen Darkness</td>
-                  <td data-label="Ant. Avspillinger">154</td>
-                  <td data-label="Sum Spilletid">3:01:42</td>
-                  <td>Ja</td>
-                </tr>
-
-                <tr>
-                  <td data-label="Tittel">Big Pun's Not Dead Because I Just Saw Him At The Krispy Kreme</td>
-                  <td data-label="HovedArtist">The Tony Danza Tapdance Extravaganza</td>
-                  <td data-label="Ant. Avspillinger">142</td>
-                  <td data-label="Sum Spilletid">2:28:43</td>
-                  <td>Nei</td>
-                </tr>
-
-                <tr>
-                  <td data-label="Tittel">December Stops/Etekoraku/Etekobushi</td>
-                  <td data-label="HovedArtist">Acid Mothers Temple and the Melting Paraiso U.F.O</td>
-                  <td data-label="Ant. Avspillinger">128</td>
-                  <td data-label="Sum Spilletid">2:15:28</td>
-                  <td>Ja</td>
-                </tr>
-
-              </tbody>
-            </table>
+                <div class="fake-table__row fake-table__row--child">
+                  <div class="col-sm-5">Local ID: <span>nrk234212</span></div>
+                  <div class="col-sm-2 text--right">25.01.2016</div>
+                  <div class="col-sm-2 text--right">Morten</div>
+                  <div class="col-sm-3 text--center"><button class="btn btn--small btn--success">Angre</button></div>
+                </div>
+              </div>
+            </div><!--/.fake-table-->
           </section>
           <section id="p4" class="tabs__section row">
             <!--Table P4-->
