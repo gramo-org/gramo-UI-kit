@@ -1,10 +1,7 @@
 .tabs {
   /*@extend .container;*/
   position: relative;
-  margin-top: 8rem;
-  @media (--tablet) {
-    margin-top: 2rem;
-  }
+  margin-top: 2rem;
 
   &__nav {
     /*@extend .row;*/
@@ -14,7 +11,7 @@
     z-index: 1;
 
     &__item {
-      @extend .col-xs-6;
+      @extend .col-xs-3;
       @extend .col-md-2;
 
       padding: 0;

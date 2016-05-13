@@ -1,5 +1,7 @@
 .search {
   @extend .container;
+  margin-bottom: .5rem;
+  @media (--desktop) { margin-bottom: 0; }
 
   &--fixed-width {
     width: 300px;

@@ -125,7 +125,7 @@
 }
 
 .no-margin--right{
-  margin-right:0;
+  margin-right:0!important;
 }
 
 .no-margin--top{
@@ -435,7 +435,7 @@ td, th{
   max-width:16.66667%;
 }
 
-.col-xs-3{
+.col-xs-3, .tabs__nav__item{
   -webkit-flex-basis:25%;
   -ms-flex-preferred-size:25%;
   flex-basis:25%;
@@ -456,7 +456,7 @@ td, th{
   max-width:41.66667%;
 }
 
-.col-xs-6, .list--expandable .list__item__date, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .tabs__nav__item{
+.col-xs-6, .list--expandable .list__item__date, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message{
   -webkit-flex-basis:50%;
   -ms-flex-preferred-size:50%;
   flex-basis:50%;
@@ -1522,7 +1522,6 @@ a:active, a:hover{
 
   .form__label--date > .form__input--block{
   display:block;
-  max-width:170px;
   margin-left:0;
 }
 
@@ -1637,7 +1636,7 @@ a:active, a:hover{
   width:99%;
 }
 .select select{
-  font-weight:600;
+  font-weight:400;
   padding:0.75rem;
   width:110%;
   border:none;
@@ -1662,6 +1661,7 @@ a:active, a:hover{
   border-radius:2px;
   border:1px solid #d9d9dc;
   text-align:left;
+  padding:0.25rem;
 }
 .searchable-list__heading{
   position:relative;
@@ -1671,6 +1671,7 @@ a:active, a:hover{
   line-height:30px;
   padding:2px 5px;
   cursor:pointer;
+  font-size:1.4rem;
 }
 .searchable-list__heading:before{
   content:'';
@@ -1681,7 +1682,7 @@ a:active, a:hover{
   position:absolute;
   height:32px;
   width:12px;
-  right:1rem;
+  right:.25rem;
 }
 .searchable-list--open .searchable-list__heading:before{
   -webkit-transform:rotate(180deg);
@@ -2568,6 +2569,12 @@ a:active, a:hover{
   -ms-flex-pack:center;
   justify-content:center;
 }
+@media (min-width: 1200px){
+  .toolbar--padded{
+    padding-left:3rem;
+    padding-right:3rem;
+  }
+}
 .toolbar__action{
   -webkit-align-self:center;
   -ms-flex-item-align:center;
@@ -3224,9 +3231,6 @@ tr > td:last-child{
 }
 
 .toggle-sidebar{
-  -webkit-transform:rotate(0deg);
-  transform:rotate(0deg);
-  transition:all .25s ease;
   position:fixed;
   top:0;
   left:0;
@@ -3234,7 +3238,6 @@ tr > td:last-child{
   background:#f9f9f9;
   z-index:4;
   padding:1.3rem 0 0 1.5rem;
-
 }
 
 .toggle-sidebar a{
@@ -3279,53 +3282,6 @@ tr > td:last-child{
 .toggle-sidebar.open a::after{
   content:'lukk';
   top:-0.3rem;
-}
-
-
-.toggle-sidebar span{
-  display:block;
-  position:absolute;
-  height:2px;
-  width:100%;
-  background:#504f56;
-  opacity:1;
-  left:0;
-  -webkit-transform:rotate(0deg);
-  transform:rotate(0deg);
-  transition:.25s ease-in-out;
-}
-
-.toggle-sidebar span:nth-child(1){
-  top:0px;
-}
-
-.toggle-sidebar span:nth-child(2){
-  top:6px;
-}
-
-.toggle-sidebar span:nth-child(3){
-  top:12px;
-}
-
-.toggle-sidebar.open span{
-  background:#fff;
-}
-
-.toggle-sidebar.open span:nth-child(1){
-  top:6px;
-  -webkit-transform:rotate(135deg);
-  transform:rotate(135deg);
-}
-
-.toggle-sidebar.open span:nth-child(2){
-  opacity:0;
-  left:-60px;
-}
-
-.toggle-sidebar.open span:nth-child(3){
-  top:6px;
-  -webkit-transform:rotate(-135deg);
-  transform:rotate(-135deg);
 }
 .x-toggle{
     display:none;
@@ -3699,12 +3655,7 @@ tr > td:last-child{
 }
 .tabs{
   position:relative;
-  margin-top:8rem;
-}
-@media (min-width: 768px){
-  .tabs{
-    margin-top:2rem;
-  }
+  margin-top:2rem;
 }
 .tabs__nav{
   margin-bottom:-.5rem;
@@ -4109,6 +4060,14 @@ pre.prettyprint{
   .page-contents--sticky.affix{
     position:fixed;
     top:2rem;
+  }
+}
+.search{
+  margin-bottom:.5rem;
+}
+@media (min-width: 960px){
+  .search{
+    margin-bottom:0;
   }
 }
 .search--fixed-width{

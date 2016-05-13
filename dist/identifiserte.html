@@ -70,9 +70,9 @@
             <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
             <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
           </ul>
-          <div class="row toolbar">
-            <div class="col-xs col-sm-3 col-lg-2">
-              <label class="form__label text--small">Velg perioden
+          <div class="row toolbar toolbar--padded">
+            <div class="col-xs-6 col-md-3 col-lg-2 align--bottom">
+              <label class="form__label text--small no-margin--right">Velg perioden
                 <div class="select select--full">
                   <select>
                     <option>Denne uken</option>
@@ -83,17 +83,22 @@
                 </div>
               </label>
             </div>
-            <div class="col-xs col-sm-3 col-lg-2">
-              <label class="form__label text--small">Matcher
-                <div class="select select--full">
-                  <select>
-                    <option>Ole Jacob</option>
-                    <option>Morten Møller</option>
-                  </select>
+            <div class="col-xs-6 col-md-3 col-lg-2 align--bottom">
+              <label class="form__label text--small">Matcher</label>
+              <div class="searchable-list">
+                <div class="searchable-list__heading">
+                  <span class="searchable-list__selected">Vis alle</span>
                 </div>
-              </label>
+                <div class="searchable-list__dropdown">
+                  <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
+                  <ul>
+                    <li class="searchable-list__option">Ole Jacob</li>
+                    <li class="searchable-list__option">Morten Møller</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="col-xs col-sm-4 col-lg-6">
+            <div class="col-xs-12 col-md-4 col-lg-7 align--bottom">
               <label class="form__label text--small">Fri tekst søk</label>
               <div class="search">
                 <div class="search__form">
@@ -101,23 +106,23 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs col-sm-2 col-lg-1 align--bottom">
+            <div class="col-xs-12 col-sm-2 col-lg-1 align--bottom">
               <button class="btn btn--inline btn--secondary">Filtrer</button>
             </div>
-            <div class="col-xs-12 col-lg-11">
+            <div class="col-xs-12 col-lg-12">
               <div class="row toolbar__below toolbar__below--transparent">
-                <div class="col-xs col-sm-3 col-lg-2">
-                  <label class="form__label form__label--date text--small">Fra
+                <div class="col-xs-6 col-md-3  col-lg-2">
+                  <label class="form__label form__label--block form__label--date text--small">Fra
                     <input type="date" class="form__input form__input--block no-margin--top">
                   </label>
                 </div>
-                <div class="col-xs col-sm-3 col-lg-2">
-                  <label class="form__label form__label--date text--small">Til
+                <div class="col-xs-6 col-md-3  col-lg-2">
+                  <label class="form__label form__label--block form__label--date text--small">Til
                     <input type="date" class="form__input form__input--block no-margin--top">
                   </label>
                 </div>
               </div><!--/.row-->
-            </div>
+            </div><!--/.col-lg-12-->
           </div><!--/.row .toolbar-->
           <section id="nrk" class="tabs__section row">
             <div class="fake-table fake-table--detached">

@@ -1,7 +1,5 @@
 .toggle-sidebar {
-  /*width: 2rem;*/
-  transform: rotate(0deg);
-  transition: all .25s ease;
+  /*transition: all .15s ease-in-out;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -9,9 +7,6 @@
   background: var(--x-light-gray);
   z-index: 4;
   padding: 1.3rem 0 0 1.5rem;
-  /*background: var(--x-light-gray);*/
-
-  /*@media (--desktop) { display: none; }*/
 
   a {
     display: inline-block;
@@ -56,52 +51,4 @@
       top: -0.3rem;
     }
   }
-
-}
-
-
-.toggle-sidebar span {
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background: var(--slate-gray);
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-
-.toggle-sidebar span:nth-child(1) {
-  top: 0px;
-}
-
-.toggle-sidebar span:nth-child(2) {
-  top: 6px;
-}
-
-.toggle-sidebar span:nth-child(3) {
-  top: 12px;
-}
-
-.toggle-sidebar.open {
-
-  span {
-    background: #fff;
-  }
-}
-
-.toggle-sidebar.open span:nth-child(1) {
-  top: 6px;
-  transform: rotate(135deg);
-}
-
-.toggle-sidebar.open span:nth-child(2) {
-  opacity: 0;
-  left: -60px;
-}
-
-.toggle-sidebar.open span:nth-child(3) {
-  top: 6px;
-  transform: rotate(-135deg);
 }

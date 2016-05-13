@@ -6,6 +6,13 @@
   margin-bottom: 0;
   justify-content: center;
 
+  &--padded {
+    @media (--hd) { 
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
   &__action {
     align-self: center;
     align-items: center;
