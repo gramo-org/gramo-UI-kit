@@ -2459,7 +2459,7 @@ a:active, a:hover{
   position:fixed;
   right:1rem;
   z-index:2;
-  left:1rem;
+  left:21rem;
   top:0;
 }
 @media (min-width: 768px){
@@ -2558,6 +2558,9 @@ a:active, a:hover{
 .content-header--simple .content-header__below{
   border-bottom:0;
   padding-bottom:0;
+}
+main.pull .content-header--fixed{
+  left:1rem;
 }
 .toolbar{
   background:#ededed;
@@ -2781,6 +2784,10 @@ tr > td:last-child{
   }
 
   thead:not(.table__head--always-visible){
+    display:none;
+  }
+
+  .table-cell--hidden-on-mobile{
     display:none;
   }
 

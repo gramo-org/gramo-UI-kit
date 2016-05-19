@@ -7,7 +7,7 @@
     position: fixed;
     right: 1rem;
     z-index: 2;
-    left: 1rem;
+    left: 21rem;
     top: 0;
     @media (--tablet) {
       padding-top: 3rem;
@@ -100,4 +100,9 @@
       padding-bottom: 0;
     }
   }
+}
+
+/* Change left position value of .content-header--fixed when sidebar is closed */
+main.pull .content-header--fixed {
+  left: 1rem;
 }
