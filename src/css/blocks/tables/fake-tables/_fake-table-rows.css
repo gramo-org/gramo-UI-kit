@@ -17,15 +17,15 @@
     color: inherit;
   }
 
-/* Give selected rows blue background */
+/* Give selected rows gray background */
   &--selected,
   &--selected:hover {
     background: var(--table-head-background);
   }
 
   /* give div elements padding in .fake-table__row */
-  & > div {
-    padding: 1rem;
+  & > div[class*="col-"] {
+    padding: .75rem 1rem;
   }
 
   /* Make columns stack on smaller screens */
@@ -65,9 +65,21 @@
   /* fake-table--foot */
   &--foot {
     border: 0;
-    padding: .5rem 0;
-    margin-bottom: -1rem;
-    margin-top: 2rem;
+    position: relative;
+    padding-bottom: .5rem;
+    /*margin-bottom: -1rem;*/
+
+    &:after {
+      content: '';
+      height: 10px;
+      width: calc(100% + 2px);
+      background: var(--base-background-color);
+      position: absolute;
+      left: -1px;
+      bottom: -.7rem;
+      z-index: 2;
+      border-top: 1px solid var(--table-border-color);
+    }
 
     &:hover {
       background: var(--gramo-white);
@@ -88,7 +100,11 @@
 /* Expanded rows */
 
 .fake-table__row--expanded {
-  background: var(--row-hover);
+  background: var(--table-head-background);
+
+  &:hover {
+    background: var(--table-head-background);
+  }
 
   .fake-table__toggle-container {
     border-bottom: 1px solid var(--table-border-color);

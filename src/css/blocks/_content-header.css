@@ -33,6 +33,10 @@
     @extend .row;
     @media (--tablet) { border-bottom: 1px solid var(--silver); }
     align-items: flex-end;
+
+    &--compressed {
+      padding-bottom: .5rem;
+    }
   }
 
   &__title {
@@ -80,7 +84,8 @@
     }
   }
 
-  &__action {
+  &__action,
+  &__info {
     flex: 1 0 auto;
     @extend .col-xs-12;
     /*@extend .col-sm-6;

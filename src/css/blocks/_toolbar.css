@@ -7,7 +7,7 @@
   justify-content: center;
 
   &--padded {
-    @media (--hd) { 
+    @media (--hd) {
       padding-left: 3rem;
       padding-right: 3rem;
     }
@@ -31,6 +31,7 @@
     &--transparent {
       background: none;
       border: 0;
+      padding-bottom: .25rem;
     }
 
     & > div[class*="col-"] {

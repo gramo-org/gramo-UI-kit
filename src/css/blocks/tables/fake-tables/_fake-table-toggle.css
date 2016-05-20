@@ -3,6 +3,8 @@
   @extend .container;
   width: 100%;
   cursor: pointer;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .fake-table__toggle-row {
