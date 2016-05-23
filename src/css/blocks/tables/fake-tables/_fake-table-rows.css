@@ -112,4 +112,9 @@
   .table-row-toggle {
     @extend .icon--chevron-down;
   }
+
+  .badge--numeric {
+    color: var(--gramo-white);
+    background: var(--slate-gray);
+  }
 }

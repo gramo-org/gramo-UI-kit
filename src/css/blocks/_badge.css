@@ -81,8 +81,8 @@
 .badge--numeric {
   font-size: 1rem;
   line-height: 110%;
-  color: var(--gramo-white);
-  background: var(--slate-gray);
+  color: var(--off-gray);
+  background: var(--light-gray);
   border-radius: 50%;
   text-align: center;
   padding: .4rem .7rem;

@@ -2700,8 +2700,8 @@ main.pull .content-header--fixed{
 .badge--numeric{
   font-size:1rem;
   line-height:110%;
-  color:#fdfdfd;
-  background:#504f56;
+  color:#a5a4ab;
+  background:#ededed;
   border-radius:50%;
   text-align:center;
   padding:.4rem .7rem;
@@ -3188,6 +3188,11 @@ tr > td:last-child{
 
 .fake-table__row--expanded .fake-table__toggle-container{
   border-bottom:1px solid #d9d9dc;
+}
+
+.fake-table__row--expanded .badge--numeric{
+  color:#fdfdfd;
+  background:#504f56;
 }
 .fake-table__toggle-container{
   width:100%;
