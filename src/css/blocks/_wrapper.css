@@ -4,9 +4,15 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 .wrapper--sidebar {
   @extend .col-md;
 
-  &.affix {
-    position: sticky;
+  @media (--desktop) {
+    position: fixed;
+    width: 300px;
   }
+
+  @media (--hd) {
+    width: 350px;
+  }
+
 }
 
 .wrapper--sidebar,
@@ -23,5 +29,15 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 .wrapper--main {
   @extend .col-xs-12;
   @extend .col-md-8;
-  @media (--hd) { padding-left: 2rem; margin-top: 1rem; }
+
+  @media (--desktop) {
+    position: relative;
+    left: 300px;
+  }
+
+  @media (--hd) {
+    left: 340px;
+    padding-left: 2rem;
+    margin-top: 1rem;
+  }
 }

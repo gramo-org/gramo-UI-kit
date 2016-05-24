@@ -1356,9 +1356,17 @@ a:active, a:hover{
   vertical-align:middle;
 }
 
-.wrapper--sidebar.affix{
-  position:-webkit-sticky;
-  position:sticky;
+@media (min-width: 960px){
+  .wrapper--sidebar{
+    position:fixed;
+    width:300px;
+  }
+}
+
+@media (min-width: 1200px){
+  .wrapper--sidebar{
+    width:350px;
+  }
 }
 
 @media (min-width: 960px){
@@ -1373,8 +1381,16 @@ a:active, a:hover{
   justify-content:center;
 }
 
+@media (min-width: 960px){
+  .wrapper--main{
+    position:relative;
+    left:300px;
+  }
+}
+
 @media (min-width: 1200px){
   .wrapper--main{
+    left:340px;
     padding-left:2rem;
     margin-top:1rem;
   }
