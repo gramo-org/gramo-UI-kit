@@ -3062,7 +3062,7 @@ tr > td:last-child{
 
 @media (min-width: 1200px){
   .fake-table--scrollable{
-    height:calc(100vh - 30rem);
+    height:100vh;
     overflow-y:auto;
     overflow-x:hidden;
   }
