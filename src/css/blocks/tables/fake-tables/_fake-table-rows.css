@@ -62,7 +62,7 @@
       text-align: left;
     }
   }
-  /* fake-table--foot */
+  /* fake-table__row--foot */
   &--foot {
     border: 0;
     position: relative;
@@ -75,7 +75,7 @@
       background: var(--base-background-color);
       position: absolute;
       left: -1px;
-      bottom: -10px;
+      bottom: -9px;
       z-index: 2;
       border-top: 1px solid var(--table-border-color);
     }
@@ -103,6 +103,12 @@
 
   &:hover {
     background: var(--table-head-background);
+  }
+
+  /* Disables the effect of the .fake-table__row--foot:after gap */
+  &:last-child .fake-table__row--foot {
+    margin-bottom: 0;
+    padding-bottom: 2px;
   }
 
   .fake-table__toggle-container {

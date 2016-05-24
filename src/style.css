@@ -3163,7 +3163,7 @@ tr > td:last-child{
   background:#f3f3f3;
   position:absolute;
   left:-1px;
-  bottom:-10px;
+  bottom:-9px;
   z-index:2;
   border-top:1px solid #d9d9dc;
 }
@@ -3184,6 +3184,11 @@ tr > td:last-child{
 
 .fake-table__row--expanded:hover{
   background:#ededed;
+}
+
+.fake-table__row--expanded:last-child .fake-table__row--foot{
+  margin-bottom:0;
+  padding-bottom:2px;
 }
 
 .fake-table__row--expanded .fake-table__toggle-container{
