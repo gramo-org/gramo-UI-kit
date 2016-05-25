@@ -10,10 +10,12 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   }
 
   @media (--hd) {
-    width: 350px;
+    width: auto;
+    max-width: 400px;
   }
-
 }
+
+
 
 .wrapper--sidebar,
 .wrapper--main {
@@ -36,8 +38,6 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   }
 
   @media (--hd) {
-    left: 340px;
-    padding-left: 2rem;
-    margin-top: 1rem;
+    left: 420px;
   }
 }

@@ -3,6 +3,7 @@
   background: var(--gramo-white);
   border: 1px solid var(--table-border-color);
   border-width: 1px 1px 0 1px;
+  cursor: pointer;
 
   &:last-child {
     border-bottom-width: 1px;
@@ -66,6 +67,7 @@
   &--foot {
     border: 0;
     position: relative;
+    padding-bottom: 1rem;
     margin-bottom: 2px;
 
     &:after {
@@ -86,6 +88,26 @@
 
     a {
       color: var(--base-link-color);
+    }
+  }
+
+  &--subfoot {
+    position: relative;
+    border: 0;
+
+    & > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: calc(100% + 1px);
+      bottom: -8px;
+      left: -1px;
+      width: calc(100% + 2px);
+      background: var(--base-background-color);
     }
   }
 
@@ -118,6 +140,12 @@
   .table-row-toggle {
     @extend .icon--chevron-down;
   }
+}
+
+/* Numeric badges in selected/expanded rows */
+
+.fake-table__row--selected,
+.fake-table__row--expanded {
 
   .badge--numeric {
     color: var(--gramo-white);

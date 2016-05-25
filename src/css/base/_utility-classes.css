@@ -37,6 +37,10 @@
   font-size: 1.2rem!important;
 }
 
+.text--normal {
+  font-weight: 400!important;
+}
+
 .hidden-on-mobile {
   display: none;
   @media (--desktop) { display: block; }

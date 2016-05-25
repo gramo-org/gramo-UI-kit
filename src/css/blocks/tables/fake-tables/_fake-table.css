@@ -12,7 +12,7 @@
 .fake-table--scrollable {
 
   @media (--hd) {
-    height: 100vh;
+    height: calc(100vh - 21rem);
     overflow-y: auto;
     overflow-x: hidden;
   }
@@ -31,10 +31,14 @@
 
 .fake-table__infobar {
   border-bottom: 1px solid var(--table-border-color);
-
-  padding-top: 1rem;
-  padding-bottom: 1.7rem;
+  background: var(--base-background-color);
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
+
+  &--no-border {
+    border-bottom: 0;
+  }
 
   &__heading,
   &__count {

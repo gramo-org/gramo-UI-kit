@@ -39,7 +39,7 @@
     content: "\e90e";
     font-size: 85%;
 }
-.icon--match:before {
+.icon--tick:before {
     content: "\e90f";
     font-size: 85%;
 }

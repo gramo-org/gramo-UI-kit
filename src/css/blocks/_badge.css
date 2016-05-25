@@ -87,4 +87,14 @@
   text-align: center;
   padding: .4rem .7rem;
   margin: .2rem .5rem 0 0;
+
+  &--moveable {
+    position: absolute;
+    z-index: 1;
+    display: block;
+
+    &:hover {
+      display: none;
+    }
+  }
 }
