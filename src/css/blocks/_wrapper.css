@@ -10,8 +10,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   }
 
   @media (--hd) {
-    width: auto;
-    max-width: 400px;
+    width: 400px;
   }
 }
 
