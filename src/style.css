@@ -84,6 +84,12 @@
   justify-content:center;
 }
 
+.align--right{
+  -webkit-align-items:flex-end;
+  -ms-flex-align:end;
+  align-items:flex-end;
+}
+
 .align--vertical-center{
   -webkit-align-self:center;
   -ms-flex-item-align:center;
