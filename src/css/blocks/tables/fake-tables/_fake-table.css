@@ -36,6 +36,21 @@
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 
+  @media (--desktop) {
+    position: fixed;
+    width: inherit;
+    z-index: 2;
+    width: 615px;
+
+    & + div {
+      padding-top: 15rem;
+    }
+  }
+
+  @media (--hd) {
+    width: 935px;
+  }
+
   &--no-border {
     border-bottom: 0;
   }

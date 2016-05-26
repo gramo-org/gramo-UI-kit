@@ -3115,6 +3115,24 @@ tr > td:last-child{
   margin-bottom:1rem;
 }
 
+@media (min-width: 960px){
+  .fake-table__infobar{
+    position:fixed;
+    width:inherit;
+    z-index:2;
+    width:615px;
+  }
+  .fake-table__infobar + div{
+    padding-top:15rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .fake-table__infobar{
+    width:935px;
+  }
+}
+
 .fake-table__infobar--no-border{
   border-bottom:0;
 }
