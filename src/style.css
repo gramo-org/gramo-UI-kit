@@ -4211,7 +4211,6 @@ input[type="text"].search__form__input{
   text-overflow:ellipsis;
   white-space:nowrap;
   border:1px solid #d9d9dc;
-  border-width:1px 1px 1px 0;
   border-radius:2px 0 0 2px;
   outline:none;
 }
@@ -4221,12 +4220,15 @@ input[type="text"].search__form__input--large{
 }
 
 .search__submit{
-  border:0;
+  border:3px solid rgb(68, 162, 134);
+  border-width:0 0 3px 0;
   border-radius:0 2px 2px 0;
   margin:0 0 0 -1px;
   -webkit-align-items:center;
   -ms-flex-align:center;
   align-items:center;
+  background:#50bf9e;
+  color:#fdfdfd;
 }
 
 .search__clear{
@@ -4241,36 +4243,6 @@ input[type="text"].search__form__input--large{
 
 .search__clear .icon--cross:before{
   color:#a5a4ab!important;
-}
-
-.search__form:before{
-  border-radius:2px 0 0 2px;
-  background:#d9d9dc;
-  font-family:'icomoon';
-  font-weight:normal;
-  font-style:normal;
-  color:#fdfdfd;
-  content:"\e909";
-  display:-webkit-inline-flex;
-  display:-ms-inline-flexbox;
-  display:inline-flex;
-  -webkit-flex:0 0 4rem;
-  -ms-flex:0 0 4rem;
-  flex:0 0 4rem;
-  -webkit-align-items:center;
-  -ms-flex-align:center;
-  align-items:center;
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
-}
-
-@media (min-width: 768px){
-  .search__form:before{
-    display:-webkit-inline-flex;
-    display:-ms-inline-flexbox;
-    display:inline-flex;
-  }
 }
 .placeholder{
   background:#ededed;
