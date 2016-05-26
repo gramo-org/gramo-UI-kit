@@ -110,11 +110,11 @@
   border: 0!important;
 
   &--left {
-    border-left: 0;
+    border-left: 0!important;
   }
 
   &--right {
-    border-right: 0;
+    border-right: 0!important;
   }
 
   &--top {
@@ -122,7 +122,7 @@
   }
 
   &--bottom {
-    border-bottom: 0;
+    border-bottom: 0!important;
   }
 }
 
