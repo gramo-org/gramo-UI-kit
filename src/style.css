@@ -1754,8 +1754,8 @@ a:active, a:hover{
   cursor:pointer;
 }
 .searchable-list--below-search{
-  top:-0.5rem;
   border:0;
+  padding:0;
 }
 .searchable-list--below-search .searchable-list__dropdown{
   border-top:0;

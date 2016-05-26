@@ -76,8 +76,8 @@
 
   /*** Below search list for search results e.g. discography search in manual matching ***/
   &--below-search {
-    top: -0.5rem;
     border: 0;
+    padding: 0;
 
     .searchable-list__dropdown {
       border-top: 0;
