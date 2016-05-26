@@ -54,6 +54,10 @@
   justify-content: center;
 }
 
+.align--right {
+  align-items: flex-end;
+}
+
 .align--vertical-center {
   align-self: center;
 }
