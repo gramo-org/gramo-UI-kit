@@ -3832,6 +3832,9 @@ tr > td:last-child{
 .tabs--toggleable #tab-control{
   display:none;
 }
+.tabs--toggleable #tab-control:checked ~ label[for="tab-control"]{
+  display:none;
+}
 .tabs--toggleable #tab-control:checked ~ .tabs__nav, .tabs--toggleable #tab-control:checked ~ .toolbar{
   display:-webkit-flex;
   display:-ms-flexbox;

@@ -72,6 +72,9 @@
     display: none;
 
     &:checked {
+      & ~ label[for="tab-control"] {
+        display: none;
+      }
 
       & ~ .tabs__nav,
       & ~ .toolbar {
