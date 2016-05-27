@@ -72,7 +72,8 @@
     display: none;
 
     &:checked {
-      & ~ label[for="tab-control"] {
+      & ~ label[for="tab-control"],
+      & ~ hr {
         display: none;
       }
 
