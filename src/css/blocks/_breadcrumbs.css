@@ -79,4 +79,11 @@
       margin-right: .5rem;
     }
   }
+
+  /* remove arrows between --in-content breadcrumbs itemst */
+  &--without-arrows {
+    .breadcrumbs__item::before {
+      content: none;
+    }
+  }
 }

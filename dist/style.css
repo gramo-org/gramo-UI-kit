@@ -2335,6 +2335,9 @@ a:active, a:hover{
   color:#d9d9dc;
   margin-right:.5rem;
 }
+.breadcrumbs--without-arrows .breadcrumbs__item::before{
+  content:none;
+}
 .sidebar__content{
   position:fixed;
   width:20rem;
