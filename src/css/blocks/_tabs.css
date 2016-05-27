@@ -60,7 +60,6 @@
   }
 
   &--toggleable {
-    margin-top: 0.5rem;
 
     & > .tabs__nav,
     & > .toolbar {

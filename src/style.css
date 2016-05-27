@@ -3823,9 +3823,6 @@ tr > td:last-child{
 }
 .tabs__section{
 }
-.tabs--toggleable{
-  margin-top:0.5rem;
-}
 .tabs--toggleable > .tabs__nav, .tabs--toggleable > .toolbar{
   display:none;
 }
