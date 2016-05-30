@@ -75,7 +75,7 @@
     .breadcrumbs__item::before,
     .breadcrumbs__arrow::before {
       color: var(--silver);
-      margin: 0  -.5rem 0 .75rem;
+      margin: 0 0 0 .75rem;
     }
   }
 
