@@ -2323,7 +2323,7 @@ a:active, a:hover{
 }
 .breadcrumbs--in-content .breadcrumbs__item::before, .breadcrumbs--in-content .breadcrumbs__arrow::before{
   color:#d9d9dc;
-  margin-left:.75rem;
+  margin:0  -.5rem 0 .75rem;
 }
 .breadcrumbs--without-arrows .breadcrumbs__item::before{
   content:none;
