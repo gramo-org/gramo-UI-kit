@@ -2333,7 +2333,7 @@ a:active, a:hover{
 }
 .breadcrumbs--in-content .breadcrumbs__item::before, .breadcrumbs--in-content .breadcrumbs__item--arrow::before{
   color:#d9d9dc;
-  margin-right:.5rem;
+  margin-left:.75rem;
 }
 .breadcrumbs--without-arrows .breadcrumbs__item::before{
   content:none;
