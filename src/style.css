@@ -2286,7 +2286,7 @@ a:active, a:hover{
   }
 }
 @media (min-width: 768px){
-  .breadcrumbs__item::before{
+  .breadcrumbs__item::before, .breadcrumbs__item--arrow::before{
     content:"\e904";
     font-family:'icomoon';
     margin:0 1rem 0 0;
@@ -2331,9 +2331,12 @@ a:active, a:hover{
 .breadcrumbs--in-content .breadcrumbs__item{
   padding-left:.5rem;
 }
-.breadcrumbs--in-content .breadcrumbs__item::before{
+.breadcrumbs--in-content .breadcrumbs__item::before, .breadcrumbs--in-content .breadcrumbs__item--arrow::before{
   color:#d9d9dc;
   margin-right:.5rem;
+}
+.breadcrumbs--without-arrows .breadcrumbs__item::before{
+  content:none;
 }
 .sidebar__content{
   position:fixed;
