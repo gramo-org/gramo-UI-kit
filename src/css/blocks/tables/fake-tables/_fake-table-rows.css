@@ -119,7 +119,7 @@
 
   /* Extra padding use !important to overide .fake-table__row--child */
   &--padded {
-    @media (--hd) { padding: 2rem!important; }
+    @media (--hd) { padding: .5rem 2rem!important; }
   }
 }
 
