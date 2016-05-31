@@ -126,42 +126,84 @@
           </div><!--/.row .toolbar-->
           <section id="nrk" class="tabs__section row">
             <div class="fake-table fake-table--detached">
+              <div class="fake-table__row fake-table__row--head">
+                <div class="col-sm-3">
+                  Tittel
+                </div>
+                <div class="col-sm-4">
+                  Hovedartist
+                </div>
+                <div class="col-sm-2 text--center">
+                  Ant. avspillinger
+                </div>
+                <div class="col-sm-2 text--center">
+                  Sum spilletid
+                </div>
+                <div class="col-sm-1">
+                </div>
+              </div>
               <div class="fake-table__row fake-table__row--expanded">
                 <div class="fake-table__toggle-container">
                   <div class="fake-table__toggle-row">
                     <div class="col-sm-3 fake-table__cell--artists" data-label="Tittel">
-                      <span>Hallgrim Bratbert</span>
+                      <span>ZARA LARSSON</span>
                       <span>|</span>
-                      <span>Andreas Sørby</span>
+                      <span>MNEK</span>
                     </div>
-                    <div class="col-sm-4" data-label="HovedArtist">OnklP & De Fjerne Slektningene</div>
-                    <div class="col-sm-2 text--right" data-label="Ant. Avspillinger">4</div>
-                    <div class="col-sm-2 text--right" data-label="Sum Spilletid">03:27:51</div>
+                    <div class="col-sm-4" data-label="Hovedartist">
+                      NEVER FORGET YOU
+                    </div>
+                    <div class="col-sm-2 text--center" data-label="Ant. avspillinger">
+                      4
+                    </div>
+                    <div class="col-sm-2 text--center" data-label="Sum spilletid">
+                      00:33:31
+                    </div>
                     <div class="col-sm-1 fake-table__cell--action">
-                      <a href="#" class="table-row-toggle"></a>
+                      <a href="#" class="table-row-toggle" data-ember-action="1034"></a>
                     </div>
                   </div>
                 </div>
 
-                <div class="fake-table__row fake-table__row--child">
-                  <div class="col-sm-5">Local ID: <span>nrk234212</span></div>
-                  <div class="col-sm-2 text--right">25.01.2016</div>
-                  <div class="col-sm-2 text--right">Ole Jacob</div>
-                  <div class="col-sm-3 text--center"><button class="btn btn--small btn--success">Angre</button></div>
-                </div>
+                <div class="fake-table__row fake-table__row--child fake-table__row--padded align--center">
 
-                <div class="fake-table__row fake-table__row--child">
-                  <div class="col-sm-5">Local ID: <span>nrk234212</span></div>
-                  <div class="col-sm-2 text--right">25.01.2016</div>
-                  <div class="col-sm-2 text--right">Echo</div>
-                  <div class="col-sm-3 text--center"><button class="btn btn--small btn--success">Angre</button></div>
-                </div>
+                  <div class="col-xs-6 col-md-3">
+                    <span class="text--light">Tittel:</span>
+                    <span>Never Forget You</span>
+                    <div class="cell--block">
+                      <span class="text--light">Hovedartist:</span>
+                      <span>Zara Larsson</span>
+                      <span>|</span>
+                      <span>MNEK</span>
+                    </div>
+                  </div>
 
-                <div class="fake-table__row fake-table__row--child">
-                  <div class="col-sm-5">Local ID: <span>nrk234212</span></div>
-                  <div class="col-sm-2 text--right">25.01.2016</div>
-                  <div class="col-sm-2 text--right">Morten</div>
-                  <div class="col-sm-3 text--center"><button class="btn btn--small btn--success">Angre</button></div>
+                  <div class="col-xs-6 col-md-3">
+                    <span class="text--light">Plateselskap</span>
+                    <span>Record Company Ten</span>
+                    <div class="cell--block">
+                      <span class="text--light">Katalognr.:</span>
+                      <span>886445491074</span>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-6 col-md-2">
+                    <span class="text--light">Ant. avspillinger:</span>
+                    <span>4</span>
+                  </div>
+
+                  <div class="col-xs-6 col-md-3">
+                    <span class="text--light">Matchet:</span>
+                    <span>18.05.2016</span>
+                    <div class="cell--block">
+                      <span class="text--light">Matchet av:</span>
+                      <span>Thorbjørn Hermansen</span>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-md-2 col-lg-1 text--center">
+                    <button id="ember3307" type="submit" class="ember-view async-button btn btn--small btn--success default">Angre</button>
+                  </div>
                 </div>
               </div>
             </div><!--/.fake-table-->

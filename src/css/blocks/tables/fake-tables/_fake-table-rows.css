@@ -116,6 +116,11 @@
     background: none;
     border-width: 1px 0 0 0;
   }
+
+  /* Extra padding use !important to overide .fake-table__row--child */
+  &--padded {
+    @media (--hd) { padding: 2rem!important; }
+  }
 }
 
 /* Expanded rows */

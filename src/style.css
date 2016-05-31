@@ -3251,6 +3251,11 @@ tr > td:last-child{
   background:none;
   border-width:1px 0 0 0;
 }
+@media (min-width: 1200px){
+  .fake-table__row--padded{
+    padding:2rem!important;
+  }
+}
 
 .fake-table__row--expanded{
   background:#ededed;
@@ -3316,7 +3321,7 @@ tr > td:last-child{
 .fake-table__row--child{
   border:0;
   margin:0;
-  padding:0!important;
+  padding:0;
   display:none;
   width:100%;
 }
@@ -3326,7 +3331,7 @@ tr > td:last-child{
 }
 .fake-table__row--child > div span{
   font-weight:300;
-  margin-right:1rem;
+  margin-right:.5rem;
 }
 .fake-table__row--child:nth-child(odd){
   background:#f9f9f9;
