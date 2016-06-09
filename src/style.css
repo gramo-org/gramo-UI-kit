@@ -2735,8 +2735,10 @@ main.pull .content-header--fixed{
   background:#ededed;
   border-radius:50%;
   text-align:center;
-  padding:.4rem .7rem;
+  padding:.4rem;
   margin:.2rem .5rem 0 0;
+  width:2rem;
+  height:2rem;
 }
 
 .badge--numeric--moveable{
