@@ -2741,6 +2741,12 @@ main.pull .content-header--fixed{
   display:none;
 }
 
+.badge-wrapper{
+  float:left;
+  height:100%;
+  margin-right:.5rem;
+}
+
 caption{
   line-height:normal;
   font-weight:700;
