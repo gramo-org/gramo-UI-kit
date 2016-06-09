@@ -41,6 +41,14 @@
   color:inherit;
 }
 
+.text--dark{
+  color:#504f56;
+}
+
+.text--dark a{
+  color:inherit;
+}
+
 .text--em{
   margin:0;
   font-style:italic;
