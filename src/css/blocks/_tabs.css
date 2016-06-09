@@ -126,6 +126,7 @@
 
     a {
       padding: .5rem 0;
+      font-weight: 600;
       text-transform: uppercase;
       font-size: 1.6rem;
       color: color(var(--gramo-blue) tint(60%));

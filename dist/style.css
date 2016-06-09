@@ -898,6 +898,12 @@ td, th{
   box-sizing:border-box;
 }
 
+*{
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
 html{
   font-size:62.5%;
   line-height:62.5%;
@@ -3879,6 +3885,7 @@ tr > td:last-child{
 }
 .tabs--transparent .tabs__nav__item a{
   padding:.5rem 0;
+  font-weight:600;
   text-transform:uppercase;
   font-size:1.6rem;
   color:rgb(153, 213, 240);
