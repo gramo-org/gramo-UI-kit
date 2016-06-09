@@ -3879,7 +3879,6 @@ tr > td:last-child{
 }
 .tabs--transparent .tabs__nav__item a{
   padding:.5rem 0;
-  font-weight:600;
   text-transform:uppercase;
   font-size:1.6rem;
   color:rgb(153, 213, 240);
