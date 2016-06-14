@@ -6,7 +6,7 @@
   &__nav {
     /*@extend .row;*/
     @extend %no-list;
-    margin-bottom: -.5rem;
+    /*margin-bottom: -.5rem;*/
     position: relative;
     z-index: 1;
 
@@ -114,7 +114,7 @@
   }
 
   .tabs__nav {
-    margin-bottom: 0;
+    margin-bottom: .5rem;
   }
 
   .tabs__nav__item {

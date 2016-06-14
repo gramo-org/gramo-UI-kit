@@ -1,3 +1,4 @@
+/* for index page of UI kit */
 .page-contents {
   margin-top: 2rem;
   @media (--desktop) { margin: 4rem 0 0 3rem; order: 1; }

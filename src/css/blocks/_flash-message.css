@@ -8,9 +8,6 @@
   z-index: 4;
   margin: 0;
   transition: all .25s ease;
-  /*height: 4rem;
-  background: var(--x-light-gray);*/
-  /*@media (--tablet) { left: 20rem; }*/
 
   &--full-width {
     left: 0;

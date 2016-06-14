@@ -123,14 +123,6 @@
         background: var(--row-hover);
       }
 
-      /*&:nth-child(odd) {
-        background: color(var(--table-border-color) tint(75%));
-      }
-
-      &:nth-child(even) {
-        background: var(--gramo-white);
-      }*/
-
       &--downloads {
         @extend .col-xs-6;
         display: block;

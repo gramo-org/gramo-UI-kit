@@ -51,7 +51,7 @@ input[type="text"].search__form__input {
   position: absolute;
   cursor: pointer;
   right: 1rem;
-  top: 2.8rem;
+  top: .9rem;
   font-size: 1.2rem;
   z-index: 1;
   display: none;
@@ -61,7 +61,7 @@ input[type="text"].search__form__input {
   }
 }
 
-/*.search__form:before {
+.search__form--simple:before {
   border-radius: 2px 0 0 2px;
   background: var(--silver);
   font-family: 'icomoon';
@@ -74,4 +74,4 @@ input[type="text"].search__form__input {
   align-items: center;
   justify-content: center;
   @media (--tablet) { display: inline-flex; }
-}*/
+}

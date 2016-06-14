@@ -32,7 +32,6 @@
   /* Make columns stack on smaller screens */
   div[class*="col-"] {
     width: 100%;
-    /*justify-content: center;  vertically center content */
     @media (--tablet) { width: auto; }
   }
 
@@ -153,6 +152,30 @@
 .fake-table__row--expanded {
 
   .badge--numeric {
+    color: var(--gramo-white);
+    background: var(--slate-gray);
+  }
+}
+
+/* Numeric fake table */
+
+.fake-table--numeric {
+
+  .fake-table__row {
+    position: relative;
+  }
+
+  .fake-table__row::before {
+    counter-increment: section; /* Increments only this instance of the section counter */
+    content: counters(section,".") " ";
+    position: absolute;
+    @extend .badge--numeric;
+    top: 50%;
+    margin-top: -1rem;
+    left: 1rem;
+  }
+
+  .fake-table__row--selected::before {
     color: var(--gramo-white);
     background: var(--slate-gray);
   }

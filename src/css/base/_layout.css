@@ -20,8 +20,6 @@ main > section:first-of-type {
 
 .container {
   padding: 0 1rem;
-  /*margin: 0 auto;*/
-
 
   &--hd {
     max-width: var(--container-hd);
@@ -35,14 +33,6 @@ main > section:first-of-type {
     @media(--desktop) {
       margin: 0 2rem;
     }
-  }
-
-  &--tablet {
-    max-width: var(--container-tablet);
-  }
-
-  &--mobile {
-    max-width: var(--container-mobile);
   }
 
   &--fixedheight {
@@ -63,21 +53,5 @@ main > section:first-of-type {
       margin-bottom: 1rem;
       text-align: center;
     }
-  }
-}
-
-/*Temporary styling to highlight grid*/
-.container.grid-test > .row {
-  border: 1px solid #fff;
-  border-width: 0 0 1px 0;
-}
-
-.container.grid-test > .row > * {
-  background: color(var(--ui-gray) tint(60%));
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-
-  &:nth-child(odd) {
-    background: color(var(--ui-gray) tint(80%));
   }
 }

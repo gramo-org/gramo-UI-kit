@@ -15,6 +15,23 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <style>
+    /*Temporary styling to highlight grid*/
+    .container.grid-test > .row {
+      border: 1px solid #fff;
+      border-width: 0 0 1px 0;
+    }
+
+    .container.grid-test > .row > * {
+      background: rgb(180, 184, 189);
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .container.grid-test > .row > *:nth-child(odd) {
+      background: rgb(217, 219, 222);
+    }
+  </style>
 </head>
 <body>
   <div class="site-wrapper">
@@ -47,9 +64,9 @@
     <main id="top">
       <div class="toggle-sidebar open">
         <a href="#">
-          
-          
-          
+
+
+
         </a>
       </div>
       <!--Search-->
@@ -203,7 +220,7 @@
                     </table>
                   </div>
                   <div id="tab2" class="tabs__section row">
-                    <table class="table table--example">
+                    <table class="table table--example table--with-tabs">
                       <thead>
                         <tr>
                           <th><h3>Tab 2</h3></th>
@@ -212,7 +229,7 @@
                     </table>
                   </div>
                   <div id="tab3" class="tabs__section row">
-                    <table class="table table--example">
+                    <table class="table table--example table--with-tabs">
                       <thead>
                         <tr>
                           <th><h3>Tab 3</h3></th>
@@ -221,7 +238,7 @@
                     </table>
                   </div>
                   <div id="tab4" class="tabs__section row">
-                    <table class="table table--example">
+                    <table class="table table--example table--with-tabs">
                       <thead>
                         <tr>
                           <th><h3>Tab 4</h3></th>
@@ -517,7 +534,8 @@
               <div class="row">
                 <div class="col-md-6">
                   <h3>Boxed form</h3>
-                    <div class="box" style="margin:2rem 0;">
+                  <div class="row">
+                    <div class="box" style="margin:2rem 1rem;">
                       <form class="form">
                         <label class="form__label form__label--block is-valid">Epost
                           <input type="text" class="form__input form__input--block">
@@ -532,10 +550,12 @@
                       </form>
                     </div>
                   </div>
+                </div>
 
                   <div class="col-md-6">
                     <h3>Boxed form</h3>
-                      <div class="box" style="margin:2rem 0;">
+                    <div class="row">
+                      <div class="box" style="margin:2rem 1rem;">
                         <form class="form">
                           <label class="form__label form__label--block">Epost
                             <input type="text" class="form__input form__input--block">
@@ -545,7 +565,9 @@
                         </form>
                       </div>
                     </div>
+
                   </div>
+                </div>
                 <!-- End Login example-->
                 <h3>Boxed form with contrast</h3>
 <div class="highlight"><pre class="prettyprint">
@@ -899,14 +921,14 @@
         <th>
         </th>
         <th>Program
-          <span class="table-sort">
+          <!-- <span class="table-sort">
             <a href="#" class="table-sort__link table-sort__link--up">
               <i class="icon--arrow-up"></i>
             </a>
             <a href="#" class="table-sort__link table-sort__link--down">
               <i class="icon--arrow-down"></i>
             </a>
-          </span>
+          </span> -->
         </th>
         <th>Musikkandel</th>
         <th>Avviksmargin</th>
@@ -937,10 +959,10 @@
                       <th>
                       </th>
                       <th>Program
-                        <span class="table-sort">
+                        <!-- <span class="table-sort">
                           <a href="#" class="table-sort__link table-sort__link--up"><i class="icon--arrow-up"></i></a>
                           <a href="#" class="table-sort__link table-sort__link--down"><i class="icon--arrow-down"></i></a>
-                        </span>
+                        </span> -->
                       </th>
                       <th>Musikkandel</th>
                       <th>Avviksmargin</th>
@@ -1212,7 +1234,7 @@
           <aside class="col-xs-12 col-sm-4 col-lg-3 flex-mob-order flex-mob-order--1">
             <nav class="page-contents page-contents--sticky">
               <section class="search">
-                <form id="live-search" action="" class="search__form" method="post">
+                <form id="live-search" action="" class="search__form search__form--simple" method="post">
                       <input type="text" class="search__form__input" id="filter" value="" />
                       <span class="search__clear"><i class="icon--cross"></i></span>
                       <!-- <span id="filter-count"></span> -->

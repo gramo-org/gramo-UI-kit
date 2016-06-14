@@ -98,10 +98,6 @@
         -webkit-appearance: none;
       }
 
-      /*&:hover,
-      &:focus {
-        background-image: none;
-      }*/
 
       &.placeholder {
         color: var(--gramo-blue);
@@ -109,7 +105,6 @@
 
      &--block {
        display: block;
-       /*max-width: 170px;*/
        margin-left: 0;
       }
     }
@@ -180,7 +175,6 @@
     color: var(--gramo-green);
     font-family: 'icomoon';
     position: absolute;
-    /*left: 114%;*/
     left: 113%;
     top: 1.5rem;
     background: var(--gramo-white);

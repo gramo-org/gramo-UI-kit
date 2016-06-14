@@ -29,7 +29,6 @@
   display: flex!important;
 
   &:hover {
-    /*@extend .fake-table__row:hover;*/
     background: var(--gramo-white);
   }
 }

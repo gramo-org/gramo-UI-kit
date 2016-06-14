@@ -22,13 +22,6 @@
   }
 
   &[disabled] {
-    /*border-color: color(var(--silver) shade(10%));
-    @extend %full-border;
-    background-color: var(--light-gray);
-    color: color(var(--off-gray) shade(20%));
-    &:hover {
-       background-color: var(--light-gray);
-    }*/
     opacity: 0.8;
     pointer-events: none;
     position: relative;

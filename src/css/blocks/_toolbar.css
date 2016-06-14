@@ -22,10 +22,10 @@
 
   &__above,
   &__below {
-    border-width: 1px 1px 0 1px;
     border-radius: 2px 2px 0 0;
     background: var(--table-head-background);
     border: 1px solid var(--table-border-color);
+    border-width: 1px 1px 0 1px;
     padding: .75rem 0;
 
     &--transparent {
