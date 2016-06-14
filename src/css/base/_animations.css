@@ -9,11 +9,22 @@
   100% { opacity: 0; }
 }
 
+/* Placeholder */
 @keyframes placeHolderShimmer{
   0%{
       background-position: -40rem 0
   }
   100%{
       background-position: 40rem 0
+  }
+}
+
+/* Spinner */
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1.0);
   }
 }

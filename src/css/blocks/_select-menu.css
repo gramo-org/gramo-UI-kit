@@ -1,7 +1,6 @@
 .select {
   border: 1px solid var(--silver);
   width: 99%;
-  /*margin-top: 1rem;*/
   border-radius: 3px;
   overflow: hidden;
   background: var(--gramo-white) url("img/chevron-down.svg") no-repeat 97% 55%;
@@ -41,13 +40,10 @@
     &:focus {
         outline: none;
     }
+
     &:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000;
     }
-  }
-
-  &--search {
-
   }
 }

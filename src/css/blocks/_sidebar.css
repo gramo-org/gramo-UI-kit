@@ -1,19 +1,10 @@
-%fixed {
-  position: fixed;
-  width: 20rem;
-  height: 100%;
-}
-
 .sidebar {
-
   flex-basis: 0;
   transform: translateX(-20rem);
   transition: all .25s ease;
   z-index: 4;
-  /*@extend %fixed;*/
 
   @media (--tablet) {
-    /*transform: none;*/
     position: static;
   }
 
@@ -22,13 +13,10 @@
     flex: 0 0 20rem;
   }
 
-  /*&--is-collapsed {
-    transform: translateX(-20rem);
-    flex-basis: 0;
-  }*/
-
   &__content {
-    @extend %fixed;
+    position: fixed;
+    width: 20rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background: var(--ui-gray);

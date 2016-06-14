@@ -1,12 +1,9 @@
 .tabs {
-  /*@extend .container;*/
   position: relative;
   margin-top: 2rem;
 
   &__nav {
-    /*@extend .row;*/
     @extend %no-list;
-    /*margin-bottom: -.5rem;*/
     position: relative;
     z-index: 1;
 
@@ -53,10 +50,6 @@
     text-decoration: none;
     color: var(--slate-gray);
     padding: 1rem 0;
-  }
-
-  &__section {
-    /*@extend .row;*/
   }
 
   &--toggleable {

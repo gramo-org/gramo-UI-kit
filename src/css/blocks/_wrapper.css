@@ -1,6 +1,5 @@
 /*** Wrappers to divide the page in two columns
 Used e.g. for fake tables allowing the table to be scrollable while a toolbar/header stays in position ***/
-
 .wrapper--sidebar {
   @extend .col-md;
 
@@ -13,8 +12,6 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
     width: 400px;
   }
 }
-
-
 
 .wrapper--sidebar,
 .wrapper--main {
