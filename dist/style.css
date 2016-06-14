@@ -4098,6 +4098,10 @@ input[type="text"].search__form__input--large{
   color:#a5a4ab!important;
 }
 
+.search__form--simple{
+  margin-bottom:2rem;
+}
+
 .search__form--simple:before{
   border-radius:2px 0 0 2px;
   background:#d9d9dc;
