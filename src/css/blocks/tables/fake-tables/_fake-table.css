@@ -25,7 +25,7 @@
 }
 
 /* Change height of .fake-table--scrollable when toggleable tabs are toggled */
-.tabs--toggleable #tab-control:checked ~ tabs__section > .fake-table--scrollable {
+.tabs--toggleable #tab-control:checked ~ .tabs__section > .fake-table--scrollable {
   height: calc(100vh - 28rem);
 }
 

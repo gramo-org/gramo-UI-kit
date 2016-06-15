@@ -2973,7 +2973,7 @@ tr > td:last-child{
   counter-reset:section;
   list-style-type:none;
 }
-.tabs--toggleable #tab-control:checked ~ tabs__section > .fake-table--scrollable{
+.tabs--toggleable #tab-control:checked ~ .tabs__section > .fake-table--scrollable{
   height:calc(100vh - 28rem);
 }
 
