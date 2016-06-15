@@ -2,15 +2,13 @@
 Used e.g. for fake tables allowing the table to be scrollable while a toolbar/header stays in position ***/
 .wrapper--sidebar {
   @extend .col-md;
-
-  @media (--desktop) {
-    position: fixed;
-    width: 300px;
-  }
+  @media (--desktop) { margin-right: 2rem; }
 
   @media (--hd) {
+    position: fixed;
     width: 400px;
   }
+
 }
 
 .wrapper--sidebar,
@@ -28,12 +26,10 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   @extend .col-xs-12;
   @extend .col-md-8;
 
-  @media (--desktop) {
-    position: relative;
-    left: 300px;
-  }
+
 
   @media (--hd) {
+    position: relative;
     left: 420px;
   }
 }

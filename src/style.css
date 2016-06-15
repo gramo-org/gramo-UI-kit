@@ -1368,12 +1368,12 @@ a:active, a:hover{
 }
 @media (min-width: 960px){
   .wrapper--sidebar{
-    position:fixed;
-    width:300px;
+    margin-right:2rem;
   }
 }
 @media (min-width: 1200px){
   .wrapper--sidebar{
+    position:fixed;
     width:400px;
   }
 }
@@ -1390,15 +1390,9 @@ a:active, a:hover{
   justify-content:center;
 }
 
-@media (min-width: 960px){
-  .wrapper--main{
-    position:relative;
-    left:300px;
-  }
-}
-
 @media (min-width: 1200px){
   .wrapper--main{
+    position:relative;
     left:420px;
   }
 }
@@ -2989,7 +2983,7 @@ tr > td:last-child{
   margin-bottom:1rem;
 }
 
-@media (min-width: 960px){
+@media (min-width: 1200px){
   .fake-table__infobar{
     position:fixed;
     width:inherit;
