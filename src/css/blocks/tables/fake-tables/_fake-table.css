@@ -29,20 +29,13 @@
   height: calc(100vh - 28rem);
 }
 
-.fake-table--with-tabs {
-  .fake-table__row--expanded,
-  .fake-table__row--expanded:hover {
-    background: var(--table-head-background);
-  }
-}
+/*** Infobar ***/ /* TODO: Refactor as .infobar and .infobar--fixed or even .content-header? */
 
-/*** Infobar ***/
-
-.fake-table__infobar {
+.fake-table__infobar,
+.infobar {
   border-bottom: 1px solid var(--table-border-color);
   background: var(--base-background-color);
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+  padding: 1.5rem 1rem 1rem 1rem;
   margin-bottom: 1rem;
 
   @media (--hd) {
@@ -78,5 +71,12 @@
 
   &__count {
     @extend .h3;
+  }
+}
+
+.infobar {
+  @media (--hd) {
+    position: static;
+    width: auto;
   }
 }

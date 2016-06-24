@@ -165,7 +165,7 @@
     position: relative;
   }
 
-  .fake-table__row::before {
+  & > .fake-table__row::before {
     counter-increment: section; /* Increments only this instance of the section counter */
     content: counters(section,".") " ";
     position: absolute;
@@ -175,7 +175,12 @@
     left: 1rem;
   }
 
-  .fake-table__row--selected::before {
+  & > .fake-table__row--expanded::before {
+    top: 5%;
+  }
+
+  & > .fake-table__row--selected::before,
+  & > .fake-table__row--expanded::before {
     color: var(--gramo-white);
     background: var(--slate-gray);
   }

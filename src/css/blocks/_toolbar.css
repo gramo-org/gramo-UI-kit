@@ -47,6 +47,11 @@
   padding-bottom: 0;
 }
 
+.toolbar--alone {
+  margin-top: 4rem;
+  padding: 4rem 0;
+}
+
 /* Remove border-top on first child after toolbar */
 
 /*.toolbar ~ div[class*="fake-table"] {

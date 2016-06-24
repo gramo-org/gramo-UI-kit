@@ -1,4 +1,9 @@
 .form {
+
+  &--padded {
+    padding: 1rem;
+  }
+
   }
 
   .form__section {
@@ -43,6 +48,14 @@
 
     &--is-checked {
       color: var(--gramo-blue);
+    }
+
+    &--mandatory {
+
+      &:before {
+        content: '*';
+        color: var(--gramo-red);
+      }
     }
 
     /* Block labels */

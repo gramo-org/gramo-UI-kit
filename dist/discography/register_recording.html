@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="../img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <div class="toggle-sidebar open">
+        <a href="#">
+
+        </a>
+      </div>
+      <!--- Flash message --->
+      <div class="flash-message-wrapper">
+        <div class="col-xs-12 no-padding">
+          <!-- <div class="flash-message flash-message--success">
+            <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--simple">Angre ?</button></p>
+          </div> -->
+        </div>
+      </div>
+
+      <section class="container container--hd">
+        <div class="infobar">
+          <div class="row">
+            <div class="col-xs-8">
+              <div>
+                <h3 class="infobar__heading">Aladdin Sane</h3>
+                <p>David Bowie</p>
+              </div>
+            </div>
+
+            <div class="col-xs-4 text--right align--vertical-center">
+              <div>
+                <a href="#" class="btn btn--success">Rediger</a>
+                <a href="#" class="btn btn--primary">Lagre</a>
+              </div>
+            </div>
+          </div><!--/ .row-->
+        </div><!--/ .infobar-->
+        <!-- <header class="content-header">
+          <div class="content-header__above">
+            <h2>Aladdin Sane</h2>
+            <p>David Bowie</p>
+            <div class="content-header__action">
+              <a href="#" class="btn btn--success btn--large">Rediger</a>
+              <a href="#" class="btn btn--primary btn--large">Lagre</a>
+            </div>
+          </div>
+          <div class="content-header__below">
+          </div>
+        </header> -->
+      </section>
+
+      <section class="container container--hd">
+          <form class="form form--padded row">
+            <div class="col-xs-12 col-sm-6">
+              <label class="form__label form__label--block form__label--mandatory">Innspillingstittel
+                <input type="text" value="Aladdin Sane" class="form__input form__input--block">
+              </label>
+              <label class="form__label form__label--block form__label--mandatory">Lengde
+                <input type="text" value="05:07" class="form__input form__input--block">
+              </label>
+              <label class="form__label form__label--block">ISRC
+                <input type="text" value="USJT10300113" class="form__input form__input--block">
+              </label>
+              <label class="form__label form__label--block">Komponist
+                <input type="text" value="" class="form__input form__input--block">
+              </label>
+            </div><!--end /.col-md-6-->
+            <div class="col-xs-12 col-sm-6">
+              <label class="form__label form__label--block form__label--mandatory">Innspillingsland
+                <input type="text" value="USA" class="form__input form__input--block">
+              </label>
+              <label class="form__label form__label--block form__label--mandatory">Produsentland
+                <input type="text" value="USA" class="form__input form__input--block">
+              </label>
+              <label class="form__label form__label--block form__label--mandatory">Utgivelsesdato (første gang)
+                <input type="text" value="01.01.1990" class="form__input form__input--block">
+              </label>
+              <label class="form__label form__label--block">Utgivelsesland
+                <input type="text" value="1972" class="form__input form__input--block">
+              </label>
+            </div><!--end /.col-md-6-->
+          </form><!--end /.row-->
+      </section>
+
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
+
+</body>
+</html>
