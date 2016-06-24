@@ -4,6 +4,7 @@
 
   & > .btn {
     border-radius: 0 1px 1px 0;
+    margin-bottom: 0;
   }
 
   & > .btn i {

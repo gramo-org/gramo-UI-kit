@@ -33,11 +33,11 @@
   text-align:center!important;
 }
 
-.text--light, .fake-table__infobar__meta, .infobar__meta{
+.text--light, .infobar__meta{
   color:#a5a4ab;
 }
 
-.text--light a, .fake-table__infobar__meta a, .infobar__meta a{
+.text--light a, .infobar__meta a{
   color:inherit;
 }
 
@@ -60,7 +60,7 @@
   font-weight:600!important;
 }
 
-.text--medium, .fake-table__infobar__meta, .infobar__meta{
+.text--medium, .infobar__meta{
   font-size:1.4rem;
 }
 
@@ -191,10 +191,10 @@
   display:inline-block;
   vertical-align:middle;
 }
-.text--inline, .list--inline, .fake-table__infobar__meta, .infobar__meta{
+.text--inline, .list--inline, .infobar__meta{
   display:inline;
 }
-.text--inline > *, .list--inline > *, .fake-table__infobar__meta > *, .infobar__meta > *{
+.text--inline > *, .list--inline > *, .infobar__meta > *{
   display:inline-block;
   margin-right:1rem;
 }
@@ -920,7 +920,7 @@ body{
 
 p{ margin:0 0 1em 0; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .fake-table__infobar__count, .infobar__count{
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .infobar__count{
   font-family:'Source Sans Pro', sans-serif;
   margin:0;
 }
@@ -940,7 +940,7 @@ h2, .h2{
   color:#504f56;
   font-weight:400;
 }
-h3, .h3, .fake-table__infobar__count, .infobar__count{
+h3, .h3, .infobar__count{
   font-size:2.2rem;
   line-height:2.8rem;
   margin-top:1em;
@@ -1012,6 +1012,15 @@ hr, .hr{
   border:0;
   padding:0;
   margin:0;
+}
+
+.clearfix:before, .clearfix:after{
+    content:" ";
+    display:table;
+}
+
+.clearfix:after{
+    clear:both;
 }
 .site-wrapper{
   display:-webkit-flex;
@@ -1958,6 +1967,7 @@ a:active, a:hover{
 }
 .btn-select > .btn{
   border-radius:0 1px 1px 0;
+  margin-bottom:0;
 }
 .btn-select > .btn i{
   font-size:8px;
@@ -2464,9 +2474,9 @@ a:active, a:hover{
   }
 }
 .content-header__above{
-  -webkit-align-items:flex-end;
-  -ms-flex-align:end;
-  align-items:flex-end;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
 }
 @media (min-width: 768px){
   .content-header__above{
@@ -2522,6 +2532,7 @@ a:active, a:hover{
   -webkit-flex:1 0 auto;
   -ms-flex:1 0 auto;
   flex:1 0 auto;
+  padding-right:0;
   display:block;
   text-align:center;
 }
@@ -2539,6 +2550,39 @@ a:active, a:hover{
 }
 main.pull .content-header--fixed{
   left:1rem;
+}
+.infobar{
+  border-bottom:1px solid #d9d9dc;
+  background:#f3f3f3;
+  padding:1.5rem 1rem 1rem 1rem;
+  margin-bottom:1rem;
+}
+.infobar--no-border{
+  border-bottom:0;
+}
+.infobar__heading, .infobar__count{
+  margin:.4rem 0;
+}
+.infobar__meta{
+  line-height:130%;
+}
+
+@media (min-width: 1200px){
+  .infobar--fixed{
+    position:fixed;
+    width:inherit;
+    z-index:2;
+    width:615px;
+  }
+  .infobar--fixed + div{
+    padding-top:15rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .infobar--fixed{
+    width:935px;
+  }
 }
 .toolbar{
   background:#ededed;
@@ -2693,9 +2737,7 @@ main.pull .content-header--fixed{
 }
 
 .badge-wrapper{
-  float:left;
-  height:100%;
-  margin-right:.5rem;
+  margin:0 0 0 1rem;
 }
 
 caption{
@@ -3020,50 +3062,6 @@ tr > td:last-child{
 .tabs--toggleable #tab-control:checked ~ .tabs__section > .fake-table--scrollable{
   height:calc(100vh - 28rem);
 }
-
-.fake-table__infobar, .infobar{
-  border-bottom:1px solid #d9d9dc;
-  background:#f3f3f3;
-  padding:1.5rem 1rem 1rem 1rem;
-  margin-bottom:1rem;
-}
-
-@media (min-width: 1200px){
-  .fake-table__infobar, .infobar{
-    position:fixed;
-    width:inherit;
-    z-index:2;
-    width:615px;
-  }
-  .fake-table__infobar + div, .infobar + div{
-    padding-top:15rem;
-  }
-}
-
-@media (min-width: 1200px){
-  .fake-table__infobar, .infobar{
-    width:935px;
-  }
-}
-
-.fake-table__infobar--no-border, .infobar--no-border{
-  border-bottom:0;
-}
-
-.fake-table__infobar__heading, .fake-table__infobar__count, .infobar__heading, .infobar__count{
-  margin:.4rem 0;
-}
-
-.fake-table__infobar__meta, .infobar__meta{
-  line-height:130%;
-}
-
-@media (min-width: 1200px){
-  .infobar{
-    position:static;
-    width:auto;
-  }
-}
 .fake-table__row{
   background:#fdfdfd;
   border:1px solid #d9d9dc;
@@ -3215,7 +3213,7 @@ tr > td:last-child{
 }
 
 .fake-table--numeric > .fake-table__row--expanded::before{
-  top:5%;
+  top:2.5rem;
 }
 
 .fake-table--numeric > .fake-table__row--selected::before, .fake-table--numeric > .fake-table__row--expanded::before{

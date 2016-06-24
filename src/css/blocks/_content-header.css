@@ -31,7 +31,8 @@
   &__above {
     @extend .row;
     @media (--tablet) { border-bottom: 1px solid var(--silver); }
-    align-items: flex-end;
+    /*align-items: flex-end;*/
+    align-items: center;
 
     &--compressed {
       padding-bottom: .5rem;
@@ -86,6 +87,7 @@
   &__info {
     flex: 1 0 auto;
     @extend .col-xs-12;
+    padding-right: 0;
     display: block;
     text-align: center;
     @media (--tablet) { text-align: right; }

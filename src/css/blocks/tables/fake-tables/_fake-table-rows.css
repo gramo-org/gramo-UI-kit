@@ -176,7 +176,7 @@
   }
 
   & > .fake-table__row--expanded::before {
-    top: 5%;
+    top: 2.5rem;
   }
 
   & > .fake-table__row--selected::before,
