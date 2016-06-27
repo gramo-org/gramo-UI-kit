@@ -1,7 +1,7 @@
 .form {
 
   &--padded {
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 
   }
@@ -11,12 +11,12 @@
 
     /* Section with button(s) */
     &--action {
-      text-align: right;
+      /*text-align: right;*/
       margin-top: 2rem;
 
       .btn:last-child {
         margin-top: 1rem;
-        @media (--tablet) { margin: 0 0 0 0.7rem; }
+        @media (--tablet) { margin: 0 0 0 0.2rem; }
       }
     }
   }
@@ -55,6 +55,14 @@
       &:before {
         content: '*';
         color: var(--gramo-red);
+      }
+    }
+
+    &--hidden {
+      margin-top: -.8rem!important;
+
+      & > span {
+        visibility: hidden;
       }
     }
 

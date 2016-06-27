@@ -31,8 +31,8 @@
   &__above {
     @extend .row;
     @media (--tablet) { border-bottom: 1px solid var(--silver); }
-    /*align-items: flex-end;*/
-    align-items: center;
+    align-items: flex-end;
+    /*align-items: center;*/
 
     &--compressed {
       padding-bottom: .5rem;
