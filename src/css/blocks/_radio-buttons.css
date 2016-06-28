@@ -1,0 +1,59 @@
+.radio-group {
+  align-self: center;
+  margin-top: 1rem;
+
+  input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+  }
+
+  label{
+    position: relative;
+    z-index: 9;
+    cursor: pointer;
+    transition: all 0.25s linear;
+    margin: 0;
+    @media (--desktop) { margin: 0 .5rem; }
+    text-align: center;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+  }
+
+  .check{
+    display: block;
+    position: absolute;
+    border: 3px solid var(--gramo-blue);
+    height: 3rem;
+    width: 3rem;
+    top: 0;
+    left: 0;
+  	z-index: 5;
+  	transition: border .25s linear;
+  }
+
+  .check::before {
+    display: block;
+    position: absolute;
+  	content: '';
+    height: 3rem;
+    width: 3rem;
+    top: -0.3rem;
+  	left: -0.3rem;
+  	transition: background 0.25s linear;
+  }
+
+  input[type=radio]:checked ~ .check {
+
+  }
+
+  input[type=radio]:checked ~ .check::before{
+    background: var(--gramo-blue);
+    opacity: 0.3;
+  }
+
+  input[type=radio]:checked ~ label{
+
+  }
+}

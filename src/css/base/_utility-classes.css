@@ -50,8 +50,8 @@
 }
 
 .hidden-on-mobile {
-  display: none;
-  @media (--desktop) { display: block; }
+  display: none!important;
+  @media (--tablet) { display: block!important; }
 }
 
 .cell--block {

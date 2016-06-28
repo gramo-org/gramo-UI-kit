@@ -59,10 +59,10 @@
     }
 
     &--hidden {
-      margin-top: -.8rem!important;
+      @media (--tablet) { margin-top: -.8rem!important; }
 
       & > span {
-        visibility: hidden;
+        @media (--tablet) { visibility: hidden; }
       }
     }
 

@@ -125,18 +125,29 @@
           <div class="box box--gray box--full">
             <div class="container">
               <div class="row">
+                <div class="col-sm-6 hidden-on-mobile text--medium text--bold">
+                  Produsentsnavn
+                </div>
+                <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                  Territorie
+                </div>
+                <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                  Prosentandel
+                </div>
+              </div>
+              <div class="row">
                 <div class="col-xs-12 col-sm-6">
-                  <label class="form__label form__label--block">Produsentsnavn
+                  <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
                     <input type="text" value="RCA UK" class="form__input form__input--block">
                   </label>
                 </div>
                 <div class="col-xs-12 col-sm-3">
-                  <label class="form__label form__label--block">Territorie
+                  <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
                     <input type="text" value="Worldwide" class="form__input form__input--block">
                   </label>
                 </div>
                 <div class="col-xs-12 col-sm-3">
-                  <label class="form__label form__label--block">Prosentandel
+                  <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
                     <input type="text" value="50%" class="form__input form__input--block">
                   </label>
                 </div>
@@ -219,31 +230,48 @@
           <div class="box box--gray box--full">
             <div class="container">
               <div class="row">
+                <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                  Navn
+                </div>
+                <div class="col-sm-2 col-lg-3 hidden-on-mobile text--medium text--bold">
+                  Instrument
+                </div>
+                <div class="col-sm-3 col-lg-2 text--center hidden-on-mobile text--medium text--bold">
+                  Rolle
+                </div>
+                <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
+                  Nasjonalitet
+                </div>
+              </div>
+              <div class="row">
                 <div class="col-xs-12 col-sm-4">
-                  <label class="form__label form__label--block">Navn
+                  <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
                     <input type="text" value="David Bowie (David Robert Jones)" class="form__input form__input--block">
                   </label>
                 </div>
-                <div class="col-xs-12 col-sm-3">
-                  <label class="form__label form__label--block">Instrument
+                <div class="col-xs-12 col-sm-2 col-lg-3">
+                  <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
                     <input type="text" value="Voice" class="form__input form__input--block">
                   </label>
                 </div>
-                <div class="col-xs-12 col-sm-2 align--vertical-center">
-                  <div class="align--vertical-center">
-                    <label class="form__label form__label--isChecked">
-                      <input type="radio" checked="">A
+                <div class="col-xs-12 col-sm-3 col-lg-2 align--vertical-center">
+                  <div class="radio-group">
+                    <label class="form__label">
+                      <input type="radio" name="role2">A
+                      <span class="check"></span>
                     </label>
                     <label class="form__label">
-                      <input type="radio">B
+                      <input type="radio" name="role2">B
+                      <span class="check"></span>
                     </label>
                     <label class="form__label">
-                      <input type="radio">C
+                      <input type="radio" name="role2">C
+                      <span class="check"></span>
                     </label>
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-3">
-                  <label class="form__label form__label--block">Nasjonalitet
+                  <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
                     <input type="text" value="Storbritania" class="form__input form__input--block">
                   </label>
                 </div>
@@ -254,21 +282,24 @@
                     <input type="text" value="Mike Garson" class="form__input form__input--block">
                   </label>
                 </div>
-                <div class="col-xs-12 col-sm-3">
+                <div class="col-xs-12 col-sm-2 col-lg-3">
                   <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
                     <input type="text" value="Piano" class="form__input form__input--block">
                   </label>
                 </div>
-                <div class="col-xs-12 col-sm-2 align--vertical-center">
-                  <div class="align--vertical-center">
+                <div class="col-xs-12 col-sm-3 col-lg-2 align--vertical-center">
+                  <div class="radio-group">
                     <label class="form__label">
-                      <input type="radio">A
-                    </label>
-                    <label class="form__label form__label--isChecked">
-                      <input type="radio" checked="">B
+                      <input type="radio" name="role3">A
+                      <span class="check"></span>
                     </label>
                     <label class="form__label">
-                      <input type="radio">C
+                      <input type="radio" name="role3">B
+                      <span class="check"></span>
+                    </label>
+                    <label class="form__label">
+                      <input type="radio" name="role3">C
+                      <span class="check"></span>
                     </label>
                   </div>
                 </div>
@@ -284,21 +315,24 @@
                     <input type="text" value="David Sanborn" class="form__input form__input--block">
                   </label>
                 </div>
-                <div class="col-xs-12 col-sm-3">
+                <div class="col-xs-12 col-sm-2 col-lg-3">
                   <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
                     <input type="text" value="Saxophone" class="form__input form__input--block">
                   </label>
                 </div>
-                <div class="col-xs-12 col-sm-2 align--vertical-center">
-                  <div class="align--vertical-center">
+                <div class="col-xs-12 col-sm-3 col-lg-2 align--vertical-center">
+                  <div class="radio-group">
                     <label class="form__label">
-                      <input type="radio">A
-                    </label>
-                    <label class="form__label form__label--isChecked">
-                      <input type="radio" checked="">B
+                      <input type="radio" name="role4">A
+                      <span class="check"></span>
                     </label>
                     <label class="form__label">
-                      <input type="radio">C
+                      <input type="radio" name="role4">B
+                      <span class="check"></span>
+                    </label>
+                    <label class="form__label">
+                      <input type="radio" name="role4">C
+                      <span class="check"></span>
                     </label>
                   </div>
                 </div>
@@ -314,21 +348,24 @@
                     <input type="text" value="Mick Ronson" class="form__input form__input--block">
                   </label>
                 </div>
-                <div class="col-xs-12 col-sm-3">
+                <div class="col-xs-12 col-sm-2 col-lg-3">
                   <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
                     <input type="text" value="Gitar" class="form__input form__input--block">
                   </label>
                 </div>
-                <div class="col-xs-12 col-sm-2 align--vertical-center">
-                  <div class="align--vertical-center">
+                <div class="col-xs-12 col-sm-3 col-lg-2 align--vertical-center">
+                  <div class="radio-group">
                     <label class="form__label">
-                      <input type="radio">A
-                    </label>
-                    <label class="form__label form__label--isChecked">
-                      <input type="radio" checked="">B
+                      <input type="radio" name="role5">A
+                      <span class="check"></span>
                     </label>
                     <label class="form__label">
-                      <input type="radio">C
+                      <input type="radio" name="role5">B
+                      <span class="check"></span>
+                    </label>
+                    <label class="form__label">
+                      <input type="radio" name="role5">C
+                      <span class="check"></span>
                     </label>
                   </div>
                 </div>
@@ -344,21 +381,24 @@
                     <input type="text" value="Trevor Bolder" class="form__input form__input--block">
                   </label>
                 </div>
-                <div class="col-xs-12 col-sm-3">
+                <div class="col-xs-12 col-sm-2 col-lg-3">
                   <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
                     <input type="text" value="Bass gitar" class="form__input form__input--block">
                   </label>
                 </div>
-                <div class="col-xs-12 col-sm-2 align--vertical-center">
-                  <div class="align--vertical-center">
+                <div class="col-xs-12 col-sm-3 col-lg-2 align--vertical-center">
+                  <div class="radio-group">
                     <label class="form__label">
-                      <input type="radio">A
-                    </label>
-                    <label class="form__label form__label--isChecked">
-                      <input type="radio" checked="">B
+                      <input type="radio" name="role6">A
+                      <span class="check"></span>
                     </label>
                     <label class="form__label">
-                      <input type="radio">C
+                      <input type="radio" name="role6">B
+                      <span class="check"></span>
+                    </label>
+                    <label class="form__label">
+                      <input type="radio" name="role6">C
+                      <span class="check"></span>
                     </label>
                   </div>
                 </div>
