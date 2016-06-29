@@ -25,6 +25,18 @@
         border-right-width: 1px;
       }
     }
+
+    &--flexible {
+
+      & > .tabs__nav__item {
+        flex: 0 0 auto;
+
+        & > a {
+           padding-left: 1rem;
+           padding-right: 1rem;
+        }
+      }
+    }
   }
 
   &__nav__item:hover,

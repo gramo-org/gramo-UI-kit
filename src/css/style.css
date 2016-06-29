@@ -30,6 +30,7 @@
 @import url('blocks/_infobar.css');
 @import url('blocks/_toolbar.css');
 @import url('blocks/_badge.css');
+@import url('blocks/_buckets.css');
 
 @import url('blocks/tables/_tables.css');
 @import url('blocks/tables/_table.css');

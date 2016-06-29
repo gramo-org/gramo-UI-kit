@@ -54,9 +54,9 @@
 
 /* Remove border-top on first child after toolbar */
 
-/*.toolbar ~ div[class*="fake-table"] {
+.toolbar ~ div[class*="fake-table"] {
 
   & > .fake-table__row:first-child {
     border-top: 0;
   }
-}*/
+}

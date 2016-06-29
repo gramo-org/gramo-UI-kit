@@ -120,6 +120,13 @@
   &--padded {
     @media (--hd) { padding: .5rem 2rem!important; }
   }
+
+  &--success {
+    @extend %border-success;
+  }
+  &--error {
+    @extend %border-error;
+  }
 }
 
 /* Expanded rows */
