@@ -97,6 +97,9 @@ $(document).ready(function() {
   var button = '<div class="btn-group btn-group--hover"><a class="btn btn--success btn--small">Se detaljer</a></div>';
   var tableSummaryCell = $('.table-summary__cell--action');
   appendElements(tableSummaryCell, button);
+  var actions = '<div class="btn-group btn-group--hover"><a href="#" class="btn btn--secondary btn--small"><i class="fa fa-thumb-tack"></i></a><a href="#" class="btn btn--secondary btn--small"><i class="fa fa-share-square-o"></i></a></div>';
+  var tableSuccessCell = $('.fake-table__row--success .fake-table__cell--action');
+  appendElements(tableSuccessCell, actions);
 
   //Expand table rows
   $('.fake-table__toggle-row').click(function(){

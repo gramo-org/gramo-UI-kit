@@ -3867,6 +3867,9 @@ tr > td:last-child{
 .tabs__nav__item:last-child{
   border-right-width:1px;
 }
+.tabs__nav__item--light > .active{
+  background:#f3f3f3!important;
+}
 .tabs__nav--flexible > .tabs__nav__item{
   -webkit-flex:0 0 auto;
   -ms-flex:0 0 auto;

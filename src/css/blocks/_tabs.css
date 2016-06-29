@@ -24,6 +24,15 @@
       &:last-child {
         border-right-width: 1px;
       }
+
+      /*&--plus {
+        background: var(--light-gray);
+        color: var(--gramo-white);
+      }*/
+
+      &--light > .active {
+        background: var(--base-background-color)!important;
+      }
     }
 
     &--flexible {
