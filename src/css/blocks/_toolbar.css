@@ -38,6 +38,14 @@
       display: block;
     }
   }
+
+  &__above--borderless {
+    border: 0;
+  }
+
+  &__below--borderless {
+    border-width: 1px 0 0 0;
+  }
 }
 
 .toolbar--transparent {
@@ -45,6 +53,10 @@
   border: 0;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.toolbar--borderless {
+  border: 0;
 }
 
 .toolbar--alone {

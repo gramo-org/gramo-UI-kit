@@ -8,12 +8,22 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
     position: fixed;
     width: 400px;
   }
+  &--boxed {
+    border-right: 1px solid var(--table-border-color);
+    position: static;
+    width: auto;
+    margin: 0;
 
+    & ~ .wrapper--main {
+      position: static;
+    }
+  }
 }
 
 .wrapper--sidebar,
 .wrapper--main {
   @media (--desktop) { padding: 0; }
+
   .fake-table__row {
 
     div[class*="col-"]:first-child {

@@ -1386,6 +1386,15 @@ a:active, a:hover{
     width:400px;
   }
 }
+.wrapper--sidebar--boxed{
+  border-right:1px solid #d9d9dc;
+  position:static;
+  width:auto;
+  margin:0;
+}
+.wrapper--sidebar--boxed ~ .wrapper--main{
+  position:static;
+}
 
 @media (min-width: 960px){
   .wrapper--sidebar, .wrapper--main{
@@ -2698,12 +2707,22 @@ main.pull .content-header--fixed{
 .toolbar__above > div[class*="col-"], .toolbar__below > div[class*="col-"]{
   display:block;
 }
+.toolbar__above--borderless{
+  border:0;
+}
+.toolbar__below--borderless{
+  border-width:1px 0 0 0;
+}
 
 .toolbar--transparent{
   background:none;
   border:0;
   padding-top:0;
   padding-bottom:0;
+}
+
+.toolbar--borderless{
+  border:0;
 }
 
 .toolbar--alone{
@@ -3856,6 +3875,7 @@ tr > td:last-child{
 .tabs__nav__item:hover, .tabs .active{
   background:#ededed;
   position:relative;
+  height:100%;
 }
 @media (min-width: 768px){
   .tabs__nav__item:hover::after, .tabs .active::after{
@@ -3894,6 +3914,9 @@ tr > td:last-child{
   font-size:90%;
   margin-left:1rem;
   font-weight:300;
+}
+.tabs__section--outline{
+  border:1px solid #d9d9dc;
 }
 .tabs--compressed .tabs__nav{
   margin-top:-1px;
