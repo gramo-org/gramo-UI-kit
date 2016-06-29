@@ -1395,6 +1395,10 @@ a:active, a:hover{
 .wrapper--sidebar--boxed ~ .wrapper--main{
   position:static;
 }
+.wrapper--sidebar--boxed ~ .wrapper--main > .scrollable-area{
+  height:calc(100vh - 37rem);
+  overflow:auto;
+}
 
 @media (min-width: 960px){
   .wrapper--sidebar, .wrapper--main{

@@ -16,6 +16,11 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 
     & ~ .wrapper--main {
       position: static;
+
+      & > .scrollable-area {
+        height: calc(100vh - 37rem);
+        overflow: auto;
+      }
     }
   }
 }
