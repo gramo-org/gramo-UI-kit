@@ -2863,6 +2863,17 @@ main.pull .content-header--fixed{
   color:#a5a4ab;
   font-size:.8rem;
 }
+.bucket__list__item--new{
+  padding:0;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+}
+.bucket__list__item--new a{
+  display:block;
+  padding:2rem;
+  color:#d9d9dc;
+}
 
 caption{
   line-height:normal;

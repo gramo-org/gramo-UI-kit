@@ -27,5 +27,16 @@
       color: var(--off-gray);
       font-size: .8rem;
     }
+
+    &--new {
+      padding: 0;
+      justify-content: center;
+
+      a {
+        display: block;
+        padding: 2rem;
+        color: var(--silver);
+      }
+    }
   }
 }
