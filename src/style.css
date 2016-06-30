@@ -25,7 +25,7 @@
   text-align:left!important;
 }
 
-.text--right{
+.text--right, .form__label__text, .form__label__action{
   text-align:right!important;
 }
 
@@ -98,7 +98,7 @@
   align-items:flex-end;
 }
 
-.align--vertical-center{
+.align--vertical-center, .form__label__text, .form__label__action{
   -webkit-align-self:center;
   -ms-flex-item-align:center;
   align-self:center;
@@ -400,7 +400,7 @@ table{
 td, th{
   padding:0;
 }
-.row, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .fake-table__row, .fake-table__toggle-row, .fake-table__row--child, .flash-message-wrapper, .search__form{
+.row, .form__label--row, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .fake-table__row, .fake-table__toggle-row, .fake-table__row--child, .flash-message-wrapper, .search__form{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -1469,9 +1469,13 @@ a:active, a:hover{
   color:#0095da;
 }
 
-  .form__label--mandatory:before{
+  .form__label--mandatory:before, .form__label--row.form__label--mandatory .form__label__text > span::before{
   content:'*';
   color:#ed6b6a;
+}
+
+  .form__label--row.form__label--mandatory:before{
+  content:none;
 }
 
   @media (min-width: 768px){
@@ -1549,6 +1553,25 @@ a:active, a:hover{
   .form__label--date > .form__input--block{
   display:block;
   margin-left:0;
+}
+
+  .form__label--row{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  margin:0 -1rem 1rem -1rem;
+}
+
+  .form__label__text, .form__label__action{
+  -webkit-flex:0 1 120px;
+  -ms-flex:0 1 120px;
+  flex:0 1 120px;
+}
+
+  .form__label__action{
+  -webkit-flex:0 1 auto;
+  -ms-flex:0 1 auto;
+  flex:0 1 auto;
 }
 
 

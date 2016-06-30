@@ -58,6 +58,16 @@
       }
     }
 
+    &--row.form__label--mandatory {
+      &:before {
+        content: none;
+      }
+
+      .form__label__text > span::before {
+        @extend .form__label--mandatory:before;
+      }
+    }
+
     &--hidden {
       @media (--tablet) { margin-top: -.8rem!important; }
 
@@ -128,6 +138,23 @@
        display: block;
        margin-left: 0;
       }
+    }
+
+    &--row {
+      display: flex;
+      @extend .row;
+      margin: 0 -1rem 1rem -1rem;
+    }
+
+    &__text,
+    &__action {
+      @extend .text--right;
+      @extend .align--vertical-center;
+      flex: 0 1 120px;
+    }
+
+    &__action {
+      flex: 0 1 auto;
     }
   }
 
