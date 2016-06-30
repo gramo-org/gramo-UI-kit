@@ -112,7 +112,7 @@
 
   /* Borderless row */
   &--borderless {
-    background: none;
+    /*background: none;*/
     border-width: 1px 0 0 0;
   }
 

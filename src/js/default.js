@@ -75,7 +75,7 @@ $(document).ready(function() {
       $content.show();
 
       // Prevent the anchor's default click action
-      e.preventDefault();
+      // e.preventDefault();
     });
   });
 
@@ -97,7 +97,7 @@ $(document).ready(function() {
   var button = '<div class="btn-group btn-group--hover"><a class="btn btn--success btn--small">Se detaljer</a></div>';
   var tableSummaryCell = $('.table-summary__cell--action');
   appendElements(tableSummaryCell, button);
-  var actions = '<div class="btn-group btn-group--hover"><a href="#" class="btn btn--secondary btn--small"><i class="fa fa-thumb-tack"></i></a><a href="#" class="btn btn--secondary btn--small"><i class="fa fa-share-square-o"></i></a></div>';
+  var actions = '<div class="btn-group btn-group--hover"><a href="searchA-2.html" class="btn btn--secondary btn--small"><i class="fa fa-thumb-tack"></i></a><a href="searchA-2.html" class="btn btn--secondary btn--small"><i class="fa fa-share-square-o"></i></a></div>';
   var tableSuccessCell = $('.fake-table__row--success .fake-table__cell--action');
   appendElements(tableSuccessCell, actions);
 

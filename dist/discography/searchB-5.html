@@ -19,6 +19,9 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../style.css">
+  <script>
+  window.onload = window.location.hash = 'tab3';
+  </script>
 </head>
 <body>
   <div class="site-wrapper">
@@ -72,20 +75,10 @@
             <ul class="bucket__list">
               <li class="bucket__list__item">
                 <span>Innspilling</span>
-                <a href="#">Aladdin Sane</a>
+                <a href="searchB-2.html">Aladdin Sane</a>
                 <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
               </li>
-              <li class="bucket__list__item">
-                <span>Innspilling</span>
-                <a href="#">Love Me Tender</a>
-                <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
-              </li>
-              <li class="bucket__list__item">
-                <span>Artist</span>
-                <a href="#">Iggy Pop</a>
-                <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
-              </li>
-              <li class="bucket__list__item bucket__list__item--new"><a href="#"><i class="fa fa-2x fa-plus"></i></a></li>
+              <li class="bucket__list__item bucket__list__item--new"><a href="searchB-3.html"><i class="fa fa-2x fa-plus"></i></a></li>
             </ul>
           </div>
         </div>
@@ -98,7 +91,8 @@
               <ul class='tabs__nav tabs__nav--flexible row'>
                 <li class='tabs__nav__item'><a href="#search"><i class="icon--search"></i> Søk</a></li>
                 <li class='tabs__nav__item tabs__nav__item--light'><a href="#tab2">Aladdin Sane</a></li>
-                <!-- <li class='tabs__nav__item tabs__nav__item--plus'><a href="#artister"><i class="fa fa-plus"></i></a></li>
+                <li class='tabs__nav__item tabs__nav__item--light'><a href="#tab3">Utøver: David Bowie</a></li>
+                <!--<li class='tabs__nav__item tabs__nav__item--plus'><a href="searchA-4.html"><i class="fa fa-plus"></i></a></li>
                 <li class='tabs__nav__item'><a href="#produsenter">Produsenter</a></li>
                 <li class='tabs__nav__item'><a href="#labels">Labels</a></li> -->
               </ul>
@@ -603,6 +597,104 @@
                               </label>
                               <label class="form__label">
                                 <input type="radio" name="role6">C
+                                <span class="check"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-3">
+                            <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
+                              <input type="text" value="Storbritania" class="form__input form__input--block">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+
+                  <div class="box box--gray box--full">
+                    <div class="search row">
+                      <div class="col-xs-12 col-md-6">
+                        <form action="" class="search__form form--padded">
+                          <input type="text" class="search__form__input" value="" placeholder="Søk etter produsent..." />
+                          <button class="search__submit"><i class="icon--search"></i></button>
+                        </form>
+                      </div>
+                      <div class="col-xs-12 col-sm-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
+                          <input type="text" value="" class="form__input form__input--block">
+                        </label>
+                      </div>
+                    </div>
+                  </div><!--/ .toolbar-->
+                  <div class="form__section form__section--action">
+                    <button class="btn btn--primary">Leg til utøver</button>
+                  </div>
+                </section>
+              </div>
+              </section><!--end /.tabs__section-->
+              <section id="tab3" class="tabs__section tabs__section--outline row">
+                <div class="col-md">
+                <section class="container container--hd">
+
+                  <header class="content-header">
+                    <div class="content-header__above">
+                      <div>
+                        <h1>David Bowie (David Robert Jones)</h1>
+                        <span>Voice</span>
+                      </div>
+                      <div class="content-header__action">
+                        <a href="#" class="btn btn--success">Rediger</a>
+                        <a href="#" class="btn btn--primary">Lagre</a>
+                      </div>
+                    </div>
+                  </header>
+
+
+                  <form class="form form--padded row">
+                    <div class="box box--gray box--full">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                            Navn
+                          </div>
+                          <div class="col-sm-2 col-lg-3 hidden-on-mobile text--medium text--bold">
+                            Instrument
+                          </div>
+                          <div class="col-sm-3 col-lg-2 text--center hidden-on-mobile text--medium text--bold">
+                            Rolle
+                          </div>
+                          <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
+                            Nasjonalitet
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-4">
+                            <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                              <input type="text" value="David Bowie (David Robert Jones)" class="form__input form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-2 col-lg-3">
+                            <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                              <input type="text" value="Voice" class="form__input form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-3 col-lg-2 align--vertical-center">
+                            <div class="radio-group">
+                              <label class="form__label">
+                                <input type="radio" name="role2">A
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" name="role2">B
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" name="role2">C
                                 <span class="check"></span>
                               </label>
                             </div>

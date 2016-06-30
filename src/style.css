@@ -1396,7 +1396,7 @@ a:active, a:hover{
   position:static;
 }
 .wrapper--sidebar--boxed ~ .wrapper--main > .scrollable-area{
-  height:calc(100vh - 37rem);
+  height:calc(100vh - 25rem);
   overflow:auto;
 }
 
@@ -2733,10 +2733,6 @@ main.pull .content-header--fixed{
   margin-top:4rem;
   padding:4rem 0;
 }
-
-.toolbar ~ div[class*="fake-table"] > .fake-table__row:first-child{
-  border-top:0;
-}
 .badge{
   display:inline-block;
   border-radius:2px;
@@ -3303,7 +3299,6 @@ tr > td:last-child{
   background:#f3f3f3;
 }
 .fake-table__row--borderless{
-  background:none;
   border-width:1px 0 0 0;
 }
 @media (min-width: 1200px){
