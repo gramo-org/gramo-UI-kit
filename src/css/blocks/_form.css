@@ -148,9 +148,15 @@
 
     &__text,
     &__action {
-      @extend .text--right;
-      @extend .align--vertical-center;
-      flex: 0 1 120px;
+
+      flex: 1 0 100%;
+      padding-left: 1rem;
+
+      @media (--tablet) {
+        text-align: right;
+        align-self: center;
+        flex: 0 1 120px;
+      }
     }
 
     &__action {

@@ -25,7 +25,7 @@
   text-align:left!important;
 }
 
-.text--right, .form__label__text, .form__label__action{
+.text--right{
   text-align:right!important;
 }
 
@@ -98,7 +98,7 @@
   align-items:flex-end;
 }
 
-.align--vertical-center, .form__label__text, .form__label__action{
+.align--vertical-center{
   -webkit-align-self:center;
   -ms-flex-item-align:center;
   align-self:center;
@@ -1563,9 +1563,22 @@ a:active, a:hover{
 }
 
   .form__label__text, .form__label__action{
-  -webkit-flex:0 1 120px;
-  -ms-flex:0 1 120px;
-  flex:0 1 120px;
+  -webkit-flex:1 0 100%;
+  -ms-flex:1 0 100%;
+  flex:1 0 100%;
+  padding-left:1rem;
+}
+
+  @media (min-width: 768px){
+  .form__label__text, .form__label__action{
+    text-align:right;
+    -webkit-align-self:center;
+    -ms-flex-item-align:center;
+    align-self:center;
+    -webkit-flex:0 1 120px;
+    -ms-flex:0 1 120px;
+    flex:0 1 120px;
+  }
 }
 
   .form__label__action{
