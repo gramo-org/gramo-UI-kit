@@ -1843,6 +1843,11 @@ a:active, a:hover{
 .searchable-list--below-search .searchable-list__dropdown{
   border-top:0;
 }
+
+span.searchable-list__heading{
+  display:inline-block;
+  width:100%;
+}
 .horizontal-rule{
   position:relative;
   text-align:center;

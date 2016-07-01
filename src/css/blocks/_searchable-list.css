@@ -84,3 +84,10 @@
     }
   }
 }
+
+span.searchable-list {
+  &__heading {
+    display: inline-block;
+    width: 100%;
+  }
+}
