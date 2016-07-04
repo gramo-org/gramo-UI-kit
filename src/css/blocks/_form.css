@@ -58,16 +58,6 @@
       }
     }
 
-    &--row.form__label--mandatory {
-      &:before {
-        content: none;
-      }
-
-      .form__label__text > span::before {
-        @extend .form__label--mandatory:before;
-      }
-    }
-
     &--hidden {
       @media (--tablet) { margin-top: -.8rem!important; }
 
@@ -139,31 +129,44 @@
        margin-left: 0;
       }
     }
+  }
+  /* Form fields for right aligned labels and inline inputs */
+  .form__field {
+    display: flex;
+    @extend .row;
+    margin: 0 -1rem 1rem -1rem;
+    color: var(--slate-gray);
+    font-size: 1.4rem;
 
-    &--row {
-      display: flex;
-      @extend .row;
-      margin: 0 -1rem 1rem -1rem;
-    }
 
-    &__text,
-    &__action {
+  .form__label,
+  &__action {
 
-      flex: 1 0 100%;
-      padding-left: 1rem;
+    flex: 1 0 100%;
+    padding-left: 1rem;
 
-      @media (--tablet) {
-        text-align: right;
-        align-self: center;
-        flex: 0 1 120px;
-      }
-    }
-
-    &__action {
-      flex: 0 1 auto;
+    @media (--tablet) {
+      text-align: right;
+      align-self: center;
+      flex: 0 1 120px;
+      margin-right: 0;
     }
   }
 
+  &__action {
+    flex: 0 1 auto;
+  }
+
+  .form__label--mandatory {
+    &:before {
+      content: none;
+    }
+
+    & > span::before {
+      @extend .form__label--mandatory:before;
+    }
+  }
+}
 
   .form__input {
     border: 1px solid var(--silver);

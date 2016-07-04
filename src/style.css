@@ -400,7 +400,7 @@ table{
 td, th{
   padding:0;
 }
-.row, .form__label--row, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .fake-table__row, .fake-table__toggle-row, .fake-table__row--child, .flash-message-wrapper, .search__form{
+.row, .form__field, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .fake-table__row, .fake-table__toggle-row, .fake-table__row--child, .flash-message-wrapper, .search__form{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -1469,13 +1469,9 @@ a:active, a:hover{
   color:#0095da;
 }
 
-  .form__label--mandatory:before, .form__label--row.form__label--mandatory .form__label__text > span::before{
+  .form__label--mandatory:before, .form__field .form__label--mandatory > span::before{
   content:'*';
   color:#ed6b6a;
-}
-
-  .form__label--row.form__label--mandatory:before{
-  content:none;
 }
 
   @media (min-width: 768px){
@@ -1554,23 +1550,22 @@ a:active, a:hover{
   display:block;
   margin-left:0;
 }
-
-  .form__label--row{
-  display:-webkit-flex;
-  display:-ms-flexbox;
-  display:flex;
-  margin:0 -1rem 1rem -1rem;
+  .form__field{
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    margin:0 -1rem 1rem -1rem;
+    color:#504f56;
+    font-size:1.4rem;
 }
-
-  .form__label__text, .form__label__action{
+  .form__field .form__label, .form__field__action{
   -webkit-flex:1 0 100%;
   -ms-flex:1 0 100%;
   flex:1 0 100%;
   padding-left:1rem;
 }
-
   @media (min-width: 768px){
-  .form__label__text, .form__label__action{
+  .form__field .form__label, .form__field__action{
     text-align:right;
     -webkit-align-self:center;
     -ms-flex-item-align:center;
@@ -1578,15 +1573,17 @@ a:active, a:hover{
     -webkit-flex:0 1 120px;
     -ms-flex:0 1 120px;
     flex:0 1 120px;
+    margin-right:0;
   }
 }
-
-  .form__label__action{
+  .form__field__action{
   -webkit-flex:0 1 auto;
   -ms-flex:0 1 auto;
   flex:0 1 auto;
 }
-
+  .form__field .form__label--mandatory:before{
+  content:none;
+}
 
   .form__input{
     border:1px solid #d9d9dc;
@@ -1595,11 +1592,9 @@ a:active, a:hover{
     font-weight:400;
   }
 
-
   .form__input[disabled]{
   background-color:#ededed;
 }
-
 
   .form__input--block{
   display:block;
@@ -1842,11 +1837,6 @@ a:active, a:hover{
 }
 .searchable-list--below-search .searchable-list__dropdown{
   border-top:0;
-}
-
-span.searchable-list__heading{
-  display:inline-block;
-  width:100%;
 }
 .horizontal-rule{
   position:relative;
