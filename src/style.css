@@ -218,6 +218,11 @@
   -ms-flex-order:2;
   order:2;
 }
+
+.break--inline{
+  display:inline-block;
+  margin:0 1rem;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 html{
@@ -1476,7 +1481,7 @@ a:active, a:hover{
 
   @media (min-width: 768px){
   .form__label--hidden{
-    margin-top:-.8rem!important;
+    margin-top:-2.5rem!important;
   }
 }
 
@@ -2599,7 +2604,7 @@ a:active, a:hover{
 }
 .content-header__title{
   text-transform:uppercase;
-  font-weight:700;
+  font-weight:600;
   font-size:2.2rem;
   margin-bottom:1rem;
   text-align:center;
@@ -2611,6 +2616,11 @@ a:active, a:hover{
     margin-bottom:0;
     text-align:left;
   }
+}
+.content-header__title--small{
+  color:#a5a4ab;
+  text-transform:uppercase;
+  font-size:1.4rem;
 }
 .content-header__title--lower{
   text-transform:none;
@@ -2654,6 +2664,9 @@ a:active, a:hover{
 }
 .content-header--simple{
   margin-bottom:0;
+}
+.content-header--simple .content-header__above{
+  border-bottom:0;
 }
 .content-header--simple .content-header__below{
   border-bottom:0;
@@ -2783,6 +2796,10 @@ main.pull .content-header--fixed{
 }
 .badge--success{
   background:#50bf9e;
+  color:#fff;
+}
+.badge--secondary{
+  background:#a5a4ab;
   color:#fff;
 }
 .badge--notification{

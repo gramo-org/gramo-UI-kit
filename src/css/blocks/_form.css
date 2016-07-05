@@ -59,7 +59,7 @@
     }
 
     &--hidden {
-      @media (--tablet) { margin-top: -.8rem!important; }
+      @media (--tablet) { margin-top: -2.5rem!important; }
 
       & > span {
         @media (--tablet) { visibility: hidden; }

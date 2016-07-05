@@ -41,7 +41,7 @@
 
   &__title {
     text-transform: uppercase;
-    font-weight: var(--font-700);
+    font-weight: var(--font-600);
     font-size: 2.2rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -52,6 +52,12 @@
     }
     /*@extend .col-sm;*/
     display: block;
+
+    &--small {
+      color: var(--off-gray);
+      text-transform: uppercase;
+      font-size: 1.4rem;
+    }
   }
 
   &__title--lower {
@@ -97,6 +103,10 @@
   /* A simpler version of the content header without a bottom border, padding or margin */
   &--simple {
     margin-bottom: 0;
+
+    .content-header__above {
+      border-bottom: 0;
+    }
 
     .content-header__below {
       border-bottom: 0;

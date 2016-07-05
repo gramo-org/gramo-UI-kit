@@ -22,6 +22,11 @@
     color: #fff;
   }
 
+  &--secondary {
+    background: var(--off-gray);
+    color: #fff;
+  }
+
   &--notification {
     background: var(--info);
     font-size: 1.2rem;
