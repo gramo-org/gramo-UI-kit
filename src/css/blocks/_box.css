@@ -22,5 +22,6 @@
     box-shadow: none;
     border: 1px solid color(var(--light-gray) shade(5%));
     padding: 2rem;
+    margin-bottom: 2rem;
   }
 }

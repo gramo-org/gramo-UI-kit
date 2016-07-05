@@ -59,7 +59,7 @@
     }
 
     &--hidden {
-      @media (--tablet) { margin-top: -2.5rem!important; }
+      @media (--tablet) { margin-top: -2rem!important; }
 
       & > span {
         @media (--tablet) { visibility: hidden; }
@@ -132,29 +132,35 @@
   }
   /* Form fields for right aligned labels and inline inputs */
   .form__field {
-    display: flex;
     @extend .row;
-    margin: 0 -1rem 1rem -1rem;
-    color: var(--slate-gray);
     font-size: 1.4rem;
 
+    .form__label {
+      @media (--tablet) {
+        display: flex;
+        align-items: center;
+      }
 
-  .form__label,
+
+      span {
+        flex: 1 0 130px;
+        text-align: right;
+        padding-right: 1rem;
+      }
+
+      .form__input {
+        flex: 1 0 75%;
+      }
+    }
+
   &__action {
-
-    flex: 1 0 100%;
-    padding-left: 1rem;
+    flex: 1 0 auto;
+    margin-left: 1rem;
 
     @media (--tablet) {
-      text-align: right;
+      margin-left: 2rem;
       align-self: center;
-      flex: 0 1 120px;
-      margin-right: 0;
     }
-  }
-
-  &__action {
-    flex: 0 1 auto;
   }
 
   .form__label--mandatory {
@@ -183,7 +189,7 @@
     &--block {
       display: block;
       width: 100%;
-      margin-top: 0.75rem;
+      margin-top: 0.25rem;
     }
   }
 

@@ -30,9 +30,9 @@
         color: var(--gramo-white);
       }*/
 
-      &--light > .active {
+      /*&--light > .active {
         background: var(--base-background-color)!important;
-      }
+      }*/
     }
 
     &--flexible {
@@ -108,6 +108,26 @@
 
   &__section--outline {
     border: 1px solid var(--table-border-color);
+  }
+
+  &__section__nav {
+    @extend %no-list;
+    background: var(--light-gray);
+    padding:  0;
+    justify-content: flex-end;
+
+    &__item > a {
+      text-decoration: none;
+      /*text-transform: uppercase;*/
+      font-size: 1.4rem;
+      color: var(--slate-gray);
+      padding: .75rem 2rem;
+      display: block;
+
+      &:hover {
+        background: var(--table-border-color);
+      }
+    }
   }
 }
 

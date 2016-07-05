@@ -127,14 +127,14 @@ $(document).ready(function() {
 
   //smooth scroll
   // Get the height of the header
-  var headerHeight = $(".site-header").height();
+  var headerHeight = $(".toggle-sidebar").height();
 
   // Attach the click event
   $('a[href*=#]').bind("click", function(e) {
       e.preventDefault();
 
       var target = $(this).attr("href"); //Get the target
-      var scrollToPosition = $(target).offset().top;
+      var scrollToPosition = $(target).offset().top - headerHeight;
 
       $('html,body').animate({ 'scrollTop': scrollToPosition }, 600, function(){
           window.location.hash = "" + target;

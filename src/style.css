@@ -12,7 +12,7 @@
   box-shadow:4px 0px 0px #ed6b6a inset;
 }
 
-.btn-select > ul, .vertical__nav, .bucket__list, .tabs__nav, .page-contents ul, .filter-items{
+.btn-select > ul, .vertical__nav, .bucket__list, .tabs__nav, .tabs__section__nav, .page-contents ul, .filter-items{
   list-style:none;
   padding:0;
   margin:0;
@@ -1481,7 +1481,7 @@ a:active, a:hover{
 
   @media (min-width: 768px){
   .form__label--hidden{
-    margin-top:-2.5rem!important;
+    margin-top:-2rem!important;
   }
 }
 
@@ -1556,35 +1556,43 @@ a:active, a:hover{
   margin-left:0;
 }
   .form__field{
+    font-size:1.4rem;
+}
+  @media (min-width: 768px){
+  .form__field .form__label{
     display:-webkit-flex;
     display:-ms-flexbox;
     display:flex;
-    margin:0 -1rem 1rem -1rem;
-    color:#504f56;
-    font-size:1.4rem;
+    -webkit-align-items:center;
+    -ms-flex-align:center;
+    align-items:center;
+  }
 }
-  .form__field .form__label, .form__field__action{
-  -webkit-flex:1 0 100%;
-  -ms-flex:1 0 100%;
-  flex:1 0 100%;
-  padding-left:1rem;
+  .form__field .form__label span{
+  -webkit-flex:1 0 130px;
+  -ms-flex:1 0 130px;
+  flex:1 0 130px;
+  text-align:right;
+  padding-right:1rem;
+}
+  .form__field .form__label .form__input{
+  -webkit-flex:1 0 75%;
+  -ms-flex:1 0 75%;
+  flex:1 0 75%;
+}
+  .form__field__action{
+  -webkit-flex:1 0 auto;
+  -ms-flex:1 0 auto;
+  flex:1 0 auto;
+  margin-left:1rem;
 }
   @media (min-width: 768px){
-  .form__field .form__label, .form__field__action{
-    text-align:right;
+  .form__field__action{
+    margin-left:2rem;
     -webkit-align-self:center;
     -ms-flex-item-align:center;
     align-self:center;
-    -webkit-flex:0 1 120px;
-    -ms-flex:0 1 120px;
-    flex:0 1 120px;
-    margin-right:0;
   }
-}
-  .form__field__action{
-  -webkit-flex:0 1 auto;
-  -ms-flex:0 1 auto;
-  flex:0 1 auto;
 }
   .form__field .form__label--mandatory:before{
   content:none;
@@ -1604,7 +1612,7 @@ a:active, a:hover{
   .form__input--block{
   display:block;
   width:100%;
-  margin-top:0.75rem;
+  margin-top:0.25rem;
 }
   .form__input[type="number"], .form__input[type="time"]{
     padding:0.5rem 0 0.5rem 0.3rem!important;
@@ -1675,7 +1683,7 @@ a:active, a:hover{
   -webkit-align-self:center;
   -ms-flex-item-align:center;
   align-self:center;
-  margin-top:1rem;
+  margin-top:.75rem;
 }
 .radio-group input[type=radio]{
   position:absolute;
@@ -1741,14 +1749,12 @@ a:active, a:hover{
 }
 @media (min-width: 768px){
   .select{
-    width:180px;
     margin-top:0;
     background-position:95% 55%;
   }
 }
 .select--block{
   display:block;
-  margin-top:0.75rem;
 }
 .select--full{
   width:99%;
@@ -1885,6 +1891,11 @@ a:active, a:hover{
 }
 .horizontal-rule--stretch:before, .horizontal-rule--stretch:after{
   content:none;
+}
+
+.horizontal-rule--dashed{
+  border-top:1px dashed #d9d9dc;
+  background:none;
 }
 .btn{
   padding:.75rem 2rem;
@@ -2352,6 +2363,7 @@ a:active, a:hover{
   box-shadow:none;
   border:1px solid rgb(225, 225, 225);
   padding:2rem;
+  margin-bottom:2rem;
 }
 .breadcrumbs{
   list-style:none;
@@ -3042,6 +3054,16 @@ tr > td:last-child{
 @media (min-width: 1200px){
   .table{
     min-width:960px;
+  }
+}
+@media (min-width: 960px){
+  .table--fluid{
+    min-width:100%;
+  }
+}
+@media (min-width: 1200px){
+  .table--fluid{
+    min-width:100%;
   }
 }
 @media (min-width: 960px){
@@ -3921,9 +3943,6 @@ tr > td:last-child{
 .tabs__nav__item:last-child{
   border-right-width:1px;
 }
-.tabs__nav__item--light > .active{
-  background:#f3f3f3!important;
-}
 .tabs__nav--flexible > .tabs__nav__item{
   -webkit-flex:0 0 auto;
   -ms-flex:0 0 auto;
@@ -3978,6 +3997,23 @@ tr > td:last-child{
 }
 .tabs__section--outline{
   border:1px solid #d9d9dc;
+}
+.tabs__section__nav{
+  background:#ededed;
+  padding:0;
+  -webkit-justify-content:flex-end;
+  -ms-flex-pack:end;
+  justify-content:flex-end;
+}
+.tabs__section__nav__item > a{
+  text-decoration:none;
+  font-size:1.4rem;
+  color:#504f56;
+  padding:.75rem 2rem;
+  display:block;
+}
+.tabs__section__nav__item > a:hover{
+  background:#d9d9dc;
 }
 .tabs--compressed .tabs__nav{
   margin-top:-1px;

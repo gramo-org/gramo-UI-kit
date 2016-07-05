@@ -1,6 +1,6 @@
 .radio-group {
   align-self: center;
-  margin-top: 1rem;
+  margin-top: .75rem;
 
   input[type=radio]{
     position: absolute;
