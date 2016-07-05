@@ -1474,7 +1474,7 @@ a:active, a:hover{
   color:#0095da;
 }
 
-  .form__label--mandatory:before, .form__field .form__label--mandatory > span::before{
+  .form__label--required:before, .form__field .form__label--required > span::before{
   content:'*';
   color:#ed6b6a;
 }
@@ -1594,7 +1594,7 @@ a:active, a:hover{
     align-self:center;
   }
 }
-  .form__field .form__label--mandatory:before{
+  .form__field .form__label--required:before{
   content:none;
 }
 
