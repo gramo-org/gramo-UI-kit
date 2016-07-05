@@ -1569,9 +1569,9 @@ a:active, a:hover{
   }
 }
   .form__field .form__label span{
-  -webkit-flex:1 0 130px;
-  -ms-flex:1 0 130px;
-  flex:1 0 130px;
+  -webkit-flex:1 0 140px;
+  -ms-flex:1 0 140px;
+  flex:1 0 140px;
   text-align:right;
   padding-right:1rem;
 }
