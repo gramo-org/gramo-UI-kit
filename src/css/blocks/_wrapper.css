@@ -50,3 +50,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   /*overflow-x: hidden;*/
   padding: 0;
 }
+
+.wrapper--full {
+  flex: 1 1 auto;
+}

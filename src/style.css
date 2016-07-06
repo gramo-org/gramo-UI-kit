@@ -1425,6 +1425,12 @@ a:active, a:hover{
   overflow-y:auto;
   padding:0;
 }
+
+.wrapper--full{
+  -webkit-flex:1 1 auto;
+  -ms-flex:1 1 auto;
+  flex:1 1 auto;
+}
 .form--padded{
   padding:2rem 1rem;
 }
