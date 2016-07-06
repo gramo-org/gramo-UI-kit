@@ -2,13 +2,16 @@
   border: 1px solid var(--silver);
   width: 99%;
   border-radius: 3px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background: var(--gramo-white) url("img/chevron-down.svg") no-repeat 97% 55%;
   background-size: 12px;
   font-size: 1.4rem;
-  display: inline-block;
-  vertical-align: middle;
+  font-weight: 400;
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
   color: var(--slate-gray);
+  -webkit-appearance: none;
+  padding: .5rem .75rem;
 
 
   @media (--tablet) {
@@ -22,12 +25,12 @@
     /*margin-top: 0.75rem;*/
   }
 
-  &--full {
+  /*&--full {
     width: 99%;
-  }
+  }*/
 
 
-  select {
+  /*select {
     font-weight: var(--font-400);
     padding: 0.75rem;
     width: 110%;
@@ -46,5 +49,5 @@
     color: transparent;
     text-shadow: 0 0 0 #000;
     }
-  }
+  }*/
 }

@@ -1400,10 +1400,6 @@ a:active, a:hover{
 .wrapper--sidebar--boxed ~ .wrapper--main{
   position:static;
 }
-.wrapper--sidebar--boxed ~ .wrapper--main > .scrollable-area{
-  height:calc(100vh - 25rem);
-  overflow:auto;
-}
 
 @media (min-width: 960px){
   .wrapper--sidebar, .wrapper--main{
@@ -1422,6 +1418,12 @@ a:active, a:hover{
     position:relative;
     left:420px;
   }
+}
+
+.scrollable-area{
+  height:calc(100vh - 25rem);
+  overflow-y:auto;
+  padding:0;
 }
 .form--padded{
   padding:2rem 1rem;
@@ -1744,13 +1746,13 @@ a:active, a:hover{
   border:1px solid #d9d9dc;
   width:99%;
   border-radius:3px;
-  overflow:hidden;
   background:#fdfdfd url("img/chevron-down.svg") no-repeat 97% 55%;
   background-size:12px;
   font-size:1.4rem;
-  display:inline-block;
-  vertical-align:middle;
+  font-weight:400;
   color:#504f56;
+  -webkit-appearance:none;
+  padding:.5rem .75rem;
 }
 @media (min-width: 768px){
   .select{
@@ -1760,27 +1762,6 @@ a:active, a:hover{
 }
 .select--block{
   display:block;
-}
-.select--full{
-  width:99%;
-}
-.select select{
-  font-weight:400;
-  padding:0.75rem;
-  width:110%;
-  border:none;
-  box-shadow:none;
-  background:transparent;
-  background-image:none;
-  -webkit-appearance:none;
-  outline:0;
-}
-.select select:focus{
-  outline:none;
-}
-.select select:-moz-focusring{
-  color:transparent;
-  text-shadow:0 0 0 #000;
 }
 .searchable-list{
   position:relative;

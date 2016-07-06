@@ -16,11 +16,6 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 
     & ~ .wrapper--main {
       position: static;
-
-      & > .scrollable-area {
-        height: calc(100vh - 25rem);
-        overflow: auto;
-      }
     }
   }
 }
@@ -47,4 +42,11 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
     position: relative;
     left: 420px;
   }
+}
+
+.scrollable-area {
+  height: calc(100vh - 25rem);
+  overflow-y: auto;
+  /*overflow-x: hidden;*/
+  padding: 0;
 }
