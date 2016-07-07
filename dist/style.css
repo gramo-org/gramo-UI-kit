@@ -3964,6 +3964,9 @@ tr > td:last-child{
     z-index:1;
   }
 }
+.tabs .active{
+  height:100%;
+}
 .tabs__nav__item a{
   text-decoration:none;
   color:#504f56;

@@ -67,6 +67,10 @@
     }
   }
 
+  .active {
+    height: 100%;
+  }
+
   &__nav__item a {
     text-decoration: none;
     color: var(--slate-gray);
