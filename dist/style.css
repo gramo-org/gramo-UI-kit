@@ -3999,16 +3999,28 @@ tr > td:last-child{
 .tabs__section__nav{
   background:#ededed;
   padding:0;
-  -webkit-justify-content:flex-end;
-  -ms-flex-pack:end;
-  justify-content:flex-end;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+}
+@media (min-width: 768px){
+  .tabs__section__nav{
+    -webkit-justify-content:flex-end;
+    -ms-flex-pack:end;
+    justify-content:flex-end;
+  }
 }
 .tabs__section__nav__item > a{
   text-decoration:none;
   font-size:1.4rem;
   color:#504f56;
-  padding:.75rem 2rem;
+  padding:.75rem .5rem;
   display:block;
+}
+@media (min-width: 768px){
+  .tabs__section__nav__item > a{
+    padding:.75rem 2rem;
+  }
 }
 .tabs__section__nav__item > a:hover{
   background:#d9d9dc;
