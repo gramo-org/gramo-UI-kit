@@ -3951,7 +3951,6 @@ tr > td:last-child{
 .tabs__nav__item:hover, .tabs .active{
   background:#ededed;
   position:relative;
-  height:100%;
 }
 @media (min-width: 768px){
   .tabs__nav__item:hover::after, .tabs .active::after{
