@@ -1385,20 +1385,9 @@ a:active, a:hover{
     margin-right:2rem;
   }
 }
-@media (min-width: 1200px){
-  .wrapper--sidebar{
-    position:fixed;
-    width:400px;
-  }
-}
 .wrapper--sidebar--boxed{
   border-right:1px solid #d9d9dc;
-  position:static;
-  width:auto;
   margin:0;
-}
-.wrapper--sidebar--boxed ~ .wrapper--main{
-  position:static;
 }
 
 @media (min-width: 960px){
@@ -1413,17 +1402,9 @@ a:active, a:hover{
   justify-content:center;
 }
 
-@media (min-width: 1200px){
-  .wrapper--main{
-    position:relative;
-    left:420px;
-  }
-}
-
 .scrollable-area{
   height:calc(100vh - 25rem);
   overflow-y:auto;
-  padding:0;
 }
 
 .wrapper--full{

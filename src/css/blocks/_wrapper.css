@@ -4,19 +4,9 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   @extend .col-md;
   @media (--desktop) { margin-right: 2rem; }
 
-  @media (--hd) {
-    position: fixed;
-    width: 400px;
-  }
   &--boxed {
     border-right: 1px solid var(--table-border-color);
-    position: static;
-    width: auto;
     margin: 0;
-
-    & ~ .wrapper--main {
-      position: static;
-    }
   }
 }
 
@@ -35,20 +25,11 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 .wrapper--main {
   @extend .col-xs-12;
   @extend .col-md-8;
-
-
-
-  @media (--hd) {
-    position: relative;
-    left: 420px;
-  }
 }
 
 .scrollable-area {
   height: calc(100vh - 25rem);
   overflow-y: auto;
-  /*overflow-x: hidden;*/
-  padding: 0;
 }
 
 .wrapper--full {
