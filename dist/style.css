@@ -3936,17 +3936,16 @@ tr > td:last-child{
 @media (min-width: 768px){
   .tabs__nav__item:hover::after, .tabs .active::after{
     content:'';
-    height:1px;
+    height:3px;
     position:absolute;
     left:0;
-    bottom:-1px;
+    bottom:-3px;
     background:#ededed;
     width:100%;
     z-index:1;
   }
 }
 .tabs .active{
-  height:100%;
 }
 .tabs__nav__item a{
   text-decoration:none;
