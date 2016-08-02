@@ -2016,6 +2016,7 @@ a:active, a:hover{
 .btn--link{
   color:#a5a4ab;
   border:0;
+  background:none;
 }
 .btn--large{
   padding:1.3rem 2rem;
