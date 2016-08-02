@@ -4,6 +4,7 @@
   left: 0;
   right: 0;
   background: var(--light-gray);
+  border-bottom: 1px solid var(--silver);
   z-index: 4;
   padding: .75rem 0 0 1.5rem;
 

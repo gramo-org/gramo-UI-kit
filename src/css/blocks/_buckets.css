@@ -1,34 +1,36 @@
 .bucket {
-  padding: 4rem 0 2rem 0;
+  position: relative;
+  margin-top: -1.8rem;
+  z-index: 5;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
 
   &__list {
     @extend %no-list;
-    /*@extend .list--inline;*/
+    @extend .list--inline;
     display: flex;
-    /*justify-content: space-around;*/
   }
 
   &__list__item {
     display: flex;
-    flex-direction: column;
-    /*align-items: center;*/
     position: relative;
-    padding: 2rem;
+    padding-left: 1rem;
     margin-right: 1rem;
-    border: 1px solid var(--silver);
-    background: var(--light-gray);
+    border-left: 1px solid var(--silver);
+    /*background: var(--light-gray);*/
     border-radius: 2px;
-    font-size: 1.4rem;
+
 
     &__close {
-      position: absolute;
+      position: relative;
       top: .2rem;
-      right: .5rem;
+      margin-right: .5rem;
       color: var(--off-gray);
       font-size: .8rem;
     }
 
-    &--new {
+    /*&--new {
       padding: 0;
       justify-content: center;
 
@@ -37,6 +39,6 @@
         padding: 2rem;
         color: var(--silver);
       }
-    }
+    }*/
   }
 }

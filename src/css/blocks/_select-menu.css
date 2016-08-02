@@ -25,9 +25,10 @@
     /*margin-top: 0.75rem;*/
   }
 
-  /*&--full {
-    width: 99%;
-  }*/
+  &[disabled] {
+    @extend .form__input[disabled];
+    background-image: none;
+  }
 
 
   /*select {

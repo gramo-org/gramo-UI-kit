@@ -126,6 +126,11 @@
     text-transform: uppercase;
   }
 
+  &--link {
+    color: var(--off-gray);
+    border: 0;
+  }
+
 /*** Button Sizes ***/
 
   &--large {

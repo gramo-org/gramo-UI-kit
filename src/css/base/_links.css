@@ -20,6 +20,11 @@ a {
   font-weight: 300;
 }
 
+.link--no-line {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
 .link--chevron-right::after {
   content: "\e908";
 	color: color(var(--silver) shade(15%));
@@ -27,4 +32,17 @@ a {
   font-size: 90%;
   margin-left: .75rem;
   vertical-align: middle;
+}
+
+.link--edit {
+  text-decoration: none;
+  font-size: 1.4rem;
+
+  &:after {
+    content: "\e915";
+    font-family: 'icomoon';
+    margin-left: .25rem;
+    vertical-align: middle;
+    font-size: 90%;
+  }
 }

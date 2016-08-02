@@ -23,7 +23,7 @@
   }
 
   & > * {
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     justify-content: space-around;
     @media (--tablet) { justify-content: flex-start; }
   }
