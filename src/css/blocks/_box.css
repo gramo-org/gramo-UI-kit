@@ -12,7 +12,7 @@
 
   &--full {
     max-width: none;
-    margin: 0;
+    margin: 0 1rem;
     display: block;
     flex: 1 1 auto;
   }

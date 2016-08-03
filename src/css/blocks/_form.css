@@ -151,6 +151,10 @@
       .form__input {
         flex: 1 0 75%;
       }
+
+      .form__input--checkbox {
+        flex: 0 1 auto;
+      }
     }
 
   &__action {
@@ -261,3 +265,11 @@
     content: none;
     @media (--desktop) { content: "\e901"; }
   }
+
+/* Hack for firefox to make right aligned labels and left aligned checkboxes behave */
+
+@-moz-document url-prefix() {
+  .form__field .form__input--checkbox {
+     @media (--desktop) { margin-left: -42px; }
+  }
+}

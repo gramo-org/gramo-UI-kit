@@ -1596,6 +1596,11 @@ a:active, a:hover{
   -ms-flex:1 0 75%;
   flex:1 0 75%;
 }
+  .form__field .form__label .form__input--checkbox{
+  -webkit-flex:0 1 auto;
+  -ms-flex:0 1 auto;
+  flex:0 1 auto;
+}
   .form__field__action{
   -webkit-flex:1 0 auto;
   -ms-flex:1 0 auto;
@@ -1699,6 +1704,14 @@ a:active, a:hover{
   @media (min-width: 960px){
   .form__label--validation-shared.has-error::after{
     content:"\e901";
+  }
+}
+
+@-moz-document url-prefix(){
+  @media (min-width: 960px){
+    .form__field .form__input--checkbox{
+      margin-left:-42px;
+    }
   }
 }
 .radio-group{
@@ -2368,7 +2381,7 @@ a:active, a:hover{
 }
 .box--full{
   max-width:none;
-  margin:0;
+  margin:0 1rem;
   display:block;
   -webkit-flex:1 1 auto;
   -ms-flex:1 1 auto;
