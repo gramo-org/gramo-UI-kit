@@ -39,6 +39,10 @@
     content: "\e912";
 }
 
+.icon--music:before {
+    content: "\e913";
+}
+
 .icon--ban:before {
     content: "\e90e";
     font-size: 85%;

@@ -1203,6 +1203,10 @@ input-placeholder{
     content:"\e912";
 }
 
+.icon--music:before{
+    content:"\e913";
+}
+
 .icon--ban:before{
     content:"\e90e";
     font-size:85%;
@@ -3953,6 +3957,7 @@ tr > td:last-child{
   z-index:1;
 }
 .tabs__nav__item{
+  position:relative;
   padding:0;
   text-align:center;
   background:#f9f9f9;
@@ -3976,6 +3981,24 @@ tr > td:last-child{
 .tabs__nav--flexible > .tabs__nav__item > a{
   padding-left:1rem;
   padding-right:1rem;
+}
+.tabs__nav__item__type{
+  position:absolute;
+  z-index:1;
+  font-size:1rem;
+  color:#a5a4ab;
+  line-height:110%;
+  left:1rem;
+  top:0;
+}
+.tabs__nav__item__type:before{
+  font-family:'icomoon';
+  font-size:130%;
+  position:relative;
+  top:.3rem;
+}
+.tabs__nav__item__type--recording:before{
+  content:"\e913";
 }
 .tabs__nav__item:hover, .tabs .active{
   background:#ededed;

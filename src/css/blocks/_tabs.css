@@ -10,6 +10,7 @@
     &__item {
       @extend .col-xs-3;
       @extend .col-md-2;
+      position: relative;
 
       padding: 0;
       text-align: center;
@@ -44,6 +45,27 @@
            padding-left: 1rem;
            padding-right: 1rem;
         }
+      }
+    }
+
+    &__item__type {
+      position: absolute;
+      z-index: 1;
+      font-size: 1rem;
+      color: var(--off-gray);
+      line-height: 110%;
+      left: 1rem;
+      top: 0;
+
+      &:before {
+        font-family: 'icomoon';
+        font-size: 130%;
+        position: relative;
+        top: .3rem;
+      }
+
+      &--recording:before {
+        content: "\e913";
       }
     }
   }
