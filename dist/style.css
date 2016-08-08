@@ -1715,9 +1715,9 @@ a:active, a:hover{
   }
 }
 .radio-group{
-  -webkit-align-self:center;
-  -ms-flex-item-align:center;
-  align-self:center;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
   margin-top:.35rem;
   display:-webkit-flex;
   display:-ms-flexbox;
