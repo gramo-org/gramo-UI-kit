@@ -1,61 +1,67 @@
 .radio-group {
   align-self: center;
   margin-top: .35rem;
+  display: flex;
 
   input[type=radio]{
     position: absolute;
     visibility: hidden;
+    margin: 0;
+
   }
 
-  label{
+  label {
     position: relative;
     z-index: 9;
     cursor: pointer;
     transition: all 0.25s linear;
     margin: 0;
-    @media (--desktop) { margin: 0 .5rem; }
+    @media (--desktop) { margin: 0 .15rem; }
     text-align: center;
     display: inline-block;
     width: 3rem;
     height: 3rem;
     line-height: 3rem;
+    background: var(--gramo-white);
   }
 
-  .check{
+  .check {
     display: block;
     position: absolute;
-    border: 3px solid var(--gramo-blue);
+    border: 1px solid var(--silver);
+    border-radius: 2px;
     height: 3rem;
     width: 3rem;
     top: 0;
     left: 0;
-  	z-index: 5;
+  	z-index: -1;
   	transition: border .25s linear;
-    border-radius: 3rem;
+    /*background: var(--gramo-white);*/
   }
 
   .check::before {
     display: block;
     position: absolute;
   	content: '';
-    height: 3rem;
-    width: 3rem;
-    top: -0.3rem;
-  	left: -0.3rem;
+    height: 2.8rem;
+    width: 2.8rem;
   	transition: background 0.25s linear;
-    border-radius: 3rem;
+    border-radius: 2px;
+  }
+
+  input[type=radio] ~ span {
+    color: var(--gramo-blue);
+  }
+
+  input[type=radio]:checked ~ span {
+    color: var(--gramo-white);
   }
 
   input[type=radio]:checked ~ .check {
 
   }
 
-  input[type=radio]:checked ~ .check::before{
+  input[type=radio]:checked ~ .check::before {
     background: var(--gramo-blue);
-    opacity: 0.3;
-  }
-
-  input[type=radio]:checked ~ label{
-
   }
 }
