@@ -141,6 +141,7 @@
         bottom: -7px;
         width: 0;
         height: 0;
+        background: none;
         border-style: solid;
         border-width: 7px 7px 0 7px;
         border-color: var(--table-border-color) transparent transparent transparent;
