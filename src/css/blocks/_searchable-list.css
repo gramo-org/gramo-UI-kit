@@ -4,7 +4,6 @@
   border-radius: 2px;
   border: 1px solid var(--silver);
   text-align: left;
-  padding: 0.25rem;
 
   &__heading {
     position: relative;
