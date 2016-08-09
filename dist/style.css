@@ -1812,6 +1812,7 @@ a:active, a:hover{
   border-radius:2px;
   border:1px solid #d9d9dc;
   text-align:left;
+  padding:0 0.25rem;
 }
 .searchable-list__heading{
   position:relative;
