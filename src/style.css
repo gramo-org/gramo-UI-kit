@@ -1803,6 +1803,9 @@ a:active, a:hover{
 .select--block{
   display:block;
 }
+.select--full{
+  min-width:200px;
+}
 .select[disabled]{
   background-image:none;
 }

@@ -25,6 +25,10 @@
     /*margin-top: 0.75rem;*/
   }
 
+  &--full {
+    min-width: 200px;
+  }
+
   &[disabled] {
     @extend .form__input[disabled];
     background-image: none;
