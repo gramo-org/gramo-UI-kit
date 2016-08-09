@@ -1792,6 +1792,7 @@ a:active, a:hover{
   font-weight:400;
   color:#504f56;
   -webkit-appearance:none;
+  -moz-appearance:none;
   padding:.5rem .75rem;
 }
 @media (min-width: 768px){
