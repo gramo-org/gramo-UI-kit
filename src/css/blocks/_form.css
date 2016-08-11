@@ -130,146 +130,32 @@
       }
     }
   }
-  /* Form fields for right aligned labels and inline inputs */
-  .form__field {
-    @extend .row;
-    font-size: 1.4rem;
 
-    .form__label {
-      @media (--tablet) {
-        display: flex;
-        align-items: center;
-      }
+.form__input {
+  border: 1px solid var(--silver);
+  padding-right: 2rem;
+  background-color: #fff;
+  font-weight: var(--font-400);
 
-
-      span {
-        flex: 1 0 140px;
-        text-align: right;
-        padding-right: 1rem;
-      }
-
-      .form__input {
-        flex: 1 0 75%;
-      }
-
-      .form__input--checkbox {
-        flex: 0 1 auto;
-      }
-    }
-
-  &__action {
-    flex: 1 0 auto;
-    margin: -.75rem 0 1rem 1rem;
-
-    @media (--tablet) {
-      align-self: center;
-      margin: 0;
-    }
+  &[disabled] {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: color(var(--x-light-gray) shade(7%));
   }
 
-  .form__label--required {
-    &:before {
-      content: none;
-    }
 
-    & > span::before {
-      @extend .form__label--required:before;
-    }
-  }
-  /* For correct positioning of links to right of input */
-  &--controlled-width {
-    .form__label .form__input {
-      flex: 1 1 auto;
-    }
+  /* Block inputs */
+  &--block {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
   }
 }
 
-  .form__input {
-    border: 1px solid var(--silver);
-    padding-right: 2rem;
-    background-color: #fff;
-    font-weight: var(--font-400);
-
-    &[disabled] {
-      background-color: rgba(255, 255, 255, 0.2);
-      border-color: color(var(--x-light-gray) shade(7%));
-    }
-
-
-    /* Block inputs */
-    &--block {
-      display: block;
-      width: 100%;
-      margin-top: 0.25rem;
-    }
-  }
-
-  /* Numeric inputs */
-  .form__input[type="number"],
-  .form__input[type="time"] {
-    padding: 0.5rem 0 0.5rem 0.3rem!important;
-    text-align: center;
-    font-size: 1.4rem;
-    height: 3rem;
-  }
-
-
-  /* Form validation classes */
-  .form__label.is-valid .form__input/*, .form__label .form__input:valid*/ {
-      border: 1px solid var(--light-gray);
-      border-width: 1px 1px 1px 0;
-      border-left: 4px solid var(--success);
-      background: #fff url(img/checkmark.svg) center right 7px no-repeat;
-      background-size: 15px;
-  }
-
-  .form__label.has-error .form__input {
-      border: 3px solid var(--error);
-      background: #fff url(img/cross.svg) center right 7px no-repeat;
-      background-size: 11px;
-
-      &[type="number"] {
-        background-image: none;
-      }
-    }
-
-  /*** Hidden and shared validation ***/
-
-  .form__label.has-error .form__input--validation-hidden,
-  .form__label.is-valid .form__input--validation-hidden {
-    @media (--desktop) { background-image: none!important; }
-  }
-
-  .form__label.is-valid .form__input--validation-hidden {
-    @media (--tablet) { border: 1px solid var(--light-gray); }
-  }
-
-  .form__label--validation-shared.is-valid::after,
-  .form__label--validation-shared.has-error::after {
-    color: var(--gramo-green);
-    font-family: 'icomoon';
-    position: absolute;
-    left: 113%;
-    top: 1.5rem;
-    background: var(--gramo-white);
-    content: none;
-    @media (--desktop) { content: "\e900"; }
-  }
-
-  .form__validation-divider {
-    /*background: linear-gradient(to right, var(--gramo-white) 50%,var(--table-border-color) 52%,var(--gramo-white) 50%);*/
-  }
-
-  .form__label--validation-shared.has-error::after {
-    color: var(--gramo-red);
-    content: none;
-    @media (--desktop) { content: "\e901"; }
-  }
-
-/* Hack for firefox to make right aligned labels and left aligned checkboxes behave */
-
-@-moz-document url-prefix() {
-  .form__field .form__input--checkbox {
-     @media (--desktop) { margin-left: -42px; }
-  }
+/* Numeric inputs */
+.form__input[type="number"],
+.form__input[type="time"] {
+  padding: 0.5rem 0 0.5rem 0.3rem!important;
+  text-align: center;
+  font-size: 1.4rem;
+  height: 3rem;
 }

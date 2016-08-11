@@ -1,0 +1,94 @@
+/* Form fields for right aligned labels and inline inputs */
+.form__field {
+  @extend .row;
+  font-size: 1.4rem;
+
+  .form__label {
+    @media (--tablet) {
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      flex: 1 0 140px;
+      text-align: right;
+      padding-right: 1rem;
+    }
+
+    .form__input {
+      flex: 1 0 75%;
+    }
+
+    .form__input--checkbox {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__action {
+    flex: 1 0 auto;
+    margin: -.75rem 0 1rem 1rem;
+
+    @media (--tablet) {
+      align-self: center;
+      margin: 0;
+    }
+  }
+
+  .form__label--required {
+    &:before {
+      content: none;
+    }
+
+    & > span::before {
+      @extend .form__label--required:before;
+    }
+  }
+  /* For correct positioning of links to right of input */
+  &--controlled-width {
+    .form__label .form__input {
+      flex: 1 1 auto;
+    }
+  }
+
+  &--inline {
+
+    & > div[class*="col-"] {
+      flex: 0 1 auto;
+    }
+
+    & > div[class*="col-"]:not(:first-child) {
+
+      .form__label {
+        flex: 0 1 auto;
+      }
+
+      .form__label span {
+        text-align: left;
+        flex: 0 0 auto;
+      }
+
+      .form__label .form__input--numeric {
+        width: 40px;
+      }
+    }
+
+
+
+    .form__label .form__input {
+      flex: 0 1 auto;
+    }
+  }
+}
+
+
+
+
+
+
+/* Hack for firefox to make right aligned labels and left aligned checkboxes behave */
+
+@-moz-document url-prefix() {
+.form__field .form__input--checkbox {
+   @media (--desktop) { margin-left: -42px; }
+}
+}

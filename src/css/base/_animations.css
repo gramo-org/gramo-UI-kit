@@ -10,7 +10,7 @@
 }
 
 /* Placeholder */
-@keyframes placeHolderShimmer{
+@keyframes placeHolderShimmer {
   0%{
       background-position: -40rem 0
   }

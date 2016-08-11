@@ -54,8 +54,13 @@
   @media (--tablet) { display: block!important; }
 }
 
-.cell--block {
+.cell--block,
+.cell--no-flex {
   display: block!important;
+}
+
+.cell--flex {
+  display: flex;
 }
 
 .align--center {

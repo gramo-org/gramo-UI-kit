@@ -4,7 +4,7 @@
   z-index: 5;
   padding-left: 1rem;
   font-size: 1.3rem;
-  line-height: 1.5rem;
+
 
   &__list {
     @extend %no-list;
@@ -29,16 +29,15 @@
       color: var(--off-gray);
       font-size: .8rem;
     }
+  }
 
-    /*&--new {
-      padding: 0;
-      justify-content: center;
+  &__add-btn {
 
-      a {
-        display: block;
-        padding: 2rem;
-        color: var(--silver);
-      }
-    }*/
+
+    .btn {
+      position: relative;
+      top: -0.6rem;
+      right: 1rem;
+    }
   }
 }
