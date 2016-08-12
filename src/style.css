@@ -1595,7 +1595,6 @@ a:active, a:hover{
 .form__input--block{
   display:block;
   width:100%;
-  margin-top:0.25rem;
 }
 .form__input[type="number"], .form__input[type="time"]{
   padding:0.5rem 0 0.5rem 0.3rem!important;
@@ -1737,14 +1736,6 @@ a:active, a:hover{
   -webkit-flex:0 1 auto;
   -ms-flex:0 1 auto;
   flex:0 1 auto;
-}
-
-@-moz-document url-prefix(){
-@media (min-width: 960px){
-    .form__field .form__input--checkbox{
-      margin-left:-42px;
-    }
-  }
 }
 .radio-group{
   -webkit-justify-content:center;
@@ -2965,7 +2956,7 @@ main.pull .content-header--fixed{
 }
 .bucket{
   position:relative;
-  margin-top:-1.8rem;
+  margin-top:-2rem;
   z-index:5;
   padding-left:1rem;
   font-size:1.3rem;
@@ -2994,8 +2985,13 @@ main.pull .content-header--fixed{
 }
 .bucket__add-btn .btn{
   position:relative;
-  top:-0.6rem;
+  top:-0.4rem;
   right:1rem;
+}
+
+main.pull .bucket{
+  left:6rem;
+  width:calc(100% - 4rem);
 }
 
 caption{
@@ -3323,10 +3319,6 @@ tr > td:last-child{
     overflow-x:hidden;
   }
 }
-.fake-table--numeric{
-  counter-reset:section;
-  list-style-type:none;
-}
 .tabs--toggleable #tab-control:checked ~ .tabs__section > .fake-table--scrollable{
   height:calc(100vh - 28rem);
 }
@@ -3438,6 +3430,10 @@ tr > td:last-child{
 .fake-table__row--borderless{
   border-width:1px 0 0 0;
 }
+.fake-table__row--detached{
+  border-bottom:1px solid #d9d9dc;
+  margin-bottom:1rem;
+}
 @media (min-width: 1200px){
   .fake-table__row--padded{
     padding:.5rem 2rem!important;
@@ -3462,28 +3458,6 @@ tr > td:last-child{
 }
 
 .fake-table__row--selected .badge--numeric, .fake-table__row--expanded .badge--numeric{
-  color:#fdfdfd;
-  background:#504f56;
-}
-
-.fake-table--numeric .fake-table__row{
-  position:relative;
-}
-
-.fake-table--numeric > .fake-table__row::before{
-  counter-increment:section;
-  content:counters(section,".") " ";
-  position:absolute;
-  top:50%;
-  margin-top:-1rem;
-  left:1rem;
-}
-
-.fake-table--numeric > .fake-table__row--expanded::before{
-  top:2.5rem;
-}
-
-.fake-table--numeric > .fake-table__row--selected::before, .fake-table--numeric > .fake-table__row--expanded::before{
   color:#fdfdfd;
   background:#504f56;
 }
@@ -3562,6 +3536,33 @@ tr > td:last-child{
 .fake-table__row--expanded .fake-table__row--child:hover{
   background:#fdfdfd;
 }
+.fake-table--numeric{
+  counter-reset:section;
+  list-style-type:none;
+  margin-bottom:2rem!important;
+}
+.fake-table--numeric .fake-table__row{
+  position:relative;
+  padding-left:4rem;
+}
+.fake-table--numeric > .fake-table__row::before{
+  counter-increment:section;
+  content:counters(section,".") " ";
+  position:absolute;
+  top:50%;
+  margin-top:-1rem;
+  left:1.5rem;
+}
+.fake-table--numeric > .fake-table__row--expanded::before{
+  top:2.5rem;
+}
+.fake-table--numeric > .fake-table__row--selected::before, .fake-table--numeric > .fake-table__row--expanded::before{
+  color:#fdfdfd;
+  background:#504f56;
+}
+.fake-table--numeric .fake-table__row--head::before{
+  content:none;
+}
 
 .toggle-sidebar{
   position:fixed;
@@ -3595,7 +3596,7 @@ tr > td:last-child{
   content:'menu';
   position:relative;
   left:.5rem;
-  top:-0.75rem;
+  top:-0.55rem;
 }
 
 .toggle-sidebar.open{

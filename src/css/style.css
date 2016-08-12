@@ -47,6 +47,7 @@
 @import url('blocks/tables/fake-tables/_fake-table-toggle.css');
 @import url('blocks/tables/fake-tables/_fake-table-cells.css');
 @import url('blocks/tables/fake-tables/_fake-table-child-rows.css');
+@import url('blocks/tables/fake-tables/_fake-table-numeric.css');
 
 @import url('blocks/_toggle-sidebar.css');
 @import url('blocks/_toggle.css');

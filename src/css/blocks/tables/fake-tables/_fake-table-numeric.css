@@ -1,0 +1,35 @@
+/* Numeric table (can be used with both regular tables and fake-tables) */
+.fake-table--numeric {
+  counter-reset: section; /* Creates a new instance of the section counter with each ol element */
+  list-style-type: none;
+  margin-bottom: 2rem!important;
+
+  .fake-table__row {
+    position: relative;
+    padding-left: 4rem;
+  }
+
+  & > .fake-table__row::before {
+    counter-increment: section; /* Increments only this instance of the section counter */
+    content: counters(section,".") " ";
+    position: absolute;
+    @extend .badge--numeric;
+    top: 50%;
+    margin-top: -1rem;
+    left: 1.5rem;
+  }
+
+  & > .fake-table__row--expanded::before {
+    top: 2.5rem;
+  }
+
+  & > .fake-table__row--selected::before,
+  & > .fake-table__row--expanded::before {
+    color: var(--gramo-white);
+    background: var(--slate-gray);
+  }
+
+  .fake-table__row--head::before {
+    content: none;
+  }
+}

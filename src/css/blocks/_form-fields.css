@@ -72,23 +72,8 @@
       }
     }
 
-
-
     .form__label .form__input {
       flex: 0 1 auto;
     }
   }
-}
-
-
-
-
-
-
-/* Hack for firefox to make right aligned labels and left aligned checkboxes behave */
-
-@-moz-document url-prefix() {
-.form__field .form__input--checkbox {
-   @media (--desktop) { margin-left: -42px; }
-}
 }

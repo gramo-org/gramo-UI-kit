@@ -116,6 +116,12 @@
     border-width: 1px 0 0 0;
   }
 
+  /* Detached row (needs bottom border) */
+  &--detached {
+    border-bottom: 1px solid var(--table-border-color);
+    margin-bottom: 1rem;
+  }
+
   /* Extra padding use !important to overide .fake-table__row--child */
   &--padded {
     @media (--hd) { padding: .5rem 2rem!important; }
@@ -159,35 +165,6 @@
 .fake-table__row--expanded {
 
   .badge--numeric {
-    color: var(--gramo-white);
-    background: var(--slate-gray);
-  }
-}
-
-/* Numeric fake table */
-
-.fake-table--numeric {
-
-  .fake-table__row {
-    position: relative;
-  }
-
-  & > .fake-table__row::before {
-    counter-increment: section; /* Increments only this instance of the section counter */
-    content: counters(section,".") " ";
-    position: absolute;
-    @extend .badge--numeric;
-    top: 50%;
-    margin-top: -1rem;
-    left: 1rem;
-  }
-
-  & > .fake-table__row--expanded::before {
-    top: 2.5rem;
-  }
-
-  & > .fake-table__row--selected::before,
-  & > .fake-table__row--expanded::before {
     color: var(--gramo-white);
     background: var(--slate-gray);
   }

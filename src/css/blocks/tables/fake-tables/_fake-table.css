@@ -18,12 +18,6 @@
   }
 }
 
-/* Numeric fake table */
-.fake-table--numeric {
-  counter-reset: section; /* Creates a new instance of the section counter with each ol element */
-  list-style-type: none;
-}
-
 /* Change height of .fake-table--scrollable when toggleable tabs are toggled */
 .tabs--toggleable #tab-control:checked ~ .tabs__section > .fake-table--scrollable {
   height: calc(100vh - 28rem);

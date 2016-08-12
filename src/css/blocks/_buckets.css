@@ -1,6 +1,6 @@
 .bucket {
   position: relative;
-  margin-top: -1.8rem;
+  margin-top: -2rem;
   z-index: 5;
   padding-left: 1rem;
   font-size: 1.3rem;
@@ -36,8 +36,13 @@
 
     .btn {
       position: relative;
-      top: -0.6rem;
+      top: -0.4rem;
       right: 1rem;
     }
   }
+}
+
+main.pull .bucket {
+  left: 6rem;
+  width: calc(100% - 4rem);
 }
