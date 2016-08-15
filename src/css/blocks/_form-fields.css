@@ -79,6 +79,7 @@
 }
 
 /* Make error messages line up with inputs */
+.form__field p,
 p.error--form-field {
   @media (--tablet) {
     margin-left: 140px

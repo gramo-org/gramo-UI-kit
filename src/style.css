@@ -1742,7 +1742,7 @@ a:active, a:hover{
   flex:0 1 auto;
 }
 @media (min-width: 768px){
-  p.error--form-field{
+  .form__field p, p.error--form-field{
     margin-left:140px;
   }
 }
