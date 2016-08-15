@@ -1620,6 +1620,10 @@ a:active, a:hover{
   background-image:none;
 }
 
+.form__label.has-error .form__input.searchable-list{
+  background-image:none;
+}
+
 @media (min-width: 960px){
   .form__label.has-error .form__input--validation-hidden, .form__label.is-valid .form__input--validation-hidden{
     background-image:none!important;
@@ -1869,9 +1873,6 @@ a:active, a:hover{
 }
 .searchable-list--open .searchable-list__dropdown{
   display:block;
-}
-.searchable-list--has-error{
-  background-image:none;
 }
 .searchable-list__dropdown{
   position:absolute;

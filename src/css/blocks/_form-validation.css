@@ -15,6 +15,10 @@
     &[type="number"] {
       background-image: none;
     }
+
+    &.searchable-list {
+      background-image: none;
+    }
   }
 
 /*** Hidden and shared validation ***/
