@@ -1870,6 +1870,9 @@ a:active, a:hover{
 .searchable-list--open .searchable-list__dropdown{
   display:block;
 }
+.searchable-list--has-error{
+  background-image:none;
+}
 .searchable-list__dropdown{
   position:absolute;
   width:100%;

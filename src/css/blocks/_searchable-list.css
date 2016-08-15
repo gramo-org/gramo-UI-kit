@@ -39,6 +39,10 @@
     }
   }
 
+  &--has-error {
+    background-image: none;
+  }
+
 
   &__dropdown {
     position: absolute;
