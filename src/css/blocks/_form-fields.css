@@ -76,11 +76,11 @@
       flex: 0 1 auto;
     }
   }
+}
 
-  /* Make error messages line up with inputs */
-  p {
-    @media (--tablet) {
-      margin-left: 140px
-    }
+/* Make error messages line up with inputs */
+p.error--form-field {
+  @media (--tablet) {
+    margin-left: 140px
   }
 }
