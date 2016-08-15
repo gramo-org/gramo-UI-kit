@@ -1737,6 +1737,11 @@ a:active, a:hover{
   -ms-flex:0 1 auto;
   flex:0 1 auto;
 }
+@media (min-width: 768px){
+  .form__field p{
+    margin-left:140px;
+  }
+}
 .radio-group{
   -webkit-justify-content:center;
   -ms-flex-pack:center;
@@ -2956,7 +2961,7 @@ main.pull .content-header--fixed{
 }
 .bucket{
   position:relative;
-  margin-top:-2rem;
+  margin-top:-2.1rem;
   z-index:5;
   padding-left:1rem;
   font-size:1.3rem;
@@ -2985,7 +2990,7 @@ main.pull .content-header--fixed{
 }
 .bucket__add-btn .btn{
   position:relative;
-  top:-0.4rem;
+  top:-0.3rem;
   right:1rem;
 }
 
@@ -3590,13 +3595,15 @@ tr > td:last-child{
   content:"\e914";
   font-family:'icomoon';
   font-size:2.4rem;
+  position:relative;
+  top:1px;
 }
 
 .toggle-sidebar a::after{
   content:'menu';
   position:relative;
   left:.5rem;
-  top:-0.55rem;
+  top:-0.5rem;
 }
 
 .toggle-sidebar.open{

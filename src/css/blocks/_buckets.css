@@ -1,6 +1,6 @@
 .bucket {
   position: relative;
-  margin-top: -2rem;
+  margin-top: -2.1rem;
   z-index: 5;
   padding-left: 1rem;
   font-size: 1.3rem;
@@ -36,7 +36,7 @@
 
     .btn {
       position: relative;
-      top: -0.4rem;
+      top: -0.3rem;
       right: 1rem;
     }
   }

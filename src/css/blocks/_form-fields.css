@@ -76,4 +76,11 @@
       flex: 0 1 auto;
     }
   }
+
+  /* Make error messages line up with inputs */
+  p {
+    @media (--tablet) {
+      margin-left: 140px
+    }
+  }
 }
