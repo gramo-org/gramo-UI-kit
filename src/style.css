@@ -1916,6 +1916,21 @@ a:active, a:hover{
 .searchable-list--below-search .searchable-list__dropdown{
   border-top:0;
 }
+
+.searchable-list--in-form-field{
+  position:absolute;
+  width:100%;
+  left:0;
+  bottom:0;
+  border:0;
+}
+
+@media (min-width: 768px){
+  .searchable-list--in-form-field{
+    width:calc(100% - 140px);
+    left:137px;
+  }
+}
 .horizontal-rule{
   position:relative;
   text-align:center;
