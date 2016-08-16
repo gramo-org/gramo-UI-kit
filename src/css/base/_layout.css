@@ -57,6 +57,6 @@ main > section:first-of-type {
 
   &--is-editing {
     background: var(--x-light-gray);
-    overflow: auto;
+    overflow: visible;
   }
 }

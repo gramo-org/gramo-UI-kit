@@ -1105,7 +1105,7 @@ main > section:first-of-type{
 
 .container--is-editing{
   background:#f9f9f9;
-  overflow:auto;
+  overflow:visible;
 }
 fieldset, legend{
   border:0;
