@@ -1,13 +1,12 @@
 .radio-group {
   justify-content: center;
-  margin-top: .35rem;
+  margin-top: .15rem;
   display: flex;
 
   input[type=radio]{
     position: absolute;
     visibility: hidden;
     margin: 0;
-
   }
 
   label {
@@ -63,5 +62,9 @@
 
   input[type=radio]:checked ~ .check::before {
     background: var(--gramo-blue);
+  }
+
+  input[type=radio][disabled] ~ span {
+    opacity: 0.5;
   }
 }
