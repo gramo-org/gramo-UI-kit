@@ -90,22 +90,30 @@ p.error--form-field {
 
 .form__field {
   & > .col-lg-5 {
-    min-width: 550px;
-    max-width: 550px;
+    @media (--tablet) {
+      min-width: 550px;
+      max-width: 550px;
+    }
   }
 
   & > .col-lg-4 {
-    min-width: 400px;
-    max-width: 400px;
+    @media (--tablet) {
+      min-width: 400px;
+      max-width: 400px;
+    }
   }
 
   & > .col-lg-3 {
-    min-width: 320px;
-    max-width: 320px;
+    @media (--tablet) {
+      min-width: 320px;
+      max-width: 320px;
+    }
   }
 
   & > .col-lg-2 {
-    min-width: 200px;
-    max-width: 200px;
+    @media (--tablet) {
+      min-width: 200px;
+      max-width: 200px;
+    }
   }
 }
