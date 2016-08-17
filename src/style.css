@@ -1063,6 +1063,10 @@ main > section:first-of-type{
   padding:0 1rem;
 }
 
+.container--padded{
+  padding:0 2rem;
+}
+
 .container--hd{
   max-width:1400px;
 }

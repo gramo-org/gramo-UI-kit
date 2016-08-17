@@ -21,6 +21,10 @@ main > section:first-of-type {
 .container {
   padding: 0 1rem;
 
+  &--padded {
+    padding: 0 2rem;
+  }
+
   &--hd {
     max-width: var(--container-hd);
     @media(--desktop) {
