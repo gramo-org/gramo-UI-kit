@@ -1456,6 +1456,10 @@ a:active, a:hover{
   padding:0rem 1rem 2rem 1rem;
 }
 
+  .form__fieldset{
+    margin-bottom:1rem;
+  }
+
   .form__section{
     margin-bottom:3rem;
   }

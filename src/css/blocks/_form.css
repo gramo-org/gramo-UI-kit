@@ -6,6 +6,10 @@
 
   }
 
+  .form__fieldset {
+    margin-bottom: 1rem;
+  }
+
   .form__section {
     margin-bottom: 3rem;
 
