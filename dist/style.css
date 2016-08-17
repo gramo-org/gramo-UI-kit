@@ -1755,6 +1755,22 @@ a:active, a:hover{
     margin-left:140px;
   }
 }
+
+.form__field > .col-lg-5{
+  min-width:550px;
+}
+
+.form__field > .col-lg-4{
+  min-width:400px;
+}
+
+.form__field > .col-lg-3{
+  min-width:300px;
+}
+
+.form__field > .col-lg-2{
+  min-width:200px;
+}
 .radio-group{
   -webkit-justify-content:center;
   -ms-flex-pack:center;

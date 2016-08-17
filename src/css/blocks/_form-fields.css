@@ -85,3 +85,23 @@ p.error--form-field {
     margin-left: 140px
   }
 }
+
+/* Override responsive behaviour on form inputs on large screens */
+
+.form__field {
+  & > .col-lg-5 {
+    min-width: 550px;
+  }
+
+  & > .col-lg-4 {
+    min-width: 400px;
+  }
+
+  & > .col-lg-3 {
+    min-width: 300px;
+  }
+
+  & > .col-lg-2 {
+    min-width: 200px;
+  }
+}
