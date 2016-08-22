@@ -1,5 +1,4 @@
 .form {
-  overflow: auto; /* push .container all the way down to dashed line in discography */
 
   &--padded {
     padding: 0rem 1rem 2rem 1rem;

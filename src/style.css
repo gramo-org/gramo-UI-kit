@@ -1110,6 +1110,7 @@ main > section:first-of-type{
 .container--is-editing{
   background:#f9f9f9;
   overflow:visible;
+  padding-bottom:1rem;
 }
 fieldset, legend{
   border:0;
@@ -1452,10 +1453,6 @@ a:active, a:hover{
   -ms-flex:1 1 auto;
   flex:1 1 auto;
 }
-.form{
-  overflow:auto;
-
-  }
 .form--padded{
   padding:0rem 1rem 2rem 1rem;
 }
@@ -3066,7 +3063,7 @@ main.pull .content-header--fixed{
 }
 .bucket{
   position:relative;
-  margin-top:-2.1rem;
+  margin-top:-3.1rem;
   z-index:5;
   padding-left:1rem;
   font-size:1.3rem;
@@ -4315,7 +4312,7 @@ tr > td:last-child{
   top:0;
   left:20rem;
   right:0;
-  z-index:4;
+  z-index:6;
   margin:0;
   transition:all .25s ease;
 }
@@ -4336,8 +4333,8 @@ tr > td:last-child{
   background:#88c7d8;
   color:#fdfdfd;
   text-transform:uppercase;
-  padding:1rem 3rem;
-  line-height:1.5rem;
+
+  line-height:250%;
   font-size:1.5rem;
   margin-top:3.4rem;
   -webkit-animation:fadeIn ease 1s;
@@ -4367,8 +4364,7 @@ tr > td:last-child{
 .flash-message .btn{
   background:rgb(102, 149, 162);
   text-transform:uppercase;
-  padding:.5rem 1rem;
-  line-height:inherit;
+  padding:.25rem 1rem;
   margin:.5rem 0 0 .5rem;
 }
 

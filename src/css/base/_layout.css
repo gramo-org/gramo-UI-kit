@@ -62,5 +62,6 @@ main > section:first-of-type {
   &--is-editing {
     background: var(--x-light-gray);
     overflow: visible;
+    padding-bottom: 1rem;
   }
 }

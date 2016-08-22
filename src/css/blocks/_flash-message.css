@@ -5,7 +5,7 @@
   top: 0;
   left: 20rem;
   right: 0;
-  z-index: 4;
+  z-index: 6;
   margin: 0;
   transition: all .25s ease;
 
@@ -28,8 +28,8 @@
   background: var(--info);
   color: var(--gramo-white);
   text-transform: uppercase;
-  padding: 1rem 3rem;
-  line-height: 1.5rem;
+
+  line-height: 250%;
   font-size: 1.5rem;
   margin-top: 3.4rem;
   animation: fadeIn ease 1s;
@@ -43,6 +43,7 @@
 
   p {
     margin: 0;
+    /*padding: 1.2rem 3rem;*/
     display: inline-block;
   }
 
@@ -53,8 +54,7 @@
   .btn {
     background: color(var(--info) shade(25%));
     text-transform: uppercase;
-    padding: .5rem 1rem;
-    line-height: inherit;
+    padding: .25rem 1rem;
     margin: .5rem 0 0 .5rem;
     @media (--desktop) { margin: 0 1rem; }
   }
