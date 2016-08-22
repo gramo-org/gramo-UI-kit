@@ -61,7 +61,9 @@
       <div class="flash-message-wrapper">
         <div class="col-xs-12 no-padding">
           <!-- <div class="flash-message flash-message--success">
-            <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--simple">Angre ?</button></p>
+            <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a>
+              <button class="btn btn--small btn--inline btn--simple">Angre ?</button>
+            </p>
           </div> -->
         </div>
       </div>
@@ -227,6 +229,9 @@
               </div>
             </div><!--/.fake-table-->
           </section><!--/.tabs__section-->
+          <section id="tab2" class="tabs__section row">
+
+          </section>
           <section id="tab3" class="tabs__section tabs__section--outline row">
             <div class="wrapper wrapper--full">
               <div class="container">
@@ -237,11 +242,11 @@
                 </ul>
               </div>
               <div class="scrollable-area">
-                <section id="innspillingsinfo" class="container container--is-editing">
+                <section id="innspillingsinfo" class="container container--padded container--is-editing">
 
                   <header class="content-header">
                     <div class="content-header__above">
-                      <div class="col-xs cell--no-flex">
+                      <div>
                         <span class="content-header__title--small">Medlemsnummer</span>
                         <span class="content-header__title--small">3997918432</span>
                         <h2 class="content-header__title content-header__title--lower no-margin">David Robert Jones</h2>
@@ -252,343 +257,373 @@
 
                   <header class="content-header content-header--simple">
                     <div class="content-header__above">
-                      <div>
-                        <h2 class="content-header__title content-header__title--lower no-margin">Personalia</h2>
-                      </div>
+                      <h2 class="content-header__title content-header__title--lower no-margin">Personalia</h2>
                       <div class="content-header__action">
                         <button href="#" class="btn btn--link">Avbryt</button>
                         <a href="#" class="btn btn--primary">Lagre</a>
                       </div>
                     </div>
                   </header>
-                    <form class="form form--padded container">
-
-                        <div class="form__field form__field--controlled-width">
-                          <div class="col-xs-12 col-sm-7 col-lg-5">
+                  <form class="form container">
+                    <fieldset class="form__fieldset">
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-7 col-lg-4">
+                          <label class="form__label form__label--block form__label--required">
+                            <span>Navn</span>
+                            <input type="text" value="David Robert" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div><!--end .row-->
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-7 col-lg-4">
                             <label class="form__label form__label--block form__label--required">
-                              <span>Album tittel</span>
-                              <input type="text" value="Hunky Dory" class="form__input form__input--block" >
+                              <span>Etternavn</span>
+                              <input type="text" value="Jones" class="form__input form__input--block" >
                             </label>
-                          </div>
-                        </div><!--end .row-->
-                        <div class="form__field form__field--controlled-width">
-                          <div class="col-xs-12 col-sm-7 col-lg-5">
-                              <label class="form__label form__label--block form__label--required">
-                                <span>Alternativ tittel</span>
-                                <input type="text" value="Hunky Dory" class="form__input form__input--block" >
-                              </label>
-                          </div>
                         </div>
-                        <div class="form__field form__field--controlled-width">
-                          <div class="col-xs-12 col-sm-7 col-lg-5">
-                            <label class="form__label form__label--block">
-                              <span>Hovedartist</span>
-                              <input type="text" value="David Bowie" class="form__input form__input--block" >
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__field">
-                          <div class="col-xs-12 col-sm-2">
-                            <label class="form__label form__label--block">
-                              <span>Varighet</span>
-                              <input type="text" value="05:07" class="form__input form__input--block" >
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__field">
-                          <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <label class="form__label form__label--block">
-                              <span>Mediatype</span>
-                              <select class="select select--block" >
-                                <option>CD</option>
-                                <option>MP3</option>
-                                <option>Plate</option>
-                                <option>Kasette</option>
-                              </select>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__field form__field--inline">
-                          <div class="col-xs">
-                            <label class="form__label form__label--block">
-                              <span>Side</span>
-                              <input type="text" value="1" class="form__input form__input--block" >
-                            </label>
-                          </div>
-                          <div class="col-xs">
-                            <label class="form__label form__label--block">
-                              <span>Spor</span>
-                              <input type="text" value="11" class="form__input form__input--block form__input--numeric" >
-                            </label>
-                          </div>
-                          <div class="col-xs">
-                            <label class="form__label form__label--block">
-                              <span>Arkiv-ID</span>
-                              <input type="text" value="11GD6S-UT6" class="form__input form__input--block" >
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__field">
-                          <div class="col-xs-12 col-sm-2">
-                            <label class="form__label form__label--block">
-                              <span>Sjanger</span>
-                              <input type="text" value="Rock Pop" class="form__input form__input--block" >
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__field">
-                          <div class="col-xs-12 col-sm-4 col-lg-3">
-                            <label class="form__label form__label--block">
-                              <span>Katalognummer</span>
-                              <input type="text" value="USJT10300113" class="form__input form__input--block" >
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__field">
-                          <div class="col-xs-12 col-sm-4 col-lg-3">
-                            <label class="form__label form__label--block">
-                              <span>Alt. katalognummer</span>
-                              <input type="text" value="USJT10300113" class="form__input form__input--block" >
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__field">
-                          <div class="col-xs-12 col-sm-7 col-lg-5">
-                            <label class="form__label form__label--block">
-                              <span>Label</span>
-                              <input type="text" value="EMI RECORDED MUSIC NORWAY" class="form__input form__input--block" >
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__field">
-                          <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <label class="form__label form__label--block form__label--required">
-                              <span>Produsentland</span>
-                              <select class="select select--block" >
-                                <option>Storbritannia</option>
-                                <option>Norge</option>
-                                <option>USA</option>
-                              </select>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__field">
-                          <div class="col-xs-12 col-sm-4 col-lg-3">
-                            <label class="form__label form__label--block form__label--required">
-                              <span>Utgivelsesdato</span>
-                              <input type="date" placeholder="mm/dd/yyyy" class="form__input" >
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__field">
-                          <div class="col-xs-12 col-sm-4 col-lg-3">
-                            <label class="form__label form__label--block">
-                              <span>Lokal Koder</span>
-                              <input type="text" value="-" class="form__input form__input--block" >
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__field">
-                          <div class="col-xs-12 col-sm-4 col-lg-3">
-                            <label class="form__label form__label--block">
-                              <span>Kilde</span>
-                              <input type="text" value="?" class="form__input form__input--block" >
-                            </label>
-                          </div>
-                        </div>
-                    </form>
-                </section>
-                <hr class="horizontal-rule horizontal-rule--dashed">
-                <section id="produsenter" class="container">
-                  <header class="content-header content-header--simple">
-                    <div class="content-header__above">
-                      <h2 class="content-header__title content-header__title--lower">Innspillinger <span class="badge badge--secondary">11</span></h2>
-                      <div class="content-header__action">
-                        <a href="#" class="link--edit">Rediger</a>
                       </div>
-                    </div>
-                  </header>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-7 col-lg-4">
+                          <label class="form__label form__label--block">
+                            <span>Alias</span>
+                            <input type="text" value="David Bowie" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-7 col-lg-4">
+                          <label class="form__label form__label--block">
+                            <span>Gruppe</span>
+                            <input type="text" value="Tin Machine" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-4 col-lg-3">
+                          <label class="form__label form__label--block form__label--date form__label--required">
+                            <span>Fødselsdato</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                          <label class="form__label form__label--block form__label--required">
+                            <span>Fødselsland</span>
+                            <select class="select select--block">
+                              <option>Norge</option>
+                              <option>Storbritannia</option>
+                              <option>USA</option>
+                            </select>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field form__field--inline form__field--inline-checkbox">
+                        <span class="form__field__label form__field__label--required">Kjønn</span>
+                        <div class="col-xs-12 col-sm">
+                          <label class="form__label form__label--block">
+                            <input type="radio" class="form__input form__input--checkbox">
+                            <span>Mann</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm">
+                          <label class="form__label form__label--block">
+                            <input type="radio" class="form__input form__input--checkbox">
+                            <span>Kvinne</span>
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm">
+                          <label class="form__label form__label--block">
+                            <input type="radio" class="form__input form__input--checkbox">
+                            <span>Annen</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-2 col-lg-2">
+                          <label class="form__label form__label--block">
+                            <span>Personnummer</span>
+                            <input type="text" value="XXXXXX XX XXX" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-7 col-lg-5">
+                          <label class="form__label form__label--block">
+                            <span>C/0 Adresse 1</span>
+                            <input type="text" value="Rock Pop Street Line 1" class="form__input form__input--block">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-7 col-lg-5">
+                          <label class="form__label form__label--block">
+                            <span>C/0 Adresse 2</span>
+                            <input type="text" value="Rock Pop Street Line 2" class="form__input form__input--block">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field form__field--inline">
+                        <div class="col-xs">
+                          <label class="form__label form__label--block">
+                            <span>Postnummer</span>
+                            <input type="text" value="0123" class="form__input form__input--block form__input--numeric" >
+                          </label>
+                        </div>
+                        <div class="col-xs">
+                          <label class="form__label form__label--block">
+                            <span>Poststed</span>
+                            <input type="text" value="Oslo" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-2 col-lg-2">
+                          <label class="form__label form__label--block">
+                            <span>Telefonnummer</span>
+                            <input type="text" value="+3346729273" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-2 col-lg-2">
+                          <label class="form__label form__label--block">
+                            <span>Mobilnummer</span>
+                            <input type="text" value="+4746729273" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-2 col-lg-3">
+                          <label class="form__label form__label--block">
+                            <span>Epost</span>
+                            <input type="text" value="david@bowie.com" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-2 col-lg-3">
+                          <label class="form__label form__label--block">
+                            <span>Bankkonto</span>
+                            <input type="text" value="0928428928938NAS" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                          <label class="form__label form__label--block">
+                            <span>Skattekommune</span>
+                            <select class="select select--block" >
+                              <option>Oslo</option>
+                              <option>Akershus</option>
+                              <option>Bergen</option>
+                              <option>Stavanger</option>
+                            </select>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-4 col-lg-3">
+                          <label class="form__label form__label--block">
+                            <span>Lønns og Trekk Oppgave</span>
+                            <input type="text" value="?" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-4 col-lg-3">
+                          <label class="form__label form__label--block">
+                            <span>Momsnummer</span>
+                            <input type="text" value="?" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-4 col-lg-3">
+                          <label class="form__label form__label--block">
+                            <span>IPN</span>
+                            <input type="text" value="USJT10300113" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field form__field--controlled-width">
+                        <div class="col-xs-12 col-sm-4 col-lg-3">
+                          <label class="form__label form__label--block">
+                            <span>Instrument</span>
+                            <input type="text" value="Vocal" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="form__field__action">
+                          <a href="#">Legg til</a>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                          <label class="form__label form__label--block form__label--required">
+                            <span>Statsborgerskap</span>
+                            <select class="select select--block" >
+                              <option>Storbritannia</option>
+                              <option>Norge</option>
+                              <option>USA</option>
+                            </select>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                          <label class="form__label form__label--block form__label--required">
+                            <span>Bostedland</span>
+                            <select class="select select--block" >
+                              <option>USA</option>
+                              <option>Norge</option>
+                              <option>Storbritannia</option>
+                            </select>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-4 col-lg-3">
+                          <label class="form__label form__label--block">
+                            <span>Medlemskap</span>
+                            <input type="text" value="ISPA" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-4 col-lg-3">
+                          <label class="form__label form__label--block">
+                            <span>Rettighetshaverog.</span>
+                            <input type="text" value="ISPA" class="form__input form__input--block" >
+                          </label>
+                        </div>
+                      </div>
 
-                  <div class="container container--padded">
-                    <div class="fake-table fake-table--numeric">
-                      <div class="fake-table__row fake-table__row--head fake-table__row--detached">
-                        <div class="col-sm-3">Innspillingstittel</div>
-                        <div class="col-sm-2">Varighet</div>
-                        <div class="col-sm-2">Utgivelsesdato</div>
-                        <div class="col-sm-4">Katalognummer</div>
-                      </div>
-                      <span>Side A</span>
-                      <div class="fake-table__row">
-                        <div class="col-sm-3" data-label="Innspillingstittel">
-                          Changes
-                        </div>
-                        <div class="col-sm-2" data-label="Varighet">
-                          03:43
-                        </div>
-                        <div class="col-sm-2" data-label="Utgivelsesdato">
-                          1971
-                        </div>
-                        <div class="col-sm-4" data-label="Katalognummer">
-                          USJT19900027
-                        </div>
-                      </div><!--end .fake-table__row-->
-                      <div class="fake-table__row fake-table__row--detached">
-                        <div class="col-sm-3" data-label="Innspillingstittel">
-                          Oh You Pretty things
-                        </div>
-                        <div class="col-sm-2" data-label="Varighet">
-                          03:43
-                        </div>
-                        <div class="col-sm-2" data-label="Utgivelsesdato">
-                          1971
-                        </div>
-                        <div class="col-sm-4" data-label="Katalognummer">
-                          USJT19900027
-                        </div>
-                      </div><!--end .fake-table__row-->
-                      <span>Side B</span>
-                      <div class="fake-table__row">
-                        <div class="col-sm-3" data-label="Innspillingstittel">
-                          Quicksand
-                        </div>
-                        <div class="col-sm-2" data-label="Varighet">
-                          03:43
-                        </div>
-                        <div class="col-sm-2" data-label="Utgivelsesdato">
-                          1971
-                        </div>
-                        <div class="col-sm-4" data-label="Katalognummer">
-                          USJT19900027
-                        </div>
-                      </div><!--end .fake-table__row-->
-                      <div class="fake-table__row">
-                        <div class="col-sm-3" data-label="Innspillingstittel">
-                          Fill Your Heart
-                        </div>
-                        <div class="col-sm-2" data-label="Varighet">
-                          03:43
-                        </div>
-                        <div class="col-sm-2" data-label="Utgivelsesdato">
-                          1971
-                        </div>
-                        <div class="col-sm-4" data-label="Katalognummer">
-                          USJT19900027
-                        </div>
-                      </div><!--end .fake-table__row-->
-                    </div><!--end .fake-table-->
-                  </div><!--end /.container-padded-->
-                </section>
-                <hr class="horizontal-rule horizontal-rule--dashed">
-                <section id="utover" class="container">
-                  <header class="content-header content-header--simple">
-                    <div class="content-header__above">
-                      <h2 class="content-header__title content-header__title--lower">Utøvere <span class="badge badge--secondary">5</span></h2>
-                      <div class="content-header__action">
-                        <a href="#" class="link--edit">Rediger</a>
-                      </div>
-                    </div>
-                  </header>
-
-                  <form class="form form--padded row">
-                    <div class="col-md">
-                      <div class="row">
-                        <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
-                          Navn
-                        </div>
-                        <div class="col-sm-2 col-lg-2 hidden-on-mobile text--medium text--bold">
-                          Instrument
-                        </div>
-                        <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
-                          Nasjonalitet
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Utøveravn</span>
-                            <input type="text" value="David Bowie (David Robert Jones)" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Voice" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-4 col-lg-3">
+                          <label class="form__label form__label--block form__label--required">
+                            <span>Agenter</span>
+                            <input type="text" value="London Talent by Tata" class="form__input form__input--date" >
                           </label>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="Mike Garson" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Piano" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block" disabled
+                      <div class="form__field">
+                        <div class="col-xs-12 col-sm-4 col-lg-3">
+                          <label class="form__label form__label--block">
+                            <span>Trekkmottager</span>
+                            <input type="text" value="?" class="form__input form__input--block" >
                           </label>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="David Sanborn" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Saxophone" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="Mick Ronson" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Gitar" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="Trevor Bolder" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Bass gitar" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                      </div>
-                    </div><!--end .col-md-->
+                    </fieldset>
                   </form>
+                </section>
+                <hr class="horizontal-rule horizontal-rule--dashed">
+                <section id="innspillinger" class="container container--padded">
+                  <header class="content-header content-header--simple">
+                    <div class="content-header__above">
+                      <h2 class="content-header__title content-header__title--lower">Diskografi <span class="badge badge--secondary">11</span></h2>
+                      <div class="content-header__action">
+                        <a href="#" class="link--edit">Rediger</a>
+                      </div>
+                    </div>
+                  </header>
+                  <div class="tabs container container--padded">
+                    <ul class='tabs__nav tabs__nav--flexible row'>
+                      <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger</a></li>
+                      <li class='tabs__nav__item'><a href="#album">Album</a></li>
+                      <li class='tabs__nav__item'><a href="#tab-3">Tab 3</a></li>
+                      <li class='tabs__nav__item'><a href="#tab-4">Tab 4</a></li>
+                    </ul>
+                    <section id="innspillinger" class="tabs__section row">
+                      <div class="fake-table fake-table--numeric">
+                        <div class="fake-table__row fake-table__row--head fake-table__row--detached">
+                          <div class="col-sm-3">Innspillingstittel</div>
+                          <div class="col-sm-2">Varighet</div>
+                          <div class="col-sm-2">Utgivelsesdato</div>
+                          <div class="col-sm-4">Katalognummer</div>
+                        </div>
+                        <div class="fake-table__row">
+                          <div class="fake-table__toggle-container">
+                            <div class="fake-table__toggle-row">
+                              <div class="col-sm-3" data-label="Innspillingstittel">
+                                Changes
+                              </div>
+                              <div class="col-sm-2" data-label="Varighet">
+                                03:43
+                              </div>
+                              <div class="col-sm-2" data-label="Utgivelsesdato">
+                                1971
+                              </div>
+                              <div class="col-sm-4" data-label="Katalognummer">
+                                USJT19900027
+                              </div>
+                            </div>
+                          </div>
+                        </div><!--end .fake-table__row-->
+                        <div class="fake-table__row">
+                          <div class="col-sm-3" data-label="Innspillingstittel">
+                            Oh You Pretty things
+                          </div>
+                          <div class="col-sm-2" data-label="Varighet">
+                            03:43
+                          </div>
+                          <div class="col-sm-2" data-label="Utgivelsesdato">
+                            1971
+                          </div>
+                          <div class="col-sm-4" data-label="Katalognummer">
+                            USJT19900027
+                          </div>
+                        </div><!--end .fake-table__row-->
+                        <div class="fake-table__row">
+                          <div class="col-sm-3" data-label="Innspillingstittel">
+                            Quicksand
+                          </div>
+                          <div class="col-sm-2" data-label="Varighet">
+                            03:43
+                          </div>
+                          <div class="col-sm-2" data-label="Utgivelsesdato">
+                            1971
+                          </div>
+                          <div class="col-sm-4" data-label="Katalognummer">
+                            USJT19900027
+                          </div>
+                        </div><!--end .fake-table__row-->
+                        <div class="fake-table__row">
+                          <div class="col-sm-3" data-label="Innspillingstittel">
+                            Fill Your Heart
+                          </div>
+                          <div class="col-sm-2" data-label="Varighet">
+                            03:43
+                          </div>
+                          <div class="col-sm-2" data-label="Utgivelsesdato">
+                            1971
+                          </div>
+                          <div class="col-sm-4" data-label="Katalognummer">
+                            USJT19900027
+                          </div>
+                        </div><!--end .fake-table__row-->
+                      </div><!--end .fake-table-->
+                    </section>
+                    <section id="album" class="tabs__section row">
+                      <!--Table P4-->
+
+                    </section>
+                    <section id="tab-3" class="tabs__section row">
+                      <!--Table Radio Norge-->
+
+                    </section>
+                    <section id="tab-4" class="tabs__section row">
+                      <!--Table Local Radio-->
+
+                    </section>
+                  </div>
+
                 </section>
               </div><!-- end /.scrollable-area -->
             </div><!-- end/ .wrapper-full -->
