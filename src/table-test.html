@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gramo - Component based UI kit</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <table class="fake-table">
+      <thead class="fake-table__row fake-table__row--head">
+        <th class="col-sm-1">Treff</th>
+        <th class="col-sm-3">Tittel</th>
+        <th class="col-sm-3">HovedArtist</th>
+        <th class="col-sm-2">Ant. Avspillinger</th>
+        <th class="col-sm-2">Sum spilletid</th>
+        <th class="col-sm-1"></th>
+      </thead>
+        <tr class="fake-table__row fake-table__row--expanded">
+          <div class="fake-table__toggle-container">
+            <tr class="fake-table__toggle-row">
+              <td class="col-sm-1" data-label="Treff">1</td>
+              <td class="col-sm-3" data-label="Tittel">Is That What You Call Love?</td>
+              <td class="col-sm-3" data-label="HovedArtist">Hawksley Workman</td>
+              <td class="col-sm-2" data-label="Ant. Avspillinger">234</td>
+              <td class="col-sm-2" data-label="Sum Spilletid">3:27:51</td>
+              <td class="col-sm-1">
+                <a href="#" class="table-row-toggle"></a>
+              </td>
+            </tr>
+          </div>
+            <tr>
+              <td colspan="6">
+                <table>
+
+                </table>
+              </td>
+            </tr>
+          <div class="fake-table__row fake-table__row--child">
+            <div class="col-sm-3 off-xs-1">Tittel: <span>Hell's Bells</span></div>
+            <div class="col-sm-3">Artist <span>AC/DC</span></div>
+          </div>
+
+          <div class="fake-table__row fake-table__row--child">
+            <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
+            <div class="col-sm-3">Artist <span>AC/DC</span></div>
+          </div>
+
+          <div class="fake-table__row fake-table__row--child">
+            <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
+            <div class="col-sm-3">Artist <span>AC/DC</span></div>
+          </div>
+        </tr>
+
+        <div class="fake-table__row">
+          <div class="fake-table__toggle-container">
+            <div class="fake-table__toggle-row">
+              <div class="col-sm-1" data-label="Treff">1</div>
+              <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
+              <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
+              <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
+              <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
+              <div class="col-sm-1">
+                <a href="#" class="table-row-toggle"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fake-table__row fake-table__row--child">
+            <div>Potensielt treff på denne avspillingen</div>
+            <div>Potensielt treff på denne avspillingen</div>
+            <div>Potensielt treff på denne avspillingen</div>
+          </div>
+        </div>
+      </table>
+      <script src="js/vendor/jquery-1.11.3.min.js"></script>
+      <script src="js/default.js"></script>
+
+  </body>
+</html>

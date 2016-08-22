@@ -2,6 +2,7 @@
 .fake-table__cell--action {
   justify-content: space-between;
   text-align: center;
+  align-self: center;
   flex: 1;
   padding: 0 1rem;
   @media (--tablet) { text-align: right; }

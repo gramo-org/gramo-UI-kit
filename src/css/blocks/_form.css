@@ -1,4 +1,5 @@
 .form {
+  overflow: auto; /* push .container all the way down to dashed line in discography */
 
   &--padded {
     padding: 0rem 1rem 2rem 1rem;
@@ -7,7 +8,7 @@
   }
 
   .form__fieldset {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .form__section {

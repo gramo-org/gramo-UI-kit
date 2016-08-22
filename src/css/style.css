@@ -13,7 +13,8 @@
 @import url('blocks/_wrapper.css');
 @import url('blocks/_form.css');
 @import url('blocks/_form-validation.css');
-@import url('blocks/_form-fields.css');
+@import url('blocks/_form-field.css');
+@import url('blocks/_form-field-inline.css');
 @import url('blocks/_radio-buttons.css');
 @import url('blocks/_select-menu.css');
 @import url('blocks/_searchable-list.css');

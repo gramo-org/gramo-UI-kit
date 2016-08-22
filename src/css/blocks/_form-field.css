@@ -22,6 +22,10 @@
     .form__input--checkbox {
       flex: 0 1 auto;
     }
+
+    &--date {
+      margin-bottom: .5rem; /* override standard .form__label--date margin-bottom: 0 */
+    }
   }
 
   &__action {
@@ -47,33 +51,6 @@
   &--controlled-width {
     .form__label .form__input {
       flex: 1 1 auto;
-    }
-  }
-
-  &--inline {
-
-    & > div[class*="col-"] {
-      flex: 0 1 auto;
-    }
-
-    & > div[class*="col-"]:not(:first-child) {
-
-      .form__label {
-        flex: 0 1 auto;
-      }
-
-      .form__label span {
-        text-align: left;
-        flex: 0 0 auto;
-      }
-
-      .form__label .form__input--numeric {
-        width: 40px;
-      }
-    }
-
-    .form__label .form__input {
-      flex: 0 1 auto;
     }
   }
 }

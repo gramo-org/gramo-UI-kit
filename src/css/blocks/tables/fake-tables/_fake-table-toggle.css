@@ -3,8 +3,8 @@
   @extend .container;
   width: 100%;
   cursor: pointer;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  /*padding-top: 1.25rem;
+  padding-bottom: 1.25rem;*/ /* REMOVE PADDING TO MAKE FAKE TABLE ROWS THE SAME SIZE WHETHER TOGGLE OR NOT */
 }
 
 .fake-table__toggle-row {
@@ -13,5 +13,9 @@
   /* stop child elements from flexing 100% */
   & > div {
     display: block;
+  }
+
+  & > div[class*="col-"] {
+    padding: 1.25rem 1rem; /* give cols elements the same padding as in .fake-table__row */
   }
 }

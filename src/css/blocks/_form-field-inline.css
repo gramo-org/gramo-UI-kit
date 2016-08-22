@@ -1,0 +1,51 @@
+.form__field--inline {
+
+  & > div[class*="col-"] {
+    flex: 0 1 auto;
+  }
+
+  & > div[class*="col-"]:not(:first-child) {
+
+    .form__label {
+      flex: 0 1 auto;
+    }
+
+    .form__label span {
+      text-align: left;
+      flex: 0 0 auto;
+    }
+
+    .form__label .form__input--numeric {
+      width: 40px;
+    }
+  }
+
+  .form__label .form__input {
+    flex: 0 1 auto;
+  }
+}
+
+.form__field--inline-checkbox {
+  padding: 1rem 0;
+
+  .form__field__label {
+    text-align: right;
+    padding-right: 1rem;
+    font-weight: var(--font-600);
+    color: var(--slate-gray);
+    flex: 0 0 55px;
+    @media (--tablet) { flex: 0 0 150px; }
+
+    &--required {
+      @extend .form__label--required;
+    }
+  }
+
+  & > div[class*="col-"] {
+    padding-left: 0;
+  }
+
+  .form__input--checkbox {
+    width: auto;
+  }
+}

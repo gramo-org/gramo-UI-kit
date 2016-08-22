@@ -23,6 +23,11 @@
   &__count {
     @extend .h3;
   }
+
+  &__action {
+    padding-right: 0;
+    justify-content: space-between;
+  }
 }
 
 .infobar--fixed {

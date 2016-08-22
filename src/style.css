@@ -979,7 +979,7 @@ h6, .h6{
   font-size:1.4rem;
   line-height:1.0rem;
   margin-top:.5rem;
-  margin-bottom:0;
+  margin-bottom:1rem;
   color:#504f56;
   font-weight:600;
   text-transform:uppercase;
@@ -1056,7 +1056,7 @@ main{
   }
 }
 main > section:first-of-type{
-  padding-top:3rem;
+  padding-top:4rem;
 }
 
 .container, .content-header, .fake-table, .fake-table__toggle-container, .search{
@@ -1452,12 +1452,16 @@ a:active, a:hover{
   -ms-flex:1 1 auto;
   flex:1 1 auto;
 }
+.form{
+  overflow:auto;
+
+  }
 .form--padded{
   padding:0rem 1rem 2rem 1rem;
 }
 
   .form__fieldset{
-    margin-bottom:1rem;
+    margin-bottom:2rem;
   }
 
   .form__section{
@@ -1507,7 +1511,7 @@ a:active, a:hover{
   color:#0095da;
 }
 
-  .form__label--required:before, .form__field .form__label--required > span::before{
+  .form__label--required:before, .form__field .form__label--required > span::before, .form__field--inline-checkbox .form__field__label--required:before{
   content:'*';
   color:#ed6b6a;
 }
@@ -1704,6 +1708,9 @@ a:active, a:hover{
   -ms-flex:0 1 auto;
   flex:0 1 auto;
 }
+.form__field .form__label--date{
+  margin-bottom:.5rem;
+}
 .form__field__action{
   -webkit-flex:1 0 auto;
   -ms-flex:1 0 auto;
@@ -1725,30 +1732,6 @@ a:active, a:hover{
   -webkit-flex:1 1 auto;
   -ms-flex:1 1 auto;
   flex:1 1 auto;
-}
-.form__field--inline > div[class*="col-"]{
-  -webkit-flex:0 1 auto;
-  -ms-flex:0 1 auto;
-  flex:0 1 auto;
-}
-.form__field--inline > div[class*="col-"]:not(:first-child) .form__label{
-  -webkit-flex:0 1 auto;
-  -ms-flex:0 1 auto;
-  flex:0 1 auto;
-}
-.form__field--inline > div[class*="col-"]:not(:first-child) .form__label span{
-  text-align:left;
-  -webkit-flex:0 0 auto;
-  -ms-flex:0 0 auto;
-  flex:0 0 auto;
-}
-.form__field--inline > div[class*="col-"]:not(:first-child) .form__label .form__input--numeric{
-  width:40px;
-}
-.form__field--inline .form__label .form__input{
-  -webkit-flex:0 1 auto;
-  -ms-flex:0 1 auto;
-  flex:0 1 auto;
 }
 @media (min-width: 768px){
   .form__field p, p.error--form-field{
@@ -1782,6 +1765,60 @@ a:active, a:hover{
     min-width:200px;
     max-width:200px;
   }
+}
+.form__field--inline > div[class*="col-"]{
+  -webkit-flex:0 1 auto;
+  -ms-flex:0 1 auto;
+  flex:0 1 auto;
+}
+.form__field--inline > div[class*="col-"]:not(:first-child) .form__label{
+  -webkit-flex:0 1 auto;
+  -ms-flex:0 1 auto;
+  flex:0 1 auto;
+}
+.form__field--inline > div[class*="col-"]:not(:first-child) .form__label span{
+  text-align:left;
+  -webkit-flex:0 0 auto;
+  -ms-flex:0 0 auto;
+  flex:0 0 auto;
+}
+.form__field--inline > div[class*="col-"]:not(:first-child) .form__label .form__input--numeric{
+  width:40px;
+}
+.form__field--inline .form__label .form__input{
+  -webkit-flex:0 1 auto;
+  -ms-flex:0 1 auto;
+  flex:0 1 auto;
+}
+
+.form__field--inline-checkbox{
+  padding:1rem 0;
+}
+
+.form__field--inline-checkbox .form__field__label{
+  text-align:right;
+  padding-right:1rem;
+  font-weight:600;
+  color:#504f56;
+  -webkit-flex:0 0 55px;
+  -ms-flex:0 0 55px;
+  flex:0 0 55px;
+}
+
+@media (min-width: 768px){
+  .form__field--inline-checkbox .form__field__label{
+    -webkit-flex:0 0 150px;
+    -ms-flex:0 0 150px;
+    flex:0 0 150px;
+  }
+}
+
+.form__field--inline-checkbox > div[class*="col-"]{
+  padding-left:0;
+}
+
+.form__field--inline-checkbox .form__input--checkbox{
+  width:auto;
 }
 .radio-group{
   -webkit-justify-content:center;
@@ -2831,6 +2868,12 @@ main.pull .content-header--fixed{
 .infobar__meta{
   line-height:130%;
 }
+.infobar__action{
+  padding-right:0;
+  -webkit-justify-content:space-between;
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+}
 
 @media (min-width: 1200px){
   .infobar--fixed{
@@ -3017,6 +3060,9 @@ main.pull .content-header--fixed{
 
 .badge-wrapper{
   margin:0 0 0 1rem;
+  -webkit-align-self:center;
+  -ms-flex-item-align:center;
+  align-self:center;
 }
 .bucket{
   position:relative;
@@ -3407,7 +3453,7 @@ tr > td:last-child{
   background:#ededed;
 }
 .fake-table__row > div[class*="col-"]{
-  padding:.75rem 1rem;
+  padding:1.25rem 1rem;
 }
 .fake-table__row div[class*="col-"]{
   width:100%;
@@ -3464,7 +3510,7 @@ tr > td:last-child{
   background:#f3f3f3;
   position:absolute;
   left:-1px;
-  bottom:-9px;
+  bottom:-14px;
   z-index:2;
   border-top:1px solid #d9d9dc;
 }
@@ -3528,18 +3574,23 @@ tr > td:last-child{
 .fake-table__toggle-container{
   width:100%;
   cursor:pointer;
-  padding-top:1.25rem;
-  padding-bottom:1.25rem;
 }
 
 .fake-table__toggle-row > div{
   display:block;
+}
+
+.fake-table__toggle-row > div[class*="col-"]{
+  padding:1.25rem 1rem;
 }
 .fake-table__cell--action{
   -webkit-justify-content:space-between;
   -ms-flex-pack:justify;
   justify-content:space-between;
   text-align:center;
+  -webkit-align-self:center;
+  -ms-flex-item-align:center;
+  align-self:center;
   -webkit-flex:1;
   -ms-flex:1;
   flex:1;
