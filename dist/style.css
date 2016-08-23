@@ -1826,7 +1826,7 @@ a:active, a:hover{
   display:-ms-flexbox;
   display:flex;
 }
-.radio-group input[type=radio]{
+.radio-group input{
   position:absolute;
   visibility:hidden;
   margin:0;
@@ -1870,18 +1870,18 @@ a:active, a:hover{
   transition:background 0.25s linear;
   border-radius:2px;
 }
-.radio-group input[type=radio] ~ span{
+.radio-group input ~ span{
   color:#0095da;
 }
-.radio-group input[type=radio]:checked ~ span{
+.radio-group input:checked ~ span{
   color:#fdfdfd;
 }
-.radio-group input[type=radio]:checked ~ .check{
+.radio-group input:checked ~ .check{
 }
-.radio-group input[type=radio]:checked ~ .check::before{
+.radio-group input:checked ~ .check::before{
   background:#0095da;
 }
-.radio-group input[type=radio][disabled] ~ span{
+.radio-group input[disabled] ~ span{
   opacity:0.5;
 }
 .select{

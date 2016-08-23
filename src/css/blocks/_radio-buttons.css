@@ -3,7 +3,7 @@
   margin-top: .15rem;
   display: flex;
 
-  input[type=radio]{
+  input {
     position: absolute;
     visibility: hidden;
     margin: 0;
@@ -48,23 +48,23 @@
     border-radius: 2px;
   }
 
-  input[type=radio] ~ span {
+  input ~ span {
     color: var(--gramo-blue);
   }
 
-  input[type=radio]:checked ~ span {
+  input:checked ~ span {
     color: var(--gramo-white);
   }
 
-  input[type=radio]:checked ~ .check {
+  input:checked ~ .check {
 
   }
 
-  input[type=radio]:checked ~ .check::before {
+  input:checked ~ .check::before {
     background: var(--gramo-blue);
   }
 
-  input[type=radio][disabled] ~ span {
+  input[disabled] ~ span {
     opacity: 0.5;
   }
 }
