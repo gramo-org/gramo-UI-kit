@@ -45,13 +45,18 @@
     font-size: 2.2rem;
     margin-bottom: 1rem;
     text-align: center;
+    /*@extend .col-xs-12;*/
+    order: 1;
     @media (--tablet) {
       margin-top: .5rem;
       margin-bottom: 0;
       text-align: left;
+      display: block;
+      flex: 0 0 auto;
+      order: initial;
     }
-    /*@extend .col-sm;*/
-    display: block;
+
+
 
     &--small {
       color: var(--off-gray);
@@ -92,12 +97,20 @@
 
   &__action,
   &__info {
-    flex: 1 0 auto;
+    /*flex: 1 0 auto;*/
     @extend .col-xs-12;
-    padding-right: 0;
-    display: block;
+    padding: 0;
     text-align: center;
-    @media (--tablet) { text-align: right; }
+
+    @media (--tablet) {
+      flex: 1 0 auto;
+      text-align: right;
+      display: block;
+    }
+
+    & > *:first-child {
+      order: 1;
+    }
   }
 
 

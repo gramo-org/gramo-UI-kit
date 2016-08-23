@@ -43,6 +43,6 @@
 }
 
 main.pull .bucket {
-  left: 6rem;
-  width: calc(100% - 4rem);
+  left: 8rem;
+  width: calc(100% - 6rem);
 }

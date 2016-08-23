@@ -139,13 +139,13 @@
     @extend %no-list;
     background: var(--light-gray);
     padding:  0;
-    justify-content: center;
+    justify-content: flex-start;
     @media (--tablet) { justify-content: flex-end; }
 
     &__item > a {
       font-size: 1.4rem;
       color: var(--slate-gray);
-      padding: .75rem .5rem;
+      padding: .75rem 1.5rem;
       @media (--tablet) { padding: .75rem 2rem; }
       display: block;
       position: relative;

@@ -127,9 +127,11 @@
   }
 
   &--link {
-    color: var(--off-gray);
-    border: 0;
-    background: none;
+    @media (--tablet) {
+      color: var(--off-gray);
+      border: 0;
+      background: none;
+    }
   }
 
 /*** Button Sizes ***/
