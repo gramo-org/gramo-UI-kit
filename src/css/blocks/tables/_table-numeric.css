@@ -1,0 +1,11 @@
+.table--numeric {
+  @extend .fake-table--numeric;
+
+  tr > td:first-child {
+    @extend .fake-table--numeric .fake-table__row;
+  }
+
+  tr > td:first-child::before {
+    @extend .fake-table--numeric > .fake-table__row::before;
+  }
+}
