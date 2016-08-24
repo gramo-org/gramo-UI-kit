@@ -55,7 +55,8 @@
 }
 
 .cell--block,
-.cell--no-flex {
+.cell--no-flex,
+.col--no-flex {
   display: block!important;
 }
 

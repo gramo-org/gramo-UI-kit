@@ -117,6 +117,7 @@
   /* A simpler version of the content header without a bottom border, padding or margin */
   &--simple {
     margin-bottom: 0;
+    padding: 0;
 
     .content-header__above {
       border-bottom: 0;
