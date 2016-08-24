@@ -8,6 +8,10 @@
 
   .form__fieldset {
     margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .form__section {

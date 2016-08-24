@@ -1468,6 +1468,10 @@ a:active, a:hover{
     margin-bottom:2rem;
   }
 
+  .form__fieldset:last-child{
+  margin-bottom:0;
+}
+
   .form__section{
     margin-bottom:3rem;
   }
@@ -3675,7 +3679,6 @@ tr > td:last-child{
 .fake-table--numeric, .table--numeric{
   counter-reset:section;
   list-style-type:none;
-  margin-bottom:2rem!important;
 }
 .fake-table--numeric .fake-table__row, .table--numeric .fake-table__row, .table--numeric tr > td:first-child{
   position:relative;
