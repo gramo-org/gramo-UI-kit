@@ -32,6 +32,14 @@
 .text--center{
   text-align:center!important;
 }
+td.text--center, .fake-table__row > *.text--center{
+  text-align:left!important;
+}
+@media (min-width: 768px){
+  td.text--center, .fake-table__row > *.text--center{
+    text-align:center!important;
+  }
+}
 
 .text--light, .infobar__meta{
   color:#a5a4ab;
@@ -1064,7 +1072,7 @@ main > section:first-of-type{
 }
 
 .container--padded{
-  padding:0 3rem;
+  padding:1rem 3rem 2rem 3rem;
 }
 
 .container--hd{
@@ -1110,7 +1118,6 @@ main > section:first-of-type{
 .container--is-editing{
   background:#f9f9f9;
   overflow:visible;
-  padding-bottom:1rem;
 }
 fieldset, legend{
   border:0;
@@ -1818,13 +1825,17 @@ a:active, a:hover{
   width:auto;
 }
 .radio-group{
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
-  margin-top:.15rem;
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
+}
+@media (min-width: 768px){
+  .radio-group{
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    margin-top:.15rem;
+  }
 }
 .radio-group input{
   position:absolute;
@@ -1837,17 +1848,13 @@ a:active, a:hover{
   cursor:pointer;
   transition:all 0.25s linear;
   margin:0;
+  margin:0 .15rem;
   text-align:center;
   display:inline-block;
   width:3rem;
   height:3rem;
   line-height:3rem;
   background:#fdfdfd;
-}
-@media (min-width: 960px){
-  .radio-group label{
-    margin:0 .15rem;
-  }
 }
 .radio-group .check{
   display:block;
@@ -2526,7 +2533,6 @@ a:active, a:hover{
   box-shadow:none;
   border:1px solid rgb(225, 225, 225);
   padding:2rem;
-  margin-bottom:2rem;
 }
 .breadcrumbs{
   list-style:none;
@@ -2763,6 +2769,9 @@ a:active, a:hover{
     -ms-flex-pack:start;
     justify-content:flex-start;
   }
+}
+.content-header--flush > *{
+  padding:1rem 0;
 }
 .content-header__above{
   -webkit-align-items:flex-end;
@@ -3129,7 +3138,6 @@ table{
   font-size:1.4rem;
   border-spacing:0;
   width:100%;
-  margin:1rem 0;
   text-align:left;
 }
 table thead td, table thead th, table tbody td, table tbody th, table tfoot td, table tfoot th{

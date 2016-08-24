@@ -1,7 +1,6 @@
 .radio-group {
-  justify-content: center;
-  margin-top: .15rem;
   display: flex;
+  @media (--tablet) { justify-content: center; margin-top: .15rem; }
 
   input {
     position: absolute;
@@ -15,7 +14,7 @@
     cursor: pointer;
     transition: all 0.25s linear;
     margin: 0;
-    @media (--desktop) { margin: 0 .15rem; }
+    margin: 0 .15rem;
     text-align: center;
     display: inline-block;
     width: 3rem;

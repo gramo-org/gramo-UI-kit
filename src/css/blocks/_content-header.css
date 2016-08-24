@@ -28,6 +28,12 @@
     @media (--tablet) { justify-content: flex-start; }
   }
 
+  &--flush {
+    & > * {
+      padding: 1rem 0;
+    }
+  }
+
   &__above {
     @extend .row;
     @media (--tablet) { border-bottom: 1px solid var(--silver); }

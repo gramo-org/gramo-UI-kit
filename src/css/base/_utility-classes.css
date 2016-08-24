@@ -10,6 +10,13 @@
   text-align: center!important;
 }
 
+/* override text center for table cells on mobile devices */
+td.text--center,
+.fake-table__row > *.text--center {
+  text-align: left!important;
+  @media (--tablet) { text-align: center!important; }
+}
+
 .text--light {
   color: var(--off-gray);
 
