@@ -59,7 +59,7 @@
   }
 
   &__title {
-    font-weight: var(--font-700);
+    font-weight: var(--bold);
     color: #fff;
     margin: 0.5rem 0;
     font-size: 2.8rem;

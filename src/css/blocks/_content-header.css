@@ -47,7 +47,7 @@
 
   &__title {
     text-transform: uppercase;
-    font-weight: var(--font-600);
+    font-weight: var(--semibold);
     font-size: 2.2rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -67,7 +67,6 @@
     &--small {
       color: var(--off-gray);
       text-transform: uppercase;
-      font-size: 1.4rem;
       margin-right: 1rem;
     }
   }
@@ -86,7 +85,7 @@
 
   &__meta {
     display: block;
-    font-weight: var(--font-700);
+    font-weight: var(--bold);
     color: var(--slate-gray);
     text-align: center;
     letter-spacing: -0.015rem;
@@ -96,7 +95,7 @@
     }
 
     date {
-      font-weight: var(--font-300);
+      font-weight: var(--thin);
       margin-right: 1rem;
     }
   }

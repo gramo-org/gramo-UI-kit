@@ -1,7 +1,6 @@
 /* Form fields for right aligned labels and inline inputs */
 .form__field {
   @extend .row;
-  font-size: 1.4rem;
 
   .form__label {
     @media (--tablet) {

@@ -1,13 +1,11 @@
 caption {
-  line-height: normal;
-  font-weight: var(--font-700);
+  font-weight: var(--bold);
   text-align: left;
   padding: .5rem 0;
   border-bottom: 1px solid #d7d7d7;
 }
 table {
   border-collapse: collapse;
-  font-size: 1.4rem;
   border-spacing: 0;
   width: 100%;
   /*margin: 1rem 0;*/
@@ -46,7 +44,7 @@ thead {
   }
 
   th {
-    font-weight: var(--font-600);
+    font-weight: var(--semibold);
   }
 }
 

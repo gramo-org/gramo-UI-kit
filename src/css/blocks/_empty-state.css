@@ -21,7 +21,7 @@
       border: 1px solid;
       width: 18rem;
       height: 18rem;
-      line-height: 95%;
+      line-height: 1;
       border-radius: 6px;
     }
   }

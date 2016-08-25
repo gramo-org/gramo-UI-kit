@@ -6,7 +6,7 @@ legend {
   padding: 0;
 }
 legend {
-  font-weight: var(--font-700);
+  font-weight: var(--bold);
 }
 
 /* All Form Elements */
@@ -22,7 +22,6 @@ textarea {
 }
 
 /* Inputs */
-input { line-height: normal; }
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -62,7 +61,7 @@ textarea { overflow: auto; }
 
 /* Select Boxes */
 select { text-transform: none; }
-optgroup { font-weight: var(--font-700); }
+optgroup { font-weight: var(--bold); }
 
 /* Buttons */
 button {

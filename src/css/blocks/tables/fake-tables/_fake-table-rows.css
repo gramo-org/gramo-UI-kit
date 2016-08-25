@@ -47,7 +47,7 @@
   &--head {
     background: var(--table-head-background);
     text-align: center;
-    font-weight: var(--font-400);
+    font-weight: var(--normal);
     display: none;
     cursor: default;
     @media (--tablet) { display: flex; }

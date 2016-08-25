@@ -28,24 +28,12 @@
     }
   }
 
-  .form__heading {
-    @extend label;
-    display: block;
-    position: relative;
-    margin-bottom: 1rem;
-    font-weight: var(--font-600);
-    color: var(--slate-gray);
-    font-size: 1.4rem;
-  }
-
 
   /* Form elements */
 
   .form__label {
     position: relative;
-    font-weight: var(--font-600);
-    color: var(--slate-gray);
-    font-size: 1.4rem;
+    @extend h4;
     display: block;
     @media (--tablet) {
       display: inline-block;
@@ -66,7 +54,7 @@
     }
 
     &--hidden {
-      @media (--tablet) { margin-top: -2.3rem!important; }
+      @media (--tablet) { margin-top: -1.7rem!important; }
 
       & > span {
         @media (--tablet) { visibility: hidden; }
@@ -101,7 +89,7 @@
 
     /* Dates */
     &--date {
-      font-weight: var(--font-600);
+      font-weight: var(--semibold);
       margin-bottom: 1rem;
       @media (--tablet) {
         margin-bottom: 0;
@@ -113,7 +101,7 @@
     }
 
     &--date > .form__input {
-      font-weight: var(--font-400);
+      font-weight: var(--normal);
       color: var(--gramo-blue);
       background: #fff url(img/calendar.svg) center right 10px no-repeat;
       border: 1px solid var(--silver);
@@ -142,7 +130,7 @@
   border: 1px solid var(--silver);
   padding-right: 2rem;
   background-color: #fff;
-  font-weight: var(--font-400);
+  font-weight: var(--normal);
 
   &[disabled] {
     background-color: rgba(255, 255, 255, 0.2);
@@ -163,6 +151,5 @@
 .form__input[type="time"] {
   padding: 0.5rem 0 0.5rem 0.3rem!important;
   text-align: center;
-  font-size: 1.4rem;
   height: 3rem;
 }

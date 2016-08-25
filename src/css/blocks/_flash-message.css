@@ -13,10 +13,6 @@
     left: 0;
     top: 19rem;
   }
-
-  .flash-message {
-    margin-top: 0;
-  }
 }
 
 .pull .flash-message-wrapper {
@@ -28,11 +24,11 @@
   background: var(--info);
   color: var(--gramo-white);
   text-transform: uppercase;
-
-  line-height: 250%;
   font-size: 1.5rem;
   margin-top: 3.4rem;
   animation: fadeIn ease 1s;
+  padding: .8rem 0;
+  min-height: 4rem;
   @media (--desktop) {
     margin-top: 0;
   }
@@ -54,8 +50,8 @@
   .btn {
     background: color(var(--info) shade(25%));
     text-transform: uppercase;
-    padding: .25rem 1rem;
-    margin: .5rem 0 0 .5rem;
+    padding: .15rem 1rem;
+    margin-left: .5rem;
     @media (--desktop) { margin: 0 1rem; }
   }
 }

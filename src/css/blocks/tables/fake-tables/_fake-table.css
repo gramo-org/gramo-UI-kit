@@ -1,6 +1,5 @@
 .fake-table {
   margin: 0;
-  font-size: 1.4rem;
   @extend .container;
   min-width: 100%;
 

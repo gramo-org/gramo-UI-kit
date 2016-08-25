@@ -1,6 +1,5 @@
 .vertical__nav {
   @extend %no-list;
-  font-size: 1.4rem;
 
   &__item {
     text-transform: uppercase;

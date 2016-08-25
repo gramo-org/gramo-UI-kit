@@ -45,17 +45,16 @@
     @extend .col-xs-6;
 
     span {
-      font-size: 1.2rem;
+      @extend .text--small;
       text-transform: uppercase;
       color: var(--off-gray);
       display: block;
-      line-height: 1.5rem;
     }
   }
   .list__item__results {
     @extend .col-sm;
     align-self: flex-end;
-    font-weight: var(--font-300);
+    font-weight: var(--thin);
 
     span {
       display: block;
@@ -112,8 +111,7 @@
     }
 
     .sub-list__item {
-      font-size: 1.5rem;
-      font-weight: var(--font-300);
+      font-weight: var(--thin);
       padding: 1.2rem 0.5rem;
       padding-left: 0.5rem;
       margin-bottom: 0;
@@ -130,7 +128,6 @@
       &--message {
         @extend .col-xs-6;
         font-style: italic;
-        font-size: 1.4rem;
       }
     }
 

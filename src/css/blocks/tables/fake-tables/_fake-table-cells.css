@@ -11,11 +11,10 @@
 /* Cells used for form labels */
 .fake-table__cell--label {
   justify-content: center;
-  font-size: 1.6rem;
   margin-top: 1rem;
   text-align: right;
   font-weight: 600;
-  @media (--hd) { text-align: right; font-size: 1.4rem; margin-top: 0; }
+  @media (--hd) { text-align: right; margin-top: 0; }
 }
 
 /* Cells for artists */

@@ -2,7 +2,6 @@
   list-style: none;
   padding: 0.7rem 1rem 0.5rem 0;
   margin: 0;
-  font-size: 1.4rem;
   @extend .col-sm;
   display: inline-block;
   color: var(--light-gray);
@@ -39,7 +38,7 @@
       color: var(--light-gray);
       text-decoration: none;
       text-transform: uppercase;
-      font-weight: var(--font-300);
+      font-weight: var(--thin);
     }
 
     &--action {

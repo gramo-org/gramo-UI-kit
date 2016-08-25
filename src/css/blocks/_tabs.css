@@ -20,20 +20,10 @@
       @media (--tablet) {
         border-width: 1px 0 0 1px;
       }
-      font-size: 1.4rem;
 
       &:last-child {
         border-right-width: 1px;
       }
-
-      /*&--plus {
-        background: var(--light-gray);
-        color: var(--gramo-white);
-      }*/
-
-      /*&--light > .active {
-        background: var(--base-background-color)!important;
-      }*/
     }
 
     &--flexible {
@@ -49,22 +39,24 @@
     }
 
     &__item__type {
-      position: absolute;
-      z-index: 1;
-      font-size: 1rem;
+      text-align: left;
+      position: relative;
+      font-size: 1.2rem;
       color: var(--off-gray);
-      /*line-height: 110%;*/
-      line-height: 1;
-      left: 1rem;
-      top: 0;
+      left: 0;
+      margin-top: -1rem;
+      display: block;
 
       &:before {
         font-family: 'icomoon';
         font-size: 100%;
         position: relative;
         top: .2rem;
-        line-height: 1.4;
         margin-right: .3rem;
+      }
+
+      & + a {
+        padding-top: 0!important;
       }
 
       &--recording:before {
@@ -104,14 +96,15 @@
     }
   }
 
-  .active {
-    /*height: 100%;*/
-  }
-
   &__nav__item a {
     text-decoration: none;
     color: var(--slate-gray);
+    font-weight: var(--semibold);
     padding: 1rem 0;
+  }
+
+  &__nav__item--search a {
+    padding-top: 1.6rem;
   }
 
   &--toggleable {
@@ -158,7 +151,6 @@
     @media (--tablet) { justify-content: flex-end; }
 
     &__item > a {
-      font-size: 1.4rem;
       color: var(--slate-gray);
       padding: .75rem 1.5rem;
       @media (--tablet) { padding: .75rem 2rem; }

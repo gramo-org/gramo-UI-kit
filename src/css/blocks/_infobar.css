@@ -17,7 +17,6 @@
     @extend .text--inline;
     @extend .text--medium;
     @extend .text--light;
-    line-height: 130%;
   }
 
   &__count {

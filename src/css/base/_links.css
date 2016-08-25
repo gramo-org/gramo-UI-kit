@@ -23,7 +23,6 @@ a {
 
 .link--no-line {
   text-decoration: none;
-  font-size: 1.4rem;
 }
 
 .link--chevron-right::after {
@@ -37,7 +36,6 @@ a {
 
 .link--edit {
   text-decoration: none;
-  font-size: 1.4rem;
 
   &:after {
     content: "\e915";
