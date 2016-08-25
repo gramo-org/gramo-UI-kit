@@ -53,19 +53,34 @@
       z-index: 1;
       font-size: 1rem;
       color: var(--off-gray);
-      line-height: 110%;
+      /*line-height: 110%;*/
+      line-height: 1;
       left: 1rem;
       top: 0;
 
       &:before {
         font-family: 'icomoon';
-        font-size: 130%;
+        font-size: 100%;
         position: relative;
-        top: .3rem;
+        top: .2rem;
+        line-height: 1.4;
+        margin-right: .3rem;
       }
 
       &--recording:before {
-        content: "\e913";
+        content: "\e919";
+      }
+      &--album:before {
+        content: "\e917";
+      }
+      &--performer:before,
+      &--group:before {
+        content: "\e916";
+        top: .12rem;
+      }
+      &--label:before {
+        content: "\e918";
+        top: .12rem;
       }
     }
   }

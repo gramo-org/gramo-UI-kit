@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?on5u8g');
-  src:  url('fonts/icomoon.eot?on5u8g#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?on5u8g') format('truetype'),
-    url('fonts/icomoon.woff?on5u8g') format('woff'),
-    url('fonts/icomoon.svg?on5u8g#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?tjcpws');
+  src:  url('fonts/icomoon.eot?tjcpws#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tjcpws') format('truetype'),
+    url('fonts/icomoon.woff?tjcpws') format('woff'),
+    url('fonts/icomoon.svg?tjcpws#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -18,11 +18,21 @@
 	text-transform: none;
   display: inline-block;
 }
-
+.icon--notes:before {
+  content: "\e919";
+}
+.icon--performer:before {
+  content: "\e916";
+}
+.icon--album:before {
+  content: "\e917";
+}
+.icon--label:before {
+  content: "\e918";
+}
 .icon--pencil:before {
   content: "\e915";
 }
-
 .icon--echo:before {
     content: "\e914";
 }
