@@ -12,6 +12,10 @@
     margin: .4rem 0;
   }
 
+  &__count {
+    @extend .infobar__heading;
+  }
+
   &__meta {
     @extend .text--inline;
     @extend .text--light;
