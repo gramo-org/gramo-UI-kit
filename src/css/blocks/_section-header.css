@@ -1,0 +1,20 @@
+.section-header {
+  display: flex;
+
+  &__above,
+  &__below {
+    display: flex;
+  }
+
+  &--with-border {
+    border-bottom: 1px solid var(--silver);
+  }
+}
+
+.section-header header {
+  flex: 1 0 auto;
+}
+
+.section-header__toolbar {
+  align-self: center;
+}

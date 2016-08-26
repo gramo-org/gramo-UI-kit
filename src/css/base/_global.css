@@ -47,3 +47,13 @@ h4 {
   font-size: var(--h4-font-size);
   margin: 0;
 }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 1px;
+  background: var(--silver);
+  border: 0;
+  padding: 0;
+  margin: 0;
+}

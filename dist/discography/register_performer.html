@@ -249,21 +249,26 @@
                 <section id="innspillingsinfo" class="container container--padded container--is-editing">
 
                   <header class="infobar">
-                    <span class="infobar__meta">Medlemsnummer</span>
-                    <span class="infobar__meta">3997918432</span>
-                    <h1 class="infobar__heading">David Robert Jones</h1>
-                    <h3>David Bowie, Davy Jones</h3>
-                  </header>
-
-                  <header class="content-header content-header--simple">
-                    <div class="content-header__above">
-                      <h2 class="content-header__title content-header__title--lower no-margin">Personalia</h2>
-                      <div class="content-header__action">
-                        <button href="#" class="btn btn--link">Avbryt</button>
-                        <a href="#" class="btn btn--primary">Lagre</a>
-                      </div>
+                    <div class="infobar__left">
+                      <p class="infobar__meta">
+                        <span>Medlemsnummer</span>
+                        <span>3997918432</span>
+                      </p>
+                      <h1 class="infobar__heading">David Robert Jones</h1>
+                      <h3>David Bowie, Davy Jones</h3>
                     </div>
                   </header>
+
+                  <div class="section-header">
+                    <header>
+                      <h2>Personalia</h2>
+                    </header>
+                    <div class="section-header__toolbar">
+                      <button href="#" class="btn btn--link">Avbryt</button>
+                      <a href="#" class="btn btn--primary">Lagre</a>
+                    </div>
+                  </div>
+
                   <form class="form">
                     <fieldset class="form__fieldset">
                       <div class="form__field">
@@ -525,14 +530,15 @@
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
                 <section id="innspillinger" class="container container--padded">
-                  <header class="content-header content-header--simple">
-                    <div class="content-header__above">
-                      <h2 class="content-header__title content-header__title--lower">Diskografi <span class="badge badge--secondary">11</span></h2>
-                      <div class="content-header__action">
-                        <a href="#" class="link--edit">Rediger</a>
-                      </div>
+
+                  <div class="section-header">
+                    <header>
+                      <h2>Diskografi <span class="badge badge--secondary">11</span></h2>
+                    </header>
+                    <div class="section-header__toolbar">
+                      <a href="#" class="link--edit">Rediger</a>
                     </div>
-                  </header>
+                  </div>
                   <div class="tabs container">
                     <ul class='tabs__nav tabs__nav--flexible row'>
                       <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger</a></li>

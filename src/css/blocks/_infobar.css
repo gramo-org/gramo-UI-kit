@@ -2,6 +2,9 @@
   border-bottom: 1px solid var(--table-border-color);
   padding: 1.5rem 0 1rem 0.2rem;
   margin-bottom: 1rem;
+  @media (--tablet) {
+    display: flex;
+  }
 
   &--no-border {
     border-bottom: 0;
@@ -21,8 +24,23 @@
     @extend .text--light;
   }
 
+  &__left {
+    flex: 1 0 auto;
+  }
+
+  &__right {
+    @media (--tablet) {
+      text-align: right;
+    }
+  }
+
   &__action {
     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    @media (--tablet) {
+      margin-left: 1rem;
+    }
   }
 }
 
