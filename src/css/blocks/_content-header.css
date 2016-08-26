@@ -28,12 +28,6 @@
     @media (--tablet) { justify-content: flex-start; }
   }
 
-  &--flush {
-    & > * {
-      padding: 1rem 0;
-    }
-  }
-
   &__above {
     @extend .row;
     @media (--tablet) { border-bottom: 1px solid var(--silver); }
@@ -48,7 +42,6 @@
   &__title {
     text-transform: uppercase;
     font-weight: var(--semibold);
-    font-size: 2.2rem;
     margin-bottom: 1rem;
     text-align: center;
     /*@extend .col-xs-12;*/

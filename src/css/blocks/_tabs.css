@@ -134,7 +134,6 @@
   &--toggleable label[for="tab-control"] {
     color: var(--base-link-color);
     cursor: pointer;
-    font-size: 90%;
     margin-left: 1rem;
     font-weight: 300;
   }
@@ -209,7 +208,7 @@
     background: none;
     text-align: left;
     @extend .col-md-6;
-
+    justify-content: flex-end;
 
     a {
       padding: .5rem 0;

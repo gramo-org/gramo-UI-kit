@@ -89,7 +89,7 @@
 
         <div class="tabs container">
           <ul class="tabs__nav tabs__nav--flexible row">
-            <li class="tabs__nav__item"><a href="#search"><i class="icon--search"></i> Søk</a></li>
+            <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
             <li class="tabs__nav__item">
               <a href="#tab2">
                 <span class="tabs__nav__item__type tabs__nav__item__type--recording">Innspilling</span>
@@ -265,15 +265,10 @@
               <div class="scrollable-area">
                 <section id="innspillingsinfo" class="container container--padded">
 
-                  <header class="content-header content-header--flush">
-                    <div class="content-header__above">
-                      <div>
-                        <span class="content-header__title--small">EMI Recorded Music Norway AS (100%)</span>
-                        <h2 class="content-header__title content-header__title--lower no-margin">Aladdin Sane</h2>
-                        <div>David Bowie</div>
-                        <div>Aladdin Sane</div>
-                      </div>
-                    </div>
+                  <header class="infobar">
+                    <span class="infobar__meta">EMI Recorded Music Norway AS (100%)</span>
+                    <h1 class="infobar__heading">Aladdin Sane</h1>
+                    <h3>David Bowie</h3>
                   </header>
 
                   <header class="content-header content-header--simple">
@@ -353,12 +348,18 @@
                             <a>Legg til komponist</a>
                           </div>
                         </div>
-                        <div class="form__field">
-                          <div class="col-xs-12 col-sm-4 col-lg-2">
+                        <div class="form__field form__field--controlled-width">
+                          <div class="col-xs-12 col-lg-3">
                             <label class="form__label form__label--block">
                               <span>IRSC</span>
                               <input type="text" value="USJT10030001" class="form__input form__input--block" disabled>
                             </label>
+                          </div>
+                          <span class="form__field__suggestion">
+                            f.eks: NOXXX1501223
+                          </span>
+                          <div class="form__field__action">
+                            <a>Legg til komponist</a>
                           </div>
                         </div>
                         <div class="form__field form__field--controlled-width">
