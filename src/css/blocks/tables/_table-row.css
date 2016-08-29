@@ -22,6 +22,13 @@
   }
 }
 
+/*** Disabled rows in table ***/
+.table__row--disabled td {
+  background: var(--x-light-gray);
+  color: var(--silver);
+  cursor: not-allowed;
+}
+
 /*** New rows in tables ***/
 .table__row--new td:first-child {
   position: relative;

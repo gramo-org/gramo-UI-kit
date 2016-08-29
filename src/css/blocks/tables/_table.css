@@ -20,6 +20,12 @@
     margin-top: 0;
   }
 
+  &--selectable {
+    tr {
+      cursor: pointer;
+    }
+  }
+
 
   .tbody--with-spacing {
     /* Pseudo class to make space between thead and tbody */

@@ -3349,6 +3349,9 @@ tr > td:last-child{
 .table--with-tabs{
   margin-top:0;
 }
+.table--selectable tr{
+  cursor:pointer;
+}
 .table .tbody--with-spacing::before{
   content:'';
   display:block;
@@ -3402,6 +3405,11 @@ tr > td:last-child{
 }
 .table__row--has-errors td p::before{
   content:'-';
+}
+.table__row--disabled td{
+  background:#f9f9f9;
+  color:#d9d9dc;
+  cursor:not-allowed;
 }
 .table__row--new td:first-child{
   position:relative;
