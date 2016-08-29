@@ -62,10 +62,10 @@
 
     & > *:first-child {
       flex: 1 0 auto;
+    }
 
-      &.*--short {
-        flex: 0 0 auto;
-      }
+    & > *:first-child[class$="--short"] {
+      flex: 0 0 auto;
     }
 
     &--no-border {
