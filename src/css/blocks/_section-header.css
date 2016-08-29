@@ -63,7 +63,7 @@
     & > *:first-child {
       flex: 1 0 auto;
 
-      &.[class*="--short"] {
+      &.*--short {
         flex: 0 0 auto;
       }
     }
