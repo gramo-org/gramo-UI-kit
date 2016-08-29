@@ -2881,6 +2881,12 @@ main.pull .content-header--fixed{
   flex:1 0 auto;
 }
 
+.section-header--divided .section-header__below > *:first-child.[class*="--short"]{
+  -webkit-flex:0 0 auto;
+  -ms-flex:0 0 auto;
+  flex:0 0 auto;
+}
+
 .section-header--divided .section-header__below--no-border{
   border:0;
 }
