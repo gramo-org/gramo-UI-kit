@@ -61,11 +61,13 @@
       <section class="container container--hd">
         <div class="row">
           <div class="wrapper wrapper--sidebar">
-            <header class="content-header">
-              <div class="content-header__above content-header__above--compressed">
-                <h1 class="content-header__title">Ikke identifiserte <span class="badge badge--error">31</span></h1>
-              </div>
-            </header>
+            <div class="section-header section-header--with-border">
+              <header>
+                <h1>Ikke identifiserte
+                  <span class="badge badge--error">31</span>
+                </h1>
+              </header>
+            </div>
             <div class="tabs container tabs--toggleable tabs--compressed">
               <ul class="breadcrumbs breadcrumbs--in-content">
                 <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#">NRK</a></li>
@@ -168,28 +170,26 @@
           </div><!--end .wrapper #sidebar-->
 
           <div class="wrapper wrapper--main">
-            <div class="fake-table__infobar container">
-              <div class="row">
-                <div class="col-xs-9 col-sm-8">
-                  <span class="fake-table__infobar__meta">
-                    <span><i class="icon--ban"></i> Ikke utgitt</span>
-                    <span>Six Shooter Records</span>
-                    <span>SIX093LP</span>
-                  </span>
-                  <h3 class="fake-table__infobar__heading">Is That What You Call Love?</h3>
-                  <span>Hawksley Workman</span>
-                </div>
-                <div class="col-xs-3 col-sm-2 text--right">
-                  <span class="fake-table__infobar__meta">10 treff</span>
-                  <span class="fake-table__infobar__count">03:27:51</span>
-                  <span>234</span>
-                </div>
-                <div class="col-xs col-sm-2 fake-table__cell--action no-padding--right">
-                  <button class="btn btn--success"><i class="icon--send"></i> Restliste</button>
-                  <button class="btn btn--secondary"><i class="icon--ban"></i> Ikke utgitt</button>
-                </div>
-              </div><!--/ .row-->
-            </div><!--/ .fake-table__infobar-->
+            <div class="infobar">
+              <div class="infobar__left">
+                <p class="infobar__meta">
+                  <span><i class="icon--ban"></i> Ikke utgitt</span>
+                  <span>Six Shooter Records</span>
+                  <span>SIX093LP</span>
+                </p>
+                <h2 class="infobar__heading">Is That What You Call Love?</h2>
+                <h3>Hawksley Workman</h3>
+              </div>
+              <div class="infobar__right">
+                <span class="infobar__meta">10 treff</span>
+                <h2 class="infobar__count">03:27:51</h2>
+                <h3>234</h3>
+              </div>
+              <div class="infobar__action">
+                <button class="btn btn--success"><i class="icon--send"></i> Restliste</button>
+                <button class="btn btn--secondary"><i class="icon--ban"></i> Ikke utgitt</button>
+              </div>
+            </div><!--/ .infobar-->
 
             <div class="tabs tabs--transparent container">
               <ul class="tabs__nav row">

@@ -49,6 +49,10 @@ td.text--center,
   font-size: 1.2rem!important;
 }
 
+.text--medium {
+  font-size: 1.4rem!important;
+}
+
 .text--large {
   font-size: 1.6rem!important;
 }

@@ -53,21 +53,24 @@
         </a>
       </div>
 
-      <!--Content-header example-->
+
       <section class="container container--hd">
-        <header class="content-header">
-          <div class="content-header__above">
-            <h1 class="content-header__title">Innleste filer</h1>
+        <div class="section-header section-header--divided section-header--with-border">
+          <div class="section-header__above">
+            <header>
+              <h1>Importerte filer</h1>
+            </header>
           </div>
-          <div class="content-header__below">
-            <span class="content-header__meta">
-              Vises fra: <date>02.11.15</date>
-            </span>
-            <span class="content-header__meta">
-              Til: <date>08.11.15</date>
-            </span>
-            <div class="content-header__action">
-              <!--Pagination example-->
+          <div class="section-header__below">
+            <div class="section-header__meta">
+              <span>
+                Vises fra: <date class="text--thin">02.11.15</date>
+              </span>
+              <span>
+                Til: <date class="text--thin">08.11.15</date>
+              </span>
+            </div>
+            <div class="section-header__toolbar">
               <nav role="navigation">
               	<ul class="pagination">
               		<li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
@@ -79,10 +82,9 @@
               		<li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
               	</ul>
               </nav>
-              <!--End Pagination example-->
             </div>
           </div>
-        </header>
+        </div>
       </section>
       <!--List example-->
       <section class="container container--hd">
@@ -239,28 +241,30 @@
       </section>
       <!--End List example-->
 
-      <!--Content-header example-->
+
       <section class="container container--hd">
-        <header class="content-header">
-          <div class="content-header__above">
-            <h1 class="content-header__title">Total avvik i perioden <span class="badge badge--error">179</span></h1>
+        <div class="section-header section-header--divided section-header--with-border">
+          <div class="section-header__above">
+            <header>
+              <h1>Total avvik i perioden <span class="badge badge--error">179</span></h1>
+            </header>
           </div>
-          <div class="content-header__below">
-            <span class="content-header__meta">
-              Første avvik: <date>02.11.15</date>
-            </span>
-            <span class="content-header__meta">
-              Siste avvik: <date>08.11.15</date>
-            </span>
-            <div class="content-header__action">
-              <span class="select">
-                <select>
-                  <option>Velg perioden</option>
-                </select>
+          <div class="section-header__below">
+            <div class="section-header__meta">
+              <span>
+                Første avvik: <date class="text--thin">02.11.15</date>
+              </span>
+              <span>
+                Siste avvik: <date class="text--thin">08.11.15</date>
               </span>
             </div>
+            <div class="section-header__toolbar">
+              <select class="select select--full">
+                <option>Velg perioden</option>
+              </select>
+            </div>
           </div>
-        </header>
+        </div>
 
         <!--Inline form-->
         <form class="form">
@@ -294,28 +298,34 @@
         </table>
       </section>
       <hr class="spacer">
-      <!--Content-header example-->
+
       <section class="container container--desktop">
-        <header class="content-header">
-          <div class="content-header__above">
-            <h1 class="content-header__title">Kringkaster <span class="badge badge--error">NRK</span></h1>
-            <div class="content-header__action">
+        <div class="section-header section-header--divided section-header--with-border">
+          <div class="section-header__above">
+            <header>
+              <h1>Kringkaster <span class="badge badge--error">NRK</span></h1>
+            </header>
+            <div class="section-header__toolbar">
               <a href="#" class="btn btn--primary btn--medium">Last ned rapport</a>
             </div>
           </div>
-          <div class="content-header__below">
-            <span class="content-header__meta">
-              Første avvik: <date>02.11.15</date>
-            </span>
-            <span class="content-header__meta">
-              Siste avvik: <date>08.11.15</date>
-            </span>
-            <div class="content-header__action btn-group btn-group--toggle">
-              <button class="btn btn--primary btn--small">Kanal <i class="icon--breadcrumbs-arrow"></i>Dato</button>
-              <button class="btn btn--white btn--small">Dato <i class="icon--breadcrumbs-arrow"></i>Kanal</button>
+          <div class="section-header__below">
+            <div class="section-header__meta">
+              <span>
+                Første avvik: <date class="text--thin">02.11.15</date>
+              </span>
+              <span>
+                Siste avvik: <date class="text--thin">08.11.15</date>
+              </span>
+            </div>
+            <div class="section-header__toolbar">
+              <div class="btn-group btn-group--toggle">
+                <button class="btn btn--primary btn--small">Kanal <i class="icon--breadcrumbs-arrow"></i>Dato</button>
+                <button class="btn btn--white btn--small">Dato <i class="icon--breadcrumbs-arrow"></i>Kanal</button>
+              </div>
             </div>
           </div>
-        </header>
+        </div>
         <div class="scrollable-area">
           <!--Table example-->
           <table class="table">
@@ -407,16 +417,16 @@
       </section>
       <hr class="spacer">
 
-      <!--Content-header example-->
+
       <section class="container container--hd">
-        <header class="content-header">
-          <div class="content-header__above">
-            <h1 class="content-header__title">Program administrasjon</h1>
-            <div class="content-header__action">
-              <a href="#" class="btn btn--primary btn--large">Ny program</a>
-            </div>
+        <div class="section-header section-header--with-border">
+          <header>
+            <h1>Program administrasjon</h1>
+          </header>
+          <div class="section-header__toolbar">
+            <a href="#" class="btn btn--primary btn--large">Ny program</a>
           </div>
-        </header>
+        </div>
 
         <!--Table example-->
         <table class="table">
@@ -512,21 +522,25 @@
       </section>
       <hr class="spacer">
 
-      <!--Content-header example-->
+
       <section class="container container--hd">
-        <header class="content-header">
-          <div class="content-header__above">
-            <h1 class="content-header__title">Legg til nytt program</h1>
-            <div class="content-header__action">
+        <div class="section-header section-header--divided section-header--with-border">
+          <div class="section-header__above">
+            <header>
+              <h1>Legg til nytt program</h1>
+            </header>
+            <div class="section-header__toolbar">
               <a href="#" class="btn btn--primary btn--large">Lagre</a>
             </div>
           </div>
-          <div class="content-header__below">
-            <span class="content-header__meta">
-              Siste versjon: <date>25.12.2015</date>
-            </span>
+          <div class="section-header__below">
+            <div class="section-header__meta">
+              <span>
+                Siste versjon: <date class="text--thin">25.12.2015</date>
+              </span>
+            </div>
           </div>
-        </header>
+        </div>
         <!--Gray box example-->
         <form class="form">
           <div class="box box--gray box--full">
