@@ -54,10 +54,6 @@
     color: var(--gramo-white);
   }
 
-  input:checked ~ .check {
-
-  }
-
   input:checked ~ .check::before {
     background: var(--gramo-blue);
   }

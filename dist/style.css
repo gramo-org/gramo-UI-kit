@@ -1821,8 +1821,6 @@ a:active, a:hover{
 .radio-group input:checked ~ span{
   color:#fdfdfd;
 }
-.radio-group input:checked ~ .check{
-}
 .radio-group input:checked ~ .check::before{
   background:#0095da;
 }
