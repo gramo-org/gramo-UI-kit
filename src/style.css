@@ -1818,6 +1818,10 @@ a:active, a:hover{
 .radio-group input ~ span{
   color:#0095da;
 }
+.radio-group .form__label.has-error input ~ span{
+  border-color:#ed6b6a;
+  color:#ed6b6a;
+}
 .radio-group input:checked ~ span{
   color:#fdfdfd;
 }
