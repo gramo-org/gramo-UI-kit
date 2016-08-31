@@ -3536,6 +3536,10 @@ tr > td:last-child{
   position:absolute;
   left:0;
   top:0;
+  background:linear-gradient(to right, transparent 120px, #fdfdfd);
+}
+
+tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--truncated::after{
   background:linear-gradient(to right, transparent 120px, #f9f9f9);
 }
 
