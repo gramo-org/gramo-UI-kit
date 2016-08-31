@@ -1830,6 +1830,7 @@ a:active, a:hover{
 }
 .radio-group input[disabled] ~ span{
   opacity:0.5;
+  cursor:not-allowed;
 }
 .select{
   border:1px solid #d9d9dc;
