@@ -44,7 +44,7 @@
 @import url('blocks/tables/_table-row-toggle.css');
 @import url('blocks/tables/_table-states.css');
 @import url('blocks/tables/_table-summary.css');
-
+@import url('blocks/tables/_table-cells.css');
 
 @import url('blocks/tables/fake-tables/_fake-table.css');
 @import url('blocks/tables/fake-tables/_fake-table-rows.css');
