@@ -2,29 +2,34 @@
   position: relative;
   margin-top: -3.1rem;
   z-index: 5;
-  padding-left: 1rem;
   font-size: 1.3rem;
-
+  display: flex;
 
   &__list {
     @extend %no-list;
-    @extend .list--inline;
     display: flex;
+    flex: 1 0 auto;
   }
 
   &__list__item {
     display: flex;
     position: relative;
-    padding-left: 1rem;
-    margin-right: 1rem;
-    border-left: 1px solid var(--silver);
-    /*background: var(--light-gray);*/
+    margin-left: 2rem;
     border-radius: 2px;
+
+    &:before {
+      content: '';
+      border-left: 1px solid var(--silver);
+      position: absolute;
+      height: 1.5rem;
+      left: -1rem;
+      top: .2rem;
+    }
 
 
     &__close {
       position: relative;
-      top: .2rem;
+      top: .4rem;
       margin-right: .5rem;
       color: var(--off-gray);
       font-size: .8rem;

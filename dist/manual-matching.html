@@ -73,7 +73,7 @@
                 </h1>
               </header>
             </div>
-            <div class="tabs container tabs--toggleable tabs--compressed">
+            <div class="tabs tabs--toggleable tabs--compressed">
               <ul class="breadcrumbs breadcrumbs--in-content breadcrumbs--without-arrows">
                 <li class="breadcrumbs__item breadcrumbs__item--home"><h4><a href="#">NRK</a></h4></li>
                 <span class="breadcrumbs__arrow"></span>
@@ -81,61 +81,53 @@
               </ul>
               <input type="checkbox" id="tab-control">
               <label for="tab-control">endre kanal</label>
-              <ul class='tabs__nav row'>
+              <ul class='tabs__nav'>
                 <li class='tabs__nav__item'><a href="#nrk">NRK</a></li>
                 <li class='tabs__nav__item'><a href="#p4">P4 </a></li>
                 <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
                 <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
               </ul>
-              <div class="row toolbar">
-                <div class="col-xs col-sm-8">
-                  <div class="searchable-list">
-                    <div class="searchable-list__heading">
-                      <span class="searchable-list__selected">Søk blant kanaler</span>
-                    </div>
-                    <div class="searchable-list__dropdown">
-                      <input type="text" value="P3" class="form__input form__input--block searchable-list__search">
-                      <ul>
-                        <li class="searchable-list__option">P1</li>
-                        <li class="searchable-list__option">P2</li>
-                        <li class="searchable-list__option">P3</li>
-                      </ul>
-                    </div>
-                  </div><!--end searchable list-->
-                </div>
-                <div class="col-md align--center">
+              <div class="toolbar">
+                <div class="searchable-list">
+                  <div class="searchable-list__heading">
+                    <span class="searchable-list__selected">Søk blant kanaler</span>
+                  </div>
+                  <div class="searchable-list__dropdown">
+                    <input type="text" value="P3" class="form__input form__input--block searchable-list__search">
+                    <ul>
+                      <li class="searchable-list__option">P1</li>
+                      <li class="searchable-list__option">P2</li>
+                      <li class="searchable-list__option">P3</li>
+                    </ul>
+                  </div>
+                </div><!--end searchable list-->
+                <div class="align--center">
                   <a href="#" class="link--inline">Lagre</a>
                 </div>
-              </div><!--/.row .toolbar-->
-              <section id="nrk" class="tabs__section row">
+              </div><!--/.toolbar-->
+              <section id="nrk" class="tabs__section">
                 <!--NRK-->
-                <div class="toolbar toolbar--transparent col-md">
-                  <div class="toolbar__above toolbar__above--transparent row">
-                    <div class="col-md">
-                      <ul class="filter-items list--inline">
-                        <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Leonard Cohen</span></a></li>
-                        <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Ikke utgitt</span></a></li>
-                      </ul>
-                    </div>
-                  </div><!--end .row-->
-                  <div class="toolbar__below row">
-                    <div class="col-xs-1">
-                      <label class="form__label">
-                        <input type="checkbox">
-                      </label>
-                    </div>
-                    <div class="col-sm">
-                      <span class="text--medium text--bold">Vis alle felter</span>
-                      <span class="x-toggle-container">
-                        <input type="checkbox" class="x-toggle">
-                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-                        </label>
-                      </span>
-                    </div><!--end .col-sm-->
-                  </div>
+
+
+                  <ul class="filter-items list--inline">
+                    <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Leonard Cohen</span></a></li>
+                    <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Ikke utgitt</span></a></li>
+                  </ul>
+
+                <div class="toolbar toolbar--above">
+                  <label class="form__label">
+                    <input type="checkbox">
+                  </label>
+
+                  <span class="text--medium text--bold">Vis alle felter</span>
+                  <span class="x-toggle-container">
+                    <input type="checkbox" class="x-toggle">
+                    <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                    </label>
+                  </span>
                 </div><!--/.toolbar-->
-                <div class="fake-table scrollable-area">
-                  <div class="fake-table__row fake-table__row--selected">
+                <ul class="fake-table scrollable-area">
+                  <li class="fake-table__row fake-table__row--selected">
                     <div class="col-xs-1">
                       <label class="form__label">
                         <input type="checkbox">
@@ -151,8 +143,8 @@
                       <span>3:27:51</span>
                       <span>234</span>
                     </div>
-                  </div><!--end .fake-table__row-->
-                  <div class="fake-table__row">
+                  </li><!--end .fake-table__row-->
+                  <li class="fake-table__row">
                     <div class="col-xs-1">
                       <label class="form__label">
                         <input type="checkbox">
@@ -168,8 +160,8 @@
                       <span>3:27:51</span>
                       <span>234</span>
                     </div>
-                  </div><!--end .fake-table__row-->
-                </div><!--end .fake-table-->
+                  </li><!--end .fake-table__row-->
+                </ul><!--end .fake-table-->
               </section><!--end .tabs__section #nrk-->
             </div><!--end .tabs-->
           </div><!--end .wrapper #sidebar-->
@@ -196,20 +188,17 @@
               </div>
             </div><!--/ .infobar-->
 
-            <div class="tabs tabs--transparent container">
-              <ul class="tabs__nav row">
+            <div class="tabs tabs--transparent">
+              <ul class="tabs__nav">
                 <li class="tabs__nav__item"><h4><a href="#discography">10 treff</a></h4></li>
                 <li class="tabs__nav__item tab__nav__item--right no-padding--right"><a class="btn btn--secondary btn--small" href="#search-external-sources">Søk </a></li>
               </ul>
 
-              <section id="discography" class="tabs__section row">
-                <div class="fake-table scrollable-area">
-                  <div class="fake-table__row fake-table__row--expanded">
+              <section id="discography" class="tabs__section">
+                <ol class="fake-table fake-table--numeric scrollable-area">
+                  <li class="fake-table__row fake-table__row--expanded">
                     <div class="fake-table__toggle-container">
                       <div class="fake-table__toggle-row">
-                        <div class="badge-wrapper">
-                          <span class="badge badge--numeric">2</span>
-                        </div>
                         <div class="col-xs-3">
                           <span class="text--bold">Is That What You Call Love?</span>
                         </div>
@@ -338,13 +327,10 @@
                         </div><!--end .fake-table__row footer-->
                       </div><!--end .col-md-12-->
                     </div><!--end .fake-table__row child-->
-                  </div><!--end .fake-table__row expanded-->
+                  </li><!--end .fake-table__row expanded-->
                   <div class="fake-table__row">
                     <div class="fake-table__toggle-container">
                       <div class="fake-table__toggle-row">
-                        <div class="badge-wrapper">
-                          <span class="badge badge--numeric">2</span>
-                        </div>
                         <div class="col-xs-3">
                           <div class="text--bold">1999</div>
                           <div>FUTUREWORLD</div>
@@ -475,10 +461,10 @@
                       </div><!--end .col-md-12-->
                     </div><!--end .fake-table__row child-->
                   </div><!--end .fake-table__row-->
-                </div><!--end .fake-table-with-tabs-->
+                </ol><!--end .fake-table-with-tabs-->
               </section><!--end section #discography-->
 
-              <section id="search-external-sources" class="tabs__section row">
+              <section id="search-external-sources" class="tabs__section">
                 <div class="toolbar col-md">
 
                     <section class="search row align--center">

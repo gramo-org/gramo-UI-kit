@@ -31,4 +31,14 @@
   .fake-table__row--head::before {
     content: none;
   }
+
+  .fake-table__row--child {
+    margin-left: -4rem;
+    width: calc(100% + 4rem);
+    padding-left: 0;
+  }
+
+  .fake-table__toggle-container {
+    border-bottom: 0;
+  }
 }

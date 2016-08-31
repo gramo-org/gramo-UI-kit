@@ -6,6 +6,7 @@
     @extend %no-list;
     position: relative;
     z-index: 1;
+    display: flex;
 
     &__item {
       @extend .col-xs-3;
@@ -146,6 +147,7 @@
     @extend %no-list;
     background: var(--light-gray);
     padding:  0;
+    display: flex;
     justify-content: flex-start;
     @media (--tablet) { justify-content: flex-end; }
 

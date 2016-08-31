@@ -1,5 +1,5 @@
 .search {
-  @extend .container;
+  display: flex;
   margin-bottom: .5rem;
   @media (--desktop) { margin-bottom: 0; }
 
@@ -14,17 +14,13 @@
 }
 
 .search__form {
-  @extend .row;
+  display: flex;
   justify-content: center;
-  /*padding-top: .5rem;
-  padding-bottom: .5rem;*/
   position: relative;
 }
 
 input[type="text"].search__form__input {
-  @extend .col-xs;
   background: var(--gramo-white);
-
   /*Make sure the placeholder isn't poorly cut off*/
   overflow: hidden;
   text-overflow: ellipsis;
@@ -32,6 +28,10 @@ input[type="text"].search__form__input {
   border: 1px solid var(--silver);
   border-radius: 2px 0 0 2px;
   outline: none;
+  flex: 0 1 100%;
+  @media (--tablet) {
+    flex: 0 0 300px;
+  }
 
   &--large {
     padding: 1.2rem;
@@ -39,15 +39,14 @@ input[type="text"].search__form__input {
 }
 
 .search__submit {
-  @extend .col-xs-2;
+  flex: 0 0 50px;
   border: 3px solid color(var(--success) shade(15%));
   border-width: 0 0 3px 0;
   border-radius: 0 2px 2px 0;
   margin: 0 0 0 -1px;
-  align-items: center;
-  justify-content: center;
   background: var(--gramo-green);
   color: var(--gramo-white);
+  padding-top: .5rem;
 }
 
 .search__clear {
