@@ -968,9 +968,9 @@ hr{
   padding:0;
   margin:0;
 }
-.heading{
-
-  
+.heading--sub{
+  margin-top:2rem;
+  margin-bottom:1rem;
 }
 .site-wrapper{
   display:-webkit-flex;
