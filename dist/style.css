@@ -1404,9 +1404,9 @@ a:active, a:hover{
 
 @media (min-width: 960px){
   .wrapper__main{
-    -webkit-flex:1 0 auto;
-    -ms-flex:1 0 auto;
-    flex:1 0 auto;
+    -webkit-flex:1 1 60%;
+    -ms-flex:1 1 60%;
+    flex:1 1 60%;
     padding:0;
   }
 }
