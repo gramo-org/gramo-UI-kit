@@ -3171,7 +3171,7 @@ main.pull .section-header--fixed{
 }
 .bucket{
   position:relative;
-  margin-top:-3.1rem;
+  margin-top:-2.8rem;
   z-index:5;
   font-size:1.3rem;
   display:-webkit-flex;
@@ -3831,6 +3831,7 @@ tr > td:last-child{
   font-size:1.2rem;
   text-decoration:none;
   color:#504f56;
+  top:-.5rem;
 }
 
 .toggle-sidebar a::before{
@@ -3855,6 +3856,7 @@ tr > td:last-child{
 .toggle-sidebar.open a{
   color:#fff;
   margin-left:-7rem;
+  top:.2rem;
 }
 
 .toggle-sidebar.open a::before{
@@ -3865,7 +3867,7 @@ tr > td:last-child{
 
 .toggle-sidebar.open a::after{
   content:'lukk';
-  top:-0.3rem;
+  top:-0.2rem;
 }
 .x-toggle{
     display:none;
