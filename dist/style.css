@@ -1384,9 +1384,9 @@ a:active, a:hover{
 @media (min-width: 960px){
   .wrapper__sidebar{
     margin-right:2rem;
-    -webkit-flex:0 1 auto;
-    -ms-flex:0 1 auto;
-    flex:0 1 auto;
+    -webkit-flex:0 1 30%;
+    -ms-flex:0 1 30%;
+    flex:0 1 30%;
     padding:0;
   }
 }

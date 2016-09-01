@@ -10,7 +10,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 
   @media (--desktop) {
     margin-right: 2rem;
-    flex: 0 1 auto;
+    flex: 0 1 30%;
     padding: 0;
   }
 
@@ -31,7 +31,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 
 .wrapper__sidebar,
 .wrapper__main {
-  
+
   .fake-table__row {
 
     div[class*="col-"]:first-child {
