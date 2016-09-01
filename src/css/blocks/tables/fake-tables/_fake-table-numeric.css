@@ -14,7 +14,8 @@
     @extend .badge--numeric;
     margin-top: -1rem;
     left: 1.5rem;
-    top: 10%;
+    /*top: 10%;*/
+    top: 50%; 
     @media (--tablet) { top: 50%; }
   }
 
