@@ -1,6 +1,7 @@
 .search {
-  display: flex;
-  margin-bottom: .5rem;
+  /*display: flex;*/
+  flex: 0 1 100%;
+  /*margin-bottom: .5rem;*/
   @media (--desktop) { margin-bottom: 0; }
 
   &--fixed-width {
