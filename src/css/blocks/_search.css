@@ -1,12 +1,13 @@
-.search {
+/*.search {
   flex: 0 1 100%;
 
   &--padded {
     padding: 2rem 0;
   }
-}
+}*/
 
 .search__form {
+  flex: 1;
   display: flex;
   position: relative;
 
@@ -29,7 +30,7 @@ input[type="text"].search__form__input {
   outline: none;
   flex: 0 1 100%;
   @media (--desktop) {
-    flex: 0 1 300px;
+    flex: 1 0 auto;
   }
 
   &--large {
