@@ -1,13 +1,5 @@
 .search {
-  /*display: flex;*/
   flex: 0 1 100%;
-  /*margin-bottom: .5rem;*/
-  @media (--desktop) { margin-bottom: 0; }
-
-  &--fixed-width {
-    width: 300px;
-    display: inline-block;
-  }
 
   &--padded {
     padding: 2rem 0;
@@ -16,13 +8,19 @@
 
 .search__form {
   display: flex;
-  justify-content: center;
   position: relative;
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
 }
 
 input[type="text"].search__form__input {
   background: var(--gramo-white);
-  /*Make sure the placeholder isn't poorly cut off*/
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -30,8 +28,8 @@ input[type="text"].search__form__input {
   border-radius: 2px 0 0 2px;
   outline: none;
   flex: 0 1 100%;
-  @media (--tablet) {
-    flex: 0 0 300px;
+  @media (--desktop) {
+    flex: 0 1 300px;
   }
 
   &--large {
@@ -40,7 +38,7 @@ input[type="text"].search__form__input {
 }
 
 .search__submit {
-  flex: 0 0 50px;
+  flex: 0 0 60px;
   border: 3px solid color(var(--success) shade(15%));
   border-width: 0 0 3px 0;
   border-radius: 0 2px 2px 0;
@@ -68,6 +66,7 @@ input[type="text"].search__form__input {
   margin-bottom: 2rem;
 }
 
+/* For index page */
 .search__form--simple:before {
   border-radius: 2px 0 0 2px;
   background: var(--silver);

@@ -4,6 +4,7 @@
   padding: 1rem;
   margin-bottom: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   &--padded {
@@ -14,6 +15,7 @@
   }
 
   &__action {
+    flex: 1 0 auto;
     align-self: center;
     align-items: center;
     @media (--tablet) { align-items: flex-end; }
@@ -45,6 +47,10 @@
 
   &__below--borderless {
     border-width: 1px 0 0 0;
+  }
+
+  &__column {
+    flex: 0 1 20%;
   }
 }
 
