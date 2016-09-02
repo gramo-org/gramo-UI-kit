@@ -18,6 +18,10 @@
   &--right {
     justify-content: flex-end;
   }
+
+  &--fixed-width {
+    flex: 0 1 300px;
+  }
 }
 
 input[type="text"].search__form__input {

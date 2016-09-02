@@ -4760,6 +4760,12 @@ pre.prettyprint{
   justify-content:flex-end;
 }
 
+.search__form--fixed-width{
+  -webkit-flex:0 1 300px;
+  -ms-flex:0 1 300px;
+  flex:0 1 300px;
+}
+
 input[type="text"].search__form__input{
   background:#fdfdfd;
   overflow:hidden;
