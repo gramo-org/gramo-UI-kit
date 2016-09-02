@@ -3171,7 +3171,7 @@ main.pull .section-header--fixed{
   background:#50bf9e;
 }
 
-.badge--numeric, .fake-table--numeric > .fake-table__row::before, .table--numeric > .fake-table__row::before, .table--numeric tr > td:first-child::before{
+.badge--numeric, .fake-table--numeric > .fake-table__row > *:first-child::before, .table--numeric > .fake-table__row > *:first-child::before{
   font-size:1rem;
   color:#a5a4ab;
   background:#ededed;
@@ -3727,6 +3727,12 @@ tr > td:last-child{
   width:100%;
   cursor:pointer;
 }
+.fake-table__toggle-container--numeric{
+  margin-left:-4rem;
+  width:calc(100% + 4rem);
+  padding-left:6rem;
+  position:relative;
+}
 
 .fake-table__toggle-row > div{
   display:block;
@@ -3809,7 +3815,7 @@ tr > td:last-child{
   position:relative;
   padding-left:4rem;
 }
-.fake-table--numeric > .fake-table__row::before, .table--numeric > .fake-table__row::before, .table--numeric tr > td:first-child::before{
+.fake-table--numeric > .fake-table__row > *:first-child::before, .table--numeric > .fake-table__row > *:first-child::before{
   counter-increment:section;
   content:counters(section,".") " ";
   position:absolute;
@@ -3817,15 +3823,7 @@ tr > td:last-child{
   left:1.5rem;
   top:50%;
 }
-@media (min-width: 768px){
-  .fake-table--numeric > .fake-table__row::before, .table--numeric > .fake-table__row::before, .table--numeric tr > td:first-child::before{
-    top:50%;
-  }
-}
-.fake-table--numeric > .fake-table__row--expanded::before, .table--numeric > .fake-table__row--expanded::before{
-  top:2.5rem;
-}
-.fake-table--numeric > .fake-table__row--selected::before, .fake-table--numeric > .fake-table__row--expanded::before, .table--numeric > .fake-table__row--selected::before, .table--numeric > .fake-table__row--expanded::before{
+.fake-table--numeric > .fake-table__row--selected > *:first-child::before, .fake-table--numeric > .fake-table__row--expanded > *:first-child::before, .table--numeric > .fake-table__row--selected > *:first-child::before, .table--numeric > .fake-table__row--expanded > *:first-child::before{
   color:#fdfdfd;
   background:#504f56;
 }
@@ -3836,9 +3834,6 @@ tr > td:last-child{
   margin-left:-4rem;
   width:calc(100% + 4rem);
   padding-left:0;
-}
-.fake-table--numeric .fake-table__toggle-container, .table--numeric .fake-table__toggle-container{
-  border-bottom:0;
 }
 
 .toggle-sidebar{
