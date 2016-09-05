@@ -2868,6 +2868,10 @@ main.pull .content-header--fixed{
   }
 }
 
+.section-header header h1 span{
+  text-transform:none;
+}
+
 .section-header__toolbar{
   -webkit-align-self:center;
   -ms-flex-item-align:center;
