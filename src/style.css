@@ -2849,9 +2849,9 @@ main.pull .content-header--fixed{
 }
 
 .section-header header{
-  -webkit-flex:1 0 auto;
-  -ms-flex:1 0 auto;
-  flex:1 0 auto;
+  -webkit-flex:0 1 auto;
+  -ms-flex:0 1 auto;
+  flex:0 1 auto;
 }
 
 .section-header header h1{
