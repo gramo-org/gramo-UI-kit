@@ -15,7 +15,7 @@
 }
 
 .section-header header {
-  flex: 0 1 auto;
+  flex: 1 0 auto;
 
   h1 {
     text-transform: uppercase;
