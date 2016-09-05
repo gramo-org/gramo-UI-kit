@@ -1,10 +1,9 @@
-/*.search {
-  flex: 0 1 100%;
-
-  &--padded {
-    padding: 2rem 0;
+.search--with-dropdown {
+  flex: 1;
+  @media (--desktop) {
+    flex: 0 1 300px;
   }
-}*/
+}
 
 .search__form {
   flex: 1;
