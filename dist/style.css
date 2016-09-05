@@ -416,7 +416,7 @@ table{
 td, th{
   padding:0;
 }
-.row, .form__field, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .fake-table__row, .fake-table__toggle-row, .fake-table__row--child, .flash-message-wrapper{
+.row, .form__field, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item, .content-header__above, .content-header__below, .fake-table__row, .fake-table__toggle-row, .fake-table__row--child{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -2626,6 +2626,7 @@ a:active, a:hover{
   font-size:1rem;
   position:absolute;
   left:1.5rem;
+  padding-top:.25rem;
 }
 .vertical__nav__item--is-expanded > a{
   position:relative;
@@ -4511,6 +4512,9 @@ tr > td:last-child{
 }
 .flash-message-wrapper{
   overflow:hidden;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
   position:fixed;
   top:0;
   left:20rem;
@@ -4539,6 +4543,9 @@ tr > td:last-child{
   animation:fadeIn ease 1s;
   padding:.8rem 0;
   min-height:4rem;
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1;
 }
 
 @media (min-width: 960px){
