@@ -60,3 +60,24 @@
     width: 935px;
   }
 }
+
+[data-type]::before {
+  content: '';
+  margin-right: .5rem;
+  font-family: 'icomoon';
+  font-size: 1.2rem;
+  font-weight: var(--normal);
+  color: var(--off-gray);
+}
+
+[data-type="performer"]::before {
+  content: "\e916";
+}
+
+[data-type="album"]::before {
+  content: "\e917";
+}
+
+[data-type="recording"]::before {
+  content: "\e919";
+}

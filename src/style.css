@@ -3034,6 +3034,27 @@ main.pull .section-header--fixed{
     width:935px;
   }
 }
+
+[data-type]::before{
+  content:'';
+  margin-right:.5rem;
+  font-family:'icomoon';
+  font-size:1.2rem;
+  font-weight:400;
+  color:#a5a4ab;
+}
+
+[data-type="performer"]::before{
+  content:"\e916";
+}
+
+[data-type="album"]::before{
+  content:"\e917";
+}
+
+[data-type="recording"]::before{
+  content:"\e919";
+}
 .toolbar{
   background:#ededed;
   border:1px solid #d9d9dc;
@@ -3266,7 +3287,7 @@ main.pull .section-header--fixed{
 
 main.pull .bucket{
   left:8rem;
-  width:calc(100% - 6rem);
+  width:calc(100% - 8rem);
 }
 
 caption{
