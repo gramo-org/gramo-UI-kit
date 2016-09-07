@@ -90,7 +90,7 @@
   border-radius: 50%;
   text-align: center;
   padding: .3rem;
-  margin: .2rem .5rem 0 0;
+  /*margin: .2rem .5rem 0 0;*/
   width: 2rem;
   height: 2rem;
 
@@ -102,6 +102,11 @@
     &:hover {
       display: none;
     }
+  }
+
+  &--inverse {
+    color: var(--gramo-white);
+    background: var(--slate-gray);
   }
 }
 

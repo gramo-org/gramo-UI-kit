@@ -14,16 +14,16 @@
     @extend .badge--numeric;
     margin-top: -1rem;
     left: 1.5rem;
-    top: 50%;
+    top: 2.3rem;
+    @media (--tablet) { top: 50%; }
   }
 
   & > .fake-table__row--selected > *:first-child::before,
   & > .fake-table__row--expanded > *:first-child::before {
-    color: var(--gramo-white);
-    background: var(--slate-gray);
+    @extend .badge--numeric--inverse;
   }
 
-  .fake-table__row--head::before {
+  .fake-table__row--head > *:first-child::before {
     content: none;
   }
 

@@ -68,7 +68,8 @@ td.text--center,
 
 .cell--block,
 .cell--no-flex,
-.col--no-flex {
+.col--no-flex,
+.block--no-flex {
   display: block!important;
 }
 

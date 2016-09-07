@@ -4,11 +4,16 @@
     flex: 0 1 auto;
   }
 
+  & > .col--date:first-child {
+    @media (--tablet) { width: 300px; }
+
+  }
+
   & > div[class*="col-"]:not(:first-child) {
 
-    .form__label {
+    /*.form__label {
       flex: 0 1 auto;
-    }
+    }*/
 
     .form__label span {
       text-align: left;

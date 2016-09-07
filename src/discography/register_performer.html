@@ -58,15 +58,11 @@
         </a>
       </div>
       <!--- Flash message --->
-      <div class="flash-message-wrapper">
-        <div class="col-xs-12 no-padding">
-          <!-- <div class="flash-message flash-message--success">
-            <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a>
-              <button class="btn btn--small btn--inline btn--simple">Angre ?</button>
-            </p>
-          </div> -->
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success">
+          <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--simple">Angre ?</button></p>
         </div>
-      </div>
+      </div> -->
 
       <section class="container container--hd">
         <div class="bucket">
@@ -91,7 +87,7 @@
 
 
         <div class="tabs">
-          <ul class="tabs__nav tabs__nav--flexible row">
+          <ul class="tabs__nav tabs__nav--flexible">
             <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
             <li class="tabs__nav__item">
               <a href="#tab2">
@@ -108,17 +104,13 @@
           </ul>
 
           <section id="search" class="tabs__section">
-            <div class="toolbar toolbar--padded col-xs-12">
-              <div class="search search--padded row align--center">
-                <div class="col-xs-10 col-md-6">
-                  <form action="" class="search__form">
-                    <input type="text" class="search__form__input search__form__input--large" value="" placeholder="Søk..." />
-                    <button class="btn btn--success">Søk</button>
-                  </form>
-                </div><!--end .col-->
-              </div><!--end .row-->
-
+            <div class="toolbar toolbar--padded">
+              <form action="" class="search__form search__form--center">
+                <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                <button class="search__submit">Søk</button>
+              </form>
             </div><!--end .toolbar-->
+
             <div class="fake-table">
               <div class="fake-table__row fake-table__row--head">
                 <div class="col-sm-3">Tittel</div>
@@ -234,7 +226,7 @@
           <section id="tab2" class="tabs__section">
 
           </section>
-          <section id="tab3" class="tabs__section tabs__section--outline row">
+          <section id="tab3" class="tabs__section tabs__section--outline">
             <div class="wrapper wrapper--full">
               <div class="container">
                 <ul class="row tabs__section__nav">
@@ -538,7 +530,7 @@
                     </div>
                   </div>
                   <div class="tabs">
-                    <ul class='tabs__nav tabs__nav--flexible row'>
+                    <ul class='tabs__nav tabs__nav--flexible'>
                       <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger</a></li>
                       <li class='tabs__nav__item'><a href="#album">Album</a></li>
                       <li class='tabs__nav__item'><a href="#tab-3">Tab 3</a></li>
