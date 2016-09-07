@@ -1,8 +1,18 @@
 /*** Wrappers to divide the page in two columns
 Used e.g. for fake tables allowing the table to be scrollable while a toolbar/header stays in position ***/
-.wrapper--sidebar {
-  @extend .col-md;
-  @media (--desktop) { margin-right: 2rem; }
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper__sidebar {
+  flex: 1 0 100%;
+
+  @media (--desktop) {
+    margin-right: 2rem;
+    flex: 0 1 30%;
+    padding: 0;
+  }
 
   &--boxed {
     border-right: 1px solid var(--table-border-color);
@@ -10,9 +20,17 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   }
 }
 
-.wrapper--sidebar,
-.wrapper--main {
-  @media (--desktop) { padding: 0; }
+.wrapper__main {
+  flex: 1 0 100%;
+
+  @media (--desktop) {
+    flex: 1 1 60%;
+    padding: 0;
+  }
+}
+
+.wrapper__sidebar,
+.wrapper__main {
 
   .fake-table__row {
 
@@ -22,11 +40,6 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   }
 }
 
-.wrapper--main {
-  @extend .col-xs-12;
-  @extend .col-md-8;
-}
-
 .scrollable-area {
   height: calc(100vh - 25rem);
   overflow-y: auto;
@@ -34,4 +47,5 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 
 .wrapper--full {
   flex: 1 1 auto;
+  flex-direction: column;
 }

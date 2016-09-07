@@ -1,6 +1,8 @@
 .filter-items {
   font-size: 1.3rem;
   @extend %no-list;
+  padding: .5rem 0;
+  display: inline-block;
 
   a {
     text-decoration: none;

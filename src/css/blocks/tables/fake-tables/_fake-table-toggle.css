@@ -3,8 +3,13 @@
   @extend .container;
   width: 100%;
   cursor: pointer;
-  /*padding-top: 1.25rem;
-  padding-bottom: 1.25rem;*/ /* REMOVE PADDING TO MAKE FAKE TABLE ROWS THE SAME SIZE WHETHER TOGGLE OR NOT */
+}
+/* To compensate for the left-padding on fake-table--numeric */
+.fake-table__toggle-container--numeric {
+  margin-left: -4rem;
+  width: calc(100% + 4rem);
+  padding-left: 5rem;
+  position: relative; /* To position the numeric badge */
 }
 
 .fake-table__toggle-row {

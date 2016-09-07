@@ -24,6 +24,7 @@ textarea {
 /* Inputs */
 input[type="text"],
 input[type="email"],
+input[type="url"],
 input[type="password"],
 input[type="tel"],
 input[type="date"] {

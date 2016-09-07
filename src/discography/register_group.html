@@ -58,46 +58,40 @@
         </a>
       </div>
       <!--- Flash message --->
-      <div class="flash-message-wrapper">
-        <div class="col-xs-12 no-padding">
-          <!-- <div class="flash-message flash-message--success">
-            <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a>
-              <button class="btn btn--small btn--inline btn--simple">Angre ?</button>
-            </p>
-          </div> -->
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success">
+          <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--simple">Angre ?</button></p>
         </div>
-      </div>
+      </div> -->
 
       <section class="container container--hd">
-        <div class="bucket row">
-          <div class="text--bold">
+        <div class="bucket">
+          <span class="text--bold">
             Siste søk:
-          </div>
-          <div class="col-xs">
-            <ul class="bucket__list">
-              <li class="bucket__list__item">
-                <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
-                <a href="#">Aladdin Sane</a>
-              </li>
-              <li class="bucket__list__item">
-                <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
-                <a href="#">Hunky Dory</a>
-              </li>
-              <li class="bucket__list__item">
-                <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
-                <a href="#">9th Symphony</a>
-              </li>
-              <!-- <li class="bucket__list__item bucket__list__item--new"><a href="searchB-3.html"><i class="fa fa-2x fa-plus"></i></a></li> -->
-            </ul>
-          </div>
+          </span>
+          <ul class="bucket__list">
+            <li class="bucket__list__item">
+              <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
+              <a href="#">Aladdin Sane</a>
+            </li>
+            <li class="bucket__list__item">
+              <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
+              <a href="#">Hunky Dory</a>
+            </li>
+            <li class="bucket__list__item">
+              <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
+              <a href="#">9th Symphony</a>
+            </li>
+            <!-- <li class="bucket__list__item bucket__list__item--new"><a href="searchB-3.html"><i class="fa fa-2x fa-plus"></i></a></li> -->
+          </ul>
           <div class="text--right bucket__add-btn">
             <button class="btn btn--small btn--success">Nytt søk</button>
           </div>
         </div>
 
 
-        <div class="tabs container">
-          <ul class="tabs__nav tabs__nav--flexible row">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
             <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
             <li class="tabs__nav__item">
               <a href="#album">
@@ -131,16 +125,16 @@
             </li>
           </ul>
 
-          <section id="search" class="tabs__section row">
+          <section id="search" class="tabs__section">
 
           </section><!--/.tabs__section-->
-          <section id="album" class="tabs__section row">
+          <section id="album" class="tabs__section">
 
           </section>
-          <section id="performer" class="tabs__section tabs__section--outline row">
+          <section id="performer" class="tabs__section tabs__section--outline">
 
           </section><!--end /.tabs__section-->
-          <section id="group" class="tabs__section tabs__section--outline row">
+          <section id="group" class="tabs__section tabs__section--outline">
             <div class="wrapper wrapper--full">
               <div class="container">
                 <ul class="row tabs__section__nav">
@@ -233,88 +227,86 @@
                     </div>
                   </div>
 
-                  <form class="form row">
-                    <div class="col-md">
-                      <div class="row">
-                        <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
-                          Navn
-                        </div>
-                        <div class="col-sm-2 col-lg-2 hidden-on-mobile text--medium text--bold">
-                          Instrument
-                        </div>
-                        <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
-                          Statsborgerskap
-                        </div>
+                  <form class="form">
+                    <div class="row">
+                      <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                        Navn
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="David Robert Jones" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Vokal" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
+                      <div class="col-sm-2 col-lg-2 hidden-on-mobile text--medium text--bold">
+                        Instrument
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="Reeves Gabrels" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Keyboard" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
+                      <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
+                        Statsborgerskap
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="Hunt Sales" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Gitar" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="David Robert Jones" class="form__input form__input--block" disabled>
+                        </label>
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="Tony Sales" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Bass gitar" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Vokal" class="form__input form__input--block" disabled>
+                        </label>
                       </div>
-                    </div><!--end .col-md-->
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="Reeves Gabrels" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Keyboard" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="Hunt Sales" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Gitar" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="Tony Sales" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Bass gitar" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                    </div>
                   </form>
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
@@ -327,14 +319,14 @@
                       <a href="#" class="link--edit">Rediger</a>
                     </div>
                   </div>
-                  <div class="tabs container">
-                    <ul class='tabs__nav tabs__nav--flexible row'>
+                  <div class="tabs">
+                    <ul class='tabs__nav tabs__nav--flexible'>
                       <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger</a></li>
                       <li class='tabs__nav__item'><a href="#album">Album</a></li>
                       <li class='tabs__nav__item'><a href="#tab-3">Tab 3</a></li>
                       <li class='tabs__nav__item'><a href="#tab-4">Tab 4</a></li>
                     </ul>
-                    <section id="innspillinger" class="tabs__section row">
+                    <section id="innspillinger" class="tabs__section">
                       <ol class="fake-table fake-table--numeric">
                         <li class="fake-table__row fake-table__row--head fake-table__row--detached">
                           <div class="col-sm-3">Innspillingstittel</div>
@@ -502,13 +494,13 @@
                         </li><!--end .fake-table__row-->
                       </ol><!--end .fake-table-->
                     </section>
-                    <section id="album" class="tabs__section row">
+                    <section id="album" class="tabs__section">
 
                     </section>
-                    <section id="tab-3" class="tabs__section row">
+                    <section id="tab-3" class="tabs__section">
 
                     </section>
-                    <section id="tab-4" class="tabs__section row">
+                    <section id="tab-4" class="tabs__section">
 
                     </section>
                   </div>

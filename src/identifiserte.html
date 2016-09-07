@@ -53,7 +53,7 @@
         </a>
       </div>
 
-      
+
       <section class="container container--hd">
         <div class="section-header section-header--with-border">
           <header>
@@ -65,68 +65,56 @@
       </section>
 
       <section class="container container--hd">
-        <div class="tabs container">
-          <ul class='tabs__nav row'>
+        <div class="tabs">
+          <ul class='tabs__nav'>
             <li class='tabs__nav__item'><a href="#nrk">NRK</a></li>
             <li class='tabs__nav__item'><a href="#p4">P4</a></li>
             <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
             <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
           </ul>
-          <div class="row toolbar toolbar--padded">
-            <div class="col-xs-6 col-md-3 col-lg-2 align--bottom">
-              <label class="form__label text--small no-margin--right">Velg perioden
+          <div class="toolbar toolbar--padded">
 
-                  <select class="select select--full text--medium">
-                    <option>Denne uken</option>
-                    <option>Denne måneden</option>
-                    <option>I år</option>
-                    <option>Egen definert</option>
-                  </select>
+              <div class="toolbar__column">
+                <label for="select-period" class="form__label text--small no-margin--right">
+                  Velg periode
+                </label>
+              <select tabindex="0" class="time-period select select--block ember-view x-select"><option value="today" class="ember-view x-option">        I dag
+              </option><option value="week" class="ember-view x-option">        Denne uken
+              </option><option value="month" class="ember-view x-option">        Denne måneden
+              </option><option value="year" class="ember-view x-option">        I år
+              </option><option value="custom" class="ember-view x-option">        Egendefinert
+              </option>
+              </select>  </div>
+              <div class="toolbar__column">
+                <label class="form__label text--small">
+                  Matcher
+                </label>
 
-              </label>
-            </div>
-            <div class="col-xs-6 col-md-3 col-lg-2 align--bottom">
-              <label class="form__label text--small">Matcher</label>
-              <div class="searchable-list">
-                <div class="searchable-list__heading">
-                  <span class="searchable-list__selected">Vis alle</span>
-                </div>
-                <div class="searchable-list__dropdown">
-                  <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
-                  <ul>
-                    <li class="searchable-list__option">Ole Jacob</li>
-                    <li class="searchable-list__option">Morten Møller</li>
-                  </ul>
-                </div>
+                <div class="ember-view searchable-list"><div class="searchable-list__heading searchable-list__heading" tabindex="0" data-ember-action="1118">
+              <span class="searchable-list__selected">Vis alle</span>
               </div>
-            </div>
-            <div class="col-xs-12 col-md-4 col-lg-7 align--bottom">
-              <label class="form__label text--small">Fri tekst søk</label>
-              <div class="search">
-                <div class="search__form">
-                  <input type="text" class="search__form__input" value="" placeholder="Søk..." />
-                </div>
+              <div class="searchable-list__dropdown">
+              <input type="text" class="ember-view ember-text-field searchable-list__search form__input form__input--block">
+              <ul>
+              <!---->      <li class="searchable-list__option " data-ember-action="1129">
+                    Thorbjørn
+                  </li>
+              </ul>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-2 col-lg-1 align--bottom">
-              <button class="btn btn--inline btn--secondary">Filtrer</button>
-            </div>
-            <div class="col-xs-12">
-              <div class="row toolbar__below toolbar__below--transparent">
-                <div class="col-xs-6 col-md-3 col-lg-2">
-                  <label class="form__label form__label--block form__label--date text--small">Fra
-                    <input type="date" class="form__input form__input--block no-margin--top">
-                  </label>
-                </div>
-                <div class="col-xs-6 col-md-3  col-lg-2">
-                  <label class="form__label form__label--block form__label--date text--small">Til
-                    <input type="date" class="form__input form__input--block no-margin--top">
-                  </label>
-                </div>
-              </div><!--/.row-->
-            </div><!--/.col-lg-12-->
-          </div><!--/.row .toolbar-->
-          <section id="nrk" class="tabs__section row">
+              </div>
+              </div>
+              <div class="toolbar__action align--right off-lg-4">
+                <label for="filter-input-value" class="form__label text--small">
+                  Fri tekst søk
+                </label>
+                <form class="search__form search__form--right">
+                  <input id="filter-input-value" placeholder="Søk etter tittel eller artist" type="text" class="ember-view ember-text-field search__form__input">
+                  <button class="search__submit" data-ember-action="1131"><i class="icon--search"></i></button>
+                </form>
+              </div>
+
+          </div>
+          <section id="nrk" class="tabs__section">
             <div class="fake-table fake-table--detached">
               <div class="fake-table__row fake-table__row--head">
                 <div class="col-sm-3">
@@ -210,15 +198,15 @@
               </div>
             </div><!--/.fake-table-->
           </section>
-          <section id="p4" class="tabs__section row">
+          <section id="p4" class="tabs__section">
             <!--Table P4-->
 
           </section>
-          <section id="radio-norge" class="tabs__section row">
+          <section id="radio-norge" class="tabs__section">
             <!--Table Radio Norge-->
 
           </section>
-          <section id="local-radio" class="tabs__section row">
+          <section id="local-radio" class="tabs__section">
             <!--Table Local Radio-->
 
           </section>

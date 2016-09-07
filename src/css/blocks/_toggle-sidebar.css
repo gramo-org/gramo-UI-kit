@@ -17,6 +17,7 @@
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--slate-gray);
+    top: -.5rem;
 
     &::before {
       content: "\e914";
@@ -40,6 +41,7 @@
     a {
       color: #fff;
       margin-left: -7rem;
+      top: .2rem;
     }
 
     a::before {
@@ -50,7 +52,7 @@
 
     a::after {
       content: 'lukk';
-      top: -0.3rem;
+      top: -0.2rem;
     }
   }
 }

@@ -6,6 +6,7 @@
     @extend %no-list;
     position: relative;
     z-index: 1;
+    display: flex;
 
     &__item {
       @extend .col-xs-3;
@@ -49,6 +50,7 @@
 
       &:before {
         font-family: 'icomoon';
+        font-weight: var(--normal);
         font-size: 100%;
         position: relative;
         top: .2rem;
@@ -70,7 +72,8 @@
         content: "\e916";
         top: .12rem;
       }
-      &--label:before {
+      &--label:before,
+      &--owner:before {
         content: "\e918";
         top: .12rem;
       }
@@ -146,6 +149,7 @@
     @extend %no-list;
     background: var(--light-gray);
     padding:  0;
+    display: flex;
     justify-content: flex-start;
     @media (--tablet) { justify-content: flex-end; }
 

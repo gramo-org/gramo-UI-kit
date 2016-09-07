@@ -58,37 +58,33 @@
         </a>
       </div>
       <!--- Flash message --->
-      <div class="flash-message-wrapper">
-        <div class="col-xs-12 no-padding">
-          <div class="flash-message flash-message--success">
-            <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--simple">Angre ?</button></p>
-          </div>
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success">
+          <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--simple">Angre ?</button></p>
         </div>
-      </div>
+      </div> -->
 
       <section class="container container--hd">
-        <div class="bucket row">
-          <div class="align--vertical-center text--bold">
+        <div class="bucket">
+          <span class="align--vertical-center text--bold">
             Siste søk:
-          </div>
-          <div class="col-xs">
-            <ul class="bucket__list">
-              <li class="bucket__list__item">
-                <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
-                <a href="#">Aladdin Sane</a>
-              </li>
-              <li class="bucket__list__item">
-                <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
-                <a href="#">Love Me Tender</a>
-              </li>
-              <!-- <li class="bucket__list__item bucket__list__item--new"><a href="searchB-3.html"><i class="fa fa-2x fa-plus"></i></a></li> -->
-            </ul>
-          </div>
+          </span>
+          <ul class="bucket__list">
+            <li class="bucket__list__item">
+              <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
+              <a href="#">Aladdin Sane</a>
+            </li>
+            <li class="bucket__list__item">
+              <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
+              <a href="#">Love Me Tender</a>
+            </li>
+            <!-- <li class="bucket__list__item bucket__list__item--new"><a href="searchB-3.html"><i class="fa fa-2x fa-plus"></i></a></li> -->
+          </ul>
         </div>
 
 
-        <div class="tabs container">
-          <ul class="tabs__nav tabs__nav--flexible row">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
             <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
             <li class="tabs__nav__item">
               <a href="#tab2">
@@ -98,18 +94,14 @@
             </li>
           </ul>
 
-          <section id="search" class="tabs__section row">
-            <div class="toolbar toolbar--padded col-xs-12">
-              <div class="search search--padded row align--center">
-                <div class="col-xs-10 col-md-6">
-                  <form action="" class="search__form">
-                    <input type="text" class="search__form__input search__form__input--large" value="" placeholder="Søk..." />
-                    <button class="btn btn--success">Søk</button>
-                  </form>
-                </div><!--end .col-->
-              </div><!--end .row-->
-
+          <section id="search" class="tabs__section">
+            <div class="toolbar toolbar--padded">
+              <form action="" class="search__form search__form--center">
+                <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                <button class="search__submit">Søk</button>
+              </form>
             </div><!--end .toolbar-->
+
             <div class="fake-table">
               <div class="fake-table__row fake-table__row--head">
                 <div class="col-sm-3">
@@ -252,24 +244,23 @@
               </div>
             </div><!--/.fake-table-->
           </section><!--/.tabs__section-->
-          <section id="tab2" class="tabs__section tabs__section--outline row">
+          <section id="tab2" class="tabs__section tabs__section--outline">
             <div class="wrapper wrapper--full">
-              <div class="container">
-                <ul class="row tabs__section__nav">
-                  <li class="tabs__section__nav__item"><a href="#innspillingsinfo">Innspillingsinfo</a></li>
-                  <li class="tabs__section__nav__item"><a href="#produsenter">Produsenter</a></li>
-                  <li class="tabs__section__nav__item"><a href="#utover">Utøver</a></li>
-                  <li class="tabs__section__nav__item"><a href="#">Album</a></li>
-                </ul>
-              </div>
+              <ul class="tabs__section__nav">
+                <li class="tabs__section__nav__item"><a href="#innspillingsinfo">Innspillingsinfo</a></li>
+                <li class="tabs__section__nav__item"><a href="#produsenter">Produsenter</a></li>
+                <li class="tabs__section__nav__item"><a href="#utover">Utøver</a></li>
+                <li class="tabs__section__nav__item"><a href="#">Album</a></li>
+              </ul>
               <div class="scrollable-area">
                 <section id="innspillingsinfo" class="container container--padded">
 
                   <header class="infobar">
                     <div class="infobar__left">
                       <p class="infobar__meta">EMI Recorded Music Norway AS (100%)</p>
-                      <h1 class="infobar__heading">Aladdin Sane</h1>
-                      <h3>David Bowie</h3>
+                      <h1 class="infobar__heading" data-type="recording">Aladdin Sane</h1>
+                      <h3 data-type="performer">David Bowie</h3>
+                      <h3 data-type="album">Aladdin Sane</h3>
                     </div>
                   </header>
 
@@ -432,192 +423,170 @@
                     </div>
                   </div>
 
-                  <form class="form row">
-
-                      <div class="col-md">
-                        <header class="row text--medium">
-                          <div class="col-md-1 col--no-flex">
-                            <span class="text--bold">Fra:</span> 27.11.2015
-                          </div>
-                          <div class="col-md-1 col--no-flex">
-                            <span class="text--bold">til:</span> 31.12.2015
-                          </div>
-                        </header>
-                        <div class="row">
-                          <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
-                            Produsentsnavn
-                          </div>
-                          <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
-                            Territorie
-                          </div>
-                          <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
-                            % Andel
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-5 col-lg-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                              <input type="text" value="RCA UK" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-4 col-lg-2">
-                            <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                              <input type="text" value="Worldwide" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-3 col-lg-1">
-                            <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                              <input type="text" value="50%" class="form__input form__input--block">
-                            </label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-5 col-lg-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                              <input type="text" value="EMI RECORDED MUSIC NORWAY" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-4 col-lg-2">
-                            <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                              <input type="text" value="REGIONAL +" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-3 col-lg-1">
-                            <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                              <input type="text" value="30%" class="form__input form__input--block">
-                            </label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-5 col-lg-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                              <input type="text" value="UKJENT" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-4 col-lg-2">
-                            <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                              <input type="text" value="-" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-3 col-lg-1">
-                            <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                              <input type="text" value="20%" class="form__input form__input--block">
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__section--action">
-                          <a class="link--no-line link--inline">Vis alle</a>
-                        </div>
-                        <header class="row text--medium">
-                          <div class="col-md-1 col--no-flex">
-                            <span class="text--bold">Fra:</span> 27.11.2015
-                          </div>
-                          <div class="col-md-1 col--no-flex">
-                            <span class="text--bold">til:</span> 31.12.2015
-                          </div>
-                        </header>
-                        <div class="row">
-                          <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
-                            Produsentsnavn
-                          </div>
-                          <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
-                            Territorie
-                          </div>
-                          <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
-                            % Andel
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-5 col-lg-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                              <input type="text" value="RCA UK" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-4 col-lg-2">
-                            <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                              <input type="text" value="Worldwide" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-3 col-lg-1">
-                            <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                              <input type="text" value="50%" class="form__input form__input--block">
-                            </label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-5 col-lg-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                              <input type="text" value="EMI RECORDED MUSIC NORWAY" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-4 col-lg-2">
-                            <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                              <input type="text" value="REGIONAL +" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-3 col-lg-1">
-                            <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                              <input type="text" value="30%" class="form__input form__input--block">
-                            </label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-5 col-lg-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                              <input type="text" value="UKJENT" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-4 col-lg-2">
-                            <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                              <input type="text" value="-" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-3 col-lg-1">
-                            <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                              <input type="text" value="20%" class="form__input form__input--block">
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__section--action">
-                          <a class="link--no-line link--inline">Legg til produsent</a>
-                        </div>
-                      </div><!--end .col-md-->
-
+                  <form class="form">
+                    <header class="row text--medium">
+                      <div class="col-md-1 col--no-flex">
+                        <span class="text--bold">Fra:</span> 27.11.2015
+                      </div>
+                      <div class="col-md-1 col--no-flex">
+                        <span class="text--bold">til:</span> 31.12.2015
+                      </div>
+                    </header>
+                    <div class="row">
+                      <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
+                        Produsentsnavn
+                      </div>
+                      <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
+                        Territorie
+                      </div>
+                      <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
+                        % Andel
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-lg-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                          <input type="text" value="RCA UK" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-lg-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                          <input type="text" value="Worldwide" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-1">
+                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                          <input type="text" value="50%" class="form__input form__input--block">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-lg-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                          <input type="text" value="EMI RECORDED MUSIC NORWAY" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-lg-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                          <input type="text" value="REGIONAL +" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-1">
+                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                          <input type="text" value="30%" class="form__input form__input--block">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-lg-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                          <input type="text" value="UKJENT" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-lg-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                          <input type="text" value="-" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-1">
+                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                          <input type="text" value="20%" class="form__input form__input--block">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form__section--action">
+                      <a class="link--no-line link--inline">Vis alle</a>
+                    </div>
+                    <header class="row text--medium">
+                      <div class="col-md-1 col--no-flex">
+                        <span class="text--bold">Fra:</span> 27.11.2015
+                      </div>
+                      <div class="col-md-1 col--no-flex">
+                        <span class="text--bold">til:</span> 31.12.2015
+                      </div>
+                    </header>
+                    <div class="row">
+                      <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
+                        Produsentsnavn
+                      </div>
+                      <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
+                        Territorie
+                      </div>
+                      <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
+                        % Andel
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-lg-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                          <input type="text" value="RCA UK" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-lg-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                          <input type="text" value="Worldwide" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-1">
+                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                          <input type="text" value="50%" class="form__input form__input--block">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-lg-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                          <input type="text" value="EMI RECORDED MUSIC NORWAY" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-lg-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                          <input type="text" value="REGIONAL +" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-1">
+                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                          <input type="text" value="30%" class="form__input form__input--block">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-lg-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                          <input type="text" value="UKJENT" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-lg-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                          <input type="text" value="-" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-1">
+                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                          <input type="text" value="20%" class="form__input form__input--block">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form__section--action">
+                      <a class="link--no-line link--inline">Legg til produsent</a>
+                    </div>
                   </form>
 
-                  <div class="box box--gray box--full no-padding--top">
-                    <div class="row">
-                      <div class="col-xs">
-                        <h4 class="heading--sub">1. Velg dato rettigheter gjelder for</h4>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-2 col-xs-6">
-                        <label class="form__label form__label--date">
-                          Fra
-                          <input id="ember4028" type="date" class="form__input from-deviation ember-view">
-                        </label>
-                      </div>
-                      <div class="col-md-2 col-xs-6">
-                        <label class="form__label form__label--date">
-                          Til
-                          <input id="ember4029" type="date" class="form__input to-deviation ember-view">
-                        </label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs">
-                        <h4 class="heading--sub">2. Velg produsent</h4>
-                      </div>
-                    </div>
-                    <div class="search row">
-                      <div class="col-xs-12 col-md-6">
-                        <form action="" class="search__form">
-                          <input type="text" class="search__form__input" value="" placeholder="Søk etter produsent..." />
-                          <button class="search__submit"><i class="icon--search"></i></button>
-                        </form>
-                      </div>
-                    </div>
+                  <div class="toolbar toolbar--padded block--no-flex">
+                    <h4 class="heading--sub">1. Velg dato rettigheter gjelder for</h4>
+                    <label class="form__label form__label--date">
+                      Fra
+                      <input id="ember4028" type="date" class="form__input from-deviation ember-view">
+                    </label>
+                    <label class="form__label form__label--date">
+                      Til
+                      <input id="ember4029" type="date" class="form__input to-deviation ember-view">
+                    </label>
+                    <h4 class="heading--sub">2. Velg produsent</h4>
+                    <form action="" class="search__form">
+                      <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                      <button class="search__submit">Søk</button>
+                    </form>
                     <table class="table table--fluid">
                       <thead>
                         <tr>
@@ -648,278 +617,259 @@
                     </div>
                   </div>
 
-                  <form class="form row">
-                    <div class="col-md">
-                      <div class="row">
-                        <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
-                          Navn
-                        </div>
-                        <div class="col-sm-2 col-lg-2 hidden-on-mobile text--medium text--bold">
-                          Instrument
-                        </div>
-                        <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
-                          Nasjonalitet
-                        </div>
-                        <div class="col-sm-3 col-lg-2 text--center hidden-on-mobile text--medium text--bold">
-                          Rolle
-                        </div>
+                  <form class="form">
+                    <div class="row">
+                      <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                        Navn
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="David Bowie (David Robert Jones)" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Voice" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-lg-2">
-                          <div class="form__label form__label--hidden"><span>Rolle</span></div>
-                          <div class="radio-group">
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>A</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>B</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>C</span>
-                              <span class="check"></span>
-                            </label>
-                          </div>
-                        </div>
-
+                      <div class="col-sm-2 col-lg-2 hidden-on-mobile text--medium text--bold">
+                        Instrument
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="Mike Garson" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Piano" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-lg-2">
-                          <div class="form__label form__label--hidden"><span>Rolle</span></div>
-                          <div class="radio-group">
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>A</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>B</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>C</span>
-                              <span class="check"></span>
-                            </label>
-                          </div>
-                        </div>
-
+                      <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
+                        Nasjonalitet
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="David Sanborn" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Saxophone" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-lg-2">
-                          <div class="form__label form__label--hidden"><span>Rolle</span></div>
-                          <div class="radio-group">
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>A</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>B</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>C</span>
-                              <span class="check"></span>
-                            </label>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="Mick Ronson" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Gitar" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-lg-2">
-                          <div class="form__label form__label--hidden"><span>Rolle</span></div>
-                          <div class="radio-group">
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>A</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>B</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>C</span>
-                              <span class="check"></span>
-                            </label>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                            <input type="text" value="Trevor Bolder" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                            <input type="text" value="Bass gitar" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
-                            <input type="text" value="Storbritania" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-lg-2">
-                          <div class="form__label form__label--hidden"><span>Rolle</span></div>
-                          <div class="radio-group">
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>A</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>B</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>C</span>
-                              <span class="check"></span>
-                            </label>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div class="form__section form__section--action">
-                        <a class="link--no-line" href="#">Legg til utøver</a>
-                      </div>
-                    </div><!--end .col-md-->
-                  </form>
-
-                  <div class="box box--gray box--full">
-                    <div class="search row align--center">
-                      <div class="col-xs-12 col-md-6">
-                        <form action="" class="search__form">
-                          <input type="text" class="search__form__input" value="" placeholder="Søk etter utøver..." />
-                          <button class="search__submit"><i class="icon--search"></i></button>
-                        </form>
+                      <div class="col-sm-3 col-lg-2 text--center hidden-on-mobile text--medium text--bold">
+                        Rolle
                       </div>
                     </div>
-                    <table class="table table--fluid">
-                      <thead>
-                        <tr>
-                          <th>Navn</th>
-                          <th>Alias</th>
-                          <th>Periode</th>
-                          <th>Instrument</th>
-                          <th>Nasjonalitet</th>
-                          <th class="text--center">Rolle</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="table__row--disabled">
-                          <td data-label="Navn">John Bonham</td>
-                          <td class="table__cell--truncated" data-label="Alias">John Bonham, Bonzo, The Beast</td>
-                          <td data-label="Periode">1947 - 1981</td>
-                          <td data-label="Instrument">Trommer</td>
-                          <td data-label="Nasjonalitet">Storbritannia</td>
-                          <td data-label="Rolle" class="text--center">
-                            <span>Allerede valgt</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td data-label="Navn">John Bonham</td>
-                          <td data-label="Alias"></td>
-                          <td data-label="Periode">1947 - 1981</td>
-                          <td data-label="Instrument">Trommer</td>
-                          <td data-label="Nasjonalitet">Storbritannia</td>
-                          <td data-label="Rolle" class="text--center">
-                            <div class="radio-group no-margin">
-                              <label class="form__label">
-                                <input type="checkbox" name="role2">
-                                <span>A</span>
-                                <span class="check"></span>
-                              </label>
-                              <label class="form__label">
-                                <input type="checkbox" name="role2">
-                                <span>B</span>
-                                <span class="check"></span>
-                              </label>
-                              <label class="form__label">
-                                <input type="checkbox" name="role2">
-                                <span>C</span>
-                                <span class="check"></span>
-                              </label>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div><!--/ .toolbar-->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="David Bowie (David Robert Jones)" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Voice" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-2">
+                        <div class="form__label form__label--hidden"><span>Rolle</span></div>
+                        <div class="radio-group">
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>A</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>B</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>C</span>
+                            <span class="check"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="Mike Garson" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Piano" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-2">
+                        <div class="form__label form__label--hidden"><span>Rolle</span></div>
+                        <div class="radio-group">
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>A</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>B</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>C</span>
+                            <span class="check"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="David Sanborn" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Saxophone" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-2">
+                        <div class="form__label form__label--hidden"><span>Rolle</span></div>
+                        <div class="radio-group">
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>A</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>B</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>C</span>
+                            <span class="check"></span>
+                          </label>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="Mick Ronson" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Gitar" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-2">
+                        <div class="form__label form__label--hidden"><span>Rolle</span></div>
+                        <div class="radio-group">
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>A</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>B</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>C</span>
+                            <span class="check"></span>
+                          </label>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="Trevor Bolder" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Bass gitar" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Nasjonalitet</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-2">
+                        <div class="form__label form__label--hidden"><span>Rolle</span></div>
+                        <div class="radio-group">
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>A</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>B</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2">
+                            <span>C</span>
+                            <span class="check"></span>
+                          </label>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="form__section form__section--action">
+                      <a class="link--no-line" href="#">Legg til utøver</a>
+                    </div>
+                  </form>
+
+                  <div class="toolbar toolbar--padded">
+                    <form action="" class="search__form search__form--center">
+                      <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                      <button class="search__submit"><i class="icon--search"></i></button>
+                    </form>
+                  </div><!--end .toolbar-->
+
+                  <table class="table table--fluid">
+                    <thead>
+                      <tr>
+                        <th>Navn</th>
+                        <th>Periode</th>
+                        <th>Instrument</th>
+                        <th>Nasjonalitet</th>
+                        <th class="text--center">Rolle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-label="Navn">John Bonham</td>
+                        <td data-label="Periode">1947 - 1981</td>
+                        <td data-label="Instrument">Trommer</td>
+                        <td data-label="Nasjonalitet">Storbritannia</td>
+                        <td data-label="Rolle" class="text--center">
+                          <div class="radio-group no-margin">
+                            <label class="form__label">
+                              <input type="checkbox" name="role2">
+                              <span>A</span>
+                              <span class="check"></span>
+                            </label>
+                            <label class="form__label">
+                              <input type="checkbox" name="role2">
+                              <span>B</span>
+                              <span class="check"></span>
+                            </label>
+                            <label class="form__label">
+                              <input type="checkbox" name="role2">
+                              <span>C</span>
+                              <span class="check"></span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
                 <section id="utover" class="container container--padded">

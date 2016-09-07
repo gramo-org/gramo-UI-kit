@@ -34,9 +34,10 @@
     width: 2rem;
     height: 2rem;
     padding: 0;
-    margin: 0.2rem auto 0 auto;
+    margin: 0 auto;
     display: inline-block;
     text-align: center;
+    padding-top: .2rem;
     @media (--desktop) {
       margin-left: 0.5rem;
     }
@@ -89,7 +90,7 @@
   border-radius: 50%;
   text-align: center;
   padding: .3rem;
-  margin: .2rem .5rem 0 0;
+  /*margin: .2rem .5rem 0 0;*/
   width: 2rem;
   height: 2rem;
 
@@ -101,6 +102,11 @@
     &:hover {
       display: none;
     }
+  }
+
+  &--inverse {
+    color: var(--gramo-white);
+    background: var(--slate-gray);
   }
 }
 
