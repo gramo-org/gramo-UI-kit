@@ -1861,6 +1861,7 @@ a:active, a:hover{
 }
 .radio-group input[disabled] ~ span{
   opacity:0.5;
+  cursor:not-allowed;
 }
 .select{
   border:1px solid #d9d9dc;
@@ -3606,13 +3607,35 @@ tr > td:last-child{
 .table-summary__row--current .table-summary__cell--sum b{
   font-size:4.2rem;
 }
+.table__cell--truncated{
+  position:relative;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+@media (min-width: 960px){
+  .table__cell--truncated{
+    max-width:100px;
+  }
+}
+.table__cell--truncated::after{
+  content:'';
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  background:linear-gradient(to right, transparent 120px, #fdfdfd);
+}
 
+tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--truncated::after{
+  background:linear-gradient(to right, transparent 120px, #f9f9f9);
+}
 
 .fake-table{
   margin:0;
   min-width:100%;
 }
-
 
 .fake-table--detached{
   margin-top:2rem;
