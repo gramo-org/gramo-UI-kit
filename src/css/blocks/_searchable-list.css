@@ -9,6 +9,10 @@
     min-width: 200px;
   }
 
+  &--fluid {
+    min-width: 0;
+  }
+
   &__heading {
     position: relative;
     height: 30px;

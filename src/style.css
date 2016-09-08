@@ -1910,6 +1910,9 @@ a:active, a:hover{
     min-width:200px;
   }
 }
+.searchable-list--fluid{
+  min-width:0;
+}
 .searchable-list__heading{
   position:relative;
   height:30px;
