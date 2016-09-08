@@ -1975,10 +1975,10 @@ a:active, a:hover{
     left:137px;
   }
 }
-.form__input--numeric{
+input[type="number"]{
   position:relative;
 }
-.form__input--numeric::-webkit-outer-spin-button, .form__input--numeric::-webkit-inner-spin-button{
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button{
   -webkit-appearance:none;
   background:#a5a4ab url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
   width:1em;
@@ -1989,7 +1989,7 @@ a:active, a:hover{
   right:0;
   bottom:0;
 }
-.form__input--numeric::-webkit-inner-spin-button:hover, .form__input--numeric::-webkit-inner-spin-button:active{
+input[type="number"]::-webkit-inner-spin-button:hover, input[type="number"]::-webkit-inner-spin-button:active{
   box-shadow:0 0 2px #0CF;
   opacity:.8;
 }
