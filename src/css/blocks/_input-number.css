@@ -1,4 +1,5 @@
-input[type="number"] {
+input[type="number"],
+input[type="time"] {
   position: relative;
 
   /* Spin Buttons modified */
