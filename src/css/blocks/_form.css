@@ -145,11 +145,3 @@
     /*margin-top: 0.25rem;*/
   }
 }
-
-/* Numeric inputs */
-.form__input[type="number"],
-.form__input[type="time"] {
-  padding: 0.5rem 0 0.5rem 0.3rem!important;
-  text-align: center;
-  height: 3rem;
-}
