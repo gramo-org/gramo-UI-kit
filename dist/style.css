@@ -1893,7 +1893,11 @@ a:active, a:hover{
   border:1px solid #d9d9dc;
   text-align:left;
   padding:0 0.25rem;
-  min-width:200px;
+}
+@media (min-width: 768px){
+  .searchable-list{
+    min-width:200px;
+  }
 }
 .searchable-list__heading{
   position:relative;
