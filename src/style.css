@@ -1894,7 +1894,7 @@ a:active, a:hover{
   text-align:left;
   padding:0 0.25rem;
 }
-@media (min-width: 768px){
+@media (min-width: 960px){
   .searchable-list{
     min-width:200px;
   }
