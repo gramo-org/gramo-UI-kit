@@ -26,3 +26,7 @@ input[type="time"] {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+input[type="number"] {
+  max-width: 100px;
+}

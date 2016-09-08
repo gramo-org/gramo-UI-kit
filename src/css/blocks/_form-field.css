@@ -37,6 +37,16 @@
     }
   }
 
+   &__action--delete {
+    position: absolute;
+    right: -1rem;
+    bottom: 0;
+
+    @media (--tablet) {
+      position: static;
+    }
+  }
+
   .form__label--required {
     &:before {
       content: none;
