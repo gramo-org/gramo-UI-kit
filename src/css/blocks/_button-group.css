@@ -38,10 +38,10 @@
       margin: 0 0.5rem;
     }
 
-    &--success {
+    &--primary {
       @extend %full-border;
-      border-color: color(var(--gramo-green) shade(2%));
-      border-bottom-color: color(var(--gramo-green) shade(15%));
+      border-color: color(var(--gramo-blue) shade(2%));
+      border-bottom-color: color(var(--gramo-blue) shade(15%));
     }
 
     &--white:last-child {

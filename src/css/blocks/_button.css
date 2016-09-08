@@ -56,43 +56,6 @@
     }
   }
 
-  &--success {
-    border-color: color(var(--success) shade(15%));
-    background-color: var(--success);
-
-    &:hover {
-       background-color: color(var(--success) shade(25%));
-    }
-  }
-
-  &--info {
-    border-color: color(var(--info) shade(15%));
-    background-color: var(--info);
-
-    &:hover {
-       background-color: color(var(--info) shade(25%));
-    }
-  }
-
-  &--error,
-  &--hot {
-    border-color: color(var(--error) shade(15%));
-    background-color: var(--error);
-
-    &:hover {
-       background-color: color(var(--error) shade(25%));
-    }
-  }
-
-  &--white {
-    background-color: var(--gramo-white);
-    color: var(--gramo-black);
-    border: 0;
-    &:hover {
-       background-color: color(var(--x-light-gray) shade(10%));
-    }
-  }
-
   /*** Button Variations ***/
 
   &--outline {
@@ -107,7 +70,7 @@
     }
   }
 
-  &--simple {
+  &--borderless {
     border: 0;
   }
 
@@ -122,37 +85,5 @@
     width: 100%;
     margin-bottom: 1rem;
     text-transform: uppercase;
-  }
-
-  &--link {
-    @media (--tablet) {
-      color: var(--off-gray);
-      border: 0;
-      background: none;
-    }
-  }
-
-/*** Button Sizes ***/
-
-  &--large {
-    padding: 1.3rem 2rem;
-  }
-
-  &--medium {
-    @media (--tablet) {
-      padding: .9rem 2rem;
-    }
-  }
-
-  &--small {
-    @media (--tablet) {
-      padding: .3rem 2rem;
-    }
-  }
-
-  /*** Buttons with icons ***/
-  &--small > i[class^="icon--"] {
-    font-size: 1rem;
-    margin-right: .5rem;
   }
 }
