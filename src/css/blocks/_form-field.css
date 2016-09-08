@@ -39,11 +39,11 @@
 
    &__action--delete {
     position: absolute;
-    right: 1rem;
+    right: -0.5rem;
     top: 4rem;
 
     @media (--tablet) {
-      bottom: 1rem;
+      top: 1rem;
     }
 
     @media (--hd) {
