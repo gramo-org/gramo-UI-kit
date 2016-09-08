@@ -14,6 +14,7 @@ input[type="time"] {
       top: 0;
       right: 0;
       bottom: 0;
+      height: 100%;
   }
   &::-webkit-inner-spin-button:hover,
   &::-webkit-inner-spin-button:active{
@@ -22,5 +23,6 @@ input[type="time"] {
 }
 
 input[type="time"] {
-  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
