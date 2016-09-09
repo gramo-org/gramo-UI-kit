@@ -2080,6 +2080,7 @@ input[type="number"]{
 
 .horizontal-rule--spacer{
   margin-bottom:2rem;
+  background:none;
 }
 .horizontal-rule--stretch{
 
