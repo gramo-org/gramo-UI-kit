@@ -1459,7 +1459,8 @@ a:active, a:hover{
   left:-4rem;
   top:-1.5rem;
   right:-3rem;
-  bottom:0;
+  bottom:1rem;
+  margin-bottom:1rem;
   background:#f9f9f9;
   z-index:-1;
 }
@@ -2203,12 +2204,10 @@ input[type="number"]{
   margin-bottom:1rem;
   text-transform:uppercase;
 }
-@media (min-width: 768px){
-  .btn--link{
-    color:#a5a4ab;
-    border:0;
-    background:none;
-  }
+.btn--link{
+  color:#0095da;
+  border:0;
+  background:none;
 }
 .btn--large{
   padding:1.3rem 2rem;

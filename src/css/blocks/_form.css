@@ -20,7 +20,8 @@
       left: -4rem;
       top: -1.5rem;
       right: -3rem;
-      bottom: 0;
+      bottom: 1rem;
+      margin-bottom: 1rem;
       background: var(--x-light-gray);
       z-index: -1;
     }
