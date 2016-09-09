@@ -211,3 +211,7 @@ td.text--center,
   display: inline-block;
   margin: 0 1rem;
 }
+
+.row--spaced {
+  margin-bottom: 1rem;
+}

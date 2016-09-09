@@ -240,6 +240,10 @@ td.text--center, .fake-table__row > *.text--center{
   display:inline-block;
   margin:0 1rem;
 }
+
+.row--spaced{
+  margin-bottom:1rem;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 html{
@@ -3127,9 +3131,6 @@ main.pull .section-header--fixed{
     padding-left:3rem;
     padding-right:3rem;
   }
-}
-.toolbar--spaced{
-  margin-top:2rem;
 }
 .toolbar__action{
   -webkit-flex:1 0 auto;
