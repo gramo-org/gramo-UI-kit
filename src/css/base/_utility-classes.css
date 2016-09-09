@@ -3,7 +3,7 @@
 }
 
 .text--right {
-  text-align: right!important;
+  @media (--desktop) { text-align: right!important; }
 }
 
 .text--center {
