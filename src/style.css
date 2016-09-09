@@ -222,6 +222,10 @@ td.text--center, .fake-table__row > *.text--center{
   display:inline-block;
   vertical-align:middle;
 }
+
+.input--inline{
+  display:inline-block;
+}
 .text--inline, .list--inline, .infobar__meta{
   display:inline;
 }

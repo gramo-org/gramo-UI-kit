@@ -190,6 +190,12 @@ td.text--center,
   vertical-align: middle;
 }
 
+/*** input--inline ***/
+
+.input--inline {
+  display: inline-block;
+}
+
 /*** Inline items ***/
 .text--inline,
 .list--inline {
