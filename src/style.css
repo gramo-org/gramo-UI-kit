@@ -1453,13 +1453,17 @@ a:active, a:hover{
   margin-bottom:0;
 }
 
+  .form__fieldset--is-editing{
+  margin-bottom:4rem;
+}
+
   .form__fieldset--is-editing::after{
   content:'';
   position:absolute;
   left:-4rem;
   top:-1.5rem;
   right:-3rem;
-  bottom:1rem;
+  bottom:-1rem;
   margin-bottom:1rem;
   background:#f9f9f9;
   z-index:-1;

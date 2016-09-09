@@ -14,16 +14,19 @@
       margin-bottom: 0;
     }
 
-    &--is-editing::after {
-      content: '';
-      position: absolute;
-      left: -4rem;
-      top: -1.5rem;
-      right: -3rem;
-      bottom: 1rem;
-      margin-bottom: 1rem;
-      background: var(--x-light-gray);
-      z-index: -1;
+    &--is-editing {
+      margin-bottom: 4rem;
+      &::after {
+        content: '';
+        position: absolute;
+        left: -4rem;
+        top: -1.5rem;
+        right: -3rem;
+        bottom: -1rem;
+        margin-bottom: 1rem;
+        background: var(--x-light-gray);
+        z-index: -1;
+      }
     }
   }
 
