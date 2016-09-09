@@ -1456,11 +1456,12 @@ a:active, a:hover{
   .form__fieldset--is-editing::after{
   content:'';
   position:absolute;
-  left:-1rem;
+  left:-4rem;
   top:-1rem;
-  right:-1rem;
+  right:-4rem;
   bottom:-1rem;
   background:#f9f9f9;
+  z-index:-1;
 }
 
   .form__section{

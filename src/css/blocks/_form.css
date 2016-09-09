@@ -17,11 +17,12 @@
     &--is-editing::after {
       content: '';
       position: absolute;
-      left: -1rem;
+      left: -4rem;
       top: -1rem;
-      right: -1rem;
+      right: -4rem;
       bottom: -1rem;
       background: var(--x-light-gray);
+      z-index: -1;
     }
   }
 
