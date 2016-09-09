@@ -1446,6 +1446,7 @@ a:active, a:hover{
 
   .form__fieldset{
     margin-bottom:2rem;
+    position:relative;
   }
 
   .form__fieldset:last-child{

@@ -8,6 +8,7 @@
 
   .form__fieldset {
     margin-bottom: 2rem;
+    position: relative;
 
     &:last-child {
       margin-bottom: 0;
