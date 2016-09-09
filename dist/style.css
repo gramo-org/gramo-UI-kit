@@ -2066,9 +2066,8 @@ input[type="number"]{
   left:50%;
 }
 
-.spacer{
-  background:#434D5A;
-  height:10rem;
+.horizontal-rule--spacer{
+  margin-bottom:2rem;
 }
 .horizontal-rule--stretch{
 
