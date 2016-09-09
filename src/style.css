@@ -1454,6 +1454,7 @@ a:active, a:hover{
 }
 
   .form__fieldset--is-editing::after{
+  content:'';
   position:absolute;
   left:-1rem;
   top:-1rem;
