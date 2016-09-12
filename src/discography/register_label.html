@@ -150,13 +150,13 @@
                     <div class="infobar__left">
                       <p class="infobar__meta">FYF</p>
                       <h1 class="infobar__heading">Fysisk Format</h1>
-                      <h3>Tiger Safari AS <span>100%</span></h3>
+                      <h3 class="infobar__heading">Tiger Safari AS <span>100%</span></h3>
                     </div>
                   </header>
 
                   <div class="section-header">
                     <header>
-                      <h2>Gruppe info</h2>
+                      <h2>Label info</h2>
                     </header>
                     <div class="section-header__toolbar">
                       <button href="#" class="btn btn--link">Avbryt</button>
@@ -182,6 +182,14 @@
                         </div>
                       </div>
                       <div class="form__field">
+                        <div class="col-xs-12 col-lg-2">
+                          <label class="form__label form__label--block form__label--date form__label--required">
+                            <span>Registreringssdato</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field">
                         <div class="col-xs-12 col-lg-4">
                           <label class="form__label form__label--block form__label--required">
                             <span>Statsborgerskap</span>
@@ -194,22 +202,10 @@
                         </div>
                       </div>
                       <div class="form__field">
-                        <div class="col-xs-12 col-lg-4">
-                          <label class="form__label form__label--block form__label--required">
-                            <span>Språk</span>
-                            <select class="select select--block">
-                              <option>Engelsk</option>
-                              <option>Fransk</option>
-                              <option>Norsk</option>
-                            </select>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="form__field">
                         <div class="col-xs-12 col-lg-2">
                           <label class="form__label form__label--block">
-                            <span>Lokalkode</span>
-                            <input type="text" value="XXXXXX XX XXX" class="form__input form__input--block" >
+                            <span>Registrantkode</span>
+                            <input type="text" value="FYF" class="form__input form__input--block" >
                           </label>
                         </div>
                       </div>
@@ -221,94 +217,60 @@
 
                   <div class="section-header">
                     <header>
-                      <h2>Medlemmer <span class="badge badge--secondary">5</span></h2>
+                      <h2>Rettighetshavere <span class="badge badge--secondary">5</span></h2>
                     </header>
                     <div class="section-header__toolbar">
                       <a href="#" class="link--edit">Rediger</a>
                     </div>
                   </div>
 
-                  <form class="form">
-                    <div class="row">
-                      <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
-                        Navn
-                      </div>
-                      <div class="col-sm-2 col-lg-2 hidden-on-mobile text--medium text--bold">
-                        Instrument
-                      </div>
-                      <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
-                        Statsborgerskap
-                      </div>
+                  <div class="ember-view form__fieldset"><header class="row row--spaced">
+                    <div class="col-md-1 col--no-flex">
+                      <span class="text--bold">
+                        Fra:
+                      </span>
+                        07.09.2016
                     </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                          <input type="text" value="David Robert Jones" class="form__input form__input--block" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                          <input type="text" value="Vokal" class="form__input form__input--block" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
-                        </label>
-                      </div>
+                    <div class="col-md-1 col--no-flex">
+                      <span class="text--bold">
+                        til:
+                      </span>
+                        16.09.2016
                     </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                          <input type="text" value="Reeves Gabrels" class="form__input form__input--block" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                          <input type="text" value="Keyboard" class="form__input form__input--block" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
-                        </label>
-                      </div>
+                  </header>
+
+                  <div class="row">
+                    <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
+                      Produsentnavn
                     </div>
+                    <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
+                      Produsentland
+                    </div>
+                    <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
+                      % Andel
+                    </div>
+                  </div>
+
+
                     <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                          <input type="text" value="Hunt Sales" class="form__input form__input--block" disabled>
+                      <div class="col-xs-12 col-sm-5 col-lg-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentnavn</span>
+                            <input id="ember6955" disabled="" type="text" class="form__input form__input--block ember-view ember-text-field">
                         </label>
                       </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                          <input type="text" value="Gitar" class="form__input form__input--block" disabled>
+                      <div class="col-xs-12 col-sm-4 col-lg-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentland</span>
+                          <input id="ember6953" disabled="" type="text" class="ember-view ember-text-field form__input form__input--block">
                         </label>
                       </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
+                      <div class="col-xs-12 col-sm-3 col-lg-1">
+                        <label class="form__label form__label--block form__label--hidden"><span>% Andel</span>
+                          <input id="ember6954" disabled="" type="text" class="ember-view ember-text-field form__input form__input--block">
                         </label>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                          <input type="text" value="Tony Sales" class="form__input form__input--block" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                          <input type="text" value="Bass gitar" class="form__input form__input--block" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
-                        </label>
-                      </div>
-                    </div>
-                  </form>
+                  <hr class="horizontal-rule--spacer">
+                  </div>
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
                 <section id="discography" class="container container--padded">
@@ -322,10 +284,11 @@
                   </div>
                   <div class="tabs">
                     <ul class='tabs__nav tabs__nav--flexible'>
-                      <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger</a></li>
-                      <li class='tabs__nav__item'><a href="#album">Album</a></li>
-                      <li class='tabs__nav__item'><a href="#tab-3">Tab 3</a></li>
+                      <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger <span class="badge badge--numeric badge--numeric--inverse">91</span></a></li>
+                      <li class='tabs__nav__item'><a href="#album">Album<span class="badge badge--numeric">18</span></a></li>
+                      <li class='tabs__nav__item'><a href="#utøvere">Utøvere<span class="badge badge--numeric">9</span></a></li>
                       <li class='tabs__nav__item'><a href="#tab-4">Tab 4</a></li>
+                      <li class='tabs__nav__item'><a href="#tab-5">Tab 5</a></li>
                     </ul>
                     <section id="innspillinger" class="tabs__section">
                       <ol class="fake-table fake-table--numeric">

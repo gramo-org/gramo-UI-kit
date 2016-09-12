@@ -85,13 +85,14 @@
     background: var(--light-gray);
     position: relative;
 
+
     &::after {
       @media (--tablet) {
         content: '';
-        height: 3px;
+        height: 1px;
         position: absolute;
         left: 0;
-        bottom: -3px;
+        bottom: -1px;
         background: var(--light-gray);
         width: 100%;
         z-index: 1;
@@ -104,6 +105,7 @@
     color: var(--slate-gray);
     font-weight: var(--semibold);
     padding: 1rem 0;
+    height: 100%;
   }
 
   &__nav__item--search a {

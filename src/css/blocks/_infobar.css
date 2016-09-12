@@ -10,6 +10,12 @@
     border-bottom: 0;
   }
 
+  &__heading {
+    span {
+      margin-left: 2rem;
+    }
+  }
+
   &__heading,
   &__count {
     margin: .4rem 0;

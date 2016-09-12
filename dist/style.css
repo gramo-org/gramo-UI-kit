@@ -1717,9 +1717,9 @@ a:active, a:hover{
 @media (min-width: 768px){
   .form__field__action--delete{
     top:1rem;
-    -webkit-align-self:top;
-    -ms-flex-item-align:top;
-    align-self:top;
+    -webkit-align-self:flex-start;
+    -ms-flex-item-align:start;
+    align-self:flex-start;
     margin-top:1rem;
   }
 }
@@ -3010,6 +3010,9 @@ main.pull .section-header--fixed{
 }
 .infobar--no-border{
   border-bottom:0;
+}
+.infobar__heading span, .infobar__count span{
+  margin-left:2rem;
 }
 .infobar__heading, .infobar__count{
   margin:.4rem 0;
@@ -4431,10 +4434,10 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 @media (min-width: 768px){
   .tabs__nav__item:hover::after, .tabs .active::after{
     content:'';
-    height:3px;
+    height:1px;
     position:absolute;
     left:0;
-    bottom:-3px;
+    bottom:-1px;
     background:#ededed;
     width:100%;
     z-index:1;
@@ -4445,6 +4448,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   color:#504f56;
   font-weight:600;
   padding:1rem 0;
+  height:100%;
 }
 .tabs__nav__item--search a{
   padding-top:1.6rem;
