@@ -44,6 +44,8 @@
 
     @media (--tablet) {
       top: 1rem;
+      align-self: top;
+      margin-top: 1rem;
     }
 
     @media (--hd) {
