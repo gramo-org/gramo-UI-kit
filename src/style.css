@@ -18,7 +18,7 @@
   margin:0;
 }
 
-.btn--secondary, .btn-group .btn--success{
+.btn--secondary, .btn-group .btn--primary{
   border-width:1px 1px 3px 1px!important;
 }
 .text--left{
@@ -1201,7 +1201,7 @@ input-placeholder{
 }
 
 .icon--search:before{
-    content:"\e909";
+    content:"\e91a";
 }
 
 .icon--chevron-left:before{
@@ -2155,35 +2155,6 @@ input[type="number"]{
 .btn--secondary:hover{
   background-color:rgb(199, 199, 199);
 }
-.btn--success{
-  border-color:rgb(68, 162, 134);
-  background-color:#50bf9e;
-}
-.btn--success:hover{
-  background-color:rgb(60, 143, 119);
-}
-.btn--info{
-  border-color:rgb(116, 169, 184);
-  background-color:#88c7d8;
-}
-.btn--info:hover{
-  background-color:rgb(102, 149, 162);
-}
-.btn--error, .btn--hot{
-  border-color:rgb(201, 91, 90);
-  background-color:#ed6b6a;
-}
-.btn--error:hover, .btn--hot:hover{
-  background-color:rgb(178, 80, 80);
-}
-.btn--white{
-  background-color:#fdfdfd;
-  color:#101010;
-  border:0;
-}
-.btn--white:hover{
-  background-color:rgb(224, 224, 224);
-}
 .btn--outline{
   background:none;
   border:1px solid;
@@ -2194,7 +2165,7 @@ input[type="number"]{
   border-color:#d9d9dc;
   padding:.85rem 2rem;
 }
-.btn--simple{
+.btn--borderless{
   border:0;
 }
 .btn--inline{
@@ -2207,28 +2178,6 @@ input[type="number"]{
   width:100%;
   margin-bottom:1rem;
   text-transform:uppercase;
-}
-.btn--link{
-  color:#0095da;
-  border:0;
-  background:none;
-}
-.btn--large{
-  padding:1.3rem 2rem;
-}
-@media (min-width: 768px){
-  .btn--medium{
-    padding:.9rem 2rem;
-  }
-}
-@media (min-width: 768px){
-  .btn--small{
-    padding:.3rem 2rem;
-  }
-}
-.btn--small > i[class^="icon--"]{
-  font-size:1rem;
-  margin-right:.5rem;
 }
 .btn-group{
   text-align:center;
@@ -2268,9 +2217,9 @@ input[type="number"]{
   font-size:.9rem;
   margin:0 0.5rem;
 }
-.btn-group .btn--success{
-  border-color:rgb(78, 187, 155);
-  border-bottom-color:rgb(68, 162, 134);
+.btn-group .btn--primary{
+  border-color:rgb(0, 146, 214);
+  border-bottom-color:rgb(0, 127, 185);
 }
 .btn-group .btn--white:last-child{
   border:1px solid #d9d9dc;
@@ -4938,16 +4887,22 @@ input[type="text"].search__form__input--large{
 }
 
 .search__submit{
-  -webkit-flex:0 0 60px;
-  -ms-flex:0 0 60px;
-  flex:0 0 60px;
-  border:3px solid rgb(68, 162, 134);
+  -webkit-flex:0 0 40px;
+  -ms-flex:0 0 40px;
+  flex:0 0 40px;
+  border:3px solid rgb(68, 67, 73);
   border-width:0 0 3px 0;
   border-radius:0 2px 2px 0;
   margin:0 0 0 -1px;
-  background:#50bf9e;
+  background:#504f56;
   color:#fdfdfd;
   padding-top:.5rem;
+}
+
+.search__submit:before{
+  content:"\e91a";
+  font-family:'icomoon';
+  font-size:1.7rem;
 }
 
 .search__clear{
