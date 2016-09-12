@@ -25,8 +25,10 @@
   text-align:left!important;
 }
 
-.text--right{
-  text-align:right!important;
+@media (min-width: 960px){
+  .text--right{
+    text-align:right!important;
+  }
 }
 
 .text--center{
@@ -222,6 +224,10 @@ td.text--center, .fake-table__row > *.text--center{
   display:inline-block;
   vertical-align:middle;
 }
+
+.input--inline{
+  display:inline-block;
+}
 .text--inline, .list--inline, .infobar__meta{
   display:inline;
 }
@@ -233,6 +239,10 @@ td.text--center, .fake-table__row > *.text--center{
 .break--inline{
   display:inline-block;
   margin:0 1rem;
+}
+
+.row--spaced{
+  margin-bottom:1rem;
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
@@ -429,6 +439,7 @@ td, th{
   flex-wrap:wrap;
   margin-left:-1rem;
   margin-right:-1rem;
+  position:relative;
 }
 
 .col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .box, .breadcrumbs, .breadcrumbs__item, .content-header__action, .content-header__info, .tabs__nav__item, .tabs--compressed .tabs__nav__item, .tabs--transparent .tabs__nav__item{
@@ -1063,7 +1074,7 @@ label, button, input, optgroup, select, textarea{
   font:inherit;
   margin:0;
 }
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="tel"], input[type="date"]{
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="tel"], input[type="date"], input[type="number"], input[type="time"]{
   padding:0.75rem;
   box-sizing:border-box;
 }
@@ -1435,10 +1446,27 @@ a:active, a:hover{
 
   .form__fieldset{
     margin-bottom:2rem;
+    position:relative;
   }
 
   .form__fieldset:last-child{
   margin-bottom:0;
+}
+
+  .form__fieldset--is-editing{
+  margin-bottom:4rem;
+}
+
+  .form__fieldset--is-editing::after{
+  content:'';
+  position:absolute;
+  left:-4rem;
+  top:-1.5rem;
+  right:-3rem;
+  bottom:-2rem;
+  margin-bottom:1rem;
+  background:#f9f9f9;
+  z-index:-1;
 }
 
   .form__section{
@@ -1574,11 +1602,6 @@ a:active, a:hover{
   display:block;
   width:100%;
 }
-.form__input[type="number"], .form__input[type="time"]{
-  padding:0.5rem 0 0.5rem 0.3rem!important;
-  text-align:center;
-  height:3rem;
-}
 .form__label.is-valid .form__input{
     border:1px solid #ededed;
     border-width:1px 1px 1px 0;
@@ -1684,6 +1707,21 @@ a:active, a:hover{
     -ms-flex-item-align:center;
     align-self:center;
     margin:0;
+  }
+}
+.form__field__action--delete{
+  position:absolute;
+  right:-0.5rem;
+  top:4rem;
+}
+@media (min-width: 768px){
+  .form__field__action--delete{
+    top:1rem;
+  }
+}
+@media (min-width: 1200px){
+  .form__field__action--delete{
+    position:static;
   }
 }
 .form__field .form__label--required:before{
@@ -1898,7 +1936,14 @@ a:active, a:hover{
   border:1px solid #d9d9dc;
   text-align:left;
   padding:0 0.25rem;
-  min-width:200px;
+}
+@media (min-width: 1200px){
+  .searchable-list{
+    min-width:200px;
+  }
+}
+.searchable-list--fluid{
+  min-width:0;
 }
 .searchable-list__heading{
   position:relative;
@@ -1980,6 +2025,33 @@ a:active, a:hover{
     left:137px;
   }
 }
+input[type="number"], input[type="time"]{
+  position:relative;
+}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button, input[type="time"]::-webkit-outer-spin-button, input[type="time"]::-webkit-inner-spin-button{
+  -webkit-appearance:none;
+  background:#a5a4ab url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
+  width:1.5rem;
+  border-left:1px solid var(-gramo-white);
+  opacity:.5;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  height:100%;
+}
+input[type="number"]::-webkit-inner-spin-button:hover, input[type="number"]::-webkit-inner-spin-button:active, input[type="time"]::-webkit-inner-spin-button:hover, input[type="time"]::-webkit-inner-spin-button:active{
+  opacity:.8;
+}
+
+input[type="time"]{
+  padding-left:2rem;
+  padding-right:2rem;
+}
+
+input[type="number"]{
+  max-width:100px;
+}
 .horizontal-rule{
   position:relative;
   text-align:center;
@@ -2011,9 +2083,9 @@ a:active, a:hover{
   left:50%;
 }
 
-.spacer{
-  background:#434D5A;
-  height:10rem;
+.horizontal-rule--spacer{
+  margin-bottom:2rem;
+  background:none;
 }
 .horizontal-rule--stretch{
 

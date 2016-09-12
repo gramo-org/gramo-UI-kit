@@ -5,7 +5,13 @@
   border: 1px solid var(--silver);
   text-align: left;
   padding: 0 0.25rem;
-  min-width: 200px;
+  @media (--hd) {
+    min-width: 200px;
+  }
+
+  &--fluid {
+    min-width: 0;
+  }
 
   &__heading {
     position: relative;

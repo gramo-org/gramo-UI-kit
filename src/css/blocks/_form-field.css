@@ -37,6 +37,20 @@
     }
   }
 
+   &__action--delete {
+    position: absolute;
+    right: -0.5rem;
+    top: 4rem;
+
+    @media (--tablet) {
+      top: 1rem;
+    }
+
+    @media (--hd) {
+      position: static;
+    }
+  }
+
   .form__label--required {
     &:before {
       content: none;

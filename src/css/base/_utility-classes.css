@@ -3,7 +3,7 @@
 }
 
 .text--right {
-  text-align: right!important;
+  @media (--desktop) { text-align: right!important; }
 }
 
 .text--center {
@@ -190,6 +190,12 @@ td.text--center,
   vertical-align: middle;
 }
 
+/*** input--inline ***/
+
+.input--inline {
+  display: inline-block;
+}
+
 /*** Inline items ***/
 .text--inline,
 .list--inline {
@@ -204,4 +210,8 @@ td.text--center,
 .break--inline {
   display: inline-block;
   margin: 0 1rem;
+}
+
+.row--spaced {
+  margin-bottom: 1rem;
 }

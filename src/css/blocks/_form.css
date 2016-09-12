@@ -8,9 +8,25 @@
 
   .form__fieldset {
     margin-bottom: 2rem;
+    position: relative;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &--is-editing {
+      margin-bottom: 4rem;
+      &::after {
+        content: '';
+        position: absolute;
+        left: -4rem;
+        top: -1.5rem;
+        right: -3rem;
+        bottom: -2rem;
+        margin-bottom: 1rem;
+        background: var(--x-light-gray);
+        z-index: -1;
+      }
     }
   }
 
@@ -144,12 +160,4 @@
     width: 100%;
     /*margin-top: 0.25rem;*/
   }
-}
-
-/* Numeric inputs */
-.form__input[type="number"],
-.form__input[type="time"] {
-  padding: 0.5rem 0 0.5rem 0.3rem!important;
-  text-align: center;
-  height: 3rem;
 }

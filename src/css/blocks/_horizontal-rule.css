@@ -30,9 +30,9 @@
   left: 50%;
 }
 
-.spacer {
-  background: var(--ui-gray);
-  height: 10rem;
+.horizontal-rule--spacer {
+  margin-bottom: 2rem;
+  background: none;
 }
 
 /* Stretched horizontal-rule */
