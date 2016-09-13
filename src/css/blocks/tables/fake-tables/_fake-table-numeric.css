@@ -33,3 +33,40 @@
     padding-left: 0;
   }
 }
+
+/* Fake table numeric with checkboxes */
+.fake-table--numeric--checkboxes {
+
+  .fake-table__row {
+
+    input[type="checkbox"] {
+      position: absolute;
+      left: -5rem;
+      top: 1.7rem;
+      z-index: 1;
+
+      &:before {
+        left: 7rem;
+      }
+    }
+  }
+
+  .fake-table__row:hover {
+
+    input[type="checkbox"] {
+      left: 2.4rem;
+
+      &:before {
+        visibility: hidden;
+      }
+    }
+  }
+
+  input[type="checkbox"]:checked {
+    left: 2.4rem;
+
+    &::before {
+      visibility: hidden;
+    }
+  }
+}

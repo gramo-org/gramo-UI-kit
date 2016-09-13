@@ -87,3 +87,8 @@
 [data-type="recording"]::before {
   content: "\e919";
 }
+
+[data-type="label"]::before,
+[data-type="owner"]::before {
+  content: "\e918";
+}
