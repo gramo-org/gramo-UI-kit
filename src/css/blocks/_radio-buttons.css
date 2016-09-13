@@ -55,6 +55,11 @@
     color: var(--gramo-red);
   }
 
+  .form__label.has-error input:checked ~ span {
+    border-color: var(--gramo-blue);
+    color: var(--gramo-white);
+  }
+
   input:checked ~ span {
     color: var(--gramo-white);
   }
