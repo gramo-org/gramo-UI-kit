@@ -78,6 +78,9 @@ td.text--center, .fake-table__row > *.text--center{
 .text--large{
   font-size:1.6rem!important;
 }
+.text--lower{
+  text-transform:lowercase;
+}
 
 .hidden-on-mobile{
   display:none!important;

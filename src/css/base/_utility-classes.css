@@ -57,6 +57,11 @@ td.text--center,
   font-size: 1.6rem!important;
 }
 
+/* text case overrides */
+.text--lower {
+  text-transform: lowercase;
+}
+
 /* Hide on mobile */
 
 .hidden-on-mobile {
