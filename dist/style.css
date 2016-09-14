@@ -249,6 +249,10 @@ td.text--center, .fake-table__row > *.text--center{
 .row--spaced{
   margin-bottom:1rem;
 }
+
+.col{
+  padding:0 1rem;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 html{

@@ -222,3 +222,7 @@ td.text--center,
 .row--spaced {
   margin-bottom: 1rem;
 }
+
+.col {
+  padding: 0 1rem;
+}
