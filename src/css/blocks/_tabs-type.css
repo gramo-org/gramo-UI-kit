@@ -1,0 +1,39 @@
+.tabs__nav__item__type {
+  text-align: left;
+  position: relative;
+  font-size: 1.2rem;
+  color: var(--off-gray);
+  left: 0;
+  margin-top: -1rem;
+  display: block;
+
+  &:before {
+    font-family: 'icomoon';
+    font-weight: var(--normal);
+    font-size: 100%;
+    position: relative;
+    top: .2rem;
+    margin-right: .3rem;
+  }
+
+  & + a {
+    padding-top: 0!important;
+  }
+
+  &--recording:before {
+    content: "\e919";
+  }
+  &--album:before {
+    content: "\e917";
+  }
+  &--performer:before,
+  &--group:before {
+    content: "\e916";
+    top: .12rem;
+  }
+  &--label:before,
+  &--owner:before {
+    content: "\e918";
+    top: .12rem;
+  }
+}
