@@ -1,12 +1,4 @@
 .toggle-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: var(--light-gray);
-  border-bottom: 1px solid var(--silver);
-  z-index: 4;
-  padding: .75rem 0 0 1.5rem;
 
   a {
     display: inline-block;
@@ -17,14 +9,15 @@
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--slate-gray);
-    top: -.5rem;
+    top: -.1rem;
+    left: 1rem;
 
     &::before {
       content: "\e914";
       font-family: 'icomoon';
       font-size: 2.4rem;
       position: relative;
-      top: 1px;
+
     }
 
     &::after {
@@ -36,12 +29,11 @@
   }
 
   &.open {
-    left: 20rem;
 
     a {
       color: #fff;
       margin-left: -7rem;
-      top: .2rem;
+      top: .5rem;
     }
 
     a::before {
