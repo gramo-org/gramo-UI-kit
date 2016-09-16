@@ -1,5 +1,5 @@
 .btn {
-  padding: .75rem 2rem;
+  padding: .5rem 2rem;
   border-radius: 2px;
   border-width: 0 0 3px 0;
   border-style: solid;
@@ -51,6 +51,7 @@
     background-color: var(--secondary);
     color: var(--gramo-black);
     @extend %full-border;
+    height: 32px;
     &:hover {
        background-color: color(var(--secondary) shade(20%));
     }
