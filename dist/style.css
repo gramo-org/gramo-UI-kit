@@ -3114,8 +3114,7 @@ main.pull .section-header--fixed{
 }
 @media (min-width: 1200px){
   .toolbar--padded{
-    padding-left:3rem;
-    padding-right:3rem;
+    padding:3rem;
   }
 }
 .toolbar__action{
