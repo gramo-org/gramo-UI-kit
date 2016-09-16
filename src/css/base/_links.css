@@ -36,6 +36,9 @@ a {
 
 .link--edit {
   text-decoration: none;
+  padding: .5rem 0;
+  height: 32px;
+  display: block;
 
   &:after {
     content: "\e915";
