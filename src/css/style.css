@@ -12,6 +12,7 @@
 @import url('base/_links.css');
 
 @import url('blocks/_wrapper.css');
+@import url('blocks/_site-header.css');
 @import url('blocks/_form.css');
 @import url('blocks/_form-validation.css');
 @import url('blocks/_form-field.css');
@@ -59,6 +60,10 @@
 @import url('blocks/_toggle-sidebar.css');
 @import url('blocks/_toggle.css');
 @import url('blocks/_tabs.css');
+@import url('blocks/_tabs-nav.css');
+@import url('blocks/_tabs-type.css');
+@import url('blocks/_tabs-transparent.css');
+@import url('blocks/_tabs-section-nav.css');
 @import url('blocks/_flash-message.css');
 @import url('blocks/_spinner.css');
 @import url('blocks/_content-placeholder.css');
