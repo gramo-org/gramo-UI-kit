@@ -9,8 +9,7 @@
 
   &--padded {
     @media (--hd) {
-      padding-left: 3rem;
-      padding-right: 3rem;
+      padding: 3rem;
     }
   }
 
