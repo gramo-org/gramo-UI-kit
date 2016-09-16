@@ -52,11 +52,12 @@
     </div>
     <!--End Sidebar example-->
     <main>
-      <div class="toggle-sidebar open">
-        <a href="#">
 
-        </a>
-      </div>
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+
       <!--- Flash message --->
       <!-- <div class="flash-message-wrapper">
         <div class="flash-message flash-message--success">
@@ -66,7 +67,7 @@
 
       <section class="container container--hd">
         <div class="bucket">
-          <span class="align--vertical-center text--bold">
+          <span class="text--bold">
             Siste søk:
           </span>
           <ul class="bucket__list">
@@ -78,8 +79,10 @@
               <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
               <a href="#">Love Me Tender</a>
             </li>
-            <!-- <li class="bucket__list__item bucket__list__item--new"><a href="searchB-3.html"><i class="fa fa-2x fa-plus"></i></a></li> -->
           </ul>
+          <div class="text--right bucket__add-btn">
+            <button class="btn btn--primary">Nytt søk</button>
+          </div>
         </div>
 
 
@@ -96,22 +99,19 @@
 
           <section id="search" class="tabs__section">
             <div class="toolbar toolbar--padded">
-              <form action="" class="search__form search__form--center">
+              <form action="" class="search__form">
                 <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
                 <button class="search__submit"></button>
               </form>
             </div><!--end .toolbar-->
 
-            <div class="fake-table">
+            <div class="fake-table fake-table--numeric  fake-table--numeric--checkboxes">
               <div class="fake-table__row fake-table__row--head">
                 <div class="col-sm-3">
                   Tittel
                 </div>
                 <div class="col-sm-2">
                   Hovedartist
-                </div>
-                <div class="col-sm-1">
-                  Album
                 </div>
                 <div class="col-sm-2">
                   Årutgitt
@@ -126,19 +126,16 @@
                   ISRC
                 </div>
               </div>
-              <div class="fake-table__row fake-table__row--success">
-                <div class="fake-table__toggle-container">
+              <div class="fake-table__row">
+                <input type="checkbox" />
+                <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
                   <div class="fake-table__toggle-row">
                     <div class="col-sm-3" data-label="Tittel">
-                      <input type="checkbox" />
                       Aladdin Sane
                       (1913-1928-197?)
                     </div>
                     <div class="col-sm-2" data-label="Hovedartist">
                       David Bowie, Spiders From Mars
-                    </div>
-                    <div class="col-sm-1" data-label="Album">
-                      4
                     </div>
                     <div class="col-sm-2" data-label="Årutgitt">
                       1973
@@ -149,25 +146,25 @@
                     <div class="col-sm-1" data-label="Tid">
                       00:33:31
                     </div>
-                    <div class="col-sm-2 fake-table__cell--action" data-label="ISRC">
+                    <div class="col-sm-2" data-label="ISRC">
                       USJT10300113
+                    </div>
+                    <div class="col-xs fake-table__cell--action">
+                      <a href="#" class="table-row-toggle"></a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="fake-table__row fake-table__row--success">
-                <div class="fake-table__toggle-container">
+              <div class="fake-table__row">
+                <input type="checkbox" />
+                <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
                   <div class="fake-table__toggle-row">
                     <div class="col-sm-3" data-label="Tittel">
-                      <input type="checkbox" />
                       Aladdin Sane
                       (1913-1928-197?)
                     </div>
                     <div class="col-sm-2" data-label="Hovedartist">
                       David Bowie, Spiders From Mars
-                    </div>
-                    <div class="col-sm-1" data-label="Album">
-                      4
                     </div>
                     <div class="col-sm-2" data-label="Årutgitt">
                       1973
@@ -178,25 +175,25 @@
                     <div class="col-sm-1" data-label="Tid">
                       00:33:31
                     </div>
-                    <div class="col-sm-2 fake-table__cell--action" data-label="ISRC">
+                    <div class="col-sm-2" data-label="ISRC">
                       USJT10300113
+                    </div>
+                    <div class="col-xs fake-table__cell--action">
+                      <a href="#" class="table-row-toggle"></a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="fake-table__row fake-table__row--success">
-                <div class="fake-table__toggle-container">
+              <div class="fake-table__row">
+                <input type="checkbox" />
+                <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
                   <div class="fake-table__toggle-row">
                     <div class="col-sm-3" data-label="Tittel">
-                      <input type="checkbox" />
                       Aladdin Sane
                       (1913-1928-197?)
                     </div>
                     <div class="col-sm-2" data-label="Hovedartist">
                       David Bowie, Spiders From Mars
-                    </div>
-                    <div class="col-sm-1" data-label="Album">
-                      4
                     </div>
                     <div class="col-sm-2" data-label="Årutgitt">
                       1973
@@ -207,25 +204,25 @@
                     <div class="col-sm-1" data-label="Tid">
                       00:33:31
                     </div>
-                    <div class="col-sm-2 fake-table__cell--action" data-label="ISRC">
+                    <div class="col-sm-2" data-label="ISRC">
                       USJT10300113
+                    </div>
+                    <div class="col-xs fake-table__cell--action">
+                      <a href="#" class="table-row-toggle"></a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="fake-table__row fake-table__row--success">
-                <div class="fake-table__toggle-container">
+              <div class="fake-table__row">
+                <input type="checkbox" />
+                <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
                   <div class="fake-table__toggle-row">
                     <div class="col-sm-3" data-label="Tittel">
-                      <input type="checkbox" />
                       Aladdin Sane
                       (1913-1928-197?)
                     </div>
                     <div class="col-sm-2" data-label="Hovedartist">
                       David Bowie, Spiders From Mars
-                    </div>
-                    <div class="col-sm-1" data-label="Album">
-                      4
                     </div>
                     <div class="col-sm-2" data-label="Årutgitt">
                       1973
@@ -236,8 +233,11 @@
                     <div class="col-sm-1" data-label="Tid">
                       00:33:31
                     </div>
-                    <div class="col-sm-2 fake-table__cell--action" data-label="ISRC">
+                    <div class="col-sm-2 " data-label="ISRC">
                       USJT10300113
+                    </div>
+                    <div class="col-xs fake-table__cell--action">
+                      <a href="#" class="table-row-toggle"></a>
                     </div>
                   </div>
                 </div>
@@ -411,162 +411,169 @@
                   </form>
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
-                <section id="produsenter" class="container container--padded container--is-editing">
+                <section id="produsenter" class="container container--padded">
 
                   <div class="section-header">
                     <header>
                       <h2>Produsenter <span class="badge badge--secondary">2</span></h2>
                     </header>
-                    <div class="section-header__toolbar">
-                      <button href="#" class="btn btn--link">Avbryt</button>
-                      <a href="#" class="btn btn--primary">Lagre</a>
-                    </div>
                   </div>
 
                   <form class="form">
-                    <header class="row text--medium">
-                      <div class="col-md-1 col--no-flex">
-                        <span class="text--bold">Fra:</span> 27.11.2015
+                    <fieldset class="form__fieldset form__fieldset--group form__fieldset--is-editing">
+                      <header class="row text--medium">
+                        <div class="col">
+                          <span class="text--bold">Fra:</span> 27.11.2015
+                        </div>
+                        <div class="col">
+                          <span class="text--bold">til:</span> 31.12.2015
+                        </div>
+                        <div class="col-xs col--no-flex text--right">
+                          <button href="#" class="btn btn--secondary">Avbryt</button>
+                          <a href="#" class="btn btn--primary">Lagre</a>
+                        </div>
+                      </header>
+                      <div class="row">
+                        <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
+                          Produsentsnavn
+                        </div>
+                        <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
+                          Territorie
+                        </div>
+                        <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
+                          % Andel
+                        </div>
                       </div>
-                      <div class="col-md-1 col--no-flex">
-                        <span class="text--bold">til:</span> 31.12.2015
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-lg-3">
+                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                            <input type="text" value="RCA UK" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                            <input type="text" value="Worldwide" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-lg-1">
+                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                            <input type="text" value="50%" class="form__input form__input--block">
+                          </label>
+                        </div>
                       </div>
-                    </header>
-                    <div class="row">
-                      <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
-                        Produsentsnavn
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-lg-3">
+                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                            <input type="text" value="EMI RECORDED MUSIC NORWAY" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                            <input type="text" value="REGIONAL +" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-lg-1">
+                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                            <input type="text" value="30%" class="form__input form__input--block">
+                          </label>
+                        </div>
                       </div>
-                      <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
-                        Territorie
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-lg-3">
+                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                            <input type="text" value="UKJENT" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                            <input type="text" value="-" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-lg-1">
+                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                            <input type="text" value="20%" class="form__input form__input--block">
+                          </label>
+                        </div>
                       </div>
-                      <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
-                        % Andel
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-5 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                          <input type="text" value="RCA UK" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-lg-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                          <input type="text" value="Worldwide" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-lg-1">
-                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                          <input type="text" value="50%" class="form__input form__input--block">
-                        </label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-5 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                          <input type="text" value="EMI RECORDED MUSIC NORWAY" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-lg-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                          <input type="text" value="REGIONAL +" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-lg-1">
-                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                          <input type="text" value="30%" class="form__input form__input--block">
-                        </label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-5 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                          <input type="text" value="UKJENT" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-lg-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                          <input type="text" value="-" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-lg-1">
-                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                          <input type="text" value="20%" class="form__input form__input--block">
-                        </label>
-                      </div>
-                    </div>
-                    <div class="form__section--action">
+                    </fieldset>
+                    <!-- <div class="form__section--action">
                       <a class="link--no-line link--inline">Vis alle</a>
-                    </div>
-                    <header class="row text--medium">
-                      <div class="col-md-1 col--no-flex">
-                        <span class="text--bold">Fra:</span> 27.11.2015
+                    </div> -->
+                    <fieldset class="form__fieldset form__fieldset--group">
+                      <header class="row text--medium">
+                        <div class="col">
+                          <span class="text--bold">Fra:</span> 27.11.2015
+                        </div>
+                        <div class="col">
+                          <span class="text--bold">til:</span> 31.12.2015
+                        </div>
+                        <div class="col-xs col--no-flex text--right">
+                          <a href="#" class="link--edit">Rediger</a>
+                        </div>
+                      </header>
+                      <div class="row">
+                        <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
+                          Produsentsnavn
+                        </div>
+                        <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
+                          Territorie
+                        </div>
+                        <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
+                          % Andel
+                        </div>
                       </div>
-                      <div class="col-md-1 col--no-flex">
-                        <span class="text--bold">til:</span> 31.12.2015
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-lg-3">
+                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                            <input type="text" value="RCA UK" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                            <input type="text" value="Worldwide" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-lg-1">
+                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                            <input type="text" value="50%" class="form__input form__input--block">
+                          </label>
+                        </div>
                       </div>
-                    </header>
-                    <div class="row">
-                      <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
-                        Produsentsnavn
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-lg-3">
+                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                            <input type="text" value="EMI RECORDED MUSIC NORWAY" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                            <input type="text" value="REGIONAL +" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-lg-1">
+                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                            <input type="text" value="30%" class="form__input form__input--block">
+                          </label>
+                        </div>
                       </div>
-                      <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
-                        Territorie
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-lg-3">
+                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                            <input type="text" value="UKJENT" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                            <input type="text" value="-" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-lg-1">
+                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                            <input type="text" value="20%" class="form__input form__input--block">
+                          </label>
+                        </div>
                       </div>
-                      <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
-                        % Andel
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-5 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                          <input type="text" value="RCA UK" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-lg-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                          <input type="text" value="Worldwide" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-lg-1">
-                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                          <input type="text" value="50%" class="form__input form__input--block">
-                        </label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-5 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                          <input type="text" value="EMI RECORDED MUSIC NORWAY" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-lg-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                          <input type="text" value="REGIONAL +" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-lg-1">
-                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                          <input type="text" value="30%" class="form__input form__input--block">
-                        </label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-5 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                          <input type="text" value="UKJENT" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-lg-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                          <input type="text" value="-" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-lg-1">
-                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                          <input type="text" value="20%" class="form__input form__input--block">
-                        </label>
-                      </div>
-                    </div>
+                    </fieldset>
                     <div class="form__section--action">
                       <a class="link--no-line link--inline">Legg til produsent</a>
                     </div>

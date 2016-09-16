@@ -1462,20 +1462,15 @@ a:active, a:hover{
   margin-bottom:0;
 }
 
-  .form__fieldset--is-editing{
-  margin-bottom:4rem;
+  .form__fieldset--group{
+  margin-bottom:2rem;
+  padding:2rem;
+  background:#ededed;
+  border:1px solid #d9d9dc;
 }
 
-  .form__fieldset--is-editing::after{
-  content:'';
-  position:absolute;
-  left:-4rem;
-  top:-1.5rem;
-  right:-3rem;
-  bottom:-2rem;
-  margin-bottom:1rem;
+  .form__fieldset--is-editing{
   background:#f9f9f9;
-  z-index:-1;
 }
 
   .form__section{
@@ -1505,7 +1500,7 @@ a:active, a:hover{
   .form__label{
     display:inline-block;
     vertical-align:middle;
-    margin:0 3rem 0 0;
+    margin:0 1rem 0 0;
   }
 }
 
