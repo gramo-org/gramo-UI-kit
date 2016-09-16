@@ -230,7 +230,7 @@ td.text--center, .fake-table__row > *.text--center{
 
 .input--inline{
   display:inline-block;
-  max-width:180px;
+  max-width:200px;
   vertical-align:top;
 }
 .text--inline, .list--inline, .infobar__meta{
@@ -2180,6 +2180,13 @@ input[type="number"]{
 }
 .btn--secondary:hover{
   background-color:rgb(199, 199, 199);
+}
+.btn--danger{
+  border-color:rgb(201, 91, 90);
+  background-color:#ed6b6a;
+}
+.btn--danger:hover{
+  background-color:rgb(190, 86, 85);
 }
 .btn--outline{
   background:none;
