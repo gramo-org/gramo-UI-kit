@@ -57,7 +57,7 @@
   }
 
   &--danger {
-    border-color: var(--gramo-red);
+    border-color: color(var(--gramo-red) shade(15%));
     background-color: var(--gramo-red);
 
     &:hover {

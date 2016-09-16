@@ -2164,7 +2164,7 @@ input[type="number"]{
   background-color:rgb(199, 199, 199);
 }
 .btn--danger{
-  border-color:#ed6b6a;
+  border-color:rgb(201, 91, 90);
   background-color:#ed6b6a;
 }
 .btn--danger:hover{
