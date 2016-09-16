@@ -57,6 +57,15 @@
     }
   }
 
+  &--danger {
+    border-color: color(var(--gramo-red) shade(15%));
+    background-color: var(--gramo-red);
+
+    &:hover {
+       background-color: color(var(--gramo-red) shade(20%));
+    }
+  }
+
   /*** Button Variations ***/
 
   &--outline {
