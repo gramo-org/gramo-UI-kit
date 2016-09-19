@@ -1,5 +1,5 @@
 .table {
-  margin-top: 2rem;
+  margin-top: .2rem;
   table-layout: fixed;
   width: 100%;
   @media (--desktop) { min-width: 700px; width: auto; }
@@ -26,6 +26,9 @@
     }
   }
 
+  &--with-margin {
+    margin-top: 1.2rem
+  }
 
   .tbody--with-spacing {
     /* Pseudo class to make space between thead and tbody */
