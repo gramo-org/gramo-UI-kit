@@ -34,6 +34,7 @@
   &__item:hover,
   &__item a.active {
     background: var(--light-gray);
+    position: relative;
 
     &::after {
       @media (--tablet) {
