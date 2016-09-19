@@ -2,14 +2,14 @@
   background: var(--table-head-background);
   border: 1px solid var(--table-border-color);
   padding: 1rem;
-  margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 
   &--padded {
     @media (--hd) {
-      padding: 3rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
 
@@ -40,40 +40,7 @@
     }
   }
 
-  &__above--borderless {
-    border: 0;
-  }
-
-  &__below--borderless {
-    border-width: 1px 0 0 0;
-  }
-
   &__column {
     flex: 0 1 20%;
   }
 }
-
-.toolbar--transparent {
-  background: none;
-  border: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.toolbar--borderless {
-  border: 0;
-}
-
-.toolbar--alone {
-  margin-top: 4rem;
-  padding: 4rem 0;
-}
-
-/* Remove border-top on first child after toolbar */
-
-/*.toolbar ~ div[class*="fake-table"] {
-
-  & > .fake-table__row:first-child {
-    border-top: 0;
-  }
-}*/
