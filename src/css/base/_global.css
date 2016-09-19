@@ -36,8 +36,8 @@ h1 {
 }
 h2 {
   font-size: var(--h2-font-size);
-  margin-top: 1.4rem;
-  margin-bottom: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
 h3 {
   font-size: var(--h3-font-size);
