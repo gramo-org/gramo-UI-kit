@@ -51,7 +51,7 @@
   }
 
   .tabs__nav__item:hover,
-  .active {
+  .tabs__nav__item a.active {
     background: none;
     color: var(--slate-gray)!important;
 
