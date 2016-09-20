@@ -1,8 +1,14 @@
 /* Form fields for right aligned labels and inline inputs */
 .form__field {
   @extend .row;
+  margin-bottom: .4rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   .form__label {
+    margin: 0; /* override margin on .form__label--block */
     @media (--tablet) {
       display: flex;
       align-items: center;
@@ -29,11 +35,11 @@
 
   &__action {
     flex: 1 0 auto;
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 0 1rem;
 
     @media (--tablet) {
       align-self: flex-start;
-      margin-top: 1rem;
+      margin-top: .5rem;
     }
   }
 
