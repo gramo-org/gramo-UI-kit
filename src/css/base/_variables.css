@@ -55,6 +55,7 @@
 /*Tables */
 --table-border-color:                            var(--silver);
 --table-head-background:                         var(--light-gray);
+--table-row-height:                              4.8rem;
 
 /* Grid Containers */
 --container-mobile:                              100%;
