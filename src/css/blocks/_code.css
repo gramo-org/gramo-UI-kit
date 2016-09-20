@@ -43,7 +43,7 @@ pre {
   overflow-x: auto;
   box-sizing:border-box;
   background: var(--light-gray);
-  margin: 2rem 0;
+  @extend %margin-bottom;
 }
 
 pre.prettyprint {
