@@ -21,7 +21,10 @@ body {
   background: var(--base-background-color);
 }
 
-p { margin: 0 0 1em 0; }
+p {
+  margin: 0;
+  @extend %margin-bottom;
+}
 
 h1, h2, h3, h4 {
   font-family: var(--heading-font-family);
@@ -31,13 +34,11 @@ h1, h2, h3, h4 {
 }
 h1 {
   font-size: var(--h1-font-size);
-  margin-top: .7em;
-  margin-bottom: .5em;
+  margin: 0;
 }
 h2 {
   font-size: var(--h2-font-size);
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin: 0;
 }
 h3 {
   font-size: var(--h3-font-size);
