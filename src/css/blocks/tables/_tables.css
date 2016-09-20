@@ -8,7 +8,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  /*margin: 1rem 0;*/
   text-align: left;
   thead,
   tbody,
@@ -17,7 +16,7 @@ table {
     th {
       color: var(--slate-gray);
       padding: 1rem 2rem;
-      @media (--tablet) { padding: 1rem; min-height: 48px; }
+      @media (--tablet) { padding: 1rem; height: var(--table-row-height); }
       border-bottom: 1px solid var(--table-border-color);
     }
     th:first-child,
