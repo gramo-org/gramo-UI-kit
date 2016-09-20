@@ -49,6 +49,8 @@
   color: #fff;
   font-size: 1.3rem;
   padding: 0.3rem .75rem;
+  max-width: 50px;
+  align-self: flex-end;
 }
 
 .badge--icon {

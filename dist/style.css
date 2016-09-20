@@ -3226,6 +3226,10 @@ main.pull .section-header--fixed{
   color:#fff;
   font-size:1.3rem;
   padding:0.3rem .75rem;
+  max-width:50px;
+  -webkit-align-self:flex-end;
+  -ms-flex-item-align:end;
+  align-self:flex-end;
 }
 
 .badge--icon{
