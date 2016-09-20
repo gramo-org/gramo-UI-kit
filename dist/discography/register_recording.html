@@ -104,11 +104,22 @@
               <form action="" class="search__form">
                 <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
                 <button class="search__submit"></button>
+                <span class="break--inline"></span>
+                <label class="form__label">
+                  <select class="select select--block align--vertical-center">
+                    <option>Søktype</option>
+                    <option>Hovedartist</option>
+                    <option>Album</option>
+                    <option>Innspilling</option>
+                    <option>Gruppe</option>
+                    <option>Utøver</option>
+                  </select>
+                </label>
               </form>
             </div><!--end .toolbar-->
 
-            <div class="fake-table fake-table--numeric  fake-table--numeric--checkboxes">
-              <div class="fake-table__row fake-table__row--head">
+            <ol class="fake-table fake-table--numeric  fake-table--numeric--checkboxes">
+              <li class="fake-table__row fake-table__row--head">
                 <div class="col-sm-3">
                   Tittel
                 </div>
@@ -127,8 +138,8 @@
                 <div class="col-sm-2">
                   ISRC
                 </div>
-              </div>
-              <div class="fake-table__row">
+              </li>
+              <li class="fake-table__row">
                 <input type="checkbox" />
                 <div class="col-sm-3" data-label="Tittel">
                   Aladdin Sane
@@ -149,8 +160,11 @@
                 <div class="col-sm-2" data-label="ISRC">
                   USJT10300113
                 </div>
-              </div>
-              <div class="fake-table__row">
+                <div class="col-xs-1">
+                  <span class="badge badge--draft">Kladd</span>
+                </div>
+              </li>
+              <li class="fake-table__row">
                 <input type="checkbox" />
                 <div class="col-sm-3" data-label="Tittel">
                   Aladdin Sane
@@ -171,8 +185,8 @@
                 <div class="col-sm-2" data-label="ISRC">
                   USJT10300113
                 </div>
-              </div>
-              <div class="fake-table__row">
+              </li>
+              <li class="fake-table__row">
                 <input type="checkbox" />
                 <div class="col-sm-3" data-label="Tittel">
                   Aladdin Sane
@@ -193,8 +207,8 @@
                 <div class="col-sm-2" data-label="ISRC">
                   USJT10300113
                 </div>
-              </div>
-              <div class="fake-table__row">
+              </li>
+              <li class="fake-table__row">
                 <input type="checkbox" />
                   <div class="col-sm-3" data-label="Tittel">
                     Aladdin Sane
@@ -215,8 +229,8 @@
                   <div class="col-sm-2 " data-label="ISRC">
                     USJT10300113
                   </div>
-              </div>
-            </div><!--/.fake-table-->
+              </li>
+            </ol><!--/.fake-table-->
           </section><!--/.tabs__section-->
           <section id="tab2" class="tabs__section tabs__section--outline">
             <div class="wrapper wrapper--full">
