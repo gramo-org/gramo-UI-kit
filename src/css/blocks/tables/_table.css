@@ -1,7 +1,7 @@
 .table {
-  margin-top: .2rem;
   table-layout: fixed;
   width: 100%;
+  @extend %margin-bottom;
   @media (--desktop) { min-width: 700px; width: auto; }
   @media (--hd) { min-width: 960px; }
 
@@ -24,10 +24,6 @@
     tr {
       cursor: pointer;
     }
-  }
-
-  &--with-margin {
-    margin-top: 1.2rem
   }
 
   .tbody--with-spacing {
