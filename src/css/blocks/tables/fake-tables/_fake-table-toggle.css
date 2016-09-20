@@ -22,6 +22,7 @@
 
   & > div[class*="col-"] {
     padding: 1.25rem 1rem; /* give cols elements the same padding as in .fake-table__row */
+    min-height: var(--table-row-height);
   }
 }
 
