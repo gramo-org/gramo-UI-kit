@@ -5,11 +5,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  @extend %margin-bottom;
 
   &--padded {
     @media (--hd) {
-      padding-left: 3rem;
-      padding-right: 3rem;
+      padding: 1.5rem 3rem;
     }
   }
 
@@ -21,13 +21,13 @@
     padding: 0;
   }
 
-  &--above,
-  &--below {
+  &--above {
     border-radius: 2px 2px 0 0;
     background: var(--table-head-background);
     border: 1px solid var(--table-border-color);
     border-width: 1px 1px 0 1px;
     padding: .75rem 1rem;
+    margin-bottom: 0;
 
     &--transparent {
       background: none;
