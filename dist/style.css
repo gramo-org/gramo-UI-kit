@@ -1764,8 +1764,8 @@ a:active, a:hover{
 
 @media (min-width: 768px){
   .form__field > .col-lg-4{
-    min-width:400px;
-    max-width:400px;
+    min-width:430px;
+    max-width:430px;
   }
 }
 
@@ -1925,7 +1925,7 @@ a:active, a:hover{
 @media (min-width: 768px){
   .select{
     margin-top:0;
-    background-position:95% 55%;
+    background-position:96% 55%;
   }
 }
 .select--block{

@@ -96,8 +96,8 @@ p.error--form-field {
 
   & > .col-lg-4 {
     @media (--tablet) {
-      min-width: 400px;
-      max-width: 400px;
+      min-width: 430px;
+      max-width: 430px;
     }
   }
 
