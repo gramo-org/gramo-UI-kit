@@ -103,13 +103,13 @@
   right: 1rem;
   z-index: 2;
   left: 21rem;
-  top: 0;
+  /*top: 0;*/
   @media (--tablet) {
     padding-top: 3rem;
   }
   @media (--desktop) {
     left: 23rem;
-    top: auto;
+    top: 3rem;
     padding-top: 1rem;
   }
 

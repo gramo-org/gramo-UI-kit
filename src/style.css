@@ -1050,11 +1050,11 @@ main > section:first-of-type{
 }
 
 .container--fixedheight{
-  height:10rem;
+  height:3rem;
 }
 
 .container--fixedheight + section{
-  margin-top:7rem;
+  margin-top:5.4rem;
 }
 
 .container--branded{
@@ -2889,7 +2889,6 @@ input[type="number"]{
   right:1rem;
   z-index:2;
   left:21rem;
-  top:0;
 }
 
 @media (min-width: 768px){
@@ -2901,7 +2900,7 @@ input[type="number"]{
 @media (min-width: 960px){
   .section-header--fixed{
     left:23rem;
-    top:auto;
+    top:3rem;
     padding-top:1rem;
   }
 }
@@ -3367,7 +3366,7 @@ tr > td:last-child{
 .table .tbody--with-spacing::before{
   content:'';
   display:block;
-  height:2rem;
+  height:1.2rem;
 }
 
 @media (min-width: 768px){
