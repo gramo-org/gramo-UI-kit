@@ -22,7 +22,7 @@
   border-width:1px 1px 3px 1px!important;
 }
 
-p, .form, .form__fieldset, .section-header, .infobar, .toolbar, .table, .fake-table, .highlight, .search__form{
+p, .form, .form__fieldset, .section-header, .section-header--divided .section-header__above, .infobar, .toolbar, .table, .fake-table, .highlight, .search__form{
   margin-bottom:1.2rem;
 }
 .text--left{
