@@ -993,6 +993,7 @@ hr{
   margin:0;
 }
 .heading--sub{
+  margin-top:1.2rem;
   margin-bottom:.6rem;
 }
 .site-wrapper{
@@ -1553,7 +1554,7 @@ a:active, a:hover{
 
   .form__label--block{
   display:block;
-  margin:.4rem 0 0 0;
+  margin:0 0 .4rem 0;
 }
 
   .form__label--reduced{
@@ -1745,7 +1746,6 @@ a:active, a:hover{
     -webkit-align-self:center;
     -ms-flex-item-align:center;
     align-self:center;
-    margin-top:.5rem;
   }
 }
 .form__field__action--delete{
@@ -2069,6 +2069,7 @@ a:active, a:hover{
 }
 input[type="number"], input[type="time"]{
   position:relative;
+  height:3.2rem;
 }
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button, input[type="time"]::-webkit-outer-spin-button, input[type="time"]::-webkit-inner-spin-button{
   -webkit-appearance:none;

@@ -78,7 +78,7 @@
     /* Block labels */
     &--block {
       display: block;
-      margin: .4rem 0 0 0;
+      margin: 0 0 .4rem 0;
     }
 
     &--reduced {

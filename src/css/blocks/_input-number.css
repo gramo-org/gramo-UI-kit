@@ -1,6 +1,7 @@
 input[type="number"],
 input[type="time"] {
   position: relative;
+  height: 3.2rem;
 
   /* Spin Buttons modified */
   &::-webkit-outer-spin-button,
