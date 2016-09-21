@@ -42,7 +42,7 @@
   }
 
   &__action {
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     @media (--tablet) {
