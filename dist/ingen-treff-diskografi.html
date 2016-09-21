@@ -49,18 +49,17 @@
     </div>
     <!--End Sidebar example-->
     <main>
-      <div class="toggle-sidebar open">
-        <a href="#">
-
-
-
-        </a>
-      </div>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
 
 
       <section class="container container--hd">
-        <div class="row">
-          <div class="wrapper wrapper--sidebar">
+        <div class="wrapper">
+          <div class="wrapper__sidebar">
             <div class="section-header section-header--with-border">
               <header>
                 <h1>Ikke identifiserte
@@ -69,68 +68,60 @@
               </header>
             </div>
             <div class="tabs tabs--toggleable tabs--compressed">
-              <ul class="breadcrumbs breadcrumbs--in-content">
-                <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#">NRK</a></li>
+              <ul class="breadcrumbs breadcrumbs--in-content breadcrumbs--without-arrows">
+                <li class="breadcrumbs__item breadcrumbs__item--home"><h4><a href="#">NRK</a></h4></li>
+                <span class="breadcrumbs__arrow"></span>
                 <li class="breadcrumbs__item"><a href="#">P3</a></li>
               </ul>
               <input type="checkbox" id="tab-control">
               <label for="tab-control">endre kanal</label>
-              <hr class="horizontal-rule horizontal-rule--stretch">
               <ul class='tabs__nav'>
                 <li class='tabs__nav__item'><a href="#nrk">NRK</a></li>
                 <li class='tabs__nav__item'><a href="#p4">P4 </a></li>
                 <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
                 <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
               </ul>
-              <div class="row toolbar">
-                <div class="col-xs col-sm-8">
-                  <div class="searchable-list">
-                    <div class="searchable-list__heading">
-                      <span class="searchable-list__selected">Søk blant kanaler</span>
-                    </div>
-                    <div class="searchable-list__dropdown">
-                      <input type="text" value="P3" class="form__input form__input--block searchable-list__search">
-                      <ul>
-                        <li class="searchable-list__option">P1</li>
-                        <li class="searchable-list__option">P2</li>
-                        <li class="searchable-list__option">P3</li>
-                      </ul>
-                    </div>
-                  </div><!--end searchable list-->
-                </div>
-                <div class="col-md align--center">
+              <div class="toolbar">
+                <div class="searchable-list">
+                  <div class="searchable-list__heading">
+                    <span class="searchable-list__selected">Søk blant kanaler</span>
+                  </div>
+                  <div class="searchable-list__dropdown">
+                    <input type="text" value="P3" class="form__input form__input--block searchable-list__search">
+                    <ul>
+                      <li class="searchable-list__option">P1</li>
+                      <li class="searchable-list__option">P2</li>
+                      <li class="searchable-list__option">P3</li>
+                    </ul>
+                  </div>
+                </div><!--end searchable list-->
+                <div class="align--center">
                   <a href="#" class="link--inline">Lagre</a>
                 </div>
-              </div><!--/.row .toolbar-->
+              </div><!--/.toolbar-->
               <section id="nrk" class="tabs__section">
                 <!--NRK-->
-                <div class="toolbar toolbar--transparent col-md">
-                  <div class="toolbar__above toolbar__above--transparent row">
-                    <div class="col-md">
-                      <ul class="filter-items list--inline">
-                        <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Leonard Cohen</span></a></li>
-                        <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Ikke utgitt</span></a></li>
-                      </ul>
-                    </div>
-                  </div><!--end .row-->
-                  <div class="toolbar__below row">
-                    <div class="col-xs-1">
-                      <label class="form__label">
-                        <input type="checkbox">
-                      </label>
-                    </div>
-                    <div class="col-sm">
-                      <span class="text--medium text--bold">Vis alle felter</span>
-                      <span class="x-toggle-container">
-                        <input type="checkbox" class="x-toggle">
-                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-                        </label>
-                      </span>
-                    </div><!--end .col-sm-->
-                  </div>
+
+
+                  <ul class="filter-items list--inline">
+                    <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Leonard Cohen</span></a></li>
+                    <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Ikke utgitt</span></a></li>
+                  </ul>
+
+                <div class="toolbar toolbar--above">
+                  <label class="form__label">
+                    <input type="checkbox">
+                  </label>
+
+                  <span class="text--medium text--bold">Vis alle felter</span>
+                  <span class="x-toggle-container">
+                    <input type="checkbox" class="x-toggle">
+                    <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                    </label>
+                  </span>
                 </div><!--/.toolbar-->
-                <div class="fake-table fake-table--scrollable">
-                  <div class="fake-table__row fake-table__row--selected">
+                <ul class="fake-table scrollable-area">
+                  <li class="fake-table__row fake-table__row--selected">
                     <div class="col-xs-1">
                       <label class="form__label">
                         <input type="checkbox">
@@ -138,16 +129,16 @@
                     </div>
                     <div class="col-xs-8">
                       <span class="text--small text--light"><a href="#"><i class="icon--ban"></i> Ikke utgitt</a></span>
-                      <span class="text--bold"><a href="#">Is That What You Call Love?</a></span>
+                      <h4><a href="#">Is That What You Call Love?</a></h4>
                       <span><a href="#">Hawksley Workman</a></span>
                     </div>
                     <div class="col-xs-3 text--right">
-                      <span class="text--small text--light"><i class="icon--hits"></i> 10 treff</span>
+                      <span class="text--small text--bold"><i class="icon--hits"></i> 10 treff</span>
                       <span>3:27:51</span>
-                      <span class="text--bold">234</span>
+                      <span>234</span>
                     </div>
-                  </div><!--end .fake-table__row-->
-                  <div class="fake-table__row">
+                  </li><!--end .fake-table__row-->
+                  <li class="fake-table__row">
                     <div class="col-xs-1">
                       <label class="form__label">
                         <input type="checkbox">
@@ -155,21 +146,21 @@
                     </div>
                     <div class="col-xs-8">
                       <span class="text--small text--light"><a href="#"><i class="icon--ban"></i> Ikke utgitt</a></span>
-                      <span class="text--bold"><a href="#">Set The Controls for the Heart of the Sun</a></span>
+                      <h4><a href="#">Set The Controls for the Heart of the Sun</a></h4>
                       <span><a href="#">Pink Floyd</a></span>
                     </div>
                     <div class="col-xs-3 text--right">
-                      <span class="text--small text--light"><i class="icon--hits"></i> 7 treff</span>
+                      <span class="text--small text--bold"><i class="icon--hits"></i> 7 treff</span>
                       <span>3:27:51</span>
-                      <span class="text--bold">234</span>
+                      <span>234</span>
                     </div>
-                  </div><!--end .fake-table__row-->
-                </div><!--end .fake-table-->
+                  </li><!--end .fake-table__row-->
+                </ul><!--end .fake-table-->
               </section><!--end .tabs__section #nrk-->
             </div><!--end .tabs-->
           </div><!--end .wrapper #sidebar-->
 
-          <div class="wrapper wrapper--main">
+          <div class="wrapper__main">
             <div class="infobar">
               <div class="infobar__left">
                 <p class="infobar__meta">
@@ -186,58 +177,48 @@
                 <h3>234</h3>
               </div>
               <div class="infobar__action">
-                <button class="btn btn--primary"><i class="icon--send"></i> Restliste</button>
-                <button class="btn btn--secondary"><i class="icon--ban"></i> Ikke utgitt</button>
+                <button class="btn btn--primary">Restliste</button>
+                <button class="btn btn--secondary">Ikke utgitt</button>
               </div>
             </div><!--/ .infobar-->
 
             <div class="tabs tabs--transparent">
               <ul class="tabs__nav">
-                <li class="tabs__nav__item"><a href="#discography">0 treff</a></li>
+                <li class="tabs__nav__item"><h4><a href="#discography">10 treff</a></h4></li>
                 <li class="tabs__nav__item tab__nav__item--right no-padding--right"><a class="btn btn--secondary btn--small" href="#search-external-sources">Søk </a></li>
               </ul>
 
               <section id="discography" class="tabs__section">
-                <div class="empty-state col-md">
+                <div class="empty-state">
                   <h3>Ey! Vi fant ingen treff i diskografien. <br><span>Prøv å søke <a href="#search-external-sources">her</a></span></h3>
-                  <div class="row">
-                    <div class="col-md">
+
                       <span class="empty-state__icon">
                         <i class="icon--empty-state-musikk"></i>
                       </span>
-                    </div>
-                  </div><!--end .row-->
+
                 </div>
               </section><!--end section #discography-->
 
               <section id="search-external-sources" class="tabs__section">
-                <div class="toolbar col-md">
+                <div class="toolbar">
 
-                    <section class="search row align--center">
-                      <div class="col-xs-12 col-md-6">
-                        <form action="" class="search__form">
-                          <input type="text" class="search__form__input" value="" placeholder="Søk..." />
-                          <button class="search__submit"></button>
-                        </form>
-                      </div>
-
-                    </section>
+                    <form action="" class="search__form search__form--center">
+                      <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                      <button class="search__submit"></button>
+                    </form>
 
                 </div><!--/ .toolbar-->
-                <div class="fake-table">
-                  <div class="fake-table__row">
-                    <div class="fake-table__toggle-container">
+                <ol class="fake-table fake-table--numeric scrollable-area">
+                  <li class="fake-table__row">
+                    <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
                       <div class="fake-table__toggle-row">
-                        <div class="col-xs-4">
-                          <span class="text--bold"><span class="badge badge--numeric">1</span> Is That What You Call Love?</span>
-                        </div>
                         <div class="col-xs-3">
                           Hawksley Workman
                         </div>
                         <div class="col-xs-4 text--right">
                           Diskografi: ISRC  og Hovedartist(100)
                         </div>
-                        <div class="col-xs-1 fake-table__cell--action">
+                        <div class="col-xs fake-table__cell--action">
                           <a href="#" class="table-row-toggle"></a>
                         </div>
                       </div><!--end .fake-table__toggle-row-->
@@ -246,9 +227,9 @@
                       <div class="col-md">
                         <div class="row">
                           <div class="col-md-1"></div><!--end .col-md-1-->
-                          <div class="col-md-5 text--center"><h6 class="hidden-on-mobile">Avspilling</h6></div><!--end .col-md-5-->
+                          <div class="col-md-5 text--center"><h4 class="hidden-on-mobile">Avspilling</h4></div><!--end .col-md-5-->
                           <div class="col-md-1"></div><!--end .col-md-1-->
-                          <div class="col-md-5 text--center"><h6 class="hidden-on-mobile">Innspilling</h6></div><!--end .col-md-2-->
+                          <div class="col-md-5 text--center"><h4 class="hidden-on-mobile">Innspilling</h4></div><!--end .col-md-2-->
                         </div><!--end .row-->
                         <form>
                           <div class="row">
@@ -343,28 +324,25 @@
                         </form>
                         <div class="fake-table__row fake-table__row--foot">
                           <div class="col-md-3 off-sm-5 text--center">
-                            <button class="btn btn--primary"><i class="fa fa-check"></i> Match</button>
+                            <button class="btn btn--primary">Match</button>
                           </div>
                           <div class="col-md">
                             <a href="#" class="link--inline link--chevron-right">Vis alle felter</a>
                           </div>
                         </div><!--end .fake-table__row footer-->
-                      </div><!--end .col-md-12-->
+                      </div><!--end .col-md-->
                     </div><!--end .fake-table__row child-->
-                  </div><!--end .fake-table__row-->
-                  <div class="fake-table__row">
-                    <div class="fake-table__toggle-container">
+                  </li><!--end .fake-table__row-->
+                  <li class="fake-table__row">
+                    <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
                       <div class="fake-table__toggle-row">
-                        <div class="col-xs-4">
-                          <span class="text--bold"><span class="badge badge--numeric">2</span> Is This a Dream (Or is it real)?</span>
-                        </div>
                         <div class="col-xs-3">
                           Hawksley Workman
                         </div>
                         <div class="col-xs-4 text--right">
                           Diskografi: ISRC  og Hovedartist(100)
                         </div>
-                        <div class="col-xs-1 fake-table__cell--action">
+                        <div class="col-xs fake-table__cell--action">
                           <a href="#" class="table-row-toggle"></a>
                         </div>
                       </div><!--end .fake-table__toggle-row-->
@@ -373,9 +351,9 @@
                       <div class="col-md">
                         <div class="row">
                           <div class="col-md-1"></div><!--end .col-md-1-->
-                          <div class="col-md-5 text--center"><h6 class="hidden-on-mobile">Avspilling</h6></div><!--end .col-md-5-->
+                          <div class="col-md-5 text--center"><h4 class="hidden-on-mobile">Avspilling</h4></div><!--end .col-md-5-->
                           <div class="col-md-1"></div><!--end .col-md-1-->
-                          <div class="col-md-5 text--center"><h6 class="hidden-on-mobile">Innspilling</h6></div><!--end .col-md-2-->
+                          <div class="col-md-5 text--center"><h4 class="hidden-on-mobile">Innspilling</h4></div><!--end .col-md-2-->
                         </div><!--end .row-->
                         <form>
                           <div class="row">
@@ -470,21 +448,20 @@
                         </form>
                         <div class="fake-table__row fake-table__row--foot">
                           <div class="col-md-3 off-sm-5 text--center">
-                            <button class="btn btn--primary"><i class="fa fa-check"></i> Match</button>
+                            <button class="btn btn--primary">Match</button>
                           </div>
                           <div class="col-md">
                             <a href="#" class="link--inline link--chevron-right">Vis alle felter</a>
                           </div>
                         </div><!--end .fake-table__row footer-->
-                      </div><!--end .col-md-12-->
+                      </div><!--end .col-md-->
                     </div><!--end .fake-table__row child-->
-                  </div><!--end .fake-table__row-->
-                </div><!--/ .fake-table-->
+                  </li><!--end .fake-table__row-->
+                </ol><!--/ .fake-table-->
               </section><!--end section #search-external-sources-->
             </div><!--/ .tabs-->
           </div><!--end .wrapper #main-->
-
-        </div><!--end .row-->
+        </div><!--end .wrapper-->
       </section>
 
     </main>

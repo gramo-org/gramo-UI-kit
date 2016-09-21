@@ -6,6 +6,6 @@
   }
 
   tr > td:first-child::before {
-    @extend .fake-table--numeric > .fake-table__row::before;
+    @extend .fake-table--numeric > .fake-table__row > *:first-child::before;
   }
 }

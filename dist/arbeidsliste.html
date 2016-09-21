@@ -49,11 +49,12 @@
     </div>
     <!--End Sidebar example-->
     <main>
-      <div class="toggle-sidebar open">
-        <a href="#">
-
-        </a>
-      </div>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
       <!--- Flash message --->
       <div class="flash-message-wrapper">
         <div class="col-xs-12 no-padding">
@@ -64,83 +65,92 @@
       </div>
 
       <section class="container container--hd">
-        <div class="row">
-          <div class="wrapper wrapper--sidebar">
-            <div class="section-header section-header--with-border">
-              <header>
-                <h1>Arbeidsliste
-                  <span class="text--normal">Kladd til godkjenning</span>
-                  <span class="badge badge--error">31</span>
-                </h1>
+        <div class="wrapper">
+          <div class="wrapper__sidebar">
+            <div class="section-header">
+              <header style="flex-shrink:2;">
+                <h1>Arbeidsliste <span class="text--normal">Kladd til godkjenning</span><span class="badge badge--error">5</span></h1>
               </header>
             </div>
-
-            <div class="toolbar toolbar--transparent container">
-              <div class="toolbar__above toolbar__above--transparent row">
-                <div class="col-md">
-                  <ul class="filter-items list--inline">
-                    <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Hawksley Workman</span></a></li>
-                    <li><a href="#"><span class="filter-items__remove"><i class="icon--x"></i></span> <span>Kladd</span></a></li>
-                  </ul>
-                </div>
-              </div><!--end .row-->
-              <div class="toolbar__below row">
-                <div class="col-sm align--vertical-center">
-                  <span class="text--medium text--bold">Vis alle felter</span>
-                  <span class="x-toggle-container">
-                    <input type="checkbox" class="x-toggle">
-                    <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-                    </label>
-                  </span>
-                </div><!--end .col-sm-->
-                <div class="col-sm">
-                  <div class="searchable-list">
-                    <div class="searchable-list__heading">
-                      <span class="searchable-list__selected">Sorter etter</span>
-                    </div>
-                    <div class="searchable-list__dropdown">
-                      <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
-                      <ul>
-                        <li class="searchable-list__option">Ole Jacob</li>
-                        <li class="searchable-list__option">Morten Møller</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <ul class="filter-items list--inline">
+              <li>
+                <a>
+                  <span class="filter-items__remove"><i class="icon--x"></i></span>
+                  <span>spotify</span>
+                </a>
+              </li>
+            </ul>
+            <div class="toolbar toolbar--above">
+              <span class="text--medium">Vis alle felter</span>
+              <span class="x-toggle-container">
+                <input type="checkbox" class="x-toggle">
+                <label class="x-toggle-btn x-toggle-default medium" data-tg-on="På" data-tg-off="Av">
+                </label>
+              </span>
             </div><!--/.toolbar-->
-            <ol class="fake-table fake-table--scrollable fake-table--numeric">
+            <ul class="fake-table fake-table--numeric scrollable-area">
               <li class="fake-table__row fake-table__row--selected">
-                <div class="col-xs-7">
-                  <span class="text--small text--light"> Kladd</span>
-                  <span class="text--bold"><a href="#">Is That What You Call Love?</a></span>
-                  <span><a href="#">Hawksley Workman</a></span>
+                <div class="col-xs-8">
+                  <span class="text--small text--light">
+                    <a>Spotify</a>
+                  </span>
+                  <h4>View Point</h4>
+                  <span>
+                    <a>Mosca</a>
+                  </span>
                 </div>
-                <div class="col-xs-4 text--right align--bottom">
-
-                  <span>3:27:51</span>
-                  <span class="text--bold">234</span>
-                </div>
-              </li><!--end .fake-table__row-->
+              </li>
               <li class="fake-table__row">
-                <div class="col-xs-7">
-                  <span class="text--small text--light"> Kladd</span>
-                  <span class="text--bold"><a href="#">Set The Controls for the Heart of the Sun</a></span>
-                  <span><a href="#">Pink Floyd</a></span>
+                <div class="col-xs-8">
+                  <span class="text--small text--light">
+                    <a>Spotify</a>
+                  </span>
+                  <h4>View Point</h4>
+                  <span>
+                    <a>Baths</a>
+                  </span>
                 </div>
-                <div class="col-xs-4 text--right align--bottom">
-
-                  <span>3:27:51</span>
-                  <span class="text--bold">234</span>
+              </li>
+              <li class="fake-table__row">
+                <div class="col-xs-8">
+                  <span class="text--small text--light">
+                    <a>Kladd</a>
+                  </span>
+                  <h4>Suckle</h4>
+                  <span>
+                    <a>Commix</a>
+                  </span>
                 </div>
-              </li><!--end .fake-table__row-->
-            </ol><!--end .fake-table-->
+              </li>
+              <li class="fake-table__row">
+                <div class="col-xs-8">
+                  <span class="text--small text--light">
+                    <a>Spotify</a>
+                  </span>
+                  <h4>Chimes</h4>
+                  <span>
+                    <a>Baths</a>
+                  </span>
+                </div>
+              </li>
+              <li class="fake-table__row">
+                <div class="col-xs-8">
+                  <span class="text--small text--light">
+                    <a>Discogs</a>
+                  </span>
+                  <h4>View Point</h4>
+                  <span>
+                    <a>Commix</a>
+                  </span>
+                </div>
+              </li>
+            </ul><!--end .fake-table-->
           </div><!--end .wrapper #sidebar-->
 
-          <div class="wrapper wrapper--main">
+          <div class="wrapper__main">
 
           </div><!--end .wrapper #main-->
-        </div><!--end .row-->
+        </div><!--end .wrapper-->
       </section>
 
     </main>

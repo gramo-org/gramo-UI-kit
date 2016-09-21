@@ -9,6 +9,7 @@
   flex: 1;
   display: flex;
   position: relative;
+  @extend %margin-bottom;
 
   &--center {
     justify-content: center;
@@ -48,7 +49,7 @@ input[type="text"].search__form__input {
   border: 3px solid color(var(--slate-gray) shade(15%));
   border-width: 0 0 3px 0;
   border-radius: 0 2px 2px 0;
-  margin: 0 0 0 -1px;
+  margin-left: -1px;
   background: var(--slate-gray);
   color: var(--gramo-white);
   padding-top: .5rem;
@@ -74,11 +75,11 @@ input[type="text"].search__form__input {
   }
 }
 
+/* only used on index page */
 .search__form--simple {
   margin-bottom: 2rem;
 }
 
-/* For index page */
 .search__form--simple:before {
   border-radius: 2px 0 0 2px;
   background: var(--silver);

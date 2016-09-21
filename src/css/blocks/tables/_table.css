@@ -1,7 +1,7 @@
 .table {
-  margin-top: 2rem;
   table-layout: fixed;
   width: 100%;
+  @extend %margin-bottom;
   @media (--desktop) { min-width: 700px; width: auto; }
   @media (--hd) { min-width: 960px; }
 
@@ -25,7 +25,6 @@
       cursor: pointer;
     }
   }
-
 
   .tbody--with-spacing {
     /* Pseudo class to make space between thead and tbody */

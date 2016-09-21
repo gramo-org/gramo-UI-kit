@@ -19,3 +19,7 @@
 %full-border {
   border-width: 1px 1px 3px 1px!important;
 }
+
+%margin-bottom {
+  margin-bottom: 1.2rem;
+}

@@ -38,7 +38,7 @@
   font-family: 'icomoon';
   position: absolute;
   left: 113%;
-  top: 1.5rem;
+  top: 1rem;
   background: var(--gramo-white);
   content: none;
   @media (--desktop) { content: "\e900"; }

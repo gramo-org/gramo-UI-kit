@@ -1,11 +1,8 @@
 .fake-table {
-  margin: 0;
   @extend .container;
   min-width: 100%;
-
-  &--detached {
-    margin-top: 2rem;
-  }
+  margin-top: 0;
+  @extend %margin-bottom;
 }
 
 .fake-table--scrollable {
