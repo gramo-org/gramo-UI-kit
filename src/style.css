@@ -2142,7 +2142,7 @@ input[type="number"]{
 .horizontal-rule--dashed{
   border-top:1px dashed #d9d9dc;
   background:none;
-  margin:0 0 1.2rem 0;
+  margin:0;
 }
 
 .horizontal-rule--dashed:before, .horizontal-rule--dashed:after{
@@ -2771,6 +2771,7 @@ input[type="number"]{
   -webkit-align-items:center;
   -ms-flex-align:center;
   align-items:center;
+  padding-top:1.2rem;
 }
 .section-header__above, .section-header__below{
   display:-webkit-flex;
@@ -2779,7 +2780,8 @@ input[type="number"]{
 }
 .section-header--with-border{
   border-bottom:1px solid #d9d9dc;
-  padding-bottom:1rem;
+  padding-bottom:1.2rem;
+  padding-top:0;
 }
 
 .section-header header{
@@ -4630,6 +4632,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   background-size:100rem 10rem;
   height:1rem;
   position:relative;
+  margin:1rem 0;
 }
 .code{
   position:relative;
@@ -4762,6 +4765,10 @@ pre.prettyprint{
   -webkit-justify-content:flex-end;
   -ms-flex-pack:end;
   justify-content:flex-end;
+}
+
+.search__form--in-toolbar{
+  margin-bottom:0;
 }
 
 input[type="text"].search__form__input{

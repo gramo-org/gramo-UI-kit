@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   @extend %margin-bottom;
+  padding-top: 1.2rem;
 
   &__above,
   &__below {
@@ -10,7 +11,8 @@
 
   &--with-border {
     border-bottom: 1px solid var(--silver);
-    padding-bottom: 1rem;
+    padding-bottom: 1.2rem;
+    padding-top: 0;
   }
 }
 
