@@ -43,6 +43,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 .scrollable-area {
   height: calc(100vh - 25rem);
   overflow-y: auto;
+  margin-bottom: 0; /* to prevent vertical scrolling */
 }
 
 .wrapper--full {

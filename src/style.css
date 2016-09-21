@@ -1459,6 +1459,7 @@ a:active, a:hover{
 .scrollable-area{
   height:calc(100vh - 25rem);
   overflow-y:auto;
+  margin-bottom:0;
 }
 
 .wrapper--full{
