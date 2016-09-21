@@ -38,7 +38,7 @@
     margin: 0 0 0 1rem;
 
     @media (--tablet) {
-      align-self: flex-start;
+      align-self: center;
       margin-top: .5rem;
     }
   }
