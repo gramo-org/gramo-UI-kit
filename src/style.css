@@ -4257,7 +4257,6 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 }
 .tabs{
   position:relative;
-  margin-top:2rem;
 }
 .tabs--toggleable > .tabs__nav, .tabs--toggleable > .toolbar{
   display:none;
@@ -4519,7 +4518,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   color:#fdfdfd;
   text-transform:uppercase;
   font-size:1.5rem;
-  margin-top:3.4rem;
+  margin-top:3.2rem;
   -webkit-animation:fadeIn ease 1s;
   animation:fadeIn ease 1s;
   padding:.4rem 0;

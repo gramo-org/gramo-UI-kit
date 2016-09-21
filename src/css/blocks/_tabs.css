@@ -1,6 +1,5 @@
 .tabs {
   position: relative;
-  margin-top: 2rem;
 
   /* tabs--toggleable */
   &--toggleable {
