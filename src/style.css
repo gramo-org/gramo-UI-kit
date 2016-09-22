@@ -1998,8 +1998,9 @@ a:active, a:hover{
   color:#504f56;
   -webkit-appearance:none;
   -moz-appearance:none;
-  padding:.7rem .5rem;
+  padding:.5rem;
   min-width:200px;
+  height:32px;
 }
 @media (min-width: 768px){
   .select{
@@ -2067,11 +2068,6 @@ a:active, a:hover{
   border:1px solid #d9d9dc;
   box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);
   z-index:1;
-}
-@media (min-width: 768px){
-  .searchable-list__dropdown{
-    width:calc(100% + 1rem);
-  }
 }
 .searchable-list__dropdown .searchable-list__search{
   background:url("img/search.svg") right 0.5rem center no-repeat;
@@ -4839,10 +4835,11 @@ pre.prettyprint{
   justify-content:center;
 }
 
-.search__form--right{
-  -webkit-justify-content:flex-end;
-  -ms-flex-pack:end;
-  justify-content:flex-end;
+@media (min-width: 768px){
+  .search__form--right{
+    position:absolute;
+    right:1rem;
+  }
 }
 
 .search__form--in-toolbar{
@@ -4901,7 +4898,7 @@ input[type="text"].search__form__input--large{
   margin-left:-1px;
   background:#504f56;
   color:#fdfdfd;
-  padding:.5rem 1rem 0 1rem;
+  padding:.5rem 1.2rem 0 1.3rem;
 }
 
 @media (min-width: 768px){
