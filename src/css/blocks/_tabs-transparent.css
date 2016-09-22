@@ -22,6 +22,7 @@
       font-size: 1.6rem;
       color: color(var(--gramo-blue) tint(60%));
       padding-bottom: 0;
+      position: relative;
     }
 
     .btn {

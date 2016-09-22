@@ -4484,6 +4484,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   font-size:1.6rem;
   color:rgb(153, 213, 240);
   padding-bottom:0;
+  position:relative;
 }
 .tabs--transparent .tabs__nav__item .btn{
   text-transform:none;
