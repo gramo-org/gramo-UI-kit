@@ -2010,8 +2010,8 @@ a:active, a:hover{
 .select--block{
   display:block;
 }
-.select--full{
-  min-width:200px;
+.select--fluid{
+  min-width:0;
 }
 .select[disabled]{
   background-image:none;
@@ -2067,6 +2067,11 @@ a:active, a:hover{
   border:1px solid #d9d9dc;
   box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);
   z-index:1;
+}
+@media (min-width: 768px){
+  .searchable-list__dropdown{
+    width:calc(100% + 1rem);
+  }
 }
 .searchable-list__dropdown .searchable-list__search{
   background:url("img/search.svg") right 0.5rem center no-repeat;
@@ -4874,6 +4879,7 @@ input[type="text"].search__form__input--large{
     -webkit-flex:0 1 300px;
     -ms-flex:0 1 300px;
     flex:0 1 300px;
+    min-width:300px;
   }
 }
 

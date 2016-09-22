@@ -21,8 +21,8 @@
     display: block;
   }
 
-  &--full {
-    min-width: 200px;
+  &--fluid {
+    min-width: 0;
   }
 
   &[disabled] {

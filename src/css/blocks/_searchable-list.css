@@ -54,6 +54,10 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     z-index: 1;
 
+    @media (--tablet) {
+      width: calc(100% + 1rem);
+    }
+
     .searchable-list__search {
       background: url("img/search.svg") right 0.5rem center no-repeat;
       background-size: 1.8rem;

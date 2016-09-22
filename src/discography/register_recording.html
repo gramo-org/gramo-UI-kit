@@ -100,11 +100,16 @@
           </ul>
 
           <section id="search" class="tabs__section">
-            <div class="toolbar toolbar--padded">
-              <form action="" class="search__form">
-                <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
-                <button class="search__submit"></button>
-                <span class="break--inline"></span>
+            <div class="toolbar">
+              <div class="col-xs-6 col-md-4 col--no-flex">
+                <div class="search search--with-dropdown">
+                  <form action="" class="search__form search__form--in-toolbar">
+                    <input type="text" class="search__form__input search__form__input--min-width" value="" placeholder="Søk..." />
+                    <button class="search__submit"></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
                 <label class="form__label">
                   <select class="select select--block align--vertical-center">
                     <option>Søktype</option>
@@ -115,7 +120,10 @@
                     <option>Utøver</option>
                   </select>
                 </label>
-              </form>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
+              </div>
             </div><!--end .toolbar-->
 
             <ol class="fake-table fake-table--numeric  fake-table--numeric--checkboxes">
