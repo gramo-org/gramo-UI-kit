@@ -7,11 +7,13 @@
   text-decoration: none;
   color: #fff;
   display: block;
+  margin-top: 1.2rem;
   margin-bottom: .5rem;
 
   @media (--tablet) {
     display: inline-block;
     vertical-align: middle;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
