@@ -12,6 +12,7 @@
 @import url('base/_links.css');
 
 @import url('blocks/_truncated.css');
+@import url('blocks/_scrollbar.css');
 
 @import url('blocks/_wrapper.css');
 @import url('blocks/_site-header.css');

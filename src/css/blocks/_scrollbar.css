@@ -1,0 +1,23 @@
+.scrollbar {
+  &::-webkit-scrollbar {
+      width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 1px var(--ui-gray);
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      background: color(var(--sidebar-menu-bg) shade(15%));
+      -webkit-box-shadow: inset 0 0 1px var(--x-light-gray);
+  }
+  &::-webkit-scrollbar-thumb:window-inactive {
+  	background: color(var(--sidebar-menu-bg) shade(15%));
+  }
+}
