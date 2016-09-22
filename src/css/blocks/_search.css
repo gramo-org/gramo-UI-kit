@@ -3,10 +3,6 @@
   @media (--desktop) {
     flex: 0 1 350px;
   }
-
-  .search__form__input--fixed-width {
-    flex: 1 1 300px;
-  }
 }
 
 .search__form {
@@ -48,6 +44,11 @@ input[type="text"].search__form__input {
   &--fixed-width {
     @media (--desktop) {
       flex: 0 1 300px;
+    }
+  }
+  &--min-width {
+    @media (--desktop) {
+      flex: 1 1 300px;
     }
   }
 }
