@@ -1,0 +1,15 @@
+.table__cell {
+
+  &--truncated {
+    @extend .truncated;
+  }
+}
+
+/* Change truncated gradient color for different states */
+
+tr:hover,
+.table__row--disabled {
+  .table__cell--truncated::after {
+    background:linear-gradient(to right, transparent 120px, var(--x-light-gray));
+  }
+}
