@@ -61,7 +61,7 @@ $(document).ready(function() {
     });
 
     // Bind the click event handler
-    $(this).on('click', 'a', function(e) {
+    $(this).on('click', 'a:not(.tabs__nav__close)', function(e) {
       // Make the old tab inactive.
       $active.removeClass('active');
       $content.hide();

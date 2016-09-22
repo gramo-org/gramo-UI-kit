@@ -10,7 +10,6 @@
     @extend .icon--close:before;
     font-family: 'icomoon';
     color: var(--gramo-white);
-    font-size: 6px;
   }
 
   &:hover {

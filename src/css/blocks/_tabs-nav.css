@@ -59,13 +59,27 @@
   }
 
   &__close {
-    @extend .close-button;
     position: absolute;
-    right: 2px;
+    right: 3px;
     top: 3px;
     width: 1.2rem;
     height: 1.2rem;
     z-index: 1;
+
+    &:after {
+      @extend .icon--close:before;
+      font-family: 'icomoon';
+      color: var(--off-gray);
+      font-size: 8px;
+      position: absolute;
+      top: 0;
+      right: 1px;
+      font-weight: var(--thin);
+    }
+
+    &:hover::after {
+      color: var(--slate-gray);
+    }
   }
 }
 
