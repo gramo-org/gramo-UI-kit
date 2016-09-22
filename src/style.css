@@ -4368,6 +4368,9 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
     z-index:1;
   }
 }
+.tabs__nav__item a.active{
+  position:static;
+}
 .tabs__nav__item--search a{
   padding-top:1.6rem;
 }

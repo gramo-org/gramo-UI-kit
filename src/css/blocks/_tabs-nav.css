@@ -50,6 +50,10 @@
     }
   }
 
+  &__item a.active {
+    position: static;
+  }
+
   &__item--search a {
     padding-top: 1.6rem;
   }
