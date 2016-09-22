@@ -3,7 +3,7 @@
   background: var(--gramo-white);
   border: 1px solid var(--table-border-color);
   border-width: 1px 1px 0 1px;
-  cursor: pointer;
+  /*cursor: pointer;*/
 
   &:last-child {
     border-bottom-width: 1px;
