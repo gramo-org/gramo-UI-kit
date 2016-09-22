@@ -4353,7 +4353,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   padding:0;
   background:#f9f9f9;
   border:1px solid #d9d9dc;
-  border-width:1px 0 1px 1px;
+  border-width:1px 0 0 1px;
 }
 @media (min-width: 768px){
   .tabs__nav__item{
@@ -4376,17 +4376,15 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   background:#ededed;
   position:relative;
 }
-@media (min-width: 768px){
-  .tabs__nav__item:hover::after, .tabs__nav__item a.active::after{
-    content:'';
-    height:1px;
-    position:absolute;
-    left:0;
-    bottom:-1px;
-    background:#ededed;
-    width:100%;
-    z-index:1;
-  }
+.tabs__nav__item:hover::after, .tabs__nav__item a.active::after{
+  content:'';
+  height:1px;
+  position:absolute;
+  left:0;
+  bottom:-1px;
+  background:#ededed;
+  width:100%;
+  z-index:1;
 }
 .tabs__nav__item a.active{
   position:static;
