@@ -261,7 +261,7 @@ td.text--center, .fake-table__row > *.text--center{
   flex:1;
 }
 
-@media (min-width: 768px){
+@media (min-width: 960px){
   .col{
     -webkit-flex:0;
     -ms-flex:0;
