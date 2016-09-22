@@ -11,6 +11,8 @@
 @import url('base/_animations.css');
 @import url('base/_links.css');
 
+@import url('blocks/_truncated.css');
+
 @import url('blocks/_wrapper.css');
 @import url('blocks/_site-header.css');
 @import url('blocks/_form.css');
@@ -58,6 +60,7 @@
 
 @import url('blocks/_toggle-sidebar.css');
 @import url('blocks/_toggle.css');
+@import url('blocks/_close-button.css');
 @import url('blocks/_tabs.css');
 @import url('blocks/_tabs-nav.css');
 @import url('blocks/_tabs-type.css');
