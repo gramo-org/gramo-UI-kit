@@ -1054,7 +1054,7 @@ main > section:first-of-type{
   height:3rem;
 }
 
-.container--fixedheight + section{
+.container--fixedheight + *{
   margin-top:5.4rem;
 }
 

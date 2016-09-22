@@ -43,7 +43,7 @@ main > section:first-of-type {
   &--fixedheight {
     height: 3rem;
 
-    & + section {
+    & + * {
       margin-top: 5.4rem;
     }
   }
