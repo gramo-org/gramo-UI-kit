@@ -4892,16 +4892,24 @@ input[type="text"].search__form__input--large{
 }
 
 .search__submit{
-  -webkit-flex:0 0 40px;
-  -ms-flex:0 0 40px;
-  flex:0 0 40px;
+  -webkit-flex:0 1 40px;
+  -ms-flex:0 1 40px;
+  flex:0 1 40px;
   border:3px solid rgb(68, 67, 73);
   border-width:0 0 3px 0;
   border-radius:0 2px 2px 0;
   margin-left:-1px;
   background:#504f56;
   color:#fdfdfd;
-  padding-top:.5rem;
+  padding:.5rem 1rem 0 1rem;
+}
+
+@media (min-width: 768px){
+  .search__submit{
+    -webkit-flex:0 0 auto;
+    -ms-flex:0 0 auto;
+    flex:0 0 auto;
+  }
 }
 
 .search__submit:before{

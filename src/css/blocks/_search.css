@@ -55,14 +55,17 @@ input[type="text"].search__form__input {
 }
 
 .search__submit {
-  flex: 0 0 40px;
+  flex: 0 1 40px;
   border: 3px solid color(var(--slate-gray) shade(15%));
   border-width: 0 0 3px 0;
   border-radius: 0 2px 2px 0;
   margin-left: -1px;
   background: var(--slate-gray);
   color: var(--gramo-white);
-  padding-top: .5rem;
+  padding: .5rem 1rem 0 1rem;
+  @media (--tablet) {
+    flex: 0 0 auto;
+  }
 
   &:before {
     content: "\e91a";
