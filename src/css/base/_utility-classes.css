@@ -225,4 +225,11 @@ td.text--center,
 
 .col {
   padding: 0 1rem;
+  flex: 1;
+  @extend %margin-bottom;
+
+  @media (--tablet) {
+    flex: 0;
+    margin-bottom: 0;
+  }
 }

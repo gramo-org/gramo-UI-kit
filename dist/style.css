@@ -22,7 +22,7 @@
   border-width:1px 1px 3px 1px!important;
 }
 
-p, .form, .form__fieldset, .section-header, .section-header--divided .section-header__above, .infobar, .toolbar, .table, .fake-table, .highlight, .search__form{
+.col, p, .form, .form__fieldset, .section-header, .section-header--divided .section-header__above, .infobar, .toolbar, .table, .fake-table, .highlight, .search__form{
   margin-bottom:1.2rem;
 }
 .text--left{
@@ -256,6 +256,18 @@ td.text--center, .fake-table__row > *.text--center{
 
 .col{
   padding:0 1rem;
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1;
+}
+
+@media (min-width: 768px){
+  .col{
+    -webkit-flex:0;
+    -ms-flex:0;
+    flex:0;
+    margin-bottom:0;
+  }
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
