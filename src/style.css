@@ -4819,6 +4819,11 @@ pre.prettyprint{
     flex:0 1 350px;
   }
 }
+.search--with-dropdown .search__form__input--fixed-width{
+  -webkit-flex:1 1 300px;
+  -ms-flex:1 1 300px;
+  flex:1 1 300px;
+}
 
 .search__form{
   -webkit-flex:1;
@@ -4873,9 +4878,9 @@ input[type="text"].search__form__input--large{
 
 @media (min-width: 960px){
   input[type="text"].search__form__input--fixed-width{
-    -webkit-flex:1 1 300px;
-    -ms-flex:1 1 300px;
-    flex:1 1 300px;
+    -webkit-flex:0 1 300px;
+    -ms-flex:0 1 300px;
+    flex:0 1 300px;
   }
 }
 
