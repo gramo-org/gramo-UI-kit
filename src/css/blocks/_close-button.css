@@ -1,0 +1,19 @@
+.close-button {
+  background: var(--silver);
+  border-radius: 50%;
+  padding: 0!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:after {
+    @extend .icon--close:before;
+    font-family: 'icomoon';
+    color: var(--gramo-white);
+    font-size: 6px;
+  }
+
+  &:hover {
+    background: var(--slate-gray);
+  }
+}
