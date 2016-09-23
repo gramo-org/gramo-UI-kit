@@ -58,7 +58,11 @@
       background: url("img/search.svg") right 0.5rem center no-repeat;
       background-size: 1.8rem;
       width: 96%;
-      margin: 0.5rem auto;;
+      margin: 0.5rem auto;
+
+      &--dirty {
+        background-image: none;
+      }
     }
   }
 
@@ -88,6 +92,15 @@
     .searchable-list__dropdown {
       border-top: 0;
     }
+  }
+
+  &__delete {
+    color: var(--off-gray);
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    margin-top: -1rem;
+    font-size: 110%;
   }
 }
 

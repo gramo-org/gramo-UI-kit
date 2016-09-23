@@ -89,6 +89,12 @@ p.error--form-field {
   }
 }
 
+/* Remove default link underlines */
+
+.form__field a {
+  text-decoration: none;
+}
+
 /* Override responsive behaviour on form inputs on large screens */
 
 .form__field {
