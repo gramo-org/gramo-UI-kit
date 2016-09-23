@@ -100,11 +100,16 @@
           </ul>
 
           <section id="search" class="tabs__section">
-            <div class="toolbar toolbar--padded">
-              <form action="" class="search__form">
-                <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
-                <button class="search__submit"></button>
-                <span class="break--inline"></span>
+            <div class="toolbar">
+              <div class="col-xs-6 col-md-4 col--no-flex">
+                <div class="search search--with-dropdown">
+                  <form action="" class="search__form search__form--in-toolbar">
+                    <input type="text" class="search__form__input search__form__input--min-width" value="" placeholder="Søk..." />
+                    <button class="search__submit"></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-2">
                 <label class="form__label">
                   <select class="select select--block align--vertical-center">
                     <option>Søktype</option>
@@ -115,7 +120,10 @@
                     <option>Utøver</option>
                   </select>
                 </label>
-              </form>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
+              </div>
             </div><!--end .toolbar-->
 
             <ol class="fake-table fake-table--numeric  fake-table--numeric--checkboxes">
@@ -262,142 +270,120 @@
                   </div>
                   <form class="form">
                     <fieldset class="form__fieldset">
-                      <div class="form__field form__field--controlled-width">
-                        <div class="col-xs-12 col-sm-7 col-lg-5">
-                          <label class="form__label form__label--block form__label--required">
-                            <span>Hovedartist</span>
-                            <input type="text" value="David Bowie" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
+                      <div class="form__field">
+                        <label class="form__label form__label--required">
+                          <span class="form__field__text">Hovedartist</span>
+                          <input type="text" value="David Bowie" class="form__input form__input--300" disabled>
+                        </label>
                         <div class="form__field__action">
                           <a href="#">Legg til hovedartist</a>
                         </div>
                       </div><!--end .row-->
-                      <div class="form__field form__field--controlled-width">
-                        <div class="col-xs-12 col-sm-7 col-lg-5">
-                            <label class="form__label form__label--block form__label--required">
-                              <span>Tittel</span>
-                              <input type="text" value="Aladdin Sane" class="form__input form__input--block" disabled>
-                            </label>
-                        </div>
+                      <div class="form__field">
+                        <label class="form__label form__label--required">
+                          <span class="form__field__text">Tittel</span>
+                          <input type="text" value="Aladdin Sane" class="form__input form__input--300" disabled>
+                        </label>
                         <div class="form__field__action">
                           <a href="#">Legg til alt. tittel</a>
                         </div>
                       </div>
-                      <div class="form__field form__field--controlled-width">
-                        <div class="col-xs-12 col-sm-6 col-lg-5">
-                          <label class="form__label form__label--block">
-                            <span>Alt. Tittel</span>
-                            <input type="text" value="Aladdin Sane" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-lg-4">
-                          <label class="form__label form__label--block">
-                            <input type="text" value="Aladdin Sane" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
+                      <div class="form__field">
+                        <label class="form__label">
+                          <span class="form__field__text">Alt. Tittel</span>
+                          <input type="text" value="Aladdin Sane" class="form__input form__input--300" disabled>
+                        </label>
+                        <label class="form__label">
+                          <input type="text" value="Aladdin Sane" class="form__input form__input--300" disabled>
+                        </label>
                         <div class="form__field__action form__field__action--delete">
                           <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                         </div>
                       </div>
                       <div class="form__field">
-                        <div class="col-xs-12 col-sm-2">
-                          <label class="form__label form__label--block">
-                            <span>Varighet</span>
-                            <input type="text" value="05:07" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
+                        <label class="form__label">
+                          <span class="form__field__text">Varighet</span>
+                          <input type="text" value="05:07" class="form__input form__input--60" disabled>
+                        </label>
                       </div>
                       <div class="form__field">
-                        <div class="col-xs-12 col-sm-3 col-lg-2">
-                          <label class="form__label form__label--block">
-                            <span>Klassisk?</span>
-                            <input type="checkbox" class="form__input form__input--block form__input--checkbox" disabled>
-                          </label>
-                        </div>
+                        <label class="form__label">
+                          <span class="form__field__text">Klassisk?</span>
+                          <input type="checkbox" class="form__input form__input--checkbox" disabled>
+                        </label>
                       </div>
-                      <div class="form__field form__field--controlled-width">
-                        <div class="col-xs-12 col-sm-7 col-lg-5">
-                          <label class="form__label form__label--block form__label--required">
-                            <span>Komponist</span>
-                            <input type="text" value="Wolfgang Amadeus Mozart" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
+                      <div class="form__field">
+                        <label class="form__label form__label--required">
+                          <span class="form__field__text">Komponist</span>
+                          <input type="text" value="Wolfgang Amadeus Mozart" class="form__input form__input--300" disabled>
+                        </label>
                         <div class="form__field__action">
                           <a>Legg til komponist</a>
                         </div>
                       </div>
-                      <div class="form__field form__field--controlled-width">
-                        <div class="col-xs-12 col-lg-3">
-                          <label class="form__label form__label--block">
-                            <span>IRSC</span>
-                            <input type="text" value="USJT10030001" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
+                      <div class="form__field">
+                        <label class="form__label">
+                          <span class="form__field__text">IRSC</span>
+                          <input type="text" value="USJT10030001" class="form__input form__input--130" disabled>
+                        </label>
                         <span class="form__field__suggestion">
                           f.eks: NOXXX1501223
                         </span>
-                        <div class="form__field__action">
-                          <a>Legg til komponist</a>
-                        </div>
-                      </div>
-                      <div class="form__field form__field--controlled-width">
-                        <div class="col-xs-12 col-sm-6 col-md-5">
-                          <label class="form__label form__label--block">
-                            <span>Label</span>
-                            <input type="text" value="EMI Recorded Music Norway" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
                       </div>
                       <div class="form__field">
-                        <div class="col-xs-12 col-sm-4 col-md-2">
-                          <label class="form__label form__label--block">
-                            <span>Versjon</span>
-                            <input type="text" value="Live" class="form__input form__input--block" disabled>
-                          </label>
-                        </div>
+                        <label class="form__label">
+                          <span class="form__field__text">Label</span>
+                          <div class="searchable-list searchable-list form__input searchable-list--fluid form__input--300">
+                            <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                              <span class="searchable-list__selected">Velg platemerke</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" class="searchable-list__search form__input form__input--block">
+                              <ul>
+                              </ul>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form__field">
+                        <label class="form__label">
+                          <span class="form__field__text">Versjon</span>
+                          <input type="text" value="Live" class="form__input form__input--130" disabled>
+                        </label>
                       </div>
                       </fieldset>
                     <fieldset class="form__fieldset">
                       <div class="form__field">
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                          <label class="form__label form__label--block form__label--required">
-                            <span>Innspillingsland</span>
-                            <select class="select select--block" disabled>
-                              <option>Norge</option>
-                              <option>Storbritannia</option>
-                              <option>USA</option>
-                            </select>
-                          </label>
-                        </div>
+                        <label class="form__label form__label--required">
+                          <span class="form__field__text">Innspillingsland</span>
+                          <select class="select select--fluid form__input--180" disabled>
+                            <option>Norge</option>
+                            <option>Storbritannia</option>
+                            <option>USA</option>
+                          </select>
+                        </label>
                       </div>
                       <div class="form__field">
-                        <div class="col-xs-12 col-sm-4 col-lg-3">
-                          <label class="form__label form__label--block form__label--required">
-                            <span>Innspillingsdato</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input" disabled>
-                          </label>
-                        </div>
+                        <label class="form__label form__label--required">
+                          <span class="form__field__text">Innspillingsdato</span>
+                          <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--130" disabled>
+                        </label>
                       </div>
                       <div class="form__field">
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                          <label class="form__label form__label--block form__label--required">
-                            <span>Produsentland</span>
-                            <select class="select select--block" disabled>
-                              <option>Norge</option>
-                              <option>Storbritannia</option>
-                              <option>USA</option>
-                            </select>
-                          </label>
-                        </div>
+                        <label class="form__label form__label--required">
+                          <span class="form__field__text">Produsentland</span>
+                          <select class="select select--fluid form__input--180" disabled>
+                            <option>Norge</option>
+                            <option>Storbritannia</option>
+                            <option>USA</option>
+                          </select>
+                        </label>
                       </div>
                       <div class="form__field">
-                        <div class="col-xs-12 col-sm-4 col-lg-3">
-                          <label class="form__label form__label--block form__label--required">
-                            <span>Utgivelsesdato</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input" disabled>
-                          </label>
-                        </div>
+                        <label class="form__label form__label--required">
+                          <span class="form__field__text">Utgivelsesdato</span>
+                          <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--130" disabled>
+                        </label>
                       </div>
                     </fieldset>
                   </form>
