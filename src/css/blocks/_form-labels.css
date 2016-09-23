@@ -1,0 +1,53 @@
+.form__label {
+  position: relative;
+  @extend h4;
+  display: block;
+  @media (--tablet) {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+
+  &--is-checked {
+    color: var(--gramo-blue);
+  }
+
+  &--required {
+
+    &:before {
+      content: '*';
+      color: var(--gramo-red);
+    }
+  }
+
+  &--hidden {
+    @media (--tablet) { margin-top: -1.5rem!important; }
+
+    & > span {
+      @media (--tablet) { visibility: hidden; }
+    }
+  }
+
+  /* Block labels */
+  &--block {
+    display: block;
+    margin: 0 0 .4rem 0;
+  }
+
+  &--reduced {
+    width: calc(100% - .5rem);
+  }
+
+  /* Dates */
+  &--date {
+    font-weight: var(--semibold);
+    margin-bottom: 1rem;
+    @media (--tablet) {
+      margin-bottom: 0;
+    }
+
+    br {
+      @media (--tablet) { display: none; }
+    }
+  }
+}

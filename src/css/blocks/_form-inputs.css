@@ -1,0 +1,76 @@
+.form__input {
+  border: 1px solid var(--silver);
+  padding-right: 2rem;
+  background-color: #fff;
+  font-weight: var(--normal);
+  display: block;
+  width: 100%;
+  margin-bottom: .6rem;
+  @media (--tablet) {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  &[disabled] {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: color(var(--x-light-gray) shade(7%));
+  }
+
+
+  /* Block inputs */
+  &--block {
+    display: block;
+    width: 100%;
+  }
+}
+
+.form__input--date {
+  font-weight: var(--normal);
+  color: var(--gramo-blue);
+  background: #fff url(img/calendar.svg) center right 10px no-repeat;
+  border: 1px solid var(--silver);
+  padding-right: 1rem;
+
+  &::-webkit-clear-button,
+  &::-webkit-calendar-picker-indicator,
+  &::-webkit-inner-spin-button {
+    opacity: 0;
+    -webkit-appearance: none;
+  }
+
+  &.placeholder {
+    color: var(--gramo-blue);
+  }
+
+ &--block {
+   display: block;
+   margin-left: 0;
+  }
+}
+
+/* Custom widths for form inputs */
+
+.form__input--300 {
+  @media (--tablet) { min-width: 300px!important; }
+}
+
+.form__input--180 {
+  @media (--tablet) { min-width: 180px!important; }
+}
+
+.form__input--130 {
+  @media (--tablet) { width: 130px!important; }
+}
+
+.form__input--100 {
+  @media (--tablet) { width: 100px!important; }
+}
+
+.form__input--60 {
+  @media (--tablet) { width: 60px!important; }
+}
+
+.form__input--40 {
+  @media (--tablet) { width: 40px!important; }
+}

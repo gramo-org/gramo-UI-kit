@@ -1,45 +1,22 @@
 /* Form fields for right aligned labels and inline inputs */
 .form__field {
-  @extend .row;
   margin-bottom: .4rem;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  .form__label {
-    margin: 0; /* override margin on .form__label--block */
+  &__text,
+  &__action {
     @media (--tablet) {
-      display: flex;
-      align-items: center;
-    }
-
-    span {
-      flex: 1 0 140px;
-      text-align: right;
-      padding-right: 1rem;
-    }
-
-    .form__input {
-      flex: 1 0 75%;
-    }
-
-    .form__input--checkbox {
-      flex: 0 1 auto;
-    }
-
-    &--date {
-      margin-bottom: .5rem; /* override standard .form__label--date margin-bottom: 0 */
+      display: inline-block;
     }
   }
 
-  &__action {
-    flex: 1 0 auto;
-    margin: 0 0 0 1rem;
-
-    @media (--tablet) {
-      align-self: center;
-    }
+  &__text {
+    width: 140px;
+    text-align: right;
+    padding-right: 1rem;
   }
 
    &__action--delete {
@@ -65,19 +42,10 @@
       @extend .form__label--required:before;
     }
   }
-  /* For correct positioning of links to right of input */
-  &--controlled-width {
-    .form__label .form__input {
-      flex: 1 1 auto;
-    }
-  }
+
 
   &__suggestion {
-    @extend .text--light;
-    @extend .align--vertical-center;
     margin-right: 1rem;
-    order: 1;
-    @media (--tablet) { order: 0; }
   }
 }
 
@@ -93,36 +61,4 @@ p.error--form-field {
 
 .form__field a {
   text-decoration: none;
-}
-
-/* Override responsive behaviour on form inputs on large screens */
-
-.form__field {
-  & > .col-lg-5 {
-    @media (--tablet) {
-      min-width: 550px;
-      max-width: 550px;
-    }
-  }
-
-  & > .col-lg-4 {
-    @media (--tablet) {
-      min-width: 430px;
-      max-width: 430px;
-    }
-  }
-
-  & > .col-lg-3 {
-    @media (--tablet) {
-      min-width: 320px;
-      max-width: 320px;
-    }
-  }
-
-  & > .col-lg-2 {
-    @media (--tablet) {
-      min-width: 200px;
-      max-width: 200px;
-    }
-  }
 }
