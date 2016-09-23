@@ -8,7 +8,7 @@
 
   &__text,
   &__action,
-  div { /* make every div (ember-view) inline-block */
+  .ember-view { /* make every div (ember-view) inline-block */
     @media (--tablet) {
       display: inline-block;
     }
