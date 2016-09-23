@@ -2097,7 +2097,6 @@ input[type="number"]::-webkit-inner-spin-button:hover, input[type="number"]::-we
 }
 
 input[type="time"]{
-  padding-left:2rem;
   padding-right:2rem;
 }
 
