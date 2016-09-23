@@ -1965,6 +1965,7 @@ a:active, a:hover{
 }
 .select--fluid{
   min-width:0;
+  width:auto;
 }
 .select[disabled]{
   background-image:none;

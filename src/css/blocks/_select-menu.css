@@ -24,6 +24,7 @@
 
   &--fluid {
     min-width: 0;
+    width: auto;
   }
 
   &[disabled] {
