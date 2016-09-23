@@ -6,7 +6,7 @@
     margin-bottom: 0;
   }
 
-  &__text,
+  .form__label > span:first-of-type,
   &__action,
   .ember-view { /* make every div (ember-view) inline-block */
     @media (--tablet) {
