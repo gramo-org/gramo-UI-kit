@@ -14,7 +14,7 @@
     }
   }
 
-  &__text {
+  & > .form__label > span:first-of-type {
     width: 140px;
     text-align: right;
     padding-right: 1rem;
