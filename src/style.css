@@ -4825,9 +4825,9 @@ pre.prettyprint{
 }
 @media (min-width: 960px){
   .search--with-dropdown{
-    -webkit-flex:0 1 330px;
-    -ms-flex:0 1 330px;
-    flex:0 1 330px;
+    -webkit-flex:0;
+    -ms-flex:0;
+    flex:0;
   }
 }
 
