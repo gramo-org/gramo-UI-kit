@@ -1941,8 +1941,7 @@ a:active, a:hover{
 .searchable-list__heading{
   position:relative;
   height:30px;
-  margin-right:5px;
-  padding:7px 25px 7px 5px;
+  padding:7px 23px 7px 5px;
   cursor:pointer;
 }
 .searchable-list__heading:before{
@@ -1954,7 +1953,7 @@ a:active, a:hover{
   position:absolute;
   height:20px;
   width:12px;
-  right:0;
+  right:2px;
 }
 .searchable-list--open .searchable-list__heading:before{
   -webkit-transform:rotate(180deg);
