@@ -1902,14 +1902,14 @@ a:active, a:hover{
   color:#504f56;
   -webkit-appearance:none;
   -moz-appearance:none;
-  padding:.5rem;
+  padding:.5rem 2.5rem .5rem .5rem;
   min-width:200px;
   height:32px;
 }
 @media (min-width: 768px){
   .select{
     margin-top:0;
-    background-position:96% 55%;
+    background-position:98% 55%;
   }
 }
 .select--block{
@@ -1942,7 +1942,7 @@ a:active, a:hover{
   position:relative;
   height:30px;
   margin-right:5px;
-  padding:7px 5px;
+  padding:7px 25px 7px 5px;
   cursor:pointer;
 }
 .searchable-list__heading:before{
@@ -1954,7 +1954,7 @@ a:active, a:hover{
   position:absolute;
   height:20px;
   width:12px;
-  right:.25rem;
+  right:0;
 }
 .searchable-list--open .searchable-list__heading:before{
   -webkit-transform:rotate(180deg);

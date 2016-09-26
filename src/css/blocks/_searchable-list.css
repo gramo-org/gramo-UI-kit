@@ -17,7 +17,7 @@
     position: relative;
     height: 30px;
     margin-right: 5px;
-    padding: 7px 5px;
+    padding: 7px 25px 7px 5px;
     cursor: pointer;
 
     &:before {
@@ -29,7 +29,7 @@
       position: absolute;
       height: 20px;
       width: 12px;
-      right: .25rem;
+      right: 0;
     }
   }
 

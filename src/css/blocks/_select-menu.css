@@ -8,14 +8,14 @@
   color: var(--slate-gray);
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding: .5rem;
+  padding: .5rem 2.5rem .5rem .5rem;
   min-width: 200px;
   height: 32px;
 
 
   @media (--tablet) {
     margin-top: 0;
-    background-position: 96% 55%;
+    background-position: 98% 55%;
   }
 
   &--block {
