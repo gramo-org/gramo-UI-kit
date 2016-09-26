@@ -9,7 +9,7 @@
   .form__label > span:first-of-type,
   .form__field__text,
   &__action,
-  .ember-view { /* make every div (ember-view) inline-block */
+  .ember-view:not(.form__input__errors) { /* make every div (ember-view) inline-block */
     @media (--tablet) {
       display: inline-block;
     }
@@ -24,6 +24,11 @@
     width: 140px;
     text-align: right;
     padding-right: 1rem;
+  }
+
+  $__action {
+    vertical-align: top;
+    padding-top: 1rem;
   }
 
    &__action--delete {
