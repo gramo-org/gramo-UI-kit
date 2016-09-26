@@ -43,6 +43,14 @@
     }
   }
 
+  &--disabled {
+    @extend .form__input[disabled];
+
+    .searchable-list__heading:before {
+      opacity: 0.5;
+    }
+  }
+
   &__dropdown {
     position: absolute;
     width: 100%;
