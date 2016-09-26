@@ -22,15 +22,15 @@
 
    &__action--delete {
     position: absolute;
-    right: -0.5rem;
-    top: 4rem;
+    right: -2rem;
+    top: 3rem;
 
     @media (--tablet) {
       top: 1rem;
     }
 
     @media (--hd) {
-      position: static;
+      position: relative;
     }
   }
 
