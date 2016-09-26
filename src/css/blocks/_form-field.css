@@ -7,6 +7,7 @@
   }
 
   .form__label > span:first-of-type,
+  .form__field__text,
   &__action,
   .ember-view { /* make every div (ember-view) inline-block */
     @media (--tablet) {
@@ -14,7 +15,12 @@
     }
   }
 
-  .form__label > span:first-of-type {
+  .form__field__text {
+    font-weight: var(--semibold);
+  }
+
+  .form__label:first-child > span:first-of-type,
+  .form__field__text {
     width: 140px;
     text-align: right;
     padding-right: 1rem;

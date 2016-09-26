@@ -47,6 +47,10 @@
     background-color: rgba(255, 255, 255, 0.2);
     border-color: color(var(--x-light-gray) shade(7%));
 
+    .searchable-list__heading {
+      cursor: not-allowed;
+    }
+
     .searchable-list__heading:before {
       background-image: none;
     }
