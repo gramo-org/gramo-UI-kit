@@ -7,11 +7,11 @@
 /*** Error rows in table ***/
 .table__row--has-errors {
   background: color(var(--error) tint(90%))!important;
-  height: auto;
 
   td {
    padding: 0 0 0 1rem;
    border: 0;
+   height: auto;
 
    p {
      margin: 1rem 0;

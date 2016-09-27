@@ -3385,11 +3385,11 @@ tr > td:last-child{
 }
 .table__row--has-errors{
   background:rgb(253, 240, 240)!important;
-  height:auto;
 }
 .table__row--has-errors td{
   padding:0 0 0 1rem;
   border:0;
+  height:auto;
 }
 .table__row--has-errors td p{
   margin:1rem 0;
