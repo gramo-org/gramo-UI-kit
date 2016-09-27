@@ -28,7 +28,7 @@
 
   &__action {
     vertical-align: top;
-    padding-top: 1rem;
+    padding-top: .4rem;
   }
 
    &__action--delete {
