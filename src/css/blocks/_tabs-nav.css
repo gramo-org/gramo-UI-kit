@@ -85,6 +85,7 @@
 
 .tabs__nav--flexible {
   display: inline-flex;
+  flex-wrap: wrap;
 
   & > .tabs__nav__item {
     flex: 0 0 auto;

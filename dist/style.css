@@ -4347,6 +4347,9 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   display:-webkit-inline-flex;
   display:-ms-inline-flexbox;
   display:inline-flex;
+  -webkit-flex-wrap:wrap;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
 }
 
 .tabs__nav--flexible > .tabs__nav__item{
