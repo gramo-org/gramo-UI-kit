@@ -25,7 +25,8 @@
   }
 }
 
-.form__input--date {
+.form__input--date,
+.form__input[type="date"] {
   font-weight: var(--normal);
   color: var(--gramo-blue);
   background: #fff url(img/calendar.svg) center right 10px no-repeat;
@@ -41,11 +42,6 @@
 
   &.placeholder {
     color: var(--gramo-blue);
-  }
-
- &--block {
-   display: block;
-   margin-left: 0;
   }
 }
 

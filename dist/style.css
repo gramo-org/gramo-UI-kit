@@ -1647,7 +1647,7 @@ a:active, a:hover{
   width:100%;
 }
 
-.form__input--date{
+.form__input--date, .form__input[type="date"]{
   font-weight:400;
   color:#0095da;
   background:#fff url(img/calendar.svg) center right 10px no-repeat;
@@ -1655,18 +1655,13 @@ a:active, a:hover{
   padding-right:1rem;
 }
 
-.form__input--date::-webkit-clear-button, .form__input--date::-webkit-calendar-picker-indicator, .form__input--date::-webkit-inner-spin-button{
+.form__input--date::-webkit-clear-button, .form__input--date::-webkit-calendar-picker-indicator, .form__input--date::-webkit-inner-spin-button, .form__input[type="date"]::-webkit-clear-button, .form__input[type="date"]::-webkit-calendar-picker-indicator, .form__input[type="date"]::-webkit-inner-spin-button{
   opacity:0;
   -webkit-appearance:none;
 }
 
-.form__input--date.placeholder{
+.form__input--date.placeholder, .form__input[type="date"].placeholder{
   color:#0095da;
-}
-
-.form__input--date--block{
-  display:block;
-  margin-left:0;
 }
 
 @media (min-width: 768px){
