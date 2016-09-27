@@ -30,6 +30,8 @@ $(document).ready(function() {
   // // $(window).resize(checkWidth);
 
 
+
+
   //Fix contentHeader to top of viewport when scrolling
   var contentHeader = $('.content-header--fixed');
   $(window).scroll(function() {
@@ -78,6 +80,19 @@ $(document).ready(function() {
       // e.preventDefault();
     });
   });
+
+  function checkTabs() {
+    var LastTab = $('#mainTabs > .tabs__nav__item:last-child').offset().left + $('#mainTabs > .tabs__nav__item:last-child').outerWidth();
+    var scrollableArea = $('.scrollable-area');
+    var rightSide = $('#mainTabs.tabs__nav').offset().left + $('#mainTabs.tabs__nav').outerWidth();
+
+    if ( $(LastTab) > $(rightSide) ) {
+      console.log('greater than');
+    } else if ( $(LastTab) < $(rightSide) ) {
+      console.log('less than');
+    }
+  }
+$(window).resize(checkTabs);
 
 //searchable list
   $('.searchable-list__heading').on('click', function () {
