@@ -3385,6 +3385,7 @@ tr > td:last-child{
 }
 .table__row--has-errors{
   background:rgb(253, 240, 240)!important;
+  height:auto;
 }
 .table__row--has-errors td{
   padding:0 0 0 1rem;
@@ -4342,10 +4343,17 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   color:#504f56;
 }
 
+.tabs__nav--flexible{
+  display:-webkit-inline-flex;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+}
+
 .tabs__nav--flexible > .tabs__nav__item{
   -webkit-flex:0 0 auto;
   -ms-flex:0 0 auto;
   flex:0 0 auto;
+  max-width:none;
 }
 
 .tabs__nav--flexible > .tabs__nav__item > a{

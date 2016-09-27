@@ -84,9 +84,11 @@
 }
 
 .tabs__nav--flexible {
+  display: inline-flex;
 
   & > .tabs__nav__item {
     flex: 0 0 auto;
+    max-width: none;
 
     & > a {
        padding-left: 1rem;
