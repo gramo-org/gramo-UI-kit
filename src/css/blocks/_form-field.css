@@ -63,6 +63,8 @@
 
   &__suggestion {
     margin-right: 1rem;
+    position: relative;
+    top: .5rem;
   }
 }
 

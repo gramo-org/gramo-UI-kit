@@ -46,7 +46,7 @@
 
   &[disabled] {
     @extend .form__input[disabled];
-    color: var(--off-gray)!important;
+    color: var(--base-font-color);
     background-image: none;
   }
 }
