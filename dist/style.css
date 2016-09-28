@@ -1781,8 +1781,10 @@ a:active, a:hover{
   text-align:right;
   padding-right:1rem;
 }
-.form__field__action{
+.form__field .form__label, .form__field__action{
   vertical-align:top;
+}
+.form__field__action{
   padding-top:.4rem;
 }
 .form__field__action--delete{

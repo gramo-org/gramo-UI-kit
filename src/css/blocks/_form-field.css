@@ -26,8 +26,12 @@
     padding-right: 1rem;
   }
 
+  .form__label,
   &__action {
     vertical-align: top;
+  }
+
+  &__action {
     padding-top: .4rem;
   }
 
