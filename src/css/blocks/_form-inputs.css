@@ -32,8 +32,10 @@
   background: #fff url(img/calendar.svg) center right 10px no-repeat;
   border: 1px solid var(--silver);
   padding-right: 1rem;
+  padding-left: 0rem;
+  text-align: center;
 
-  &::-webkit-clear-button,
+  /*&::-webkit-clear-button,*/ /* TODO: Create version without clear button */
   &::-webkit-calendar-picker-indicator,
   &::-webkit-inner-spin-button {
     opacity: 0;

@@ -1653,9 +1653,11 @@ a:active, a:hover{
   background:#fff url(img/calendar.svg) center right 10px no-repeat;
   border:1px solid #d9d9dc;
   padding-right:1rem;
+  padding-left:0rem;
+  text-align:center;
 }
 
-.form__input--date::-webkit-clear-button, .form__input--date::-webkit-calendar-picker-indicator, .form__input--date::-webkit-inner-spin-button, .form__input[type="date"]::-webkit-clear-button, .form__input[type="date"]::-webkit-calendar-picker-indicator, .form__input[type="date"]::-webkit-inner-spin-button{
+.form__input--date::-webkit-calendar-picker-indicator, .form__input--date::-webkit-inner-spin-button, .form__input[type="date"]::-webkit-calendar-picker-indicator, .form__input[type="date"]::-webkit-inner-spin-button{
   opacity:0;
   -webkit-appearance:none;
 }
@@ -1992,6 +1994,7 @@ a:active, a:hover{
   border:1px solid #d9d9dc;
   box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);
   z-index:1;
+  padding-left:.5rem;
 }
 .searchable-list__dropdown .searchable-list__search{
   background:url("img/search.svg") right 0.5rem center no-repeat;
