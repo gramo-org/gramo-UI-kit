@@ -1638,7 +1638,7 @@ a:active, a:hover{
     margin-bottom:0;
   }
 }
-.form__input[disabled], .select[disabled]{
+.form__input[disabled], .form__input--date[disabled], .form__input[type="date"][disabled], .select[disabled]{
   background-color:rgba(255, 255, 255, 0.2);
   border-color:rgb(232, 232, 232);
 }
@@ -1662,6 +1662,11 @@ a:active, a:hover{
 
 .form__input--date.placeholder, .form__input[type="date"].placeholder{
   color:#0095da;
+}
+
+.form__input--date[disabled], .form__input[type="date"][disabled]{
+  color:#a5a4ab!important;
+  background-image:none;
 }
 
 @media (min-width: 768px){
@@ -4350,14 +4355,14 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   flex-wrap:wrap;
 }
 
-.tabs__nav--flexible > .tabs__nav__item{
+.tabs__nav--flexible .tabs__nav__item{
   -webkit-flex:0 0 auto;
   -ms-flex:0 0 auto;
   flex:0 0 auto;
   max-width:none;
 }
 
-.tabs__nav--flexible > .tabs__nav__item > a{
+.tabs__nav--flexible .tabs__nav__item > a{
   padding-left:1rem;
   padding-right:1.5rem;
   max-width:150px;

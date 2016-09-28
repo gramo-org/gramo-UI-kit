@@ -43,6 +43,12 @@
   &.placeholder {
     color: var(--gramo-blue);
   }
+
+  &[disabled] {
+    @extend .form__input[disabled];
+    color: var(--off-gray)!important;
+    background-image: none;
+  }
 }
 
 /* Custom widths for form inputs */

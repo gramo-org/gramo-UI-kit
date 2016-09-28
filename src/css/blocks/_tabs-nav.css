@@ -87,7 +87,7 @@
   display: inline-flex;
   flex-wrap: wrap;
 
-  & > .tabs__nav__item {
+  .tabs__nav__item {
     flex: 0 0 auto;
     max-width: none;
 
@@ -101,3 +101,28 @@
     }
   }
 }
+
+/*.tabs__nav__overflow {
+  @extend .tabs__nav__item;
+  text-align: left;
+
+  & > a {
+    padding-left: 1rem;
+  }
+
+  & > a:after {
+    @extend .searchable-list__heading:before;
+    opacity: 0.5;
+    right: .5rem;
+  }
+
+  & > ul {
+    padding-left: 0;
+    position: absolute;
+    bottom: calc(-100% - 2px);
+
+    li {
+      border-width: 1px;
+    }
+  }
+}*/
