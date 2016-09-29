@@ -4396,7 +4396,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   font-size:1.2rem;
   color:#a5a4ab;
   left:0;
-  margin-top:-1rem;
+  margin:-1rem .5rem 0 0;
   display:block;
 }
 .tabs__nav__item__type:before{
