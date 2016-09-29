@@ -1672,7 +1672,7 @@ a:active, a:hover{
   background-image:none;
 }
 
-.no-clear::-webkit-clear-button{
+.form__input--date-no-clear::-webkit-clear-button{
   opacity:0;
   -webkit-appearance:none;
 }
