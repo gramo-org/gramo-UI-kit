@@ -1664,11 +1664,17 @@ a:active, a:hover{
 
 .form__input--date.placeholder, .form__input[type="date"].placeholder{
   color:#0095da;
+  text-align:center;
 }
 
 .form__input--date[disabled], .form__input[type="date"][disabled]{
   color:#3f3e44;
   background-image:none;
+}
+
+.no-clear::-webkit-clear-button{
+  opacity:0;
+  -webkit-appearance:none;
 }
 
 @media (min-width: 768px){
@@ -1680,6 +1686,12 @@ a:active, a:hover{
 @media (min-width: 768px){
   .form__input--180{
     min-width:180px!important;
+  }
+}
+
+@media (min-width: 768px){
+  .form__input--150{
+    width:150px!important;
   }
 }
 
@@ -1776,17 +1788,20 @@ a:active, a:hover{
   margin-bottom:0;
 }
 @media (min-width: 768px){
-  .form__field .form__label > span:first-of-type, .form__field .form__field__text, .form__field__action, .form__field .ember-view:not(.form__input__errors){
+  .form__field > div, .form__field .form__label > span, .form__field .form__field__text, .form__field__action{
     display:inline-block;
   }
 }
 .form__field .form__field__text{
   font-weight:600;
 }
-.form__field .form__label:first-child > span:first-of-type, .form__field .form__field__text{
+.form__field .form__label:first-child > span, .form__field .form__field__text{
   width:140px;
   text-align:right;
   padding-right:1rem;
+}
+.form__field .form__label:first-child > span--double, .form__field .form__field__text--double{
+  vertical-align:middle;
 }
 .form__field .form__label, .form__field__action{
   vertical-align:top;
@@ -1820,7 +1835,7 @@ a:active, a:hover{
 }
 @media (min-width: 768px){
   .form__field p, p.error--form-field{
-    margin-left:140px;
+    margin-left:144px;
   }
 }
 
@@ -1994,7 +2009,6 @@ a:active, a:hover{
   border:1px solid #d9d9dc;
   box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);
   z-index:1;
-  padding-left:.5rem;
 }
 .searchable-list__dropdown .searchable-list__search{
   background:url("img/search.svg") right 0.5rem center no-repeat;

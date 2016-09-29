@@ -35,7 +35,6 @@
   padding-left: 0rem;
   text-align: center;
 
-  /*&::-webkit-clear-button,*/ /* TODO: Create version without clear button */
   &::-webkit-calendar-picker-indicator,
   &::-webkit-inner-spin-button {
     opacity: 0;
@@ -44,12 +43,20 @@
 
   &.placeholder {
     color: var(--gramo-blue);
+    text-align: center;
   }
 
   &[disabled] {
     @extend .form__input[disabled];
     color: var(--base-font-color);
     background-image: none;
+  }
+}
+
+.no-clear {
+  &::-webkit-clear-button {
+    opacity: 0;
+    -webkit-appearance: none;
   }
 }
 
@@ -61,6 +68,10 @@
 
 .form__input--180 {
   @media (--tablet) { min-width: 180px!important; }
+}
+
+.form__input--150 {
+  @media (--tablet) { width: 150px!important; }
 }
 
 .form__input--130 {

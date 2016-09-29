@@ -6,10 +6,10 @@
     margin-bottom: 0;
   }
 
-  .form__label > span:first-of-type,
+  & > div,
+  .form__label > span,
   .form__field__text,
-  &__action,
-  .ember-view:not(.form__input__errors) { /* make every div (ember-view) inline-block */
+  &__action {
     @media (--tablet) {
       display: inline-block;
     }
@@ -19,11 +19,15 @@
     font-weight: var(--semibold);
   }
 
-  .form__label:first-child > span:first-of-type,
+  .form__label:first-child > span,
   .form__field__text {
     width: 140px;
     text-align: right;
     padding-right: 1rem;
+
+    &--double {
+      vertical-align: middle;
+    }
   }
 
   .form__label,
@@ -72,7 +76,7 @@
 .form__field p,
 p.error--form-field {
   @media (--tablet) {
-    margin-left: 140px
+    margin-left: 144px
   }
 }
 
