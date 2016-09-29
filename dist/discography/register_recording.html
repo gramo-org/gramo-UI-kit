@@ -271,12 +271,19 @@
                   <form class="form">
                     <fieldset class="form__fieldset">
                       <div class="form__field">
-                        <label class="form__label form__label--required">
-                          <span>Hovedartist</span>
-                          <input type="text" value="David Bowie" class="form__input form__input--300" disabled>
-                        </label>
+                        <div class="ember-view">
+                          <label class="form__label form__label--required has-error">
+                            <span>Hovedartist</span>
+                            <input type="text" value="David Bowie" class="form__input form__input--300" disabled>
+                          </label>
+                          <div id="ember1137" class="ember-view form__input__errors">
+                            <p class="text--em ">
+                              må fylles ut
+                            </p>
+                          </div>
+                        </div>
                         <div class="form__field__action">
-                          <a href="#">Legg til hovedartist</a>
+                          <a href="#" class="link--no-line">Legg til hovedartist</a>
                         </div>
                       </div><!--end .row-->
                       <div class="form__field">
@@ -285,14 +292,21 @@
                           <input type="text" value="Aladdin Sane" class="form__input form__input--300" disabled>
                         </label>
                         <div class="form__field__action">
-                          <a href="#">Legg til alt. tittel</a>
+                          <a href="#" class="link--no-line">Legg til alt. tittel</a>
                         </div>
                       </div>
                       <div class="form__field">
-                        <label class="form__label">
-                          <span>Alt. Tittel</span>
-                          <input type="text" value="Aladdin Sane" class="form__input form__input--300" disabled>
-                        </label>
+                        <div class="ember-view">
+                          <label class="form__label has-error">
+                            <span>Alt. Tittel</span>
+                            <input type="text" value="Aladdin Sane" class="form__input form__input--300" disabled>
+                          </label>
+                          <div id="ember1137" class="ember-view form__input__errors">
+                            <p class="text--em ">
+                              må fylles ut
+                            </p>
+                          </div>
+                        </div>
                         <label class="form__label">
                           <input type="text" value="Aladdin Sane" class="form__input form__input--300" disabled>
                         </label>
@@ -318,7 +332,7 @@
                           <input type="text" value="Wolfgang Amadeus Mozart" class="form__input form__input--300" disabled>
                         </label>
                         <div class="form__field__action">
-                          <a>Legg til komponist</a>
+                          <a class="link--no-line">Legg til komponist</a>
                         </div>
                       </div>
                       <div class="form__field">
@@ -372,7 +386,7 @@
                       <div class="form__field">
                         <label class="form__label form__label--required">
                           <span>Produsentland</span>
-                          <select class="select select--fluid form__input--180" disabled>
+                          <select class="select select--fluid form__input--180">
                             <option>Norge</option>
                             <option>Storbritannia</option>
                             <option>USA</option>

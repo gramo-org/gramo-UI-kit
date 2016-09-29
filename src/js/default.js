@@ -81,18 +81,18 @@ $(document).ready(function() {
     });
   });
 
-  function checkTabs() {
-    var LastTab = $('#mainTabs > .tabs__nav__item:last-child').offset().left + $('#mainTabs > .tabs__nav__item:last-child').outerWidth();
-    var scrollableArea = $('.scrollable-area');
-    var rightSide = $('#mainTabs.tabs__nav').offset().left + $('#mainTabs.tabs__nav').outerWidth();
-
-    if ( $(LastTab) > $(rightSide) ) {
-      console.log('greater than');
-    } else if ( $(LastTab) < $(rightSide) ) {
-      console.log('less than');
-    }
-  }
-$(window).resize(checkTabs);
+  // $('.tabs__nav').each(function() {
+  //   var $this = $(this);
+  //   if ( $this.offset().left + $this.outerWidth() == $this.parent().offset().left + $this.parent().outerWidth() ) {
+  //     console.log('equal');
+  //     $this.append('<li class="tabs__nav__overflow"><a href="#">Flere</a><ul></ul></li>');
+  //     var lastTab = $this.find('.tabs__nav__overflow').prev('.tabs__nav__item');
+  //     $(lastTab).detach();
+  //
+  //     $this.find('.tabs__nav__overflow > ul').append($(lastTab));
+  //   }
+  // });
+// $(window).resize(checkTabs);
 
 //searchable list
   $('.searchable-list__heading').on('click', function () {

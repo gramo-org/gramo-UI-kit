@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../style.css">
   <script>
-  window.onload = window.location.hash = 'tab2';
+  window.onload = window.location.hash = 'label';
   </script>
 </head>
 <body>
@@ -66,7 +66,7 @@
       </div> -->
 
       <section class="container container--hd">
-        <div class="bucket">
+        <!-- <div class="bucket">
           <span class="text--bold">
             Siste søk:
           </span>
@@ -82,13 +82,13 @@
             <li class="bucket__list__item">
               <a href="#" class="bucket__list__item__close"><i class="icon--x"></i></a>
               <a href="#">9th Symphony</a>
-            </li>
+            </li> -->
             <!-- <li class="bucket__list__item bucket__list__item--new"><a href="searchB-3.html"><i class="fa fa-2x fa-plus"></i></a></li> -->
-          </ul>
+          <!-- </ul>
           <div class="text--right bucket__add-btn">
             <button class="btn btn--small btn--primary">Nytt søk</button>
           </div>
-        </div>
+        </div> -->
 
 
         <div class="tabs">
@@ -123,7 +123,7 @@
               <a href="#" alt="Lukk" class="tabs__nav__close"></a>
             </li>
             <li class="tabs__nav__item">
-              <a href="#group">
+              <a href="#label">
                 <span class="tabs__nav__item__type tabs__nav__item__type--label">Label</span>
                 Fysisk Format
               </a>
@@ -140,7 +140,7 @@
           <section id="performer" class="tabs__section tabs__section--outline">
 
           </section><!--end /.tabs__section-->
-          <section id="group" class="tabs__section tabs__section--outline">
+          <section id="label" class="tabs__section tabs__section--outline">
             <div class="wrapper wrapper--full">
               <div class="container">
                 <ul class="row tabs__section__nav">
@@ -172,48 +172,38 @@
                   <form class="form">
                     <fieldset class="form__fieldset">
                       <div class="form__field">
-                        <div class="col-xs-12 col-lg-4">
-                          <label class="form__label form__label--block form__label--required">
-                            <span>Navn</span>
-                            <input type="text" value="Tin Machine" class="form__input form__input--block" >
-                          </label>
-                        </div>
-                      </div><!--end .row-->
+                        <label class="form__label form__label--required">
+                          <span>Navn</span>
+                          <input type="text" value="Tin Machine" class="form__input form__input--300" >
+                        </label>
+                      </div><!--end .form__field-->
                       <div class="form__field">
-                        <div class="col-xs-12 col-lg-4">
-                            <label class="form__label form__label--block">
-                              <span>Alt. navn</span>
-                              <input type="text" value="-" class="form__input form__input--block" >
-                            </label>
-                        </div>
+                        <label class="form__label">
+                          <span>Alt. navn</span>
+                          <input type="text" value="-" class="form__input form__input--300" >
+                        </label>
                       </div>
                       <div class="form__field">
-                        <div class="col-xs-12 col-lg-2">
-                          <label class="form__label form__label--block form__label--date form__label--required">
-                            <span>Registreringssdato</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
-                          </label>
-                        </div>
+                        <label class="form__label form__label--required">
+                          <span>Registreringssdato</span>
+                          <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                        </label>
                       </div>
                       <div class="form__field">
-                        <div class="col-xs-12 col-lg-4">
-                          <label class="form__label form__label--block form__label--required">
-                            <span>Statsborgerskap</span>
-                            <select class="select select--block" >
-                              <option>Storbritannia</option>
-                              <option>Norge</option>
-                              <option>USA</option>
-                            </select>
-                          </label>
-                        </div>
+                        <label class="form__label form__label--required">
+                          <span>Statsborgerskap</span>
+                          <select class="select select--fluid form__input--180" >
+                            <option>Storbritannia</option>
+                            <option>Norge</option>
+                            <option>USA</option>
+                          </select>
+                        </label>
                       </div>
                       <div class="form__field">
-                        <div class="col-xs-12 col-lg-2">
-                          <label class="form__label form__label--block">
-                            <span>Registrantkode</span>
-                            <input type="text" value="FYF" class="form__input form__input--block" >
-                          </label>
-                        </div>
+                        <label class="form__label">
+                          <span>Registrantkode</span>
+                          <input type="text" value="FYF" class="form__input form__input--130" >
+                        </label>
                       </div>
                     </fieldset>
                   </form>
@@ -488,6 +478,7 @@
 
 <script src="../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../js/default.js"></script>
+<script src="../js/tabs.js"></script>
 
 </body>
 </html>

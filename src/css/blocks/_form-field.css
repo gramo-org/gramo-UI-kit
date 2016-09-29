@@ -36,22 +36,7 @@
   }
 
   &__action {
-    padding-top: .4rem;
-  }
-
-   &__action--delete {
-    position: absolute;
-    right: -2rem;
-    top: 3rem;
-    padding-top: 0;
-
-    @media (--tablet) {
-      top: 1rem;
-    }
-
-    @media (--hd) {
-      position: relative;
-    }
+    padding-top: .6rem;
   }
 
   .form__label--required {
@@ -73,15 +58,11 @@
 }
 
 /* Make error messages line up with inputs */
-.form__field p,
-p.error--form-field {
-  @media (--tablet) {
-    margin-left: 144px
+.form__field {
+  .form__input__errors > p,
+  p.error--form-field {
+    @media (--tablet) {
+      margin-left: 144px
+    }
   }
-}
-
-/* Remove default link underlines */
-
-.form__field a {
-  text-decoration: none;
 }
