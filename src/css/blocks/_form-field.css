@@ -6,7 +6,7 @@
     margin-bottom: 0;
   }
 
-  & > div,
+  & > *,
   .form__label > span,
   .form__field__text,
   &__action {

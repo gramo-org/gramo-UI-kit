@@ -1788,7 +1788,7 @@ a:active, a:hover{
   margin-bottom:0;
 }
 @media (min-width: 768px){
-  .form__field > div, .form__field .form__label > span, .form__field .form__field__text, .form__field__action{
+  .form__field > *, .form__field .form__label > span, .form__field .form__field__text, .form__field__action{
     display:inline-block;
   }
 }
