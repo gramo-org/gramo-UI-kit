@@ -1607,6 +1607,7 @@ a:active, a:hover{
 }
 .form__label--inline{
   display:inline-block;
+  vertical-align:middle;
 }
 .form__label--reduced{
   width:calc(100% - .5rem);
@@ -1651,6 +1652,7 @@ a:active, a:hover{
 }
 .form__input--inline{
   display:inline-block;
+  vertical-align:middle;
 }
 
 .form__input--date, .form__input[type="date"]{
