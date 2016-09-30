@@ -1605,6 +1605,9 @@ a:active, a:hover{
   display:block;
   margin:0 0 .4rem 0;
 }
+.form__label--inline{
+  display:inline-block;
+}
 .form__label--reduced{
   width:calc(100% - .5rem);
 }
@@ -1645,6 +1648,9 @@ a:active, a:hover{
 .form__input--block{
   display:block;
   width:100%;
+}
+.form__input--inline{
+  display:inline-block;
 }
 
 .form__input--date, .form__input[type="date"]{
@@ -3268,7 +3274,7 @@ tr > td:last-child{
   border-right:1px solid #d9d9dc;
 }
 
-@media only screen and (max-width: 960px),
+@media only screen and (max-width: 768px),
 (min-device-width: 968px) and (max-device-width: 1024px){
   table, thead, tbody, th, td, tr{
     display:block;
@@ -3553,7 +3559,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   background:#ededed;
 }
 .fake-table__row > div[class*="col-"]{
-  padding:1.25rem 1rem;
+  padding:1.4rem 1rem;
   min-height:4.8rem;
 }
 .fake-table__row div[class*="col-"]{
@@ -3610,7 +3616,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   background:#f3f3f3;
   position:absolute;
   left:-1px;
-  bottom:-14px;
+  bottom:-16px;
   z-index:2;
   border-top:1px solid #d9d9dc;
 }
@@ -3713,7 +3719,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 }
 
 .fake-table__toggle-row > div[class*="col-"]{
-  padding:1.25rem 1rem;
+  padding:1.4rem 1rem;
   min-height:4.8rem;
 }
 .fake-table__cell--action{

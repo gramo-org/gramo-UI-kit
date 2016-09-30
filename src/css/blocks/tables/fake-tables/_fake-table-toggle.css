@@ -21,7 +21,7 @@
   }
 
   & > div[class*="col-"] {
-    padding: 1.25rem 1rem; /* give cols elements the same padding as in .fake-table__row */
+    padding: 1.4rem 1rem; /* give cols elements the same padding as in .fake-table__row -- changed from 1.25rem 1rem */
     min-height: var(--table-row-height);
   }
 }
