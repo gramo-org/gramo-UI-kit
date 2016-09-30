@@ -48,7 +48,7 @@
   &--head {
     background: var(--table-head-background);
     text-align: center;
-    font-weight: var(--normal);
+    font-weight: var(--semibold);
     display: none;
     cursor: default;
     @media (--tablet) { display: flex; }
@@ -167,4 +167,30 @@
     color: var(--gramo-white);
     background: var(--slate-gray);
   }
+}
+
+.fake-table__row__handle {
+  width: 16px;
+  height: 16px;
+  background: url(img/drag.svg) no-repeat;
+  position: absolute;
+  left: -2rem;
+  top: 2rem;
+  padding-right: 2rem;
+  cursor: grab;
+  display: none;
+}
+
+.fake-table__row__delete {
+  position: absolute;
+  right: -2rem;
+  top: 1.5rem;
+  color: var(--off-gray);
+  display: none;
+  padding-left: 2rem;
+}
+
+.fake-table__row:hover > .fake-table__row__handle,
+.fake-table__row:hover > .fake-table__row__delete {
+  display: block;
 }

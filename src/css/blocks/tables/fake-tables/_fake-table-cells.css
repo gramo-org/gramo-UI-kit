@@ -21,3 +21,11 @@
 .fake-table__cell--artists {
   display: block
 }
+
+/* absolute position in row */
+.fake-table__cell--absolute {
+  position: absolute;
+  right: 0;
+  top: .75rem;
+  z-index: 1;
+}

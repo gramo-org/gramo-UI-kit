@@ -70,3 +70,21 @@
     }
   }
 }
+
+.fake-table--numeric__divider {
+  font-weight: var(--semibold);
+  display: block;
+  @extend %margin-bottom;
+  position: relative;
+
+  &:after {
+    content: '';
+    border-bottom: 1px dashed var(--silver);
+    width: calc(100% - 7.1rem);
+    height: 1px;
+    position: absolute;
+    top: 1rem;
+    left: 8rem;
+    display: block;
+  }
+}
