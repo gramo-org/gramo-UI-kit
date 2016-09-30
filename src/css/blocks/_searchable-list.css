@@ -65,7 +65,7 @@
     border-radius: 2px;
     border: 1px solid var(--silver);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 2;
 
     .searchable-list__search {
       background: url("img/search.svg") right 0.5rem center no-repeat;
