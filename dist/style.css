@@ -3678,7 +3678,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   background:#504f56;
 }
 
-.fake-table__row__handle, .drag-handle{
+.fake-table__row__handle, .fake-table--numeric__divider[draggable=true]:hover:before{
   width:16px;
   height:16px;
   background:url(img/drag.svg) no-repeat;
@@ -3872,7 +3872,8 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   cursor:grab;
 }
 
-.fake-table--numeric__divider:hover > .drag-handle{
+.fake-table--numeric__divider[draggable=true]:hover:before{
+  top:.45rem;
   display:block;
 }
 
@@ -4288,9 +4289,6 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 
 .x-toggle:checked + .x-toggle-btn::after{
   content:attr(data-tg-on)!important;
-}
-.drag-handle{
-  top:.45rem;
 }
 .close-button{
   background:#d9d9dc;

@@ -1,4 +1,0 @@
-.drag-handle {
-  @extend .fake-table__row__handle;
-  top: .45rem;
-}

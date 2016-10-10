@@ -90,9 +90,11 @@
 
   &[draggable=true] {
     cursor: grab;
-  }
 
-  &:hover > .drag-handle {
-    display: block;
+    &:hover:before {
+      @extend .fake-table__row__handle;
+      top: .45rem;
+      display: block;
+    }
   }
 }
