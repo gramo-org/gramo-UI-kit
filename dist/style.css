@@ -4821,8 +4821,11 @@ pre.prettyprint{
   }
 }
 
-.search--in-row{
-  padding:.75rem 1rem;
+.search--in-row, .input--in-row{
+  padding:.75rem 1rem!important;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
 }
 
 .search__form{
