@@ -180,11 +180,15 @@
 
 .fake-table__row__delete {
   position: absolute;
-  right: -2rem;
+  right: -3rem;
   top: 1.5rem;
   color: var(--off-gray);
   display: none;
   padding-left: 2rem;
+
+  & > a {
+    padding: 1rem;
+  }
 }
 
 .fake-table__row:hover > .fake-table__row__handle,

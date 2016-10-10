@@ -3693,11 +3693,15 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 
 .fake-table__row__delete{
   position:absolute;
-  right:-2rem;
+  right:-3rem;
   top:1.5rem;
   color:#a5a4ab;
   display:none;
   padding-left:2rem;
+}
+
+.fake-table__row__delete > a{
+  padding:1rem;
 }
 
 .fake-table__row:hover > .fake-table__row__handle, .fake-table__row:hover > .fake-table__row__delete{
@@ -4281,7 +4285,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   content:attr(data-tg-on)!important;
 }
 .drag-handle{
-  top:auto;
+  top:.45rem;
 }
 .close-button{
   background:#d9d9dc;
