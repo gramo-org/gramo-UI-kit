@@ -3678,7 +3678,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   background:#504f56;
 }
 
-.fake-table__row__handle{
+.fake-table__row__handle, .drag-handle{
   width:16px;
   height:16px;
   background:url(img/drag.svg) no-repeat;
@@ -3860,6 +3860,10 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   position:absolute;
   top:1rem;
   left:8rem;
+  display:block;
+}
+
+.fake-table--numeric__divider:hover > .drag-handle{
   display:block;
 }
 
@@ -4275,6 +4279,9 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 
 .x-toggle:checked + .x-toggle-btn::after{
   content:attr(data-tg-on)!important;
+}
+.drag-handle{
+  top:auto;
 }
 .close-button{
   background:#d9d9dc;

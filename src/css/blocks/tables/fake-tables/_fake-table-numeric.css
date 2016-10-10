@@ -87,4 +87,8 @@
     left: 8rem;
     display: block;
   }
+
+  &:hover > .drag-handle {
+    display: block;
+  }
 }
