@@ -3700,7 +3700,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   display:none;
 }
 
-.fake-table__row__delete{
+.fake-table__row__delete, .fake-table--numeric__divider > .fake-table--numeric__divider__delete{
   position:absolute;
   right:-3rem;
   top:1.5rem;
@@ -3709,7 +3709,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   padding-left:2rem;
 }
 
-.fake-table__row__delete > a{
+.fake-table__row__delete > a, .fake-table--numeric__divider > .fake-table--numeric__divider__delete > a{
   padding:1rem;
 }
 
@@ -3884,6 +3884,14 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 .fake-table--numeric__divider[draggable=true]:hover:before{
   content:'';
   top:.45rem;
+  display:block;
+}
+
+.fake-table--numeric__divider > .fake-table--numeric__divider__delete{
+  top:.45rem;
+}
+
+.fake-table--numeric__divider:hover > .fake-table--numeric__divider__delete{
   display:block;
 }
 

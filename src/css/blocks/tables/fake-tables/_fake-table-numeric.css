@@ -98,4 +98,13 @@
     top: .45rem;
     display: block;
   }
+
+  & > .fake-table--numeric__divider__delete {
+    @extend .fake-table__row__delete;
+    top: .45rem;
+  }
+
+  &:hover > .fake-table--numeric__divider__delete {
+    display: block;
+  }
 }
