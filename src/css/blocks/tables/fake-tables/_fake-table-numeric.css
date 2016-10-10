@@ -90,11 +90,12 @@
 
   &[draggable=true] {
     cursor: grab;
+  }
 
-    &:hover:before {
-      @extend .fake-table__row__handle;
-      top: .45rem;
-      display: block;
-    }
+  &[draggable=true]:hover:before {
+    content: '';
+    @extend .drag-handle;
+    top: .45rem;
+    display: block;
   }
 }

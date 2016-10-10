@@ -10,6 +10,15 @@
     @media (--tablet) { background: var(--row-hover); }
   }
 
+  /* draggable rows */
+  &[draggable=true] {
+    cursor: grab;
+
+    &:active {
+      background: color(var(--row-hover) shade(5%));
+    }
+  }
+
 /* Make link color regular */
   a {
     color: inherit;
@@ -167,14 +176,7 @@
 }
 
 .fake-table__row__handle {
-  width: 16px;
-  height: 16px;
-  background: url(img/drag.svg) no-repeat;
-  position: absolute;
-  left: -2rem;
-  top: 2rem;
-  padding-right: 2rem;
-  cursor: grab;
+  @extend .drag-handle;
   display: none;
 }
 
