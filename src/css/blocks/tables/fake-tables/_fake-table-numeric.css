@@ -88,6 +88,10 @@
     display: block;
   }
 
+  &[draggable=true] {
+    cursor: grab;
+  }
+
   &:hover > .drag-handle {
     display: block;
   }

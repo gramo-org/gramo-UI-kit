@@ -3867,6 +3867,11 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   display:block;
 }
 
+.fake-table--numeric__divider[draggable=true]{
+  cursor:-webkit-grab;
+  cursor:grab;
+}
+
 .fake-table--numeric__divider:hover > .drag-handle{
   display:block;
 }
