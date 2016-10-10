@@ -2,12 +2,9 @@
   @extend .row;
   background: var(--gramo-white);
   border: 1px solid var(--table-border-color);
-  border-width: 1px 1px 0 1px;
+  border-width: 1px;
+  margin-bottom: -1px;
   /*cursor: pointer;*/
-
-  &:last-child {
-    border-bottom-width: 1px;
-  }
 
   &:hover {
     @media (--tablet) { background: var(--row-hover); }
