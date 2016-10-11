@@ -3888,7 +3888,8 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 }
 
 .fake-table--numeric__divider > .fake-table--numeric__divider__delete{
-  top:.45rem;
+  top:.2rem;
+  right:-3.9rem;
 }
 
 .fake-table--numeric__divider:hover > .fake-table--numeric__divider__delete{

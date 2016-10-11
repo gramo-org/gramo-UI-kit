@@ -101,7 +101,8 @@
 
   & > .fake-table--numeric__divider__delete {
     @extend .fake-table__row__delete;
-    top: .45rem;
+    top: .2rem;
+    right: -3.9rem;
   }
 
   &:hover > .fake-table--numeric__divider__delete {
