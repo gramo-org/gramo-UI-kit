@@ -4886,6 +4886,14 @@ pre.prettyprint{
   }
 }
 
+@media (min-width: 960px){
+  .search--in-row{
+    margin-left:8.33333%;
+    padding-left:0!important;
+    margin-top:-6.3rem;
+  }
+}
+
 .search__form{
   -webkit-flex:1;
   -ms-flex:1;

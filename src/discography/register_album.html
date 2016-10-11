@@ -376,12 +376,7 @@
                       <div class="col-sm-1">
                         <span class="badge badge--numeric badge--numeric--inverse">2</span>
                       </div>
-                      <div id="ember2510" class="search--in-row ember-view">
-                        <form class="search__form no-margin--bottom" data-ember-action="2512">
-                          <input id="ember2513" placeholder="Søk..." autocomplete="off" type="text" class="ember-view ember-text-field search__form__input search__form__input--fixed-width">
-                          <button type="submit" class="search__submit"></button>
-                        </form>
-                      </div>
+
                       <div class="col-xs">
                         <div class="col-xs fake-table__cell--action fake-table__cell--absolute">
                           <div class="btn-group">
@@ -392,7 +387,13 @@
                       </div>
 
                         <div class="col-xs-12">
-                          <table class="table table--fluid table--in-row table--selectable table--with-margin">
+                          <div id="ember2510" class="search--in-row ember-view">
+                            <form class="search__form no-margin--bottom" data-ember-action="2512">
+                              <input id="ember2513" placeholder="Søk..." autocomplete="off" type="text" class="ember-view ember-text-field search__form__input search__form__input--fixed-width">
+                              <button type="submit" class="search__submit"></button>
+                            </form>
+                          </div>
+                          <table class="table table--fluid table--selectable">
                             <tbody>
                                 <tr class="" data-ember-action="2705">
                                   <td class="table__cell--truncated" data-label="Navn">

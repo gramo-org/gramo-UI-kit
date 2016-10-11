@@ -16,6 +16,14 @@
   }
 }
 
+.search--in-row {
+  @media (--desktop) {
+    margin-left: 8.33333%;
+    padding-left: 0!important;
+    margin-top: -6.3rem;
+  }
+}
+
 .search__form {
   flex: 1;
   display: flex;
