@@ -24,6 +24,12 @@
     width: 100%;
   }
 
+  /* Checkboxes */
+  &--checkbox {
+    display: inline-block;
+    width: auto;
+  }
+
   &--inline {
     display: inline-block;
     vertical-align: middle;
@@ -39,6 +45,7 @@
   padding-right: 1rem;
   padding-left: 0rem;
   text-align: center;
+  width: auto;
 
   &::-webkit-calendar-picker-indicator,
   &::-webkit-inner-spin-button {

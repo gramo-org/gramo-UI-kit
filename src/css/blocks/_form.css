@@ -28,4 +28,8 @@
       margin-top: 1rem;
       @media (--tablet) { margin: 0 0 0 0.2rem; }
     }
+
+    &--padded {
+      padding-bottom: 4rem;
+    }
   }

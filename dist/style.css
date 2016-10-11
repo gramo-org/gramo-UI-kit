@@ -1573,6 +1573,10 @@ a:active, a:hover{
     margin:0 0 0 0.2rem;
   }
 }
+
+  .form__section--action--padded{
+  padding-bottom:4rem;
+}
 .form__label{
   position:relative;
   display:block;
@@ -1650,6 +1654,10 @@ a:active, a:hover{
   display:block;
   width:100%;
 }
+.form__input--checkbox{
+  display:inline-block;
+  width:auto;
+}
 .form__input--inline{
   display:inline-block;
   vertical-align:middle;
@@ -1663,6 +1671,7 @@ a:active, a:hover{
   padding-right:1rem;
   padding-left:0rem;
   text-align:center;
+  width:auto;
 }
 
 .form__input--date::-webkit-calendar-picker-indicator, .form__input--date::-webkit-inner-spin-button, .form__input[type="date"]::-webkit-calendar-picker-indicator, .form__input[type="date"]::-webkit-inner-spin-button{
@@ -3770,11 +3779,13 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 .fake-table__cell--artists{
   display:block
 }
-.fake-table__cell--absolute{
-  position:absolute;
-  right:0;
-  top:.75rem;
-  z-index:1;
+@media (min-width: 768px){
+  .fake-table__cell--absolute{
+    position:absolute;
+    right:0;
+    top:.75rem;
+    z-index:1;
+  }
 }
 .fake-table__row--child{
   border:0;
@@ -4862,6 +4873,17 @@ pre.prettyprint{
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
+  -webkit-flex:1 0 100%;
+  -ms-flex:1 0 100%;
+  flex:1 0 100%;
+}
+
+@media (min-width: 768px){
+  .search--in-row, .input--in-row{
+    -webkit-flex:1;
+    -ms-flex:1;
+    flex:1;
+  }
 }
 
 .search__form{
