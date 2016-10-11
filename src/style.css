@@ -3200,7 +3200,7 @@ main.pull .bucket{
   left:8rem;
   width:calc(100% - 8rem);
 }
-.drag-handle, .fake-table__row__handle, .fake-table--numeric__divider[draggable=true]:hover:before{
+.drag-handle, .fake-table__row__handle, .fake-table--numeric__divider[draggable=true]:hover::before{
   width:16px;
   height:16px;
   background:url(img/drag.svg) no-repeat;
@@ -3865,7 +3865,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   position:relative;
 }
 
-.fake-table--numeric__divider:after{
+.fake-table--numeric__divider::after{
   content:'';
   border-bottom:1px dashed #d9d9dc;
   width:calc(100% - 7.1rem);
@@ -3881,10 +3881,14 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   cursor:grab;
 }
 
-.fake-table--numeric__divider[draggable=true]:hover:before{
+.fake-table--numeric__divider[draggable=true]:hover::before{
   content:'';
   top:.45rem;
   display:block;
+}
+
+.fake-table--numeric__divider[draggable=true]:active::after{
+  border-color:rgb(184, 184, 187);
 }
 
 .fake-table--numeric__divider > .fake-table--numeric__divider__delete{
