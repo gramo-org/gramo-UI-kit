@@ -19,8 +19,8 @@
     font-weight: var(--semibold);
   }
 
-  .form__label:first-child > span,
-  /*& > *:first-child > span,*/
+  /*.form__label:first-child > span,*/
+  & > *:first-child > span,
   .form__field__text {
     width: 140px;
     text-align: right;
