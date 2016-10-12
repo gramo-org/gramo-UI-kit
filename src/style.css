@@ -3898,6 +3898,10 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   padding-top:1.2rem;
 }
 
+.fake-table--numeric__divider:nth-child(2):after{
+  margin-top:0;
+}
+
 .fake-table--numeric__divider[draggable=true]{
   cursor:-webkit-grab;
   cursor:grab;
