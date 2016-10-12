@@ -116,7 +116,7 @@
   & > .fake-table--numeric__divider__delete {
     @extend .fake-table__row__delete;
     top: 50%;
-    margin-top: -.3rem;
+    margin-top: .2rem;
     right: -3.9rem;
   }
 

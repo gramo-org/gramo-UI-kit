@@ -3920,7 +3920,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 
 .fake-table--numeric__divider > .fake-table--numeric__divider__delete{
   top:50%;
-  margin-top:-.3rem;
+  margin-top:.2rem;
   right:-3.9rem;
 }
 
