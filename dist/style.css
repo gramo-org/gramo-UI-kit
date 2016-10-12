@@ -1818,12 +1818,12 @@ a:active, a:hover{
 .form__field .form__field__text{
   font-weight:600;
 }
-.form__field > *:first-child > span, .form__field .form__field__text{
+.form__field > *:first-child span, .form__field .form__field__text{
   width:140px;
   text-align:right;
   padding-right:1rem;
 }
-.form__field > *:first-child > span--double, .form__field .form__field__text--double{
+.form__field > *:first-child span--double, .form__field .form__field__text--double{
   vertical-align:middle;
 }
 .form__field .form__label, .form__field__action{
