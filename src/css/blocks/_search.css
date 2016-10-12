@@ -13,6 +13,7 @@
 }
 
 .search--in-row {
+  flex: 1 0 100%;
   @media (--tablet) {
     flex: 1;
   }
