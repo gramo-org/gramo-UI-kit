@@ -1580,7 +1580,7 @@ a:active, a:hover{
 
   .form__section--action--absolute{
   position:absolute;
-  top:0;
+  top:-1rem;
   left:-1rem;
 }
 .form__label{
@@ -3878,7 +3878,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 .fake-table--numeric__divider{
   font-weight:600;
   display:block;
-  padding:2.4rem 0 1.2rem 0;
+  padding:3.6rem 0 1.2rem 0;
   position:relative;
 }
 
