@@ -4886,13 +4886,10 @@ pre.prettyprint{
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
-  -webkit-flex:1 0 100%;
-  -ms-flex:1 0 100%;
-  flex:1 0 100%;
 }
 
 @media (min-width: 768px){
-  .search--in-row, .input--in-row{
+  .search--in-row{
     -webkit-flex:1;
     -ms-flex:1;
     flex:1;

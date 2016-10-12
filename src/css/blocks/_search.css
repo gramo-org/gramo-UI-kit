@@ -10,7 +10,9 @@
   /*display: none;*/
   padding: .75rem 1rem!important;
   justify-content: center;
-  flex: 1 0 100%;
+}
+
+.search--in-row {
   @media (--tablet) {
     flex: 1;
   }
