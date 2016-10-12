@@ -1580,7 +1580,7 @@ a:active, a:hover{
 
   .form__section--action--absolute{
   position:absolute;
-  top:-1rem;
+  top:-.5rem;
   left:-1rem;
 }
 .form__label{
@@ -3888,10 +3888,14 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   width:calc(100% - 7.1rem);
   height:1px;
   position:absolute;
-  top:60%;
-  margin-top:-1px;
+  top:50%;
+  margin-top:1rem;
   left:8rem;
   display:block;
+}
+
+.fake-table--numeric__divider:first-child{
+  padding-top:1.2rem;
 }
 
 .fake-table--numeric__divider[draggable=true]{
@@ -3902,7 +3906,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 .fake-table--numeric__divider[draggable=true]:hover::before{
   content:'';
   top:50%;
-  margin-top:-1px;
+  margin-top:.65rem;
   display:block;
 }
 
@@ -3912,7 +3916,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 
 .fake-table--numeric__divider > .fake-table--numeric__divider__delete{
   top:50%;
-  margin-top:-1rem;
+  margin-top:-.3rem;
   right:-3.9rem;
 }
 
