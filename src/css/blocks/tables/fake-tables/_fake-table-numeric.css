@@ -74,7 +74,7 @@
 .fake-table--numeric__divider {
   font-weight: var(--semibold);
   display: block;
-  margin: 1.2rem 0;
+  padding: 1.2rem 0;
   position: relative;
 
   &::after {
@@ -83,7 +83,8 @@
     width: calc(100% - 7.1rem);
     height: 1px;
     position: absolute;
-    top: 1rem;
+    top: 50%;
+    margin-top: -1px;
     left: 8rem;
     display: block;
   }

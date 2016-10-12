@@ -20,7 +20,7 @@
   }
 
   .form__label:first-child > span,
-  & > div:first-child .form__label > span,
+  /*& > *:first-child > span,*/
   .form__field__text {
     width: 140px;
     text-align: right;
