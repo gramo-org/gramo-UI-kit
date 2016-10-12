@@ -1636,6 +1636,9 @@ a:active, a:hover{
     display:none;
   }
 }
+.form__label--padded{
+  padding-top:.65rem;
+}
 .form__input{
   border:1px solid #d9d9dc;
   padding-right:2rem;

@@ -55,4 +55,8 @@
       @media (--tablet) { display: none; }
     }
   }
+  /* makes a label with e.g. checkbox/radio line up properly with text inputs */
+  &--padded {
+    padding-top: .65rem;
+  }
 }
