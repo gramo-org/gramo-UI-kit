@@ -74,7 +74,7 @@
 .fake-table--numeric__divider {
   font-weight: var(--semibold);
   display: block;
-  padding: 1.2rem 0;
+  padding: 2.4rem 0 1.2rem 0;
   position: relative;
 
   &::after {
@@ -83,7 +83,7 @@
     width: calc(100% - 7.1rem);
     height: 1px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     margin-top: -1px;
     left: 8rem;
     display: block;
@@ -96,7 +96,8 @@
   &[draggable=true]:hover::before {
     content: '';
     @extend .drag-handle;
-    top: .45rem;
+    top: 50%;
+    margin-top: -1px;
     display: block;
   }
 
@@ -106,7 +107,8 @@
 
   & > .fake-table--numeric__divider__delete {
     @extend .fake-table__row__delete;
-    top: .2rem;
+    top: 50%;
+    margin-top: -1rem;
     right: -3.9rem;
   }
 

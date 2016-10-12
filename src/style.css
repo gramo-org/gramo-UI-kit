@@ -1577,6 +1577,12 @@ a:active, a:hover{
   .form__section--action--padded{
   padding-bottom:4rem;
 }
+
+  .form__section--action--absolute{
+  position:absolute;
+  top:0;
+  left:-1rem;
+}
 .form__label{
   position:relative;
   display:block;
@@ -3872,7 +3878,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 .fake-table--numeric__divider{
   font-weight:600;
   display:block;
-  padding:1.2rem 0;
+  padding:2.4rem 0 1.2rem 0;
   position:relative;
 }
 
@@ -3882,7 +3888,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   width:calc(100% - 7.1rem);
   height:1px;
   position:absolute;
-  top:50%;
+  top:60%;
   margin-top:-1px;
   left:8rem;
   display:block;
@@ -3895,7 +3901,8 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 
 .fake-table--numeric__divider[draggable=true]:hover::before{
   content:'';
-  top:.45rem;
+  top:50%;
+  margin-top:-1px;
   display:block;
 }
 
@@ -3904,7 +3911,8 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 }
 
 .fake-table--numeric__divider > .fake-table--numeric__divider__delete{
-  top:.2rem;
+  top:50%;
+  margin-top:-1rem;
   right:-3.9rem;
 }
 

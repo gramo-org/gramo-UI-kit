@@ -32,4 +32,10 @@
     &--padded {
       padding-bottom: 4rem;
     }
+
+    &--absolute {
+      position: absolute;
+      top: 0;
+      left: -1rem;
+    }
   }
