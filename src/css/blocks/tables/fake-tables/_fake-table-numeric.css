@@ -74,12 +74,7 @@
 .fake-table--numeric__divider {
   font-weight: var(--semibold);
   display: block;
-  padding: 1.2rem 0;
   position: relative;
-
-  &[draggable=false] {
-    padding-top: 0;
-  }
 
   &[draggable=true] {
     cursor: grab;
@@ -106,5 +101,10 @@
 
   &:hover > .fake-table--numeric__divider__delete {
     display: block;
+  }
+
+  .horizontal-rule--dashed {
+    width: calc(100% + 1rem);
+    margin-left: -.25rem;
   }
 }

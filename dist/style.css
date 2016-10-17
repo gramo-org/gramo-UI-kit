@@ -3875,12 +3875,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 .fake-table--numeric__divider{
   font-weight:600;
   display:block;
-  padding:1.2rem 0;
   position:relative;
-}
-
-.fake-table--numeric__divider[draggable=false]{
-  padding-top:0;
 }
 
 .fake-table--numeric__divider[draggable=true]{
@@ -3907,6 +3902,11 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 
 .fake-table--numeric__divider:hover > .fake-table--numeric__divider__delete{
   display:block;
+}
+
+.fake-table--numeric__divider .horizontal-rule--dashed{
+  width:calc(100% + 1rem);
+  margin-left:-.25rem;
 }
 
 .toggle-sidebar a{
