@@ -276,7 +276,7 @@
                       <div class="col-sm-2">Utgivelsesdato</div>
                       <div class="col-sm-4">Katalognummer</div>
                     </div>
-                    <span class="fake-table--numeric__divider">Side N
+                    <span class="fake-table--numeric__divider" draggable="true">Side N
                       <span class="badge badge--numeric badge--numeric--inverse">n</span>
                     </span>
                     <form class="form">
@@ -289,7 +289,7 @@
                     <span class="fake-table--numeric__divider">Side 1
                       <span class="badge badge--numeric badge--numeric--inverse">7</span>
                     </span>
-                    <li class="fake-table__row">
+                    <li class="fake-table__row" draggable="true">
                       <div class="col-sm-1">
                         <span class="badge badge--numeric">1</span>
                       </div>
@@ -342,10 +342,6 @@
                       </div>
                     </li><!--end .fake-table__row-->
                   </ol><!--end .fake-table-->
-                  <div class="form__section--action">
-                    <a class="link--no-line link--inline">Legg til ny side</a>
-                    <a class="link--no-line link--inline">Legg til ny spor</a>
-                  </div>
                   <ol class="fake-table">
                     <span class="fake-table--numeric__divider">Side 2
                       <span class="badge badge--numeric badge--numeric--inverse">7</span>
@@ -354,8 +350,8 @@
                       <div class="col-sm-1">
                         <span class="badge badge--numeric">1</span>
                       </div>
-                      <div class="col-sm-3" data-label="Innspillingstittel">
-                        Quicksand
+                      <div class="col-sm-3 input--in-row" data-label="Innspillingstittel">
+                        <input type="text" value="Quicksand" class="form__input" />
                       </div>
                       <div class="col-sm-2" data-label="Varighet">
                         03:43
@@ -385,190 +381,6 @@
                           <input id="ember2513" placeholder="Søk..." autocomplete="off" type="text" class="ember-view ember-text-field search__form__input search__form__input--fixed-width">
                           <button type="submit" class="search__submit"></button>
                         </form>
-                        <table class="table table--fluid table--in-row table--selectable table--with-margin">
-                          <tbody>
-                              <tr class="" data-ember-action="2705">
-                                <td class="table__cell--truncated" data-label="Navn">
-                                  Anabelle Bruen Sr.
-                                </td>
-                                <td class="table__cell--truncated"  data-label="Gruppe">
-                                  Lew Stoltenberg, Destany 1
-                                </td>
-                                <td class="table__cell--truncated">
-                                  <!---->
-                                </td>
-                                <td class="table__cell--truncated" data-label="Instrument">
-                                  JAZZ-HORN
-                                </td>
-                                <td class="table__cell--truncated" data-label="Bostedsland">
-                                  CANADA
-                                </td>
-                                <td><!----></td>
-                              </tr>
-                              <tr class="" data-ember-action="2706">
-                                <td class="table__cell--truncated" data-label="Navn">
-                                  Thurman Schneider
-                                </td>
-                                <td class="table__cell--truncated"  data-label="Gruppe">
-                                  Tamia Hamill
-                                </td>
-                                <td class="table__cell--truncated">
-                                  <!---->
-                                </td>
-                                <td class="table__cell--truncated" data-label="Instrument">
-                                  KONTRATENOR
-                                </td>
-                                <td class="table__cell--truncated" data-label="Bostedsland">
-                                  SOMALIA
-                                </td>
-                                <td><!----></td>
-                              </tr>
-                              <tr class="" data-ember-action="2707">
-                                <td class="table__cell--truncated">
-                                  Jade Kilback
-                                </td>
-                                <td class="table__cell--truncated">
-                                  Ms. Felix Buckridge, Queenie 1
-                                </td>
-                                <td class="table__cell--truncated">
-                                  <!---->
-                                </td>
-                                <td class="table__cell--truncated">
-                                  HOSHU
-                                </td>
-                                <td class="table__cell--truncated">
-                                  BURKINA FASO/ØVRE VOLTA
-                                </td>
-                                <td><!----></td>
-                              </tr>
-                              <tr class="" data-ember-action="2708">
-                                <td class="table__cell--truncated">
-                                  Janiya Ortiz
-                                </td>
-                                <td class="table__cell--truncated">
-                                  Jasmin Nitzsche, Lucy 1, Mrs. Arnaldo 2
-                                </td>
-                                <td class="table__cell--truncated">
-                                  <!---->
-                                </td>
-                                <td class="table__cell--truncated">
-                                  LYRE
-                                </td>
-                                <td class="table__cell--truncated">
-                                  JERSEY
-                                </td>
-                                <td><!----></td>
-                              </tr>
-                              <tr class="" data-ember-action="2709">
-                                <td class="table__cell--truncated">
-                                  Dewayne Bogan
-                                </td>
-                                <td class="table__cell--truncated">
-                                  Chauncey Mante
-                                </td>
-                                <td class="table__cell--truncated">
-                                  <!---->
-                                </td>
-                                <td class="table__cell--truncated">
-                                  KEYBOARDS
-                                </td>
-                                <td class="table__cell--truncated">
-                                  URUGUAY
-                                </td>
-                                <td><!----></td>
-                              </tr>
-                              <tr class="" data-ember-action="2710">
-                                <td class="table__cell--truncated">
-                                  Armani Towne
-                                </td>
-                                <td class="table__cell--truncated">
-                                  Mrs. Trevion Nikolaus, Muhammad 1
-                                </td>
-                                <td class="table__cell--truncated">
-                                  <!---->
-                                </td>
-                                <td class="table__cell--truncated">
-                                  TAROGATO
-                                </td>
-                                <td class="table__cell--truncated">
-                                  TURKS OG CAICOS ØYENE
-                                </td>
-                                <td><!----></td>
-                              </tr>
-                              <tr class="" data-ember-action="2711">
-                                <td class="table__cell--truncated">
-                                  Karelle Lynch
-                                </td>
-                                <td class="table__cell--truncated">
-                                  Jaclyn Eichmann
-                                </td>
-                                <td class="table__cell--truncated">
-                                  <!---->
-                                </td>
-                                <td class="table__cell--truncated">
-                                  KONTRABASS
-                                </td>
-                                <td class="table__cell--truncated">
-                                  GRENADA
-                                </td>
-                                <td><!----></td>
-                              </tr>
-                              <tr class="" data-ember-action="2712">
-                                <td class="table__cell--truncated">
-                                  Judy Torp Jr.
-                                </td>
-                                <td class="table__cell--truncated">
-                                  Marina Wiegand, Lucious 1
-                                </td>
-                                <td class="table__cell--truncated">
-                                  <!---->
-                                </td>
-                                <td class="table__cell--truncated">
-                                  SOPRANSAX
-                                </td>
-                                <td class="table__cell--truncated">
-                                  MAN
-                                </td>
-                                <td><!----></td>
-                              </tr>
-                              <tr class="" data-ember-action="2713">
-                                <td class="table__cell--truncated">
-                                  Pietro Cummerata
-                                </td>
-                                <td class="table__cell--truncated">
-                                  Penelope Kris, Ms. Mckenzie 1
-                                </td>
-                                <td class="table__cell--truncated">
-                                  <!---->
-                                </td>
-                                <td class="table__cell--truncated">
-                                  UD
-                                </td>
-                                <td class="table__cell--truncated">
-                                  AZERBAIDJAN
-                                </td>
-                                <td><!----></td>
-                              </tr>
-                              <tr class="" data-ember-action="2714">
-                                <td class="table__cell--truncated">
-                                  Alejandrin Stiedemann
-                                </td>
-                                <td class="table__cell--truncated">
-                                  Millie Morissette, Mrs. Mable 1, Brady 2
-                                </td>
-                                <td class="table__cell--truncated">
-                                  <!---->
-                                </td>
-                                <td class="table__cell--truncated">
-                                  TENOR HORN
-                                </td>
-                                <td class="table__cell--truncated">
-                                  REUNION
-                                </td>
-                                <td><!----></td>
-                              </tr>
-                          </tbody>
-                        </table>
                       </div>
                       <div class="col-xs">
                         <div class="col-xs fake-table__cell--action fake-table__cell--absolute">
@@ -578,8 +390,199 @@
                           </div>
                         </div>
                       </div>
+
+                          <table class="table table--fluid table--in-row table--selectable table--with-margin">
+                            <tbody>
+                                <tr class="" data-ember-action="2705">
+                                  <td class="table__cell--truncated" data-label="Navn">
+                                    Anabelle Bruen Sr.
+                                  </td>
+                                  <td class="table__cell--truncated"  data-label="Gruppe">
+                                    Lew Stoltenberg, Destany 1
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    <!---->
+                                  </td>
+                                  <td class="table__cell--truncated" data-label="Instrument">
+                                    JAZZ-HORN
+                                  </td>
+                                  <td class="table__cell--truncated" data-label="Bostedsland">
+                                    CANADA
+                                  </td>
+                                  <td><!----></td>
+                                </tr>
+                                <tr class="" data-ember-action="2706">
+                                  <td class="table__cell--truncated" data-label="Navn">
+                                    Thurman Schneider
+                                  </td>
+                                  <td class="table__cell--truncated"  data-label="Gruppe">
+                                    Tamia Hamill
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    <!---->
+                                  </td>
+                                  <td class="table__cell--truncated" data-label="Instrument">
+                                    KONTRATENOR
+                                  </td>
+                                  <td class="table__cell--truncated" data-label="Bostedsland">
+                                    SOMALIA
+                                  </td>
+                                  <td><!----></td>
+                                </tr>
+                                <tr class="" data-ember-action="2707">
+                                  <td class="table__cell--truncated">
+                                    Jade Kilback
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    Ms. Felix Buckridge, Queenie 1
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    <!---->
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    HOSHU
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    BURKINA FASO/ØVRE VOLTA
+                                  </td>
+                                  <td><!----></td>
+                                </tr>
+                                <tr class="" data-ember-action="2708">
+                                  <td class="table__cell--truncated">
+                                    Janiya Ortiz
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    Jasmin Nitzsche, Lucy 1, Mrs. Arnaldo 2
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    <!---->
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    LYRE
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    JERSEY
+                                  </td>
+                                  <td><!----></td>
+                                </tr>
+                                <tr class="" data-ember-action="2709">
+                                  <td class="table__cell--truncated">
+                                    Dewayne Bogan
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    Chauncey Mante
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    <!---->
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    KEYBOARDS
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    URUGUAY
+                                  </td>
+                                  <td><!----></td>
+                                </tr>
+                                <tr class="" data-ember-action="2710">
+                                  <td class="table__cell--truncated">
+                                    Armani Towne
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    Mrs. Trevion Nikolaus, Muhammad 1
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    <!---->
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    TAROGATO
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    TURKS OG CAICOS ØYENE
+                                  </td>
+                                  <td><!----></td>
+                                </tr>
+                                <tr class="" data-ember-action="2711">
+                                  <td class="table__cell--truncated">
+                                    Karelle Lynch
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    Jaclyn Eichmann
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    <!---->
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    KONTRABASS
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    GRENADA
+                                  </td>
+                                  <td><!----></td>
+                                </tr>
+                                <tr class="" data-ember-action="2712">
+                                  <td class="table__cell--truncated">
+                                    Judy Torp Jr.
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    Marina Wiegand, Lucious 1
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    <!---->
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    SOPRANSAX
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    MAN
+                                  </td>
+                                  <td><!----></td>
+                                </tr>
+                                <tr class="" data-ember-action="2713">
+                                  <td class="table__cell--truncated">
+                                    Pietro Cummerata
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    Penelope Kris, Ms. Mckenzie 1
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    <!---->
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    UD
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    AZERBAIDJAN
+                                  </td>
+                                  <td><!----></td>
+                                </tr>
+                                <tr class="" data-ember-action="2714">
+                                  <td class="table__cell--truncated">
+                                    Alejandrin Stiedemann
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    Millie Morissette, Mrs. Mable 1, Brady 2
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    <!---->
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    TENOR HORN
+                                  </td>
+                                  <td class="table__cell--truncated">
+                                    REUNION
+                                  </td>
+                                  <td><!----></td>
+                                </tr>
+                            </tbody>
+                          </table>
+  
+
                     </li><!--end .fake-table__row-->
                   </ol><!--end .fake-table-->
+                  <div class="form__section--action form__section--action--padded">
+                    <a class="link--no-line link--inline">Legg til ny side</a>
+                    <a class="link--no-line link--inline">Legg til ny spor</a>
+                  </div>
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
                 <section id="utover" class="container container--padded">
