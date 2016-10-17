@@ -3879,6 +3879,10 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   position:relative;
 }
 
+.fake-table--numeric__divider[draggable=false]{
+  padding-top:0;
+}
+
 .fake-table--numeric__divider[draggable=true]{
   cursor:-webkit-grab;
   cursor:grab;
@@ -3887,7 +3891,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 .fake-table--numeric__divider[draggable=true]:hover::before{
   content:'';
   top:50%;
-  margin-top:.65rem;
+  margin-top:-0.7rem;
   display:block;
 }
 
@@ -3897,7 +3901,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 
 .fake-table--numeric__divider > .fake-table--numeric__divider__delete{
   top:50%;
-  margin-top:.2rem;
+  margin-top:-1rem;
   right:-3.9rem;
 }
 

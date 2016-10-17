@@ -77,6 +77,10 @@
   padding: 1.2rem 0;
   position: relative;
 
+  &[draggable=false] {
+    padding-top: 0;
+  }
+
   &[draggable=true] {
     cursor: grab;
   }
@@ -85,7 +89,7 @@
     content: '';
     @extend .drag-handle;
     top: 50%;
-    margin-top: .65rem;
+    margin-top: -0.7rem;
     display: block;
   }
 
@@ -96,7 +100,7 @@
   & > .fake-table--numeric__divider__delete {
     @extend .fake-table__row__delete;
     top: 50%;
-    margin-top: .2rem;
+    margin-top: -1rem;
     right: -3.9rem;
   }
 
