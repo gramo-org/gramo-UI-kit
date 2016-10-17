@@ -74,28 +74,8 @@
 .fake-table--numeric__divider {
   font-weight: var(--semibold);
   display: block;
-  padding: 3.6rem 0 1.2rem 0;
+  padding: 1.2rem 0;
   position: relative;
-
-  &::after {
-    content: '';
-    border-bottom: 1px dashed var(--silver);
-    width: calc(100% - 7.1rem);
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    margin-top: 1rem;
-    left: 8rem;
-    display: block;
-  }
-
-  &:nth-child(2) {
-    padding-top: 1.2rem;
-
-    &:after {
-      margin-top: 0;
-    }
-  }
 
   &[draggable=true] {
     cursor: grab;

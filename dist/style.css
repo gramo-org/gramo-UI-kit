@@ -1577,12 +1577,6 @@ a:active, a:hover{
   .form__section--action--padded{
   padding-bottom:4rem;
 }
-
-  .form__section--action--absolute{
-  position:absolute;
-  top:-.5rem;
-  left:-1rem;
-}
 .form__label{
   position:relative;
   display:block;
@@ -3881,28 +3875,8 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 .fake-table--numeric__divider{
   font-weight:600;
   display:block;
-  padding:3.6rem 0 1.2rem 0;
+  padding:1.2rem 0;
   position:relative;
-}
-
-.fake-table--numeric__divider::after{
-  content:'';
-  border-bottom:1px dashed #d9d9dc;
-  width:calc(100% - 7.1rem);
-  height:1px;
-  position:absolute;
-  top:50%;
-  margin-top:1rem;
-  left:8rem;
-  display:block;
-}
-
-.fake-table--numeric__divider:nth-child(2){
-  padding-top:1.2rem;
-}
-
-.fake-table--numeric__divider:nth-child(2):after{
-  margin-top:0;
 }
 
 .fake-table--numeric__divider[draggable=true]{
