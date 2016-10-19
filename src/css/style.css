@@ -4,28 +4,25 @@
 @import url('base/_normalize.css');
 @import url('base/_grid.css');
 @import url('base/_global.css');
-@import url('base/_headings.css');
 @import url('base/_layout.css');
-@import url('base/_forms.css');
 @import url('base/_icons.css');
 @import url('base/_animations.css');
 @import url('base/_links.css');
 
-@import url('blocks/_truncated.css');
 @import url('blocks/_scrollbar.css');
 
 @import url('blocks/_wrapper.css');
 @import url('blocks/_site-header.css');
 @import url('blocks/_form.css');
-@import url('blocks/_form-labels.css');
-@import url('blocks/_form-inputs.css');
+@import url('blocks/_form__label.css');
+@import url('blocks/_form__input.css');
 @import url('blocks/_form-validation.css');
-@import url('blocks/_form-field.css');
-@import url('blocks/_form-field-inline.css');
-@import url('blocks/_radio-buttons.css');
+@import url('blocks/_form__field.css');
+@import url('blocks/_form__field--inline.css');
+@import url('blocks/_radio-group.css');
 @import url('blocks/_select-menu.css');
 @import url('blocks/_searchable-list.css');
-@import url('blocks/_input-number.css');
+@import url('blocks/_form__input--stepper.css');
 @import url('blocks/_horizontal-rule.css');
 @import url('blocks/_button.css');
 @import url('blocks/_button-group.css');
@@ -66,19 +63,21 @@
 @import url('blocks/_toggle.css');
 @import url('blocks/_close-button.css');
 @import url('blocks/_tabs.css');
-@import url('blocks/_tabs-nav.css');
-@import url('blocks/_tabs-type.css');
-@import url('blocks/_tabs-transparent.css');
-@import url('blocks/_tabs-section-nav.css');
+@import url('blocks/_tabs__nav.css');
+@import url('blocks/_tabs__nav__item__type.css');
+@import url('blocks/_tabs--transparent.css');
+@import url('blocks/_tabs__section__nav.css');
 @import url('blocks/_flash-message.css');
 @import url('blocks/_spinner.css');
 @import url('blocks/_content-placeholder.css');
 @import url('blocks/_code.css');
 @import url('blocks/_page-contents.css');
 @import url('blocks/_search.css');
-@import url('blocks/_placeholder.css');
 @import url('blocks/_filters.css');
 @import url('blocks/_empty-state.css');
+
+/* For UI kit homepage */
+@import url('blocks/_UI-kit.css');
 
 /* Print Styles */
 @media print {

@@ -1,5 +1,6 @@
 .form__input {
   border: 1px solid var(--silver);
+  padding: 0.55rem;
   padding-right: 2rem;
   background-color: #fff;
   font-weight: var(--normal);
@@ -24,10 +25,12 @@
     width: 100%;
   }
 
-  /* Checkboxes */
-  &--checkbox {
+  /* Checkboxes/radio buttons */
+  &--checkbox,
+  &--radio {
     display: inline-block;
     width: auto;
+    margin-right: 0.5rem;
   }
 
   &--inline {
@@ -70,6 +73,11 @@
     opacity: 0;
     -webkit-appearance: none;
   }
+}
+
+/* Placeholder Colour */
+input-placeholder {
+  color: var(--base-placeholder-color);
 }
 
 /* Custom widths for form inputs */

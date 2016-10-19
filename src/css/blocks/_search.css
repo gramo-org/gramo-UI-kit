@@ -42,6 +42,7 @@
 }
 
 input[type="text"].search__form__input {
+  @extend .form__input;
   background: var(--gramo-white);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -103,24 +104,4 @@ input[type="text"].search__form__input {
   .icon--cross:before {
     color: var(--off-gray)!important;
   }
-}
-
-/* only used on index page */
-.search__form--simple {
-  margin-bottom: 2rem;
-}
-
-.search__form--simple:before {
-  border-radius: 2px 0 0 2px;
-  background: var(--silver);
-  font-family: 'icomoon';
-  font-weight: normal;
-  font-style: normal;
-  color: var(--gramo-white);
-  content: "\e909";
-  display: inline-flex;
-  flex: 0 0 4rem;
-  align-items: center;
-  justify-content: center;
-  @media (--tablet) { display: inline-flex; }
 }
