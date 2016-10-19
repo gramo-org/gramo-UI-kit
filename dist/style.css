@@ -1990,11 +1990,11 @@ input-placeholder{
     left:137px;
   }
 }
-.form__input--stepper{
+.form__input--stepper, input[type="number"], input[type="time"]{
   position:relative;
   height:3.2rem;
 }
-.form__input--stepper::-webkit-outer-spin-button, .form__input--stepper::-webkit-inner-spin-button{
+.form__input--stepper::-webkit-outer-spin-button, .form__input--stepper::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button, input[type="time"]::-webkit-outer-spin-button, input[type="time"]::-webkit-inner-spin-button{
   -webkit-appearance:none;
   background:#a5a4ab url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
   width:1.5rem;
@@ -2006,7 +2006,7 @@ input-placeholder{
   bottom:0;
   height:100%;
 }
-.form__input--stepper::-webkit-inner-spin-button:hover, .form__input--stepper::-webkit-inner-spin-button:active{
+.form__input--stepper::-webkit-inner-spin-button:hover, .form__input--stepper::-webkit-inner-spin-button:active, input[type="number"]::-webkit-inner-spin-button:hover, input[type="number"]::-webkit-inner-spin-button:active, input[type="time"]::-webkit-inner-spin-button:hover, input[type="time"]::-webkit-inner-spin-button:active{
   opacity:.8;
 }
 

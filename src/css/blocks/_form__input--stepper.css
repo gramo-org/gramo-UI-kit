@@ -1,4 +1,6 @@
-.form__input--stepper {
+.form__input--stepper,
+input[type="number"],
+input[type="time"] {
   position: relative;
   height: 3.2rem;
 
