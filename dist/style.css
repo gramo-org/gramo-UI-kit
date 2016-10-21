@@ -1768,6 +1768,9 @@ input-placeholder{
     margin-left:144px;
   }
 }
+.form__field--inline > *{
+  vertical-align:top;
+}
 .form__field--inline--checkbox{
   padding:.5rem 0;
 }
