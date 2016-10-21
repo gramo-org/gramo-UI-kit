@@ -25,19 +25,19 @@
     width: 100%;
   }
 
-  /* Checkboxes/radio buttons */
-  &[type="radio"], &[type="checkbox"],
-  &--checkbox,
-  &--radio {
-    display: inline-block;
-    width: auto;
-    margin-right: 0.5rem;
-  }
-
   &--inline {
     display: inline-block;
     vertical-align: middle;
   }
+}
+
+/* Checkboxes/radio buttons */
+input[type="radio"], input[type="checkbox"],
+.form__input----checkbox,
+.form__input----radio {
+  display: inline-block;
+  width: auto;
+  margin-right: 0.5rem;
 }
 
 .form__input--date,

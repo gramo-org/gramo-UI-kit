@@ -1579,14 +1579,14 @@ main > section:first-of-type{
   display:block;
   width:100%;
 }
-.form__input[type="radio"], .form__input[type="checkbox"], .form__input--checkbox, .form__input--radio{
-  display:inline-block;
-  width:auto;
-  margin-right:0.5rem;
-}
 .form__input--inline{
   display:inline-block;
   vertical-align:middle;
+}
+input[type="radio"], input[type="checkbox"], .form__input----checkbox, .form__input----radio{
+  display:inline-block;
+  width:auto;
+  margin-right:0.5rem;
 }
 
 .form__input--date, .form__input[type="date"]{
