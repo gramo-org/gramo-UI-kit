@@ -59,7 +59,7 @@
 }
 
 /* Make error messages line up with inputs */
-.form__field {
+.form__field > *:first-child {
   .form__input__errors > p,
   p.error--form-field {
     @media (--tablet) {
