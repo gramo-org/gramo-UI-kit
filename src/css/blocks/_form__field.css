@@ -67,3 +67,12 @@
     }
   }
 }
+
+.form__field {
+  .form__input__errors > p,
+  p.error--form-field {
+    @media (--tablet) {
+      max-width: 200px;
+    }
+  }
+}

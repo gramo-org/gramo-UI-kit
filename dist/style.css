@@ -1768,6 +1768,12 @@ input-placeholder{
     margin-left:144px;
   }
 }
+
+@media (min-width: 768px){
+  .form__field .form__input__errors > p, .form__field p.error--form-field{
+    max-width:200px;
+  }
+}
 .form__field--inline > *{
   vertical-align:top;
 }
