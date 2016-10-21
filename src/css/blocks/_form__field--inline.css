@@ -12,3 +12,13 @@
     }
   }
 }
+
+/* Make error messages line up with inputs */
+.form__field--inline > *:not(:first-child) {
+  .form__input__errors > p,
+  p.error--form-field {
+    @media (--tablet) {
+      margin-left: 24px
+    }
+  }
+}

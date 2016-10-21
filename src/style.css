@@ -1774,6 +1774,11 @@ input-placeholder{
 .form__field--inline--checkbox{
   padding:.5rem 0;
 }
+@media (min-width: 768px){
+  .form__field--inline > *:not(:first-child) .form__input__errors > p, .form__field--inline > *:not(:first-child) p.error--form-field{
+    margin-left:24px;
+  }
+}
 .radio-group{
   display:-webkit-flex;
   display:-ms-flexbox;
