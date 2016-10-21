@@ -26,6 +26,7 @@
   }
 
   /* Checkboxes/radio buttons */
+  &[type="radio"], &[type="checkbox"],
   &--checkbox,
   &--radio {
     display: inline-block;
