@@ -4,7 +4,9 @@
 
   .form__fieldset {
     position: relative;
-    @extend %margin-bottom;
+    border: 0;
+    padding: 0;
+    margin: 0 0 1.2rem 0;
 
     &:last-child {
       margin-bottom: 0;

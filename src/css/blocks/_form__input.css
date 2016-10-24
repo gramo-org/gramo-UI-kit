@@ -1,5 +1,6 @@
 .form__input {
   border: 1px solid var(--silver);
+  padding: 0.55rem;
   padding-right: 2rem;
   background-color: #fff;
   font-weight: var(--normal);
@@ -24,16 +25,19 @@
     width: 100%;
   }
 
-  /* Checkboxes */
-  &--checkbox {
-    display: inline-block;
-    width: auto;
-  }
-
   &--inline {
     display: inline-block;
     vertical-align: middle;
   }
+}
+
+/* Checkboxes/radio buttons */
+input[type="radio"], input[type="checkbox"],
+.form__input----checkbox,
+.form__input----radio {
+  display: inline-block;
+  width: auto;
+  margin-right: 0.5rem;
 }
 
 .form__input--date,
@@ -70,6 +74,11 @@
     opacity: 0;
     -webkit-appearance: none;
   }
+}
+
+/* Placeholder Colour */
+input-placeholder {
+  color: var(--base-placeholder-color);
 }
 
 /* Custom widths for form inputs */

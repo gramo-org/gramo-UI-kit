@@ -1,0 +1,24 @@
+.form__field--inline {
+
+  & > * {
+    vertical-align: top;
+  }
+
+  &--checkbox {
+    padding: .5rem 0;
+
+    .form__field__label--required {
+      @extend .form__label--required;
+    }
+  }
+}
+
+/* Make error messages line up with inputs */
+.form__field-to-and-from > *:not(:first-child) {
+  .form__input__errors > p,
+  p.error--form-field {
+    @media (--tablet) {
+      margin-left: 24px
+    }
+  }
+}

@@ -188,11 +188,16 @@ td.text--center,
   margin-right: 1rem;
 }
 
-/*** heading--inline ***/
+/*** heading--mods ***/
 
 .heading--inline {
   display: inline-block;
   vertical-align: middle;
+}
+
+.heading--sub {
+  margin-top: 1.2rem;
+  margin-bottom: .6rem;
 }
 
 /*** input--inline ***/
@@ -231,5 +236,26 @@ td.text--center,
   @media (--desktop) {
     flex: 0;
     margin-bottom: 0;
+  }
+}
+
+/* Truncated text */
+.truncated {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @media (--desktop) {
+    max-width: 100px;
+  }
+
+  &::after {
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    background:linear-gradient(to right, transparent 120px, var(--gramo-white));
   }
 }
