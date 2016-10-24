@@ -546,25 +546,23 @@
             <section class="form__section">
               <h4 class="form__heading">Velg Kringkaster</h4>
               <label class="form__label">
-                <input type="radio">NRK
+                <input type="radio" class="form__input form__input--radio">NRK
               </label>
               <label class="form__label form__label--isChecked">
-                <input type="radio" checked>Radio Norge
+                <input type="radio" class="form__input form__input--radio" checked>Radio Norge
               </label>
               <label class="form__label">
-                <input type="radio">P4
+                <input type="radio" class="form__input form__input--radio">P4
               </label>
               <label class="form__label">
-                <input type="radio">Local Radio
+                <input type="radio" class="form__input form__input--radio">Local Radio
               </label>
             </section>
             <section class="form__section">
               <label class="form__label">Velg kanal
-                <div class="select select--block">
-                  <select>
-                    <option>Radio 1</option>
-                  </select>
-                </div>
+                <select class="select select--block">
+                  <option>Radio 1</option>
+                </select>
               </label>
             </section>
             <section class="form__section">
@@ -577,7 +575,7 @@
             </section>
             <section class="form__section">
               <label class="form__label form__label--percent"><span>Forventet musikkandel</span>
-                <input class="form__input form__input--numeric" type="number" min="0" max="100" step="10" value="10">
+                <input class="form__input form__input--stepper" type="number" min="0" max="100" step="10" value="10">
               </label>
             </section>
           </div>

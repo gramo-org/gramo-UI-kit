@@ -2031,7 +2031,7 @@ input[type="time"]{
 input[type="number"]{
   max-width:100px;
 }
-.horizontal-rule{
+hr, .horizontal-rule{
   height:1px;
   border:0;
   padding:0;
@@ -4402,6 +4402,7 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
   -webkit-flex-wrap:wrap;
   -ms-flex-wrap:wrap;
   flex-wrap:wrap;
+  vertical-align:top;
 }
 
 .tabs__nav--flexible .tabs__nav__item{
