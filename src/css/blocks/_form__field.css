@@ -76,3 +76,10 @@
     }
   }
 }
+
+/* Make help text line up with inputs */
+.form__field__help > p {
+  @media (--tablet) {
+    margin-left: 144px
+  }
+}
