@@ -1583,7 +1583,7 @@ main > section:first-of-type{
   display:inline-block;
   vertical-align:middle;
 }
-input[type="radio"], input[type="checkbox"], .form__input----checkbox, .form__input----radio{
+input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__input--radio{
   display:inline-block;
   width:auto;
   margin-right:0.5rem;
@@ -4235,6 +4235,10 @@ tr:hover .table__cell--truncated::after, .table__row--disabled .table__cell--tru
 .x-toggle-flip.large::after, .x-toggle-flip.large::before{
     font-size:1.1em;
     line-height:2.4em;
+}
+
+.x-toggle{
+  display:none!important;
 }
 
 .x-toggle-btn{

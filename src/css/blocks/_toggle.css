@@ -1,5 +1,9 @@
 @import url('vendor/_x-button.css');
 
+.x-toggle {
+  display: none!important;
+}
+
 .x-toggle-btn {
   vertical-align: middle;
   color: var(--slate-gray);
