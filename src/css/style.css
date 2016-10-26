@@ -1,83 +1,83 @@
 @import url('base/_variables.css');
-@import url('base/_placeholders.css');
 @import url('base/_utility-classes.css');
 @import url('base/_normalize.css');
 @import url('base/_grid.css');
 @import url('base/_global.css');
 @import url('base/_layout.css');
-@import url('base/_icons.css');
+
 @import url('base/_animations.css');
-@import url('base/_links.css');
 
-@import url('blocks/_scrollbar.css');
+/*Atoms*/
+@import url('_atoms/_icons.css');
+@import url('_atoms/_links.css');
+@import url('_atoms/_scrollbar.css');
+@import url('_atoms/_form__label.css');
+@import url('_atoms/_form__input.css');
+@import url('_atoms/_wrapper.css');
+@import url('_atoms/_form-validation.css');
+@import url('_atoms/_select-menu.css');
+@import url('_atoms/_form__input--stepper.css');
+@import url('_atoms/_horizontal-rule.css');
+@import url('_atoms/_button.css');
+@import url('_atoms/_box.css');
+@import url('_atoms/_toolbar.css');
+@import url('_atoms/_badge.css');
+@import url('_atoms/_drag-handle.css');
+@import url('_atoms/_table-row-toggle.css');
+@import url('_atoms/_table-states.css');
+@import url('_atoms/_table-cells.css');
+@import url('_atoms/_fake-table-toggle.css');
+@import url('_atoms/_fake-table-cells.css');
+@import url('_atoms/_toggle.css');
+@import url('_atoms/_close-button.css');
+@import url('_atoms/_spinner.css');
+@import url('_atoms/_content-placeholder.css');
+@import url('_atoms/_filter-items.css');
 
-@import url('blocks/_wrapper.css');
-@import url('blocks/_site-header.css');
-@import url('blocks/_form.css');
-@import url('blocks/_form__label.css');
-@import url('blocks/_form__input.css');
-@import url('blocks/_form-validation.css');
-@import url('blocks/_form__field.css');
-@import url('blocks/_form__field--inline.css');
-@import url('blocks/_radio-group.css');
-@import url('blocks/_select-menu.css');
-@import url('blocks/_searchable-list.css');
-@import url('blocks/_form__input--stepper.css');
-@import url('blocks/_horizontal-rule.css');
-@import url('blocks/_button.css');
-@import url('blocks/_button-group.css');
-@import url('blocks/_button-select.css');
-@import url('blocks/_list.css');
-@import url('blocks/_pagination.css');
-@import url('blocks/_box.css');
-@import url('blocks/_breadcrumbs.css');
-@import url('blocks/_sidebar.css');
-@import url('blocks/_vertical-nav.css');
-@import url('blocks/_user.css');
-@import url('blocks/_section-header.css');
-@import url('blocks/_infobar.css');
-@import url('blocks/_toolbar.css');
-@import url('blocks/_badge.css');
-@import url('blocks/_buckets.css');
-@import url('blocks/_drag-handle.css');
+/*Molecules*/
+@import url('_molecules/_form__field.css');
+@import url('_molecules/_form__field--inline.css');
+@import url('_molecules/_radio-group.css');
+@import url('_molecules/_searchable-list.css');
+@import url('_molecules/_button-group.css');
+@import url('_molecules/_button-select.css');
+@import url('_molecules/_pagination.css');
+@import url('_molecules/_breadcrumbs.css');
+@import url('_molecules/_vertical-nav.css');
+@import url('_molecules/_user.css');
+@import url('_molecules/_buckets.css');
+@import url('_molecules/_table-head.css');
+@import url('_molecules/_table-row.css');
+@import url('_molecules/_table-summary.css');
+@import url('_molecules/_fake-table-rows.css');
+@import url('_molecules/_fake-table-child-rows.css');
+@import url('_molecules/_toggle-sidebar.css');
+@import url('_molecules/_tabs__nav.css');
+@import url('_molecules/_tabs__nav__item__type.css');
+@import url('_molecules/_tabs__section__nav.css');
+@import url('_molecules/_flash-message.css');
+@import url('_molecules/_search.css');
 
-@import url('blocks/tables/_tables.css');
-@import url('blocks/tables/_table.css');
-@import url('blocks/tables/_table-head.css');
-@import url('blocks/tables/_table-row.css');
-@import url('blocks/tables/_table-row-toggle.css');
-@import url('blocks/tables/_table-states.css');
-@import url('blocks/tables/_table-summary.css');
-@import url('blocks/tables/_table-cells.css');
-
-@import url('blocks/tables/fake-tables/_fake-table.css');
-@import url('blocks/tables/fake-tables/_fake-table-rows.css');
-@import url('blocks/tables/fake-tables/_fake-table-toggle.css');
-@import url('blocks/tables/fake-tables/_fake-table-cells.css');
-@import url('blocks/tables/fake-tables/_fake-table-child-rows.css');
-@import url('blocks/tables/fake-tables/_fake-table-numeric.css');
-
-@import url('blocks/tables/_table-numeric.css');
-
-@import url('blocks/_toggle-sidebar.css');
-@import url('blocks/_toggle.css');
-@import url('blocks/_close-button.css');
-@import url('blocks/_tabs.css');
-@import url('blocks/_tabs__nav.css');
-@import url('blocks/_tabs__nav__item__type.css');
-@import url('blocks/_tabs--transparent.css');
-@import url('blocks/_tabs__section__nav.css');
-@import url('blocks/_flash-message.css');
-@import url('blocks/_spinner.css');
-@import url('blocks/_content-placeholder.css');
-@import url('blocks/_code.css');
-@import url('blocks/_page-contents.css');
-@import url('blocks/_search.css');
-@import url('blocks/_filter-items.css');
-@import url('blocks/_empty-state.css');
+/*Organisms*/
+@import url('_organisms/_site-header.css');
+@import url('_organisms/_form.css');
+@import url('_organisms/_list.css');
+@import url('_organisms/_sidebar.css');
+@import url('_organisms/_section-header.css');
+@import url('_organisms/_infobar.css');
+@import url('_organisms/_tables.css');
+@import url('_organisms/_table.css');
+@import url('_organisms/_fake-table.css');
+@import url('_organisms/_fake-table-numeric.css');
+@import url('_organisms/_table-numeric.css');
+@import url('_organisms/_tabs.css');
+@import url('_organisms/_tabs--transparent.css');
+@import url('_organisms/_empty-state.css');
 
 /* For UI kit homepage */
 @import url('blocks/_UI-kit.css');
+@import url('blocks/_code.css');
+@import url('blocks/_page-contents.css');
 
 /* Print Styles */
 @media print {

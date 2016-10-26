@@ -39,7 +39,7 @@
     }
 
     &--primary {
-      /*@extend %full-border;
+      /*border-width: 1px 1px 3px 1px!important;
       border-color: color(var(--gramo-blue) shade(2%));
       border-bottom-color: color(var(--gramo-blue) shade(15%));*/
     }

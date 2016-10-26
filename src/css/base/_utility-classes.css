@@ -1,3 +1,8 @@
+/*** default margin-bottom ***/
+%margin-bottom {
+  margin-bottom: 1.2rem;
+}
+
 .text--left {
   text-align: left!important;
 }
@@ -206,6 +211,14 @@ td.text--center,
   display: inline-block;
   max-width: 200px;
   vertical-align: top;
+}
+
+/*** lists ***/
+
+%no-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*** Inline items ***/

@@ -52,7 +52,7 @@
     border-color: var(--silver);
     background-color: var(--secondary);
     color: var(--gramo-black);
-    @extend %full-border;
+    border-width: 1px 1px 3px 1px!important;
     height: 32px;
     &:hover {
        background-color: color(var(--secondary) shade(20%));

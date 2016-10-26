@@ -28,10 +28,10 @@
     }
 
     &--success {
-      @extend %border-success;
+      box-shadow: 4px 0px 0px var(--success) inset;
     }
     &--error {
-      @extend %border-error;
+      box-shadow: 4px 0px 0px var(--error) inset;
     }
   }
 
