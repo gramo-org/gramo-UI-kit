@@ -1,11 +1,13 @@
+@import url('base/_normalize.css');
 @import url('base/_variables.css');
 @import url('base/_utility-classes.css');
-@import url('base/_normalize.css');
+@import url('base/_base.css');
 @import url('base/_grid.css');
-@import url('base/_global.css');
 @import url('base/_layout.css');
-
-@import url('base/_animations.css');
+/* Print Styles */
+@media print {
+  @import url('base/_print.css');
+}
 
 /*Atoms*/
 @import url('_atoms/_icons.css');
@@ -75,11 +77,6 @@
 @import url('_organisms/_empty-state.css');
 
 /* For UI kit homepage */
-@import url('blocks/_UI-kit.css');
-@import url('blocks/_code.css');
-@import url('blocks/_page-contents.css');
-
-/* Print Styles */
-@media print {
-  @import url('base/_print.css');
-}
+@import url('ui-kit/_UI-kit.css');
+@import url('ui-kit/_code.css');
+@import url('ui-kit/_page-contents.css');
