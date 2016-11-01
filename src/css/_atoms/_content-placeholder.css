@@ -1,3 +1,12 @@
+@keyframes placeHolderShimmer {
+  0%{
+      background-position: -40rem 0
+  }
+  100%{
+      background-position: 40rem 0
+  }
+}
+
 .content-placeholder {
   animation-duration: 1.5s;
   animation-fill-mode: forwards;

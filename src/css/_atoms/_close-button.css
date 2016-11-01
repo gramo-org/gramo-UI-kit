@@ -1,0 +1,9 @@
+.close-button {
+  font-size: 1rem;
+
+  &:after {
+    @extend .icon--close:before;
+    font-family: 'icomoon';
+    color: var(--off-gray);
+  }
+}

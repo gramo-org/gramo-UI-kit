@@ -1,3 +1,8 @@
+/*** default margin-bottom ***/
+%margin-bottom {
+  margin-bottom: 1.2rem;
+}
+
 .text--left {
   text-align: left!important;
 }
@@ -208,6 +213,14 @@ td.text--center,
   vertical-align: top;
 }
 
+/*** lists ***/
+
+%no-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /*** Inline items ***/
 .text--inline,
 .list--inline {
@@ -241,7 +254,8 @@ td.text--center,
 
 /* Truncated text */
 .truncated {
-  position: relative;
+  /*position: relative;*/
+  /*background: var(--gramo-white);*/
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -249,7 +263,7 @@ td.text--center,
     max-width: 100px;
   }
 
-  &::after {
+  /*&::after {
     content:'';
     width:100%;
     height:100%;
@@ -257,5 +271,5 @@ td.text--center,
     left:0;
     top:0;
     background:linear-gradient(to right, transparent 120px, var(--gramo-white));
-  }
+  }*/
 }

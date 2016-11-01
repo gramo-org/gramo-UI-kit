@@ -22,7 +22,7 @@ pre {
 
 .bash,
 .html {
-  background: var(--ui-gray);
+  background: #222;
   border: 0 none;
   border-radius: 4px;
   color: var(--gramo-white);
@@ -42,7 +42,8 @@ pre {
   overflow-y: hidden;
   overflow-x: auto;
   box-sizing:border-box;
-  background: var(--light-gray);
+  background: #222;
+  border-radius: 2px;
   @extend %margin-bottom;
 }
 
@@ -53,14 +54,19 @@ pre.prettyprint {
   white-space: pre-wrap;
   word-wrap: normal;
   box-sizing:border-box;
+
+  span {
+    color: #eee;
+  }
 }
 
 .tag {
-    color: var(--gramo-blue)!important;
+    color: color(var(--gramo-blue) tint(25%))!important;
+
 }
 
 .atn {
-    color: var(--gramo-purple)!important;
+    color: color(var(--gramo-purple) tint(25%))!important;
 }
 
 .atv {
