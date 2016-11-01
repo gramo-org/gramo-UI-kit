@@ -70,18 +70,6 @@
 
   /*** Button Variations ***/
 
-  &--outline {
-    background: none;
-    border: 1px solid;
-
-    &-inverse {
-      color: var(--slate-gray);
-      background: #fff;
-      border-color: var(--silver);
-      padding: .85rem 2rem;
-    }
-  }
-
   &--borderless {
     border: 0;
   }

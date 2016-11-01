@@ -1841,16 +1841,6 @@ hr, .horizontal-rule{
 .btn--danger:hover{
   background-color:rgb(190, 86, 85);
 }
-.btn--outline{
-  background:none;
-  border:1px solid;
-}
-.btn--outline-inverse{
-  color:#504f56;
-  background:#fff;
-  border-color:#d9d9dc;
-  padding:.85rem 2rem;
-}
 .btn--borderless{
   border:0;
 }
