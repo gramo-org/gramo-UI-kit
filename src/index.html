@@ -60,17 +60,18 @@
             </li>
             <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Atoms</a>
               <ul class="vertical__nav vertical__nav--sub">
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#getting-started">Button</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#components">Components</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#example-pages">Example pages</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_buttons">Button</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_links">Links</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_badges">Badges</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_icons">Icons</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_close-button">Close button</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_drag-handle">Drag handle</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_toggle">Toggle</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_toolbar">Toolbar</a></li>
               </ul>
             </li>
             <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Molecules</a>
-              <ul class="vertical__nav vertical__nav--sub">
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#getting-started">Getting Started</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#components">Components</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#example-pages">Example pages</a></li>
-              </ul>
+      
             </li>
           </ul>
         </nav>
@@ -116,7 +117,7 @@
                 </blockquote>
               </section>
               <section id="section_typography-markup">
-                <h3>Markup for typography</h3>
+                <h4>Markup for typography</h4>
 <div class="highlight"><pre class="prettyprint">
 <h1>Heading one</h1>
 <h2>Heading two</h2>
@@ -136,27 +137,29 @@
                 <button class="btn btn--primary" disabled>Primary Button</button>
               </section>
               <section id="section_buttons-markup">
-                <h3>Markup for buttons</h3>
+                <h4>Markup for buttons</h4>
 <div class="highlight"><pre class="prettyprint">
 <button class="btn btn--primary">Primary Button</button>
 <button class="btn btn--secondary">Secondary Button</button>
 <button class="btn btn--primary" disabled="disabled">Primary Button</button>
 </pre></div>
+                <hr class="horizontal-rule">
               </section>
-              <hr class="horizontal-rule">
+
               <section id="section_links">
                 <h3>Links</h3>
                 <p>This is a <a href="#">link</a></p>
                 <p>This is a <a href="#" class="link--no-line">link without styling</a></p>
               </section>
               <section id="section_links-markup">
-                <h3>Markup for links</h3>
+                <h4>Markup for links</h4>
 <div class="highlight"><pre class="prettyprint">
 <p>This is a <a href="#">link</a></p>
 <p>This is a <a href="#" class="link--no-line">link without styling</a></p>
 </pre></div>
+                <hr class="horizontal-rule">
               </section>
-              <hr class="horizontal-rule">
+
               <section id="section_badges">
                 <h3>Badges</h3>
                 <span class="badge badge--info">21</span>
@@ -168,7 +171,7 @@
                 <span class="badge badge--numeric badge--numeric--inverse">2</span>
               </section>
               <section id="section_badges-markup">
-                <h3>Markup for badges</h3>
+                <h4>Markup for badges</h4>
 <div class="highlight"><pre class="prettyprint">
 <span class="badge badge--info">21</span>
 <span class="badge badge--success">21</span>
@@ -178,41 +181,87 @@
 <span class="badge badge--numeric">2</span>
 <span class="badge badge--numeric badge--numeric--inverse">2</span>
 </pre></div>
+                <hr class="horizontal-rule">
               </section>
-              <hr class="horizontal-rule">
+
               <section id="section_icons">
                 <h3>Icons</h3>
                 <p><span class="icon icon--album"></span> <span class="icon icon--notes"></span> <span class="icon icon--performer"></span></p>
               </section>
               <section id="section_icons-markup">
-                <h3>Markup for icons</h3>
+                <h4>Markup for icons</h4>
 <div class="highlight"><pre class="prettyprint">
 <span class="icon icon--album"></span>
 <span class="icon icon--notes"></span>
 <span class="icon icon--performer"></span>
 </pre></div>
+                <hr class="horizontal-rule">
               </section>
-              <hr class="horizontal-rule">
+
               <section id="section_close-button">
                 <h3>Close button</h3>
                 <p><span class="close-button" style="position:static;"></span></p>
               </section>
               <section id="section_close-button-markup">
-                <h3>Markup for close button</h3>
+                <h4>Markup for close button</h4>
 <div class="highlight"><pre class="prettyprint">
 <span class="close-button"></span>
 </pre></div>
+                <hr class="horizontal-rule">
               </section>
-              <hr class="horizontal-rule">
+
               <section id="section_drag-handle">
                 <h3>Drag handle</h3>
                 <p><span class="drag-handle" style="position:static;"></span></p>
               </section>
               <section id="section_drag-handle-markup">
-                <h3>Markup for drag handle</h3>
+                <h4>Markup for drag handle</h4>
 <div class="highlight"><pre class="prettyprint">
 <span class="drag-handle"></span>
 </pre></div>
+                <hr class="horizontal-rule">
+              </section>
+
+              <section id="section_toggle">
+                <h3>Toggle</h3>
+                <span class="x-toggle-container">
+                <input type="checkbox" class="x-toggle">
+                <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                </label>
+                </span>
+                <span class="x-toggle-container">
+                <input type="checkbox" class="x-toggle" checked="checked">
+                <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                </label>
+                </span>
+              </section>
+              <section id="section_toggle-markup">
+                <h4>Markup for toggle</h4>
+<div class="highlight"><pre class="prettyprint">
+<span class="x-toggle-container">
+  <input type="checkbox" class="x-toggle">
+  <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+  </label>
+</span>
+<span class="x-toggle-container">
+  <input type="checkbox" class="x-toggle" checked="checked">
+  <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+  </label>
+</span>
+</pre></div>
+                <hr class="horizontal-rule">
+              </section>
+
+              <section id="section_toolbar">
+                <h3>Toolbar</h3>
+                <div class="toolbar"></div>
+              </section>
+              <section id="section_drag-handle-markup">
+                <h4>Markup for toolbar</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="toolbar"></div>
+</pre></div>
+                <hr class="horizontal-rule">
               </section>
             </section><!--end section #atoms-->
           </div><!--/.col with main content-->

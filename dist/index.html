@@ -31,6 +31,14 @@
     .container.grid-test > .row > *:nth-child(odd) {
       background: rgb(217, 219, 222);
     }
+
+    section {
+      margin-bottom: 1.2rem;
+    }
+
+    h3 {
+      margin-bottom: .6rem;
+    }
   </style>
 </head>
 <body>
@@ -43,21 +51,30 @@
         </header>
         <nav class="sidebar__nav">
           <ul class="vertical__nav">
-            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Global</a>
               <ul class="vertical__nav vertical__nav--sub">
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#getting-started">Getting Started</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#components">Components</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#example-pages">Example pages</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#getting-started">Typography</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#components">Colour</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#example-pages">Vertical rhythm</a></li>
               </ul>
+            </li>
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Atoms</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_buttons">Button</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_links">Links</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_badges">Badges</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_icons">Icons</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_close-button">Close button</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_drag-handle">Drag handle</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_toggle">Toggle</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_toolbar">Toolbar</a></li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Molecules</a>
+      
             </li>
           </ul>
         </nav>
-        <aside class="user">
-          <img src="img/audun-temp.jpg" class="user__avatar">
-          <div class="user__name">Audun Haggernes
-            <span class="user__logout"><a href="#">Logg ut</a></span>
-          </div>
-        </aside>
       </section>
     </div>
     <!--End Sidebar example-->
@@ -72,1136 +89,7 @@
 
       <section class="container container--hd">
         <div class="row">
-          <div class="col-xs-12 col-sm-8 col-lg-9 flex-mob-order flex-mob-order--2">
-            <section id="getting-started">
-              <section id="installation">
-                <h1>Installation</h1>
-                <h3>1. With Bower</h3>
-                <div class="code">
-                  <pre>
-                    <code class="bash">$ bower install gramo-ui-kit</code>
-                  </pre>
-                </div>
-                <h3>2. Download the CSS file</h3>
-                <p>We recommend using Bower to manage the UI kit, but it's also possible to download the CSS file and assets from Github.</p>
-                <p>
-                  <a href="https://github.com/gramo-org/gramo-UI-kit/tree/master/dist" class="btn btn--medium btn--primary">Download CSS file and assets from Github</a>
-                </p>
-                <hr class="horizontal-rule">
-              </section>
-            </section><!--End Getting Started section-->
-
-            <section id="components">
-              <section id="grid">
-                <!--Grid example-->
-                <h1>Grid</h1>
-                <p>
-                  Simple flexbox grid based on <a href="https://github.com/matthewsimo/scss-flex-grid" target="_blank">scss-flex-grid</a>
-                </p>
-                <ul>
-                  <li>Responsive, mobile first approach</li>
-                  <li>Define specific colum size or use a flex column (a column that grows to fill space)</li>
-                  <li>Define offset to push column a specific number of columns.</li>
-                  <li>Wrap columns in a '.row' and the '.row' in a '.container'</li>
-                </ul>
-                <h3>Example 1 - flex column</h3>
-
-
-<div class="highlight"><pre class="prettyprint">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs">
-
-      </div>
-      <div class="col-xs">
-
-      </div>
-    </div>
-  </div>
-</pre></div>
-
-                <div class="container grid-test">
-                  <div class="row">
-                    <div class="col-xs">
-                      .col-xs (flex column)
-                    </div>
-                    <div class="col-xs">
-                      .col-xs (flex column)
-                    </div>
-                  </div>
-                </div>
-
-                <h3>Example 2 - fixed width column</h3>
-<div class="highlight"><pre class="prettyprint">
-  <div class="container grid-test">
-    <div class="row">
-      <div class="col-sm-4 col-xs-12">
-        .col-sm-4 .col-xs-12
-      </div>
-      <div class="col-sm-4 col-xs-12">
-        .col-sm-4 .col-xs-12
-      </div>
-      <div class="col-sm-4 col-xs-12">
-        .col-sm-4 .col-xs-12
-      </div>
-    </div>
-  </div>
-</pre></div>
-
-                <div class="container grid-test">
-                  <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                      .col-sm-4 .col-xs-12
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                      .col-sm-4 .col-xs-12
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                      .col-sm-4 .col-xs-12
-                    </div>
-                  </div>
-                </div>
-                <!--End Grid example-->
-                <hr class="horizontal-rule">
-              </section><!--End Grid section-->
-
-              <section id="tabs">
-                <h1>Tabs</h1>
-                <h3>1. Initiate tabs</h3>
-<div class="highlight"><pre class="prettyprint">
-  <div class="tabs">
-  </div>
-</pre></div>
-                <h3>2. Tabs navigation</h3>
-<div class="highlight"><pre class="prettyprint">
-  <ul class='tabs__nav'>
-    <li class='tabs__nav__item'>
-      <a href="#tab1">Tab 1</a>
-    </li>
-    <li class='tabs__nav__item'>
-      <a href="#tab2">Tab 2</a>
-    </li>
-    <li class='tabs__nav__item'>
-      <a href="#tab3">Tab 3</a>
-    </li>
-    <li class='tabs__nav__item'>
-      <a href="#tab4">Tab 4</a>
-    </li>
-  </ul>
-</pre></div>
-
-                <h3>Tabs content</h3>
-<div class="highlight"><pre class="prettyprint">
-  <div id="tab1" class="tabs__section">
-  </div>
-  <div id="tab2" class="tabs__section">
-  </div>
-  <div id="tab3" class="tabs__section">
-  </div>
-  <div id="tab4" class="tabs__section">
-  </div>
-</pre></div>
-                <h3>Example</h3>
-                <div class="tabs">
-                  <ul class='tabs__nav'>
-                    <li class='tabs__nav__item'><a href="#tab1">Tab 1</a></li>
-                    <li class='tabs__nav__item'><a href="#tab2">Tab 2</a></li>
-                    <li class='tabs__nav__item'><a href="#tab3">Tab 3</a></li>
-                    <li class='tabs__nav__item'><a href="#tab4">Tab 4</a></li>
-                  </ul>
-                  <div id="tab1" class="tabs__section">
-                    <table class="table table--example table--with-tabs">
-                      <thead>
-                        <tr>
-                          <th><h3>Tab 1</h3></th>
-                        </tr>
-                      </thead>
-                    </table>
-                  </div>
-                  <div id="tab2" class="tabs__section">
-                    <table class="table table--example table--with-tabs">
-                      <thead>
-                        <tr>
-                          <th><h3>Tab 2</h3></th>
-                        </tr>
-                      </thead>
-                    </table>
-                  </div>
-                  <div id="tab3" class="tabs__section">
-                    <table class="table table--example table--with-tabs">
-                      <thead>
-                        <tr>
-                          <th><h3>Tab 3</h3></th>
-                        </tr>
-                      </thead>
-                    </table>
-                  </div>
-                  <div id="tab4" class="tabs__section">
-                    <table class="table table--example table--with-tabs">
-                      <thead>
-                        <tr>
-                          <th><h3>Tab 4</h3></th>
-                        </tr>
-                      </thead>
-                    </table>
-                  </div>
-                </div><!--End tabs-->
-                <hr class="horizontal-rule">
-              </section><!--End Tabs section-->
-
-            <section id="buttons">
-              <h1>Buttons</h1>
-              <h3>Primary buttons</h3>
-<div class="highlight"><pre class="prettyprint">
-  <button class="btn btn--primary test btn--small">Primary S</button>
-  <button class="btn btn--primary btn--medium">Primary M</button>
-  <button class="btn btn--primary btn--large">Primary L</button>
-</pre></div>
-              <button class="btn btn--primary btn--small">Primary S</button>
-              <button class="btn btn--primary btn--medium">Primary M</button>
-              <button class="btn btn--primary btn--large">Primary L</button>
-<div class="highlight"><pre class="prettyprint">
-  <button class="btn btn--secondary btn--small">Secondary S</button>
-  <button class="btn btn--secondary btn--medium">Secondary M</button>
-  <button class="btn btn--secondary btn--large">Secondary L</button>
-</pre></div>
-              <button class="btn btn--secondary btn--small">Secondary S</button>
-              <button class="btn btn--secondary btn--medium">Secondary M</button>
-              <button class="btn btn--secondary btn--large">Secondary L</button>
-
-
-
-              <h3>Disabled buttons</h3>
-<div class="highlight"><pre class="prettyprint">
-  <button disabled="disabled" class="btn btn--primary btn--small">Off Small</button>
-  <button disabled="disabled" class="btn btn--secondary btn--medium">Off Medium</button>
-</pre></div>
-              <button disabled="disabled" class="btn btn--primary btn--small">Off Small</button>
-              <button disabled="disabled" class="btn btn--secondary btn--medium">Off Medium</button>
-              <h3>Button group with one main action</h3>
-<div class="highlight"><pre class="prettyprint">
-<div class="btn-group">
-<button class="btn btn--primary btn--small">Godkjenn</button>
-<button class="btn btn--secondary btn--small">Rediger</button>
-<button class="btn btn--secondary btn--small">Slett</button>
-</div>
-</pre></div>
-              <div class="btn-group">
-                <button class="btn btn--primary btn--small">Godkjenn</button>
-                <button class="btn btn--secondary btn--small">Rediger</button>
-                <button class="btn btn--secondary btn--small">Slett</button>
-              </div>
-              <h3>Button group with two equal actions</h3>
-<div class="highlight"><pre class="prettyprint">
-  <div class="btn-group">
-    <button class="btn btn--primary btn--small">Kommenter</button>
-    <button class="btn btn--primary btn--small">Ignorer</button>
-  </div>
-</pre></div>
-              <div class="btn-group">
-                <button class="btn btn--primary btn--small">Kommenter</button>
-                <button class="btn btn--primary btn--small">Ignorer</button>
-              </div>
-              <h3>Button group toggle</h3>
-<div class="highlight"><pre class="prettyprint">
-  <div class="btn-group btn-group--toggle">
-    <button class="btn btn--primary btn--small">
-      Kanal
-      <i class="icon--breadcrumbs-arrow"></i>Dato
-    </button>
-    <button class="btn btn--white btn--small">
-      Dato
-      <i class="icon--breadcrumbs-arrow"></i>Kanal
-    </button>
-  </div>
-</pre></div>
-              <div class="btn-group btn-group--toggle">
-                <button class="btn btn--primary btn--small">Kanal <i class="icon--breadcrumbs-arrow"></i>Dato</button>
-                <button class="btn btn--white btn--small">Dato <i class="icon--breadcrumbs-arrow"></i>Kanal</button>
-              </div>
-              <hr class="horizontal-rule">
-            </section><!--End Buttons section-->
-
-            <section id="pagination">
-              <h1>Pagination</h1>
-<div class="highlight"><pre class="prettyprint">
-  <nav role="navigation">
-    <ul class="pagination">
-      <li class="pagination__item pagination__item--previous pagination__item--disabled">
-        <a href="#"><i class="icon--pagination-previous"></i></a></li>
-      <li class="pagination__item pagination__item--current"><a href="#">1</a>
-      </li>
-      <li class="pagination__item"><a href="#">2</a></li>
-      <li class="pagination__item"><a href="#">3</a></li>
-      <li class="pagination__item"><a href="#">4</a></li>
-      <li class="pagination__item"><a href="#">5</a></li>
-      <li class="pagination__item pagination__item--next">
-        <a href="#"><i class="icon--pagination-next"></i></a>
-      </li>
-    </ul>
-  </nav>
-</pre></div>
-                <!--Pagination example-->
-                <nav role="navigation">
-                  <ul class="pagination">
-                    <li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
-                    <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
-                    <li class="pagination__item"><a href="#">2</a></li>
-                    <li class="pagination__item"><a href="#">3</a></li>
-                    <li class="pagination__item"><a href="#">4</a></li>
-                    <li class="pagination__item"><a href="#">5</a></li>
-                    <li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
-                  </ul>
-                </nav>
-                <!-- End Pagination example-->
-                <hr class="horizontal-rule">
-              </section><!--End Pagination section-->
-
-              <section id="flash-messages">
-                <h1>Flash message</h1>
-                <h3>Flash message - info</h3>
-<div class="highlight"><pre class="prettyprint">
-  <div class="flash-message">
-    <p>Flashmelding at noe ble gjort</p>
-    <button class="btn btn--small btn--inline btn--borderless">OK</button>
-  </div>
-</pre></div>
-                <h3>Flash message - error</h3>
-                <div class="flash-message">
-                  <p>Flashmelding at noe ble gjort</p>
-                  <button class="btn btn--small btn--inline btn--borderless">OK</button>
-                </div>
-<div class="highlight"><pre class="prettyprint">
-  <div class="flash-message flash-message--error">
-    <p>Flashmelding at noe gikk galt!</p>
-    <button class="btn btn--small btn--inline btn--borderless">OK</button>
-  </div>
-</pre></div>
-                <h3>Flash message - success</h3>
-                <div class="flash-message flash-message--error">
-                  <p>Flashmelding at noe gikk galt!</p>
-                  <button class="btn btn--small btn--inline btn--borderless">OK</button>
-                </div>
-<div class="highlight"><pre class="prettyprint">
-  <div class="flash-message flash-message--success">
-    <p>Flashmelding at noe gikk galt!</p>
-    <button class="btn btn--small btn--inline btn--borderless">OK</button>
-  </div>
-</pre></div>
-                <div class="flash-message flash-message--success">
-                  <p>Flashmelding at noe gikk galt!</p>
-                  <button class="btn btn--small btn--inline btn--borderless">OK</button>
-                </div>
-                <hr class="horizontal-rule">
-              </section><!--End Flash-message section-->
-
-              <section id="loading">
-                <h1>Loading</h1>
-                <h3>Spinner</h3>
-<div class="highlight"><pre class="prettyprint">
-  <div class="spinner">
-    <div class="spinner__rect1"></div>
-    <div class="spinner__rect2"></div>
-    <div class="spinner__rect3"></div>
-    <div class="spinner__rect4"></div>
-    <div class="spinner__rect5"></div>
-  </div>
-</pre></div>
-                <!--spinner example-->
-                <div class="spinner">
-                  <div class="spinner__rect1"></div>
-                  <div class="spinner__rect2"></div>
-                  <div class="spinner__rect3"></div>
-                  <div class="spinner__rect4"></div>
-                  <div class="spinner__rect5"></div>
-                </div>
-                <h3>Content placeholder (in table cells)</h3>
-<div class="highlight"><pre class="prettyprint">
-  <table class="table table--example">
-    <tr>
-      <td>
-        <div class="content-placeholder"></div>
-      </td>
-      <td>
-        <div class="content-placeholder"></div>
-      </td>
-      <td>
-        <div class="content-placeholder"></div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div class="content-placeholder"></div>
-      </td>
-      <td>
-        <div class="content-placeholder"></div>
-      </td>
-      <td>
-        <div class="content-placeholder"></div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div class="content-placeholder"></div>
-      </td>
-      <td>
-        <div class="content-placeholder"></div>
-      </td>
-      <td>
-        <div class="content-placeholder"></div>
-      </td>
-    </tr>
-  </table>
-</pre></div>
-              <!--content-placeholder example-->
-                <table class="table table--example">
-                  <tr>
-                    <td>
-                      <div class="content-placeholder"></div>
-                    </td>
-                    <td>
-                      <div class="content-placeholder"></div>
-                    </td>
-                    <td>
-                      <div class="content-placeholder"></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="content-placeholder"></div>
-                    </td>
-                    <td>
-                      <div class="content-placeholder"></div>
-                    </td>
-                    <td>
-                      <div class="content-placeholder"></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="content-placeholder"></div>
-                    </td>
-                    <td>
-                      <div class="content-placeholder"></div>
-                    </td>
-                    <td>
-                      <div class="content-placeholder"></div>
-                    </td>
-                  </tr>
-                </table>
-                <hr class="horizontal-rule">
-              </section><!--End Loading section-->
-
-              <section id="forms">
-                <h1>Forms</h1>
-<div class="highlight"><pre class="prettyprint">
-  <div class="box">
-    <form class="form">
-      <label class="form__label form__label--block is-valid">Epost
-        <input type="text" class="form__input form__input--block">
-      </label>
-
-      <label class="form__label form__label--block has-error">Password
-        <input type="password" class="form__input form__input--block">
-      </label>
-
-    <p>Kunne ikke logge på. Passord er feil.</p>
-    <button class="btn btn--primary btn--block">Gå videre</button>
-    </form>
-  </div>
-</pre></div>
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>Boxed form</h3>
-                  <div class="row">
-                    <div class="box" style="margin:2rem 1rem;">
-                      <form class="form">
-                        <label class="form__label form__label--block is-valid">Epost
-                          <input type="text" class="form__input form__input--block">
-                        </label>
-
-                        <label class="form__label form__label--block has-error">Password
-                          <input type="password" class="form__input form__input--block">
-                        </label>
-
-                      <p>Kunne ikke logge på. Passord er feil. <br><a href="#">Glemt passord?</a></p>
-                      <button class="btn btn--primary btn--large btn--block">Gå videre</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-
-                  <div class="col-md-6">
-                    <h3>Boxed form</h3>
-                    <div class="row">
-                      <div class="box" style="margin:2rem 1rem;">
-                        <form class="form">
-                          <label class="form__label form__label--block">Epost
-                            <input type="text" class="form__input form__input--block">
-                          </label>
-
-                        <button class="btn btn--primary btn--large btn--block">Send passord</button>
-                        </form>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-                <!-- End Login example-->
-                <h3>Boxed form with contrast</h3>
-<div class="highlight"><pre class="prettyprint">
-  <form class="form">
-    <div class="box box--gray box--full" style="margin:2rem 0;">
-      <section class="form__section">
-        <h4 class="form__heading">Velg Kringkaster</h4>
-        <label class="form__label">
-          <input type="radio">NRK
-        </label>
-        <label class="form__label form__label--isChecked">
-          <input type="radio" checked>Radio Norge
-        </label>
-        <label class="form__label">
-          <input type="radio">P4
-        </label>
-        <label class="form__label">
-          <input type="radio">Local Radio
-        </label>
-      </section>
-      <section class="form__section">
-        <label class="form__label">Velg kanal
-          <div class="select select--block">
-            <select>
-              <option>Radio 1</option>
-            </select>
-          </div>
-        </label>
-      </section>
-      <section class="form__section">
-        <label class="form__label form__label--date">Sendetid Fra
-          <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
-        </label>
-        <label class="form__label form__label--date">Til
-          <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
-        </label>
-      </section>
-      <section class="form__section">
-        <label class="form__label form__label--percent"><span>Forventet musikkandel</span>
-          <input class="form__input form__input--numeric" type="number" min="0" max="100" step="10" value="10">
-        </label>
-      </section>
-    </div>
-    <section class="form__section form__section--action">
-      <button class="btn btn--secondary btn--large">Avbryt</button>
-      <button class="btn btn--primary btn--large">Lagre</button>
-    </section>
-  </form>
-</pre></div>
-                <!--Gray box example-->
-                <form class="form">
-                  <div class="box box--gray box--full" style="margin:2rem 0;">
-                    <section class="form__section">
-                      <h4 class="form__heading">Velg Kringkaster</h4>
-                      <label class="form__label">
-                        <input type="radio">NRK
-                      </label>
-                      <label class="form__label form__label--isChecked">
-                        <input type="radio" checked>Radio Norge
-                      </label>
-                      <label class="form__label">
-                        <input type="radio">P4
-                      </label>
-                      <label class="form__label">
-                        <input type="radio">Local Radio
-                      </label>
-                    </section>
-                    <section class="form__section">
-                      <label class="form__label">Velg kanal
-                        <div class="select select--block">
-                          <select>
-                            <option>Radio 1</option>
-                          </select>
-                        </div>
-                      </label>
-                    </section>
-                    <section class="form__section">
-                      <label class="form__label form__label--date">Sendetid Fra
-                        <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
-                      </label>
-                      <label class="form__label form__label--date">Til
-                        <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--block">
-                      </label>
-                    </section>
-                    <section class="form__section">
-                      <label class="form__label form__label--percent"><span>Forventet musikkandel</span>
-                        <input class="form__input form__input--numeric" type="number" min="0" max="100" step="10" value="10">
-                      </label>
-                    </section>
-                  </div>
-                  <section class="form__section form__section--action">
-                    <button class="btn btn--secondary btn--large">Avbryt</button>
-                    <button class="btn btn--primary btn--large">Lagre</button>
-                  </section>
-                </form>
-                <h3>Form controls</h3>
-<div class="highlight"><pre class="prettyprint">
-  <!--Radio buttons-->
-  <label class="form__label form__label--block">
-    <input type="radio">Radio valg
-  </label>
-  <label class="form__label form__label--block">
-    <input type="radio" checked>Radio valg
-  </label>
-  <label class="form__label form__label--block">
-    <input type="radio">Radio valg
-  </label>
-
-  <!--Toggles-->
-  <span class="x-toggle-container">
-    <input type="checkbox" class="x-toggle" checked="">
-    <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-    </label>
-  </span>
-
-  <span class="x-toggle-container">
-    <input type="checkbox" class="x-toggle">
-    <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-    </label>
-  </span>
-
-  <!--Searchable list-->
-  <div class="searchable-list">
-    <div class="searchable-list__heading">
-      <span class="searchable-list__selected">P3</span>
-    </div>
-    <div class="searchable-list__dropdown">
-      <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
-      <ul>
-        <li class="searchable-list__option">P4 Norge</li>
-        <li class="searchable-list__option">P4 Lokal</li>
-      </ul>
-    </div>
-  </div>
-
-  <!--Select menu-->
-  <div class="select">
-    <select>
-      <option>Velg perioden</option>
-      <option>One</option>
-      <option>Two</option>
-      <option>Three</option>
-      <option>Four</option>
-    </select>
-  </div>
-
-  <!-->Date picker-->
-  <label class="form__label form__label--date">
-    <input type="date" placeholder="mm/dd/yyyy" class="form__input">
-  </label>
-</pre></div>
-                <div class="row">
-                  <div class="col-md-4">
-                    <h4>Radio buttons</h4>
-                    <label class="form__label form__label--block">
-                      <input type="radio">Radio valg
-                    </label>
-                    <label class="form__label form__label--block">
-                      <input type="radio" checked>Radio valg
-                    </label>
-                    <label class="form__label form__label--block">
-                      <input type="radio">Radio valg
-                    </label>
-                  </div><!--/.col-->
-                  <div class="col-md-4">
-                    <h4>Toggles</h4>
-                    <span class="x-toggle-container" style="margin-bottom: 1rem;">
-                      <input type="checkbox" class="x-toggle" checked="">
-                      <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-                      </label>
-                    </span>
-
-                    <span class="x-toggle-container">
-                      <input type="checkbox" class="x-toggle">
-                      <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-                      </label>
-                    </span>
-                  </div><!--/.col-->
-                  <div class="col-md-4">
-                    <h4>Searchable list</h4>
-                    <div class="searchable-list">
-                      <div class="searchable-list__heading">
-                        <span class="searchable-list__selected">P3</span>
-                      </div>
-                      <div class="searchable-list__dropdown">
-                        <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
-                        <ul>
-                          <li class="searchable-list__option">P4 Norge</li>
-                          <li class="searchable-list__option">P4 Lokal</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div><!--/.col-->
-                </div><!--/.row-->
-                <div class="row">
-                  <div class="col-md-4">
-                    <h4>Select menu</h4>
-                    <div class="select">
-                      <select>
-                        <option>Velg perioden</option>
-                        <option>One</option>
-                        <option>Two</option>
-                        <option>Three</option>
-                        <option>Four</option>
-                      </select>
-                    </div>
-                  </div><!--/.col-->
-                  <div class="col-md-4">
-                    <h4>Date picker</h4>
-                    <label class="form__label form__label--date">
-                      <input type="date" placeholder="mm/dd/yyyy" class="form__input">
-                    </label>
-                  </div><!--/.col-->
-                </div><!--/.row-->
-                <hr class="horizontal-rule">
-              </section><!--End Forms section-->
-              <section id="breadcrumbs">
-                <h1>Breadcrumbs</h1>
-<div class="highlight"><pre class="prettyprint">
-  <ul class="breadcrumbs">
-    <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#"><i class="icon--home"></i></a></li>
-    <li class="breadcrumbs__item"><a href="#">Page 1</a></li>
-    <li class="breadcrumbs__item"><a href="#">Page 2</a></li>
-    <li class="breadcrumbs__item"><a href="#">Page 3</a></li>
-  </ul>
-</pre></div>
-                <ul class="breadcrumbs" style="background:#434D5A;">
-                  <li class="breadcrumbs__item breadcrumbs__item--home"><a href="#"><i class="icon--home"></i></a></li>
-                  <li class="breadcrumbs__item"><a href="#">Page 1</a></li>
-                  <li class="breadcrumbs__item"><a href="#">Page 2</a></li>
-                  <li class="breadcrumbs__item"><a href="#">Page 3</a></li>
-                </ul>
-                <hr class="horizontal-rule">
-              </section><!--End Breadcrumbs section-->
-
-              <section id="badges">
-                <h1>Badges</h1>
-<div class="highlight"><pre class="prettyprint">
-  <h3>Inbox <span class="badge badge--info">21</span></h3>
-  <h3>Inbox <span class="badge badge--success">21</span></h3>
-  <h3>Inbox <span class="badge badge--error">21</span></h3>
-</pre></div>
-                <h3 style="display:inline-block;">Inbox <span class="badge badge--info">21</span></h3>
-                <h3 style="display:inline-block;">Inbox <span class="badge badge--success">21</span></h3>
-                <h3 style="display:inline-block;">Inbox <span class="badge badge--error">21</span></h3>
-                <h3>Notifications</h3>
-<div class="highlight"><pre class="prettyprint">
-  <h4>Inbox <span class="badge badge--notification">21</span></h4>
-</pre></div>
-                <h4>Inbox <span class="badge badge--notification">21</span></h4>
-                <hr class="horizontal-rule">
-              </section><!--End Badges section-->
-
-              <section id="lists">
-                <h1>Lists</h1>
-                <h3>Unexpanded list</h3>
-<div class="highlight"><pre class="prettyprint">
-  <ul class="list list--expandable">
-    <li class="list__item list__item--success">
-      <div class="list__item--wrapper">
-        <div class="list__item__date">
-          <date><span>I dag</span>Torsdag 5 november</date>
-        </div>
-        <div class="list__item__results">
-          <i class="icon--checkmark"></i> 5 innleste filer
-        </div>
-        <div class="list__item__action">
-          <a href="#"><i class="icon--chevron-right"></i></a>
-        </div>
-      </div>
-    </li>
-  </ul>
-</pre></div>
-                <ul class="list list--expandable">
-                  <li class="list__item list__item--success">
-                    <div class="list__item--wrapper">
-                      <div class="list__item__date">
-                        <date><span>I dag</span>Torsdag 5 november</date>
-                      </div>
-                      <div class="list__item__results">
-                        <i class="icon--checkmark"></i> 5 innleste filer
-                      </div>
-                      <div class="list__item__action">
-                        <a href="#"><i class="icon--chevron-right"></i></a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <h3>Expanded list</h3>
-<div class="highlight"><pre class="prettyprint">
-  <ul class="list list--expandable">
-    <li class="list__item list__item--error list__item--is-expanded">
-      <div class="list__item--wrapper">
-        <div class="list__item__date">
-          <date><span>I dag</span>Torsdag 5 november</date>
-        </div>
-        <div class="list__item__results">
-          <i class="icon--checkmark"></i> 5 innleste filer
-        </div>
-        <div class="list__item__action">
-          <a href="#"><i class="icon--chevron-right"></i></a>
-        </div>
-      </div>
-      <ul class="list--sub-list">
-        <li class="sub-list__item">
-          <div class="sub-list__item--downloads">
-            <span><i class="icon--cross"></i></span><a href="#">archiveReport_NRK_P3_20150601.xml</a>
-          </div>
-          <div class="sub-list__item--message">
-            The server encountered an unrevoerable error while processing this file
-          </div>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</pre></div>
-                <ul class="list list--expandable">
-                  <li class="list__item list__item--error list__item--is-expanded">
-                    <div class="list__item--wrapper">
-                      <div class="list__item__date">
-                        <date><span>I dag</span>Torsdag 5 november</date>
-                      </div>
-                      <div class="list__item__results">
-                        <i class="icon--checkmark"></i> 5 innleste filer
-                      </div>
-                      <div class="list__item__action">
-                        <a href="#"><i class="icon--chevron-right"></i></a>
-                      </div>
-                    </div>
-                    <ul class="list--sub-list">
-                      <li class="sub-list__item">
-                        <div class="sub-list__item--downloads">
-                          <span><i class="icon--cross"></i></span><a href="#">archiveReport_NRK_P3_20150601.xml</a>
-                        </div>
-                        <div class="sub-list__item--message">
-                          The server encountered an unrevoerable error while processing this file
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <hr class="horizontal-rule">
-              </section><!--End Lists section-->
-
-              <section id="tables">
-                <h1>Tables</h1>
-<div class="highlight"><pre class="prettyprint">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>
-        </th>
-        <th>Program</th>
-        <th>Musikkandel</th>
-        <th>Avviksmargin</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>P3</td>
-        <td data-label="Program">Tidenes Sommer</td>
-        <td data-label="Musikkandel">30%</td>
-        <td data-label="Avviksmargin">10%</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>P3</td>
-        <td data-label="Program">Tidenes Sommer</td>
-        <td data-label="Musikkandel">30%</td>
-        <td data-label="Avviksmargin">10%</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-</pre></div>
-                <table class="table table--example">
-                  <thead>
-                    <tr>
-                      <th>
-                      </th>
-                      <th>Program
-                        <!-- <span class="table-sort">
-                          <a href="#" class="table-sort__link table-sort__link--up"><i class="icon--arrow-up"></i></a>
-                          <a href="#" class="table-sort__link table-sort__link--down"><i class="icon--arrow-down"></i></a>
-                        </span> -->
-                      </th>
-                      <th>Musikkandel</th>
-                      <th>Avviksmargin</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>P3</td>
-                      <td data-label="Program">Tidenes Sommer</td>
-                      <td data-label="Musikkandel">30%</td>
-                      <td data-label="Avviksmargin">10%</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-                      <td data-label="Program">Tidenes Sommer</td>
-                      <td data-label="Musikkandel">30%</td>
-                      <td data-label="Avviksmargin">10%</td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <hr class="horizontal-rule">
-              </section><!--End Tables section-->
-              <section id="summary-table">
-                <h1>Summary table</h1>
-<div class="highlight"><pre class="prettyprint">
-  <table class="table-summary">
-    <thead class="table__head--always-visible">
-      <tr>
-        <th colspan="2"><h4 class="table-summary__heading"><span class="badge badge--icon badge--icon-error"></span>Ikke identifiserte</h4></th>
-        <th class="table__head--xlarge"></th>
-      </tr>
-    </thead>
-        <tbody>
-          <tr class="table-summary__row table-summary__row--current">
-            <td class="table-summary__cell table-summary__cell--sum"><b>136</b><span>Ikke identifiserte</span></td>
-            <td class="table-summary__cell"><b>3:53:52</b><span>Sum spilletid</span></td>
-            <td class="table-summary__cell table-summary__cell--action"></td>
-          </tr>
-          <tr class="table-summary__row">
-            <td class="table-summary__cell"><b>2</b><span>Ikke utgitt</span></td>
-            <td class="table-summary__cell"><b>3:02</b><span>Sum spilletid</span></td>
-            <td class="table-summary__cell table-summary__cell--action"></td>
-          </tr>
-        </tbody>
-  </table>
-</pre></div>
-                <div class="row">
-                  <div class="col-sm-12 col-md-6">
-                    <table class="table-summary">
-                      <thead class="table__head--always-visible">
-                        <tr>
-                          <th colspan="2"><h4 class="table-summary__heading"><span class="badge badge--icon badge--icon-error"></span>Ikke identifiserte</h4></th>
-                          <th class="table__head--xlarge"></th>
-                        </tr>
-                      </thead>
-                          <tbody>
-                            <tr class="table-summary__row table-summary__row--current">
-                              <td class="table-summary__cell table-summary__cell--sum"><b>136</b><span>Ikke identifiserte</span></td>
-                              <td class="table-summary__cell"><b>3:53:52</b><span>Sum spilletid</span></td>
-                              <td class="table-summary__cell table-summary__cell--action"></td>
-                            </tr>
-                            <tr class="table-summary__row">
-                              <td class="table-summary__cell"><b>2</b><span>Ikke utgitt</span></td>
-                              <td class="table-summary__cell"><b>3:02</b><span>Sum spilletid</span></td>
-                              <td class="table-summary__cell table-summary__cell--action"></td>
-                            </tr>
-                          </tbody>
-                    </table>
-                  </div><!-- /.col-->
-                  <div class="col-sm-12 col-md-6">
-                    <table class="table-summary">
-                      <thead class="table__head--always-visible">
-                        <tr>
-                          <th colspan="2"><h4 class="table-summary__heading"><span class="badge badge--icon badge--icon-success"></span>Identifiserte hittil</h4></th>
-                          <th class="table__head--xlarge"></th>
-                        </tr>
-                      </thead>
-                          <tbody>
-                            <tr class="table-summary__row table-summary__row--current">
-                              <td class="table-summary__cell table-summary__cell--sum"><b>265</b><span>i dag</span></td>
-                              <td class="table-summary__cell"><b>56%</b><span>Automatisk</span></td>
-                              <td class="table-summary__cell table-summary__cell--action"></td>
-                            </tr>
-                            <tr class="table-summary__row">
-                              <td class="table-summary__cell"><b>343</b><span>i går</span></td>
-                              <td class="table-summary__cell"><b>90%</b><span>Automatisk</span></td>
-                              <td class="table-summary__cell table-summary__cell--action"></td>
-                            </tr>
-                          </tbody>
-                    </table>
-                  </div><!-- /.col-->
-                </div><!--end .row-->
-                <hr class="horizontal-rule">
-              </section>
-
-              <section id="fake-table">
-                <h1>Fake table</h1>
-                <p>The 'fake table' enables a more flexible approach to markup allowing,
-                  for example, nested elements where traditional table markup would not.
-                  The fake table is styled to look exactly like a regular table and uses
-                  semantic class names.</p>
-<div class="highlight"><pre class="prettyprint">
-  <div class="fake-table">
-    <div class="fake-table__row fake-table__row--head">
-      <div class="col-sm-1">Treff</div>
-      <div class="col-sm-3">Tittel</div>
-      <div class="col-sm-3">HovedArtist</div>
-      <div class="col-sm-2">Ant. Avspillinger</div>
-      <div class="col-sm-2">Sum spilletid</div>
-      <div class="col-sm-1"></div>
-    </div>
-      <div class="fake-table__row fake-table__row--expanded">
-        <div class="fake-table__toggle-container">
-          <div class="fake-table__toggle-row">
-            <div class="col-sm-1" data-label="Treff">1</div>
-            <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
-            <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
-            <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
-            <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
-            <div class="col-sm-1">
-              <a href="#" class="table-row-toggle"></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="fake-table__row fake-table__row--child">
-          <div class="col-sm-3 off-xs-1">Tittel: <span>Hell's Bells</span></div>
-          <div class="col-sm-3">Artist <span>AC/DC</span></div>
-        </div>
-
-        <div class="fake-table__row fake-table__row--child">
-          <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
-          <div class="col-sm-3">Artist <span>AC/DC</span></div>
-        </div>
-
-        <div class="fake-table__row fake-table__row--child">
-          <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
-          <div class="col-sm-3">Artist <span>AC/DC</span></div>
-        </div>
-      </div>
-
-      <div class="fake-table__row">
-        <div class="col-sm-1" data-label="Treff">1</div>
-        <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
-        <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
-        <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
-        <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
-        <div class="col-sm-1">
-          <a href="#" class="table-row-toggle"></a>
-        </div>
-
-        <div class="fake-table__row fake-table__row--child">
-          <div>Potensielt treff på denne avspillingen</div>
-          <div>Potensielt treff på denne avspillingen</div>
-          <div>Potensielt treff på denne avspillingen</div>
-        </div>
-      </div>
-
-  </div>
-</pre></div>
-                <div class="fake-table">
-                  <div class="fake-table__row fake-table__row--head">
-                    <div class="col-sm-1">Treff</div>
-                    <div class="col-sm-3">Tittel</div>
-                    <div class="col-sm-3">HovedArtist</div>
-                    <div class="col-sm-2">Ant. Avspillinger</div>
-                    <div class="col-sm-2">Sum spilletid</div>
-                    <div class="col-sm-1"></div>
-                  </div>
-                    <div class="fake-table__row fake-table__row--expanded">
-                      <div class="fake-table__toggle-container">
-                        <div class="fake-table__toggle-row">
-                          <div class="col-sm-1" data-label="Treff">1</div>
-                          <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
-                          <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
-                          <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
-                          <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
-                          <div class="col-sm-1">
-                            <a href="#" class="table-row-toggle"></a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="fake-table__row fake-table__row--child">
-                        <div class="col-sm-3 off-xs-1">Tittel: <span>Hell's Bells</span></div>
-                        <div class="col-sm-3">Artist <span>AC/DC</span></div>
-                      </div>
-
-                      <div class="fake-table__row fake-table__row--child">
-                        <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
-                        <div class="col-sm-3">Artist <span>AC/DC</span></div>
-                      </div>
-
-                      <div class="fake-table__row fake-table__row--child">
-                        <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
-                        <div class="col-sm-3">Artist <span>AC/DC</span></div>
-                      </div>
-                    </div>
-
-                    <div class="fake-table__row">
-                      <div class="col-sm-1" data-label="Treff">1</div>
-                      <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
-                      <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
-                      <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
-                      <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
-                      <div class="col-sm-1">
-                        <a href="#" class="table-row-toggle"></a>
-                      </div>
-
-                      <div class="fake-table__row fake-table__row--child">
-                        <div>Potensielt treff på denne avspillingen</div>
-                        <div>Potensielt treff på denne avspillingen</div>
-                        <div>Potensielt treff på denne avspillingen</div>
-                      </div>
-                    </div>
-
-                </div>
-                <hr class="horizontal-rule">
-              </section>
-
-            </section><!--End Components section-->
-
-            <section id="example-pages" style="padding-bottom: 60rem;">
-              <h1>Example Pages</h1>
-              <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                  <a href="innlesning.html">
-                    <div class="placeholder">
-                      <span>Innlesning</span>
-                    </div>
-                  </a>
-                </div><!-- /.col-->
-                <div class="col-xs-12 col-sm-4">
-                  <a href="program-admin.html">
-                    <div class="placeholder">
-                      <span>Program admin</span>
-                    </div>
-                  </a>
-                </div><!-- /.col-->
-                <div class="col-xs-12 col-sm-4">
-                  <a href="kringkaster.html">
-                    <div class="placeholder">
-                      <span>Kringkaster</span>
-                    </div>
-                  </a>
-                </div><!-- /.col-->
-                <div class="col-xs-12 col-sm-4">
-                  <a href="identifiserte.html">
-                    <div class="placeholder">
-                      <span>Identifiserte matcher</span>
-                    </div>
-                  </a>
-                </div><!-- /.col-->
-                <div class="col-xs-12 col-sm-4">
-                  <a href="ikke-identifiserte.html">
-                    <div class="placeholder">
-                      <span>Ikke identifiserte matcher</span>
-                    </div>
-                  </a>
-                </div><!-- /.col-->
-              </div><!--end .row-->
-            </section>
-          </div><!--/.col with main content-->
-
-          <!--Page-contents menu-->
-          <aside class="col-xs-12 col-sm-4 col-lg-3 flex-mob-order flex-mob-order--1">
+          <aside class="col-xs-5">
             <nav class="page-contents page-contents--sticky">
               <section class="search">
                 <form id="live-search" action="" class="search__form search__form--simple" method="post">
@@ -1210,24 +98,173 @@
                       <!-- <span id="filter-count"></span> -->
                 </form>
               </section>
-              <ul>
-                <li><a href="#installation">Installation</a></li>
-                <li><a href="#grid">Grid</a></li>
-                <li><a href="#tabs">Tabs</a></li>
-                <li><a href="#buttons">Buttons</a></li>
-                <li><a href="#pagination">Pagination</a></li>
-                <li><a href="#flash-messages">Flash messages</a></li>
-                <li><a href="#loading">Loading</a></li>
-                <li><a href="#forms">Forms</a></li>
-                <li><a href="#breadcrumbs">Breadcrumbs</a></li>
-                <li><a href="#badges">Badges</a></li>
-                <li><a href="#lists">Lists</a></li>
-                <li><a href="#tables">Tables</a></li>
-                <li><a href="#summary-table">Summary table</a></li>
-                <li><a href="#fake-table">Fake table</a></li>
-              </ul>
+
             </nav>
           </aside><!--Page-contents menu-->
+        </div>
+        <div class="row">
+          <div class="col-xs-8">
+            <!-- <section id="global">
+              <h1>Global</h1>
+              <section id="section_typography">
+                <h3>Typography</h3>
+                <blockquote>
+                  <h1>Heading one</h1>
+                  <h2>Heading two</h2>
+                  <h3>Heading three</h3>
+                  <h4>Heading four</h4>
+                  <p>This is some text</p>
+                </blockquote>
+              </section>
+              <section id="section_typography-markup">
+                <h4>Markup for typography</h4>
+<div class="highlight"><pre class="prettyprint">
+<h1>Heading one</h1>
+<h2>Heading two</h2>
+<h3>Heading three</h3>
+<h4>Heading four</h4>
+<p>This is some text</p>
+</pre></div>
+              </section>
+            </section> -->
+            <!--End Global-->
+            <section id="atoms">
+              <h1>Atoms</h1>
+              <section id="section_buttons">
+                <h3>Buttons</h3>
+                <button class="btn btn--primary">Primary Button</button>
+                <button class="btn btn--secondary">Secondary Button</button>
+                <button class="btn btn--primary" disabled>Primary Button</button>
+              </section>
+              <section id="section_buttons-markup">
+                <h4>Markup for buttons</h4>
+<div class="highlight"><pre class="prettyprint">
+<button class="btn btn--primary">Primary Button</button>
+<button class="btn btn--secondary">Secondary Button</button>
+<button class="btn btn--primary" disabled="disabled">Primary Button</button>
+</pre></div>
+                <hr class="horizontal-rule">
+              </section>
+
+              <section id="section_links">
+                <h3>Links</h3>
+                <p>This is a <a href="#">link</a></p>
+                <p>This is a <a href="#" class="link--no-line">link without styling</a></p>
+              </section>
+              <section id="section_links-markup">
+                <h4>Markup for links</h4>
+<div class="highlight"><pre class="prettyprint">
+<p>This is a <a href="#">link</a></p>
+<p>This is a <a href="#" class="link--no-line">link without styling</a></p>
+</pre></div>
+                <hr class="horizontal-rule">
+              </section>
+
+              <section id="section_badges">
+                <h3>Badges</h3>
+                <span class="badge badge--info">21</span>
+                <span class="badge badge--success">21</span>
+                <span class="badge badge--error">21</span>
+                <span class="badge badge--secondary">21</span>
+                <span class="badge badge--notification">21</span>
+                <span class="badge badge--numeric">2</span>
+                <span class="badge badge--numeric badge--numeric--inverse">2</span>
+              </section>
+              <section id="section_badges-markup">
+                <h4>Markup for badges</h4>
+<div class="highlight"><pre class="prettyprint">
+<span class="badge badge--info">21</span>
+<span class="badge badge--success">21</span>
+<span class="badge badge--error">21</span>
+<span class="badge badge--secondary">21</span>
+<span class="badge badge--notification">21</span>
+<span class="badge badge--numeric">2</span>
+<span class="badge badge--numeric badge--numeric--inverse">2</span>
+</pre></div>
+                <hr class="horizontal-rule">
+              </section>
+
+              <section id="section_icons">
+                <h3>Icons</h3>
+                <p><span class="icon icon--album"></span> <span class="icon icon--notes"></span> <span class="icon icon--performer"></span></p>
+              </section>
+              <section id="section_icons-markup">
+                <h4>Markup for icons</h4>
+<div class="highlight"><pre class="prettyprint">
+<span class="icon icon--album"></span>
+<span class="icon icon--notes"></span>
+<span class="icon icon--performer"></span>
+</pre></div>
+                <hr class="horizontal-rule">
+              </section>
+
+              <section id="section_close-button">
+                <h3>Close button</h3>
+                <p><span class="close-button" style="position:static;"></span></p>
+              </section>
+              <section id="section_close-button-markup">
+                <h4>Markup for close button</h4>
+<div class="highlight"><pre class="prettyprint">
+<span class="close-button"></span>
+</pre></div>
+                <hr class="horizontal-rule">
+              </section>
+
+              <section id="section_drag-handle">
+                <h3>Drag handle</h3>
+                <p><span class="drag-handle" style="position:static;"></span></p>
+              </section>
+              <section id="section_drag-handle-markup">
+                <h4>Markup for drag handle</h4>
+<div class="highlight"><pre class="prettyprint">
+<span class="drag-handle"></span>
+</pre></div>
+                <hr class="horizontal-rule">
+              </section>
+
+              <section id="section_toggle">
+                <h3>Toggle</h3>
+                <span class="x-toggle-container">
+                <input type="checkbox" class="x-toggle">
+                <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                </label>
+                </span>
+                <span class="x-toggle-container">
+                <input type="checkbox" class="x-toggle" checked="checked">
+                <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                </label>
+                </span>
+              </section>
+              <section id="section_toggle-markup">
+                <h4>Markup for toggle</h4>
+<div class="highlight"><pre class="prettyprint">
+<span class="x-toggle-container">
+  <input type="checkbox" class="x-toggle">
+  <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+  </label>
+</span>
+<span class="x-toggle-container">
+  <input type="checkbox" class="x-toggle" checked="checked">
+  <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+  </label>
+</span>
+</pre></div>
+                <hr class="horizontal-rule">
+              </section>
+
+              <section id="section_toolbar">
+                <h3>Toolbar</h3>
+                <div class="toolbar"></div>
+              </section>
+              <section id="section_drag-handle-markup">
+                <h4>Markup for toolbar</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="toolbar"></div>
+</pre></div>
+                <hr class="horizontal-rule">
+              </section>
+            </section><!--end section #atoms-->
+          </div><!--/.col with main content-->
         </div><!--/.row-->
       </section><!--/.container-->
     </main>

@@ -207,7 +207,7 @@ $(document).ready(function() {
             var refElement = $(currLink.attr('href'));
 
             if (refElement.length) {
-              var elementTop = refElement.position().top - 30;
+              var elementTop = refElement.position().top + 40;
               var elementHeight = refElement.height();
             }
             if (elementTop <= scrollPos && elementTop + elementHeight > scrollPos &&  !$('#filter').val() ) {
