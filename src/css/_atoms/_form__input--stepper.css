@@ -26,6 +26,11 @@ input[type="time"] {
 
 input[type="time"] {
   padding-right: 2rem;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    right: -1px;
+  }
 }
 
 input[type="number"] {

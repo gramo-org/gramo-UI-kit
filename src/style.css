@@ -182,7 +182,7 @@ td, th{
 }
 :root{
 }
-.col, p, .toolbar, .search__form, .form, .section-header, .section-header--divided .section-header__above, .infobar, .table, .fake-table, .highlight{
+.col, p, .toolbar, .search__form, .form, .section-header, .section-header--divided .section-header__above, .infobar, .table, .fake-table{
   margin-bottom:1.2rem;
 }
 
@@ -1710,6 +1710,10 @@ input[type="time"]{
   padding-right:2rem;
 }
 
+input[type="time"]::-webkit-outer-spin-button, input[type="time"]::-webkit-inner-spin-button{
+  right:-1px;
+}
+
 input[type="number"]{
   max-width:100px;
 }
@@ -1750,6 +1754,10 @@ hr, .horizontal-rule{
 .horizontal-rule--spacer{
   margin-bottom:2rem;
   background:none;
+}
+
+.horizontal-rule--spacer:before, .horizontal-rule--spacer:after{
+  content:none;
 }
 .horizontal-rule--stretch{
 
@@ -3140,6 +3148,7 @@ hr, .horizontal-rule{
   margin:0;
 }
 .vertical__nav__item a{
+  position:relative;
   padding:0.8rem 3rem;
   color:#ededed;
   text-decoration:none;
@@ -3153,9 +3162,6 @@ hr, .horizontal-rule{
   position:absolute;
   left:1.5rem;
   padding-top:.25rem;
-}
-.vertical__nav__item--is-expanded > a{
-  position:relative;
 }
 .vertical__nav__item--is-expanded > a::before{
   -webkit-transform:rotate(90deg);
@@ -5109,6 +5115,7 @@ pre{
   box-sizing:border-box;
   background:#222;
   border-radius:2px;
+  margin-bottom:3rem;
 }
 
 pre.prettyprint{

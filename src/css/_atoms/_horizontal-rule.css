@@ -36,6 +36,10 @@ hr, .horizontal-rule {
 .horizontal-rule--spacer {
   margin-bottom: 2rem;
   background: none;
+  &:before,
+  &:after {
+    content: none;
+  }
 }
 
 /* Stretched horizontal-rule */

@@ -58,7 +58,7 @@
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#example-pages">Vertical rhythm</a></li>
               </ul>
             </li>
-            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Atoms</a>
+            <li class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded"><a href="#">Atoms</a>
               <ul class="vertical__nav vertical__nav--sub">
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_buttons">Button</a></li>
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_links">Links</a></li>
@@ -68,10 +68,30 @@
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_drag-handle">Drag handle</a></li>
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_toggle">Toggle</a></li>
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_toolbar">Toolbar</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_hr">Horizontal rule</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_form-label">Form label</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_form-input">Form input</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_form-input-time">Time form input</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_form-input-date">Date form input</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_radio-buttons">Radio buttons</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_checkboxes">Checkboxes</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_select-menu">Select menu</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_spinner">Spinner</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_placeholder">Placeholder</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_user-avatar">User avatar</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_user-name">User name</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_user-logout">User logout</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_table-head">Table head</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_table-row">Table row</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_fake-table-head">Fake table head</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_fake-table-row">Fake table row</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_pagination-item">Pagination item</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_filter-items">Filter items</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_tab-section-nav-items">Tab section nav items</a></li>
               </ul>
             </li>
             <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Molecules</a>
-      
+
             </li>
           </ul>
         </nav>
@@ -143,7 +163,7 @@
 <button class="btn btn--secondary">Secondary Button</button>
 <button class="btn btn--primary" disabled="disabled">Primary Button</button>
 </pre></div>
-                <hr class="horizontal-rule">
+
               </section>
 
               <section id="section_links">
@@ -157,7 +177,7 @@
 <p>This is a <a href="#">link</a></p>
 <p>This is a <a href="#" class="link--no-line">link without styling</a></p>
 </pre></div>
-                <hr class="horizontal-rule">
+
               </section>
 
               <section id="section_badges">
@@ -181,7 +201,7 @@
 <span class="badge badge--numeric">2</span>
 <span class="badge badge--numeric badge--numeric--inverse">2</span>
 </pre></div>
-                <hr class="horizontal-rule">
+
               </section>
 
               <section id="section_icons">
@@ -195,7 +215,7 @@
 <span class="icon icon--notes"></span>
 <span class="icon icon--performer"></span>
 </pre></div>
-                <hr class="horizontal-rule">
+
               </section>
 
               <section id="section_close-button">
@@ -207,7 +227,7 @@
 <div class="highlight"><pre class="prettyprint">
 <span class="close-button"></span>
 </pre></div>
-                <hr class="horizontal-rule">
+
               </section>
 
               <section id="section_drag-handle">
@@ -219,7 +239,7 @@
 <div class="highlight"><pre class="prettyprint">
 <span class="drag-handle"></span>
 </pre></div>
-                <hr class="horizontal-rule">
+
               </section>
 
               <section id="section_toggle">
@@ -249,7 +269,7 @@
   </label>
 </span>
 </pre></div>
-                <hr class="horizontal-rule">
+
               </section>
 
               <section id="section_toolbar">
@@ -261,7 +281,391 @@
 <div class="highlight"><pre class="prettyprint">
 <div class="toolbar"></div>
 </pre></div>
+
+              </section>
+
+              <section id="section_hr">
+                <h3>Horizontal rule</h3>
                 <hr class="horizontal-rule">
+                <hr class="horizontal-rule horizontal-rule--spacer">
+                <hr class="horizontal-rule horizontal-rule--dashed">
+                <hr class="horizontal-rule horizontal-rule--spacer">
+                <hr class="horizontal-rule horizontal-rule--stretch">
+              </section>
+              <section id="section_horizontal-rule-markup">
+                <h4>Markup for horizontal rule</h4>
+<div class="highlight"><pre class="prettyprint">
+<hr class="horizontal-rule">
+<hr class="horizontal-rule horizontal-rule--spacer"><!--invisible break-->
+<hr class="horizontal-rule horizontal-rule--dashed">
+<hr class="horizontal-rule horizontal-rule--spacer"><!--invisible break-->
+<hr class="horizontal-rule horizontal-rule--stretch">
+</pre></div>
+              </section>
+
+              <section id="section_form-label">
+                <h3>Form label</h3>
+                <label class="form__label">F.eks utgivelsesdato</label>
+              </section>
+              <section id="section_form-label-markup">
+                <h4>Markup for form label</h4>
+<div class="highlight"><pre class="prettyprint">
+<label class="form__label">F.eks utgivelsesdato</label>
+</pre></div>
+              </section>
+
+              <section id="section_form-input">
+                <h3>Form input</h3>
+                <input type="text" class="form__input">
+              </section>
+              <section id="section_form-input-markup">
+                <h4>Markup for form input</h4>
+<div class="highlight"><pre class="prettyprint">
+<input type="text" class="form__input">
+</pre></div>
+              </section>
+              <section id="section_form-input-number">
+                <h3>Numeric form input</h3>
+                <input type="number" class="form__input">
+              </section>
+              <section id="section_form-input-number-markup">
+                <h4>Markup for numeric form input</h4>
+<div class="highlight"><pre class="prettyprint">
+<input type="number" class="form__input">
+</pre></div>
+              </section>
+
+              <section id="section_form-input-time">
+                <h3>Time form input</h3>
+                <input type="time" class="form__input">
+              </section>
+              <section id="section_form-input-time-markup">
+                <h4>Markup for time form input</h4>
+<div class="highlight"><pre class="prettyprint">
+<input type="time" class="form__input">
+</pre></div>
+              </section>
+
+              <section id="section_form-input-date">
+                <h3>Date form input</h3>
+                <input type="date" class="form__input form__input--date">
+              </section>
+              <section id="section_form-input-markup">
+                <h4>Markup for time form input</h4>
+<div class="highlight"><pre class="prettyprint">
+<input type="time" class="form__input">
+</pre></div>
+              </section>
+
+              <section id="section_radio-buttons">
+                <h3>Radio buttons</h3>
+                <label class="form__label">
+                  <input type="radio" class="form__input form__input--radio" checked>
+                  Radio Norge
+                </label>
+                <label class="form__label">
+                  <input type="radio" class="form__input form__input--radio">
+                  Label
+                </label>
+              </section>
+              <section id="section_radio-buttons-markup">
+                <h4>Markup for time radio buttons</h4>
+<div class="highlight"><pre class="prettyprint">
+<label class="form__label">
+  <input type="radio" class="form__input form__input--radio" checked>
+  Radio Norge
+</label>
+<label class="form__label">
+  <input type="radio" class="form__input form__input--radio">
+  Label
+</label>
+</pre></div>
+              </section>
+
+              <section id="section_checkboxes">
+                <h3>Checkboxes</h3>
+                <label class="form__label">
+                  <input type="checkbox" class="form__input form__input--checkbox" checked>
+                  Label
+                </label>
+                <label class="form__label">
+                  <input type="checkbox" class="form__input form__input--checkbox">
+                  Label
+                </label>
+              </section>
+              <section id="section_checkbox-markup">
+                <h4>Markup for time radio buttons</h4>
+<div class="highlight"><pre class="prettyprint">
+<label class="form__label">
+  <input type="checkbox" class="form__input form__input--checkbox" checked>
+  Label
+</label>
+<label class="form__label">
+  <input type="checkbox" class="form__input form__input--checkbox">
+  Label
+</label>
+</pre></div>
+              </section>
+
+              <section id="section_select-menu">
+                <h3>Select menu</h3>
+                <select class="select select--fluid">
+                  <option>Denne måned</option>
+                  <option>Forrige måned</option>
+                  <option>For to måneder siden</option>
+                  <option> For tre måneder siden</option>
+                  <option>For fire måneder siden</option>
+                  <option>Fra første avvik</option>
+                  <option>Egendefinert</option>
+                </select>
+              </section>
+              <section id="section_select-menu-markup">
+                <h4>Markup for select menu</h4>
+<div class="highlight"><pre class="prettyprint">
+<select class="select select--fluid">
+  <option>Denne måned</option>
+  <option>Forrige måned</option>
+  <option>For to måneder siden</option>
+  <option> For tre måneder siden</option>
+  <option>For fire måneder siden</option>
+  <option>Fra første avvik</option>
+  <option>Egendefinert</option>
+</select>
+</pre></div>
+              </section>
+
+              <section id="section_spinner">
+                <h3>Spinner</h3>
+                <div class="spinner">
+                  <div class="spinner__rect1"></div>
+                  <div class="spinner__rect2"></div>
+                  <div class="spinner__rect3"></div>
+                  <div class="spinner__rect4"></div>
+                  <div class="spinner__rect5"></div>
+                </div>
+              </section>
+              <section id="section_spinner-markup">
+                <h4>Markup for spinner</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="spinner">
+  <div class="spinner__rect1"></div>
+  <div class="spinner__rect2"></div>
+  <div class="spinner__rect3"></div>
+  <div class="spinner__rect4"></div>
+  <div class="spinner__rect5"></div>
+</div>
+</pre></div>
+              </section>
+
+              <section id="section_placeholder">
+                <h3>Placeholder</h3>
+                <div class="content-placeholder"></div>
+              </section>
+              <section id="section_placeholder-markup">
+                <h4>Markup for placeholder</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="content-placeholder"></div>
+</pre></div>
+              </section>
+
+              <section id="section_user-avatar">
+                <h3>User avatar</h3>
+                <img src="../img/audun-temp.jpg" class="user__avatar">
+              </section>
+              <section id="section_user-avatar-markup">
+                <h4>Markup for user avatar</h4>
+<div class="highlight"><pre class="prettyprint">
+<img src="../img/audun-temp.jpg" class="user__avatar">
+</pre></div>
+              </section>
+
+              <section id="section_user-name">
+                <h3>User name</h3>
+                <div class="user">
+                  <div class="user__name">Audun Haggernes</div>
+                </div>
+              </section>
+              <section id="section_user-name-markup">
+                <h4>Markup for user name</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="user__name">Audun Haggernes</div>
+</pre></div>
+              </section>
+
+              <section id="section_user-logout">
+                <h3>User logout</h3>
+                <div class="user">
+                  <span class="user__logout"><a href="#">Logg ut</a></span>
+                </div>
+              </section>
+              <section id="section_user-logout-markup">
+                <h4>Markup for user logout</h4>
+<div class="highlight"><pre class="prettyprint">
+<span class="user__logout"><a href="#">Logg ut</a></span>
+</pre></div>
+              </section>
+
+              <section id="section_table-head">
+                <h3>Table head</h3>
+                <table class="table table--fluid">
+                  <thead>
+                    <tr>
+                      <th>Table head</th>
+                      <th>Table head</th>
+                      <th>Table head</th>
+                    </tr>
+                  </thead>
+                </table>
+              </section>
+              <section id="section_table-head-markup">
+                <h4>Markup for table head</h4>
+<div class="highlight"><pre class="prettyprint">
+<table class="table table--fluid">
+  <thead>
+    <tr>
+      <th>Table head</th>
+      <th>Table head</th>
+      <th>Table head</th>
+    </tr>
+  </thead>
+</table>
+</pre></div>
+              </section>
+
+              <section id="section_table-row">
+                <h3>Table row</h3>
+                <table class="table table--fluid">
+                  <tbody>
+                    <tr>
+                      <td>Table row</td>
+                      <td>Table row</td>
+                      <td>Table row</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <section id="section_table-row-markup">
+                <h4>Markup for table row</h4>
+<div class="highlight"><pre class="prettyprint">
+<table class="table table--fluid">
+  <tbody>
+    <tr>
+      <td>Table row</td>
+      <td>Table row</td>
+      <td>Table row</td>
+    </tr>
+  </tbody>
+</table>
+</pre></div>
+              </section>
+
+              <section id="section_fake-table-head">
+                <h3>Fake table head</h3>
+                <ul class="fake-table">
+                  <li class="fake-table__row fake-table__row--head">
+                    <div class="col-xs">Fake table head</div>
+                  </li>
+                </ul>
+              </section>
+              <section id="section_fake-table-head-markup">
+                <h4>Markup for fake table head</h4>
+<div class="highlight"><pre class="prettyprint">
+<ul class="fake-table">
+  <li class="fake-table__row fake-table__row--head">
+    <div class="col-xs">Fake table head</div>
+  </li>
+</ul>
+</pre></div>
+              </section>
+
+              <section id="section_fake-table-row">
+                <h3>Fake table row</h3>
+                <ul class="fake-table">
+                  <li class="fake-table__row">
+                    <div class="col-xs">Fake table row</div>
+                  </li>
+                </ul>
+              </section>
+              <section id="section_fake-table-row-markup">
+                <h4>Markup for fake table row</h4>
+<div class="highlight"><pre class="prettyprint">
+<ul class="fake-table">
+  <li class="fake-table__row">
+    <div class="col-xs">Fake table row</div>
+  </li>
+</ul>
+</pre></div>
+              </section>
+
+              <section id="section_pagination-item">
+                <h3>Pagination item</h3>
+                <ol class="pagination">
+                  <li class="pagination__item"><a href="#">2</a></li>
+                </ol>
+              </section>
+              <section id="section_pagination-item-markup">
+                <h4>Markup for pagination item</h4>
+<div class="highlight"><pre class="prettyprint">
+<ol class="pagination">
+  <li class="pagination__item"><a href="#">2</a></li>
+</ol>
+</pre></div>
+              </section>
+
+              <section id="section_filter-items">
+                <h3>Filter items</h3>
+                <ul class="filter-items list--inline">
+                    <li>
+                      <a href="#">
+                        <span class="filter-items__remove"><i class="icon--x"></i></span> <span>Leonard Cohen</span>
+                      </a>
+                    </li>
+                  </ul>
+              </section>
+              <section id="section_filter-items-markup">
+                <h4>Markup for filter items</h4>
+<div class="highlight"><pre class="prettyprint">
+<ul class="filter-items list--inline">
+    <li>
+      <a href="#">
+        <span class="filter-items__remove"><i class="icon--x"></i></span> <span>Leonard Cohen</span>
+      </a>
+    </li>
+  </ul>
+</pre></div>
+              </section>
+
+              <section id="section_tab-section-nav-items">
+                <h3>Tab section nav items</h3>
+                <ul class="tabs__section__nav">
+                  <li class="tabs__section__nav__item">
+                    <a href="#performer_info" class="active">
+                      Utøverinfo
+                    </a>
+                  </li>
+                  <li class="tabs__section__nav__item">
+                    <a href="#performer_info">
+                      Link
+                    </a>
+                  </li>
+                </ul>
+              </section>
+              <section id="section_tab-section-nav-items-markup">
+                <h4>Tab section nav items</h4>
+<div class="highlight"><pre class="prettyprint">
+<ul class="tabs__section__nav">
+  <li class="tabs__section__nav__item">
+    <a href="#performer_info" class="active">
+      Utøverinfo
+    </a>
+  </li>
+  <li class="tabs__section__nav__item">
+    <a href="#performer_info">
+      Link
+    </a>
+  </li>
+</ul>
+</pre></div>
               </section>
             </section><!--end section #atoms-->
           </div><!--/.col with main content-->
