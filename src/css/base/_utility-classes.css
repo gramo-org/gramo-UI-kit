@@ -254,7 +254,8 @@ td.text--center,
 
 /* Truncated text */
 .truncated {
-  position: relative;
+  /*position: relative;*/
+  /*background: var(--gramo-white);*/
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -262,7 +263,7 @@ td.text--center,
     max-width: 100px;
   }
 
-  &::after {
+  /*&::after {
     content:'';
     width:100%;
     height:100%;
@@ -270,5 +271,5 @@ td.text--center,
     left:0;
     top:0;
     background:linear-gradient(to right, transparent 120px, var(--gramo-white));
-  }
+  }*/
 }
