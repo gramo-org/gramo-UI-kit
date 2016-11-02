@@ -44,7 +44,9 @@ pre {
   box-sizing:border-box;
   background: #222;
   border-radius: 2px;
-  margin-bottom: 3rem;
+  margin-top: .3rem;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 pre.prettyprint {

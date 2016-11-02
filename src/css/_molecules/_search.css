@@ -91,17 +91,3 @@ input[type="text"].search__form__input {
     font-size: 1.7rem;
   }
 }
-
-.search__clear {
-  position: absolute;
-  cursor: pointer;
-  right: 1rem;
-  top: .9rem;
-  font-size: 1.2rem;
-  z-index: 1;
-  display: none;
-
-  .icon--cross:before {
-    color: var(--off-gray)!important;
-  }
-}

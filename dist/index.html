@@ -51,13 +51,7 @@
         </header>
         <nav class="sidebar__nav">
           <ul class="vertical__nav">
-            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Global</a>
-              <ul class="vertical__nav vertical__nav--sub">
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#getting-started">Typography</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#components">Colour</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#example-pages">Vertical rhythm</a></li>
-              </ul>
-            </li>
+            <li class="vertical__nav__item"><a href="#">Global</a></li>
             <li class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded"><a href="#">Atoms</a>
               <ul class="vertical__nav vertical__nav--sub">
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_buttons">Button</a></li>
@@ -90,9 +84,7 @@
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_tab-section-nav-items">Tab section nav items</a></li>
               </ul>
             </li>
-            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Molecules</a>
-
-            </li>
+            <li class="vertical__nav__item"><a href="#">Molecules</a></li>
           </ul>
         </nav>
       </section>
@@ -123,35 +115,11 @@
           </aside><!--Page-contents menu-->
         </div>
         <div class="row">
-          <div class="col-xs-8">
-            <!-- <section id="global">
-              <h1>Global</h1>
-              <section id="section_typography">
-                <h3>Typography</h3>
-                <blockquote>
-                  <h1>Heading one</h1>
-                  <h2>Heading two</h2>
-                  <h3>Heading three</h3>
-                  <h4>Heading four</h4>
-                  <p>This is some text</p>
-                </blockquote>
-              </section>
-              <section id="section_typography-markup">
-                <h4>Markup for typography</h4>
-<div class="highlight"><pre class="prettyprint">
-<h1>Heading one</h1>
-<h2>Heading two</h2>
-<h3>Heading three</h3>
-<h4>Heading four</h4>
-<p>This is some text</p>
-</pre></div>
-              </section>
-            </section> -->
-            <!--End Global-->
+          <div class="col-xs col-lg-8">
             <section id="atoms">
               <h1>Atoms</h1>
-              <section id="section_buttons">
-                <h3>Buttons</h3>
+              <h3>Buttons</h3>
+              <section class="component-view" id="section_buttons">
                 <button class="btn btn--primary">Primary Button</button>
                 <button class="btn btn--secondary">Secondary Button</button>
                 <button class="btn btn--primary" disabled>Primary Button</button>
@@ -166,8 +134,8 @@
 
               </section>
 
-              <section id="section_links">
-                <h3>Links</h3>
+              <h3>Links</h3>
+              <section class="component-view" id="section_links">
                 <p>This is a <a href="#">link</a></p>
                 <p>This is a <a href="#" class="link--no-line">link without styling</a></p>
               </section>
@@ -180,8 +148,8 @@
 
               </section>
 
-              <section id="section_badges">
-                <h3>Badges</h3>
+              <h3>Badges</h3>
+              <section class="component-view" id="section_badges">
                 <span class="badge badge--info">21</span>
                 <span class="badge badge--success">21</span>
                 <span class="badge badge--error">21</span>
@@ -204,8 +172,8 @@
 
               </section>
 
-              <section id="section_icons">
-                <h3>Icons</h3>
+              <h3>Icons</h3>
+              <section class="component-view" id="section_icons">
                 <p><span class="icon icon--album"></span> <span class="icon icon--notes"></span> <span class="icon icon--performer"></span></p>
               </section>
               <section id="section_icons-markup">
@@ -218,8 +186,8 @@
 
               </section>
 
-              <section id="section_close-button">
-                <h3>Close button</h3>
+              <h3>Close button</h3>
+              <section class="component-view" id="section_close-button">
                 <p><span class="close-button" style="position:static;"></span></p>
               </section>
               <section id="section_close-button-markup">
@@ -230,8 +198,8 @@
 
               </section>
 
-              <section id="section_drag-handle">
-                <h3>Drag handle</h3>
+              <h3>Drag handle</h3>
+              <section class="component-view" id="section_drag-handle">
                 <p><span class="drag-handle" style="position:static;"></span></p>
               </section>
               <section id="section_drag-handle-markup">
@@ -242,8 +210,8 @@
 
               </section>
 
-              <section id="section_toggle">
-                <h3>Toggle</h3>
+              <h3>Toggle</h3>
+              <section class="component-view" id="section_toggle">
                 <span class="x-toggle-container">
                 <input type="checkbox" class="x-toggle">
                 <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
@@ -272,8 +240,8 @@
 
               </section>
 
-              <section id="section_toolbar">
-                <h3>Toolbar</h3>
+              <h3>Toolbar</h3>
+              <section class="component-view" id="section_toolbar">
                 <div class="toolbar"></div>
               </section>
               <section id="section_drag-handle-markup">
@@ -284,8 +252,8 @@
 
               </section>
 
-              <section id="section_hr">
-                <h3>Horizontal rule</h3>
+              <h3>Horizontal rule</h3>
+              <section class="component-view" id="section_hr">
                 <hr class="horizontal-rule">
                 <hr class="horizontal-rule horizontal-rule--spacer">
                 <hr class="horizontal-rule horizontal-rule--dashed">
@@ -303,8 +271,8 @@
 </pre></div>
               </section>
 
-              <section id="section_form-label">
-                <h3>Form label</h3>
+              <h3>Form label</h3>
+              <section class="component-view" id="section_form-label">
                 <label class="form__label">F.eks utgivelsesdato</label>
               </section>
               <section id="section_form-label-markup">
@@ -314,8 +282,8 @@
 </pre></div>
               </section>
 
-              <section id="section_form-input">
-                <h3>Form input</h3>
+              <h3>Form input</h3>
+              <section class="component-view" id="section_form-input">
                 <input type="text" class="form__input">
               </section>
               <section id="section_form-input-markup">
@@ -324,8 +292,9 @@
 <input type="text" class="form__input">
 </pre></div>
               </section>
+
+              <h3>Numeric form input</h3>
               <section id="section_form-input-number">
-                <h3>Numeric form input</h3>
                 <input type="number" class="form__input">
               </section>
               <section id="section_form-input-number-markup">
@@ -335,8 +304,8 @@
 </pre></div>
               </section>
 
-              <section id="section_form-input-time">
-                <h3>Time form input</h3>
+              <h3>Time form input</h3>
+              <section class="component-view" id="section_form-input-time">
                 <input type="time" class="form__input">
               </section>
               <section id="section_form-input-time-markup">
@@ -346,8 +315,8 @@
 </pre></div>
               </section>
 
-              <section id="section_form-input-date">
-                <h3>Date form input</h3>
+              <h3>Date form input</h3>
+              <section class="component-view" id="section_form-input-date">
                 <input type="date" class="form__input form__input--date">
               </section>
               <section id="section_form-input-markup">
@@ -357,8 +326,8 @@
 </pre></div>
               </section>
 
-              <section id="section_radio-buttons">
-                <h3>Radio buttons</h3>
+              <h3>Radio buttons</h3>
+              <section class="component-view" id="section_radio-buttons">
                 <label class="form__label">
                   <input type="radio" class="form__input form__input--radio" checked>
                   Radio Norge
@@ -382,8 +351,8 @@
 </pre></div>
               </section>
 
-              <section id="section_checkboxes">
-                <h3>Checkboxes</h3>
+              <h3>Checkboxes</h3>
+              <section class="component-view" id="section_checkboxes">
                 <label class="form__label">
                   <input type="checkbox" class="form__input form__input--checkbox" checked>
                   Label
@@ -407,8 +376,8 @@
 </pre></div>
               </section>
 
-              <section id="section_select-menu">
-                <h3>Select menu</h3>
+              <h3>Select menu</h3>
+              <section class="component-view" id="section_select-menu">
                 <select class="select select--fluid">
                   <option>Denne måned</option>
                   <option>Forrige måned</option>
@@ -434,8 +403,8 @@
 </pre></div>
               </section>
 
-              <section id="section_spinner">
-                <h3>Spinner</h3>
+              <h3>Spinner</h3>
+              <section class="component-view" id="section_spinner">
                 <div class="spinner">
                   <div class="spinner__rect1"></div>
                   <div class="spinner__rect2"></div>
@@ -457,8 +426,8 @@
 </pre></div>
               </section>
 
-              <section id="section_placeholder">
-                <h3>Placeholder</h3>
+              <h3>Placeholder</h3>
+              <section class="component-view" id="section_placeholder">
                 <div class="content-placeholder"></div>
               </section>
               <section id="section_placeholder-markup">
@@ -468,8 +437,8 @@
 </pre></div>
               </section>
 
-              <section id="section_user-avatar">
-                <h3>User avatar</h3>
+              <h3>User avatar</h3>
+              <section class="component-view" id="section_user-avatar">
                 <img src="../img/audun-temp.jpg" class="user__avatar">
               </section>
               <section id="section_user-avatar-markup">
@@ -479,7 +448,7 @@
 </pre></div>
               </section>
 
-              <section id="section_user-name">
+              <section class="component-view" id="section_user-name">
                 <h3>User name</h3>
                 <div class="user">
                   <div class="user__name">Audun Haggernes</div>
@@ -492,8 +461,8 @@
 </pre></div>
               </section>
 
-              <section id="section_user-logout">
-                <h3>User logout</h3>
+              <h3>User logout</h3>
+              <section class="component-view" id="section_user-logout">
                 <div class="user">
                   <span class="user__logout"><a href="#">Logg ut</a></span>
                 </div>
@@ -505,8 +474,8 @@
 </pre></div>
               </section>
 
-              <section id="section_table-head">
-                <h3>Table head</h3>
+              <h3>Table head</h3>
+              <section class="component-view" id="section_table-head">
                 <table class="table table--fluid">
                   <thead>
                     <tr>
@@ -532,8 +501,8 @@
 </pre></div>
               </section>
 
-              <section id="section_table-row">
-                <h3>Table row</h3>
+              <h3>Table row</h3>
+              <section class="component-view" id="section_table-row">
                 <table class="table table--fluid">
                   <tbody>
                     <tr>
@@ -559,8 +528,8 @@
 </pre></div>
               </section>
 
-              <section id="section_fake-table-head">
-                <h3>Fake table head</h3>
+              <h3>Fake table head</h3>
+              <section class="component-view" id="section_fake-table-head">
                 <ul class="fake-table">
                   <li class="fake-table__row fake-table__row--head">
                     <div class="col-xs">Fake table head</div>
@@ -578,8 +547,8 @@
 </pre></div>
               </section>
 
-              <section id="section_fake-table-row">
-                <h3>Fake table row</h3>
+              <h3>Fake table row</h3>
+              <section class="component-view" id="section_fake-table-row">
                 <ul class="fake-table">
                   <li class="fake-table__row">
                     <div class="col-xs">Fake table row</div>
@@ -597,8 +566,8 @@
 </pre></div>
               </section>
 
-              <section id="section_pagination-item">
-                <h3>Pagination item</h3>
+              <h3>Pagination item</h3>
+              <section class="component-view" id="section_pagination-item">
                 <ol class="pagination">
                   <li class="pagination__item"><a href="#">2</a></li>
                 </ol>
@@ -612,8 +581,8 @@
 </pre></div>
               </section>
 
-              <section id="section_filter-items">
-                <h3>Filter items</h3>
+              <h3>Filter items</h3>
+              <section class="component-view" id="section_filter-items">
                 <ul class="filter-items list--inline">
                     <li>
                       <a href="#">
@@ -635,8 +604,8 @@
 </pre></div>
               </section>
 
-              <section id="section_tab-section-nav-items">
-                <h3>Tab section nav items</h3>
+              <h3>Tab section nav items</h3>
+              <section class="component-view" id="section_tab-section-nav-items">
                 <ul class="tabs__section__nav">
                   <li class="tabs__section__nav__item">
                     <a href="#performer_info" class="active">

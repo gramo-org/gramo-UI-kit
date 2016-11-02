@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <style>
+    /*Temporary styling to highlight grid*/
+    .container.grid-test > .row {
+      border: 1px solid #fff;
+      border-width: 0 0 1px 0;
+    }
+
+    .container.grid-test > .row > * {
+      background: rgb(180, 184, 189);
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .container.grid-test > .row > *:nth-child(odd) {
+      background: rgb(217, 219, 222);
+    }
+
+    section {
+      margin-bottom: 1.2rem;
+    }
+
+    h3 {
+      margin-bottom: .6rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <a href="#top"><h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1></a>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item"><a href="#">Global</a></li>
+            <li class="vertical__nav__item"><a href="/">Atoms</a></li>
+            <li class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded"><a href="#">Molecules</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_user">User</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_radio-group">Radio group</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main id="top">
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+      <!--Search-->
+
+      <section class="container container--hd">
+        <div class="row">
+          <aside class="col-xs-5">
+            <nav class="page-contents page-contents--sticky">
+              <section class="search">
+                <form id="live-search" action="" class="search__form search__form--simple" method="post">
+                      <input type="text" class="search__form__input" id="filter" value="" />
+                      <span class="search__clear"><i class="icon--cross"></i></span>
+                      <!-- <span id="filter-count"></span> -->
+                </form>
+              </section>
+
+            </nav>
+          </aside><!--Page-contents menu-->
+        </div>
+        <div class="row">
+          <div class="col-xs col-lg-8">
+            <section id="Molecules">
+              <h1>Molecules</h1>
+
+              <h3>User</h3>
+              <section class="component-view" id="section_user">
+                <aside class="user" style="width: 200px;">
+                  <img src="img/audun-temp.jpg" class="user__avatar">
+                  <div class="user__name">Audun Haggernes
+                    <span class="user__logout"><a href="#">Logg ut</a></span>
+                  </div>
+                </aside>
+              </section>
+              <section id="section_user-markup">
+                <h4>Markup for user</h4>
+<div class="highlight"><pre class="prettyprint">
+<aside class="user">
+  <img src="img/audun-temp.jpg" class="user__avatar">
+  <div class="user__name">Audun Haggernes
+    <span class="user__logout"><a href="#">Logg ut</a></span>
+  </div>
+</aside>
+</pre></div>
+              </section>
+
+              <h3>Radio group</h3>
+              <section class="component-view" id="section_user">
+                <div class="radio-group" style="justify-content:flex-start;">
+                  <label class="form__label">
+                    <input type="radio" name="role" checked>
+                    <span>A</span>
+                    <span class="check"></span>
+                  </label>
+                  <label class="form__label">
+                    <input type="radio" name="role">
+                    <span>B</span>
+                    <span class="check"></span>
+                  </label>
+                  <label class="form__label">
+                    <input type="radio" name="role">
+                    <span>C</span>
+                    <span class="check"></span>
+                  </label>
+                </div>
+              </section>
+
+              <section id="section_radio-group-markup">
+                <h4>Markup for radio group</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="radio-group">
+  <label class="form__label">
+    <input type="radio" name="role" checked>
+    <span>A</span>
+    <span class="check"></span>
+  </label>
+  <label class="form__label">
+    <input type="radio" name="role">
+    <span>B</span>
+    <span class="check"></span>
+  </label>
+  <label class="form__label">
+    <input type="radio" name="role">
+    <span>C</span>
+    <span class="check"></span>
+  </label>
+</div>
+</pre></div>
+              </section>
+
+              <h3>Pagination</h3>
+              <section class="component-view" id="section_pagination">
+                <nav role="navigation">
+                  <ul class="pagination">
+                    <li class="pagination__item pagination__item--previous pagination__item--disabled">
+                      <a href="#"><i class="icon--pagination-previous"></i></a></li>
+                    <li class="pagination__item pagination__item--current"><a href="#">1</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a href="#">2</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a href="#">3</a>
+                    </li>
+                    <li class="pagination__item pagination__item--next">
+                      <a href="#"><i class="icon--pagination-next"></i></a>
+                    </li>
+                  </ul>
+                </nav>
+              </section>
+              <section id="section_pagination-markup">
+                <h4>Markup for pagination</h4>
+<div class="highlight"><pre class="prettyprint">
+<nav role="navigation">
+  <ul class="pagination">
+    <li class="pagination__item pagination__item--previous pagination__item--disabled">
+      <a href="#"><i class="icon--pagination-previous"></i></a></li>
+    <li class="pagination__item pagination__item--current"><a href="#">1</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#">2</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#">3</a>
+    </li>
+    <li class="pagination__item pagination__item--next">
+      <a href="#"><i class="icon--pagination-next"></i></a>
+    </li>
+  </ul>
+</nav>
+</pre></div>
+              </section>
+
+              <h3>Form field</h3>
+              <section class="component-view" id="section_form-field">
+                <div class="form__field" style="margin-left: -95px;">
+                  <label class="form__label">
+                    <span>Label</span>
+                    <input type="text" class="form__input form__input--300">
+                  </label>
+                </div>
+              </section>
+              <section id="section_form-field-markup">
+                <h4>Markup for time form field</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="form__field">
+  <label class="form__label">
+    <span>Label</span>
+    <input type="text" class="form__input form__input--300">
+  </label>
+</div>
+</pre></div>
+              </section>
+
+              <h3>Vertical nav</h3>
+              <section class="component-view" id="section_vertical-nav">
+                <ul class="vertical__nav" style="width: 200px;">
+                  <li class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+                    <a href="#">Innlesning</a>
+                    <ul class="vertical__nav vertical__nav--sub">
+                      <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active">
+                        <a href="#">Innleste filer</a>
+                      </li>
+                      <li class="vertical__nav__item vertical__nav--sub__item">
+                        <a href="#">Avvik kontroll</a>
+                      </li>
+                      <li class="vertical__nav__item vertical__nav--sub__item">
+                        <a href="#">Program admin</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="vertical__nav__item vertical__nav__item--has-children">
+                    <a href="#">Matching</a>
+                  </li>
+                  <li class="vertical__nav__item vertical__nav__item--has-children">
+                    <a href="#">Diskografi</a>
+                  </li>
+                </ul>
+              </section>
+              <section id="section_vertical-nav-markup">
+                <h4>Markup for vertical nav</h4>
+<div class="highlight"><pre class="prettyprint">
+<ul class="vertical__nav">
+  <li class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+    <a href="#">Innlesning</a>
+    <ul class="vertical__nav vertical__nav--sub">
+      <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active">
+        <a href="#">Innleste filer</a>
+      </li>
+      <li class="vertical__nav__item vertical__nav--sub__item">
+        <a href="#">Avvik kontroll</a>
+      </li>
+      <li class="vertical__nav__item vertical__nav--sub__item">
+        <a href="#">Program admin</a>
+      </li>
+    </ul>
+  </li>
+  <li class="vertical__nav__item vertical__nav__item--has-children">
+    <a href="#">Matching</a>
+  </li>
+  <li class="vertical__nav__item vertical__nav__item--has-children">
+    <a href="#">Diskografi</a>
+  </li>
+</ul>
+</pre></div>
+              </section>
+
+              <h3>Flash message</h3>
+              <section class="component-view" id="section_flash-message">
+                <div class="flash-message-wrapper" style="position:static;">
+                  <div class="flash-message flash-message--success">
+                    <p>Success flash message</p>
+                  </div>
+                </div>
+                <br>
+                <div class="flash-message-wrapper" style="position:static;">
+                  <div class="flash-message flash-message--error">
+                    <p>Error flash message
+                      <button class="btn btn--small btn--borderless">Angre ?</button>
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <section id="section_flash-message-markup">
+                <h4>Markup for flash message</h4>
+<div class="highlight"><pre class="prettyprint">
+  <div class="flash-message-wrapper">
+    <div class="flash-message flash-message--success">
+      <p>Success flash message</p>
+    </div>
+  </div>
+  <div class="flash-message-wrapper">
+    <div class="flash-message flash-message--error">
+      <p>Error flash message
+        <button class="btn btn--small btn--borderless">Angre ?</button>
+      </p>
+    </div>
+  </div>
+</pre></div>
+              </section>
+
+
+            </section><!--end section #molecules-->
+          </div><!--/.col with main content-->
+        </div><!--/.row-->
+      </section><!--/.container-->
+    </main>
+  </div><!--End site-wrapper-->
+<script src="js/vendor/jquery-1.11.3.min.js"></script>
+<script src="js/default.js"></script>
+<script>
+var t = $('.prettyprint');
+$(t).each(function() {
+    $(this).html(
+        $(this).html().replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    );
+});
+</script>
+</body>
+</html>

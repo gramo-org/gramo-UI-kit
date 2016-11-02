@@ -1,5 +1,6 @@
 .vertical__nav {
   @extend %no-list;
+  background: var(--sidebar-menu-bg);
 
   &__item {
     text-transform: uppercase;

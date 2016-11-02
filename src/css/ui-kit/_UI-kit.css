@@ -1,3 +1,10 @@
+.component-view {
+  padding: 2rem;
+  border: 1px dashed var(--silver);
+  background: var(--gramo-white);
+}
+
+
 /* Styling of 'example pages' on UI kit index page*/
 .placeholder {
   background: var(--light-gray);
@@ -38,6 +45,11 @@
 /* search on index page */
 .search__form--simple {
   margin-bottom: 2rem;
+
+  input {
+    font-size: 2rem;
+    padding: .75rem!important;
+  }
 }
 
 .search__form--simple:before {
@@ -53,4 +65,18 @@
   align-items: center;
   justify-content: center;
   @media (--tablet) { display: inline-flex; }
+}
+
+.search__clear {
+  position: absolute;
+  cursor: pointer;
+  right: 1.3rem;
+  top: 1.3rem;
+  font-size: 1.2rem;
+  z-index: 1;
+  display: none;
+
+  .icon--cross:before {
+    color: var(--off-gray)!important;
+  }
 }
