@@ -57,6 +57,16 @@
               <ul class="vertical__nav vertical__nav--sub">
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_user">User</a></li>
                 <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_radio-group">Radio group</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_pagination">Pagination</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_form-field">Form field</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_vertical-nav">Vertical nav</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_flash-message">Flash message</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_button-group">Button group</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_searchable-list">Searchable list</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_section-header">Section header</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_site-header">Site header</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_tabs-type">Tabs type</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_tab-section-nav">Tabs section nav</a></li>
               </ul>
             </li>
           </ul>
@@ -115,7 +125,7 @@
               </section>
 
               <h3>Radio group</h3>
-              <section class="component-view" id="section_user">
+              <section class="component-view" id="section_radio-group">
                 <div class="radio-group" style="justify-content:flex-start;">
                   <label class="form__label">
                     <input type="radio" name="role" checked>
@@ -286,7 +296,7 @@
                 <div class="flash-message-wrapper" style="position:static;">
                   <div class="flash-message flash-message--error">
                     <p>Error flash message
-                      <button class="btn btn--small btn--borderless">Angre ?</button>
+                      <button class="btn btn--borderless">Angre ?</button>
                     </p>
                   </div>
                 </div>
@@ -302,10 +312,206 @@
   <div class="flash-message-wrapper">
     <div class="flash-message flash-message--error">
       <p>Error flash message
-        <button class="btn btn--small btn--borderless">Angre ?</button>
+        <button class="btn btn--borderless">Angre ?</button>
       </p>
     </div>
   </div>
+</pre></div>
+              </section>
+
+              <h3>Button group</h3>
+              <section class="component-view" id="section_button-group">
+                <div class="btn-group" style="text-align:left;">
+                  <button class="btn btn--primary">Primary button</button>
+                  <button class="btn btn--secondary">Secondary button</button>
+                  <button class="btn btn--secondary">Secondary button</button>
+                </div>
+              </section>
+              <section id="section_button-group-markup">
+                <h4>Markup for button group</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="btn-group">
+  <button class="btn btn--primary">Primary button</button>
+  <button class="btn btn--secondary">Secondary button</button>
+  <button class="btn btn--secondary">Secondary button</button>
+</div>
+</pre></div>
+              </section>
+
+              <h3>Searchable list</h3>
+              <section class="component-view" id="section_searchable-list">
+                <div class="searchable-list" style="width:250px;">
+                  <div class="searchable-list__heading">
+                    <span class="searchable-list__selected">P3</span>
+                  </div>
+                  <div class="searchable-list__dropdown">
+                    <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
+                    <ul>
+                    <li class="searchable-list__option">P4 Norge</li>
+                    <li class="searchable-list__option">P4 Lokal</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <section id="section_searchable-list-markup">
+                <h4>Markup for searchable list</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="searchable-list">
+  <div class="searchable-list__heading">
+    <span class="searchable-list__selected">P3</span>
+  </div>
+  <div class="searchable-list__dropdown">
+    <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
+    <ul>
+    <li class="searchable-list__option">P4 Norge</li>
+    <li class="searchable-list__option">P4 Lokal</li>
+    </ul>
+  </div>
+</div>
+</pre></div>
+              </section>
+
+              <h3>Section header</h3>
+              <section class="component-view" id="section_section-header">
+                <div class="section-header">
+                  <header>
+                    <h2>Produsenter <span class="badge badge--secondary">2</span></h2>
+                  </header>
+                  <div class="section-header__toolbar">
+                    <a href="#" class="link--edit">Rediger</a>
+                  </div>
+                </div>
+              </section>
+              <section id="section_section-header-markup">
+                <h4>Markup for section header</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="section-header">
+  <header>
+    <h2>Produsenter <span class="badge badge--secondary">2</span></h2>
+  </header>
+  <div class="section-header__toolbar">
+    <a href="#" class="link--edit">Rediger</a>
+  </div>
+</div>
+</pre></div>
+              </section>
+
+              <h3>Site header</h3>
+              <section class="component-view" id="section_site-header">
+                <header class="site-header" style="position:static;">
+                  <div class="toggle-sidebar">
+                    <a href="#"></a>
+                  </div>
+                </header>
+                <br>
+                <div class="toggle-sidebar open" style="position:relative; background:#434D5A; width:80px;">
+                  <a href="#" style="margin-left: 0;"></a>
+                </div>
+              </section>
+              <section id="section_site-header-markup">
+                <h4>Markup for site header</h4>
+<div class="highlight"><pre class="prettyprint">
+<header class="site-header">
+  <div class="toggle-sidebar">
+    <a href="#"></a>
+  </div>
+</header>
+<br>
+<div class="toggle-sidebar open">
+  <a href="#"></a>
+</div>
+</pre></div>
+              </section>
+
+              <h3>Tabs type</h3>
+              <section class="component-view" id="section_tabs-type">
+                <ul class="tabs__nav tabs__nav--flexible">
+                  <li class="tabs__nav__item">
+                    <a href="#">
+                      <span class="tabs__nav__item__type tabs__nav__item__type--recording">Innspilling</span>
+                    </a>
+                  </li>
+                  <li class="tabs__nav__item">
+                    <a href="#">
+                      <span class="tabs__nav__item__type tabs__nav__item__type--album">Album</span>
+                    </a>
+                  </li>
+                  <li class="tabs__nav__item">
+                    <a href="#">
+                      <span class="tabs__nav__item__type tabs__nav__item__type--performer">Performer</span>
+                    </a>
+                  </li>
+                  <li class="tabs__nav__item tabs__nav__item--search" style="visibility:hidden">
+                    <a href="#search">
+                      <i class="icon--search"></i>
+                      Søk
+                    </a>
+                  </li>
+                </ul>
+              </section>
+              <section id="section_tabs-type-markup">
+                <h4>Markup for tabs type</h4>
+<div class="highlight"><pre class="prettyprint">
+<ul class="tabs__nav tabs__nav--flexible">
+  <li class="tabs__nav__item">
+    <a href="#">
+      <span class="tabs__nav__item__type tabs__nav__item__type--recording">Innspilling</span>
+    </a>
+  </li>
+  <li class="tabs__nav__item">
+    <a href="#">
+      <span class="tabs__nav__item__type tabs__nav__item__type--album">Album</span>
+    </a>
+  </li>
+  <li class="tabs__nav__item">
+    <a href="#">
+      <span class="tabs__nav__item__type tabs__nav__item__type--performer">Performer</span>
+    </a>
+  </li>
+</ul>
+</pre></div>
+              </section>
+
+              <h3>Tab section nav</h3>
+              <section class="component-view" id="section_tab-section-nav">
+                <ul class="tabs__section__nav">
+                  <li class="tabs__section__nav__item">
+                    <a href="#performer_info" class="active">
+                      Current section
+                    </a>
+                  </li>
+                  <li class="tabs__section__nav__item">
+                    <a href="#performer_info">
+                      Section 1
+                    </a>
+                  </li>
+                  <li class="tabs__section__nav__item">
+                    <a href="#performer_info">
+                      Section 2
+                    </a>
+                  </li>
+                </ul>
+              </section>
+              <section id="section_tab-section-nav-markup">
+                <h4>Tab section nav</h4>
+<div class="highlight"><pre class="prettyprint">
+<ul class="tabs__section__nav">
+  <li class="tabs__section__nav__item">
+    <a href="#performer_info" class="active">
+      Current section
+    </a>
+  </li>
+  <li class="tabs__section__nav__item">
+    <a href="#performer_info">
+      Section 1
+    </a>
+  </li>
+  <li class="tabs__section__nav__item">
+    <a href="#performer_info">
+      Section 2
+    </a>
+  </li>
+</ul>
 </pre></div>
               </section>
 
