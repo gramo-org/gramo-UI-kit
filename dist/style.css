@@ -1596,17 +1596,17 @@ input-placeholder{
     background-size:15px;
 }
 
-.form__label.has-error .form__input{
+.form__label.has-error .form__input, .form__input.has-error, input[type="text"].search__form__input.has-error{
     border:3px solid #ed6b6a;
     background:#fff url(img/cross.svg) center right 7px no-repeat;
     background-size:11px;
   }
 
-.form__label.has-error .form__input[type="number"]{
+.form__label.has-error .form__input[type="number"], .form__input.has-error[type="number"], input[type="text"].search__form__input.has-error[type="number"]{
   background-image:none;
 }
 
-.form__label.has-error .form__input.searchable-list{
+.form__label.has-error .form__input.searchable-list, .form__input.has-error.searchable-list, input[type="text"].search__form__input.has-error.searchable-list{
   background-image:none;
 }
 
@@ -4491,6 +4491,13 @@ input[type="text"].search__form__input--large{
 
 .section-header--fixed > *{
   max-width:1400px;
+}
+
+@media (min-width: 768px){
+
+  .section-header--fixed + *{
+    margin-top:11rem;
+  }
 }
 main.pull .section-header--fixed{
   left:1rem;

@@ -118,6 +118,12 @@
   & > * {
     max-width: var(--container-hd);
   }
+
+  & + * {
+    @media (--tablet) {
+      margin-top: 11rem;
+    }
+  }
 }
 
 /* Change left position value of .content-header--fixed when sidebar is closed */
