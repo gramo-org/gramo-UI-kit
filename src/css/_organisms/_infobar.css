@@ -6,6 +6,11 @@
     display: flex;
   }
 
+  &--padded {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   &--no-border {
     border-bottom: 0;
     padding-bottom: 0;

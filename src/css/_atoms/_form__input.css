@@ -46,8 +46,8 @@ input[type="radio"], input[type="checkbox"],
   color: var(--gramo-blue);
   background: #fff url(img/calendar.svg) center right 10px no-repeat;
   border: 1px solid var(--silver);
-  padding-right: 1rem;
-  padding-left: 0rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
   text-align: center;
   width: auto;
 
@@ -93,6 +93,10 @@ input-placeholder {
 
 .form__input--150 {
   @media (--tablet) { width: 150px!important; }
+}
+
+.form__input--143 {
+  @media (--tablet) { width: 143px!important; }
 }
 
 .form__input--130 {

@@ -41,6 +41,7 @@
 
 .section-header__toolbar {
   align-self: center;
+  padding-right: .5rem;
 }
 
 .section-header--ordered {
