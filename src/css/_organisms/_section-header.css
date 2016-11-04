@@ -105,7 +105,7 @@
   right: 1rem;
   z-index: 2;
   left: 21rem;
-  /*top: 0;*/
+  top: 3rem;
   @media (--tablet) {
     padding-top: 3rem;
   }
@@ -120,9 +120,7 @@
   }
 
   & + * {
-    @media (--tablet) {
-      margin-top: 11rem;
-    }
+    margin-top: 11rem;
   }
 }
 

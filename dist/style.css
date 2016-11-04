@@ -4471,6 +4471,7 @@ input[type="text"].search__form__input--large{
   right:1rem;
   z-index:2;
   left:21rem;
+  top:3rem;
 }
 
 @media (min-width: 768px){
@@ -4493,11 +4494,8 @@ input[type="text"].search__form__input--large{
   max-width:1400px;
 }
 
-@media (min-width: 768px){
-
-  .section-header--fixed + *{
-    margin-top:11rem;
-  }
+.section-header--fixed + *{
+  margin-top:11rem;
 }
 main.pull .section-header--fixed{
   left:1rem;
