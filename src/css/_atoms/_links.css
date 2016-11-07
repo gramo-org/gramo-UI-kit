@@ -26,3 +26,28 @@
     font-size: 90%;
   }
 }
+
+.link-list {
+  @extend %no-list;
+  background: var(--light-gray);
+  padding: 2rem 4rem;
+  margin: 1rem -1rem;
+  border: 1px solid var(--silver);
+  border-width: 1px 0;
+
+  li a {
+    @extend .link--no-line;
+    padding: 1rem .3rem;
+    display: block;
+    border-bottom: 1px solid var(--silver);
+
+    &::before {
+      position: relative;
+      top: 1px;
+    }
+
+    &.active {
+      color: var(--gramo-black);
+    }
+  }
+}

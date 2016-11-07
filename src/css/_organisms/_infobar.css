@@ -98,3 +98,11 @@
 [data-type="owner"]::before {
   content: "\e918";
 }
+
+[data-type="contact"]::before {
+  content: "\e91d";
+}
+
+[data-type="member"]::before {
+  content: "\e91e";
+}
