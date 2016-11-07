@@ -3,6 +3,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .wrapper__sidebar {

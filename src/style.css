@@ -1564,6 +1564,7 @@ input-placeholder{
   -webkit-flex-wrap:wrap;
   -ms-flex-wrap:wrap;
   flex-wrap:wrap;
+  position:relative;
 }
 
 .wrapper__sidebar{
@@ -3864,6 +3865,14 @@ main.pull .bucket{
     justify-content:flex-end;
   }
 }
+@media (min-width: 768px){
+
+  .tabs__section__nav--left{
+    -webkit-justify-content:flex-start;
+    -ms-flex-pack:start;
+    justify-content:flex-start;
+  }
+}
 .tabs__section__nav__item > a{
   color:#504f56;
   padding:.6rem 1.5rem;
@@ -4142,6 +4151,14 @@ input[type="text"].search__form__input--large{
   content:"\e91a";
   font-family:'icomoon';
   font-size:1.7rem;
+}
+.footer--sticky{
+  position:absolute;
+  width:100%;
+  text-align:center;
+  background:rgba(217,217,220,0.3);
+  bottom:0;
+  padding:2rem;
 }
 .site-header{
   position:fixed;

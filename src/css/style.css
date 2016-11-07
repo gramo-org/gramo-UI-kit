@@ -59,6 +59,7 @@
 @import url('_molecules/_tabs__section__nav.css');
 @import url('_molecules/_flash-message.css');
 @import url('_molecules/_search.css');
+@import url('_molecules/_footer.css');
 
 /*Organisms*/
 @import url('_organisms/_site-header.css');

@@ -6,6 +6,10 @@
   justify-content: flex-start;
   @media (--tablet) { justify-content: flex-end; }
 
+  &--left {
+    @media (--tablet) { justify-content: flex-start; }
+  }
+
   &__item > a {
     color: var(--slate-gray);
     padding: .6rem 1.5rem;
