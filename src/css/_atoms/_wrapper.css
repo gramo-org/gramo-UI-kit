@@ -3,7 +3,10 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+
+  &--is-editing {
+    background: var(--x-light-gray);
+  }
 }
 
 .wrapper__sidebar {
@@ -13,13 +16,6 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
     margin-right: 2rem;
     flex: 0 1 35%;
     padding: 0;
-  }
-
-  &--boxed {
-    margin: 0;
-    @media (--desktop) {
-      border-right: 1px solid var(--table-border-color);
-    }
   }
 }
 
