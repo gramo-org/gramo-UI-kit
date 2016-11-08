@@ -412,7 +412,7 @@ td.text--center, .fake-table__row > *.text--center{
   vertical-align:top;
 }
 
-.link-list, .filter-items, .btn-select > ul, .vertical__nav, .bucket__list, .tabs__nav, .tabs__section__nav, .page-contents ul{
+.filter-items, .btn-select > ul, .vertical__nav, .bucket__list, .tabs__nav, .tabs__section__nav, .page-contents ul{
   list-style:none;
   padding:0;
   margin:0;
@@ -1052,17 +1052,6 @@ main > section:first-of-type{
   padding:0 3rem;
 }
 
-.container--boxed{
-  margin:0;
-}
-
-@media (min-width: 960px){
-
-  .container--boxed{
-    border-right:1px solid #d9d9dc;
-  }
-}
-
 .container--hd{
   max-width:1400px;
 }
@@ -1122,10 +1111,6 @@ main > section:first-of-type{
 
 .container--is-editing::after{
   bottom:-1.2rem;
-}
-
-.container--with-sticky-footer{
-  padding-bottom:8rem;
 }
 @media print{
   *, *:before, *:after{
@@ -1330,7 +1315,7 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
   margin:0 1rem;
 }
 
-.link--no-line, .link-list li a{
+.link--no-line{
   text-decoration:none;
 }
 
@@ -1347,29 +1332,6 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
   margin-left:.25rem;
   vertical-align:middle;
   font-size:90%;
-}
-
-.link-list{
-  background:#ededed;
-  padding:2rem 4rem;
-  margin:1rem -1rem;
-  border:1px solid #d9d9dc;
-  border-width:1px 0;
-}
-
-.link-list li a{
-  padding:1rem .3rem;
-  display:block;
-  border-bottom:1px solid #d9d9dc;
-}
-
-.link-list li a::before{
-  position:relative;
-  top:1px;
-}
-
-.link-list li a.active{
-  color:#101010;
 }
 .scrollbar::-webkit-scrollbar, .sidebar .sidebar__nav::-webkit-scrollbar{
   width:10px;
@@ -1583,6 +1545,15 @@ input-placeholder{
 .wrapper--is-editing{
   background:#f9f9f9;
 }
+.wrapper--boxed{
+  margin:0;
+}
+@media (min-width: 960px){
+
+  .wrapper--boxed{
+    border-right:1px solid #d9d9dc;
+  }
+}
 
 .wrapper__sidebar{
   -webkit-flex:1 0 100%;
@@ -1631,6 +1602,10 @@ input-placeholder{
   height:calc(100vh - 25rem);
   overflow-y:auto;
   margin-bottom:0;
+}
+
+.scrollable-area--with-footer{
+  height:calc(100vh - 30rem);
 }
 
 .wrapper--full{
@@ -4159,11 +4134,9 @@ input[type="text"].search__form__input--large{
   font-size:1.7rem;
 }
 .footer--sticky{
-  position:absolute;
   width:100%;
   text-align:center;
-  background:rgba(217,217,220,0.3);
-  bottom:0;
+  background:#d9d9dc;
   padding:2rem;
 }
 .site-header{

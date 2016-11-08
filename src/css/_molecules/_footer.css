@@ -1,8 +1,6 @@
 .footer--sticky {
-  position: absolute;
   width: 100%;
   text-align: center;
-  background: rgba(217,217,220,0.3); /* var(--silver) */
-  bottom: 0;
+  background: var(--silver);
   padding: 2rem;
 }

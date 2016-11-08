@@ -7,6 +7,13 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   &--is-editing {
     background: var(--x-light-gray);
   }
+
+  &--boxed {
+    margin: 0;
+    @media (--desktop) {
+      border-right: 1px solid var(--table-border-color);
+    }
+  }
 }
 
 .wrapper__sidebar {
@@ -47,6 +54,10 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   height: calc(100vh - 25rem);
   overflow-y: auto;
   margin-bottom: 0; /* to prevent vertical scrolling */
+
+  &--with-footer {
+    height: calc(100vh - 30rem);
+  }
 }
 
 .wrapper--full {

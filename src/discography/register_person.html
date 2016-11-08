@@ -91,14 +91,6 @@
           </section>
           <section id="performer" class="tabs__section tabs__section--outline">
             <div class="wrapper wrapper--full">
-              <div class="container">
-                <ul class="row tabs__section__nav">
-                  <li class="tabs__section__nav__item"><a href="#innspillingsinfo" class="active">Personalia</a></li>
-                  <li class="tabs__section__nav__item"><a href="#produsenter">Diskografi</a></li>
-                  <li class="tabs__section__nav__item"><a href="#utover">Label</a></li>
-                </ul>
-              </div>
-
               <header class="infobar infobar--padded no-margin--bottom">
                 <div class="infobar__left">
                   <p class="infobar__meta">
@@ -111,180 +103,172 @@
               </header>
 
 
-              <div class="wrapper wrapper--is-editing">
-                <div class="wrapper__sidebar no-margin--right">
-                  <div class="scrollable-area">
-                    <section class="container container--boxed container--with-sticky-footer">
-                      <div class="section-header">
-                        <header>
-                          <h3>Personopplysninger</h3>
-                        </header>
-                      </div>
+              <div class="wrapper wrapper--is-editing scrollable-area scrollable-area--with-footer">
+                <div class="wrapper__sidebar wrapper--boxed no-margin--right">
+                  <section class="container">
+                    <div class="section-header">
+                      <header>
+                        <h3>Personopplysninger</h3>
+                      </header>
+                    </div>
 
-                      <form class="form">
-                        <fieldset class="form__fieldset">
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Fornavn</span>
-                              <input type="text" value="David Robert" class="form__input form__input--180" >
-                            </label>
+                    <form class="form">
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Fornavn</span>
+                            <input type="text" value="David Robert" class="form__input form__input--180" >
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Etternavn</span>
+                            <input type="text" value="Jones" class="form__input form__input--180" >
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Alt. navn</span>
+                            <input type="text" value="David Bowie" class="form__input form__input--180" >
+                          </label>
+                        </div>
+                        <div class="form__field form__field--inline form__field--inline--checkbox">
+                          <span class="form__field__text">Kjønn</span>
+                          <label class="form__label">
+                            <input type="radio" class="form__input--checkbox">
+                            <span>Mann</span>
+                          </label>
+                          <label class="form__label">
+                            <input type="radio" class="form__input--checkbox">
+                            <span>Kvinne</span>
+                          </label>
+                          <label class="form__label">
+                            <input type="radio" class="form__input--checkbox">
+                            <span>Annen</span>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Fødselsdato</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Dødsår</span>
+                            <input type="number" placeholder="2016" class="form__input form__input--130">
+                          </label>
+                        </div>
+                      </fieldset>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Statsborgerskap</span>
+                            <select class="select select--fluid form__input--180">
+                              <option>Norge</option>
+                              <option>Storbritannia</option>
+                              <option>USA</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Fra</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                          </label>
+                          <label class="form__label">
+                            <span>Til</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                          </label>
+                          <div class="form__field__action">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                           </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Etternavn</span>
-                              <input type="text" value="Jones" class="form__input form__input--180" >
-                            </label>
+                        </div>
+                        <div class="form__field__help">
+                          <p><a href="#" class="link--no-line">Legg til statsborgerskap</a></p>
+                        </div>
+                      </fieldset>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Bostedsland</span>
+                            <select class="select select--fluid form__input--180">
+                              <option>Norge</option>
+                              <option>Storbritannia</option>
+                              <option>USA</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Fra</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                          </label>
+                          <label class="form__label">
+                            <span>Til</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                          </label>
+                          <div class="form__field__action">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                           </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Alt. navn</span>
-                              <input type="text" value="David Bowie" class="form__input form__input--180" >
-                            </label>
-                          </div>
-                          <div class="form__field form__field--inline form__field--inline--checkbox">
-                            <span class="form__field__text">Kjønn</span>
-                            <label class="form__label">
-                              <input type="radio" class="form__input--checkbox">
-                              <span>Mann</span>
-                            </label>
-                            <label class="form__label">
-                              <input type="radio" class="form__input--checkbox">
-                              <span>Kvinne</span>
-                            </label>
-                            <label class="form__label">
-                              <input type="radio" class="form__input--checkbox">
-                              <span>Annen</span>
-                            </label>
-                          </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Fødselsdato</span>
-                              <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                            </label>
-                          </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Dødsår</span>
-                              <input type="number" placeholder="2016" class="form__input form__input--130">
-                            </label>
-                          </div>
-                        </fieldset>
-                        <fieldset class="form__fieldset">
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Statsborgerskap</span>
-                              <select class="select select--fluid form__input--180">
-                                <option>Norge</option>
-                                <option>Storbritannia</option>
-                                <option>USA</option>
-                              </select>
-                            </label>
-                          </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Fra</span>
-                              <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                            </label>
-                            <label class="form__label">
-                              <span>Til</span>
-                              <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                            </label>
-                            <div class="form__field__action">
-                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                            </div>
-                          </div>
-                          <div class="form__field__help">
-                            <p><a href="#" class="link--no-line">Legg til statsborgerskap</a></p>
-                          </div>
-                        </fieldset>
-                        <fieldset class="form__fieldset">
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Bostedsland</span>
-                              <select class="select select--fluid form__input--180">
-                                <option>Norge</option>
-                                <option>Storbritannia</option>
-                                <option>USA</option>
-                              </select>
-                            </label>
-                          </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Fra</span>
-                              <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                            </label>
-                            <label class="form__label">
-                              <span>Til</span>
-                              <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                            </label>
-                            <div class="form__field__action">
-                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                            </div>
-                          </div>
-                          <div class="form__field__help">
-                            <p><a href="#" class="link--no-line">Legg til bostedsland</a></p>
-                          </div>
-                        </fieldset>
-                        <h3 class="heading--sub">Kontakt informasjon</h3>
-                        <fieldset class="form__fieldset">
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Epost</span>
-                              <input type="text" value="david@bowie.com" class="form__input form__input--150" >
-                            </label>
-                          </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Mobilnummer</span>
-                              <input type="text" value="00 33 456278172" class="form__input form__input--150" >
-                            </label>
-                          </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Telefon</span>
-                              <input type="text" value="-" class="form__input form__input--150" >
-                            </label>
-                          </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Nettadresse</span>
-                              <input type="text" value="www.davidbowie.com" class="form__input form__input--180" >
-                            </label>
-                          </div>
-                        </fieldset>
-                        <fieldset class="form__fieldset">
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Adresse</span>
-                              <input type="text" value="" class="form__input form__input--300" >
-                            </label>
-                          </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span></span>
-                              <input type="text" value="" class="form__input form__input--300" >
-                            </label>
-                          </div>
-                          <div class="form__field form__field--inline">
-                            <label class="form__label">
-                              <span>Postnummer</span>
-                              <input type="text" value="0123" class="form__input form__input--100" >
-                            </label>
-                            <label class="form__label">
-                              <span>Poststed</span>
-                              <input type="text" value="Oslo" class="form__input form__input--130" >
-                            </label>
-                          </div>
-                        </fieldset>
-                      </form>
-                      <ul class="link-list">
-                        <li><a href="#" data-type="performer" class="active">Se utøver</a></li>
-                        <li><a href="#" data-type="owner">Register personlig produsent</a></li>
-                        <li><a href="#" data-type="member">Register medlemskap</a></li>
-                        <li><a href="#" data-type="contact">Register kontaktperson</a></li>
-                      </ul>
-                    </section>
-                  </div><!-- end /.scrollable-area -->
+                        </div>
+                        <div class="form__field__help">
+                          <p><a href="#" class="link--no-line">Legg til bostedsland</a></p>
+                        </div>
+                      </fieldset>
+                      <h3 class="heading--sub">Kontakt informasjon</h3>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Epost</span>
+                            <input type="text" value="david@bowie.com" class="form__input form__input--150" >
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Mobilnummer</span>
+                            <input type="text" value="00 33 456278172" class="form__input form__input--150" >
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Telefon</span>
+                            <input type="text" value="-" class="form__input form__input--150" >
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Nettadresse</span>
+                            <input type="text" value="www.davidbowie.com" class="form__input form__input--180" >
+                          </label>
+                        </div>
+                      </fieldset>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Adresse</span>
+                            <input type="text" value="" class="form__input form__input--300" >
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span></span>
+                            <input type="text" value="" class="form__input form__input--300" >
+                          </label>
+                        </div>
+                        <div class="form__field form__field--inline">
+                          <label class="form__label">
+                            <span>Postnummer</span>
+                            <input type="text" value="0123" class="form__input form__input--100" >
+                          </label>
+                          <label class="form__label">
+                            <span>Poststed</span>
+                            <input type="text" value="Oslo" class="form__input form__input--130" >
+                          </label>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </section>
                 </div><!-- end /.wrapper__sidebar -->
 
                 <div class="wrapper__main">
@@ -295,129 +279,128 @@
                       <li class="tabs__section__nav__item"><a href="#">Medlemskap</a></li>
                     </ul>
                   </div>
-                  <div class="scrollable-area">
-                    <section class="container container--padded container--with-sticky-footer">
-                      <div class="section-header">
-                        <header>
-                          <h2>Utøver</h2>
-                        </header>
-                        <div class="section-header__toolbar">
-                          <a href="#" class="link--edit">Rediger</a>
-                        </div>
+
+                  <section class="container container--padded">
+                    <div class="section-header">
+                      <header>
+                        <h2>Utøver</h2>
+                      </header>
+                      <div class="section-header__toolbar">
+                        <a href="#" class="link--edit">Rediger</a>
                       </div>
-                      <form>
-                        <fieldset class="form__fieldset">
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Artistnavn</span>
-                              <input type="text" value="David Bowie" class="form__input form__input--300" >
-                            </label>
+                    </div>
+                    <form>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Artistnavn</span>
+                            <input type="text" value="David Bowie" class="form__input form__input--300" >
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Alt. artistnavn</span>
+                            <input type="text" value="Jones" class="form__input form__input--143">
+                          </label>
+                          <label class="form__label">
+                            <input type="text" value="Ziggy Stardust" class="form__input form__input--143">
+                          </label>
+                          <div class="form__field__action">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                           </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Alt. artistnavn</span>
-                              <input type="text" value="Jones" class="form__input form__input--143">
-                            </label>
-                            <label class="form__label">
-                              <input type="text" value="Ziggy Stardust" class="form__input form__input--143">
-                            </label>
-                            <div class="form__field__action">
-                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                            </div>
+                        </div>
+                        <div class="form__field__help">
+                          <p><a href="#" class="link--no-line">Legg til alt. artistnavn</a></p>
+                        </div>
+                      </fieldset>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Gruppe</span>
+                            <input type="text" value="Spiders from Mars" class="form__input form__input--300" >
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span></span>
+                            <input type="text" value="Tin Machine" class="form__input form__input--300">
+                          </label>
+                          <div class="form__field__action">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                           </div>
-                          <div class="form__field__help">
-                            <p><a href="#" class="link--no-line">Legg til alt. artistnavn</a></p>
-                          </div>
-                        </fieldset>
-                        <fieldset class="form__fieldset">
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Gruppe</span>
-                              <input type="text" value="Spiders from Mars" class="form__input form__input--300" >
-                            </label>
-                          </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span></span>
-                              <input type="text" value="Tin Machine" class="form__input form__input--300">
-                            </label>
-                            <div class="form__field__action">
-                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                            </div>
-                          </div>
-                          <div class="form__field__help">
-                            <p><a href="#" class="link--no-line">Legg til gruppe</a></p>
-                          </div>
-                        </fieldset>
-                        <fieldset class="form__fieldset">
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Instrument</span>
-                              <div class="searchable-list searchable-list form__input form__input--180">
-                                <div class="searchable-list__heading searchable-list__heading" tabindex="0">
-                                  <span class="searchable-list__selected">Velg intrument</span>
-                                </div>
-                                <div class="searchable-list__dropdown">
-                                  <input id="ember1188" type="text" class="searchable-list__search form__input form__input--block">
-                                  <ul>
-                                    <li class="searchable-list__option">Piano</li>
-                                    <li class="searchable-list__option">Gitar</li>
-                                    <li class="searchable-list__option">Bass</li>
-                                  </ul>
-                                </div>
+                        </div>
+                        <div class="form__field__help">
+                          <p><a href="#" class="link--no-line">Legg til gruppe</a></p>
+                        </div>
+                      </fieldset>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Instrument</span>
+                            <div class="searchable-list searchable-list form__input form__input--180">
+                              <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                                <span class="searchable-list__selected">Velg intrument</span>
                               </div>
-                            </label>
-                          </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span></span>
-                              <div class="searchable-list searchable-list form__input form__input--180">
-                                <div class="searchable-list__heading searchable-list__heading" tabindex="0">
-                                  <span class="searchable-list__selected">Velg intrument</span>
-                                </div>
-                                <div class="searchable-list__dropdown">
-                                  <input id="ember1188" type="text" class="searchable-list__search form__input form__input--block">
-                                  <ul>
-                                    <li class="searchable-list__option">Piano</li>
-                                    <li class="searchable-list__option">Gitar</li>
-                                    <li class="searchable-list__option">Bass</li>
-                                  </ul>
-                                </div>
+                              <div class="searchable-list__dropdown">
+                                <input id="ember1188" type="text" class="searchable-list__search form__input form__input--block">
+                                <ul>
+                                  <li class="searchable-list__option">Piano</li>
+                                  <li class="searchable-list__option">Gitar</li>
+                                  <li class="searchable-list__option">Bass</li>
+                                </ul>
                               </div>
-                            </label>
-                            <div class="form__field__action">
-                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                             </div>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span></span>
+                            <div class="searchable-list searchable-list form__input form__input--180">
+                              <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                                <span class="searchable-list__selected">Velg intrument</span>
+                              </div>
+                              <div class="searchable-list__dropdown">
+                                <input id="ember1188" type="text" class="searchable-list__search form__input form__input--block">
+                                <ul>
+                                  <li class="searchable-list__option">Piano</li>
+                                  <li class="searchable-list__option">Gitar</li>
+                                  <li class="searchable-list__option">Bass</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </label>
+                          <div class="form__field__action">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                           </div>
-                          <div class="form__field__help">
-                            <p><a href="#" class="link--no-line">Legg til</a></p>
-                          </div>
-                        </fieldset>
-                        <fieldset class="form__fieldset">
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>IPN</span>
-                              <input type="text" value="USJT10300113" class="form__input form__input--130" disabled>
-                            </label>
-                          </div>
-                          <div class="form__field">
-                            <label class="form__label">
-                              <span>Andre IDnummer</span>
-                              <input type="text" value="USJT10300113" class="form__input form__input--130">
-                            </label>
-                            <label class="form__label">
-                              <input type="text" placeholder="beskrivelse" class="form__input form__input--130">
-                            </label>
-                          </div>
-                        </fieldset>
-                      </form>
-                    </section>
-                  </div><!-- end /.scrollable-area -->
+                        </div>
+                        <div class="form__field__help">
+                          <p><a href="#" class="link--no-line">Legg til</a></p>
+                        </div>
+                      </fieldset>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>IPN</span>
+                            <input type="text" value="USJT10300113" class="form__input form__input--130" disabled>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Andre IDnummer</span>
+                            <input type="text" value="USJT10300113" class="form__input form__input--130">
+                          </label>
+                          <label class="form__label">
+                            <input type="text" placeholder="beskrivelse" class="form__input form__input--130">
+                          </label>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </section>
                 </div><!-- end /.wrapper__main -->
-                <footer class="footer footer--sticky">
-                  <a href="#" class="btn btn--primary">Lagre</a>
-                </footer>
-              </div><!-- end /.wrapper -->
+              </div><!-- end /.wrapper.scrollable-area -->
+              <footer class="footer footer--sticky">
+                <a href="#" class="btn btn--primary">Lagre</a>
+              </footer>
             </div><!-- end/ .wrapper-full -->
           </section><!--end /.tabs__section-->
         </div><!--end /.tabs-->

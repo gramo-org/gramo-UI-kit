@@ -26,13 +26,6 @@ main > section:first-of-type {
     padding: 0 3rem;
   }
 
-  &--boxed {
-    margin: 0;
-    @media (--desktop) {
-      border-right: 1px solid var(--table-border-color);
-    }
-  }
-
   &--hd {
     max-width: var(--container-hd);
     @media(--desktop) {
@@ -84,9 +77,5 @@ main > section:first-of-type {
     &::after {
       bottom: -1.2rem;
     }
-  }
-
-  &--with-sticky-footer {
-    padding-bottom: 8rem;
   }
 }
