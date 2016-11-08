@@ -1572,6 +1572,15 @@ input-placeholder{
   }
 }
 
+@media (min-width: 960px){
+
+  .wrapper__sidebar--45{
+    -webkit-flex:0 1 45%;
+    -ms-flex:0 1 45%;
+    flex:0 1 45%;
+  }
+}
+
 .wrapper__main{
   -webkit-flex:1 0 100%;
   -ms-flex:1 0 100%;
@@ -1585,6 +1594,15 @@ input-placeholder{
     -ms-flex:1 1 55%;
     flex:1 1 55%;
     padding:0;
+  }
+}
+
+@media (min-width: 960px){
+
+  .wrapper__main--55{
+    -webkit-flex:0 1 55%;
+    -ms-flex:0 1 55%;
+    flex:0 1 55%;
   }
 }
 

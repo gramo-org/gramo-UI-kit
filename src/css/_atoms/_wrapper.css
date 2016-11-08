@@ -26,12 +26,24 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   }
 }
 
+.wrapper__sidebar--45 {
+  @media (--desktop) {
+    flex: 0 1 45%;
+  }
+}
+
 .wrapper__main {
   flex: 1 0 100%;
 
   @media (--desktop) {
     flex: 1 1 55%;
     padding: 0;
+  }
+}
+
+.wrapper__main--55 {
+  @media (--desktop) {
+    flex: 0 1 55%;
   }
 }
 
