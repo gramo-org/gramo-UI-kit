@@ -1052,6 +1052,24 @@ main > section:first-of-type{
   padding:0 3rem;
 }
 
+.container--boxed{
+  margin:0;
+  position:relative;
+}
+
+@media (min-width: 960px){
+}
+
+.container--boxed::after{
+  content:'';
+  border-right:1px solid #d9d9dc;
+  position:absolute;
+  top:0;
+  height:calc(100vh + 4rem);
+  right:0;
+  width:1px;
+}
+
 .container--hd{
   max-width:1400px;
 }
@@ -1544,15 +1562,6 @@ input-placeholder{
 }
 .wrapper--is-editing{
   background:#f9f9f9;
-}
-.wrapper--boxed{
-  margin:0;
-}
-@media (min-width: 960px){
-
-  .wrapper--boxed{
-    border-right:1px solid #d9d9dc;
-  }
 }
 
 .wrapper__sidebar{

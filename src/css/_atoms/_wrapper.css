@@ -7,13 +7,6 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   &--is-editing {
     background: var(--x-light-gray);
   }
-
-  &--boxed {
-    margin: 0;
-    @media (--desktop) {
-      border-right: 1px solid var(--table-border-color);
-    }
-  }
 }
 
 .wrapper__sidebar {

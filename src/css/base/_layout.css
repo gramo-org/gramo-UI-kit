@@ -26,6 +26,23 @@ main > section:first-of-type {
     padding: 0 3rem;
   }
 
+  &--boxed {
+    margin: 0;
+    position: relative;
+    @media (--desktop) {
+
+    }
+    &::after {
+      content: '';
+      border-right: 1px solid var(--table-border-color);
+      position: absolute;
+      top: 0;
+      height: calc(100vh + 4rem);
+      right: 0;
+      width: 1px;
+    }
+  }
+
   &--hd {
     max-width: var(--container-hd);
     @media(--desktop) {
