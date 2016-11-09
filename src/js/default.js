@@ -222,7 +222,7 @@ $(document).ready(function() {
     }
     scrollSpy('.page-contents a, .vertical__nav a');
 
-// Make fake-table__wrapper--sidebar sticky
+// Make fake-table__panels__sidebar sticky
 
 
 
@@ -233,10 +233,10 @@ $(document).ready(function() {
 //   var scroll = $(window).scrollTop();
 //   var menuWidth = $('.page-contents--sticky').parent().innerWidth() - 50 + 'px';
 //   if (scroll >= 50) {
-//     $('.page-contents--sticky , .fake-table__wrapper--sidebar').addClass('affix');
+//     $('.page-contents--sticky , .fake-table__panels__sidebar').addClass('affix');
 //     $('.page-contents--sticky').width(menuWidth);
 //   } else {
-//     $('.page-contents--sticky , .fake-table__wrapper--sidebar').removeClass('affix');
+//     $('.page-contents--sticky , .fake-table__panels__sidebar').removeClass('affix');
 //     $('.page-contents--sticky').css('width','auto');
 //   }
 // });

@@ -1552,7 +1552,7 @@ input-placeholder{
     width:40px!important;
   }
 }
-.wrapper{
+.panels{
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
@@ -1560,11 +1560,11 @@ input-placeholder{
   -ms-flex-wrap:wrap;
   flex-wrap:wrap;
 }
-.wrapper--is-editing{
+.panels--is-editing{
   background:#f9f9f9;
 }
 
-.wrapper__sidebar{
+.panels__sidebar{
   -webkit-flex:1 0 100%;
   -ms-flex:1 0 100%;
   flex:1 0 100%;
@@ -1572,7 +1572,7 @@ input-placeholder{
 
 @media (min-width: 960px){
 
-  .wrapper__sidebar{
+  .panels__sidebar{
     margin-right:2rem;
     -webkit-flex:0 1 35%;
     -ms-flex:0 1 35%;
@@ -1583,14 +1583,14 @@ input-placeholder{
 
 @media (min-width: 960px){
 
-  .wrapper__sidebar--45{
+  .panels__sidebar--45{
     -webkit-flex:0 1 45%;
     -ms-flex:0 1 45%;
     flex:0 1 45%;
   }
 }
 
-.wrapper__main{
+.panels__main{
   -webkit-flex:1 0 100%;
   -ms-flex:1 0 100%;
   flex:1 0 100%;
@@ -1598,7 +1598,7 @@ input-placeholder{
 
 @media (min-width: 960px){
 
-  .wrapper__main{
+  .panels__main{
     -webkit-flex:1 1 55%;
     -ms-flex:1 1 55%;
     flex:1 1 55%;
@@ -1608,20 +1608,20 @@ input-placeholder{
 
 @media (min-width: 960px){
 
-  .wrapper__main--55{
+  .panels__main--55{
     -webkit-flex:0 1 55%;
     -ms-flex:0 1 55%;
     flex:0 1 55%;
   }
 }
 
-.wrapper__sidebar .fake-table__row div[class*="col-"]:first-child, .wrapper__main .fake-table__row div[class*="col-"]:first-child{
+.panels__sidebar .fake-table__row div[class*="col-"]:first-child, .panels__main .fake-table__row div[class*="col-"]:first-child{
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
 }
 
-.wrapper__sidebar .container--is-editing, .wrapper__main .container--is-editing{
+.panels__sidebar .container--is-editing, .panels__main .container--is-editing{
   height:calc(100% - 1.3rem);
 }
 
@@ -1633,15 +1633,6 @@ input-placeholder{
 
 .scrollable-area--with-footer{
   height:calc(100vh - 30rem);
-}
-
-.wrapper--full{
-  -webkit-flex:1 1 auto;
-  -ms-flex:1 1 auto;
-  flex:1 1 auto;
-  -webkit-flex-direction:column;
-  -ms-flex-direction:column;
-  flex-direction:column;
 }
 .form__label.is-valid .form__input{
     border:1px solid #ededed;
