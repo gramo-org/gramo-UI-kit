@@ -1472,6 +1472,7 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
   padding-left:.5rem;
   text-align:center;
   width:auto;
+  min-width:135px;
 }
 
 .form__input--date::-webkit-calendar-picker-indicator, .form__input--date::-webkit-inner-spin-button, .form__input[type="date"]::-webkit-calendar-picker-indicator, .form__input[type="date"]::-webkit-inner-spin-button{
@@ -4573,6 +4574,9 @@ main.pull .section-header--fixed{
     display:-ms-flexbox;
     display:flex;
   }
+}
+.infobar--in-tabs{
+  background:#ededed;
 }
 .infobar--padded{
   padding-left:1rem;

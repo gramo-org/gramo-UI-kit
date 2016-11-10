@@ -50,6 +50,7 @@ input[type="radio"], input[type="checkbox"],
   padding-left: .5rem;
   text-align: center;
   width: auto;
+  min-width: 135px;
 
   &::-webkit-calendar-picker-indicator,
   &::-webkit-inner-spin-button {
