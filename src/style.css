@@ -4577,10 +4577,9 @@ main.pull .section-header--fixed{
 }
 .infobar--in-tabs{
   background:#ededed;
-}
-.infobar--padded{
   padding-left:1rem;
   padding-right:1rem;
+  margin-bottom:0;
 }
 .infobar--no-border{
   border-bottom:0;

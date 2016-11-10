@@ -8,11 +8,9 @@
 
   &--in-tabs {
     background: var(--light-gray);
-  }
-
-  &--padded {
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-bottom: 0;
   }
 
   &--no-border {
