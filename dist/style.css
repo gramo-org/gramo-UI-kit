@@ -4597,6 +4597,7 @@ main.pull .section-header--fixed{
     display:-webkit-flex;
     display:-ms-flexbox;
     display:flex;
+    min-height:3.2rem;
   }
 }
 .infobar--in-tabs{

@@ -5,6 +5,7 @@
   @extend %margin-bottom;
   @media (--tablet) {
     display: flex;
+    min-height: 3.2rem;
   }
 
   &--in-tabs {
