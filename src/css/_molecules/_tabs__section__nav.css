@@ -10,6 +10,12 @@
     @media (--tablet) { justify-content: flex-start; }
   }
 
+  &--absolute {
+    position: absolute;
+    left: calc(45% + 2px);
+    bottom: 0;
+  }
+
   &__item > a {
     color: var(--slate-gray);
     padding: .6rem 1.5rem;
@@ -35,6 +41,26 @@
       border-width: 7px 7px 0 7px;
       border-color: var(--table-border-color) transparent transparent transparent;
       z-index: 1;
+    }
+  }
+
+  /*&__item > a:hover {
+    background: var(--gramo-blue);
+    color: var(--gramo-white);
+    text-decoration: none;
+
+    &:after {
+      border-color: var(--gramo-blue) transparent transparent transparent;
+    }
+  }*/
+
+  &__item > a.active {
+    background: var(--slate-gray);
+    color: var(--gramo-white);
+    text-decoration: none;
+
+    &:after {
+      border-color: var(--slate-gray) transparent transparent transparent;
     }
   }
 }
