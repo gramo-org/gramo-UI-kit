@@ -22,7 +22,7 @@
   /*.form__label:first-child > span,*/
   & > *:first-child span,
   .form__field__text {
-    width: 120px;
+    width: 132px;
     text-align: right;
     padding-right: 1rem;
 
@@ -63,7 +63,7 @@
   .form__input__errors > p,
   p.error--form-field {
     @media (--tablet) {
-      margin-left: 124px
+      margin-left: 136px
     }
   }
 }
@@ -80,6 +80,6 @@
 /* Make help text line up with inputs */
 .form__field__help > p {
   @media (--tablet) {
-    margin-left: 124px
+    margin-left: 136px
   }
 }
