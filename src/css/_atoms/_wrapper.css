@@ -7,6 +7,10 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   &--is-editing {
     background: var(--x-light-gray);
   }
+
+  &--has-divider {
+    @media (--desktop) { background: url(img/line.png) calc(45% - .8rem) 0 repeat-y; }
+  }
 }
 
 .panels__sidebar {
