@@ -1549,7 +1549,9 @@ input-placeholder{
 @media (min-width: 960px){
 
   .panels--has-divider{
-    background:url(img/line.png) calc(45% - .8rem) 0 repeat-y;
+    background-image:url(img/line.png);
+    background-repeat:repeat-y;
+    background-position:calc(45% - .8rem) 0;
   }
 }
 
