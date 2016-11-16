@@ -86,27 +86,27 @@
   color: var(--off-gray);
 }
 
-[data-type="performer"]::before {
+[data-type*="performer"]::before {
   content: "\e916";
 }
 
-[data-type="album"]::before {
+[data-type*="album"]::before {
   content: "\e917";
 }
 
-[data-type="recording"]::before {
+[data-type*="recording"]::before {
   content: "\e919";
 }
 
-[data-type="label"]::before,
-[data-type="owner"]::before {
+[data-type*="label"]::before,
+[data-type*="producer"]::before {
   content: "\e918";
 }
 
-[data-type="contact"]::before {
+[data-type*="contact"]::before {
   content: "\e91d";
 }
 
-[data-type="member"]::before {
+[data-type*="member"]::before {
   content: "\e91e";
 }
