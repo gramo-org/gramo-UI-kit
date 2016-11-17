@@ -3881,11 +3881,17 @@ main.pull .bucket{
 .tabs__section__nav--absolute a{
   text-decoration:none;
 }
-.tabs__section__nav--absolute a span{
+.tabs__section__nav--absolute a span:last-child{
   text-decoration:underline;
 }
 .tabs__section__nav--absolute a.active span{
   text-decoration:none;
+}
+.tabs__section__nav__item{
+  position:relative;
+}
+.tabs__section__nav__item:before{
+  position:absolute;
 }
 .tabs__section__nav__item > a{
   color:#504f56;

@@ -18,13 +18,21 @@
     a {
       text-decoration: none;
 
-      span {
+      span:last-child {
         text-decoration: underline;
       }
 
       &.active span {
         text-decoration: none;
       }
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &:before {
+      position: absolute;
     }
   }
 
