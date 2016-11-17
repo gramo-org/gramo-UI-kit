@@ -3878,6 +3878,15 @@ main.pull .bucket{
   left:calc(45% + 2px);
   bottom:0;
 }
+.tabs__section__nav--absolute a{
+  text-decoration:none;
+}
+.tabs__section__nav--absolute a span{
+  text-decoration:underline;
+}
+.tabs__section__nav--absolute a.active span{
+  text-decoration:none;
+}
 .tabs__section__nav__item > a{
   color:#504f56;
   padding:.6rem 1.5rem;
