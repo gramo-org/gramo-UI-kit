@@ -3808,7 +3808,7 @@ main.pull .bucket{
 .tabs__nav--flexible .tabs__nav__item > a{
   padding-left:1rem;
   padding-right:1.5rem;
-  max-width:150px;
+  max-width:200px;
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
