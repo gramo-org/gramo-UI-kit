@@ -1306,6 +1306,21 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 .icon--home:before{
 	content:"\e905";
 }
+
+.demo h2{
+  margin-bottom:1.2rem
+}
+
+.ico-container{
+  display:inline-block;
+  border:1px solid #d9d9dc;
+  padding:1rem;
+}
+
+.ico-container span{
+  display:block;
+  background:#fdfdfd;
+}
 .link--no-style, .btn-select > ul li a{
   color:#3f3e44;
 }

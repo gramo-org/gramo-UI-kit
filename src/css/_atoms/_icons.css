@@ -164,3 +164,20 @@
 .icon--home:before {
 	content: "\e905";
 }
+
+.demo {
+  h2 {
+    margin-bottom: 1.2rem
+  }
+}
+
+.ico-container {
+  display: inline-block;
+  border: 1px solid var(--silver);
+  padding: 1rem;
+
+  span {
+    display: block;
+    background: var(--gramo-white);
+  }
+}
