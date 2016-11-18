@@ -173,11 +173,16 @@
 
 .ico-container {
   display: inline-block;
-  border: 1px solid var(--silver);
+  border: 1px solid var(--gramo-white);
   padding: 1rem;
+  margin: 1rem 1rem 0 0;
+  text-align: center;
+  background: #fdfdfd;
 
   span {
     display: block;
-    background: var(--gramo-white);
+    background: var(--light-gray);
+    padding: 0 1rem;
+    margin: .5rem -1rem -1rem -1rem;
   }
 }
