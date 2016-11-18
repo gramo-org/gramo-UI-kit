@@ -1313,7 +1313,7 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 
 .ico-container{
   display:inline-block;
-  border:1px solid #fdfdfd;
+  border:1px solid #d9d9dc;
   padding:1rem;
   margin:1rem 1rem 0 0;
   text-align:center;
