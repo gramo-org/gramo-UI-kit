@@ -86,7 +86,8 @@
   color: var(--off-gray);
 }
 
-[data-type*="performer"]::before {
+[data-type*="performer"]::before,
+[data-type*="people"]::before {
   content: "\e916";
 }
 

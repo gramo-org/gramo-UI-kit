@@ -4699,7 +4699,7 @@ main.pull .section-header--fixed{
   color:#a5a4ab;
 }
 
-[data-type*="performer"]::before{
+[data-type*="performer"]::before, [data-type*="people"]::before{
   content:"\e916";
 }
 
