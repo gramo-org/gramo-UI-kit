@@ -87,7 +87,7 @@
 }
 
 [data-type*="performer"]::before,
-[data-type*="people"]::before {
+[data-type*="person"]::before {
   content: "\e916";
 }
 
