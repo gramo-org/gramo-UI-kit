@@ -27,7 +27,8 @@
     content: "\e917";
   }
   &--performer:before,
-  &--group:before {
+  &--group:before,
+  &--person:before {
     content: "\e916";
     top: .12rem;
   }

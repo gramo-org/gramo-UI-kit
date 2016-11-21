@@ -3859,7 +3859,7 @@ main.pull .bucket{
 .tabs__nav__item__type--album:before{
   content:"\e917";
 }
-.tabs__nav__item__type--performer:before, .tabs__nav__item__type--group:before{
+.tabs__nav__item__type--performer:before, .tabs__nav__item__type--group:before, .tabs__nav__item__type--person:before{
   content:"\e916";
   top:.12rem;
 }
