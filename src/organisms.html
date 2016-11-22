@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <style>
+    /*Temporary styling to highlight grid*/
+    .container.grid-test > .row {
+      border: 1px solid #fff;
+      border-width: 0 0 1px 0;
+    }
+
+    .container.grid-test > .row > * {
+      background: rgb(180, 184, 189);
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .container.grid-test > .row > *:nth-child(odd) {
+      background: rgb(217, 219, 222);
+    }
+
+    section {
+      margin-bottom: 1.2rem;
+    }
+
+    h3 {
+      margin-bottom: .6rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <a href="#top"><h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1></a>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item"><a href="#">Global</a></li>
+            <li class="vertical__nav__item"><a href="/">Atoms</a></li>
+            <li class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded"><a href="#">Molecules</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_user">User</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_radio-group">Radio group</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_pagination">Pagination</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_form-field">Form field</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_vertical-nav">Vertical nav</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_flash-message">Flash message</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_button-group">Button group</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_searchable-list">Searchable list</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_section-header">Section header</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_site-header">Site header</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_tabs-type">Tabs type</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#section_tab-section-nav">Tabs section nav</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main id="top">
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+      <!--Search-->
+
+      <section class="container container--hd">
+        <div class="row">
+          <aside class="col-xs-5">
+            <nav class="page-contents page-contents--sticky">
+              <section class="search">
+                <form id="live-search" action="" class="search__form search__form--simple" method="post">
+                      <input type="text" class="search__form__input" id="filter" value="" />
+                      <span class="search__clear"><i class="icon--cross"></i></span>
+                      <!-- <span id="filter-count"></span> -->
+                </form>
+              </section>
+
+            </nav>
+          </aside><!--Page-contents menu-->
+        </div>
+        <div class="row">
+          <div class="col-xs col-lg-8">
+            <section id="Molecules">
+              <h1>Organisms</h1>
+
+              <h3>Tabs</h3>
+              <section class="component-view" id="section_tabs">
+                <div class="tabs">
+                  <ul class="tabs__nav tabs__nav--flexible">
+                    <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
+                    <li class="tabs__nav__item">
+                      <a href="#album">
+                        <span class="tabs__nav__item__type tabs__nav__item__type--recording">Innspilling</span>
+                        Hunky Dory
+                      </a>
+                      <a href="#" alt="Lukk" class="tabs__nav__close"></a>
+                    </li>
+                    <li class="tabs__nav__item">
+                      <a href="#album">
+                        <span class="tabs__nav__item__type tabs__nav__item__type--album">Utøver</span>
+                        Hunky Dory
+                      </a>
+                      <a href="#" alt="Lukk" class="tabs__nav__close"></a>
+                    </li>
+                    <li class="tabs__nav__item">
+                      <a href="#performer">
+                        <span class="tabs__nav__item__type tabs__nav__item__type--performer">Utøver</span>
+                        David Robert JonesDavid Robert JonesDavid Robert Jones
+                      </a>
+                      <a href="#" alt="Lukk" class="tabs__nav__close"></a>
+                    </li>
+                  </ul>
+                  <section class="tabs__section tabs__section--outline">
+                    <ul class="tabs__section__nav">
+                      <li class="tabs__section__nav__item"><a class="active" href="#innspillingsinfo">Innspillingsinfo</a></li>
+                      <li class="tabs__section__nav__item"><a href="#produsenter">Produsenter</a></li>
+                      <li class="tabs__section__nav__item"><a href="#utover">Utøver</a></li>
+                      <li class="tabs__section__nav__item"><a href="#">Album</a></li>
+                    </ul>
+                  </section>
+                </div>
+              </section>
+              <section id="section_tabs-markup">
+                <h4>Markup for tabs</h4>
+<div class="highlight"><pre class="prettyprint">
+  <div class="tabs">
+    <ul class="tabs__nav tabs__nav--flexible">
+      <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
+      <li class="tabs__nav__item">
+        <a href="#album">
+          <span class="tabs__nav__item__type tabs__nav__item__type--recording">Innspilling</span>
+          Hunky Dory
+        </a>
+        <a href="#" alt="Lukk" class="tabs__nav__close"></a>
+      </li>
+      <li class="tabs__nav__item">
+        <a href="#album">
+          <span class="tabs__nav__item__type tabs__nav__item__type--album">Utøver</span>
+          Hunky Dory
+        </a>
+        <a href="#" alt="Lukk" class="tabs__nav__close"></a>
+      </li>
+      <li class="tabs__nav__item">
+        <a href="#performer">
+          <span class="tabs__nav__item__type tabs__nav__item__type--performer">Utøver</span>
+          David Robert JonesDavid Robert JonesDavid Robert Jones
+        </a>
+        <a href="#" alt="Lukk" class="tabs__nav__close"></a>
+      </li>
+    </ul>
+    <section class="tabs__section tabs__section--outline">
+      <ul class="tabs__section__nav">
+        <li class="tabs__section__nav__item"><a class="active" href="#innspillingsinfo">Innspillingsinfo</a></li>
+        <li class="tabs__section__nav__item"><a href="#produsenter">Produsenter</a></li>
+        <li class="tabs__section__nav__item"><a href="#utover">Utøver</a></li>
+        <li class="tabs__section__nav__item"><a href="#">Album</a></li>
+      </ul>
+    </section>
+  </div>
+</pre></div>
+              </section>
+
+              <h3>List</h3>
+              <section class="component-view" id="section_list">
+                <ul class="fake-table" style="max-width: 350px;min-width:0">
+                  <li class="fake-table__row fake-table__row--selected">
+                    <div class="col-xs-1">
+                      <label class="form__label">
+                        <input type="checkbox">
+                      </label>
+                    </div>
+                    <div class="col-xs-8">
+                      <span class="text--small text--light"><a href="#"><i class="icon--ban"></i> Ikke utgitt</a></span>
+                      <h4><a href="#">Is That What You Call Love?</a></h4>
+                      <span><a href="#">Hawksley Workman</a></span>
+                    </div>
+                    <div class="col-xs-3 text--right">
+                      <span class="text--small text--bold"><i class="icon--hits"></i> 10 treff</span>
+                      <span>3:27:51</span>
+                      <span>234</span>
+                    </div>
+                  </li><!--end .fake-table__row-->
+                </ul>
+                <ol class="fake-table fake-table--numeric">
+                  <li class="fake-table__row">
+                    <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
+                      <div class="fake-table__toggle-row">
+                        <div class="col-xs-3">
+                          <span class="text--bold">Is That What You Call Love?</span>
+                        </div>
+                        <div class="col-xs-3">
+                          Hawksley Workman
+                        </div>
+                        <div class="col-xs-4 text--right">
+                          Diskografi: ISRC  og Hovedartist(100)
+                        </div>
+                        <div class="col-xs fake-table__cell--action">
+                          <a href="#" class="table-row-toggle"></a>
+                        </div>
+                      </div><!--end .fake-table__toggle-row-->
+                    </div><!--end .fake-table__toggle-container-->
+                  </li>
+                </ol>
+              </section>
+
+              <section id="section_list-markup">
+                <h4>Markup for radio group</h4>
+<div class="highlight"><pre class="prettyprint">
+  <ul class="fake-table">
+    <li class="fake-table__row fake-table__row--selected">
+      <div class="col-xs-1">
+        <label class="form__label">
+          <input type="checkbox">
+        </label>
+      </div>
+      <div class="col-xs-8">
+        <span class="text--small text--light"><a href="#"><i class="icon--ban"></i> Ikke utgitt</a></span>
+        <h4><a href="#">Is That What You Call Love?</a></h4>
+        <span><a href="#">Hawksley Workman</a></span>
+      </div>
+      <div class="col-xs-3 text--right">
+        <span class="text--small text--bold"><i class="icon--hits"></i> 10 treff</span>
+        <span>3:27:51</span>
+        <span>234</span>
+      </div>
+    </li>
+  </ul>
+  <ol class="fake-table fake-table--numeric">
+    <li class="fake-table__row">
+      <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
+        <div class="fake-table__toggle-row">
+          <div class="col-xs-3">
+            <span class="text--bold">Is That What You Call Love?</span>
+          </div>
+          <div class="col-xs-3">
+            Hawksley Workman
+          </div>
+          <div class="col-xs-4 text--right">
+            Diskografi: ISRC  og Hovedartist(100)
+          </div>
+          <div class="col-xs fake-table__cell--action">
+            <a href="#" class="table-row-toggle"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ol>
+</pre></div>
+              </section>
+
+              <h3>Pagination</h3>
+              <section class="component-view" id="section_infobar">
+                <div class="infobar no-padding--top">
+                  <div class="infobar__left">
+                    <p class="infobar__meta">
+                      <span><i class="icon--ban"></i> Ikke utgitt</span>
+                      <span>Six Shooter Records</span>
+                      <span>SIX093LP</span>
+                    </p>
+                    <h2 class="infobar__heading">Is That What You Call Love?</h2>
+                    <h3>Hawksley Workman</h3>
+                  </div>
+                  <div class="infobar__right">
+                    <span class="infobar__meta">10 treff</span>
+                    <h2 class="infobar__count">03:27:51</h2>
+                    <h3>234</h3>
+                  </div>
+                  <div class="infobar__action">
+                    <button class="btn btn--primary">Restliste</button>
+                    <button class="btn btn--secondary">Ikke utgitt</button>
+                  </div>
+                </div><!--/ .infobar-->
+              </section>
+              <section id="section_infobar-markup">
+                <h4>Markup for infobar</h4>
+<div class="highlight"><pre class="prettyprint">
+  <div class="infobar no-padding--top">
+    <div class="infobar__left">
+      <p class="infobar__meta">
+        <span><i class="icon--ban"></i> Ikke utgitt</span>
+        <span>Six Shooter Records</span>
+        <span>SIX093LP</span>
+      </p>
+      <h2 class="infobar__heading">Is That What You Call Love?</h2>
+      <h3>Hawksley Workman</h3>
+    </div>
+    <div class="infobar__right">
+      <span class="infobar__meta">10 treff</span>
+      <h2 class="infobar__count">03:27:51</h2>
+      <h3>234</h3>
+    </div>
+    <div class="infobar__action">
+      <button class="btn btn--primary">Restliste</button>
+      <button class="btn btn--secondary">Ikke utgitt</button>
+    </div>
+  </div>
+</pre></div>
+              </section>
+
+              <h3>Form field</h3>
+              <section class="component-view" id="section_form-field">
+                <div class="form__field" style="margin-left: -95px;">
+                  <label class="form__label">
+                    <span>Label</span>
+                    <input type="text" class="form__input form__input--300">
+                  </label>
+                </div>
+              </section>
+              <section id="section_form-field-markup">
+                <h4>Markup for time form field</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="form__field">
+  <label class="form__label">
+    <span>Label</span>
+    <input type="text" class="form__input form__input--300">
+  </label>
+</div>
+</pre></div>
+              </section>
+
+              <h3>Vertical nav</h3>
+              <section class="component-view" id="section_vertical-nav">
+                <ul class="vertical__nav" style="width: 200px;">
+                  <li class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+                    <a href="#">Innlesning</a>
+                    <ul class="vertical__nav vertical__nav--sub">
+                      <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active">
+                        <a href="#">Innleste filer</a>
+                      </li>
+                      <li class="vertical__nav__item vertical__nav--sub__item">
+                        <a href="#">Avvik kontroll</a>
+                      </li>
+                      <li class="vertical__nav__item vertical__nav--sub__item">
+                        <a href="#">Program admin</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="vertical__nav__item vertical__nav__item--has-children">
+                    <a href="#">Matching</a>
+                  </li>
+                  <li class="vertical__nav__item vertical__nav__item--has-children">
+                    <a href="#">Diskografi</a>
+                  </li>
+                </ul>
+              </section>
+              <section id="section_vertical-nav-markup">
+                <h4>Markup for vertical nav</h4>
+<div class="highlight"><pre class="prettyprint">
+<ul class="vertical__nav">
+  <li class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+    <a href="#">Innlesning</a>
+    <ul class="vertical__nav vertical__nav--sub">
+      <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active">
+        <a href="#">Innleste filer</a>
+      </li>
+      <li class="vertical__nav__item vertical__nav--sub__item">
+        <a href="#">Avvik kontroll</a>
+      </li>
+      <li class="vertical__nav__item vertical__nav--sub__item">
+        <a href="#">Program admin</a>
+      </li>
+    </ul>
+  </li>
+  <li class="vertical__nav__item vertical__nav__item--has-children">
+    <a href="#">Matching</a>
+  </li>
+  <li class="vertical__nav__item vertical__nav__item--has-children">
+    <a href="#">Diskografi</a>
+  </li>
+</ul>
+</pre></div>
+              </section>
+
+              <h3>Flash message</h3>
+              <section class="component-view" id="section_flash-message">
+                <div class="flash-message-wrapper" style="position:static;">
+                  <div class="flash-message flash-message--success">
+                    <p>Success flash message</p>
+                  </div>
+                </div>
+                <br>
+                <div class="flash-message-wrapper" style="position:static;">
+                  <div class="flash-message flash-message--error">
+                    <p>Error flash message
+                      <button class="btn btn--borderless">Angre ?</button>
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <section id="section_flash-message-markup">
+                <h4>Markup for flash message</h4>
+<div class="highlight"><pre class="prettyprint">
+  <div class="flash-message-wrapper">
+    <div class="flash-message flash-message--success">
+      <p>Success flash message</p>
+    </div>
+  </div>
+  <div class="flash-message-wrapper">
+    <div class="flash-message flash-message--error">
+      <p>Error flash message
+        <button class="btn btn--borderless">Angre ?</button>
+      </p>
+    </div>
+  </div>
+</pre></div>
+              </section>
+
+              <h3>Button group</h3>
+              <section class="component-view" id="section_button-group">
+                <div class="btn-group" style="text-align:left;">
+                  <button class="btn btn--primary">Primary button</button>
+                  <button class="btn btn--secondary">Secondary button</button>
+                  <button class="btn btn--secondary">Secondary button</button>
+                </div>
+              </section>
+              <section id="section_button-group-markup">
+                <h4>Markup for button group</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="btn-group">
+  <button class="btn btn--primary">Primary button</button>
+  <button class="btn btn--secondary">Secondary button</button>
+  <button class="btn btn--secondary">Secondary button</button>
+</div>
+</pre></div>
+              </section>
+
+              <h3>Searchable list</h3>
+              <section class="component-view" id="section_searchable-list">
+                <div class="searchable-list" style="width:250px;">
+                  <div class="searchable-list__heading">
+                    <span class="searchable-list__selected">P3</span>
+                  </div>
+                  <div class="searchable-list__dropdown">
+                    <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
+                    <ul>
+                    <li class="searchable-list__option">P4 Norge</li>
+                    <li class="searchable-list__option">P4 Lokal</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <section id="section_searchable-list-markup">
+                <h4>Markup for searchable list</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="searchable-list">
+  <div class="searchable-list__heading">
+    <span class="searchable-list__selected">P3</span>
+  </div>
+  <div class="searchable-list__dropdown">
+    <input type="text" value="P3" class="searchable-list__search form__input form__input--block">
+    <ul>
+    <li class="searchable-list__option">P4 Norge</li>
+    <li class="searchable-list__option">P4 Lokal</li>
+    </ul>
+  </div>
+</div>
+</pre></div>
+              </section>
+
+              <h3>Section header</h3>
+              <section class="component-view" id="section_section-header">
+                <div class="section-header">
+                  <header>
+                    <h2>Produsenter <span class="badge badge--secondary">2</span></h2>
+                  </header>
+                  <div class="section-header__toolbar">
+                    <a href="#" class="link--edit">Rediger</a>
+                  </div>
+                </div>
+              </section>
+              <section id="section_section-header-markup">
+                <h4>Markup for section header</h4>
+<div class="highlight"><pre class="prettyprint">
+<div class="section-header">
+  <header>
+    <h2>Produsenter <span class="badge badge--secondary">2</span></h2>
+  </header>
+  <div class="section-header__toolbar">
+    <a href="#" class="link--edit">Rediger</a>
+  </div>
+</div>
+</pre></div>
+              </section>
+
+              <h3>Site header</h3>
+              <section class="component-view" id="section_site-header">
+                <header class="site-header" style="position:static;">
+                  <div class="toggle-sidebar">
+                    <a href="#"></a>
+                  </div>
+                </header>
+                <br>
+                <div class="toggle-sidebar open" style="position:relative; background:#434D5A; width:80px;">
+                  <a href="#" style="margin-left: 0;"></a>
+                </div>
+              </section>
+              <section id="section_site-header-markup">
+                <h4>Markup for site header</h4>
+<div class="highlight"><pre class="prettyprint">
+<header class="site-header">
+  <div class="toggle-sidebar">
+    <a href="#"></a>
+  </div>
+</header>
+<br>
+<div class="toggle-sidebar open">
+  <a href="#"></a>
+</div>
+</pre></div>
+              </section>
+
+              <h3>Tabs type</h3>
+              <section class="component-view" id="section_tabs-type">
+                <ul class="tabs__nav tabs__nav--flexible">
+                  <li class="tabs__nav__item">
+                    <a href="#">
+                      <span class="tabs__nav__item__type tabs__nav__item__type--recording">Innspilling</span>
+                    </a>
+                  </li>
+                  <li class="tabs__nav__item">
+                    <a href="#">
+                      <span class="tabs__nav__item__type tabs__nav__item__type--album">Album</span>
+                    </a>
+                  </li>
+                  <li class="tabs__nav__item">
+                    <a href="#">
+                      <span class="tabs__nav__item__type tabs__nav__item__type--performer">Performer</span>
+                    </a>
+                  </li>
+                  <li class="tabs__nav__item tabs__nav__item--search" style="visibility:hidden">
+                    <a href="#search">
+                      <i class="icon--search"></i>
+                      Søk
+                    </a>
+                  </li>
+                </ul>
+              </section>
+              <section id="section_tabs-type-markup">
+                <h4>Markup for tabs type</h4>
+<div class="highlight"><pre class="prettyprint">
+<ul class="tabs__nav tabs__nav--flexible">
+  <li class="tabs__nav__item">
+    <a href="#">
+      <span class="tabs__nav__item__type tabs__nav__item__type--recording">Innspilling</span>
+    </a>
+  </li>
+  <li class="tabs__nav__item">
+    <a href="#">
+      <span class="tabs__nav__item__type tabs__nav__item__type--album">Album</span>
+    </a>
+  </li>
+  <li class="tabs__nav__item">
+    <a href="#">
+      <span class="tabs__nav__item__type tabs__nav__item__type--performer">Performer</span>
+    </a>
+  </li>
+</ul>
+</pre></div>
+              </section>
+
+              <h3>Tab section nav</h3>
+              <section class="component-view" id="section_tab-section-nav">
+                <ul class="tabs__section__nav">
+                  <li class="tabs__section__nav__item">
+                    <a href="#performer_info" class="active">
+                      Current section
+                    </a>
+                  </li>
+                  <li class="tabs__section__nav__item">
+                    <a href="#performer_info">
+                      Section 1
+                    </a>
+                  </li>
+                  <li class="tabs__section__nav__item">
+                    <a href="#performer_info">
+                      Section 2
+                    </a>
+                  </li>
+                </ul>
+              </section>
+              <section id="section_tab-section-nav-markup">
+                <h4>Tab section nav</h4>
+<div class="highlight"><pre class="prettyprint">
+<ul class="tabs__section__nav">
+  <li class="tabs__section__nav__item">
+    <a href="#performer_info" class="active">
+      Current section
+    </a>
+  </li>
+  <li class="tabs__section__nav__item">
+    <a href="#performer_info">
+      Section 1
+    </a>
+  </li>
+  <li class="tabs__section__nav__item">
+    <a href="#performer_info">
+      Section 2
+    </a>
+  </li>
+</ul>
+</pre></div>
+              </section>
+
+
+            </section><!--end section #molecules-->
+          </div><!--/.col with main content-->
+        </div><!--/.row-->
+      </section><!--/.container-->
+    </main>
+  </div><!--End site-wrapper-->
+<script src="js/vendor/jquery-1.11.3.min.js"></script>
+<script src="js/default.js"></script>
+<script>
+var t = $('.prettyprint');
+$(t).each(function() {
+    $(this).html(
+        $(this).html().replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    );
+});
+</script>
+</body>
+</html>

@@ -27,6 +27,12 @@
     width: auto;
   }
 
+  &--with-search {
+    border-radius: 3px 1px 1px 3px;
+    margin-right: -2px;
+    background-position: 93% 55%;
+  }
+
   &[disabled] {
     @extend .form__input[disabled];
     background-image: none;

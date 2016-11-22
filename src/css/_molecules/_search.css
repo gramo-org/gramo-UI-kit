@@ -1,7 +1,22 @@
 .search--with-dropdown {
-  flex: 1;
-  @media (--desktop) {
-    flex: 0;
+  min-width: 100%;
+  display: flex;
+  padding: 0 1rem;
+
+  @media (--tablet) {
+    min-width: 0;
+  }
+
+  .search {
+    width: 100%;
+    @media (--desktop) {
+      width: auto;
+    }
+
+    input[type="text"].search__form__input {
+      border-radius: 1px;
+      margin: 0;
+    }
   }
 }
 

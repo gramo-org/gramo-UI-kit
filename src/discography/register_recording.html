@@ -101,17 +101,9 @@
 
           <section id="search" class="tabs__section">
             <div class="toolbar">
-              <div class="col-xs-6 col-md-4 col--no-flex">
-                <div class="search search--with-dropdown">
-                  <form action="" class="search__form search__form--in-toolbar">
-                    <input type="text" class="search__form__input search__form__input--min-width" value="" placeholder="Søk..." />
-                    <button class="search__submit"></button>
-                  </form>
-                </div>
-              </div>
-              <div class="col-xs-6 col-md-2">
-                <label class="form__label">
-                  <select class="select select--block align--vertical-center">
+              <div class="search--with-dropdown">
+                <label class="form__label no-margin--right">
+                  <select class="select select--fluid select--with-search align--vertical-center">
                     <option>Søktype</option>
                     <option>Hovedartist</option>
                     <option>Album</option>
@@ -120,6 +112,12 @@
                     <option>Utøver</option>
                   </select>
                 </label>
+                <div class="search">
+                  <form action="" class="search__form search__form--in-toolbar">
+                    <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                    <button class="search__submit"></button>
+                  </form>
+                </div>
               </div>
               <div class="col-xs col--no-flex text--right">
                 <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
@@ -259,17 +257,15 @@
                 <li class="tabs__section__nav__item"><a href="#">Album</a></li>
               </ul>
               <div class="scrollable-area">
+                <header class="infobar infobar--in-tabs">
+                  <div class="infobar__left">
+                    <p class="infobar__meta">EMI Recorded Music Norway AS (100%)</p>
+                    <h1 class="infobar__heading" data-type="recording">Aladdin Sane</h1>
+                    <h3 data-type="performer">David Bowie</h3>
+                    <h3 data-type="album">Aladdin Sane</h3>
+                  </div>
+                </header>
                 <section id="innspillingsinfo" class="container container--padded">
-
-                  <header class="infobar">
-                    <div class="infobar__left">
-                      <p class="infobar__meta">EMI Recorded Music Norway AS (100%)</p>
-                      <h1 class="infobar__heading" data-type="recording">Aladdin Sane</h1>
-                      <h3 data-type="performer">David Bowie</h3>
-                      <h3 data-type="album">Aladdin Sane</h3>
-                    </div>
-                  </header>
-
                   <div class="section-header">
                     <header>
                       <h2>Innspillingsinfo</h2>
