@@ -48,7 +48,7 @@
 .icon--echo:before {
     content: "\e914";
 }
-.icon--empty-state-musikk:before {
+.icon--empty-state-music:before {
     content: "\e913";
     margin-left: -1.2rem;
 }
