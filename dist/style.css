@@ -5142,8 +5142,13 @@ tr > td:last-child{
 }
 .component-view{
   padding:2rem;
-  border:1px dashed #d9d9dc;
+  border:1px solid #ededed;
   background:#fdfdfd;
+}
+.component-view ~ h3{
+  margin-top:4rem;
+  border-top:1px dashed #d9d9dc;
+  padding-top:2rem;
 }
 .placeholder{
   background:#ededed;
@@ -5232,6 +5237,13 @@ tr > td:last-child{
 .search__clear .icon--cross:before{
   color:#a5a4ab!important;
 }
+section[id^="section"] h4{
+  text-decoration:underline;
+  cursor:pointer;
+  font-weight:400;
+  color:#434D5A;
+}
+
 .code{
   position:relative;
   max-width:800px;
@@ -5272,6 +5284,7 @@ pre{
 }
 
 .highlight{
+  display:none;
   overflow-y:hidden;
   overflow-x:auto;
   box-sizing:border-box;
@@ -5280,6 +5293,10 @@ pre{
   margin-top:.3rem;
   margin-bottom:4rem;
   padding-bottom:1rem;
+}
+
+.highlight.is-visible{
+  display:block;
 }
 
 pre.prettyprint{

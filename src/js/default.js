@@ -167,10 +167,10 @@ $(document).ready(function() {
     $('.search__clear').show();
 
     // Loop through sections with an ID
-    $('section[id]').each(function(){
+    $('section[id], section[id] > h3').each(function(){
 
         // If a section does not contain the text phrase fade it out
-        if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+        if ($(this).html().search(new RegExp(filter, "i")) < 0) {
             $(this).fadeOut();
 
         // Show the section if the phrase matches and increase the count by 1
@@ -195,6 +195,11 @@ $(document).ready(function() {
       $('section[id]').show();
       $(this).hide();
      });
+
+     $('h4:contains("Markup")').click(function(e){
+       e.preventDefault();
+       $(this).next('.highlight').toggleClass('is-visible')
+     })
 
 
     //Scroll spy

@@ -1,7 +1,13 @@
 .component-view {
   padding: 2rem;
-  border: 1px dashed var(--silver);
+  border: 1px solid var(--light-gray);
   background: var(--gramo-white);
+
+  & ~ h3 {
+    margin-top: 4rem;
+    border-top: 1px dashed var(--silver);
+    padding-top: 2rem;
+  }
 }
 
 
