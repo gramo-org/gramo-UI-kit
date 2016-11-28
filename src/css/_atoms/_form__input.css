@@ -46,7 +46,7 @@ input[type="radio"], input[type="checkbox"],
   color: var(--gramo-blue);
   background: #fff url(img/calendar.svg) center right 10px no-repeat;
   border: 1px solid var(--silver);
-  padding-right: .5rem;
+  padding-right: 1rem;
   padding-left: .5rem;
   text-align: center;
   width: auto;

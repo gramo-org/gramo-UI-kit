@@ -43,7 +43,7 @@
     font-size: 1.2rem;
     border-radius: 2rem;
     color: var(--gramo-white);
-    width: 2rem;
+    min-width: 2rem;
     height: 2rem;
     padding: 0;
     margin: 0 auto;
@@ -101,10 +101,10 @@
   font-size: 1rem;
   color: var(--off-gray);
   background: var(--light-gray);
-  border-radius: 50%;
+  border-radius: 2rem;
   text-align: center;
-  padding: .3rem;
-  width: 2rem;
+  padding: .3rem .75rem;
+  min-width: 2rem;
   height: 2rem;
 
   &--moveable {
