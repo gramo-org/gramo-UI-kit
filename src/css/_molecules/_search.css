@@ -48,6 +48,7 @@
     @media (--tablet) {
       position: absolute;
       right: 1rem;
+      z-index: 1;
     }
   }
 
