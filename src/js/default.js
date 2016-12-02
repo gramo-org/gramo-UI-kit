@@ -202,30 +202,30 @@ $(document).ready(function() {
      })
 
 
-    //Scroll spy
-    function scrollSpy(menu) {
-      $(document).on('scroll', onScroll);
-      function onScroll(event){
-      var scrollPos = $(document).scrollTop();
-        $(menu).each(function () {
-            var currLink = $(this);
-            var refElement = $(currLink.attr('href'));
-
-            if (refElement.length) {
-              var elementTop = refElement.position().top + 40;
-              var elementHeight = refElement.height();
-            }
-            if (elementTop <= scrollPos && elementTop + elementHeight > scrollPos &&  !$('#filter').val() ) {
-                $('.page-contents a').removeClass('active');
-                currLink.addClass('active');
-            }
-            else{
-                currLink.removeClass('active');
-            }
-        });
-      }
-    }
-    scrollSpy('.page-contents a, .vertical__nav a');
+    // //Scroll spy
+    // function scrollSpy(menu) {
+    //   $(document).on('scroll', onScroll);
+    //   function onScroll(event){
+    //   var scrollPos = $(document).scrollTop();
+    //     $(menu).each(function () {
+    //         var currLink = $(this);
+    //         var refElement = $(currLink.attr('href'));
+    //
+    //         if (refElement.length) {
+    //           var elementTop = refElement.position().top + 40;
+    //           var elementHeight = refElement.height();
+    //         }
+    //         if (elementTop <= scrollPos && elementTop + elementHeight > scrollPos &&  !$('#filter').val() ) {
+    //             $('.page-contents a').removeClass('active');
+    //             currLink.addClass('active');
+    //         }
+    //         else{
+    //             currLink.removeClass('active');
+    //         }
+    //     });
+    //   }
+    // }
+    // scrollSpy('.page-contents a, .vertical__nav a');
 
 // Make fake-table__panels__sidebar sticky
 
