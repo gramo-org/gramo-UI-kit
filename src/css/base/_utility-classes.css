@@ -99,6 +99,10 @@ td.text--center,
   align-self: center;
 }
 
+.align--top {
+  align-self: flex-start;
+}
+
 .align--bottom {
   justify-content: flex-end;
 }

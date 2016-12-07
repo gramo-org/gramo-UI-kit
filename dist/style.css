@@ -288,6 +288,12 @@ td.text--center, .fake-table__row > *.text--center{
   align-self:center;
 }
 
+.align--top{
+  -webkit-align-self:flex-start;
+  -ms-flex-item-align:start;
+  align-self:flex-start;
+}
+
 .align--bottom{
   -webkit-justify-content:flex-end;
   -ms-flex-pack:end;
@@ -1990,6 +1996,9 @@ hr, .horizontal-rule{
 }
 .toolbar--above > div[class*="col-"]{
   display:block;
+}
+.toolbar--below{
+  margin-top:.6rem;
 }
 .toolbar__column{
   -webkit-flex:0 1 20%;
@@ -4158,6 +4167,7 @@ input[type="text"].search__form__input{
   -webkit-flex:0 1 100%;
   -ms-flex:0 1 100%;
   flex:0 1 100%;
+  margin-bottom:0;
 }
 
 @media (min-width: 960px){
