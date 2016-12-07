@@ -2888,7 +2888,7 @@ hr, .horizontal-rule{
   position:absolute;
   height:20px;
   width:12px;
-  right:2px;
+  right:7px;
 }
 .searchable-list--open .searchable-list__heading:before{
   -webkit-transform:rotate(180deg);
