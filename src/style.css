@@ -1997,7 +1997,7 @@ hr, .horizontal-rule{
 .toolbar--above > div[class*="col-"]{
   display:block;
 }
-.toolbar--below{
+.toolbar__below{
   margin-top:.6rem;
 }
 .toolbar__column{
