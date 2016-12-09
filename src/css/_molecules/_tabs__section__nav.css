@@ -12,7 +12,7 @@
 
   &--absolute {
     position: absolute;
-    left: calc(45% + 2px);
+    left: calc(45% + .25rem);
     bottom: 0;
 
     a {

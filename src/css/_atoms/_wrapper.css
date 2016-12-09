@@ -12,7 +12,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
     @media (--desktop) {
       background-image: url(img/line.png);
       background-repeat: repeat-y;
-      background-position: calc(45% - .8rem) 0;
+      background-position: calc(45% - .75rem) 0;
     }
   }
 }

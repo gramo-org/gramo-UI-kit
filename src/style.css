@@ -1577,7 +1577,7 @@ input-placeholder{
   .panels--has-divider{
     background-image:url(img/line.png);
     background-repeat:repeat-y;
-    background-position:calc(45% - .8rem) 0;
+    background-position:calc(45% - .75rem) 0;
   }
 }
 
@@ -3909,7 +3909,7 @@ main.pull .bucket{
 }
 .tabs__section__nav--absolute{
   position:absolute;
-  left:calc(45% + 2px);
+  left:calc(45% + .25rem);
   bottom:0;
 }
 .tabs__section__nav--absolute a{
