@@ -102,6 +102,7 @@
                   <ul class="row tabs__section__nav tabs__section__nav--absolute">
                     <li class="tabs__section__nav__item"><a href="#" class="active"><span data-type="performer"></span><span>Utøver</span></a></li>
                     <li class="tabs__section__nav__item"><a href="#"><span data-type="producer"></span><span>Produsent</span></a></li>
+                    <li class="tabs__section__nav__item"><a href="#"><span data-type="member"></span><span>Trekkinformasjon</span></a></li>
                     <li class="tabs__section__nav__item"><a href="#"><span data-type="performer"></span><span>Legg til arving</span></a></li>
                     <li class="tabs__section__nav__item"><a href="#"><span data-type="performer"></span><span>Legg til kontakt</span></a></li>
                   </ul>
@@ -314,8 +315,8 @@
                         <div class="form__field__help">
                           <p>
                             <label class="form__label">
-                              <span class="text--normal">Betal til agent?</span>
                               <input type="checkbox" class="form__input form__input--checkbox">
+                              <span class="text--normal">Utbetaling via agentskonto</span>
                             </label>
                           </p>
                         </div>
@@ -442,6 +443,9 @@
                       <header>
                         <h2>Medlemskap</h2>
                       </header>
+                      <div class="section-header__toolbar">
+                        <a href="#">Andre medlemskap</a>
+                      </div>
                     </div>
                     <form class="form">
                       <fieldset class="form__fieldset">
@@ -544,16 +548,16 @@
                         <div class="form__field__help">
                           <p>
                             <label class="form__label">
-                              <span class="text--normal">Legg til slutt dato</span>
                               <input type="checkbox" class="form__input form__input--checkbox">
+                              <span class="text--normal">Legg til slutt dato</span>
                             </label>
                           </p>
                         </div>
                       </fieldset>
                     </form>
-                  </section>
+
                   <hr class="horizontal-rule horizontal-rule--dashed">
-                  <section class="container container--padded">
+
                     <div class="section-header">
                       <header>
                         <h2>Utbetalingsinfo</h2>
@@ -584,6 +588,16 @@
                         </div>
                         <div class="form__field">
                           <label class="form__label">
+                            <span>Konto</span>
+                            <select class="select select--fluid form__input--180">
+                              <option>Hjem</option>
+                              <option>--</option>
+                                <option>--</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
                             <span>Bankkonto</span>
                             <input type="text" value="0928428928938NAS" class="form__input form__input--180" >
                           </label>
@@ -591,6 +605,52 @@
                       </fieldset>
                     </form>
                   </section>
+                  <hr class="horizontal-rule horizontal-rule--dashed">
+                  <section class="container container--padded">
+                    <div class="section-header">
+                      <header>
+                        <h2>Andre medlemskap</h2>
+                      </header>
+                    </div>
+                    <form class="form">
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Vederlagsbyrå</span>
+                            <select class="select select--fluid form__input--180">
+                              <option>Gramex DK (Gramex Danmark)</option>
+                              <option>PPL UK (PPL Storbrittania)</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Fra</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                          </label>
+                          <label class="form__label">
+                            <span>Til</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                          </label>
+                          <div class="form__field__action">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Medlemsskaptype</span>
+                            <select class="select select--fluid form__input--180">
+                              <option>Fullt medlem</option>
+                              <option>Velg medlemsskaptype</option>
+                            </select>
+                          </label>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </section>
+                </section>
                 </div><!-- end /.panels__main -->
               </div><!-- end /.panels.scrollable-area -->
               <footer class="footer footer--sticky">
