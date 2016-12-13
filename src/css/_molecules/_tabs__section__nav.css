@@ -76,7 +76,7 @@
     top: 0;
     right: 2rem;
     left: auto;
-    margin: 0 -1rem;
+    margin: 0 0 0 -1rem;
     position: absolute;
   }
 
@@ -85,6 +85,12 @@
     top: auto;
     bottom: 0;
     left: calc(45% + .25rem);
+  }
+
+  .tabs__section__nav__item--spaced {
+    @media (--hd) {
+      margin-left: 2rem;
+    }
   }
 
   .tabs__section__nav__item a {

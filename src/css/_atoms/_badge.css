@@ -16,6 +16,10 @@
       position: relative;
       top: 1px;
     }
+
+    a {
+      text-transform: uppercase;
+    }
   }
 
   &--error {

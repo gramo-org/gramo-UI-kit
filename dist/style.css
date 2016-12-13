@@ -2023,6 +2023,9 @@ hr, .horizontal-rule{
   position:relative;
   top:1px;
 }
+.badge--tag a{
+  text-transform:uppercase;
+}
 .badge--error{
   background:#ed6b6a;
   color:#fff;
@@ -3967,7 +3970,7 @@ main.pull .bucket{
     top:0;
     right:2rem;
     left:auto;
-    margin:0 -1rem;
+    margin:0 0 0 -1rem;
     position:absolute;
   }
 }
@@ -3979,6 +3982,13 @@ main.pull .bucket{
     top:auto;
     bottom:0;
     left:calc(45% + .25rem);
+  }
+}
+
+@media (min-width: 1200px){
+
+  .tabs__section__nav--absolute .tabs__section__nav__item--spaced{
+    margin-left:2rem;
   }
 }
 
