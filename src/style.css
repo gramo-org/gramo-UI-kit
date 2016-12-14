@@ -2103,7 +2103,7 @@ hr, .horizontal-rule{
   background:#ededed;
   border-radius:2rem;
   text-align:center;
-  padding:.3rem .75rem;
+  padding:.3rem .5rem;
   min-width:2rem;
   height:2rem;
 }
