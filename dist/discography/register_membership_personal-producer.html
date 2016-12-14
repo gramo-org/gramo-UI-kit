@@ -103,7 +103,7 @@
                     <li class="tabs__section__nav__item"><a href="#"><span data-type="performer"></span><span>Utøver</span></a></li>
                     <li class="tabs__section__nav__item"><a href="#" class="active"><span data-type="producer"></span><span>Produsent</span></a></li>
                     <li class="tabs__section__nav__item"><a href="#"><span data-type="member"></span><span>Trekkinformasjon</span></a></li>
-                    <li class="tabs__section__nav__item"><a href="#"><span data-type="performer"></span><span>Legg til arving</span></a></li>
+                    <li class="tabs__section__nav__item tabs__section__nav__item--spaced"><a href="#"><span data-type="performer"></span><span>Legg til arving</span></a></li>
                     <li class="tabs__section__nav__item"><a href="#"><span data-type="performer"></span><span>Legg til kontakt</span></a></li>
                   </ul>
 
@@ -288,17 +288,6 @@
                   <section class="container container--padded">
                     <div class="section-header">
                       <header>
-                        <h2>Agent</h2>
-                      </header>
-                      <div class="section-header__toolbar">
-                        <a href="#" class="link--edit">Rediger</a>
-                      </div>
-                    </div>
-                  </section>
-                  <hr class="horizontal-rule horizontal-rule--dashed">
-                  <section class="container container--padded">
-                    <div class="section-header">
-                      <header>
                         <h2>Produsent info</h2>
                       </header>
                     </div>
@@ -338,32 +327,45 @@
                   <section class="container container--padded">
                     <div class="section-header">
                       <header>
-                        <h2>Medlemskap</h2>
+                        <h2>Medlemskapsinfo</h2>
                       </header>
-                      <div class="section-header__toolbar">
-                        <a href="#">Andre medlemskap</a>
-                      </div>
                     </div>
                     <form class="form">
-                      <fieldset class="form__fieldset">
+                      <fieldset class="form__fieldset form__fieldset--group">
                         <div class="form__field">
                           <label class="form__label">
-                            <span>Medlemsnummer</span>
-                            <input type="text" value="---" class="form__input form__input--180" disabled>
+                            <span>Vederlagsbyrå</span>
+                            <input type="text" value="Gramo" class="form__input form__input--180">
+                          </label>
+                          <label class="form__label">
+                            <input type="text" value="983627" class="form__input form__input--100">
                           </label>
                         </div>
                         <div class="form__field">
                           <label class="form__label">
-                            <span>Medlemsskaptype</span>
+                            <span>Fra</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                          </label>
+                          <div class="form__field__action">
+                            <a href="#" class="link--no-line">Registrere avsluttningsdato</a>
+                          </div>
+                          <!-- <label class="form__label">
+                            <span>Til</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                          </label>
+                          <div class="form__field__action">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div> -->
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Territorie mandat</span>
                             <select class="select select--fluid form__input--180">
                               <option>Regional</option>
                               <option>Velg medlemsskaptype</option>
                               <option>Worldwide</option>
                             </select>
                           </label>
-                          <div class="form__field__action">
-                            <p><a href="#" class="link--no-line">Legg til societies</a></p>
-                          </div>
                         </div>
                         <div class="form__field">
                           <label class="form__label">
@@ -377,91 +379,11 @@
                             <a href="#" class="link--no-line">Registrere perioden</a>
                           </div>
                         </div>
-                        <div class="form__field">
-                          <label class="form__label">
-                            <span>Fra</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                          </label>
-                          <label class="form__label">
-                            <span>Til</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                          </label>
-                          <div class="form__field__action">
-                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                          </div>
-                        </div>
-                        <div class="form__field__help">
+                        <div class="form__field__help form__section--action">
                           <p><a href="#" class="link--no-line">Legg til societies</a></p>
                         </div>
-                      </fieldset>
-                      <fieldset class="form__fieldset">
-                        <div class="form__field">
-                          <label class="form__label">
-                            <span>Medlemsskaptype</span>
-                            <select class="select select--fluid form__input--180">
-                              <option>Worldwide</option>
-                              <option>Velg medlemsskaptype</option>
-                              <option>Regional</option>
-                            </select>
-                          </label>
-                        </div>
-                        <!-- <div class="form__field">
-                          <label class="form__label">
-                            <span>Societies</span>
-                            <select class="select select--fluid form__input--180">
-                              <option>PPL (Storbrittania)</option>
-                              <option>Gramex (Danmark)</option>
-                            </select>
-                          </label>
-                        </div> -->
-                        <!-- <div class="form__field">
-                          <label class="form__label">
-                            <span>Fra</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                          </label>
-                          <label class="form__label">
-                            <span>Til</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                          </label>
-                          <div class="form__field__action">
-                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                          </div>
-                        </div> -->
-                        <div class="form__field__help">
-                          <p><a href="#" class="link--no-line">Fjern societies</a></p>
-                        </div>
-                      </fieldset>
-                      <fieldset class="form__fieldset">
-                        <div class="form__field">
-                          <label class="form__label">
-                            <span>Medlem fra</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                          </label>
-                          <!-- <label class="form__label">
-                            <span>Til</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                          </label> -->
-                        </div>
-                        <div class="form__field__help">
-                          <p>
-                            <label class="form__label">
-                              <input type="checkbox" class="form__input form__input--checkbox">
-                              <span class="text--normal">Legg til slutt dato</span>
-                            </label>
-                          </p>
-                        </div>
-                      </fieldset>
-                    </form>
-
-                  <hr class="horizontal-rule horizontal-rule--dashed">
-
-                    <div class="section-header">
-                      <header>
-                        <h2>Utbetalingsinfo</h2>
-                      </header>
-                    </div>
-                    <form class="form">
-                      <fieldset class="form__fieldset">
+                        <hr class="horizontal-rule horizontal-rule--dashed">
+                        <h3 class="heading--sub">Utbetalingsinfo</h3>
                         <div class="form__field">
                           <label class="form__label">
                             <span>Skattekommune</span>
@@ -485,66 +407,14 @@
                         </div>
                         <div class="form__field">
                           <label class="form__label">
-                            <span>Konto</span>
-                            <select class="select select--fluid form__input--180">
-                              <option>Hjem</option>
-                              <option>--</option>
-                                <option>--</option>
-                            </select>
-                          </label>
-                        </div>
-                        <div class="form__field">
-                          <label class="form__label">
                             <span>Bankkonto</span>
                             <input type="text" value="0928428928938NAS" class="form__input form__input--180" >
                           </label>
                         </div>
                       </fieldset>
-                    </form>
-                  </section>
-                  <hr class="horizontal-rule horizontal-rule--dashed">
-                  <section class="container container--padded">
-                    <div class="section-header">
-                      <header>
-                        <h2>Andre medlemskap</h2>
-                      </header>
-                    </div>
-                    <form class="form">
-                      <fieldset class="form__fieldset">
-                        <div class="form__field">
-                          <label class="form__label">
-                            <span>Vederlagsbyrå</span>
-                            <select class="select select--fluid form__input--180">
-                              <option>Gramex DK (Gramex Danmark)</option>
-                              <option>PPL UK (PPL Storbrittania)</option>
-                            </select>
-                          </label>
-                        </div>
-                        <div class="form__field">
-                          <label class="form__label">
-                            <span>Fra</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                          </label>
-                          <label class="form__label">
-                            <span>Til</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                          </label>
-                          <div class="form__field__action">
-                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                          </div>
-                        </div>
-                      </fieldset>
-                      <fieldset class="form__fieldset">
-                        <div class="form__field">
-                          <label class="form__label">
-                            <span>Medlemsskaptype</span>
-                            <select class="select select--fluid form__input--180">
-                              <option>Fullt medlem</option>
-                              <option>Velg medlemsskaptype</option>
-                            </select>
-                          </label>
-                        </div>
-                      </fieldset>
+                      <div class="form__section--action">
+                        <a href="#">Register andre medlemskap</a>
+                      </div>
                     </form>
                   </section>
                 </section>
