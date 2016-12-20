@@ -2008,9 +2008,9 @@ hr, .horizontal-rule{
 .badge{
   display:inline-block;
   border-radius:2px;
-  padding:0.5rem 1.2rem;
+  padding:0.1em .5em;
   margin-left:1rem;
-  font-size:1.6rem;
+  font-size:85%;
   vertical-align:top;
 }
 .badge--tag{
