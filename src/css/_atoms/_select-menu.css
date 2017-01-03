@@ -27,6 +27,10 @@
     width: auto;
   }
 
+  &--fixed-width {
+    max-width: 180px;
+  }
+
   &--with-search {
     border-radius: 3px 1px 1px 3px;
     margin-right: -2px;

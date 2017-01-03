@@ -1746,6 +1746,9 @@ input-placeholder{
   min-width:0;
   width:auto;
 }
+.select--fixed-width{
+  max-width:180px;
+}
 .select--with-search{
   border-radius:3px 1px 1px 3px;
   margin-right:-2px;
@@ -1820,7 +1823,7 @@ hr, .horizontal-rule{
 }
 
 .horizontal-rule--spacer{
-  margin-bottom:2rem;
+  margin-top:1.2rem;
   background:none;
 }
 
@@ -2783,6 +2786,9 @@ hr, .horizontal-rule{
   .form__field-to-and-from > *:not(:first-child) .form__input__errors > p, .form__field-to-and-from > *:not(:first-child) p.error--form-field{
     margin-left:24px;
   }
+}
+.producer-registrant-codes > .form__field:not(:first-child) > label > span{
+  visibility:hidden;
 }
 .radio-group{
   display:-webkit-flex;
