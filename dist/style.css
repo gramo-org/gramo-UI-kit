@@ -1750,7 +1750,7 @@ input-placeholder{
   width:auto;
 }
 .select--fixed-width{
-  max-width:180px;
+  max-width:140px;
 }
 .select--with-search{
   border-radius:3px 1px 1px 3px;
