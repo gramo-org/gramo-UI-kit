@@ -2790,7 +2790,7 @@ hr, .horizontal-rule{
     margin-left:24px;
   }
 }
-.producer-registrant-codes > .form__field:not(:first-child) > label > span{
+.producer-registrant-codes .form__field:not(:first-child) .form__label > span{
   visibility:hidden;
 }
 .radio-group{
