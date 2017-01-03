@@ -1,5 +1,5 @@
 .producer-registrant-codes {
-  & > .form > .form__field:not(:first-child) > label > span {
+  .form__field:not(:first-child) .form__label > span {
     visibility: hidden;
   }
 }
