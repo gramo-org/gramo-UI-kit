@@ -259,6 +259,9 @@ td.text--center, .fake-table__row > *.text--center{
     display:block!important;
   }
 }
+.visibility--hidden{
+  visibility:hidden;
+}
 
 .cell--block, .cell--no-flex, .col--no-flex, .block--no-flex{
   display:block!important;
