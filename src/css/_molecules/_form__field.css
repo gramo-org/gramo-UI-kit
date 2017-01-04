@@ -31,6 +31,13 @@
     }
   }
 
+  /* override for second span when dynamically inserted */
+  .span.normal-width {
+    width: auto;
+    text-align: left;
+    padding-right: 0;
+  }
+
   .form__label,
   &__action {
     vertical-align: top;
