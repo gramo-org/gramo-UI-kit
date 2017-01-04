@@ -2726,9 +2726,6 @@ hr, .horizontal-rule{
 .form__field{
   margin-bottom:.4rem;
 }
-.form__field:last-child{
-  margin-bottom:0;
-}
 @media (min-width: 768px){
 
   .form__field > *, .form__field .form__label > span, .form__field .form__field__text, .form__field__action{
