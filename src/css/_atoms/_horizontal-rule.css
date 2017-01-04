@@ -33,6 +33,17 @@ hr, .horizontal-rule {
   left: 50%;
 }
 
+.horizontal-rule--dashed {
+  border-top: 1px dashed var(--silver);
+  background: none;
+  margin: 0;
+
+  &:before,
+  &:after {
+    content: none;
+  }
+}
+
 .horizontal-rule--spacer {
   margin-top: 1.2rem!important;
   background: none;
@@ -42,22 +53,9 @@ hr, .horizontal-rule {
   }
 }
 
-/* Stretched horizontal-rule */
 .horizontal-rule--stretch {
-
   margin: .5rem 0 0 -1rem;
   width: calc(100% + 2rem);
-
-  &:before,
-  &:after {
-    content: none;
-  }
-}
-
-.horizontal-rule--dashed {
-  border-top: 1px dashed var(--silver);
-  background: none;
-  margin: 0;
 
   &:before,
   &:after {

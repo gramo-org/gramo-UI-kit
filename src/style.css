@@ -1825,6 +1825,16 @@ hr, .horizontal-rule{
   left:50%;
 }
 
+.horizontal-rule--dashed{
+  border-top:1px dashed #d9d9dc;
+  background:none;
+  margin:0;
+}
+
+.horizontal-rule--dashed:before, .horizontal-rule--dashed:after{
+  content:none;
+}
+
 .horizontal-rule--spacer{
   margin-top:1.2rem!important;
   background:none;
@@ -1833,22 +1843,13 @@ hr, .horizontal-rule{
 .horizontal-rule--spacer:before, .horizontal-rule--spacer:after{
   content:none;
 }
-.horizontal-rule--stretch{
 
+.horizontal-rule--stretch{
   margin:.5rem 0 0 -1rem;
   width:calc(100% + 2rem);
 }
+
 .horizontal-rule--stretch:before, .horizontal-rule--stretch:after{
-  content:none;
-}
-
-.horizontal-rule--dashed{
-  border-top:1px dashed #d9d9dc;
-  background:none;
-  margin:0;
-}
-
-.horizontal-rule--dashed:before, .horizontal-rule--dashed:after{
   content:none;
 }
 .btn{
