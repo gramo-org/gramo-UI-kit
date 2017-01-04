@@ -2746,7 +2746,7 @@ hr, .horizontal-rule{
 .form__field > *:first-child span--double, .form__field .form__field__text--double{
   vertical-align:middle;
 }
-.form__field .span.normal-width{
+.form__field span.normal-width{
   width:auto;
   text-align:left;
   padding-right:0;

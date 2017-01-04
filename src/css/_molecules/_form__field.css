@@ -32,7 +32,7 @@
   }
 
   /* override for second span when dynamically inserted */
-  .span.normal-width {
+  span.normal-width {
     width: auto;
     text-align: left;
     padding-right: 0;
