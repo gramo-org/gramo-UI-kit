@@ -2753,7 +2753,6 @@ hr, .horizontal-rule{
 }
 .form__field__action{
   padding-top:.6rem;
-  margin-left:.5rem;
 }
 .form__field .form__label--required:before{
   content:none;
