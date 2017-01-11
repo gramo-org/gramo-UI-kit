@@ -45,6 +45,7 @@
 
   &__action {
     padding-top: .6rem;
+    margin-left: .5rem;
   }
 
   .form__label--required {
@@ -79,7 +80,7 @@
   .form__input__errors > p,
   p.error--form-field {
     @media (--tablet) {
-      max-width: 200px;
+      max-width: 100px;
     }
   }
 }

@@ -2753,6 +2753,7 @@ hr, .horizontal-rule{
 }
 .form__field__action{
   padding-top:.6rem;
+  margin-left:.5rem;
 }
 .form__field .form__label--required:before{
   content:none;
@@ -2772,7 +2773,7 @@ hr, .horizontal-rule{
 @media (min-width: 768px){
 
   .form__field .form__input__errors > p, .form__field p.error--form-field{
-    max-width:200px;
+    max-width:100px;
   }
 }
 @media (min-width: 768px){
