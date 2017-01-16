@@ -405,6 +405,10 @@ td.text--center, .fake-table__row > *.text--center{
   margin-right:1rem;
 }
 
+.float--right{
+  float:right;
+}
+
 .heading--inline{
   display:inline-block;
   vertical-align:middle;
