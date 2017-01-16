@@ -204,6 +204,7 @@ td.text--center,
 
 .float--right {
   float: right;
+  margin-bottom: 1.2rem;
 }
 
 /*** heading--mods ***/
