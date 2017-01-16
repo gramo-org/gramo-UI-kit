@@ -4312,6 +4312,7 @@ input[type="text"].search__form__input--large{
     border:0;
     padding:0;
     margin:0 0 1.2rem 0;
+    clear:both;
   }
 
   .form__fieldset:last-child{
