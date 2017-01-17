@@ -67,6 +67,10 @@
     }
   }
 
+  .comment__author {
+    font-weight: var(--semibold);
+  }
+
   .toggle-comments {
 
   }

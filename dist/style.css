@@ -5270,6 +5270,9 @@ tr > td:last-child{
   padding-bottom:.6rem;
   margin-bottom:1.2rem;
 }
+.comments .comment__author{
+  font-weight:600;
+}
 .comments .toggle-comments{
 }
 .component-view{
