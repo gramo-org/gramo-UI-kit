@@ -1,3 +1,9 @@
 .comments {
   max-width: 500px;
+
+  &__inner {
+    background: var(--gramo-white);
+    padding: 1rem;
+    box-shadow: 0 0 11px rgba(0,0,0,0.4);
+  }
 }

@@ -5213,6 +5213,11 @@ tr > td:last-child{
 .comments{
   max-width:500px;
 }
+.comments__inner{
+  background:#fdfdfd;
+  padding:1rem;
+  box-shadow:0 0 11px rgba(0,0,0,0.4);
+}
 .component-view{
   padding:2rem;
   border:1px solid #ededed;
