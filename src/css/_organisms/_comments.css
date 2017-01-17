@@ -88,8 +88,9 @@
   }
 
   .add-comment {
-    margin: 1rem 2rem;
+    padding: 1rem 2rem 0rem 2rem;
     display: block;
+    border-top: 1px solid var(--silver);
   }
 
   .toggle-comments {

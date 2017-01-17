@@ -5292,8 +5292,9 @@ tr > td:last-child{
   margin-bottom:1.2rem;
 }
 .comments .add-comment{
-  margin:1rem 2rem;
+  padding:1rem 2rem 0rem 2rem;
   display:block;
+  border-top:1px solid #d9d9dc;
 }
 .comments .toggle-comments{
 }
