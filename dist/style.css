@@ -5217,8 +5217,6 @@ tr > td:last-child{
   top:-3.7rem;
   z-index:6;
   right:0;
-  max-height:600px;
-  overflow-y:auto;
 }
 @media (min-width: 960px){
 
@@ -5228,9 +5226,9 @@ tr > td:last-child{
 }
 .comments__inner{
   text-align:left;
-  margin:1rem 0;
+  margin:1rem 0 0 0;
   background:#fdfdfd;
-  padding:2rem;
+  padding:0 0 1rem 0;
   box-shadow:0 3px 3px rgba(0,0,0,0.1);
   display:none;
   position:relative;
@@ -5280,10 +5278,19 @@ tr > td:last-child{
   font-weight:400;
   font-style:italic;
 }
+.comments .comments__content{
+  max-height:600px;
+  overflow-y:auto;
+  padding:2rem;
+}
 .comments .comments__content li{
   border-bottom:1px dotted #d9d9dc;
   padding-bottom:.6rem;
   margin-bottom:1.2rem;
+}
+.comments .add-comment{
+  margin:1rem 2rem;
+  display:block;
 }
 .comments .toggle-comments{
 }
