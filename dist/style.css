@@ -5293,8 +5293,7 @@ tr > td:last-child{
 }
 .comments .add-comment{
   padding:1rem 2rem 0rem 2rem;
-  display:block;
-  border-top:1px solid #d9d9dc;
+  display:inline-block;
 }
 .comments .toggle-comments{
 }

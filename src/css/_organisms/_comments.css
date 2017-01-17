@@ -89,8 +89,7 @@
 
   .add-comment {
     padding: 1rem 2rem 0rem 2rem;
-    display: block;
-    border-top: 1px solid var(--silver);
+    display: inline-block;
   }
 
   .toggle-comments {
