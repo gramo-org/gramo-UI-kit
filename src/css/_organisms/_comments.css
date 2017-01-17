@@ -57,6 +57,21 @@
     display: block;
   }
 
+  .comment__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+  }
+
+  .comment__author {
+
+  }
+
+  .comment__date {
+    font-weight: var(--normal);
+    font-style: italic;
+  }
+
   .comments__content {
     @extend %no-list;
 
@@ -65,10 +80,6 @@
       padding-bottom: .6rem;
       margin-bottom: 1.2rem;
     }
-  }
-
-  .comment__author {
-    font-weight: var(--semibold);
   }
 
   .toggle-comments {

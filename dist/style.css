@@ -5265,13 +5265,25 @@ tr > td:last-child{
 .comments.show-inner > .comments__inner{
   display:block;
 }
+.comments .comment__header{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-justify-content:space-between;
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+  margin-bottom:.5rem;
+}
+.comments .comment__author{
+}
+.comments .comment__date{
+  font-weight:400;
+  font-style:italic;
+}
 .comments .comments__content li{
   border-bottom:1px dotted #d9d9dc;
   padding-bottom:.6rem;
   margin-bottom:1.2rem;
-}
-.comments .comment__author{
-  font-weight:600;
 }
 .comments .toggle-comments{
 }
