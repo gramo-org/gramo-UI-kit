@@ -5214,7 +5214,7 @@ tr > td:last-child{
   max-width:500px;
   text-align:right;
   position:absolute;
-  top:-4.5rem;
+  top:-3.7rem;
   z-index:6;
   right:0;
 }
@@ -5264,9 +5264,6 @@ tr > td:last-child{
   display:block;
 }
 .comments .toggle-comments{
-  background:#ededed;
-  display:inline-block;
-  padding:.7rem;
 }
 .component-view{
   padding:2rem;

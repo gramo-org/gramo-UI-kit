@@ -2,7 +2,7 @@
   max-width: 500px;
   text-align: right;
   position: absolute;
-  top: -4.5rem;
+  top: -3.7rem;
   z-index: 6;
   right: 0;
   @media (--desktop) {
@@ -56,8 +56,6 @@
   }
 
   .toggle-comments {
-    background: var(--light-gray);
-    display: inline-block;
-    padding: .7rem;
+
   }
 }
