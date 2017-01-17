@@ -5282,7 +5282,7 @@ tr > td:last-child{
   font-style:italic;
 }
 .comments .comments__content{
-  max-height:600px;
+  max-height:550px;
   overflow-y:auto;
   padding:2rem;
 }
