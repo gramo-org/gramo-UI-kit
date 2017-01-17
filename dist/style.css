@@ -5214,8 +5214,8 @@ tr > td:last-child{
   max-width:500px;
   text-align:right;
   position:absolute;
-  top:-3.7rem;
-  z-index:4;
+  top:-4.5rem;
+  z-index:6;
   right:0;
 }
 @media (min-width: 960px){
@@ -5255,9 +5255,18 @@ tr > td:last-child{
 }
 .comments__inner textarea{
   resize:vertical;
+  background:#fdfdfd;
+}
+.comments__inner .form__section--action{
+  text-align:right;
 }
 .comments.show-inner > .comments__inner{
   display:block;
+}
+.comments .toggle-comments{
+  background:#ededed;
+  display:inline-block;
+  padding:.7rem;
 }
 .component-view{
   padding:2rem;

@@ -2,8 +2,8 @@
   max-width: 500px;
   text-align: right;
   position: absolute;
-  top: -3.7rem;
-  z-index: 4;
+  top: -4.5rem;
+  z-index: 6;
   right: 0;
   @media (--desktop) {
     min-width: 500px;
@@ -43,10 +43,21 @@
 
     textarea {
       resize:vertical;
+      background: var(--gramo-white);
+    }
+
+    .form__section--action {
+      text-align: right;
     }
   }
 
   &.show-inner > .comments__inner {
     display: block;
+  }
+
+  .toggle-comments {
+    background: var(--light-gray);
+    display: inline-block;
+    padding: .7rem;
   }
 }
