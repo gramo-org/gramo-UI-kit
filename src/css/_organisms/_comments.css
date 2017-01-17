@@ -30,6 +30,10 @@
       right: 20px;
     }
 
+    .form {
+      padding: 2rem 2rem 0 2rem;
+    }
+
     .form__label {
       border-bottom: 1px solid var(--silver);
       padding-bottom: .3rem;

@@ -5244,6 +5244,9 @@ tr > td:last-child{
   top:-10px;
   right:20px;
 }
+.comments__inner .form{
+  padding:2rem 2rem 0 2rem;
+}
 .comments__inner .form__label{
   border-bottom:1px solid #d9d9dc;
   padding-bottom:.3rem;
