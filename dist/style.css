@@ -5215,8 +5215,12 @@ tr > td:last-child{
 }
 .comments__inner{
   background:#fdfdfd;
-  padding:1rem;
-  box-shadow:0 0 11px rgba(0,0,0,0.4);
+  padding:1rem 2rem;
+  box-shadow:0 5px 5px rgba(0,0,0,0.2);
+  display:none;
+}
+.comments.show-inner > .comments-inner{
+  display:block;
 }
 .component-view{
   padding:2rem;
