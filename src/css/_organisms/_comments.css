@@ -4,14 +4,14 @@
 
   &__inner {
     text-align: left;
-    margin: 2rem 0;
+    margin: 1rem 0;
     background: var(--gramo-white);
     padding: 1rem 2rem;
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
     display: none;
     position: relative;
 
-    &:after {
+    &:before {
       content: '';
       position: absolute;
       width: 0;
@@ -20,7 +20,7 @@
       border-width: 0 10px 10px 10px;
       border-color: transparent transparent #ffffff transparent;
       top: -10px;
-      right: 10px;
+      right: 20px;
     }
 
     .form__label {
@@ -31,6 +31,10 @@
     .form__input {
       border: 0;
       padding: 0;
+    }
+
+    textarea {
+      resize:vertical;
     }
   }
 
