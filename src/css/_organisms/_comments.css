@@ -8,7 +8,7 @@
     display: none;
   }
 
-  &.show-inner > .comments-inner {
+  &.show-inner > .comments__inner {
     display: block;
   }
 }
