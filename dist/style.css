@@ -5212,12 +5212,35 @@ tr > td:last-child{
 }
 .comments{
   max-width:500px;
+  text-align:right;
 }
 .comments__inner{
+  text-align:left;
+  margin:2rem 0;
   background:#fdfdfd;
   padding:1rem 2rem;
   box-shadow:0 5px 5px rgba(0,0,0,0.2);
   display:none;
+  position:relative;
+}
+.comments__inner:after{
+  content:'';
+  position:absolute;
+  width:0;
+  height:0;
+  border-style:solid;
+  border-width:0 10px 10px 10px;
+  border-color:transparent transparent #ffffff transparent;
+  top:-10px;
+  right:10px;
+}
+.comments__inner .form__label{
+  border-bottom:1px solid #d9d9dc;
+  padding-bottom:.25rem;
+}
+.comments__inner .form__input{
+  border:0;
+  padding:0;
 }
 .comments.show-inner > .comments__inner{
   display:block;
