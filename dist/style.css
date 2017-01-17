@@ -5210,6 +5210,9 @@ tr > td:last-child{
   line-height:1;
   border-radius:6px;
 }
+.comments{
+  max-width:500px;
+}
 .component-view{
   padding:2rem;
   border:1px solid #ededed;

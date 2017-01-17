@@ -77,6 +77,7 @@
 @import url('_organisms/_tabs.css');
 @import url('_organisms/_tabs--transparent.css');
 @import url('_organisms/_empty-state.css');
+@import url('_organisms/_comments.css');
 
 /* For UI kit homepage */
 @import url('ui-kit/_UI-kit.css');
