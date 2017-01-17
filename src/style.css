@@ -5259,6 +5259,7 @@ tr > td:last-child{
 .comments__inner textarea{
   resize:vertical;
   background:#fdfdfd;
+  min-height:100px;
 }
 .comments__inner .form__section--action{
   text-align:right;

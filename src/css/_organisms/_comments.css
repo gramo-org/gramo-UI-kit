@@ -48,6 +48,7 @@
     textarea {
       resize:vertical;
       background: var(--gramo-white);
+      min-height: 100px;
     }
 
     .form__section--action {
