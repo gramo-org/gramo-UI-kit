@@ -426,7 +426,7 @@ td.text--center, .fake-table__row > *.text--center{
   vertical-align:top;
 }
 
-.filter-items, .btn-select > ul, .vertical__nav, .bucket__list, .tabs__nav, .tabs__section__nav, .page-contents ul{
+.filter-items, .btn-select > ul, .vertical__nav, .bucket__list, .tabs__nav, .tabs__section__nav, .comments .comments__content, .page-contents ul{
   list-style:none;
   padding:0;
   margin:0;
@@ -5217,6 +5217,8 @@ tr > td:last-child{
   top:-3.7rem;
   z-index:6;
   right:0;
+  max-height:600px;
+  overflow-y:auto;
 }
 @media (min-width: 960px){
 
@@ -5246,8 +5248,8 @@ tr > td:last-child{
 }
 .comments__inner .form__label{
   border-bottom:1px solid #d9d9dc;
-  padding-bottom:.25rem;
-  margin-bottom:.5rem;
+  padding-bottom:.3rem;
+  margin-bottom:.6rem;
 }
 .comments__inner .form__input{
   border:0;
@@ -5262,6 +5264,11 @@ tr > td:last-child{
 }
 .comments.show-inner > .comments__inner{
   display:block;
+}
+.comments .comments__content li{
+  border-bottom:1px dotted #d9d9dc;
+  padding-bottom:.6rem;
+  margin-bottom:1.2rem;
 }
 .comments .toggle-comments{
 }

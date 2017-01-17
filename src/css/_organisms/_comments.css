@@ -5,6 +5,8 @@
   top: -3.7rem;
   z-index: 6;
   right: 0;
+  max-height: 600px;
+  overflow-y: auto;
   @media (--desktop) {
     min-width: 500px;
   }
@@ -32,8 +34,8 @@
 
     .form__label {
       border-bottom: 1px solid var(--silver);
-      padding-bottom: .25rem;
-      margin-bottom: .5rem;
+      padding-bottom: .3rem;
+      margin-bottom: .6rem;
     }
 
     .form__input {
@@ -53,6 +55,16 @@
 
   &.show-inner > .comments__inner {
     display: block;
+  }
+
+  .comments__content {
+    @extend %no-list;
+
+    li {
+      border-bottom: 1px dotted var(--silver);
+      padding-bottom: .6rem;
+      margin-bottom: 1.2rem;
+    }
   }
 
   .toggle-comments {
