@@ -1198,7 +1198,7 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 .icon--label:before{
   content:"\e918";
 }
-.icon--pencil:before{
+.icon--pencil:before, .comments .toggle-comments:before{
   content:"\e915";
 }
 .icon--echo:before{
@@ -5297,6 +5297,15 @@ tr > td:last-child{
   display:inline-block;
 }
 .comments .toggle-comments{
+  color:#504f56;
+}
+.comments .toggle-comments:before{
+  font-family:'icomoon';
+  opacity:0.5;
+  margin-right:.5rem;
+  position:relative;
+  top:.2rem;
+  font-size:90%;
 }
 .component-view{
   padding:2rem;
