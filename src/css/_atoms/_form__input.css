@@ -88,6 +88,10 @@ input-placeholder {
   @media (--tablet) { min-width: 300px!important; }
 }
 
+.form__input--220 {
+  @media (--tablet) { min-width: 220px!important; }
+}
+
 .form__input--180 {
   @media (--tablet) { min-width: 180px!important; }
 }
