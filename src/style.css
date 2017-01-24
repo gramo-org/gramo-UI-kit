@@ -1482,13 +1482,13 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
 .form__input--date, .form__input[type="date"]{
   font-weight:400;
   color:#0095da;
-  background:#fff url(img/calendar.svg) center right 10px no-repeat;
+  background:#fff url(img/calendar.svg) center right 5px no-repeat;
   border:1px solid #d9d9dc;
-  padding-right:1rem;
+  padding-right:.5rem;
   padding-left:.5rem;
-  text-align:center;
   width:auto;
-  min-width:135px;
+  min-width:115px;
+  max-height:31px;
 }
 
 .form__input--date::-webkit-calendar-picker-indicator, .form__input--date::-webkit-inner-spin-button, .form__input[type="date"]::-webkit-calendar-picker-indicator, .form__input[type="date"]::-webkit-inner-spin-button{
@@ -1504,6 +1504,9 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
 .form__input--date[disabled], .form__input[type="date"][disabled]{
   color:#3f3e44;
   background-image:none;
+  min-width:0;
+  width:100%;
+  padding-right:0;
 }
 
 .form__input--date-no-clear::-webkit-clear-button{
@@ -1587,7 +1590,7 @@ input-placeholder{
 .panels--is-editing{
   background:#f9f9f9;
 }
-@media (min-width: 960px){
+@media (min-width: 1200px){
 
   .panels--has-divider{
     background-image:url(img/line.png);
@@ -1602,7 +1605,7 @@ input-placeholder{
   flex:1 0 100%;
 }
 
-@media (min-width: 960px){
+@media (min-width: 1200px){
 
   .panels__sidebar{
     margin-right:2rem;
@@ -1613,7 +1616,7 @@ input-placeholder{
   }
 }
 
-@media (min-width: 960px){
+@media (min-width: 1200px){
 
   .panels__sidebar--45{
     -webkit-flex:0 1 45%;
@@ -1628,7 +1631,7 @@ input-placeholder{
   flex:1 0 100%;
 }
 
-@media (min-width: 960px){
+@media (min-width: 1200px){
 
   .panels__main{
     -webkit-flex:1 1 55%;
@@ -1638,7 +1641,7 @@ input-placeholder{
   }
 }
 
-@media (min-width: 960px){
+@media (min-width: 1200px){
 
   .panels__main--55{
     -webkit-flex:0 1 55%;
