@@ -44,13 +44,14 @@ input[type="radio"], input[type="checkbox"],
 .form__input[type="date"] {
   font-weight: var(--normal);
   color: var(--gramo-blue);
-  background: #fff url(img/calendar.svg) center right 10px no-repeat;
+  background: #fff url(img/calendar.svg) center right 5px no-repeat;
   border: 1px solid var(--silver);
-  padding-right: 1rem;
+  padding-right:.5rem;
   padding-left: .5rem;
-  text-align: center;
+  /*text-align: center;*/
   width: auto;
-  min-width: 135px;
+  min-width: 115px;
+  max-height: 31px;
 
   &::-webkit-calendar-picker-indicator,
   &::-webkit-inner-spin-button {
@@ -67,6 +68,10 @@ input[type="radio"], input[type="checkbox"],
     @extend .form__input[disabled];
     color: var(--base-font-color);
     background-image: none;
+    min-width: 0;
+    width: 100%;
+    /*padding-left: 0;*/
+    padding-right: 0;
   }
 }
 
