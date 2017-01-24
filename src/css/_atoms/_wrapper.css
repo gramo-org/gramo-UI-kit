@@ -9,7 +9,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   }
 
   &--has-divider {
-    @media (--desktop) {
+    @media (--hd) {
       background-image: url(img/line.png);
       background-repeat: repeat-y;
       background-position: calc(45% - .75rem) 0;
@@ -20,7 +20,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 .panels__sidebar {
   flex: 1 0 100%;
 
-  @media (--desktop) {
+  @media (--hd) {
     margin-right: 2rem;
     flex: 0 1 35%;
     padding: 0;
@@ -28,7 +28,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 }
 
 .panels__sidebar--45 {
-  @media (--desktop) {
+  @media (--hd) {
     flex: 0 1 45%;
   }
 }
@@ -36,14 +36,14 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
 .panels__main {
   flex: 1 0 100%;
 
-  @media (--desktop) {
+  @media (--hd) {
     flex: 1 1 55%;
     padding: 0;
   }
 }
 
 .panels__main--55 {
-  @media (--desktop) {
+  @media (--hd) {
     flex: 0 1 55%;
   }
 }
