@@ -1419,6 +1419,7 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 
   .form__label--hidden > span{
     visibility:hidden;
+    white-space:nowrap;
   }
 }
 .form__label--block{
