@@ -3916,7 +3916,7 @@ main.pull .bucket{
 .tabs__nav__item__type--album:before{
   content:"\e917";
 }
-.tabs__nav__item__type--performer:before, .tabs__nav__item__type--group:before, .tabs__nav__item__type--person:before{
+.tabs__nav__item__type--performer:before, .tabs__nav__item__type--group:before, .tabs__nav__item__type--person:before, .tabs__nav__item__type--inheritance:before{
   content:"\e916";
   top:.12rem;
 }
@@ -4809,7 +4809,7 @@ main.pull .section-header--fixed{
   color:#a5a4ab;
 }
 
-[data-type*="performer"]::before, [data-type*="person"]::before{
+[data-type*="performer"]::before, [data-type*="person"]::before, [data-type*="inheritance"]::before{
   content:"\e916";
 }
 
