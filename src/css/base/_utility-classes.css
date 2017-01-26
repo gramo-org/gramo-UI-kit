@@ -266,6 +266,14 @@ td.text--center,
   }
 }
 
+.col--for-numeric-input {
+  max-width: 65px;
+  
+  .form__input {
+    padding-right: 0;
+  }
+}
+
 /* Truncated text */
 .truncated {
   /*position: relative;*/

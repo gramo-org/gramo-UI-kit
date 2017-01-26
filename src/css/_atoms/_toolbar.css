@@ -6,6 +6,11 @@
   flex-wrap: wrap;
   align-items: center;
   @extend %margin-bottom;
+  
+  &--padded {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
   &__action {
     flex: 1 0 auto;

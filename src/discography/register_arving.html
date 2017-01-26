@@ -78,7 +78,7 @@
             <li class="tabs__nav__item">
               <a href="#performer">
                 <span class="tabs__nav__item__type tabs__nav__item__type--performer">Utøver</span>
-                David Robert Jones
+                Morten Harket
               </a>
             </li>
           </ul>
@@ -93,10 +93,11 @@
 
               <header class="infobar infobar--padded infobar--in-tabs no-margin--bottom">
                 <div class="infobar__left">
-                  <h1 class="infobar__heading">David Robert Jones</h1>
+                  <h1 class="infobar__heading">Morten Harket</h1>
                   <p class="infobar__meta">
                     <span class="badge badge--info badge--tag" data-type="performer">Utøver</span>
                     <span class="badge badge--info badge--tag" data-type="owner">Produsent</span>
+                    <span class="badge badge--info badge--tag" data-type="owner">Har arvinger</span>
                   </p>
                 </div>
                   <ul class="row tabs__section__nav tabs__section__nav--absolute">
@@ -288,47 +289,138 @@
                   <section class="container container--padded">
                     <div class="section-header">
                       <header>
-                        <h3 data-type="owner">Overførte rettigheter</h3>
+                        <h2 data-type="owner">Overførte rettigheter</h2>
                       </header>
                     </div>
-                    <form class="form">
-                      <fieldset class="form__fieldset">
-                      <div class="form__field">
-                        <label class="form__label">
-                          <span>Fra</span>
-                          <input type="text" value="Some artist" class="form__input form__input--180" disabled>
-                        </label>
-                      </div>
-                      <div class="form__field">
-                        <label class="form__label">
-                          <span>Andel</span>
-                          <input type="text" value="50%" class="form__input form__input--60" disabled>
-                        </label>
-                      </div>
-                      <div class="form__field">
-                        <label class="form__label">
-                          <span>Startdato</span>
-                          <input type="date" value="01.02.2016" class="form__input form__input--date form__input--130" disabled>
-                        </label>
-                        <label class="form__label text--inline">
-                          <span>Sluttdato</span>
-                          <input type="date" value="01.02.2016" class="form__input form__input--date form__input--130" disabled>
-                        </label>
-                      </div>
-                      <div class="form__section--action form__field__help">
-                        <p><a href="#" class="link--no-line">Rediger rettigheter</a></p>
-                      </div>
-                    </fieldset>
-                  </form>
-                  <hr class="horizontal-rule horizontal-rule--dashed">
+                    
                   <section class="container">
-                    <div class="section-header">
-                      <header>
-                        <h2>Ny overføring</h2>
-                      </header>
+                    <div class="row">
+                      <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                        Overført til
+                      </div>
+                      <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                        Startdato
+                      </div>
+                      <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                        Sluttdato
+                      </div>
+                      <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
+                        Andel
+                      </div>
                     </div>
-                    <form class="form">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Tomina Harket</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                          <input type="date" value="" class="form__input form__input--date form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Sluttdato</span>
+                          <input type="date" value="" class="form__input form__input--date form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col col--for-numeric-input">
+                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                          <input type="text" value="40%" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="form__field__action align--vertical-center">
+                        <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Jo Jo</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                          <input type="date" value="" class="form__input form__input--date form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#" class="link--no-line">Legg til sluttdato</a>
+                      </div>
+                      <div class="col col--for-numeric-input">
+                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                          <input type="text" value="25%" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="form__field__action align--vertical-center">
+                        <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Lou Tormensen</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                          <input type="date" value="" class="form__input form__input--date form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#" class="link--no-line">Legg til sluttdato</a>
+                      </div>
+                      <div class="col col--for-numeric-input">
+                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                          <input type="text" value="25%" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="form__field__action align--vertical-center">
+                        <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Redd Barna</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                          <input type="date" value="" class="form__input form__input--date form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#" class="link--no-line">Legg til sluttdato</a>
+                      </div>
+                      <div class="col col--for-numeric-input">
+                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                          <input type="text" value="10%" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="form__field__action align--vertical-center">
+                        <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Tor Harket</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                          <input type="date" value="" class="form__input form__input--date form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#" class="link--no-line">Legg til sluttdato</a>
+                      </div>
+                      <div class="col col--for-numeric-input">
+                        <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                          <input type="text" value="40%" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="form__field__action align--vertical-center">
+                        <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                      </div>
+                    </div>
+                    <div class="form__section--action">
+                      <a href="#" class="link--no-line">Legg til rettigheter</a>
+                    </div>
+                    <fieldset class="form__fieldset form__fieldset--group">
                       <h4 class="heading--sub">1. Velg dato rettigheter gjelder for</h4>
+                      <form class="form">
                         <label class="form__label text--inline">
                           <span>Fra</span>
                           <input type="date" value="01.02.2016" class="form__input form__input--date form__input--130">
@@ -340,48 +432,9 @@
                         <div class="form__field__action">
                           <a class="link--no-line" href="#">Legg til sluttdato</a>
                         </div>
-                        <hr class="horizontal-rule--spacer">
-                        <h4 class="heading--sub">2. Velg person eller selskap</h4>
-                        <div class="row">
-                          <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
-                            Navn
-                          </div>
-                          <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
-                            Startdato
-                          </div>
-                          <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
-                            Sluttdato
-                          </div>
-                          <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
-                            Andel
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                              <input type="text" value="Morten Harkett" class="form__input form__input--block" disabled>
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
-                              <input type="date" value="" class="form__input form__input--date form__input--block" disabled>
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Sluttdato</span>
-                              <input type="date" value="" class="form__input form__input--date form__input--block" disabled>
-                            </label>
-                          </div>
-                          <div class="col">
-                            <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                              <input type="text" value="50%" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="form__field__action align--vertical-center">
-                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                          </div>
-                        </div>
                       </form>
+                      <hr class="horizontal-rule--spacer">
+                      <h4 class="heading--sub">2. Velg person eller selskap rettighetene skal overføres til</h4>
                       <form action="" class="search__form">
                         <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
                         <button class="search__submit"></button>
@@ -395,11 +448,12 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td data-label="Navn">Morten Harkett</td>
-                            <td data-label="Profil">Utøver</td>
+                            <td data-label="Navn">Redd Barna</td>
+                            <td data-label="Profil">Selskap/organisasjon</td>
                           </tr>
                         </tbody>
                       </table>
+                    </fieldset><!--/ .toolbar-->
                     </section>
                   </section>                
                 </div><!-- end /.panels__main -->
