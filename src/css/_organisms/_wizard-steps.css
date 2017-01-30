@@ -1,0 +1,53 @@
+.wizard-steps {
+  padding: 0;
+  display: flex;
+}
+
+.wizard-steps li {
+  background: var(--silver);
+  padding: 11px 30px 10px 40px;
+  width: auto;
+  position: relative;
+  list-style-position: inside;
+  font-weight: var(--bold);
+  white-space: nowrap;
+}
+
+.wizard-steps li::before, .wizard-steps li::after {
+  border: solid transparent;
+	content: '';
+	position: absolute;
+  border-color: transparent;
+	border-left-color:  var(--base-background-color);
+}
+
+.wizard-steps li::before {
+  border-width: 24px;
+  left: 0px;
+  top: -4px;
+}
+
+.wizard-steps li:first-child::before {
+  border-left-color: transparent;
+}
+
+.wizard-steps li::after {
+	border-left-color: var(--silver);
+  border-width: 20px; 
+  top: 0;
+  right: -40px;
+  z-index: 1;
+}
+
+.wizard-steps li.selected {
+  background-color: var(--off-gray);
+  color: #fff;
+}
+
+.wizard-steps li.selected::after {
+  border-left-color: var(--off-gray);
+}
+
+.wizard-steps li:last-child::after {
+  right: -40px;
+}

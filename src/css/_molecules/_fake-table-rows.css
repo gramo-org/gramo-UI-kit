@@ -55,9 +55,8 @@
     background: var(--table-head-background);
     text-align: center;
     font-weight: var(--semibold);
-    display: none;
     cursor: default;
-    @media (--tablet) { display: flex; }
+    align-items: flex-end;
 
     &:hover {
       background: var(--table-head-background);
@@ -67,6 +66,12 @@
       text-align: left;
     }
   }
+  
+  &--head:not(.always-visible) {
+    display: none;
+    @media (--tablet) { display: flex; }
+  }
+  
   /* fake-table__row--foot */
   &--foot {
     border: 0;

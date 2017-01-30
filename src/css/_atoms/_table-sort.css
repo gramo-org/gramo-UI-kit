@@ -3,10 +3,10 @@
   margin-left: 0.5rem;
   display: inline-block;
   vertical-align: top;
-  margin-top: 0.15rem;
+  margin-top: -0.2rem;
 
   &__link {
-    font-size: 7px;
+    font-size: 5px;
     position: absolute;
     display: block;
     left: 0;
@@ -19,7 +19,7 @@
     }
 
     &--up {
-      top: 0.3rem;
+      top: 0.4rem;
     }
 
     &--down {

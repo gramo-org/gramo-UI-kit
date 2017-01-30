@@ -186,3 +186,8 @@
     margin: .5rem -1rem -1rem -1rem;
   }
 }
+
+.fa-exclamation-circle {
+  font-size: 20px;
+  color: var(--gramo-red);
+}

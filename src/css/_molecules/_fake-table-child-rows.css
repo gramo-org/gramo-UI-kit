@@ -32,3 +32,14 @@
     background: var(--gramo-white);
   }
 }
+
+.fake-table__row--child-inner {
+  width: 100%;
+  padding: 0 1rem;
+  & > .row {
+    padding: 1rem 0;
+  }
+  & > .row:nth-child(even) {
+    background: var(--x-light-gray);
+  }
+}

@@ -28,6 +28,7 @@
 @import url('_atoms/_table-row-toggle.css');
 @import url('_atoms/_table-states.css');
 @import url('_atoms/_table-cells.css');
+@import url('_atoms/_table-sort.css');
 @import url('_atoms/_fake-table-toggle.css');
 @import url('_atoms/_fake-table-cells.css');
 @import url('_atoms/_toggle.css');
@@ -61,6 +62,7 @@
 @import url('_molecules/_flash-message.css');
 @import url('_molecules/_search.css');
 @import url('_molecules/_footer.css');
+@import url('_molecules/_tooltip.css');
 
 /*Organisms*/
 @import url('_organisms/_site-header.css');
@@ -78,6 +80,7 @@
 @import url('_organisms/_tabs--transparent.css');
 @import url('_organisms/_empty-state.css');
 @import url('_organisms/_comments.css');
+@import url('_organisms/_wizard-steps.css');
 
 /* For UI kit homepage */
 @import url('ui-kit/_UI-kit.css');

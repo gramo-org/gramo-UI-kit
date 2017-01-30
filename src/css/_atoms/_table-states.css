@@ -3,7 +3,8 @@
 tr:hover > td.table__cell--action,
 tr:hover > .table-summary__cell--action,
 .fake-table__row:hover > .fake-table__cell--action,
-.fake-table__toggle-row:hover > .fake-table__cell--action {
+.fake-table__toggle-row:hover > .fake-table__cell--action,
+.fake-table__row--child-inner > .row:hover .fake-table__cell--action  {
   position: relative;
 
   & > .text--hide-on-hover {
