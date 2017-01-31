@@ -75,7 +75,8 @@
     border-top: 1px solid var(--silver);
 
     & > *:first-child {
-      flex: 1 0 auto;
+      flex: 0 1 auto;
+      @media (--tablet) { flex: 1 0 auto; }
     }
 
     & > *:first-child[class$="--short"] {
@@ -92,6 +93,15 @@
 
     span {
       margin-right: 1rem;
+    }
+    
+    &--cols {
+      display: flex;
+      
+      .col {
+        flex: 1;
+        padding-left: 0;
+      }
     }
   }
 
