@@ -28,7 +28,7 @@
     
     &:first-child {
       margin-left: 0;
-      left: -4rem;
+      left: -4.2rem;
     }
     
     &:nth-child(2) {

@@ -119,6 +119,11 @@
       background: var(--base-background-color);
     }
   }
+  
+  /* Vertically center rows with input fields */
+  &--with-inputs {
+    align-items: center;
+  }
 
   /* Borderless row */
   &--borderless {
@@ -160,11 +165,11 @@
     padding-bottom: 2px;
   }
 
-  .fake-table__toggle-container {
+  & > .fake-table__toggle-container {
     border-bottom: 1px solid var(--table-border-color);
   }
 
-  .table-row-toggle {
+  & > .fake-table__toggle-container .table-row-toggle {
     @extend .icon--chevron-down;
   }
 }
