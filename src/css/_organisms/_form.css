@@ -9,9 +9,9 @@
     margin: 0 0 1.2rem 0;
     clear: both;
 
-    &:last-child {
+    /*&:last-child { /* test to see if this affects vertical rhythm 
       margin-bottom: 0;
-    }
+    }*/
 
     &--group {
       padding: 2rem;

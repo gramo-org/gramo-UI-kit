@@ -4488,10 +4488,6 @@ input[type="text"].search__form__input--large{
     clear:both;
   }
 
-  .form__fieldset:last-child{
-  margin-bottom:0;
-}
-
   .form__fieldset--group{
   padding:2rem;
   background:#ededed;
