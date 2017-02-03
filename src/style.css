@@ -3805,31 +3805,36 @@ main.pull .bucket{
   background:#fdfdfd;
 }
 
-.fake-table__row--child--level-1, .fake-table__row--child--level-2{
+.fake-table__row--expanded > .fake-table__row--child--with-rows{
+  display:block!important;
   width:100%;
   padding:0 1rem;
 }
 
-.fake-table__row--child--level-1 > .fake-table__row, .fake-table__row--child--level-2 > .fake-table__row{
+.fake-table__row--expanded > .fake-table__row--child--with-rows > .fake-table__row{
   border-left:0;
   border-right:0;
-  border-top:0;
-}
-
-.fake-table__row--child--level-1 div[class*="col-"]:first-child, .fake-table__row--child--level-2 div[class*="col-"]:first-child{
-  padding-left:3rem;
-}
-
-.fake-table__row--child--level-1 .fake-table__row--expanded > .fake-table__toggle-container, .fake-table__row--child--level-2 .fake-table__row--expanded > .fake-table__toggle-container{
-  border-bottom:0;
+  margin-top:-2px;
 }
 
 .fake-table__row--child--level-1 .fake-table__row--expanded{
   background:rgb(244, 244, 244);
 }
 
+.fake-table__row--child--level-1 .fake-table__row--expanded > .fake-table__toggle-container{
+  background:rgb(244, 244, 244);
+}
+
+.fake-table__row--child--level-1 > .fake-table__row div[class*="col-"]:first-child{
+  padding-left:3rem;
+}
+
+.fake-table__row--child--level-1 > .fake-table__row{
+  background:#ededed;
+}
+
 .fake-table__row--child--level-2 > .fake-table__row{
-  background:rgb(249, 249, 249);
+  background:rgb(244, 244, 244);
 }
 
 .fake-table__row--child--level-2 > .fake-table__row div[class*="col-"]:first-child{
@@ -3838,10 +3843,6 @@ main.pull .bucket{
 
 .fake-table__row--child--level-2 > .fake-table__row:last-child{
   margin-bottom:0;
-}
-
-.fake-table__row--expanded > .fake-table__row--child--with-rows{
-  display:block!important;
 }
 .toggle-sidebar a{
   display:inline-block;
@@ -4724,7 +4725,6 @@ input[type="text"].search__form__input--large{
 .section-header--with-border{
   border-bottom:1px solid #d9d9dc;
   padding-bottom:1.2rem;
-  padding-top:0;
 }
 
 .section-header header{
@@ -5512,6 +5512,7 @@ tr > td:last-child{
 }
 .wizard-steps:after{
   top:1rem;
+  left:0;
   z-index:-1;
   position:absolute;
   content:'';
