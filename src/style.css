@@ -4850,6 +4850,14 @@ input[type="text"].search__form__input--large{
   padding-left:0;
 }
 
+.section-header--divided .section-header__meta--cols--compressed .col{
+  -webkit-flex:0 1 auto;
+  -ms-flex:0 1 auto;
+  flex:0 1 auto;
+  margin-right:2rem;
+  padding-left:1rem;
+}
+
 .section-header--divided .section-header__toolbar{
   text-align:right;
 }

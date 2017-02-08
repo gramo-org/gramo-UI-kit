@@ -103,6 +103,15 @@
         padding-left: 0;
       }
     }
+    
+    &--cols--compressed {
+      
+      .col {
+        flex: 0 1 auto;
+        margin-right: 2rem;
+        padding-left: 1rem;
+      }
+    }
   }
 
   .section-header__toolbar {

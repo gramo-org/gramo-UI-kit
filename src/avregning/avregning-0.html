@@ -58,23 +58,74 @@
 
 
       <section class="container container--hd">
-        <div class="section-header section-header--divided no-margin--bottom">
+        <div class="section-header">
           <header>
             <h1>Avregning oversikt</h1>
           </header>
-          <div class="section-header__below">
-            <div class="section-header__meta">
-              --
-            </div>
-            <div class="section-header__toolbar">
-              <button class="btn btn--primary">Opprett ny avregning</button>
-            </div>
+          <div class="section-header__toolbar">
+            <button class="btn btn--primary">Opprett ny avregning</button>
           </div>
-          
         </div>
-      </section>
-
-      <section class="container container--hd">
+        
+        <div class="section-header section-header--divided">
+          <div class="section-header__above">
+            <div class="section-header__meta section-header__meta--cols section-header__meta--cols--compressed">
+              <div class="col align--vertical-center">
+                <h2>2017</h2>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <table class="table table--fluid table--with-margin">
+          <thead>
+            <tr>
+              <th>Avrg. år</th>
+              <th>Type</th>
+              <th>Kjørt</th>
+              <th>Dato</th>
+              <th>Sum spilletid</th>
+              <th>Midler utøver</th>
+              <th>Midler produsenter</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Avrg. år">-</td>
+              <td data-label="Type">-</td>
+              <td data-label="Kjørt">-</td>
+              <td data-label="Dato">-</td>
+              <td data-label="Sum spilletid">-</td>
+              <td data-label="Midler utøver">-</td>
+              <td data-label="Midler produsenter">-</td>
+              <td data-label="Total">-</td>
+            </tr>
+          </tbody>
+        </table><!--/.fake-table-->
+        <a href="#" class="btn btn--secondary">Nytt tillegg</a>
+        <a href="#" class="btn btn--secondary">Ny korrekjson</a>
+        <hr>
+        <div class="section-header section-header--divided">
+          <div class="section-header__above">
+            <div class="section-header__meta section-header__meta--cols section-header__meta--cols--compressed">
+              <div class="col align--vertical-center">
+                <h2>2016</h2>
+              </div>
+              <div class="col">
+                <h4>Total innsp.</h4>
+                <h2 class="text--thin">64 247 min</h2>
+              </div>
+              <div class="col">
+                <h4>Total sum spilletid</h4>
+                <h2 class="text--thin">364 247</h2>
+              </div>
+              <div class="col">
+                <h4>Total penger</h4>
+                <h2 class="text--thin">21 000 000</h2>
+              </div>
+            </div>
+          </div>  
+        </div>
         <table class="table table--fluid table--with-margin">
           <thead>
             <tr>
