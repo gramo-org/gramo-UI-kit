@@ -89,9 +89,6 @@
                 <h4>Total ikke vernet</h4>
                 <h2 class="text--thin">72</h2>
               </div>
-              <div class="col align--vertical-center">
-                <h2>78% identifiserte</h2>
-              </div>
             </div>
             <div class="section-header__toolbar">
               <button class="btn btn--primary">Summer/beregn</button>
@@ -150,16 +147,15 @@
                 <option value="">Vern</option>
               </select>
             </div>
-            <div class="col-sm-1 text--center col--no-flex">
-              <span class="table-sort">
-                Status
-              </span>
-            </div>
             <div class="col-sm-2 text--center col--no-flex">
-              <label>
-                <input type="checkbox" class="form__input form__input--checkbox">
-                Vis kun feiler
-              </label>
+              <span class="table-sort">
+                Feil
+              </span>
+              <span class="x-toggle-container">
+                <input type="checkbox" class="x-toggle">
+                <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                </label>
+              </span>
             </div>
           </li>
           <li class="fake-table__row fake-table__row--expanded">
@@ -189,13 +185,16 @@
                 <div class="col-sm-1" data-label="Vern">
                   Roma
                 </div>
-                <div class="col-sm-1 text--center" data-label="Status">
+                <div class="col-sm-2 text--center" data-label="Status">
                   <div class="tooltip-wrapper">
                     <i class="fa fa-exclamation-circle"></i>
-                    <div class="tooltip">Mangler prod. land og utg. år</div>
+                    <div class="tooltip">
+                      <ul class="tooltip__list">
+                        <li>Mangler prod. land og utg. år</li>
+                        <li>Mangler prod. land og utg. år</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="col-sm-1" data-label="Vis kun feiler">
                 </div>
                 <div class="col-sm-1 fake-table__cell--action">
                   <a href="#" class="table-row-toggle" data-ember-action="1034"></a>

@@ -101,15 +101,11 @@
       .col {
         flex: 1;
         padding-left: 0;
-      }
-    }
-    
-    &--cols--compressed {
-      
-      .col {
-        flex: 0 1 auto;
-        margin-right: 2rem;
-        padding-left: 1rem;
+        
+        @media (--hd) {
+          flex: 0 1 auto;
+          margin-right: 2rem;
+        }
       }
     }
   }
