@@ -56,8 +56,22 @@
     }
   }
   
-  & > .fake-table__row div[class*="col-"]:first-child {
+  & > .fake-table__row > .fake-table__toggle-container div[class*="col-"]:first-child {
     padding-left: 3rem;
+    
+    &:before {
+      content: '+';
+      display: inline-block;
+      margin-right: .25rem;
+    }
+  }
+  
+  & > .fake-table__row--expanded > .fake-table__toggle-container div[class*="col-"]:first-child {
+    &:before {
+      content: '\2013';
+      display: inline-block;
+      margin-right: .25rem;
+    }
   }
   
   & > .fake-table__row {

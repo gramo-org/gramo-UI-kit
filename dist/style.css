@@ -3820,8 +3820,20 @@ main.pull .bucket{
   background:rgb(244, 244, 244);
 }
 
-.fake-table__row--child--level-1 > .fake-table__row div[class*="col-"]:first-child{
+.fake-table__row--child--level-1 > .fake-table__row > .fake-table__toggle-container div[class*="col-"]:first-child{
   padding-left:3rem;
+}
+
+.fake-table__row--child--level-1 > .fake-table__row > .fake-table__toggle-container div[class*="col-"]:first-child:before{
+  content:'+';
+  display:inline-block;
+  margin-right:.25rem;
+}
+
+.fake-table__row--child--level-1 > .fake-table__row--expanded > .fake-table__toggle-container div[class*="col-"]:first-child:before{
+  content:'\2013';
+  display:inline-block;
+  margin-right:.25rem;
 }
 
 .fake-table__row--child--level-1 > .fake-table__row{
