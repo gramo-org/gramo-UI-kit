@@ -3699,8 +3699,12 @@ main.pull .bucket{
   -ms-flex-align:center;
   align-items:center;
 }
-.fake-table__row--with-inputs .form__input{
-  margin:-1rem 0;
+@media (min-width: 768px){
+
+  .fake-table__row--with-inputs .form__input{
+    margin-top:-1rem;
+    margin-bottom:-1rem;
+  }
 }
 .fake-table__row--borderless{
   border-width:1px 0 0 0;
