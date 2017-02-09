@@ -105,6 +105,12 @@
   display: inline-block;
 }
 
+.icon--chevron-up:before {
+  @extend .icon--chevron-right:before;
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+
 .icon--logo-echo:before {
 	content: "\e906";
 }

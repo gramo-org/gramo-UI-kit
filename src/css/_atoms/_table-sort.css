@@ -1,34 +1,20 @@
 .table-sort {
   position: relative;
-  margin-left: 0.5rem;
   display: inline-block;
-  vertical-align: top;
-  margin-top: -0.2rem;
-
-  &__link {
-    font-size: 5px;
-    position: absolute;
-    display: block;
-    left: 0;
-    text-decoration: none;
-
-    &--up > i,
-    &--down > i {
-      display: block;
-      line-height: normal;
-    }
-
-    &--up {
-      top: 0.4rem;
-    }
-
-    &--down {
-      top: 1.2rem;
-    }
-
-    &--up i,
-    &--down i {
-      color: var(--slate-gray);
-    }
+  cursor: pointer;
+  
+  &--asc:after,
+  &--desc:after {
+    font-family: 'icomoon';
+    font-size: 80%;
+    margin-left: .35rem;
+  }
+  
+  &--asc:after {
+    @extend .icon--chevron-down:before;
+  }
+  
+  &--desc:after {
+    @extend .icon--chevron-up:before;
   }
 }

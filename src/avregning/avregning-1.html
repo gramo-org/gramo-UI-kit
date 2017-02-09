@@ -113,17 +113,13 @@
         <ul class="fake-table fake-table--detached">
           <li class="fake-table__row fake-table__row--head always-visible">
             <div class="col-sm-2 col--no-flex">
-              Tittel
               <span class="table-sort">
-                <a href="#" class="table-sort__link table-sort__link--up"><i class="icon--arrow-up"></i></a>
-                <a href="#" class="table-sort__link table-sort__link--down"><i class="icon--arrow-down"></i></a>
+                Tittel
               </span>
             </div>
-            <div class="col-sm-2 col--no-flex">
-              Hovedartist
+            <div class="col-sm-1 col--no-flex">
               <span class="table-sort">
-                <a href="#" class="table-sort__link table-sort__link--up"><i class="icon--arrow-up"></i></a>
-                <a href="#" class="table-sort__link table-sort__link--down"><i class="icon--arrow-down"></i></a>
+                Hovedartist
               </span>
             </div>
             <div class="col-sm-1 text--center">
@@ -132,29 +128,21 @@
               </select>
             </div>
             <div class="col-sm-1 text--center">
-              <select class="select select--fluid">
-                <option value="">utg. år</option>
-              </select>
+              <input type="number" class="form__input" value="1986">
             </div>
             <div class="col-sm-1 col--no-flex">
-              Label
-              <span class="table-sort">
-                <a href="#" class="table-sort__link table-sort__link--up"><i class="icon--arrow-up"></i></a>
-                <a href="#" class="table-sort__link table-sort__link--down"><i class="icon--arrow-down"></i></a>
+              <span class="table-sort table-sort--asc">
+                Label
               </span>
             </div>
             <div class="col-sm-1 col--no-flex">
-              ISRC
-              <span class="table-sort">
-                <a href="#" class="table-sort__link table-sort__link--up"><i class="icon--arrow-up"></i></a>
-                <a href="#" class="table-sort__link table-sort__link--down"><i class="icon--arrow-down"></i></a>
+              <span class="table-sort table-sort--desc">
+                ISRC
               </span>
             </div>
             <div class="col-sm-1 col--no-flex">
-              Sum splt
               <span class="table-sort">
-                <a href="#" class="table-sort__link table-sort__link--up"><i class="icon--arrow-up"></i></a>
-                <a href="#" class="table-sort__link table-sort__link--down"><i class="icon--arrow-down"></i></a>
+                Sum splt
               </span>
             </div>
             <div class="col-sm-1 text--center">
@@ -162,10 +150,16 @@
                 <option value="">Vern</option>
               </select>
             </div>
-            <div class="col-sm-1 text--center">
-              <select class="select select--fluid">
-                <option value="">Status</option>
-              </select>
+            <div class="col-sm-1 text--center col--no-flex">
+              <span class="table-sort">
+                Status
+              </span>
+            </div>
+            <div class="col-sm-2 text--center col--no-flex">
+              <label>
+                <input type="checkbox" class="form__input form__input--checkbox">
+                Vis kun feiler
+              </label>
             </div>
           </li>
           <li class="fake-table__row fake-table__row--expanded">
@@ -174,7 +168,7 @@
                 <div class="col-sm-2" data-label="Tittel">
                   <a href="#">1999 (radio Edit)</a>
                 </div>
-                <div class="col-sm-2" data-label="Hovedartist">
+                <div class="col-sm-1" data-label="Hovedartist">
                   Prince
                 </div>
                 <div class="col-sm-1 text--center" data-label="Prod-land">
@@ -195,11 +189,13 @@
                 <div class="col-sm-1" data-label="Vern">
                   Roma
                 </div>
-                <div class="col-sm-1" data-label="Status">
+                <div class="col-sm-1 text--center" data-label="Status">
                   <div class="tooltip-wrapper">
                     <i class="fa fa-exclamation-circle"></i>
                     <div class="tooltip">Mangler prod. land og utg. år</div>
                   </div>
+                </div>
+                <div class="col-sm-1" data-label="Vis kun feiler">
                 </div>
                 <div class="col-sm-1 fake-table__cell--action">
                   <a href="#" class="table-row-toggle" data-ember-action="1034"></a>

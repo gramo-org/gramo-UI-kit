@@ -65,6 +65,13 @@
     @media (--tablet) {
       text-align: left;
     }
+    
+    /*** Compress select menu in .fake-table__row--head ***/
+
+    .select, .form__input {
+      height: auto;
+      padding: .25rem 2rem .25rem .5rem;
+    }
   }
   
   &--head:not(.always-visible) {
