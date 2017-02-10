@@ -45,7 +45,7 @@ hr, .horizontal-rule {
 }
 
 .horizontal-rule--spacer {
-  margin-top: 1.2rem!important;
+  margin: 1.2rem 0 2rem 0!important;
   background: none;
   &:before,
   &:after {
