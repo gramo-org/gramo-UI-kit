@@ -1164,11 +1164,11 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 }
 @font-face{
   font-family:'icomoon';
-  src:url('fonts/icomoon.eot?pzssl2');
-  src:url('fonts/icomoon.eot?pzssl2#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?pzssl2') format('truetype'),
-    url('fonts/icomoon.woff?pzssl2') format('woff'),
-    url('fonts/icomoon.svg?pzssl2#icomoon') format('svg');
+  src:url('fonts/icomoon.eot?mapv1v');
+  src:url('fonts/icomoon.eot?mapv1v#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mapv1v') format('truetype'),
+    url('fonts/icomoon.woff?mapv1v') format('woff'),
+    url('fonts/icomoon.svg?mapv1v#icomoon') format('svg');
   font-weight:normal;
   font-style:normal;
 }
@@ -1181,6 +1181,11 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 	font-variant:normal;
 	text-transform:none;
   display:inline-block;
+}
+.icon--warning:before{
+  content:"\e920";
+  font-size:18px;
+  color:#ed6b6a;
 }
 .icon--contact:before{
   content:"\e91d";
@@ -1353,11 +1358,6 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
   background:#ededed;
   padding:0 1rem;
   margin:.5rem -1rem -1rem -1rem;
-}
-
-.fa-exclamation-circle{
-  font-size:20px;
-  color:#ed6b6a;
 }
 .link--no-style, .btn-select > ul li a{
   color:#3f3e44;
