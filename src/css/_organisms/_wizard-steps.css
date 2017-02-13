@@ -1,120 +1,30 @@
 .wizard-steps {
   padding: 0;
-  display: inline-flex;
-  justify-content: space-between;
-  counter-reset: section;
   list-style: none;
-  position: relative;
-  margin-left: 3rem;
-  
-  &:after {
-    top: 1rem;
-    left: 0;
-    z-index: -1;
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: var(--silver);
-  }
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  display: inline-flex;
+  vertical-align: middle;
   
   & > li {
-    position: relative;
     font-size: 1.5rem;
-    text-transform: uppercase;
     color: var(--off-gray);
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    margin: 2rem 2rem 0 2rem;
+    margin-right: 1rem;
     
-    &:first-child {
-      margin-left: 0;
-      left: -4.2rem;
+    &:after {
+      content: '\e908';
+      font-family: 'icomoon';
+      font-size: 1.2rem;
+      color: var(--silver);
+      margin-left: 1rem;
     }
-    
-    &:nth-child(2) {
-      left: 2rem;
-    }
-    
-    &:last-child {
-      margin-right: 0;
-      right: -6.1rem;
+  
+    &:last-child::after {
+      content: none;
     }
   }
   
-  & > li:before {
-    counter-increment: section; 
-    content: counters(section,".") " ";
-    position: absolute;
-    top: -2rem;
-    left: 50%;
-    margin-left: -1rem;
-    width: 2.4rem;
-    height: 2.4rem;
-    background: var(--silver);
-    color: var(--off-gray);
-    /*font-weight: var(--bold);*/
-    border-radius: 3rem;
-    text-align: center;
-  }
-  
-  & > li.selected:before {
-    background: var(--gramo-blue);
-    color: var(--gramo-white);
+  & > li.selected {
+    color: var(--gramo-blue);
   }
 }
-
-
-/*.wizard-steps {
-  padding: 0;
-  display: flex;
-}
-
-.wizard-steps li {
-  background: var(--silver);
-  padding: 11px 30px 10px 40px;
-  width: auto;
-  position: relative;
-  list-style-position: inside;
-  font-weight: var(--bold);
-  white-space: nowrap;
-}
-
-.wizard-steps li::before, .wizard-steps li::after {
-  border: solid transparent;
-	content: '';
-	position: absolute;
-  border-color: transparent;
-	border-left-color:  var(--base-background-color);
-}
-
-.wizard-steps li::before {
-  border-width: 24px;
-  left: 0px;
-  top: -4px;
-}
-
-.wizard-steps li:first-child::before {
-  border-left-color: transparent;
-}
-
-.wizard-steps li::after {
-	border-left-color: var(--silver);
-  border-width: 20px; 
-  top: 0;
-  right: -40px;
-  z-index: 1;
-}
-
-.wizard-steps li.selected {
-  background-color: var(--off-gray);
-  color: #fff;
-}
-
-.wizard-steps li.selected::after {
-  border-left-color: var(--off-gray);
-}
-
-.wizard-steps li:last-child::after {
-  right: -40px;
-}*/
