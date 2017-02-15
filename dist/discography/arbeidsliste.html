@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+  window.onload = window.location.hash = 'tab2';
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="../img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+
+      <!--- Flash message --->
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success">
+          <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--borderless">Angre ?</button></p>
+        </div>
+      </div> -->
+
+      <section class="container container--hd">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
+            <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
+            <li class="tabs__nav__item">
+              <a href="#tab2">
+                <span class="tabs__nav__item__type tabs__nav__item__type--recording">Arbeidsliste</span>
+  
+              </a>
+            </li>
+          </ul>
+
+          <section id="search" class="tabs__section">
+            
+          </section><!--/.tabs__section-->
+          <section id="tab2" class="tabs__section">
+            <div class="toolbar">
+              <!-- <div class="search">
+                <form action="" class="search__form search__form--in-toolbar">
+                  <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk...">
+                  <button class="search__submit"></button>
+                </form>
+              </div> -->
+              <h2>Arbeidsliste</h2>
+              <!-- <div class="col-xs col--no-flex text--right">
+                <span class="text--inline">Filtrér</span>
+                <span class="x-toggle-container">
+                  <input type="checkbox" class="x-toggle">
+                  <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                  </label>
+                </span>
+              </div> -->
+            </div>
+
+            <div class="tabs">
+              <ul class="tabs__nav tabs__nav--flexible">
+                <li class="tabs__nav__item">
+                  <a href="#" class="active">Innspillinger</a>
+                </li>
+                <li class="tabs__nav__item">
+                  <a href="#">Utgivelser</a>
+                </li>
+              </ul>
+              <section class="tabs__section">
+                <table class="table table--fluid table--with-margin">
+                  <thead class="table__head--always-visible">
+                    <tr>
+                      <th>Tittel</th>
+                      <th>Hovedartist</th>
+                      <th class="text--center"><input type="number" class="form__input" value="1986"></th>
+                      <th>Label</th>
+                      <th class="text--center">
+                        <span class="table-sort table-sort--asc">
+                          Varighet
+                        </span>
+                      </th>
+                      <th>ISRC</th>
+                      <th class="text--center">
+                        <span class="table-sort table-sort--desc">
+                          Ant. avsp.
+                        </span>
+                      </th>
+                      <th class="text--center">Sum spilletid</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Tittel">En låt</td>
+                      <td data-label="Hovedartist">En artist</td>
+                      <td data-label="Utg. år" class="text--center">1986</td>
+                      <td data-label="Label">En label</td>
+                      <td data-label="Varighet" class="text--center">03.03</td>
+                      <td data-label="ISRC">345231</td>
+                      <td data-label="Ant. avsp." class="text--center">123</td>
+                      <td data-label="Sum spilletid" class="text--center">02.03.57</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <nav role="navigation" class="text--right">
+                  <ul class="pagination">
+                    <li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
+                    <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
+                    <li class="pagination__item"><a href="#">2</a></li>
+                    <li class="pagination__item"><a href="#">3</a></li>
+                    <li class="pagination__item"><a href="#">4</a></li>
+                    <li class="pagination__item"><a href="#">5</a></li>
+                    <li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
+                  </ul>
+                </nav>
+              </section>
+              <section class="tabs__section">
+                
+              </section>
+            </div>
+
+          </section><!--end /.tabs__section-->
+        </div><!--end /.tabs-->
+
+      </section><!--end /.container-->
+
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
+
+</body>
+</html>
