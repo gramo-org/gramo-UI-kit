@@ -46,9 +46,7 @@
     }
 
     textarea {
-      resize:vertical;
-      background: var(--gramo-white);
-      min-height: 100px;
+      @extend .form__input--textarea;
     }
 
     .form__section--action {

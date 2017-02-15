@@ -60,3 +60,27 @@
     padding-top: .65rem;
   }
 }
+
+/* Inputs with new data (kladd) */
+.form__label--new {
+  position: relative;
+
+  &:before {
+    content: "\e90a";
+    font-family: 'icomoon';
+    font-size: 1.6rem;
+    background: var(--gramo-turkis);
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: .5rem;
+    top: 2.5rem;
+    border-radius: 2rem;
+    color: var(--gramo-white);
+    text-align: center;
+  }
+  
+  .form__input {
+    padding-left: 3rem;
+  }
+}

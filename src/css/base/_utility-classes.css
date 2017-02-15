@@ -12,7 +12,7 @@
 }
 
 .text--center {
-  text-align: center!important;
+  @media (--desktop) { text-align: center!important; }
 }
 
 /* override text center for table cells on mobile devices */
@@ -212,6 +212,7 @@ td.text--center,
 .heading--inline {
   display: inline-block!important;
   vertical-align: middle;
+  margin-right: 2rem;
 }
 
 .heading--sub {
@@ -239,6 +240,7 @@ td.text--center,
 .text--inline,
 .list--inline {
   display: inline;
+  vertical-align: middle;
 
   & > * {
     display: inline-block;

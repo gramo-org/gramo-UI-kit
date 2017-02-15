@@ -124,3 +124,12 @@ input-placeholder {
 .form__input--40 {
   @media (--tablet) { width: 40px!important; }
 }
+
+/* Textarea */
+.form__input--textarea {
+  resize:vertical;
+  background: var(--gramo-white);
+  min-height: 100px;
+  max-width: 400px;
+  margin-bottom: 1.2rem;
+}

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+  window.onload = window.location.hash = 'tab2';
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="../img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+
+      <!--- Flash message --->
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success">
+          <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--borderless">Angre ?</button></p>
+        </div>
+      </div> -->
+
+      <section class="container container--hd">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
+            <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
+            <li class="tabs__nav__item">
+              <a href="#tab2">
+                <span class="tabs__nav__item__type tabs__nav__item__type--recording">Innspilling</span>
+                Aladdin Sane
+              </a>
+            </li>
+          </ul>
+
+          <section id="search" class="tabs__section">
+            
+          </section><!--/.tabs__section-->
+          <section id="tab2" class="tabs__section tabs__section--outline">
+
+              <ul class="tabs__section__nav">
+                <li class="tabs__section__nav__item"><a href="#innspillingsinfo">Innspillingsinfo</a></li>
+                <li class="tabs__section__nav__item"><a href="#produsenter">Produsenter</a></li>
+                <li class="tabs__section__nav__item"><a href="#utover">Utøver</a></li>
+                <li class="tabs__section__nav__item"><a href="#">Album</a></li>
+              </ul>
+              <div class="scrollable-area">
+                <header class="infobar infobar--in-tabs">
+                  <div class="infobar__left">
+                    <p class="infobar__meta">EMI Recorded Music Norway AS (100%)</p>
+                    <h1 class="infobar__heading" data-type="recording">Aladdin Sane</h1>
+                    <h3 data-type="performer">David Bowie</h3>
+                    <h3 data-type="album">Aladdin Sane</h3>
+                  </div>
+                </header>
+                <section id="innspillingsinfo" class="container container--padded">
+                  <div class="section-header">
+                    <header>
+                      <h2>Innspillingsinfo</h2>
+                    </header>
+                    <div class="section-header__toolbar">
+                      <a href="#" class="link--edit">Rediger</a>
+                    </div>
+                  </div>
+                  <form class="form">
+                    <fieldset class="form__fieldset">
+                      <div class="form__field">
+                        <div class="ember-view">
+                          <label class="form__label form__label--required has-error">
+                            <span>Hovedartist</span>
+                            <input type="text" value="David Bowie" class="form__input form__input--300" disabled>
+                          </label>
+                          <div id="ember1137" class="ember-view form__input__errors">
+                            <p class="text--em ">
+                              må fylles ut
+                            </p>
+                          </div>
+                        </div>
+                        <div class="form__field__action">
+                          <a href="#" class="link--no-line">Legg til hovedartist</a>
+                        </div>
+                      </div><!--end .row-->
+                      <div class="form__field">
+                        <label class="form__label form__label--required">
+                          <span>Tittel</span>
+                          <input type="text" value="Aladdin Sane" class="form__input form__input--300" disabled>
+                        </label>
+                        <div class="form__field__action">
+                          <a href="#" class="link--no-line">Legg til alt. tittel</a>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <div class="ember-view">
+                          <label class="form__label has-error">
+                            <span>Alt. Tittel</span>
+                            <input type="text" value="Aladdin Sane" class="form__input form__input--300" disabled>
+                          </label>
+                          <div id="ember1137" class="ember-view form__input__errors">
+                            <p class="text--em ">
+                              må fylles ut
+                            </p>
+                          </div>
+                        </div>
+                        <label class="form__label">
+                          <input type="text" value="Aladdin Sane" class="form__input form__input--300" disabled>
+                        </label>
+                        <div class="form__field__action">
+                          <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <label class="form__label">
+                          <span>Varighet</span>
+                          <input type="text" value="05:07" class="form__input form__input--60" disabled>
+                        </label>
+                      </div>
+                      <div class="form__field">
+                        <label class="form__label">
+                          <span>Klassisk?</span>
+                          <input type="checkbox" class="form__input form__input--checkbox" disabled>
+                        </label>
+                      </div>
+                      <div class="form__field">
+                        <label class="form__label form__label--required">
+                          <span>Komponist</span>
+                          <input type="text" value="Wolfgang Amadeus Mozart" class="form__input form__input--300" disabled>
+                        </label>
+                        <div class="form__field__action">
+                          <a class="link--no-line">Legg til komponist</a>
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <label class="form__label">
+                          <span>IRSC</span>
+                          <input type="text" value="USJT10030001" class="form__input form__input--130" disabled>
+                        </label>
+                        <span class="form__field__suggestion">
+                          f.eks: NOXXX1501223
+                        </span>
+                      </div>
+                      <div class="form__field">
+                        <label class="form__label">
+                          <span>Label</span>
+                          <div class="searchable-list searchable-list--disabled form__input searchable-list--fluid form__input--300">
+                            <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                              <span class="searchable-list__selected">Velg platemerke</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" class="searchable-list__search form__input form__input--block">
+                              <ul>
+                              </ul>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form__field">
+                        <label class="form__label">
+                          <span>Versjon</span>
+                          <input type="text" value="Live" class="form__input form__input--130" disabled>
+                        </label>
+                      </div>
+                      </fieldset>
+                    <fieldset class="form__fieldset">
+                      <div class="form__field">
+                        <label class="form__label form__label--required">
+                          <span>Innspillingsland</span>
+                          <select class="select select--fluid form__input--180" disabled>
+                            <option>Norge</option>
+                            <option>Storbritannia</option>
+                            <option>USA</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="form__field">
+                        <label class="form__label form__label--required">
+                          <span>Innspillingsdato</span>
+                          <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--130" disabled>
+                        </label>
+                      </div>
+                      <div class="form__field">
+                        <label class="form__label form__label--required">
+                          <span>Produsentland</span>
+                          <select class="select select--fluid form__input--180">
+                            <option>Norge</option>
+                            <option>Storbritannia</option>
+                            <option>USA</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="form__field">
+                        <label class="form__label form__label--required">
+                          <span>Utgivelsesdato</span>
+                          <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--130" disabled>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </form>
+                  <ul class="fake-table">
+                    <li class="fake-table__row fake-table__row--head">
+                      <div class="col-sm-2">
+                        Kringkaster
+                      </div>
+                      <div class="col-sm-2">
+                        Tittel
+                      </div>
+                      <div class="col-sm-2">
+                        Hovedartist
+                      </div>
+                      <div class="col-sm-2">
+                        Lokal ID
+                      </div>
+                      <div class="col-sm-1 text--center">
+                        Avp
+                      </div>
+                      <div class="col-sm-2 text--center">
+                        Sum spilletid
+                      </div>
+                      <div class="col-sm-1">
+                      </div>
+                    </li>
+                    <li class="fake-table__row fake-table__row--expanded">
+                      <div class="fake-table__toggle-container">
+                        <div class="fake-table__toggle-row">
+                          <div class="col-sm-2 fake-table__cell--artists" data-label="Kringkaster">
+                            NRK
+                          </div>
+                          <div class="col-sm-2 fake-table__cell--artists" data-label="Tittel">
+                            Aladdin Sane
+                          </div>
+                          <div class="col-sm-2" data-label="Hovedartist">
+                            David Bowie
+                          </div>
+                          <div class="col-sm-2" data-label="Lokal ID">
+                            nrk2343212
+                          </div>
+                          <div class="col-sm-1 text--center" data-label="Ant. avspillinger">
+                            23
+                          </div>
+                          <div class="col-sm-2 text--center" data-label="Sum spilletid">
+                            01:23:31
+                          </div>
+                          <div class="col-sm-1 fake-table__cell--action">
+                            <a href="#" class="table-row-toggle"></a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="fake-table__row fake-table__row--child">
+                        <div class="col-xs-6 col-md-4">
+                          <p>
+                            <span class="text--semibold">Lokal ID:</span>
+                            <span>nrk2343212</span>
+                          </p>
+                          <p>
+                            <span class="text--semibold">Tittel:</span>
+                            <span>Aladdin Sane</span>
+                          </p>
+                          <p>
+                            <span class="text--semibold">Hovedartist:</span>
+                            <span>David Bowie</span>
+                          </p>
+                        </div>
+
+                        <div class="col-xs-6 col-md-3">
+                          <p>
+                            <span class="text--semibold">Label</span>
+                            <span>ISO Records</span>
+                          </p>
+                          <p>
+                            <span class="text--semibold">Katalognr.:</span>
+                            <span>886445491074</span>
+                          </p>
+                        </div>
+
+                        <div class="col-xs-6 col-md-2">
+                          <span class="text--semibold">Auto. Match:</span>
+                          <span>0</span>
+                        </div>
+
+                        <div class="col-xs-6 col-md-2">
+                          <span class="text--semibold">Match:</span>
+                          <span>25.01.2016</span>
+                          <div class="cell--semibold">
+                            <span class="text--semibold">av:</span>
+                            <span>Ole Jacob</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul><!--/.fake-table-->
+                  <div class="row">
+                    <div class="col-md">
+                      <h3>Info fra varefiler</h3>
+                      <textarea class="form__input form__input--textarea"></textarea>
+                    </div>
+                  </div>
+                </section>
+                <hr class="horizontal-rule horizontal-rule--dashed">
+                <section id="utover" class="container container--padded container--is-editing">
+
+                  <div class="section-header">
+                    <header>
+                      <h2 class="heading--inline">Utøvere <span class="badge badge--secondary">5</span></h2>
+                      <span class="text--inline">
+                        Vis kladd info
+                      </span>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle" checked>
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                        </label>
+                      </span>
+                    </header>
+                    <div class="section-header__toolbar">
+                      <button href="#" class="btn btn--secondary">Avbryt</button>
+                      <a href="#" class="btn btn--primary">Lagre</a>
+                    </div>
+                  </div>
+                  <form class="form">
+                    <div class="row">
+                      <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                        Navn
+                      </div>
+                      <div class="col-sm-2 col-lg-2 hidden-on-mobile text--medium text--bold">
+                        Instrument
+                      </div>
+                      <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
+                        Statsborgerskap
+                      </div>
+                      <div class="col-sm-3 col-lg-2 text--center hidden-on-mobile text--medium text--bold">
+                        Rolle
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--new form__label--hidden"><span>Navn</span>
+                          <input type="text" value="Mike Garson" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Piano" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-2">
+                        <div class="form__label form__label--hidden"><span>Rolle</span></div>
+                        <div class="radio-group">
+                          <label class="form__label">
+                            <input type="checkbox" name="role2" disabled>
+                            <span>A</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2" disabled checked>
+                            <span>B</span>
+                            <span class="check"></span>
+                          </label>
+                          <label class="form__label">
+                            <input type="checkbox" name="role2" disabled>
+                            <span>C</span>
+                            <span class="check"></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__field__action align--vertical-center">
+                        <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                      </div>
+                    </div>
+                  </form>
+                  <h4 class="heading--sub">Søk etter utøver eller <a class="link--no-line" href="#">legg til ukjent utøver</a></h4>
+                  <div class="toolbar toolbar--padded">
+                    <form action="" class="search__form no-margin--bottom">
+                      <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                      <button class="search__submit"></button>
+                    </form>
+                  </div><!--end .toolbar-->
+
+                  <table class="table table--fluid table--with-margin">
+                    <thead>
+                      <tr>
+                        <th>Navn</th>
+                        <th>Periode</th>
+                        <th>Instrument</th>
+                        <th>Statsborgerskap</th>
+                        <th class="text--center">Rolle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-label="Navn">Mike Garsen</td>
+                        <td data-label="Periode">1947 - 1981</td>
+                        <td data-label="Instrument">Piano</td>
+                        <td data-label="Statsborgerskap">Storbritannia</td>
+                        <td data-label="Rolle" class="text--center">
+                          <div class="radio-group no-margin">
+                            <label class="form__label">
+                              <input type="checkbox" name="role2">
+                              <span>A</span>
+                              <span class="check"></span>
+                            </label>
+                            <label class="form__label">
+                              <input type="checkbox" name="role2">
+                              <span>B</span>
+                              <span class="check"></span>
+                            </label>
+                            <label class="form__label">
+                              <input type="checkbox" name="role2">
+                              <span>C</span>
+                              <span class="check"></span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <form class="form">
+                    <div class="row">
+                      <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                        Navn
+                      </div>
+                      <div class="col-sm-2 col-lg-2 hidden-on-mobile text--medium text--bold">
+                        Instrument
+                      </div>
+                      <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
+                        Statsborgerskap
+                      </div>
+                      <div class="col-sm-2 col-lg-1 hidden-on-mobile text--medium text--bold">
+                        
+                      </div>
+                      <div class="col-sm-2 col-lg-1 text--center hidden-on-mobile text--medium text--bold">
+                        Treff
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="Mike Garson" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Piano" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2 col-lg-1 align--vertical-center">
+                        <a href="#">Import</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-2 col-lg-1 text--center align--vertical-center">
+                        <a href="#">1</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="David Sanborn" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Saxophone" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2 col-lg-1 align--vertical-center">
+                        <a href="#">Import</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-2 col-lg-1 text--center align--vertical-center">
+                        <a href="#">1</a>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                          <input type="text" value="Mick Ronson" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Gitar" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2 col-lg-1 align--vertical-center">
+                        <a href="#">Import</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-2 col-lg-1 text--center align--vertical-center">
+                        <a href="#">1</a>
+                      </div>
+
+                    </div>
+                    
+                  </form>
+                </section>
+              </div>
+
+          </section><!--end /.tabs__section-->
+        </div><!--end /.tabs-->
+
+      </section><!--end /.container-->
+
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
+
+</body>
+</html>

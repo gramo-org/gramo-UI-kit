@@ -197,8 +197,11 @@ td, th{
   }
 }
 
-.text--center{
-  text-align:center!important;
+@media (min-width: 960px){
+
+  .text--center{
+    text-align:center!important;
+  }
 }
 td.text--center, .fake-table__row *.text--center{
   text-align:left!important;
@@ -413,6 +416,7 @@ td.text--center, .fake-table__row *.text--center{
 .heading--inline{
   display:inline-block!important;
   vertical-align:middle;
+  margin-right:2rem;
 }
 
 .heading--sub{
@@ -433,6 +437,7 @@ td.text--center, .fake-table__row *.text--center{
 }
 .text--inline, .list--inline, .infobar__meta{
   display:inline;
+  vertical-align:middle;
 }
 .text--inline > *, .list--inline > *, .infobar__meta > *{
   display:inline-block;
@@ -1463,6 +1468,26 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 .form__label--padded{
   padding-top:.65rem;
 }
+.form__label--new{
+  position:relative;
+}
+.form__label--new:before{
+  content:"\e90a";
+  font-family:'icomoon';
+  font-size:1.6rem;
+  background:#88c7d8;
+  position:absolute;
+  width:2rem;
+  height:2rem;
+  left:.5rem;
+  top:2.5rem;
+  border-radius:2rem;
+  color:#fdfdfd;
+  text-align:center;
+}
+.form__label--new .form__input{
+  padding-left:3rem;
+}
 .form__input, input[type="text"].search__form__input{
   border:1px solid #d9d9dc;
   padding:0.55rem;
@@ -1598,6 +1623,13 @@ input-placeholder{
   .form__input--40{
     width:40px!important;
   }
+}
+.form__input--textarea, .comments__inner textarea{
+  resize:vertical;
+  background:#fdfdfd;
+  min-height:100px;
+  max-width:400px;
+  margin-bottom:1.2rem;
 }
 .panels{
   display:-webkit-flex;
@@ -5465,11 +5497,6 @@ tr > td:last-child{
   border:0;
   padding:0;
 }
-.comments__inner textarea{
-  resize:vertical;
-  background:#fdfdfd;
-  min-height:100px;
-}
 .comments__inner .form__section--action{
   text-align:right;
 }
@@ -5519,7 +5546,6 @@ tr > td:last-child{
 .wizard-steps{
   padding:0;
   list-style:none;
-  margin-left:1rem;
   margin-top:1.5rem;
   display:-webkit-inline-flex;
   display:-ms-inline-flexbox;
