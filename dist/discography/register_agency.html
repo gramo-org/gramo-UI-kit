@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+  window.onload = window.location.hash = 'tab3';
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="../img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+      <!--- Flash message --->
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success">
+          <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--borderless">Angre ?</button></p>
+        </div>
+      </div> -->
+
+      <section class="container container--hd">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
+            <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
+            <li class="tabs__nav__item">
+              <a href="#tab2">
+                <span class="tabs__nav__item__type tabs__nav__item__type--label">Label</span>
+                FYF
+              </a>
+            </li>
+            <li class="tabs__nav__item">
+              <a href="#tab3">
+                <span class="tabs__nav__item__type tabs__nav__item__type--owner">Agentur</span>
+                Kobalt Neighbouring Rights LTD
+              </a>
+            </li>
+          </ul>
+
+          <section id="search" class="tabs__section">
+
+          </section><!--/.tabs__section-->
+          <section id="tab2" class="tabs__section">
+
+          </section>
+          <section id="tab3" class="tabs__section tabs__section--outline">
+
+              <div class="container">
+                <ul class="row tabs__section__nav">
+                  <li class="tabs__section__nav__item"><a href="#innspillingsinfo" class="active">Informasjon</a></li>
+                  <li class="tabs__section__nav__item"><a href="#produsenter">Kontrakter</a></li>
+                  <li class="tabs__section__nav__item"><a href="#utover">Kontaktpersoner</a></li>
+                </ul>
+              </div>
+              <div class="scrollable-area">
+                <header class="infobar infobar--in-tabs">
+                  <div class="infobar__left">
+                    <p class="infobar__meta">
+                      <span>Medlemsnummer</span>
+                      <span>3997918432</span>
+                    </p>
+                    <h1 class="infobar__heading">Kobalt Neighbouring Rights LTD</h1>
+                    <h3>---</h3>
+                  </div>
+                </header>
+                <section id="innspillingsinfo" class="container container--padded">
+                  <div class="section-header">
+                    <header>
+                      <h2>Informasjon</h2>
+                    </header>
+                    <div class="section-header__toolbar">
+                      <a href="#" class="link--edit">Rediger</a>
+                    </div>
+                  </div>
+
+                  <div class="form">
+                    <fieldset class="form__fieldset">
+                      <div class="form__field">
+                        <label class="form__label form__label--required">
+                          <span>Land</span>
+                          <div class="searchable-list searchable-list form__input form__input--180">
+                            <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                              <span class="searchable-list__selected">NORGE</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" class="searchable-list__search form__input form__input--block">
+                              <ul>
+                                <li class="searchable-list__option">
+                                  AFGANISTAN
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+
+                      <div class="form__field">
+                        <div class="ember-view">
+                          <label class="form__label form__label--required">
+                            <span>Organisasjonsnr.</span>
+                            <input type="text" class="form__input form__input--180">
+                          </label>
+                          <div class="form__input__errors"></div>
+                        </div>
+                        <div class="form__field__action no-padding--top">
+                          <button type="secondary" class="btn btn--secondary">
+                            Hent fra BRREG
+                          </button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </section>
+                <hr class="horizontal-rule horizontal-rule--dashed">
+                
+                <section id="innspillinger" class="container container--padded container--is-editing">
+
+                  <div class="section-header">
+                    <header>
+                      <h2>Kontrakter <span class="badge badge--secondary">1</span></h2>
+                    </header>
+                    <div class="section-header__toolbar">
+                      <button href="#" class="btn btn--secondary">Avbryt</button>
+                      <a href="#" class="btn btn--primary">Lagre</a>
+                    </div>
+                  </div>
+                  <div class="tabs">
+                    <ul class='tabs__nav tabs__nav--flexible'>
+                      <li class='tabs__nav__item'><a href="#performers">Utøvere<span class="badge badge--numeric badge--numeric--inverse">1</span></a></li>
+                      <li class='tabs__nav__item'><a href="#album">Produsenter<span class="badge badge--numeric">0</span></a></li>
+                    </ul>
+                    <section id="performers" class="tabs__section">
+                      <table class="table table--fluid table--with-margin">
+                        <thead>
+                          <tr>
+                            <th>Navn</th>
+                            <th>Fra</th>
+                            <th>Til</th>
+                            <th>Utbetaling via agent</th>
+                            <th>Filer</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Navn">Tomina Harkett</td>
+                            <td data-label="Fra"><input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--130" disabled></td>
+                            <td data-label="Til"><a href="#">Legg til sluttdato</a></td>
+                            <td data-label="Utbetaling via agent">Ja</td>
+                            <td data-label="Filer"><a href="#">Legg til</a></td>
+                            <td>
+                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </section>
+                    <section id="album" class="tabs__section">
+                      <!--Table P4-->
+
+                    </section>
+                    <section id="tab-3" class="tabs__section">
+                      <!--Table Radio Norge-->
+
+                    </section>
+                    <section id="tab-4" class="tabs__section">
+                      <!--Table Local Radio-->
+
+                    </section>
+                  </div>
+                  <div class="form__section--action">
+                    <a href="#" class="link--no-line">Legg til rettigheter</a>
+                  </div>
+                  <fieldset class="form__fieldset form__fieldset--group">
+                    <h4 class="heading--sub">1. Velg dato agentur gjelder for</h4>
+                    <form class="form">
+                      <label class="form__label text--inline">
+                        <span>Fra</span>
+                        <input type="date" value="01.02.2016" class="form__input form__input--date form__input--130">
+                      </label>
+                      <!-- <label class="form__label">
+                        <span>Sluttdato</span>
+                        <input type="date" value="01.02.2016" class="form__input form__input--date form__input--130">
+                      </label> -->
+                      <div class="form__field__action">
+                        <a class="link--no-line" href="#">Legg til sluttdato</a>
+                      </div>
+                    </form>
+                    <hr class="horizontal-rule--spacer">
+                    <h4 class="heading--sub">2. Utbetaling via agent</h4>
+                    <label class="form__label form__label--inline">
+                      <input type="radio" name="utbetaling" class="form__input form__input--radio" checked>
+                      <span>Ja</span>
+                    </label>
+                    <label class="form__label">
+                      <input type="radio" name="utbetaling" class="form__input form__input--radio">
+                      <span>Nei</span>
+                    </label>
+                    <hr class="horizontal-rule--spacer">
+                    <h4 class="heading--sub">3. Velg utøver eller produsent agentur gjelder for</h4>
+                    <form action="" class="search__form">
+                      <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                      <button class="search__submit"></button>
+                    </form>
+                    <table class="table table--fluid table--with-margin">
+                      <thead>
+                        <tr>
+                          <th>Navn</th>
+                          <th>Profil</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="Navn">Redd Barna</td>
+                          <td data-label="Profil">Selskap/organisasjon</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </fieldset><!--/ .toolbar-->
+                </section>
+              </div><!-- end /.scrollable-area -->
+
+          </section><!--end /.tabs__section-->
+        </div><!--end /.tabs-->
+
+      </section><!--end /.container-->
+
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
+
+</body>
+</html>
