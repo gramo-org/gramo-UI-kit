@@ -347,14 +347,6 @@
                   <div class="section-header">
                     <header>
                       <h2 class="heading--inline">Utøvere <span class="badge badge--secondary">5</span></h2>
-                      <span class="text--inline">
-                        Vis kladd info
-                      </span>
-                      <span class="x-toggle-container">
-                        <input type="checkbox" class="x-toggle" checked>
-                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-                        </label>
-                      </span>
                     </header>
                     <div class="section-header__toolbar">
                       <button href="#" class="btn btn--secondary">Avbryt</button>
@@ -379,7 +371,7 @@
                     
                     <div class="row">
                       <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block form__label--new form__label--hidden"><span>Navn</span>
+                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
                           <input type="text" value="Mike Garson" class="form__input form__input--block" disabled>
                         </label>
                       </div>
@@ -434,6 +426,7 @@
                         <th>Instrument</th>
                         <th>Statsborgerskap</th>
                         <th class="text--center">Rolle</th>
+                        <th></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -461,100 +454,107 @@
                             </label>
                           </div>
                         </td>
+                        <td class="table__cell--spaced"></td>
                       </tr>
                     </tbody>
                   </table>
+                  <h4 class="heading--sub heading--inline no-margin--right">
+                    Vis kladd info
+                  </h4>
+                  <span class="x-toggle-container">
+                    <input type="checkbox" class="x-toggle" checked>
+                    <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                    </label>
+                  </span>
                   <form class="form">
-                    <div class="row">
-                      <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
-                        Navn
+                    <fieldset class="form__fieldset form__fieldset--group">
+                      <div class="row">
+                        <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                          Navn
+                        </div>
+                        <div class="col-sm-2 col-lg-2 hidden-on-mobile text--medium text--bold">
+                          Instrument
+                        </div>
+                        <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
+                          Statsborgerskap
+                        </div>
+                        <div class="col-sm-2 col-lg-1 text--center hidden-on-mobile text--medium text--bold">
+                          Treff
+                        </div>
+                        <div class="col-sm-2 col-lg-1 hidden-on-mobile text--medium text--bold">
+                        </div>
                       </div>
-                      <div class="col-sm-2 col-lg-2 hidden-on-mobile text--medium text--bold">
-                        Instrument
+                      
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                            <input type="text" value="Mike Garson" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                            <input type="text" value="Piano" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                            <input type="text" value="Storbritania" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-2 col-lg-1 text--center align--vertical-center col--no-flex">
+                          <span class="badge badge--secondary text--large no-margin--left">0</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-1 col-lg-2 align--vertical-center col--no-flex">
+                          <a href="#" class="btn btn--primary">Import</a>
+                        </div>
                       </div>
-                      <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
-                        Statsborgerskap
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                            <input type="text" value="David Sanborn" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                            <input type="text" value="Saxophone" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                            <input type="text" value="Storbritania" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-2 col-lg-1 text--center align--vertical-center col--no-flex">
+                          <span class="badge badge--primary text--large no-margin--left">2</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-1 col-lg-2 align--vertical-center col--no-flex">
+                          <a href="#" class="btn btn--secondary">Import</a>
+                        </div>
                       </div>
-                      <div class="col-sm-2 col-lg-1 hidden-on-mobile text--medium text--bold">
-                        
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                          <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
+                            <input type="text" value="Mick Ronson" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                            <input type="text" value="Gitar" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                            <input type="text" value="Storbritania" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-2 col-lg-1 text--center align--vertical-center col--no-flex">
+                          <span class="badge badge--primary text--large no-margin--left">2</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-1 col-lg-2 align--vertical-center col--no-flex">
+                          <a href="#" class="btn btn--secondary">Import</a>
+                        </div>
                       </div>
-                      <div class="col-sm-2 col-lg-1 text--center hidden-on-mobile text--medium text--bold">
-                        Treff
-                      </div>
-                    </div>
-                    
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                          <input type="text" value="Mike Garson" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                          <input type="text" value="Piano" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                          <input type="text" value="Storbritania" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-lg-1 align--vertical-center">
-                        <a href="#">Import</a>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-lg-1 text--center align--vertical-center">
-                        <a href="#">1</a>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                          <input type="text" value="David Sanborn" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                          <input type="text" value="Saxophone" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                          <input type="text" value="Storbritania" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-lg-1 align--vertical-center">
-                        <a href="#">Import</a>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-lg-1 text--center align--vertical-center">
-                        <a href="#">1</a>
-                      </div>
-
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block form__label--hidden"><span>Navn</span>
-                          <input type="text" value="Mick Ronson" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                          <input type="text" value="Gitar" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                          <input type="text" value="Storbritania" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-lg-1 align--vertical-center">
-                        <a href="#">Import</a>
-                      </div>
-                      <div class="col-xs-12 col-sm-2 col-lg-1 text--center align--vertical-center">
-                        <a href="#">1</a>
-                      </div>
-
-                    </div>
-                    
+                    </fieldset>
                   </form>
                 </section>
               </div>

@@ -3,6 +3,11 @@
   &--truncated {
     @extend .truncated;
   }
+  /* hack to align uneven number of table cells in discography/kladd_recording.html */
+  &--spaced {
+    width: 8%;
+    @media (--hd) { width: 13%; }
+  }
 }
 
 /* Change truncated gradient color for different states */

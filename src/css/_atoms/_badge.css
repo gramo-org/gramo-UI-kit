@@ -21,6 +21,11 @@
       text-transform: uppercase;
     }
   }
+  
+  &--primary {
+    background: var(--gramo-blue);
+    color: #fff;
+  }
 
   &--error {
     background: var(--error);

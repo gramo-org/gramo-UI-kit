@@ -197,7 +197,7 @@ td, th{
   }
 }
 
-@media (min-width: 960px){
+@media (min-width: 768px){
 
   .text--center{
     text-align:center!important;
@@ -364,7 +364,7 @@ td.text--center, .fake-table__row *.text--center{
 }
 
 .no-margin--left{
-  margin-left:0;
+  margin-left:0!important;
 }
 
 .no-margin--right{
@@ -2105,6 +2105,10 @@ hr, .horizontal-rule{
 .badge--tag a{
   text-transform:uppercase;
 }
+.badge--primary{
+  background:#0095da;
+  color:#fff;
+}
 .badge--error{
   background:#ed6b6a;
   color:#fff;
@@ -2238,6 +2242,15 @@ hr, .horizontal-rule{
 }
 .table__row--is-editing > td.table__cell--action > .btn-group--hover, tr:hover > td.table__cell--action > .btn-group--hover, tr:hover > .table-summary__cell--action > .btn-group--hover, .fake-table__row:hover > .fake-table__cell--action > .btn-group--hover, .fake-table__toggle-row:hover > .fake-table__cell--action > .btn-group--hover, .fake-table__row--child-inner > .row:hover .fake-table__cell--action > .btn-group--hover{
   display:block;
+}
+.table__cell--spaced{
+  width:8%;
+}
+@media (min-width: 1200px){
+
+  .table__cell--spaced{
+    width:13%;
+  }
 }
 .table-sort{
   position:relative;
@@ -2659,6 +2672,10 @@ hr, .horizontal-rule{
 .x-toggle-flip.large::after, .x-toggle-flip.large::before{
     font-size:1.1em;
     line-height:2.4em;
+}
+
+.x-toggle-container{
+  vertical-align:middle;
 }
 
 .x-toggle{

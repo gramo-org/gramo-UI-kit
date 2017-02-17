@@ -12,7 +12,7 @@
 }
 
 .text--center {
-  @media (--desktop) { text-align: center!important; }
+  @media (--tablet) { text-align: center!important; }
 }
 
 /* override text center for table cells on mobile devices */
@@ -155,7 +155,7 @@ td.text--center,
   margin: 0!important;
 
   &--left {
-    margin-left: 0;
+    margin-left: 0!important;
   }
 
   &--right {
