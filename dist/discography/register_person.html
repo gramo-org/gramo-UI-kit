@@ -96,13 +96,13 @@
                   <h1 class="infobar__heading">David Robert Jones</h1>
                   <p class="infobar__meta">
                     <span class="badge badge--info badge--tag" data-type="performer">Utøver</span>
-                    <span class="badge badge--info badge--tag" data-type="producer">Produsent</span>
+                    <span class="badge badge--info badge--tag" data-type="member">Har agent</span>
                   </p>
                 </div>
                   <ul class="row tabs__section__nav tabs__section__nav--absolute">
                     <li class="tabs__section__nav__item"><a href="#" class="active"><span data-type="performer"></span><span>Utøver</span></a></li>
-                    <li class="tabs__section__nav__item"><a href="#"><span data-type="producer"></span><span>Produsent</span></a></li>
-                    <li class="tabs__section__nav__item"><a href="#"><span data-type="member"></span><span>Medlemskap</span></a></li>
+                    <li class="tabs__section__nav__item"><a href="#"><span data-type="producer"></span><span>Opprett ny personlig produsent</span></a></li>
+                    <li class="tabs__section__nav__item"><a href="#"><span data-type="member"></span><span>Arv</span></a></li>
                   </ul>
 
               </header>
@@ -120,22 +120,35 @@
                     <form class="form">
                       <fieldset class="form__fieldset">
                         <div class="form__field">
-                          <label class="form__label">
+                          <label class="form__label form__label--required">
                             <span>Fornavn</span>
                             <input type="text" value="David Robert" class="form__input form__input--180" >
                           </label>
                         </div>
                         <div class="form__field">
-                          <label class="form__label">
+                          <label class="form__label form__label--required">
                             <span>Etternavn</span>
                             <input type="text" value="Jones" class="form__input form__input--180" >
                           </label>
                         </div>
+                        <div class="form__field__help">
+                          <p>
+                            <a class="link--no-line">
+                              Legg til tidligere navn
+                            </a>
+                          </p>
+                        </div>
                         <div class="form__field">
                           <label class="form__label">
-                            <span>Alt. navn</span>
-                            <input type="text" value="David Bowie" class="form__input form__input--180" >
+                            <span>Tidligere navn</span>
+                            <input type="text" class="form__input form__input--180">
                           </label>
+                          <label class="form__label">
+                            <input placeholder="Beskrivelse" type="text" class="form__input form__input--180">
+                          </label>
+                          <div class="form__field__action">
+                            <a class="text--small text--light"><i class="icon--x"></i></a>
+                          </div>
                         </div>
                         <div class="form__field form__field--inline form__field--inline--checkbox">
                           <span class="form__field__text">Kjønn</span>
@@ -150,6 +163,14 @@
                           <label class="form__label">
                             <input type="radio" class="form__input--checkbox">
                             <span>Annen</span>
+                          </label>
+                        </div>
+                      </fieldset>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Personnummer</span>
+                            <input type="text" class="form__input form__input--180">
                           </label>
                         </div>
                         <div class="form__field">
@@ -221,6 +242,26 @@
                           <p><a href="#" class="link--no-line">Legg til bostedsland</a></p>
                         </div>
                       </fieldset>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>Fødselsland</span>
+                            <div class="searchable-list searchable-list form__input form__input--180">
+                              <div class="searchable-list__heading searchable-list__heading">
+                                <span class="searchable-list__selected">Velg land</span>
+                              </div>
+                              <div class="searchable-list__dropdown">
+                                <input type="text" class="searchable-list__search form__input form__input--block">
+                                <ul>
+                                  <li class="searchable-list__option">
+                                    AFGANISTAN
+                                  </li>  
+                                </ul>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </fieldset>
                       <h3 class="heading--sub">Kontakt informasjon</h3>
                       <fieldset class="form__fieldset">
                         <div class="form__field">
@@ -231,7 +272,7 @@
                         </div>
                         <div class="form__field">
                           <label class="form__label">
-                            <span>Mobilnummer</span>
+                            <span>Mobil</span>
                             <input type="text" value="00 33 456278172" class="form__input form__input--150" >
                           </label>
                         </div>
@@ -243,32 +284,32 @@
                         </div>
                         <div class="form__field">
                           <label class="form__label">
-                            <span>Nettadresse</span>
-                            <input type="text" value="www.davidbowie.com" class="form__input form__input--180" >
+                            <span>Nettside</span>
+                            <input type="text" value="www.davidbowie.com" class="form__input form__input--150" >
                           </label>
                         </div>
-                      </fieldset>
-                      <fieldset class="form__fieldset">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>C/O</span>
+                            <input type="text" value="" class="form__input form__input--150" >
+                          </label>
+                        </div>
                         <div class="form__field">
                           <label class="form__label">
                             <span>Adresse</span>
-                            <input type="text" value="" class="form__input form__input--300" >
+                            <input type="text" value="" class="form__input form__input--150" >
                           </label>
                         </div>
                         <div class="form__field">
                           <label class="form__label">
-                            <span></span>
-                            <input type="text" value="" class="form__input form__input--300" >
+                            <span>Postnummer</span>
+                            <input type="text" value="" class="form__input form__input--150" >
                           </label>
                         </div>
-                        <div class="form__field form__field--inline">
-                          <label class="form__label">
-                            <span>Postnummer</span>
-                            <input type="text" value="0123" class="form__input form__input--100" >
-                          </label>
+                        <div class="form__field">
                           <label class="form__label">
                             <span>Poststed</span>
-                            <input type="text" value="Oslo" class="form__input form__input--130" >
+                            <input type="text" value="" class="form__input form__input--150" >
                           </label>
                         </div>
                       </fieldset>
@@ -280,7 +321,7 @@
                   <section class="container container--padded">
                     <div class="section-header">
                       <header>
-                        <h2>Utøver</h2>
+                        <h2>Utøverinformasjon</h2>
                       </header>
                       <div class="section-header__toolbar">
                         <a href="#" class="link--edit">Rediger</a>
@@ -310,7 +351,7 @@
                           <p><a href="#" class="link--no-line">Legg til alt. artistnavn</a></p>
                         </div>
                       </fieldset>
-                      <fieldset class="form__fieldset">
+                      <!-- <fieldset class="form__fieldset">
                         <div class="form__field">
                           <label class="form__label">
                             <span>Gruppe</span>
@@ -329,7 +370,7 @@
                         <div class="form__field__help">
                           <p><a href="#" class="link--no-line">Legg til gruppe</a></p>
                         </div>
-                      </fieldset>
+                      </fieldset> -->
                       <fieldset class="form__fieldset">
                         <div class="form__field">
                           <label class="form__label">
@@ -349,6 +390,9 @@
                             </div>
                           </label>
                         </div>
+                        <div class="form__field__help">
+                          <p><a href="#" class="link--no-line">Legg til instrument</a></p>
+                        </div>
                         <div class="form__field">
                           <label class="form__label">
                             <span></span>
@@ -370,28 +414,166 @@
                             <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                           </div>
                         </div>
-                        <div class="form__field__help">
-                          <p><a href="#" class="link--no-line">Legg til</a></p>
-                        </div>
                       </fieldset>
                       <fieldset class="form__fieldset">
                         <div class="form__field">
                           <label class="form__label">
-                            <span>IPN</span>
+                            <span>IPN ID</span>
                             <input type="text" value="USJT10300113" class="form__input form__input--130" disabled>
-                          </label>
-                        </div>
-                        <div class="form__field">
-                          <label class="form__label">
-                            <span>Andre IDnummer</span>
-                            <input type="text" value="USJT10300113" class="form__input form__input--130">
-                          </label>
-                          <label class="form__label">
-                            <input type="text" placeholder="beskrivelse" class="form__input form__input--130">
                           </label>
                         </div>
                       </fieldset>
                     </form>
+                    <hr class="horizontal-rule horizontal-rule--dashed">
+                    <div class="section-header">
+                      <header>
+                        <h3 data-type="member">Medlemskapsinfo</h3>
+                      </header>
+                    </div>
+                    <fieldset class="form__fieldset">
+                      <a class="link--no-line">
+                        Legg til medlemskap
+                      </a>
+                    </fieldset>
+                    <form class="form">
+                      <fieldset class="form__fieldset form__fieldset--group">
+                        <div class="form__field">
+                          <label class="form__label form__label--required">
+                            <span>Vederlagsbyrå</span>
+                            <select disabled="" tabindex="0" class="select select--fluid select--fixed-width x-select">
+                              <option value="" class="x-option">
+                                Gramo
+                              </option>
+                              <option value="" class="x-option">
+                                Gramex
+                              </option>
+                              <option value="" class="x-option">
+                                PPL
+                              </option>
+                            </select>
+                          </label>
+                          <label class="form__label">
+                            <input disabled="" type="text" class="form__input">
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label form__label--required ">
+                            <span>Fra</span>
+                            <input type="date" class="form__input form__input--date form__input--130 form__input">
+                          </label>
+                          <div class="form__field__action">
+                            <a class="link--no-line">
+                              Registrere avsluttningsdato
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="form__field">
+                          <label class="form__label form__label--required">
+                            <span>Territoriemandat</span>
+                            <select tabindex="0" class="select select--fluid select--fixed-width x-select">
+                              <option value="DEFAULT VALUE" class="x-option">
+                                Velg medlemskapstype
+                              </option>
+                              <option value="REGIONAL" class="x-option">
+                                Regional
+                              </option>
+                              <option value="WORLDWIDE" class="x-option">
+                                Worldwide
+                              </option>
+                            </select>
+                          </label>
+                        </div>
+
+                        <hr class="horizontal-rule horizontal-rule--spacer horizontal-rule--dashed">
+                        <h3 class="heading--sub no-margin--top heading--inline">Utbetalingsinfo</h3>
+                        <span class="float--right">Utbetaling via <a href="#">agent</a></span>
+                        <div class="form__field">
+                          <label class="form__label form__label--required">
+                            <span>Skattekommune</span>
+                            <div class="searchable-list searchable-list--disabled form__input form__input--180">
+                              <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                              <span class="searchable-list__selected">Velg skattekommune</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" class="searchable-list__search form__input form__input--block">
+                              <ul>
+                                <li class="searchable-list__option">
+                                  Åfjord
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label form__label--required">
+                            <span>Kontotype</span>
+                            <select tabindex="0" class="select select--fluid align--vertical-center x-select" disabled>
+                              <option id="ember9156" value="blank" class="x-option">Ingen kontotype valgt</option>
+                              <option value="norwegian" class="x-option">Norsk</option>
+                              <option value="iban" class="x-option">IBAN</option>
+                              <option value="bic-swift" class="x-option">BIC/SWIFT</option>
+                              <option value="american" class="x-option">Amerikansk</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                        </div>
+                      </fieldset>
+                    </form>
+                    <a class="link--no-line float--right">
+                      Avbryt registrering
+                    </a>
+                    <hr class="horizontal-rule horizontal-rule--dashed">
+                    <div class="section-header">
+                      <header>
+                        <h3 data-type="member">Agentinfo</h3>
+                      </header>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6 hidden-on-mobile text--medium text--bold">
+                        Navn
+                      </div>
+                      <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                        Fra
+                      </div>
+                      <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                        Til
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6 align--vertical-center">
+                        <a href="#">KOBALT NEIGHBOURING RIGHTS</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                          <input type="date" value="2015-01-01" class="form__input form__input--date form__input--block" disabled="">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-3">
+                        -
+                      </div>
+                    </div>
+                    <hr class="horizontal-rule horizontal-rule--spacer">
+
+                      <a href="#">Vis/skjul historikk</a>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-6 align--vertical-center">
+                          <a href="#">CODA</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                          <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                            <input type="date" value="2014-01-01" class="form__input form__input--date form__input--block" disabled="">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                          <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                            <input type="date" value="2015-01-01" class="form__input form__input--date form__input--block" disabled="">
+                          </label>
+                        </div>
+                      </div>
+
                   </section>
                 </div><!-- end /.panels__main -->
               </div><!-- end /.panels.scrollable-area -->
