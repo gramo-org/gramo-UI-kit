@@ -1866,6 +1866,7 @@ hr, .horizontal-rule{
   text-align:center;
   margin:2rem 0;
   background:#d9d9dc;
+  clear:both;
 }
 
 .horizontal-rule:before, .horizontal-rule:after{

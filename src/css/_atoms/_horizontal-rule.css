@@ -6,6 +6,7 @@ hr, .horizontal-rule {
   text-align: center;
   margin: 2rem 0;
   background: var(--silver);
+  clear: both;
 }
 
 .horizontal-rule:before,
