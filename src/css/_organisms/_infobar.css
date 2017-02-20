@@ -58,6 +58,12 @@
       margin-left: 1rem;
     }
   }
+  
+  h1[data-type]::before,
+  h3[data-type]::before {
+    margin-left: .25rem;
+    margin-right: .75rem;
+  }
 }
 
 .infobar--fixed {

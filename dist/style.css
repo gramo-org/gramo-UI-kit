@@ -5015,6 +5015,10 @@ main.pull .section-header--fixed{
     margin-left:1rem;
   }
 }
+.infobar h1[data-type]::before, .infobar h3[data-type]::before{
+  margin-left:.25rem;
+  margin-right:.75rem;
+}
 
 @media (min-width: 1200px){
 
