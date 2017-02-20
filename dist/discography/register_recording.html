@@ -288,9 +288,6 @@
                             </p>
                           </div>
                         </div>
-                        <div class="form__field__action">
-                          <a href="#" class="link--no-line">Legg til hovedartist</a>
-                        </div>
                       </div><!--end .row-->
                       <div class="form__field">
                         <label class="form__label form__label--required">
@@ -323,7 +320,7 @@
                       <div class="form__field">
                         <label class="form__label">
                           <span>Varighet</span>
-                          <input type="text" value="05:07" class="form__input form__input--60" disabled>
+                          <input type="time" value="05:07" class="form__input form__input--100" disabled>
                         </label>
                       </div>
                       <div class="form__field">
@@ -335,7 +332,14 @@
                       <div class="form__field">
                         <label class="form__label form__label--required">
                           <span>Komponist</span>
-                          <input type="text" value="Wolfgang Amadeus Mozart" class="form__input form__input--300" disabled>
+                          <div class="searchable-list searchable-list form__input  form__input--300">
+                            <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                              <span class="searchable-list__selected">Velg komponist</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" class="searchable-list__search form__input form__input--block">
+                            </div>
+                          </div>
                         </label>
                         <div class="form__field__action">
                           <a class="link--no-line">Legg til komponist</a>
@@ -349,11 +353,14 @@
                         <span class="form__field__suggestion">
                           f.eks: NOXXX1501223
                         </span>
+                        <div class="form__field__action">
+                          <a class="link--no-line">Legg til alt. ISRC</a>
+                        </div>
                       </div>
                       <div class="form__field">
                         <label class="form__label">
                           <span>Label</span>
-                          <div class="searchable-list searchable-list--disabled form__input searchable-list--fluid form__input--300">
+                          <div class="searchable-list form__input searchable-list--fluid form__input--300">
                             <div class="searchable-list__heading searchable-list__heading" tabindex="0">
                               <span class="searchable-list__selected">Velg platemerke</span>
                             </div>
@@ -374,7 +381,7 @@
                       </fieldset>
                     <fieldset class="form__fieldset">
                       <div class="form__field">
-                        <label class="form__label form__label--required">
+                        <label class="form__label">
                           <span>Innspillingsland</span>
                           <select class="select select--fluid form__input--180" disabled>
                             <option>Norge</option>
@@ -384,13 +391,13 @@
                         </label>
                       </div>
                       <div class="form__field">
-                        <label class="form__label form__label--required">
+                        <label class="form__label">
                           <span>Innspillingsdato</span>
                           <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--130" disabled>
                         </label>
                       </div>
                       <div class="form__field">
-                        <label class="form__label form__label--required">
+                        <label class="form__label">
                           <span>Produsentland</span>
                           <select class="select select--fluid form__input--180">
                             <option>Norge</option>
@@ -400,7 +407,7 @@
                         </label>
                       </div>
                       <div class="form__field">
-                        <label class="form__label form__label--required">
+                        <label class="form__label">
                           <span>Utgivelsesdato</span>
                           <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--130" disabled>
                         </label>
@@ -592,6 +599,12 @@
                       </label>
                     </form>
                     <h4 class="heading--sub">2. Velg produsent</h4>
+                    <div class="heading--sub">
+                      <span class="text--bold">Søk etter <span class="text--lower">produsent</span></span>
+                        <span class="break--inline"></span>eller
+                        <span class="break--inline"></span>
+                        <a class="link--no-line">Legg til ukjent(e) produsent(er)</a>
+                    </div>
                     <form action="" class="search__form">
                       <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
                       <button class="search__submit"></button>
@@ -835,7 +848,7 @@
                   </form>
 
                   <div class="toolbar toolbar--padded">
-                    <form action="" class="search__form search__form--center no-margin--bottom">
+                    <form action="" class="search__form no-margin--bottom">
                       <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
                       <button class="search__submit"></button>
                     </form>
@@ -885,7 +898,7 @@
 
                   <div class="section-header">
                     <header>
-                      <h2>Album <span class="badge badge--secondary">3</span></h2>
+                      <h2>Utgivelser <span class="badge badge--secondary">3</span></h2>
                     </header>
                     <div class="section-header__toolbar">
                       <a href="#" class="link--edit">Rediger</a>
@@ -895,20 +908,22 @@
                   <table class="table table--fluid">
                     <thead>
                       <tr>
-                        <th>Albumtittel</th>
-                        <th>Nasjonalitet</th>
-                        <th class="text--center">Utgivelsesdato</th>
-                        <th class="text--center">Katalognummer</th>
-                        <th>Rolle</th>
+                        <th>Tittel</th>
+                        <th>Katalognummer</th>
+                        <th class="text--center">Side</th>
+                        <th class="text--center">Spor</th>
+                        <th>Tittel på spor</th>
+                        <th>ISRC på spor</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td data-label="Albumtittel">Aladdin Sane</td>
-                        <td data-label="Nasjonalitet">Storbritannia</td>
-                        <td data-label="Utgivelsesdato" class="text--center">1973</td>
-                        <td data-label="Katalognummer" class="text--center">72435219020</td>
-                        <td data-label="Label">EMI RECORDED MUSIC NORWAY AS</td>
+                        <td data-label="Tittel"><a href="#">Aladdin Sane</a></td>
+                        <td data-label="Katalognummer">ISBN8242110735</td>
+                        <td data-label="Side" class="text--center">2</td>
+                        <td data-label="Spor" class="text--center">20</td>
+                        <td data-label="Tittel på spor">Aladdin Sane</td>
+                        <td data-label="ISRC på spor"></td>
                       </tr>
                     </tbody>
                   </table>
