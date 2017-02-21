@@ -122,6 +122,9 @@ $(document).ready(function() {
     // .siblings().removeClass('fake-table__row--expanded')
     // $(this).find('i').toggleClass('icon--chevron-right icon--chevron-down');
   });
+  $('.table__row--expandable').click(function(){
+    $(this).toggleClass('table__row--expanded').siblings().removeClass('table__row--expanded');
+  });
 
   //Toggle Vertical nav
   $('.vertical__nav__item--has-children > a').click(function(e){

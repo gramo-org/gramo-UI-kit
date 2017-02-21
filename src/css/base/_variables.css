@@ -67,7 +67,7 @@
 @custom-media --tablet (min-width: 768px);
 @custom-media --desktop (min-width: 960px);
 @custom-media --hd (min-width: 1200px);
-
+@custom-media --hd-plus (min-width: 1400px);
 
 /*Context specific variables */
 --base-background-color:                         #f3f3f3;

@@ -17,7 +17,7 @@
   transform: translateY(10px);
   transition: all .25s ease-out;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-  left: calc(50% - 147px);
+  left: calc(10% - 267px);
   min-width: 300px;
   @media (--hd) { 
 
@@ -52,7 +52,7 @@
   bottom: -10px;
   content: " ";
   height: 0;
-  left: 50%;
+  left: 90%;
   margin-left: -13px;
   position: absolute;
   width: 0;

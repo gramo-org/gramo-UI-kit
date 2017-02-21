@@ -1,0 +1,28 @@
+.table__row--expandable {
+  
+  .table-row-toggle {
+    margin-right: 0;
+  }
+  
+  & ~ tr {
+  display: none;
+  }
+}
+
+.table__row--expanded {
+  & ~ tr {
+    display: table-row;
+    
+    & > td:first-child {
+      padding-left: 4rem;
+    }
+    
+    &:nth-child(odd) {
+      background: var(--row-hover);
+    }
+  }
+  
+  .table-row-toggle {
+    transform: rotate(90deg);
+  }
+}

@@ -18,3 +18,13 @@
 .table__head--always-visible {
   border-bottom: 0;
 }
+
+.table__head {
+  .select, .form__input {
+    height: auto;
+    padding: .25rem 2rem .25rem .5rem;
+  }
+  .x-toggle-btn {
+    vertical-align: bottom;
+  }
+}

@@ -1,0 +1,39 @@
+.fake-table--distribution {
+  
+  div.col {
+    flex-basis: 95px;
+    max-width: 95px;
+    padding-left: .25rem;
+    padding-right: .25rem;
+    
+    &.col--small {
+      flex-basis: 70px;
+    }
+    
+    &.col--x-small {
+      flex-basis: 20px;
+      max-width: 20px;
+    }
+  }
+  
+  .col:first-child,
+  .col:nth-child(2) {
+    flex-basis: 14%;
+    max-width: 370px;
+    
+    @media (--desktop) {
+      flex-basis: 20%;
+    }
+    @media (--hd-plus) {
+      flex-basis: 27%;
+    }
+  }
+  
+  .col:first-child {
+    padding-left: 1rem;
+  }
+  
+  .x-toggle-btn {
+    vertical-align: bottom;
+  }
+}

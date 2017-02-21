@@ -35,4 +35,8 @@ input[type="time"] {
 
 input[type="number"] {
   max-width: 100px;
+  
+  &.four-digit {
+    max-width: 60px;
+  }
 }

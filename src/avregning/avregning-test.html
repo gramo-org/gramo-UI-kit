@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+
+
+      <section class="container container--hd">
+        <div class="section-header section-header--divided no-margin--bottom">
+          <header>
+            <h1>Avregning 2016</h1>
+            <ol class="wizard-steps">
+              <li class="selected">Spilletid</li>
+              <li>Satser</li>
+              <li>Transaksjoner</li>
+            </ol>
+          </header>
+          <div class="section-header__below">
+            <div class="section-header__meta section-header__meta--cols">
+              <div class="col">
+                <h2 class="text--thin">64 247</h2>
+                <h4>Total innspillinger</h4>
+              </div>
+              <div class="col">
+                <h2 class="text--thin">364 247 min</h2>
+                <h4>Total sum spilletid</h4>
+              </div>
+              <div class="col">
+                <h2 class="text--thin">78%</h2>
+                <h4>Ikke identifiserte</h4>
+              </div>
+              <div class="col">
+                <h2 class="text--thin">143</h2>
+                <h4>Total med feil</h4>
+              </div>
+              <div class="col">
+                <h2 class="text--thin">72</h2>
+                <h4>Total ikke vernet</h4>
+              </div>
+            </div>
+            <div class="section-header__toolbar">
+              <button class="btn btn--primary">Summer/beregn</button>
+              <button class="btn btn--secondary">Neste ></button>
+            </div>
+          </div>
+          <div class="section-header__below">
+            <div class="section-header__meta">
+              <h4>Viser 25 av 26345</h4>
+            </div>
+            <div class="section-header__toolbar">
+              <h4>viser 25 | <a href="#">50</a> | <a href="#">100</a> per side</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container container--hd">
+        <table class="table table--fluid table--with-margin">
+          <thead class="table__head table__head--always-visible">
+            <tr>
+              <th>
+                <span class="table-sort">Tittel</span>
+              </th>
+              <th>
+                <span class="table-sort">Hovedartist</span>
+              </th>
+              <th>
+                <select class="select select--fluid">
+                  <option value="">Prod-land</option>
+                </select>
+              </th>
+              <th>
+                <input type="number" class="form__input four-digit" value="1986">
+              </th>
+              <th>
+                <span class="table-sort table-sort--asc">
+                  Label
+                </span>
+              </th>
+              <th>
+                <span class="table-sort table-sort--desc">
+                  ISRC
+                </span>
+              </th>
+              <th>
+                <span class="table-sort">
+                  Sum splt
+                </span>
+              </th>
+              <th>
+                <select class="select select--fluid">
+                  <option value="">Vern</option>
+                </select>
+              </th>
+              <th>
+                <span class="table-sort">
+                  Feil
+                </span>
+                <span class="x-toggle-container">
+                  <input type="checkbox" class="x-toggle">
+                  <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                  </label>
+                </span>
+              </th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table__row--expandable">
+              <td data-label="Tittel">
+                <a href="#">1999 (radio Edit) er en veldig lang tittel</a>
+              </td>
+              <td data-label="Hovedartist">
+                Prince er en veldig kjent artist
+              </td>
+              <td data-label="Prod-land">
+                USA
+              </td>
+              <td data-label="Utg. år">
+                1986
+              </td>
+              <td data-label="Label">
+                Super Records
+              </td>
+              <td data-label="ISRC">
+                NI6359832
+              </td>
+              <td data-label="Sum spltd.">
+                03:04:10
+              </td>
+              <td data-label="Vern">
+                Roma
+              </td>
+              <td data-label="Status">
+                <div class="tooltip-wrapper">
+                  <i class="icon--warning"></i>
+                  <div class="tooltip">
+                    <ul class="tooltip__list">
+                      <li>Mangler prod. land og utg. år</li>
+                      <li>Mangler prod. land og utg. år</li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+              <td class="text--right">
+                <a href="#" class="table-row-toggle"></a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                NRK P1
+              </td>
+              <td colspan="3">
+                02:10:33
+              </td>
+              <td colspan="4">
+                <div class="btn-group btn-group--hover">
+                  <button class="btn btn--primary">Gå til identifiserte liste</a></button>
+                </div>
+              </td>
+            </tr><!--end row -->
+            <tr>
+              <td colspan="3">
+                Radio Norge
+              </td>
+              <td colspan="3">
+                01:10:33
+              </td>
+              <td colspan="4">
+                <div class="btn-group btn-group--hover">
+                  <button class="btn btn--primary">Gå til identifiserte liste</a></button>
+                </div>
+              </td>
+            </tr><!--end row -->
+            <tr>
+              <td colspan="3">
+                P4
+              </td>
+              <td colspan="3">
+                00:01:27
+              </td>
+              <td colspan="4">
+                <div class="btn-group btn-group--hover">
+                  <button class="btn btn--primary">Gå til identifiserte liste</a></button>
+                </div>
+              </td>
+            </tr><!--end row --> 
+          </tbody>
+        </table>
+        <nav role="navigation" class="text--right">
+          <ul class="pagination">
+            <li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
+            <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
+            <li class="pagination__item"><a href="#">2</a></li>
+            <li class="pagination__item"><a href="#">3</a></li>
+            <li class="pagination__item"><a href="#">4</a></li>
+            <li class="pagination__item"><a href="#">5</a></li>
+            <li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
+          </ul>
+        </nav>
+      </section>
+
+
+
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
+
+</body>
+</html>

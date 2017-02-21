@@ -52,6 +52,10 @@ h1 {
 h2 {
   font-size: var(--h2-font-size);
   margin: 0;
+  
+  &.text--thin {
+    @extend h1;
+  }
 }
 h3 {
   font-size: var(--h3-font-size);
