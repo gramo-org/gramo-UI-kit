@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+
+
+      <section class="container container--hd">
+        <div class="section-header section-header--divided section-header--with-border">
+          <header>
+            <h1 class="heading--inline">Avregning 2016</h1>
+            <ol class="wizard-steps">
+              <li>Spilletid</li>
+              <li class="selected">Satser</li>
+              <li>Transaksjoner</li>
+            </ol>
+          </header>
+          <div class="section-header__below">
+            <div class="section-header__meta">
+              <h4>Total poeng</h4>
+              <h2 class="text--thin">64 247</h2>
+            </div>
+            <div class="section-header__toolbar">
+              <button class="btn btn--primary">Beregn satser</button>
+              <button class="btn btn--secondary">Neste ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container container--hd">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
+            <li class="tabs__nav__item"><a href="#performer">Utøver</a></li>
+            <li class="tabs__nav__item"><a href="#tab2">Produsent</a></li>
+          </ul>
+
+          <section id="performer" class="tabs__section">
+            <ul class="fake-table">
+              <li class="fake-table__row fake-table__row--head always-visible">
+                <div class="col-sm-3">
+                  Kringkaster
+                </div>
+                <div class="col-sm-3">
+                  Poeng
+                </div>
+                <div class="col-sm-3">
+                  Beløp
+                </div>
+                <div class="col-sm-2">
+                  Sats
+                </div>
+              </li>
+              <li class="fake-table__row fake-table__row--with-inputs fake-table__row--expanded">
+                <div class="fake-table__toggle-container">
+                  <div class="fake-table__toggle-row">
+                    <div class="col-sm-3" data-label="Kringkaster">
+                      NRK
+                    </div>
+                    <div class="col-sm-3" data-label="Poeng">
+                      250 000
+                    </div>
+                    <div class="col-sm-3" data-label="Beløp">
+                      <label class="form__label">
+                        <input type="text" class="form__input">
+                      </label>
+                    </div>
+                    <div class="col-sm-2" data-label="Sats">
+                      5
+                    </div>
+                    <div class="col-sm-1 fake-table__cell--action">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="fake-table__row fake-table__row--child fake-table__row--child--level-1 fake-table__row--child--with-rows">
+                  <li class="fake-table__row">
+                    <div class="fake-table__toggle-container">
+                      <div class="fake-table__toggle-row fake-table__row--with-inputs">
+                        <div class="col-sm-3" data-label="Kringkaster">
+                          Riks
+                        </div>
+                        <div class="col-sm-3" data-label="Poeng">
+                          100 000
+                        </div>
+                        <div class="col-sm-3" data-label="Beløp">
+                          <label class="form__label">
+                            <input type="text" class="form__input">
+                          </label>
+                        </div>
+                        <div class="col-sm-2" data-label="Sats">
+                          5
+                        </div>
+                      </div><!--end fake-table__toggle-row -->
+                    </div><!--end fake-table__toggle-container -->
+                    <ul class="fake-table__row--child fake-table__row--child--level-2 fake-table__row--child--with-rows">
+                      <li class="fake-table__row fake-table__row--with-inputs">
+                        <div class="col-sm-3" data-label="Kringkaster">
+                          nrk p1
+                        </div>
+                        <div class="col-sm-3" data-label="Poeng">
+                          50 000
+                        </div>
+                        <div class="col-sm-3" data-label="Beløp">
+                          <label class="form__label">
+                            <input value="125 000" type="text" class="form__input">
+                          </label>
+                        </div>
+                        <div class="col-sm-2" data-label="Sats">
+                          5
+                        </div>
+                      </li><!--end fake-table__row -->
+                      <li class="fake-table__row fake-table__row--with-inputs">
+                        <div class="col-sm-3" data-label="Kringkaster">
+                          nrk p2
+                        </div>
+                        <div class="col-sm-3" data-label="Poeng">
+                          25 000
+                        </div>
+                        <div class="col-sm-3" data-label="Beløp">
+                          <label class="form__label">
+                            <input value="125 000" type="text" class="form__input">
+                          </label>
+                        </div>
+                        <div class="col-sm-2" data-label="Sats">
+                          5
+                        </div>
+                      </li><!--end fake-table__row -->
+                      <li class="fake-table__row fake-table__row--with-inputs">
+                        <div class="col-sm-3" data-label="Kringkaster">
+                          nrk p3
+                        </div>
+                        <div class="col-sm-3" data-label="Poeng">
+                          25 000
+                        </div>
+                        <div class="col-sm-3" data-label="Beløp">
+                          <label class="form__label">
+                            <input value="125 000" type="text" class="form__input">
+                          </label>
+                        </div>
+                        <div class="col-sm-2" data-label="Sats">
+                          5
+                        </div>
+                      </li><!--end fake-table__row -->
+                    </ul><!--end level-2 -->
+                  </li><!--end fake-table__row -->
+                  <li class="fake-table__row">
+                    <div class="fake-table__toggle-container">
+                      <div class="fake-table__toggle-row fake-table__row--with-inputs">
+                        <div class="col-sm-3" data-label="Kringkaster">
+                          Digital
+                        </div>
+                        <div class="col-sm-3" data-label="Poeng">
+                          80 000
+                        </div>
+                        <div class="col-sm-3" data-label="Beløp">
+                          <label class="form__label">
+                            <input value="125 000" type="text" class="form__input">
+                          </label>
+                        </div>
+                        <div class="col-sm-2" data-label="Sats">
+                          5,625
+                        </div>
+                      </div><!--end fake-table__toggle-row -->
+                    </div><!--end fake-table__toggle-container -->
+                  </li><!--end fake-table__row -->
+                  <li class="fake-table__row">
+                    <div class="fake-table__toggle-container">
+                      <div class="fake-table__toggle-row fake-table__row--with-inputs">
+                        <div class="col-sm-3" data-label="Kringkaster">
+                          Gruppe 3
+                        </div>
+                        <div class="col-sm-3" data-label="Poeng">
+                          40 000
+                        </div>
+                        <div class="col-sm-3" data-label="Beløp">
+                          <label class="form__label">
+                            <input value="220 000" type="text" class="form__input">
+                          </label>
+                        </div>
+                        <div class="col-sm-2" data-label="Sats">
+                          5,55
+                        </div>
+                      </div><!--end fake-table__toggle-row -->
+                    </div><!--end fake-table__toggle-container -->
+                  </li><!--end fake-table__row -->
+                  <li class="fake-table__row">
+                    <div class="fake-table__toggle-container">
+                      <div class="fake-table__toggle-row fake-table__row--with-inputs">
+                        <div class="col-sm-3" data-label="Kringkaster">
+                          Gruppe 4
+                        </div>
+                        <div class="col-sm-3" data-label="Poeng">
+                          30 000
+                        </div>
+                        <div class="col-sm-3" data-label="Beløp">
+                          <label class="form__label">
+                            <input value="210 000" type="text" class="form__input">
+                          </label>
+                        </div>
+                        <div class="col-sm-2" data-label="Sats">
+                          7
+                        </div>
+                      </div><!--end fake-table__toggle-row -->
+                    </div><!--end fake-table__toggle-container -->
+                  </li><!--end fake-table__row -->
+                </ul><!--end level-1-->
+              </li>
+              <li class="fake-table__row">
+                <div class="fake-table__toggle-container">
+                  <div class="fake-table__toggle-row fake-table__row--with-inputs">
+                    <div class="col-sm-3" data-label="Kringkaster">
+                      Radio Norge
+                    </div>
+                    <div class="col-sm-3" data-label="Poeng">
+                      25 000
+                    </div>
+                    <div class="col-sm-3" data-label="Beløp">
+                      <label class="form__label">
+                        <input value="100 000" type="text" class="form__input">
+                      </label>
+                    </div>
+                    <div class="col-sm-2" data-label="Sats">
+                      4
+                    </div>
+                    <div class="col-sm-1 fake-table__cell--action">
+                      <a href="#" class="table-row-toggle"></a>
+                    </div>
+                  </div><!--end fake-table__toggle-row -->
+                </div><!--end fake-table__toggle-container -->
+              </li><!--end fake-table__row -->
+            </ul><!--/.fake-table-->
+            
+            <table class="table table--fluid drilldown">
+              <thead>
+                <tr>
+                  <th>Kringkaster</th>
+                  <th>Poeng</th>
+                  <th>Beløp</th>
+                  <th>Sats</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="drilldown-body drilldown-toggle" data-level="1">
+                  <td data-label="Kringkaster">NRK</td>
+                  <td data-label="Poeng">250 000</td>
+                  <td data-label="Beløp">
+                    <label class="form__label">
+                      <input type="text" class="form__input">
+                    </label>
+                  </td>
+                  <td data-label="Sats">5</td>
+                  <td class="text--right">
+                    <a href="#" class="table-row-toggle"></a>
+                  </td>
+                </tr>
+                <tr class="drilldown-body drilldown-toggle" data-level="2" style="display:none;">
+                  <td data-label="Kringkaster">
+                    Riks
+                  </td>
+                  <td data-label="Poeng">
+                    100 000
+                  </td>
+                  <td data-label="Beløp">
+                    <label class="form__label">
+                      <input type="text" class="form__input">
+                    </label>
+                  </td>
+                  <td data-label="Sats">
+                    5
+                  </td>
+                  <td></td>
+                </tr>
+                
+                <tr class="drilldown-body" data-level="3" style="display:none;">
+                  <td data-label="Kringkaster">
+                    nrk p1
+                  </td>
+                  <td data-label="Poeng">
+                    50 000
+                  </td>
+                  <td data-label="Beløp">
+                    <label class="form__label">
+                      <input value="125 000" type="text" class="form__input">
+                    </label>
+                  </td>
+                  <td data-label="Sats">
+                    5
+                  </td>
+                  <td></td>
+                </tr>
+                
+                <tr class="drilldown-body" data-level="3" style="display:none;">
+                  <td data-label="Kringkaster">
+                    nrk p2
+                  </td>
+                  <td data-label="Poeng">
+                    25 000
+                  </td>
+                  <td data-label="Beløp">
+                    <label class="form__label">
+                      <input value="125 000" type="text" class="form__input">
+                    </label>
+                  </td>
+                  <td data-label="Sats">
+                    5
+                  </td>
+                  <td></td>
+                </tr>
+                
+                <tr class="drilldown-body" data-level="3" style="display:none;">
+                  <td data-label="Kringkaster">
+                    nrk p3
+                  </td>
+                  <td data-label="Poeng">
+                    25 000
+                  </td>
+                  <td data-label="Beløp">
+                    <label class="form__label">
+                      <input value="125 000" type="text" class="form__input">
+                    </label>
+                  </td>
+                  <td data-label="Sats">
+                    5
+                  </td>
+                  <td></td>
+                </tr>
+
+                <tr class="drilldown-body drilldown-toggle" data-level="2" style="display:none;">
+                  <td data-label="Kringkaster">
+                    Digital
+                  </td>
+                  <td data-label="Poeng">
+                    80 000
+                  </td>
+                  <td data-label="Beløp">
+                    <label class="form__label">
+                      <input value="125 000" type="text" class="form__input">
+                    </label>
+                  </td>
+                  <td data-label="Sats">
+                    5,625
+                  </td>
+                  <td></td>
+                </tr>
+                
+                <tr class="drilldown-body drilldown-toggle" data-level="2" style="display:none;">
+                  <td data-label="Kringkaster">
+                    Gruppe 3
+                  </td>
+                  <td data-label="Poeng">
+                    40 000
+                  </td>
+                  <td data-label="Beløp">
+                    <label class="form__label">
+                      <input value="220 000" type="text" class="form__input">
+                    </label>
+                  </td>
+                  <td data-label="Sats">
+                    5,55
+                  </td>
+                  <td></td>
+                </tr>
+                
+                <tr class="drilldown-body drilldown-toggle" data-level="2" style="display:none;">
+                  <td data-label="Kringkaster">
+                    Gruppe 4
+                  </td>
+                  <td data-label="Poeng">
+                    30 000
+                  </td>
+                  <td data-label="Beløp">
+                    <label class="form__label">
+                      <input value="210 000" type="text" class="form__input">
+                    </label>
+                  </td>
+                  <td data-label="Sats">
+                    7
+                  </td>
+                  <td></td>
+                </tr>
+                
+                <tr class="drilldown-body drilldown-toggle" data-level="1">
+                  <td data-label="Kringkaster">Radio Norge</td>
+                  <td data-label="Poeng">25 000</td>
+                  <td data-label="Beløp">
+                    <label class="form__label">
+                      <input type="text" value="100 000" class="form__input">
+                    </label>
+                  </td>
+                  <td data-label="Sats">4</td>
+                  <td class="text--right">
+                    <a href="#" class="table-row-toggle"></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section><!--end /.tabs__section-->
+        </div><!--end /.tabs-->
+        <nav role="navigation" class="text--right">
+          <ul class="pagination">
+            <li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
+            <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
+            <li class="pagination__item"><a href="#">2</a></li>
+            <li class="pagination__item"><a href="#">3</a></li>
+            <li class="pagination__item"><a href="#">4</a></li>
+            <li class="pagination__item"><a href="#">5</a></li>
+            <li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
+          </ul>
+        </nav>
+      </section>
+
+
+
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/vendor/drilldown.js"></script>
+<script src="../js/default.js"></script>
+<script>
+$('.drilldown').drilldown({
+  speed: 'fast'
+});
+</script>
+</body>
+</html>

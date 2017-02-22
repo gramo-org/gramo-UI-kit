@@ -122,8 +122,8 @@ $(document).ready(function() {
     // .siblings().removeClass('fake-table__row--expanded')
     // $(this).find('i').toggleClass('icon--chevron-right icon--chevron-down');
   });
-  $('.table__row--expandable').click(function(){
-    $(this).toggleClass('table__row--expanded').siblings().removeClass('table__row--expanded');
+  $('.table__head--expandable').click(function(){
+    $(this).toggleClass('table__head--expanded').siblings().removeClass('table__head--expanded');
   });
 
   //Toggle Vertical nav

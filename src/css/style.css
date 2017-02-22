@@ -76,6 +76,7 @@
 @import url('_organisms/_table.css');
 @import url('_organisms/_fake-table.css');
 @import url('_organisms/_fake-table-numeric.css');
+@import url('_organisms/_fake-table-distribution.css');
 @import url('_organisms/_table-numeric.css');
 @import url('_organisms/_tabs.css');
 @import url('_organisms/_tabs--transparent.css');
