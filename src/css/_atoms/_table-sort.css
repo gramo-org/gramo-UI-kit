@@ -10,11 +10,11 @@
     margin-left: .35rem;
   }
   
-  &--asc:after {
+  &--desc:after {
     @extend .icon--chevron-down:before;
   }
   
-  &--desc:after {
+  &--asc:after {
     @extend .icon--chevron-up:before;
   }
 }
