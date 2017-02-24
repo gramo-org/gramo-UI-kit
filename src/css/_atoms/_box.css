@@ -21,5 +21,9 @@
     box-shadow: none;
     border: 1px solid color(var(--light-gray) shade(5%));
     padding: 2rem;
+    flex: none;
+    margin: 1.2rem 0;
+    max-width: none;
+    display: inline-block;
   }
 }

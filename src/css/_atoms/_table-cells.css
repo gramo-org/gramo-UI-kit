@@ -8,6 +8,17 @@
     width: 8%;
     @media (--hd) { width: 13%; }
   }
+  
+  &--delete {
+    position: relative;
+    
+    & > a {
+      position: absolute;
+      right: -2.5rem;
+      top: 50%;
+      margin-top: -.75rem;
+    }
+  }
 }
 
 /* Change truncated gradient color for different states */

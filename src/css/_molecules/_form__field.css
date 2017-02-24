@@ -86,8 +86,25 @@
 }
 
 /* Make help text line up with inputs */
-.form__field__help > p {
+.form__field__help {
   @media (--tablet) {
     margin-left: 136px
+  }
+}
+
+/* Form field with table */
+.form__field--with-table {
+  margin-top: 2rem;
+  
+  & > .form__label {
+    display: flex;
+    
+    & > span {
+      margin-top: 1.5rem;
+    }
+    
+    .table {
+      font-weight: var(--normal);
+    }
   }
 }

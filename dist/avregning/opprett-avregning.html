@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+
+
+      <section class="container container--hd">
+        <div class="section-header section-header--divided no-margin--bottom">
+          <header>
+            <h1 class="heading--inline">Avregning 2016</h1>
+            <ol class="wizard-steps">
+              <li class="selected">Spilletid</li>
+              <li>Satser</li>
+              <li>Transaksjoner</li>
+            </ol>
+          </header>
+          <div class="section-header__below">
+            <div class="section-header__meta">
+            
+            </div>
+            <div class="section-header__toolbar">
+              <button class="btn btn--primary">Summer/beregn</button>
+              <button class="btn btn--secondary">Neste ></button>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="container container--hd">
+        <div class="form">
+          <div class="form__field">
+            <label class="form__label">
+              <span>Navn</span>
+              <input type="text" value="" class="form__input form__input--300">
+            </label>
+          </div>
+          <div class="form__field">
+            <label class="form__label">
+              <span>Fra</span>
+              <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+            </label>
+            <label class="form__label">
+              <span>Til</span>
+              <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+            </label>
+            <!-- <div class="form__field__action">
+              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+            </div> -->
+          </div>
+          <div class="form__field">
+            <label class="form__label">
+              <span>Rollekoder</span>
+              <select class="select select--fluid form__input--180">
+                <option>Rollekodeset</option>
+                <option>2016</option>
+                <option>2015B</option>
+              </select>
+            </label>
+          </div>
+          <div class="form__field form__field--inline form__field--inline--checkbox">
+            <span class="form__field__text">Område</span>
+            <label class="form__label">
+              <input type="checkbox" class="form__input--checkbox">
+              <span>Kringkasting</span>
+            </label>
+            <label class="form__label">
+              <input type="checkbox" class="form__input--checkbox">
+              <span>Offentlig framføring</span>
+            </label>
+          </div>
+          <div class="form__field form__field--with-table">
+            <label class="form__label">
+              <span>Kanalgruppe</span>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Kringkaster</th>
+                    <th>Gruppenavn</th>
+                    <th colspan="2">Antall Kanaler</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>NRK</td>
+                    <td><a href="#">RIKS</a></td>
+                    <td>4 Kanaler (Kanal 1, Kanal 2, Kanal 3, Kanal 4)</td>
+                    <td class="table__cell--delete">
+                      <a class="text--small text--light" href="#">
+                        <i class="icon--x"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>NRK</td>
+                    <td><a href="#">DIGITAL</a></td>
+                    <td>4 Kanaler (Kanal 1, Kanal 2, Kanal 3, Kanal4, Kanal 4, Kanal 6)</td>
+                    <td class="table__cell--delete">
+                      <a class="text--small text--light" href="#">
+                        <i class="icon--x"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </label>
+          </div>
+          <div class="form__field__help">
+            <p>
+              <a href="#">Legg til kanalgruppe</a>
+            </p>
+            <div class="box box--gray">
+              <fieldset class="form__fieldset">
+                <h3 class="heading--in-form">Ny gruppe</h3>
+                <div class="form__field">
+                  <label class="form__label">
+                    <span>Rollekoder</span>
+                    <select class="select select--fluid form__input--220">
+                      <option>NRK</option>
+                      <option>-</option>
+                      <option>-</option>
+                    </select>
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <div class="form__field form__field--inline form__field--inline--checkbox">
+                  <span class="form__field__text"></span>
+                  <label class="form__label">
+                    <input type="checkbox" class="form__input--checkbox">
+                    <span>Kanal</span>
+                  </label>
+                  <label class="form__label">
+                    <input type="checkbox" class="form__input--checkbox">
+                    <span>Kanal</span>
+                  </label>
+                  <label class="form__label">
+                    <input type="checkbox" class="form__input--checkbox">
+                    <span>Kanal</span>
+                  </label>
+                </div>
+                <div class="form__field form__field--inline form__field--inline--checkbox">
+                  <span class="form__field__text"></span>
+                  <label class="form__label">
+                    <input type="checkbox" class="form__input--checkbox">
+                    <span>Kanal</span>
+                  </label>
+                  <label class="form__label">
+                    <input type="checkbox" class="form__input--checkbox">
+                    <span>Kanal</span>
+                  </label>
+                  <label class="form__label">
+                    <input type="checkbox" class="form__input--checkbox">
+                    <span>Kanal</span>
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <div class="form__field">
+                  <label class="form__label">
+                    <span>Gi et navn</span>
+                    <input type="text" value="" class="form__input form__input--300">
+                  </label>
+                </div>
+              </fieldset>
+              <div class="form__section--action form__section--action--right">
+                <button href="#" class="btn btn--secondary">Avbryt</button>
+                <button class="btn btn--primary">Lagre</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
+
+</body>
+</html>

@@ -220,6 +220,10 @@ td.text--center,
   margin-bottom: .6rem;
 }
 
+.heading--in-form {
+  margin-bottom: 1.2rem;
+}
+
 /*** input--inline ***/
 
 .input--inline {
