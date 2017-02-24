@@ -20,7 +20,7 @@
   }
 
 /* Make link color regular */
-  a {
+  a:not(.btn) {
     color: inherit;
   }
 
