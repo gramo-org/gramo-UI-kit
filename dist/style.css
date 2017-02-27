@@ -3557,6 +3557,10 @@ main.pull .bucket{
 .table__head .x-toggle-btn{
   vertical-align:bottom;
 }
+
+.table__head .select{
+  max-width:100px;
+}
 .table__row--is-editing, .table__row--expanded{
   background:#f9f9f9;
 }

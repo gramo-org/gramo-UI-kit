@@ -28,3 +28,7 @@
     vertical-align: bottom;
   }
 }
+
+.table__head .select {
+  max-width: 100px;
+}
