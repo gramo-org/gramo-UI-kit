@@ -19,6 +19,9 @@
       margin-top: -.75rem;
     }
   }
+  &--min-width-160 {
+    min-width: 160px;
+  }
 }
 
 /* Change truncated gradient color for different states */
