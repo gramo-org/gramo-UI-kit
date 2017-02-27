@@ -3659,20 +3659,20 @@ main.pull .bucket{
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
 }
-.drilldown tr[data-level="1"].dd-open .table-row-toggle{
+.table tr[data-level="1"].dd-open .table-row-toggle{
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
 }
-.drilldown tr[data-level="2"] > td:first-child{
+.table tr[data-level="2"] > td:first-child{
   padding-left:3rem;
 }
-.drilldown tr[data-level="2"].dd-close > td:first-child::before{
+.table tr[data-level="2"].dd-close > td:first-child::before{
   content:'+';
 }
-.drilldown tr[data-level="2"].dd-open > td:first-child::before{
+.table tr[data-level="2"].dd-open > td:first-child::before{
   content:'-';
 }
-.drilldown tr[data-level="3"] > td:first-child{
+.table tr[data-level="3"] > td:first-child{
   padding-left:6rem;
 }
 .table-summary{

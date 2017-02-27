@@ -32,7 +32,7 @@
 }
 
 /***Drilldown plugin styles***/
-.drilldown {
+.table {
   
   tr[data-level="1"].dd-open .table-row-toggle {
     transform: rotate(90deg);
