@@ -19,6 +19,10 @@
   border-bottom: 0;
 }
 
+.table__head td {
+  white-space: nowrap;
+}
+
 .table__head {
   .select, .form__input {
     height: auto;
