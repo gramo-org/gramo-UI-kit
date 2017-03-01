@@ -2278,6 +2278,9 @@ hr, .horizontal-rule{
 .table__cell--min-width-160{
   min-width:162px;
 }
+.table__cell--no-wrap{
+  white-space:nowrap;
+}
 .table-sort{
   position:relative;
   display:inline-block;

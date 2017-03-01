@@ -22,6 +22,9 @@
   &--min-width-160 {
     min-width: 162px;
   }
+  &--no-wrap {
+    white-space: nowrap;
+  }
 }
 
 /* Change truncated gradient color for different states */
