@@ -9,6 +9,10 @@
     @media (--desktop) { min-width: 100%; }
     @media (--hd) { min-width: 100%; }
   }
+  
+  &--full-width {
+    table-layout: auto;
+  }
 
   /*** Example class controls width on UI kit index page ***/
   &--example {

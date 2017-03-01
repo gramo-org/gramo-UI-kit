@@ -5334,6 +5334,9 @@ tr > td:last-child{
     min-width:100%;
   }
 }
+.table--full-width{
+  table-layout:auto;
+}
 @media (min-width: 960px){
 
   .table--example{
