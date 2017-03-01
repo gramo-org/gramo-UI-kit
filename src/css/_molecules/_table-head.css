@@ -19,7 +19,7 @@
   border-bottom: 0;
 }
 
-.table__head td {
+.table__head th {
   white-space: nowrap;
 }
 
