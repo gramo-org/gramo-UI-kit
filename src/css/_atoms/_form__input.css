@@ -37,7 +37,7 @@ input[type="radio"], input[type="checkbox"],
 .form__input--radio {
   display: inline-block;
   width: auto;
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
 }
 
 .form__input--date,

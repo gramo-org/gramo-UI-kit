@@ -1525,7 +1525,7 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__input--radio{
   display:inline-block;
   width:auto;
-  margin-right:0.5rem;
+  margin-right:0.2rem;
 }
 
 .form__input--date, .form__input[type="date"]{
@@ -2932,6 +2932,12 @@ hr, .horizontal-rule{
 }
 .form__field--inline--checkbox{
   padding:.5rem 0;
+}
+.form__field--inline--checkbox .form__label{
+  margin-right:1.5rem;
+}
+.form__field--inline--checkbox .form__label--disabled{
+  opacity:0.5;
 }
 @media (min-width: 768px){
 
