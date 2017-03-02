@@ -1173,11 +1173,11 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 }
 @font-face{
   font-family:'icomoon';
-  src:url('fonts/icomoon.eot?mapv1v');
-  src:url('fonts/icomoon.eot?mapv1v#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?mapv1v') format('truetype'),
-    url('fonts/icomoon.woff?mapv1v') format('woff'),
-    url('fonts/icomoon.svg?mapv1v#icomoon') format('svg');
+  src:url('fonts/icomoon.eot?bv4okm');
+  src:url('fonts/icomoon.eot?bv4okm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bv4okm') format('truetype'),
+    url('fonts/icomoon.woff?bv4okm') format('woff'),
+    url('fonts/icomoon.svg?bv4okm#icomoon') format('svg');
   font-weight:normal;
   font-style:normal;
 }
@@ -1190,6 +1190,9 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 	font-variant:normal;
 	text-transform:none;
   display:inline-block;
+}
+.icon--worklist:before{
+  content:"\e921";
 }
 .icon--warning:before{
   content:"\e920";
@@ -4189,6 +4192,10 @@ main.pull .bucket{
 .tabs__nav__item__type--label:before, .tabs__nav__item__type--owner:before{
   content:"\e918";
   top:.12rem;
+}
+.tabs__nav__item__type--worklist:before{
+  content:"\e921";
+  top:.13rem;
 }
 .tabs__section__nav{
   background:#ededed;

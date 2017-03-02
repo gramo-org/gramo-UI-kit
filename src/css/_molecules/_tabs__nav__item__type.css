@@ -38,4 +38,8 @@
     content: "\e918";
     top: .12rem;
   }
+  &--worklist:before {
+    content: "\e921";
+    top: .13rem;
+  }
 }
