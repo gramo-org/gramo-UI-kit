@@ -38,19 +38,25 @@
     transform: rotate(90deg);
   }
   
+  tr[data-level="1"].dd-open {
+    background: var(--table-head-background);
+  }
+  
   tr[data-level="2"] > td:first-child {
     padding-left: 4rem;
   }
   
   tr[data-level="2"].dd-close > td:first-child::before {
     content: '+';
+    margin-right: .25rem;
   }
   
   tr[data-level="2"].dd-open > td:first-child::before {
     content: '-';
+    margin-right: .25rem;
   }
   
   tr[data-level="3"] > td:first-child {
-    padding-left: 6rem;
+    padding-left: 7rem;
   }
 }

@@ -3682,17 +3682,22 @@ main.pull .bucket{
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
 }
+.table tr[data-level="1"].dd-open{
+  background:#ededed;
+}
 .table tr[data-level="2"] > td:first-child{
   padding-left:4rem;
 }
 .table tr[data-level="2"].dd-close > td:first-child::before{
   content:'+';
+  margin-right:.25rem;
 }
 .table tr[data-level="2"].dd-open > td:first-child::before{
   content:'-';
+  margin-right:.25rem;
 }
 .table tr[data-level="3"] > td:first-child{
-  padding-left:6rem;
+  padding-left:7rem;
 }
 .table-summary{
   min-width:0;
