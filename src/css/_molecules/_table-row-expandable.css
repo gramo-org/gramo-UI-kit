@@ -39,7 +39,7 @@
   }
   
   tr[data-level="2"] > td:first-child {
-    padding-left: 3rem;
+    padding-left: 4rem;
   }
   
   tr[data-level="2"].dd-close > td:first-child::before {
