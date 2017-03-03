@@ -3678,11 +3678,8 @@ main.pull .bucket{
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
 }
-.table .dd-close{
+.table .dd--is-hidden{
   display:none;
-}
-.table .dd-open{
-  display:table-row;
 }
 .table tr[data-level="1"].dd-open .table-row-toggle{
   -webkit-transform:rotate(90deg);
