@@ -34,6 +34,14 @@
 /***Drilldown plugin styles***/
 .table {
   
+  .dd-close {
+    display: none;
+  }
+  
+  .dd-open {
+    display: table-row;
+  }
+  
   tr[data-level="1"].dd-open .table-row-toggle {
     transform: rotate(90deg);
   }
