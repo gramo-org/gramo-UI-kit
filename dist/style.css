@@ -2251,13 +2251,13 @@ hr, .horizontal-rule{
     margin-right:1rem;
   }
 }
-.table__row--is-editing > td.table__cell--action, tr:hover > td.table__cell--action, tr:hover > .table-summary__cell--action, .fake-table__row:hover > .fake-table__cell--action, .fake-table__toggle-row:hover > .fake-table__cell--action, .fake-table__row--child-inner > .row:hover .fake-table__cell--action, .table__head--expanded + tbody tr:hover > td, tr.dd-open + tr[data-level="2"]:hover > td{
+.table__row--is-editing > td.table__cell--action, tr:hover > td.table__cell--action, tr:hover > .table-summary__cell--action, .fake-table__row:hover > .fake-table__cell--action, .fake-table__toggle-row:hover > .fake-table__cell--action, .fake-table__row--child-inner > .row:hover .fake-table__cell--action, .table__head--expanded + tbody tr:hover > td, tr.dd-open ~ tr[data-level="2"]:hover > td{
   position:relative;
 }
-.table__row--is-editing > td.table__cell--action > .text--hide-on-hover, tr:hover > td.table__cell--action > .text--hide-on-hover, tr:hover > .table-summary__cell--action > .text--hide-on-hover, .fake-table__row:hover > .fake-table__cell--action > .text--hide-on-hover, .fake-table__toggle-row:hover > .fake-table__cell--action > .text--hide-on-hover, .fake-table__row--child-inner > .row:hover .fake-table__cell--action > .text--hide-on-hover, .table__head--expanded + tbody tr:hover > td > .text--hide-on-hover, tr.dd-open + tr[data-level="2"]:hover > td > .text--hide-on-hover{
+.table__row--is-editing > td.table__cell--action > .text--hide-on-hover, tr:hover > td.table__cell--action > .text--hide-on-hover, tr:hover > .table-summary__cell--action > .text--hide-on-hover, .fake-table__row:hover > .fake-table__cell--action > .text--hide-on-hover, .fake-table__toggle-row:hover > .fake-table__cell--action > .text--hide-on-hover, .fake-table__row--child-inner > .row:hover .fake-table__cell--action > .text--hide-on-hover, .table__head--expanded + tbody tr:hover > td > .text--hide-on-hover, tr.dd-open ~ tr[data-level="2"]:hover > td > .text--hide-on-hover{
   display:none;
 }
-.table__row--is-editing > td.table__cell--action > .btn-group--hover, tr:hover > td.table__cell--action > .btn-group--hover, tr:hover > .table-summary__cell--action > .btn-group--hover, .fake-table__row:hover > .fake-table__cell--action > .btn-group--hover, .fake-table__toggle-row:hover > .fake-table__cell--action > .btn-group--hover, .fake-table__row--child-inner > .row:hover .fake-table__cell--action > .btn-group--hover, .table__head--expanded + tbody tr:hover > td > .btn-group--hover, tr.dd-open + tr[data-level="2"]:hover > td > .btn-group--hover{
+.table__row--is-editing > td.table__cell--action > .btn-group--hover, tr:hover > td.table__cell--action > .btn-group--hover, tr:hover > .table-summary__cell--action > .btn-group--hover, .fake-table__row:hover > .fake-table__cell--action > .btn-group--hover, .fake-table__toggle-row:hover > .fake-table__cell--action > .btn-group--hover, .fake-table__row--child-inner > .row:hover .fake-table__cell--action > .btn-group--hover, .table__head--expanded + tbody tr:hover > td > .btn-group--hover, tr.dd-open ~ tr[data-level="2"]:hover > td > .btn-group--hover{
   display:block;
 }
 .table__cell--spaced{
