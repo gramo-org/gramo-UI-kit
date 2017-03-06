@@ -5103,6 +5103,12 @@ main.pull .section-header--fixed{
   -ms-flex:0 1 auto;
   flex:0 1 auto;
 }
+.section-header--left .section-header__toolbar{
+  -webkit-align-self:auto;
+  -ms-flex-item-align:auto;
+  align-self:auto;
+  margin-left:1rem;
+}
 .infobar{
   border-bottom:1px solid #d9d9dc;
   padding:1.2rem 0 1.2rem 0.2rem;

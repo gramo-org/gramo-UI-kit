@@ -152,4 +152,9 @@ main.pull .section-header--fixed {
   header {
     flex: 0 1 auto;
   }
+  
+  .section-header__toolbar {
+    align-self: auto;
+    margin-left: 1rem;
+  }
 }
