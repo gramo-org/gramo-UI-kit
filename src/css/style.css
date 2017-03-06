@@ -52,7 +52,7 @@
 @import url('_molecules/_buckets.css');
 @import url('_molecules/_table-head.css');
 @import url('_molecules/_table-row.css');
-@import url('_molecules/_table-row-expandable.css');
+@import url('_molecules/_table-row-drilldown.css');
 @import url('_molecules/_table-summary.css');
 @import url('_molecules/_fake-table-rows.css');
 @import url('_molecules/_fake-table-child-rows.css');

@@ -80,3 +80,7 @@
     }
   }
 }
+
+.table__row--multiline > td {
+  vertical-align: top;
+}

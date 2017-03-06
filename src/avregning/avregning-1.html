@@ -107,145 +107,220 @@
       </section>
 
       <section class="container container--hd">
-        <ul class="fake-table fake-table--detached fake-table--distribution">
-          <li class="fake-table__row fake-table__row--head always-visible">
-            <div class="col col--no-flex">
-              <span class="table-sort">
-                Tittel
-              </span>
-            </div>
-            <div class="col col--no-flex">
-              <span class="table-sort">
-                Hovedartist
-              </span>
-            </div>
-            <div class="col col--no-flex">
-              <select class="select select--fluid">
-                <option value="">Prod-land</option>
-              </select>
-            </div>
-            <div class="col col--no-flex">
-              <input type="number" class="form__input four-digit" value="1986">
-            </div>
-            <div class="col col--no-flex">
-              <span class="table-sort table-sort--asc">
-                Label
-              </span>
-            </div>
-            <div class="col col--no-flex">
-              <span class="table-sort table-sort--desc">
-                ISRC
-              </span>
-            </div>
-            <div class="col col--no-flex col--small">
-              <span class="table-sort">
-                Sum splt
-              </span>
-            </div>
-            <div class="col col--no-flex col--small">
-              <select class="select select--fluid">
-                <option value="">Vern</option>
-              </select>
-            </div>
-            <div class="col col--no-flex">
-              <span class="table-sort">
-                Feil
-              </span>
-              <span class="x-toggle-container">
-                <input type="checkbox" class="x-toggle">
-                <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
-                </label>
-              </span>
-            </div>
-          </li>
-          <li class="fake-table__row fake-table__row--expanded">
-            <div class="fake-table__toggle-container">
-              <div class="fake-table__toggle-row">
-                <div class="col col--no-flex" data-label="Tittel">
-                  <a href="#">1999 (radio Edit)</a>
-                </div>
-                <div class="col col--no-flex" data-label="Hovedartist">
-                  Prince
-                </div>
-                <div class="col col--no-flex" data-label="Prod-land">
-                  USA
-                </div>
-                <div class="col col--no-flex" data-label="Utg. år">
-                  1986
-                </div>
-                <div class="col col--no-flex" data-label="Label">
-                  Super Records
-                </div>
-                <div class="col col--no-flex" data-label="ISRC">
-                  NI6359832
-                </div>
-                <div class="col col--no-flex col--small" data-label="Sum spltd.">
-                  03:04:10
-                </div>
-                <div class="col col--no-flex col--small" data-label="Vern">
-                  Roma
-                </div>
-                <div class="col col--no-flex text--center" data-label="Status">
-                  <div class="tooltip-wrapper">
-                    <i class="icon--warning"></i>
-                    <div class="tooltip">
-                      <ul class="tooltip__list">
-                        <li>Mangler prod. land og utg. år</li>
-                        <li>Mangler prod. land og utg. år</li>
-                      </ul>
-                    </div>
+        <table class="table table--fluid drilldown">
+          <thead class="table__head table__head--always-visible">
+            <tr>
+              <th>
+                <span class="table-sort">Tittel</span>
+              </th>
+              <th>
+                <span class="table-sort">Hovedartist</span>
+              </th>
+              <th>
+                <select class="select select--fluid">
+                  <option value="">Prod-land</option>
+                </select>
+              </th>
+              <th>
+                <input type="number" class="form__input four-digit" value="1986">
+              </th>
+              <th>
+                <span class="table-sort table-sort--asc">
+                  Label
+                </span>
+              </th>
+              <th>
+                <span class="table-sort table-sort--desc">
+                  ISRC
+                </span>
+              </th>
+              <th>
+                <span class="table-sort">
+                  Sum splt
+                </span>
+              </th>
+              <th>
+                <select class="select select--fluid">
+                  <option value="">Vern</option>
+                </select>
+              </th>
+              <th>
+                <span class="table-sort">
+                  Feil
+                </span>
+                <span class="x-toggle-container">
+                  <input type="checkbox" class="x-toggle">
+                  <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                  </label>
+                </span>
+              </th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="drilldown-body drilldown-toggle" data-level="1">
+              <td data-label="Tittel">
+                <a href="#">1999 (radio Edit) er en veldig lang tittel</a>
+              </td>
+              <td data-label="Hovedartist">
+                Prince er en veldig kjent artist
+              </td>
+              <td data-label="Prod-land">
+                USA
+              </td>
+              <td data-label="Utg. år">
+                1986
+              </td>
+              <td data-label="Label">
+                Super Records
+              </td>
+              <td data-label="ISRC">
+                NI6359832
+              </td>
+              <td data-label="Sum spltd.">
+                03:04:10
+              </td>
+              <td data-label="Vern">
+                Roma
+              </td>
+              <td data-label="Status">
+                <div class="tooltip-wrapper">
+                  <i class="icon--warning"></i>
+                  <div class="tooltip">
+                    <ul class="tooltip__list">
+                      <li>Mangler prod. land og utg. år</li>
+                      <li>Mangler prod. land og utg. år</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="col col--no-flex col--x-small fake-table__cell--action">
-                  <a href="#" class="table-row-toggle" data-ember-action="1034"></a>
-                </div>
-              </div>
-            </div>
+              </td>
+              <td class="text--right">
+                <a href="#" class="table-row-toggle"></a>
+              </td>
+            </tr>
 
-            <ul class="fake-table__row fake-table__row--child fake-table__row--child--with-rows">
+            <tr class="drilldown-body" data-level="2" style="display:none;">
+              <td colspan="3">
+                NRK P1
+              </td>
+              <td colspan="3">
+                02:10:33
+              </td>
+              <td colspan="4">
+                <div class="btn-group btn-group--hover">
+                  <button class="btn btn--primary">Gå til identifiserte liste</a></button>
+                </div>
+              </td>
+            </tr><!--end row -->
+            <tr class="drilldown-body" data-level="2" style="display:none;">
+              <td colspan="3">
+                Radio Norge
+              </td>
+              <td colspan="3">
+                01:10:33
+              </td>
+              <td colspan="4">
+                <div class="btn-group btn-group--hover">
+                  <button class="btn btn--primary">Gå til identifiserte liste</a></button>
+                </div>
+              </td>
+            </tr><!--end row -->
+            <tr class="drilldown-body" data-level="2" style="display:none;">
+              <td colspan="3">
+                P4
+              </td>
+              <td colspan="3">
+                00:01:27
+              </td>
+              <td colspan="4">
+                <div class="btn-group btn-group--hover">
+                  <button class="btn btn--primary">Gå til identifiserte liste</a></button>
+                </div>
+              </td>
+            </tr><!--end row -->
 
-                <li class="fake-table__row">
-                  <div class="col-sm-8">
-                    NRK P1
+            <tr class="drilldown-body drilldown-toggle" data-level="1">
+              <td data-label="Tittel">
+                <a href="#">1999 (radio Edit) er en veldig lang tittel</a>
+              </td>
+              <td data-label="Hovedartist">
+                Prince er en veldig kjent artist
+              </td>
+              <td data-label="Prod-land">
+                USA
+              </td>
+              <td data-label="Utg. år">
+                1986
+              </td>
+              <td data-label="Label">
+                Super Records
+              </td>
+              <td data-label="ISRC">
+                NI6359832
+              </td>
+              <td data-label="Sum spltd.">
+                03:04:10
+              </td>
+              <td data-label="Vern">
+                Roma
+              </td>
+              <td data-label="Status">
+                <div class="tooltip-wrapper">
+                  <i class="icon--warning"></i>
+                  <div class="tooltip">
+                    <ul class="tooltip__list">
+                      <li>Mangler prod. land og utg. år</li>
+                      <li>Mangler prod. land og utg. år</li>
+                    </ul>
                   </div>
-                  <div class="col-sm-2">
-                    02:10:33
-                  </div>
-                  <div class="col-sm-2 fake-table__cell--action">
-                    <div class="btn-group btn-group--hover">
-                      <a href="#" class="btn btn--primary">Gå til identifiserte liste</a>
-                    </div>
-                  </div>
-                </li><!--end row -->
-                <li class="fake-table__row">
-                  <div class="col-sm-8">
-                    Radio Norge
-                  </div>
-                  <div class="col-sm-2">
-                    01:10:33
-                  </div>
-                  <div class="col-sm-2 fake-table__cell--action">
-                    <div class="btn-group btn-group--hover">
-                      <button class="btn btn--primary">Gå til identifiserte liste</button>
-                    </div>
-                  </div>
-                </li><!--end row -->
-                <li class="fake-table__row">
-                  <div class="col-sm-8">
-                    P4
-                  </div>
-                  <div class="col-sm-2">
-                    00:01:27
-                  </div>
-                  <div class="col-sm-2 fake-table__cell--action">
-                    <div class="btn-group btn-group--hover">
-                      <button class="btn btn--primary">Gå til identifiserte liste</button>
-                    </div>
-                  </div>
-                </li><!--end row --> 
-            </ul>
-          </li>
-        </ul><!--/.fake-table-->
+                </div>
+              </td>
+              <td class="text--right">
+                <a href="#" class="table-row-toggle"></a>
+              </td>
+            </tr>
+
+            <tr class="drilldown-body" data-level="2" style="display:none;">
+              <td colspan="3">
+                NRK P1
+              </td>
+              <td colspan="3">
+                02:10:33
+              </td>
+              <td colspan="4">
+                <div class="btn-group btn-group--hover">
+                  <button class="btn btn--primary">Gå til identifiserte liste</a></button>
+                </div>
+              </td>
+            </tr><!--end row -->
+            <tr class="drilldown-body" data-level="2" style="display:none;">
+              <td colspan="3">
+                Radio Norge
+              </td>
+              <td colspan="3">
+                01:10:33
+              </td>
+              <td colspan="4">
+                <div class="btn-group btn-group--hover">
+                  <button class="btn btn--primary">Gå til identifiserte liste</a></button>
+                </div>
+              </td>
+            </tr><!--end row -->
+            <tr class="drilldown-body" data-level="2" style="display:none;">
+              <td colspan="3">
+                P4
+              </td>
+              <td colspan="3">
+                00:01:27
+              </td>
+              <td colspan="4">
+                <div class="btn-group btn-group--hover">
+                  <button class="btn btn--primary">Gå til identifiserte liste</a></button>
+                </div>
+              </td>
+            </tr><!--end row --> 
+          </tbody>
+        </table>
         <nav role="navigation" class="text--right">
           <ul class="pagination">
             <li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
@@ -258,14 +333,16 @@
           </ul>
         </nav>
       </section>
-
-
-
     </main>
   </div><!--End site-wrapper-->
 
 <script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/vendor/drilldown.js"></script>
 <script src="../js/default.js"></script>
-
+<script>
+$('.drilldown').drilldown({
+  speed: 'fast'
+});
+</script>
 </body>
 </html>

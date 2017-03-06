@@ -1,0 +1,30 @@
+/***Drilldown plugin styles***/
+.table {
+  
+  tr[data-level="1"].dd-open .table-row-toggle {
+    transform: rotate(90deg);
+  }
+  
+  tr[data-level="1"].dd-open {
+    background: var(--table-head-background);
+  }
+  
+  tr[data-level="2"] > td:first-child {
+    padding-left: 4rem;
+  }
+  
+  tr[data-level="2"].drilldown-toggle > td:first-child::before,
+  tr[data-level="2"].dd-close > td:first-child::before {
+    content: '+';
+    margin-right: .25rem;
+  }
+  
+  tr[data-level="2"].dd-open > td:first-child::before {
+    content: '-';
+    margin-right: .5rem;
+  }
+  
+  tr[data-level="3"] > td:first-child {
+    padding-left: 7rem;
+  }
+}
