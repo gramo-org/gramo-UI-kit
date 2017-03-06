@@ -46,6 +46,10 @@
     background: var(--table-head-background);
   }
   
+  tr[data-level="2"] > td {
+    vertical-align: top;
+  }
+  
   tr[data-level="2"] > td:first-child {
     padding-left: 4rem;
   }

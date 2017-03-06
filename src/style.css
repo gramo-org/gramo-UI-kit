@@ -3688,6 +3688,9 @@ main.pull .bucket{
 .table tr[data-level="1"].dd-open{
   background:#ededed;
 }
+.table tr[data-level="2"] > td{
+  vertical-align:top;
+}
 .table tr[data-level="2"] > td:first-child{
   padding-left:4rem;
 }
