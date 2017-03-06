@@ -5093,6 +5093,16 @@ input[type="text"].search__form__input--large{
 main.pull .section-header--fixed{
   left:1rem;
 }
+.section-header--left{
+  -webkit-align-items:baseline;
+  -ms-flex-align:baseline;
+  align-items:baseline;
+}
+.section-header--left header{
+  -webkit-flex:0 1 auto;
+  -ms-flex:0 1 auto;
+  flex:0 1 auto;
+}
 .infobar{
   border-bottom:1px solid #d9d9dc;
   padding:1.2rem 0 1.2rem 0.2rem;

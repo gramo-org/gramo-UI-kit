@@ -144,3 +144,12 @@
 main.pull .section-header--fixed {
   left: 1rem;
 }
+
+/* Title and toolbar inline and to the left */
+.section-header--left {
+  align-items: baseline;
+  
+  header {
+    flex: 0 1 auto;
+  }
+}
