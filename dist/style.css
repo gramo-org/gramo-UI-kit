@@ -213,11 +213,11 @@ td.text--center, .fake-table__row *.text--center{
   }
 }
 
-.text--light, .infobar__meta{
+.text--light, .summary__row span, .infobar__meta{
   color:#a5a4ab;
 }
 
-.text--light a, .infobar__meta a{
+.text--light a, .summary__row span a, .infobar__meta a{
   color:inherit;
 }
 
@@ -553,7 +553,7 @@ h4, .form__label{
   font-size:1.4rem;
   margin:0;
 }
-.row, .fake-table__toggle-row, .fake-table__row, .fake-table__row--child, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item{
+.row, .fake-table__toggle-row, .summary__row, .fake-table__row, .fake-table__row--child, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -569,7 +569,7 @@ h4, .form__label{
   position:relative;
 }
 
-.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .box, .breadcrumbs, .breadcrumbs__item, .tabs__nav__item, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .tabs--compressed .tabs__nav__item, .tabs--transparent .tabs__nav__item{
+.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .box, .breadcrumbs, .breadcrumbs__item, .summary, .summary__row div:first-child, .summary__row div:last-child, .tabs__nav__item, .list--expandable .list__item__date, .list--expandable .list__item__results, .list--expandable .list__item__action, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--downloads, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item--message, .tabs--compressed .tabs__nav__item, .tabs--transparent .tabs__nav__item{
   box-sizing:border-box;
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -587,7 +587,7 @@ h4, .form__label{
   padding-right:1rem;
 }
 
-.col-xs, .col-sm, .col-md, .col-lg, .breadcrumbs, .breadcrumbs__item, .list--expandable .list__item__results, .list--expandable .list__item__action, .tabs--compressed .tabs__nav__item{
+.col-xs, .col-sm, .col-md, .col-lg, .breadcrumbs, .breadcrumbs__item, .summary, .list--expandable .list__item__results, .list--expandable .list__item__action, .tabs--compressed .tabs__nav__item{
   -webkit-flex-grow:1;
   -ms-flex-positive:1;
   flex-grow:1;
@@ -738,7 +738,7 @@ h4, .form__label{
     flex-basis:16.66667%;
     max-width:16.66667%;
   }
-  .col-sm-3{
+  .col-sm-3, .summary__row div:first-child{
     -webkit-flex-basis:25%;
     -ms-flex-preferred-size:25%;
     flex-basis:25%;
@@ -774,7 +774,7 @@ h4, .form__label{
     flex-basis:66.66667%;
     max-width:66.66667%;
   }
-  .col-sm-9{
+  .col-sm-9, .summary__row div:last-child{
     -webkit-flex-basis:75%;
     -ms-flex-preferred-size:75%;
     flex-basis:75%;
@@ -3714,6 +3714,55 @@ main.pull .bucket{
 
 .table-summary__row--current .table-summary__cell--sum b{
   font-size:4.2rem;
+}
+
+.summary{
+  max-width:600px;
+  margin:2rem auto;
+}
+
+.summary__header{
+  margin:2rem 0;
+  text-align:center;
+}
+
+.summary__header h2{
+  font-weight:300;
+}
+
+.summary__footer{
+  margin:2rem 0;
+  text-align:center;
+}
+
+.summary__row{
+  padding:1rem 0;
+  background:#fdfdfd;
+}
+
+.summary__row:nth-child(odd):not(.summary__header):not(.summary__footer){
+  background:#f9f9f9;
+}
+
+.summary__row div:first-child{
+  text-align:right;
+  font-weight:600;
+}
+
+.summary__row span{
+  margin-left:1rem;
+}
+
+.summary__row--header{
+  border-bottom:1px solid #ededed;
+  font-size:110%;
+  margin-bottom:1rem;
+}
+
+.summary__row--footer{
+  border-top:1px solid #ededed;
+  font-size:110%;
+  margin-top:1rem;
 }
 .fake-table__row{
   background:#fdfdfd;
