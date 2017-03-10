@@ -97,6 +97,7 @@
     
     &--cols {
       display: flex;
+      align-items: flex-end;
       
       .col {
         flex: 1;
@@ -106,6 +107,29 @@
           flex: 0 1 auto;
           margin-right: 2rem;
         }
+      }
+      
+      .col--arrow, .col--plus {
+        position: relative;
+      }
+      
+      .col--plus::after {
+        content: '+';
+        position: absolute;
+        right: -0.5rem;
+        top: 26%;
+        font-weight: var(--thin);
+      }
+      
+      .col--arrow::after {
+        @extend .icon--chevron-line:before;
+        font-family: 'icomoon';
+        position: absolute;
+        right: -1rem;
+        top: 35%;
+        font-weight: var(--thin);
+        font-size: 120%;
+        color: var(--off-gray);
       }
     }
   }
