@@ -5789,6 +5789,10 @@ tr > td:last-child{
   color:#a5a4ab;
   margin-right:1rem;
 }
+.wizard-steps > li a{
+  color:#a5a4ab;
+  text-decoration:none;
+}
 .wizard-steps > li:after{
   content:'\e908';
   font-family:'icomoon';
@@ -5799,7 +5803,7 @@ tr > td:last-child{
 .wizard-steps > li:last-child::after{
   content:none;
 }
-.wizard-steps > li.selected{
+.wizard-steps > li.selected, .wizard-steps > li.selected a{
   color:#0095da;
 }
 .component-view{

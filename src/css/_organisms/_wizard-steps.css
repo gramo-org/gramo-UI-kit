@@ -10,6 +10,11 @@
     color: var(--off-gray);
     margin-right: 1rem;
     
+    a {
+      color: var(--off-gray);
+      text-decoration: none;
+    }
+    
     &:after {
       content: '\e908';
       font-family: 'icomoon';
@@ -23,7 +28,7 @@
     }
   }
   
-  & > li.selected {
+  & > li.selected, & > li.selected a {
     color: var(--gramo-blue);
   }
 }
