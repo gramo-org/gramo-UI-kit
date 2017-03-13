@@ -5401,6 +5401,19 @@ tr > td:last-child{
     text-align:right;
   }
 }
+
+.table--decimal td:not(:first-child), .table--decimal th:not(:first-child){
+  text-align:right;
+}
+
+.table--decimal .form__label{
+  margin-right:0;
+}
+
+.table--decimal .form__label .form__input{
+  text-align:right;
+  padding-right:.25rem;
+}
 .fake-table{
   min-width:100%;
   margin-top:0;
