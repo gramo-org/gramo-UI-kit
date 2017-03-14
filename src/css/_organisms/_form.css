@@ -27,7 +27,7 @@
     &--labels-aligned {
       @media (--tablet) { margin-left: 137px; }
       .form__label {
-        min-width: 50px;
+        min-width: 80px;
       }
     }
   }

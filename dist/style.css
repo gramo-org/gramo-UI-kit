@@ -4667,7 +4667,7 @@ input[type="text"].search__form__input--large{
 }
 
   .form__fieldset--labels-aligned .form__label{
-  min-width:50px;
+  min-width:80px;
 }
 
   .form__section--action{
