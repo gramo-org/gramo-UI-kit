@@ -22,6 +22,14 @@
     &--is-editing {
       background: var(--x-light-gray);
     }
+    
+    /* Make sure multiple labels with checkboxes vertically align nicely */
+    &--labels-aligned {
+      @media (--tablet) { margin-left: 137px; }
+      .form__label {
+        min-width: 50px;
+      }
+    }
   }
 
   .form__section--action {
