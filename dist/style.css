@@ -4511,13 +4511,23 @@ input[type="text"].search__form__input--large{
   padding:1.2rem;
 }
 
-@media (min-width: 960px){
+@media (min-width: 768px){
 
   input[type="text"].search__form__input--fixed-width{
-    -webkit-flex:0 1 320px;
-    -ms-flex:0 1 320px;
-    flex:0 1 320px;
-    min-width:320px;
+    -webkit-flex:0 1 300px;
+    -ms-flex:0 1 300px;
+    flex:0 1 300px;
+    min-width:300px;
+  }
+}
+
+@media (min-width: 1200px){
+
+  input[type="text"].search__form__input--fixed-width{
+    -webkit-flex:0 1 350px;
+    -ms-flex:0 1 350px;
+    flex:0 1 350px;
+    min-width:350px;
   }
 }
 

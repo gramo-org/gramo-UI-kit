@@ -77,9 +77,13 @@ input[type="text"].search__form__input {
   }
 
   &--fixed-width {
-    @media (--desktop) {
-      flex: 0 1 320px;
-      min-width: 320px;
+    @media (--tablet) {
+      flex: 0 1 300px;
+      min-width: 300px;
+    }
+    @media (--hd) {
+      flex: 0 1 350px;
+      min-width: 350px;
     }
   }
   &--min-width {
