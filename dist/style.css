@@ -4514,6 +4514,16 @@ input[type="text"].search__form__input--large{
 @media (min-width: 768px){
 
   input[type="text"].search__form__input--fixed-width{
+    -webkit-flex:0 1 200px;
+    -ms-flex:0 1 200px;
+    flex:0 1 200px;
+    min-width:200px;
+  }
+}
+
+@media (min-width: 960px){
+
+  input[type="text"].search__form__input--fixed-width{
     -webkit-flex:0 1 300px;
     -ms-flex:0 1 300px;
     flex:0 1 300px;
