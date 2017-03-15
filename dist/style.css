@@ -3120,6 +3120,7 @@ hr, .horizontal-rule{
 }
 .searchable-list--below-search .searchable-list__dropdown{
   border-top:0;
+  width:100%;
 }
 .searchable-list__delete{
   color:#a5a4ab;
