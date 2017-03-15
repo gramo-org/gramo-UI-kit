@@ -3032,6 +3032,7 @@ hr, .horizontal-rule{
   cursor:not-allowed;
 }
 .searchable-list{
+  display:inline-block;
   position:relative;
   background-color:#fdfdfd;
   border-radius:2px;
@@ -3039,12 +3040,6 @@ hr, .horizontal-rule{
   text-align:left;
   padding:0 0.25rem;
   vertical-align:middle;
-}
-@media (min-width: 1200px){
-
-  .searchable-list{
-    min-width:200px;
-  }
 }
 .searchable-list--fluid{
   min-width:0;
@@ -3054,6 +3049,7 @@ hr, .horizontal-rule{
   height:30px;
   padding:7px 23px 7px 5px;
   cursor:pointer;
+  min-width:100px;
 }
 .searchable-list__heading:before{
   content:'';
@@ -3085,7 +3081,6 @@ hr, .horizontal-rule{
 }
 .searchable-list__dropdown{
   position:absolute;
-  width:100%;
   left:0;
   display:none;
   background-color:#fdfdfd;
@@ -3109,6 +3104,7 @@ hr, .horizontal-rule{
   margin:0;
   max-height:200px;
   overflow:auto;
+  font-weight:400;
 }
 .searchable-list__dropdown ul li.searchable-list__option{
   padding:5px;
@@ -3571,7 +3567,7 @@ main.pull .bucket{
   white-space:nowrap;
 }
 
-.table__head .select, .table__head .form__input{
+.table__head .select, .table__head .form__input:not(.searchable-list__search), .table__head .searchable-list__heading{
   height:auto;
   padding:.25rem 2rem .25rem .5rem;
 }

@@ -24,7 +24,7 @@
 }
 
 .table__head {
-  .select, .form__input {
+  .select, .form__input:not(.searchable-list__search), .searchable-list__heading {
     height: auto;
     padding: .25rem 2rem .25rem .5rem;
   }

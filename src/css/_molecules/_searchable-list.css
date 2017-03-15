@@ -1,4 +1,5 @@
 .searchable-list {
+  display: inline-block;
   position: relative;
   background-color: var(--gramo-white);
   border-radius: 2px;
@@ -6,9 +7,6 @@
   text-align: left;
   padding: 0 0.25rem;
   vertical-align: middle;
-  @media (--hd) {
-    min-width: 200px;
-  }
 
   &--fluid {
     min-width: 0;
@@ -19,6 +17,7 @@
     height: 30px;
     padding: 7px 23px 7px 5px;
     cursor: pointer;
+    min-width: 100px;
 
     &:before {
       content: '';
@@ -58,7 +57,7 @@
 
   &__dropdown {
     position: absolute;
-    width: 100%;
+    /*width: 100%;*/ /* Let the dropdown be as wide as it's longest child */
     left: 0;
     display: none;
     background-color: var(--gramo-white);
@@ -85,6 +84,7 @@
     margin: 0;
     max-height: 200px;
     overflow: auto;
+    font-weight: var(--normal);
 
     li.searchable-list__option {
       padding: 5px;
