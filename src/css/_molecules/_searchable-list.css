@@ -88,6 +88,7 @@
 
     li.searchable-list__option {
       padding: 5px;
+      white-space: nowrap;
 
       &--active, &:hover {
         color: var(--gramo-white);

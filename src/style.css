@@ -481,6 +481,11 @@ td.text--center, .fake-table__row *.text--center{
 .col--for-numeric-input .form__input{
   padding-right:0;
 }
+
+.col--inline{
+  display:inline-block;
+  vertical-align:middle;
+}
 .truncated, .table__cell--truncated{
   white-space:nowrap;
   overflow:hidden;
@@ -3108,6 +3113,7 @@ hr, .horizontal-rule{
 }
 .searchable-list__dropdown ul li.searchable-list__option{
   padding:5px;
+  white-space:nowrap;
 }
 .searchable-list__dropdown ul li.searchable-list__option--active, .searchable-list__dropdown ul li.searchable-list__option:hover{
   color:#fdfdfd;
@@ -4473,12 +4479,10 @@ main.pull .bucket{
   justify-content:center;
 }
 
-@media (min-width: 768px){
+@media (min-width: 960px){
 
   .search__form--right{
-    position:absolute;
-    right:1rem;
-    z-index:1;
+    float:right;
   }
 }
 

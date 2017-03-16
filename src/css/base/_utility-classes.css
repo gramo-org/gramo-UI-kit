@@ -280,6 +280,11 @@ td.text--center,
   }
 }
 
+.col--inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* Truncated text */
 .truncated {
   /*position: relative;*/
