@@ -4,7 +4,7 @@ hr, .horizontal-rule {
   padding: 0;
   position: relative;
   text-align: center;
-  margin: 2rem 0;
+  margin: 4rem 0 3rem 0;
   background: var(--silver);
   clear: both;
 }
