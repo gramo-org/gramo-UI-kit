@@ -3055,6 +3055,7 @@ hr, .horizontal-rule{
   padding:7px 23px 7px 5px;
   cursor:pointer;
   min-width:100px;
+  white-space:nowrap;
 }
 .searchable-list__heading:before{
   content:'';
