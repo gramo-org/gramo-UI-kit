@@ -1888,30 +1888,6 @@ hr, .horizontal-rule{
   clear:both;
 }
 
-.horizontal-rule:before, .horizontal-rule:after{
-  content:'';
-  position:absolute;
-  width:0;
-  height:0;
-  border-style:solid;
-  border-color:transparent;
-  border-bottom:0;
-}
-
-.horizontal-rule:before{
-  margin-left:-16px;
-  border-top-color:rgb(217, 217, 220);
-  border-width:16px;
-  left:50%;
-}
-
-.horizontal-rule:after{
-  margin-left:-15px;
-  border-top-color:#f3f3f3;
-  border-width:15px;
-  left:50%;
-}
-
 .horizontal-rule--dashed{
   border-top:1px dashed #d9d9dc;
   background:none;
