@@ -10,7 +10,7 @@
   }
   
   tr[data-level="2"] > td:first-child {
-    padding-left: 4rem;
+    @media (--tablet) { padding-left: 4rem; }
   }
   
   tr[data-level="2"].drilldown-toggle > td:first-child::before,
@@ -25,6 +25,6 @@
   }
   
   tr[data-level="3"] > td:first-child {
-    padding-left: 7rem;
+    @media (--tablet) { padding-left: 7rem; }
   }
 }

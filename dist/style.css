@@ -3647,8 +3647,11 @@ main.pull .bucket{
 .table tr[data-level="1"].dd-open{
   background:#ededed;
 }
-.table tr[data-level="2"] > td:first-child{
-  padding-left:4rem;
+@media (min-width: 768px){
+
+  .table tr[data-level="2"] > td:first-child{
+    padding-left:4rem;
+  }
 }
 .table tr[data-level="2"].drilldown-toggle > td:first-child::before, .table tr[data-level="2"].dd-close > td:first-child::before{
   content:'+';
@@ -3658,8 +3661,11 @@ main.pull .bucket{
   content:'-';
   margin-right:.5rem;
 }
-.table tr[data-level="3"] > td:first-child{
-  padding-left:7rem;
+@media (min-width: 768px){
+
+  .table tr[data-level="3"] > td:first-child{
+    padding-left:7rem;
+  }
 }
 .table-summary{
   min-width:0;
