@@ -3,9 +3,11 @@
 
   tr > td:first-child {
     @extend .fake-table--numeric .fake-table__row;
+    padding-left: 5rem;
   }
 
   tr > td:first-child::before {
     @extend .fake-table--numeric > .fake-table__row > *:first-child::before;
+    top: 50%;
   }
 }

@@ -5581,6 +5581,12 @@ tr > td:last-child{
 .fake-table--distribution .x-toggle-btn{
   vertical-align:bottom;
 }
+.table--numeric tr > td:first-child{
+  padding-left:5rem;
+}
+.table--numeric tr > td:first-child::before{
+  top:50%;
+}
 .tabs{
   position:relative;
 }
