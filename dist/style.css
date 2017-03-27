@@ -3643,11 +3643,11 @@ main.pull .bucket{
 .table__row--empty{
   background:none;
 }
-.table__row--empty > td{
+.table__row--empty > td, .table__row--empty > td:first-child, .table__row--empty > td:last-child{
   border:0;
   padding:0;
 }
-.table__row--empty > td:before{
+.table__row--empty > td:first-child:before, .table__row--empty > td:first-child:first-child:before, .table__row--empty > td:last-child:first-child:before{
   content:none;
 }
 .table tr[data-level="1"].dd-open .table-row-toggle{
