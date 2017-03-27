@@ -89,10 +89,13 @@
 .table__row--empty, .table__row--empty:hover {
   background: none;
   
+  & > td:first-child {
+    padding-left: 0;
+  }
+  
   & > td, & > td:first-child, & > td:last-child {
     border: 0;
-    padding-left: 2rem;
-    
+
     &:first-child:before {
       content: none;
     }

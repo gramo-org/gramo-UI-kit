@@ -3643,9 +3643,11 @@ main.pull .bucket{
 .table__row--empty, .table__row--empty:hover{
   background:none;
 }
+.table__row--empty > td:first-child, .table__row--empty:hover > td:first-child{
+  padding-left:0;
+}
 .table__row--empty > td, .table__row--empty > td:first-child, .table__row--empty > td:last-child, .table__row--empty:hover > td, .table__row--empty:hover > td:first-child, .table__row--empty:hover > td:last-child{
   border:0;
-  padding-left:2rem;
 }
 .table__row--empty > td:first-child:before, .table__row--empty > td:first-child:first-child:before, .table__row--empty > td:last-child:first-child:before, .table__row--empty:hover > td:first-child:before, .table__row--empty:hover > td:first-child:first-child:before, .table__row--empty:hover > td:last-child:first-child:before{
   content:none;
