@@ -84,3 +84,17 @@
 .table__row--multiline > td {
   vertical-align: top;
 }
+
+/* Create empty row style for empty state component in search results */
+.table__row--empty {
+  background: none;
+  
+  & > td {
+    border: 0;
+    padding: 0;
+    
+    &:before {
+      content: none;
+    }
+  }
+}

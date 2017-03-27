@@ -3640,6 +3640,16 @@ main.pull .bucket{
 .table__row--multiline > td{
   vertical-align:top;
 }
+.table__row--empty{
+  background:none;
+}
+.table__row--empty > td{
+  border:0;
+  padding:0;
+}
+.table__row--empty > td:before{
+  content:none;
+}
 .table tr[data-level="1"].dd-open .table-row-toggle{
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
