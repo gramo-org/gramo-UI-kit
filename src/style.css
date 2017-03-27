@@ -3640,14 +3640,14 @@ main.pull .bucket{
 .table__row--multiline > td{
   vertical-align:top;
 }
-.table__row--empty{
+.table__row--empty, .table__row--empty:hover{
   background:none;
 }
-.table__row--empty > td, .table__row--empty > td:first-child, .table__row--empty > td:last-child{
+.table__row--empty > td, .table__row--empty > td:first-child, .table__row--empty > td:last-child, .table__row--empty:hover > td, .table__row--empty:hover > td:first-child, .table__row--empty:hover > td:last-child{
   border:0;
   padding:0;
 }
-.table__row--empty > td:first-child:before, .table__row--empty > td:first-child:first-child:before, .table__row--empty > td:last-child:first-child:before{
+.table__row--empty > td:first-child:before, .table__row--empty > td:first-child:first-child:before, .table__row--empty > td:last-child:first-child:before, .table__row--empty:hover > td:first-child:before, .table__row--empty:hover > td:first-child:first-child:before, .table__row--empty:hover > td:last-child:first-child:before{
   content:none;
 }
 .table tr[data-level="1"].dd-open .table-row-toggle{
