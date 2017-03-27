@@ -3644,7 +3644,7 @@ main.pull .bucket{
   background:none;
 }
 .table__row--empty > td:first-child, .table__row--empty:hover > td:first-child{
-  padding-left:0;
+  padding-left:1rem!important;
 }
 .table__row--empty > td, .table__row--empty > td:first-child, .table__row--empty > td:last-child, .table__row--empty:hover > td, .table__row--empty:hover > td:first-child, .table__row--empty:hover > td:last-child{
   border:0;
