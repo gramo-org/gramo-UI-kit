@@ -41,7 +41,7 @@
   }
 
   &__left {
-    flex: 1 0 auto;
+    flex: 0 1 auto;
   }
 
   &__right {
