@@ -42,6 +42,7 @@
 
   &__left {
     flex: 0 1 auto;
+    padding-right: 2rem;
   }
 
   &__right {

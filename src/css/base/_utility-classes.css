@@ -103,6 +103,18 @@ td.text--center,
 .align--vertical-center {
   align-self: center;
 }
+/* hack to keep centered vertical alignment when error message shows */
+.row--align-vertical {
+  
+  .align--vertical-center {
+    align-self: flex-start;
+    padding-top: 1rem;
+    
+    .icon--x {
+      line-height: 2.4;
+    }
+  }
+}
 
 .align--top {
   align-self: flex-start;
@@ -277,6 +289,11 @@ td.text--center,
   
   .form__input {
     padding-right: 0;
+  }
+/* hack to make error message extend beyond parent container */
+  .form__input__errors {
+    min-width: 230px;
+    margin-left: -100px;
   }
 }
 

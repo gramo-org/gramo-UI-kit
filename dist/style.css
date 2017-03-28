@@ -293,6 +293,15 @@ td.text--center, .fake-table__row *.text--center{
   -ms-flex-item-align:center;
   align-self:center;
 }
+.row--align-vertical .align--vertical-center{
+  -webkit-align-self:flex-start;
+  -ms-flex-item-align:start;
+  align-self:flex-start;
+  padding-top:1rem;
+}
+.row--align-vertical .align--vertical-center .icon--x{
+  line-height:2.4;
+}
 
 .align--top{
   -webkit-align-self:flex-start;
@@ -480,6 +489,11 @@ td.text--center, .fake-table__row *.text--center{
 
 .col--for-numeric-input .form__input{
   padding-right:0;
+}
+
+.col--for-numeric-input .form__input__errors{
+  min-width:230px;
+  margin-left:-100px;
 }
 
 .col--inline{
@@ -1965,7 +1979,7 @@ hr, .horizontal-rule{
   background-color:#f9f9f9;
   color:#101010;
   border-width:1px 1px 3px 1px!important;
-  height:32px;
+  min-height:32px;
 }
 .btn--secondary:hover{
   background-color:rgb(199, 199, 199);
@@ -5163,9 +5177,10 @@ main.pull .section-header--fixed{
 .infobar__heading, .infobar__count{
 }
 .infobar__left{
-  -webkit-flex:1 0 auto;
-  -ms-flex:1 0 auto;
-  flex:1 0 auto;
+  -webkit-flex:0 1 auto;
+  -ms-flex:0 1 auto;
+  flex:0 1 auto;
+  padding-right:2rem;
 }
 @media (min-width: 768px){
 
