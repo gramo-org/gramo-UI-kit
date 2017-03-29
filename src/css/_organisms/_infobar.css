@@ -41,7 +41,7 @@
   }
 
   &__left {
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     padding-right: 2rem;
   }
 

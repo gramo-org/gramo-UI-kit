@@ -5177,9 +5177,9 @@ main.pull .section-header--fixed{
 .infobar__heading, .infobar__count{
 }
 .infobar__left{
-  -webkit-flex:0 1 auto;
-  -ms-flex:0 1 auto;
-  flex:0 1 auto;
+  -webkit-flex:1 1 auto;
+  -ms-flex:1 1 auto;
+  flex:1 1 auto;
   padding-right:2rem;
 }
 @media (min-width: 768px){
