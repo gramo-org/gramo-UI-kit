@@ -48,6 +48,10 @@ td.text--center,
   font-weight: 700!important;
 }
 
+.text--italic {
+  font-style: italic;
+}
+
 /* font-size overrides */
 
 .text--small {

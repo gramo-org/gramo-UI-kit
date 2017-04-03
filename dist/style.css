@@ -237,6 +237,10 @@ td.text--center, .fake-table__row *.text--center{
   font-weight:700!important;
 }
 
+.text--italic{
+  font-style:italic;
+}
+
 .text--small, .list--expandable .list__item__date span{
   font-size:1.2rem!important;
 }
@@ -443,7 +447,7 @@ td.text--center, .fake-table__row *.text--center{
   vertical-align:top;
 }
 
-.filter-items, .btn-select > ul, .vertical__nav, .bucket__list, .tabs__nav, .tabs__section__nav, .tooltip-wrapper .tooltip__list, .comments .comments__content, .page-contents ul{
+.filter-items, .btn-select > ul, .vertical__nav, .bucket__list, .tabs__nav, .tabs__section__nav, .tooltip-wrapper .tooltip__list, .comments .comments__content, .file-upload__list ul, .page-contents ul{
   list-style:none;
   padding:0;
   margin:0;
@@ -1192,11 +1196,11 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 }
 @font-face{
   font-family:'icomoon';
-  src:url('fonts/icomoon.eot?axrc2w');
-  src:url('fonts/icomoon.eot?axrc2w#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?axrc2w') format('truetype'),
-    url('fonts/icomoon.woff?axrc2w') format('woff'),
-    url('fonts/icomoon.svg?axrc2w#icomoon') format('svg');
+  src:url('fonts/icomoon.eot?1tfllm');
+  src:url('fonts/icomoon.eot?1tfllm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1tfllm') format('truetype'),
+    url('fonts/icomoon.woff?1tfllm') format('woff'),
+    url('fonts/icomoon.svg?1tfllm#icomoon') format('svg');
   font-weight:normal;
   font-style:normal;
 }
@@ -1209,6 +1213,9 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 	font-variant:normal;
 	text-transform:none;
   display:inline-block;
+}
+.icon--paperclip:before{
+  content:"\e923";
 }
 .icon--chevron-line:before, .section-header--divided .section-header__meta--cols .col--arrow::after{
   content:"\e922";
@@ -5823,6 +5830,96 @@ tr > td:last-child{
   position:relative;
   top:.2rem;
   font-size:90%;
+}
+.file-upload{
+  position:relative;
+  display:inline-block;
+}
+
+.file-upload__toggle{
+  color:#a5a4ab;
+}
+
+.file-upload__inner{
+  display:none;
+  background:#fdfdfd;
+  padding:2rem;
+  padding:2rem;
+  position:absolute;
+  right:3rem;
+  top:-100%;
+  width:400px;
+  text-align:left;
+  box-shadow:0 0 4px rgba(0,0,0,0.4);
+  transition:opacity .15s ease-in;
+}
+
+.file-upload__inner.is-visible{
+  display:block;
+  z-index:1;
+}
+
+.file-upload__inner:before{
+  content:"\e902";
+  font-family:'icomoon';
+  color:#fff;
+  position:absolute;
+  text-shadow:1px 0 2px rgba(0,0,0,0.3);
+  top:20px;
+  right:-10px;
+  z-index:-1;
+}
+
+.file-upload__inner.is-visible--over{
+  top:auto;
+  bottom:-10px;
+}
+
+.file-upload__inner.is-visible--over:before{
+  top:auto;
+  bottom:10px;
+}
+
+.file-upload__header{
+  border-bottom:1px solid #d9d9dc;
+  padding-bottom:.3rem;
+  margin-bottom:1.2rem;
+}
+
+.form__input--files{
+  width:0.1px;
+  height:0.1px;
+  opacity:0;
+  overflow:hidden;
+  position:absolute;
+  z-index:-1;
+}
+
+.form__input--files + .form__input{
+  width:200px;
+  min-height:3.2rem;
+  display:inline-block;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow:hidden;
+  vertical-align:top;
+}
+
+.form__input--files + .form__input + .btn{
+  margin-left:-0.5rem;
+}
+
+.file-upload__list ul li{
+  border-bottom:1px dotted #d9d9dc;
+  margin:0;
+  padding:0;
+  padding-bottom:.6rem;
+  margin-bottom:1.2rem;
+}
+
+.file-upload__list ul li > div[class^="col-"]{
+  padding-left:.25rem;
+  padding-right:.25rem;
 }
 .wizard-steps{
   padding:0;
