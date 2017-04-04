@@ -5196,9 +5196,6 @@ main.pull .section-header--fixed{
   }
 }
 .infobar__action{
-  -webkit-justify-content:space-between;
-  -ms-flex-pack:justify;
-  justify-content:space-between;
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
@@ -5211,6 +5208,9 @@ main.pull .section-header--fixed{
   .infobar__action{
     margin-left:1rem;
   }
+}
+.infobar__action .btn{
+  margin-top:.4rem;
 }
 .infobar h1[data-type]::before, .infobar h3[data-type]::before{
   margin-left:.25rem;
