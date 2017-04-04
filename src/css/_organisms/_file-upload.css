@@ -11,7 +11,6 @@
   display: none;
   background: var(--gramo-white);
   padding: 2rem;
-  padding: 2rem;
   position: absolute;
   right: 3rem;
   top: -100%;
@@ -32,7 +31,7 @@
     position: absolute;
     text-shadow: 1px 0 2px rgba(0,0,0,0.3);
     top: 20px;
-    right: -10px;
+    right: -9px;
     z-index: -1;
   }
   
@@ -78,6 +77,11 @@
 
 .file-upload__list ul {
   @extend %no-list;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-right: -2rem;
+  padding-right: 2rem;
   
   li {
     border-bottom: 1px dotted var(--silver);

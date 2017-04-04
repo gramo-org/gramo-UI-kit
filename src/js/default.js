@@ -217,9 +217,15 @@ $(document).ready(function() {
      
      $('.done').click(function(e){
        e.preventDefault();
+       $(this).closest('.file-upload__list').show();
+       $(this).parent().prev('.form').hide();
+       $(this).parent().parent().removeClass('is-visible');
+     })
+     
+     $('.new').click(function(e){
+       e.preventDefault();
        $(this).closest('.file-upload__list').hide();
        $(this).parent().prev('.form').show();
-       $(this).parent().parent().removeClass('is-visible');
      })
 
 
