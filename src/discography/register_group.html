@@ -199,20 +199,21 @@
                   </form>
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
-                <section id="members" class="container container--padded">
+                <section id="members" class="container container--padded container--is-editing">
 
                   <div class="section-header">
                     <header>
                       <h2>Medlemmer <span class="badge badge--secondary">5</span></h2>
                     </header>
                     <div class="section-header__toolbar">
-                      <a href="#" class="link--edit">Rediger</a>
+                      <button href="#" class="btn btn--secondary">Avbryt</button>
+                      <a href="#" class="btn btn--primary">Lagre</a>
                     </div>
                   </div>
 
                   <form class="form">
                     <div class="row">
-                      <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                      <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
                         Navn
                       </div>
                       <div class="col-sm-2 col-lg-2 hidden-on-mobile text--medium text--bold">
@@ -221,12 +222,21 @@
                       <div class="col-sm-2 hidden-on-mobile text--medium text--bold">
                         Statsborgerskap
                       </div>
+                      <div class="col-xs-12 col-sm-5">
+                        <div class="row">
+                          <div class="col-sm-5 hidden-on-mobile text--medium text--bold">
+                            Fra
+                          </div>
+                          <div class="col-sm-5 hidden-on-mobile text--medium text--bold">
+                            Til
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="col-sm-2 hidden-on-mobile"></div> -->
                     </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--hidden"><span>Navn</span>
-                          <input type="text" value="David Robert Jones" class="form__input form__input--block" disabled>
-                        </label>
+                    <div class="row row--active row--with-divider row--align-vertical">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Don Airey</a>
                       </div>
                       <div class="col-xs-12 col-sm-2">
                         <label class="form__label form__label--hidden"><span>Instrument</span>
@@ -238,16 +248,30 @@
                           <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
                         </label>
                       </div>
+                      <div class="col-xs-12 col-sm-5">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="2002-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5 align--vertical-center">
+                            <a href="#" class="link--no-line">Legg til sluttdato</a>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--hidden"><span>Navn</span>
-                          <input type="text" value="Reeves Gabrels" class="form__input form__input--block" disabled>
-                        </label>
+                    
+                    <div class="row row--active row--with-divider row--align-vertical">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Ian Gillan</a>
                       </div>
                       <div class="col-xs-12 col-sm-2">
                         <label class="form__label form__label--hidden"><span>Instrument</span>
-                          <input type="text" value="Keyboard" class="form__input form__input--block" disabled>
+                          <input type="text" value="Vokal" class="form__input form__input--block" disabled>
                         </label>
                       </div>
                       <div class="col-xs-12 col-sm-2">
@@ -255,12 +279,102 @@
                           <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
                         </label>
                       </div>
+                      <div class="col-xs-12 col-sm-5">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1969-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Sluttdato</span>
+                              <input type="date" value="1973-12-31" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div><!-- end date set -->
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1984-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Sluttdato</span>
+                              <input type="date" value="1989-12-31" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div><!-- end date set -->
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1984-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5 align--vertical-center">
+                            <a href="#" class="link--no-line">Legg til sluttdato</a>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div><!-- end date set -->
+                      </div>
                     </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--hidden"><span>Navn</span>
-                          <input type="text" value="Hunt Sales" class="form__input form__input--block" disabled>
+                    
+                    <div class="row row--active row--with-divider row--align-vertical">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Roger Glover</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Bass" class="form__input form__input--block" disabled>
                         </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--hidden"><span>Statsborgerskap</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-5">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1969-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Sluttdato</span>
+                              <input type="date" value="1973-12-31" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div><!-- end date set -->
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1984-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5 align--vertical-center">
+                            <a href="#" class="link--no-line">Legg til sluttdato</a>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div><!-- end date set -->
+                      </div>
+                    </div>
+                  
+                    <div class="row row--active row--with-divider row--align-vertical">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Steve Morse</a>
                       </div>
                       <div class="col-xs-12 col-sm-2">
                         <label class="form__label form__label--hidden"><span>Instrument</span>
@@ -272,22 +386,168 @@
                           <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
                         </label>
                       </div>
+                      <div class="col-xs-12 col-sm-5">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1994-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5 align--vertical-center">
+                            <a href="#" class="link--no-line">Legg til sluttdato</a>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--hidden"><span>Navn</span>
-                          <input type="text" value="Tony Sales" class="form__input form__input--block" disabled>
-                        </label>
+                    
+                    <div class="row row--active row--with-divider row--align-vertical">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Ian Paice</a>
                       </div>
                       <div class="col-xs-12 col-sm-2">
                         <label class="form__label form__label--hidden"><span>Instrument</span>
-                          <input type="text" value="Bass gitar" class="form__input form__input--block" disabled>
+                          <input type="text" value="Trommer" class="form__input form__input--block" disabled>
                         </label>
                       </div>
                       <div class="col-xs-12 col-sm-2">
                         <label class="form__label form__label--hidden"><span>Statsborgerskap</span>
                           <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
                         </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-5">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1968-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Sluttdato</span>
+                              <input type="date" value="1976-12-31" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div><!-- end date set -->
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1984-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5 align--vertical-center">
+                            <a href="#" class="link--no-line">Legg til sluttdato</a>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div><!-- end date set -->
+                      </div>
+                    </div>
+                  </form>
+                  <form class="form">
+                    <div class="row row--with-divider row--align-vertical">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Ritchie Blackmore</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Gitar" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--hidden"><span>Statsborgerskap</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-5">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1968-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Sluttdato</span>
+                              <input type="date" value="1975-12-31" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div><!-- end date set -->
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1984-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Sluttdato</span>
+                              <input type="date" value="1993-12-31" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div><!-- end date set -->
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <a href="#" class="link--no-line">Legg til ny periode</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="row row--with-divider row--align-vertical">
+                      <div class="col-xs-12 col-sm-3 align--vertical-center">
+                        <a href="#">Jon Lord</a>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--hidden"><span>Instrument</span>
+                          <input type="text" value="Keyboards" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2">
+                        <label class="form__label form__label--hidden"><span>Statsborgerskap</span>
+                          <input type="text" value="Storbritania" class="form__input form__input--block" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-5">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1968-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Sluttdato</span>
+                              <input type="date" value="1976-12-31" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div><!-- end date set -->
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Startdato</span>
+                              <input type="date" value="1984-01-01" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-5">
+                            <label class="form__label form__label--block form__label--hidden"><span>Sluttdato</span>
+                              <input type="date" value="2002-12-31" class="form__input form__input--date form__input--block">
+                            </label>
+                          </div>
+                          <div class="col align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div><!-- end date set -->
                       </div>
                     </div>
                   </form>

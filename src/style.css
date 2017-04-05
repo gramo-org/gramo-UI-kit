@@ -515,6 +515,29 @@ td.text--center, .fake-table__row *.text--center{
     max-width:100px;
   }
 }
+
+.row--active{
+  background:#ededed;
+}
+
+.row--with-divider, .row--active{
+  padding-top:.6rem;
+  padding-bottom:.6rem;
+}
+.row--with-divider, .row--active{
+  position:relative;
+}
+.row--with-divider::after, .row--active::after{
+  content:'';
+  width:calc(100% - 2rem);
+  position:absolute;
+  bottom:0;
+  left:1rem;
+  border-bottom:1px dashed #d9d9dc;
+}
+.row--with-divider:last-child::after, .row--active:last-child::after{
+  content:none;
+}
 *, *:before, *:after{
   box-sizing:border-box;
 }

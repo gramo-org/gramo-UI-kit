@@ -327,3 +327,35 @@ td.text--center,
     background:linear-gradient(to right, transparent 120px, var(--gramo-white));
   }*/
 }
+
+/* highlighted grid rows */
+
+.row--active {
+  background: var(--light-gray);
+}
+
+.row--with-divider,
+.row--active {
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+}
+
+/* grid rows with dividers */
+.row--with-divider,
+.row--active {
+  position: relative;
+  
+  &::after {
+    content: '';
+    width: calc(100% - 2rem);
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    border-bottom: 1px dashed var(--silver);
+    /*padding-bottom: .6rem;*/
+  }
+  
+  &:last-child::after {
+    content: none;
+  }
+}
