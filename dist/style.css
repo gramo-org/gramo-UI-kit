@@ -5902,18 +5902,24 @@ tr > td:last-child{
   bottom:10px;
 }
 
-.file-upload__inner .form__label--comments{
-  margin:1.2rem 0;
-}
-
-.file-upload__inner .form__label--comments .form__input--block{
-  max-width:300px;
-}
-
 .file-upload__header{
   border-bottom:1px solid #d9d9dc;
   padding-bottom:.3rem;
   margin-bottom:1.2rem;
+}
+
+.file-upload__form{
+  background:#d9d9dc;
+  border:1px solid #ededed;
+  padding:1.2rem;
+}
+
+.file-upload__form .form__label--comments{
+  margin:1.2rem 0;
+}
+
+.file-upload__form .form__label--comments .form__input--block{
+  max-width:300px;
 }
 
 .file-upload__list ul{

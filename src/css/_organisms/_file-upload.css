@@ -44,6 +44,18 @@
       bottom: 10px;
     }
   }
+}
+
+.file-upload__header {
+  border-bottom: 1px solid var(--silver);
+  padding-bottom: .3rem;
+  margin-bottom: 1.2rem;
+}
+
+.file-upload__form {
+  background: var(--silver);
+  border: 1px solid var(--light-gray);
+  padding: 1.2rem;
   
   .form__label--comments {
     margin: 1.2rem 0;
@@ -52,12 +64,6 @@
       max-width: 300px;
     }
   }
-}
-
-.file-upload__header {
-  border-bottom: 1px solid var(--silver);
-  padding-bottom: .3rem;
-  margin-bottom: 1.2rem;
 }
 
 /*.form__input--files {
