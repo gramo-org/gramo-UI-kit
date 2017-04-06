@@ -5909,9 +5909,10 @@ tr > td:last-child{
 }
 
 .file-upload__form{
-  background:#d9d9dc;
-  border:1px solid #ededed;
+  background:#ededed;
+  border:1px solid #d9d9dc;
   padding:1.2rem;
+  margin-bottom:1.2rem;
 }
 
 .file-upload__form .form__label--comments{

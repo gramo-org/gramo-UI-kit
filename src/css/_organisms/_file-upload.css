@@ -53,9 +53,10 @@
 }
 
 .file-upload__form {
-  background: var(--silver);
-  border: 1px solid var(--light-gray);
+  background: var(--light-gray);
+  border: 1px solid var(--silver);
   padding: 1.2rem;
+  margin-bottom: 1.2rem;
   
   .form__label--comments {
     margin: 1.2rem 0;
