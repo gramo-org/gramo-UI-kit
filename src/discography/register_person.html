@@ -108,25 +108,25 @@
                     <div class="file-upload">
                       <a href="#" class="file-upload__toggle"><i class="icon--paperclip"></i></a>
                       <div class="file-upload__inner">
-                        <form class="form" style="display: none;">
-                          <h3 class="heading--sub">Last opp filer</h3>
-                          <label class="form__label form__label--block">
-                            <input class="form__input form__input--files" type="file" />
-                            <span class="form__input"></span>
-                            <span class="btn btn--secondary">
-                              Velg fil…
-                            </span>
+                        <div class="file-upload__form">
+                          <label class="form__label form__label--block form__label--upload">
+                            <input type="file" />
                           </label>
-                          <label class="form__label form__label--block">Kommentar
-                            <textarea class="form__input form__input--block form__input--textarea"></textarea>
+                          <label class="form__label form__label--block form__label--comments">Kommentar
+                            <input class="form__input form__input--block">
                           </label>
                           <div class="form__section--action">
                             <button class="btn btn--secondary">Avbryt</button>
-                            <button class="btn btn--primary">Lagre</button>
+                            <button disabled class="btn btn--primary">Upload</button>
                           </div>
-                        </form>
+                        </div>
                         <div class="file-upload__list">
-                          <h3 class="file-upload__header">Filer</h3>
+                          <header class="file-upload__header">
+                            <h3>Filer</h3>
+                            <div class="file-upload__header--action">
+                              <a href="#">Lukk</a>
+                            </div>
+                          </header>
                           <ul>
                             <li class="row">
                               <div class="col-sm">
@@ -154,9 +154,98 @@
                                 <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                               </div>
                             </li>
+                            <li class="row">
+                              <div class="col-sm">
+                                <a href="#">pass.pdf</a>
+                                <p>Kopi av pass</p>
+                              </div>
+                              <div class="col-sm text--right">
+                                <date>17.02.2014</date>
+                                <p class="text--italic">av Morten Møller</p>
+                              </div>
+                              <div class="col-sm-1 align--vertical-center text--right">
+                                <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col-sm">
+                                <a href="#">pass.pdf</a>
+                                <p>Kopi av pass</p>
+                              </div>
+                              <div class="col-sm text--right">
+                                <date>17.02.2014</date>
+                                <p class="text--italic">av Morten Møller</p>
+                              </div>
+                              <div class="col-sm-1 align--vertical-center text--right">
+                                <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col-sm">
+                                <a href="#">pass.pdf</a>
+                                <p>Kopi av pass</p>
+                              </div>
+                              <div class="col-sm text--right">
+                                <date>17.02.2014</date>
+                                <p class="text--italic">av Morten Møller</p>
+                              </div>
+                              <div class="col-sm-1 align--vertical-center text--right">
+                                <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col-sm">
+                                <a href="#">pass.pdf</a>
+                                <p>Kopi av pass</p>
+                              </div>
+                              <div class="col-sm text--right">
+                                <date>17.02.2014</date>
+                                <p class="text--italic">av Morten Møller</p>
+                              </div>
+                              <div class="col-sm-1 align--vertical-center text--right">
+                                <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col-sm">
+                                <a href="#">pass.pdf</a>
+                                <p>Kopi av pass</p>
+                              </div>
+                              <div class="col-sm text--right">
+                                <date>17.02.2014</date>
+                                <p class="text--italic">av Morten Møller</p>
+                              </div>
+                              <div class="col-sm-1 align--vertical-center text--right">
+                                <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col-sm">
+                                <a href="#">pass.pdf</a>
+                                <p>Kopi av pass</p>
+                              </div>
+                              <div class="col-sm text--right">
+                                <date>17.02.2014</date>
+                                <p class="text--italic">av Morten Møller</p>
+                              </div>
+                              <div class="col-sm-1 align--vertical-center text--right">
+                                <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col-sm">
+                                <a href="#">pass.pdf</a>
+                                <p>Kopi av pass</p>
+                              </div>
+                              <div class="col-sm text--right">
+                                <date>17.02.2014</date>
+                                <p class="text--italic">av Morten Møller</p>
+                              </div>
+                              <div class="col-sm-1 align--vertical-center text--right">
+                                <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                              </div>
+                            </li>
                           </ul>
-                          <button class="btn btn--primary done">Ferdig</button>
-                          <button class="btn btn--secondary new">Last opp ny</button>
                         </div>
                       </div>
                     </div>
@@ -617,25 +706,25 @@
                         <div class="file-upload">
                           <a href="#" class="file-upload__toggle"><i class="icon--paperclip"></i></a>
                           <div class="file-upload__inner is-visible--over">
-                            <form class="form" style="display: none;">
-                              <h3 class="heading--sub">Last opp filer</h3>
-                              <label class="form__label form__label--block">
-                                <input class="form__input form__input--files" type="file" />
-                                <span class="form__input"></span>
-                                <span class="btn btn--secondary">
-                                  Velg fil…
-                                </span>
+                            <div class="file-upload__form">
+                              <label class="form__label form__label--block form__label--upload">
+                                <input type="file" />
                               </label>
-                              <label class="form__label form__label--block">Kommentar
-                                <textarea class="form__input form__input--block form__input--textarea"></textarea>
+                              <label class="form__label form__label--block form__label--comments">Kommentar
+                                <input class="form__input form__input--block">
                               </label>
                               <div class="form__section--action">
                                 <button class="btn btn--secondary">Avbryt</button>
-                                <button class="btn btn--primary">Lagre</button>
+                                <button disabled class="btn btn--primary">Upload</button>
                               </div>
-                            </form>
+                            </div>
                             <div class="file-upload__list">
-                              <h3 class="file-upload__header">Filer</h3>
+                              <header class="file-upload__header">
+                                <h3>Filer</h3>
+                                <div class="file-upload__header--action">
+                                  <a href="#">Lukk</a>
+                                </div>
+                              </header>
                               <ul>
                                 <li class="row">
                                   <div class="col-sm">
@@ -768,8 +857,6 @@
                                   </div>
                                 </li>
                               </ul>
-                              <button class="btn btn--primary done">Ferdig</button>
-                              <button class="btn btn--secondary new">Last opp ny</button>
                             </div>
                           </div>
                         </div>

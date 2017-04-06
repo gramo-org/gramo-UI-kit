@@ -5866,18 +5866,19 @@ tr > td:last-child{
 .file-upload__inner{
   display:none;
   background:#fdfdfd;
-  padding:2rem;
   position:absolute;
   right:3rem;
   top:-100%;
-  width:600px;
+  width:800px;
   text-align:left;
   box-shadow:0 0 4px rgba(0,0,0,0.4);
   transition:opacity .15s ease-in;
 }
 
 .file-upload__inner.is-visible{
-  display:block;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
   z-index:1;
 }
 
@@ -5906,13 +5907,29 @@ tr > td:last-child{
   border-bottom:1px solid #d9d9dc;
   padding-bottom:.3rem;
   margin-bottom:1.2rem;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+.file-upload__header--action{
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1;
+  text-align:right;
+  -webkit-align-self:center;
+  -ms-flex-item-align:center;
+  align-self:center;
+}
+
+.file-upload__header--action a{
+  color:inherit;
+  text-decoration:none;
 }
 
 .file-upload__form{
   background:#ededed;
-  border:1px solid #d9d9dc;
-  padding:1.2rem;
-  margin-bottom:1.2rem;
+  padding:2rem;
 }
 
 .file-upload__form .form__label--comments{
@@ -5923,8 +5940,36 @@ tr > td:last-child{
   max-width:300px;
 }
 
+.file-upload__form .form__label--upload{
+  margin:.6rem 0;
+}
+
+.file-upload__form .form__label--upload input{
+  outline:none;
+}
+
+.file-upload__form .form__label--upload::after{
+  content:'Velg fil...';
+  position:absolute;
+  display:block;
+  left:0;
+  top:-5px;
+  background-color:#f9f9f9;
+  color:#101010;
+  border:1px solid #d9d9dc;
+  border-width:1px 1px 3px 1px;
+  padding:.3rem 1.2rem;
+}
+
+.file-upload__list{
+  -webkit-flex:1 1 auto;
+  -ms-flex:1 1 auto;
+  flex:1 1 auto;
+  padding:2rem;
+}
+
 .file-upload__list ul{
-  max-height:300px;
+  max-height:280px;
   overflow-y:auto;
   overflow-x:hidden;
   margin-right:-2rem;

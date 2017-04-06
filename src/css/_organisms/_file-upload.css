@@ -10,17 +10,17 @@
 .file-upload__inner {
   display: none;
   background: var(--gramo-white);
-  padding: 2rem;
+  /*padding: 2rem;*/
   position: absolute;
   right: 3rem;
   top: -100%;
-  width: 600px;
+  width: 800px;
   text-align: left;
   box-shadow: 0 0 4px rgba(0,0,0,0.4);
   transition: opacity .15s ease-in;
   
   &.is-visible {
-    display: block;
+    display: flex;
     z-index: 1;
   }
   
@@ -50,13 +50,24 @@
   border-bottom: 1px solid var(--silver);
   padding-bottom: .3rem;
   margin-bottom: 1.2rem;
+  display: flex;
+  
+  &--action {
+    flex: 1;
+    text-align: right;
+    align-self: center;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
 }
 
 .file-upload__form {
   background: var(--light-gray);
-  border: 1px solid var(--silver);
-  padding: 1.2rem;
-  margin-bottom: 1.2rem;
+  /*border: 1px solid var(--silver);*/
+  padding: 2rem;
   
   .form__label--comments {
     margin: 1.2rem 0;
@@ -65,34 +76,37 @@
       max-width: 300px;
     }
   }
-}
-
-/*.form__input--files {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
   
-  & + .form__input {
-    width: 200px;
-    min-height: 3.2rem;
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    vertical-align: top;
+  .form__label--upload {
+    margin: .6rem 0;
     
-    & + .btn {
-      margin-left: -0.5rem;
+    input {
+      outline: none;
     }
   }
-}*/
+  
+  .form__label--upload::after {
+    content: 'Velg fil...';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: -5px;
+    background-color: var(--secondary);
+    color: var(--gramo-black);
+    border: 1px solid var(--silver);
+    border-width: 1px 1px 3px 1px;
+    padding: .3rem 1.2rem;
+  }
+}
+
+.file-upload__list {
+  flex: 1 1 auto;
+  padding: 2rem;
+}
 
 .file-upload__list ul {
   @extend %no-list;
-  max-height: 300px;
+  max-height: 280px;
   overflow-y: auto;
   overflow-x: hidden;
   margin-right: -2rem;

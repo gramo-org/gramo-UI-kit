@@ -202,31 +202,17 @@ $(document).ready(function() {
      $('h4:contains("Markup")').click(function(e){
        e.preventDefault();
        $(this).next('.highlight').toggleClass('is-visible')
-     })
+     });
      
      $('.file-upload__toggle').click(function(e){
        e.preventDefault();
        $(this).next('.file-upload__inner').toggleClass('is-visible');
-     })
+     });
      
-     $('.file-upload .form__section--action .btn').click(function(e){
+     $('.file-upload__header--action a').click(function(e){
        e.preventDefault();
-       $(this).closest('.form').hide();
-       $(this).closest('.form').next('.file-upload__list').show();
-     })
-     
-     $('.done').click(function(e){
-       e.preventDefault();
-       $(this).closest('.file-upload__list').show();
-       $(this).parent().prev('.form').hide();
-       $(this).parent().parent().removeClass('is-visible');
-     })
-     
-     $('.new').click(function(e){
-       e.preventDefault();
-       $(this).closest('.file-upload__list').hide();
-       $(this).parent().prev('.form').show();
-     })
+       $(this).closest('.file-upload__inner').removeClass('is-visible');
+     });
 
 
     // //Scroll spy
