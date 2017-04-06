@@ -14,7 +14,7 @@
   position: absolute;
   right: 3rem;
   top: -100%;
-  width: 400px;
+  width: 600px;
   text-align: left;
   box-shadow: 0 0 4px rgba(0,0,0,0.4);
   transition: opacity .15s ease-in;
@@ -44,6 +44,14 @@
       bottom: 10px;
     }
   }
+  
+  .form__label--comments {
+    margin: 1.2rem 0;
+    
+    .form__input--block {
+      max-width: 300px;
+    }
+  }
 }
 
 .file-upload__header {
@@ -52,7 +60,7 @@
   margin-bottom: 1.2rem;
 }
 
-.form__input--files {
+/*.form__input--files {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -73,7 +81,7 @@
       margin-left: -0.5rem;
     }
   }
-}
+}*/
 
 .file-upload__list ul {
   @extend %no-list;

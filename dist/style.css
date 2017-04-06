@@ -5870,7 +5870,7 @@ tr > td:last-child{
   position:absolute;
   right:3rem;
   top:-100%;
-  width:400px;
+  width:600px;
   text-align:left;
   box-shadow:0 0 4px rgba(0,0,0,0.4);
   transition:opacity .15s ease-in;
@@ -5902,33 +5902,18 @@ tr > td:last-child{
   bottom:10px;
 }
 
+.file-upload__inner .form__label--comments{
+  margin:1.2rem 0;
+}
+
+.file-upload__inner .form__label--comments .form__input--block{
+  max-width:300px;
+}
+
 .file-upload__header{
   border-bottom:1px solid #d9d9dc;
   padding-bottom:.3rem;
   margin-bottom:1.2rem;
-}
-
-.form__input--files{
-  width:0.1px;
-  height:0.1px;
-  opacity:0;
-  overflow:hidden;
-  position:absolute;
-  z-index:-1;
-}
-
-.form__input--files + .form__input{
-  width:200px;
-  min-height:3.2rem;
-  display:inline-block;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  overflow:hidden;
-  vertical-align:top;
-}
-
-.form__input--files + .form__input + .btn{
-  margin-left:-0.5rem;
 }
 
 .file-upload__list ul{
