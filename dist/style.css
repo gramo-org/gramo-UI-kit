@@ -2835,11 +2835,6 @@ hr, .horizontal-rule{
   -webkit-animation-delay:-0.8s;
   animation-delay:-0.8s;
 }
-
-.spinner--inline{
-  margin:0;
-  height:25px;
-}
 @-webkit-keyframes placeHolderShimmer{
   0%{
       background-position:-40rem 0
@@ -5930,6 +5925,11 @@ tr > td:last-child{
 .file-upload__header--action a{
   color:inherit;
   text-decoration:none;
+}
+
+.file-upload__spinner .spinner{
+  margin:0;
+  height:25px;
 }
 
 .file-upload__form{
