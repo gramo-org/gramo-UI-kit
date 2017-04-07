@@ -84,19 +84,6 @@
       outline: none;
     }
   }
-  
-  .form__label--upload::after {
-    content: 'Velg fil...';
-    position: absolute;
-    display: block;
-    left: 0;
-    top: -5px;
-    background-color: var(--secondary);
-    color: var(--gramo-black);
-    border: 1px solid var(--silver);
-    border-width: 1px 1px 3px 1px;
-    padding: .3rem 1.2rem;
-  }
 }
 
 .file-upload__list {
@@ -107,6 +94,7 @@
 .file-upload__list ul {
   @extend %no-list;
   max-height: 280px;
+  min-height: 150px;
   overflow-y: auto;
   overflow-x: hidden;
   margin-right: -2rem;

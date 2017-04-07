@@ -2835,6 +2835,11 @@ hr, .horizontal-rule{
   -webkit-animation-delay:-0.8s;
   animation-delay:-0.8s;
 }
+
+.spinner--inline{
+  margin:0;
+  height:25px;
+}
 @-webkit-keyframes placeHolderShimmer{
   0%{
       background-position:-40rem 0
@@ -5948,19 +5953,6 @@ tr > td:last-child{
   outline:none;
 }
 
-.file-upload__form .form__label--upload::after{
-  content:'Velg fil...';
-  position:absolute;
-  display:block;
-  left:0;
-  top:-5px;
-  background-color:#f9f9f9;
-  color:#101010;
-  border:1px solid #d9d9dc;
-  border-width:1px 1px 3px 1px;
-  padding:.3rem 1.2rem;
-}
-
 .file-upload__list{
   -webkit-flex:1 1 auto;
   -ms-flex:1 1 auto;
@@ -5970,6 +5962,7 @@ tr > td:last-child{
 
 .file-upload__list ul{
   max-height:280px;
+  min-height:150px;
   overflow-y:auto;
   overflow-x:hidden;
   margin-right:-2rem;
