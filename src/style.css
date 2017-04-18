@@ -5900,6 +5900,7 @@ tr > td:last-child{
 
 .file-upload__toggle{
   color:#a5a4ab;
+  text-decoration:none;
 }
 
 .file-upload__toggle span{

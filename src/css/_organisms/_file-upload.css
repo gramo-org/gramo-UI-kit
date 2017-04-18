@@ -5,6 +5,7 @@
 
 .file-upload__toggle {
   color: var(--off-gray);
+  text-decoration: none;
   
   span {
     color: var(--off-gray);
