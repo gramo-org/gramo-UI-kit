@@ -5,6 +5,13 @@
 
 .file-upload__toggle {
   color: var(--off-gray);
+  
+  span {
+    color: #777;
+    font-size: 1.6rem;
+    position: relative;
+    top: -1px;
+  }
 }
 
 .file-upload__inner {

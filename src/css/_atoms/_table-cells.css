@@ -35,3 +35,39 @@
     background:linear-gradient(to right, transparent 120px, var(--x-light-gray));
   }
 }*/
+
+/* Reskontro icons for a/c balance */
+.table__cell--increase,
+.table__cell--decrease,
+.table__cell--transfer {
+  &::after {
+    content: '';
+    text-align: center;
+    display: inline-block;
+    width: 2rem;
+    margin-left: .5rem;
+  }
+}
+
+.table__cell--transfer::after {
+  content: "\f0ec";
+  font-family: 'Fontawesome';
+  color: var(--gramo-blue);
+}
+
+.table__row--with-errors .table__cell--transfer::after {
+  color: var(--gramo-red);
+}
+
+.table__cell--increase::after,
+.table__cell--decrease::after  {
+  content: "\e908";
+  transform: rotate(-90deg);
+  font-family: 'icomoon';
+  font-size: 70%;
+  color: var(--off-gray);
+}
+
+.table__cell--decrease::after {
+  transform: rotate(90deg);
+}

@@ -4,7 +4,7 @@
   background: var(--row-hover);
 }
 
-/*** Error rows in table ***/
+/*** Error rows in table - validering ***/
 .table__row--has-errors {
   background: color(var(--error) tint(90%))!important;
 
@@ -20,6 +20,16 @@
     p::before {
       content: '-';
     }
+  }
+}
+
+/*** Error rows in table - data error marking ***/
+
+.table__row--with-errors {
+  box-shadow: 5px 0px 0px var(--error) inset;
+  
+  i {
+    color: var(--error);
   }
 }
 
