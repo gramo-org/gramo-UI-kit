@@ -3657,6 +3657,11 @@ main.pull .bucket{
   content:'-';
 }
 
+.table__row--summary{
+  background:rgb(244, 244, 244);
+  font-weight:bold;
+}
+
 .table__row--with-errors{
   box-shadow:5px 0px 0px #ed6b6a inset;
 }

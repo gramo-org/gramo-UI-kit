@@ -23,6 +23,11 @@
   }
 }
 
+.table__row--summary {
+  background: color(var(--x-light-gray) shade(2%));
+  font-weight: bold;
+}
+
 /*** Error rows in table - data error marking ***/
 
 .table__row--with-errors {

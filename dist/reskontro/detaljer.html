@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+
+
+      <section class="container container--hd">
+        <div class="section-header section-header--divided no-margin--bottom">
+          <header>
+            <h1 class="heading--inline">Siri Nilsen</h1>
+            <ol class="wizard-steps">
+              <li>Reskontro</li>
+              <li class="selected">Siri Nilsen</li>
+            </ol>
+          </header>
+          <div class="section-header__below">
+            <div class="section-header__meta section-header__meta--cols">
+              <div class="col">
+                <h2 class="text--thin">17263133</h2>
+                <h4>Medlemsnummer</h4>
+              </div>
+              <div class="col">
+                <h2 class="text--thin">1732,50</h2>
+                <h4>Saldo i dag</h4>
+              </div>
+              <div class="col">
+                <h2 class="text--thin">2017.01.07</h2>
+                <h4>Siste utbetaling</h4>
+              </div>
+              <div class="col">
+                <h2 class="text--thin">1732,50</h2>
+                <h4>Til konto</h4>
+              </div>
+            </div>
+          </div>
+          <div class="section-header__below">
+            <div class="section-header__meta">
+              <h4 class="heading--inline">Vise alle transakjoner relatert</h4>
+              <select class="select select--fluid">
+                <option value="">Transaksjonsperiode</option>
+              </select>
+              <select class="select select--fluid">
+                <option value="">Siste 3 år</option>
+                <option value="">Siste 5 år</option>
+                <option value="">Egendefinert</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container container--hd">
+        <table class="table table--fluid drilldown table--full-width">
+          <thead class="table__head table__head--always-visible">
+            <tr>
+              <th>
+                Tittel
+              </th>
+              <th class="text--center">
+                Hovedartist
+              </th>
+              <th>
+                ISRC
+              </th>
+              <th class="text--right">
+                Rolekode/Poeng
+              </th>
+              <th class="text--right">
+                Ant. avspillinger
+              </th>
+              <th class="text--right">
+                Sum spilletid
+              </th>
+              <th class="text--right">
+                Total Inntekt
+              </th>
+              <th colspan="2"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="drilldown-body drilldown-toggle" data-level="1">
+              <td data-label="Tittel">
+                Alle snakker sant
+              </td>
+              <td data-label="Hovedartist">
+                Siri Nilsen
+              </td>
+              <td data-label="ISRC">
+                NO536281
+              </td>
+              <td data-label="Rolekode/Poeng">
+                A,B - 28
+              </td>
+              <td class="text--right" data-label="Ant. avspillinger">
+                161,00
+              </td>
+              <td class="text--right" data-label="Sum spilletid">
+                03:54:00
+              </td>
+              <td colspan="2" data-label="Total Inntekt">
+                1 507,50
+              </td>
+              <td class="text--right">
+                <a href="#" class="table-row-toggle"></a>
+              </td>
+            </tr>
+            
+            <tr class="drilldown-body drilldown-toggle" data-level="1">
+              <td data-label="Dato">
+                2017.01.07
+              </td>
+              <td class="text--center" data-label="Avregningsår">
+                
+              </td>
+              <td data-label="Kilde">
+                Utbetaling Jul 2016
+              </td>
+              <td class="text--right" data-label="Transaksjoner">
+                - 1732,50
+              </td>
+              <td class="text--right table__cell--transfer" data-label="Saldo i NOK">
+                0,00
+              </td>
+              <td data-label="Detaljer">
+                til: 83643572356 <a href="#">egen konto</a>
+              </td>
+              <td data-label="A-melding"></td>
+              <td class="text--right">
+                <a href="#" class="table-row-toggle"></a>
+              </td>
+            </tr>
+
+            <tr class="drilldown-body" data-level="2" style="display:none;">
+              <td data-label="Dato">
+                2017.01.18
+              </td>
+              <td class="text--center" data-label="Avregningsår">
+                2016
+              </td>
+              <td data-label="Kilde">
+                Korreksjonsavregning Des.
+              </td>
+              <td class="text--right" data-label="Transaksjoner">
+                + 600,00
+              </td>
+              <td class="text--right table__cell--increase" data-label="Saldo i NOK">
+                1732,50
+              </td>
+              <td data-label="Detaljer">
+                <a href="#">Se detaljer</a>
+              </td>
+              <td colspan="2" data-label="A-melding"></td>
+            </tr><!--end row -->
+            <tr class="drilldown-body" data-level="2" style="display:none;">
+              <td data-label="Dato">
+                2017.11.12
+              </td>
+              <td class="text--center" data-label="Avregningsår">
+                2016
+              </td>
+              <td data-label="Kilde">
+                Tilbakeføring Gramex
+              </td>
+              <td class="text--right" data-label="Transaksjoner">
+                + 182,00
+              </td>
+              <td class="text--right table__cell--decrease" data-label="Saldo i NOK">
+                1132,00
+              </td>
+              <td data-label="Detaljer">
+                <a href="#">Se detaljer</a>
+              </td>
+              <td colspan="2" data-label="A-melding"></td>
+            </tr><!--end row -->
+            <tr class="drilldown-body" data-level="2" style="display:none;">
+              
+            </tr><!--end row -->
+          </tbody>
+        </table>
+        <nav role="navigation" class="text--right">
+          <ul class="pagination">
+            <li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
+            <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
+            <li class="pagination__item"><a href="#">2</a></li>
+            <li class="pagination__item"><a href="#">3</a></li>
+            <li class="pagination__item"><a href="#">4</a></li>
+            <li class="pagination__item"><a href="#">5</a></li>
+            <li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/vendor/drilldown.js"></script>
+<script src="../js/default.js"></script>
+<script>
+$('.drilldown').drilldown({
+  speed: 'fast'
+});
+</script>
+</body>
+</html>
