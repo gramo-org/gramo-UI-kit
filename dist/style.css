@@ -504,14 +504,14 @@ td.text--center, .fake-table__row *.text--center{
   display:inline-block;
   vertical-align:middle;
 }
-.truncated, .table__cell--truncated{
+.truncated, .table__cell--truncated, .table__row--truncated:not(.dd-open) > td{
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
 }
 @media (min-width: 960px){
 
-  .truncated, .table__cell--truncated{
+  .truncated, .table__cell--truncated, .table__row--truncated:not(.dd-open) > td{
     max-width:100px;
   }
 }
@@ -3657,9 +3657,13 @@ main.pull .bucket{
   content:'-';
 }
 
-.table__row--summary{
+.table__row--truncated > td{
+  max-width:150px;
+}
+
+.table__row--subhead{
   background:rgb(244, 244, 244);
-  font-weight:bold;
+  font-weight:600;
 }
 
 .table__row--with-errors{
@@ -5900,7 +5904,13 @@ tr > td:last-child{
 }
 .file-upload{
   position:relative;
-  display:inline-block;
+  text-align:right;
+}
+@media (min-width: 960px){
+
+  .file-upload{
+    display:inline-block;
+  }
 }
 
 .file-upload__toggle{
@@ -5921,7 +5931,6 @@ tr > td:last-child{
   position:absolute;
   right:4.5rem;
   top:-100%;
-  width:800px;
   text-align:left;
   box-shadow:0 0 4px rgba(0,0,0,0.4);
   transition:opacity .15s ease-in;
@@ -5932,17 +5941,39 @@ tr > td:last-child{
   display:-ms-flexbox;
   display:flex;
   z-index:1;
+  -webkit-flex-direction:column;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  width:auto;
+  min-width:400px;
+}
+
+@media (min-width: 960px){
+
+  .file-upload__inner.is-visible{
+    -webkit-flex-direction:row;
+    -ms-flex-direction:row;
+    flex-direction:row;
+    width:800px;
+  }
 }
 
 .file-upload__inner:before{
   content:"\e902";
   font-family:'icomoon';
-  color:#fff;
+  color:#ededed;
   position:absolute;
   text-shadow:1px 0 2px rgba(0,0,0,0.3);
   top:20px;
   right:-9px;
   z-index:-1;
+}
+
+@media (min-width: 960px){
+
+  .file-upload__inner:before{
+    color:#fdfdfd;
+  }
 }
 
 .file-upload__inner.is-visible--over{
@@ -5953,6 +5984,7 @@ tr > td:last-child{
 .file-upload__inner.is-visible--over:before{
   top:auto;
   bottom:10px;
+  color:#fdfdfd;
 }
 
 .file-upload__header{
@@ -6032,6 +6064,10 @@ tr > td:last-child{
 .file-upload__list ul li > div[class^="col-"]{
   padding-left:.25rem;
   padding-right:.25rem;
+}
+
+.file-upload__list ul li > .text--right{
+  text-align:right;
 }
 .wizard-steps{
   padding:0;

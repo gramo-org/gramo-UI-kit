@@ -23,9 +23,22 @@
   }
 }
 
-.table__row--summary {
+/* Add truncation to cells in rows with class '.table__row--truncated' */
+.table__row--truncated:not(.dd-open) {
+  & > td {
+    @extend .truncated;
+  }
+}
+
+.table__row--truncated {
+  & > td {
+    max-width: 150px;
+  }
+}
+
+.table__row--subhead {
   background: color(var(--x-light-gray) shade(2%));
-  font-weight: bold;
+  font-weight: var(--semibold);
 }
 
 /*** Error rows in table - data error marking ***/

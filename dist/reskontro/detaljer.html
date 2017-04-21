@@ -109,13 +109,13 @@
               <th>
                 Tittel
               </th>
-              <th class="text--center">
+              <th>
                 Hovedartist
               </th>
               <th>
                 ISRC
               </th>
-              <th class="text--right">
+              <th>
                 Rolekode/Poeng
               </th>
               <th class="text--right">
@@ -127,13 +127,13 @@
               <th class="text--right">
                 Total Inntekt
               </th>
-              <th colspan="2"></th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
             <tr class="drilldown-body drilldown-toggle" data-level="1">
               <td data-label="Tittel">
-                Alle snakker sant
+                <a href="#">Alle snakker sant</a>
               </td>
               <td data-label="Hovedartist">
                 Siri Nilsen
@@ -150,7 +150,7 @@
               <td class="text--right" data-label="Sum spilletid">
                 03:54:00
               </td>
-              <td colspan="2" data-label="Total Inntekt">
+              <td class="text--right" data-label="Total Inntekt">
                 1 507,50
               </td>
               <td class="text--right">
@@ -158,75 +158,84 @@
               </td>
             </tr>
             
-            <tr class="drilldown-body drilldown-toggle" data-level="1">
-              <td data-label="Dato">
-                2017.01.07
+            <tr class="drilldown-body drilldown-toggle table__row--truncated" data-level="1">
+              <td data-label="Tittel">
+                <a href="#">Det som reparerer alt</a>
               </td>
-              <td class="text--center" data-label="Avregningsår">
-                
+              <td data-label="Hovedartist">
+                Siri Nilsen, Jon Mykkelbust, og flere andre, mange andre veldig mange andre
               </td>
-              <td data-label="Kilde">
-                Utbetaling Jul 2016
+              <td data-label="ISRC">
+                NO536281
               </td>
-              <td class="text--right" data-label="Transaksjoner">
-                - 1732,50
+              <td data-label="Rolekode/Poeng">
+                A,B - 28
               </td>
-              <td class="text--right table__cell--transfer" data-label="Saldo i NOK">
-                0,00
+              <td class="text--right" data-label="Ant. avspillinger">
+                161,00
               </td>
-              <td data-label="Detaljer">
-                til: 83643572356 <a href="#">egen konto</a>
+              <td class="text--right" data-label="Sum spilletid">
+                03:54:00
               </td>
-              <td data-label="A-melding"></td>
+              <td class="text--right" data-label="Total Inntekt">
+                1 507,50
+              </td>
               <td class="text--right">
                 <a href="#" class="table-row-toggle"></a>
               </td>
             </tr>
-
+            
+            <tr class="table__row--subhead drilldown-body" data-level="2" style="display:none;">
+              <td colspan="4">Kanaler</td>
+              <td class="text--right"></td>
+              <td class="text--right">Spilletid</td>
+              <td class="text--right">Inntekt</td>
+              <td></td>
+            </tr>
             <tr class="drilldown-body" data-level="2" style="display:none;">
-              <td data-label="Dato">
-                2017.01.18
+              <td colspan="4" data-label="Kanaler">
+                <a href="#">NRK Buskerud</a>
               </td>
-              <td class="text--center" data-label="Avregningsår">
-                2016
+              <td class="text--right" data-label="Ant. avspillinger">
+                5
               </td>
-              <td data-label="Kilde">
-                Korreksjonsavregning Des.
+              <td class="text--right" data-label="Spilletid">
+                10:00
               </td>
-              <td class="text--right" data-label="Transaksjoner">
-                + 600,00
+              <td class="text--right" data-label="Inntekt">
+                30,00
               </td>
-              <td class="text--right table__cell--increase" data-label="Saldo i NOK">
-                1732,50
-              </td>
-              <td data-label="Detaljer">
-                <a href="#">Se detaljer</a>
-              </td>
-              <td colspan="2" data-label="A-melding"></td>
+              <td></td>
             </tr><!--end row -->
             <tr class="drilldown-body" data-level="2" style="display:none;">
-              <td data-label="Dato">
-                2017.11.12
+              <td colspan="4" data-label="Kanaler">
+                <a href="#">NRK P2</a>
               </td>
-              <td class="text--center" data-label="Avregningsår">
-                2016
+              <td class="text--right" data-label="Ant. avspillinger">
+                12
               </td>
-              <td data-label="Kilde">
-                Tilbakeføring Gramex
+              <td class="text--right" data-label="Spilletid">
+                1:00:00
               </td>
-              <td class="text--right" data-label="Transaksjoner">
-                + 182,00
+              <td class="text--right" data-label="Inntekt">
+                120,00
               </td>
-              <td class="text--right table__cell--decrease" data-label="Saldo i NOK">
-                1132,00
-              </td>
-              <td data-label="Detaljer">
-                <a href="#">Se detaljer</a>
-              </td>
-              <td colspan="2" data-label="A-melding"></td>
+              <td></td>
             </tr><!--end row -->
             <tr class="drilldown-body" data-level="2" style="display:none;">
-              
+              <td colspan="4" data-label="Kanaler">
+                <a href="#">NRK mptre</a>
+              </td>
+              <td class="text--right" data-label="Ant. avspillinger">
+                7
+              </td>
+              <td class="text--right" data-label="Spilletid">
+                50:00
+              </td>
+              <td class="text--right" data-label="Inntekt">
+                150,00
+              </td>
+              <td></td>
             </tr><!--end row -->
           </tbody>
         </table>
