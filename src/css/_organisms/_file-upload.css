@@ -85,13 +85,6 @@
   }
 }
 
-.file-upload__spinner {
-  .spinner {
-    margin: 0;
-    height: 25px;
-  }
-}
-
 .file-upload__form {
   background: var(--light-gray);
   /*border: 1px solid var(--silver);*/

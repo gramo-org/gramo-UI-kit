@@ -45,3 +45,10 @@
     animation-delay: -0.8s;
   }
 }
+
+.spinner--minimal {
+  .spinner {
+    margin: 0;
+    height: 25px;
+  }
+}
