@@ -47,8 +47,6 @@
 }
 
 .spinner--minimal {
-  .spinner {
-    margin: 0;
-    height: 25px;
-  }
+  margin: 0 auto;
+  height: 25px;
 }

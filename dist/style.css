@@ -2867,8 +2867,8 @@ hr, .horizontal-rule{
   animation-delay:-0.8s;
 }
 
-.spinner--minimal .spinner{
-  margin:0;
+.spinner--minimal{
+  margin:0 auto;
   height:25px;
 }
 @-webkit-keyframes placeHolderShimmer{
