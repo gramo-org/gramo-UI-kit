@@ -4445,9 +4445,9 @@ main.pull .bucket{
   animation:fadeIn ease 1s;
   padding:.4rem 0;
   min-height:3.2rem;
-  -webkit-flex:1;
-  -ms-flex:1;
-  flex:1;
+  -webkit-flex:1 0 100%;
+  -ms-flex:1 0 100%;
+  flex:1 0 100%;
 }
 
 @media (min-width: 960px){
