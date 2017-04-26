@@ -12,7 +12,7 @@ hr, .horizontal-rule {
 .horizontal-rule--dashed {
   border-top: 1px dashed var(--silver);
   background: none;
-  margin: 0;
+  margin: 1.2rem 0 0 0;
 
   &:before,
   &:after {

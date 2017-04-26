@@ -1935,7 +1935,7 @@ hr, .horizontal-rule{
 .horizontal-rule--dashed{
   border-top:1px dashed #d9d9dc;
   background:none;
-  margin:0;
+  margin:1.2rem 0 0 0;
 }
 
 .horizontal-rule--dashed:before, .horizontal-rule--dashed:after{
