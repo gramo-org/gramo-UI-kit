@@ -50,9 +50,11 @@
 }
 
 .table__cell--transfer::after {
-  content: "\f0ec";
-  font-family: 'Fontawesome';
+  content: "\e924";
+  font-family: 'Icomoon';
   color: var(--gramo-blue);
+  font-size: 2.4rem;
+  vertical-align: middle;
 }
 
 .table__row--with-errors .table__cell--transfer::after {
