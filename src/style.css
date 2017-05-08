@@ -5090,6 +5090,13 @@ input[type="text"].search__form__input--large{
   -webkit-flex:1 0 auto;
   -ms-flex:1 0 auto;
   flex:1 0 auto;
+  margin-left:1rem;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
 }
 
 .section-header__toolbar{

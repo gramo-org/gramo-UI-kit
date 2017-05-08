@@ -45,6 +45,9 @@
   }
   .section-header__toggle {
     flex: 1 0 auto;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
   }
 }
 
