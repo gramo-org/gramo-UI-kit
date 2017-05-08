@@ -3782,6 +3782,9 @@ main.pull .bucket{
 .table tr[data-level="1"].dd-open{
   background:#ededed;
 }
+.table .dd-open, .table .dd-close{
+  cursor:pointer;
+}
 @media (min-width: 768px){
 
   .table tr[data-level="2"] > td:first-child{

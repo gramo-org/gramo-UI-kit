@@ -9,6 +9,10 @@
     background: var(--table-head-background);
   }
   
+  .dd-open, .dd-close {
+    cursor: pointer;
+  }
+  
   tr[data-level="2"] > td:first-child {
     @media (--tablet) { padding-left: 4rem; }
   }
