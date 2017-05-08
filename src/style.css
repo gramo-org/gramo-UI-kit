@@ -5080,6 +5080,18 @@ input[type="text"].search__form__input--large{
   align-items:center;
 }
 
+.section-header--with-toggle header{
+  -webkit-flex:0 0 auto;
+  -ms-flex:0 0 auto;
+  flex:0 0 auto;
+}
+
+.section-header--with-toggle .section-header__toggle{
+  -webkit-flex:1 0 auto;
+  -ms-flex:1 0 auto;
+  flex:1 0 auto;
+}
+
 .section-header__toolbar{
   -webkit-align-self:center;
   -ms-flex-item-align:center;

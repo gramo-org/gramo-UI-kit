@@ -39,6 +39,15 @@
   }
 }
 
+.section-header--with-toggle {
+  header {
+    flex: 0 0 auto;
+  }
+  .section-header__toggle {
+    flex: 1 0 auto;
+  }
+}
+
 .section-header__toolbar {
   align-self: center;
   padding-right: .5rem;
