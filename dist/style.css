@@ -3008,6 +3008,21 @@ hr, .horizontal-rule{
 .form__field--with-table > .form__label .table{
   font-weight:400;
 }
+.form__field--double > label:nth-child(2){
+  margin:0;
+}
+@media(min-width: 1200px){
+
+  .form__field--double > label:nth-child(2){
+    margin:3px 0 0 135px;
+  }
+}
+@media(min-width: 1400px){
+
+  .form__field--double > label:nth-child(2){
+    margin:0;
+  }
+}
 .form__field--inline > *{
   vertical-align:top;
 }
