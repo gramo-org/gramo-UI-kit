@@ -330,15 +330,14 @@ td.text--center,
 
 /* highlighted grid rows */
 .row--active {
-  background: var(--silver);
-  
-  &:last-child {
-    background: var(--gramo-blue);
-  }
+  box-shadow: 4px 0px 0px var(--success) inset;
+  margin-bottom: 1px;
 }
 
-.row--active:last-child {
+.row--with-divider,
+.row--active {
   position: relative;
+  padding-top: .6rem;
   padding-bottom: .6rem;
   
   &::after {
@@ -348,6 +347,10 @@ td.text--center,
     bottom: 0;
     left: 1rem;
     border-bottom: 1px dashed var(--silver);
+    /*padding-bottom: .6rem;*/
   }
   
+  &:last-child::after {
+    content: none;
+  }
 }

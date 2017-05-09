@@ -516,25 +516,27 @@ td.text--center, .fake-table__row *.text--center{
   }
 }
 .row--active{
-  background:#d9d9dc;
-}
-.row--active:last-child{
-  background:#0095da;
+  box-shadow:4px 0px 0px #50bf9e inset;
+  margin-bottom:1px;
 }
 
-.row--active:last-child{
+.row--with-divider, .row--active{
   position:relative;
+  padding-top:.6rem;
   padding-bottom:.6rem;
-  
 }
 
-.row--active:last-child::after{
+.row--with-divider::after, .row--active::after{
   content:'';
   width:calc(100% - 2rem);
   position:absolute;
   bottom:0;
   left:1rem;
   border-bottom:1px dashed #d9d9dc;
+}
+
+.row--with-divider:last-child::after, .row--active:last-child::after{
+  content:none;
 }
 *, *:before, *:after{
   box-sizing:border-box;
