@@ -5073,9 +5073,9 @@ input[type="text"].search__form__input--large{
 }
 
 .section-header--with-toggle .section-header__toggle{
-  -webkit-flex:1 0 calc(100% - 200px);
-  -ms-flex:1 0 calc(100% - 200px);
-  flex:1 0 calc(100% - 200px);
+  -webkit-flex:0 1 100%;
+  -ms-flex:0 1 100%;
+  flex:0 1 100%;
   margin-left:1rem;
   display:-webkit-flex;
   display:-ms-flexbox;
