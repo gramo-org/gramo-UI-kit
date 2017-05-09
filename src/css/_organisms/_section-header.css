@@ -39,14 +39,11 @@
   }
 }
 
-.section-header--with-toggle {
-
-  .section-header__toggle {
-    flex: 0 1 100%;
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
-  }
+.section-header__toggle {
+  flex: 0 1 100%;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .section-header__toolbar {

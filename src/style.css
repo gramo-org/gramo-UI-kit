@@ -5072,7 +5072,7 @@ input[type="text"].search__form__input--large{
   align-items:center;
 }
 
-.section-header--with-toggle .section-header__toggle{
+.section-header__toggle{
   -webkit-flex:0 1 100%;
   -ms-flex:0 1 100%;
   flex:0 1 100%;
