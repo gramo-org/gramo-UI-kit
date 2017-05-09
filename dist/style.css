@@ -515,14 +515,15 @@ td.text--center, .fake-table__row *.text--center{
     max-width:100px;
   }
 }
-
+.row--active{
+  background:#d9d9dc;
+}
 
 .row--active:last-child{
   position:relative;
   padding-bottom:.6rem;
   
 }
-
 
 .row--active:last-child::after{
   content:'';
