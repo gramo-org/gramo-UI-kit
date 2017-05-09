@@ -44,7 +44,7 @@
     flex: 0 0 auto;
   }
   .section-header__toggle {
-    flex: 1 0 auto;
+    flex: 1 0 calc(100% - 200px);
     margin-left: 1rem;
     display: flex;
     align-items: center;

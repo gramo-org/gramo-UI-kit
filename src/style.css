@@ -517,7 +517,7 @@ td.text--center, .fake-table__row *.text--center{
 }
 
 .row--active{
-  background:#ededed;
+  background:rgb(245, 245, 245);
 }
 
 .row--with-divider, .row--active{
@@ -526,14 +526,6 @@ td.text--center, .fake-table__row *.text--center{
 }
 .row--with-divider, .row--active{
   position:relative;
-}
-.row--with-divider::after, .row--active::after{
-  content:'';
-  width:calc(100% - 2rem);
-  position:absolute;
-  bottom:0;
-  left:1rem;
-  border-bottom:1px dashed #d9d9dc;
 }
 .row--with-divider:last-child::after, .row--active:last-child::after{
   content:none;
@@ -5087,9 +5079,9 @@ input[type="text"].search__form__input--large{
 }
 
 .section-header--with-toggle .section-header__toggle{
-  -webkit-flex:1 0 auto;
-  -ms-flex:1 0 auto;
-  flex:1 0 auto;
+  -webkit-flex:1 0 calc(100% - 200px);
+  -ms-flex:1 0 calc(100% - 200px);
+  flex:1 0 calc(100% - 200px);
   margin-left:1rem;
   display:-webkit-flex;
   display:-ms-flexbox;

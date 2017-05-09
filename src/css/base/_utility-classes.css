@@ -331,7 +331,7 @@ td.text--center,
 /* highlighted grid rows */
 
 .row--active {
-  background: var(--light-gray);
+  background: color(var(--light-gray) tint(45%));
 }
 
 .row--with-divider,
@@ -345,15 +345,14 @@ td.text--center,
 .row--active {
   position: relative;
   
-  &::after {
+  /*&::after {
     content: '';
     width: calc(100% - 2rem);
     position: absolute;
     bottom: 0;
     left: 1rem;
     border-bottom: 1px dashed var(--silver);
-    /*padding-bottom: .6rem;*/
-  }
+  }*/
   
   &:last-child::after {
     content: none;
