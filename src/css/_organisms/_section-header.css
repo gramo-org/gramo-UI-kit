@@ -39,7 +39,8 @@
   }
 }
 
-.section-header__toggle {
+.section-header__toggle,
+.section-header__datepicker {
   flex: 0 1 100%;
   margin-left: 1rem;
   display: flex;

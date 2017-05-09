@@ -330,31 +330,18 @@ td.text--center,
 
 /* highlighted grid rows */
 
-.row--active {
-  background: color(var(--light-gray) tint(45%));
-}
 
-.row--with-divider,
-.row--active {
-  padding-top: .6rem;
-  padding-bottom: .6rem;
-}
-
-/* grid rows with dividers */
-.row--with-divider,
-.row--active {
+.row--active:last-child {
   position: relative;
+  padding-bottom: .6rem;
   
-  /*&::after {
+  &::after {
     content: '';
     width: calc(100% - 2rem);
     position: absolute;
     bottom: 0;
     left: 1rem;
     border-bottom: 1px dashed var(--silver);
-  }*/
-  
-  &:last-child::after {
-    content: none;
   }
+  
 }
