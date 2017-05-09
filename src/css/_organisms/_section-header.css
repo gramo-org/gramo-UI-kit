@@ -47,6 +47,11 @@
   align-items: center;
 }
 
+/* Stops Avbryt/Lagre buttons from collapsing on to 2 lines */
+.section-header__toggle + div {
+  flex: 1 0 auto;
+}
+
 .section-header__toolbar {
   align-self: center;
   padding-right: .5rem;
