@@ -329,7 +329,9 @@ td.text--center,
 }
 
 /* highlighted grid rows */
-
+.row--active {
+  background: var(--silver);
+}
 
 .row--active:last-child {
   position: relative;
