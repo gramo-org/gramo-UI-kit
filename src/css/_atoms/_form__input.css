@@ -48,11 +48,13 @@ input[type="radio"], input[type="checkbox"],
   border: 1px solid var(--silver);
   padding-right:.5rem;
   padding-left: .5rem;
-  /*text-align: center;*/
-  width: auto;
-  min-width: 115px;
   max-height: 31px;
-
+  max-width: 150px;
+  min-width: 115px;
+  @media (--tablet) { 
+    min-width: 0;
+  }
+  
   &::-webkit-calendar-picker-indicator,
   &::-webkit-inner-spin-button {
     opacity: 0;

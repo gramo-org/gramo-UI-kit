@@ -20,7 +20,7 @@
   }
 
 /* Make link color regular */
-  a:not(.btn) {
+  a:not(.btn), a:not(.row--align-vertical a) {
     color: inherit;
   }
 
@@ -28,6 +28,11 @@
   &--selected,
   &--selected:hover {
     background: var(--table-head-background);
+  }
+  
+  &--active {
+    box-shadow: 4px 0px 0px var(--success) inset;
+    background: var(--gramo-white);
   }
 
   & > div[class*="col-"] {

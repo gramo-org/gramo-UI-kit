@@ -58,7 +58,6 @@
 
   &__dropdown {
     position: absolute;
-    /*width: 100%;*/ /* Let the dropdown be as wide as it's longest child */
     left: 0;
     display: none;
     background-color: var(--gramo-white);
@@ -66,6 +65,10 @@
     border: 1px solid var(--silver);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     z-index: 2;
+    width: 100%; 
+    @media (--tablet) { 
+      width: auto; /* Let the dropdown be as wide as it's longest child */
+    }
 
     .searchable-list__search {
       background: url("img/search.svg") right 0.5rem center no-repeat;

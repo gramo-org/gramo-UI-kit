@@ -23,7 +23,7 @@ td.text--center,
 }
 
 .text--light {
-  color: var(--off-gray);
+  color: var(--off-gray)!important;
 
   a {
     color: inherit;
@@ -109,6 +109,11 @@ td.text--center,
 }
 /* hack to keep centered vertical alignment when error message shows */
 .row--align-vertical {
+  
+  & > div:first-child,
+  & > div:last-child {
+    padding-top: 2.4rem!important;
+  }
   
   .align--vertical-center {
     align-self: flex-start;
@@ -328,30 +333,3 @@ td.text--center,
   }*/
 }
 
-/* highlighted grid rows */
-.row--active {
-  box-shadow: 4px 0px 0px var(--success) inset;
-  margin-bottom: 1px;
-  background: var(--gramo-white);
-}
-
-.row--with-divider,
-.row--active {
-  position: relative;
-  padding-top: .6rem;
-  padding-bottom: .6rem;
-  
-  &::after {
-    content: '';
-    width: calc(100% - 2rem);
-    position: absolute;
-    bottom: 0;
-    left: 1rem;
-    border-bottom: 1px dashed var(--silver);
-    /*padding-bottom: .6rem;*/
-  }
-  
-  &:last-child::after {
-    content: none;
-  }
-}
