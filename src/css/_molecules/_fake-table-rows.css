@@ -34,6 +34,11 @@
     box-shadow: 4px 0px 0px var(--success) inset;
     background: var(--gramo-white);
   }
+  
+  /*** Inactive rows in fake-table ***/
+  &--inactive * {
+    color: var(--off-gray)!important;
+  }
 
   & > div[class*="col-"] {
     padding: 1.4rem 1rem; /* give cols elements padding in .fake-table__row -- changed from 1.25rem 1rem */

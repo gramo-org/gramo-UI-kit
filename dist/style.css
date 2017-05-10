@@ -3921,6 +3921,9 @@ main.pull .bucket{
   box-shadow:4px 0px 0px #50bf9e inset;
   background:#fdfdfd;
 }
+.fake-table__row--inactive *{
+  color:#a5a4ab!important;
+}
 .fake-table__row > div[class*="col-"]{
   padding:1.4rem 1rem;
   min-height:4.8rem;
