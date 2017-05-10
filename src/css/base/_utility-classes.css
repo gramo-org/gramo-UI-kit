@@ -111,7 +111,7 @@ td.text--center,
 .row--align-vertical {
   
   & > div:first-child,
-  & > div:last-child {
+  & > .fake-table__cell--delete {
     padding-top: 2.4rem!important;
   }
   

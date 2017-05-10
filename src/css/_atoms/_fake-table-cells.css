@@ -31,3 +31,7 @@
     z-index: 1;
   }
 }
+
+.fake-table__cell--delete {
+  text-align: right;
+}

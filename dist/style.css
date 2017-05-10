@@ -297,7 +297,7 @@ td.text--center, .fake-table__row *.text--center{
   -ms-flex-item-align:center;
   align-self:center;
 }
-.row--align-vertical > div:first-child, .row--align-vertical > div:last-child{
+.row--align-vertical > div:first-child, .row--align-vertical > .fake-table__cell--delete{
   padding-top:2.4rem!important;
 }
 .row--align-vertical .align--vertical-center{
@@ -2423,6 +2423,10 @@ hr, .horizontal-rule{
     top:.75rem;
     z-index:1;
   }
+}
+
+.fake-table__cell--delete{
+  text-align:right;
 }
 .x-toggle{
     display:none;
