@@ -630,13 +630,20 @@
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
                 <section id="utover" class="container container--padded">
-
-                  <div class="section-header">
+                  <div class="section-header section-header--with-toggle">
                     <header>
                       <h2>Utøvere <span class="badge badge--secondary">5</span></h2>
                     </header>
+                    <div class="section-header__toggle">
+                      Vis kladd info
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle">
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium"></label>
+                      </span>
+                    </div>
                     <div class="section-header__toolbar">
-                      <a href="#" class="link--edit">Rediger</a>
+                      <button href="#" class="btn btn--secondary">Avbryt</button>
+                      <a href="#" class="btn btn--primary">Lagre</a>
                     </div>
                   </div>
 
