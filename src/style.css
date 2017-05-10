@@ -518,6 +518,7 @@ td.text--center, .fake-table__row *.text--center{
 .row--active{
   box-shadow:4px 0px 0px #50bf9e inset;
   margin-bottom:1px;
+  background:#fdfdfd;
 }
 
 .row--with-divider, .row--active{

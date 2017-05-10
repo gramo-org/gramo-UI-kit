@@ -332,6 +332,7 @@ td.text--center,
 .row--active {
   box-shadow: 4px 0px 0px var(--success) inset;
   margin-bottom: 1px;
+  background: var(--gramo-white);
 }
 
 .row--with-divider,
