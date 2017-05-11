@@ -113,9 +113,9 @@
 .form__field--double > label:nth-child(2) {
   margin: 0;
   @media(--hd) {
-    margin: 3px 0 0 135px;
+    margin: 3px 1rem 0 135px;
   }
   @media(--hd-plus) {
-    margin: 0;
+    margin: 0 1rem 0 0;
   }
 }
