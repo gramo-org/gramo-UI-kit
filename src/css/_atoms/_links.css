@@ -26,3 +26,10 @@
     font-size: 90%;
   }
 }
+
+.link--disabled {
+  color: var(--base-font-color);
+  pointer-events: none;
+  text-decoration: none;
+  cursor: default;
+}
