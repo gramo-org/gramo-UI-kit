@@ -3911,8 +3911,11 @@ main.pull .bucket{
 .fake-table__row[draggable=true]:active{
   background:rgb(237, 237, 237);
 }
-.fake-table__row a:not(.btn), .fake-table__row a:not(.row--align-vertical a){
+.fake-table__row a:not(.btn){
   color:inherit;
+}
+.fake-table__row.row--align-vertical a{
+  color:#0095da;
 }
 .fake-table__row--selected, .fake-table__row--selected:hover{
   background:#ededed;

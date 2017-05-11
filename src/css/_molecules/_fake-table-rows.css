@@ -20,8 +20,13 @@
   }
 
 /* Make link color regular */
-  a:not(.btn), a:not(.row--align-vertical a) {
+  a:not(.btn) {
     color: inherit;
+  }
+  
+/* except in .row--align-vertical (group members) */
+  &.row--align-vertical a {
+    color: var(--base-link-color);
   }
 
 /* Give selected rows gray background */
