@@ -1595,6 +1595,7 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
 
   .form__input--date, .form__input[type="date"]{
     min-width:0;
+    max-width:none;
   }
 }
 

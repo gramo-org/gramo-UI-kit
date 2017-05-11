@@ -1039,41 +1039,21 @@
                             </select>
                           </label>
                         </div>
-
-                        <hr class="horizontal-rule horizontal-rule--spacer horizontal-rule--dashed">
-                        <h3 class="heading--sub no-margin--top heading--inline">Utbetalingsinfo</h3>
-                        <span class="float--right">Utbetaling via <a href="#">agent</a></span>
-                        <div class="form__field">
-                          <label class="form__label form__label--required">
-                            <span>Skattekommune</span>
-                            <div class="searchable-list searchable-list--disabled form__input form__input--180">
-                              <div class="searchable-list__heading searchable-list__heading" tabindex="0">
-                              <span class="searchable-list__selected">Velg skattekommune</span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  Åfjord
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
+                        <div class="form__field form__field--inline">
+                          <label class="form__label">
+                            <span>Prosent</span>
+                            <input type="text" value="10%" class="form__input form__input--60">
+                          </label>
+                          <label class="form__label">
+                            <span>Maks. beløp</span>
+                            <input type="text" value="10.000" class="form__input form__input--130">
                           </label>
                         </div>
                         <div class="form__field">
-                          <label class="form__label form__label--required">
-                            <span>Kontotype</span>
-                            <select tabindex="0" class="select select--fluid align--vertical-center x-select" disabled>
-                              <option id="ember9156" value="blank" class="x-option">Ingen kontotype valgt</option>
-                              <option value="norwegian" class="x-option">Norsk</option>
-                              <option value="iban" class="x-option">IBAN</option>
-                              <option value="bic-swift" class="x-option">BIC/SWIFT</option>
-                              <option value="american" class="x-option">Amerikansk</option>
-                            </select>
+                          <label class="form__label">
+                            <span>Saldo</span>
+                            <input type="text" value="0" class="form__input form__input--130">
                           </label>
-                        </div>
-                        <div class="form__field">
                         </div>
                       </fieldset>
                     </form>

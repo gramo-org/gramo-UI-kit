@@ -53,6 +53,7 @@ input[type="radio"], input[type="checkbox"],
   min-width: 115px;
   @media (--tablet) { 
     min-width: 0;
+    max-width: none;
   }
   
   &::-webkit-calendar-picker-indicator,
