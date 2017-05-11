@@ -1439,6 +1439,13 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
   vertical-align:middle;
   font-size:90%;
 }
+
+.link--disabled{
+  color:#3f3e44;
+  pointer-events:none;
+  text-decoration:none;
+  cursor:default;
+}
 .scrollbar::-webkit-scrollbar, .sidebar .sidebar__nav::-webkit-scrollbar{
   width:10px;
 }
