@@ -99,10 +99,11 @@
                     <span class="badge badge--info badge--tag" data-type="member">Har agent</span>
                   </p>
                 </div>
-                  <ul class="row tabs__section__nav tabs__section__nav--absolute">
-                    <li class="tabs__section__nav__item"><a href="#" class="active"><span data-type="performer"></span><span>Utøver</span></a></li>
+                  <ul class="row tabs__nav tabs__section__nav tabs__section__nav--absolute">
+                    <li class="tabs__section__nav__item"><a href="#performer-info" class="active"><span data-type="performer"></span><span>Utøver</span></a></li>
                     <li class="tabs__section__nav__item"><a href="#"><span data-type="producer"></span><span>Opprett ny personlig produsent</span></a></li>
                     <li class="tabs__section__nav__item"><a href="#"><span data-type="member"></span><span>Arv</span></a></li>
+                    <li class="tabs__section__nav__item"><a href="#trekk-info"><span data-type="member"></span><span>Trekk</span></a></li>
                   </ul>
                   <div class="infobar__right infobar__right--with-files align--vertical-center">
                     <div class="file-upload">
@@ -290,6 +291,8 @@
                             </a>
                           </p>
                         </div>
+                      </fieldset>
+                      <fieldset class="form__fieldset">
                         <div class="form__field form__field--double">
                           <label class="form__label">
                             <span>Tidligere navn</span>
@@ -470,7 +473,7 @@
                 </div><!-- end /.panels__sidebar -->
 
                 <div class="panels__main panels__main--55">
-                  <section class="container container--padded">
+                  <section id="performer-info" class="container container--padded">
                     <div class="section-header">
                       <header>
                         <h2>Utøverinformasjon</h2>
@@ -479,7 +482,7 @@
                         <a href="#" class="link--edit">Rediger</a>
                       </div>
                     </div>
-                    <form>
+                    <form class="form">
                       <fieldset class="form__fieldset">
                         <div class="form__field">
                           <label class="form__label">
@@ -545,6 +548,8 @@
                         <div class="form__field__help">
                           <p><a href="#" class="link--no-line">Legg til instrument</a></p>
                         </div>
+                      </fieldset>
+                      <fieldset class="form__fieldset">
                         <div class="form__field">
                           <label class="form__label">
                             <span></span>
@@ -979,6 +984,99 @@
 
                       </section>
                     </div>
+                  </section>
+                  <section id="trekk-info" class="container container--padded">
+                    <div class="section-header">
+                      <header>
+                        <h2>Trekkinformasjon</h2>
+                      </header>
+                      <div class="section-header__toolbar">
+                        <a href="#" class="link--edit">Rediger</a>
+                      </div>
+                    </div>
+                    <fieldset class="form__fieldset">
+                      <a class="link--no-line">
+                        Legg til trekk
+                      </a>
+                    </fieldset>
+                    <form class="form">
+                      <fieldset class="form__fieldset form__fieldset--group">
+                        <div class="form__field">
+                          <label class="form__label form__label--required">
+                            <span>Mottakernavn</span>
+                            <select tabindex="0" class="select select--fluid form__input--180">
+                              <option value="" class="x-option">
+                                Kemnerkontoren i Oslo
+                              </option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label form__label--required ">
+                            <span>Fra</span>
+                            <input type="date" class="form__input form__input--date form__input--130 form__input">
+                          </label>
+                          <div class="form__field__action">
+                            <a class="link--no-line">
+                              Registrere avsluttningsdato
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="form__field">
+                          <label class="form__label form__label--required">
+                            <span>Trekktype</span>
+                            <select tabindex="0" class="select select--fluid form__input--130 x-select">
+                              <option value="DEFAULT VALUE" class="x-option">
+                                Bidragstrekk (1)
+                              </option>
+                              <option value="REGIONAL" class="x-option">
+                                Regional
+                              </option>
+                              <option value="WORLDWIDE" class="x-option">
+                                Worldwide
+                              </option>
+                            </select>
+                          </label>
+                        </div>
+
+                        <hr class="horizontal-rule horizontal-rule--spacer horizontal-rule--dashed">
+                        <h3 class="heading--sub no-margin--top heading--inline">Utbetalingsinfo</h3>
+                        <span class="float--right">Utbetaling via <a href="#">agent</a></span>
+                        <div class="form__field">
+                          <label class="form__label form__label--required">
+                            <span>Skattekommune</span>
+                            <div class="searchable-list searchable-list--disabled form__input form__input--180">
+                              <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                              <span class="searchable-list__selected">Velg skattekommune</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" class="searchable-list__search form__input form__input--block">
+                              <ul>
+                                <li class="searchable-list__option">
+                                  Åfjord
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <label class="form__label form__label--required">
+                            <span>Kontotype</span>
+                            <select tabindex="0" class="select select--fluid align--vertical-center x-select" disabled>
+                              <option id="ember9156" value="blank" class="x-option">Ingen kontotype valgt</option>
+                              <option value="norwegian" class="x-option">Norsk</option>
+                              <option value="iban" class="x-option">IBAN</option>
+                              <option value="bic-swift" class="x-option">BIC/SWIFT</option>
+                              <option value="american" class="x-option">Amerikansk</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                        </div>
+                      </fieldset>
+                    </form>
                   </section>
                 </div><!-- end /.panels__main -->
               </div><!-- end /.panels.scrollable-area -->
