@@ -33,3 +33,8 @@
   text-decoration: none;
   cursor: default;
 }
+
+.link--add {
+  margin-bottom: 1.2rem;
+  display: block;
+}

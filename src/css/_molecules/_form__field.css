@@ -86,7 +86,8 @@
 }
 
 /* Make help text line up with inputs */
-.form__field__help {
+.form__field__help,
+.form__field__add {
   @media (--tablet) {
     margin-left: 136px
   }
@@ -115,6 +116,7 @@
   @media(--hd) {
     margin: 3px 1rem 0 135px;
   }
+  
   @media(--hd-plus) {
     margin: 0 1rem 0 0;
   }
