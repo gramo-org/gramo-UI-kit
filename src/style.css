@@ -5107,7 +5107,7 @@ input[type="text"].search__form__input--large{
   align-items:center;
 }
 
-.section-header__toggle, .section-header__datepicker{
+.section-header__toggle, .section-header__link, .section-header__datepicker{
   -webkit-flex:0 1 100%;
   -ms-flex:0 1 100%;
   flex:0 1 100%;
@@ -5119,7 +5119,7 @@ input[type="text"].search__form__input--large{
   -ms-flex-align:center;
   align-items:center;
 }
-.section-header__toggle + div{
+.section-header__toggle + div, .section-header__link + div{
   -webkit-flex:1 0 auto;
   -ms-flex:1 0 auto;
   flex:1 0 auto;

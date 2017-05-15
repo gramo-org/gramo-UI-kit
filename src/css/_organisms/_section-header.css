@@ -40,6 +40,7 @@
 }
 
 .section-header__toggle,
+.section-header__link,
 .section-header__datepicker {
   flex: 0 1 100%;
   margin-left: 2rem;
@@ -48,7 +49,8 @@
 }
 
 /* Stops Avbryt/Lagre buttons from collapsing on to 2 lines */
-.section-header__toggle + div {
+.section-header__toggle + div,
+.section-header__link + div {
   flex: 1 0 auto;
 }
 
