@@ -1618,7 +1618,6 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
   color:#3f3e44;
   background-image:none;
   min-width:0;
-  width:100%;
   padding-right:0;
 }
 
