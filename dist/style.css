@@ -1626,6 +1626,10 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
   opacity:0;
   -webkit-appearance:none;
 }
+
+.form__field-to-and-from .form__input[type="date"]{
+  max-width:130px;
+}
 input-placeholder{
   color:#999;
 }

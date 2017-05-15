@@ -85,6 +85,12 @@ input[type="radio"], input[type="checkbox"],
   }
 }
 
+/* Limit width of date input when there are two per row */
+
+.form__field-to-and-from .form__input[type="date"] {
+  max-width: 130px;
+}
+
 /* Placeholder Colour */
 input-placeholder {
   color: var(--base-placeholder-color);
