@@ -3031,18 +3031,18 @@ hr, .horizontal-rule{
 .form__field--with-table > .form__label .table{
   font-weight:400;
 }
-.form__field > .form__label--has-break{
+.form__field .form__input--has-break{
   margin:0;
 }
 @media(min-width: 768px){
 
-  .form__field > .form__label--has-break{
+  .form__field .form__input--has-break{
     margin:0 1rem 0 0;
   }
 }
 @media(min-width: 1200px){
 
-  .form__field > .form__label--has-break{
+  .form__field .form__input--has-break{
     margin:3px 1rem 0 135px;
   }
 }
