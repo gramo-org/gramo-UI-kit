@@ -93,6 +93,10 @@
   }
 }
 
+.form__field__add {
+  display: block;
+}
+
 /* Form field with table */
 .form__field--with-table {
   margin-top: 2rem;

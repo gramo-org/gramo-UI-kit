@@ -1449,7 +1449,6 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 
 .link--add{
   margin-bottom:1.2rem;
-  display:block;
 }
 .scrollbar::-webkit-scrollbar, .sidebar .sidebar__nav::-webkit-scrollbar{
   width:10px;
@@ -3002,6 +3001,10 @@ hr, .horizontal-rule{
   .form__field__help, .form__field__add{
     margin-left:136px;
   }
+}
+
+.form__field__add{
+  display:block;
 }
 .form__field--with-table{
   margin-top:2rem;
