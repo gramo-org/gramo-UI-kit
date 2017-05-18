@@ -1449,6 +1449,7 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 
 .link--add{
   margin-bottom:1.2rem;
+  display:block;
 }
 .scrollbar::-webkit-scrollbar, .sidebar .sidebar__nav::-webkit-scrollbar{
   width:10px;
@@ -1860,7 +1861,7 @@ input-placeholder{
 }
 .select{
   border:1px solid #d9d9dc;
-  width:99%;
+  width:100%;
   border-radius:3px;
   background:#fdfdfd url("img/chevron-down.svg") no-repeat;
   background-position:right 4px top 12px;
@@ -3011,6 +3012,10 @@ hr, .horizontal-rule{
 
 .form__field__add{
   display:block;
+}
+
+.form__field > .form__field__add{
+  margin-top:.6rem;
 }
 .form__field--with-table{
   margin-top:2rem;

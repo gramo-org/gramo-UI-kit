@@ -1,6 +1,6 @@
 .select {
   border: 1px solid var(--silver);
-  width: 99%;
+  width: 100%;
   border-radius: 3px;
   background: var(--gramo-white) url("img/chevron-down.svg") no-repeat;
   background-position: right 4px top 12px;
