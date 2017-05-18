@@ -119,13 +119,12 @@
 }
 
 /* displays second label directly under first when there isn't room to show them side by side */
-.form__field--double > label:nth-child(2) {
+.form__field--has-break > label:nth-child(2) {
   margin: 0;
+  @media(--tablet) {
+    margin: 0 1rem 0 0;
+  }
   @media(--hd) {
     margin: 3px 1rem 0 135px;
-  }
-  
-  @media(--hd-plus) {
-    margin: 0 1rem 0 0;
   }
 }
