@@ -1862,7 +1862,8 @@ input-placeholder{
   border:1px solid #d9d9dc;
   width:99%;
   border-radius:3px;
-  background:#fdfdfd url("img/chevron-down.svg") no-repeat 97% 55%;
+  background:#fdfdfd url("img/chevron-down.svg") no-repeat;
+  background-position:right 4px top 12px;
   background-size:12px;
   font-weight:400;
   color:#504f56;
@@ -3160,7 +3161,7 @@ hr, .horizontal-rule{
   position:absolute;
   height:20px;
   width:12px;
-  right:7px;
+  right:3px;
 }
 .searchable-list--open .searchable-list__heading:before{
   -webkit-transform:rotate(180deg);

@@ -2,7 +2,8 @@
   border: 1px solid var(--silver);
   width: 99%;
   border-radius: 3px;
-  background: var(--gramo-white) url("img/chevron-down.svg") no-repeat 97% 55%;
+  background: var(--gramo-white) url("img/chevron-down.svg") no-repeat;
+  background-position: right 4px top 12px;
   background-size: 12px;
   font-weight: 400;
   color: var(--slate-gray);
