@@ -59,6 +59,10 @@
   &--padded {
     padding-top: .65rem;
   }
+  
+  .form__label--disabled {
+    opacity: 0.5;
+  }
 }
 
 /* Inputs with new data (kladd) */

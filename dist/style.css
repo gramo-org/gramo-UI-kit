@@ -1528,6 +1528,9 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 .form__label--padded{
   padding-top:.65rem;
 }
+.form__label .form__label--disabled{
+  opacity:0.5;
+}
 .form__label--new{
   position:relative;
 }
@@ -3048,9 +3051,6 @@ hr, .horizontal-rule{
 }
 .form__field--inline--checkbox .form__label{
   margin-right:1.5rem;
-}
-.form__field--inline--checkbox .form__label--disabled{
-  opacity:0.5;
 }
 @media (min-width: 768px){
 

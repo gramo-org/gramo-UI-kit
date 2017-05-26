@@ -14,10 +14,6 @@
     .form__label {
       margin-right: 1.5rem;
     }
-    
-    .form__label--disabled {
-      opacity: 0.5;
-    }
   }
 }
 
