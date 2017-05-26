@@ -1528,7 +1528,7 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 .form__label--padded{
   padding-top:.65rem;
 }
-.form__label .form__label--disabled{
+.form__label--disabled{
   opacity:0.5;
 }
 .form__label--new{
