@@ -24,10 +24,8 @@
 }
 
 /* Add truncation to cells in rows with class '.table__row--truncated' */
-.table__row--truncated:not(.dd-open) {
-  & > td {
-    @extend .truncated;
-  }
+.table__row--truncated:not(.dd-open) > td:not([data-label="Feil"]) {
+  @extend .truncated;
 }
 
 .table__row--truncated {
