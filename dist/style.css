@@ -182,7 +182,7 @@ td, th{
 }
 :root{
 }
-.col, p, .toolbar, .search__form, .form, .section-header, .section-header--divided .section-header__above, .infobar, .table, .fake-table{
+p, .toolbar, .search__form, .form, .section-header, .section-header--divided .section-header__above, .infobar, .table, .fake-table{
   margin-bottom:1.2rem;
 }
 
@@ -470,7 +470,7 @@ td.text--center, .fake-table__row *.text--center{
 }
 
 .row--spaced{
-  margin-bottom:1rem;
+  margin-bottom:.4rem;
 }
 
 .col{
@@ -1687,8 +1687,17 @@ input-placeholder{
 
 @media (min-width: 768px){
 
+  .form__input--80{
+    width:80px!important;
+    padding-right:1rem;
+  }
+}
+
+@media (min-width: 768px){
+
   .form__input--60{
     width:60px!important;
+    padding-right:1rem;
   }
 }
 
@@ -1696,6 +1705,7 @@ input-placeholder{
 
   .form__input--40{
     width:40px!important;
+    padding-right:1rem;
   }
 }
 .form__input--textarea, .comments__inner textarea{

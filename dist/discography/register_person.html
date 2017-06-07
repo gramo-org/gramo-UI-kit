@@ -101,7 +101,7 @@
                 </div>
                   <ul class="row tabs__nav tabs__section__nav tabs__section__nav--absolute">
                     <li class="tabs__section__nav__item"><a href="#performer-info" class="active"><span data-type="performer"></span><span>Utøver</span></a></li>
-                    <li class="tabs__section__nav__item"><a href="#"><span data-type="producer"></span><span>Opprett ny personlig produsent</span></a></li>
+                    <li class="tabs__section__nav__item"><a href="#produsent-info"><span data-type="producer"></span><span>Opprett ny personlig produsent</span></a></li>
                     <li class="tabs__section__nav__item"><a href="#"><span data-type="member"></span><span>Arv</span></a></li>
                     <li class="tabs__section__nav__item"><a href="#trekk-info"><span data-type="member"></span><span>Trekk</span></a></li>
                     <li class="tabs__section__nav__item"><a href="#positions"><span data-type="positions"></span><span>Stillinger</span></a></li>
@@ -983,6 +983,185 @@
 
                       </section>
                     </div>
+                  </section>
+                  <section id="producer-info" class="container container--padded">
+                    <div class="section-header">
+                      <header>
+                        <h2>Personlig produsent</h2>
+                      </header>
+                      <div class="section-header__toolbar">
+                        <a href="#" class="link--edit">Rediger</a>
+                      </div>
+                    </div>
+                    <div class="producer-registrant-codes">
+                      <div class="form">
+                        <div class="form__field">
+                          <label class="form__label">
+                            <span>
+                              Registrantkode
+                            </span>
+                            <input type="text" maxlength="5" class="form__input form__input--100">
+                          </label>
+                          <div class="form__input__errors"></div>
+                        
+                        <label class="form__label">
+                          <input type="text" placeholder="Beskrivelse" class="form__input form__input--220">
+                        </label>
+                        <div class="form__field__action">
+                          <a class="text--small text--light">
+                            <i class="icon--x"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="form__field__help form__section--action">
+                        <button type="secondary" class="btn default btn--secondary">Generer ny kode</button>
+                      </div>
+                      <a class="link--no-line">
+                        Legg til registrantkode
+                      </a>
+                    </div>
+                    <hr class="horizontal-rule horizontal-rule--dashed">
+                    <div class="section-header">
+                      <header>
+                        <h3 data-type="recording">Hurtigregistrere innspillinger</h3>
+                      </header>
+                    </div>
+                    <form class="form">
+                      <fieldset class="form__fieldset form__fieldset--group">
+                        <div class="row">
+                          <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                            Tittel
+                          </div>
+                          <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                            Hovedartist
+                          </div>
+                          <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                            ISRC kode
+                          </div>
+                        </div>
+                        <div class="row row--spaced">
+                          <div class="col-xs-12 col-sm-4 align--vertical-center">
+                            <!-- <a href="#">En Låt av en Barnehage</a> -->
+                            <label class="form__label form__label--hidden"><span>Tittel</span>
+                             <input type="text" value="En Ordentlig Låt" class="form__input form__input--block">
+                           </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                            <label class="form__label form__label--hidden"><span>Hovedartist</span>
+                              <input type="text" value="En Ordentlig Artist" class="form__input form__input--block">
+                            </label>
+                          </div>
+                          <div class="col no-padding--right">
+                            <label class="form__label form__label--hidden no-margin--right"><span>ISRC kode</span>
+                              <input type="text" value="NOEFG15" class="form__input form__input--block form__input--80 no-margin--right" disabled>
+                            </label>
+                          </div>
+                          <div class="col no-padding--left no-padding--right">
+                            <label class="form__label form__label--hidden"><span>ISRC kode</span>
+                              <input type="text" value="01223" class="form__input form__input--block form__input--60">
+                            </label>
+                          </div>
+                          <div class="form__field__action align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div>
+                        <a class="link--no-line link--add">
+                          Legg til innspillinger
+                        </a>
+                        <select class="select select--fluid form__input--180">
+                          <option>Velg registrantkode</option>
+                          <option selected="">EFG</option>
+                        </select>
+                        <div class="form__section--action">
+                          <button type="secondary" class="btn default btn--secondary">Generer ISRC kode</button>
+                        </div>
+                      </fieldset>
+                    </form>
+                    <form class="form">
+                      <fieldset class="form__fieldset form__fieldset--group">
+                        <div class="row">
+                          <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                            Tittel
+                          </div>
+                          <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                            Hovedartist
+                          </div>
+                          <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                            ISRC kode
+                          </div>
+                        </div>
+                        <div class="row row--spaced">
+                          <div class="col-xs-12 col-sm-4 align--vertical-center">
+                            <!-- <a href="#">En Låt av en Barnehage</a> -->
+                            <label class="form__label form__label--hidden"><span>Tittel</span>
+                              <input type="text" value="En Barnehage Låt" class="form__input form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                            <label class="form__label form__label--hidden"><span>Hovedartist</span>
+                              <input type="text" value="En Barnehage Artist" class="form__input form__input--block">
+                            </label>
+                          </div>
+                          <div class="col">
+                            <label class="form__label form__label--hidden"><span>ISRC kode</span>
+                              <input type="text" value="NOREG1501223" class="form__input form__input--block form__input--130" disabled>
+                            </label>
+                          </div>
+                          <div class="form__field__action align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div>
+                        </div>
+                        <a class="link--no-line link--add">
+                          Legg til innspillinger
+                        </a>
+                        <select class="select select--fluid form__input--180">
+                          <option>Velg registrantkode</option>
+                          <option selected>REG - Gramo reservert</option>
+                        </select>
+                        <div class="form__section--action">
+                          <button type="secondary" class="btn default btn--secondary">Generer ISRC kode</button>
+                        </div>
+                      </fieldset>
+                    </form>
+                    <form class="form">
+                      <fieldset class="form__fieldset form__fieldset--group">
+                        <div class="row">
+                          <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                            Tittel
+                          </div>
+                          <div class="col-sm-4 hidden-on-mobile text--medium text--bold">
+                            Hovedartist
+                          </div>
+                          <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                            ISRC kode
+                          </div>
+                        </div>
+                        <div class="row row--spaced">
+                          <div class="col-xs-12 col-sm-4 align--vertical-center">
+                            <a href="#">En Låt av en Barnehage</a>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                            <label class="form__label form__label--hidden"><span>Hovedartist</span>
+                              <input type="text" value="En Barnehage Artist" class="form__input form__input--block" disabled>
+                            </label>
+                          </div>
+                          <div class="col">
+                            <label class="form__label form__label--hidden"><span>ISRC kode</span>
+                              <input type="text" value="NOREG1501223" class="form__input form__input--block form__input--130" disabled>
+                            </label>
+                          </div>
+                          <!-- <div class="form__field__action align--vertical-center">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div> -->
+                        </div>
+                        <div class="form__section--action">
+                          <button type="secondary" class="btn default btn--primary">Send på epost</button>
+                        </div>
+                      </fieldset>
+                    </form>
+                    <a class="link--no-line link--add">
+                      Legg til innspillinger
+                    </a>
                   </section>
                   <section id="trekk-info" class="container container--padded">
                     <div class="section-header">

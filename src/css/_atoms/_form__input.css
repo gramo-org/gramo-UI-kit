@@ -126,12 +126,16 @@ input-placeholder {
   @media (--tablet) { width: 100px!important; }
 }
 
+.form__input--80 {
+  @media (--tablet) { width: 80px!important; padding-right: 1rem;  }
+}
+
 .form__input--60 {
-  @media (--tablet) { width: 60px!important; }
+  @media (--tablet) { width: 60px!important; padding-right: 1rem; }
 }
 
 .form__input--40 {
-  @media (--tablet) { width: 40px!important; }
+  @media (--tablet) { width: 40px!important; padding-right: 1rem;  }
 }
 
 /* Textarea */
