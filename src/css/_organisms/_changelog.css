@@ -1,0 +1,45 @@
+.changelog {
+  @extend .comments;
+  right: 150px;
+
+  &__inner {
+    @extend .comments__inner;
+
+    &:before {
+      @extend .comments__inner:before;
+    }
+  }
+
+  &.show-inner > .changelog__inner {
+    display: block;
+  }
+
+  .changelog__header,
+  .changelog__subheader {
+    @extend .comments .comment__header;
+  }
+
+  .changelog__author {
+    
+  }
+
+  .changelog__date {
+    @extend .comments .comment__date;
+  }
+
+  .changelog__content {
+    @extend .comments .comments__content;
+
+    li {
+      @extend .comments .comments__content li;
+    }
+  }
+
+  .toggle-changelog {
+    @extend .comments .toggle-comments;
+
+    &:before {
+      @extend .comments .toggle-comments:before;
+    }
+  }
+}

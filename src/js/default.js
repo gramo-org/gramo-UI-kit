@@ -213,7 +213,17 @@ $(document).ready(function() {
        e.preventDefault();
        $(this).closest('.file-upload__inner').removeClass('is-visible');
      });
-
+     
+     $('.toggle-comments').click(function(e){
+       e.preventDefault();
+       $(this).closest('.comments').toggleClass('show-inner');
+     });
+     
+     $('.toggle-changelog').click(function(e){
+       e.preventDefault();
+       $(this).closest('.changelog').toggleClass('show-inner');
+     });
+     
 
     // //Scroll spy
     // function scrollSpy(menu) {

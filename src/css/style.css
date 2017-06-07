@@ -82,6 +82,7 @@
 @import url('_organisms/_tabs--transparent.css');
 @import url('_organisms/_empty-state.css');
 @import url('_organisms/_comments.css');
+@import url('_organisms/_changelog.css');
 @import url('_organisms/_file-upload.css');
 @import url('_organisms/_wizard-steps.css');
 
