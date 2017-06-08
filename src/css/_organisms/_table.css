@@ -7,7 +7,6 @@
 
   &--fluid {
     @media (--desktop) { min-width: 100%; }
-    @media (--hd) { min-width: 100%; }
   }
   
   &--full-width {

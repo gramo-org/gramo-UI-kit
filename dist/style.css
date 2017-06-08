@@ -542,7 +542,7 @@ body{
 }
 
 p{
-  margin:0;
+  margin-top:0;
 }
 
 a{
@@ -5571,12 +5571,6 @@ tr > td:last-child{
   }
 }
 @media (min-width: 960px){
-
-  .table--fluid{
-    min-width:100%;
-  }
-}
-@media (min-width: 1200px){
 
   .table--fluid{
     min-width:100%;
