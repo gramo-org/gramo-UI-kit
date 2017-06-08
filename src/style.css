@@ -182,7 +182,7 @@ td, th{
 }
 :root{
 }
-p, .toolbar, .search__form, .form, .section-header, .section-header--divided .section-header__above, .infobar, .table, .fake-table{
+p.with-margin, .toolbar, .search__form, .form, .section-header, .section-header--divided .section-header__above, .infobar, .table, .fake-table{
   margin-bottom:1.2rem;
 }
 
@@ -542,7 +542,7 @@ body{
 }
 
 p{
-  margin-top:0;
+  margin:0;
 }
 
 a{
