@@ -1,7 +1,7 @@
 .box {
   background: var(--gramo-white);
   box-shadow: 0 1px 3px color(var(--slate-gray) a(30%));
-  @extend .col-xs-10;
+  @extend .col-xs-11;
   @extend .col-sm-5;
   @extend .col-md-4;
   @extend .col-lg-2;
@@ -14,6 +14,10 @@
     max-width: none;
     display: block;
     flex: 1 1 auto;
+  }
+  
+  &--fluid {
+    min-width: 0;
   }
 
   &--gray {
