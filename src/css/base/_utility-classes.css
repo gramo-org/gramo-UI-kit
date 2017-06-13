@@ -241,7 +241,8 @@ td.text--center,
   margin-bottom: .6rem;
 }
 
-.heading--in-form {
+.heading--in-form,
+.heading--space-below {
   margin-bottom: 1.2rem;
 }
 

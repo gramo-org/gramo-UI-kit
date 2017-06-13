@@ -12,3 +12,9 @@
 .pull .site-header {
   left: 0;
 }
+
+.site-header--static {
+  position: static;
+  height: auto;
+  padding: 1rem;
+}

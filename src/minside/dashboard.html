@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css/minside/minside.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><img src="../img/gramo-logo.png" width="120" alt=""></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Min Side</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Dashboard</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Min Profil</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Min discografi</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Mine inntekter</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Legg til profil</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="../img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name"><a href="#">Audun Haggernes</a>
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <main>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--error">
+          <p>Tar kontakt med Gramo med en gang <button class="btn btn--small btn--inline btn--borderless">Tar kontakt</button></p>
+        </div>
+      </div> -->
+      <section class="container">
+        <header class="infobar">
+          <div class="infobar__left">
+            <h1 data-type="performer">Morten Harket</h1>
+            <h3 data-type="member">Medlemsnummer: 92787349875</h3>
+            <h3 data-type="member">Siden: 01.02.1999</h3>  
+          </div>
+          <div class="infobar__right align--vertical-center" style="text-align:right">
+            <div class="searchable-list">
+              <div class="searchable-list__heading">
+                <span class="searchable-list__selected"><i class="icon icon--performer"></i> Morten Harket</span>
+              </div>
+              <div class="searchable-list__dropdown">
+                <ul>
+                  <li class="searchable-list__option">Utøver profil</li>
+                  <li class="searchable-list__option">Opprett ny profil</li>
+                  <li class="searchable-list__option"><a href="#">Logg ut</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section id="performerinfo" class="container">
+          <div class="section-header section-header--left">
+            <header>
+              <h2>Min utøver profil</h2>
+            </header>
+            <div class="section-header__toolbar">
+              <a href="#" class="link--edit">Bytte</a>
+            </div>
+          </div>
+          <!--- Flash message --->
+          <div class="flash-message-wrapper flash-message-wrapper--static">
+            <div class="flash-message flash-message--success">
+              <a href="#">Betalingsinformasjon må oppdateres</a>
+              <a href="#"><span class="icon icon--x text--small"></span></a>
+            </div>
+          </div>
+          <div class="toolbar">
+            <div class="col-sm-2">
+              <h2>16 756,50</h2>
+              <h4>Saldo</h4>
+            </div>
+            <div class="col-sm-2">
+              <h2>25.12.2017</h2>
+              <h4>Utbetales</h4>
+            </div>
+            <div class="toolbar__action">
+              <a href="#">Se detaljer</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="box box--fluid">
+                <h2 class="heading--space-below">Musikk profil</h2>
+                <div class="row row--spaced">
+                  <div class="col-sm-3 text--bold">
+                    Gruppe (3)
+                  </div>
+                  <div class="col-sm-3">
+                    <a href="#">A-ha</a>
+                  </div>
+                  <div class="col-sm-3">
+                    <a href="#">Be-be</a>
+                  </div>
+                  <div class="col-sm-3">
+                    <a href="#">Ce-ce</a>
+                  </div>
+                </div><!-- end .row -->
+                <div class="row row--spaced">
+                  <div class="col-sm-3 text--bold">
+                    Artistnavn
+                  </div>
+                  <div class="col-sm-3">
+                    Morten Harket
+                  </div>
+                  <div class="col-sm-3">
+                    Momo
+                  </div>
+                </div><!-- end .row -->
+                <div class="row row--spaced">
+                  <div class="col-sm-3 text--bold">
+                    Instrumenter
+                  </div>
+                  <div class="col-sm-3">
+                    Gitar
+                  </div>
+                  <div class="col-sm-3">
+                    Vokal
+                  </div>
+                  <div class="col-sm-3">
+                    Trømmer
+                  </div>
+                </div><!-- end .row -->
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="box box--fluid">
+                <h2 class="heading--space-below">Siden sist</h2>
+                <div class="row row--spaced">
+                  <div class="col-sm-3 text--thin">
+                    2017.11.09
+                  </div>
+                  <div class="col-sm-9 col--no-flex">
+                    Ny <a href="#">innspilling</a>
+                  </div>
+                </div><!-- end .row -->
+                <div class="row row--spaced">
+                  <div class="col-sm-3 text--thin">
+                    2017.11.09
+                  </div>
+                  <div class="col-sm-9 col--no-flex">
+                    Endre <a href="#">artistnavn</a> til <a href="#">Ny artistnavn</a>
+                  </div>
+                </div><!-- end .row -->
+                <div class="row row--spaced">
+                  <div class="col-sm-3 text--thin">
+                    2017.11.09
+                  </div>
+                  <div class="col-sm-9 col--no-flex">
+                    <a href="#">Saldo</a> oppdatert
+                  </div>
+                </div><!-- end .row -->
+                <div class="row row--spaced">
+                  <div class="col-sm-3 text--thin">
+                    2017.11.09
+                  </div>
+                  <div class="col-sm-9 col--no-flex">
+                    Endre <a href="#">gruppenavn</a> til <a href="#">Ny gruppenavn</a>
+                  </div>
+                </div><!-- end .row -->
+              </div>
+            </div>
+          </div><!-- end .row -->
+        </section>
+        
+        <section id="discography-info" class="container">
+          <div class="section-header">
+            <header>
+              <h2>Min diskografi</h2>
+            </header>
+            <div class="section-header__toolbar">
+              <a href="#" class="btn btn--secondary">Registrere ny låt</a>
+            </div>
+          </div>
+          <div class="tabs">
+            <ul class='tabs__nav tabs__nav--flexible'>
+              <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger</a></li>
+              <li class='tabs__nav__item'><a href="#album">Album</a></li>
+              <li class='tabs__nav__item'><a href="#grupper">Grupper</a></li>
+            </ul>
+            <section id="innspillinger" class="tabs__section">
+              <table class="table table--fluid table--numeric">
+                <thead>
+                  <tr>
+                    <th>Innspillingstittel</th>
+                    <th>Varighet</th>
+                    <th>Utgivelsesdato</th>
+                    <th>Katalognummer</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Innspillingstittel">
+                      Changes
+                    </td>
+                    <td data-label="Varighet">
+                      03:43
+                    </td>
+                    <td data-label="Utgivelsesdato">
+                      1971
+                    </td>
+                    <td data-label="Katalognummer">
+                      USJT19900027
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section id="album" class="tabs__section">
+              <table class="table table--fluid table--numeric">
+                <thead>
+                  <tr>
+                    <th>Tittel</th>
+                    <th>Hovedartist</th>
+                    <th>Label</th>
+                    <th>Antall spor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Tittel">
+                      Changes
+                    </td>
+                    <td data-label="Hovedartist">
+                      David Bowie
+                    </td>
+                    <td data-label="Label">
+                      Sony
+                    </td>
+                    <td data-label="Antall spor">
+                      11
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section id="grupper" class="tabs__section">
+              <table class="table table--fluid">
+                <thead>
+                  <tr>
+                    <th>Navn</th>
+                    <th>Instrument</th>
+                    <th>Fra</th>
+                    <th>Til</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Navn"><a href="#">Tin Machine</a></td>
+                    <td data-label="Instrument">Vokal</td>
+                    <td data-label="Fra">01.01.1988</td>
+                    <td data-label="Til">01.12.1991</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+</div>
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
+</body>
+</html>

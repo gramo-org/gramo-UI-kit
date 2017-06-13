@@ -15,10 +15,6 @@
     display: block;
     flex: 1 1 auto;
   }
-  
-  &--fluid {
-    min-width: 0;
-  }
 
   &--gray {
     background: var(--light-gray);
@@ -29,5 +25,12 @@
     margin: 1.2rem 0;
     max-width: 500px;
     display: inline-block;
+  }
+  
+  &--fluid {
+    min-width: 0;
+    max-width: none;
+    display: block;
+    margin: 0 0 1.2rem 0;
   }
 }

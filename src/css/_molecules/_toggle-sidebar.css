@@ -1,7 +1,8 @@
 .toggle-sidebar {
 
   a {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     height: 3rem;
     width: 8rem;
     position: relative;
@@ -9,7 +10,7 @@
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--slate-gray);
-    top: -.1rem;
+    top: .1rem;
     left: 1rem;
 
     &::before {
@@ -24,7 +25,6 @@
       content: 'menu';
       position: relative;
       left: .5rem;
-      top: -0.5rem;
     }
   }
 
@@ -33,7 +33,6 @@
     a {
       color: #fff;
       margin-left: -7rem;
-      top: .5rem;
     }
 
     a::before {
@@ -44,7 +43,6 @@
 
     a::after {
       content: 'lukk';
-      top: -0.2rem;
     }
   }
 }
