@@ -1495,13 +1495,12 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 @media (min-width: 768px){
 
   .form__label--hidden{
-    margin-top:-1.6rem!important;
-  }
+}
 }
 @media (min-width: 768px){
 
   .form__label--hidden > span{
-    visibility:hidden;
+    display:none;
     white-space:nowrap;
   }
 }
