@@ -1,10 +1,14 @@
 .site-wrapper {
   display: flex;
   height: 100vh;
+  overflow-x: hidden;
+  @media(--tablet) { /* for push effect on mobile */
+    overflow-x: auto;
+  }
 }
 
 main {
-  flex: 1 1 100%;
+  flex: 1 0 100%;/* for push effect on mobile (previously flex: 1 1 100%;) */
   position: relative;
 
   @media(--tablet) {

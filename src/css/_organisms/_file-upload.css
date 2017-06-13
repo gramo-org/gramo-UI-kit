@@ -1,8 +1,10 @@
 .file-upload {
   position: relative;
   text-align: right;
+  margin-top: 2rem;
   @media (--desktop) {
     display: inline-block;
+    margin-top: 0;
   }
 }
 
