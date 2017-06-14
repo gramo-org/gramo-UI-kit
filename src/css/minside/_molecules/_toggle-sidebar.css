@@ -1,0 +1,12 @@
+/* Min Side */
+.toggle-sidebar a::before {
+  content: "\e921";
+  font-family: 'icomoon';
+  font-size: 1.8rem;
+}
+
+.toggle-sidebar.open a::before {
+  content: "\e901";
+  font-family: 'icomoon';
+  font-size: 1.2rem;
+}

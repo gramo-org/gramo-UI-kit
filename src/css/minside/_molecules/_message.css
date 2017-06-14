@@ -1,0 +1,16 @@
+/* Min Side */
+.message {
+  color: var(--gramo-white);
+  background: var(--gramo-turkis);
+  font-style: normal;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  
+  &--success {
+    background: var(--gramo-green);
+  }
+  &--error {
+    background: var(--gramo-red);
+  }
+}

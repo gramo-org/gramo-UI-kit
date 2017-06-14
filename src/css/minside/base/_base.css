@@ -1,0 +1,18 @@
+/* Min Side */
+
+%font-size {
+  font-size: var(--minside-font-size);
+}
+
+/* Basic layout */
+body {
+  background: var(--gramo-white);
+  @extend %font-size;
+}
+main > section:first-of-type {
+  padding-top: 0;
+}
+.container {
+  padding: 0;
+  @media (--tablet) { padding: 0 1rem; }
+}

@@ -31,6 +31,9 @@
 --base-link-color:                               var(--gramo-blue);
 --heading-color:                                 var(--slate-gray);
 
+/* Min side variables */
+--minside-font-size:                             1.6rem;
+
 /* Font Weights */
 --thin:                                          300;
 --normal:                                        400;

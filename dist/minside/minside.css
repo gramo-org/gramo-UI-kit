@@ -1,0 +1,78 @@
+:root{
+}
+
+body, .form__label, .form__input{
+  font-size:1.6rem;
+}
+body{
+  background:#fdfdfd;
+}
+main > section:first-of-type{
+  padding-top:0;
+}
+.container{
+  padding:0;
+}
+@media (min-width: 768px){
+
+  .container{
+    padding:0 1rem;
+  }
+}
+.heading--space-below{
+  border-bottom:1px solid #d9d9dc;
+  padding-bottom:.6rem;
+}
+
+.row--spaced{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  padding-bottom:.6rem;
+  margin-bottom:.6rem;
+  border-bottom:1px dashed #d9d9dc;
+}
+.box--no-padding{
+  padding:0;
+}
+.toggle-sidebar a::before{
+  content:"\e921";
+  font-family:'icomoon';
+  font-size:1.8rem;
+}
+
+.toggle-sidebar.open a::before{
+  content:"\e901";
+  font-family:'icomoon';
+  font-size:1.2rem;
+}
+.message{
+  color:#fdfdfd;
+  background:#88c7d8;
+  font-style:normal;
+  margin:0;
+  padding:1rem;
+  text-align:center;
+}
+.message--success{
+  background:#50bf9e;
+}
+.message--error{
+  background:#ed6b6a;
+}
+.site-header{
+  position:static;
+  height:auto;
+  background:none;
+  border:0;
+  padding:1rem;
+}
+@media (min-width: 768px){
+
+  .site-header__branding{
+    text-align:center;
+  }
+}
+.form--padded{
+  padding:2rem;
+}

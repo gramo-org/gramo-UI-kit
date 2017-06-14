@@ -1,0 +1,10 @@
+/* Min Side */
+.form {
+  &--padded {
+    padding: 2rem;
+  }
+  &__label,
+  &__input {
+    @extend %font-size;
+  }
+}

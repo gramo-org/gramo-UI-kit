@@ -21,7 +21,7 @@ gulp.task('postcss', function() {
     nested = require('postcss-nested'),
     simpleExtend = require('postcss-extend');
 
-  return gulp.src('./src/css/style.css')
+  return gulp.src(['./src/css/style.css','./src/css/minside/minside.css'], {base: './src/css/'})
     .pipe(postcss([
       pImport(),
       nested(),

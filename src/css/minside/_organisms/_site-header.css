@@ -1,0 +1,12 @@
+/* Min Side */
+.site-header {
+  position: static;
+  height: auto;
+  background: none;
+  border: 0;
+  padding: 1rem;
+  
+  &__branding {
+    @media (--tablet) { text-align: center; }
+  }
+}
