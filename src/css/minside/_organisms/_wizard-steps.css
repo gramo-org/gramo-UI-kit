@@ -1,0 +1,22 @@
+/* Min Side */
+.wizard-steps--minimal {
+  display: flex;
+  justify-content: center;
+  
+  li {
+    & > span {
+      display: none;
+    }
+    &::after, &:last-child::after {
+      content: '\2022';
+      /*font-family: 'icomoon';*/
+      font-size: 3rem;
+      line-height: 0;
+      color: var(--light-gray);
+      margin-left: .3rem;
+    }
+  }
+  li.selected::after {
+    color: var(--off-gray);
+  }
+}

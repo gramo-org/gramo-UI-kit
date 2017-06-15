@@ -1,10 +1,19 @@
 /* Min Side */
 .form {
   &--padded {
-    padding: 2rem;
+    padding: 2rem 3rem 0 3rem;
   }
   &__label,
   &__input {
     @extend %font-size;
+  }
+  
+  &__label {
+    font-family: var(--minside-font-family);
+  }
+  
+  &__input {
+    padding: 1.2rem 0.55rem;
+    font-family: var(--base-font-family);
   }
 }

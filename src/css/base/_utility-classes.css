@@ -71,6 +71,10 @@ td.text--center,
   text-transform: lowercase;
 }
 
+.text--upper {
+  text-transform: uppercase;
+}
+
 /* Hide on mobile */
 
 .hidden-on-mobile {

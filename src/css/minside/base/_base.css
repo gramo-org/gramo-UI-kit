@@ -6,13 +6,14 @@
 
 /* Basic layout */
 body {
-  background: var(--gramo-white);
+  background: var(--x-light-gray);
   @extend %font-size;
 }
 main > section:first-of-type {
   padding-top: 0;
 }
-.container {
-  padding: 0;
-  @media (--tablet) { padding: 0 1rem; }
+
+/* Type and fonts */
+h1, h2 {
+  font-family: var(--minside-font-family);
 }

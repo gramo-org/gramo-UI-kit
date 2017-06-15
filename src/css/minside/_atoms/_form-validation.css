@@ -1,0 +1,22 @@
+.form__label--validation.is-valid::after,
+.form__label--validation.has-error::after {
+  color: var(--gramo-green);
+  font-family: 'icomoon';
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  background: var(--gramo-white);
+  content: none;
+  @media (--desktop) { content: "\e900"; }
+}
+
+.form__label--validation.has-error::after {
+  color: var(--gramo-red);
+  content: none;
+  @media (--desktop) { content: "\e901"; }
+}
+
+.form__label--validation.is-valid .form__input,
+.form__label--validation.has-error .form__input {
+  border: 1px solid var(--silver);
+}

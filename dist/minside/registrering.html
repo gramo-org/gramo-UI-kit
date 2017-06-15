@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="minside.css">
+  <script src="https://use.typekit.net/xja4iud.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
   <div class="site-wrapper">
@@ -31,15 +33,14 @@
         </header>
         <div class="row">
           <div class="box box--no-padding">
-            <div class="message message--default">
+            <div class="message message--primary">
               <p>Først skal vi prøve å finne deg igjen</p>
             </div>
             <header class="text--center">
             </header>
-            <div class="box box--fluid box--gray text--center">
-              <h1><span class="icon icon--performer"></span></h1>
-              <h3>Venligst skriv ditt fødselsnummer organisasjonsnummer eller 
-                VAT nummer nedenfor, så sjekker vi om du er Gramo medlem.</h3>
+            <div class="message message--secondary message--with-arrow">
+              <p>Venligst skriv ditt fødselsnummer organisasjonsnummer eller 
+                VAT nummer nedenfor, så sjekker vi om du er Gramo medlem.</p>
             </div>
             <form class="form form--padded">
               <fieldset class="form__fieldset">
@@ -49,12 +50,12 @@
               </fieldset>
               <div class="form__section--action">
                 <div class="row">
-                  <div class="col-xs-4 no-padding--right">
+                  <div class="col-xs-4">
                     <button class="btn btn btn--secondary btn--large">
                       Avbryt
                     </button>
                   </div>
-                  <div class="col-xs-8 no-padding--left">
+                  <div class="col-xs-8">
                     <button class="btn btn btn--primary btn--large">
                       Finn profil
                     </button>
@@ -62,78 +63,65 @@
                 </div>
               </div>
             </form>
-            <ol class="wizard-steps">
-              <li class="selected">1. Medlemskap</li>
-              <li>2. Personalia</li>
-              <li>3. Logg inn</li>
+            <ol class="wizard-steps wizard-steps--minimal">
+              <li class="selected"><span>1. Medlemskap</span></li>
+              <li><span>2. Personalia</span></li>
+              <li><span>3. Logg inn</span></li>
             </ol>
           </div>
         </div><!-- end .row -->
           
         <hr class="horizontal-rule horizontal-rule--spacer">
-        <h4 class="text--center"><span class="icon icon--arrow-down text--center text--light"></span></h4>
-        <hr class="horizontal-rule horizontal-rule--spacer">
+
         <div class="row">
-          <div class="box">
-            <header class="text--center">
-              <ol class="wizard-steps">
-                <li>1. Medlemskap</li>
-                <li class="selected">2. Personalia</li>
-                <li>3. Logg inn</li>
-              </ol>
-            </header>
-            <div class="box box--fluid box--gray text--center">
-              <h1><span class="icon icon--performer"></span></h1>
-              <h3>Vi har funnet følgende profil.</h3>
+          <div class="box box--no-padding">
+            <div class="message message--success">
+              <p>Vi har funnet følgende profil.</p>
+              <p>Vennligst bekreft opplysningene nedenfor.</p>
             </div>
-            <h2 class="text--center">Morten Harket</h2>
-            <h3 class="text--center">Utøver</h3>
-
-            <p class="with-margin text--center">Vennligst oppgi epost adresessen knyttet til din profil. 
-              Vi skal sende en bekreftelse til denne eposten.</p>
-
-            <form class="form">
+            
+            <div class="message message--secondary message--with-arrow">
+              <h2 class="text--upper">Utøver</h2>
+              <h3>Morten Harket</h3>
+              <p>Vennligst oppgi epost adresessen knyttet til din profil. 
+                Vi skal sende en bekreftelse til denne eposten.</p>
+              </div>
+            <form class="form form--padded">
               <fieldset class="form__fieldset">
-                <label class="form__label form__label--block">E-post
-                  <input type="email" autofocus="" class="form__input form__input--block">
+                <label class="form__label form__label--block form__label--validation is-valid">E-post
+                  <input type="email" autofocus="" value="morten.harket@aha.com" class="form__input form__input--block">
                 </label>
-                <p>Glemt e-post? <a href="#">Tar kontakt med Gramo</a></p>
               </fieldset>
               <div class="form__section--action">
                 <div class="row">
-                  <div class="col-xs-12 col-sm-6 no-padding--right">
+                  <div class="col-xs-4">
                     <button class="btn btn btn--secondary btn--large">
                       Avbryt
                     </button>
                   </div>
-                  <div class="col-xs-12 col-sm-6 no-padding--left">
+                  <div class="col-xs-8">
                     <button class="btn btn btn--primary btn--large">
                       Bekreft profil
                     </button>
                   </div>
                 </div>
               </div>
+              <p><a href="#" class="link--no-line">Glemt e-post? </a></p>
             </form>
+            <ol class="wizard-steps wizard-steps--minimal">
+              <li><span>1. Medlemskap</span></li>
+              <li class="selected"><span>2. Personalia</span></li>
+              <li><span>3. Logg inn</span></li>
+            </ol>
           </div>
         </div><!-- end .row -->
         
         <hr class="horizontal-rule horizontal-rule--spacer">
-        <h4 class="text--center"><span class="icon icon--arrow-down text--center text--light"></span></h4>
-        <hr class="horizontal-rule horizontal-rule--spacer">
         
         <div class="row">
-          <div class="box">
-            <header class="text--center">
-              <ol class="wizard-steps">
-                <li>1. Medlemskap</li>
-                <li class="selected">2. Personalia</li>
-                <li>3. Logg inn</li>
-              </ol>
-            </header>
-            <div class="box box--fluid box--gray text--center">
-              <h1><span class="icon icon--contact"></span></h1>
-              <h3>Vi har sendt deg en link til:</h3>
-              <h4>morten@harket.no</h4>
+          <div class="box box--no-padding">
+            <div class="message message--primary">
+              <p>Vi har sendt deg en link til: morten@harket.no</p>
             </div>
             <p class="text--center">Vennligst sjekk e-posten din</p>
           </div>

@@ -256,6 +256,10 @@ td.text--center, .fake-table__row *.text--center{
   text-transform:lowercase;
 }
 
+.text--upper{
+  text-transform:uppercase;
+}
+
 .hidden-on-mobile{
   display:none!important;
 }

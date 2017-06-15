@@ -33,6 +33,7 @@
 
 /* Min side variables */
 --minside-font-size:                             1.6rem;
+--minside-font-family:                           "brandon-grotesque";
 
 /* Font Weights */
 --thin:                                          300;
