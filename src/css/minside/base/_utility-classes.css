@@ -10,3 +10,7 @@
   margin-bottom: .6rem;
   border-bottom: 1px dashed var(--silver);
 }
+
+.text--center {
+  text-align: center!important;
+}

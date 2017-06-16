@@ -1,0 +1,20 @@
+/* Minside */
+@media
+only screen and (max-width: 768px),
+(min-device-width: 968px) and (max-device-width: 1024px)  {
+  td {
+    display: flex;
+  }
+
+  td:not(:first-child)::before {
+    color: var(--slate-gray);
+    flex: 0 0 40%;
+    text-transform: none;
+    font-size: 90%;
+    background: var(--light-gray);
+    font-weight: var(--semibold);
+    padding: 1rem;
+    text-align: right;
+    margin: -1rem 1rem -1rem -2rem;
+  }
+}

@@ -6,9 +6,9 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-    min-height: 450px;
+  min-height: 450px;
   height: calc(100vh - 102px);
-  /*@media (--tablet) { height: auto; }*/
+  @media (--tablet) { height: calc(70vh - 102px); }
   
   .form {
     flex: 1;

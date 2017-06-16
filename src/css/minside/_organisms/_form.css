@@ -1,7 +1,10 @@
 /* Min Side */
 .form {
-  &--padded {
+  &--in-box {
     padding: 2rem 3rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   &__label,
   &__input {

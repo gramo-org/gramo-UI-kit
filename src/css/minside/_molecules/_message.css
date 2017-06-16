@@ -55,3 +55,10 @@
     }
   }
 }
+
+/* Temporary styles */
+.fa-paper-plane {
+  align-self: center;
+  color: var(--gramo-turkis);
+  margin: 2rem 0;
+}

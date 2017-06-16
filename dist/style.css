@@ -3738,8 +3738,11 @@ main.pull .bucket{
   content:'-';
 }
 
-.table__row--truncated > td{
-  max-width:150px;
+@media (min-width: 960px){
+
+  .table__row--truncated > td{
+    max-width:150px;
+  }
 }
 
 .table__row--subhead{

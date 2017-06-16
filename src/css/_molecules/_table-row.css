@@ -30,7 +30,7 @@
 
 .table__row--truncated {
   & > td {
-    max-width: 150px;
+    @media (--desktop) { max-width: 150px; }
   }
 }
 
