@@ -2,12 +2,38 @@
 .site-header {
   position: static;
   height: auto;
-  background: none;
+  display: flex;
+  background: var(--gramo-white);
+  box-shadow: 0 1px 1px var(--light-gray);
   border: 0;
   padding: 1rem;
+  margin-bottom: 2rem;
   
   &__branding {
     margin-top: 1rem;
-    @media (--tablet) { text-align: center; }
+    flex: 0 1 auto;
+    margin-right: 2rem;
+    @media (--tablet) { flex: 1; }
+  }
+  
+  .user {
+    background: none;
+    padding: 0;
+    flex: 1;
+    font-size: 1.4rem;
+    @media (--tablet) { font-size: 1.5rem; }
+    
+    &__name a {
+      color: var(--dark-gray);
+      text-transform: none;
+    }
+    
+    &__avatar {
+      border: 1px solid var(--silver);
+      max-width: 3rem;
+      max-height: 3rem;
+      filter: contrast(1.5) brightness(0.7) url(../img/img-filter.svg#monochrome);
+      @media (--tablet) { max-width: 3.5rem; max-height: 3.5rem; }
+    }
   }
 }

@@ -1,0 +1,36 @@
+/*** Gramo horizontal rule ***/
+
+.horizontal-rule--with-arrow {
+  position: relative;
+  text-align: center;
+  height: 50px;
+  padding-bottom: 17px!important;
+}
+
+.horizontal-rule--with-arrow:before,
+.horizontalrule--with-arrow:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom: 0;
+}
+
+.horizontal-rule--with-arrow:before {
+  margin-left: -16px;
+  bottom: 19px;
+  /* If 1px darken stroke slightly */
+  border-top-color: var(--silver);
+  border-width: 16px;
+  left: 50%;
+}
+
+.horizontal-rule--with-arrow:after {
+  bottom: 20px;
+  margin-left: -15px;
+  border-top-color: var(--silver)!important;
+  border-width: 15px;
+  left: 50%;
+}

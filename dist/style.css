@@ -4187,14 +4187,13 @@ main.pull .bucket{
   background:#fdfdfd;
 }
 .toggle-sidebar a{
-  display:-webkit-flex;
-  display:-ms-flexbox;
-  display:flex;
+  display:-webkit-inline-flex;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
   -webkit-align-items:center;
   -ms-flex-align:center;
   align-items:center;
   height:3rem;
-  width:8rem;
   position:relative;
   text-transform:uppercase;
   font-size:1.2rem;
@@ -4202,6 +4201,7 @@ main.pull .bucket{
   color:#504f56;
   top:.1rem;
   left:1rem;
+  z-index:4;
 }
 .toggle-sidebar a::before{
   content:"\e914";

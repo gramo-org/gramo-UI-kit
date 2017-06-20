@@ -1,0 +1,10 @@
+main {
+  transform: translateX(-20rem);
+  transition: all .25s ease;
+  @media (--tablet) { transform: none; }
+  
+  &.pull {
+    flex: 1;
+    transform: none;
+  }
+}

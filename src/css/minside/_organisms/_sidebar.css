@@ -1,0 +1,14 @@
+/* Min Side */
+.sidebar {
+  order: 1;
+  transform: translateX(20rem);
+  
+  &__content {
+    padding-top: 20rem;
+  }
+  
+  &--is-expanded {
+    transform: translateX(-20rem);
+    @media (--tablet) { transform: none; }
+  }
+}

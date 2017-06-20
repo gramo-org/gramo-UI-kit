@@ -1,12 +1,39 @@
 /* Min Side */
+.toggle-sidebar {
+  text-align: right;
+  align-self: center;
+  
+  a {
+    width: auto;
+    left: auto;
+    justify-content: flex-end;
+  }
+  
+  &.open a {
+    margin-right: 0rem;
+    color: inherit;
+    @media (--tablet) { margin-right: -7rem; color: var(--gramo-white); }
+  }
+}
+
 .toggle-sidebar a::before {
   content: "\e921";
   font-family: 'icomoon';
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .toggle-sidebar.open a::before {
   content: "\e901";
   font-family: 'icomoon';
   font-size: 1.2rem;
+}
+
+.toggle-sidebar a::after {
+  content: none;
+  @media (--tablet) { content: 'menu' }
+}
+
+.toggle-sidebar.open a::after {
+  content: none;
+  @media (--tablet) { content: 'lukk' }
 }

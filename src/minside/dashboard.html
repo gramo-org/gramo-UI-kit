@@ -27,9 +27,6 @@
   <div class="site-wrapper">
     <div class="sidebar sidebar--is-expanded">
       <section class="sidebar__content">
-        <header class="sidebar__header">
-          <h1 class="sidebar__header__title"><img src="../img/gramo-logo.png" width="120" alt=""></h1>
-        </header>
         <nav class="sidebar__nav">
           <ul class="vertical__nav">
             <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Min Side</a>
@@ -44,76 +41,56 @@
           </ul>
         </nav>
         <aside class="user">
-          <img src="../img/audun-temp.jpg" class="user__avatar">
-          <div class="user__name"><a href="#">Audun Haggernes</a>
-            <span class="user__logout"><a href="#">Logg ut</a></span>
-          </div>
+          <span class="user__logout"><a href="#">Logg ut</a></span>
         </aside>
       </section>
     </div>
     <main>
       <header class="site-header">
+        <h1 class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt=""></h1>
+        <div class="user">
+          <img src="../img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">
+            <a href="#">Audun Haggernes</a>
+          </div>
+        </div>
         <div class="toggle-sidebar open">
           <a href="#">
           </a>
         </div>
       </header>
-      <!-- <div class="flash-message-wrapper">
-        <div class="flash-message flash-message--error">
-          <p>Tar kontakt med Gramo med en gang <button class="btn btn--small btn--inline btn--borderless">Tar kontakt</button></p>
+      <!--- Flash message --->
+      <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success">
+          <p>Velkommen til nye Gramo</p>
+          <a href="#" class="flash-message__close"><span class="icon icon--x"></span></a>
         </div>
-      </div> -->
+      </div>
       <section class="container">
-        <header class="infobar">
-          <div class="infobar__left">
-            <h1 data-type="performer">Morten Harket</h1>
-            <h3 data-type="member">Medlemsnummer: 92787349875</h3>
-            <h3 data-type="member">Siden: 01.02.1999</h3>  
+        <div class="row">
+          <div class="message message--secondary message--with-arrow">
+            <p>Icon</p>
           </div>
-          <div class="infobar__right align--vertical-center" style="text-align:right">
-            <div class="searchable-list">
-              <div class="searchable-list__heading">
-                <span class="searchable-list__selected"><i class="icon icon--performer"></i> Morten Harket</span>
-              </div>
-              <div class="searchable-list__dropdown">
-                <ul>
-                  <li class="searchable-list__option">Utøver profil</li>
-                  <li class="searchable-list__option">Opprett ny profil</li>
-                  <li class="searchable-list__option"><a href="#">Logg ut</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </header>
+        </div>
+        
         <section id="performerinfo" class="container">
-          <div class="section-header section-header--left">
+          <div class="section-header">
             <header>
-              <h2>Min utøver profil</h2>
+              <h2>Mine penger</h2>
             </header>
-            <div class="section-header__toolbar">
-              <a href="#" class="link--edit">Bytte</a>
+          </div>
+          <div class="box box--summary">
+            <div class="box__section box__section--main">
+              <span>Til utbetaling</span>
+              <em>16 756,50 kr</em>
+            </div>
+          </td>
+            <div class="box__section">
+              <span>Forventet</span>
+              <em>25.12.2017</em>
             </div>
           </div>
-          <!--- Flash message --->
-          <div class="flash-message-wrapper flash-message-wrapper--static">
-            <div class="flash-message flash-message--success">
-              <a href="#">Betalingsinformasjon må oppdateres</a>
-              <a href="#"><span class="icon icon--x text--small"></span></a>
-            </div>
-          </div>
-          <div class="toolbar">
-            <div class="col-sm-2">
-              <h2>16 756,50</h2>
-              <h4>Saldo</h4>
-            </div>
-            <div class="col-sm-2">
-              <h2>25.12.2017</h2>
-              <h4>Utbetales</h4>
-            </div>
-            <div class="toolbar__action">
-              <a href="#">Se detaljer</a>
-            </div>
-          </div>
+          
           <div class="row">
             <div class="col-xs-12 col-sm-6">
               <div class="box box--fluid">

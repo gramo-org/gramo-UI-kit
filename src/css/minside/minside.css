@@ -3,15 +3,20 @@
 /* Base styles */
 @import url('base/_base.css');
 @import url('base/_utility-classes.css');
+@import url('base/_layout.css');
 /* Atoms */
 @import url('_atoms/_box.css');
 @import url('_atoms/_button.css');
 @import url('_atoms/_form-validation.css');
+@import url('_atoms/_horizontal-rule.css');
 /* Molecules */
 @import url('_molecules/_toggle-sidebar.css');
 @import url('_molecules/_message.css');
+@import url('_molecules/_flash-message.css');
 /* Organisms */
 @import url('_organisms/_site-header.css');
+@import url('_organisms/_sidebar.css');
 @import url('_organisms/_form.css');
 @import url('_organisms/_wizard-steps.css');
 @import url('_organisms/_tables.css');
+@import url('_organisms/_section-header.css');

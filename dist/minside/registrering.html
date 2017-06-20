@@ -28,10 +28,10 @@
     <main>
       <section class="container">
         <div class="flash-message-wrapper--full-width flash-message-wrapper"></div>
-        <header class="site-header">
+        <header class="site-header row">
           <h1 class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt=""></h1>
         </header>
-        <div class="row">
+        <div class="row" id="steg1">
           <div class="box box--no-padding">
             <div class="message message--primary">
               <p>Først skal vi prøve å finne deg igjen</p>
@@ -42,7 +42,7 @@
               <p>Venligst skriv ditt fødselsnummer organisasjonsnummer eller 
                 VAT nummer nedenfor, så sjekker vi om du er Gramo medlem.</p>
             </div>
-            <form class="form form--padded">
+            <form class="form form--in-box">
               <fieldset class="form__fieldset">
                 <label class="form__label form__label--block">Fødselsnummer, Org. nr. eller VAT nr.
                   <input type="text" autofocus="" class="form__input form__input--block">
@@ -50,12 +50,12 @@
               </fieldset>
               <div class="form__section--action">
                 <div class="row">
-                  <div class="col-xs-4">
+                  <div class="col-xs-5">
                     <button class="btn btn btn--secondary btn--large">
                       Avbryt
                     </button>
                   </div>
-                  <div class="col-xs-8">
+                  <div class="col-xs-7">
                     <button class="btn btn btn--primary btn--large">
                       Finn profil
                     </button>
@@ -73,7 +73,7 @@
           
         <hr class="horizontal-rule horizontal-rule--spacer">
 
-        <div class="row">
+        <div class="row" id="steg2">
           <div class="box box--no-padding">
             <div class="message message--success">
               <p>Vi har funnet følgende profil.</p>
@@ -86,9 +86,9 @@
               <p>Vennligst oppgi epost adresessen knyttet til din profil. 
                 Vi skal sende en bekreftelse til denne eposten.</p>
               </div>
-            <form class="form form--padded">
+            <form class="form form--in-box">
               <fieldset class="form__fieldset">
-                <label class="form__label form__label--block form__label--validation is-valid">E-post
+                <label class="form__label form__label--block is-valid">E-post
                   <input type="email" autofocus="" value="morten.harket@aha.com" class="form__input form__input--block">
                 </label>
               </fieldset>
@@ -120,27 +120,64 @@
         
         <div class="row">
           <div class="box box--no-padding">
-            <div class="message message--primary">
-              <p>Vi har sendt deg en link til: morten@harket.no</p>
+            <div class="message message--error">
+              <p>Vi desverre ikke noe Gramo medlemskap i vårt system.</p>
             </div>
-            <p class="text--center">Vennligst sjekk e-posten din</p>
+            
+            <div class="message message--secondary message--with-arrow">
+              <p>Trykk på bli medlem knappen for å opprette ditt medlemskap</p>
+              </div>
+            <div class="form form--in-box">
+              <div class="form__section--action">
+                <div class="row">
+                  <div class="col-xs-4">
+                    <button class="btn btn btn--secondary btn--large">
+                      Tilbake
+                    </button>
+                  </div>
+                  <div class="col-xs-8">
+                    <button class="btn btn btn--primary btn--large">
+                      Bli medlem
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ol class="wizard-steps wizard-steps--minimal">
+              <li><span>1. Medlemskap</span></li>
+              <li class="selected"><span>2. Personalia</span></li>
+              <li><span>3. Logg inn</span></li>
+            </ol>
           </div>
         </div><!-- end .row -->
         
         <hr class="horizontal-rule horizontal-rule--spacer">
-        <h4 class="text--center"><span class="icon icon--arrow-down text--center text--light"></span></h4>
+        
+        <div class="row">
+          <div class="box box--no-padding">
+            <div class="message message--primary">
+              <p>Vi har sendt deg en link til: morten@harket.no</p>
+            </div>
+            <div class="form form--in-box">
+              <i class="fa fa-paper-plane fa-2x"></i>
+              <p class="text--center">Vennligst sjekk e-posten din</p>
+            </div>
+            <ol class="wizard-steps wizard-steps--minimal">
+              <li><span>1. Medlemskap</span></li>
+              <li class="selected"><span>2. Personalia</span></li>
+              <li><span>3. Logg inn</span></li>
+            </ol>
+          </div>
+        </div><!-- end .row -->
+        
         <hr class="horizontal-rule horizontal-rule--spacer">
         
         <div class="row">
-          <div class="box">
-            <header class="text--center">
-              <ol class="wizard-steps">
-                <li>1. Medlemskap</li>
-                <li>2. Personalia</li>
-                <li class="selected">3. Logg inn</li>
-              </ol>
-            </header>
-            <form class="form">
+          <div class="box box--no-padding">
+            <div class="message message--primary">
+              <p>Velg passord</p>
+            </div>
+            <form class="form form--in-box">
               <label class="form__label form__label--block">Passord
                 <input type="password" autofocus="" class="form__input form__input--block">
               </label>
@@ -148,7 +185,7 @@
               <label class="form__label form__label--block">Gjenta passord
                 <input type="password" class="form__input form__input--block">
               </label>
-              
+              <hr class="horizontal-rule horizontal-rule--spacer">
               <label class="form__label form__label--block">Mobil telefon <span class="text--normal">(For å sende engangskode til)</span>
                 <input type="password" class="form__input form__input--block">
               </label>
@@ -158,23 +195,22 @@
                 </button>
               </div>
             </form>
+            <ol class="wizard-steps wizard-steps--minimal">
+              <li><span>1. Medlemskap</span></li>
+              <li><span>2. Personalia</span></li>
+              <li class="selected"><span>3. Logg inn</span></li>
+            </ol>
           </div>
         </div><!-- end .row -->
         
         <hr class="horizontal-rule horizontal-rule--spacer">
-        <h4 class="text--center"><span class="icon icon--arrow-down text--center text--light"></span></h4>
-        <hr class="horizontal-rule horizontal-rule--spacer">
         
         <div class="row">
-          <div class="box">
-            <header class="text--center">
-              <ol class="wizard-steps">
-                <li>1. Medlemskap</li>
-                <li>2. Personalia</li>
-                <li class="selected">3. Logg inn</li>
-              </ol>
-            </header>
-            <form class="form">
+          <div class="box box--no-padding">
+            <div class="message message--primary">
+              <p>Logg inn</p>
+            </div>
+            <form class="form form--in-box">
               <label class="form__label form__label--block">Epost
                 <input type="email" autofocus="" class="form__input form__input--block">
               </label>
@@ -188,23 +224,22 @@
                 </button>
               </div>
             </form>
+            <ol class="wizard-steps wizard-steps--minimal">
+              <li><span>1. Medlemskap</span></li>
+              <li><span>2. Personalia</span></li>
+              <li class="selected"><span>3. Logg inn</span></li>
+            </ol>
           </div>
         </div><!-- end .row -->
         
         <hr class="horizontal-rule horizontal-rule--spacer">
-        <h4 class="text--center"><span class="icon icon--arrow-down text--center text--light"></span></h4>
-        <hr class="horizontal-rule horizontal-rule--spacer">
         
         <div class="row">
-          <div class="box">
-            <header class="text--center">
-              <ol class="wizard-steps">
-                <li>1. Medlemskap</li>
-                <li>2. Personalia</li>
-                <li class="selected">3. Logg inn</li>
-              </ol>
-            </header>
-            <form class="form">
+          <div class="box box--no-padding">
+            <div class="message message--primary">
+              <p>Vi har sendt deg en SMS med en engangskode.</p>
+            </div>
+            <form class="form form--in-box">
               <label class="form__label form__label--block">Engangskode
                 <input type="email" autofocus="" class="form__input form__input--block">
               </label>
@@ -215,11 +250,17 @@
                 </button>
               </div>
             </form>
+            <ol class="wizard-steps wizard-steps--minimal">
+              <li><span>1. Medlemskap</span></li>
+              <li><span>2. Personalia</span></li>
+              <li class="selected"><span>3. Logg inn</span></li>
+            </ol>
           </div>
         </div><!-- end .row -->
       </section>
     </main>
 </div>
 <script src="../js/vendor/jquery-1.11.3.min.js"></script>
+
 </body>
 </html>
