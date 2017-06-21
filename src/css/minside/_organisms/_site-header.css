@@ -7,7 +7,6 @@
   box-shadow: 0 1px 1px var(--light-gray);
   border: 0;
   padding: 1rem;
-  margin-bottom: 2rem;
   
   &__branding {
     margin-top: 1rem;
@@ -24,16 +23,17 @@
     @media (--tablet) { font-size: 1.5rem; }
     
     &__name a {
-      color: var(--dark-gray);
+      color: var(--ui-gray);
       text-transform: none;
+      font-weight: var(--semibold);
     }
     
     &__avatar {
-      border: 1px solid var(--silver);
-      max-width: 3rem;
-      max-height: 3rem;
-      filter: contrast(1.5) brightness(0.7) url(../img/img-filter.svg#monochrome);
-      @media (--tablet) { max-width: 3.5rem; max-height: 3.5rem; }
+      border: 1px solid color(var(--gramo-turkis) tint(20%));
+      max-width: 3.5rem;
+      max-height: 3.5rem;
+      filter: grayscale(1) url(../img/img-filter.svg#monochrome);
+      @media (--tablet) { max-width: 4rem; max-height: 4rem; }
     }
   }
 }

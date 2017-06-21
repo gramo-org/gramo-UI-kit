@@ -1,16 +1,17 @@
 /* Min Side */
 .box {
-  background: none;
+  
 }
-.box--no-padding {
+.box--login {
+  background: none;
   padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 450px;
   height: calc(100vh - 102px);
-  @media (--tablet) { height: calc(70vh - 102px); }
+  @media (--tablet) { height: calc(70vh - 102px); margin-top: 2rem; }
   
-  .form {
+  .form--in-box {
     flex: 1;
   }
 }
@@ -25,19 +26,30 @@
   padding: 1rem;
   background: var(--gramo-turkis);
   text-align: center;
+  
+  em {
+    font-style: normal;
+  }
+  
+  span {
+    margin-right: 1rem;
+  }
 }
 
 .box__section--main {
   padding: 2rem;
   background: color(var(--gramo-turkis) tint(60%));
   
+  & > * {
+    display: block;
+  }
+  
   em {
-    font-style: normal;
     font-size: 3.2rem;
     font-weight: var(--semibold);
   }
   
-  & > * {
-    display: block;
+  span {
+    margin-right: 0;
   }
 }

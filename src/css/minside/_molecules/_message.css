@@ -46,14 +46,31 @@
     padding-bottom: 0;
     box-shadow: 0 1px 0 var(--silver);
     
+    &:before,
     &:after {
-      content: "\e90b";
-      font-family: 'icomoon';
-      font-size: 1.2rem;
-      color: var(--light-gray);
-      position: relative;
-      bottom: -1.3rem;
-      filter: drop-shadow(0px 1px 0px var(--silver));
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent;
+      border-bottom: 0;
+    }
+
+    &:before {
+      margin-left: -10px;
+      border-top-color: color(var(--silver) shade(5%)); /* darken stroke slightly */
+      border-width: 10px;
+      left: 50%;
+      bottom: -10px;
+    }
+
+    &:after {
+      margin-left: -9px;
+      border-top-color: var(--light-gray);
+      border-width: 9px;
+      left: 50%;
+      bottom: -9px;
     }
   }
 }

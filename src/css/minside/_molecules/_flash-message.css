@@ -1,13 +1,13 @@
 /* Min Side */
 .flash-message-wrapper {
   position: static;
-  margin-top: -2rem;
 }
 
 .flash-message {
   padding: 1rem;
   display: flex;
   align-items: center;
+  margin-top: 0;
   
   & > p {
     flex: 1

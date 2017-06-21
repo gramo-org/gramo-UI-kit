@@ -6,7 +6,7 @@
 
 /* Basic layout */
 body {
-  background: var(--x-light-gray);
+  background: var(--minside-background-color);
   @extend %font-size;
 }
 main > section:first-of-type {

@@ -45,3 +45,8 @@
     background-image: none;
   }
 }
+
+/* Error class - red border */
+.form__label.has-error .select {
+  border: 3px solid var(--error);
+}

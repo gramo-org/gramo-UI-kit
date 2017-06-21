@@ -1,14 +1,16 @@
-/*** Gramo horizontal rule ***/
-
+/* Minside */
 .horizontal-rule--with-arrow {
+  height: 1px;
+  border: 0;
+  padding: 0;
   position: relative;
   text-align: center;
-  height: 50px;
-  padding-bottom: 17px!important;
+  margin: 2rem 0;
+  background: var(--silver);
 }
 
 .horizontal-rule--with-arrow:before,
-.horizontalrule--with-arrow:after {
+.horizontal-rule--with-arrow:after {
   content: '';
   position: absolute;
   width: 0;
@@ -19,18 +21,15 @@
 }
 
 .horizontal-rule--with-arrow:before {
-  margin-left: -16px;
-  bottom: 19px;
-  /* If 1px darken stroke slightly */
-  border-top-color: var(--silver);
-  border-width: 16px;
+  margin-left: -10px;
+  border-top-color: color(var(--silver) shade(5%)); /* darken stroke slightly */
+  border-width: 10px;
   left: 50%;
 }
 
 .horizontal-rule--with-arrow:after {
-  bottom: 20px;
-  margin-left: -15px;
-  border-top-color: var(--silver)!important;
-  border-width: 15px;
+  margin-left: -9px;
+  border-top-color: var(--minside-background-color);
+  border-width: 9px;
   left: 50%;
 }
