@@ -1,7 +1,22 @@
 /* Min Side */
-.box {
+.box--shortcut {
+  box-shadow: none;
+  border-bottom: 3px solid var(--gramo-turkis);
+  text-align: center;
+  padding-bottom: 0;
   
+  .icon {
+    color: var(--gramo-turkis);
+    font-size: 3.2rem;
+    @media (--tablet) { font-size: 4rem; }
+  }
+  
+  em {
+    font-size: 3rem;
+    font-style: normal;
+  }
 }
+
 .box--login {
   background: none;
   padding: 0;

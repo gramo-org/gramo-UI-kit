@@ -5,6 +5,7 @@
 @import url('base/_utility-classes.css');
 @import url('base/_layout.css');
 /* Atoms */
+@import url('_atoms/_icons.css');
 @import url('_atoms/_box.css');
 @import url('_atoms/_button.css');
 @import url('_atoms/_form-validation.css');

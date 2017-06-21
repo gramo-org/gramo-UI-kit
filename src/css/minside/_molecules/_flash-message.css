@@ -4,10 +4,15 @@
 }
 
 .flash-message {
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   align-items: center;
   margin-top: 0;
+  text-transform: none;
+  font-weight: var(--semibold);
+  font-family: var(--minside-font-family);
+  font-size: 1.8rem;
+  line-height: 1;
   
   & > p {
     flex: 1
