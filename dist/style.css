@@ -1210,11 +1210,11 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 }
 @font-face{
   font-family:'icomoon';
-  src:url('fonts/icomoon.eot?z6psj8');
-  src:url('fonts/icomoon.eot?z6psj8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?z6psj8') format('truetype'),
-    url('fonts/icomoon.woff?z6psj8') format('woff'),
-    url('fonts/icomoon.svg?z6psj8#icomoon') format('svg');
+  src:url('fonts/echo/icomoon.eot?z6psj8');
+  src:url('fonts/echo/icomoon.eot?z6psj8#iefix') format('embedded-opentype'),
+    url('fonts/echo/icomoon.ttf?z6psj8') format('truetype'),
+    url('fonts/echo/icomoon.woff?z6psj8') format('woff'),
+    url('fonts/echo/icomoon.svg?z6psj8#icomoon') format('svg');
   font-weight:normal;
   font-style:normal;
 }

@@ -109,11 +109,11 @@ main.pull{
 }
 @font-face{
   font-family:'icomoon';
-  src:url('../fonts/minside.eot?5fs0sn');
-  src:url('../fonts/minside.eot?5fs0sn#iefix') format('embedded-opentype'),
-    url('../fonts/minside.ttf?5fs0sn') format('truetype'),
-    url('../fonts/minside.woff?5fs0sn') format('woff'),
-    url('../fonts/minside.svg?5fs0sn#icomoon') format('svg');
+  src:url('../fonts/minside/minside.eot?5fs0sn');
+  src:url('../fonts/minside/minside.eot?5fs0sn#iefix') format('embedded-opentype'),
+    url('../fonts/minside/minside.ttf?5fs0sn') format('truetype'),
+    url('../fonts/minside/minside.woff?5fs0sn') format('woff'),
+    url('../fonts/minside/minside.svg?5fs0sn#icomoon') format('svg');
   font-weight:normal;
   font-style:normal;
 }

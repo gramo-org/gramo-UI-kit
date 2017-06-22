@@ -52,7 +52,7 @@ gulp.task('movecss', function() {
 
 // Task to move compiled CSS to `dist` folder
 gulp.task('movefonts', function() {
-  return gulp.src('./src/fonts/*.*')
+  return gulp.src('./src/fonts/*/*.*')
     .pipe(gulp.dest('./dist/fonts'));
 });
 
