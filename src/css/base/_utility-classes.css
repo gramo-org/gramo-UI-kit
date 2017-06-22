@@ -133,8 +133,8 @@ td.text--center,
   align-self: flex-start;
 }
 
-.align--bottom {
-  justify-content: flex-end;
+.v-align--bottom {
+  vertical-align: bottom;
 }
 
 /* Flex order */

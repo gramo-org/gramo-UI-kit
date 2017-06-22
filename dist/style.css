@@ -320,10 +320,8 @@ td.text--center, .fake-table__row *.text--center{
   align-self:flex-start;
 }
 
-.align--bottom{
-  -webkit-justify-content:flex-end;
-  -ms-flex-pack:end;
-  justify-content:flex-end;
+.v-align--bottom{
+  vertical-align:bottom;
 }
 
 @media (min-width: 768px){
