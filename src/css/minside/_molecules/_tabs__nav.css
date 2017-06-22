@@ -1,0 +1,29 @@
+.tabs__nav--flexible {
+  display: flex;
+  @media (--tablet) { display: inline-flex; }
+  
+  .tabs__nav__item {
+    flex: 1 0 auto;
+  }
+}
+
+.tabs__nav__item:hover::after, 
+.tabs__nav__item a.active::after {
+  content: none;
+}
+
+.tabs__nav__item a:not(.active):after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: calc(100% + 1px);
+  height: 5px;
+  background: var(--light-gray);
+  left: -1px;
+  border-top: 1px solid var(--silver);
+  z-index: 1;
+}
+
+.tabs__nav__item:first-child a:not(.active):after {
+  left: 0;
+}

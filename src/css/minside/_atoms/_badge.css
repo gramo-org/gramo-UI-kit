@@ -1,0 +1,22 @@
+/* Min Side */
+.badge {
+  
+  &--primary {
+    background: var(--gramo-turkis);
+    color: var(--gramo-white);
+  }
+  &--secondary {
+    background: var(--silver);
+    color: var(--slate-gray);
+  }
+}
+
+/* badges in tabs */
+.tabs__nav__item {
+  .badge {
+    @extend .badge--secondary;
+  }
+  .active .badge {
+    @extend .badge--primary;
+  }
+}
