@@ -11,6 +11,7 @@
 @import url('_atoms/_form-validation.css');
 @import url('_atoms/_horizontal-rule.css');
 @import url('_atoms/_badge.css');
+@import url('_atoms/_select-menu.css');
 /* Molecules */
 @import url('_molecules/_toggle-sidebar.css');
 @import url('_molecules/_flash-message.css');

@@ -11,7 +11,8 @@
   
   &__branding {
     margin-top: 1rem;
-    flex: 0 1 auto;
+    /*flex: 0 1 auto;*/
+    flex: 1;
     margin-right: 2rem;
     @media (--tablet) { flex: 1; }
   }
@@ -21,6 +22,7 @@
     padding: 0;
     flex: 1;
     font-size: 1.4rem;
+    align-self: center;
     @media (--tablet) { font-size: 1.5rem; }
     
     &__name a {

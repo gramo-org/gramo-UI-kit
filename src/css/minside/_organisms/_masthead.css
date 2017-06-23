@@ -1,9 +1,5 @@
 .masthead {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 2rem 1rem;
   text-align: center;
   width: 100%;
@@ -17,8 +13,19 @@
     margin: 1rem 0;
   }
   
-  h2 {
+  h1, h2 {
     @extend .section-header header h2;
+    margin-bottom: 1.2rem;
+  }
+  
+  h1 {
+    font-size: 3.3rem;
+  }
+  
+  h4 {
+    font-family: var(--base-font-family);
+    color: var(--off-gray);
+    font-size: inherit;
   }
   
   &:before,

@@ -25,26 +25,6 @@
 </head>
 <body>
   <div class="site-wrapper">
-    <div class="sidebar sidebar--is-expanded">
-      <section class="sidebar__content">
-        <nav class="sidebar__nav">
-          <ul class="vertical__nav">
-            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Min Side</a>
-              <ul class="vertical__nav vertical__nav--sub">
-                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Dashboard</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Min Profil</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Min discografi</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Mine inntekter</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Legg til profil</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <aside class="user">
-          <span class="user__logout"><a href="#">Logg ut</a></span>
-        </aside>
-      </section>
-    </div>
     <main>
       <header class="site-header">
         <h1 class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt=""></h1>
@@ -53,10 +33,6 @@
           <div class="user__name">
             <a href="#">Morten Harket</a>
           </div>
-        </div>
-        <div class="toggle-sidebar open">
-          <a href="#">
-          </a>
         </div>
       </header>
       
@@ -68,16 +44,15 @@
           </div>
         </div>
       </section>
-        
-      
-      <section id="discography-info" class="container container--padded">
+            
+      <section id="discography-info" class="container container--col-1">
         <div class="tabs">
           <ul class='tabs__nav tabs__nav--flexible'>
             <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger <span class="badge">400</span></a></li>
             <li class='tabs__nav__item'><a href="#album">Album <span class="badge">138</span></a></li>
           </ul>
           <section id="innspillinger" class="tabs__section">
-            <table class="table table--fluid table--list">
+            <table class="table table--fluid table--list table--recordings">
               <thead>
                 <tr>
                   <th>Innspillingstittel</th>
@@ -88,10 +63,10 @@
               </thead>
               <tbody>
                 <tr>
-                  <td data-label="Innspillingstittel">
+                  <td data-label="Innspillingstittel" class="table__cell--left">
                     Take on Me
                   </td>
-                  <td data-label="Katalognummer">
+                  <td data-label="Katalognummer" class="table__cell--left">
                     A-ha
                   </td>
                   <td data-label="Varighet">
@@ -102,10 +77,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td data-label="Innspillingstittel">
+                  <td data-label="Innspillingstittel" class="table__cell--left">
                     Take on Me
                   </td>
-                  <td data-label="Katalognummer">
+                  <td data-label="Katalognummer" class="table__cell--left">
                     A-ha
                   </td>
                   <td data-label="Varighet">

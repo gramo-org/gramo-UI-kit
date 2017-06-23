@@ -10,4 +10,10 @@
       font-size: 2.4rem;
     }  
   }
+  
+  &--left {
+    header h2 {
+      justify-content: flex-start;
+    }
+  }
 }

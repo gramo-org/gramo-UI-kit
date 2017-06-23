@@ -1,15 +1,15 @@
 /* Min Side */
-main {
-  transform: translateX(-20rem);
-  transition: all .25s ease;
-  @media (--tablet) { transform: none; }
-  
-  &.pull {
-    flex: 1;
-    transform: none;
-  }
-}
 
 .container--padded {
-  padding: 0 2.5rem;
+  padding: 2.5rem;
+}
+
+.container--col-1 {
+  max-width: 800px;
+  margin: auto;
+}
+
+.container--col-3 {
+  max-width: 1200px;
+  margin: auto;
 }

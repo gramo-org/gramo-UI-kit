@@ -25,3 +25,27 @@
     font-family: var(--base-font-family);
   }
 }
+
+.form--summary {
+  .form__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    span {
+      color: var(--slate-gray);
+      border: 1px solid var(--silver);
+      border-width: 1px 0 1px 1px;
+      text-transform: none;
+      background: var(--light-gray);
+      font-family: var(--base-font-family);
+      font-weight: var(--semibold);
+      padding: 1.1rem;
+      flex: 0 0 45%;
+      @media (--tablet) { flex: 0 0 15%; }
+    }
+  }
+  .form__input {
+    margin-bottom: 0;
+  }
+}
