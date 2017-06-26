@@ -1478,6 +1478,7 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 .form__label{
   position:relative;
   display:block;
+  text-align:left;
 }
 @media (min-width: 768px){
 
@@ -1895,6 +1896,9 @@ input-placeholder{
   min-width:200px;
   height:32px;
   display:block;
+}
+.select::-ms-expand{
+  display:none;
 }
 @media (min-width: 768px){
 
@@ -4259,9 +4263,10 @@ main.pull .bucket{
   color:#504f56;
   font-weight:600;
   padding:1rem 0;
-  -webkit-flex:1;
-  -ms-flex:1;
-  flex:1;
+  -webkit-flex:1 0 auto;
+  -ms-flex:1 0 auto;
+  flex:1 0 auto;
+  display:block;
 }
 .tabs__nav__item:hover, .tabs__nav__item a.active{
   background:#ededed;
@@ -5534,6 +5539,7 @@ thead tr{
 
 thead th{
   font-weight:600;
+  text-align:left;
 }
 
 tbody > tr{

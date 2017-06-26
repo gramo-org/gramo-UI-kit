@@ -2,6 +2,7 @@
 .site-header {
   position: static;
   height: auto;
+  flex: 0 0 auto;
   display: flex;
   background: var(--gramo-white);
   box-shadow: 0 1px 1px var(--silver);

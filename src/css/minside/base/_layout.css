@@ -1,5 +1,15 @@
 /* Min Side */
 
+.site-wrapper {
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+  position: relative;/* need this to position inner content */
+  overflow-y: auto;
+}
+
 .container--padded {
   padding: 2.5rem;
 }

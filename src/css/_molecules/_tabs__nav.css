@@ -28,7 +28,8 @@
     color: var(--slate-gray);
     font-weight: var(--semibold);
     padding: 1rem 0;
-    flex: 1;
+    flex: 1 0 auto;
+    display: block;
   }
 
   &__item:hover,

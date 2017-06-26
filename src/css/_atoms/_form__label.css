@@ -2,6 +2,7 @@
   position: relative;
   @extend h4;
   display: block;
+  text-align: left;
   @media (--tablet) {
     display: inline-block;
     vertical-align: middle;

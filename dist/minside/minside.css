@@ -31,6 +31,20 @@ h1, h2{
   text-align:center!important;
 }
 
+.site-wrapper{
+  -webkit-flex-direction:column;
+  -ms-flex-direction:column;
+  flex-direction:column;
+}
+
+main{
+  -webkit-flex:1 1 auto;
+  -ms-flex:1 1 auto;
+  flex:1 1 auto;
+  position:relative;
+  overflow-y:auto;
+}
+
 .container--padded{
   padding:2.5rem;
 }
@@ -90,6 +104,9 @@ h1, h2{
   color:#50bf9e;
 }
 .box--shortcut{
+  -webkit-flex:none;
+  -ms-flex:none;
+  flex:none;
   box-shadow:none;
   border-bottom:3px solid #88c7d8;
   text-align:center;
@@ -119,7 +136,6 @@ h1, h2{
   -webkit-flex-direction:column;
   -ms-flex-direction:column;
   flex-direction:column;
-  min-height:450px;
   height:calc(100vh - 102px);
 }
 
@@ -128,6 +144,7 @@ h1, h2{
   .box--login{
     height:calc(70vh - 102px);
     margin-top:2rem;
+    min-height:550px;
   }
 }
 
@@ -225,13 +242,15 @@ h1, h2{
   background-image:none;
 }
 .horizontal-rule--with-arrow{
-  height:1px;
-  border:0;
   padding:0;
   position:relative;
   text-align:center;
   margin:2rem 0;
   background:#d9d9dc;
+}
+.horizontal-rule--with-arrow hr{
+  height:1px;
+  border:0;
 }
 
 .horizontal-rule--with-arrow:before, .horizontal-rule--with-arrow:after{
@@ -242,6 +261,7 @@ h1, h2{
   border-style:solid;
   border-color:transparent;
   border-bottom:0;
+  top:0;
 }
 
 .horizontal-rule--with-arrow:before{
@@ -269,7 +289,7 @@ h1, h2{
   height:4.8rem;
   padding:0 4rem 0 1rem;
   background-image:url(../img/arrow-down-dark.svg);
-  background-position:right 1rem top 55%; 
+  background-position:right 1rem top 55%;
   min-width:250px;
 }
 .toggle-sidebar{
@@ -362,7 +382,6 @@ h1, h2{
   align-self:flex-end;
   font-size:1rem;
 }
-
 .tabs__nav__item:hover::after, .tabs__nav__item a.active::after{
   content:none;
 }
@@ -385,6 +404,9 @@ h1, h2{
 .site-header{
   position:static;
   height:auto;
+  -webkit-flex:0 0 auto;
+  -ms-flex:0 0 auto;
+  flex:0 0 auto;
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
@@ -514,6 +536,7 @@ h1, h2{
   -webkit-flex:0 0 45%;
   -ms-flex:0 0 45%;
   flex:0 0 45%;
+  display:block;
 }
 
 @media (min-width: 768px){

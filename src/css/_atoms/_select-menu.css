@@ -13,7 +13,10 @@
   min-width: 200px;
   height: 32px;
   display: block;
-
+  /* For ie10 + */
+  &::-ms-expand {
+        display: none;
+  }
 
   @media (--tablet) {
     margin-top: 0;

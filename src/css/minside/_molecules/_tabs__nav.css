@@ -1,12 +1,3 @@
-/*.tabs__nav--flexible {
-  display: flex;
-  @media (--tablet) { display: inline-flex; }
-  
-  .tabs__nav__item {
-    flex: 1 0 auto;
-  }
-}*/
-
 .tabs__nav__item:hover::after, 
 .tabs__nav__item a.active::after {
   content: none;
