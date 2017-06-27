@@ -11,22 +11,22 @@
   padding: 1rem;
   
   &__branding {
-    margin-top: 1rem;
-    /*flex: 0 1 auto;*/
+    margin: 1rem 2rem 0 0;
     flex: 1;
-    margin-right: 2rem;
     @media (--tablet) { flex: 1; }
   }
   
   .user {
     background: none;
     padding: 0;
-    flex: 1;
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
     font-size: 1.4rem;
-    align-self: center;
     @media (--tablet) { font-size: 1.5rem; }
     
-    &__name a {
+    &__name {
+      margin-right: 1rem;
       color: var(--ui-gray);
       text-transform: none;
       font-weight: var(--semibold);
@@ -37,7 +37,19 @@
       max-width: 3.5rem;
       max-height: 3.5rem;
       filter: grayscale(1) url(../img/img-filter.svg#monochrome);
+      order: 1;
       @media (--tablet) { max-width: 4rem; max-height: 4rem; }
+    }
+    
+    &::after {
+      content: "\e90b";
+      font-family: 'icomoon';
+      align-self: center;
+      display: block;
+      font-size: 8px;
+      color: var(--gramo-blue);
+      margin-left: 1rem;
+      order: 2;
     }
   }
 }

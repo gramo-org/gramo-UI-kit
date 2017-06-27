@@ -25,16 +25,18 @@
 </head>
 <body>
   <div class="site-wrapper">
-    <main>
-      <header class="site-header">
-        <h1 class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt=""></h1>
+    <header class="site-header">
+      <span class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt=""></span>
+      <a href="#" class="link--no-line">
         <div class="user">
           <img src="https://vignette1.wikia.nocookie.net/thebandaha/images/8/89/Morten_harket_1985.jpeg/revision/latest?cb=20141003214330" class="user__avatar">
-          <div class="user__name">
-            <a href="#">Morten Harket</a>
-          </div>
+          <span class="user__name">
+            Morten Harket
+          </span>
         </div>
-      </header>
+      </a>
+    </header>
+    <main role="main">
       <!--- Flash message --->
       <div class="flash-message-wrapper">
         <div class="flash-message flash-message--success">
@@ -44,7 +46,7 @@
       </div>
       <section class="container">
         <div class="row">
-          <div class="masthead">
+          <header class="masthead" role="banner">
             <header>
               <h2>Mine penger</h2>
             </header>
@@ -58,7 +60,7 @@
                 <em>25.12.2017</em>
               </div>
             </div>
-          </div>
+          </header>
         </div>
       </section>
         

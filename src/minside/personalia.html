@@ -25,58 +25,193 @@
 </head>
 <body>
   <div class="site-wrapper">
-    <header class="site-header" role="header">
-      <h1 class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt=""></h1>
-      <div class="user">
-        <img src="https://vignette1.wikia.nocookie.net/thebandaha/images/8/89/Morten_harket_1985.jpeg/revision/latest?cb=20141003214330" class="user__avatar">
-        <div class="user__name">
-          <a href="#">Morten Harket</a>
+    <header class="site-header">
+      <span class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt=""></span>
+      <a href="#" class="link--no-line">
+        <div class="user">
+          <img src="https://vignette1.wikia.nocookie.net/thebandaha/images/8/89/Morten_harket_1985.jpeg/revision/latest?cb=20141003214330" class="user__avatar">
+          <span class="user__name">
+            Morten Harket
+          </span>
         </div>
-      </div>
+      </a>
     </header>
-    <main>
-      <section class="container">
-        <div class="row">
-          <!-- <div class="masthead text--left">
-            <div class="container--col-3">
-              <div class="row">
-                <div class="col-xs-12 col-sm-9 off-sm-3">
-                  <header>
-                    <h1>Morten Harket</h1>
-                    <h4>A-ha</h4>
-                    <h4>Utøver, Produsent</h4>
-                  </header>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <div class="masthead">
-            <header>
-              <h1>Morten Harket</h1>
-              <h4>A-ha</h4>
-              <h4>Utøver, Produsent</h4>
-            </header>
-          </div>
-        </div>
-      </section>
-      
+    <main role="main">      
       <section id="personalia" class="container container--col-3">
+        
         <div class="row">
           <div class="col-xs-12 col-sm-3">
-            <nav class="nav--secondary">
+            <nav class="nav--secondary" role="navigation">
               <ul>
-                <li><a href="#">Personalia</a></li>
+                <li><a href="#" class="active">Personalia</a></li>
                 <li><a href="#">Kontaktinformasjon</a></li>
                 <li><a href="#">Bankinformasjon</a></li>
               </ul>
             </nav>
           </div>
           <div class="col-xs-12 col-sm-9">
-            <div class="section-header section-header--left">
-              <header>
+            <header>
+              <h1 class="no-margin--bottom">Morten Harket</h1>
+              <h4>A-ha</h4>
+              <h4>Utøver, Produsent</h4>
+            </header>
+            <hr class="horizontal-rule horizontal-rule--spacer">
+            
+            <form class="form">
+              <section id="personalia">
                 <h2>Personalia</h2>
-              </header>
-            </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Fornavn
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Etternavn
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Artistnavn
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <fieldset class="form__fieldset form__fieldset--group"> 
+                  <legend>Kjønn</legend> 
+                  <label class="form__label text--normal">
+                    <input type="radio" class="form__input--radio">
+                    <span>Mann</span>
+                  </label>
+                  <label class="form__label text--normal">
+                    <input type="radio" class="form__input--radio">
+                    <span>Kvinne</span>
+                  </label>
+                  <label class="form__label text--normal">
+                    <input type="radio" class="form__input--radio">
+                    <span>Annen</span>
+                  </label> 
+                </fieldset>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Fødselsdato
+                      <input type="date" class="form__input form__input--date">
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Føsdselsnummer
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Statsborgerskap
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <label class="form__label">Fra
+                      <input type="date" class="form__input form__input--date">
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <label class="form__label">Til
+                      <input type="date" class="form__input form__input--date">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Bostedsland
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <label class="form__label">Fra
+                      <input type="date" class="form__input form__input--date">
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <label class="form__label">Til
+                      <input type="date" class="form__input form__input--date">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+              </section>
+              <hr class="horizontal-rule">
+              <section id="kontaktinformasjon">
+                <h2>Kontaktinformasjon</h2>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Epost
+                      <input type="email" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Mobilnummer
+                      <input type="tel" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Adresse
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3">
+                    <label class="form__label">Postnummer
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <label class="form__label">Poststed
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+              </section>
+              <hr class="horizontal-rule">
+              <section id="bankinformasjon">
+                <h2>Bankinformasjon</h2>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Skattekommune
+                      <select class="select select--fluid select--block">
+                        <option value="">Velg skattekommune</option>
+                        <option value="">Oslo</option>
+                        <option value="">Akershus</option>
+                      </select>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Bank
+                      <select class="select select--fluid select--block">
+                        <option value="">Velg kontotype</option>
+                        <option value="">Norsk</option>
+                        <option value="">Andre</option>
+                      </select>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Kontonummer
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                </div>
+              </section>
+            </form>
           </div>
         </div>
       </section>

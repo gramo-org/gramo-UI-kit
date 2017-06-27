@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="minside.css">
+  <script src="https://use.typekit.net/xja4iud.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <span class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt=""></span>
+      <a href="#" class="link--no-line">
+        <div class="user">
+          <img src="https://vignette1.wikia.nocookie.net/thebandaha/images/8/89/Morten_harket_1985.jpeg/revision/latest?cb=20141003214330" class="user__avatar">
+          <span class="user__name">
+            Morten Harket
+          </span>
+        </div>
+      </a>
+    </header>
+    <main role="main"> 
+      <header class="masthead" role="banner">
+        <div class="container container--col-3">
+          <div class="row">
+            <div class="col-xs-12 col-sm-9 off-sm-3 text--left">
+              <h3 data-type="performer">A-ha, Duran Duran, The Cure</h3>
+              <h1 data-type="recording">Take on me live in Oslo</h1>
+              <h4 data-type="album">Test of times live</h4>
+            </div>
+          </div><!--end .row-->
+        </div>
+      </header>     
+      <section id="personalia" class="container container--col-3">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <nav class="nav--secondary" role="navigation">
+              <ul>
+                <li><a href="#" class="active">Innspillingsinfo</a></li>
+                <li><a href="#">Eierskap</a></li>
+                <li><a href="#">Utøvere</a></li>
+                <li><a href="#">Utgivelser</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-xs-12 col-sm-9">
+            <form class="form">
+              <section id="personalia">
+                <h2>Innspillingsinfo</h2>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Hovedartist
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Tittel
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Alternativ tittel
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Varighet
+                      <input type="number" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">ISRC
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Versjon
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Label
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Innspillingsland
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <label class="form__label">Innspillingsdato
+                      <input type="date" class="form__input form__input--date">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Produsentland
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <label class="form__label">Utgivelsesdato
+                      <input type="date" class="form__input form__input--date">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+              </section>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+</div>
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
+</body>
+</html>

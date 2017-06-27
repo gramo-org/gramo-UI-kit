@@ -1,0 +1,6 @@
+.form__label {
+  @extend %font-size;
+  padding: 0;
+  margin-bottom: 1.2rem;
+  color: inherit;
+}

@@ -32,42 +32,33 @@
       <section class="container">
         <div class="flash-message-wrapper--full-width flash-message-wrapper">
         </div>
-        <div class="row" id="steg1">
+        <div class="row">
           <div class="box box--login">
             <div class="message message--primary">
-              <p>Først skal vi prøve å finne deg igjen</p>
-            </div>
-            <header class="text--center">
-            </header>
-            <div class="message message--secondary message--with-arrow">
-              <p>Venligst skriv ditt fødselsnummer eller organisasjonsnummer nedenfor, 
-                så sjekker vi om du er Gramo medlem.</p>
+              <p>Velg passord</p>
             </div>
             <form class="form form--in-box">
-              <fieldset class="form__fieldset">
-                <label class="form__label form__label--block">Fødselsnummer eller organisasjonsnummer
-                  <input type="text" autofocus="" class="form__input form__input--block">
-                </label>
-              </fieldset>
+              <label class="form__label form__label--block">Passord
+                <input type="password" autofocus="" class="form__input form__input--block">
+              </label>
+
+              <label class="form__label form__label--block">Gjenta passord
+                <input type="password" class="form__input form__input--block">
+              </label>
+              <hr class="horizontal-rule horizontal-rule--spacer">
+              <label class="form__label form__label--block">Mobil telefon <span class="text--normal">(For å sende engangskode til)</span>
+                <input type="password" class="form__input form__input--block">
+              </label>
               <div class="form__section--action">
-                <div class="row">
-                  <div class="col-xs-5">
-                    <button class="btn btn btn--secondary btn--large">
-                      Avbryt
-                    </button>
-                  </div>
-                  <div class="col-xs-7">
-                    <button class="btn btn btn--primary btn--large">
-                      Finn profil
-                    </button>
-                  </div>
-                </div>
+                <button class="btn btn btn--block btn--primary btn--large">
+                  Gå til min side
+                </button>
               </div>
             </form>
             <ol class="wizard-steps wizard-steps--minimal">
-              <li class="selected"><span>1. Medlemskap</span></li>
+              <li><span>1. Medlemskap</span></li>
               <li><span>2. Personalia</span></li>
-              <li><span>3. Logg inn</span></li>
+              <li class="selected"><span>3. Logg inn</span></li>
             </ol>
           </div>
         </div><!-- end .row -->

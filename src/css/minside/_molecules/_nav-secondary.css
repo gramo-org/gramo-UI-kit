@@ -1,0 +1,30 @@
+.nav--secondary {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: var(--minside-font-family);
+    
+    
+    @media (--tablet) { margin-top: 2.4rem; text-transform: uppercase; font-size: 1.8rem; }
+  }
+  
+  li {
+    display: inline-block;
+    @media (--tablet) { display: block; }
+    
+    a {
+      text-decoration: none;
+      padding: .5rem 0;
+      margin: 0 1rem .5rem 0;
+      color: var(--off-gray);
+      @media (--tablet) { display: block; }
+      
+      &.active {
+        color: var(--gramo-sea-green);
+        text-decoration: underline;
+        @media (--tablet) { text-decoration: none; }
+      }
+    }
+  }
+}

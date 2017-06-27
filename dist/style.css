@@ -4875,9 +4875,12 @@ input[type="text"].search__form__input--large{
     position:relative;
     border:0;
     padding:0;
-    margin:0;
     clear:both;
   }
+
+  .form__fieldset .form__fieldset:not(.row){
+  margin:0;
+}
 
   .form__fieldset--group{
   padding:2rem;

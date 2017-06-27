@@ -1,0 +1,25 @@
+.form__input {
+  @extend %font-size;
+  padding: 1.2rem 0.75rem;
+  display: block;
+  width: 100%;
+  margin-top: .6rem;
+  margin-bottom: 0;
+}
+
+.form__input[type="date"], .form__input--date {
+  @extend .form__input;
+  color: inherit;
+  padding: 2.2rem .75rem;
+  background-position: center right 1rem;
+  @media (--tablet) { max-width: 200px; }  
+}
+/* Hack to vertically center text in input on ie/edge */
+_:-ms-lang(x), .form__input[type="date"] {
+  line-height: 0;
+}
+
+input[type="number"] {
+  height: auto;
+  max-width: 150px;
+}

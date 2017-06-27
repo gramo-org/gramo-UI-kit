@@ -10,8 +10,12 @@ main {
   overflow-y: auto;
 }
 
+main > section:first-of-type {
+  padding-top: 0;
+}
+
 .container--padded {
-  padding: 2.5rem;
+  padding: 2.5rem!important;
 }
 
 .container--col-1 {
@@ -20,6 +24,6 @@ main {
 }
 
 .container--col-3 {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
