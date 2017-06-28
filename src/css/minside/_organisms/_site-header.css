@@ -9,6 +9,7 @@
   margin-bottom: 1px;
   border: 0;
   padding: 1rem;
+  z-index: auto;
   
   &__branding {
     margin: 1rem 2rem 0 0;
@@ -50,6 +51,15 @@
       color: var(--gramo-blue);
       margin-left: 1rem;
       order: 2;
+    }
+  }
+  
+  &--login {
+    background: none;
+    box-shadow: none;
+    
+    .site-header__branding {
+      @media (--tablet) { text-align: center; }
     }
   }
 }

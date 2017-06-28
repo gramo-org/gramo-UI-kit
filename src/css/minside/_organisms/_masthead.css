@@ -5,12 +5,11 @@
   width: 100%;
   background: var(--light-gray);
   color: var(--slate-gray);
-  margin-bottom: 2rem;
   box-shadow: 0 1px 0 var(--silver);
   
   .icon {
     font-size: 6rem;
-    margin: 1rem 0;
+    
   }
   
   &:before,

@@ -9,6 +9,7 @@
   
   .icon {
     font-size: 5rem;
+    margin: 1rem 0;
   }
   
   &--primary {
@@ -31,6 +32,10 @@
       padding: 1rem 2rem;
       width: 100%; /* for IE */
     }
+    
+    i {
+      color: var(--gramo-turkis);
+    }
   }
   
   &--success {
@@ -44,11 +49,4 @@
   &--with-arrow {
     @extend .masthead;
   }
-}
-
-/* Temporary styles */
-.fa-paper-plane {
-  align-self: center;
-  color: var(--gramo-turkis);
-  margin: 2rem 0;
 }

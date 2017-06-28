@@ -1,15 +1,11 @@
 /* Min Side */
 .form {
   &--in-box {
-    padding: 2rem 3rem 0 3rem;
+    /*padding: 2rem 3rem 0 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    
-    .icon {
-      font-size: 5rem;
-    }
+    text-align: center;*/
   }
 }
 
@@ -42,6 +38,10 @@
       display: block;
       @media (--tablet) { flex: 0 0 15%; }
     }
+  }
+  
+  .form__label {
+    margin-bottom: .6rem;
   }
   .form__input {
     margin-top: 0;

@@ -36,10 +36,10 @@
         </div>
       </a>
     </header>
-    <main role="main">
+    <main>
       <!--- Flash message --->
       <div class="flash-message-wrapper">
-        <div class="flash-message flash-message--success">
+        <div class="flash-message flash-message--success" role="alert" aria-live="assertive">
           <p>Velkommen til nye Gramo</p>
           <a href="#" class="flash-message__close"><span class="icon icon--x"></span></a>
         </div>
@@ -65,11 +65,13 @@
       </section>
         
       <section class="container container--padded text--center">
-        <select class="select select--fluid">
-          <option value="">Velg periode</option>
-          <option value="">2017</option>
-          <option value="">2016</option>
-        </select>
+        <label class="form__label">
+          <select class="select select--fluid">
+            <option value="">Velg periode</option>
+            <option value="">2017</option>
+            <option value="">2016</option>
+          </select>
+        </label>
       </section>
       
       <section id="ledger-info" class="container container--col-1">

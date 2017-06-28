@@ -37,3 +37,8 @@
   border-width: 9px;
   left: 50%;
 }
+
+/* standar hr */
+hr.horizontal-rule {
+  margin: 1rem 0 2.4rem 0;
+}

@@ -33,29 +33,51 @@
       </div>
       <div class="box box--login">
         <div class="message message--primary">
-          <p>Først skal vi prøve å finne deg igjen</p>
+          <p>Ta kontakt med Gramo</p>
         </div>
         <header class="text--center">
         </header>
         <div class="message message--secondary message--with-arrow">
-          <p>Venligst skriv ditt fødselsnummer eller organisasjonsnummer nedenfor, 
-            så sjekker vi om du er Gramo medlem.</p>
+          <i class="icon icon--quill no-margin--bottom"></i>
+          <p>Venligst fyll ut feltene under 
+            Medlemservice tar kontakt med deg snarest.</p>
         </div>
         <div class="box__inner">
           <form class="form">
-            <label class="form__label form__label--block">Fødselsnummer eller organisasjonsnummer
-              <input type="text" autofocus="" class="form__input form__input--block">
+            <label class="form__label form__label--block">Tema
+              <select class="select select--block">
+                <option>Innlogging</option>
+                <option>Medlemskap</option>
+              </select>
+            </label>
+            <label class="form__label form__label--block form__label--required">Fornavn
+              <input type="text" class="form__input form__input--block">
+            </label>
+            <label class="form__label form__label--block form__label--required">Etternavn
+              <input type="text" class="form__input form__input--block">
+            </label>
+            <label class="form__label form__label--block form__label--required">Fødselsnummer
+              <input type="text" class="form__input form__input--block">
+            </label>
+            <label class="form__label form__label--block form__label--required">Epost
+              <input type="text" class="form__input form__input--block">
+            </label>
+            <label class="form__label form__label--block">Mobiltelefon
+              <input type="text" class="form__input form__input--block">
+            </label>
+            <label class="form__label form__label--block">Melding
+              <textarea class="form__input form__input--textarea"></textarea>
             </label>
             <div class="form__section--action">
               <div class="row">
                 <div class="col-xs-5">
                   <button class="btn btn btn--secondary btn--large">
-                    Avbryt
+                    Tilbake
                   </button>
                 </div>
                 <div class="col-xs-7">
                   <button class="btn btn btn--primary btn--large">
-                    Finn profil
+                    Send
                   </button>
                 </div>
               </div>
@@ -63,9 +85,9 @@
           </form>
         </div>
         <ol class="wizard-steps wizard-steps--minimal">
-          <li class="selected"><span>1. Medlemskap</span></li>
+          <li><span>1. Medlemskap</span></li>
           <li><span>2. Personalia</span></li>
-          <li><span>3. Logg inn</span></li>
+          <li class="selected"><span>3. Logg inn</span></li>
         </ol>
       </div>
     </main>

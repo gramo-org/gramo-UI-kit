@@ -36,23 +36,47 @@
         </div>
       </a>
     </header>
-    <main role="main">
+    <main>
       <section class="container">
         <div class="row">
           <header class="masthead" role="banner">
             <h2>Min diskografi</h2>
-            <i class="icon icon--album"></i>
+            <div class="container container--col-1">
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="box box--fluid box--shortcut">
+                    <i class="icon icon--notes"></i>
+                    <h4>Innspillinger</h4>
+                    <em>400</em>
+                  </div><!--end .box -->
+                </div><!--end .col -->
+                <div class="col-xs-4">
+                  <div class="box box--fluid box--shortcut">
+                    <i class="icon icon--album"></i>
+                    <h4>Album</h4>
+                    <em>138</em>
+                  </div><!--end .box -->
+                </div><!--end .col -->
+                <div class="col-xs-4">
+                  <div class="box box--fluid box--shortcut">
+                    <i class="icon icon--performer"></i>
+                    <h4>A-Solist</h4>
+                    <em>398</em>
+                  </div><!--end .box -->
+                </div><!--end .col -->
+              </div><!--end .row -->
+            </div>
           </header>
         </div>
       </section>
             
-      <section id="discography-info" class="container container--col-1">
+      <section id="discography-info" class="container container--padded container--col-1">
         <div class="tabs">
-          <ul class='tabs__nav tabs__nav--flexible'>
-            <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger <span class="badge">400</span></a></li>
-            <li class='tabs__nav__item'><a href="#album">Album <span class="badge">138</span></a></li>
+          <ul class="tabs__nav tabs__nav--flexible" role="tablist">
+            <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger" aria-selected="true">Innspillinger <span class="badge">400</span></a></li>
+            <li class="tabs__nav__item" role="presentation"><a href="#album" role="tab" aria-controls="album">Album <span class="badge">138</span></a></li>
           </ul>
-          <section id="innspillinger" class="tabs__section">
+          <section id="innspillinger" role="tabpanel" class="tabs__section">
             <table class="table table--fluid table--list table--recordings">
               <thead>
                 <tr>
@@ -94,7 +118,7 @@
               </tbody>
             </table>
           </section>
-          <section id="album" class="tabs__section">
+          <section id="album" role="tabpanel" aria-hidden="true" class="tabs__section">
             <table class="table table--fluid table--list">
               <thead>
                 <tr>

@@ -25,10 +25,10 @@
 </head>
 <body>
   <div class="site-wrapper">
-    <header class="site-header">
+    <header class="site-header site-header--login">
       <span class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt=""></span>
     </header>
-    <main role="main">
+    <main>
       <section class="container">
         <div class="flash-message-wrapper--full-width flash-message-wrapper">
         </div>
@@ -46,29 +46,29 @@
               <h3>Morten Harket</h3>
               <p>Vennligst oppgi epost adresessen knyttet til din profil. 
                 Vi skal sende en bekreftelse til denne eposten.</p>
-              </div>
-            <form class="form form--in-box">
-              <fieldset class="form__fieldset">
+            </div>
+            <div class="box__inner">
+              <form class="form">  
                 <label class="form__label form__label--block is-valid">E-post
                   <input type="email" autofocus="" value="morten.harket@aha.com" class="form__input form__input--block">
                 </label>
-              </fieldset>
-              <div class="form__section--action">
-                <div class="row">
-                  <div class="col-xs-4">
-                    <button class="btn btn btn--secondary btn--large">
-                      Avbryt
-                    </button>
-                  </div>
-                  <div class="col-xs-8">
-                    <button class="btn btn btn--primary btn--large">
-                      Bekreft profil
-                    </button>
+                <div class="form__section--action">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <button class="btn btn btn--secondary btn--large">
+                        Avbryt
+                      </button>
+                    </div>
+                    <div class="col-xs-8">
+                      <button class="btn btn btn--primary btn--large">
+                        Bekreft profil
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <p><a href="#" class="link--no-line">Glemt e-post? </a></p>
-            </form>
+                <p><a href="#" class="link--no-line">Glemt e-post? </a></p>
+              </form>
+            </div>
             <ol class="wizard-steps wizard-steps--minimal">
               <li><span>1. Medlemskap</span></li>
               <li class="selected"><span>2. Personalia</span></li>

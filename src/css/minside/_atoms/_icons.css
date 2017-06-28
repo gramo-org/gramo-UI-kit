@@ -37,6 +37,7 @@
 }
 .icon--quill:before {
   content: "\e928";
+  font-size: 6rem;
 }
 .icon--ok:before {
   content: "\e929";

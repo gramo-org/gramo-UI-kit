@@ -1,16 +1,12 @@
 /* Min Side */
 .section-header {
+  display: block;
+  padding-top: 0;
   
   header {
     
     h2 {
       justify-content: center;
     }  
-  }
-  
-  &--left {
-    header h2 {
-      justify-content: flex-start;
-    }
   }
 }

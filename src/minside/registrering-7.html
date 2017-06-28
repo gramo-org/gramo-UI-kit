@@ -25,10 +25,10 @@
 </head>
 <body>
   <div class="site-wrapper">
-    <header class="site-header">
+    <header class="site-header site-header--login">
       <span class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt=""></span>
     </header>
-    <main role="main">
+    <main>
       <section class="container">
         <div class="flash-message-wrapper--full-width flash-message-wrapper">
         </div>  
@@ -37,17 +37,18 @@
             <div class="message message--primary">
               <p>Vi har sendt deg en SMS med en engangskode.</p>
             </div>
-            <form class="form form--in-box">
-              <label class="form__label form__label--block">Engangskode
-                <input type="email" autofocus="" class="form__input form__input--block">
-              </label>
-
-              <div class="form__section--action">
-                <button class="btn btn btn--block btn--primary btn--large">
-                  Logg inn
-                </button>
-              </div>
-            </form>
+            <div class="box__inner">
+              <form class="form">
+                <label class="form__label form__label--block">Engangskode
+                  <input type="email" autofocus="" class="form__input form__input--block">
+                </label>
+                <div class="form__section--action">
+                  <button class="btn btn btn--block btn--primary btn--large">
+                    Logg inn
+                  </button>
+                </div>
+              </form>
+            </div>
             <ol class="wizard-steps wizard-steps--minimal">
               <li><span>1. Medlemskap</span></li>
               <li><span>2. Personalia</span></li>

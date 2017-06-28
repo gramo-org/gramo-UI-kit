@@ -1,6 +1,11 @@
 .form__label {
   @extend %font-size;
   padding: 0;
-  margin-bottom: 1.2rem;
+  margin: 0 0 1.2rem 0;
   color: inherit;
+}
+
+.form__label:not(.form__label--required):before {
+  content: '';
+  margin-left: .4rem;
 }
