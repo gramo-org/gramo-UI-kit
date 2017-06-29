@@ -1,10 +1,18 @@
 .nav--secondary {
   ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0 0 1.2rem 0;
+    margin: 0 0 1.2rem 0;
+    border-bottom: 1px solid var(--silver);
     font-family: var(--minside-font-family);
-    @media (--tablet) {  text-transform: uppercase; font-size: 1.8rem; }
+    @media (--tablet) { 
+      margin: 0; 
+      border: 0; 
+      padding: 0; 
+      text-transform: 
+      uppercase; 
+      font-size: 1.8rem; 
+    }
   }
   
   li {

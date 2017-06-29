@@ -23,19 +23,6 @@
     background: var(--light-gray);
     color: var(--slate-gray);
     margin-bottom: 2rem;
-    
-    h2 {
-      font-size: inherit;
-    }
-    
-    & > p {
-      padding: 1rem 2rem;
-      width: 100%; /* for IE */
-    }
-    
-    i {
-      color: var(--gramo-turkis);
-    }
   }
   
   &--success {
@@ -44,9 +31,5 @@
   
   &--error {
     background: var(--gramo-red);
-  }
-  
-  &--with-arrow {
-    @extend .masthead;
   }
 }

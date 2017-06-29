@@ -5,7 +5,11 @@
   color: inherit;
 }
 
-.form__label:not(.form__label--required):before {
+.form__label:not(.form__label--inline):not(.form__label--required):before {
   content: '';
   margin-left: .4rem;
+}
+
+.form__label--inline {
+  margin-right: 2rem;
 }

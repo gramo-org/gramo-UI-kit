@@ -42,4 +42,13 @@
   h1 {
     margin: 0;
   }
+  
+  h2 {
+    font-size: inherit;
+  }
+  
+  & > p {
+    padding: 1rem 2rem;
+    width: 100%; /* for IE */
+  }
 }

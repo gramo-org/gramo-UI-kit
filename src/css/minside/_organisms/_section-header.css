@@ -1,12 +1,6 @@
 /* Min Side */
-.section-header {
+.section__header {
   display: block;
   padding-top: 0;
-  
-  header {
-    
-    h2 {
-      justify-content: center;
-    }  
-  }
+  text-align: center; 
 }

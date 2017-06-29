@@ -27,7 +27,7 @@
   <div class="site-wrapper">
     <header class="site-header">
       <span class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt=""></span>
-      <a href="#" class="link--no-line">
+      <a href="#" class="link--no-line" id="menu-toggle">
         <div class="user">
           <img src="https://vignette1.wikia.nocookie.net/thebandaha/images/8/89/Morten_harket_1985.jpeg/revision/latest?cb=20141003214330" class="user__avatar">
           <span class="user__name">
@@ -39,36 +39,33 @@
     
     <main>
       <!--- Flash message --->
-      <div class="flash-message-wrapper">
+      <!-- <div class="flash-message-wrapper">
         <div class="flash-message flash-message--success" role="alert" aria-live="assertive">
           <p>Velkommen til nye Gramo</p>
           <a href="#" class="flash-message__close"><span class="icon icon--x"></span></a>
         </div>
-      </div>
+      </div> -->
       <section class="container">
         <div class="row">
-          <header class="masthead" role="banner">
-            <i class="icon icon--yes"></i>
-          </header>
-        </div>
+          <div class="statusboard statusboard--secondary" role="alert">
+            <header class="statusboard__header">
+              <i class="icon icon--bank"></i>
+              <span>Din siste utbetaling var</span>
+              <em>205 693,50 kr</em>
+              <span>25.12.2015</span>
+            </header>
+            <footer class="statusboard__footer">
+              <p>Avspillingsåret 2017 er ikke avregnet enda</p>
+            </footer>
+          </div>
+        </div><!--end .row -->
       </section>
         
       <section id="performerinfo" class="container container--padded container--col-1">
-        <div class="section-header">
-          <header>
-            <h2>Mine penger</h2>
-          </header>
-        </div>
-        <div class="box box--summary">
-          <div class="box__section box__section--main">
-            <span>Til utbetaling</span>
-            <em>16 756,50 kr</em>
-          </div>
-          <div class="box__section">
-            <span>Forventet</span>
-            <em>25.12.2017</em>
-          </div>
-        </div>
+        <header class="section__header">
+          <h2>Mine penger</h2>
+        </header>
+        <p class="text--center"><a href="#" class="link--no-line">Se detaljene</a></p>
       </section>
       
       <div class="horizontal-rule horizontal-rule--with-arrow">
@@ -76,31 +73,22 @@
       </div>
         
       <section id="discography-info" class="container container--col-1">
-        <div class="section-header">
-          <header>
-            <h2>Min diskografi</h2>
-          </header>
-        </div>
+        <header class="section__header">
+          <h2>Min diskografi</h2>
+        </header>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-xs-6">
             <div class="box box--fluid box--shortcut">
               <i class="icon icon--notes"></i>
               <h4>Innspillinger</h4>
               <em>400</em>
             </div><!--end .box -->
           </div><!--end .col -->
-          <div class="col-xs-4">
+          <div class="col-xs-6">
             <div class="box box--fluid box--shortcut">
               <i class="icon icon--album"></i>
               <h4>Album</h4>
               <em>138</em>
-            </div><!--end .box -->
-          </div><!--end .col -->
-          <div class="col-xs-4">
-            <div class="box box--fluid box--shortcut">
-              <i class="icon icon--performer"></i>
-              <h4>A-Solist</h4>
-              <em>398</em>
             </div><!--end .box -->
           </div><!--end .col -->
         </div><!--end .row -->
@@ -111,11 +99,9 @@
       </div>
       
       <section id="discography-info" class="container container--col-1">
-        <div class="section-header">
-          <header>
-            <h2>Musikk profil</h2>
-          </header>
-        </div>
+        <header class="section__header">
+          <h2>Musikk profil</h2>
+        </header>
         <form class="form form--summary">
           <label class="form__label form__label--block"><span>Gruppe</span>
             <input class="form__input" type="text" value="A-ha" disabled>

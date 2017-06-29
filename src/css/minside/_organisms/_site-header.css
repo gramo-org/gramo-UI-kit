@@ -4,6 +4,7 @@
   height: auto;
   flex: 0 0 auto;
   display: flex;
+  align-items: center;
   background: var(--gramo-white);
   box-shadow: 0 1px 1px var(--silver);
   margin-bottom: 1px;
@@ -13,16 +14,11 @@
   
   &__branding {
     margin: 1rem 2rem 0 0;
-    flex: 1;
-    @media (--tablet) { flex: 1; }
   }
   
   .user {
     background: none;
     padding: 0;
-    flex: 0 1 auto;
-    display: flex;
-    align-items: center;
     font-size: 1.4rem;
     @media (--tablet) { font-size: 1.5rem; }
     
@@ -31,6 +27,7 @@
       color: var(--ui-gray);
       text-transform: none;
       font-weight: var(--semibold);
+      flex: 1 0 auto;
     }
     
     &__avatar {
