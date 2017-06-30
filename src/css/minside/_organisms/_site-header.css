@@ -19,33 +19,27 @@
   .user {
     background: none;
     padding: 0;
-    font-size: 1.4rem;
-    @media (--tablet) { font-size: 1.5rem; }
+    font-size: var(--minside-font-size);
     
     &__name {
       margin-right: 1rem;
       color: var(--ui-gray);
       text-transform: none;
-      font-weight: var(--semibold);
       flex: 1 0 auto;
     }
     
     &__avatar {
       border: 1px solid color(var(--gramo-turkis) tint(20%));
-      max-width: 3.5rem;
-      max-height: 3.5rem;
       filter: grayscale(1) url(../img/img-filter.svg#monochrome);
       order: 1;
-      @media (--tablet) { max-width: 4rem; max-height: 4rem; }
     }
     
     &::after {
-      content: "\e90b";
+      content: "\e909";
       font-family: 'icomoon';
       align-self: center;
       display: block;
-      font-size: 8px;
-      color: var(--gramo-blue);
+      color: var(--ui-gray);
       margin-left: 1rem;
       order: 2;
     }
@@ -54,9 +48,6 @@
   &--login {
     background: none;
     box-shadow: none;
-    
-    .site-header__branding {
-      @media (--tablet) { text-align: center; }
-    }
+    @media (--tablet) { justify-content: center; }
   }
 }

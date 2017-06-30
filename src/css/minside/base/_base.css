@@ -10,6 +10,10 @@ body {
   @extend %font-size;
 }
 
+a {
+  color: var(--gramo-sea-green);
+}
+
 /* Type and fonts */
 h1, h2, h3, h4, h5 {
   font-weight: var(--normal);

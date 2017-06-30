@@ -1,7 +1,9 @@
 .statusboard {
   text-align: center;
   width: 100%;
-  
+  display: block;
+  @media (--tablet) { max-width: 400px; margin: 2rem auto 0 auto; border-radius: 4px; }
+
   &--primary {
     background: var(--gramo-turkis);
     
@@ -9,9 +11,9 @@
       background: color(var(--gramo-turkis) tint(60%));
     }
     
-    .icon {
+    /*.icon {
       color: var(--gramo-turkis);
-    }
+    }*/
   }
   
   &--secondary {
@@ -52,6 +54,8 @@
   
   &__header {
     padding: 2rem;
+    position: relative;
+    @media (--tablet) { border-radius: 4px 4px 0 0; }
     
     & > * {
       display: block;
@@ -68,8 +72,30 @@
     }
   }
   
+  &__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: inherit;
+    opacity: 0.4;
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem;
+    background: none;
+    border: 0;
+    outline: none;
+  }
+  
   &__footer {
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+      flex: 1;
+      margin-left: 1.5rem;
+    }
     
     em {
       font-style: normal;
@@ -77,6 +103,16 @@
     
     span {
       margin-right: 1rem;
+    }
+    
+    a {
+      line-height: 0;
+    }
+    
+    .icon {
+      font-size: inherit;
+      color: var(--ui-gray);
+      margin-right: 0;
     }
   }
   

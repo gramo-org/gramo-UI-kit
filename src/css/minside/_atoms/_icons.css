@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/minside/minside.eot?5fs0sn');
-  src:  url('../fonts/minside/minside.eot?5fs0sn#iefix') format('embedded-opentype'),
-    url('../fonts/minside/minside.ttf?5fs0sn') format('truetype'),
-    url('../fonts/minside/minside.woff?5fs0sn') format('woff'),
-    url('../fonts/minside/minside.svg?5fs0sn#icomoon') format('svg');
+  src:  url('../fonts/minside/minside.eot?pdihjx');
+  src:  url('../fonts/minside/minside.eot?pdihjx#iefix') format('embedded-opentype'),
+    url('../fonts/minside/minside.ttf?pdihjx') format('truetype'),
+    url('../fonts/minside/minside.woff?pdihjx') format('woff'),
+    url('../fonts/minside/minside.svg?pdihjx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,81 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon--calendar:before {
+  content: "\e900";
+}
+.icon--account:before {
+  content: "\e901";
+}
+.icon--address:before {
+  content: "\e902";
+}
+.icon--album-label:before {
+  content: "\e903";
+}
+.icon--label-produsent:before {
+  content: "\e904";
+}
+.icon--ny-profil:before {
+  content: "\e905";
+}
+.icon--utover-artist:before {
+  content: "\e906";
+}
+.icon--innspilling:before {
+  content: "\e907";
+}
+.icon--arrow-back:before {
+  content: "\e908";
+}
+.icon--carret_down:before {
+  content: "\e909";
+}
+.icon--checkmark:before {
+  content: "\e90a";
+}
+.icon--close:before {
+  content: "\e90b";
+}
+.icon--down:before {
+  content: "\e90c";
+}
+.icon--info:before {
+  content: "\e90d";
+}
+.icon--menu:before {
+  content: "\e90e";
+}
+.icon--switch:before {
+  content: "\e90f";
+}
+.icon--lock:before {
+  content: "\e910";
+}
+.icon--show:before {
+  content: "\e911";
+}
+.icon-altok2:before {
+  content: "\e912";
+}
+.icon--no2:before {
+  content: "\e913";
+}
+.icon--nerd:before {
+  content: "\e914";
+}
+.icon--yay2:before {
+  content: "\e915";
+  color: var(--gramo-green);
+}
+.icon--altok:before {
+  content: "\e916";
+  color: var(--gramo-green);
+}
+
+.icon--yay:before {
+  content: "\e92a";
+}
 
 .icon--bank:before {
   content: "\e925";
@@ -40,19 +115,7 @@
   font-size: 6rem;
   color: var(--gramo-turkis);
 }
-.icon--ok:before {
-  content: "\e929";
-  color: var(--gramo-green);
-}
-.icon--yes:before {
-  content: "\e92a";
-  color: var(--gramo-green);
-}
-
-.icon--home:before {
-  color: var(--gramo-turkis);
-}
 
 .icon--large {
-  font-size: 5rem;
+  font-size: 6rem;
 }

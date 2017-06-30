@@ -1,16 +1,15 @@
 /* Min Side */
-.heading--space-below {
-  border-bottom: 1px solid var(--silver);
-  padding-bottom: .6rem;
-}
 
-.row--spaced {
-  display: flex;
-  padding-bottom: .6rem;
-  margin-bottom: .6rem;
-  border-bottom: 1px dashed var(--silver);
-}
-
-.text--center {
+.text--center-on-mobile {
   text-align: center!important;
+}
+
+.text--bold-on-mobile {
+  font-weight: var(--semibold);
+  @media (--tablet) { font-weight: normal; }
+}
+
+.text--light-on-mobile {
+  color: var(--off-gray);
+  @media (--tablet) { color: inherit; }
 }

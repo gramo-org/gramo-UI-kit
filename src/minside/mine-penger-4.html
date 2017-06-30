@@ -41,28 +41,26 @@
       <!-- <div class="flash-message-wrapper">
         <div class="flash-message flash-message--success" role="alert" aria-live="assertive">
           <p>Velkommen til nye Gramo</p>
-          <a href="#" class="flash-message__close"><span class="icon icon--x"></span></a>
+          <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
         </div>
       </div> -->
-      <section class="container">
-        <div class="row">
-          <dialogue class="statusboard statusboard--secondary" role="alert">
-            <header class="statusboard__header">
-              <span class="icon icon--bank"></span>
-              <span>Din siste utbetaling var</span>
-              <em>205 693,50 kr</em>
-              <span>25.12.2015</span>
-              <a href="#" class="statusboard__close">
-                <span class="icon--close"></span>
-              </a>
-            </header>
-            <footer class="statusboard__footer">
-              <p>Avspillingsåret 2017 er ikke avregnet enda</p>
-            </footer>
-          </dialogue>
-        </div>
-      </section>
-        
+
+      <dialogue class="statusboard statusboard--primary" role="alert">
+        <header class="statusboard__header">
+          <span class="icon icon--yay"></span>
+          <h3>Utbetaling Vinter 2016</h3>
+          <em>214 000,00 kr</em>
+          <h3>Planlagt: 25.12.2015</h3>
+          <button href="#" class="statusboard__close">
+            <span class="icon--close"></span>
+          </button>
+        </header>
+        <footer class="statusboard__footer">
+          <p>Utbetalingen pågår. Vis meg</p>
+          <a href="#"><span class="icon icon--info"></span></a>
+        </footer>
+      </dialogue>
+    
       <section class="container container--padded text--center">
         <header class="section__header">
           <h2>Mine Penger</h2>
@@ -75,7 +73,6 @@
           </select>
         </label>
       </section>
-      
       <section id="ledger-info" class="container container--col-1">
         <table class="table table--fluid table--list table--ledger">
           <thead>
@@ -89,17 +86,34 @@
           </thead>
           <tbody>
             <tr class="table__row--with-arrow">
-              <td data-label="Avregningsdato" class="table__cell--left text--light">
+              <td data-label="Avregningsdato" class="table__cell--left text--light-on-mobile">
                 25.12.2015
               </td>
-              <td data-label="Avregningsnavn" class="table__cell--left text--bold">
+              <td data-label="Avregningsnavn" class="table__cell--left text--bold-on-mobile">
                 Utebetaling Vinter 2015
               </td>
               <td data-label="Betalt til" class="table__cell--left">
                 Bank
               </td>
-              <td data-label="Status" class="text--light">
+              <td data-label="Status" class="text--light-on-mobile">
                 Kjørt
+              </td>
+              <td data-label="Midler" class="text--bold">
+                <a href="#" class="link--no-line">Kr. 1785,59</a>
+              </td>
+            </tr>
+            <tr class="table__row--with-arrow">
+              <td data-label="Avregningsdato" class="table__cell--left text--light-on-mobile">
+                25.12.2015
+              </td>
+              <td data-label="Avregningsnavn" class="table__cell--left text--bold-on-mobile">
+                Utebetaling Vinter 2015
+              </td>
+              <td data-label="Betalt til" class="table__cell--left">
+                Bank
+              </td>
+              <td data-label="Status" class="text--light-on-mobile">
+                Pågår
               </td>
               <td data-label="Midler" class="text--bold">
                 <a href="#" class="link--no-line">Kr. 1785,59</a>

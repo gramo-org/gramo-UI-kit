@@ -26,8 +26,8 @@ only screen and (max-width: 768px),
       margin: 0;
       
       &:first-child {
-        color: color(var(--gramo-turkis) shade(40%));
-        font-weight: var(--semibold);
+        /*color: color(var(--gramo-turkis) shade(40%));
+        font-weight: var(--semibold);*/
         font-size: inherit;
         flex: 1 0 60%;
       }
@@ -46,12 +46,12 @@ only screen and (max-width: 768px),
       padding-right: 2rem;
       
       &:after {
-        content: "\e907";
+        content: "\e90c";
         color: var(--light-gray);
         top: 50%;
         right: 1rem;
         margin-top: -1rem;
-        transform: rotate(180deg);
+        transform: rotate(-90deg);
         position: absolute;
         font-family: 'icomoon';
       }
@@ -114,4 +114,25 @@ only screen and (max-width: 768px),
       order: 2;
     }
   }*/
+  
+  .table--standard {
+    display: table;
+    width: calc(100% + 2rem);
+    margin: 0 -1rem;
+    thead {
+      display: table-header-group;
+      border: 0;
+    }
+    tbody {
+      display: table-row-group;
+    }
+    tr {
+      display: table-row;
+      border-width: 0 0 1px 0;
+    }
+    th, td {
+      display: table-cell;
+      border-width: 1px 0!important;
+    }
+  }
 }
