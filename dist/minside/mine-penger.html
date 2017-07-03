@@ -36,7 +36,6 @@
         </div>
       </a>
     </header>
-    
     <main>
       <!--- Flash message --->
       <!-- <div class="flash-message-wrapper">
@@ -61,61 +60,53 @@
               <p>Avspillingsåret 2017 er ikke avregnet enda</p>
             </footer>
           </dialogue>
-        </div><!--end .row -->
+        </div>
       </section>
         
-      <section id="performerinfo" class="container container--padded container--col-1">
+      <section class="container container--padded text--center">
         <header class="section__header">
-          <h2>Mine penger</h2>
+          <h2>Mine Penger</h2>
         </header>
-        <p class="text--center"><a href="#" class="link--no-line">Se detaljene</a></p>
+        <label class="form__label">Velg Periode
+          <select class="select select--fluid select--block">
+            <option value="">Alle transakjoner</option>
+            <option value="">2017</option>
+            <option value="">2016</option>
+          </select>
+        </label>
       </section>
       
-      <div class="horizontal-rule horizontal-rule--with-arrow">
-        <hr>
-      </div>
-        
-      <section id="discography-info" class="container container--col-1">
-        <header class="section__header">
-          <h2>Min diskografi</h2>
-        </header>
-        <div class="row">
-          <div class="col-xs-6">
-            <div class="box box--fluid box--shortcut">
-              <span class="icon icon--notes"></span>
-              <h4>Innspillinger</h4>
-              <em>400</em>
-            </div><!--end .box -->
-          </div><!--end .col -->
-          <div class="col-xs-6">
-            <div class="box box--fluid box--shortcut">
-              <span class="icon icon--album"></span>
-              <h4>Album</h4>
-              <em>138</em>
-            </div><!--end .box -->
-          </div><!--end .col -->
-        </div><!--end .row -->
-      </section>
-        
-      <div class="horizontal-rule horizontal-rule--with-arrow">
-        <hr>
-      </div>
-      
-      <section id="discography-info" class="container container--col-1">
-        <header class="section__header">
-          <h2>Musikk profil</h2>
-        </header>
-        <form class="form form--summary">
-          <label class="form__label form__label--block"><span>Gruppe</span>
-            <input class="form__input" type="text" value="A-ha" disabled>
-          </label>
-          <label class="form__label form__label--block"><span>Artistnavn</span>
-            <input class="form__input" type="text" value="Morten Harket" disabled>
-          </label>
-          <label class="form__label form__label--block"><span>Instrumenter</span>
-            <input class="form__input" type="text" value="Vokal" disabled>
-          </label>
-        </form>
+      <section id="ledger-info" class="container container--col-1">
+        <table class="table table--fluid table--list table--ledger">
+          <thead>
+            <tr>
+              <th>Avregningsdato</th>
+              <th>Avregningsnavn</th>
+              <th>Betalt til</th>
+              <th>Status</th>
+              <th>Midler</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table__row--with-arrow">
+              <td data-label="Avregningsdato" class="table__cell--left text--light">
+                25.12.2015
+              </td>
+              <td data-label="Avregningsnavn" class="table__cell--left text--bold">
+                Utebetaling Vinter 2015
+              </td>
+              <td data-label="Betalt til" class="table__cell--left">
+                Bank
+              </td>
+              <td data-label="Status" class="text--light">
+                Kjørt
+              </td>
+              <td data-label="Midler" class="text--bold">
+                <a href="#" class="link--no-line">Kr. 1785,59</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
 </div>

@@ -45,77 +45,85 @@
         </div>
       </div> -->
 
-      <section id="ledger-info" class="container container--padded container--col-1">
-        <header class="section__header">
-          <h2>Take on Me</h2>
+      <dialogue class="statusboard statusboard--primary" role="alert">
+        <header class="statusboard__header">
+          <span class="icon icon--yay"></span>
+          <h3>Utbetaling Vinter 2016</h3>
+          <em>214 000,00 kr</em>
+          <h3>Planlagt: 25.12.2015</h3>
+          <button href="#" class="statusboard__close">
+            <span class="icon--close"></span>
+          </button>
         </header>
-        <table class="table table--fluid table--list table--ledger no-margin--bottom">
+        <footer class="statusboard__footer">
+          <p>Utbetalingen pågår. Vis meg</p>
+          <a href="#"><span class="icon icon--info"></span></a>
+        </footer>
+      </dialogue>
+    
+      <section class="container container--padded text--center">
+        <header class="section__header">
+          <h2>Mine Penger</h2>
+        </header>
+        <label class="form__label">Velg Periode
+          <select class="select select--fluid select--block">
+            <option value="">Alle transakjoner</option>
+            <option value="">2017</option>
+            <option value="">2016</option>
+          </select>
+        </label>
+      </section>
+      <section id="ledger-info" class="container container--col-1">
+        <table class="table table--fluid table--list table--ledger">
           <thead>
             <tr>
-              <th>Innspillingstittel</th>
-              <th>Hovedartist</th>
-              <th>Poeng</th>
-              <th>Spilletid</th>
-              <th>Sats</th>
+              <th>Avregningsdato</th>
+              <th>Avregningsnavn</th>
+              <th>Betalt til</th>
+              <th>Status</th>
               <th>Midler</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td data-label="Innspillingstittel" class="table__cell--left">
-                <a href="#" class="link--no-line text--bold-on-mobile">Take on Me</a>
+            <tr class="table__row--with-arrow">
+              <td data-label="Avregningsdato" class="table__cell--left text--light-on-mobile">
+                25.12.2015
               </td>
-              <td data-label="Hovedartist" class="table__cell--left">
-                A-ha
+              <td data-label="Avregningsnavn" class="table__cell--left text--bold-on-mobile">
+                Utebetaling Vinter 2015
               </td>
-              <td data-label="Poeng" class="table__cell--left">
-                A/B - 64 poeng
+              <td data-label="Betalt til" class="table__cell--left">
+                Bank
               </td>
-              <td data-label="Spilletid">
-                19:04:45
-              </td>
-              <td data-label="Sats">
-                175
+              <td data-label="Status" class="text--light-on-mobile">
+                Kjørt
               </td>
               <td data-label="Midler" class="text--bold">
-                Kr. 1785,59
+                <a href="#" class="link--no-line">Kr. 1785,59</a>
               </td>
             </tr>
-          </tbody>
-        </table>
-        <table class="table table--fluid table--standard">
-          <thead>
-            <tr>
-              <th>Radio</th>
-              <th class="text--center-on-mobile">Antall</th>
-              <th>Spilletid</th>
-              <th>Inntekt</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>NRK P1</td>
-              <td class="text--center-on-mobile">3</td>
-              <td>00:10:05</td>
-              <td>30,50</td>
-            </tr>
-            <tr>
-              <td>NRK P1</td>
-              <td class="text--center-on-mobile">3</td>
-              <td>00:10:05</td>
-              <td>30,50</td>
-            </tr>
-            <tr>
-              <td>NRK P1</td>
-              <td class="text--center-on-mobile">3</td>
-              <td>00:10:05</td>
-              <td>30,50</td>
+            <tr class="table__row--with-arrow">
+              <td data-label="Avregningsdato" class="table__cell--left text--light-on-mobile">
+                25.12.2015
+              </td>
+              <td data-label="Avregningsnavn" class="table__cell--left text--bold-on-mobile">
+                Utebetaling Vinter 2015
+              </td>
+              <td data-label="Betalt til" class="table__cell--left">
+                Bank
+              </td>
+              <td data-label="Status" class="text--light-on-mobile">
+                Pågår
+              </td>
+              <td data-label="Midler" class="text--bold">
+                <a href="#" class="link--no-line">Kr. 1785,59</a>
+              </td>
             </tr>
           </tbody>
         </table>
       </section>
     </main>
-  </div>
+</div>
 <script src="../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../js/default.js"></script>
 </body>

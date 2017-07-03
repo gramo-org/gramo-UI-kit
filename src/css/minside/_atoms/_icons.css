@@ -35,16 +35,16 @@
 .icon--album-label:before {
   content: "\e903";
 }
-.icon--label-produsent:before {
+.icon--producer:before {
   content: "\e904";
 }
-.icon--ny-profil:before {
+.icon--profile:before {
   content: "\e905";
 }
-.icon--utover-artist:before {
+.icon--artist:before {
   content: "\e906";
 }
-.icon--innspilling:before {
+.icon--recording:before {
   content: "\e907";
 }
 .icon--arrow-back:before {
@@ -112,8 +112,6 @@
 }
 .icon--quill:before {
   content: "\e928";
-  font-size: 6rem;
-  color: var(--gramo-turkis);
 }
 
 .icon--large {

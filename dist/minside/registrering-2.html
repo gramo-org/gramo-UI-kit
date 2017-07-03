@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="minside.css">
+  <script src="https://use.typekit.net/xja4iud.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header site-header--login">
+      <span class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt="Gramo logo"></span>
+    </header>
+    <main>
+      <section class="container">
+        <div class="flash-message-wrapper--full-width flash-message-wrapper">
+        </div>
+
+        <div class="row" id="steg2">
+          <div class="box box--login">
+            <div class="message message--success">
+              <p>Vi har funnet følgende profil.</p>
+              <p>Vennligst bekreft opplysningene nedenfor.</p>
+            </div>
+            
+            <div class="masthead">
+              <span class="icon icon--yes"></span>
+              <h2 class="text--upper">Utøver</h2>
+              <h3>Morten Harket</h3>
+              <p>Vennligst oppgi epost adresessen knyttet til din profil. 
+                Vi skal sende en bekreftelse til denne eposten.</p>
+            </div>
+            <div class="box__inner">
+              <form class="form">  
+                <label class="form__label form__label--block is-valid">E-post
+                  <input type="email" autofocus="" value="morten.harket@aha.com" class="form__input form__input--block">
+                </label>
+                <div class="form__section--action">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <button class="btn btn btn--secondary btn--large">
+                        Avbryt
+                      </button>
+                    </div>
+                    <div class="col-xs-8">
+                      <button class="btn btn btn--primary btn--large">
+                        Bekreft profil
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p><a href="#" class="link--no-line" id="menu-toggle">Glemt e-post? </a></p>
+              </form>
+            </div>
+            <ol class="wizard-steps wizard-steps--minimal">
+              <li><span>1. Medlemskap</span></li>
+              <li class="selected"><span>2. Personalia</span></li>
+              <li><span>3. Logg inn</span></li>
+            </ol>
+          </div>
+        </div><!-- end .row -->
+      </section>
+    </main>
+</div>
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+
+</body>
+</html>

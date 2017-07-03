@@ -252,7 +252,14 @@ $(document).ready(function() {
 
 // Make fake-table__panels__sidebar sticky
 
-
+$('[aria-controls]').on("click", function(e) {
+  e.preventDefault();
+  $(this).attr('aria-expanded', function(index, attr) {
+    return attr == 'true' ? 'false' : 'true';
+    
+  });
+  $(this).parent().next('nav').toggleClass('nav-visible');
+});
 
 }); // end document ready
 

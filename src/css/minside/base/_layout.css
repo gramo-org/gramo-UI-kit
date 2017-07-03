@@ -44,3 +44,9 @@ main > section:first-of-type {
   justify-content: center;
   align-items: center;
 }
+
+.nav--primary.nav-visible ~ main::after {
+  content: '';
+  @extend .overlay;
+  animation: fadeIn ease 1s;
+}

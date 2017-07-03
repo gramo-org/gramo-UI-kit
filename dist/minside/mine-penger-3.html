@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="minside.css">
+  <script src="https://use.typekit.net/xja4iud.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <span class="site-header__branding"><img src="../img/gramo-logo-black.png" width="120" alt="Gramo logo"></span>
+      <a href="#" class="link--no-line" id="menu-toggle">
+        <div class="user">
+          <img src="https://vignette1.wikia.nocookie.net/thebandaha/images/8/89/Morten_harket_1985.jpeg/revision/latest?cb=20141003214330" class="user__avatar" alt="Morten Harket">
+          <span class="user__name">
+            Morten Harket
+          </span>
+        </div>
+      </a>
+    </header>
+    <main>
+      <!--- Flash message --->
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success" role="alert" aria-live="assertive">
+          <p>Velkommen til nye Gramo</p>
+          <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
+        </div>
+      </div> -->
+
+      <dialogue class="statusboard statusboard--primary" role="alert">
+        <header class="statusboard__header">
+          <span class="icon icon--yay"></span>
+          <h3>Utbetaling Vinter 2016</h3>
+          <em>214 000,00 kr</em>
+          <h3>Planlagt: 25.12.2015</h3>
+          <button href="#" class="statusboard__close">
+            <span class="icon--close"></span>
+          </button>
+        </header>
+        <footer class="statusboard__footer">
+          <p>Utbetalingen pågår. Vis meg</p>
+          <a href="#"><span class="icon icon--info"></span></a>
+        </footer>
+      </dialogue>
+    
+      <section id="ledger-info" class="container container--padded container--col-1">
+        <header class="section__header">
+          <h2>Utbetaling detaljer</h2>
+        </header>
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible" role="tablist">
+            <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger" aria-selected="true">Per Sang</a></li>
+            <li class="tabs__nav__item" role="presentation"><a href="#channel" role="tab" aria-controls="channel">Per Radio</a></li>
+          </ul>
+          <section id="innspillinger" role="tabpanel" class="tabs__section">
+            <table class="table table--fluid table--list table--ledger">
+              <thead>
+                <tr>
+                  <th>Innspillingstittel</th>
+                  <th>Hovedartist</th>
+                  <th>Poeng</th>
+                  <th>Spilletid</th>
+                  <th>Sats</th>
+                  <th>Midler</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Innspillingstittel" class="table__cell--left">
+                    <a href="#" class="link--no-line text--bold-on-mobile">Take on Me</a>
+                  </td>
+                  <td data-label="Hovedartist" class="table__cell--left">
+                    A-ha
+                  </td>
+                  <td data-label="Poeng" class="table__cell--left">
+                    A/B - 64 poeng
+                  </td>
+                  <td data-label="Spilletid">
+                    19:04:45
+                  </td>
+                  <td data-label="Sats">
+                    175
+                  </td>
+                  <td data-label="Midler" class="text--bold">
+                    Kr. 1785,59
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section id="channel" role="tabpanel" class="tabs__section">
+            
+          </section>
+      </section>
+    </main>
+</div>
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
+</body>
+</html>

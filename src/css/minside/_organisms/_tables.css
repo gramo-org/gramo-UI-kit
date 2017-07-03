@@ -119,6 +119,7 @@ only screen and (max-width: 768px),
     display: table;
     width: calc(100% + 2rem);
     margin: 0 -1rem;
+    
     thead {
       display: table-header-group;
       border: 0;
@@ -135,4 +136,8 @@ only screen and (max-width: 768px),
       border-width: 1px 0!important;
     }
   }
+}
+
+.table--standard {
+  @media (--tablet) { margin-top: 2rem; }
 }

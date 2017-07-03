@@ -1,6 +1,58 @@
-#menu-toggle {
+.nav-toggle {
   flex: 1 1 auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.nav-toggle[aria-expanded="true"] {
+  .user::after {
+    transform: rotate(-180deg)
+  }
+}
+
+.nav--primary {
+  width: 30rem;
+  transform: translateX(30rem);
+  transition: all .25s ease;
+  height: calc(100% - 6.2rem);
+  background: var(--gramo-white);
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 6.2rem;
+  
+  &.nav-visible {
+    transform: translateX(0);
+    box-shadow: -3px 3px 5px 0px color(var(--ui-gray));
+  }
+  
+  .vertical__nav {
+    background: none;
+    
+    li a {
+      background: none;
+      color: inherit;
+      text-transform: none;
+      border: 0;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      
+      &.active {
+        color: var(--gramo-sea-green);
+      }
+    }
+    
+    .icon {
+      font-size: 2.5rem;
+      margin-right: 1rem;
+      margin-top: .2rem;
+    }
+    
+    &__heading {
+      background: var(--x-light-gray);
+      padding: 1rem 1.5rem;
+    }
+  }
 }
