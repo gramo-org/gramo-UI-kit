@@ -4,16 +4,16 @@
   font-family: 'icomoon';
   position: absolute;
   left: 92%;
-  top: 50%;
+  top: 55%;
   background: var(--gramo-white);
   content: none;
-  @media (--desktop) { content: "\e900"; }
+  @media (--desktop) { content: "\e90a"; }
 }
 
 .form__label.has-error::after {
   color: var(--gramo-red);
   content: none;
-  @media (--desktop) { content: "\e901"; }
+  @media (--desktop) { content: "\e90b"; }
 }
 
 .form__label.is-valid .form__input,

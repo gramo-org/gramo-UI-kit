@@ -1,14 +1,26 @@
 .nav-toggle {
-  flex: 1 1 auto;
+  flex: 0 0 auto;
+  position: relative;
+  color: var(--gramo-white);
+  text-transform: uppercase;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  font-size: 1.8rem;
+  align-items: baseline;
+  transition: all .25s ease;
+  
+  &::after {
+    content: "\e90e";
+    font-family: 'icomoon';
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
 }
 
-.nav-toggle[aria-expanded="true"] {
-  .user::after {
-    transform: rotate(-180deg)
-  }
+.nav-toggle[aria-expanded="true"]::after {
+  content: "\e90b";
+  font-size: 1.7rem;
+  margin-left: .7rem;
+  align-self: center;
 }
 
 .nav--primary {
@@ -20,7 +32,7 @@
   position: fixed;
   z-index: 2;
   right: 0;
-  top: 6.2rem;
+  top: 6rem;
   
   &.nav-visible {
     transform: translateX(0);

@@ -5,49 +5,20 @@
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  background: var(--gramo-white);
-  box-shadow: 0 1px 1px var(--silver);
-  margin-bottom: 1px;
+  background: var(--dark-gray);
+  box-shadow: none;
   border: 0;
   padding: 1rem;
   z-index: auto;
   
   &__branding {
+    flex: 1;
     margin: 1rem 2rem 0 0;
-  }
-  
-  .user {
-    background: none;
-    padding: 0;
-    font-size: var(--minside-font-size);
-    
-    &__name {
-      margin-right: 1rem;
-      color: var(--ui-gray);
-      text-transform: none;
-      flex: 1 0 auto;
-    }
-    
-    &__avatar {
-      border: 1px solid color(var(--gramo-turkis) tint(20%));
-      filter: grayscale(1) url(../img/img-filter.svg#monochrome);
-      order: 1;
-    }
-    
-    &::after {
-      content: "\e909";
-      font-family: 'icomoon';
-      align-self: center;
-      display: block;
-      color: var(--ui-gray);
-      margin-left: 1rem;
-      order: 2;
-    }
   }
   
   &--login {
     background: none;
     box-shadow: none;
-    @media (--tablet) { justify-content: center; }
+    @media (--tablet) { text-align: center; }
   }
 }

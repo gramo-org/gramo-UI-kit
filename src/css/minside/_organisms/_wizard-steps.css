@@ -15,6 +15,10 @@
       color: var(--light-gray);
       margin-left: .3rem;
     }
+    
+    &:last-child{
+      margin-right: 0;
+    }
   }
   li.selected::after {
     color: var(--off-gray);

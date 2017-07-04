@@ -2,6 +2,7 @@
 
 %font-size {
   font-size: var(--minside-font-size);
+  line-height: var(--minside-line-height);
 }
 
 /* Basic layout */

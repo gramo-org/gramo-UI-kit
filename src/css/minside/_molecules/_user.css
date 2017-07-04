@@ -1,0 +1,16 @@
+.user {
+  background: none;
+  font-size: var(--minside-font-size);
+  
+  &__name {
+    margin-right: 1rem;
+    color: var(--ui-gray);
+    text-transform: none;
+    flex: 1 0 auto;
+  }
+  
+  &__avatar {
+    border: 1px solid color(var(--gramo-turkis) tint(20%));
+    filter: grayscale(1) url(../img/img-filter.svg#monochrome);
+  }
+}
