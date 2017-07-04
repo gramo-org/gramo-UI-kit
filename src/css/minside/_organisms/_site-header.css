@@ -12,6 +12,7 @@
   z-index: auto;
   
   &__branding {
+    display: block;
     flex: 1;
     margin: 1rem 2rem 0 0;
   }
