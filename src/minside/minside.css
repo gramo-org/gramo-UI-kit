@@ -692,7 +692,7 @@ input[type="number"]{
 .nav--primary.nav-visible{
   -webkit-transform:translateX(0);
   transform:translateX(0);
-  box-shadow:-3px 3px 5px 0px rgb(67, 77, 90);
+  box-shadow:-3px 3px 5px 0px rgba(67, 77, 90, 0.5);
 }
 
 .nav--primary .vertical__nav{
@@ -713,7 +713,7 @@ input[type="number"]{
   align-items:center;
 }
 
-.nav--primary .vertical__nav li a.active{
+.nav--primary .vertical__nav li a.active, .nav--primary .vertical__nav li a:hover{
   color:#31798d;
 }
 

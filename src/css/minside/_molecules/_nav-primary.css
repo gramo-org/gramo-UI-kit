@@ -24,7 +24,7 @@
   
   &.nav-visible {
     transform: translateX(0);
-    box-shadow: -3px 3px 5px 0px color(var(--ui-gray));
+    box-shadow: -3px 3px 5px 0px color(var(--ui-gray) a(50%));
   }
   
   .vertical__nav {
@@ -39,7 +39,7 @@
       display: flex;
       align-items: center;
       
-      &.active {
+      &.active, &:hover {
         color: var(--gramo-sea-green);
       }
     }
