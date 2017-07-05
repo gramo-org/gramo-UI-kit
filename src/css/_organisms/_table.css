@@ -48,7 +48,11 @@
   
   &--for-agents {
     th, td {
-      padding: 1rem 0.25rem;
+      padding: 1rem 0.25rem!important;
+      
+      &.table__cell--contained {
+        max-width: 50px;
+      }
     }
   }
 }

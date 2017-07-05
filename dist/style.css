@@ -5696,7 +5696,10 @@ tr > td:last-child{
   z-index:1;
 }
 .table--for-agents th, .table--for-agents td{
-  padding:1rem 0.25rem;
+  padding:1rem 0.25rem!important;
+}
+.table--for-agents th.table__cell--contained, .table--for-agents td.table__cell--contained{
+  max-width:50px;
 }
 
 @media (min-width: 768px){
