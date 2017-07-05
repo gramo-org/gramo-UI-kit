@@ -1213,11 +1213,11 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 }
 @font-face{
   font-family:'icomoon';
-  src:url('fonts/echo/icomoon.eot?t6f6op');
-  src:url('fonts/echo/icomoon.eot?t6f6op#iefix') format('embedded-opentype'),
-    url('fonts/echo/icomoon.ttf?t6f6op') format('truetype'),
-    url('fonts/echo/icomoon.woff?t6f6op') format('woff'),
-    url('fonts/echo/icomoon.svg?t6f6op#icomoon') format('svg');
+  src:url('fonts/icomoon.eot?t6f6op');
+  src:url('fonts/icomoon.eot?t6f6op#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?t6f6op') format('truetype'),
+    url('fonts/icomoon.woff?t6f6op') format('woff'),
+    url('fonts/icomoon.svg?t6f6op#icomoon') format('svg');
   font-weight:normal;
   font-style:normal;
 }
