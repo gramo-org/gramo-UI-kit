@@ -73,3 +73,34 @@
 .table__cell--decrease::after {
   transform: rotate(90deg);
 }
+
+/* Status flags for table cells */
+.status--red::before,
+.status--yellow::before,
+.status--green::before {
+  display: inline-block;
+  position: relative;
+  width: 1.5rem;
+  margin-right: .5rem;
+}
+
+.status--red::before {
+  @extend .icon--cross:before;
+  font-family: 'icomoon';
+  font-size: 1rem;
+}
+
+.status--yellow::before {
+  content: '';
+  left: -3px;
+  height: 3px;
+  background: orange;
+  vertical-align: middle;
+}
+
+.status--green::before {
+  @extend .icon--tick:before;
+  font-family: 'icomoon';
+  font-size: 1rem;
+  color: var(--gramo-green);
+}
