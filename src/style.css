@@ -4312,6 +4312,16 @@ main.pull .bucket{
   width:100%;
   z-index:1;
 }
+.tabs__nav__item--disabled > a{
+  color:rgb(195, 195, 198);
+  pointer-events:none;
+}
+.tabs__nav__item--disabled:hover{
+  background:#f9f9f9;
+}
+.tabs__nav__item--disabled:hover::after{
+  content:none;
+}
 .tabs__nav__item a.active{
   position:static;
 }
