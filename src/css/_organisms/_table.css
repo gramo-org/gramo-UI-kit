@@ -47,16 +47,16 @@
   }
   
   &--for-agents {
-    th, td:not(:first-child) {
+    th:not(:first-child), td:not(:first-child) {
       padding: 1rem 0.25rem!important;
-      
-      &:first-child {
-        padding: 1rem 0.25rem 1rem 1rem;
-      }
       
       &.table__cell--contained {
         max-width: 50px;
       }
+    }
+    
+    th:first-child, td:first-child {
+      padding: 1rem 0.25rem 1rem 1rem;
     }
   }
 }
