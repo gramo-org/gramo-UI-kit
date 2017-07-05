@@ -5695,6 +5695,9 @@ tr > td:last-child{
   width:calc(100% + .2rem);
   z-index:1;
 }
+.table--for-agents th, .table--for-agents td{
+  padding:1rem 0.25rem;
+}
 
 @media (min-width: 768px){
 

@@ -45,6 +45,12 @@
     width: calc(100% + .2rem);
     z-index: 1;
   }
+  
+  &--for-agents {
+    th, td {
+      padding: 1rem 0.25rem;
+    }
+  }
 }
 
 .table__cell--action {
