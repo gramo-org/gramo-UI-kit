@@ -5695,10 +5695,13 @@ tr > td:last-child{
   width:calc(100% + .2rem);
   z-index:1;
 }
-.table--for-agents th, .table--for-agents td{
+.table--for-agents th, .table--for-agents td:not(:first-child){
   padding:1rem 0.25rem!important;
 }
-.table--for-agents th.table__cell--contained, .table--for-agents td.table__cell--contained{
+.table--for-agents th:first-child, .table--for-agents td:not(:first-child):first-child{
+  padding:1rem 0.25rem 1rem 1rem;
+}
+.table--for-agents th.table__cell--contained, .table--for-agents td:not(:first-child).table__cell--contained{
   max-width:50px;
 }
 
