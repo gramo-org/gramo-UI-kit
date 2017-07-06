@@ -252,7 +252,7 @@ $(document).ready(function() {
 
 // Make fake-table__panels__sidebar sticky
 
-$("tr.drilldown-body[data-level=2]:not(.table__row--subhead)").click(function(){
+$("tr.drilldown-body[data-level=2]").click(function(){
     $(this).addClass("table__row--selected").siblings().removeClass("table__row--selected");
 });
 

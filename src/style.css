@@ -5597,14 +5597,14 @@ tbody > tr{
 
 @media (min-width: 768px){
 
-  tbody > tr:hover{
+  tbody > tr:hover:not(.table__row--subhead){
     background:#f9f9f9;
   }
 }
 
 @media (min-width: 768px){
 
-  tbody > tr.table__row--selected{
+  tbody > tr.table__row--selected:not(.table__row--subhead){
     background:rgb(232, 232, 232);
   }
 }

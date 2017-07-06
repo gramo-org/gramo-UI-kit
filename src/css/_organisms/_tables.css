@@ -58,10 +58,10 @@ thead {
 
 tbody > tr {
   background: var(--gramo-white);
-  &:hover {
+  &:hover:not(.table__row--subhead) {
     @media (--tablet) { background: var(--row-hover); }
   }
-  &.table__row--selected {
+  &.table__row--selected:not(.table__row--subhead) {
     @media (--tablet) { background: color(var(--row-hover) shade(7%)); }
   }
 }
