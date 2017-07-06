@@ -260,7 +260,7 @@ td.text--center,
 
 /*** lists ***/
 
-%no-list {
+%no-list, .no-list {
   list-style: none;
   padding: 0;
   margin: 0;

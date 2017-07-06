@@ -19,6 +19,9 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../style.css">
+  <script>
+  window.onload = window.location.hash = 'stopp';
+  </script>
 </head>
 <body>
   <div class="site-wrapper">
@@ -59,70 +62,73 @@
 
       <section class="container container--hd">
         
-        <div class="section-header">
-          <h2>A-melding feil</h2>
+        <ol class="wizard-steps">
+          <li>1. Opprett</li>
+          <li class="selected">2. Reskontro til behandling</li>
+          <li>3. Utbetalingen</li>
+          <li>4. Oppsummering</li>
+        </ol>
+        <div class="section-header section-header--divided no-margin--bottom">
+          <header>
+            <h1 class="heading--inline">Reskontro til behandling</h1>
+          </header>
+          <div class="section-header__below">
+            <span class="text--inline">Utbetaling Medlem vinter 2017 <a href="#">oppdater siden</a></span>
+            <div class="section-header__toolbar">
+              <button class="btn btn--secondary">Avbryt</button>
+              <button class="btn btn--primary">Kjør utbetaling</button>
+            </div>
+          </div>
         </div>
-
-        <table class="table drilldown table--fluid table--full-width">
-          <caption>
-            <span>Januar</span>
-            <span><a href="#">27 Avvist</a> A-melding</span>
-          </caption>
-          <tbody>
-            <tr class=" drilldown-body drilldown-toggle" data-level="1">
-              <td>uuid 1</td>
-              <td>45 feilmeldinger</td>
-              <td class="text--right">
-                <span class="table-row-toggle"></span>
-              </td>
-            </tr>
-            <tr class="drilldown-body" data-level="2" style="display:none;">
-              <td data-label="uuid 1">
-                Kari Hegge
-              </td>
-              <td data-label="Beskrivelse">
-                Personnumer finnes ikke
-              </td>
-              <td>
-                Behandlet 27.05.2017
-              </td>
-            </tr><!-- end .row-->
-            <tr class="drilldown-body" data-level="2" style="display:none;">
-              <td data-label="uuid 1">
-                Jannicke Blosenholm
-              </td>
-              <td data-label="Beskrivelse">
-                Personnumer finnes ikke
-              </td>
-              <td>
-                <button class="btn btn--secondary">Behandlet</button>
-              </td>
-            </tr><!-- end .row-->
-            <tr class="drilldown-body" data-level="2" style="display:none;">
-              <td data-label="uuid 1">
-                Henning Bjørn Hoel
-              </td>
-              <td data-label="Beskrivelse">
-                Personnumer finnes ikke
-              </td>
-              <td>
-                <button class="btn btn--secondary">Behandlet</button>
-              </td>
-            </tr><!-- end .row-->
-          </tbody>
-        </table>
+      </section>
       
+
+      <section class="container container--hd">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
+            <li class="tabs__nav__item"><a href="#oppsumering">Oppsumering</a></li>
+            <li class="tabs__nav__item"><a href="#stopp">Stopp</a></li>
+            <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Feil</a></li>
+            <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Bokføringsbilag</a></li>
+            <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Statement</a></li>
+          </ul>
+          <section id="oppsumering" class="tabs__section">
+          </section>
+          <section id="stopp" class="tabs__section">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Person</th>
+                  <th>Sektor</th>
+                  <th>Årsaker</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#">Kari Hegge</a></td>
+                  <td>Produsent</td>
+                  <td>Her ligger det årsaken til at det ble stoppet</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Janicke Blosenholm</a></td>
+                  <td>Produsent</td>
+                  <td>Her ligger det årsaken til at det ble stoppet</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Henning Bjørn Hoel</a></td>
+                  <td>Produsent</td>
+                  <td>Her ligger det årsaken til at det ble stoppet</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
       </section>
     </main>
   </div><!--End site-wrapper-->
 
 <script src="../js/vendor/jquery-1.11.3.min.js"></script>
-<script src="../js/vendor/drilldown.js"></script>
 <script src="../js/default.js"></script>
-<script>
-$('.drilldown').drilldown({
-  speed: 'fast'
-});
-</script>
+
 </body>
 </html>

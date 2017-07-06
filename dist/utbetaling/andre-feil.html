@@ -19,6 +19,9 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../style.css">
+  <script>
+  window.onload = window.location.hash = 'feil';
+  </script>
 </head>
 <body>
   <div class="site-wrapper">
@@ -67,10 +70,10 @@
         </ol>
         <div class="section-header section-header--divided no-margin--bottom">
           <header>
-            <h1 class="heading--inline">Utbetaling medlem vinter 2017</h1>
+            <h1 class="heading--inline">Reskontro til behandling</h1>
           </header>
           <div class="section-header__below">
-            Utbetalingsdato 2017.12.15
+            <span class="text--inline">Utbetaling Medlem vinter 2017 <a href="#">oppdater siden</a></span>
             <div class="section-header__toolbar">
               <button class="btn btn--secondary">Avbryt</button>
               <button class="btn btn--primary">Kjør utbetaling</button>
@@ -83,40 +86,57 @@
       <section class="container container--hd">
         <div class="tabs">
           <ul class="tabs__nav tabs__nav--flexible">
-            <li class="tabs__nav__item"><a href="#">Oppsumering</a></li>
-            <li class="tabs__nav__item"><a href="#">Stopp</a></li>
-            <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Feil</a></li>
+            <li class="tabs__nav__item"><a href="#oppsumering">Oppsumering</a></li>
+            <li class="tabs__nav__item"><a href="#stopp">Stopp</a></li>
+            <li class="tabs__nav__item"><a href="#feil">Andre Feil</a></li>
             <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Bokføringsbilag</a></li>
             <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Statement</a></li>
           </ul>
-          <div id="oppsumering" class="tabs__section">
+          <section id="oppsumering" class="tabs__section">
+          </section>
+          <section id="stopp" class="tabs__section">
+          </section>
+          <section id="feil" class="tabs__section">
             <table class="table">
               <thead>
                 <tr>
-                  <th></th>
-                  <th>Reskontro</th>
-                  <th>Stopp</th>
+                  <th>Person</th>
+                  <th>Sektor</th>
+                  <th>Årsaker</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Utøver</td>
-                  <td>9342</td>
-                  <td>34</td>
+                  <td><a href="#">Kari Hegge</a></td>
+                  <td>Produsent</td>
+                  <td>
+                    <ul class="no-list">
+                      <li>Her ligger den først årsaken til at det ble stoppet (2015)</li>
+                      <li>Her ligger den andre årsaken til at det ble stoppet (2015)</li>
+                    </ul>
+                  </td>
                 </tr>
                 <tr>
-                  <td>Produsenter</td>
-                  <td>3114</td>
-                  <td>53</td>
+                  <td><a href="#">Janicke Blosenholm</a></td>
+                  <td>Produsent</td>
+                  <td>
+                    <ul class="no-list">
+                      <li>Her ligger årsaken til at det ble stoppet (2015)</li>
+                    </ul>
+                  </td>
                 </tr>
                 <tr>
-                  <td>Totalt antall</td>
-                  <td>12 456</td>
-                  <td>87</td>
+                  <td><a href="#">Henning Bjørn Hoel</a></td>
+                  <td>Produsent</td>
+                  <td>
+                    <ul class="no-list">
+                      <li>Her ligger årsaken til at det ble stoppet (2015)</li>
+                    </ul>
+                  </td>
                 </tr>
               </tbody>
             </table>
-          </div>
+          </section>
         </div>
       </section>
     </main>

@@ -452,7 +452,7 @@ td.text--center, .fake-table__row *.text--center{
   vertical-align:top;
 }
 
-.filter-items, .btn-select > ul, .vertical__nav, .bucket__list, .tabs__nav, .tabs__section__nav, .tooltip-wrapper .tooltip__list, .comments .comments__content, .changelog .comments__content, .changelog .changelog__content, .file-upload__list ul, .page-contents ul{
+.no-list, .filter-items, .btn-select > ul, .vertical__nav, .bucket__list, .tabs__nav, .tabs__section__nav, .tooltip-wrapper .tooltip__list, .comments .comments__content, .changelog .comments__content, .changelog .changelog__content, .file-upload__list ul, .page-contents ul{
   list-style:none;
   padding:0;
   margin:0;

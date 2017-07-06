@@ -19,6 +19,9 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../style.css">
+  <script>
+  window.onload = window.location.hash = 'bank-feil';
+  </script>
 </head>
 <body>
   <div class="site-wrapper">
@@ -61,64 +64,80 @@
         
         <ol class="wizard-steps">
           <li>1. Opprett</li>
-          <li class="selected">2. Reskontro til behandling</li>
+          <li>2. Reskontro til behandling</li>
           <li>3. Utbetalingen</li>
-          <li>4. Oppsummering</li>
+          <li class="selected">4. Oppsummering</li>
         </ol>
         <div class="section-header section-header--divided no-margin--bottom">
           <header>
-            <h1 class="heading--inline">Utbetaling medlem vinter 2017</h1>
+            <h1 class="heading--inline">Feil</h1>
           </header>
           <div class="section-header__below">
-            Utbetalingsdato 2017.12.15
-            <div class="section-header__toolbar">
-              <button class="btn btn--secondary">Avbryt</button>
-              <button class="btn btn--primary">Kjør utbetaling</button>
-            </div>
+            Utbetaling medlem vinter 2017
+            
           </div>
         </div>
       </section>
       
 
-      <section class="container container--hd">
+      <section class="container container--hd scrollable-area scrollable-area--with-footer">
         <div class="tabs">
           <ul class="tabs__nav tabs__nav--flexible">
-            <li class="tabs__nav__item"><a href="#">Oppsumering</a></li>
-            <li class="tabs__nav__item"><a href="#">Stopp</a></li>
-            <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Feil</a></li>
+            <li class="tabs__nav__item"><a href="#oppsumering">Oppsumering</a></li>
+            <li class="tabs__nav__item"><a href="#stopp">Stopp</a></li>
+            <li class="tabs__nav__item"><a href="#bank-feil">Bank feil</a></li>
+            <li class="tabs__nav__item"><a href="#">Andre feil</a></li>
             <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Bokføringsbilag</a></li>
             <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Statement</a></li>
           </ul>
-          <div id="oppsumering" class="tabs__section">
+          <section id="oppsumering" class="tabs__section">
+          </section>
+          <section id="stopp" class="tabs__section">
+          </section>
+          <section id="bankfeil" class="tabs__section">
             <table class="table">
               <thead>
                 <tr>
                   <th></th>
-                  <th>Reskontro</th>
-                  <th>Stopp</th>
+                  <th><span class="table-sort table-sort--desc">Feil type</span></th>
+                  <th><span class="table-sort table-sort--desc">Person</span></th>
+                  <th><span class="table-sort table-sort--desc">Sum utbetalt</span></th>
+                  <th><span class="table-sort table-sort--desc">Status</span></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Utøver</td>
-                  <td>9342</td>
-                  <td>34</td>
+                  <td><input type="checkbox" class="form__input--checkbox"></td>
+                  <td>Feil type A</td>
+                  <td><a href="#">Kari Hegge</a></td>
+                  <td>1127,00</td>
+                  <td>Utbetalt på nytt</td>
                 </tr>
                 <tr>
-                  <td>Produsenter</td>
-                  <td>3114</td>
-                  <td>53</td>
+                  <td><input type="checkbox" class="form__input--checkbox"></td>
+                  <td>Feil type A</td>
+                  <td><a href="#">Janicke Blosenholm</a></td>
+                  <td>1127,00</td>
+                  <td>Utbetalt på nytt</td>
                 </tr>
                 <tr>
-                  <td>Totalt antall</td>
-                  <td>12 456</td>
-                  <td>87</td>
+                  <td><input type="checkbox" class="form__input--checkbox"></td>
+                  <td>Feil type A</td>
+                  <td><a href="#">Henning Bjørn Hoel</a></td>
+                  <td>1127,00</td>
+                  <td>Utbetalt på nytt</td>
                 </tr>
               </tbody>
             </table>
-          </div>
+          </section>
         </div>
-      </section>
+      </section><!-- end .scrollable-area -->
+    <footer class="footer footer--sticky">
+      <h3 class="heading--space-below">Hva vil du gjøre med disse 5 transaksjonsfeil</h3>
+      <a href="#" class="btn btn--secondary">Stop utbetaling</a>
+      <a href="#" class="btn btn--secondary">Tilbakeføre</a>
+      <a href="#" class="btn btn--primary">Prøv på nytt</a>
+    </footer>
     </main>
   </div><!--End site-wrapper-->
 

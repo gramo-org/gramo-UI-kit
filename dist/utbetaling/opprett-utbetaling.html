@@ -58,61 +58,84 @@
 
 
       <section class="container container--hd">
-        
-        <ol class="wizard-steps">
-          <li>1. Opprett</li>
-          <li class="selected">2. Reskontro til behandling</li>
-          <li>3. Utbetalingen</li>
-          <li>4. Oppsummering</li>
-        </ol>
         <div class="section-header section-header--divided no-margin--bottom">
           <header>
-            <h1 class="heading--inline">Utbetaling medlem vinter 2017</h1>
+            <h1 class="heading--inline">Opprett utbetaling</h1>
+            <ol class="wizard-steps">
+              <li class="selected">1. Opprett</li>
+              <li>2. Reskontro til behandling</li>
+              <li>3. Utbetalingen</li>
+              <li>4. Oppsummering</li>
+            </ol>
           </header>
           <div class="section-header__below">
-            Utbetalingsdato 2017.12.15
+            <div class="section-header__meta">
+            
+            </div>
             <div class="section-header__toolbar">
               <button class="btn btn--secondary">Avbryt</button>
-              <button class="btn btn--primary">Kjør utbetaling</button>
+              <button class="btn btn--primary">Lagre og neste steg</button>
             </div>
           </div>
+          
         </div>
       </section>
-      
 
       <section class="container container--hd">
-        <div class="tabs">
-          <ul class="tabs__nav tabs__nav--flexible">
-            <li class="tabs__nav__item"><a href="#">Oppsumering</a></li>
-            <li class="tabs__nav__item"><a href="#">Stopp</a></li>
-            <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Feil</a></li>
-            <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Bokføringsbilag</a></li>
-            <li class="tabs__nav__item tabs__nav__item--disabled"><a href="#">Statement</a></li>
-          </ul>
-          <div id="oppsumering" class="tabs__section">
+        <div class="form">
+          <div class="form__field">
+            <label class="form__label">
+              <span>Navn</span>
+              <input type="text" value="" class="form__input form__input--300">
+            </label>
+          </div>
+          <div class="form__field">
+            <label class="form__label">
+              <span>Fra konto</span>
+              <input type="text" value="" class="form__input form__input--300">
+            </label>
+          </div>
+          <div class="form__field">
+            <label class="form__label">
+              <span>Utbetalingsdato</span>
+              <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+            </label>
+          </div>
+
+          
+          <div class="form__field__help">
             <table class="table">
               <thead>
                 <tr>
                   <th></th>
-                  <th>Reskontro</th>
-                  <th>Stopp</th>
+                  <th>Utøver</th>
+                  <th>Produsenter</th>
+                  <th>Minst krav</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Utøver</td>
-                  <td>9342</td>
-                  <td>34</td>
+                  <td>Medlemmer (uten agent)</td>
+                  <td><input type="checkbox" class="form__input--checkbox"></td>
+                  <td><input type="checkbox" class="form__input--checkbox"></td>
+                  <td><input type="text" value="300" class="form__input"></td>
                 </tr>
                 <tr>
-                  <td>Produsenter</td>
-                  <td>3114</td>
-                  <td>53</td>
+                  <td>Medlemmer (med agent)</td>
+                  <td><input type="checkbox" class="form__input--checkbox"></td>
+                  <td><input type="checkbox" class="form__input--checkbox"></td>
+                  <td><input type="text" value="300" class="form__input"></td>
                 </tr>
                 <tr>
-                  <td>Totalt antall</td>
-                  <td>12 456</td>
-                  <td>87</td>
+                  <td colspan="2">Tredje part (Rettighetshave org.)</td>
+                  <td><input type="checkbox" class="form__input--checkbox"></td>
+                  <td><input type="text" value="400" class="form__input"></td>
+                </tr>
+                <tr>
+                  <td>Andre vederlagsbyrå</td>
+                  <td><input type="checkbox" class="form__input--checkbox"></td>
+                  <td><input type="checkbox" class="form__input--checkbox"></td>
+                  <td><input type="text" value="0" class="form__input"></td>
                 </tr>
               </tbody>
             </table>
