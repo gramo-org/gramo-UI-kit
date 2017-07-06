@@ -61,6 +61,9 @@ tbody > tr {
   &:hover {
     @media (--tablet) { background: var(--row-hover); }
   }
+  &.table__row--selected {
+    @media (--tablet) { background: color(var(--row-hover) shade(7%)); }
+  }
 }
 
 tr:first-child {

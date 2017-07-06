@@ -5602,6 +5602,13 @@ tbody > tr{
   }
 }
 
+@media (min-width: 768px){
+
+  tbody > tr.table__row--selected{
+    background:rgb(232, 232, 232);
+  }
+}
+
 tr:first-child{
   border-top:1px solid #d9d9dc;
 }

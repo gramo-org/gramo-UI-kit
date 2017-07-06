@@ -252,6 +252,10 @@ $(document).ready(function() {
 
 // Make fake-table__panels__sidebar sticky
 
+$("tr.drilldown-body[data-level=2]:not(.table__row--subhead)").click(function(){
+    $(this).addClass("table__row--selected").siblings().removeClass("table__row--selected");
+});
+
 $('[aria-controls]').on("click", function(e) {
   e.preventDefault();
   $(this).attr('aria-expanded', function(index, attr) {
