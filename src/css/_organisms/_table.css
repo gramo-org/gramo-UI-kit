@@ -70,7 +70,7 @@
 .table--decimal {
   td:not(:first-child),
   th:not(:first-child) {
-    text-align: right;
+    @media (--tablet) { text-align: right; }
   }
   
   .form__label {

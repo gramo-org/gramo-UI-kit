@@ -5729,8 +5729,11 @@ tr > td:last-child{
   }
 }
 
-.table--decimal td:not(:first-child), .table--decimal th:not(:first-child){
-  text-align:right;
+@media (min-width: 768px){
+
+  .table--decimal td:not(:first-child), .table--decimal th:not(:first-child){
+    text-align:right;
+  }
 }
 
 .table--decimal .form__label{
