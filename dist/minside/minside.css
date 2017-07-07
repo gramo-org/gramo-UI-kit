@@ -44,6 +44,13 @@ h4{
   text-align:center!important;
 }
 
+@media (min-width: 768px){
+
+  .text--center-on-mobile{
+    text-align:left!important;
+  }
+}
+
 .text--bold-on-mobile{
   font-weight:600;
 }
@@ -100,7 +107,7 @@ main > section:first-of-type{
 .overlay, .nav--primary.nav-visible ~ main::after{
   width:100%;
   height:100%;
-  background:rgba(0,0,0,0.5);
+  background:rgba(67, 77, 90, 0.7);
   left:0;
   top:0;
   right:0;
@@ -245,14 +252,14 @@ main > section:first-of-type{
   -ms-flex:none;
   flex:none;
   box-shadow:none;
-  border-bottom:3px solid #88c7d8;
+  border-bottom:4px solid #88c7d8;
   text-align:center;
   padding:1rem 0;
 }
 @media (min-width: 768px){
 
   .box--shortcut{
-    padding:2rem 1rem;
+    padding-top:2rem;
   }
 }
 .box--shortcut .icon{
@@ -265,8 +272,16 @@ main > section:first-of-type{
     font-size:4rem;
   }
 }
+.box--shortcut.active{
+  border-color:#31798d;
+}
+.box--shortcut.active .icon{
+  color:#31798d;
+}
 .box--shortcut h4{
   font-size:1.4rem;
+  color:inherit;
+  font-weight:600;
 }
 @media (min-width: 768px){
 
@@ -275,11 +290,12 @@ main > section:first-of-type{
   }
 }
 .box--shortcut em{
-  font-size:3rem;
+  font-weight:600;
+  display:block;
   font-style:normal;
 }
 
-.box--login, .box--onboarding{
+.box--login, .box--overlay{
   background:none;
   padding:0;
   display:-webkit-flex;
@@ -293,13 +309,13 @@ main > section:first-of-type{
 
 @media (min-width: 768px){
 
-  .box--login, .box--onboarding{
+  .box--login, .box--overlay{
     margin-top:2rem;
     min-height:550px;
   }
 }
 
-.box--login .box__inner, .box--onboarding .box__inner{
+.box--login .box__inner, .box--overlay .box__inner{
   -webkit-flex:1;
   -ms-flex:1;
   flex:1;
@@ -313,14 +329,18 @@ main > section:first-of-type{
   text-align:center;
 }
 
-.box--login .box__inner .icon, .box--onboarding .box__inner .icon{
+.box--login .box__inner .icon, .box--overlay .box__inner .icon{
   font-size:5rem;
 }
 
-.box--onboarding{
+.box--overlay{
   background:#ededed;
   margin:0 auto;
   box-shadow:0 2px 5px 0 rgb(16, 16, 16);
+}
+
+.box--meta{
+  background:#d9d9dc;
 }
 .btn{
   font-family:"brandon-grotesque";
@@ -663,15 +683,14 @@ input[type="number"]{
   flex:0 0 auto;
   position:relative;
   color:#fdfdfd;
-  text-transform:uppercase;
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
-  font-size:1.8rem;
-  -webkit-align-items:baseline;
-  -ms-flex-align:baseline;
-  align-items:baseline;
+  -webkit-align-items:flex-end;
+  -ms-flex-align:end;
+  align-items:flex-end;
   transition:all .25s ease;
+  margin-right:.5rem;
 }
 .nav-toggle::after{
   content:"\e90e";
@@ -681,13 +700,7 @@ input[type="number"]{
 }
 
 .nav-toggle[aria-expanded="true"]::after{
-  content:"\e90b";
-  font-size:1.7rem;
-  margin-left:.7rem;
-  margin-top:1px;
-  -webkit-align-self:center;
-  -ms-flex-item-align:center;
-  align-self:center;
+  content:"\e91c";
 }
 
 .nav--primary{
@@ -695,12 +708,12 @@ input[type="number"]{
   -webkit-transform:translateX(30rem);
   transform:translateX(30rem);
   transition:all .25s ease;
-  height:calc(100% - 6.2rem);
+  height:calc(100% - 5.1rem);
   background:#fdfdfd;
   position:fixed;
   z-index:2;
   right:0;
-  top:6rem;
+  top:5.1rem;
 }
 
 .nav--primary.nav-visible{
@@ -758,6 +771,41 @@ input[type="number"]{
   -webkit-filter:grayscale(1) url(../img/img-filter.svg#monochrome);
   filter:grayscale(1) url(../img/img-filter.svg#monochrome);
 }
+.search{
+  padding:1.2rem 0;
+}
+
+.search__form{
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+}
+
+.search__form .form__input{
+  margin-top:0;
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1;
+}
+
+@media (min-width: 768px){
+
+  .search__form .form__input{
+    max-width:300px;
+  }
+}
+
+.search__form .search__submit{
+  padding-left:2rem;
+  padding-right:2rem;
+  -webkit-flex:0 0 auto;
+  -ms-flex:0 0 auto;
+  flex:0 0 auto;
+}
+
+.search__form .search__submit::before{
+  font-size:2.5rem;
+}
 .site-header{
   position:static;
   height:auto;
@@ -781,17 +829,9 @@ input[type="number"]{
   -webkit-flex:1;
   -ms-flex:1;
   flex:1;
-  margin:1rem 2rem 0 0;
+  margin:.5rem 0 0 1rem;
 }
 .site-header--login{
-  background:none;
-  box-shadow:none;
-}
-@media (min-width: 768px){
-
-  .site-header--login{
-    text-align:center;
-  }
 }
 .sidebar{
   -webkit-order:1;
@@ -1089,6 +1129,89 @@ input[type="number"]{
   padding:1rem 2rem;
   width:100%;
 }
+
+.masthead__meta{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  border-top:1px solid #d9d9dc;
+  margin:.5rem -2rem -2rem -2rem;
+}
+
+@media (min-width: 768px){
+
+  .masthead__meta{
+    padding:1rem 0 0 2.4rem;
+    border:0;
+    margin:0;
+  }
+}
+
+.masthead__meta__item{
+  color:#504f56;
+  -webkit-flex:1 0 33.333%;
+  -ms-flex:1 0 33.333%;
+  flex:1 0 33.333%;
+  border-right:1px solid #d9d9dc;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-flex-direction:column;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  padding:1rem;
+  font-weight:600;
+}
+
+@media (min-width: 768px){
+
+  .masthead__meta__item{
+    display:block;
+    border:0;
+    -webkit-flex:0 0 auto;
+    -ms-flex:0 0 auto;
+    flex:0 0 auto;
+    padding:0;
+  }
+}
+
+.masthead__meta__item span{
+  margin-right:.5rem;
+  -webkit-order:1;
+  -ms-flex-order:1;
+  order:1;
+  font-weight:400;
+}
+
+@media (min-width: 768px){
+
+  .masthead__meta__item span:after{
+    content:':';
+  }
+}
+
+@media (min-width: 768px){
+
+  .masthead__meta__item::after{
+    content:'|';
+    margin:0 1rem;
+    font-weight:400;
+  }
+}
+
+.masthead__meta__item:last-child{
+  border:0;
+}
+
+.masthead__meta__item:last-child::after{
+  content:none;
+}
 .message{
   color:#fdfdfd;
   font-style:normal;
@@ -1117,6 +1240,12 @@ input[type="number"]{
 }
 .message--error{
   background:#ed6b6a;
+}
+.message--dark{
+  background:#434D5A;
+}
+.message--dark *{
+  color:#fdfdfd;
 }
 .statusboard{
   text-align:center;

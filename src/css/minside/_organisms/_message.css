@@ -32,4 +32,12 @@
   &--error {
     background: var(--gramo-red);
   }
+  
+  &--dark {
+    background: var(--ui-gray);
+
+    * {
+      color: var(--gramo-white);
+    }
+  }
 }

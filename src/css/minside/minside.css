@@ -21,6 +21,7 @@
 @import url('_molecules/_nav-secondary.css');
 @import url('_molecules/_nav-primary.css');
 @import url('_molecules/_user.css');
+@import url('_molecules/_search.css');
 /* Organisms */
 @import url('_organisms/_site-header.css');
 @import url('_organisms/_sidebar.css');

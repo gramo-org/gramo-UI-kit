@@ -2,6 +2,7 @@
 
 .text--center-on-mobile {
   text-align: center!important;
+  @media (--tablet) { text-align: left!important; }
 }
 
 .text--bold-on-mobile {

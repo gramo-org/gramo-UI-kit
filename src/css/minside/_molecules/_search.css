@@ -1,0 +1,23 @@
+.search {
+  padding: 1.2rem 0;
+}
+
+.search__form {
+  justify-content: center;
+  
+  .form__input {
+    margin-top: 0;
+    flex: 1;
+    @media (--tablet) { max-width: 300px; }  
+  }
+  
+  .search__submit {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex: 0 0 auto;
+    
+    &::before {
+      font-size: 2.5rem;
+    }
+  }
+}

@@ -26,7 +26,7 @@
 <body>
   <div class="site-wrapper">
     <header class="site-header">
-      <span class="site-header__branding"><img src="../img/gramo-logo.png" width="120" alt="Gramo logo"></span>
+      <span class="site-header__branding"><img src="../img/gramo-logo.png" width="100" alt="Gramo logo"></span>
       <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
         Meny
       </a>
@@ -60,24 +60,24 @@
             <div class="container container--col-1">
               <div class="row">
                 <div class="col-xs-4">
-                  <div class="box box--fluid box--shortcut">
+                  <div class="box box--fluid box--shortcut active">
                     <span class="icon icon--notes"></span>
-                    <h4>Innspillinger</h4>
                     <em>400</em>
+                    <h4>Innspillinger</h4>
                   </div><!--end .box -->
                 </div><!--end .col -->
                 <div class="col-xs-4">
                   <div class="box box--fluid box--shortcut">
                     <span class="icon icon--album"></span>
-                    <h4>Album</h4>
                     <em>138</em>
+                    <h4>Album</h4>
                   </div><!--end .box -->
                 </div><!--end .col -->
                 <div class="col-xs-4">
                   <div class="box box--fluid box--shortcut">
                     <span class="icon icon--performer"></span>
-                    <h4>A-Solist</h4>
                     <em>398</em>
+                    <h4>A-Solist</h4>
                   </div><!--end .box -->
                 </div><!--end .col -->
               </div><!--end .row -->
@@ -87,6 +87,12 @@
       </section>
             
       <section id="discography-info" class="container container--padded container--col-1">
+        <div class="search">
+          <form action="" class="search__form">
+            <input type="text" class="form__input" value="" placeholder="Søk..." />
+            <button class="search__submit"></button>
+          </form>
+        </div>
         <div class="tabs">
           <ul class="tabs__nav tabs__nav--flexible" role="tablist">
             <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger" aria-selected="true">Innspillinger <span class="badge">400</span></a></li>

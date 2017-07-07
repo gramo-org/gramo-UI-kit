@@ -2,11 +2,10 @@
   flex: 0 0 auto;
   position: relative;
   color: var(--gramo-white);
-  text-transform: uppercase;
   display: flex;
-  font-size: 1.8rem;
-  align-items: baseline;
+  align-items: flex-end;
   transition: all .25s ease;
+  margin-right: .5rem;
   
   &::after {
     content: "\e90e";
@@ -17,23 +16,19 @@
 }
 
 .nav-toggle[aria-expanded="true"]::after {
-  content: "\e90b";
-  font-size: 1.7rem;
-  margin-left: .7rem;
-  margin-top: 1px;
-  align-self: center;
+  content: "\e91c";
 }
 
 .nav--primary {
   width: 30rem;
   transform: translateX(30rem);
   transition: all .25s ease;
-  height: calc(100% - 6.2rem);
+  height: calc(100% - 5.1rem);
   background: var(--gramo-white);
   position: fixed;
   z-index: 2;
   right: 0;
-  top: 6rem;
+  top: 5.1rem;
   
   &.nav-visible {
     transform: translateX(0);

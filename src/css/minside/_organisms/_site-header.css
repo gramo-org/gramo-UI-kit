@@ -14,12 +14,11 @@
   &__branding {
     display: block;
     flex: 1;
-    margin: 1rem 2rem 0 0;
+    margin: .5rem 0 0 1rem;
   }
   
   &--login {
-    background: none;
-    box-shadow: none;
-    @media (--tablet) { text-align: center; }
+
+    /*@media (--tablet) { text-align: center; }*/
   }
 }
