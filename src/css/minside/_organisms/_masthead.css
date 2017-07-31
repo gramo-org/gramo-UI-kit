@@ -44,7 +44,7 @@
   }
   
   h2 {
-    font-size: inherit;
+    /*font-size: inherit;*/
   }
   
   & > p {
@@ -57,7 +57,8 @@
   display: flex;
   border-top: 1px solid var(--silver);
   margin: .5rem -2rem -2rem -2rem;
-  @media (--tablet) { padding: 1rem 0 0 2.4rem; border: 0; margin: 0; }
+  /*@media (--tablet) { padding: 1rem 0 0 2.4rem; border: 0; margin: 0; }*/
+  @media (--tablet) { padding: 0 20%; }
     
   &__item {
     color: var(--slate-gray);
@@ -69,22 +70,27 @@
     justify-content: center;
     padding: 1rem;
     font-weight: var(--semibold);
-    @media (--tablet) { display: block; border: 0; flex: 0 0 auto; padding: 0; }
+    /*@media (--tablet) { display: block; border: 0; flex: 0 0 auto; padding: 0; }*/
     
     span {
       margin-right: .5rem;
       order: 1;
       font-weight: var(--normal);
-      &:after {
+      /*&:after {
         @media (--tablet) { content: ':'; }
-      }
+      }*/
     }
     &::after {
-      @media (--tablet) { content: '|'; margin: 0 1rem; font-weight: var(--normal); }  
+      /*@media (--tablet) { content: '|'; margin: 0 1rem; font-weight: var(--normal); }  */
+    }
+    
+    &:first-child {
+      @media (--tablet) { border-left: 1px solid var(--silver); }
     }
     
     &:last-child {
-      border: 0;
+      border-right-width: 0;
+      @media (--tablet) { border-right-width: 1px; }
       
       &::after {
         content: none;

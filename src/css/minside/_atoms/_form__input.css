@@ -10,7 +10,7 @@
 .form__input[type="date"], .form__input--date {
   @extend .form__input;
   color: inherit;
-  padding: 2.2rem .75rem;
+  padding: 2.3rem .75rem;
   background-position: center right 1rem;
   @media (--tablet) { max-width: 200px; }  
 }

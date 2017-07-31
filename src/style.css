@@ -259,6 +259,9 @@ td.text--center, .fake-table__row *.text--center{
 .text--upper{
   text-transform:uppercase;
 }
+.text--error{
+  color:#ed6b6a;
+}
 
 .hidden-on-mobile{
   display:none!important;

@@ -21,6 +21,10 @@ main > section:first-of-type {
 .container--col-1 {
   max-width: 800px;
   margin: auto;
+  
+  &-min {
+    @media (--tablet) { min-width: 800px; }
+  }
 }
 
 .container--col-3 {
@@ -37,7 +41,7 @@ main > section:first-of-type {
   top: 0;
   right: 0;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   padding: 1rem;
   display: flex;

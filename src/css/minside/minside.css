@@ -14,6 +14,7 @@
 @import url('_atoms/_select-menu.css');
 @import url('_atoms/_form__input.css');
 @import url('_atoms/_form__label.css');
+@import url('_atoms/_toolbar.css');
 /* Molecules */
 @import url('_molecules/_toggle-sidebar.css');
 @import url('_molecules/_flash-message.css');
@@ -22,12 +23,14 @@
 @import url('_molecules/_nav-primary.css');
 @import url('_molecules/_user.css');
 @import url('_molecules/_search.css');
+@import url('_molecules/_pagination.css');
 /* Organisms */
 @import url('_organisms/_site-header.css');
 @import url('_organisms/_sidebar.css');
 @import url('_organisms/_form.css');
 @import url('_organisms/_wizard-steps.css');
 @import url('_organisms/_tables.css');
+@import url('_organisms/_table-numeric.css');
 @import url('_organisms/_section-header.css');
 @import url('_organisms/_infobar.css');
 @import url('_organisms/_masthead.css');

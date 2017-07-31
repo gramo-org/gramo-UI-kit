@@ -6,6 +6,7 @@
   align-items: flex-end;
   transition: all .25s ease;
   margin-right: .5rem;
+  z-index: 2;
   
   &::after {
     content: "\e90e";

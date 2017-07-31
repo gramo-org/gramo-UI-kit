@@ -57,11 +57,11 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text--center">
-              <h3>A-ha, Duran Duran, The Cure</h3>
-              <h1>Take on me live in Oslo</h1>
-              <h4>Test of times live</h4>
+              <h1>Hunting High and Low</h1>
+              <h3>A-ha</h3>
+              <h4>Warner Music Norway AS</h4>
               <section class="masthead__meta">
-                <h4 class="masthead__meta__item"><span>Varighet</span>03:45</h4>
+                <h4 class="masthead__meta__item"><span>Antall spor</span>10</h4>
                 <h4 class="masthead__meta__item"><span>Ant. utøvere</span>5</h4>
                 <h4 class="masthead__meta__item"><span>Utgivelsesår</span>1985</h4>
               </section>
@@ -74,17 +74,16 @@
           <div class="col-xs-12 col-sm-3">
             <nav class="nav--secondary" role="navigation">
               <ul>
-                <li><a href="#" class="active">Innspillingsinfo</a></li>
-                <li><a href="#">Eierskap</a></li>
+                <li><a href="#" class="active">Albumsinfo</a></li>
+                <li><a href="#">Spor</a></li>
                 <li><a href="#">Utøvere</a></li>
-                <li><a href="#">Utgivelser</a></li>
               </ul>
             </nav>
           </div>
           <div class="col-xs-12 col-sm-9">
-            <section id="recording-info">
-              <h2>Innspillingsinfo</h2>
-              <form class="form">
+            <section id="album-info">
+              <h2>Albumsinfo</h2>
+              <form class="form">  
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Hovedartist
@@ -98,29 +97,17 @@
                       <input type="text" class="form__input">
                     </label>
                   </div>
+                </div><!--end .row-->
+                <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Alternativ tittel
+                    <label class="form__label">Sjanger
                       <input type="text" class="form__input">
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Varighet
-                      <input type="number" class="form__input">
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">ISRC
-                      <input type="text" class="form__input">
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Versjon
+                    <label class="form__label">Format
                       <input type="text" class="form__input">
                     </label>
                   </div>
@@ -133,21 +120,24 @@
                   </div>
                 </div><!--end .row-->
                 <div class="row">
-                  <div class="col-xs-12 col-sm-6">
+                  <div class="col-xs-12 col-sm-5">
                     <label class="form__label">Innspillingsland
-                      <input type="text" class="form__input">
-                    </label>
-                  </div>
-                  <div class="col-xs-12 col-sm-3">
-                    <label class="form__label">Innspillingsdato
-                      <input type="date" class="form__input form__input--date">
+                      <select class="select select--fluid select--block">
+                        <option value="">Norge</option>
+                        <option value="">Storbrittania</option>
+                        <option value="">USA</option>
+                      </select>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
-                  <div class="col-xs-12 col-sm-6">
+                  <div class="col-xs-12 col-sm-5">
                     <label class="form__label">Produsentland
-                      <input type="text" class="form__input">
+                      <select class="select select--fluid select--block">
+                        <option value="">Norge</option>
+                        <option value="">Storbrittania</option>
+                        <option value="">USA</option>
+                      </select>
                     </label>
                   </div>
                   <div class="col-xs-12 col-sm-3">
@@ -157,6 +147,37 @@
                   </div>
                 </div><!--end .row-->
               </form>
+            </section>
+            <hr class="horizontal-rule">
+            <section id="track-info">
+              <h2>Spor <span class="badge badge--primary">10</span></h2>
+              <table class="table table--numeric-tracks table--fluid">
+                <thead>
+                  <tr>
+                    <th>Innspillingstittel</th>
+                    <th>Hovedartist</th>
+                    <th>Tid</th>
+                    <th>ISRC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="4">Side 1</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Innspillingstittel"><a href="#">Take On Me</a></td>
+                    <td data-label="Hovedartist">A-HA</td>
+                    <td data-label="Tid">03:45</td>
+                    <td data-label="ISRC">USJT19900027</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Innspillingstittel"><a href="#">Hunting High and Low</a></td>
+                    <td data-label="Hovedartist">A-HA</td>
+                    <td data-label="Tid">03:45</td>
+                    <td data-label="ISRC">USJT19900027</td>
+                  </tr>
+                </tbody>  
+              </table>
             </section>
           </div>
         </div>

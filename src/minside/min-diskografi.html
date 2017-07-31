@@ -57,42 +57,24 @@
         <div class="row">
           <header class="masthead" role="banner">
             <h2>Min diskografi</h2>
-            <div class="container container--col-1">
-              <div class="row">
-                <div class="col-xs-4">
-                  <div class="box box--fluid box--shortcut active">
-                    <span class="icon icon--notes"></span>
-                    <em>400</em>
-                    <h4>Innspillinger</h4>
-                  </div><!--end .box -->
-                </div><!--end .col -->
-                <div class="col-xs-4">
-                  <div class="box box--fluid box--shortcut">
-                    <span class="icon icon--album"></span>
-                    <em>138</em>
-                    <h4>Album</h4>
-                  </div><!--end .box -->
-                </div><!--end .col -->
-                <div class="col-xs-4">
-                  <div class="box box--fluid box--shortcut">
-                    <span class="icon icon--performer"></span>
-                    <em>398</em>
-                    <h4>A-Solist</h4>
-                  </div><!--end .box -->
-                </div><!--end .col -->
-              </div><!--end .row -->
+            <div class="container">
+              <div class="search">
+                <form action="" class="search__form">
+                  <input type="text" class="form__input" value="" placeholder="Søk..." />
+                  <button class="search__submit"></button>
+                </form>
+              </div>
             </div>
           </header>
         </div>
       </section>
-            
-      <section id="discography-info" class="container container--padded container--col-1">
-        <div class="search">
-          <form action="" class="search__form">
-            <input type="text" class="form__input" value="" placeholder="Søk..." />
-            <button class="search__submit"></button>
-          </form>
+      <section class="toolbar">
+        <div class="container container--col-1 container--col-1-min">
+          <button class="btn btn--secondary">Legg meg til på innspilling</button>
+          <button class="btn btn--primary">Legg til ny innspilling</button>
         </div>
+      </section>
+      <section id="discography-info" class="container container--col-1">
         <div class="tabs">
           <ul class="tabs__nav tabs__nav--flexible" role="tablist">
             <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger" aria-selected="true">Innspillinger <span class="badge">400</span></a></li>
@@ -168,6 +150,15 @@
               </tbody>
             </table>
           </section>
+          <nav role="navigation" class="text--right">
+            <ol class="pagination">
+              <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
+              <li class="pagination__item"><a href="#">2</a></li>
+              <li class="pagination__item"><a href="#">3</a></li>
+              <li class="pagination__item"><a href="#">4</a></li>
+              <li class="pagination__item"><a href="#">5</a></li>
+            </ol>
+          </nav>
         </div>
       </section>
     </main>

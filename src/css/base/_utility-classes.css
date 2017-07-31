@@ -75,6 +75,11 @@ td.text--center,
   text-transform: uppercase;
 }
 
+/* Generic error message */
+.text--error {
+  color: var(--gramo-red);
+}
+
 /* Hide on mobile */
 
 .hidden-on-mobile {

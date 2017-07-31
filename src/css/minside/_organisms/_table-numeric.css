@@ -1,0 +1,33 @@
+.table--numeric-tracks {
+  counter-reset: section;
+  
+  thead th:first-child,
+  tr > td:first-child {
+    padding-left: 5rem;
+  }
+  
+  tr:not(:first-child) > td {
+    position: relative;
+  }
+  
+  tbody tr:first-child {
+    background: none;
+    
+    & > td {
+      border-width: 0 0 1px 0;
+      padding-left: 1rem;
+      font-weight: var(--semibold);
+    }
+  }
+  
+  tr:not(:first-child) > td:first-child::before {
+    counter-increment: section; /* Increments only this instance of the section counter */
+    content: counters(section,".") " ";
+    position: absolute;
+    @extend .badge--numeric;
+    margin-top: -1rem;
+    left: 1.5rem;
+    top: 2.3rem;
+    top: 50%;
+  }
+}

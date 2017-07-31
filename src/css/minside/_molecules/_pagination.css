@@ -1,0 +1,12 @@
+.pagination {
+  .pagination__item {
+    border-color: var(--silver);
+    background: var(--x-light-gray);
+    color: var(--gramo-sea-green);
+    
+    &--current, a:hover {
+      background: var(--gramo-sea-green);
+      border-color: var(--gramo-sea-green);
+    }
+  }
+}

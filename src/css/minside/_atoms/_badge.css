@@ -1,14 +1,23 @@
 /* Min Side */
 .badge {
+  color: var(--slate-gray);
+  padding: 0.15rem 1rem;
   
   &--primary {
     background: var(--gramo-turkis);
-    color: var(--gramo-white);
   }
   &--secondary {
     background: var(--silver);
-    color: var(--slate-gray);
   }
+}
+
+/* In headings */
+h2 .badge {
+  padding: 0.25rem .75rem;
+  font-size: 80%;
+  vertical-align: top;
+  margin-top: .5rem;
+  line-height: 1;
 }
 
 /* badges in tabs */
@@ -19,4 +28,15 @@
   .active .badge {
     @extend .badge--primary;
   }
+}
+
+.badge--numeric {
+  font-size: 1rem;
+  color: var(--off-gray);
+  background: var(--light-gray);
+  border-radius: 2rem;
+  text-align: center;
+  padding: .3rem .5rem;
+  min-width: 2rem;
+  height: 2rem;
 }

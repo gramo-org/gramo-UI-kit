@@ -100,6 +100,13 @@ main > section:first-of-type{
   margin:auto;
 }
 
+@media (min-width: 768px){
+
+  .container--col-1-min{
+    min-width:800px;
+  }
+}
+
 .container--col-3{
   max-width:1000px;
   margin:auto;
@@ -112,7 +119,7 @@ main > section:first-of-type{
   top:0;
   right:0;
   bottom:0;
-  position:absolute;
+  position:fixed;
   z-index:1;
   padding:1rem;
   display:-webkit-flex;
@@ -431,13 +438,33 @@ main > section:first-of-type{
 hr.horizontal-rule{
   margin:1.2rem 0;
 }
+.badge{
+  color:#504f56;
+  padding:0.15rem 1rem;
+}
 .badge--primary, .tabs__nav__item .active .badge{
   background:#88c7d8;
-  color:#fdfdfd;
 }
 .badge--secondary, .tabs__nav__item .badge{
   background:#d9d9dc;
-  color:#504f56;
+}
+h2 .badge{
+  padding:0.25rem .75rem;
+  font-size:80%;
+  vertical-align:top;
+  margin-top:.5rem;
+  line-height:1;
+}
+
+.badge--numeric, .table--numeric-tracks tr:not(:first-child) > td:first-child::before{
+  font-size:1rem;
+  color:#a5a4ab;
+  background:#ededed;
+  border-radius:2rem;
+  text-align:center;
+  padding:.3rem .5rem;
+  min-width:2rem;
+  height:2rem;
 }
 .select{
   height:4.8rem;
@@ -457,7 +484,7 @@ hr.horizontal-rule{
 
 .form__input[type="date"], .form__input--date{
   color:inherit;
-  padding:2.2rem .75rem;
+  padding:2.3rem .75rem;
   background-position:center right 1rem;  
 }
 
@@ -488,6 +515,9 @@ input[type="number"]{
 
 .form__label--inline{
   margin-right:2rem;
+}
+.toolbar{
+  padding-top:2rem;
 }
 .toggle-sidebar{
   text-align:right;
@@ -691,6 +721,7 @@ input[type="number"]{
   align-items:flex-end;
   transition:all .25s ease;
   margin-right:.5rem;
+  z-index:2;
 }
 .nav-toggle::after{
   content:"\e90e";
@@ -805,6 +836,15 @@ input[type="number"]{
 
 .search__form .search__submit::before{
   font-size:2.5rem;
+}
+.pagination .pagination__item{
+  border-color:#d9d9dc;
+  background:#f9f9f9;
+  color:#31798d;
+}
+.pagination .pagination__item--current, .pagination .pagination__item a:hover{
+  background:#31798d;
+  border-color:#31798d;
 }
 .site-header{
   position:static;
@@ -1075,6 +1115,32 @@ input[type="number"]{
     margin-top:2rem;
   }
 }
+.table--numeric-tracks{
+  counter-reset:section;
+}
+.table--numeric-tracks thead th:first-child, .table--numeric-tracks tr > td:first-child{
+  padding-left:5rem;
+}
+.table--numeric-tracks tr:not(:first-child) > td{
+  position:relative;
+}
+.table--numeric-tracks tbody tr:first-child{
+  background:none;
+}
+.table--numeric-tracks tbody tr:first-child > td{
+  border-width:0 0 1px 0;
+  padding-left:1rem;
+  font-weight:600;
+}
+.table--numeric-tracks tr:not(:first-child) > td:first-child::before{
+  counter-increment:section;
+  content:counters(section,".") " ";
+  position:absolute;
+  margin-top:-1rem;
+  left:1.5rem;
+  top:2.3rem;
+  top:50%;
+}
 .section__header{
   display:block;
   padding-top:0;
@@ -1123,7 +1189,6 @@ input[type="number"]{
   margin:0;
 }
 .masthead h2{
-  font-size:inherit;
 }
 .masthead > p{
   padding:1rem 2rem;
@@ -1141,9 +1206,7 @@ input[type="number"]{
 @media (min-width: 768px){
 
   .masthead__meta{
-    padding:1rem 0 0 2.4rem;
-    border:0;
-    margin:0;
+    padding:0 20%;
   }
 }
 
@@ -1169,18 +1232,6 @@ input[type="number"]{
   font-weight:600;
 }
 
-@media (min-width: 768px){
-
-  .masthead__meta__item{
-    display:block;
-    border:0;
-    -webkit-flex:0 0 auto;
-    -ms-flex:0 0 auto;
-    flex:0 0 auto;
-    padding:0;
-  }
-}
-
 .masthead__meta__item span{
   margin-right:.5rem;
   -webkit-order:1;
@@ -1189,24 +1240,25 @@ input[type="number"]{
   font-weight:400;
 }
 
-@media (min-width: 768px){
-
-  .masthead__meta__item span:after{
-    content:':';
-  }
+.masthead__meta__item::after{
 }
 
 @media (min-width: 768px){
 
-  .masthead__meta__item::after{
-    content:'|';
-    margin:0 1rem;
-    font-weight:400;
+  .masthead__meta__item:first-child{
+    border-left:1px solid #d9d9dc;
   }
 }
 
 .masthead__meta__item:last-child{
-  border:0;
+  border-right-width:0;
+}
+
+@media (min-width: 768px){
+
+  .masthead__meta__item:last-child{
+    border-right-width:1px;
+  }
 }
 
 .masthead__meta__item:last-child::after{
