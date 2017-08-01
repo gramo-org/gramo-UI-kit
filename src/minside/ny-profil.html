@@ -56,25 +56,24 @@
     <section class="overlay">
       <div class="box box--overlay">
         <div class="message message--primary">
-          <p>Nesten klar, men først..</p>
-          <p>Kan du bekrefte dine opplysninger?</p>
+          <p>Opprett ny profil</p>
         </div>
         <header class="box__header">
-          <span class="icon icon--address icon--large"></span>
+          <span class="icon icon--profile icon--large"></span>
+          <p>Nå kan du opprette en ny profil</p>
         </header>
         <div class="box__inner">
           <form class="form">
-            <label class="form__label form__label--block">Adresse
-              <input type="text" class="form__input form__input--block">
+            <label class="form__label form__label--block">Profiltype
+              <select class="select select--block">
+                <option value="">Utøver</option>
+                <option value="">Personlig produsent</option>
+                <option value="">Kontaktperson</option>
+              </select>
             </label>
             <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                <label class="form__label">Postnummer
-                  <input type="text" class="form__input">
-                </label>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <label class="form__label">Poststed
+              <div class="col-xs-12">
+                <label class="form__label">Org.nummer
                   <input type="text" class="form__input">
                 </label>
               </div>
@@ -88,7 +87,7 @@
                 </div>
                 <div class="col-xs-7">
                   <button class="btn btn btn--primary btn--large">
-                    Bekreft
+                    Gå videre
                   </button>
                 </div>
               </div>

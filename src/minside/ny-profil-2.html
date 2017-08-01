@@ -55,27 +55,33 @@
     
     <section class="overlay">
       <div class="box box--overlay">
-        <div class="message message--primary">
-          <p>Nesten klar, men først..</p>
-          <p>Kan du bekrefte dine opplysninger?</p>
+        <div class="message message--success">
+          <p>Vi fant dette selskapet</p>
         </div>
         <header class="box__header">
-          <span class="icon icon--address icon--large"></span>
+          <span class="icon icon--yay icon--success icon--large"></span>
         </header>
         <div class="box__inner">
           <form class="form">
-            <label class="form__label form__label--block">Adresse
-              <input type="text" class="form__input form__input--block">
+            <label class="form__label form__label--block">Selskapet
+              <input type="text" value="Nordmann Management AS" class="form__input" disabled>
             </label>
             <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                <label class="form__label">Postnummer
-                  <input type="text" class="form__input">
+              <div class="col-xs-12">
+                <label class="form__label">Adresse
+                  <input type="text" value="adressegata 12A" class="form__input" disabled>
                 </label>
               </div>
-              <div class="col-xs-12 col-sm-6">
-                <label class="form__label">Poststed
-                  <input type="text" class="form__input">
+            </div><!--end .row-->
+            <div class="row">
+              <div class="col-xs-6">
+                <label class="form__label">Postnummer
+                  <input type="text" value="0123" class="form__input" disabled>
+                </label>
+              </div>
+              <div class="col-xs-6">
+                <label class="form__label form__label--hidden"><span>Poststed</span>
+                  <input type="text" value="Oslo" class="form__input form__input--discreet" disabled>
                 </label>
               </div>
             </div><!--end .row-->

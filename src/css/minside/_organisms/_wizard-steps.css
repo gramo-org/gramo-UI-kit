@@ -12,7 +12,7 @@
       /*font-family: 'icomoon';*/
       font-size: 3rem;
       line-height: 0;
-      color: var(--light-gray);
+      color: var(--off-gray);
       margin-left: .3rem;
     }
     
@@ -21,6 +21,24 @@
     }
   }
   li.selected::after {
-    color: var(--off-gray);
+    color: var(--gramo-sea-green);
+  }
+}
+
+.wizard-steps--overlay {
+  @extend .wizard-steps--minimal;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  left: 0;
+  
+  li {
+    &::after, &:last-child::after {
+      color: var(--off-gray);
+    }
+    
+    &.selected::after {
+      color: var(--light-gray);
+    }
   }
 }

@@ -10,10 +10,6 @@
     .statusboard__header {
       background: color(var(--gramo-turkis) tint(60%));
     }
-    
-    /*.icon {
-      color: var(--gramo-turkis);
-    }*/
   }
   
   &--secondary {
@@ -24,7 +20,7 @@
     }
     
     .icon {
-      color: var(--off-gray);
+      @extend .icon--secondary;
     }
   }
   
@@ -36,7 +32,7 @@
     }
     
     .icon {
-      color: var(--gramo-green);
+      @extend .icon--success;
     }
   }
   
@@ -48,7 +44,7 @@
     }
     
     .icon {
-      color: var(--gramo-red);
+      @extend .icon--danger;
     }
   }
   
@@ -111,7 +107,7 @@
     
     .icon {
       font-size: inherit;
-      color: var(--ui-gray);
+      @extend .icon--dark;
       margin-right: 0;
     }
   }

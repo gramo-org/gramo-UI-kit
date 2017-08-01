@@ -1,6 +1,7 @@
 .user {
   background: none;
   font-size: var(--minside-font-size);
+  padding: 1rem 1.5rem;
   
   &__name {
     margin-right: 1rem;

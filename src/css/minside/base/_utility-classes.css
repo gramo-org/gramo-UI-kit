@@ -5,6 +5,11 @@
   @media (--tablet) { text-align: left!important; }
 }
 
+.text--center-always {
+  text-align: center!important;
+  @media (--tablet) { text-align: center!important; }
+}
+
 .text--bold-on-mobile {
   font-weight: var(--semibold);
   @media (--tablet) { font-weight: normal; }

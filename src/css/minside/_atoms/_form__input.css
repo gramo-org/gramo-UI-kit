@@ -23,3 +23,17 @@ input[type="number"] {
   height: auto;
   max-width: 150px;
 }
+
+.form__input[disabled] {
+  border-color: var(--silver);
+  background: color(var(--light-gray) shade(3%));
+  color: var(--off-gray);
+}
+
+.form__input--discreet[disabled] {
+  border: 0;
+  background: none;
+  color: inherit;
+  text-transform: uppercase;
+  font-weight: var(--semibold);
+}

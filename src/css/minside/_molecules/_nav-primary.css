@@ -39,7 +39,7 @@
   .vertical__nav {
     background: none;
     
-    li a {
+    &__item a {
       background: none;
       color: inherit;
       text-transform: none;
@@ -53,6 +53,10 @@
       }
     }
     
+    &__item:last-child {
+      border-top: 1px solid var(--light-gray);
+    }
+    
     .icon {
       font-size: 2.5rem;
       margin-right: 1rem;
@@ -62,6 +66,7 @@
     &__heading {
       background: var(--x-light-gray);
       padding: 1rem 1.5rem;
+      border-top: 1px solid var(--light-gray);
     }
   }
 }

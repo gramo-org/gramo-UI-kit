@@ -9,7 +9,7 @@
   @media (--tablet) { padding-top: 2rem; }
   
   .icon {
-    color: var(--gramo-turkis);
+    @extend .icon--primary;
     font-size: 3.2rem;
     @media (--tablet) { font-size: 4rem; }
   }
@@ -49,6 +49,7 @@
     padding: 2rem 3rem 0 3rem;
     display: flex;
     flex-direction: column;
+    position: relative;
     /*justify-content: center;*/
     text-align: center;
     
@@ -56,6 +57,11 @@
       font-size: 5rem;
     }
   }
+}
+
+.box__header {
+  text-align: center;
+  padding: 1rem 3rem 0 3rem;
 }
 
 .box--overlay {

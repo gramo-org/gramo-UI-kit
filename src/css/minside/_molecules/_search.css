@@ -8,7 +8,7 @@
   .form__input {
     margin-top: 0;
     flex: 1;
-    @media (--tablet) { max-width: 300px; }  
+    @media (--tablet) { max-width: 400px; }  
   }
   
   .search__submit {

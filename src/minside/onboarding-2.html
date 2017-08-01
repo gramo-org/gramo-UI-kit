@@ -56,25 +56,31 @@
     <section class="overlay">
       <div class="box box--overlay">
         <div class="message message--primary">
-          <p>Nesten klar, men først..</p>
-          <p>Kan du bekrefte dine opplysninger?</p>
+          <p>Og en ting til,</p>
+          <p>Ser dine bankinformasjon riktig ut?</p>
         </div>
-        <header class="box__header">
-          <span class="icon icon--address icon--large"></span>
+        <header class="container--padded text--center-always">
+          <span class="icon icon--bank icon--large icon--primary"></span>
         </header>
         <div class="box__inner">
           <form class="form">
-            <label class="form__label form__label--block">Adresse
-              <input type="text" class="form__input form__input--block">
+            <label class="form__label form__label--block">Skattekommune
+              <select class="select select--fluid select--block">
+                <option value="">Oslo</option>
+                <option value="">Aksershus</option>
+                <option value="">Bergen</option>
+              </select>
             </label>
             <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                <label class="form__label">Postnummer
+              <div class="col-xs-12">
+                <label class="form__label">Mobilnummer
                   <input type="text" class="form__input">
                 </label>
               </div>
-              <div class="col-xs-12 col-sm-6">
-                <label class="form__label">Poststed
+            </div><!--end .row-->
+            <div class="row">
+              <div class="col-xs-12">
+                <label class="form__label">Kontonummer
                   <input type="text" class="form__input">
                 </label>
               </div>
@@ -95,13 +101,12 @@
             </div>
           </form>
           <ol class="wizard-steps wizard-steps--overlay">
-            <li class="selected"><span>1. Personalia</span></li>
-            <li><span>2. Bankinformasjon</span></li>
+            <li><span>1. Personalia</span></li>
+            <li class="selected"><span>2. Bankinformasjon</span></li>
           </ol>
         </div>
       </div>
     </section>
-    
     <main>
       <!--- Flash message --->
       <div class="flash-message-wrapper">

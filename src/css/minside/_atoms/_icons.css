@@ -23,6 +23,28 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* Icon colors */
+.icon--primary {
+  color: var(--gramo-turkis);
+}
+
+.icon--secondary {
+  color: var(--off-gray);
+}
+
+.icon--dark {
+  color: var(--slate-gray);
+}
+
+.icon--danger {
+  color: var(--gramo-red);
+}
+
+.icon--success {
+  color: var(--gramo-green);
+}
+
+/* Icons */
 .icon--calendar:before {
   content: "\e900";
 }
@@ -88,11 +110,11 @@
 }
 .icon--yay2:before {
   content: "\e915";
-  color: var(--gramo-green);
+  @extend .icon--success;
 }
 .icon--altok:before {
   content: "\e916";
-  color: var(--gramo-green);
+  @extend .icon--success;
 }
 
 .icon--yay:before {
@@ -104,11 +126,11 @@
 }
 .icon--paperplane:before {
   content: "\e926";
-  color: var(--gramo-turkis);
+  @extend .icon--primary;
 }
 .icon--no:before {
   content: "\e927";
-  color: var(--gramo-red);
+  @extend .icon--danger;
 }
 .icon--quill:before {
   content: "\e928";
