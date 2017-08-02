@@ -17,3 +17,19 @@
 .form__label--hidden span {
   visibility: hidden;
 }
+
+.form__label--toggle {
+  position: absolute;
+  right: -0.5rem;
+  top: 50%;
+  
+  &:before {
+    content: "\e911";
+    font-family: 'icomoon';
+    opacity: 0.5;
+  }
+}
+
+.form__label--toggled::before {
+  opacity: 1;
+}

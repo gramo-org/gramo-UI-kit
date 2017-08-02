@@ -399,7 +399,7 @@ main > section:first-of-type{
   color:#504f56;
 }
 .form__label.is-valid::after, .form__label.has-error::after{
-  color:#50bf9e;
+  color:#504f56;
   font-family:'icomoon';
   position:absolute;
   left:92%;
@@ -547,6 +547,10 @@ input[type="number"]{
   text-transform:uppercase;
   font-weight:600;
 }
+
+input[type="checkbox"].form__input--toggle-visibility{
+  visibility:hidden;
+}
 .form__label{
   padding:0;
   margin:0 0 1.2rem 0;
@@ -564,6 +568,22 @@ input[type="number"]{
 
 .form__label--hidden span{
   visibility:hidden;
+}
+
+.form__label--toggle{
+  position:absolute;
+  right:-0.5rem;
+  top:50%;
+}
+
+.form__label--toggle:before{
+  content:"\e911";
+  font-family:'icomoon';
+  opacity:0.5;
+}
+
+.form__label--toggled::before{
+  opacity:1;
 }
 .toolbar{
   padding-top:2rem;

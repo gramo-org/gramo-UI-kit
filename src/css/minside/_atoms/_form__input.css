@@ -37,3 +37,7 @@ input[type="number"] {
   text-transform: uppercase;
   font-weight: var(--semibold);
 }
+
+input[type="checkbox"].form__input--toggle-visibility {
+  visibility: hidden;
+}

@@ -265,6 +265,18 @@ $('[aria-controls]').on("click", function(e) {
   $(this).parent().next('nav').toggleClass('nav-visible');
 });
 
+
+
+$('.form__input--toggle-visibility').click(function(){
+  if ($(this).is(':checked')) {
+      $(this).parent().prev().find('input[type="password"]').attr('type', 'text');
+      $(this).parent().addClass('form__label--toggled');  
+    } else {
+      $(this).parent().prev().find('input[type="text"]').attr('type', 'password');
+      $(this).parent().removeClass('form__label--toggled');
+    }
+})
+
 }); // end document ready
 
 //Affix page contents to top of viewport

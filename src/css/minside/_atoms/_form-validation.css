@@ -1,6 +1,6 @@
 .form__label.is-valid::after,
 .form__label.has-error::after {
-  color: var(--gramo-green);
+  color: var(--slate-gray);
   font-family: 'icomoon';
   position: absolute;
   left: 92%;
