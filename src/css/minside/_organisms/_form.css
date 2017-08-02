@@ -33,7 +33,7 @@
       text-transform: none;
       background: var(--light-gray);
       font-weight: var(--semibold);
-      padding: 1.1rem;
+      padding: 1.2rem;
       flex: 0 0 45%;
       display: block;
       @media (--tablet) { flex: 0 0 15%; }
@@ -46,5 +46,10 @@
   .form__input {
     margin-top: 0;
     width: auto;
+    border-left: 0;
+    
+    &[disabled] {
+      background: var(--gramo-white);
+    }
   }
 }

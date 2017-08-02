@@ -385,7 +385,7 @@ main > section:first-of-type{
   text-transform:uppercase;
   font-size:1.4rem;
   padding:1.2rem 2rem;
-  font-weight:600;  
+  font-weight:600;
 }
 .btn--primary{
   background:#88c7d8;
@@ -397,6 +397,14 @@ main > section:first-of-type{
 }
 .btn--secondary{
   color:#504f56;
+}
+.btn--solo{
+  min-width:200px;
+  max-width:300px;
+  margin-top:2rem;
+  -webkit-align-self:center;
+  -ms-flex-item-align:center;
+  align-self:center;
 }
 .form__label.is-valid::after, .form__label.has-error::after{
   color:#504f56;
@@ -1002,7 +1010,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   text-transform:none;
   background:#ededed;
   font-weight:600;
-  padding:1.1rem;
+  padding:1.2rem;
   -webkit-flex:0 0 45%;
   -ms-flex:0 0 45%;
   flex:0 0 45%;
@@ -1025,6 +1033,11 @@ input[type="checkbox"].form__input--toggle-visibility{
 .form--summary .form__input{
   margin-top:0;
   width:auto;
+  border-left:0;
+}
+
+.form--summary .form__input[disabled]{
+  background:#fdfdfd;
 }
 .wizard-steps--minimal, .wizard-steps--overlay{
   display:-webkit-flex;
@@ -1205,7 +1218,7 @@ input[type="checkbox"].form__input--toggle-visibility{
     margin-top:2rem;
   }
 }
-.table--numeric-tracks{
+.table--numeric-tracks tbody{
   counter-reset:section;
 }
 .table--numeric-tracks thead th:first-child, .table--numeric-tracks tr > td:first-child{
@@ -1394,14 +1407,6 @@ input[type="checkbox"].form__input--toggle-visibility{
   width:100%;
   display:block;
 }
-@media (min-width: 768px){
-
-  .statusboard{
-    max-width:400px;
-    margin:2rem auto 0 auto;
-    border-radius:4px;
-  }
-}
 .statusboard--primary{
   background:#88c7d8;
 }
@@ -1473,10 +1478,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   align-items:center;
 }
 .statusboard__footer p{
-  -webkit-flex:1;
-  -ms-flex:1;
-  flex:1;
-  margin-left:1.5rem;
+  margin-right:.5rem;
 }
 .statusboard__footer em{
   font-style:normal;

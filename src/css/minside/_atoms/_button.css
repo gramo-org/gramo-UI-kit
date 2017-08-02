@@ -16,5 +16,11 @@
   }
   &--secondary {
     color: var(--slate-gray);
-  }  
+  }
+  &--solo {
+    min-width: 200px;
+    max-width: 300px;
+    margin-top: 2rem;
+    align-self: center;
+  }
 }

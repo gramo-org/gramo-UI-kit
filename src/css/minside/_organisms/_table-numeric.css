@@ -1,5 +1,7 @@
 .table--numeric-tracks {
-  counter-reset: section;
+  tbody {
+    counter-reset: section;
+  }
   
   thead th:first-child,
   tr > td:first-child {
