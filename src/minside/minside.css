@@ -120,7 +120,7 @@ main > section:first-of-type{
 }
 
 .container--col-3{
-  max-width:1000px;
+  max-width:1100px;
   margin:auto;
 }
 .overlay, .nav--primary.nav-visible ~ main::after{
@@ -746,6 +746,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   margin:0 0 1.2rem 0;
   border-bottom:1px solid #d9d9dc;
   font-family:"brandon-grotesque";
+  word-break:break-all;
 }
 @media (min-width: 768px){
 

@@ -5,6 +5,7 @@
     margin: 0 0 1.2rem 0;
     border-bottom: 1px solid var(--silver);
     font-family: var(--minside-font-family);
+    word-break: break-all;
     @media (--tablet) { 
       margin: 0; 
       border: 0; 
