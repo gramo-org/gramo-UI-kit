@@ -61,70 +61,74 @@
         </div>
       </div> -->
 
-      <dialogue class="statusboard statusboard--primary" role="alert">
-        <header class="statusboard__header">
-          <span class="icon icon--account"></span>
-          <span>Din foreløpig saldo er</span>
-          <em>226 756,50 kr</em>
-          <button href="#" class="statusboard__close">
-            <span class="icon--close"></span>
-          </button>
-        </header>
-        <footer class="statusboard__footer">
-          <p>Avregningen pågår</p>
-          <a href="#"><span class="icon icon--info"></span></a>
-        </footer>
-      </dialogue>
-    
       <section id="ledger-info" class="container container--padded container--col-1">
         <header class="section__header">
-          <h2>Avregning detaljer</h2>
+          <h2>Innspilling detaljer</h2>
         </header>
-        <div class="tabs">
-          <ul class="tabs__nav tabs__nav--flexible" role="tablist">
-            <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger" aria-selected="true">Per Sang</a></li>
-            <li class="tabs__nav__item" role="presentation"><a href="#channel" role="tab" aria-controls="channel">Per Radio</a></li>
-          </ul>
-          <section id="innspillinger" role="tabpanel" class="tabs__section">
-            <table class="table table--fluid table--list table--ledger">
-              <thead>
-                <tr>
-                  <th>Innspillingstittel</th>
-                  <th>Hovedartist</th>
-                  <th>Poeng</th>
-                  <th>Spilletid</th>
-                  <th>Sats</th>
-                  <th>Midler</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Innspillingstittel" class="table__cell--left">
-                    <a href="#" class="link--no-line text--bold-on-mobile">Take on Me</a>
-                  </td>
-                  <td data-label="Hovedartist" class="table__cell--left">
-                    A-ha
-                  </td>
-                  <td data-label="Poeng" class="table__cell--left">
-                    A/B - 64 poeng
-                  </td>
-                  <td data-label="Spilletid">
-                    19:04:45
-                  </td>
-                  <td data-label="Sats">
-                    175
-                  </td>
-                  <td data-label="Midler" class="text--bold">
-                    Kr. 1785,59
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section id="channel" role="tabpanel" class="tabs__section">
-            
-          </section>
-        </div>
+        <table class="table table--fluid table--list table--ledger no-margin--bottom">
+          <thead>
+            <tr>
+              <th>Innspillingstittel</th>
+              <th>Hovedartist</th>
+              <th>Poeng</th>
+              <th>Spilletid</th>
+              <th>Sats</th>
+              <th>Midler</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Innspillingstittel" class="table__cell--left">
+                <a href="#" class="link--no-line text--bold-on-mobile">Take on Me</a>
+              </td>
+              <td data-label="Hovedartist" class="table__cell--left">
+                A-ha
+              </td>
+              <td data-label="Poeng" class="table__cell--left">
+                A/B - 64 poeng
+              </td>
+              <td data-label="Spilletid">
+                19:04:45
+              </td>
+              <td data-label="Sats">
+                175
+              </td>
+              <td data-label="Midler" class="text--bold">
+                Kr. 1785,59
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table--fluid table--standard">
+          <thead>
+            <tr>
+              <th>Radio</th>
+              <th class="text--center-on-mobile">Antall</th>
+              <th>Spilletid</th>
+              <th>Inntekt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NRK P1</td>
+              <td class="text--center-on-mobile">3</td>
+              <td>00:10:05</td>
+              <td>30,50</td>
+            </tr>
+            <tr>
+              <td>NRK P1</td>
+              <td class="text--center-on-mobile">3</td>
+              <td>00:10:05</td>
+              <td>30,50</td>
+            </tr>
+            <tr>
+              <td>NRK P1</td>
+              <td class="text--center-on-mobile">3</td>
+              <td>00:10:05</td>
+              <td>30,50</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
   </div>

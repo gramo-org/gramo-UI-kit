@@ -39,16 +39,23 @@
             </div>
             <div class="box__inner">
               <form class="form">
-                <label class="form__label form__label--block">Passord
-                  <input type="password" autofocus="" class="form__input form__input--block">
-                </label>
-                <label class="form__label form__label--block">Gjenta passord
-                  <input type="password" class="form__input form__input--block">
-                </label>
+                <fieldset class="form__fieldset">
+                  <label class="form__label form__label--block">Passord
+                    <input type="password" value="one-two-three" autofocus="" class="form__input form__input--block">
+                  </label>
+                  <label class="form__label--toggle"><input type="checkbox" class="form__input--toggle-visibility"></label>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                  <label class="form__label form__label--block">Gjenta passord
+                    <input name="PasswordInput" type="password" value="one-two-three" class="form__input form__input--block">
+                  </label>
+                  <label class="form__label--toggle"><input type="checkbox" class="form__input--toggle-visibility"></label>
+                </fieldset>
                 <hr class="horizontal-rule horizontal-rule--spacer">
-                <label class="form__label form__label--block">Mobil telefon <span class="text--normal">(For å sende engangskode til)</span>
-                  <input type="password" class="form__input form__input--block">
+                <label class="form__label form__label--block">Mobil telefon
+                  <input name="PasswordInput" type="password" class="form__input form__input--block">
                 </label>
+                <p class="text--left">Vi sender deg engangskode</p>
                 <div class="form__section--action">
                   <button class="btn btn btn--block btn--primary btn--large">
                     Gå til min side
@@ -58,15 +65,15 @@
             </div>
             <ol class="wizard-steps wizard-steps--minimal">
               <li><span>1. Medlemskap</span></li>
-              <li><span>2. Personalia</span></li>
+              <li><span>2. Profil</span></li>
               <li class="selected"><span>3. Logg inn</span></li>
-            </ol>
+              <li><span>4. Autentisering</span></li>
           </div>
         </div><!-- end .row -->
       </section>
     </main>
 </div>
 <script src="../js/vendor/jquery-1.11.3.min.js"></script>
-
+<script src="../js/default.js"></script>
 </body>
 </html>

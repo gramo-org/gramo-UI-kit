@@ -42,7 +42,7 @@
           </div>
         </li>
         <li class="vertical__nav__heading">Min side</li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--album-label"></span> Min diskografi</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--album-label"></span> Min diskografi</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span> Mine penger</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Mine innstillinger</a></li>
         <li class="vertical__nav__heading">Mine profiler</li>
@@ -52,6 +52,61 @@
         <li class="vertical__nav__item vertical__nav__button"><a href="#"><span class="icon icon--profile"></span> Legg til ny profil</a></li>
       </ul>
     </nav>
+    
+    <section class="overlay">
+      <div class="box box--overlay">
+        <div class="message message--primary">
+          <p>Og en ting til,</p>
+          <p>Ser dine bankinformasjon riktig ut?</p>
+        </div>
+        <header class="container--padded text--center-always">
+          <span class="icon icon--bank icon--large icon--primary"></span>
+        </header>
+        <div class="box__inner">
+          <form class="form">
+            <label class="form__label form__label--block">Skattekommune
+              <select class="select select--fluid select--block">
+                <option value="">Oslo</option>
+                <option value="">Aksershus</option>
+                <option value="">Bergen</option>
+              </select>
+            </label>
+            <div class="row">
+              <div class="col-xs-12">
+                <label class="form__label">Mobilnummer
+                  <input type="text" class="form__input">
+                </label>
+              </div>
+            </div><!--end .row-->
+            <div class="row">
+              <div class="col-xs-12">
+                <label class="form__label">Kontonummer
+                  <input type="text" class="form__input">
+                </label>
+              </div>
+            </div><!--end .row-->
+            <div class="form__section--action">
+              <div class="row">
+                <div class="col-xs-5">
+                  <button class="btn btn btn--secondary btn--large">
+                    Avbryt
+                  </button>
+                </div>
+                <div class="col-xs-7">
+                  <button class="btn btn btn--primary btn--large">
+                    Bekreft
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <ol class="wizard-steps wizard-steps--overlay">
+            <li><span>1. Personalia</span></li>
+            <li class="selected"><span>2. Bankinformasjon</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
     <main>
       <!--- Flash message --->
       <div class="flash-message-wrapper">
@@ -62,43 +117,60 @@
       </div>
       <section class="container">
         <div class="row">
-          <dialogue class="statusboard statusboard--secondary" role="alert">
-            <header class="statusboard__header">
-              <span class="icon icon--bank"></span>
-              <span>Din siste utbetaling var</span>
-              <em>205 693,50 kr</em>
-              <span>25.12.2015</span>
-              <a href="#" class="statusboard__close">
-                <span class="icon--close"></span>
-              </a>
-            </header>
-            <footer class="statusboard__footer">
-              <p>Avspillingsåret 2017 er ikke avregnet enda</p>
-              <a href="#"><span class="icon icon--info"></span></a>
-            </footer>
-          </dialogue>
-        </div><!--end .row -->
+          <header class="masthead" role="banner">
+            <span class="icon icon--yes"></span>
+          </header>
+        </div><!--end .row-->
       </section>
         
-
+      <section id="performerinfo" class="container container--col-1">
+        <div class="section-header">
+          <header>
+            <h2>Mine penger</h2>
+          </header>
+        </div>
+        <div class="box box--summary">
+          <div class="box__section box__section--main">
+            <span>Til utbetaling</span>
+            <em>16 756,50 kr</em>
+          </div>
+          <div class="box__section">
+            <span>Forventet</span>
+            <em>25.12.2017</em>
+          </div>
+        </div>
+      </section>
+      
+      <div class="horizontal-rule horizontal-rule--with-arrow">
+        <hr>
+      </div>
         
-      <section id="discography-info" class="container container--padded container--col-1">
-        <header class="section__header">
-          <h2>Min diskografi</h2>
-        </header>
+      <section id="discography-info" class="container container--col-1">
+        <div class="section-header">
+          <header>
+            <h2>Min diskografi</h2>
+          </header>
+        </div>
         <div class="row">
-          <div class="col-xs-6">
+          <div class="col-xs-4">
             <div class="box box--fluid box--shortcut">
               <span class="icon icon--notes"></span>
               <h4>Innspillinger</h4>
               <em>400</em>
             </div><!--end .box -->
           </div><!--end .col -->
-          <div class="col-xs-6">
+          <div class="col-xs-4">
             <div class="box box--fluid box--shortcut">
               <span class="icon icon--album"></span>
               <h4>Album</h4>
               <em>138</em>
+            </div><!--end .box -->
+          </div><!--end .col -->
+          <div class="col-xs-4">
+            <div class="box box--fluid box--shortcut">
+              <span class="icon icon--performer"></span>
+              <h4>A-Solist</h4>
+              <em>398</em>
             </div><!--end .box -->
           </div><!--end .col -->
         </div><!--end .row -->
@@ -109,9 +181,11 @@
       </div>
       
       <section id="discography-info" class="container container--col-1">
-        <header class="section__header">
-          <h2>Musikk profil</h2>
-        </header>
+        <div class="section-header">
+          <header>
+            <h2>Musikk profil</h2>
+          </header>
+        </div>
         <form class="form form--summary">
           <label class="form__label form__label--block"><span>Gruppe</span>
             <input class="form__input" type="text" value="A-ha" disabled>

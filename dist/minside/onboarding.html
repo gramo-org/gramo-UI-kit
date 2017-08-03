@@ -59,23 +59,23 @@
           <p>Nesten klar, men først..</p>
           <p>Kan du bekrefte dine opplysninger?</p>
         </div>
-        <header class="container--padded text--center">
+        <header class="box__header">
           <span class="icon icon--address icon--large"></span>
         </header>
         <div class="box__inner">
           <form class="form">
             <label class="form__label form__label--block">Adresse
-              <input type="text" class="form__input form__input--block">
+              <input type="text" value="Kongens Gate 11" class="form__input form__input--block">
             </label>
             <div class="row">
               <div class="col-xs-12 col-sm-6">
                 <label class="form__label">Postnummer
-                  <input type="text" class="form__input">
+                  <input type="text" value="0152" class="form__input">
                 </label>
               </div>
               <div class="col-xs-12 col-sm-6">
-                <label class="form__label">Poststed
-                  <input type="text" class="form__input">
+                <label class="form__label form__label--hidden"><span>Poststed</span>
+                  <input type="text" value="Oslo" class="form__input form__input--discreet" disabled>
                 </label>
               </div>
             </div><!--end .row-->
@@ -94,6 +94,10 @@
               </div>
             </div>
           </form>
+          <ol class="wizard-steps wizard-steps--overlay">
+            <li class="selected"><span>1. Personalia</span></li>
+            <li><span>2. Bankinformasjon</span></li>
+          </ol>
         </div>
       </div>
     </section>
@@ -111,7 +115,7 @@
           <header class="masthead" role="banner">
             <span class="icon icon--yes"></span>
           </header>
-        </div>
+        </div><!--end .row-->
       </section>
         
       <section id="performerinfo" class="container container--col-1">
