@@ -1,0 +1,14 @@
+.list {
+  padding: 0 1rem;
+  border: 0;
+  
+  &__item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--silver);
+    
+    a {
+      text-decoration: none;
+      font-weight: var(--semibold);
+    }
+  }
+}

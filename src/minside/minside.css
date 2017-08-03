@@ -401,10 +401,13 @@ main > section:first-of-type{
 .btn--solo{
   min-width:200px;
   max-width:300px;
-  margin-top:2rem;
+  margin:2rem auto 0 auto;
   -webkit-align-self:center;
   -ms-flex-item-align:center;
   align-self:center;
+}
+.btn--small{
+  padding:0 2rem;
 }
 .form__label.is-valid::after, .form__label.has-error::after{
   color:#504f56;
@@ -1243,6 +1246,18 @@ input[type="checkbox"].form__input--toggle-visibility{
   left:1.5rem;
   top:2.3rem;
   top:50%;
+}
+.list{
+  padding:0 1rem;
+  border:0;
+}
+.list__item{
+  padding:1rem 0;
+  border-bottom:1px solid #d9d9dc;
+}
+.list__item a{
+  text-decoration:none;
+  font-weight:600;
 }
 .section__header{
   display:block;
