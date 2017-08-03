@@ -27,6 +27,7 @@
   height: calc(100% - 5.1rem);
   background: var(--gramo-white);
   position: fixed;
+  overflow: auto;
   z-index: 2;
   right: 0;
   top: 5.1rem;
