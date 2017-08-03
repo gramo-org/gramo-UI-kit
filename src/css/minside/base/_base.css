@@ -9,6 +9,7 @@
 body {
   background: var(--minside-background-color);
   @extend %font-size;
+  color: var(--base-font-color);
 }
 
 a {
