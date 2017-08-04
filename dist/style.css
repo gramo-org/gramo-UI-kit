@@ -4305,7 +4305,7 @@ main.pull .bucket{
   background:#ededed;
   position:relative;
 }
-.tabs__nav__item:hover::after, .tabs__nav__item a.active::after{
+.tabs__nav__item a.active::after{
   content:'';
   height:1px;
   position:absolute;

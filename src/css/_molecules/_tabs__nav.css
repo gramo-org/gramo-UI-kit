@@ -35,18 +35,18 @@
   &__item:hover,
   &__item a.active {
     background: var(--light-gray);
-    position: relative;
-
-    &::after {
-      content: '';
-      height: 1px;
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      background: var(--light-gray);
-      width: 100%;
-      z-index: 1;
-    }
+    position: relative;  
+  }
+  
+  &__item a.active::after {
+    content: '';
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: var(--light-gray);
+    width: 100%;
+    z-index: 1;
   }
   
   &__item--disabled {
