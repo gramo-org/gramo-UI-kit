@@ -38,6 +38,7 @@ td.text--center,
 
 .text--normal {
   font-weight: 400!important;
+  font-style: normal;
 }
 
 .text--semibold {
