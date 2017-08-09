@@ -227,6 +227,7 @@ td.text--center, .fake-table__row *.text--center{
 
 .text--normal{
   font-weight:400!important;
+  font-style:normal;
 }
 
 .text--semibold{
@@ -1193,26 +1194,25 @@ main > section:first-of-type{
   box-shadow:none;
   text-shadow:none;
 }
-
-// Links
 a, a:visited{ text-decoration:underline; }
 a[href]:after{ content:" (" attr(href) ")"; }
 a[href^="#"]:after, a[href^="javascript:"]:after{ content:""; }
-
-// Code and Blockquotes
 pre, blockquote{ page-break-inside:avoid; }
-
-// Tables
 thead{ display:table-header-group; }
 tr{ page-break-inside:avoid; }
-
-// Images
 img{ page-break-inside:avoid; max-width:100%;}
-
-// Typography
 p, h2, h3{ orphans:3; widows:3; }
 h2, h3{ page-break-after:avoid; }
 abbr[title]:after{ content:" (" attr(title) ")"; }
+.sidebar, .site-header, .pagination, .btn{
+  display:none!important;
+}
+.drilldown-body{
+  display:block!important;
+}
+
+table{
+}
 }
 @font-face{
   font-family:'icomoon';
