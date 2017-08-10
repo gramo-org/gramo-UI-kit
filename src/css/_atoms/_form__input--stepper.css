@@ -8,10 +8,10 @@ input[type="time"] {
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
       -webkit-appearance: none;
-      background: var(--off-gray) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
+      background: var(--off-gray) url(img/spinner-arrows.png) no-repeat center center;
       width: 1.5rem;
       border-left: 1px solid var(--gramo-white);
-      opacity: .5; /* shows Spin Buttons per default (Chrome >= 39) */
+      opacity: .5;
       position: absolute;
       top: 0;
       right: 0;

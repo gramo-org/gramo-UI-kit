@@ -33,7 +33,7 @@
   }
 }
 
-/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+/* Stop tooltip disappearing when you move mouse into it */
 .tooltip-wrapper .tooltip:before {
   bottom: -20px;
   content: " ";
@@ -44,7 +44,6 @@
   width: 100%;
 }  
 
-/* CSS Triangles - see Trevor's post */
 .tooltip-wrapper .tooltip:after {
   border-left: solid transparent 10px;
   border-right: solid transparent 10px;

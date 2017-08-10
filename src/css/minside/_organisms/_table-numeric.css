@@ -23,7 +23,7 @@
   }
   
   tr:not(:first-child) > td:first-child::before {
-    counter-increment: section; /* Increments only this instance of the section counter */
+    counter-increment: section;
     content: counters(section,".") " ";
     position: absolute;
     @extend .badge--numeric;

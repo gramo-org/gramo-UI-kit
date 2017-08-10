@@ -1948,7 +1948,7 @@ input-placeholder{
 }
 .form__input--stepper::-webkit-outer-spin-button, .form__input--stepper::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button, input[type="time"]::-webkit-outer-spin-button, input[type="time"]::-webkit-inner-spin-button{
   -webkit-appearance:none;
-  background:#a5a4ab url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
+  background:#a5a4ab url(img/spinner-arrows.png) no-repeat center center;
   width:1.5rem;
   border-left:1px solid #fdfdfd;
   opacity:.5;
@@ -2964,7 +2964,7 @@ hr, .horizontal-rule{
   margin:0 auto;
   height:25px;
 }
-@-webkit-keyframes placeHolderShimmer{
+@-webkit-keyframes contentPlaceholder{
   0%{
       background-position:-40rem 0
   }
@@ -2972,7 +2972,7 @@ hr, .horizontal-rule{
       background-position:40rem 0
   }
 }
-@keyframes placeHolderShimmer{
+@keyframes contentPlaceholder{
   0%{
       background-position:-40rem 0
   }
@@ -2988,8 +2988,8 @@ hr, .horizontal-rule{
   animation-fill-mode:forwards;
   -webkit-animation-iteration-count:infinite;
   animation-iteration-count:infinite;
-  -webkit-animation-name:placeHolderShimmer;
-  animation-name:placeHolderShimmer;
+  -webkit-animation-name:contentPlaceholder;
+  animation-name:contentPlaceholder;
   -webkit-animation-timing-function:linear;
   animation-timing-function:linear;
   background:#ededed;
@@ -4873,7 +4873,8 @@ input[type="text"].search__form__input--large{
   left:0;
   position:absolute;
   width:100%;
-}
+}  
+
 .tooltip-wrapper .tooltip:after{
   border-left:solid transparent 10px;
   border-right:solid transparent 10px;

@@ -1,5 +1,5 @@
 .fake-table--numeric {
-  counter-reset: section; /* Creates a new instance of the section counter with each ol element */
+  counter-reset: section;
   list-style-type: none;
 
   .fake-table__row {
@@ -8,7 +8,7 @@
   }
 
   & > .fake-table__row > *:first-child::before {
-    counter-increment: section; /* Increments only this instance of the section counter */
+    counter-increment: section;
     content: counters(section,".") " ";
     position: absolute;
     @extend .badge--numeric;

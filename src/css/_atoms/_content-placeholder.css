@@ -1,4 +1,4 @@
-@keyframes placeHolderShimmer {
+@keyframes contentPlaceholder {
   0%{
       background-position: -40rem 0
   }
@@ -11,7 +11,7 @@
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
-  animation-name: placeHolderShimmer;
+  animation-name: contentPlaceholder;
   animation-timing-function: linear;
   background: var(--light-gray);
   background: linear-gradient(to right, var(--light-gray) 8%, var(--silver) 18%, var(--light-gray) 33%);
