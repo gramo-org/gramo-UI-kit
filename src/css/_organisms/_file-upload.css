@@ -23,7 +23,6 @@
 .file-upload__inner {
   display: none;
   background: var(--gramo-white);
-  /*padding: 2rem;*/
   position: absolute;
   right: 4.5rem;
   top: -100%;
@@ -88,8 +87,7 @@
 }
 
 .file-upload__form {
-  background: var(--light-gray);
-  /*border: 1px solid var(--silver);*/
+  background: color(var(--light-gray) shade(3%));
   padding: 2rem;
   
   .form__label--comments {
@@ -137,6 +135,42 @@
     
     & > .text--right {
       text-align: right;
+    }
+  }
+}
+
+.file-upload--main {
+  position: absolute;
+  top: -3.7rem;
+  right: 300px;
+  z-index: 6;
+  margin-top: 0;
+  
+  .file-upload__toggle, .file-upload__toggle span {
+    color: var(--slate-gray);
+    font-size: 1.4rem;
+    top: 0;
+  }
+  
+  .file-upload__toggle > i {
+    opacity: 0.7;
+    font-size: 1.3rem;
+    margin-right: .3rem;
+    vertical-align: bottom;
+  }
+  
+  .file-upload__inner {
+    position: static;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+    
+    &:before {
+      @extend .comments__inner:before;
+      top: 19px;
+      border-color: transparent transparent color(var(--light-gray) shade(3%));
+      @media (--desktop) {
+        border-color: transparent transparent var(--gramo-white);
+      }
     }
   }
 }

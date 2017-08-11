@@ -148,7 +148,7 @@ $(document).ready(function() {
       });
   });
 
-  //Search function
+  //Search function (src: http://www.designchemical.com/blog/index.php/jquery/live-text-search-function-using-jquery/)
   $('#filter').bind('keyup change', function(){
     // Retrieve the input field text and reset the count to zero
     var filter = $(this).val(), count = 0;
