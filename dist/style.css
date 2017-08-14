@@ -6100,6 +6100,9 @@ tr > td:last-child{
   padding-bottom:.6rem;
   margin-bottom:1.2rem;
 }
+.comments .comments__content li p, .changelog .comments__content li p{
+  white-space:pre-wrap;
+}
 .comments .add-comment, .changelog .add-comment{
   padding:1rem 2rem 0rem 2rem;
   display:inline-block;
