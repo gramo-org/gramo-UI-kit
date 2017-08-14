@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main class="">
+          <header class="site-header">
+            <div id="ember1141" class="ember-view"><div class="toggle-sidebar open">
+      <a data-ember-action="" data-ember-action-1142="1142">
+      </a>
+    </div>
+    </div>
+          </header>
+          <section class="container">
+            <div id="ember1145" class="flash-message-wrapper ember-view"><!----></div>
+          </section>
+          <section class="container container--hd">
+            <section class="container container--hd">
+      <div class="section-header section-header--divided no-margin--bottom">
+        <header>
+          <h1 class="heading--inline">ARNT OLAF ANDERSEN</h1>
+          <ol class="wizard-steps">
+            <li>
+    <a href="/accounting/ledger?owner_id=a1618e4c-b9b7-45e6-895f-0a1584265bf2&amp;period=custom&amp;sector=PERFORMER" id="ember1207" class="active ember-view">            Reskontro
+    </a>        </li>
+            <li class="selected">Utøver</li>
+    <!---->      </ol>
+        </header>
+        <div class="section-header__below">
+          <div class="section-header__meta section-header__meta--cols">
+              <div class="col">
+                <h2 class="text--thin">511208</h2>
+                <h4>
+                    Medlemsnummer
+                </h4>
+              </div>
+            <div class="col">
+              <h2 class="text--thin">8&nbsp;164,12</h2>
+              <h4>Saldo i dag</h4>
+            </div>
+            <div class="col">
+              <h2 class="text--thin"></h2>
+              <h4>Siste utbetaling</h4>
+            </div>
+            <div class="col">
+              <h2 class="text--thin"></h2>
+              <h4></h4>
+            </div>
+          </div>
+        </div>
+        <div class="section-header__below">
+          <div class="section-header__meta">
+            <h4 class="heading--inline">Vis alle transaksjoner relatert</h4>
+    <select tabindex="0" id="ember1255" class="select select--fluid x-select ember-view"><option value="transactions" id="ember1264" class="x-option ember-view">            Transaksjonsperiode
+    </option><option value="distributions" id="ember1270" class="x-option ember-view">            Avregningssperiode
+    </option>
+    </select>
+    <select tabindex="0" id="ember1276" class="select select--fluid x-select ember-view"><option value="1" id="ember1277" class="x-option ember-view">            Sist år
+    </option><option value="4" id="ember1283" class="x-option ember-view">            Siste 4 år
+    </option><option value="custom" id="ember1289" class="x-option ember-view">            Egendefinert
+    </option>
+    </select>      </div>
+          <div class="“section-header__datepicker”">
+            <label class="form__label form__label--date">
+              Fra
+              <input type="date" id="ember1399" class="no-margin--top form__input ember-view">
+            </label>
+            <label class="form__label form__label--date">
+              Til
+              <input type="date" id="ember1405" class="no-margin--top form__input ember-view">
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="container container--hd">
+      <table class="table table--fluid drilldown table--full-width">
+        <thead class="table__head table__head--always-visible">
+          <tr>
+            <th>Dato</th>
+            <th class="text--center">Avregning</th>
+            <th>Beskrivelse</th>
+            <th class="text--right">Beløp</th>
+            <th class="text--right"></th>
+            <th>Detaljer</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+    <tr data-level="1" id="ember1339" class="ember-view">          <td data-label="Dato">
+                2017.08.08
+              </td>
+              <td data-label="Avregning" class="text--center">
+                2015
+              </td>
+              <td data-label="Beskrivelse">
+                2015 MAIN
+              </td>
+              <td data-label="Beløp" class="text--right">
+                8&nbsp;164,12
+              </td>
+              <td data-label="Saldo i NOK" class="text--right">
+              </td>
+              <td colspan="2" data-label="Detaljer">
+    <a href="/accounting/ledger/details/76780752-a4a8-4bf8-bf49-1f3aae661d77?owner_id=a1618e4c-b9b7-45e6-895f-0a1584265bf2&amp;period=custom&amp;sector=PERFORMER" id="ember1371" class="ember-view">              Se detaljer
+    </a>          </td>
+
+    </tr>    </tbody>
+      </table>
+    </section>
+
+
+          </section>
+        </main>
+  </div><!--End site-wrapper-->
+
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/vendor/drilldown.js"></script>
+<script src="../js/default.js"></script>
+<script>
+$('.drilldown').drilldown({
+  speed: 'fast'
+});
+</script>
+</body>
+</html>

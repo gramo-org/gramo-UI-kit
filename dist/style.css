@@ -1194,9 +1194,6 @@ main > section:first-of-type{
   box-shadow:none;
   text-shadow:none;
 }
-a, a:visited{ text-decoration:underline; }
-a[href]:after{ content:" (" attr(href) ")"; }
-a[href^="#"]:after, a[href^="javascript:"]:after{ content:""; }
 pre, blockquote{ page-break-inside:avoid; }
 thead{ display:table-header-group; }
 tr{ page-break-inside:avoid; }
@@ -1209,6 +1206,9 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 }
 .drilldown-body{
   display:block!important;
+}
+.select, .form__label--date, .section-header__meta h4{
+  display:none!important;
 }
 
 table{
