@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/minside.eot?pdihjx');
-  src:  url('../fonts/minside.eot?pdihjx#iefix') format('embedded-opentype'),
-    url('../fonts/minside.ttf?pdihjx') format('truetype'),
-    url('../fonts/minside.woff?pdihjx') format('woff'),
-    url('../fonts/minside.svg?pdihjx#icomoon') format('svg');
+  src:  url('fonts/minside.eot?pdihjx');
+  src:  url('fonts/minside.eot?pdihjx#iefix') format('embedded-opentype'),
+    url('fonts/minside.ttf?pdihjx') format('truetype'),
+    url('fonts/minside.woff?pdihjx') format('woff'),
+    url('fonts/minside.svg?pdihjx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }

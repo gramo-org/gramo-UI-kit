@@ -46,8 +46,14 @@ gulp.task('postcss', function() {
 
 // Task to move compiled CSS to `dist` folder
 gulp.task('movecss', function() {
-  return gulp.src('./src/style.css')
+  return gulp.src(['./src/style.css', './src/minside/minside.css'])
     .pipe(gulp.dest('./dist/'));
+});
+
+// Task to move minside CSS to `src` folder
+gulp.task('movecss', function() {
+  return gulp.src('./src/minside/minside.css')
+    .pipe(gulp.dest('./src/'));
 });
 
 // Task to move compiled CSS to `dist` folder
