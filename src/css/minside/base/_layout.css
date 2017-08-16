@@ -31,6 +31,13 @@ main > section:first-of-type {
   background: url("img/gramo-logo-black.png") no-repeat 50% 5rem;
   background-size: 160px;
   padding-top: 10rem!important;
+  
+  &__heading {
+    text-transform: none;
+    margin: 0 auto 1rem auto;
+    max-width: 400px;
+    text-align: center;
+  }
 }
 
 .container--col-3 {
