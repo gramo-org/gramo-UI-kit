@@ -45,16 +45,10 @@ gulp.task('postcss', function() {
 });
 
 // Task to move compiled CSS to `dist` folder
-// gulp.task('movecss', function() {
-//   return gulp.src(['./src/style.css', './src/minside/minside.css'])
-//     .pipe(gulp.dest('./dist/'));
-// });
-
-// // Task to move minside CSS to `src` folder
-// gulp.task('moveminsidecss', function() {
-//   return gulp.src('./src/minside/minside.css')
-//     .pipe(gulp.dest('./src/'));
-// });
+gulp.task('movecss', function() {
+  return gulp.src('./src/style.css')
+    .pipe(gulp.dest('./dist/'));
+});
 
 // Task to move compiled CSS to `dist` folder
 gulp.task('movefonts', function() {
@@ -109,5 +103,5 @@ gulp.task('default', ['watch']);
 
 // Gulp Build Task
 gulp.task('build', function() {
-  runSequence('postcss', 'movefonts', 'imagemin', 'jsmin', 'inlinesource');
+  runSequence('postcss', 'movecss', 'movefonts', 'imagemin', 'jsmin', 'inlinesource');
 });

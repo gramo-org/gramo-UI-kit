@@ -27,6 +27,12 @@ main > section:first-of-type {
   }
 }
 
+.container--branded {
+  background: url("img/gramo-logo-black.png") no-repeat 50% 5rem;
+  background-size: 160px;
+  padding-top: 10rem!important;
+}
+
 .container--col-3 {
   max-width: 1100px;
   margin: auto;
