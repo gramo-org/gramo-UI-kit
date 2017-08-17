@@ -683,6 +683,9 @@ input[type="checkbox"].form__input--toggle-visibility{
   -webkit-align-items:center;
   -ms-flex-align:center;
   align-items:center;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
   margin-top:0;
   text-transform:none;
   font-weight:600;
@@ -1346,9 +1349,9 @@ input[type="checkbox"].form__input--toggle-visibility{
 
 .masthead__meta__item{
   color:#504f56;
-  -webkit-flex:1 0 33.333%;
-  -ms-flex:1 0 33.333%;
-  flex:1 0 33.333%;
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1;
   border-right:1px solid #d9d9dc;
   display:-webkit-flex;
   display:-ms-flexbox;

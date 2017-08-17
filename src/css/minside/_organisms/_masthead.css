@@ -62,7 +62,7 @@
     
   &__item {
     color: var(--slate-gray);
-    flex: 1 0 33.333%;
+    flex: 1;
     border-right: 1px solid var(--silver);
     display: flex;
     flex-direction: column;
