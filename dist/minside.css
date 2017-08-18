@@ -291,7 +291,7 @@ main > section:first-of-type{
   content:"\e928";
 }
 
-.icon--large, .statusboard .icon{
+.icon--large{
   font-size:6rem;
 }
 .box--shortcut{

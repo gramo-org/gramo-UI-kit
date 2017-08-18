@@ -112,8 +112,4 @@
       margin-right: 0;
     }
   }
-  
-  .icon {
-    @extend .icon--large;
-  }
 }
