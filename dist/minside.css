@@ -357,7 +357,9 @@ main > section:first-of-type{
 
   .box--login, .box--overlay{
     margin-top:2rem;
-    min-height:550px;
+    min-height:350px;
+    box-shadow:none;
+    border:1px solid #d9d9dc;
   }
 }
 
