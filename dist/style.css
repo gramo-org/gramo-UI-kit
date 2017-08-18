@@ -241,6 +241,9 @@ td.text--center, .fake-table__row *.text--center{
 .text--italic{
   font-style:italic;
 }
+.text--pre{
+  white-space:pre-wrap;
+}
 
 .text--small, .list--expandable .list__item__date span{
   font-size:1.2rem!important;
@@ -322,6 +325,11 @@ td.text--center, .fake-table__row *.text--center{
   -webkit-align-self:flex-start;
   -ms-flex-item-align:start;
   align-self:flex-start;
+}
+
+.v-align--middle{
+  vertical-align:middle!important;
+  margin-top:-4px;
 }
 
 .v-align--bottom{

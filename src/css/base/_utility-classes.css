@@ -53,6 +53,11 @@ td.text--center,
   font-style: italic;
 }
 
+/* preformatted */
+.text--pre {
+  white-space: pre-wrap;
+}
+
 /* font-size overrides */
 
 .text--small {
@@ -137,6 +142,11 @@ td.text--center,
 
 .align--top {
   align-self: flex-start;
+}
+
+.v-align--middle {
+  vertical-align: middle!important;
+  margin-top: -4px;
 }
 
 .v-align--bottom {
