@@ -20,13 +20,13 @@
   @media (--tablet) { color: inherit; }
 }
 
-.row--delete {
+.row__delete {
   font-size: 2rem;
   position: absolute;
   left: -2rem;
   top: calc(50% - 1.2rem);
 }
 
-.link-add {
+.link--add {
   margin: -0.5rem 0 1rem 0.7rem;
 }
