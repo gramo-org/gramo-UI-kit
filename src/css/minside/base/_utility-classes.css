@@ -23,7 +23,7 @@
 .row__delete {
   font-size: 2rem;
   position: absolute;
-  left: -2rem;
+  right: -2rem;
   top: calc(50% - 1.2rem);
 }
 
