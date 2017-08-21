@@ -21,10 +21,13 @@
 }
 
 .row__delete {
-  font-size: 2rem;
   position: absolute;
   right: -2rem;
-  top: calc(50% - 1.2rem);
+  top: calc(50% - 0.2rem);
+  
+  .icon {
+    font-size: 2rem;
+  }
 }
 
 .link--add {
