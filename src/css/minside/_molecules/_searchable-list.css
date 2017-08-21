@@ -1,0 +1,29 @@
+.searchable-list {
+  padding: 0;
+
+  &__heading {
+    height: auto;
+    padding: 1.2rem 2.3rem 1.2rem 0.75rem;
+
+    &:before {
+      background-image: url(img/arrow-down-dark.svg);
+      right: 1rem;
+      top: 1.6rem;
+    }
+  }
+}
+
+.searchable-list__dropdown {
+  min-width: 100%;
+}
+
+.searchable-list__dropdown ul {
+
+  li.searchable-list__option {
+
+    &--active, &:hover {
+      color: inherit;
+      background-color: var(--gramo-turkis);
+    }
+  }
+}

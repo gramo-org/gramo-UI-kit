@@ -24,6 +24,7 @@
 @import url('minside/_molecules/_user.css');
 @import url('minside/_molecules/_search.css');
 @import url('minside/_molecules/_pagination.css');
+@import url('minside/_molecules/_searchable-list.css');
 /* Organisms */
 @import url('minside/_organisms/_site-header.css');
 @import url('minside/_organisms/_sidebar.css');
