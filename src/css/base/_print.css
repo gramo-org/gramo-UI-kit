@@ -34,7 +34,7 @@ abbr[title]:after { content: " (" attr(title) ")"; }
 .drilldown-body {
   display: block!important;
 }
-.select, .form__label--date, .section-header__meta h4 {
+.select, .form__label--date, .section-header__meta p {
   display: none!important; /* when printing reskontro we don't need select boxes and datepickers */
 }
 
