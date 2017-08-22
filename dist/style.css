@@ -1952,7 +1952,7 @@ input-placeholder{
 }
 .form__input--stepper, input[type="number"], input[type="time"]{
   position:relative;
-  height:3.2rem;
+  height:5rem;
 }
 .form__input--stepper::-webkit-outer-spin-button, .form__input--stepper::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button, input[type="time"]::-webkit-outer-spin-button, input[type="time"]::-webkit-inner-spin-button{
   -webkit-appearance:none;
@@ -1966,9 +1966,14 @@ input-placeholder{
   bottom:0;
   height:100%;
 }
-.form__input--stepper::-webkit-inner-spin-button:hover, .form__input--stepper::-webkit-inner-spin-button:active, input[type="number"]::-webkit-inner-spin-button:hover, input[type="number"]::-webkit-inner-spin-button:active, input[type="time"]::-webkit-inner-spin-button:hover, input[type="time"]::-webkit-inner-spin-button:active{
-  opacity:.8;
+_::-webkit-:not(:root:root), input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button{
+  position:relative;
 }
+@media not all and (min-resolution:.001dpcm){ @media{ 
+  input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button{
+  position:relative;
+  }
+} }
 
 input[type="time"]{
   padding-right:2rem;

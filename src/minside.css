@@ -543,8 +543,13 @@ h2 .badge{
   padding:0 4rem 0 1rem;
   background-image:url(img/arrow-down-dark.svg);
   background-position:right 1rem top 55%;
-  min-width:250px;
   margin-top:.6rem;
+}
+@media (min-width: 768px){
+
+  .select{
+    width:280px;
+  }
 }
 .form__input, .form__input[type="date"], .form__input--date{
   padding:1.2rem 0.75rem;
@@ -591,6 +596,10 @@ input[type="number"]{
 
 input[type="checkbox"].form__input--toggle-visibility{
   visibility:hidden;
+}
+
+.form__input--textarea{
+  margin-bottom:1.2rem;
 }
 .form__label{
   padding:0;
@@ -970,6 +979,12 @@ input[type="checkbox"].form__input--toggle-visibility{
 .searchable-list{
   padding:0;
 }
+@media (min-width: 768px){
+
+  .searchable-list{
+    max-width:280px;
+  }
+}
 .searchable-list__heading{
   height:auto;
   padding:1.2rem 2.3rem 1.2rem 0.75rem;
@@ -981,7 +996,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .searchable-list__dropdown{
-  min-width:100%;
+  width:100%;
 }
 
 .searchable-list__dropdown ul li.searchable-list__option--active, .searchable-list__dropdown ul li.searchable-list__option:hover{

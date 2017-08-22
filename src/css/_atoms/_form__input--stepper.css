@@ -2,7 +2,7 @@
 input[type="number"],
 input[type="time"] {
   position: relative;
-  height: 3.2rem;
+  height: 5rem;
 
   /* Spin Buttons modified */
   &::-webkit-outer-spin-button,
@@ -18,11 +18,24 @@ input[type="time"] {
       bottom: 0;
       height: 100%;
   }
-  &::-webkit-inner-spin-button:hover,
+  /*&::-webkit-inner-spin-button:hover,
   &::-webkit-inner-spin-button:active{
       opacity: .8;
-  }
+  }*/
 }
+
+/* Safari 9 only override */
+_::-webkit-:not(:root:root), input[type="number"]::-webkit-outer-spin-button,
+_::-webkit-:not(:root:root), input[type="number"]::-webkit-inner-spin-button {
+  position: relative;
+}
+/* Safari 10 only override */
+@media not all and (min-resolution:.001dpcm) { @media { 
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+  position: relative;
+  }
+} }
 
 input[type="time"] {
   padding-right: 2rem;

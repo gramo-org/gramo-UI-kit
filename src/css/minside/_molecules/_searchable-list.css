@@ -1,5 +1,6 @@
 .searchable-list {
   padding: 0;
+  @media (--tablet) { max-width: 280px; }
 
   &__heading {
     height: auto;
@@ -14,7 +15,9 @@
 }
 
 .searchable-list__dropdown {
-  min-width: 100%;
+  /*min-width: 100%;
+  width: auto;*/
+  width: 100%;
 }
 
 .searchable-list__dropdown ul {
