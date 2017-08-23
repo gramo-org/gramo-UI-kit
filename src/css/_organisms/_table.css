@@ -82,3 +82,38 @@
     }
   }
 }
+
+/* Scrollable table */
+.table--scrollable {
+  margin-top: 2rem;
+  display: block;
+  min-width: 0;
+  
+  tbody, thead {
+    display: block;
+    overflow-y: scroll;
+  }
+  
+  tbody {
+      height: 300px;
+      overflow-y: scroll;
+  }
+  tr {
+      display: table;
+      border-collapse: collapse;
+      width: 100%;
+      &:first-child {
+        border-top: 0;
+      }
+  }
+  td, th {
+      @media (--tablet) { width: 40%; }
+  }
+  
+  tfoot {
+    text-align: center;
+    tr td {
+      border: 0;
+    }
+  }
+}

@@ -458,6 +458,14 @@ td.text--center, .fake-table__row *.text--center{
   margin-bottom:1.2rem;
 }
 
+.heading--scrollable-table{
+  background:#ededed;
+  padding:2rem;
+  margin-left:-3rem;
+  padding-left:3rem;
+  width:calc(100% + 6rem);
+}
+
 .input--inline{
   display:inline-block;
   max-width:200px;
@@ -5760,6 +5768,39 @@ tr > td:last-child{
 .table--decimal .form__label .form__input{
   text-align:right;
   padding-right:.25rem;
+}
+.table--scrollable{
+  margin-top:2rem;
+  display:block;
+  min-width:0;
+}
+.table--scrollable tbody, .table--scrollable thead{
+  display:block;
+  overflow-y:scroll;
+}
+.table--scrollable tbody{
+  height:300px;
+  overflow-y:scroll;
+}
+.table--scrollable tr{
+  display:table;
+  border-collapse:collapse;
+  width:100%;
+}
+.table--scrollable tr:first-child{
+  border-top:0;
+}
+@media (min-width: 768px){
+
+  .table--scrollable td, .table--scrollable th{
+    width:40%;
+  }
+}
+.table--scrollable tfoot{
+  text-align:center;
+}
+.table--scrollable tfoot tr td{
+  border:0;
 }
 .fake-table{
   min-width:100%;

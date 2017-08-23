@@ -266,6 +266,14 @@ td.text--center,
   margin-bottom: 1.2rem;
 }
 
+.heading--scrollable-table {
+  background: var(--light-gray);
+  padding: 2rem;
+  margin-left: -3rem;
+  padding-left: 3rem;
+  width: calc(100% + 6rem);
+}
+
 /*** input--inline ***/
 
 .input--inline {

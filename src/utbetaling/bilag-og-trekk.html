@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+  window.onload = window.location.hash = 'bilag-og-trekk';
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+
+
+      <section class="container container--hd">
+        
+        <ol class="wizard-steps">
+          <li>1. Opprett</li>
+          <li>2. Reskontro til behandling</li>
+          <li>3. Utbetalingen</li>
+          <li class="selected">4. Oppsummering</li>
+        </ol>
+        <div class="section-header section-header--divided no-margin--bottom">
+          <header>
+            <h1 class="heading--inline">Feil</h1>
+          </header>
+          <div class="section-header__below">
+            Utbetaling medlem vinter 2017
+            
+          </div>
+        </div>
+      </section>
+      
+      <section class="container container--hd">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
+            <li class="tabs__nav__item"><a href="#oppsumering">Oppsumering</a></li>
+            <li class="tabs__nav__item"><a href="#stopp">Stopp</a></li>
+            <li class="tabs__nav__item"><a href="#bank-feil">Bank feil</a></li>
+            <li class="tabs__nav__item"><a href="#">Andre feil</a></li>
+            <li class="tabs__nav__item"><a href="#bilag-og-trekk">Bilag og trekk</a></li>
+            <li class="tabs__nav__item"><a href="#">Statement</a></li>
+          </ul>
+          <section id="oppsumering" class="tabs__section">
+          </section>
+          <section id="stopp" class="tabs__section">
+          </section>
+          <section id="bankfeil" class="tabs__section">
+          </section>
+          <section id="bilag-og-trekk" class="tabs__section tabs__section--outline">
+            <header class="infobar infobar--in-tabs">
+              <div class="infobar__left">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3">
+                    <h4 class="heading--sub">Trekkmottakere</h4>
+                    <button class="btn btn--secondary">Last ned trekkmottakere fil</button>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <h4 class="heading--sub">Bokføringsbilag</h4>
+                    <button class="btn btn--secondary">Last ned bokføringsbilag fil</button>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="container container--padded">
+              <table class="table table--scrollable">
+                <thead>
+                  <tr>
+                    <th><span class="table-sort table-sort--desc">Feil type</span></th>
+                    <th>Person</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Batalingsmottaker">Batalingsmottaker</td>
+                    <td data-label="Filnavn"><a href="#"><a href="#">Filnavn 1</a></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Batalingsmottaker">Batalingsmottaker</td>
+                    <td data-label="Filnavn"><a href="#"><a href="#">Filnavn 1</a></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Batalingsmottaker">Batalingsmottaker</td>
+                    <td data-label="Filnavn"><a href="#"><a href="#">Filnavn 1</a></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Batalingsmottaker">Batalingsmottaker</td>
+                    <td data-label="Filnavn"><a href="#"><a href="#">Filnavn 1</a></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Batalingsmottaker">Batalingsmottaker</td>
+                    <td data-label="Filnavn"><a href="#"><a href="#">Filnavn 1</a></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Batalingsmottaker">Batalingsmottaker</td>
+                    <td data-label="Filnavn"><a href="#"><a href="#">Filnavn 1</a></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Batalingsmottaker">Batalingsmottaker</td>
+                    <td data-label="Filnavn"><a href="#"><a href="#">Filnavn 1</a></a></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Batalingsmottaker">Batalingsmottaker</td>
+                    <td data-label="Filnavn"><a href="#"><a href="#">Filnavn 1</a></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </section><!-- end .scrollable-area -->
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
+
+</body>
+</html>
