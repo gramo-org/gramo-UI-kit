@@ -80,12 +80,12 @@ input[type="text"].search__form__input {
       min-width: 200px;
     }
     @media (--desktop) {
-      flex: 0 1 300px;
-      min-width: 300px;
+      flex: 0 1 400px;
+      min-width: 400px;
     }
     @media (--hd) {
-      flex: 0 1 350px;
-      min-width: 350px;
+      flex: 0 1 550px;
+      min-width: 550px;
     }
   }
   &--min-width {
