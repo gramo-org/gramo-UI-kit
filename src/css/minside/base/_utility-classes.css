@@ -22,8 +22,12 @@
 
 .row__delete {
   position: absolute;
-  right: -2rem;
-  top: calc(50% - 0.2rem);
+  right: .5rem;
+  top: calc(75% - .2rem);
+  @media (--tablet) {
+    right: -2rem;
+    top: calc(50% - 0.2rem);
+  }
   
   .icon {
     font-size: 2rem;

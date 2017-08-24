@@ -4152,8 +4152,16 @@ h4, .form__label{
 
 .row__delete{
   position:absolute;
-  right:-2rem;
-  top:calc(50% - 0.2rem);
+  right:.5rem;
+  top:calc(75% - .2rem);
+}
+
+@media (min-width: 768px){
+
+  .row__delete{
+    right:-2rem;
+    top:calc(50% - 0.2rem);
+  }
 }
 
 .row__delete .icon{
