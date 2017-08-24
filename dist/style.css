@@ -1310,6 +1310,9 @@ table{
 .icon--empty-state-arrow:before{
     content:"\e912";
 }
+.icon--empty-state-files:before{
+    content:"\e911";
+}
 
 .icon--music:before{
     content:"\e913";
@@ -6076,6 +6079,16 @@ tr > td:last-child{
   height:18rem;
   line-height:1;
   border-radius:6px;
+}
+.empty-state--small{
+  min-height:300px;
+}
+.empty-state--small .empty-state__icon i{
+  font-size:5rem;
+  width:5rem;
+  height:5rem;
+  margin:5rem auto;
+  border:0;
 }
 .comments, .changelog{
   max-width:500px;

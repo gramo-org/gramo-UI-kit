@@ -78,6 +78,9 @@
 .icon--empty-state-arrow:before {
     content: "\e912";
 }
+.icon--empty-state-files:before {
+    content: "\e911";
+}
 
 .icon--music:before {
     content: "\e913";

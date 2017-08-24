@@ -25,4 +25,16 @@
       border-radius: 6px;
     }
   }
+  
+  &--small {
+    min-height: 300px;
+    
+    .empty-state__icon i {
+      font-size: 5rem;
+      width: 5rem;
+      height: 5rem;
+      margin: 5rem auto;
+      border: 0;
+    }
+  }
 }
