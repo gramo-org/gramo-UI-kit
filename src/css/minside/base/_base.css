@@ -1,4 +1,10 @@
 /* Min Side */
+@font-face {
+  font-family: 'brandon-regular';
+  src:  url('fonts/BrandonText-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 %font-size {
   font-size: var(--minside-font-size);

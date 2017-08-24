@@ -14,8 +14,7 @@
   
   &--primary {
     background: var(--gramo-turkis);
-    font-family: var(--minside-font-family);
-    font-size: 1.8rem;
+    font-size: var(--minside-font-size);
     font-weight: var(--semibold);
   }
   

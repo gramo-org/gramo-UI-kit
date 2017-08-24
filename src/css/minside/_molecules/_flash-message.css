@@ -11,8 +11,8 @@
   margin-top: 0;
   text-transform: none;
   font-weight: var(--semibold);
-  font-family: var(--minside-font-family);
-  font-size: 1.8rem;
+  /*font-family: var(--minside-font-family);*/
+  font-size: var(--minside-font-size);
   line-height: 1;
   
   & > p {
