@@ -81,7 +81,7 @@
             </nav>
           </div>
           <div class="col-xs-12 col-sm-9">
-            <form class="form">
+            <form class="form adjust--to-left">
               <section id="personalia-info">
                 <h2>Personalia</h2>
                 <div class="row">
@@ -140,12 +140,12 @@
                       </select>
                     </label>
                   </div>
-                  <div class="col-xs-6 col-sm-3">
+                  <div class="col-xs-5 col-sm-3">
                     <label class="form__label">Fra
                       <input type="date" class="form__input form__input--date">
                     </label>
                   </div>
-                  <div class="col-xs-6 col-sm-3">
+                  <div class="col-xs-5 col-sm-3">
                     <label class="form__label">Til
                       <input type="date" class="form__input form__input--date">
                     </label>
@@ -153,25 +153,50 @@
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Bostedsland
-                      <select class="select select--fluid select--block">
-                        <option value="">Norge</option>
-                        <option value="">Storbrittania</option>
-                        <option value="">USA</option>
-                      </select>
+                    <label class="form__label form__label--block">
+                      <span>Statsborgerskap</span>
+                      <div class="searchable-list searchable-list form__input form__input--block">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Velg land</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
+                          <ul>
+                            <li class="searchable-list__option">
+                              AFGANISTAN
+                            </li>
+                            <li class="searchable-list__option">
+                              ÅLAND
+                            </li>
+                            <li class="searchable-list__option">
+                              ALBANIA
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </label>
                   </div>
-                  <div class="col-xs-6 col-sm-3">
-                    <label class="form__label">Fra
-                      <input type="date" class="form__input form__input--date">
+                  <div class="col-xs-5 col-sm-3">
+                    <label class="form__label form__label--block">
+                      <span>Fra</span>
+                      <input type="date" class="form__input form__label--block form__input--date">
                     </label>
                   </div>
-                  <div class="col-xs-6 col-sm-3">
-                    <label class="form__label">Til
-                      <input type="date" class="form__input form__input--date">
+                  <div class="col-xs-5 col-sm-3">
+                    <label class="form__label form__label--block">
+                      <span>Til</span>
+                      <input type="date" class="form__input form__label--block form__input--date ember-view">
                     </label>
                   </div>
-                </div><!--end .row-->
+                  <div class="row__delete">
+                    <a class="text--small text--light">
+                      <span id="ember2058" class="icon icon--close"></span>
+                    </a>
+                  </div>
+                </div>
+              <a class="link--no-line link--add">
+                Legg til statsborgerskap
+              </a>
               </section>
               <hr class="horizontal-rule">
               <section id="kontaktinformasjon">
@@ -216,23 +241,23 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Skattekommune
-                      <div id="ember538" class="searchable-list searchable-list form__input form__input--180 searchable-list--open ember-view">
-                        <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-539="539">
+                      <div id="ember538" class="searchable-list searchable-list form__input">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
                           <span class="searchable-list__selected">Velg skattekommune</span>
                         </div>
                         <div class="searchable-list__dropdown">
-                          <input type="text" id="ember540" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                          <input type="text" id="ember540" class="ember-text-field searchable-list__search form__input form__input--block">
                           <ul>
-                        <!---->        <li class="searchable-list__option " data-ember-action="" data-ember-action-542="542">
+                            <li class="searchable-list__option">
                                 Åfjord
                               </li>
-                              <li class="searchable-list__option " data-ember-action="" data-ember-action-544="544">
+                              <li class="searchable-list__option">
                                 Agdenes
                               </li>
-                              <li class="searchable-list__option " data-ember-action="" data-ember-action-546="546">
+                              <li class="searchable-list__option">
                                 Ål
                               </li>
-                              <li class="searchable-list__option " data-ember-action="" data-ember-action-548="548">
+                              <li class="searchable-list__option">
                                 KAUTOKEINO/GUOVDAGEAINNU
                               </li>
                           </ul>

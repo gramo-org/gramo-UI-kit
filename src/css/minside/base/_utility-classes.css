@@ -21,11 +21,13 @@
 }
 
 .row__delete {
-  position: absolute;
+  position: relative;
   right: .5rem;
-  top: calc(75% - .2rem);
+  top: 1rem;
+  align-self: center;
   @media (--tablet) {
-    right: -2rem;
+    position: absolute;
+    right: -1.5rem;
     top: calc(50% - 0.2rem);
   }
   
@@ -36,4 +38,17 @@
 
 .link--add {
   margin: -0.5rem 0 1rem 0rem;
+}
+
+.adjust--to-left {
+  position: static;
+  
+  @media (--tablet) {
+    position: relative;
+    left: -2rem;
+  }
+  
+  @media (--hd) {
+    position: static;
+  }
 }

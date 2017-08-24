@@ -11,8 +11,9 @@
       border: 0; 
       padding: 0; 
       text-transform: 
-      uppercase; 
-      font-size: 1.8rem; 
+      uppercase;
+      font-size: 1.5rem;
+      @media (--desktop) { font-size: 1.8rem; }
     }
   }
   

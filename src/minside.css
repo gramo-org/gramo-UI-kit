@@ -4151,15 +4151,19 @@ h4, .form__label{
 }
 
 .row__delete{
-  position:absolute;
+  position:relative;
   right:.5rem;
-  top:calc(75% - .2rem);
+  top:1rem;
+  -ms-flex-item-align:center;
+  -ms-grid-row-align:center;
+  align-self:center;
 }
 
 @media (min-width: 768px){
 
   .row__delete{
-    right:-2rem;
+    position:absolute;
+    right:-1.5rem;
     top:calc(50% - 0.2rem);
   }
 }
@@ -4170,6 +4174,25 @@ h4, .form__label{
 
 .link--add{
   margin:-0.5rem 0 1rem 0rem;
+}
+
+.adjust--to-left{
+  position:static;
+}
+
+@media (min-width: 768px){
+
+  .adjust--to-left{
+    position:relative;
+    left:-2rem;
+  }
+}
+
+@media (min-width: 1200px){
+
+  .adjust--to-left{
+    position:static;
+  }
 }
 
 .site-wrapper{
@@ -4846,7 +4869,14 @@ input[type="checkbox"].form__input--toggle-visibility{
     border:0;
     padding:0;
     text-transform:uppercase;
-    font-size:1.8rem;
+    font-size:1.5rem;
+  }
+
+  @media (min-width: 960px){
+
+    .nav--secondary ul{
+      font-size:1.8rem;
+    }
   }
 }
 .nav--secondary li{
