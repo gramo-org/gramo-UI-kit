@@ -311,6 +311,16 @@ td.text--center,
   margin-bottom: .4rem;
 }
 
+.row--with-border::after {
+  content: '';
+  height: 1px;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  border-bottom: 1px solid var(--silver);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
 .col {
   padding: 0 1rem;
   flex: 1;

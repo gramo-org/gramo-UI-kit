@@ -1,5 +1,57 @@
-/* Variables (imported from Echo) */
+/*--------------------------------------------------------------
+>>> STYLES (imported from ECHO):
+----------------------------------------------------------------
+*/
+/* Base styles */
+@import url('base/_normalize.css');
 @import url('base/_variables.css');
+@import url('base/_utility-classes.css');
+@import url('base/_base.css');
+@import url('base/_grid.css');
+@import url('base/_layout.css');
+/* Print Styles */
+@media print {
+  @import url('base/_print.css');
+}
+/*Atoms*/
+@import url('_atoms/_icons.css');
+@import url('_atoms/_links.css');
+@import url('_atoms/_box.css');
+@import url('_atoms/_button.css');
+@import url('_atoms/_form-validation.css');
+@import url('_atoms/_horizontal-rule.css');
+@import url('_atoms/_badge.css');
+@import url('_atoms/_select-menu.css');
+@import url('_atoms/_form__input.css');
+@import url('_atoms/_form__input--stepper.css');
+@import url('_atoms/_form__label.css');
+@import url('_atoms/_toolbar.css');
+/*Molecules*/
+@import url('_molecules/_searchable-list.css');
+@import url('_molecules/_pagination.css');
+@import url('_molecules/_user.css');
+@import url('_molecules/_toggle-sidebar.css');
+@import url('_molecules/_tabs__nav.css');
+@import url('_molecules/_flash-message.css');
+@import url('_molecules/_search.css');
+/*Organisms*/
+@import url('_organisms/_site-header.css');
+@import url('_organisms/_form.css');
+@import url('_organisms/_list.css');
+@import url('_organisms/_sidebar.css');
+@import url('_organisms/_section-header.css');
+@import url('_organisms/_infobar.css');
+@import url('_organisms/_tables.css');
+@import url('_organisms/_table.css');
+@import url('_organisms/_fake-table-numeric.css');
+@import url('_organisms/_wizard-steps.css');
+
+
+/*--------------------------------------------------------------
+>>> MINSIDE STYLES:
+----------------------------------------------------------------
+*/
+
 /* Base styles */
 @import url('minside/base/_base.css');
 @import url('minside/base/_utility-classes.css');
