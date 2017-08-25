@@ -71,7 +71,7 @@
 
 .box--overlay {
   @extend .box--login;
-  /*min-height: 0;*/
+  border: 0;
   background: var(--light-gray);
   margin: 0 auto;
   box-shadow: 0 2px 5px 0 color(var(--gramo-black));
