@@ -249,6 +249,10 @@ td.text--center, .fake-table__row *.text--center{
   font-size:1.2rem!important;
 }
 
+.text--x-small{
+  font-size:.8rem!important;
+}
+
 .text--medium{
   font-size:1.4rem!important;
 }
@@ -324,7 +328,6 @@ td.text--center, .fake-table__row *.text--center{
 
 .v-align--middle{
   vertical-align:middle!important;
-  margin-top:-4px;
 }
 
 .v-align--bottom{
@@ -1529,7 +1532,7 @@ table{
   border:1px solid #d9d9dc;
   padding:0.55rem;
   padding-right:2rem;
-  background-color:#fff;
+  background-color:#fdfdfd;
   font-weight:400;
   display:block;
   width:100%;
@@ -1688,6 +1691,10 @@ input-placeholder{
   min-height:100px;
   max-width:400px;
   margin-bottom:1.2rem;
+}
+.form__input--unknown{
+  background:#fdfdfd url(img/ukjent.svg) left .5rem top 1rem no-repeat;
+  padding-left:5rem;
 }
 .form__label.is-valid .form__input{
     border:1px solid #ededed;
@@ -4486,6 +4493,7 @@ main > section:first-of-type{
 }
 
 .box--overlay{
+  border:0;
   background:#ededed;
   margin:0 auto;
   box-shadow:0 2px 5px 0 rgb(16, 16, 16);

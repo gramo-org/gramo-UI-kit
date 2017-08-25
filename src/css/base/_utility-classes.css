@@ -64,6 +64,10 @@ td.text--center,
   font-size: 1.2rem!important;
 }
 
+.text--x-small {
+  font-size: .8rem!important;
+}
+
 .text--medium {
   font-size: 1.4rem!important;
 }
@@ -146,7 +150,6 @@ td.text--center,
 
 .v-align--middle {
   vertical-align: middle!important;
-  margin-top: -4px;
 }
 
 .v-align--bottom {
