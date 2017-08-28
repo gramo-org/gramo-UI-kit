@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/minside.eot?pdihjx');
-  src:  url('fonts/minside.eot?pdihjx#iefix') format('embedded-opentype'),
-    url('fonts/minside.ttf?pdihjx') format('truetype'),
-    url('fonts/minside.woff?pdihjx') format('woff'),
-    url('fonts/minside.svg?pdihjx#icomoon') format('svg');
+  src:  url('fonts/minside.eot?2dhcuh');
+  src:  url('fonts/minside.eot?2dhcuh#iefix') format('embedded-opentype'),
+    url('fonts/minside.ttf?2dhcuh') format('truetype'),
+    url('fonts/minside.woff?2dhcuh') format('woff'),
+    url('fonts/minside.svg?2dhcuh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -45,6 +45,14 @@
 }
 
 /* Icons */
+.icon--language:before {
+  content: "\e917";
+  font-size: 2rem;
+}
+.icon--logout:before {
+  content: "\e918";
+  font-size: 2rem;
+}
 .icon--calendar:before {
   content: "\e900";
 }

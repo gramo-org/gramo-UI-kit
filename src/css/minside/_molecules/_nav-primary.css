@@ -39,35 +39,54 @@
   
   .vertical__nav {
     background: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     
     &__item a {
       background: none;
-      color: inherit;
+      color: var(--ui-gray);
       text-transform: none;
       border: 0;
-      padding: 1rem 1.5rem;
+      padding: 1.2rem 2rem;
       display: flex;
       align-items: center;
+      font-weight: var(--semibold);
       
-      &.active, &:hover {
+      &.active, &:hover, &.active .icon {
         color: var(--gramo-sea-green);
+      }
+      
+      .icon {
+        color: var(--off-gray);
       }
     }
     
-    &__item:last-child {
-      border-top: 1px solid var(--light-gray);
+    li:first-child,
+    li:last-child {
+      background: var(--light-gray);
+    }
+    
+    li:first-child {
+      border-bottom: 1px solid var(--silver);
+    }
+    
+    li:last-child {
+      border-top: 1px solid var(--silver);
+    }
+    
+    &__item--extend {
+      flex: 1;
+    }
+    
+    &__item--with-border {
+      border-top: 1px solid var(--silver);
     }
     
     .icon {
       font-size: 2.5rem;
       margin-right: 1rem;
       margin-top: .2rem;
-    }
-    
-    &__heading {
-      background: var(--x-light-gray);
-      padding: 1rem 1.5rem;
-      border-top: 1px solid var(--light-gray);
     }
   }
 }
