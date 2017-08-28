@@ -22,11 +22,20 @@ Crafted to work with all modern browsers.
 ### Automated workflow
 Includes a GulpJS config to automate your workflow from build to go-live.
 
-### Usage:
+### Contributing:
 
 - `clone repo`
 - `$ npm install && bower install`
 - `$ gulp`
+
+## Usage:
+
+### Install
+
+- `bower install gramo-org/gramo-UI-kit --save`
+
+### Update
+- `` 
 
 * * *
 
