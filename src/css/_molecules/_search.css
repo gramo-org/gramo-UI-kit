@@ -75,10 +75,10 @@ input[type="text"].search__form__input {
   }
 
   &--fixed-width {
-    @media (--tablet) {
+    /*@media (--tablet) {
       flex: 0 1 200px;
       min-width: 200px;
-    }
+    }*/
     @media (--desktop) {
       flex: 0 1 400px;
       min-width: 400px;
