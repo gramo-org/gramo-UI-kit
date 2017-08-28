@@ -6,4 +6,8 @@
   /*min-width: 250px;*/
   margin-top: .6rem;
   @media (--tablet) { width: 280px; }
+  
+  &--fluid {
+    width: 100%;
+  }
 }

@@ -4634,6 +4634,9 @@ h2 .badge{
     width:280px;
   }
 }
+.select--fluid{
+  width:100%;
+}
 .form__input, input[type="text"].search__form__input, .form__input[type="date"], .form__input--date{
   padding:1.2rem 0.75rem;
   display:block;
