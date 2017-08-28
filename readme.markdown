@@ -32,10 +32,7 @@ Includes a GulpJS config to automate your workflow from build to go-live.
 
 ### Install
 
-- `bower install gramo-org/gramo-UI-kit --save`
-
-### Update
-- `` 
+- `bower install gramo-org/gramo-UI-kit#<commit-hash> --save`
 
 * * *
 
