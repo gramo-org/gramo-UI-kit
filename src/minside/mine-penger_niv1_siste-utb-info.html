@@ -61,78 +61,73 @@
           <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
         </div>
       </div> -->
-
-      <section id="ledger-info" class="container container--padded container--col-1">
+      <section class="container">
+        <div class="row">
+          <dialogue class="statusboard statusboard--secondary" role="alert">
+            <header class="statusboard__header">
+              <span class="icon icon--bank icon--large"></span>
+              <span>Din siste utbetaling var</span>
+              <em>205 693,50 kr</em>
+              <span>25.12.2015</span>
+              <a href="#" class="statusboard__close">
+                <span class="icon--close"></span>
+              </a>
+            </header>
+            <footer class="statusboard__footer">
+              <p>Avspillingsåret 2017 er ikke avregnet enda</p>
+              <a href="#"><span class="icon icon--info"></span></a>
+            </footer>
+          </dialogue>
+        </div>
+      </section>
+        
+      <section class="container container--padded text--center">
         <header class="section__header">
-          <h2>Innspilling detaljer</h2>
+          <h2>Mine Penger</h2>
         </header>
-        <table class="table table--fluid table--list table--ledger no-margin--bottom">
+        <label class="form__label">Velg Periode
+          <select class="select  select--block">
+            <option value="">Siste avregning</option>
+            <option value="">2017</option>
+            <option value="">2016</option>
+          </select>
+        </label>
+      </section>
+      
+      <section id="ledger-info" class="container container--col-1">
+        <table class="table table--fluid table--list table--ledger">
           <thead>
             <tr>
-              <th>Innspillingstittel</th>
-              <th>Hovedartist</th>
-              <th>Poeng</th>
-              <th>Spilletid</th>
-              <th>Sats</th>
+              <th>Avregningsdato</th>
+              <th>Avregningsnavn</th>
+              <th>Betalt til</th>
+              <th>Status</th>
               <th>Midler</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td data-label="Innspillingstittel" class="table__cell--left">
-                <a href="#" class="link--no-line text--bold-on-mobile">Take on Me</a>
+            <tr class="table__row--with-arrow">
+              <td data-label="Avregningsdato" class="table__cell--left text--light">
+                25.12.2015
               </td>
-              <td data-label="Hovedartist" class="table__cell--left">
-                A-ha
+              <td data-label="Avregningsnavn" class="table__cell--left text--bold">
+                Utebetaling Vinter 2015
               </td>
-              <td data-label="Poeng" class="table__cell--left">
-                A/B - 64 poeng
+              <td data-label="Betalt til" class="table__cell--left">
+                Bank
               </td>
-              <td data-label="Spilletid">
-                19:04:45
+              <td data-label="Status" class="text--light">
+                Kjørt
               </td>
-              <td data-label="Sats">
-                175
-              </td>
-              <td data-label="Midler" class="text--bold">
+              <td data-label="Midler" class="text--bold text--blue">
                 Kr. 1785,59
               </td>
             </tr>
           </tbody>
         </table>
-        <table class="table table--fluid table--standard">
-          <thead>
-            <tr>
-              <th>Radio</th>
-              <th class="text--center-on-mobile">Antall</th>
-              <th>Spilletid</th>
-              <th>Inntekt</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>NRK P1</td>
-              <td class="text--center-on-mobile">3</td>
-              <td>00:10:05</td>
-              <td>30,50</td>
-            </tr>
-            <tr>
-              <td>NRK P1</td>
-              <td class="text--center-on-mobile">3</td>
-              <td>00:10:05</td>
-              <td>30,50</td>
-            </tr>
-            <tr>
-              <td>NRK P1</td>
-              <td class="text--center-on-mobile">3</td>
-              <td>00:10:05</td>
-              <td>30,50</td>
-            </tr>
-          </tbody>
-        </table>
       </section>
     </main>
-  </div>
+</div>
 <script src="../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../js/default.js"></script>
 </body>

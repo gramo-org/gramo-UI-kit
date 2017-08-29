@@ -20,7 +20,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
   <link rel="stylesheet" href="../minside.css">
-  
+  <script>
+  window.onload = window.location.hash = 'channel';
+  </script>
   
 </head>
 <body>
@@ -62,85 +64,109 @@
         </div>
       </div> -->
 
-      <dialogue class="statusboard statusboard--primary" role="alert">
+      <!-- <dialogue class="statusboard statusboard--primary" role="alert">
         <header class="statusboard__header">
-          <span class="icon icon--yay icon--large"></span>
-          <h3>Utbetaling Vinter 2016</h3>
-          <em>214 000,00 kr</em>
-          <h3>Planlagt: 25.12.2015</h3>
+          <span class="icon icon--account icon--large"></span>
+          <span>Din foreløpig saldo er</span>
+          <em>226 756,50 kr</em>
           <button href="#" class="statusboard__close">
             <span class="icon--close"></span>
           </button>
         </header>
         <footer class="statusboard__footer">
-          <p>Utbetalingen pågår. Vis meg</p>
+          <p>Avregningen pågår</p>
           <a href="#"><span class="icon icon--info"></span></a>
         </footer>
-      </dialogue>
+      </dialogue> -->
+      <header class="masthead">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text--center">
+              <h1>Avregning detaljer</h1>
+              <h3>Hoved avregning vinter 2016</h3>
+            </div>
+          </div><!--end .row-->
+        </div>
+      </header>
     
-      <section class="container container--padded text--center">
-        <header class="section__header">
-          <h2>Mine Penger</h2>
-        </header>
-        <label class="form__label">Velg Periode
-          <select class="select  select--block">
-            <option value="">Alle transakjoner</option>
-            <option value="">2017</option>
-            <option value="">2016</option>
-          </select>
-        </label>
-      </section>
-      <section id="ledger-info" class="container container--col-1">
-        <table class="table table--fluid table--list table--ledger">
-          <thead>
-            <tr>
-              <th>Avregningsdato</th>
-              <th>Avregningsnavn</th>
-              <th>Betalt til</th>
-              <th>Status</th>
-              <th>Midler</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="table__row--with-arrow">
-              <td data-label="Avregningsdato" class="table__cell--left text--light-on-mobile">
-                25.12.2015
-              </td>
-              <td data-label="Avregningsnavn" class="table__cell--left text--bold-on-mobile">
-                Utebetaling Vinter 2015
-              </td>
-              <td data-label="Betalt til" class="table__cell--left">
-                Bank
-              </td>
-              <td data-label="Status" class="text--light-on-mobile">
-                Kjørt
-              </td>
-              <td data-label="Midler" class="text--bold">
-                <a href="#" class="link--no-line">Kr. 1785,59</a>
-              </td>
-            </tr>
-            <tr class="table__row--with-arrow">
-              <td data-label="Avregningsdato" class="table__cell--left text--light-on-mobile">
-                25.12.2015
-              </td>
-              <td data-label="Avregningsnavn" class="table__cell--left text--bold-on-mobile">
-                Utebetaling Vinter 2015
-              </td>
-              <td data-label="Betalt til" class="table__cell--left">
-                Bank
-              </td>
-              <td data-label="Status" class="text--light-on-mobile">
-                Pågår
-              </td>
-              <td data-label="Midler" class="text--bold">
-                <a href="#" class="link--no-line">Kr. 1785,59</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <section id="ledger-info" class="container container--padded container--col-1">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible" role="tablist">
+            <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger" aria-selected="true">Per Sang</a></li>
+            <li class="tabs__nav__item" role="presentation"><a href="#channel" role="tab" aria-controls="channel">Per Radio</a></li>
+          </ul>
+          <section id="innspillinger" role="tabpanel" class="tabs__section">
+            <table class="table table--fluid table--list table--ledger">
+              <thead>
+                <tr>
+                  <th>Innspillingstittel</th>
+                  <th>Hovedartist</th>
+                  <th>Poeng</th>
+                  <th>Spilletid</th>
+                  <th>Sats</th>
+                  <th>Midler</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Innspillingstittel" class="table__cell--left">
+                    <a href="#" class="link--no-line text--bold-on-mobile">Take on Me</a>
+                  </td>
+                  <td data-label="Hovedartist" class="table__cell--left">
+                    A-ha
+                  </td>
+                  <td data-label="Poeng" class="table__cell--left">
+                    A/B - 64 poeng
+                  </td>
+                  <td data-label="Spilletid">
+                    19:04:45
+                  </td>
+                  <td data-label="Sats">
+                    175
+                  </td>
+                  <td data-label="Midler" class="text--bold text--blue">
+                    Kr. 1785,59
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section id="channel" role="tabpanel" class="tabs__section">
+            <table class="table table--fluid table--standard no-margin--top">
+              <thead>
+                <tr>
+                  <th>Radio</th>
+                  <th class="text--center-on-mobile">Antall</th>
+                  <th>Spilletid</th>
+                  <th>Sum</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NRK P1</td>
+                  <td class="text--center-on-mobile">3</td>
+                  <td>00:10:05</td>
+                  <td class="text--bold text--blue">30,50</td>
+                </tr>
+                <tr>
+                  <td>NRK P1</td>
+                  <td class="text--center-on-mobile">3</td>
+                  <td>00:10:05</td>
+                  <td class="text--bold text--blue">30,50</td>
+                </tr>
+                <tr>
+                  <td>NRK P1</td>
+                  <td class="text--center-on-mobile">3</td>
+                  <td>00:10:05</td>
+                  <td class="text--bold text--blue">30,50</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
       </section>
     </main>
-</div>
+  </div>
 <script src="../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../js/default.js"></script>
 </body>

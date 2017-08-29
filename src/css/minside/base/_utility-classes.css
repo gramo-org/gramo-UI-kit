@@ -20,6 +20,10 @@
   @media (--tablet) { color: inherit; }
 }
 
+.text--blue {
+  color: var(--gramo-blue);
+}
+
 .row__delete {
   position: relative;
   right: .5rem;
