@@ -35,21 +35,22 @@
       <ul class="vertical__nav">
         <li>
           <div class="user">
-            <img src="https://vignette1.wikia.nocookie.net/thebandaha/images/8/89/Morten_harket_1985.jpeg/revision/latest?cb=20141003214330" class="user__avatar" alt="Morten Harket">
+            <span class="user__icon icon--producer"></span>
             <span class="user__name">
               Morten Harket
+              <em class="user__profile">Produsent</em>
             </span>
           </div>
         </li>
-        <li class="vertical__nav__heading">Min side</li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--album-label"></span> Min diskografi</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span> Mine penger</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Mine innstillinger</a></li>
-        <li class="vertical__nav__heading">Mine profiler</li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Produsent</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--artist"></span> Utøver</a></li>
+        <!-- <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Produsent</a></li> -->
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--quill"></span> Kontaktperson</a></li>
-        <li class="vertical__nav__item "><a href="#"><span class="icon icon--profile"></span> Legg til ny profil</a></li>
+        <li class="vertical__nav__item vertical__nav__item--with-border"><a href="#"><span class="icon icon--album-label"></span> Min diskografi</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span> Mine penger</a></li>
+        <li class="vertical__nav__item vertical__nav__item--extend"><a href="#" class="active"><span class="icon icon--performer"></span> Profil info</a></li>
+        <li class="vertical__nav__item vertical__nav__item--with-border"><a href="#"><span class="icon icon--profile"></span> Legg til ny profil</a></li>
+        <li class="vertical__nav__item vertical__nav__item--with-border"><a href="#"><span class="icon icon--language"></span> Switch to English</a></li>
+        <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
       </ul>
     </nav>
     <main> 
@@ -165,6 +166,91 @@
                   </div>
                 </div><!--end .row-->
               </form>
+            </section>
+            <hr class="horizontal-rule">
+            <section id="ownership-info">
+              <h2>Eierskap<span class="badge badge--primary">1</span></h2>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <label class="form__label">Produsentnavn
+                    <input type="text" class="form__input">
+                  </label>
+                </div>
+              </div><!--end .row-->
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <label class="form__label">Produsentland
+                    <select class="select  select--block">
+                      <option value="">Norge</option>
+                      <option value="">Storbrittania</option>
+                      <option value="">USA</option>
+                    </select>
+                  </label>
+                </div>
+              </div><!--end .row-->
+              <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                  <label class="form__label">% Andel
+                    <input type="text" class="form__input">
+                  </label>
+                </div>
+              </div><!--end .row-->
+            </section>
+            <hr class="horizontal-rule">
+            <section id="performers-info">
+              <h2>Utøvere<span class="badge badge--primary">2</span></h2>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <label class="form__label">Navn
+                    <input type="text" class="form__input">
+                  </label>
+                </div>
+              </div><!--end .row-->
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <label class="form__label">Instrument
+                    <select class="select  select--block">
+                      <option value="">Gitar</option>
+                      <option value="">Piano</option>
+                      <option value="">Trommer</option>
+                    </select>
+                  </label>
+                </div>
+              </div><!--end .row-->
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <label class="form__label">Statsborgerskap
+                    <select class="select  select--block">
+                      <option value="">Norge</option>
+                      <option value="">Storbrittania</option>
+                      <option value="">USA</option>
+                    </select>
+                  </label>
+                </div>
+              </div><!--end .row-->
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form__label"><span>Rolle</span>
+                    <div class="radio-group">
+                      <label class="form__label">
+                        <input type="checkbox" name="role2">
+                        <span>A</span>
+                        <span class="check"></span>
+                      </label>
+                      <label class="form__label">
+                        <input type="checkbox" name="role2" checked>
+                        <span>B</span>
+                        <span class="check"></span>
+                      </label>
+                      <label class="form__label">
+                        <input type="checkbox" name="role2">
+                        <span>C</span>
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div><!--end .row-->
             </section>
           </div>
         </div>

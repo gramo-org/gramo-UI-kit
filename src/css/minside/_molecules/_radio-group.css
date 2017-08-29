@@ -1,0 +1,25 @@
+.radio-group {
+  justify-content: flex-start;
+  
+  label, .check, .check:before {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.8rem;
+  }
+  
+  .form__label {
+    background: var(--light-gray);
+    &:before {
+      margin-left: -0.2rem!important;
+    }
+  }
+  .check {
+    border: 0;
+  }
+  input ~ span, input:checked ~ span {
+    color: var(--slate-gray);
+  }
+  input:checked ~ .check::before {
+    background: var(--gramo-turkis);
+  }
+}

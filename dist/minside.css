@@ -3087,6 +3087,78 @@ input[type="text"].search__form__input--large{
 .fake-table__row:hover > .fake-table__row__handle, .fake-table__row:hover > .fake-table__row__delete{
   display:block;
 }
+.radio-group{
+  display:-ms-flexbox;
+  display:flex;
+}
+@media (min-width: 768px){
+
+  .radio-group{
+    -ms-flex-pack:center;
+    justify-content:center;
+    margin-top:.15rem;
+  }
+}
+.radio-group input{
+  position:absolute;
+  visibility:hidden;
+  margin:0;
+}
+.radio-group label{
+  position:relative;
+  z-index:9;
+  cursor:pointer;
+  transition:all 0.25s linear;
+  margin:0 .5rem;
+  text-align:center;
+  display:inline-block;
+  width:3rem;
+  height:3rem;
+  background:#fdfdfd;
+  padding-top:.6rem;
+}
+.radio-group .check{
+  display:block;
+  position:absolute;
+  border:1px solid #d9d9dc;
+  border-radius:2px;
+  height:3rem;
+  width:3rem;
+  top:0;
+  left:0;
+  z-index:-1;
+  transition:border .25s linear;
+}
+.radio-group .check::before{
+  display:block;
+  position:absolute;
+  content:'';
+  height:2.8rem;
+  width:2.8rem;
+  transition:background 0.25s linear;
+  border-radius:2px;
+}
+.radio-group input ~ span{
+  color:#0095da;
+}
+.radio-group .form__label.has-error input ~ span{
+  border-color:#ed6b6a;
+  color:#ed6b6a;
+}
+.radio-group .form__label.has-error input:checked ~ span{
+  border-color:#0095da;
+  color:#fdfdfd;
+}
+.radio-group input:checked ~ span{
+  color:#fdfdfd;
+}
+.radio-group input:checked ~ .check::before{
+  background:#0095da;
+}
+.radio-group input[disabled] ~ span{
+  opacity:0.5;
+  cursor:not-allowed;
+}
 .site-header{
   position:fixed;
   top:0;
@@ -4612,11 +4684,13 @@ hr.horizontal-rule{
   background:#d9d9dc;
 }
 h2 .badge{
-  padding:0.25rem .75rem;
+  padding:0.4rem;
   font-size:80%;
   vertical-align:top;
-  margin-top:.5rem;
+  margin-top:.4rem;
   line-height:1;
+  min-width:25px;
+  text-align:center;
 }
 
 .badge--numeric, .fake-table--numeric > .fake-table__row > *:first-child::before, .table--numeric > .fake-table__row > *:first-child::before, .table--numeric tr > td:first-child::before, .table--numeric-tracks tr:not(:first-child) > td:first-child::before{
@@ -5109,6 +5183,30 @@ input[type="checkbox"].form__input--toggle-visibility{
 .searchable-list__dropdown ul li.searchable-list__option--active, .searchable-list__dropdown ul li.searchable-list__option:hover{
   color:inherit;
   background-color:#88c7d8;
+}
+.radio-group{
+  -ms-flex-pack:start;
+  justify-content:flex-start;
+}
+.radio-group label, .radio-group .check, .radio-group .check:before{
+  width:4rem;
+  height:4rem;
+  font-size:1.8rem;
+}
+.radio-group .form__label{
+  background:#ededed;
+}
+.radio-group .form__label:before{
+  margin-left:-0.2rem!important;
+}
+.radio-group .check{
+  border:0;
+}
+.radio-group input ~ span, .radio-group input:checked ~ span{
+  color:#504f56;
+}
+.radio-group input:checked ~ .check::before{
+  background:#88c7d8;
 }
 .site-header{
   position:static;

@@ -39,6 +39,7 @@
 @import url('_molecules/_search.css');
 @import url('_molecules/_vertical-nav.css');
 @import url('_molecules/_fake-table-rows.css');
+@import url('_molecules/_radio-group.css');
 /*Organisms*/
 @import url('_organisms/_site-header.css');
 @import url('_organisms/_form.css');
@@ -83,6 +84,7 @@
 @import url('minside/_molecules/_search.css');
 @import url('minside/_molecules/_pagination.css');
 @import url('minside/_molecules/_searchable-list.css');
+@import url('minside/_molecules/_radio-group.css');
 /* Organisms */
 @import url('minside/_organisms/_site-header.css');
 @import url('minside/_organisms/_sidebar.css');

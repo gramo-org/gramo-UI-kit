@@ -13,11 +13,13 @@
 
 /* In headings */
 h2 .badge {
-  padding: 0.25rem .75rem;
+  padding: 0.4rem;
   font-size: 80%;
   vertical-align: top;
-  margin-top: .5rem;
+  margin-top: .4rem;
   line-height: 1;
+  min-width: 25px;
+  text-align: center;
 }
 
 /* badges in tabs */
