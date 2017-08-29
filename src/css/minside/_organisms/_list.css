@@ -12,3 +12,28 @@
     }
   }
 }
+
+.list--numbered {
+  background: none;
+  padding: 0;
+  counter-reset: item;
+  
+  li {
+    background: #f3f3f3;
+    border: 1px solid var(--silver);
+    padding: 2rem;
+    position: relative;
+    margin-bottom: 1.2rem;
+    
+    &:before {
+      counter-increment: item;
+      content: counters(item,".") " ";
+      position: absolute;
+      bottom: -3.9rem;
+      right: 2rem;
+      font-size: 10rem;
+      font-family: var(--minside-font-family);
+      color: var(--light-gray);
+    }
+  }
+}

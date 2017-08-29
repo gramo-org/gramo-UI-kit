@@ -1,5 +1,6 @@
 .radio-group {
   justify-content: flex-start;
+  margin-top: .6rem;
   
   label, .check, .check:before {
     width: 4rem;
