@@ -4649,7 +4649,7 @@ main > section:first-of-type{
   left:50%;
 }
 hr.horizontal-rule{
-  margin:1.2rem 0;
+  margin:2.4rem 0;
 }
 .badge{
   color:#504f56;
@@ -4701,7 +4701,7 @@ h2 .badge{
   padding:1.2rem 0.75rem;
   display:block;
   width:100%;
-  margin-top:.6rem;
+  margin-top:.4rem;
   margin-bottom:0;
 }
 
@@ -5214,7 +5214,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .form__section--action{
-  margin-top:2rem;
+  margin-top:2.4rem;
 }
 
 .form__fieldset--group{
