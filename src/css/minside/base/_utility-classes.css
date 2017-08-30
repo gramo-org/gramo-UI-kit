@@ -38,6 +38,10 @@
   .icon {
     font-size: 2rem;
   }
+  
+  &--half {
+    @media (--tablet) { right: calc(50% - 1.5rem); }
+  }
 }
 
 .link--add {

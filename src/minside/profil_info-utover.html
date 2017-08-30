@@ -75,163 +75,69 @@
           <div class="col-xs-12 col-sm-3">
             <nav class="nav--secondary">
               <ul>
-                <li><a href="#" class="active">Personalia</a></li>
-                <li><a href="#">Kontaktinformasjon</a></li>
-                <li><a href="#">Bankinformasjon</a></li>
+                <li><a href="#profil-ino" class="active">Utøverinformasjon</a></li>
+                <li><a href="#medlemskap">Medlemskap</a></li>
+                <li><a href="#bankinformasjon">Bankinformasjon</a></li>
+                <li><a href="#rettighetshaverorg">Rettighetshaverorg.</a></li>
               </ul>
             </nav>
           </div>
           <div class="col-xs-12 col-sm-9">
             <form class="form adjust--to-left">
-              <section id="personalia-info">
-                <h2>Personalia</h2>
+              <section id="profile-info">
+                <h2>Utøverinformasjon</h2>
                 <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Fornavn
+                  <div class="col-xs-11 col-sm-6">
+                    <label class="form__label">Artistnavn
                       <input type="text" class="form__input">
                     </label>
                   </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Etternavn
+                  <div class="row__delete row__delete--half">
+                    <a class="text--small text--light">
+                      <span id="ember2058" class="icon icon--close"></span>
+                    </a>
+                  </div>
+                </div><!--end .row-->
+                <a class="link--no-line link--add">
+                  Legg til alt. artistnavn
+                </a>
+                
+                <div class="row">
+                  <div class="col-xs-11 col-sm-6">
+                    <label class="form__label">Hovedinstrument
                       <input type="text" class="form__input">
+                    </label>
+                  </div>
+                  <div class="row__delete row__delete--half">
+                    <a class="text--small text--light">
+                      <span id="ember2058" class="icon icon--close"></span>
+                    </a>
+                  </div>
+                </div><!--end .row-->
+                <a class="link--no-line link--add">
+                  Legg til instrument
+                </a>
+              </section>
+              <hr class="horizontal-rule">
+              <section id="medlemskap">
+                <h2>Gramo medlemskap</h2>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Vederlagsbyrå
+                      <input type="text" value="Gramo" class="form__input" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label form__label--required">Artistnavn
-                      <input type="text" class="form__input">
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <fieldset class="form__fieldset form__fieldset--group"> 
-                  <legend>Kjønn</legend> 
-                  <label class="form__label form__label--inline text--normal">
-                    <input type="radio" class="form__input--radio">
-                    <span>Mann</span>
-                  </label>
-                  <label class="form__label form__label--inline text--normal">
-                    <input type="radio" class="form__input--radio">
-                    <span>Kvinne</span>
-                  </label>
-                  <label class="form__label form__label--inline text--normal">
-                    <input type="radio" class="form__input--radio">
-                    <span>Annen</span>
-                  </label> 
-                </fieldset>
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Fødselsdato
-                      <input type="date" class="form__input form__input--date">
-                    </label>
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Føsdselsnummer
-                      <input type="text" class="form__input">
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Statsborgerskap
-                      <select class="select  select--block">
-                        <option value="">Norge</option>
-                        <option value="">Storbrittania</option>
-                        <option value="">USA</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div class="col-xs-5 col-sm-3">
-                    <label class="form__label">Fra
-                      <input type="date" class="form__input form__input--date">
-                    </label>
-                  </div>
-                  <div class="col-xs-5 col-sm-3">
-                    <label class="form__label">Til
-                      <input type="date" class="form__input form__input--date">
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label form__label--block">
-                      <span>Statsborgerskap</span>
-                      <div class="searchable-list searchable-list form__input form__input--block">
-                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                          <span class="searchable-list__selected">Velg land</span>
-                        </div>
-                        <div class="searchable-list__dropdown">
-                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
-                          <ul>
-                            <li class="searchable-list__option">
-                              AFGANISTAN
-                            </li>
-                            <li class="searchable-list__option">
-                              ÅLAND
-                            </li>
-                            <li class="searchable-list__option">
-                              ALBANIA
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                    <label class="form__label">Teritoriemandat
+                      <input type="text" value="Worldwide" class="form__input" disabled>
                     </label>
                   </div>
                   <div class="col-xs-5 col-sm-3">
                     <label class="form__label form__label--block">
                       <span>Fra</span>
-                      <input type="date" class="form__input form__label--block form__input--date">
-                    </label>
-                  </div>
-                  <div class="col-xs-5 col-sm-3">
-                    <label class="form__label form__label--block">
-                      <span>Til</span>
-                      <input type="date" class="form__input form__label--block form__input--date ember-view">
-                    </label>
-                  </div>
-                  <div class="row__delete">
-                    <a class="text--small text--light">
-                      <span id="ember2058" class="icon icon--close"></span>
-                    </a>
-                  </div>
-                </div>
-              <a class="link--no-line link--add">
-                Legg til statsborgerskap
-              </a>
-              </section>
-              <hr class="horizontal-rule">
-              <section id="kontaktinformasjon">
-                <h2>Kontaktinformasjon</h2>
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Epost
-                      <input type="email" class="form__input">
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Mobilnummer
-                      <input type="tel" class="form__input">
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Adresse
-                      <input type="text" class="form__input">
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-3">
-                    <label class="form__label">Postnummer
-                      <input type="text" class="form__input">
-                    </label>
-                  </div>
-                  <div class="col-xs-12 col-sm-3">
-                    <label class="form__label">Poststed
-                      <input type="text" class="form__input">
+                      <input type="date" value="2010-01-01" class="form__input form__label--block form__input--date" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
@@ -285,6 +191,63 @@
                     </label>
                   </div>
                 </div>
+              </section>
+              <hr class="horizontal-rule">
+              <section id="rettighetshaverorg">
+                <h2>Medlemskap i rettighetshaverorganisasjoner</h2>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label form__label--block">
+                      <span>Rettighetshaverorganisasjon</span>
+                      <div class="searchable-list searchable-list form__input form__input--block">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Velg medlemskap</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
+                          <ul>
+                            <li class="searchable-list__option">
+                              Folkorg
+                            </li>
+                            <li class="searchable-list__option">
+                              Gramart
+                            </li>
+                            <li class="searchable-list__option">
+                              MUSIKERNES FELLES ORGANISASJON
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div><!-- end .row -->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-4">
+                    <label class="form__label">Medlemskaps nr.
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                  <div class="col-xs-5 col-sm-3 off-sm-2">
+                    <label class="form__label form__label--block">
+                      <span>Fra</span>
+                      <input type="date" class="form__input form__label--block form__input--date">
+                    </label>
+                  </div>
+                  <div class="col-xs-5 col-sm-3">
+                    <label class="form__label form__label--block">
+                      <span>Til</span>
+                      <input type="date" class="form__input form__label--block form__input--date ember-view">
+                    </label>
+                  </div>
+                  <div class="row__delete">
+                    <a class="text--small text--light">
+                      <span id="ember2058" class="icon icon--close"></span>
+                    </a>
+                  </div>
+                </div><!--end .row-->
+                <a class="link--no-line link--add">
+                  Legg til medlemskap
+                </a>
               </section>
               <section class="form__section--action row">
                 <div class="col-xs-6 col-sm-3">
