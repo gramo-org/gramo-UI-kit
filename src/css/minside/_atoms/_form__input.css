@@ -28,6 +28,7 @@ input[type="number"] {
   border-color: var(--silver);
   background: color(var(--light-gray) shade(3%));
   color: var(--off-gray);
+  cursor: not-allowed;
 }
 
 .form__input--discreet[disabled] {

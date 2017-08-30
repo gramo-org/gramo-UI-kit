@@ -4729,6 +4729,7 @@ input[type="number"]{
   border-color:#d9d9dc;
   background:rgb(230, 230, 230);
   color:#a5a4ab;
+  cursor:not-allowed;
 }
 
 .form__input--discreet[disabled]{
@@ -5105,6 +5106,11 @@ input[type="checkbox"].form__input--toggle-visibility{
   background-image:url(img/arrow-down-dark.svg);
   right:1rem;
   top:1.6rem;
+}
+.searchable-list--disabled{
+  border-color:#d9d9dc;
+  background:rgb(230, 230, 230);
+  color:#a5a4ab;
 }
 
 .searchable-list__dropdown{
