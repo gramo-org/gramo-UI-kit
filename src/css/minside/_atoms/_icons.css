@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/minside.eot?2dhcuh');
-  src:  url('fonts/minside.eot?2dhcuh#iefix') format('embedded-opentype'),
-    url('fonts/minside.ttf?2dhcuh') format('truetype'),
-    url('fonts/minside.woff?2dhcuh') format('woff'),
-    url('fonts/minside.svg?2dhcuh#icomoon') format('svg');
+  src:  url('fonts/minside.eot?p1g1hx');
+  src:  url('fonts/minside.eot?p1g1hx#iefix') format('embedded-opentype'),
+    url('fonts/minside.ttf?p1g1hx') format('truetype'),
+    url('fonts/minside.woff?p1g1hx') format('woff'),
+    url('fonts/minside.svg?p1g1hx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,6 +17,7 @@
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
+  display: inline-block;
   line-height: 1;
 
   /* Better Font Rendering =========== */
@@ -45,6 +46,10 @@
 }
 
 /* Icons */
+.icon--pencil:before {
+  content: "\e919";
+  color: #0095da;
+}
 .icon--language:before {
   content: "\e917";
   font-size: 2rem;
@@ -62,7 +67,8 @@
 .icon--address:before {
   content: "\e902";
 }
-.icon--album-label:before {
+.icon--album-label:before,
+.icon--album:before {
   content: "\e903";
 }
 .icon--producer:before {
@@ -71,10 +77,12 @@
 .icon--profile:before {
   content: "\e905";
 }
-.icon--artist:before {
+.icon--artist:before,
+.icon--performer:before {
   content: "\e906";
 }
-.icon--recording:before {
+.icon--recording:before,
+.icon--notes:before {
   content: "\e907";
 }
 .icon--arrow-back:before {

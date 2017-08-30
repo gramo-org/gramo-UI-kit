@@ -17,7 +17,10 @@
 }
 
 .nav-toggle[aria-expanded="true"]::after {
-  content: "\e91c";
+  content: "\e90b";
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-left: .4rem;
 }
 
 .nav--primary {

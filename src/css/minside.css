@@ -14,7 +14,7 @@
   @import url('base/_print.css');
 }
 /*Atoms*/
-@import url('_atoms/_icons.css');
+/*@import url('_atoms/_icons.css');*/
 @import url('_atoms/_links.css');
 @import url('_atoms/_scrollbar.css');
 @import url('_atoms/_form__label.css');
@@ -33,7 +33,6 @@
 @import url('_molecules/_searchable-list.css');
 @import url('_molecules/_pagination.css');
 @import url('_molecules/_user.css');
-@import url('_molecules/_toggle-sidebar.css');
 @import url('_molecules/_tabs__nav.css');
 @import url('_molecules/_flash-message.css');
 @import url('_molecules/_search.css');
@@ -75,7 +74,6 @@
 @import url('minside/_atoms/_form__label.css');
 @import url('minside/_atoms/_toolbar.css');
 /* Molecules */
-@import url('minside/_molecules/_toggle-sidebar.css');
 @import url('minside/_molecules/_flash-message.css');
 @import url('minside/_molecules/_tabs__nav.css');
 @import url('minside/_molecules/_nav-secondary.css');

@@ -1173,222 +1173,6 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 table{
 }
 }
-@font-face{
-  font-family:'icomoon';
-  src:url('fonts/icomoon.eot?t6f6op');
-  src:url('fonts/icomoon.eot?t6f6op#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?t6f6op') format('truetype'),
-    url('fonts/icomoon.woff?t6f6op') format('woff'),
-    url('fonts/icomoon.svg?t6f6op#icomoon') format('svg');
-  font-weight:normal;
-  font-style:normal;
-}
-
-[class^="icon-"], [class*=" icon-"]{
-	font-family:'icomoon';
-	speak:none;
-	font-style:normal;
-	font-weight:normal;
-	font-variant:normal;
-	text-transform:none;
-  display:inline-block;
-}
-.icon--transfer:before{
-  content:"\e924";
-}
-.icon--paperclip:before{
-  content:"\e923";
-}
-.icon--chevron-line:before, .section-header--divided .section-header__meta--cols .col--arrow::after{
-  content:"\e922";
-}
-.icon--worklist:before{
-  content:"\e921";
-}
-.icon--warning:before{
-  content:"\e920";
-  font-size:18px;
-  color:#ed6b6a;
-}
-
-.icon--error:before{
-  content:"\e920";
-  color:#ed6b6a;
-  vertical-align:middle;
-}
-.icon--contact:before{
-  content:"\e91d";
-}
-.icon--member:before{
-  content:"\e91e";
-}
-.icon--close:before, .tabs__nav__close:after{
-  content:"\e91c";
-}
-.icon--close-circle:before{
-  content:"\e91b";
-}
-.icon--notes:before{
-  content:"\e919";
-}
-.icon--performer:before{
-  content:"\e916";
-}
-.icon--album:before{
-  content:"\e917";
-}
-.icon--label:before{
-  content:"\e918";
-}
-.icon--pencil:before{
-  content:"\e915";
-}
-.icon--echo:before{
-    content:"\e914";
-}
-.icon--empty-state-music:before{
-    content:"\e913";
-    margin-left:-1.2rem;
-}
-.icon--empty-state-arrow:before{
-    content:"\e912";
-}
-.icon--empty-state-files:before{
-    content:"\e911";
-}
-
-.icon--music:before{
-    content:"\e913";
-}
-
-.icon--ban:before{
-    content:"\e90e";
-    font-size:85%;
-}
-.icon--tick:before{
-    content:"\e90f";
-    font-size:85%;
-}
-.icon--send:before{
-    content:"\e910";
-    font-size:85%;
-}
-.icon--hits:before{
-    content:"\e911";
-    font-size:85%;
-    opacity:0.7;
-}
-
-.icon--sort:before{
-    content:"\e90d";
-}
-
-.icon--lightning:before{
-    content:"\e90a";
-}
-
-.icon--search:before{
-    content:"\e91a";
-}
-
-.icon--chevron-left:before{
-	content:"\e907";
-	color:rgb(184, 184, 187);
-}
-.icon--chevron-right:before, .icon--chevron-down:before, .icon--chevron-up:before, .vertical__nav__item--has-children > a::before, .vertical__nav__item--is-expanded > a::before, .fake-table__row--expanded > .fake-table__toggle-container .table-row-toggle:before{
-	content:"\e908";
-	color:rgb(184, 184, 187);
-}
-
-.icon--chevron-down:before, .vertical__nav__item--is-expanded > a::before, .fake-table__row--expanded > .fake-table__toggle-container .table-row-toggle:before{
-  transform:rotate(90deg);
-  display:inline-block;
-}
-
-.icon--chevron-up:before{
-  transform:rotate(-90deg);
-  display:inline-block;
-}
-
-.icon--logo-echo:before{
-	content:"\e906";
-}
-
-.icon--checkmark:before, .badge--icon-success:before{
-	content:"\e900";
-  color:#50bf9e;
-}
-.icon--cross:before, .badge--icon-error:before{
-	content:"\e901";
-  color:#ed6b6a;
-}
-
-.icon--x:before{
-	content:"\e901";
-}
-
-.icon--expand-arrow:before{
-	content:"\e902";
-  color:#ededed;
-}
-
-.icon--arrow-left:before{
-	content:"\e902";
-}
-
-.icon--arrow-right:before{
-	content:"\e903";
-}
-
-.icon--arrow-down:before{
-    content:"\e90b";
-}
-.icon--arrow-up:before{
-    content:"\e90c";
-}
-
-.icon--link-arrow:before{
-	content:"\e902";
-  color:#0095da;
-  font-size:1rem;
-}
-
-.icon--pagination-next:before{
-	content:"\e908";
-  font-size:1rem;
-}
-
-.icon--pagination-previous:before{
-	content:"\e907";
-  font-size:1rem;
-}
-
-.icon--breadcrumbs-arrow:before{
-	content:"\e904";
-}
-.icon--home:before{
-	content:"\e905";
-}
-
-.demo h2{
-  margin-bottom:1.2rem
-}
-
-.ico-container{
-  display:inline-block;
-  border:1px solid #d9d9dc;
-  padding:1rem;
-  margin:1rem 1rem 0 0;
-  text-align:center;
-  background:#fdfdfd;
-}
-
-.ico-container span{
-  display:block;
-  background:#ededed;
-  padding:0 1rem;
-  margin:.5rem -1rem -1rem -1rem;
-}
 .link--no-style{
   color:#3f3e44;
 }
@@ -2433,44 +2217,6 @@ hr, .horizontal-rule{
 .user__avatar--large{
   max-width:60px;
   max-height:60px;
-}
-.toggle-sidebar a{
-  display:-ms-inline-flexbox;
-  display:inline-flex;
-  -ms-flex-align:center;
-  align-items:center;
-  height:3rem;
-  position:relative;
-  text-transform:uppercase;
-  font-size:1.2rem;
-  text-decoration:none;
-  color:#504f56;
-  top:.1rem;
-  left:1rem;
-  z-index:4;
-}
-.toggle-sidebar a::before{
-  content:"\e914";
-  font-family:'icomoon';
-  font-size:2.4rem;
-  position:relative;
-}
-.toggle-sidebar a::after{
-  content:'menu';
-  position:relative;
-  left:.5rem;
-}
-.toggle-sidebar.open a{
-  color:#fff;
-  margin-left:-7rem;
-}
-.toggle-sidebar.open a::before{
-  content:"\e907";
-  font-family:'icomoon';
-  font-size:1.5rem;
-}
-.toggle-sidebar.open a::after{
-  content:'lukk';
 }
 .tabs__nav{
   position:relative;
@@ -4343,11 +4089,11 @@ main > section:first-of-type{
 }
 @font-face{
   font-family:'icomoon';
-  src:url('fonts/minside.eot?2dhcuh');
-  src:url('fonts/minside.eot?2dhcuh#iefix') format('embedded-opentype'),
-    url('fonts/minside.ttf?2dhcuh') format('truetype'),
-    url('fonts/minside.woff?2dhcuh') format('woff'),
-    url('fonts/minside.svg?2dhcuh#icomoon') format('svg');
+  src:url('fonts/minside.eot?p1g1hx');
+  src:url('fonts/minside.eot?p1g1hx#iefix') format('embedded-opentype'),
+    url('fonts/minside.ttf?p1g1hx') format('truetype'),
+    url('fonts/minside.woff?p1g1hx') format('woff'),
+    url('fonts/minside.svg?p1g1hx#icomoon') format('svg');
   font-weight:normal;
   font-style:normal;
 }
@@ -4359,6 +4105,7 @@ main > section:first-of-type{
   font-weight:normal;
   font-variant:normal;
   text-transform:none;
+  display:inline-block;
   line-height:1;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -4382,6 +4129,10 @@ main > section:first-of-type{
 .icon--success, .icon--yay2:before, .icon--altok:before, .statusboard--success .icon{
   color:#50bf9e;
 }
+.icon--pencil:before{
+  content:"\e919";
+  color:#0095da;
+}
 .icon--language:before{
   content:"\e917";
   font-size:2rem;
@@ -4399,7 +4150,7 @@ main > section:first-of-type{
 .icon--address:before{
   content:"\e902";
 }
-.icon--album-label:before{
+.icon--album-label:before, .icon--album:before{
   content:"\e903";
 }
 .icon--producer:before{
@@ -4408,10 +4159,10 @@ main > section:first-of-type{
 .icon--profile:before{
   content:"\e905";
 }
-.icon--artist:before{
+.icon--artist:before, .icon--performer:before{
   content:"\e906";
 }
-.icon--recording:before{
+.icon--recording:before, .icon--notes:before{
   content:"\e907";
 }
 .icon--arrow-back:before{
@@ -4810,63 +4561,6 @@ input[type="checkbox"].form__input--toggle-visibility{
 .toolbar{
   padding-top:2rem;
 }
-.toggle-sidebar{
-  text-align:right;
-  -ms-flex-item-align:center;
-  -ms-grid-row-align:center;
-  align-self:center;
-}
-.toggle-sidebar a{
-  width:auto;
-  left:auto;
-  -ms-flex-pack:end;
-  justify-content:flex-end;
-}
-.toggle-sidebar.open a{
-  margin-right:0rem;
-  color:inherit;
-}
-@media (min-width: 768px){
-
-  .toggle-sidebar.open a{
-    margin-right:-7rem;
-    color:#fdfdfd;
-  }
-}
-
-.toggle-sidebar a::before{
-  content:"\e921";
-  font-family:'icomoon';
-  font-size:2.4rem;
-}
-
-.toggle-sidebar.open a::before{
-  content:"\e901";
-  font-family:'icomoon';
-  font-size:1.4rem;
-}
-
-.toggle-sidebar a::after{
-  content:none;
-}
-
-@media (min-width: 768px){
-
-  .toggle-sidebar a::after{
-    content:'menu';
-  }
-}
-
-.toggle-sidebar.open a::after{
-  content:none;
-}
-
-@media (min-width: 768px){
-
-  .toggle-sidebar.open a::after{
-    content:'lukk';
-  }
-}
 .flash-message-wrapper{
   position:static;
 }
@@ -5019,7 +4713,10 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .nav-toggle[aria-expanded="true"]::after{
-  content:"\e91c";
+  content:"\e90b";
+  font-size:2rem;
+  line-height:1.2;
+  margin-left:.4rem;
 }
 
 .nav--primary{
