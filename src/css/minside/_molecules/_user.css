@@ -11,6 +11,11 @@
     flex: 1 0 auto;
     line-height: 1.4;
     margin: 0;
+    
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
   }
   
   &__profile {

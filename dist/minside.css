@@ -5111,6 +5111,10 @@ input[type="checkbox"].form__input--toggle-visibility{
   line-height:1.4;
   margin:0;
 }
+.user__name a{
+  color:inherit;
+  text-decoration:underline;
+}
 .user__profile{
   font-style:normal;
   text-transform:uppercase;
