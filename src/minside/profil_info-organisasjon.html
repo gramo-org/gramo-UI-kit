@@ -76,6 +76,9 @@
             <nav class="nav--secondary">
               <ul>
                 <li><a href="#bankinformasjon" class="active">Bankinformasjon</a></li>
+                <li><a href="#orginformasjon">Org. informasjon</a></li>
+                <li><a href="#kontaktinformasjon">Kontaktinformasjon</a></li>
+                <li><a href="#kontaktpersoner">Kontaktpersoner</a></li>
                 <li><a href="#profil-info">Produsentinformasjon</a></li>
                 <li><a href="#medlemskap">Gramo medlemskap</a></li>
                 <li><a href="#rettighetshaverorg">Rettighetshaverorg.</a></li>
@@ -132,6 +135,144 @@
                     </label>
                   </div>
                 </div>
+              </section>
+              <hr class="horizontal-rule">
+              <section id="orginformasjon">
+                <h2>Org. informasjon</h2>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label form__label--block">
+                      <span>Land</span>
+                      <div class="searchable-list searchable-list searchable-list--disabled form__input form__input--block">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Velg land</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
+                          <ul>
+                            <li class="searchable-list__option">
+                              AFGANISTAN
+                            </li>
+                            <li class="searchable-list__option">
+                              ÅLAND
+                            </li>
+                            <li class="searchable-list__option">
+                              ALBANIA
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Org. nummer
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label form__label--for-button">
+                      <span>Hent fra BREG</span>
+                      <button class="btn btn--secondary" disabled>Hent fra BREG</button>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Navn
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+              </section>
+              <hr class="horizontal-rule">
+              <section id="kontaktinformasjon">
+                <h2>Kontaktinformasjon</h2>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Epost
+                      <input type="email" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Mobilnummer
+                      <input type="tel" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Telefonnummer
+                      <input type="tel" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Nettside
+                      <input type="url" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs">
+                    <label class="form__label form__label--block">
+                      <input type="checkbox" id="ember829" class="form__input form__input--block" disabled>
+                      <span>Norsk adresse?</span>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">C/O
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Adresse
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3">
+                    <label class="form__label">Postnummer
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <label class="form__label">Poststed
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+              </section>
+              <hr class="horizontal-rule">
+              <section id="kontaktpersoner">
+                <h2>Kontaktpersoner</h2>
+                <table class="table table--fluid">
+                  <thead>
+                    <tr>
+                      <th>Navn</th>
+                      <th>Stilling</th>
+                      <th>Telefon</th>
+                      <th>E-post</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Navn">Ole Nordmann</td>
+                      <td data-label="Stilling">Katalogmanager</td>
+                      <td data-label="Telefon">98374836</td>
+                      <td data-label="E-post"><a href="#">ole@nordman.no</a></td>
+                    </tr>
+                  </tbody>
+                </table>
               </section>
               <hr class="horizontal-rule">
               <section id="profile-info">

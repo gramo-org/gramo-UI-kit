@@ -1,13 +1,14 @@
 .form__label {
   @extend %font-size;
+  font-weight: var(--bold);
+  color: var(--slate-gray);
   padding: 0;
-  margin: 0 0 1.2rem 0;
-  color: inherit;
+  margin: 0 0 1.2rem 0;  
 }
 
-.form__label:not(.form__label--inline):not(.form__label--required):before {
+.form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before {
   content: '';
-  margin-left: .4rem;
+  margin-left: .2rem;
 }
 
 .form__label--inline {
@@ -32,4 +33,20 @@
 
 .form__label--toggled::before {
   opacity: 1;
+}
+
+.form__label--for-button {
+  display: block;
+  
+  span {
+    display: inherit;
+    height: 0;
+    visibility: hidden;
+    @media (--tablet) { height: auto; }
+  }
+  
+  .btn {
+    display: block;
+    margin-top: .6rem; 
+  }
 }

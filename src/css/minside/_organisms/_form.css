@@ -2,6 +2,10 @@
 .form {
 }
 
+.form__section--action {
+  margin-top: 2rem;
+}
+
 .form__fieldset--group {
   background: none;
   border: 0;
