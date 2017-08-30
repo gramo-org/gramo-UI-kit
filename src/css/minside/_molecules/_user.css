@@ -14,7 +14,11 @@
     
     a {
       color: inherit;
-      text-decoration: underline;
+      
+      .icon.icon--pencil {
+        font-size: 1.4rem;
+        margin-left: .3rem;
+      }
     }
   }
   

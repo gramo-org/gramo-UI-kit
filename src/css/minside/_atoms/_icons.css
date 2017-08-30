@@ -48,7 +48,6 @@
 /* Icons */
 .icon--pencil:before {
   content: "\e919";
-  color: #0095da;
 }
 .icon--language:before {
   content: "\e917";

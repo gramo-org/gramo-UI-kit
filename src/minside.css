@@ -4131,7 +4131,6 @@ main > section:first-of-type{
 }
 .icon--pencil:before{
   content:"\e919";
-  color:#0095da;
 }
 .icon--language:before{
   content:"\e917";
@@ -4810,7 +4809,10 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .user__name a{
   color:inherit;
-  text-decoration:underline;
+}
+.user__name a .icon.icon--pencil{
+  font-size:1.4rem;
+  margin-left:.3rem;
 }
 .user__profile{
   font-style:normal;
