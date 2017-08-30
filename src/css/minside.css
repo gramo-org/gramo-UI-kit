@@ -14,7 +14,7 @@
   @import url('base/_print.css');
 }
 /*Atoms*/
-/*@import url('_atoms/_icons.css');*/
+@import url('_atoms/_icons.css');
 @import url('_atoms/_links.css');
 @import url('_atoms/_scrollbar.css');
 @import url('_atoms/_form__label.css');

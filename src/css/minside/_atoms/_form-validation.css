@@ -1,7 +1,7 @@
 .form__label.is-valid::after,
 .form__label.has-error::after {
   color: var(--slate-gray);
-  font-family: 'icomoon';
+  font-family: 'minside-icons';
   position: absolute;
   left: 92%;
   top: 55%;

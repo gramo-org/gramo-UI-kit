@@ -9,7 +9,7 @@
     }
     &::after, &:last-child::after {
       content: '\2022';
-      /*font-family: 'icomoon';*/
+      /*font-family: 'minside-icons';*/
       font-size: 3rem;
       line-height: 0;
       color: var(--off-gray);

@@ -10,7 +10,7 @@
   
   &::after {
     content: "\e90e";
-    font-family: 'icomoon';
+    font-family: 'minside-icons';
     font-size: 1.4rem;
     margin-left: 1rem;
   }
