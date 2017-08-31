@@ -26,9 +26,12 @@ h2 .badge {
 .tabs__nav__item {
   .badge {
     @extend .badge--secondary;
+    color: var(--slate-gray);
+    display: none;
   }
   .active .badge {
     @extend .badge--primary;
+    display: inline-block;
   }
 }
 

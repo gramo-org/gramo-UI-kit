@@ -1,6 +1,8 @@
 .tabs__nav--flexible {
   display: flex;
-  @media (--tablet) { display: inline-flex; }
+  flex-wrap: nowrap;
+  margin: 0 -1rem;
+  @media (--tablet) { display: inline-flex; margin: 0;}
   
   .tabs__nav__item {
     flex: 1 0 auto;
@@ -8,7 +10,7 @@
     
     & > a {
       max-width: none;
-      min-width: 150px;
+      @media (--tablet) { min-width: 150px; }
     }
   }
 }

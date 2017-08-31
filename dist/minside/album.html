@@ -88,42 +88,128 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Hovedartist
-                      <input type="text" class="form__input">
+                      <input type="text" class="form__input" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Tittel
-                      <input type="text" class="form__input">
+                      <input type="text" class="form__input" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Sjanger
-                      <input type="text" class="form__input">
+                    <label class="form__label">Alt. tittel
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                  <div class="col-xs-11 col-sm-6">
+                    <label class="form__label">Beskrivelse
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                  <div class="row__delete">
+                    <a class="text--small text--light">
+                      <span id="ember2058" class="icon icon--close"></span>
+                    </a>
+                  </div>
+                </div><!--end .row-->
+                <a class="link--no-line link--add">
+                  Legg til alt. tittel
+                </a>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label form__label--required">Sjanger
+                      <div class="searchable-list searchable-list--disabled searchable-list form__input">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Velg sjanger</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
+                          <ul>
+                            <li class="searchable-list__option">
+                                Pop
+                              </li>
+                              <li class="searchable-list__option">
+                                Alternative
+                              </li>
+                              <li class="searchable-list__option">
+                                Rock
+                              </li>
+                              <li class="searchable-list__option">
+                                Blues
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Format
-                      <input type="text" class="form__input">
+                    <label class="form__label">
+                      <span>Format</span>
+                      <select tabindex="0" class="select select--block" disabled>
+                        <option value="Album" class="x-option">Album</option>
+                        <option value="EP">Ep</option>
+                        <option value="Compilation">Samlealbum</option>
+                        <option value="Single">Single</option>
+                      </select>
                     </label>
                   </div>
                 </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs col--inline">
+                    <label class="form__label">
+                      <input type="checkbox" id="ember829" class="form__input" disabled>
+                      <span>Fysisk</span>
+                    </label>
+                    <label class="form__label">
+                      <input type="checkbox" id="ember829" class="form__input" disabled>
+                      <span>Digital</span>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Katalognummer
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Alt. katalognummer
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                  <div class="col-xs-11 col-sm-6">
+                    <label class="form__label">Beskrivelse
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                  <div class="row__delete">
+                    <a class="text--small text--light">
+                      <span id="ember2058" class="icon icon--close"></span>
+                    </a>
+                  </div>
+                </div><!--end .row-->
+                <a class="link--no-line link--add">
+                  Legg til alt. katalognummer
+                </a>
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Label
-                      <input type="text" class="form__input">
+                      <input type="text" class="form__input" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-5">
                     <label class="form__label">Innspillingsland
-                      <select class="select  select--block">
+                      <select class="select select--block" disabled>
                         <option value="">Norge</option>
                         <option value="">Storbrittania</option>
                         <option value="">USA</option>
@@ -134,7 +220,7 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-5">
                     <label class="form__label">Produsentland
-                      <select class="select  select--block">
+                      <select class="select select--block" disabled>
                         <option value="">Norge</option>
                         <option value="">Storbrittania</option>
                         <option value="">USA</option>
@@ -143,7 +229,7 @@
                   </div>
                   <div class="col-xs-12 col-sm-3">
                     <label class="form__label">Utgivelsesdato
-                      <input type="date" class="form__input form__input--date">
+                      <input type="date" class="form__input form__input--date" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
@@ -151,7 +237,7 @@
             </section>
             <hr class="horizontal-rule">
             <section id="track-info">
-              <h2>Spor <span class="badge badge--primary">10</span></h2>
+              <h2>Spor <span class="badge badge--secondary">10</span></h2>
               <table class="table table--numeric-tracks table--fluid">
                 <thead>
                   <tr>

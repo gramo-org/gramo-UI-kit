@@ -4239,6 +4239,16 @@ h4, .form__label{
   }
 }
 
+.col--inline{
+  display:block;
+  margin:.6rem 0 1.2rem 0;
+}
+
+.col--inline > *{
+  display:inline;
+  margin-right:.5rem!important;
+}
+
 .site-wrapper{
   -ms-flex-direction:column;
   flex-direction:column;
@@ -4670,6 +4680,13 @@ h2 .badge{
   min-width:25px;
   text-align:center;
 }
+.tabs__nav__item .badge{
+  color:#504f56;
+  display:none;
+}
+.tabs__nav__item .active .badge{
+  display:inline-block;
+}
 
 .badge--numeric, .fake-table--numeric > .fake-table__row > *:first-child::before, .table--numeric > .fake-table__row > *:first-child::before, .table--numeric tr > td:first-child::before, .table--numeric-tracks tr:not(:first-child) > td:first-child::before{
   font-size:1rem;
@@ -4840,12 +4857,16 @@ input[type="checkbox"].form__input--toggle-visibility{
 .tabs__nav--flexible{
   display:-ms-flexbox;
   display:flex;
+  -ms-flex-wrap:nowrap;
+  flex-wrap:nowrap;
+  margin:0 -1rem;
 }
 @media (min-width: 768px){
 
   .tabs__nav--flexible{
     display:-ms-inline-flexbox;
     display:inline-flex;
+    margin:0;
   }
 }
 .tabs__nav--flexible .tabs__nav__item{
@@ -4861,7 +4882,12 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .tabs__nav--flexible .tabs__nav__item > a{
   max-width:none;
-  min-width:150px;
+}
+@media (min-width: 768px){
+
+  .tabs__nav--flexible .tabs__nav__item > a{
+    min-width:150px;
+  }
 }
 
 .tabs__nav__item:hover::after, .tabs__nav__item a.active::after{
@@ -5059,7 +5085,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   color:inherit;
 }
 .user__name a .icon.icon--pencil{
-  font-size:1.4rem;
+  font-size:1.3rem;
   margin-left:.3rem;
 }
 .user__profile{
