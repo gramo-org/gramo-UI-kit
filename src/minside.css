@@ -4187,6 +4187,12 @@ h4, .form__label{
   color:#0095da;
 }
 
+.text--hidden{
+  visibility:hidden;
+  display:block;
+  height:0;
+}
+
 .row__delete{
   position:relative;
   right:.5rem;
@@ -4237,16 +4243,6 @@ h4, .form__label{
   .adjust--to-left{
     position:static;
   }
-}
-
-.col--inline{
-  display:block;
-  margin:.6rem 0 1.2rem 0;
-}
-
-.col--inline > *{
-  display:inline;
-  margin-right:.5rem!important;
 }
 
 .site-wrapper{
@@ -4766,13 +4762,13 @@ input[type="checkbox"].form__input--toggle-visibility{
   margin-bottom:1rem;
 }
 .form__label{
-  font-weight:700;
+  font-weight:600;
   color:#504f56;
   padding:0;
   margin:0 0 1.2rem 0;  
 }
 
-.form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before{
+.form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before, legend{
   content:'';
   margin-left:.2rem;
 }

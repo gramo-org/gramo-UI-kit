@@ -1,12 +1,13 @@
 .form__label {
   @extend %font-size;
-  font-weight: var(--bold);
+  font-weight: var(--semibold);
   color: var(--slate-gray);
   padding: 0;
   margin: 0 0 1.2rem 0;  
 }
 
-.form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before {
+.form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before,
+legend {
   content: '';
   margin-left: .2rem;
 }

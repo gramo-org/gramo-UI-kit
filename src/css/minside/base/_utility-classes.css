@@ -24,6 +24,12 @@
   color: var(--gramo-blue);
 }
 
+.text--hidden {
+  visibility: hidden;
+  display: block;
+  height: 0;
+}
+
 .row__delete {
   position: relative;
   right: .5rem;
@@ -58,15 +64,5 @@
   
   @media (--hd) {
     position: static;
-  }
-}
-
-.col--inline {
-  display: block;
-  margin: .6rem 0 1.2rem 0;
-  
-  & > * {
-    display: inline;
-    margin-right: .5rem!important;
   }
 }

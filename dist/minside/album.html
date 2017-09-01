@@ -75,7 +75,7 @@
           <div class="col-xs-12 col-sm-3">
             <nav class="nav--secondary">
               <ul>
-                <li><a href="#" class="active">Albumsinfo</a></li>
+                <li><a href="#" class="active">album info</a></li>
                 <li><a href="#">Spor</a></li>
                 <li><a href="#">Utøvere</a></li>
               </ul>
@@ -83,7 +83,7 @@
           </div>
           <div class="col-xs-12 col-sm-9">
             <section id="album-info">
-              <h2>Albumsinfo</h2>
+              <h2>album info</h2>
               <form class="form">  
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
@@ -160,18 +160,17 @@
                     </label>
                   </div>
                 </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs col--inline">
-                    <label class="form__label">
-                      <input type="checkbox" id="ember829" class="form__input" disabled>
-                      <span>Fysisk</span>
-                    </label>
-                    <label class="form__label">
-                      <input type="checkbox" id="ember829" class="form__input" disabled>
-                      <span>Digital</span>
-                    </label>
-                  </div>
-                </div><!--end .row-->
+                <fieldset class="form__fieldset form__fieldset--group"> 
+                  <legend class="text--hidden">Format</legend> 
+                  <label class="form__label form__label--inline text--normal">
+                    <input type="radio" class="form__input--radio" disabled checked>
+                    <span>Fysisk</span>
+                  </label>
+                  <label class="form__label form__label--inline text--normal">
+                    <input type="radio" class="form__input--radio" disabled>
+                    <span>Digital</span>
+                  </label>
+                </fieldset>
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Katalognummer
