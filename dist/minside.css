@@ -5664,12 +5664,17 @@ input[type="checkbox"].form__input--toggle-visibility{
   text-align:center;
   width:100%;
   display:block;
+  position:relative;
 }
 .statusboard--primary{
   background:#88c7d8;
 }
 .statusboard--primary .statusboard__header{
   background:rgb(207, 233, 239);
+}
+.statusboard--minimise{
+  height:30px;
+  overflow:hidden;
 }
 .statusboard--secondary{
   background:#d9d9dc;
@@ -5691,7 +5696,6 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .statusboard__header{
   padding:2rem;
-  position:relative;
 }
 @media (min-width: 768px){
 
@@ -5722,6 +5726,11 @@ input[type="checkbox"].form__input--toggle-visibility{
   background:none;
   border:0;
   outline:none;
+}
+.statusboard--minimise .statusboard__close{
+  bottom:-0.75rem;
+  top:auto;
+  transform:rotate(-45deg);
 }
 .statusboard__footer{
   padding:1rem;

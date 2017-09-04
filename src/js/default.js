@@ -263,6 +263,10 @@ $('.form__input--toggle-visibility').click(function(){
     }
 })
 
+$('.statusboard__close').click(function(){
+  $(this).parent().parent().toggleClass('statusboard--minimise');
+});
+
 }); // end document ready
 
 //Affix page contents to top of viewport
