@@ -4822,7 +4822,9 @@ input[type="checkbox"].form__input--toggle-visibility{
   padding-top:2rem;
 }
 .flash-message-wrapper{
-  position:static;
+  position:relative;
+  left:auto;
+  z-index:1;
 }
 
 .flash-message{
@@ -4831,6 +4833,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   display:flex;
   -ms-flex-align:center;
   align-items:center;
+  max-width:100%;
   -ms-flex-pack:center;
   justify-content:center;
   margin-top:0;
@@ -4842,7 +4845,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 
 .flash-message > p{
   -ms-flex:1;
-  flex:1
+  flex:1;
 }
 
 .flash-message__close{
@@ -5665,16 +5668,14 @@ input[type="checkbox"].form__input--toggle-visibility{
   width:100%;
   display:block;
   position:relative;
+  transition:height .15s ease-out;
+  height:228px;
 }
 .statusboard--primary{
   background:#88c7d8;
 }
 .statusboard--primary .statusboard__header{
   background:rgb(207, 233, 239);
-}
-.statusboard--minimise{
-  height:30px;
-  overflow:hidden;
 }
 .statusboard--secondary{
   background:#d9d9dc;
@@ -5696,6 +5697,10 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .statusboard__header{
   padding:2rem;
+  position:absolute;
+  width:100%;
+  transition:all .15s ease-out;
+  z-index:0;
 }
 @media (min-width: 768px){
 
@@ -5714,24 +5719,6 @@ input[type="checkbox"].form__input--toggle-visibility{
 .statusboard__header span{
   margin-right:0;
 }
-.statusboard__close{
-  position:absolute;
-  right:0;
-  top:0;
-  color:inherit;
-  opacity:0.4;
-  font-size:1.5rem;
-  display:block;
-  padding:1rem;
-  background:none;
-  border:0;
-  outline:none;
-}
-.statusboard--minimise .statusboard__close{
-  bottom:-0.75rem;
-  top:auto;
-  transform:rotate(-45deg);
-}
 .statusboard__footer{
   padding:1rem;
   display:-ms-flexbox;
@@ -5740,6 +5727,9 @@ input[type="checkbox"].form__input--toggle-visibility{
   justify-content:center;
   -ms-flex-align:center;
   align-items:center;
+  position:absolute;
+  width:100%;
+  bottom:0;
 }
 .statusboard__footer p{
   margin-right:.5rem;
@@ -5756,4 +5746,40 @@ input[type="checkbox"].form__input--toggle-visibility{
 .statusboard__footer .icon{
   font-size:inherit;
   margin-right:0;
+}
+.statusboard__close{
+  position:absolute;
+  right:0;
+  top:0;
+  color:inherit;
+  opacity:0.6;
+  font-size:1.5rem;
+  display:block;
+  padding:1rem;
+  background:none;
+  border:0;
+  outline:none;
+}
+.statusboard__close:before{
+  content:'Skjul';
+  text-transform:uppercase;
+  font-size:1.3rem;
+  vertical-align:top;
+}
+.statusboard--minimise{
+  height:45px;
+  overflow:hidden;
+}
+.statusboard--minimise .statusboard__header{
+  transform:translateY(-200px);
+}
+.statusboard--minimise .statusboard__close{
+  bottom:0;
+  color:#fdfdfd;
+  opacity:1;
+  top:auto;
+  transform:rotate(-45deg);
+}
+.statusboard--minimise .statusboard__close:before{
+  content:none;
 }
