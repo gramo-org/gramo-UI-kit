@@ -42,3 +42,8 @@
 hr.horizontal-rule {
   margin: 2.4rem 0;
 }
+
+/* In <ul> */
+hr.horizontal-rule--in-list {
+  margin: .6rem 0;
+}

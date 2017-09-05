@@ -4664,6 +4664,9 @@ main > section:first-of-type{
 hr.horizontal-rule{
   margin:2.4rem 0;
 }
+hr.horizontal-rule--in-list{
+  margin:.6rem 0;
+}
 .badge{
   color:#504f56;
   padding:0.15rem 1rem;
@@ -5025,12 +5028,21 @@ input[type="checkbox"].form__input--toggle-visibility{
   height:100%;
 }
 
+.nav--primary .vertical__nav__heading{
+  margin:.5rem 0 0 2rem;
+  text-transform:uppercase;
+  font-size:1.2rem;
+}
+
+.nav--primary .vertical__nav__divider{
+}
+
 .nav--primary .vertical__nav__item a{
   background:none;
   color:#434D5A;
   text-transform:none;
   border:0;
-  padding:1.2rem 2rem;
+  padding:1rem 2rem;
   display:-ms-flexbox;
   display:flex;
   -ms-flex-align:center;
@@ -5052,6 +5064,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 
 .nav--primary .vertical__nav li:first-child{
   border-bottom:1px solid #d9d9dc;
+  margin-bottom:1.2rem;
 }
 
 .nav--primary .vertical__nav li:last-child{
@@ -5069,40 +5082,26 @@ input[type="checkbox"].form__input--toggle-visibility{
 
 .nav--primary .vertical__nav .icon{
   font-size:2.5rem;
-  margin-right:1rem;
+  margin-right:.5rem;
   margin-top:.2rem;
 }
 .user{
   background:none;
-  font-size:1.6rem;
-  padding:1rem;
-  font-weight:600;
+  font-size:1.4rem;
+  padding:1rem 2rem;
 }
 .user__name{
   margin-right:1rem;
   color:#434D5A;
-  text-transform:none;
-  -ms-flex:1 0 auto;
-  flex:1 0 auto;
-  line-height:1.4;
+  -ms-flex:auto;
+  flex:auto;
   margin:0;
 }
-.user__name a{
-  color:inherit;
-}
-.user__name a .icon.icon--pencil{
-  font-size:1.3rem;
-  margin-left:.3rem;
-}
-.user__profile{
-  font-style:normal;
-  text-transform:uppercase;
-  font-size:1.3rem;
-  display:block;
-  font-weight:400;
-}
-.user__icon{
-  font-size:5rem;
+.user a{
+  -ms-flex:auto;
+  flex:auto;
+  text-decoration:none;
+  text-transform:none;
 }
 .search{
   padding:1.2rem 0;
@@ -5223,7 +5222,11 @@ input[type="checkbox"].form__input--toggle-visibility{
   flex:1;
   margin:.5rem 0 0 1rem;
 }
-.site-header--login{
+.site-header__profile-type{
+  margin-left:0.5rem;
+  position:relative;
+  top:-0.3rem;
+  color:#ededed;
 }
 .sidebar{
   -ms-flex-order:1;

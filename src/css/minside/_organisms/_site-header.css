@@ -17,8 +17,10 @@
     margin: .5rem 0 0 1rem;
   }
   
-  &--login {
-
-    /*@media (--tablet) { text-align: center; }*/
+  &__profile-type {
+    margin-left: 0.5rem;
+    position: relative;
+    top: -0.3rem;
+    color: var(--light-gray);
   }
 }

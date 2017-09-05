@@ -1,36 +1,17 @@
 .user {
   background: none;
-  font-size: var(--minside-font-size);
-  padding: 1rem;
-  font-weight: var(--semibold);
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
   
   &__name {
     margin-right: 1rem;
     color: var(--ui-gray);
-    text-transform: none;
-    flex: 1 0 auto;
-    line-height: 1.4;
+    flex: auto;
     margin: 0;
-    
-    a {
-      color: inherit;
-      
-      .icon.icon--pencil {
-        font-size: 1.3rem;
-        margin-left: .3rem;
-      }
-    }
   }
-  
-  &__profile {
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    display: block;
-    font-weight: var(--normal);
-  }
-  
-  &__icon {
-    font-size: 5rem;
+  a {
+    flex: auto;
+    text-decoration: none;
+    text-transform: none;
   }
 }
