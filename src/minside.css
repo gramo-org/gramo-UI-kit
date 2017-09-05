@@ -4127,9 +4127,12 @@ h1, h2.text--thin{
   font-size:3.3rem;
 }
 
+h3{
+  font-weight:600;
+}
+
 h4, .form__label{
   font-family:'Source Sans Pro', sans-serif;
-  color:#a5a4ab;
   font-size:inherit;
 }
 
