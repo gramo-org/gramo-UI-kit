@@ -23,7 +23,7 @@ legend {
 .form__label--toggle {
   position: absolute;
   right: -0.5rem;
-  top: 50%;
+  top: 4.2rem;
   
   &:before {
     content: "\e911";

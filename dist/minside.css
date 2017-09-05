@@ -4187,6 +4187,10 @@ h4, .form__label{
   color:#0095da;
 }
 
+.text--error{
+  margin-top:-0.5rem;
+}
+
 .text--hidden{
   visibility:hidden;
   display:block;
@@ -4784,7 +4788,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 .form__label--toggle{
   position:absolute;
   right:-0.5rem;
-  top:50%;
+  top:4.2rem;
 }
 
 .form__label--toggle:before{

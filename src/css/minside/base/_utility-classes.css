@@ -24,6 +24,10 @@
   color: var(--gramo-blue);
 }
 
+.text--error {
+  margin-top: -0.5rem;
+}
+
 .text--hidden {
   visibility: hidden;
   display: block;
