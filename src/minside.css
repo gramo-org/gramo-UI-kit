@@ -5177,6 +5177,9 @@ input[type="checkbox"].form__input--toggle-visibility{
   margin:1rem 0 2rem 0;
   box-shadow:none;
 }
+.card--with-border:last-child{
+  margin-bottom:3rem;
+}
 .card .icon{
   font-size:3.2rem;
 }
