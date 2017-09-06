@@ -115,17 +115,34 @@
     color: inherit;
     opacity: 0.6;
     font-size: 1.5rem;
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 1rem;
     background: none;
     border: 0;
     outline: none;
     
-    &:before {
+    & > span {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      display: inline-block;
+    }
+    
+    &::before {
       content: 'Skjul';
       text-transform: uppercase;
       font-size: 1.3rem;
       vertical-align: top;  
+    }
+    
+    &::after {
+      content: "\e90c";
+      font-family: 'minside-icons';
+      margin-left: .5rem;
+      transform: rotate(180deg);
+      font-size: 1.6rem;
     }
   }
   
@@ -141,15 +158,19 @@
     
     .statusboard__close {
       bottom: 0;
-      color: var(--gramo-white);
-      opacity: 1;
       top: auto;
       
-      transform: rotate(-45deg);
-      
-      &:before {
-        content: none;
+      &::before {
+        content: 'Vis';
+      }
+      &::after {
+        transform: rotate(0);
       }
     }
   }
+}
+
+.statusboard--primary.statusboard--minimise .statusboard__close {
+  color: var(--gramo-white);
+  opacity: 1;
 }

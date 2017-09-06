@@ -5764,17 +5764,34 @@ input[type="checkbox"].form__input--toggle-visibility{
   color:inherit;
   opacity:0.6;
   font-size:1.5rem;
-  display:block;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-align:center;
+  align-items:center;
   padding:1rem;
   background:none;
   border:0;
   outline:none;
 }
-.statusboard__close:before{
+.statusboard__close > span{
+  visibility:hidden;
+  width:0;
+  height:0;
+  overflow:hidden;
+  display:inline-block;
+}
+.statusboard__close::before{
   content:'Skjul';
   text-transform:uppercase;
   font-size:1.3rem;
   vertical-align:top;
+}
+.statusboard__close::after{
+  content:"\e90c";
+  font-family:'minside-icons';
+  margin-left:.5rem;
+  transform:rotate(180deg);
+  font-size:1.6rem;
 }
 .statusboard--minimise{
   height:45px;
@@ -5785,11 +5802,16 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .statusboard--minimise .statusboard__close{
   bottom:0;
+  top:auto;
+}
+.statusboard--minimise .statusboard__close::before{
+  content:'Vis';
+}
+.statusboard--minimise .statusboard__close::after{
+  transform:rotate(0);
+}
+
+.statusboard--primary.statusboard--minimise .statusboard__close{
   color:#fdfdfd;
   opacity:1;
-  top:auto;
-  transform:rotate(-45deg);
-}
-.statusboard--minimise .statusboard__close:before{
-  content:none;
 }
