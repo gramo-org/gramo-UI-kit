@@ -1,41 +1,4 @@
 /* Min Side */
-.box--shortcut {
-  /*display: block;*/
-  flex: none;
-  box-shadow: none;
-  border-bottom: 4px solid var(--gramo-turkis);
-  text-align: center;
-  padding: 1rem 0;
-  @media (--tablet) { padding-top: 2rem; }
-  
-  .icon {
-    @extend .icon--primary;
-    font-size: 3.2rem;
-    @media (--tablet) { font-size: 4rem; }
-  }
-  
-  &.active {
-    border-color: var(--gramo-sea-green);
-    .icon {
-      color: var(--gramo-sea-green);
-    }
-  }
-  
-  h4 {
-    font-size: 1.4rem;
-    color: inherit;
-    font-weight: var(--semibold);
-    @media (--tablet) { font-size: inherit; }
-  }
-  
-  em {
-    /*font-size: 3rem;*/
-    font-weight: var(--semibold);
-    display: block;
-    font-style: normal;
-  }
-}
-
 .box--login {
   background: none;
   padding: 0;

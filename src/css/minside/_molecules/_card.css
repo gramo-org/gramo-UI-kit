@@ -1,0 +1,38 @@
+.card {
+  background: var(--gramo-white);
+  flex: none;
+  box-shadow: none;
+  box-shadow: 0 4px 0 0 var(--gramo-turkis);
+  text-align: center;
+  padding: 1rem 0;
+  text-decoration: none;
+  @media (--tablet) { padding-top: 2rem; }
+  
+  &--with-border {
+    border: 1px solid var(--silver);
+    margin: 1rem 0 2rem 0;
+    box-shadow: none;
+  }
+  
+  .icon {
+    font-size: 3.2rem;
+    @media (--tablet) { font-size: 4rem; }
+  }
+  
+  &.active, &:hover {
+    background: color(var(--gramo-sea-green) tint(70%));
+    border-bottom-color: var(--gramo-sea-green);
+    color: var(--gramo-sea-green);
+    box-shadow: 0 4px 0 0 var(--gramo-sea-green);
+    
+    .icon, .card__header {
+      color: inherit;
+    }
+  }
+  
+  em {
+    font-weight: var(--semibold);
+    display: block;
+    font-style: normal;
+  }
+}

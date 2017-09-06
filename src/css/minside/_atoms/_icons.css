@@ -37,6 +37,10 @@
   color: var(--slate-gray);
 }
 
+.icon--ui-gray {
+  color: var(--ui-gray);
+}
+
 .icon--danger {
   color: var(--gramo-red);
 }
