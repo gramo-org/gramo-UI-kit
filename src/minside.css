@@ -548,6 +548,18 @@ td.text--center, .fake-table__row *.text--center{
   display:table;
   clear:both;
 }
+.print-header{
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+}
+.print-header .print-header__address{
+  -ms-flex:0 1 250px;
+  flex:0 1 250px;
+  font-size:1.3rem;
+  font-style:normal;
+}
 *, *:before, *:after{
   box-sizing:border-box;
 }
@@ -1160,15 +1172,31 @@ img{ page-break-inside:avoid; max-width:100%;}
 p, h2, h3{ orphans:3; widows:3; }
 h2, h3{ page-break-after:avoid; }
 abbr[title]:after{ content:" (" attr(title) ")"; }
-.sidebar, .site-header, .pagination, .btn{
+.sidebar, .site-header, .pagination, .btn, .tabs__nav, .comments, .changelog, .files{
   display:none!important;
 }
 .drilldown-body{
   display:block!important;
 }
 .select, .form__label--date, .section-header__meta p{
-  display:none!important;
 }
+
+.section-header__meta{
+  width:100%;
+  display:-ms-flexbox!important;
+  display:flex!important;
+  -ms-flex:1!important;
+  flex:1!important;
+}
+
+.section-header__datepicker{
+  -ms-flex:0 1 auto!important;
+  flex:0 1 auto!important;
+}
+
+.section-header__datepicker .form__label--date{
+    max-width:100px!important;
+  }
 
 table{
 }
