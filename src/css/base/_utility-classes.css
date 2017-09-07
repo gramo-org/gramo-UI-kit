@@ -382,3 +382,15 @@ td.text--center,
   clear: both;
 }
 
+/* For print */
+.print-header {
+  display: flex;
+  justify-content: space-between;
+  
+  .print-header__address {
+    flex: 0 1 250px;
+    font-size: 1.3rem;
+    font-style: normal;
+  }
+}
+

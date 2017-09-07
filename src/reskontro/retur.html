@@ -24,6 +24,15 @@
   <div class="site-wrapper">
     <main>
       <section class="container container--hd">
+        <header class="print-header">
+          <img src="../img/gramo-logo-black.png" alt="Gramo logo" width="150px" height="100%">
+          <address class="print-header__address">
+            <p>Rosenkrantz gate 21, 0160 Oslo</p>
+            <p>Resepsjonen: 22 00 77 77</p>
+            <p>e-post: post@gramo.no</p>
+            <p>Organisasjonsnummer: 971276002</p>
+          </address>
+        </header>
         <div class="section-header section-header--divided no-margin--bottom">
           <header>
             <h1 class="heading--inline">Retur</h1>
@@ -42,6 +51,33 @@
           </div>
           <div class="section-header__below">
             <div class="text--bold text--pre">Her er en beskrivelse av årsaken til returen.</div>
+          </div>
+          <div class="section-header__below">
+            <div class="section-header__meta">
+              <h4 class="heading--inline">Vis alle transaksjoner relatert</h4>
+              <select tabindex="0" id="sectorSelect" class="select select--fluid">
+                <option value="PERFORMER" id="ember3080" class="x-option">Utøver</option>
+              </select>
+              <select tabindex="0" id="ledgerViewSelect" class="select select--fluid">
+                <option value="transactions" id="ember2977" class="x-option">Transaksjonsperiode</option>
+                <option value="distributions" id="ember2982" class="x-option">Avregningssperiode</option>
+              </select>
+              <select tabindex="0" id="periodSelect" class="select select--fluid">
+                <option value="1" id="ember2987" class="x-option">Sist år</option>
+                <option value="4" id="ember2992" class="x-option">Siste 4 år</option>
+                <option value="custom" id="ember2997" class="x-option">Egendefinert</option>
+              </select>
+            </div>
+            <div class="section-header__datepicker">
+              <label class="form__label form__label--date">
+                Fra
+                <input type="date" id="ember1399" class="no-margin--top form__input ember-view">
+              </label>
+              <label class="form__label form__label--date">
+                Til
+                <input type="date" id="ember1405" class="no-margin--top form__input ember-view">
+              </label>
+            </div>
           </div>
         </div>
       </section>

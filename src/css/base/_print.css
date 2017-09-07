@@ -28,14 +28,28 @@ h2, h3 { page-break-after: avoid; }
 abbr[title]:after { content: " (" attr(title) ")"; }
 
 /* Components */
-.sidebar, .site-header, .pagination, .btn {
+.sidebar, .site-header, .pagination, .btn, .tabs__nav, .comments, .changelog, .files {
   display: none!important;
 }
 .drilldown-body {
   display: block!important;
 }
 .select, .form__label--date, .section-header__meta p {
-  display: none!important; /* when printing reskontro we don't need select boxes and datepickers */
+  /* display: none!important;  when printing reskontro we don't need select boxes and datepickers */
+}
+
+.section-header__meta {
+  width: 100%;
+  display: flex!important;
+  flex: 1!important;
+}
+
+.section-header__datepicker {
+  flex: 0 1 auto!important;
+  
+  .form__label--date {
+    max-width: 100px!important;
+  }
 }
 
 table {
