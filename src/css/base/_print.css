@@ -52,6 +52,10 @@ abbr[title]:after { content: " (" attr(title) ")"; }
   }
 }
 
+.print-header__branding {
+  left: -1rem;
+}
+
 table {
   /*display: block;*/
 }
