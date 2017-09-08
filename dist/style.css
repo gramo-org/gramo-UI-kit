@@ -549,22 +549,7 @@ td.text--center, .fake-table__row *.text--center{
   clear:both;
 }
 .print-header{
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-pack:justify;
-  justify-content:space-between;
-}
-.print-header__branding{
-  position:relative;
-  top:-.75rem;
-}
-.print-header .print-header__address{
-  -ms-flex:0 1 250px;
-  flex:0 1 250px;
-  font-size:1.2rem;
-  font-style:normal;
-  line-height:1.3;
-  text-align:right;
+  display:none;
 }
 *, *:before, *:after{
   box-sizing:border-box;
@@ -1210,6 +1195,24 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 
 table{
 }
+.print-header{
+  display:-ms-flexbox!important;
+  display:flex!important;
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+}
+.print-header__branding{
+    position:relative;
+    top:-.75rem;
+  }
+.print-header .print-header__address{
+    -ms-flex:0 1 250px;
+    flex:0 1 250px;
+    font-size:1.2rem;
+    font-style:normal;
+    line-height:1.3;
+    text-align:right;
+  }
 }
 @font-face{
   font-family:'icomoon';
