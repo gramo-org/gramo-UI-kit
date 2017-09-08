@@ -148,6 +148,10 @@ td.text--center,
   align-self: flex-start;
 }
 
+.align--bottom {
+  align-self: flex-end;
+}
+
 .v-align--middle {
   vertical-align: middle!important;
 }

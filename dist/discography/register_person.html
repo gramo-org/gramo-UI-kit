@@ -110,32 +110,39 @@
                     <div class="file-upload file-upload--in-header">
                       <a href="#" class="file-upload__toggle"><i class="icon--paperclip"></i>Vedlegg <span>(9)</span></a>
                       <div class="file-upload__inner">
+                        <header class="file-upload__header">
+                          <h3><i class="icon icon--paperclip"></i>Vedlegg</h3>
+                          <div class="spinner spinner--minimal">
+                            <div class="spinner__rect1"></div>
+                            <div class="spinner__rect2"></div>
+                            <div class="spinner__rect3"></div>
+                            <div class="spinner__rect4"></div>
+                            <div class="spinner__rect5"></div>
+                          </div>
+                          <div class="file-upload__header--action">
+                            <a href="#">Lukk</a>
+                          </div>
+                        </header>
                         <div class="file-upload__form">
                           <label class="form__label form__label--block form__label--upload">
                             <input type="file" />
                           </label>
-                          <label class="form__label form__label--block form__label--comments">Kommentar
-                            <input class="form__input form__input--block">
-                          </label>
-                          <div class="form__section--action">
-                            <button class="btn btn--secondary">Avbryt</button>
-                            <button disabled class="btn btn--primary">Upload</button>
-                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-7">
+                              <label class="form__label form__label--block form__label--comments">Kommentar
+                                <input class="form__input form__input--block">
+                              </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-5 align--bottom">
+                              <div class="form__section--action">
+                                <button class="btn btn--inline btn--secondary">Avbryt</button>
+                                <button disabled class="btn btn--inline btn--primary">Upload</button>
+                              </div>
+                            </div>
+                          </div><!-- end .row -->
                         </div>
                         <div class="file-upload__list">
-                          <header class="file-upload__header">
-                            <h3>Filer</h3>
-                            <div class="spinner spinner--minimal">
-                              <div class="spinner__rect1"></div>
-                              <div class="spinner__rect2"></div>
-                              <div class="spinner__rect3"></div>
-                              <div class="spinner__rect4"></div>
-                              <div class="spinner__rect5"></div>
-                            </div>
-                            <div class="file-upload__header--action">
-                              <a href="#">Lukk</a>
-                            </div>
-                          </header>
+                          
                           <ul>
                             <li class="row">
                               <div class="col-sm">
@@ -756,25 +763,31 @@
                         <div class="file-upload" id="file-upload">
                           <a href="#" class="file-upload__toggle"><i class="icon--paperclip"></i><span>(9)</span></a>
                           <div class="file-upload__inner is-visible--over">
+                            <header class="file-upload__header">
+                              <h3><i class="icon icon--paperclip"></i>Vedlegg</h3>
+                              <div class="file-upload__header--action">
+                                <a href="#">Lukk</a>
+                              </div>
+                            </header>
                             <div class="file-upload__form">
                               <label class="form__label form__label--block form__label--upload">
                                 <input type="file" />
                               </label>
-                              <label class="form__label form__label--block form__label--comments">Kommentar
-                                <input class="form__input form__input--block">
-                              </label>
-                              <div class="form__section--action">
-                                <button class="btn btn--secondary">Avbryt</button>
-                                <button disabled class="btn btn--primary">Upload</button>
-                              </div>
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-7">
+                                  <label class="form__label form__label--block form__label--comments">Kommentar
+                                    <input class="form__input form__input--block">
+                                  </label>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 align--bottom">
+                                  <div class="form__section--action">
+                                    <button class="btn btn--inline btn--secondary">Avbryt</button>
+                                    <button disabled class="btn btn--inline btn--primary">Upload</button>
+                                  </div>
+                                </div>
+                              </div><!-- end .row -->
                             </div>
                             <div class="file-upload__list">
-                              <header class="file-upload__header">
-                                <h3>Filer</h3>
-                                <div class="file-upload__header--action">
-                                  <a href="#">Lukk</a>
-                                </div>
-                              </header>
                               <ul>
                                 <li class="row">
                                   <div class="col-sm">

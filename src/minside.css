@@ -326,6 +326,11 @@ td.text--center, .fake-table__row *.text--center{
   align-self:flex-start;
 }
 
+.align--bottom{
+  -ms-flex-item-align:end;
+  align-self:flex-end;
+}
+
 .v-align--middle{
   vertical-align:middle!important;
 }
