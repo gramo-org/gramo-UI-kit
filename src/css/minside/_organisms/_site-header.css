@@ -1,6 +1,7 @@
 /* Min Side */
 .site-header {
-  position: static;
+  position: relative;
+  left: 0;
   height: auto;
   flex: 0 0 auto;
   display: flex;

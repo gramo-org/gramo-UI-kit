@@ -24,9 +24,9 @@
   
 </head>
 <body>
-  <div class="site-wrapper profile--performer">
+  <div class="site-wrapper profile--agent">
     <header class="site-header">
-      <span class="site-header__branding"><img src="../img/gramo-logo.png" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
+      <span class="site-header__branding"><img src="../img/gramo-logo.png" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Agent</span></span>
       <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
         Meny
       </a>
@@ -36,19 +36,18 @@
         <li>
           <div class="user">
             <span class="user__name">
-              Morten Harket
+              Nina Hagen
             </span>
             <a href="#">Rediger</a>
           </div>
         </li>
         <li class="vertical__nav__heading"><h4>Du ser på</h4></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
-        <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Produsent</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Warner Music</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Sony Music</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--quill"></span>Agent</a></li>
+        <!-- <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span>Utøver</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Produsent</a></li> -->
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--album-label"></span> Min diskografi</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--performer"></span> Mine Kunder</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span> Mine penger</a></li>
         <li class="vertical__nav__item vertical__nav__item--extend"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
         <li class="vertical__nav__item vertical__nav__item--with-border"><a href="#"><span class="icon icon--profile"></span> Legg til ny profil</a></li>
@@ -60,7 +59,7 @@
       <section class="container">
         <div class="row">
           <header class="masthead">
-            <h2>Diskografi</h2>
+            <h1>Mine Kunder</h1>
             <div class="container">
               <div class="search">
                 <form action="" class="search__form">
@@ -81,99 +80,60 @@
       <section id="discography-info" class="container container--padded container--col-1">
         <div class="tabs">
           <ul class="tabs__nav tabs__nav--flexible" role="tablist">
-            <li class="tabs__nav__item" role="presentation"><a href="#album" role="tab" aria-controls="album" aria-selected="true">Album <span class="badge">138</span></a></li>
-            <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger">Innspillinger <span class="badge">400</span></a></li>
-            <li class="tabs__nav__item" role="presentation"><a href="#grupper" role="tab" aria-controls="album">Grupper <span class="badge">1</span></a></li>
+            <li class="tabs__nav__item" role="presentation"><a href="#performers" role="tab" aria-controls="performers" aria-selected="true">Utøvere <span class="badge">138</span></a></li>
+            <li class="tabs__nav__item" role="presentation"><a href="#producers" role="tab" aria-controls="producers">Produsenter <span class="badge">400</span></a></li>
           </ul>
-          <section id="innspillinger" role="tabpanel" class="tabs__section">
+          <section id="performers" role="tabpanel" class="tabs__section">
             <table class="table table--fluid table--list table--recordings">
               <thead>
                 <tr>
-                  <th>Innspillingstittel</th>
-                  <th>Hovedartist</th>
-                  <th>Varighet</th>
-                  <th>Utgivelsesdato</th>
+                  <th>Navn</th>
+                  <th>Fødselsdato</th>
+                  <th>Statsborgerskap</th>
+                  <th>Filer</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td data-label="Innspillingstittel" class="table__cell--left">
-                    <a href="innspilling.html">Take on Me</a>
+                  <td data-label="Navn" class="table__cell--left">
+                    <a href="#">Morten Harkett</a>
                   </td>
-                  <td data-label="Katalognummer" class="table__cell--left">
-                    A-ha
+                  <td data-label="Fødselsdato" class="table__cell--left">
+                    01.03.1952
                   </td>
-                  <td data-label="Varighet">
-                    0123:23
+                  <td data-label="Statsborgerskap">
+                    Norge
                   </td>
-                  <td data-label="Utgivelsesdato">
-                    1985
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label="Innspillingstittel" class="table__cell--left">
-                    <a href="innspilling.html">Take on Me</a>
-                  </td>
-                  <td data-label="Katalognummer" class="table__cell--left">
-                    A-ha
-                  </td>
-                  <td data-label="Varighet">
-                    0123:23
-                  </td>
-                  <td data-label="Utgivelsesdato">
-                    1985
+                  <td data-label="Filer">
+                    1
                   </td>
                 </tr>
               </tbody>
             </table>
           </section>
-          <section id="album" role="tabpanel" aria-hidden="true" class="tabs__section">
-            <table class="table table--fluid table--list">
-              <thead>
-                <tr>
-                  <th>Tittel</th>
-                  <th>Hovedartist</th>
-                  <th>Label</th>
-                  <th>Antall spor</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Tittel">
-                    <a href="album.html">Searching High and Low</a>
-                  </td>
-                  <td data-label="Hovedartist">
-                    A-ha
-                  </td>
-                  <td data-label="Label">
-                    Sony
-                  </td>
-                  <td data-label="Antall spor">
-                    11
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section id="grupper" role="tabpanel" aria-hidden="true" class="tabs__section">
+          <section id="producers" role="tabpanel" aria-hidden="true" class="tabs__section">
             <table class="table table--fluid table--list">
               <thead>
                 <tr>
                   <th>Navn</th>
-                  <th>Land</th>
-                  <th>Antall medlemmer</th>
+                  <th>Fødselsdato</th>
+                  <th>Statsborgerskap</th>
+                  <th>Filer</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td data-label="Navn">
-                    <a href="gruppe.html">A-ha</a>
+                  <td data-label="Navn" class="table__cell--left">
+                    <a href="#">Morten Harkett</a>
                   </td>
-                  <td data-label="Land">
+                  <td data-label="Fødselsdato" class="table__cell--left">
+                    01.03.1952
+                  </td>
+                  <td data-label="Statsborgerskap">
                     Norge
                   </td>
-                  <td data-label="Antall medlemmer">
-                    11
+                  <td data-label="Filer">
+                    1
                   </td>
                 </tr>
               </tbody>

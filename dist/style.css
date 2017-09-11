@@ -617,6 +617,10 @@ h4, .form__label{
   font-size:1.4rem;
   margin:0;
 }
+
+address{
+  font-style:normal;
+}
 .row, .fake-table__toggle-row, .summary__row, .fake-table__row, .fake-table__row--child, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item{
   box-sizing:border-box;
   display:-ms-flexbox;

@@ -6,12 +6,28 @@
   &__name {
     margin-right: 1rem;
     color: var(--ui-gray);
-    flex: auto;
+    flex: 1 0 auto;
     margin: 0;
   }
   a {
-    flex: auto;
+    flex: none;
     text-decoration: none;
     text-transform: none;
   }
+}
+
+/*** Profile colors for user ***/
+.profile--performer .user {
+  background: color(var(--gramo-blue) tint(85%));
+  border-bottom: 2px solid var(--gramo-blue);
+}
+
+.profile--personlig-produsent .user {
+  background: color(var(--gramo-purple) tint(85%));
+  border-bottom: 2px solid var(--gramo-purple);
+}
+
+.profile--agent .user {
+  background: color(var(--gramo-red) tint(85%));
+  border-bottom: 2px solid var(--gramo-red);
 }

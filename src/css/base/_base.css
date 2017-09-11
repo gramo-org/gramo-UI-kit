@@ -68,3 +68,7 @@ h4 {
   font-size: var(--h4-font-size);
   margin: 0;
 }
+
+address {
+  font-style: normal;
+}

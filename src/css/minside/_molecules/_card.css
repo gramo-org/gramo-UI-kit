@@ -23,20 +23,20 @@
     @media (--tablet) { font-size: 4rem; }
   }
   
-  &.active, &:hover {
-    background: color(var(--gramo-sea-green) tint(70%));
-    border-bottom-color: var(--gramo-sea-green);
-    color: var(--gramo-sea-green);
-    box-shadow: 0 4px 0 0 var(--gramo-sea-green);
-    
-    .icon, .card__header {
-      color: inherit;
-    }
-  }
-  
   em {
     font-weight: var(--semibold);
     display: block;
     font-style: normal;
+  }
+}
+
+a.card.active, a.card:hover {
+  background: color(var(--gramo-sea-green) tint(70%));
+  border-bottom-color: var(--gramo-sea-green);
+  color: var(--gramo-sea-green);
+  box-shadow: 0 4px 0 0 var(--gramo-sea-green);
+  
+  .icon, .card__header {
+    color: inherit;
   }
 }

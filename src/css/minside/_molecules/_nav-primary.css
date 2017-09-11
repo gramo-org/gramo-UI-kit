@@ -1,11 +1,15 @@
 .nav-toggle {
   flex: 0 0 auto;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1.4rem;
+  margin: 0;
   color: var(--gramo-white);
   display: flex;
   align-items: flex-end;
   transition: all .25s ease;
-  margin-right: .5rem;
   z-index: 2;
   
   &::after {
@@ -21,6 +25,24 @@
   font-size: 2rem;
   line-height: 1.2;
   margin-left: .4rem;
+}
+
+/*** Nav toggle colors ***/
+
+.profile--performer .nav-toggle {
+  background: var(--gramo-blue);
+}
+
+.profile--personlig-produsent .nav-toggle {
+  background: var(--gramo-purple);
+}
+
+.profile--produsent .nav-toggle {
+  background: var(--gramo-green);
+}
+
+.profile--agent .nav-toggle {
+  background: var(--gramo-red);
 }
 
 .nav--primary {
@@ -81,7 +103,7 @@
     }
     
     li:first-child {
-      border-bottom: 1px solid var(--silver);
+      /*border-bottom: 1px solid var(--silver);*/
       margin-bottom: 1.2rem;
     }
     
@@ -90,7 +112,7 @@
     }
     
     &__item--extend {
-      flex: 1;
+      flex: 1 0 auto;
     }
     
     &__item--with-border {

@@ -617,6 +617,10 @@ h4, .form__label{
   font-size:1.4rem;
   margin:0;
 }
+
+address{
+  font-style:normal;
+}
 .row, .fake-table__row, .list--expandable .list__item--wrapper, .list--expandable .list__item--is-expanded .list--sub-list .sub-list__item{
   box-sizing:border-box;
   display:-ms-flexbox;
@@ -4978,14 +4982,18 @@ input[type="checkbox"].form__input--toggle-visibility{
 .nav-toggle{
   -ms-flex:0 0 auto;
   flex:0 0 auto;
-  position:relative;
+  position:absolute;
+  right:0;
+  top:0;
+  bottom:0;
+  padding:1.4rem;
+  margin:0;
   color:#fdfdfd;
   display:-ms-flexbox;
   display:flex;
   -ms-flex-align:end;
   align-items:flex-end;
   transition:all .25s ease;
-  margin-right:.5rem;
   z-index:2;
 }
 .nav-toggle::after{
@@ -5000,6 +5008,22 @@ input[type="checkbox"].form__input--toggle-visibility{
   font-size:2rem;
   line-height:1.2;
   margin-left:.4rem;
+}
+
+.profile--performer .nav-toggle{
+  background:#0095da;
+}
+
+.profile--personlig-produsent .nav-toggle{
+  background:#a41681;
+}
+
+.profile--produsent .nav-toggle{
+  background:#50bf9e;
+}
+
+.profile--agent .nav-toggle{
+  background:#ed6b6a;
 }
 
 .nav--primary{
@@ -5064,7 +5088,6 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .nav--primary .vertical__nav li:first-child{
-  border-bottom:1px solid #d9d9dc;
   margin-bottom:1.2rem;
 }
 
@@ -5073,8 +5096,8 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .nav--primary .vertical__nav__item--extend{
-  -ms-flex:1;
-  flex:1;
+  -ms-flex:1 0 auto;
+  flex:1 0 auto;
 }
 
 .nav--primary .vertical__nav__item--with-border{
@@ -5094,15 +5117,29 @@ input[type="checkbox"].form__input--toggle-visibility{
 .user__name{
   margin-right:1rem;
   color:#434D5A;
-  -ms-flex:auto;
-  flex:auto;
+  -ms-flex:1 0 auto;
+  flex:1 0 auto;
   margin:0;
 }
 .user a{
-  -ms-flex:auto;
-  flex:auto;
+  -ms-flex:none;
+  flex:none;
   text-decoration:none;
   text-transform:none;
+}
+.profile--performer .user{
+  background:rgb(217, 239, 249);
+  border-bottom:2px solid #0095da;
+}
+
+.profile--personlig-produsent .user{
+  background:rgb(241, 220, 236);
+  border-bottom:2px solid #a41681;
+}
+
+.profile--agent .user{
+  background:rgb(252, 233, 233);
+  border-bottom:2px solid #ed6b6a;
 }
 .search{
   padding:1.2rem 0;
@@ -5235,22 +5272,25 @@ input[type="checkbox"].form__input--toggle-visibility{
     font-size:4rem;
   }
 }
-.card.active, .card:hover{
-  background:rgb(193, 215, 221);
-  border-bottom-color:#31798d;
-  color:#31798d;
-  box-shadow:0 4px 0 0 #31798d;
-}
-.card.active .icon, .card.active .card__header, .card:hover .icon, .card:hover .card__header{
-  color:inherit;
-}
 .card em{
   font-weight:600;
   display:block;
   font-style:normal;
 }
+
+a.card.active, a.card:hover{
+  background:rgb(193, 215, 221);
+  border-bottom-color:#31798d;
+  color:#31798d;
+  box-shadow:0 4px 0 0 #31798d;
+}
+
+a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hover .card__header{
+  color:inherit;
+}
 .site-header{
-  position:static;
+  position:relative;
+  left:0;
   height:auto;
   -ms-flex:0 0 auto;
   flex:0 0 auto;
@@ -5720,6 +5760,34 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .message--dark *{
   color:#fdfdfd;
+}
+.message--agent{
+  background:#d9d9dc;
+  box-shadow:0 1px 0 0 rgba(0,0,0,0.2);
+  margin-bottom:1px;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+  -ms-flex-align:center;
+  align-items:center;
+}
+.message--agent > *{
+  color:#504f56;
+}
+.message--agent > *:last-child{
+  -ms-flex:1 0 auto;
+  flex:1 0 auto;
+}
+@media (min-width: 960px){
+
+  .message--agent > *:last-child{
+    margin-left:-12rem;
+  }
+}
+.message--agent .icon{
+  font-size:1.8rem;
+  margin:0;
 }
 .statusboard{
   text-align:center;
