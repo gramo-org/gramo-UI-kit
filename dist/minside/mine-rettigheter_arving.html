@@ -24,9 +24,9 @@
   
 </head>
 <body>
-  <div class="site-wrapper profile--agent">
+  <div class="site-wrapper profile--heir">
     <header class="site-header">
-      <span class="site-header__branding"><img src="../img/gramo-logo.png" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Agent</span></span>
+      <span class="site-header__branding"><img src="../img/gramo-logo.png" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Arving</span></span>
       <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
         Meny
       </a>
@@ -42,12 +42,12 @@
           </div>
         </li>
         <li class="vertical__nav__heading"><h4>Du ser på</h4></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--quill"></span>Agent</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--quill"></span>Arving</a></li>
         <!-- <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span>Utøver</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Produsent</a></li> -->
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--performer"></span> Mine Kunder</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--performer"></span> Mine Rettigheter</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span>Penger</a></li>
         <li class="vertical__nav__item vertical__nav__item--extend"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
         <li class="vertical__nav__item vertical__nav__item--with-border"><a href="#"><span class="icon icon--profile"></span> Legg til ny profil</a></li>
@@ -59,7 +59,7 @@
       <section class="container">
         <div class="row">
           <header class="masthead">
-            <h1>Mine Kunder</h1>
+            <h1>Mine rettigheter</h1>
             <div class="container">
               <div class="search">
                 <form action="" class="search__form">
@@ -77,78 +77,33 @@
           <button class="btn btn--primary">Legg til ny innspilling</button>
         </div>
       </section> -->
-      <section id="discography-info" class="container container--padded container--col-1">
-        <div class="tabs">
-          <ul class="tabs__nav tabs__nav--flexible" role="tablist">
-            <li class="tabs__nav__item" role="presentation"><a href="#performers" role="tab" aria-controls="performers" aria-selected="true">Utøvere <span class="badge">138</span></a></li>
-            <li class="tabs__nav__item" role="presentation"><a href="#producers" role="tab" aria-controls="producers">Produsenter <span class="badge">400</span></a></li>
-          </ul>
-          <section id="performers" role="tabpanel" class="tabs__section">
-            <table class="table table--fluid table--list table--recordings">
-              <thead>
-                <tr>
-                  <th>Navn</th>
-                  <th>Fødselsdato</th>
-                  <th>Statsborgerskap</th>
-                  <th>Filer</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Navn" class="table__cell--left">
-                    <a href="#">Morten Harkett</a>
-                  </td>
-                  <td data-label="Fødselsdato" class="table__cell--left">
-                    01.03.1952
-                  </td>
-                  <td data-label="Statsborgerskap">
-                    Norge
-                  </td>
-                  <td data-label="Filer">
-                    1
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section id="producers" role="tabpanel" aria-hidden="true" class="tabs__section">
-            <table class="table table--fluid table--list">
-              <thead>
-                <tr>
-                  <th>Navn</th>
-                  <th>Fødselsdato</th>
-                  <th>Statsborgerskap</th>
-                  <th>Filer</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Navn" class="table__cell--left">
-                    <a href="#">Morten Harkett</a>
-                  </td>
-                  <td data-label="Fødselsdato" class="table__cell--left">
-                    01.03.1952
-                  </td>
-                  <td data-label="Statsborgerskap">
-                    Norge
-                  </td>
-                  <td data-label="Filer">
-                    1
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <nav class="text--right">
-            <ol class="pagination">
-              <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
-              <li class="pagination__item"><a href="#">2</a></li>
-              <li class="pagination__item"><a href="#">3</a></li>
-              <li class="pagination__item"><a href="#">4</a></li>
-              <li class="pagination__item"><a href="#">5</a></li>
-            </ol>
-          </nav>
-        </div>
+      <section id="rettigheter-info" class="container container--padded container--col-1">
+        <table class="table table--fluid table--standard">
+          <thead>
+            <tr>
+              <th>Fra</th>
+              <th>Start</th>
+              <th>Slutt</th>
+              <th>Andel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Overført fra" class="table__cell--left">
+                <a href="#">Morten Harkett</a>
+              </td>
+              <td data-label="Start" class="table__cell--left">
+                01.01.2030
+              </td>
+              <td data-label="Slutt">
+                -
+              </td>
+              <td data-label="Andel">
+                40%
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
 </div>

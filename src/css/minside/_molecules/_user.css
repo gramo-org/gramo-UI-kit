@@ -27,7 +27,17 @@
   border-bottom: 2px solid var(--gramo-purple);
 }
 
+.profile--produsent .user {
+  background: color(var(--gramo-green) tint(85%));
+  border-bottom: 2px solid var(--gramo-green);
+}
+
 .profile--agent .user {
   background: color(var(--gramo-red) tint(85%));
   border-bottom: 2px solid var(--gramo-red);
+}
+
+.profile--heir .user {
+  background: color(var(--ui-gray) tint(85%));
+  border-bottom: 2px solid var(--ui-gray);
 }

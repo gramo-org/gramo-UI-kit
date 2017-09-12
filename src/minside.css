@@ -5026,6 +5026,10 @@ input[type="checkbox"].form__input--toggle-visibility{
   background:#ed6b6a;
 }
 
+.profile--heir .nav-toggle{
+  background:#434D5A;
+}
+
 .nav--primary{
   width:30rem;
   transform:translateX(30rem);
@@ -5137,9 +5141,19 @@ input[type="checkbox"].form__input--toggle-visibility{
   border-bottom:2px solid #a41681;
 }
 
+.profile--produsent .user{
+  background:rgb(229, 245, 240);
+  border-bottom:2px solid #50bf9e;
+}
+
 .profile--agent .user{
   background:rgb(252, 233, 233);
   border-bottom:2px solid #ed6b6a;
+}
+
+.profile--heir .user{
+  background:rgb(227, 228, 230);
+  border-bottom:2px solid #434D5A;
 }
 .search{
   padding:1.2rem 0;
@@ -5549,6 +5563,10 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
     display:table-cell;
     border-width:1px 0!important;
   }
+  
+  .table--standard td::before{
+    content:none;
+  }
 }
 
 @media (min-width: 768px){
@@ -5788,6 +5806,10 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .message--agent .icon{
   font-size:1.8rem;
   margin:0;
+}
+.message--agent em{
+  font-style:normal;
+  font-weight:600;
 }
 .statusboard{
   text-align:center;

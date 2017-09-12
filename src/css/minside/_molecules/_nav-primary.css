@@ -45,6 +45,10 @@
   background: var(--gramo-red);
 }
 
+.profile--heir .nav-toggle {
+  background: var(--ui-gray);
+}
+
 .nav--primary {
   width: 30rem;
   transform: translateX(30rem);

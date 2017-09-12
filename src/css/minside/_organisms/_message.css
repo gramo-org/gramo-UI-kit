@@ -61,5 +61,10 @@
       font-size: 1.8rem;
       margin: 0;
     }
+    
+    em {
+      font-style: normal;
+      font-weight: var(--semibold);
+    }
   }
 }

@@ -135,6 +135,10 @@ only screen and (max-width: 768px),
       display: table-cell;
       border-width: 1px 0!important;
     }
+    
+    td::before {
+      content: none;
+    }
   }
 }
 
