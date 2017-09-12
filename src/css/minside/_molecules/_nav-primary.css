@@ -33,11 +33,11 @@
   background: var(--gramo-blue);
 }
 
-.profile--personlig-produsent .nav-toggle {
+.profile--personal-producer .nav-toggle {
   background: var(--gramo-purple);
 }
 
-.profile--produsent .nav-toggle {
+.profile--producer .nav-toggle {
   background: var(--gramo-green);
 }
 
@@ -45,7 +45,7 @@
   background: var(--gramo-red);
 }
 
-.profile--heir .nav-toggle {
+.profile--inheritance-party .nav-toggle {
   background: var(--ui-gray);
 }
 

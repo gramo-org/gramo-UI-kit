@@ -5014,11 +5014,11 @@ input[type="checkbox"].form__input--toggle-visibility{
   background:#0095da;
 }
 
-.profile--personlig-produsent .nav-toggle{
+.profile--personal-producer .nav-toggle{
   background:#a41681;
 }
 
-.profile--produsent .nav-toggle{
+.profile--producer .nav-toggle{
   background:#50bf9e;
 }
 
@@ -5026,7 +5026,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   background:#ed6b6a;
 }
 
-.profile--heir .nav-toggle{
+.profile--inheritance-party .nav-toggle{
   background:#434D5A;
 }
 
@@ -5131,27 +5131,27 @@ input[type="checkbox"].form__input--toggle-visibility{
   text-decoration:none;
   text-transform:none;
 }
-.profile--performer .user{
+.profile--performer + nav .user{
   background:rgb(217, 239, 249);
   border-bottom:2px solid #0095da;
 }
 
-.profile--personlig-produsent .user{
+.profile--personal-producer + nav .user{
   background:rgb(241, 220, 236);
   border-bottom:2px solid #a41681;
 }
 
-.profile--produsent .user{
+.profile--producer + nav .user{
   background:rgb(229, 245, 240);
   border-bottom:2px solid #50bf9e;
 }
 
-.profile--agent .user{
+.profile--agent + nav .user{
   background:rgb(252, 233, 233);
   border-bottom:2px solid #ed6b6a;
 }
 
-.profile--heir .user{
+.profile--inheritance-party + nav .user{
   background:rgb(227, 228, 230);
   border-bottom:2px solid #434D5A;
 }

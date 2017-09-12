@@ -17,27 +17,27 @@
 }
 
 /*** Profile colors for user ***/
-.profile--performer .user {
+.profile--performer + nav .user {
   background: color(var(--gramo-blue) tint(85%));
   border-bottom: 2px solid var(--gramo-blue);
 }
 
-.profile--personlig-produsent .user {
+.profile--personal-producer + nav .user {
   background: color(var(--gramo-purple) tint(85%));
   border-bottom: 2px solid var(--gramo-purple);
 }
 
-.profile--produsent .user {
+.profile--producer + nav .user {
   background: color(var(--gramo-green) tint(85%));
   border-bottom: 2px solid var(--gramo-green);
 }
 
-.profile--agent .user {
+.profile--agent + nav .user {
   background: color(var(--gramo-red) tint(85%));
   border-bottom: 2px solid var(--gramo-red);
 }
 
-.profile--heir .user {
+.profile--inheritance-party + nav .user {
   background: color(var(--ui-gray) tint(85%));
   border-bottom: 2px solid var(--ui-gray);
 }
