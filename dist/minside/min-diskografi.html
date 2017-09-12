@@ -44,7 +44,7 @@
         <li class="vertical__nav__heading"><h4>Du ser på</h4></li>
         <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
         <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Produsent</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span>Personlig produsent</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Warner Music</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Sony Music</a></li>
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
@@ -64,7 +64,7 @@
             <div class="container">
               <div class="search">
                 <form action="" class="search__form">
-                  <input type="text" class="form__input" value="" placeholder="Søk..." />
+                  <input type="text" class="form__input" value="" placeholder="Søk i diskografien..." />
                   <button class="search__submit"></button>
                 </form>
               </div>
@@ -91,18 +91,24 @@
                 <tr>
                   <th>Innspillingstittel</th>
                   <th>Hovedartist</th>
+                  <th>Label</th>
+                  <th>ISRC</th>
+                  <th>Rollekode</th>
                   <th>Varighet</th>
-                  <th>Utgivelsesdato</th>
+                  <th>Utgivelsesår</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td data-label="Innspillingstittel" class="table__cell--left">
+                  <td data-label="Innspillingstittel">
                     <a href="innspilling.html">Take on Me</a>
                   </td>
                   <td data-label="Katalognummer" class="table__cell--left">
                     A-ha
                   </td>
+                  <td class="table__cell--left">Label</td>
+                  <td class="table__cell--left">ISRC</td>
+                  <td>B</td>
                   <td data-label="Varighet">
                     0123:23
                   </td>
@@ -111,12 +117,15 @@
                   </td>
                 </tr>
                 <tr>
-                  <td data-label="Innspillingstittel" class="table__cell--left">
+                  <td data-label="Innspillingstittel">
                     <a href="innspilling.html">Take on Me</a>
                   </td>
                   <td data-label="Katalognummer" class="table__cell--left">
                     A-ha
                   </td>
+                  <td class="table__cell--left">Label</td>
+                  <td class="table__cell--left">ISRC</td>
+                  <td>B</td>
                   <td data-label="Varighet">
                     0123:23
                   </td>
@@ -128,7 +137,7 @@
             </table>
           </section>
           <section id="album" role="tabpanel" aria-hidden="true" class="tabs__section">
-            <table class="table table--fluid table--list">
+            <table class="table table--fluid table--list table--recordings">
               <thead>
                 <tr>
                   <th>Tittel</th>
@@ -142,10 +151,10 @@
                   <td data-label="Tittel">
                     <a href="album.html">Searching High and Low</a>
                   </td>
-                  <td data-label="Hovedartist">
+                  <td data-label="Hovedartist" class="table__cell--left">
                     A-ha
                   </td>
-                  <td data-label="Label">
+                  <td data-label="Label" class="table__cell--left">
                     Sony
                   </td>
                   <td data-label="Antall spor">
@@ -156,7 +165,7 @@
             </table>
           </section>
           <section id="grupper" role="tabpanel" aria-hidden="true" class="tabs__section">
-            <table class="table table--fluid table--list">
+            <table class="table table--fluid table--list table--recordings">
               <thead>
                 <tr>
                   <th>Navn</th>
@@ -169,7 +178,7 @@
                   <td data-label="Navn">
                     <a href="gruppe.html">A-ha</a>
                   </td>
-                  <td data-label="Land">
+                  <td data-label="Land" class="table__cell--left">
                     Norge
                   </td>
                   <td data-label="Antall medlemmer">

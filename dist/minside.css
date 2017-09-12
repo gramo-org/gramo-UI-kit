@@ -5504,14 +5504,39 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
     font-family:'minside-icons';
   }
   
-  .table--recordings td:nth-child(2){
+  .table--recordings td:nth-child(1){
     -ms-flex-order:1;
     order:1;
   }
   
+  .table--recordings td:nth-child(2){
+    -ms-flex-order:3;
+    order:3;
+  }
+  
+  .table--recordings td:nth-child(3){
+    -ms-flex-order:5;
+    order:5;
+  }
+  
   .table--recordings td:nth-child(4){
+    -ms-flex-order:7;
+    order:7;
+  }
+  
+  .table--recordings td:nth-child(5){
     -ms-flex-order:2;
     order:2;
+  }
+  
+  .table--recordings td:nth-child(6){
+    -ms-flex-order:4;
+    order:4;
+  }
+  
+  .table--recordings td:nth-child(7){
+    -ms-flex-order:6;
+    order:6;
   }
   
   .table--ledger td:nth-child(2){

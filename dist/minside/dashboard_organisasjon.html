@@ -18,15 +18,15 @@
 
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  
+  <!--  -->
   <link rel="stylesheet" href="../minside.css">
-  
+
   
 </head>
 <body>
-  <div class="site-wrapper">
+  <div class="site-wrapper profile--produsent">
     <header class="site-header">
-      <span class="site-header__branding"><img src="../img/gramo-logo.png" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
+      <div class="site-header__branding"><img src="../img/gramo-logo.png" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Warner Music</span></div>
       <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
         Meny
       </a>
@@ -42,42 +42,20 @@
           </div>
         </li>
         <li class="vertical__nav__heading"><h4>Du ser på</h4></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--producer"></span>Warner Music</a></li>
         <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Produsent</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--quill"></span> Kontaktperson</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--artist"></span>Utøver</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span>Personlig produsent</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Sony Music</a></li>
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--album-label"></span>Diskografi</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--album-label"></span>Diskografi</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span>Penger</a></li>
-        <li class="vertical__nav__item vertical__nav__item--extend"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
-        <li class="vertical__nav__item vertical__nav__item--with-border"><a href="#"><span class="icon icon--profile"></span> Legg til ny profil</a></li>
-        <li class="vertical__nav__item vertical__nav__item--with-border"><a href="#"><span class="icon icon--language"></span> Switch to English</a></li>
-        <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
+        <li class="vertical__nav__item vertical__nav__item--extend"><a href="#"><span class="icon icon--performer"></span>Profil info</a></li>
+        <li class="vertical__nav__item vertical__nav__item--with-border"><a href="#"><span class="icon icon--profile"></span>Legg til ny profil</a></li>
+        <li class="vertical__nav__item vertical__nav__item--with-border"><a href="#"><span class="icon icon--language"></span>Switch to English</a></li>
+        <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span>Logg ut</a></li>
       </ul>
     </nav>
-    
-    <section class="overlay">
-      <div class="box box--overlay">
-        <div class="message message--primary">
-          <p>Hvilken profil vil du begynne med?</p>
-        </div>
-        <div class="box__inner">
-          <a href="#" class="card card--with-border">
-            <span class="icon icon--performer icon--ui-gray"></span>
-            <h2 class="card__header">Utøver</h2>
-          </a><!--end .card -->
-          <a href="#" class="card card--with-border">
-            <span class="icon icon--producer icon--ui-gray"></span>
-            <h2 class="card__header">Personlig produsent</h2>
-          </a><!--end .card -->
-        </div>
-      </div>
-      <ol class="wizard-steps wizard-steps--overlay">
-        <li class="selected"><span>1. Personalia</span></li>
-        <li><span>2. Bankinformasjon</span></li>
-      </ol>
-    </section>
-    
     <main>
       <!--- Flash message --->
       <!-- <div class="flash-message-wrapper">
@@ -88,60 +66,43 @@
       </div> -->
       <section class="container">
         <div class="row">
-          <header class="masthead">
-            <span class="icon icon--yes"></span>
-          </header>
-        </div><!--end .row-->
+          <dialogue class="statusboard statusboard--secondary" role="alert">
+            <header class="statusboard__header">
+              <span class="icon icon--bank icon--large"></span>
+              <span>Din siste utbetaling var</span>
+              <em>205 693,50 kr</em>
+              <span>25.12.2015</span>
+            </header>
+            <footer class="statusboard__footer">
+              <p>Avspillingsåret 2017 er ikke avregnet enda</p>
+              <a href="#"><span class="icon icon--info"></span></a>
+            </footer>
+            <button class="statusboard__close">
+              <span>Toggle dialogue</span>
+            </button>
+          </dialogue>
+        </div><!--end .row -->
       </section>
         
-      <section id="performerinfo" class="container container--col-1">
-        <div class="section-header">
-          <header>
-            <h2>Penger</h2>
-          </header>
-        </div>
-        <div class="box box--summary">
-          <div class="box__section box__section--main">
-            <span>Til utbetaling</span>
-            <em>16 756,50 kr</em>
-          </div>
-          <div class="box__section">
-            <span>Forventet</span>
-            <em>25.12.2017</em>
-          </div>
-        </div>
-      </section>
-      
-      <div class="horizontal-rule horizontal-rule--with-arrow">
-        <hr>
-      </div>
+
         
-      <section id="discography-overview" class="container container--col-1">
-        <div class="section-header">
-          <header>
-            <h2>Diskografi</h2>
-          </header>
-        </div>
+      <section id="discography-overview" class="container container--padded container--col-1">
+        <header class="section__header">
+          <h1>Diskografi</h1>
+        </header>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-xs-6">
             <div class="card">
               <span class="icon icon--notes icon--primary"></span>
-              <h4>Innspillinger</h4>
+              <h4 class="card__header">Innspillinger</h4>
               <em>400</em>
             </div><!--end .card -->
           </div><!--end .col -->
-          <div class="col-xs-4">
+          <div class="col-xs-6">
             <div class="card">
               <span class="icon icon--album icon--primary"></span>
-              <h4>Album</h4>
+              <h4 class="card__header">Album</h4>
               <em>138</em>
-            </div><!--end .card -->
-          </div><!--end .col -->
-          <div class="col-xs-4">
-            <div class="card">
-              <span class="icon icon--performer icon--primary"></span>
-              <h4>A-Solist</h4>
-              <em>398</em>
             </div><!--end .card -->
           </div><!--end .col -->
         </div><!--end .row -->
@@ -152,11 +113,9 @@
       </div>
       
       <section id="discography-info" class="container container--col-1">
-        <div class="section-header">
-          <header>
-            <h2>Musikk profil</h2>
-          </header>
-        </div>
+        <header class="section__header">
+          <h2>Musikk profil</h2>
+        </header>
         <form class="form form--summary">
           <label class="form__label form__label--block"><span>Gruppe</span>
             <input class="form__input" type="text" value="A-ha" disabled>
