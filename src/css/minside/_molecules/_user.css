@@ -27,7 +27,7 @@
   border-bottom: 2px solid var(--gramo-purple);
 }
 
-.profile--producer + nav .user {
+.profile--contact + nav .user {
   background: color(var(--gramo-green) tint(85%));
   border-bottom: 2px solid var(--gramo-green);
 }

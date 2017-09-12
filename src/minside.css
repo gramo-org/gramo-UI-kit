@@ -5018,7 +5018,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   background:#a41681;
 }
 
-.profile--producer .nav-toggle{
+.profile--contact .nav-toggle{
   background:#50bf9e;
 }
 
@@ -5141,7 +5141,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   border-bottom:2px solid #a41681;
 }
 
-.profile--producer + nav .user{
+.profile--contact + nav .user{
   background:rgb(229, 245, 240);
   border-bottom:2px solid #50bf9e;
 }
