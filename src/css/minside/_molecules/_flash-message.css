@@ -1,12 +1,11 @@
 /* Min Side */
 .flash-message-wrapper {
-  position: relative;
-  left: auto;
-  z-index: 1;
+  left: 0;
+  z-index: 2;
 }
 
 .flash-message {
-  padding: 1.5rem 1rem;
+  padding: 1.75rem 1rem;
   display: flex;
   align-items: center;
   max-width: 100%;

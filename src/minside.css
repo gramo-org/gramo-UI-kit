@@ -2607,16 +2607,17 @@ hr, .horizontal-rule{
   display:flex;  
   margin:0;
   transition:all .25s ease;
+  position:fixed; 
+  top:0;
+  left:0;
+  right:0;
+  z-index:6;
 }
 
 @media (min-width: 960px){
 
   .flash-message-wrapper{
-    top:0;
     left:20rem;
-    right:0;
-    z-index:6;
-    position:fixed;
   }
 }
 
@@ -2639,19 +2640,11 @@ hr, .horizontal-rule{
   color:#fdfdfd;
   text-transform:uppercase;
   font-size:1.5rem;
-  margin-top:3.2rem;
   animation:fadeIn ease 1s;
   padding:.4rem 0;
   min-height:3.2rem;
   -ms-flex:1 0 100%;
   flex:1 0 100%;
-}
-
-@media (min-width: 960px){
-
-  .flash-message{
-    margin-top:0;
-  }
 }
 
 .flash-message.exiting{
@@ -4837,13 +4830,12 @@ input[type="checkbox"].form__input--toggle-visibility{
   padding-top:2rem;
 }
 .flash-message-wrapper{
-  position:relative;
-  left:auto;
-  z-index:1;
+  left:0;
+  z-index:2;
 }
 
 .flash-message{
-  padding:1.5rem 1rem;
+  padding:1.75rem 1rem;
   display:-ms-flexbox;
   display:flex;
   -ms-flex-align:center;
