@@ -154,9 +154,12 @@
 .file-upload--in-header {
   position: absolute;
   top: -3.7rem;
-  right: 300px;
+  right: 200px;
   z-index: 7;
   margin-top: 0;
+  @media (--desktop) {
+    right: 300px;
+  }
   
   .file-upload__toggle, .file-upload__toggle span {
     color: var(--slate-gray);
@@ -179,10 +182,7 @@
     &:before {
       @extend .comments__inner:before;
       top: 19px;
-      border-color: transparent transparent color(var(--light-gray) shade(3%));
-      @media (--desktop) {
-        border-color: transparent transparent var(--gramo-white);
-      }
+      border-color: transparent transparent var(--gramo-white);
     }
   }
 }
