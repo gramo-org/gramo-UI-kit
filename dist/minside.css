@@ -2611,7 +2611,7 @@ hr, .horizontal-rule{
   top:0;
   left:0;
   right:0;
-  z-index:6;
+  z-index:8;
 }
 
 @media (min-width: 960px){
