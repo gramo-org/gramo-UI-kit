@@ -6166,16 +6166,9 @@ tr > td:last-child{
 .file-upload--in-header{
   position:absolute;
   top:-3.7rem;
-  right:200px;
+  right:300px;
   z-index:7;
   margin-top:0;
-}
-
-@media (min-width: 960px){
-
-  .file-upload--in-header{
-    right:300px;
-  }
 }
 
 .file-upload--in-header .file-upload__toggle, .file-upload--in-header .file-upload__toggle span{
