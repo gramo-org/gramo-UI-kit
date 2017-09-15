@@ -4769,6 +4769,17 @@ input[type="checkbox"].form__input--toggle-visibility{
 .form__input--textarea{
   margin-bottom:1rem;
 }
+
+.form__input__errors{
+  position:relative;
+  top:-1rem;
+  font-size:1.5rem;
+  font-weight:600;
+}
+
+.form__input__errors p{
+  color:#ed6b6a;
+}
 .form__label{
   font-weight:600;
   color:#504f56;
