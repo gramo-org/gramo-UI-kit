@@ -70,3 +70,7 @@
     position: static;
   }
 }
+
+.heading--sub {
+  margin-bottom: 2.6rem;
+}
