@@ -4666,6 +4666,20 @@ hr.horizontal-rule{
 hr.horizontal-rule--in-list{
   margin:.6rem 0;
 }
+hr.horizontal-rule--choice{
+  overflow:visible;
+  text-align:center;
+}
+hr.horizontal-rule--choice:after{
+  content:attr(data-text);
+  position:relative;
+  top:-1.5rem;
+  font-size:1.8rem;
+  color:#a5a4ab;
+  background:#f9f9f9;
+  padding:0 0.75rem;
+  font-style:italic;
+}
 .badge{
   color:#504f56;
   padding:0.15rem 1rem;
