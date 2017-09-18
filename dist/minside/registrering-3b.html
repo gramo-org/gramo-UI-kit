@@ -31,27 +31,39 @@
       <section class="container container--branded">
         <div class="row">
           <div class="box box--login">
-            <div class="message message--primary">
-              <p>Vi har sendt deg en SMS med en engangskode.</p>
+            <div class="message message--error">
+              <p>Vi desverre ikke noe Gramo medlemskap i vårt system.</p>
+            </div>
+            
+            <div class="masthead">
+              <span class="icon icon--no"></span>
+              <p>Gramo har ikke nok opplysninger om deg. Vennligst ta kontakt med oss.</p>
             </div>
             <div class="box__inner">
-              <form class="form">
-                <label class="form__label form__label--block">Engangskode
-                  <input type="email" autofocus="" class="form__input form__input--block">
-                </label>
+              <div class="form">
                 <div class="form__section--action">
-                  <button class="btn btn btn--block btn--primary btn--large">
-                    Logg inn
-                  </button>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <a href="registrering-2.html" class="btn btn btn--secondary btn--large">
+                        Tilbake
+                      </a>
+                    </div>
+                    <div class="col-xs-8">
+                      <a href="ta-kontakt.html" class="btn btn btn--primary btn--large">
+                        Ta kontakt
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div><!-- end .row -->
         <ol class="wizard-steps wizard-steps--minimal">
           <li><span>1. Medlemskap</span></li>
-          <li><span>2. Profil</span></li>
-          <li class="selected"><span>3. Logg inn</span></li>
+          <li class="selected"><span>2. Profil</span></li>
+          <li><span>3. Logg inn</span></li>
+          
         </ol>
       </section>
     </main>

@@ -16,6 +16,7 @@
   }
   &--secondary {
     color: var(--slate-gray);
+    background: var(--light-gray);
   }
   &--solo {
     min-width: 200px;

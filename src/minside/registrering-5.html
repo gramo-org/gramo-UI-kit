@@ -32,7 +32,7 @@
         <div class="row">
           <div class="box box--login">
             <div class="message message--primary">
-              <p>Velg passord</p>
+              <p>Vennligst velg ditt passord for Minside</p>
             </div>
             <div class="box__inner">
               <form class="form">
@@ -46,14 +46,25 @@
                   <label class="form__label form__label--block">Gjenta passord
                     <input name="PasswordInput" type="password" value="one-two-three" class="form__input form__input--block">
                   </label>
-                  <p class="text--bold text--medium text--error text--left">Passordene må være like</p>
                   <label class="form__label--toggle"><input type="checkbox" class="form__input--toggle-visibility"></label>
+                  <div class="form__input__errors">
+                    <p class="text--left">Passordene må være like</p>
+                  </div>
                 </fieldset>
 
                 <div class="form__section--action">
-                  <button class="btn btn btn--block btn--primary btn--large">
-                    Gå til min side
-                  </button>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <a href="registrering.html" class="btn btn btn--secondary btn--large">
+                        Avbryt
+                      </a>
+                    </div>
+                    <div class="col-xs-8">
+                      <a href="registrering-6.html" class="btn btn btn--block btn--primary btn--large">
+                        Gå til min side
+                      </a>
+                    </div>
+                  </div><!-- end .row -->
                 </div>
               </form>
             </div>

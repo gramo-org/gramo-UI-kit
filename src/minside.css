@@ -4579,6 +4579,7 @@ main > section:first-of-type{
 }
 .btn--secondary{
   color:#504f56;
+  background:#ededed;
 }
 .btn--solo{
   min-width:200px;
