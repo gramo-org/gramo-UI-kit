@@ -5542,13 +5542,13 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   }
   
   .table--four td:nth-child(3){
-    -ms-flex-order:2;
-    order:2;
+    -ms-flex-order:4;
+    order:4;
   }
   
   .table--four td:nth-child(4){
-    -ms-flex-order:4;
-    order:4;
+    -ms-flex-order:2;
+    order:2;
   }
   
   .table--five td:nth-child(2){
@@ -5562,13 +5562,13 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   }
   
   .table--five td:nth-child(4){
-    -ms-flex-order:2;
-    order:2;
+    -ms-flex-order:4;
+    order:4;
   }
   
   .table--five td:nth-child(5){
-    -ms-flex-order:4;
-    order:4;
+    -ms-flex-order:2;
+    order:2;
   }
   
   .table--six td:nth-child(1){
@@ -5587,8 +5587,8 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   }
   
   .table--six td:nth-child(4){
-    -ms-flex-order:2;
-    order:2;
+    -ms-flex-order:6;
+    order:6;
   }
   
   .table--six td:nth-child(5){
@@ -5597,8 +5597,8 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   }
   
   .table--six td:nth-child(6){
-    -ms-flex-order:6;
-    order:6;
+    -ms-flex-order:2;
+    order:2;
   }
   
   .table--seven td:nth-child(1){
