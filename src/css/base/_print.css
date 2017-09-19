@@ -34,22 +34,14 @@ abbr[title]:after { content: " (" attr(title) ")"; }
 .drilldown-body {
   display: block!important;
 }
-.select, .form__label--date, .section-header__meta p {
-  /* display: none!important;  when printing reskontro we don't need select boxes and datepickers */
+
+/* Related to printing of restkontro */
+.tabs__nav {
+  display: none!important;
 }
 
-.section-header__meta {
-  width: 100%;
-  display: flex!important;
-  flex: 1!important;
-}
-
-.section-header__datepicker {
-  flex: 0 1 auto!important;
-  
-  .form__label--date {
-    max-width: 100px!important;
-  }
+.tabs__section--outline {
+  border: none!important;
 }
 
 .print-header__branding {
@@ -77,4 +69,8 @@ table {
     line-height: 1.3;
     text-align: right;
   }
+}
+
+[class*=--screen] {
+  display: none!important;
 }
