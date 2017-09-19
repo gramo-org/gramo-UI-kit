@@ -2232,6 +2232,13 @@ hr, .horizontal-rule{
   background:#504f56;
 }
 
+.badge--numeric--drilldown{
+  background:#d9d9dc;
+  color:#504f56;
+  position:relative;
+  left:-1rem;
+}
+
 .badge-wrapper{
   margin:0 0 0 1rem;
   -ms-flex-item-align:center;
@@ -3959,6 +3966,7 @@ tr > td:last-child{
 
   .table__cell--action{
     text-align:right;
+    position:relative;
   }
 }
 

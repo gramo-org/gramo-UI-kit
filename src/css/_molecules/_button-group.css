@@ -58,6 +58,7 @@
       top: 50%;
       bottom: 0;
       right: 1rem;
+      z-index: 1;
       /*margin: auto;*/
       margin-top: -1.6rem;
       /*height: 2.7rem;*/

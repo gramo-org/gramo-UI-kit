@@ -91,16 +91,19 @@ $(document).ready(function() {
       $(this).append(elements);
     });
     }
-  var tableCell = $('td.table__cell--action');
-  var buttons =
-    '<div class="btn-group btn-group--hover"><button class="btn btn--primary">Kommenter</button><button class="btn btn--secondary btn--small">Ignorer</button></div>';
-  appendElements(tableCell, buttons);
+  // var tableCell = $('td.table__cell--action');
+  // var buttons =
+  //   '<div class="btn-group btn-group--hover"><button class="btn btn--primary">Kommenter</button><button class="btn btn--secondary btn--small">Ignorer</button></div>';
+  // appendElements(tableCell, buttons);
   var button = '<div class="btn-group btn-group--hover"><a class="btn btn--primary">Se detaljer</a></div>';
   var tableSummaryCell = $('.table-summary__cell--action');
   appendElements(tableSummaryCell, button);
   var actions = '<div class="btn-group btn-group--hover"><a href="searchA-2.html" class="btn btn--secondary"><i class="fa fa-thumb-tack"></i></a><a href="searchA-2.html" class="btn btn--secondary"><i class="fa fa-share-square-o"></i></a></div>';
   var tableSuccessCell = $('.fake-table__row--success .fake-table__cell--action');
   appendElements(tableSuccessCell, actions);
+  var addButton = '<div class="btn-group btn-group--hover"><button class="btn btn--primary">Legg til</button></div>';
+  var tableDrilldown = $('.drilldown-toggle:not(.dd-close) .table__cell--action');
+  appendElements(tableDrilldown, addButton);
 
   //Expand table rows
   $('.fake-table__toggle-row').click(function(){

@@ -964,52 +964,114 @@
                       <span class="text--bold">Søk etter <span class="text--lower">Utøver</span></span>
                       <span class="break--inline"></span>eller
                       <span class="break--inline"></span>
-                      <a class="link--no-line">Legg til ukjent utøver</a>
+                      <a class="link--no-line" data-ember-action="" data-ember-action-12376="12376">Legg til ukjent utøver</a>
                     </div>
-                    <form action="" class="search__form no-margin--bottom">
-                      <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
-                      <button class="search__submit"></button>
-                    </form>
-                  </div><!--end .toolbar-->
-
-                  <table class="table table--fluid table--with-margin">
-                    <thead>
-                      <tr>
-                        <th>Navn</th>
-                        <th>Periode</th>
-                        <th>Instrument</th>
-                        <th>Nasjonalitet</th>
-                        <th class="text--center">Rolle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td data-label="Navn">John Bonham</td>
-                        <td data-label="Periode">1947 - 1981</td>
-                        <td data-label="Instrument">Trommer</td>
-                        <td data-label="Nasjonalitet">Storbritannia</td>
-                        <td data-label="Rolle" class="text--center">
-                          <div class="radio-group no-margin">
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>A</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>B</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>C</span>
-                              <span class="check"></span>
-                            </label>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                          <div>
+                            <form class="search__form">
+                              <input type="text" autocomplete="off" placeholder="Søk..." class="ember-text-field search__form__input search__form__input--fixed-width">
+                              <button type="submit" class="search__submit"></button>
+                            </form>
+                      <table class="table drilldown table--fluid table--selectable ">
+                        <thead>
+                          <tr>
+                              <th>Navn</th>
+                              <th>Artister</th>
+                              <th>Levetid</th>
+                              <th>Instrument</th>
+                              <th>Statsborgerskap</th>
+                            <th><!--already-selected--></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="drilldown-body drilldown-toggle" data-level="1">
+                            <td class="table__cell--truncated">
+                              <span class="badge badge--numeric badge--numeric--drilldown">4</span>
+                              Led Zeppelin
+                            </td>
+                            <td></td>
+                            <td>1968 - 1980</td>
+                            <td></td>
+                            <td>ENGLAND + NORDIRLAND</td>
+                            <td class="table__cell--action">
+                              <a href="#" class="table-row-toggle"></a>
+                            </td>
+                            
+                          </tr>
+                          <tr class="drilldown-body" data-level="2" style="display:none;">
+                            <td class="table__cell--truncated">
+                              ROBERT PLANT
+                            </td>
+                            <td class="table__cell--truncated">
+                            </td>
+                            <td class="table__cell--truncated">
+                              1948-
+                            </td>
+                            <td class="table__cell--truncated">
+                              VOKAL
+                            </td>
+                            <td class="table__cell--truncated">
+                              ENGLAND + NORDIRLAND
+                            </td>
+                            <td><!----></td>
+                          </tr>
+                          <tr class="drilldown-body" data-level="2" style="display:none;">
+                            <td class="table__cell--truncated">
+                              JAMES PAGE
+                            </td>
+                            <td class="table__cell--truncated">
+                              JIMMY PAGE
+                            </td>
+                            <td class="table__cell--truncated">
+                              1944-
+                            </td>
+                            <td class="table__cell--truncated">
+                              GITAR
+                            </td>
+                            <td class="table__cell--truncated">
+                              ENGLAND + NORDIRLAND
+                            </td>
+                            <td><!----></td>
+                          </tr>
+                          <tr class="drilldown-body" data-level="2" style="display:none;">
+                            <td class="table__cell--truncated">
+                              JOHN PAUL JONES
+                            </td>
+                            <td class="table__cell--truncated">
+                              LED ZEPPELIN
+                            </td>
+                            <td class="table__cell--truncated">
+                              1978-
+                            </td>
+                            <td class="table__cell--truncated">
+                              BASS GITAR
+                            </td>
+                            <td class="table__cell--truncated">
+                              ENGLAND + NORDIRLAND
+                            </td>
+                            <td><!----></td>
+                          </tr>
+                          <tr class="drilldown-body" data-level="2" style="display:none;">
+                            <td class="table__cell--truncated">
+                              JOHN HENRY BONHAM
+                            </td>
+                            <td class="table__cell--truncated">
+                              LED ZEPPELIN
+                            </td>
+                            <td class="table__cell--truncated">
+                              1948-
+                            </td>
+                            <td class="table__cell--truncated">
+                              TROMMER
+                            </td>
+                            <td class="table__cell--truncated">
+                              ENGLAND + NORDIRLAND
+                            </td>
+                            <td><!----></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
                 <section id="utover" class="container container--padded">
@@ -1056,8 +1118,14 @@
     </main>
   </div><!--End site-wrapper-->
 
-<script src="../js/vendor/jquery-1.11.3.min.js"></script>
-<script src="../js/default.js"></script>
+  <script src="../js/vendor/jquery-1.11.3.min.js"></script>
+  <script src="../js/vendor/drilldown.js"></script>
+  <script src="../js/default.js"></script>
+  <script>
+  $('.drilldown').drilldown({
+    speed: 'fast'
+  });
+  </script>
 
 </body>
 </html>
