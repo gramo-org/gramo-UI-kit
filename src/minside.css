@@ -2474,12 +2474,14 @@ hr, .horizontal-rule{
   -ms-flex:1 1 auto;
   flex:1 1 auto;
 }
-.user__name > a{
+.user > a{
   color:#fdfdfd;
   text-decoration:none;
+  text-transform:none;
 }
 .user__logout{
-  display:block;
+  display:inline-block;
+  margin-left:.5rem;
 }
 .user__avatar{
   max-width:4rem;
@@ -4340,9 +4342,15 @@ main > section:first-of-type{
 }
 
 .container--branded{
-  background:url("img/gramo-logo-black.png") no-repeat 50% 5rem;
-  background-size:160px;
-  padding-top:10rem!important;
+  background-image:none;
+  padding-top:0!important;
+}
+
+@media (min-width: 768px){
+
+  .container--branded{
+    padding-top:5rem!important;
+  }
 }
 
 .container--branded__heading{
@@ -4533,7 +4541,7 @@ main > section:first-of-type{
   display:flex;
   -ms-flex-direction:column;
   flex-direction:column;
-  min-height:calc(100vh - 102px);
+  min-height:calc(100vh - 302px);
 }
 @media (min-width: 768px){
 
@@ -6079,4 +6087,13 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .statusboard--primary.statusboard--minimise .statusboard__close{
   color:#fdfdfd;
   opacity:1;
+}
+.site-footer{
+  background:#ededed;
+  text-align:center;
+  padding:2rem;
+  border-top:1px solid #d9d9dc;
+}
+.site-footer p{
+  margin-top:1rem;
 }

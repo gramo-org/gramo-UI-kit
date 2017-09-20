@@ -1,0 +1,10 @@
+.site-footer {
+  background: var(--light-gray);
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--silver);
+  
+  p {
+    margin-top: 1rem;
+  }
+}

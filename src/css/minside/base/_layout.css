@@ -28,9 +28,11 @@ main > section:first-of-type {
 }
 
 .container--branded {
-  background: url("img/gramo-logo-black.png") no-repeat 50% 5rem;
-  background-size: 160px;
-  padding-top: 10rem!important;
+  /*background: url("img/gramo-logo-black.png") no-repeat 50% 5rem;
+  background-size: 160px;*/
+  background-image: none;
+  padding-top: 0!important;
+  @media (--tablet) { padding-top: 5rem!important; }
   
   &__heading {
     text-transform: none;

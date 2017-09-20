@@ -3595,12 +3595,14 @@ hr, .horizontal-rule{
   -ms-flex:1 1 auto;
   flex:1 1 auto;
 }
-.user__name > a{
+.user > a{
   color:#fdfdfd;
   text-decoration:none;
+  text-transform:none;
 }
 .user__logout{
-  display:block;
+  display:inline-block;
+  margin-left:.5rem;
 }
 .user__avatar{
   max-width:4rem;

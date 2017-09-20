@@ -12,13 +12,15 @@
     flex: 1 1 auto;
   }
 
-  &__name > a {
+  & > a {
     color: var(--gramo-white);
     text-decoration: none;
+    text-transform: none;
   }
 
   &__logout {
-    display: block;
+    display: inline-block;
+    margin-left: .5rem;
   }
 
   &__avatar {
