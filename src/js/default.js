@@ -270,6 +270,11 @@ $('.statusboard__close').click(function(){
   $(this).parent().toggleClass('statusboard--minimise');
 });
 
+$('.site-footer__close').click(function(e){
+  e.preventDefault();
+  $(this).parent().hide();
+})
+
 }); // end document ready
 
 //Affix page contents to top of viewport

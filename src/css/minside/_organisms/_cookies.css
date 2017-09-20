@@ -1,0 +1,15 @@
+.cookies {
+  p {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.cookies__header {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.cookies__footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}

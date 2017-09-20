@@ -3,8 +3,16 @@
   text-align: center;
   padding: 2rem;
   border-top: 1px solid var(--silver);
+  position: relative;
   
   p {
     margin-top: 1rem;
+  }
+  
+  &__close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    color: var(--slate-gray);
   }
 }

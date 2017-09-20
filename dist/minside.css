@@ -4396,11 +4396,11 @@ main > section:first-of-type{
 }
 @font-face{
   font-family:'minside-icons';
-  src:url('fonts/minside.eot?p1g1hx');
-  src:url('fonts/minside.eot?p1g1hx#iefix') format('embedded-opentype'),
-    url('fonts/minside.ttf?p1g1hx') format('truetype'),
-    url('fonts/minside.woff?p1g1hx') format('woff'),
-    url('fonts/minside.svg?p1g1hx#minside-icons') format('svg');
+  src:url('fonts/minside.eot?mweyr9');
+  src:url('fonts/minside.eot?mweyr9#iefix') format('embedded-opentype'),
+    url('fonts/minside.ttf?mweyr9') format('truetype'),
+    url('fonts/minside.woff?mweyr9') format('woff'),
+    url('fonts/minside.svg?mweyr9#minside') format('svg');
   font-weight:normal;
   font-style:normal;
 }
@@ -4439,6 +4439,9 @@ main > section:first-of-type{
 
 .icon--success, .icon--yay2:before, .icon--altok:before, .statusboard--success .icon{
   color:#50bf9e;
+}
+.icon--cookie:before{
+  content:"\e91a";
 }
 .icon--pencil:before{
   content:"\e919";
@@ -4540,6 +4543,10 @@ main > section:first-of-type{
 
 .icon--large{
   font-size:6rem;
+}
+
+.icon--medium{
+  font-size:4.5rem;
 }
 .box--login, .box--overlay{
   background:none;
@@ -6100,7 +6107,27 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   text-align:center;
   padding:2rem;
   border-top:1px solid #d9d9dc;
+  position:relative;
 }
 .site-footer p{
   margin-top:1rem;
+}
+.site-footer__close{
+  position:absolute;
+  right:1.5rem;
+  top:1.5rem;
+  color:#504f56;
+}
+.cookies p{
+  margin-bottom:1.2rem;
+}
+
+.cookies__header{
+  text-align:center;
+  padding:2rem 0;
+}
+
+.cookies__footer{
+  text-align:center;
+  padding-bottom:2rem;
 }
