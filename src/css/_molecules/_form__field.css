@@ -126,3 +126,9 @@
     margin: 3px 0 0 135px;
   }
 }
+
+.form__field--with-radio-group {
+  & > label > span {
+    margin-top: .75rem;
+  }
+}
