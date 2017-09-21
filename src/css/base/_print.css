@@ -56,12 +56,8 @@ table {
 .print-header {
   display: flex!important;
   justify-content: space-between;
-  
-  &__branding {
-    position: relative;
-    top: -.75rem;
-  }
-  
+  margin: 2rem 2rem 0 2rem;
+
   .print-header__address {
     flex: 0 1 250px;
     font-size: 1.2rem;
