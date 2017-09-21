@@ -6,6 +6,19 @@
     overflow-x: auto;
   }
 }
+/*** Mark staging with a red stripe to the left of the sidebar ***/
+.staging {
+  .site-wrapper:before {
+    content: '';
+    width: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--gramo-red);
+    z-index: 5;
+  }
+}
 
 main {
   flex: 1 0 100%;/* for push effect on mobile (previously flex: 1 1 100%;) */

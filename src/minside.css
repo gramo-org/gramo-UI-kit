@@ -1071,6 +1071,16 @@ address{
     overflow-x:auto;
   }
 }
+.staging .site-wrapper:before{
+  content:'';
+  width:8px;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  background:#ed6b6a;
+  z-index:5;
+}
 
 main{
   -ms-flex:1 0 100%;
