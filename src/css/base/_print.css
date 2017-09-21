@@ -67,6 +67,10 @@ table {
   }
 }
 
+.scrollable-area {
+  height: auto!important;
+}
+
 [class*=--screen] {
   display: none!important;
 }
