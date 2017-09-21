@@ -5192,6 +5192,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   flex:none;
   text-decoration:none;
   text-transform:none;
+  color:inherit;
 }
 .profile--performer + nav .user{
   background:rgb(217, 239, 249);

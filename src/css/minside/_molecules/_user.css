@@ -13,6 +13,7 @@
     flex: none;
     text-decoration: none;
     text-transform: none;
+    color: inherit;
   }
 }
 
