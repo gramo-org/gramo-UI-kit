@@ -1197,11 +1197,8 @@ table{
   display:flex!important;
   -ms-flex-pack:justify;
   justify-content:space-between;
+  margin:2rem 2rem 0 2rem;
 }
-.print-header__branding{
-    position:relative;
-    top:-.75rem;
-  }
 .print-header .print-header__address{
     -ms-flex:0 1 250px;
     flex:0 1 250px;
