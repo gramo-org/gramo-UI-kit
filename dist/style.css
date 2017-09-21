@@ -1188,25 +1188,13 @@ abbr[title]:after{ content:" (" attr(title) ")"; }
 .drilldown-body{
   display:block!important;
 }
-.select, .form__label--date, .section-header__meta p{
+.tabs__nav{
+  display:none!important;
 }
 
-.section-header__meta{
-  width:100%;
-  display:-ms-flexbox!important;
-  display:flex!important;
-  -ms-flex:1!important;
-  flex:1!important;
+.tabs__section--outline{
+  border:none!important;
 }
-
-.section-header__datepicker{
-  -ms-flex:0 1 auto!important;
-  flex:0 1 auto!important;
-}
-
-.section-header__datepicker .form__label--date{
-    max-width:100px!important;
-  }
 
 .print-header__branding{
   left:-1rem;
@@ -1219,11 +1207,8 @@ table{
   display:flex!important;
   -ms-flex-pack:justify;
   justify-content:space-between;
+  margin:2rem 2rem 0 2rem;
 }
-.print-header__branding{
-    position:relative;
-    top:-.75rem;
-  }
 .print-header .print-header__address{
     -ms-flex:0 1 250px;
     flex:0 1 250px;
@@ -1232,6 +1217,16 @@ table{
     line-height:1.3;
     text-align:right;
   }
+
+[class*=--screen]{
+  display:none!important;
+}
+}
+
+@media screen{
+  [class*=--print]{
+  display:none!important;
+}
 }
 @font-face{
   font-family:'icomoon';
