@@ -131,7 +131,7 @@
     }
     
     &::before {
-      content: 'Skjul';
+      content: attr(data-hide);
       text-transform: uppercase;
       font-size: 1.3rem;
       vertical-align: top;  
@@ -161,7 +161,7 @@
       top: auto;
       
       &::before {
-        content: 'Vis';
+        content: attr(data-show);
       }
       &::after {
         transform: rotate(0);

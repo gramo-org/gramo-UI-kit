@@ -6074,7 +6074,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   display:inline-block;
 }
 .statusboard__close::before{
-  content:'Skjul';
+  content:attr(data-hide);
   text-transform:uppercase;
   font-size:1.3rem;
   vertical-align:top;
@@ -6098,7 +6098,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   top:auto;
 }
 .statusboard--minimise .statusboard__close::before{
-  content:'Vis';
+  content:attr(data-show);
 }
 .statusboard--minimise .statusboard__close::after{
   transform:rotate(0);
