@@ -28,6 +28,7 @@ h2 .badge {
     @extend .badge--secondary;
     color: var(--slate-gray);
     display: none;
+    @media (--desktop) { display: inline-block; }
   }
   .active .badge {
     @extend .badge--primary;

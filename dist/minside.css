@@ -4736,6 +4736,12 @@ h2 .badge{
   color:#504f56;
   display:none;
 }
+@media (min-width: 960px){
+
+  .tabs__nav__item .badge{
+    display:inline-block;
+  }
+}
 .tabs__nav__item .active .badge{
   display:inline-block;
 }
