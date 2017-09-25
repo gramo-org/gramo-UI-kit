@@ -49,6 +49,11 @@
   }
 }
 
+.table__cell--transfer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .table__cell--transfer::after {
   content: "\e924";
   font-family: 'Icomoon';
