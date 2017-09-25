@@ -5230,8 +5230,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .search__form .search__submit{
-  padding-left:2rem;
-  padding-right:2rem;
+  padding:0 2rem;
   -ms-flex:0 0 auto;
   flex:0 0 auto;
 }
