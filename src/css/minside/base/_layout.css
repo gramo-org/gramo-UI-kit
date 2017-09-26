@@ -19,7 +19,7 @@ main > section:first-of-type {
 }
 
 .container--col-1 {
-  max-width: 800px;
+  max-width: 980px;
   margin: auto;
   
   &-min {
