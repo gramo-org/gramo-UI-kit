@@ -1218,6 +1218,10 @@ table{
     text-align:right;
   }
 
+.scrollable-area{
+  height:auto!important;
+}
+
 [class*=--screen]{
   display:none!important;
 }
