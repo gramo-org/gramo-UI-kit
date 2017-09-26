@@ -33,9 +33,8 @@ gulp.task('postcss', function() {
       customMedia(),
       color(),
       autoprefixer({
-        browsers: ['last 2 versions'],
+        browsers: ['> 5%', 'last 2 versions'],
         cascade: false,
-        remove: false
       }),
     ]))
     .pipe(gulp.dest('./src/'))
