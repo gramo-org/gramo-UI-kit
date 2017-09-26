@@ -8,7 +8,7 @@
 }
 
 .text--right {
-  @media (--desktop) { text-align: right!important; }
+  @media (--tablet) { text-align: right!important; }
 }
 
 .text--center {

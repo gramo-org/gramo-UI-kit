@@ -190,7 +190,7 @@ p.with-margin, .toolbar, .search__form, .form, .section-header, .section-header-
   text-align:left!important;
 }
 
-@media (min-width: 960px){
+@media (min-width: 768px){
 
   .text--right{
     text-align:right!important;
