@@ -33,7 +33,7 @@ gulp.task('postcss', function() {
       customMedia(),
       color(),
       autoprefixer({
-        browsers: ['Safari 10.0', 'last 2 versions'],
+        browsers: ['last 5 versions'],
         cascade: false,
       }),
     ]))

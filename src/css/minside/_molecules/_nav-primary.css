@@ -51,7 +51,7 @@
 
 .nav--primary {
   width: 30rem;
-  -webkit-transform: translateX(30rem);
+  visibility: hidden;
   transform: translateX(30rem);
   transition: all .25s ease;
   height: calc(100% - 5.1rem);
@@ -63,7 +63,7 @@
   top: 5.1rem;
   
   &.nav-visible {
-    -webkit-transform: translateX(0);
+    visibility: visible;
     transform: translateX(0);
     box-shadow: -3px 3px 5px 0px color(var(--ui-gray) a(50%));
   }

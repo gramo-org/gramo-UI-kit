@@ -58,8 +58,8 @@ input[type="radio"], input[type="checkbox"],
   
   &::-webkit-calendar-picker-indicator,
   &::-webkit-inner-spin-button {
-    opacity: 0;
-    -webkit-appearance: none;
+    opacity: 0!important;
+    -webkit-appearance: none!important;
   }
 
   &.placeholder {
