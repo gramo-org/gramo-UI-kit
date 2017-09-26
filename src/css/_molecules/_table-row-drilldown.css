@@ -13,6 +13,10 @@
     cursor: pointer;
   }
   
+  tr[data-level="2"] {
+    background: color(var(--table-head-background) tint(50%));
+  }
+  
   tr[data-level="2"] > td:first-child {
     @media (--tablet) { padding-left: 4rem; }
   }

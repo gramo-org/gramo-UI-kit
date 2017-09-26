@@ -3841,6 +3841,9 @@ main.pull .bucket{
 .table .dd-open, .table .dd-close{
   cursor:pointer;
 }
+.table tr[data-level="2"]{
+  background:rgb(246, 246, 246);
+}
 @media (min-width: 768px){
 
   .table tr[data-level="2"] > td:first-child{

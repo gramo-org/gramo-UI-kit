@@ -4335,18 +4335,6 @@ main > section:first-of-type{
   padding:2.5rem 1rem 0 1rem!important;
 }
 
-.container--col-1{
-  max-width:980px;
-  margin:auto;
-}
-
-@media (min-width: 768px){
-
-  .container--col-1-min{
-    min-width:800px;
-  }
-}
-
 .container--branded{
   background-image:none;
   padding-top:0!important;
@@ -4364,6 +4352,23 @@ main > section:first-of-type{
   margin:0 auto 1rem auto;
   max-width:400px;
   text-align:center;
+}
+
+.container--col-1{
+  max-width:840px;
+  margin:auto;
+}
+
+@media (min-width: 768px){
+
+  .container--col-1-min{
+    min-width:800px;
+  }
+}
+
+.container--for-tables{
+  max-width:980px;
+  margin:auto;
 }
 
 .container--col-3{
@@ -5315,6 +5320,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   background:#fdfdfd;
   -ms-flex:none;
   flex:none;
+  display:block;
   box-shadow:none;
   box-shadow:0 4px 0 0 #88c7d8;
   text-align:center;

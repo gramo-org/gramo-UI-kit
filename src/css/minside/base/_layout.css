@@ -18,15 +18,6 @@ main > section:first-of-type {
   padding: 2.5rem 1rem 0 1rem!important;
 }
 
-.container--col-1 {
-  max-width: 980px;
-  margin: auto;
-  
-  &-min {
-    @media (--tablet) { min-width: 800px; }
-  }
-}
-
 .container--branded {
   /*background: url("img/gramo-logo-black.png") no-repeat 50% 5rem;
   background-size: 160px;*/
@@ -40,6 +31,20 @@ main > section:first-of-type {
     max-width: 400px;
     text-align: center;
   }
+}
+
+.container--col-1 {
+  max-width: 840px;
+  margin: auto;
+  
+  &-min {
+    @media (--tablet) { min-width: 800px; }
+  }
+}
+
+.container--for-tables {
+  max-width: 980px;
+  margin: auto;
 }
 
 .container--col-3 {
