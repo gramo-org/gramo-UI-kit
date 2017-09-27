@@ -4520,6 +4520,7 @@ main{
   flex:1 1 auto;
   position:relative;
   overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
 }
 
 main > section:first-of-type{
