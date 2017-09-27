@@ -5618,6 +5618,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .help__inner{
   visibility:hidden;
   position:absolute;
+  box-shadow:0px 0px 3px rgba(0,0,0,0.4);
   bottom:6.4rem;
   right:2rem;
   left:2rem;
