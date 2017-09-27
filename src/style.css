@@ -2421,13 +2421,6 @@ hr, .horizontal-rule{
   background:#504f56;
 }
 
-.badge--numeric--drilldown{
-  background:#d9d9dc;
-  color:#504f56;
-  position:relative;
-  left:-1rem;
-}
-
 .badge-wrapper{
   margin:0 0 0 1rem;
   -webkit-align-self:center;
@@ -4023,7 +4016,7 @@ main.pull .bucket{
   cursor:pointer;
 }
 .table tr[data-level="2"]{
-  background:rgb(246, 246, 246);
+  background:rgb(242, 242, 243);
 }
 @media (min-width: 768px){
 

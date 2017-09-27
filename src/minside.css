@@ -2325,13 +2325,6 @@ hr, .horizontal-rule{
   background:#504f56;
 }
 
-.badge--numeric--drilldown{
-  background:#d9d9dc;
-  color:#504f56;
-  position:relative;
-  left:-1rem;
-}
-
 .badge-wrapper{
   margin:0 0 0 1rem;
   -webkit-align-self:center;
@@ -5295,6 +5288,8 @@ input[type="checkbox"].form__input--toggle-visibility{
   font-family:'minside-icons';
   font-size:1.4rem;
   margin-left:1rem;
+  position:relative;
+  top:-2px;
 }
 
 .nav-toggle[aria-expanded="true"]::after{
@@ -5302,6 +5297,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   font-size:2rem;
   line-height:1.2;
   margin-left:.4rem;
+  top:1px;
 }
 
 .profile--performer .nav-toggle{

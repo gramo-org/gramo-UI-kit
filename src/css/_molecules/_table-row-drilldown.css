@@ -14,7 +14,7 @@
   }
   
   tr[data-level="2"] {
-    background: color(var(--table-head-background) tint(50%));
+    background: color(var(--silver) tint(65%));
   }
   
   tr[data-level="2"] > td:first-child {

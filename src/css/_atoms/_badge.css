@@ -130,13 +130,6 @@
     color: var(--gramo-white);
     background: var(--slate-gray);
   }
-  
-  &--drilldown {
-    background: var(--silver);
-    color: var(--slate-gray);
-    position: relative;
-    left: -1rem;
-  }
 }
 
 .badge-wrapper {
