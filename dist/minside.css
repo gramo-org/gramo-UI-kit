@@ -5639,7 +5639,13 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   -webkit-flex:1;
   -ms-flex:1;
   flex:1;
-  margin:.5rem 0 0 1rem;
+  margin:.5rem 0 0 .5rem;
+}
+@media (min-width: 768px){
+
+  .site-header__branding{
+    margin-left:1rem;
+  }
 }
 .site-header__profile-type{
   margin-left:0.5rem;

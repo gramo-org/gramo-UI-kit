@@ -3492,6 +3492,7 @@ hr, .horizontal-rule{
   display:inline-block;
   width:auto;
   border-radius:2px;
+  padding:0.5rem;
 }
 @media (min-width: 768px){
 

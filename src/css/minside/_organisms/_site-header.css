@@ -15,7 +15,10 @@
   &__branding {
     display: block;
     flex: 1;
-    margin: .5rem 0 0 1rem;
+    margin: .5rem 0 0 .5rem;
+    @media (--tablet) {
+      margin-left: 1rem;
+    }
   }
   
   &__profile-type {
