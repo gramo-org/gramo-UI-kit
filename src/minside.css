@@ -5640,7 +5640,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   -webkit-flex:1;
   -ms-flex:1;
   flex:1;
-  margin:.5rem 0 0 .5rem;
+  margin:.5rem 0 0 0;
 }
 @media (min-width: 768px){
 

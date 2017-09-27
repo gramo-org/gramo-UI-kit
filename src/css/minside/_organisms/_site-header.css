@@ -15,7 +15,7 @@
   &__branding {
     display: block;
     flex: 1;
-    margin: .5rem 0 0 .5rem;
+    margin: .5rem 0 0 0;
     @media (--tablet) {
       margin-left: 1rem;
     }
