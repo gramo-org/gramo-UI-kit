@@ -5612,6 +5612,54 @@ a.card.active, a.card:hover{
 a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hover .card__header{
   color:inherit;
 }
+.help{
+  position:relative;
+}
+.help__inner{
+  position:absolute;
+  bottom:6.4rem;
+  right:2rem;
+  left:2rem;
+  width:auto;
+  border:0;
+  background:#ededed;
+  margin:0;
+  padding:2rem;
+  border-radius:1px;
+  z-index:2;
+}
+@media (min-width: 768px){
+
+  .help__inner{
+    bottom:2rem;
+    left:auto;
+  }
+}
+.help__inner .btn{
+  margin-top:1rem;
+}
+.help__toggle{
+  position:absolute;
+  right:2rem;
+  bottom:2rem;
+  background:#50bf9e;
+  padding:1rem;
+  color:#fdfdfd;
+  text-decoration:none;
+  text-transform:uppercase;
+  border-radius:1px;
+  font-weight:600;
+  z-index:2;
+}
+.help__toggle:after{
+  content:attr(data-open);
+}
+.help--is-visible .help__inner{
+  display:block;
+}
+.help--is-visible .help__toggle::after{
+  content:attr(data-close);
+}
 .site-header{
   position:relative;
   left:0;

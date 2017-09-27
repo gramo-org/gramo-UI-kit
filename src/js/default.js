@@ -275,6 +275,11 @@ $('.site-footer__close').click(function(e){
   $(this).parent().hide();
 })
 
+$('.help__toggle').click(function(e){
+  e.preventDefault();
+  $(this).parent().toggleClass('help--is-visible');
+});
+
 }); // end document ready
 
 //Affix page contents to top of viewport
