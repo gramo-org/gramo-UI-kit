@@ -5618,7 +5618,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .help__inner{
   visibility:hidden;
   position:absolute;
-  box-shadow:0px 0px 3px rgba(0,0,0,0.4);
+  box-shadow:0px 0px 1px rgba(0,0,0,0.4);
   bottom:6.4rem;
   right:2rem;
   left:2rem;
@@ -5651,7 +5651,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   text-transform:uppercase;
   border-radius:1px;
   font-weight:600;
-  z-index:2;
+  z-index:1;
 }
 .help__toggle:after{
   content:attr(data-open);
@@ -5659,7 +5659,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .help--is-visible .help__inner{
   display:block;
   visibility:visible;
-  z-index:2;
+  z-index:1;
 }
 .help--is-visible .help__toggle::after{
   content:attr(data-close);
