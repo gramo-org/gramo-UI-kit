@@ -2,6 +2,7 @@
   position: relative;
   
   &__inner {
+    visibility: hidden;
     position: absolute;
     bottom: 6.4rem;
     right: 2rem;
@@ -12,7 +13,7 @@
     margin: 0;
     padding: 2rem;
     border-radius: 1px;
-    z-index: 2;
+    z-index: -1;
     @media (--tablet) { bottom: 2rem; left: auto; }
     
     .btn {
@@ -41,6 +42,8 @@
   &--is-visible {
     .help__inner {
       display: block;
+      visibility: visible;
+      z-index: 2;
     }
     .help__toggle::after {
       content: attr(data-close);
