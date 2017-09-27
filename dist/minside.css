@@ -5289,7 +5289,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   font-size:1.4rem;
   margin-left:1rem;
   position:relative;
-  top:-2px;
+  top:0;
 }
 
 .nav-toggle[aria-expanded="true"]::after{
