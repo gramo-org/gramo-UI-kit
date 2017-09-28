@@ -41,7 +41,7 @@
   }
   
   &--is-visible,
-  &--in-inline {
+  &--is-inline {
     .help__inner {
       display: block;
       visibility: visible;
