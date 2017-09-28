@@ -6581,17 +6581,21 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .site-footer{
   background:#ededed;
   text-align:center;
-  padding:2rem;
+  padding:1rem;
   border-top:1px solid #d9d9dc;
   position:relative;
 }
 .site-footer p{
-  margin-top:1rem;
+  margin-top:.5rem;
+  font-size:1.4rem;
+}
+.site-footer p a{
+  margin-left:.5rem;
 }
 .site-footer__close{
   position:absolute;
-  right:1.5rem;
-  top:1.5rem;
+  right:1rem;
+  top:1rem;
   color:#504f56;
 }
 .cookies p{

@@ -1,18 +1,23 @@
 .site-footer {
   background: var(--light-gray);
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   border-top: 1px solid var(--silver);
   position: relative;
   
   p {
-    margin-top: 1rem;
+    margin-top: .5rem;
+    font-size: 1.4rem;
+    
+    a {
+      margin-left: .5rem;
+    }
   }
   
   &__close {
     position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
+    right: 1rem;
+    top: 1rem;
     color: var(--slate-gray);
   }
 }
