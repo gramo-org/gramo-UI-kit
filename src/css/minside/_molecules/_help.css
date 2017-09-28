@@ -40,7 +40,8 @@
     }
   }
   
-  &--is-visible {
+  &--is-visible,
+  &--in-inline {
     .help__inner {
       display: block;
       visibility: visible;
@@ -48,6 +49,18 @@
     }
     .help__toggle::after {
       content: attr(data-close);
+    }
+  }
+}
+
+.help--is-inline .help__inner {
+  position: static;
+  
+  a {
+    @media (--tablet) { 
+      position: absolute; 
+      right: 2rem;
+      bottom: 2rem;
     }
   }
 }

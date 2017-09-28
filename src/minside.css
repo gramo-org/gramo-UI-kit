@@ -5727,13 +5727,26 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .help__toggle:after{
   content:attr(data-open);
 }
-.help--is-visible .help__inner{
+.help--is-visible .help__inner, .help--in-inline .help__inner{
   display:block;
   visibility:visible;
   z-index:1;
 }
-.help--is-visible .help__toggle::after{
+.help--is-visible .help__toggle::after, .help--in-inline .help__toggle::after{
   content:attr(data-close);
+}
+
+.help--is-inline .help__inner{
+  position:static;
+}
+
+@media (min-width: 768px){
+
+  .help--is-inline .help__inner a{
+    position:absolute;
+    right:2rem;
+    bottom:2rem;
+  }
 }
 .site-header{
   position:relative;
