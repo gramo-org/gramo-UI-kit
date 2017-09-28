@@ -52,6 +52,10 @@
   }
 }
 
+.help--is-inline {
+  margin-bottom: 2rem
+}
+
 .help--is-inline .help__inner {
   position: static;
   display: block;
