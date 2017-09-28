@@ -1,7 +1,7 @@
 .site-footer {
   background: var(--light-gray);
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 3rem;
   border-top: 1px solid var(--silver);
   position: relative;
   

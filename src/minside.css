@@ -6581,7 +6581,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .site-footer{
   background:#ededed;
   text-align:center;
-  padding:1rem;
+  padding:1rem 3rem;
   border-top:1px solid #d9d9dc;
   position:relative;
 }
