@@ -2343,6 +2343,68 @@ hr, .horizontal-rule{
   cursor:-webkit-grab;
   cursor:grab;
 }
+@-webkit-keyframes sk-stretchdelay{
+  0%, 40%, 100%{
+    -webkit-transform:scaleY(0.4);
+    transform:scaleY(0.4);
+  }
+  20%{
+    -webkit-transform:scaleY(1.0);
+    transform:scaleY(1.0);
+  }
+}
+@keyframes sk-stretchdelay{
+  0%, 40%, 100%{
+    -webkit-transform:scaleY(0.4);
+    transform:scaleY(0.4);
+  }
+  20%{
+    -webkit-transform:scaleY(1.0);
+    transform:scaleY(1.0);
+  }
+}
+
+.spinner{
+  margin:100px auto;
+  width:50px;
+  height:44px;
+  text-align:center;
+  font-size:10px;
+}
+
+.spinner > div{
+  background-color:#88c7d8;
+  height:100%;
+  width:0.2rem;
+  display:inline-block;
+  -webkit-animation:sk-stretchdelay 1.2s infinite ease-in-out;
+  animation:sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .spinner__rect2{
+  -webkit-animation-delay:-1.1s;
+  animation-delay:-1.1s;
+}
+
+.spinner .spinner__rect3{
+  -webkit-animation-delay:-1.0s;
+  animation-delay:-1.0s;
+}
+
+.spinner .spinner__rect4{
+  -webkit-animation-delay:-0.9s;
+  animation-delay:-0.9s;
+}
+
+.spinner .spinner__rect5{
+  -webkit-animation-delay:-0.8s;
+  animation-delay:-0.8s;
+}
+
+.spinner--minimal{
+  margin:0 auto;
+  height:25px;
+}
 .searchable-list{
   display:inline-block;
   position:relative;
@@ -5050,6 +5112,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 
 .form__input__errors p{
   color:#ed6b6a;
+  text-align:left;
 }
 .form__label{
   font-weight:600;

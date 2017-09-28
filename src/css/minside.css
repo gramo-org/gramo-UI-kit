@@ -28,6 +28,7 @@
 @import url('_atoms/_toolbar.css');
 @import url('_atoms/_badge.css');
 @import url('_atoms/_drag-handle.css');
+@import url('_atoms/_spinner.css');
 
 /*Molecules*/
 @import url('_molecules/_searchable-list.css');
