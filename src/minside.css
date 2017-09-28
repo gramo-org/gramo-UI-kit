@@ -4588,7 +4588,7 @@ main > section:first-of-type{
 
 .container--branded{
   background-image:none;
-  padding-top:0!important;
+  padding-top:3rem!important;
 }
 
 @media (min-width: 768px){
