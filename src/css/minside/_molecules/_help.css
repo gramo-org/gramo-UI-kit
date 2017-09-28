@@ -40,8 +40,7 @@
     }
   }
   
-  &--is-visible,
-  &--is-inline {
+  &--is-visible {
     .help__inner {
       display: block;
       visibility: visible;
@@ -55,6 +54,9 @@
 
 .help--is-inline .help__inner {
   position: static;
+  display: block;
+  visibility: visible;
+  z-index: 1;
   
   a {
     @media (--tablet) { 
