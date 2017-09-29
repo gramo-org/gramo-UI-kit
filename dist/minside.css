@@ -4800,6 +4800,24 @@ main > section:first-of-type{
   content:"\e928";
 }
 
+.icon--pagination-next:before{
+	content:"\e909";
+  font-size:inherit;
+  display:block;
+  -webkit-transform:rotate(-90deg);
+  -ms-transform:rotate(-90deg);
+  transform:rotate(-90deg);
+}
+
+.icon--pagination-previous:before{
+	content:"\e909";
+  font-size:inherit;
+  display:block;
+  -webkit-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+
 .icon--large{
   font-size:6rem;
 }
