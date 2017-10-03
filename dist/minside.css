@@ -1303,11 +1303,11 @@ table{
 }
 @font-face{
   font-family:'icomoon';
-  src:url('fonts/icomoon.eot?t6f6op');
-  src:url('fonts/icomoon.eot?t6f6op#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?t6f6op') format('truetype'),
-    url('fonts/icomoon.woff?t6f6op') format('woff'),
-    url('fonts/icomoon.svg?t6f6op#icomoon') format('svg');
+  src:url('fonts/icomoon.eot?6on5zt');
+  src:url('fonts/icomoon.eot?6on5zt#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6on5zt') format('truetype'),
+    url('fonts/icomoon.woff?6on5zt') format('woff'),
+    url('fonts/icomoon.svg?6on5zt#icomoon') format('svg');
   font-weight:normal;
   font-style:normal;
 }
@@ -1320,6 +1320,9 @@ table{
 	font-variant:normal;
 	text-transform:none;
   display:inline-block;
+}
+.icon--refresh:before{
+  content:"\e924";
 }
 .icon--transfer:before{
   content:"\e924";
@@ -3433,6 +3436,10 @@ input[type="text"].search__form__input--large{
 
   .form__fieldset--labels-aligned .form__label{
   min-width:80px;
+}
+
+  .form__fieldset--has-error{
+  border:2px solid #ed6b6a;
 }
 
   .form__section--action{
@@ -5942,6 +5949,10 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 }
 @media only screen and (max-width: 768px),
 (min-device-width: 968px) and (max-device-width: 1024px){
+  
+  table a{
+    text-decoration:none;
+  }
   
   .table--list tr{
     display:-webkit-flex;
