@@ -624,9 +624,12 @@
                       <fieldset class="form__fieldset">
                         <div class="form__field">
                           <label class="form__label">
-                            <span>IPN ID</span>
+                            <span>IPN</span>
                             <input type="text" value="USJT10300113" class="form__input form__input--130" disabled>
                           </label>
+                          <div class="form__field__suggestion">
+                            <i class="icon icon--refresh v-align--middle"></i> <span class="text--light text--small"> Siste oppdatert med IPD: 26.09.2017</span>
+                          </div>
                         </div>
                       </fieldset>
                     </form>
@@ -635,12 +638,17 @@
                       <header>
                         <h3 data-type="member">Medlemskapsinfo</h3>
                       </header>
+                      <div class="section-header__toolbar">
+                            <button class="btn btn--secondary">
+                              Synk med IPD
+                            </button>
+                      </div>
                     </div>
-                    <a class="link--no-line link--add">
+                    <!-- <a class="link--no-line link--add">
                       Legg til medlemskap
-                    </a>
+                    </a> -->
                     <form class="form">
-                      <fieldset class="form__fieldset form__fieldset--group">
+                      <fieldset class="form__fieldset form__fieldset--group form__fieldset--has-error">
                         <div class="form__field">
                           <label class="form__label form__label--required">
                             <span>Vederlagsbyrå</span>

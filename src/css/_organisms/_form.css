@@ -34,6 +34,10 @@
         min-width: 80px;
       }
     }
+    
+    &--has-error {
+      border: 2px solid var(--gramo-red);
+    }
   }
 
   .form__section--action {
