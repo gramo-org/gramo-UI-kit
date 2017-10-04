@@ -134,7 +134,7 @@
   .vertical__nav__item--extend {
     flex: 1 0 auto;
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
     
     a {
       border-top: 1px solid var(--silver);

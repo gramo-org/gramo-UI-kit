@@ -5512,9 +5512,9 @@ input[type="checkbox"].form__input--toggle-visibility{
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
-  -webkit-justify-content:flex-end;
-  -ms-flex-pack:end;
-  justify-content:flex-end;
+  -webkit-align-items:flex-end;
+  -ms-flex-align:end;
+  align-items:flex-end;
 }
 
 .nav--primary .vertical__nav__item--extend a{
