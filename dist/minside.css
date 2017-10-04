@@ -5495,10 +5495,6 @@ input[type="checkbox"].form__input--toggle-visibility{
   border-top:1px solid #d9d9dc;
 }
 
-.nav--primary .vertical__nav__item--with-border{
-  border-top:1px solid #d9d9dc;
-}
-
 .nav--primary .vertical__nav .icon{
   font-size:2.5rem;
   margin-right:.5rem;
@@ -5518,7 +5514,8 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .nav--primary .vertical__nav__item--extend a{
-  border-top:1px solid #d9d9dc;
+  border:1px solid #d9d9dc;
+  border-width:1px 0;
   -webkit-flex:1;
   -ms-flex:1;
   flex:1;

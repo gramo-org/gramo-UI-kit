@@ -112,15 +112,10 @@
     }
     
     li:first-child {
-      /*border-bottom: 1px solid var(--silver);*/
       margin-bottom: 1.2rem;
     }
     
     li:last-child {
-      border-top: 1px solid var(--silver);
-    }
-    
-    &__item--with-border {
       border-top: 1px solid var(--silver);
     }
     
@@ -137,7 +132,8 @@
     align-items: flex-end;
     
     a {
-      border-top: 1px solid var(--silver);
+      border: 1px solid var(--silver);
+      border-width: 1px 0;
       flex: 1;
     }
   }
