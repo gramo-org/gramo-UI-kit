@@ -5495,12 +5495,6 @@ input[type="checkbox"].form__input--toggle-visibility{
   border-top:1px solid #d9d9dc;
 }
 
-.nav--primary .vertical__nav__item--extend{
-  -webkit-flex:1 0 auto;
-  -ms-flex:1 0 auto;
-  flex:1 0 auto;
-}
-
 .nav--primary .vertical__nav__item--with-border{
   border-top:1px solid #d9d9dc;
 }
@@ -5509,6 +5503,25 @@ input[type="checkbox"].form__input--toggle-visibility{
   font-size:2.5rem;
   margin-right:.5rem;
   margin-top:.2rem;
+}
+
+.nav--primary .vertical__nav__item--extend{
+  -webkit-flex:1 0 auto;
+  -ms-flex:1 0 auto;
+  flex:1 0 auto;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-justify-content:flex-end;
+  -ms-flex-pack:end;
+  justify-content:flex-end;
+}
+
+.nav--primary .vertical__nav__item--extend a{
+  border-top:1px solid #d9d9dc;
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1;
 }
 .user{
   background:none;
