@@ -19,6 +19,9 @@
     @media (--tablet) {
       margin-left: 1rem;
     }
+    img {
+      height: 100%;
+    }
   }
   
   &__profile-type {
