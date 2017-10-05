@@ -5457,7 +5457,9 @@ input[type="checkbox"].form__input--toggle-visibility{
   font-size:1.2rem;
 }
 
-.nav--primary .vertical__nav__divider{
+.nav--primary .vertical__nav__heading--colored{
+  margin:0;
+  padding:1.2rem 0 0 2rem;
 }
 
 .nav--primary .vertical__nav__item a{
@@ -5483,12 +5485,12 @@ input[type="checkbox"].form__input--toggle-visibility{
   color:#a5a4ab;
 }
 
-.nav--primary .vertical__nav li:first-child, .nav--primary .vertical__nav li:last-child{
-  background:#ededed;
+.nav--primary .vertical__nav__item--active a.active, .nav--primary .vertical__nav__item--active a.active .icon{
+  color:inherit;
 }
 
-.nav--primary .vertical__nav li:first-child{
-  margin-bottom:1.2rem;
+.nav--primary .vertical__nav li:last-child{
+  background:#ededed;
 }
 
 .nav--primary .vertical__nav li:last-child{
@@ -5527,7 +5529,6 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .user__name{
   margin-right:1rem;
-  color:#434D5A;
   -webkit-flex:1 0 auto;
   -ms-flex:1 0 auto;
   flex:1 0 auto;
@@ -5539,31 +5540,66 @@ input[type="checkbox"].form__input--toggle-visibility{
   flex:none;
   text-decoration:none;
   text-transform:none;
-  color:inherit;
 }
 .profile--performer + nav .user{
+  background:#0095da;
+}
+
+.profile--performer + nav .vertical__nav__item--active{
   background:rgb(217, 239, 249);
   border-bottom:2px solid #0095da;
 }
 
+.profile--performer + nav .vertical__nav__heading--colored{
+  background:rgb(217, 239, 249);
+}
 .profile--personal-producer + nav .user{
+  background:#a41681;
+}
+
+.profile--personal-producer + nav .vertical__nav__item--active{
   background:rgb(241, 220, 236);
   border-bottom:2px solid #a41681;
 }
 
+.profile--personal-producer + nav .vertical__nav__heading--colored{
+  background:rgb(241, 220, 236);
+}
 .profile--contact + nav .user{
+  background:#50bf9e;
+}
+
+.profile--contact + nav .vertical__nav__item--active{
   background:rgb(229, 245, 240);
   border-bottom:2px solid #50bf9e;
 }
 
+.profile--contact + nav .vertical__nav__heading--colored{
+  background:rgb(229, 245, 240);
+}
 .profile--agent + nav .user{
+  background:#ed6b6a;
+}
+
+.profile--agent + nav .vertical__nav__item--active{
   background:rgb(252, 233, 233);
   border-bottom:2px solid #ed6b6a;
 }
 
+.profile--agent + nav .vertical__nav__heading--colored{
+  background:rgb(252, 233, 233);
+}
 .profile--inheritance-party + nav .user{
+  background:#434D5A;
+}
+
+.profile--inheritance-party + nav .vertical__nav__item--active{
   background:rgb(227, 228, 230);
   border-bottom:2px solid #434D5A;
+}
+
+.profile--inheritance-party + nav .vertical__nav__heading--colored{
+  background:rgb(227, 228, 230);
 }
 .search{
   padding:1.2rem 0;

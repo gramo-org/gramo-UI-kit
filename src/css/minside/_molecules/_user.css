@@ -5,7 +5,6 @@
   
   &__name {
     margin-right: 1rem;
-    color: var(--ui-gray);
     flex: 1 0 auto;
     margin: 0;
   }
@@ -13,32 +12,75 @@
     flex: none;
     text-decoration: none;
     text-transform: none;
-    color: inherit;
   }
 }
 
-/*** Profile colors for user ***/
+/*** Profile colors for performer ***/
 .profile--performer + nav .user {
+  background: var(--gramo-blue);
+}
+
+.profile--performer + nav .vertical__nav__item--active {
   background: color(var(--gramo-blue) tint(85%));
   border-bottom: 2px solid var(--gramo-blue);
 }
 
+.profile--performer + nav .vertical__nav__heading--colored {
+  background: color(var(--gramo-blue) tint(85%));
+}
+
+/*** Profile colors for personal producer ***/
 .profile--personal-producer + nav .user {
+  background: var(--gramo-purple);
+}
+
+.profile--personal-producer + nav .vertical__nav__item--active {
   background: color(var(--gramo-purple) tint(85%));
   border-bottom: 2px solid var(--gramo-purple);
 }
 
+.profile--personal-producer + nav .vertical__nav__heading--colored {
+  background: color(var(--gramo-purple) tint(85%));
+}
+
+/*** Profile colors for contact ***/
 .profile--contact + nav .user {
+  background: var(--gramo-green);
+}
+
+.profile--contact + nav .vertical__nav__item--active {
   background: color(var(--gramo-green) tint(85%));
   border-bottom: 2px solid var(--gramo-green);
 }
 
+.profile--contact + nav .vertical__nav__heading--colored {
+  background: color(var(--gramo-green) tint(85%));
+}
+
+/*** Profile colors for agent ***/
 .profile--agent + nav .user {
+  background: var(--gramo-red);
+}
+
+.profile--agent + nav .vertical__nav__item--active {
   background: color(var(--gramo-red) tint(85%));
   border-bottom: 2px solid var(--gramo-red);
 }
 
+.profile--agent + nav .vertical__nav__heading--colored {
+  background: color(var(--gramo-red) tint(85%));
+}
+
+/*** Profile colors for agent ***/
 .profile--inheritance-party + nav .user {
+  background: var(--ui-gray);
+}
+
+.profile--inheritance-party + nav .vertical__nav__item--active {
   background: color(var(--ui-gray) tint(85%));
   border-bottom: 2px solid var(--ui-gray);
+}
+
+.profile--inheritance-party + nav .vertical__nav__heading--colored {
+  background: color(var(--ui-gray) tint(85%));
 }
