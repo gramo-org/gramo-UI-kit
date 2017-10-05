@@ -7,18 +7,18 @@
   height: 228px;
 
   &--primary {
-    background: var(--gramo-turkis);
+    background: color(var(--gramo-turkis) tint(60%));
     
-    .statusboard__header {
-      background: color(var(--gramo-turkis) tint(60%));
+    .statusboard__footer {
+      background: var(--gramo-turkis);
     }
   }
   
   &--secondary {
-    background: var(--silver);
+    background: color(var(--silver) tint(60%));
     
-    .statusboard__header {
-      background: color(var(--silver) tint(60%));
+    .statusboard__footer {
+      background: var(--silver);
     }
     
     .icon {

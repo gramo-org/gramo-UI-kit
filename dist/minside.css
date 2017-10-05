@@ -4647,9 +4647,9 @@ main > section:first-of-type{
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
+  -webkit-justify-content:flex-start;
+  -ms-flex-pack:start;
+  justify-content:flex-start;
   -webkit-align-items:center;
   -ms-flex-align:center;
   align-items:center;
@@ -6521,16 +6521,16 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   height:228px;
 }
 .statusboard--primary{
-  background:#88c7d8;
-}
-.statusboard--primary .statusboard__header{
   background:rgb(207, 233, 239);
 }
-.statusboard--secondary{
-  background:#d9d9dc;
+.statusboard--primary .statusboard__footer{
+  background:#88c7d8;
 }
-.statusboard--secondary .statusboard__header{
+.statusboard--secondary{
   background:rgb(240, 240, 241);
+}
+.statusboard--secondary .statusboard__footer{
+  background:#d9d9dc;
 }
 .statusboard--success{
   background:#50bf9e;
