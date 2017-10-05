@@ -7,7 +7,7 @@
   
   .form__input {
     margin-top: 0;
-    flex: 1;
+    flex: 1 1 auto;
     @media (--tablet) { max-width: 400px; }  
   }
   
