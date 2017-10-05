@@ -4632,7 +4632,7 @@ main > section:first-of-type{
 }
 
 .container--for-tables{
-  max-width:980px;
+  max-width:1080px;
   margin:auto;
 }
 
@@ -6002,6 +6002,12 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 
 .wizard-steps--overlay li.selected::after{
   color:#ededed;
+}
+@media (min-width: 960px){
+
+  th, td{
+    padding:1rem 2rem;
+  }
 }
 @media only screen and (max-width: 768px),
 (min-device-width: 968px) and (max-device-width: 1024px){
