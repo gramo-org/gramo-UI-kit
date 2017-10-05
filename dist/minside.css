@@ -5865,6 +5865,9 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
     margin-left:1rem;
   }
 }
+.site-header__branding img{
+  height:100%;
+}
 .site-header__profile-type{
   margin-left:0.5rem;
   position:relative;
