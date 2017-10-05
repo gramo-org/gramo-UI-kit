@@ -4570,6 +4570,13 @@ h4, .form__label{
   margin-bottom:2.6rem;
 }
 
+@media (min-width: 768px){
+
+  .show-on--mobile{
+    display:none;
+  }
+}
+
 .site-wrapper{
   -webkit-flex-direction:column;
   -ms-flex-direction:column;

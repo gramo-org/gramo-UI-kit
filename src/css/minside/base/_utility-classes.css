@@ -74,3 +74,7 @@
 .heading--sub {
   margin-bottom: 2.6rem;
 }
+
+.show-on--mobile {
+  @media (--tablet) { display: none; }
+}
