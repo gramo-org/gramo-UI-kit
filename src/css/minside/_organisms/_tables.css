@@ -167,11 +167,11 @@ only screen and (max-width: 768px),
     }
     
     td:nth-child(5) {
-      order: 5;
+      order: 3;
     }
     
     td:nth-child(6) {
-      order: 3;
+      order: 5;
     }
     
     td:nth-child(7) {

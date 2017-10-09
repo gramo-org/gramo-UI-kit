@@ -6220,15 +6220,15 @@ table a{
   }
   
   .table--seven td:nth-child(5){
-    -webkit-order:5;
-    -ms-flex-order:5;
-    order:5;
-  }
-  
-  .table--seven td:nth-child(6){
     -webkit-order:3;
     -ms-flex-order:3;
     order:3;
+  }
+  
+  .table--seven td:nth-child(6){
+    -webkit-order:5;
+    -ms-flex-order:5;
+    order:5;
   }
   
   .table--seven td:nth-child(7){
