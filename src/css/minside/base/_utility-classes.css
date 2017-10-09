@@ -10,6 +10,11 @@
   @media (--tablet) { text-align: center!important; }
 }
 
+.text--right-always {
+  text-align: right!important;
+  @media (--tablet) { text-align: right!important; }
+}
+
 .text--bold-on-mobile {
   font-weight: var(--semibold);
   @media (--tablet) { font-weight: normal; }

@@ -150,7 +150,8 @@
   
   /* Collapse/expand statusboard */
   &--minimise {
-    height: 45px;
+    height: 39px;
+    @media (--tablet) { height: 44px; }
     overflow: hidden;
     
     .statusboard__header {
