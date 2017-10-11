@@ -6375,7 +6375,6 @@ table a{
   padding-top:0;
 }
 .masthead{
-  position:relative;
   padding:2rem 1rem;
   text-align:center;
   width:100%;
@@ -6385,29 +6384,6 @@ table a{
 }
 .masthead .icon{
   font-size:6rem;
-}
-.masthead:before, .masthead:after{
-  content:'';
-  position:absolute;
-  width:0;
-  height:0;
-  border-style:solid;
-  border-color:transparent;
-  border-bottom:0;
-}
-.masthead:before{
-  margin-left:-10px;
-  border-top-color:rgb(206, 206, 209);
-  border-width:10px;
-  left:50%;
-  bottom:-10px;
-}
-.masthead:after{
-  margin-left:-9px;
-  border-top-color:#ededed;
-  border-width:9px;
-  left:50%;
-  bottom:-9px;
 }
 .masthead h1{
   margin:0;
