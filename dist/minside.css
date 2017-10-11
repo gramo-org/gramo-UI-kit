@@ -4601,6 +4601,14 @@ main{
   position:relative;
   overflow-y:auto;
   -webkit-overflow-scrolling:touch;
+  padding-bottom:5rem;
+}
+
+@media (min-width: 768px){
+
+  main{
+    padding-bottom:0;
+  }
 }
 
 main > section:first-of-type{
@@ -4677,6 +4685,9 @@ main > section:first-of-type{
   content:'';
   -webkit-animation:fadeIn ease 1s;
   animation:fadeIn ease 1s;
+}
+_:-ms-input-placeholder, :root .container--branded__heading{
+  width:400px;
 }
 @font-face{
   font-family:'minside-icons';
@@ -5803,7 +5814,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .help__toggle{
   position:absolute;
   right:2rem;
-  bottom:2rem;
+  bottom:1.5rem;
   background:#50bf9e;
   padding:1rem;
   color:#fdfdfd;

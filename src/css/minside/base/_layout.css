@@ -9,6 +9,8 @@ main {
   position: relative;/* need this to position inner content */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: 5rem;
+  @media (--tablet) { padding-bottom: 0; }
 }
 
 main > section:first-of-type {
@@ -20,8 +22,6 @@ main > section:first-of-type {
 }
 
 .container--branded {
-  /*background: url("img/gramo-logo-black.png") no-repeat 50% 5rem;
-  background-size: 160px;*/
   background-image: none;
   padding-top: 0!important;
   @media (--tablet) { padding-top: 5rem!important; }
@@ -74,4 +74,9 @@ main > section:first-of-type {
   content: '';
   @extend .overlay;
   animation: fadeIn ease 1s;
+}
+
+/*** width hack for ie10/1e11 in order to center .container--branded__heading ***/
+_:-ms-input-placeholder, :root .container--branded__heading {
+  width: 400px;
 }
