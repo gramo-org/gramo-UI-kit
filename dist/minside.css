@@ -4633,7 +4633,7 @@ main > section:first-of-type{
 
 .container--branded__heading{
   text-transform:none;
-  margin:0 auto 1rem auto;
+  margin:1rem auto;
   max-width:400px;
   text-align:center;
 }
