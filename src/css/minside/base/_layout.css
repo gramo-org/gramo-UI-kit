@@ -63,11 +63,14 @@ main > section:first-of-type {
   right: 0;
   bottom: 0;
   position: fixed;
-  z-index: 1;
-  padding: 1rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  z-index: 2;
+  padding: 0;
+  overflow-y: auto;
+  @media (--tablet) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .nav--primary.nav-visible ~ main::after {
