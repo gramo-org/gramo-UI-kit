@@ -4667,23 +4667,24 @@ main > section:first-of-type{
   top:0;
   right:0;
   bottom:0;
-  position:fixed;
-  z-index:3;
+  position:absolute;
+  z-index:2;
   padding:0;
   overflow-y:auto;
 }
 @media (min-width: 768px){
 
   .overlay, .nav--primary.nav-visible ~ main::after{
+    padding-top:5%;
     display:-webkit-flex;
     display:-ms-flexbox;
     display:flex;
     -webkit-justify-content:flex-start;
     -ms-flex-pack:start;
     justify-content:flex-start;
-    -webkit-align-items:center;
-    -ms-flex-align:center;
-    align-items:center;
+    -webkit-align-items:flex-start;
+    -ms-flex-align:start;
+    align-items:flex-start;
   }
 }
 
@@ -5244,8 +5245,9 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .flash-message-wrapper{
   left:0;
+  top:0;
   z-index:2;
-  top:5rem;
+  position:absolute;
 }
 
 .flash-message{
@@ -5463,7 +5465,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   background:#fdfdfd;
   position:fixed;
   overflow:auto;
-  z-index:2;
+  z-index:3;
   right:0;
   top:5.1rem;
 }

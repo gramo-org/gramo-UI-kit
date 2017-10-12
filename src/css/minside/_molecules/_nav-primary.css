@@ -61,7 +61,7 @@
   background: var(--gramo-white);
   position: fixed;
   overflow: auto;
-  z-index: 2;
+  z-index: 3;
   right: 0;
   top: 5.1rem;
   

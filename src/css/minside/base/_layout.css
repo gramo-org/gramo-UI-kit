@@ -62,14 +62,15 @@ main > section:first-of-type {
   top: 0;
   right: 0;
   bottom: 0;
-  position: fixed;
-  z-index: 3;
+  position: absolute;
+  z-index: 2;
   padding: 0;
   overflow-y: auto;
   @media (--tablet) {
+    padding-top: 5%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
