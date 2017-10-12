@@ -5777,6 +5777,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   border:1px solid #d9d9dc;
   margin:1rem 0 2rem 0;
   box-shadow:none;
+  padding:1rem;
 }
 .card--with-border:last-child{
   margin-bottom:3rem;
