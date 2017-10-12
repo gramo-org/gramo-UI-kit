@@ -4912,6 +4912,17 @@ _:-ms-input-placeholder, :root .container--branded__heading{
 .box--login .box__inner .icon, .box--overlay .box__inner .icon{
   font-size:5rem;
 }
+.box--login .box__inner--centered, .box--overlay .box__inner--centered{
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+}
+@media (min-width: 768px){
+
+  .box--login .box__inner--centered, .box--overlay .box__inner--centered{
+    padding-top:8rem;
+  }
+}
 
 .box__header{
   text-align:center;
