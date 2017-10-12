@@ -5,8 +5,11 @@
   width: 100%;
   margin-top: .4rem;
   margin-bottom: 0;
-  -webkit-appearance: none;
-  border-radius:0;
+  
+  &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="tel"] {
+    -webkit-appearance: none;
+    border-radius:0;
+  }
 }
 
 .form__input[type="date"], .form__input--date {
