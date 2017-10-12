@@ -10,6 +10,8 @@
     -webkit-appearance: none;
     border-radius:0;
   }
+  /*** Remove 'x' from inputs on IE ***/
+  &::-ms-clear {  display: none; width : 0; height: 0; }
 }
 
 .form__input[type="date"], .form__input--date {
@@ -17,11 +19,17 @@
   color: inherit;
   padding: 2.3rem .75rem;
   background-position: center right 1rem;
-  @media (--tablet) { max-width: 200px; }  
+  @media (--tablet) { max-width: 200px; }
 }
 /* Hack to vertically center text in input on ie/edge */
 _:-ms-lang(x), .form__input[type="date"] {
   line-height: 0;
+}
+/* Hack to fix heights of date inputs in IE10/11 */
+_:-ms-input-placeholder, :root .form__input[type="date"] {
+  box-sizing: content-box;
+  padding: 1.3rem 0 1.3rem .5rem;
+  width: 95%;
 }
 
 input[type="number"] {
