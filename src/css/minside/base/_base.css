@@ -31,9 +31,10 @@ h1, h2 {
   font-family: var(--minside-font-family);
   font-weight: var(--normal);
   text-transform: uppercase;
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin: 0 0 1.2rem 0;
   word-wrap: break-word;
+  @media (--tablet) { font-size: 2.4rem; }
 }
 
 h1 {

@@ -284,12 +284,27 @@
                   </div><!--end .row-->
                   <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                      <label class="form__label">Instrument
-                        <select class="select select--block" disabled>
-                          <option value="">Gitar</option>
-                          <option value="">Piano</option>
-                          <option value="">Trommer</option>
-                        </select>
+                      <label class="form__label form__label--block">
+                        <span>Instrument</span>
+                        <div class="searchable-list searchable-list form__input form__input--block">
+                          <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                            <span class="searchable-list__selected">Velg instrument</span>
+                          </div>
+                          <div class="searchable-list__dropdown">
+                            <input type="text" class="searchable-list__search form__input form__input--block">
+                            <ul>
+                              <li class="searchable-list__option">
+                                Gitar
+                              </li>
+                              <li class="searchable-list__option">
+                                Piano
+                              </li>
+                              <li class="searchable-list__option">
+                                Trommer
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </label>
                     </div>
                   </div><!--end .row-->

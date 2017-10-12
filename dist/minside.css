@@ -4431,9 +4431,16 @@ h1, h2, h2.text--thin{
   font-family:"brandon-regular";
   font-weight:400;
   text-transform:uppercase;
-  font-size:2.4rem;
+  font-size:2rem;
   margin:0 0 1.2rem 0;
   word-wrap:break-word;
+}
+
+@media (min-width: 768px){
+
+  h1, h2, h2.text--thin{
+    font-size:2.4rem;
+  }
 }
 
 h1, h2.text--thin{
@@ -5753,6 +5760,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .radio-group .form__label{
   background:#ededed;
+  z-index:0;
 }
 .radio-group .form__label:before{
   margin-left:-0.2rem!important;
@@ -6382,7 +6390,7 @@ table a{
   counter-reset:item;
 }
 
-.list--numbered li{
+.list--numbered > li{
   background:#f3f3f3;
   border:1px solid #d9d9dc;
   padding:2rem;
@@ -6390,7 +6398,7 @@ table a{
   margin-bottom:1.2rem;
 }
 
-.list--numbered li:before{
+.list--numbered > li:before{
   counter-increment:item;
   content:counters(item,".") " ";
   position:absolute;

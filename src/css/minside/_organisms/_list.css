@@ -18,7 +18,7 @@
   padding: 0;
   counter-reset: item;
   
-  li {
+  & > li {
     background: #f3f3f3;
     border: 1px solid var(--silver);
     padding: 2rem;

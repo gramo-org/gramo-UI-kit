@@ -10,6 +10,7 @@
   
   .form__label {
     background: var(--light-gray);
+    z-index: 0;
     &:before {
       margin-left: -0.2rem!important;
     }
