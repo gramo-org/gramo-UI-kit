@@ -49,10 +49,15 @@
 
     .searchable-list__heading {
       cursor: not-allowed;
+      outline: none;
+      
+      &:before {
+        background-image: none;
+      }
     }
-
-    .searchable-list__heading:before {
-      background-image: none;
+    
+    .searchable-list__dropdown {
+      display: none;
     }
   }
 

@@ -3380,9 +3380,13 @@ hr, .horizontal-rule{
 }
 .searchable-list--disabled .searchable-list__heading{
   cursor:not-allowed;
+  outline:none;
 }
 .searchable-list--disabled .searchable-list__heading:before{
   background-image:none;
+}
+.searchable-list--disabled .searchable-list__dropdown{
+  display:none;
 }
 .searchable-list__dropdown{
   position:absolute;
