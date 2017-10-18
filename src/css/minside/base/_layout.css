@@ -10,7 +10,7 @@ main {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 5rem;
-  @media (--tablet) { padding-bottom: 0; }
+  /*@media (--tablet) { padding-bottom: 0; }*/
 }
 
 main > section:first-of-type {

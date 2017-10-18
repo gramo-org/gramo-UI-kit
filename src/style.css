@@ -3272,7 +3272,7 @@ hr, .horizontal-rule{
 }
 .radio-group label{
   position:relative;
-  z-index:9;
+  z-index:0;
   cursor:pointer;
   transition:all 0.25s linear;
   margin:0 .5rem;

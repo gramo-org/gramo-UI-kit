@@ -184,8 +184,6 @@ only screen and (max-width: 768px),
   
   .table--standard {
     display: table;
-    width: calc(100% + 2rem);
-    margin: 0 -1rem;
     
     thead {
       display: table-header-group;
@@ -207,8 +205,12 @@ only screen and (max-width: 768px),
       content: none;
     }
   }
+  .table--standard:not(.no-pull) {
+    width: calc(100% + 2rem);
+    margin: 0 -1rem;
+  }
 }
 
-.table--standard {
+.table--standard:not(.no-pull) {
   @media (--tablet) { margin-top: 2rem; }
 }

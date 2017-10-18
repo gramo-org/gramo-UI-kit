@@ -2,6 +2,23 @@
   padding: 0 1rem;
   border: 0;
   
+  &__header {
+    background: var(--light-gray);;
+    margin: -2rem -2rem 1rem -2rem;
+    padding: 1rem;
+  }
+  
+  &__header > * {
+    order: 1;
+    @media (--tablet) { order: 0 }
+  }
+  
+  &__header--action {
+    align-self: center;
+    text-align: right;
+    order: 0
+  }
+  
   &__item {
     padding: 1rem 0;
     border-bottom: 1px solid var(--silver);
@@ -29,7 +46,7 @@
       counter-increment: item;
       content: counters(item,".") " ";
       position: absolute;
-      bottom: -3.9rem;
+      bottom: -3.8rem;
       right: 2rem;
       font-size: 10rem;
       font-family: var(--minside-font-family);

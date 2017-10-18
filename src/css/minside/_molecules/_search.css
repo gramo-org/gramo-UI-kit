@@ -21,3 +21,7 @@
     }
   }
 }
+
+.search__form--left {
+  justify-content: flex-start;
+}
