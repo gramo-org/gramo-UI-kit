@@ -16,7 +16,17 @@
   &__header--action {
     align-self: center;
     text-align: right;
-    order: 0
+    order: 0;
+    
+    .icon--close {
+      font-size: 3rem;
+      line-height: 3;
+      color: var(--off-gray);
+      position: absolute;
+      right: 1rem;
+      top: 1.5rem;
+      @media (--tablet) { position: static; }
+    }
   }
   
   &__item {
