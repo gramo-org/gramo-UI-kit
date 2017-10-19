@@ -19,7 +19,7 @@ only screen and (max-width: 768px),
       flex-wrap: wrap;
       border: 1px solid var(--table-border-color);
       padding: 1rem;
-      width: calc(100% +2rem);
+      width: calc(100% + 2rem);
       margin: 0 -1rem;
       
       &:not(:first-child) {
@@ -41,6 +41,10 @@ only screen and (max-width: 768px),
       
       &.table__cell--left {
         flex: 1 0 50%;
+      }
+      
+      &.table__cell--full {
+        flex: 1 0 100%;
       }
     }
     
@@ -205,12 +209,12 @@ only screen and (max-width: 768px),
       content: none;
     }
   }
-  .table--standard:not(.no-pull) {
-    width: calc(100% + 2rem);
-    margin: 0 -1rem;
+  .no-pull tr {
+    width: auto;
+    margin: 0;
   }
 }
 
-.table--standard:not(.no-pull) {
+.table--standard {
   @media (--tablet) { margin-top: 2rem; }
 }

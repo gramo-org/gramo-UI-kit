@@ -6,6 +6,7 @@
 }
 
 .section-header {
+  padding-top: 0;
   h2 {
     margin-bottom: 0;
   }

@@ -1,0 +1,3 @@
+.table__row--selected {
+  background: color(var(--row-hover) shade(7%));
+}

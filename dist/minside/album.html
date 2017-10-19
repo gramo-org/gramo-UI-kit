@@ -83,9 +83,16 @@
               </ul>
             </nav>
           </div>
-          <div class="col-xs-12 col-sm-9">
+          <div class="col-xs-12 col-sm-9 adjust--to-left">
             <section id="album-info">
-              <h2>album info</h2>
+              <div class="section-header">
+                <header>
+                  <h2>Album info</h2>
+                </header>
+                <div class="section-header__action">
+                  <a href="#">Rediger</a>
+                </div>
+              </div>
               <form class="form">  
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
@@ -238,52 +245,116 @@
             </section>
             <hr class="horizontal-rule">
             <section id="track-info">
-              <h2>Spor <span class="badge badge--secondary">10</span></h2>
-              <table class="table table--numeric-tracks table--fluid">
+              <div class="section-header">
+                <header>
+                  <h2>Spor <span class="badge badge--secondary">10</span></h2>
+                </header>
+                <div class="section-header__action">
+                  <button class="btn btn--secondary">Avbryt</button>
+                  <button class="btn btn--primary">Lagre</button>
+                </div>
+              </div>
+              <table class="table table--numeric-tracks table--fluid table--list table--five">
                 <thead>
                   <tr>
                     <th>Innspillingstittel</th>
                     <th>Hovedartist</th>
                     <th>Tid</th>
+                    <th>Utgivelsesdato</th>
                     <th>ISRC</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td colspan="4">Side 1</td>
+                    <td colspan="5">Side 1</td>
                   </tr>
                   <tr>
                     <td data-label="Innspillingstittel"><a href="#">Take On Me</a></td>
-                    <td data-label="Hovedartist">A-HA</td>
+                    <td data-label="Hovedartist" class="table__cell--full">A-HA</td>
                     <td data-label="Tid">03:45</td>
+                    <td data-label="Utgivelsesdato" class="table__cell--left">2016-09-06</td>
                     <td data-label="ISRC">USJT19900027</td>
                   </tr>
                   <tr>
                     <td data-label="Innspillingstittel"><a href="#">Hunting High and Low</a></td>
-                    <td data-label="Hovedartist">A-HA</td>
+                    <td data-label="Hovedartist" class="table__cell--full">A-HA</td>
                     <td data-label="Tid">03:45</td>
+                    <td data-label="Utgivelsesdato" class="table__cell--left">2016-09-06</td>
                     <td data-label="ISRC">USJT19900027</td>
                   </tr>
                 </tbody>
                 <tbody>
                   <tr>
-                    <td colspan="4">Side 2</td>
+                    <td colspan="5">Side 2</td>
                   </tr>
                   <tr>
                     <td data-label="Innspillingstittel"><a href="#">Take On Me</a></td>
-                    <td data-label="Hovedartist">A-HA</td>
+                    <td data-label="Hovedartist" class="table__cell--full">A-HA</td>
                     <td data-label="Tid">03:45</td>
+                    <td data-label="Utgivelsesdato" class="table__cell--left">2016-09-06</td>
                     <td data-label="ISRC">USJT19900027</td>
                   </tr>
                   <tr>
                     <td data-label="Innspillingstittel"><a href="#">Hunting High and Low</a></td>
-                    <td data-label="Hovedartist">A-HA</td>
+                    <td data-label="Hovedartist" class="table__cell--full">A-HA</td>
                     <td data-label="Tid">03:45</td>
+                    <td data-label="Utgivelsesdato" class="table__cell--left">2016-09-06</td>
                     <td data-label="ISRC">USJT19900027</td>
                   </tr>
                 </tbody> 
               </table>
+              <form class="form form--flex">
+                <label class="form__label">Antall spor
+                  <input type="number" min="1" id="numberOfTracks" class="form__input form__input--80">
+                </label>
+                <button class="btn btn--secondary">Ok</button>
+              </form>
+              <div class="form__section--action">
+                <a href="#" class="link--no-line">Legg til ny side</a>
+                <a href="#" class="link--inline">Legg til nytt spor</a>
+              </div>
             </section>
+            <section class="toolbar">
+              <div class="search">
+                <div action="" class="search__form search__form--left">
+                  <input type="text" class="form__input" value="" placeholder="Søk..." />
+                  <button class="search__submit"></button>
+                </div>
+              </div>
+              <table class="table table--fluid table--list table--six no-pull">
+                <thead>
+                  <tr>
+                    <th>Innspillingstittel</th>
+                    <th>Hovedartist</th>
+                    <th>Varighet</th>
+                    <th>Utgivelsesdato</th>
+                    <th>ISRC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Tittel" class="table__cell--truncated">En ton av tystnad</td>
+                    <td data-label="Hovedartist" class="table__cell--truncated table__cell--left">Frida</td>
+                    <td data-label="Varighet" class="table__cell--truncated">00:04:00</td>
+                    <td data-label="Utgitt" class="table__cell--truncated">2016-09-06</td>
+                    <td data-label="ISRC" class="table__cell--truncated table__cell--left">NOGNA9504060</td>
+                  </tr>
+                  <tr class="table__row--selected">
+                    <td data-label="Tittel" class="table__cell--truncated">På en Liten Kafe</td>
+                    <td data-label="Hovedartist" class="table__cell--truncated table__cell--left">Ivar Ruste</td>
+                    <td data-label="Varighet" class="table__cell--truncated">00:03:00</td>
+                    <td data-label="Utgitt" class="table__cell--truncated">2016-09-06</td>
+                    <td data-label="ISRC" class="table__cell--truncated table__cell--left">NOREG9205400</td>
+                  </tr>
+                </tbody>
+              </table>
+              <form class="form form--flex">
+                <label class="form__label">Spor nr.
+                  <input type="number" min="1" id="numberOfTracks" class="form__input form__input--80">
+                </label>
+                <button class="btn btn--primary">Legg til</button>
+              </form>
+            </section><!-- end .toolbar -->
           </div>
         </div>
       </section>

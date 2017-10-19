@@ -5263,6 +5263,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .toolbar{
   padding-top:2rem;
+  display:block;
 }
 .spinner--minimal{
   position:relative;
@@ -5902,6 +5903,9 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
     bottom:2rem;
   }
 }
+.table__row--selected{
+  background:rgb(232, 232, 232);
+}
 .site-header{
   position:relative;
   left:0;
@@ -5967,7 +5971,16 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
     transform:none;
   }
 }
-.form{
+.form--flex{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-align-items:flex-end;
+  -ms-flex-align:end;
+  align-items:flex-end;
+}
+.form--flex .form__label, .form--flex .btn{
+  margin:0 1rem 0 0;
 }
 
 .form__section--action{
@@ -6097,7 +6110,7 @@ table a{
     flex-wrap:wrap;
     border:1px solid #d9d9dc;
     padding:1rem;
-    width:calc(100% +2rem);
+    width:calc(100% + 2rem);
     margin:0 -1rem;
   }
 
@@ -6128,6 +6141,12 @@ table a{
     -webkit-flex:1 0 50%;
     -ms-flex:1 0 50%;
     flex:1 0 50%;
+  }
+
+  .table--list td.table__cell--full{
+    -webkit-flex:1 0 100%;
+    -ms-flex:1 0 100%;
+    flex:1 0 100%;
   }
 
   .table--list td:first-child::before{
@@ -6339,15 +6358,15 @@ table a{
   .table--standard td::before{
     content:none;
   }
-  .table--standard:not(.no-pull){
-    width:calc(100% + 2rem);
-    margin:0 -1rem;
+  .no-pull tr{
+    width:auto;
+    margin:0;
   }
 }
 
 @media (min-width: 768px){
 
-  .table--standard:not(.no-pull){
+  .table--standard{
     margin-top:2rem;
   }
 }
@@ -6460,6 +6479,10 @@ table a{
   display:block;
   padding-top:0;
   text-align:center;
+}
+
+.section-header{
+  padding-top:0;
 }
 
 .section-header h2{

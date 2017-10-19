@@ -1,5 +1,11 @@
 /* Min Side */
-.form {
+.form--flex {
+  display: flex;
+  align-items: flex-end;
+  
+  .form__label, .btn {
+    margin: 0 1rem 0 0;
+  }
 }
 
 .form__section--action {
