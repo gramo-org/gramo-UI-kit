@@ -124,61 +124,54 @@
       </div> -->
       <section class="container">
         <div class="row">
-          <header class="masthead">
-            <span class="icon icon--yes"></span>
-          </header>
-        </div><!--end .row-->
+          <dialogue class="statusboard statusboard--secondary" role="alert">
+            <header class="statusboard__header">
+              <span class="icon icon--bank icon--large"></span>
+              <span>Din siste utbetaling var</span>
+              <em>205 693,50 kr</em>
+              <span>25.12.2015</span>
+            </header>
+            <footer class="statusboard__footer">
+              <p>Avspillingsåret 2017 er ikke avregnet enda</p>
+              <a href="#"><span class="icon icon--info"></span></a>
+            </footer>
+            <button class="statusboard__close">
+              <span>Toggle dialogue</span>
+            </button>
+          </dialogue>
+        </div><!--end .row -->
       </section>
         
-      <section id="performerinfo" class="container container--col-1">
-        <div class="section-header">
-          <header>
-            <h2>Penger</h2>
-          </header>
-        </div>
-        <div class="box box--summary">
-          <div class="box__section box__section--main">
-            <span>Til utbetaling</span>
-            <em>16 756,50 kr</em>
-          </div>
-          <div class="box__section">
-            <span>Forventet</span>
-            <em>25.12.2017</em>
-          </div>
-        </div>
+      <section class="message message--secondary message--with-border">
+        <p class="text--upper text--semibold">God dag Morten Harket</p>
+        <p><a href="#" link>Se personalia</a></p>
       </section>
-      
-      <div class="horizontal-rule horizontal-rule--with-arrow">
-        <hr>
-      </div>
         
-      <section id="discography-overview" class="container container--col-1">
-        <div class="section-header">
-          <header>
-            <h2>Diskografi</h2>
-          </header>
-        </div>
+      <section id="discography-overview" class="container container--padded container--col-1">
+        <header class="container__header">
+          <h1>Diskografi</h1>
+        </header>
         <div class="row">
           <div class="col-xs-4">
-            <div class="card">
-              <span class="icon icon--notes icon--primary"></span>
-              <h4 class="card__header">Innspillinger</h4>
-              <em>400</em>
-            </div><!--end .card -->
-          </div><!--end .col -->
-          <div class="col-xs-4">
-            <div class="card">
-              <span class="icon icon--album icon--primary"></span>
+            <a class="card">
+              <span class="icon icon--album icon--dark"></span>
               <h4 class="card__header">Album</h4>
               <em>138</em>
-            </div><!--end .card -->
+            </a><!--end .card -->
           </div><!--end .col -->
           <div class="col-xs-4">
-            <div class="card">
-              <span class="icon icon--performer icon--primary"></span>
-              <h4 class="card__header">A-Solist</h4>
-              <em>398</em>
-            </div><!--end .card -->
+            <a href="#" class="card">
+              <span class="icon icon--notes icon--dark"></span>
+              <h4 class="card__header">Innspillinger</h4>
+              <em>400</em>
+            </a><!--end .card -->
+          </div><!--end .col -->
+          <div class="col-xs-4">
+            <a href="#" class="card">
+              <span class="icon icon--album icon--performer"></span>
+              <h4 class="card__header">Gruppe</h4>
+              <em>2</em>
+            </a><!--end .card -->
           </div><!--end .col -->
         </div><!--end .row -->
       </section>
@@ -187,13 +180,11 @@
         <hr>
       </div>
       
-      <section id="discography-info" class="container container--col-1">
-        <div class="section-header">
-          <header>
-            <h2>Musikk profil</h2>
-          </header>
-        </div>
-        <form class="form form--summary">
+      <section id="discography-info" class="container container--col-1 text--center">
+        <header class="container__header">
+          <h2>Profil</h2>
+        </header>
+        <!-- <form class="form form--summary">
           <label class="form__label form__label--block"><span>Gruppe</span>
             <input class="form__input" type="text" value="A-ha" disabled>
           </label>
@@ -203,7 +194,10 @@
           <label class="form__label form__label--block"><span>Instrumenter</span>
             <input class="form__input" type="text" value="Vokal" disabled>
           </label>
-        </form>
+        </form> -->
+        <p>Se og rediger nøkkelinformasjon om deg og medlemskapet i Gramo</p>
+        <p><a href="#">Se alle artistnavn og instrumenter</a></p>
+        <p><a href="#">Se medlemskapet</a></p>
       </section>
     </main>
 </div>
