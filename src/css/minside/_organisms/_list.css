@@ -9,19 +9,28 @@
   }
   
   &__header > * {
-    order: 1;
-    @media (--tablet) { order: 0 }
+    display: block;
+    @media (--tablet) { align-self: center; }
+  }
+  
+  &__header {
+    h3 {
+      font-size: 2.4rem;
+    }
   }
   
   &__header--action {
-    align-self: center;
     text-align: right;
-    order: 0;
+    
+    
+    & > .btn {
+      display: inline-block;
+    }
     
     .icon--close {
       font-size: 3rem;
-      line-height: 3;
-      color: var(--off-gray);
+      /*line-height: 3;*/
+      color: var(--off-gray);  
       position: absolute;
       right: 1rem;
       top: 1.5rem;
