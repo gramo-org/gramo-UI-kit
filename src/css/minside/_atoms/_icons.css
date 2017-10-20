@@ -150,6 +150,11 @@
   content: "\e926";
   @extend .icon--primary;
 }
+.icon--paperclip:before {
+  font-family: 'icomoon';
+  line-height: 2;
+  content: "\e923";
+}
 .icon--no:before {
   content: "\e927";
   @extend .icon--danger;

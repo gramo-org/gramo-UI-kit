@@ -482,7 +482,7 @@ td.text--center, .fake-table__row *.text--center{
   vertical-align:top;
 }
 
-.no-list, .tabs__nav, .vertical__nav{
+.no-list, .tabs__nav, .vertical__nav, .file-upload__list ul{
   list-style:none;
   padding:0;
   margin:0;
@@ -4408,6 +4408,214 @@ tr > td:last-child{
 .wizard-steps > li.selected, .wizard-steps > li.selected a{
   color:#0095da;
 }
+.file-upload{
+  position:relative;
+  text-align:right;
+  margin-top:2rem;
+}
+@media (min-width: 960px){
+
+  .file-upload{
+    display:inline-block;
+    margin-top:0;
+  }
+}
+
+.file-upload__toggle{
+  color:#a5a4ab;
+  text-decoration:none;
+}
+
+.file-upload__toggle span{
+  color:#a5a4ab;
+  font-size:1.6rem;
+  position:relative;
+  top:-1px;
+}
+
+.file-upload__inner{
+  display:none;
+  background:#fdfdfd;
+  position:absolute;
+  right:4.5rem;
+  top:-100%;
+  text-align:left;
+  box-shadow:0 0 4px rgba(0,0,0,0.4);
+  transition:opacity .15s ease-in;
+}
+
+.file-upload__inner.is-visible{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  z-index:1;
+  -webkit-flex-direction:column;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  width:auto;
+  min-width:400px;
+}
+
+@media (min-width: 960px){
+
+  .file-upload__inner.is-visible{
+    min-width:500px;
+  }
+}
+
+.file-upload__inner:before{
+  content:"\e902";
+  font-family:'icomoon';
+  color:#ededed;
+  position:absolute;
+  text-shadow:1px 0 2px rgba(0,0,0,0.3);
+  top:20px;
+  right:-9px;
+  z-index:-1;
+}
+
+@media (min-width: 960px){
+
+  .file-upload__inner:before{
+    color:#fdfdfd;
+  }
+}
+
+.file-upload__inner.is-visible--over{
+  top:auto;
+  bottom:-10px;
+}
+
+.file-upload__inner.is-visible--over:before{
+  top:auto;
+  bottom:10px;
+  color:#fdfdfd;
+}
+
+.file-upload__header{
+  border-bottom:1px solid #d9d9dc;
+  padding:1rem 2rem;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+.file-upload__header--action{
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1;
+  text-align:right;
+  -webkit-align-self:center;
+  -ms-flex-item-align:center;
+  -ms-grid-row-align:center;
+  align-self:center;
+}
+
+.file-upload__header--action a{
+  color:inherit;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+.file-upload__header .icon{
+  font-size:1.2rem;
+  margin-right:.5rem;
+}
+
+.file-upload__form{
+  border-bottom:1px solid #d9d9dc;
+  background:rgb(230, 230, 230);
+  padding:2rem;
+}
+
+.file-upload__form .form__label--comments{
+  margin:1.2rem 0;
+}
+
+.file-upload__form .form__label--comments .form__input--block{
+  max-width:300px;
+}
+
+.file-upload__form .form__label--upload{
+  margin:.6rem 0;
+}
+
+.file-upload__form .form__label--upload input{
+  outline:none;
+}
+
+.file-upload__form .form__section--action{
+  margin-top:0;
+}
+
+.file-upload__list{
+  -webkit-flex:1 1 auto;
+  -ms-flex:1 1 auto;
+  flex:1 1 auto;
+  padding:0 2rem;
+}
+
+.file-upload__list ul{
+  max-height:280px;
+  min-height:150px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  margin-right:-2rem;
+  padding-right:2rem;
+}
+
+.file-upload__list ul li{
+  border-bottom:1px dotted #d9d9dc;
+  margin:0;
+  padding:0;
+  padding-bottom:.6rem;
+  margin-bottom:1.2rem;
+}
+
+.file-upload__list ul li > div[class^="col-"]{
+  padding-left:.25rem;
+  padding-right:.25rem;
+}
+
+.file-upload__list ul li > .text--right{
+  text-align:right;
+}
+
+.file-upload__list ul li:first-child{
+  margin-top:1rem;
+}
+
+.file-upload--in-header{
+  position:absolute;
+  top:-3.7rem;
+  right:300px;
+  z-index:7;
+  margin-top:0;
+}
+
+.file-upload--in-header .file-upload__toggle, .file-upload--in-header .file-upload__toggle span{
+  color:#504f56;
+  font-size:1.4rem;
+  top:0;
+}
+
+.file-upload--in-header .file-upload__toggle > i{
+  opacity:0.7;
+  font-size:1.3rem;
+  margin-right:.3rem;
+  vertical-align:bottom;
+}
+
+.file-upload--in-header .file-upload__inner{
+  position:static;
+  box-shadow:0 3px 3px rgba(0,0,0,0.1);
+  margin-top:1rem;
+}
+
+.file-upload--in-header .file-upload__inner:before{
+  top:19px;
+  border-color:transparent transparent #fdfdfd;
+}
 @font-face{
   font-family:'brandon-regular';
   src:url('fonts/BrandonText-Regular.otf');
@@ -4840,6 +5048,11 @@ _:-ms-input-placeholder, :root .container--branded__heading{
 .icon--paperplane:before{
   content:"\e926";
 }
+.icon--paperclip:before{
+  font-family:'icomoon';
+  line-height:2;
+  content:"\e923";
+}
 .icon--no:before{
   content:"\e927";
 }
@@ -4979,6 +5192,9 @@ _:-ms-input-placeholder, :root .container--branded__heading{
 }
 .btn--small{
   padding:0 2rem;
+}
+.btn--compact{
+  padding:1.2rem 1rem;
 }
 .form__label.is-valid::after, .form__label.has-error::after{
   color:#504f56;
@@ -6864,4 +7080,33 @@ table a{
 .cookies__footer{
   text-align:center;
   padding-bottom:2rem;
+}
+.file-upload{
+  text-align:inherit;
+}
+.file-upload__inner{
+  right:8rem;
+}
+.file-upload__inner:before{
+  right:-1rem;
+  text-shadow:2px 0 2px rgba(0,0,0,0.3);
+}
+
+.file-upload__header h2{
+  margin-bottom:0;
+}
+
+.file-upload__header .icon{
+  font-size:1.8rem;
+}
+
+.file-upload__header--action .icon{
+  font-size:1.6rem;
+  position:relative;
+  top:2px;
+  margin-right:.25rem;
+}
+
+.file-upload__list .icon{
+  font-size:1.8rem;
 }
