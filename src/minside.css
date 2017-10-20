@@ -7095,11 +7095,24 @@ table a{
 }
 .file-upload{
   text-align:inherit;
+  margin-top:0;
 }
-.file-upload__inner{
-  right:8rem;
+.file-upload__inner.is-visible--over{
+  position:fixed;
+  top:5.1rem;
+  left:0;
+  right:0;
 }
-.file-upload__inner:before{
+@media (min-width: 768px){
+
+  .file-upload__inner.is-visible--over{
+    right:8rem;
+    position:absolute;
+    top:auto;
+    left:auto;
+  }
+}
+.file-upload__inner.is-visible--over:before{
   right:-1rem;
   text-shadow:2px 0 2px rgba(0,0,0,0.3);
 }
