@@ -1,9 +1,9 @@
 /* Min Side */
 .flash-message-wrapper {
   left: 0;
-  top: 0;
+  top: 5.1rem;
   z-index: 2;
-  position: absolute;
+  position: fixed;
 }
 
 .flash-message {
