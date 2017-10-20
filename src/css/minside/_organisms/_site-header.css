@@ -35,5 +35,8 @@
     text-overflow: ellipsis;
     display: inline-block;
     vertical-align: text-bottom;
+    @media (--tablet) {
+      width: auto;
+    }
   }
 }

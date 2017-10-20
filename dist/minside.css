@@ -6169,6 +6169,12 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   display:inline-block;
   vertical-align:text-bottom;
 }
+@media (min-width: 768px){
+
+  .site-header__profile-type{
+    width:auto;
+  }
+}
 .sidebar{
   -webkit-order:1;
   -ms-flex-order:1;
