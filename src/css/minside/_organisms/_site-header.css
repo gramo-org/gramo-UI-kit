@@ -29,5 +29,11 @@
     position: relative;
     top: -0.3rem;
     color: var(--light-gray);
+    width: 170px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: text-bottom;
   }
 }
