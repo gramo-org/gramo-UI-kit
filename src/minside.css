@@ -4908,6 +4908,11 @@ main > section:first-of-type{
 _:-ms-input-placeholder, :root .container--branded__heading{
   width:400px;
 }
+@media print{
+  .statusboard, .help, .form__label{
+  display:none!important;
+}
+}
 @font-face{
   font-family:'minside-icons';
   src:url('fonts/minside.eot?mweyr9');

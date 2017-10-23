@@ -1,0 +1,5 @@
+.statusboard, 
+.help,
+.form__label {
+  display: none!important;
+}

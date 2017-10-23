@@ -64,6 +64,10 @@
 @import url('minside/base/_base.css');
 @import url('minside/base/_utility-classes.css');
 @import url('minside/base/_layout.css');
+/* Print Styles */
+@media print {
+  @import url('minside/base/_print.css');
+}
 /* Atoms */
 @import url('minside/_atoms/_icons.css');
 @import url('minside/_atoms/_box.css');
