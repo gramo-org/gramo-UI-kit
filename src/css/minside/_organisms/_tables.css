@@ -52,7 +52,7 @@ only screen and (max-width: 768px),
       content: none;
     }
     
-    td::before {
+    td:not(.table__cell--no-label)::before {
       content: attr(data-label)":";
       display: inline-block;
       margin-right: .5rem;

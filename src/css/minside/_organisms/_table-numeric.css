@@ -5,7 +5,7 @@
   
   thead th:first-child,
   tr > td:first-child {
-    padding-left: 5rem;
+    padding-left: 4.5rem;
   }
   
   tr:not(:first-child) > td {
@@ -31,5 +31,31 @@
     left: 1.5rem;
     top: 2.3rem;
     top: 50%;
+  }
+  tr.table__row--selected > td:first-child::before {
+    color: var(--gramo-white);
+    background: var(--slate-gray);
+  }
+  
+  td.table__cell--action {
+    order: 1;
+    flex: 1;
+    align-self: flex-end;
+    margin-top: -3rem;
+    position: relative;
+    top: -.25rem;
+    text-align: right;
+    @media (--tablet) {
+      margin-top: 0;
+      top: 0;
+    }
+    
+    .link--edit {
+      padding: .25rem 0;
+    }
+    
+    &::before {
+      content: none;
+    }
   }
 }

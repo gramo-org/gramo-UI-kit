@@ -51,3 +51,15 @@ legend {
     margin-top: .6rem; 
   }
 }
+
+.form__label--in-row {
+  align-items: center;
+  margin-bottom: 0;
+  display: inline-flex;
+  vertical-align: middle;
+  
+  span {
+    display: none;
+    @media (--tablet) { display: inline; }
+  }
+}
