@@ -10,7 +10,7 @@
   box-shadow: none;
   border: 0;
   padding: 1rem;
-  z-index: auto;
+  z-index: 2;
   
   &__branding {
     display: block;

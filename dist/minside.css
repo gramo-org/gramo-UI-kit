@@ -4883,6 +4883,7 @@ main > section:first-of-type{
   z-index:1;
   padding:0;
   overflow-y:auto;
+  padding-top:5.1rem;
 }
 @media (min-width: 768px){
 
@@ -6167,7 +6168,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   box-shadow:none;
   border:0;
   padding:1rem;
-  z-index:auto;
+  z-index:2;
 }
 .site-header__branding{
   display:block;
