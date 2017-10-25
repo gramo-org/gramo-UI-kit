@@ -6184,7 +6184,8 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   }
 }
 .site-header__branding img{
-  height:100%;
+  height:20px;
+  width:100px;
 }
 .site-header__profile-type{
   margin-left:0.5rem;
