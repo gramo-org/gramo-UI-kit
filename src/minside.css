@@ -7171,8 +7171,9 @@ table a{
 .file-upload{
   text-align:inherit;
   margin-top:0;
+  display:inline-block;
 }
-.file-upload__inner.is-visible--over{
+.file-upload__inner.is-visible{
   position:fixed;
   top:5.1rem;
   left:0;
@@ -7180,14 +7181,14 @@ table a{
 }
 @media (min-width: 768px){
 
-  .file-upload__inner.is-visible--over{
-    right:8rem;
+  .file-upload__inner.is-visible{
+    right:5rem;
     position:absolute;
-    top:auto;
+    top:calc(100% - 5rem);
     left:auto;
   }
 }
-.file-upload__inner.is-visible--over:before{
+.file-upload__inner.is-visible:before{
   right:-1rem;
   text-shadow:2px 0 2px rgba(0,0,0,0.3);
 }
