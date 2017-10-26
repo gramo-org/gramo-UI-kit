@@ -20,6 +20,7 @@
   &--secondary {
     color: var(--slate-gray);
     background: var(--light-gray);
+    min-height: 0;
   }
   &--solo {
     min-width: 200px;
@@ -28,7 +29,7 @@
     align-self: center;
   }
   &--small {
-    padding: 0 2rem;
+    padding: .3rem 2rem;
     margin: 0;
   }
   

@@ -121,7 +121,7 @@
 .icon--show:before {
   content: "\e911";
 }
-.icon-altok2:before {
+.icon--altok2:before {
   content: "\e912";
 }
 .icon--no2:before {

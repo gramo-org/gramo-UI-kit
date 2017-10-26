@@ -71,7 +71,11 @@ input[type="checkbox"].form__input--toggle-visibility {
   }
 }
 
-.form__input--in-row {
-  margin: 0 0 0 1rem;
+.form__input--small {
   padding: .2rem .5rem;
+  margin: 0;
+}
+
+.form__input--30 {
+  width: 30px; padding-right: 0;
 }

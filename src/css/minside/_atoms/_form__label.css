@@ -60,6 +60,5 @@ legend {
   
   span {
     display: none;
-    @media (--tablet) { display: inline; }
   }
 }
