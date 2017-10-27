@@ -7181,6 +7181,7 @@ table a{
   top:5.1rem;
   left:0;
   right:0;
+  min-width:0;
 }
 @media (min-width: 768px){
 
@@ -7189,6 +7190,7 @@ table a{
     position:absolute;
     top:calc(100% - 5rem);
     left:auto;
+    min-width:400px;
   }
 }
 .file-upload__inner.is-visible:before{

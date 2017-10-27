@@ -8,11 +8,13 @@
     top: 5.1rem;
     left: 0;
     right: 0;
+    min-width: 0;
     @media (--tablet) {
       right: 5rem;
       position: absolute;
       top: calc(100% - 5rem);
       left: auto;
+      min-width: 400px;
     }
     
     &:before {
