@@ -83,3 +83,7 @@
 .show-on--mobile {
   @media (--tablet) { display: none; }
 }
+
+[class*="--no-wrap"] {
+  white-space: nowrap;
+}
