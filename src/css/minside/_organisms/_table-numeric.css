@@ -41,31 +41,6 @@
     }
   }
   
-  td.table__cell--action {
-    order: 1;
-    flex: 1;
-    align-self: flex-end;
-    margin-top: -3rem;
-    position: relative;
-    top: -.25rem;
-    text-align: right;
-    @media (--tablet) {
-      margin-top: 0;
-      top: .25rem;
-    }
-    
-    &:before {
-      content: none;
-    }
-    
-    a {
-      color: inherit;
-    }
-    
-    &::before {
-      content: none;
-    }
-  }
   td.table__cell--side-number {
     padding: 2rem 0 0 0;
     

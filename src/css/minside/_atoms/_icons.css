@@ -152,7 +152,7 @@
 }
 .icon--paperclip:before {
   font-family: 'icomoon';
-  line-height: 2;
+  /*line-height: 2;*/
   content: "\e923";
 }
 .icon--no:before {

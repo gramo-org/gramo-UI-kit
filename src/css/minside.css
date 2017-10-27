@@ -80,6 +80,7 @@
 @import url('minside/_atoms/_form__label.css');
 @import url('minside/_atoms/_toolbar.css');
 @import url('minside/_atoms/_spinner.css');
+@import url('minside/_atoms/_table-cells.css');
 /* Molecules */
 @import url('minside/_molecules/_flash-message.css');
 @import url('minside/_molecules/_tabs__nav.css');
