@@ -5028,6 +5028,20 @@ input[type="text"].search__form__input--large{
   -ms-transform:translateY(0px);
   transform:translateY(0px);
 }
+
+.tooltip-wrapper--in-header .tooltip{
+  bottom:auto;
+  left:calc(10% - 260px);
+  top:130%;
+}
+
+.tooltip-wrapper--in-header .tooltip:after{
+  border-left:solid transparent 10px;
+  border-right:solid transparent 10px;
+  border-bottom:solid #434D5A 10px;
+  top:-10px;
+  bottom:auto;
+}
 .site-header{
   position:fixed;
   top:0;
