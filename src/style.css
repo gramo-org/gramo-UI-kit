@@ -5026,6 +5026,10 @@ input[type="text"].search__form__input--large{
   transform:translateY(0px);
 }
 
+.tooltip-wrapper--in-header{
+  margin-right:.5rem;
+}
+
 .tooltip-wrapper--in-header .tooltip{
   bottom:auto;
   left:calc(10% - 260px);
@@ -5039,6 +5043,10 @@ input[type="text"].search__form__input--large{
   border-top:0;
   top:-10px;
   bottom:auto;
+}
+
+.tooltip-wrapper--in-header .icon--warning::after{
+  font-size:1.6rem;
 }
 .site-header{
   position:fixed;

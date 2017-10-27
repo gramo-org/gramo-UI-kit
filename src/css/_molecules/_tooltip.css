@@ -60,17 +60,24 @@
   transform: translateY(0px);
 }
 
-.tooltip-wrapper--in-header .tooltip {
-  bottom: auto;
-  left: calc(10% - 260px);
-  top: 130%;
+.tooltip-wrapper--in-header {
+  margin-right: .5rem;
   
-  &:after {
-    border-left: solid transparent 10px;
-    border-right: solid transparent 10px;
-    border-bottom: solid #434D5A 10px;
-    border-top: 0;
-    top: -10px;
+  .tooltip {
     bottom: auto;
+    left: calc(10% - 260px);
+    top: 130%;
+    
+    &:after {
+      border-left: solid transparent 10px;
+      border-right: solid transparent 10px;
+      border-bottom: solid #434D5A 10px;
+      border-top: 0;
+      top: -10px;
+      bottom: auto;
+    }
+  }
+  .icon--warning::after {
+    font-size: 1.6rem;
   }
 }
