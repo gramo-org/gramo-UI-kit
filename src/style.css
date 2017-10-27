@@ -5027,7 +5027,7 @@ input[type="text"].search__form__input--large{
 }
 
 .tooltip-wrapper--in-header{
-  margin-right:.5rem;
+  margin-left:.5rem;
 }
 
 .tooltip-wrapper--in-header .tooltip{
@@ -5045,7 +5045,7 @@ input[type="text"].search__form__input--large{
   bottom:auto;
 }
 
-.tooltip-wrapper--in-header .icon--warning::after{
+.tooltip-wrapper--in-header .icon--warning::before{
   font-size:1.6rem;
 }
 .site-header{
