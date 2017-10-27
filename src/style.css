@@ -4991,9 +4991,6 @@ input[type="text"].search__form__input--large{
   min-width:300px;
 }
 
-@media (min-width: 1200px){
-}
-
 .tooltip-wrapper .tooltip__list li{
   margin-bottom:1rem;
   text-align:left;
@@ -5039,6 +5036,7 @@ input[type="text"].search__form__input--large{
   border-left:solid transparent 10px;
   border-right:solid transparent 10px;
   border-bottom:solid #434D5A 10px;
+  border-top:0;
   top:-10px;
   bottom:auto;
 }
