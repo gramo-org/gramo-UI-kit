@@ -41,3 +41,29 @@ h2 .badge {
     display: inline-block;
   }
 }
+
+.badge--numeric {
+  font-size: 1rem;
+  color: var(--off-gray);
+  background: var(--light-gray);
+  border-radius: 2rem;
+  text-align: center;
+  padding: .3rem .5rem;
+  min-width: 2rem;
+  height: 2rem;
+
+  &--moveable {
+    position: absolute;
+    z-index: 1;
+    display: block;
+
+    &:hover {
+      display: none;
+    }
+  }
+
+  &--inverse {
+    color: var(--gramo-white);
+    background: var(--slate-gray);
+  }
+}

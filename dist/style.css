@@ -1455,11 +1455,11 @@ table{
 	content:"\e906";
 }
 
-.icon--checkmark:before, .badge--icon-success:before{
+.icon--checkmark:before{
 	content:"\e900";
   color:#50bf9e;
 }
-.icon--cross:before, .badge--icon-error:before, .status--red::before{
+.icon--cross:before, .status--red::before{
 	content:"\e901";
   color:#ed6b6a;
 }
@@ -2394,8 +2394,20 @@ hr, .horizontal-rule{
   background:#ed6b6a;
 }
 
+.badge--icon-error:before{
+  content:"\e901";
+  color:#ed6b6a;
+  font-family:'icomoon';
+}
+
 .badge--icon-success{
   background:#50bf9e;
+}
+
+.badge--icon-success:before{
+  content:"\e900";
+  color:#50bf9e;
+  font-family:'icomoon';
 }
 
 .badge--numeric, .fake-table--numeric > .fake-table__row > *:first-child::before, .table--numeric > .fake-table__row > *:first-child::before, .table--numeric tr > td:first-child::before{

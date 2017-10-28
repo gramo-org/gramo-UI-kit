@@ -9,10 +9,6 @@
   &--fluid {
     @media (--desktop) { min-width: 100%; }
   }
-  
-  th, td {
-    @media (--desktop) { padding: 1rem 2rem; }
-  }
 
   a {
     text-decoration: none;

@@ -1,3 +1,53 @@
+.tabs__nav {
+  @extend %no-list;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  
+  &__item {
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    background: var(--x-light-gray);
+    border: 1px solid var(--silver);
+    border-width: 1px 0 0 1px;
+    @media (--tablet) {
+      border-width: 1px 0 0 1px;
+    }
+
+    &:last-child {
+      border-right-width: 1px;
+    }
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: var(--slate-gray);
+    font-weight: var(--semibold);
+    padding: 1rem 0;
+    flex: 1 0 auto;
+    display: block;
+  }
+
+  &__item:hover,
+  &__item a.active {
+    background: var(--light-gray);
+    position: relative;  
+  }
+  
+  &__item a.active::after {
+    content: '';
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: var(--light-gray);
+    width: 100%;
+    z-index: 1;
+  }
+}
+
 .tabs__nav--flexible {
   display: flex;
   flex-wrap: nowrap;
