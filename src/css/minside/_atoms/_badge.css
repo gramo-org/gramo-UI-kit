@@ -1,5 +1,11 @@
 /* Min Side */
 .badge {
+  display: inline-block;
+  border-radius: 2px;
+  padding: 0.1em .5em;
+  margin-left: 1rem;
+  font-size: 85%;
+  vertical-align: top;
   color: var(--slate-gray);
   padding: 0.15rem 1rem;
   
