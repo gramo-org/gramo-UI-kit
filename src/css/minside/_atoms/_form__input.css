@@ -5,6 +5,9 @@
   width: 100%;
   margin-top: .4rem;
   margin-bottom: 0;
+  border: 1px solid var(--silver);
+  background-color: var(--gramo-white);
+  font-weight: var(--normal);
   
   &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="tel"] {
     -webkit-appearance: none;
@@ -12,6 +15,53 @@
   }
   /*** Remove 'x' from inputs on IE ***/
   &::-ms-clear {  display: none; width : 0; height: 0; }
+}
+
+/* Checkboxes/radio buttons */
+input[type="radio"], input[type="checkbox"],
+.form__input--checkbox,
+.form__input--radio {
+  display: inline-block;
+  width: auto;
+  margin-right: 0.2rem;
+}
+
+.form__input--date,
+.form__input[type="date"] {
+  font-weight: var(--normal);
+  color: var(--gramo-blue);
+  background: #fff url(img/calendar.svg) center right 5px no-repeat;
+  border: 1px solid var(--silver);
+  padding-right:.5rem;
+  padding-left: .5rem;
+  max-height: 31px;
+  max-width: 150px;
+  min-width: 115px;
+  @media (--tablet) { 
+    min-width: 0;
+    max-width: none;
+  }
+  
+  &::-webkit-calendar-picker-indicator,
+  &::-webkit-inner-spin-button {
+    opacity: 0!important;
+    -webkit-appearance: none!important;
+  }
+
+  &.placeholder {
+    color: var(--gramo-blue);
+    text-align: center;
+  }
+
+  &[disabled] {
+    @extend .form__input[disabled];
+    color: var(--base-font-color);
+    background-image: none;
+    min-width: 0;
+    /*width: 100%;*/
+    /*padding-left: 0;*/
+    padding-right: 0;
+  }
 }
 
 .form__input[type="date"], .form__input--date {
@@ -76,6 +126,23 @@ input[type="checkbox"].form__input--toggle-visibility {
   margin: 0;
 }
 
+.form__input--80 {
+  @media (--tablet) { width: 80px; padding-right: 1rem;  }
+}
+
+.form__input--60 {
+  @media (--tablet) { width: 60px; padding-right: 1rem; }
+}
+
 .form__input--30 {
   width: 30px; padding-right: 0;
+}
+
+/* Textarea */
+.form__input--textarea {
+  resize:vertical;
+  background: var(--gramo-white);
+  min-height: 100px;
+  max-width: 400px;
+  margin-bottom: 1.2rem;
 }

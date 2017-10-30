@@ -1,9 +1,34 @@
 .form__label {
   @extend %font-size;
+  position: relative;
+  display: block;
   font-weight: var(--semibold);
   color: var(--slate-gray);
   padding: 0;
-  margin: 0 0 1.2rem 0;  
+  margin: 0 0 1.2rem 0;
+  text-align: left;
+  @media (--tablet) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  &--required {
+
+    &:before {
+      content: '*';
+      color: var(--gramo-red);
+    }
+  }
+  
+  &--inline {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Block labels */
+  &--block {
+    display: block;
+  }
 }
 
 .form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before,

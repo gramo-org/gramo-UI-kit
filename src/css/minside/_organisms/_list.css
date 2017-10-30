@@ -1,4 +1,6 @@
 .list {
+  list-style: none;
+  background: var(--gramo-white);
   padding: 0 1rem;
   border: 0;
   

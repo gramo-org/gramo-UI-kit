@@ -6,7 +6,15 @@
 }
 
 .section-header {
+  display: flex;
+  align-items: center;
+  @extend %margin-bottom;
   padding-top: 0;
+  
+  & > header {
+    flex: 1 0 auto;
+  }
+  
   h2 {
     margin-bottom: 0;
   }

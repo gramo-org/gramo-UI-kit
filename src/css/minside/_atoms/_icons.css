@@ -1,4 +1,15 @@
 @font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?6on5zt');
+  src:  url('fonts/icomoon.eot?6on5zt#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6on5zt') format('truetype'),
+    url('fonts/icomoon.woff?6on5zt') format('woff'),
+    url('fonts/icomoon.svg?6on5zt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'minside-icons';
   src:  url('fonts/minside.eot?mweyr9');
   src:  url('fonts/minside.eot?mweyr9#iefix') format('embedded-opentype'),

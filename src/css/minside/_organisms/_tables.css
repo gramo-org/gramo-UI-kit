@@ -1,12 +1,20 @@
 /* Minside */
-th, td {
-  @media (--desktop) { padding: 1rem 2rem; }
-}
+.table {
+  table-layout: fixed;
+  width: 100%;
+  @extend %margin-bottom;
+  @media (--desktop) { min-width: 700px; width: auto; }
+  @media (--hd) { min-width: 960px; }
 
-table a {
-  text-decoration: none;
-  color: var(--gramo-sea-green);
-  font-weight: var(--semibold);
+  &--fluid {
+    @media (--desktop) { min-width: 100%; }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--gramo-sea-green);
+    font-weight: var(--semibold);
+  }
 }
 
 @media

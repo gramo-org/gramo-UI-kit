@@ -93,7 +93,9 @@
     background: var(--error);
 
     &:before {
-      @extend .icon--cross:before;
+      content: "\e901";
+      color: var(--gramo-red);
+      font-family: 'icomoon';
     }
   }
 
@@ -101,7 +103,9 @@
     background: var(--success);
 
     &:before {
-      @extend .icon--checkmark:before;
+      content: "\e900";
+      color: var(--gramo-green);
+      font-family: 'icomoon';
     }
   }
 }

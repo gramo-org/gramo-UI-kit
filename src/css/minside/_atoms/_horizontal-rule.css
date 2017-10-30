@@ -1,4 +1,15 @@
 /* Minside */
+hr, .horizontal-rule {
+  height: 1px;
+  border: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  margin: 4rem 0 3rem 0;
+  background: var(--silver);
+  clear: both;
+}
+
 .horizontal-rule--with-arrow {
   padding: 0;
   position: relative;
