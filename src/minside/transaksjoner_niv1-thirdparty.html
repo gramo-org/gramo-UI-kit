@@ -18,9 +18,9 @@
 
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!--  -->
+  
   <link rel="stylesheet" href="../minside.css">
-
+  
   
 </head>
 <body>
@@ -55,66 +55,82 @@
       </ul>
     </nav>
     <main>
-      <!--- Flash message --->
-      <!-- <div class="flash-message-wrapper">
-        <div class="flash-message flash-message--success" role="alert" aria-live="assertive">
-          <p>Velkommen til nye Gramo</p>
-          <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
-        </div>
-      </div> -->
-      <section class="container">
-        <div class="row">
-          <dialogue class="statusboard statusboard--secondary" role="alert">
-            <header class="statusboard__header">
-              <span class="icon icon--bank icon--large"></span>
-              <span>Din siste utbetaling var</span>
-              <em>205 693,50 kr</em>
-              <span>25.12.2015</span>
-            </header>
-            <footer class="statusboard__footer">
-              <p>Avspillingsåret 2017 er ikke avregnet enda</p>
-              <a href="#"><span class="icon icon--info"></span></a>
-            </footer>
-            <button class="statusboard__close">
-              <span>Toggle dialogue</span>
-            </button>
-          </dialogue>
-        </div><!--end .row -->
-      </section>
-        
-
-        
-      <section id="client-overview" class="container container--padded container--col-1">
-        <header class="container__header">
-          <h1>Kundeliste</h1>
+      <div class="statusboard statusboard--primary" role="alert">
+        <header class="statusboard__header">
+          <span class="icon icon--account icon--large"></span>
+          <span>Din foreløpig saldo er</span>
+          <em>226 756,50 kr</em>
+          <span>Først avregning: 12.12.2016</span>
         </header>
-        <div class="row">
-          <div class="col-xs-6">
-            <div class="card">
-              <span class="icon icon--performer icon--primary"></span>
-              <em>1252</em>
-              <h4 class="card__header">Utøvere</h4>
-            </div><!--end .card -->
-          </div><!--end .col -->
-          <div class="col-xs-6">
-            <div class="card">
-              <span class="icon icon--producer icon--primary"></span>
-              <em>562</em>
-              <h4 class="card__header">Produsenter</h4>
-            </div><!--end .card -->
-          </div><!--end .col -->
-        </div><!--end .row -->
-      </section>
-      <div class="horizontal-rule horizontal-rule--with-arrow">
-        <hr>
+        <footer class="statusboard__footer">
+          <p>Avregningen pågår</p>
+          <a href="#"><span class="icon icon--info"></span></a>
+        </footer>
+        <button href="#" class="statusboard__close">
+          <span class="icon--close"></span>
+        </button>
+        <button class="statusboard__close">
+          <span class="icon--close"></span>
+        </button>
       </div>
-      <section id="discography-info" class="container container--col-1 text--center">
-        <header class="container__header">
-          <h2>Profil</h2>
-        </header>
-        <p>Se og rediger nøkkelinformasjon om deg og medlemskapet i Gramo</p>
-        <p><a href="#">Se stillingen</a></p>
-        <p><a href="#">Se kontaktinfo om selskapet</a></p>
+    
+      <section class="container">
+          <div class="row">
+            <header class="masthead">
+              <h1>Transaksjoner</h1>
+            </header>
+          </div>
+        </section>
+        <section class="container text--center container--padded">
+          <label class="form__label">Velg Periode
+            <select class="select  select--block">
+              <option value="">Alle transaksjoner</option>
+              <option value="">2017</option>
+              <option value="">2016</option>
+            </select>
+          </label>
+      </section>
+      <section id="ledger-info" class="container container--for-tables">
+        <table class="table table--fluid table--list table--five">
+          <thead>
+            <tr>
+              <th>Beskrivelse</th>
+              <th>Dato</th>
+              <th>Betalt til</th>
+              <th class="text--right">Beløp (kr)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table__row--with-arrow">
+              <td data-label="Beskrivelse">
+                <a href="#">Utbetaling Vinter 2016</a>
+              </td>
+              <td data-label="Dato" class="table__cell--left">
+                20.10.2015
+              </td>
+              <td data-label="Betalt til" class="table__cell--left">
+                Trekk
+              </td>
+              <td data-label="Beløp" class="text--right">
+                1700,00 <span class="show-on--mobile">kr</span>
+              </td>
+            </tr>
+            <tr class="table__row--with-arrow">
+              <td data-label="Avregningsdato">
+                <a href="#">Utbetaling Vinter 2016</a>
+              </td>
+              <td data-label="Dato" class="table__cell--left">
+                20.10.2015
+              </td>
+              <td data-label="Betalt til" class="table__cell--left">
+                Til kontonr.: 2987.49.82395
+              </td>
+              <td data-label="Beløp" class="text--right">
+                1785,59 <span class="show-on--mobile">kr</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
 </div>

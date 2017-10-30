@@ -18,9 +18,11 @@
 
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!--  -->
+  
   <link rel="stylesheet" href="../minside.css">
-
+  <script>
+  window.onload = window.location.hash = 'innspillinger';
+  </script>
   
 </head>
 <body>
@@ -43,8 +45,8 @@
         </li>
         <li class="vertical__nav__heading vertical__nav__heading--colored"><h4>Du ser på</h4></li>
         <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--quill"></span>All Right Music</a></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--performer"></span> Kundeliste</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span>Transaksjoner</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Kundeliste</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Transaksjoner</a></li>
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
         <!-- <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span>Utøver</a></li>
@@ -62,62 +64,59 @@
           <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
         </div>
       </div> -->
-      <section class="container">
-        <div class="row">
-          <dialogue class="statusboard statusboard--secondary" role="alert">
-            <header class="statusboard__header">
-              <span class="icon icon--bank icon--large"></span>
-              <span>Din siste utbetaling var</span>
-              <em>205 693,50 kr</em>
-              <span>25.12.2015</span>
-            </header>
-            <footer class="statusboard__footer">
-              <p>Avspillingsåret 2017 er ikke avregnet enda</p>
-              <a href="#"><span class="icon icon--info"></span></a>
-            </footer>
-            <button class="statusboard__close">
-              <span>Toggle dialogue</span>
-            </button>
-          </dialogue>
-        </div><!--end .row -->
-      </section>
-        
 
-        
-      <section id="client-overview" class="container container--padded container--col-1">
-        <header class="container__header">
-          <h1>Kundeliste</h1>
+      <!-- <dialogue class="statusboard statusboard--primary" role="alert">
+        <header class="statusboard__header">
+          <span class="icon icon--account icon--large"></span>
+          <span>Din foreløpig saldo er</span>
+          <em>226 756,50 kr</em>
         </header>
-        <div class="row">
-          <div class="col-xs-6">
-            <div class="card">
-              <span class="icon icon--performer icon--primary"></span>
-              <em>1252</em>
-              <h4 class="card__header">Utøvere</h4>
-            </div><!--end .card -->
-          </div><!--end .col -->
-          <div class="col-xs-6">
-            <div class="card">
-              <span class="icon icon--producer icon--primary"></span>
-              <em>562</em>
-              <h4 class="card__header">Produsenter</h4>
-            </div><!--end .card -->
-          </div><!--end .col -->
-        </div><!--end .row -->
-      </section>
-      <div class="horizontal-rule horizontal-rule--with-arrow">
-        <hr>
-      </div>
-      <section id="discography-info" class="container container--col-1 text--center">
-        <header class="container__header">
-          <h2>Profil</h2>
-        </header>
-        <p>Se og rediger nøkkelinformasjon om deg og medlemskapet i Gramo</p>
-        <p><a href="#">Se stillingen</a></p>
-        <p><a href="#">Se kontaktinfo om selskapet</a></p>
+        <footer class="statusboard__footer">
+          <p>Avregningen pågår</p>
+          <a href="#"><span class="icon icon--info"></span></a>
+        </footer>
+        <button class="statusboard__close">
+          <span class="icon--close"></span>
+        </button>
+      </dialogue> -->
+      <header class="masthead">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text--center">
+              <h1>Hoved avregning vinter 2016</h1>
+              <p>12.12.2015</p>
+              <h3>1000,00 kr</h3>
+            </div>
+          </div><!--end .row-->
+        </div>
+      </header>
+    
+      <section id="ledger-info" class="container container--padded container--for-tables">
+        <table class="table table--fluid table--list table--three">
+          <thead>
+            <tr>
+              <th>Navn</th>
+              <th>Sektor</th>
+              <th class="text--right">Beløp (kr)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Navn">
+                <a href="#">Morten Harket <span class="icon icon--link-ext"></span></a>
+              </td>
+              <td data-label="Sektor" class="table__cell--left">
+                Utøver
+              </td>
+              <td data-label="Beløp" class="text--right">
+                1785,59 <span class="show-on--mobile">kr</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
-</div>
+  </div>
 <script src="../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../js/default.js"></script>
 </body>

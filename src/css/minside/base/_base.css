@@ -39,6 +39,8 @@ h1, h2 {
 
 h1 {
   font-size: 3.3rem;
+  line-height: 1.25;
+  @media (--tablet) { line-height: inherit; }
 }
 
 h3 {

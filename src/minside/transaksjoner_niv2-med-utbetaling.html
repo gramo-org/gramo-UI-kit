@@ -21,7 +21,7 @@
   
   <link rel="stylesheet" href="../minside.css">
   <script>
-  window.onload = window.location.hash = 'channel';
+  window.onload = window.location.hash = 'innspillinger';
   </script>
   
 </head>
@@ -46,7 +46,7 @@
         <li class="vertical__nav__heading vertical__nav__heading--colored"><h4>Du ser på</h4></li>
         <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--album-label"></span>Diskografi</a></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Penger</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Transaksjoner</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
         <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
@@ -85,88 +85,55 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text--center">
-              <h1>Avregning detaljer</h1>
-              <h3>Hoved avregning vinter 2016</h3>
+              <h1>Utbetaling 2016</h1>
+              <p>12.12.2015</p>
+              <h3>1700,00 kr</h3>
             </div>
           </div><!--end .row-->
         </div>
       </header>
     
       <section id="ledger-info" class="container container--padded container--for-tables">
-        <div class="tabs">
-          <ul class="tabs__nav tabs__nav--flexible" role="tablist">
-            <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger" aria-selected="true">Per Sang</a></li>
-            <li class="tabs__nav__item" role="presentation"><a href="#channel" role="tab" aria-controls="channel">Per Radio</a></li>
-          </ul>
-          <section id="innspillinger" role="tabpanel" class="tabs__section">
-            <table class="table table--fluid table--list table--six">
-              <thead>
-                <tr>
-                  <th>Innspillingstittel</th>
-                  <th>Hovedartist</th>
-                  <th>Poeng</th>
-                  <th>Spilletid</th>
-                  <th>Sats</th>
-                  <th>Midler</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Innspillingstittel">
-                    <a href="#">Take on Me</a>
-                  </td>
-                  <td data-label="Hovedartist" class="table__cell--left">
-                    A-ha
-                  </td>
-                  <td data-label="Poeng" class="table__cell--left">
-                    A/B - 64 poeng
-                  </td>
-                  <td data-label="Spilletid">
-                    19:04:45
-                  </td>
-                  <td data-label="Sats">
-                    175
-                  </td>
-                  <td data-label="Midler">
-                    Kr. 1785,59
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section id="channel" role="tabpanel" class="tabs__section">
-            <table class="table table--fluid table--standard no-margin--top">
-              <thead>
-                <tr>
-                  <th>Radio</th>
-                  <th class="text--center-on-mobile">Antall</th>
-                  <th>Spilletid</th>
-                  <th>Sum</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>NRK P1</td>
-                  <td class="text--center-on-mobile">3</td>
-                  <td>00:10:05</td>
-                  <td class="text--bold text--blue">30,50</td>
-                </tr>
-                <tr>
-                  <td>NRK P1</td>
-                  <td class="text--center-on-mobile">3</td>
-                  <td>00:10:05</td>
-                  <td class="text--bold text--blue">30,50</td>
-                </tr>
-                <tr>
-                  <td>NRK P1</td>
-                  <td class="text--center-on-mobile">3</td>
-                  <td>00:10:05</td>
-                  <td class="text--bold text--blue">30,50</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        </div>
+        <table class="table table--fluid table--list table--five">
+          <thead>
+            <tr>
+              <th>Beskrivelse</th>
+              <th>Dato</th>
+              <th>Betalt til</th>
+              <th class="text--right">Beløp (kr)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Beskrivelse" class="text--semibold">
+                Trekk
+              </td>
+              <td data-label="Dato" class="table__cell--left">
+                20.10.2015
+              </td>
+              <td data-label="Betalt til" class="table__cell--left">
+                Oslo Kemnekontor
+              </td>
+              <td data-label="Beløp" class="text--right">
+                -200,00 <span class="show-on--mobile">kr</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Avregningsdato" class="text--semibold">
+                Admin Gebyr for 2016
+              </td>
+              <td data-label="Dato" class="table__cell--left">
+                20.10.2015
+              </td>
+              <td data-label="Betalt til" class="table__cell--left">
+                Gramo
+              </td>
+              <td data-label="Beløp" class="text--right">
+                -100,00 <span class="show-on--mobile">kr</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
   </div>

@@ -43,8 +43,8 @@
         </li>
         <li class="vertical__nav__heading vertical__nav__heading--colored"><h4>Du ser på</h4></li>
         <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--album-label"></span>Diskografi</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span>Transaksjoner</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--album-label"></span>Diskografi</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Transaksjoner</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
         <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
@@ -56,55 +56,19 @@
         <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
       </ul>
     </nav>
-    
     <section class="overlay">
       <div class="box box--overlay">
-        <div class="message message--primary">
-          <p>Opprett ny profil</p>
+        <div class="message message--dark">
+          <h3>Avspillingsåret 2017 er ikke avregnet enda</h3>
         </div>
         <header class="box__header">
-          <span class="icon icon--profile icon--large"></span>
-          <p>Nå kan du opprette en ny profil</p>
+          <span class="icon icon--bank icon--large"></span>
         </header>
         <div class="box__inner">
-          <form class="form">
-            <label class="form__label form__label--block">Profiltype
-              <select class="select select--block">
-                <option value="">Utøver</option>
-                <option value="">Personlig produsent</option>
-                <option value="">Kontaktperson</option>
-              </select>
-            </label>
-            <div class="row">
-              <div class="col-xs-12">
-                <label class="form__label">Org.nummer
-                  <input type="text" class="form__input">
-                </label>
-              </div>
-            </div><!--end .row-->
-            <div class="form__section--action">
-              <div class="row">
-                <div class="col-xs-5">
-                  <button class="btn btn btn--secondary btn--large">
-                    Avbryt
-                  </button>
-                </div>
-                <div class="col-xs-7">
-                  <button class="btn btn btn--primary btn--large">
-                    Gå videre
-                  </button>
-                </div>
-              </div>
-            </div>
-          </form>
-          <ol class="wizard-steps wizard-steps--overlay">
-            <li class="selected"><span>1. Personalia</span></li>
-            <li><span>2. Bankinformasjon</span></li>
-          </ol>
+          <p>Vi har ikke avregnet avspillingsåret 2017 enda, og har derfor ingen tall å vise deg.</p>
         </div>
       </div>
     </section>
-    
     <main>
       <!--- Flash message --->
       <!-- <div class="flash-message-wrapper">
@@ -124,71 +88,58 @@
             </header>
             <footer class="statusboard__footer">
               <p>Avspillingsåret 2017 er ikke avregnet enda</p>
-              <a href="#"><span class="icon icon--info"></span></a>
             </footer>
             <button class="statusboard__close">
-              <span>Toggle dialogue</span>
+              <span class="icon--close"></span>
             </button>
           </dialogue>
-        </div><!--end .row -->
+        </div>
       </section>
         
-      <section class="message message--secondary message--with-border">
-        <p class="text--upper text--semibold">God dag Morten Harket</p>
-        <p><a href="#" link>Se personalia</a></p>
-      </section>
-        
-      <section id="discography-overview" class="container container--padded container--col-1">
+      <section class="container container--padded text--center">
         <header class="container__header">
-          <h1>Diskografi</h1>
+          <h2>Transaksjoner</h2>
         </header>
-        <div class="row">
-          <div class="col-xs-4">
-            <a class="card">
-              <span class="icon icon--album icon--dark"></span>
-              <h4 class="card__header">Album</h4>
-              <em>138</em>
-            </a><!--end .card -->
-          </div><!--end .col -->
-          <div class="col-xs-4">
-            <a href="#" class="card">
-              <span class="icon icon--notes icon--dark"></span>
-              <h4 class="card__header">Innspillinger</h4>
-              <em>400</em>
-            </a><!--end .card -->
-          </div><!--end .col -->
-          <div class="col-xs-4">
-            <a href="#" class="card">
-              <span class="icon icon--album icon--performer"></span>
-              <h4 class="card__header">Gruppe</h4>
-              <em>2</em>
-            </a><!--end .card -->
-          </div><!--end .col -->
-        </div><!--end .row -->
+        <label class="form__label">Velg Periode
+          <select class="select  select--block">
+            <option value="">Alle transaksjoner</option>
+            <option value="">2017</option>
+            <option value="">2016</option>
+          </select>
+        </label>
       </section>
-        
-      <div class="horizontal-rule horizontal-rule--with-arrow">
-        <hr>
-      </div>
       
-      <section id="discography-info" class="container container--col-1 text--center">
-        <header class="container__header">
-          <h2>Profil</h2>
-        </header>
-        <!-- <form class="form form--summary">
-          <label class="form__label form__label--block"><span>Gruppe</span>
-            <input class="form__input" type="text" value="A-ha" disabled>
-          </label>
-          <label class="form__label form__label--block"><span>Artistnavn</span>
-            <input class="form__input" type="text" value="Morten Harket" disabled>
-          </label>
-          <label class="form__label form__label--block"><span>Instrumenter</span>
-            <input class="form__input" type="text" value="Vokal" disabled>
-          </label>
-        </form> -->
-        <p>Se og rediger nøkkelinformasjon om deg og medlemskapet i Gramo</p>
-        <p><a href="#">Se alle artistnavn og instrumenter</a></p>
-        <p><a href="#">Se medlemskapet</a></p>
+      <section id="ledger-info" class="container container--for-tables">
+        <table class="table table--fluid table--list table--five">
+          <thead>
+            <tr>
+              <th>Avregningsdato</th>
+              <th>Avregningsnavn</th>
+              <th>Betalt til</th>
+              <th>Status</th>
+              <th>Midler</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table__row--with-arrow">
+              <td data-label="Avregningsdato" class="table__cell--left text--light">
+                25.12.2015
+              </td>
+              <td data-label="Avregningsnavn" class="table__cell--left text--bold">
+                Utebetaling Vinter 2015
+              </td>
+              <td data-label="Betalt til" class="table__cell--left">
+                Bank
+              </td>
+              <td data-label="Status" class="text--light">
+                Kjørt
+              </td>
+              <td data-label="Midler" class="text--bold">
+                <a href="#" class="link--no-line">1785,59</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
 </div>

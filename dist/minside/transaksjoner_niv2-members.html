@@ -20,7 +20,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
   <link rel="stylesheet" href="../minside.css">
-  
+  <script>
+  window.onload = window.location.hash = 'innspillinger';
+  </script>
   
 </head>
 <body>
@@ -44,7 +46,7 @@
         <li class="vertical__nav__heading vertical__nav__heading--colored"><h4>Du ser på</h4></li>
         <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--album-label"></span>Diskografi</a></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Penger</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Transaksjoner</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
         <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
@@ -65,12 +67,11 @@
         </div>
       </div> -->
 
-      <dialogue class="statusboard statusboard--primary" role="alert">
+      <!-- <dialogue class="statusboard statusboard--primary" role="alert">
         <header class="statusboard__header">
           <span class="icon icon--account icon--large"></span>
           <span>Din foreløpig saldo er</span>
           <em>226 756,50 kr</em>
-          <span>Først avregning: 12.12.2016</span>
         </header>
         <footer class="statusboard__footer">
           <p>Avregningen pågår</p>
@@ -79,13 +80,20 @@
         <button class="statusboard__close">
           <span class="icon--close"></span>
         </button>
-      </dialogue>
+      </dialogue> -->
+      <header class="masthead">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text--center">
+              <h1>Hoved avregning vinter 2016</h1>
+              <p>12.12.2015</p>
+              <h3>1000,00 kr</h3>
+            </div>
+          </div><!--end .row-->
+        </div>
+      </header>
     
       <section id="ledger-info" class="container container--padded container--for-tables">
-        <header class="container__header">
-          <h2>Avregning detaljer</h2>
-          <h3 class="heading--sub">Først avregning: 12.12.2016</h3>
-        </header>
         <div class="tabs">
           <ul class="tabs__nav tabs__nav--flexible" role="tablist">
             <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger" aria-selected="true">Per Sang</a></li>
@@ -98,9 +106,9 @@
                   <th>Innspillingstittel</th>
                   <th>Hovedartist</th>
                   <th>Poeng</th>
-                  <th>Spilletid</th>
-                  <th>Sats</th>
-                  <th>Midler</th>
+                  <th class="text--right">Spilletid</th>
+                  <th class="text--right">Sats</th>
+                  <th class="text--right">Beløp (kr)</th>
                 </tr>
               </thead>
               <tbody>
@@ -114,21 +122,50 @@
                   <td data-label="Poeng" class="table__cell--left">
                     A/B - 64 poeng
                   </td>
-                  <td data-label="Spilletid">
+                  <td data-label="Spilletid" class="text--right">
                     19:04:45
                   </td>
-                  <td data-label="Sats">
+                  <td data-label="Sats" class="text--right">
                     175
                   </td>
-                  <td data-label="Beløp">
-                    Kr. 1785,59
+                  <td data-label="Beløp" class="text--right">
+                    1785,59 <span class="show-on--mobile">kr</span>
                   </td>
                 </tr>
               </tbody>
             </table>
           </section>
           <section id="channel" role="tabpanel" class="tabs__section">
-            
+            <table class="table table--fluid table--standard no-margin--top">
+              <thead>
+                <tr>
+                  <th>Radio</th>
+                  <th class="text--center-on-mobile">Antall</th>
+                  <th>Spilletid</th>
+                  <th class="table__cell--no-wrap text--right-always">Beløp (kr)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NRK P1</td>
+                  <td class="text--center-on-mobile">3</td>
+                  <td>00:10:05</td>
+                  <td class="text--bold text--right-always">30,50</td>
+                </tr>
+                <tr>
+                  <td>NRK P1</td>
+                  <td class="text--center-on-mobile">3</td>
+                  <td>00:10:05</td>
+                  <td class="text--bold text--right-always">30,50</td>
+                </tr>
+                <tr>
+                  <td>NRK P1</td>
+                  <td class="text--center-on-mobile">3</td>
+                  <td>00:10:05</td>
+                  <td class="text--bold text--right-always">30,50</td>
+                </tr>
+              </tbody>
+            </table>
           </section>
         </div>
       </section>

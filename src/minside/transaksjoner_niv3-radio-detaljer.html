@@ -44,7 +44,7 @@
         <li class="vertical__nav__heading vertical__nav__heading--colored"><h4>Du ser på</h4></li>
         <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--album-label"></span>Diskografi</a></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Penger</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Transaksjoner</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
         <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
@@ -64,66 +64,110 @@
           <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
         </div>
       </div> -->
-      <section class="container">
-        <div class="row">
-          <dialogue class="statusboard statusboard--secondary" role="alert">
-            <header class="statusboard__header">
-              <span class="icon icon--bank icon--large"></span>
-              <span>Din siste utbetaling var</span>
-              <em>205 693,50 kr</em>
-              <span>25.12.2015</span>
-            </header>
-            <footer class="statusboard__footer">
-              <p>Avspillingsåret 2017 er ikke avregnet enda</p>
-              <a href="#"><span class="icon icon--info"></span></a>
-            </footer>
-            <button class="statusboard__close">
-              <span class="icon--close"></span>
-            </button>
-          </dialogue>
-        </div>
-      </section>
-        
-      <section class="container container--padded text--center">
-        <header class="container__header">
-          <h2>Penger</h2>
+
+      <!-- <dialogue class="statusboard statusboard--primary" role="alert">
+        <header class="statusboard__header">
+          <span class="icon icon--yay icon--large"></span>
+          <h3>Utbetaling Vinter 2016</h3>
+          <em>214 000,00 kr</em>
+          <h3>Planlagt: 25.12.2015</h3>
         </header>
-        <label class="form__label">Velg Periode
-          <select class="select  select--block">
-            <option value="">Siste avregning</option>
-            <option value="">2017</option>
-            <option value="">2016</option>
-          </select>
-        </label>
-      </section>
+        <footer class="statusboard__footer">
+          <p>Utbetalingen pågår. Vis meg</p>
+          <a href="#"><span class="icon icon--info"></span></a>
+        </footer>
+        <button class="statusboard__close">
+          <span class="icon--close"></span>
+        </button>
+      </dialogue> -->
       
-      <section id="ledger-info" class="container container--for-tables">
-        <table class="table table--fluid table--list table--five">
+      <header class="masthead">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text--center">
+              <h1>NRK P1</h1>
+              <section class="masthead__meta">
+                <h4 class="masthead__meta__item"><span>Avspillinger</span>37</h4>
+                <h4 class="masthead__meta__item"><span>Spilletid</span>02.10.05</h4>
+                <h4 class="masthead__meta__item"><span>Inntekt</span>1265,50</h4>
+              </section>
+            </div>
+          </div><!--end .row-->
+        </div>
+      </header>
+    
+
+      <section id="ledger-info" class="container container--padded container--for-tables">
+        <table class="table table--fluid table--list table--six">
           <thead>
             <tr>
-              <th>Avregningsdato</th>
-              <th>Avregningsnavn</th>
-              <th>Betalt til</th>
-              <th>Status</th>
-              <th>Midler</th>
+              <th>Innspillingstittel</th>
+              <th>Hovedartist</th>
+              <th>Poeng</th>
+              <th class="text--right">Spilletid</th>
+              <th class="text--right">Sats</th>
+              <th class="text--right">Beløp (kr)</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="table__row--with-arrow">
-              <td data-label="Avregningsdato">
-                25.12.2015
+            <tr>
+              <td data-label="Tittel">
+                <a href="#" class="link--no-line text--bold-on-mobile">Take on Me</a>
               </td>
-              <td data-label="Navn" class="table__cell--left">
-                Utebetaling Vinter 2015
+              <td data-label="Hovedartist" class="table__cell--left">
+                A-ha
               </td>
-              <td data-label="Betalt til" class="table__cell--left">
-                Bank
+              <td data-label="Poeng" class="table__cell--left">
+                A/B - 64 poeng
               </td>
-              <td data-label="Status">
-                Kjørt
+              <td data-label="Spilletid" class="text--right">
+                19:04:45
               </td>
-              <td data-label="Midler">
-                Kr. 1785,59
+              <td data-label="Sats" class="text--right">
+                175
+              </td>
+              <td data-label="Beløp" class="text--right">
+                1785,59 <span class="show-on--mobile">kr</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Tittel">
+                <a href="#" class="link--no-line text--bold-on-mobile">Take on Me</a>
+              </td>
+              <td data-label="Hovedartist" class="table__cell--left">
+                A-ha
+              </td>
+              <td data-label="Poeng" class="table__cell--left">
+                A/B - 64 poeng
+              </td>
+              <td data-label="Spilletid" class="text--right">
+                19:04:45
+              </td>
+              <td data-label="Sats" class="text--right">
+                175
+              </td>
+              <td data-label="Beløp" class="text--right">
+                1785,59 <span class="show-on--mobile">kr</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Tittel">
+                <a href="#" class="link--no-line text--bold-on-mobile">Take on Me</a>
+              </td>
+              <td data-label="Hovedartist" class="table__cell--left">
+                A-ha
+              </td>
+              <td data-label="Poeng" class="table__cell--left">
+                A/B - 64 poeng
+              </td>
+              <td data-label="Spilletid" class="text--right">
+                19:04:45
+              </td>
+              <td data-label="Sats" class="text--right">
+                175
+              </td>
+              <td data-label="Beløp" class="text--right">
+                1785,59 <span class="show-on--mobile">kr</span>
               </td>
             </tr>
           </tbody>

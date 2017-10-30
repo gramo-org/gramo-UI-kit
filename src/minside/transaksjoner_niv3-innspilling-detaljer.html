@@ -43,8 +43,8 @@
         </li>
         <li class="vertical__nav__heading vertical__nav__heading--colored"><h4>Du ser på</h4></li>
         <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--album-label"></span>Diskografi</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span>Transaksjoner</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--album-label"></span>Diskografi</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Transaksjoner</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
         <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
@@ -56,54 +56,61 @@
         <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
       </ul>
     </nav>
-    <main> 
+    <main>
+      <!--- Flash message --->
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success" role="alert" aria-live="assertive">
+          <p>Velkommen til nye Gramo</p>
+          <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
+        </div>
+      </div> -->
       <header class="masthead">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text--center">
-              <h1>Varslinger</h1>
+              <h1>Take on Me (edit)</h1>
+              <h3>A-ha</h3>
+              <h4>Rollecode A, B - 64 poeng</h4>
+              <section class="masthead__meta">
+                <h4 class="masthead__meta__item"><span>Innspillinger</span>175</h4>
+                <h4 class="masthead__meta__item"><span>Spilletid</span>19.04.45</h4>
+                <h4 class="masthead__meta__item"><span>Inntekt</span>1785,59</h4>
+              </section>
             </div>
           </div><!--end .row-->
         </div>
-      </header>     
-      <section id="notifications" class="container container--padded container--col-3">
-        <ul class="list">
-          <li class="list__item row">
-            <div class="col-sm-4">
-              Ny utøver
-              <a href="#">Morten Harket</a>
-            </div>
-            <div class="col-sm-4">
-              Innspilling
-              <a href="#">Take on Me</a>
-            </div>
-            <div class="col-sm-3">
-              21.06.2017
-              <span>Av: <a href="#">Magne Furuholmen</a></span>
-            </div>
-            <div class="col-sm-1 align--vertical-center">
-              <button class="btn btn--secondary btn--small">Ok</button>
-            </div>
-          </li>
-          <li class="list__item row">
-            <div class="col-sm-4">
-              Ny utøver
-              <a href="#">Morten Harket</a>
-            </div>
-            <div class="col-sm-4">
-              Innspilling
-              <a href="#">Take on Me</a>
-            </div>
-            <div class="col-sm-3">
-              21.06.2017
-              <span>Av: <a href="#">Magne Furuholmen</a></span>
-            </div>
-            <div class="col-sm-1 align--vertical-center">
-              <button class="btn btn--secondary btn--small">Ok</button>
-            </div>
-          </li>
-        </ul>
-        <p class="text--right"><button class="btn btn--primary">Fjern alle</button></p>
+      </header>
+      <section id="ledger-info" class="container container--padded container--for-tables">
+        <table class="table table--fluid table--standard">
+          <thead>
+            <tr>
+              <th>Radio</th>
+              <th class="text--right-always">Antall</th>
+              <th class="text--right-always">Spilletid</th>
+              <th class="text--right-always table__cell--no-wrap">Beløp (kr)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NRK P1</td>
+              <td class="text--right-always">3</td>
+              <td class="text--right-always">00:10:05</td>
+              <td class="text--right-always text--bold">30,50</td>
+            </tr>
+            <tr>
+              <td>NRK P1</td>
+              <td class="text--right-always">3</td>
+              <td class="text--right-always">00:10:05</td>
+              <td class="text--right-always text--bold">30,50</td>
+            </tr>
+            <tr>
+              <td>NRK P1</td>
+              <td class="text--right-always">3</td>
+              <td class="text--right-always">00:10:05</td>
+              <td class="text--right-always text--bold">30,50</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
   </div>

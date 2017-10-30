@@ -44,7 +44,7 @@
         <li class="vertical__nav__heading vertical__nav__heading--colored"><h4>Du ser på</h4></li>
         <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--album-label"></span>Diskografi</a></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Penger</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Transaksjoner</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
         <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
@@ -76,44 +76,67 @@
           <p>Avregningen pågår</p>
           <a href="#"><span class="icon icon--info"></span></a>
         </footer>
+        <button href="#" class="statusboard__close">
+          <span class="icon--close"></span>
+        </button>
         <button class="statusboard__close">
           <span class="icon--close"></span>
         </button>
       </dialogue>
-      <header class="masthead">
-        <div class="container">
+    
+      <section class="container">
           <div class="row">
-            <div class="col-xs-12 text--center">
-              <h1>Utbetaling 2016</h1>
-              <h4>12.12.2016</h4>
-              <h3>2700,00 kr</h3>
-            </div>
-          </div><!--end .row-->
-        </div>
-      </header>
-      <section id="ledger-info" class="container container--padded container--for-tables">
-        <table class="table table--fluid table--list table--four">
+            <header class="masthead">
+              <h1>Transaksjoner</h1>
+            </header>
+          </div>
+        </section>
+        <section class="container text--center container--padded">
+          <label class="form__label">Velg Periode
+            <select class="select  select--block">
+              <option value="">Alle transaksjoner</option>
+              <option value="">2017</option>
+              <option value="">2016</option>
+            </select>
+          </label>
+      </section>
+      <section id="ledger-info" class="container container--for-tables">
+        <table class="table table--fluid table--list table--five">
           <thead>
             <tr>
-              <th>Avregningsnavn</th>
+              <th>Beskrivelse</th>
+              <th>Dato</th>
               <th>Betalt til</th>
-              <th>Utbetalingsdato</th>
-              <th>Midler</th>
+              <th class="text--right">Beløp (kr)</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td data-label="Avregningsnavn">
-                Trekk
+            <tr class="table__row--with-arrow">
+              <td data-label="Beskrivelse">
+                <a href="#">Utbetaling Vinter 2016</a>
+              </td>
+              <td data-label="Dato" class="table__cell--left">
+                20.10.2015
               </td>
               <td data-label="Betalt til" class="table__cell--left">
-                Oslo Kemnekontor
+                Til Sena
               </td>
-              <td data-label="Utbetalingsdato" class="table__cell--left">
-                12.12.2016
+              <td data-label="Beløp" class="text--right">
+                1785,59 <span class="show-on--mobile">kr</span>
               </td>
-              <td data-label="Beløp">
-                200,00 kr
+            </tr>
+            <tr class="table__row--with-arrow">
+              <td data-label="Avregningsdato">
+                <a href="#">Utbetaling Vinter 2016</a>
+              </td>
+              <td data-label="Dato" class="table__cell--left">
+                20.10.2015
+              </td>
+              <td data-label="Betalt til" class="table__cell--left">
+                Til kontonr.: 2987.49.82395
+              </td>
+              <td data-label="Beløp" class="text--right">
+                1785,59 <span class="show-on--mobile">kr</span>
               </td>
             </tr>
           </tbody>

@@ -60,7 +60,7 @@ only screen and (max-width: 768px),
       content: none;
     }
     
-    td:not(.table__cell--no-label):not(.table__cell--action)::before {
+    td:not(:first-child):not(.table__cell--no-label):not(.table__cell--action)::before {
       content: attr(data-label)":";
       display: inline-block;
       margin-right: .5rem;
@@ -73,7 +73,7 @@ only screen and (max-width: 768px),
       
       &:after {
         content: "\e90c";
-        color: var(--light-gray);
+        color: var(--off-gray);
         top: 50%;
         right: 1rem;
         margin-top: -1rem;
@@ -84,7 +84,7 @@ only screen and (max-width: 768px),
     }
   }
   
-  [data-label="Midler"]::before {
+  [data-label="Beløp"]::before {
     display: none!important;
   }
   
@@ -196,6 +196,8 @@ only screen and (max-width: 768px),
   
   .table--standard {
     display: table;
+    width: calc(100% + 2rem);
+    margin: 0 -1rem;
     
     thead {
       display: table-header-group;
@@ -225,4 +227,8 @@ only screen and (max-width: 768px),
 
 .table--standard {
   @media (--tablet) { margin-top: 2rem; }
+}
+
+[data-label="Beløp"] {
+  font-weight: var(--semibold);
 }
