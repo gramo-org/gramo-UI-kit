@@ -59,7 +59,11 @@
     @media (--tablet) { flex: 0 0 auto; }
     
     & > a {
-      max-width: none;
+      padding-left: 1rem;
+      padding-right: 1.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       @media (--tablet) { min-width: 150px; }
     }
   }

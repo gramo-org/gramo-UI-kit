@@ -7,6 +7,10 @@
   padding: 0;
   margin: 0 0 1.2rem 0;
   text-align: left;
+  @media (--tablet) {
+    display: inline-block;
+    vertical-align: middle;
+  }
   
   &--required {
 
@@ -24,7 +28,6 @@
   /* Block labels */
   &--block {
     display: block;
-    margin: 0 0 .4rem 0;
   }
 }
 

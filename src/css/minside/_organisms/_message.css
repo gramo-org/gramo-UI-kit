@@ -6,6 +6,7 @@
   padding: 1rem;
   text-align: center;
   width: 100%;
+  font-weight: var(--semibold);
   
   .icon {
     font-size: 5rem;
@@ -15,7 +16,6 @@
   &--primary {
     background: var(--gramo-turkis);
     font-size: var(--minside-font-size);
-    font-weight: var(--semibold);
   }
   
   &--secondary {

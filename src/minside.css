@@ -3521,6 +3521,13 @@ input[type="checkbox"].form__input--toggle-visibility{
   margin:0 0 1.2rem 0;
   text-align:left;
 }
+@media (min-width: 768px){
+
+  .form__label{
+    display:inline-block;
+    vertical-align:middle;
+  }
+}
 .form__label--required:before{
   content:'*';
   color:#ed6b6a;
@@ -3531,7 +3538,6 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .form__label--block{
   display:block;
-  margin:0 0 .4rem 0;
 }
 
 .form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before, legend{
@@ -3780,7 +3786,11 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .tabs__nav--flexible .tabs__nav__item > a{
-  max-width:none;
+  padding-left:1rem;
+  padding-right:1.5rem;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 
 @media (min-width: 768px){
@@ -5114,6 +5124,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   padding:1rem;
   text-align:center;
   width:100%;
+  font-weight:600;
 }
 .message .icon{
   font-size:5rem;
@@ -5122,7 +5133,6 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .message--primary{
   background:#88c7d8;
   font-size:1.6rem;
-  font-weight:600;
 }
 .message--secondary{
   background:#ededed;
