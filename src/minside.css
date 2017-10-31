@@ -2902,8 +2902,8 @@ _:-ms-input-placeholder, :root .container--branded__heading{
   color:#a5a4ab;
 }
 
-.icon--dark, .statusboard__footer .icon{
-  color:#504f56;
+.icon--dark::before, .statusboard__footer .icon::before{
+  color:#504f56!important;
 }
 
 .icon--ui-gray{

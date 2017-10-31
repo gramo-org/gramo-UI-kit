@@ -44,8 +44,8 @@
   color: var(--off-gray);
 }
 
-.icon--dark {
-  color: var(--slate-gray);
+.icon--dark::before {
+  color: var(--slate-gray)!important;
 }
 
 .icon--ui-gray {
