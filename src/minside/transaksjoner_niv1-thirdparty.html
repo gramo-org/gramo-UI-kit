@@ -61,14 +61,15 @@
           <span>Utbetaling Vinter 2016</span>
           <em>226 756,50 kr</em>
           <span>Planlagt: 25.12.2017</span>
+          <button class="statusboard__switch">
+            <span class="icon--switch"></span>
+            Se produsent
+          </button>
         </header>
         <footer class="statusboard__footer">
           <p>Avregningen pågår</p>
           <a href="#"><span class="icon icon--info"></span></a>
         </footer>
-        <button href="#" class="statusboard__close">
-          <span class="icon--close"></span>
-        </button>
         <button class="statusboard__close">
           <span class="icon--close"></span>
         </button>
@@ -84,14 +85,14 @@
         <section class="container text--center container--padded">
           <div class="row">
             <div class="col-xs-6 align--flex-end">
-              <label class="form__label align--flex-end">Velg sector
+              <label class="form__label">Velg sector
                 <select class="select select--block">
                   <option value="">Utøver</option>
                   <option value="">Produsent</option>
                 </select>
               </label>
             </div><!-- end .row -->
-            <div class="col-xs-6">
+            <div class="col-xs-6 align--flex-start">
               <label class="form__label">Velg periode
                 <select class="select select--block">
                   <option value="">Alle transaksjoner</option>
@@ -106,13 +107,13 @@
             <div class="col-xs-6 align--flex-end">
               <label class="form__label">
                 <span>Fra</span>
-                <input type="date" class="form__input form__input--date">
+                <input type="date" class="form__input form__input--date form__input--stretch">
               </label>
             </div>
             <div class="col-xs-6 align--flex-start">
               <label class="form__label">
                 <span>Til</span>
-                <input type="date" class="form__input form__input--date">
+                <input type="date" class="form__input form__input--date form__input--stretch">
               </label>
             </div>
           </div><!--end .row -->

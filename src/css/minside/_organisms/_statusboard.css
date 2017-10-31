@@ -4,7 +4,7 @@
   display: block;
   position: relative;
   transition: height .15s ease-out;
-  height: 228px;
+  height: 238px;
 
   &--primary {
     background: color(var(--gramo-turkis) tint(60%));
@@ -145,6 +145,18 @@
       transform: rotate(180deg);
       font-size: 1.6rem;
     }
+  }
+  
+  &__switch {
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+    background: none;
+    border: 0;
+    outline: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    vertical-align: middle;
   }
   
   

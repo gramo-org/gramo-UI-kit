@@ -76,9 +76,6 @@
           <p>Avregningen pågår</p>
           <a href="#"><span class="icon icon--info"></span></a>
         </footer>
-        <button href="#" class="statusboard__close">
-          <span class="icon--close"></span>
-        </button>
         <button class="statusboard__close">
           <span class="icon--close"></span>
         </button>
@@ -100,6 +97,20 @@
               <option value="">Egendefinert</option>
             </select>
           </label>
+          <div class="row">
+            <div class="col-xs-6 align--flex-end">
+              <label class="form__label">
+                <span>Fra</span>
+                <input type="date" class="form__input form__input--date form__input--stretch">
+              </label>
+            </div>
+            <div class="col-xs-6 align--flex-start">
+              <label class="form__label">
+                <span>Til</span>
+                <input type="date" class="form__input form__input--date form__input--stretch">
+              </label>
+            </div>
+          </div><!--end .row -->
       </section>
       <section id="ledger-info" class="container container--for-tables">
         <table class="table table--fluid table--list table--five">
