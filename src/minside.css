@@ -2616,17 +2616,6 @@ h4{
   vertical-align:middle;
 }
 
-.text--center-on-mobile{
-  text-align:center!important;
-}
-
-@media (min-width: 768px){
-
-  .text--center-on-mobile{
-    text-align:left!important;
-  }
-}
-
 .text--center-always{
   text-align:center!important;
 }
@@ -2669,10 +2658,6 @@ h4{
   .text--light-on-mobile{
     color:inherit;
   }
-}
-
-.text--blue{
-  color:#0095da;
 }
 
 .text--error{
@@ -2751,6 +2736,30 @@ h4{
 
 [class*="--no-wrap"]{
   white-space:nowrap;
+}
+
+@media (min-width: 768px){
+
+  .align--flex-end{
+    -webkit-align-self:flex-end;
+    -ms-flex-item-align:end;
+    align-self:flex-end;
+    -webkit-align-items:flex-end;
+    -ms-flex-align:end;
+    align-items:flex-end;
+  }
+}
+
+@media (min-width: 768px){
+
+  .align--flex-start{
+    -webkit-align-self:flex-start;
+    -ms-flex-item-align:start;
+    align-self:flex-start;
+    -webkit-align-items:flex-start;
+    -ms-flex-align:start;
+    align-items:flex-start;
+  }
 }
 
 .site-wrapper{
@@ -3354,6 +3363,7 @@ h2 .badge{
   padding:0 4rem 0 1rem;
   background-image:url(img/arrow-down-dark.svg);
   background-position:right 1rem top 55%;
+  min-width:0;
   margin-top:.6rem;
 }
 @media (min-width: 768px){

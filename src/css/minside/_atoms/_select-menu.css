@@ -3,7 +3,7 @@
   padding: 0 4rem 0 1rem;
   background-image: url(img/arrow-down-dark.svg);
   background-position: right 1rem top 55%;
-  /*min-width: 250px;*/
+  min-width: 0;
   margin-top: .6rem;
   @media (--tablet) { width: 280px; }
   

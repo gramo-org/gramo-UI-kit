@@ -82,13 +82,40 @@
           </div>
         </section>
         <section class="container text--center container--padded">
-          <label class="form__label">Velg Periode
-            <select class="select  select--block">
-              <option value="">Alle transaksjoner</option>
-              <option value="">2017</option>
-              <option value="">2016</option>
-            </select>
-          </label>
+          <div class="row">
+            <div class="col-xs-6 align--flex-end">
+              <label class="form__label align--flex-end">Velg sector
+                <select class="select select--block">
+                  <option value="">Utøver</option>
+                  <option value="">Produsent</option>
+                </select>
+              </label>
+            </div><!-- end .row -->
+            <div class="col-xs-6">
+              <label class="form__label">Velg periode
+                <select class="select select--block">
+                  <option value="">Alle transaksjoner</option>
+                  <option value="">I fjor</option>
+                  <option value="">Siste 4 år</option>
+                  <option value="">Egendefinert</option>
+                </select>
+              </label>
+            </div>
+          </div><!--end .row -->
+          <div class="row">
+            <div class="col-xs-6 align--flex-end">
+              <label class="form__label">
+                <span>Fra</span>
+                <input type="date" class="form__input form__input--date">
+              </label>
+            </div>
+            <div class="col-xs-6 align--flex-start">
+              <label class="form__label">
+                <span>Til</span>
+                <input type="date" class="form__input form__input--date">
+              </label>
+            </div>
+          </div><!--end .row -->
       </section>
       <section id="ledger-info" class="container container--for-tables">
         <table class="table table--fluid table--list table--five">
