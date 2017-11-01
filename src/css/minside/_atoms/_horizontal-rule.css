@@ -23,6 +23,15 @@ hr, .horizontal-rule {
   }
 }
 
+.horizontal-rule--spacer {
+  margin: 1.2rem 0 2rem 0!important;
+  background: none;
+  &:before,
+  &:after {
+    content: none;
+  }
+}
+
 .horizontal-rule--with-arrow:before,
 .horizontal-rule--with-arrow:after {
   content: '';

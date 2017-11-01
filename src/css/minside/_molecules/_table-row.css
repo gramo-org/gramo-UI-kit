@@ -1,3 +1,23 @@
 .table__row--selected {
   background: color(var(--row-hover) shade(7%));
 }
+
+.row__delete {
+  position: relative;
+  right: .5rem;
+  top: 1rem;
+  align-self: center;
+  @media (--tablet) {
+    position: absolute;
+    right: -1.5rem;
+    top: calc(50% - 0.2rem);
+  }
+  
+  .icon {
+    font-size: 2rem;
+  }
+  
+  &--half {
+    @media (--tablet) { right: calc(50% - 1.5rem); }
+  }
+}

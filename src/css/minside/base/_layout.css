@@ -85,3 +85,17 @@ main > section:first-of-type {
 _:-ms-input-placeholder, :root .container--branded__heading {
   width: 400px;
 }
+
+/* Adjust container to left to avoid scrollbar caused by .row__delete */
+.adjust--to-left {
+  position: static;
+  
+  @media (--tablet) {
+    position: relative;
+    left: -2rem;
+  }
+  
+  @media (--hd) {
+    position: static;
+  }
+}

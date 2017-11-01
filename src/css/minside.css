@@ -5,7 +5,6 @@
 /* Base styles */
 @import url('base/_normalize.css');
 @import url('base/_variables.css');
-@import url('base/_utility-classes.css');
 @import url('base/_base.css');
 @import url('base/_grid.css');
 @import url('base/_layout.css');

@@ -53,6 +53,11 @@ h4 {
   font-size: inherit;
 }
 
+.heading--sub {
+  margin-top: 1.2rem;
+  margin-bottom: 2.6rem;
+}
+
 [data-type]::before {
   color: inherit;
   margin-right: 1rem;
