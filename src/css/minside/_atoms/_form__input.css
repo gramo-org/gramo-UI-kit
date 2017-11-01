@@ -26,20 +26,19 @@ input[type="radio"], input[type="checkbox"],
   margin-right: 0.2rem;
 }
 
+/* Date inputs */
 .form__input--date,
 .form__input[type="date"] {
-  font-weight: var(--normal);
-  color: var(--gramo-blue);
-  background: #fff url(img/calendar.svg) center right 5px no-repeat;
-  border: 1px solid var(--silver);
-  padding-right:.5rem;
-  padding-left: .5rem;
-  max-height: 31px;
+  @extend .form__input;
+  padding: 1rem .75rem;
+  min-height: 45px;
+  background: #fff url(img/calendar.svg) center right 1rem no-repeat;
   max-width: 150px;
   min-width: 115px;
+  
   @media (--tablet) { 
     min-width: 0;
-    max-width: none;
+    max-width: 200px;
   }
   
   &::-webkit-calendar-picker-indicator,
@@ -48,29 +47,11 @@ input[type="radio"], input[type="checkbox"],
     -webkit-appearance: none!important;
   }
 
-  &.placeholder {
-    color: var(--gramo-blue);
-    text-align: center;
-  }
-
   &[disabled] {
     @extend .form__input[disabled];
-    color: var(--base-font-color);
-    background-image: none;
-    min-width: 0;
-    /*width: 100%;*/
-    /*padding-left: 0;*/
-    padding-right: 0;
   }
 }
 
-.form__input[type="date"], .form__input--date {
-  @extend .form__input;
-  color: inherit;
-  padding: 2.3rem .75rem;
-  background-position: center right 1rem;
-  @media (--tablet) { max-width: 200px; }
-}
 /* Hack to vertically center text in input on ie/edge */
 _:-ms-lang(x), .form__input[type="date"] {
   line-height: 0;
@@ -78,7 +59,7 @@ _:-ms-lang(x), .form__input[type="date"] {
 /* Hack to fix heights of date inputs in IE10/11 */
 _:-ms-input-placeholder, :root .form__input[type="date"] {
   box-sizing: content-box;
-  padding: 1.3rem 0 1.3rem .5rem;
+  padding: 1.2rem 0 1.2rem .5rem;
   width: 95%;
 }
 
@@ -89,7 +70,7 @@ input[type="number"] {
 
 .form__input[disabled] {
   border-color: var(--silver);
-  background: color(var(--light-gray) shade(3%));
+  background-color: color(var(--light-gray) shade(3%));
   color: var(--off-gray);
   cursor: not-allowed;
 }
@@ -131,12 +112,16 @@ input[type="checkbox"].form__input--toggle-visibility {
   margin: 0;
 }
 
+.form__input--170 {
+  @media (--tablet) { width: 170px; }
+}
+
 .form__input--80 {
-  @media (--tablet) { width: 80px; padding-right: 1rem;  }
+  @media (--tablet) { width: 80px; }
 }
 
 .form__input--60 {
-  @media (--tablet) { width: 60px; padding-right: 1rem; }
+  @media (--tablet) { width: 60px; }
 }
 
 .form__input--30 {
@@ -145,7 +130,7 @@ input[type="checkbox"].form__input--toggle-visibility {
 
 /* Textarea */
 .form__input--textarea {
-  resize:vertical;
+  resize: vertical;
   background: var(--gramo-white);
   min-height: 100px;
   max-width: 400px;
