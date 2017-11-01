@@ -53,15 +53,10 @@
     }
     
     .icon {
-      font-size: 2rem;
+      font-size: 1.6rem;
       margin: 0 0.5rem 0 0;
       position: relative;
       top: 2px;
-    }
-    
-    em {
-      font-style: normal;
-      font-weight: var(--semibold);
     }
   }
   

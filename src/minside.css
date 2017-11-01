@@ -4879,14 +4879,10 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   color:#504f56;
 }
 .message--agent .icon{
-  font-size:2rem;
+  font-size:1.6rem;
   margin:0 0.5rem 0 0;
   position:relative;
   top:2px;
-}
-.message--agent em{
-  font-style:normal;
-  font-weight:600;
 }
 .message--with-border{
   box-shadow:0 1px 0 0 rgba(0,0,0,0.1);
