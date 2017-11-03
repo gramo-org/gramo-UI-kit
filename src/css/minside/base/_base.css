@@ -25,6 +25,10 @@ html {
   line-height: var(--minside-line-height);
 }
 
+%margin-bottom {
+  margin-bottom: 1.2rem;
+}
+
 /* Basic layout */
 body {
   background: var(--minside-background-color);
@@ -54,7 +58,8 @@ h2 {
   margin: 0;
   
   &.text--thin {
-    @extend h1;
+    font-size: var(--h1-font-size);
+    margin: 0;
   }
 }
 h3 {

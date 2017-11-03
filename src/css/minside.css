@@ -7,9 +7,15 @@
 @import url('base/_variables.css');
 @import url('base/_grid.css');
 
+/* Minside base styles */
+@import url('minside/base/_base.css');
+@import url('minside/base/_utility-classes.css');
+@import url('minside/base/_layout.css');
+
 /* Print Styles */
 @media print {
   @import url('base/_print.css');
+  @import url('minside/base/_print.css');
 }
 /*Atoms*/
 @import url('_atoms/_links.css');
@@ -35,14 +41,8 @@
 ----------------------------------------------------------------
 */
 
-/* Base styles */
-@import url('minside/base/_base.css');
-@import url('minside/base/_utility-classes.css');
-@import url('minside/base/_layout.css');
-/* Print Styles */
-@media print {
-  @import url('minside/base/_print.css');
-}
+
+
 /* Atoms */
 @import url('minside/_atoms/_icons.css');
 @import url('minside/_atoms/_box.css');

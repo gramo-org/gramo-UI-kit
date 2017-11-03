@@ -56,7 +56,11 @@
 }
 
 input[type="text"].search__form__input {
-  @extend .form__input;
+  padding: 0.55rem;
+  padding-right: 2rem;
+  font-weight: var(--normal);
+  display: block;
+  width: 100%;
   background: var(--gramo-white);
   overflow: hidden;
   text-overflow: ellipsis;

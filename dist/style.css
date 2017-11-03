@@ -1669,7 +1669,7 @@ table{
 .form__label--new .form__input{
   padding-left:3rem;
 }
-.form__input, input[type="text"].search__form__input{
+.form__input{
   border:1px solid #d9d9dc;
   padding:0.55rem;
   padding-right:2rem;
@@ -1681,13 +1681,13 @@ table{
 }
 @media (min-width: 768px){
 
-  .form__input, input[type="text"].search__form__input{
+  .form__input{
     display:inline-block;
     width:auto;
     margin-bottom:0;
   }
 }
-.form__input[disabled], .form__input--date[disabled], .form__input[type="date"][disabled], .select[disabled]{
+.form__input[disabled], .form__input--date[disabled], .form__input[type="date"][disabled]{
   background-color:rgba(255, 255, 255, 0.2);
   border-color:rgb(232, 232, 232);
 }
@@ -1935,17 +1935,17 @@ input-placeholder{
     background-size:15px;
 }
 
-.form__label.has-error .form__input, .form__input.has-error, input[type="text"].search__form__input.has-error{
+.form__label.has-error .form__input, .form__input.has-error{
     border:3px solid #ed6b6a;
     background:#fff url(img/cross.svg) center right 7px no-repeat;
     background-size:11px;
   }
 
-.form__label.has-error .form__input[type="number"], .form__input.has-error[type="number"], input[type="text"].search__form__input.has-error[type="number"]{
+.form__label.has-error .form__input[type="number"], .form__input.has-error[type="number"]{
   background-image:none;
 }
 
-.form__label.has-error .form__input.searchable-list, .form__input.has-error.searchable-list, input[type="text"].search__form__input.has-error.searchable-list{
+.form__label.has-error .form__input.searchable-list, .form__input.has-error.searchable-list{
   background-image:none;
 }
 
@@ -2042,6 +2042,8 @@ input-placeholder{
   background-position:93% 55%;
 }
 .select[disabled]{
+  background-color:rgba(255, 255, 255, 0.2);
+  border-color:rgb(232, 232, 232);
   background-image:none;
 }
 .form__label.has-error .select{
@@ -4890,6 +4892,11 @@ main.pull .bucket{
 }
 
 input[type="text"].search__form__input{
+  padding:0.55rem;
+  padding-right:2rem;
+  font-weight:400;
+  display:block;
+  width:100%;
   background:#fdfdfd;
   overflow:hidden;
   text-overflow:ellipsis;
