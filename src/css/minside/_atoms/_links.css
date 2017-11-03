@@ -1,0 +1,9 @@
+.link--back {
+  text-decoration: none;
+  
+  &:before {
+    margin-right: .5rem;
+    content: "\e908";
+    font-family: 'minside-icons';
+  }
+}

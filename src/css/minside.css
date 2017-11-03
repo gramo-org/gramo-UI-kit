@@ -5,9 +5,8 @@
 /* Base styles */
 @import url('base/_normalize.css');
 @import url('base/_variables.css');
-@import url('base/_base.css');
 @import url('base/_grid.css');
-@import url('base/_layout.css');
+
 /* Print Styles */
 @media print {
   @import url('base/_print.css');
@@ -57,6 +56,7 @@
 @import url('minside/_atoms/_toolbar.css');
 @import url('minside/_atoms/_spinner.css');
 @import url('minside/_atoms/_table-cells.css');
+@import url('minside/_atoms/_links.css');
 /* Molecules */
 @import url('minside/_molecules/_flash-message.css');
 @import url('minside/_molecules/_tabs__nav.css');
