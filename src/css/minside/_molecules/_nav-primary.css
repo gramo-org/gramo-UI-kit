@@ -89,8 +89,7 @@
       }
     }
     
-    &__item a {
-      background: none;
+    &__item a, &__item--disabled {
       color: var(--ui-gray);
       text-transform: none;
       border: 0;
@@ -110,8 +109,15 @@
     }
     
     &__item--active a.active,
-    &__item--active a.active .icon {
+    &__item--active a.active .icon,
+    &__item--active.vertical__nav__item--disabled,
+    &__item--active.vertical__nav__item--disabled .icon,
+    &__item--active.vertical__nav__item--disabled:hover {
       color: inherit;
+    }
+    
+    &__item--disabled, &__item--disabled:hover {
+      color: var(--off-gray);
     }
     
     li:last-child {

@@ -3549,8 +3549,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   padding:1.2rem 0 0 2rem;
 }
 
-.nav--primary .vertical__nav__item a{
-  background:none;
+.nav--primary .vertical__nav__item a, .nav--primary .vertical__nav__item--disabled{
   color:#434D5A;
   text-transform:none;
   border:0;
@@ -3565,16 +3564,20 @@ input[type="checkbox"].form__input--toggle-visibility{
   text-decoration:none;
 }
 
-.nav--primary .vertical__nav__item a.active, .nav--primary .vertical__nav__item a:hover, .nav--primary .vertical__nav__item a.active .icon{
+.nav--primary .vertical__nav__item a.active, .nav--primary .vertical__nav__item a:hover, .nav--primary .vertical__nav__item a.active .icon, .nav--primary .vertical__nav__item--disabled.active, .nav--primary .vertical__nav__item--disabled:hover, .nav--primary .vertical__nav__item--disabled.active .icon{
   color:#31798d;
 }
 
-.nav--primary .vertical__nav__item a .icon{
+.nav--primary .vertical__nav__item a .icon, .nav--primary .vertical__nav__item--disabled .icon{
   color:#a5a4ab;
 }
 
-.nav--primary .vertical__nav__item--active a.active, .nav--primary .vertical__nav__item--active a.active .icon{
+.nav--primary .vertical__nav__item--active a.active, .nav--primary .vertical__nav__item--active a.active .icon, .nav--primary .vertical__nav__item--active.vertical__nav__item--disabled, .nav--primary .vertical__nav__item--active.vertical__nav__item--disabled .icon, .nav--primary .vertical__nav__item--active.vertical__nav__item--disabled:hover{
   color:inherit;
+}
+
+.nav--primary .vertical__nav__item--disabled, .nav--primary .vertical__nav__item--disabled:hover{
+  color:#a5a4ab;
 }
 
 .nav--primary .vertical__nav li:last-child{
