@@ -20,6 +20,15 @@
     }
   }
   
+  &--disabled {
+    background: var(--light-gray);
+    pointer-events: none;
+    
+    h2, .icon {
+      color: var(--off-gray);
+    }
+  }
+  
   .icon {
     font-size: 3.2rem;
     @media (--tablet) { font-size: 4rem; }

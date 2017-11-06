@@ -3838,6 +3838,13 @@ input[type="checkbox"].form__input--toggle-visibility{
 .card--with-border:last-child{
   margin-bottom:3rem;
 }
+.card--disabled{
+  background:#ededed;
+  pointer-events:none;
+}
+.card--disabled h2, .card--disabled .icon{
+  color:#a5a4ab;
+}
 .card .icon{
   font-size:3.2rem;
 }
