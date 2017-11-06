@@ -49,6 +49,7 @@ only screen and (max-width: 768px),
       
       &.table__cell--left {
         flex: 1 0 50%;
+        text-align: left!important;
       }
       
       &.table__cell--full {

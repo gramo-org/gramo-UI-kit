@@ -4244,6 +4244,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
     -webkit-flex:1 0 50%;
     -ms-flex:1 0 50%;
     flex:1 0 50%;
+    text-align:left!important;
   }
 
   .table--list td.table__cell--full{
