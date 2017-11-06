@@ -1196,7 +1196,7 @@ table{
 
 .link--add{
   margin-bottom:1.2rem;
-  display:block;
+  display:inline-block;
 }
 .select{
   border:1px solid #d9d9dc;

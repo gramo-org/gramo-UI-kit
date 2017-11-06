@@ -1567,7 +1567,7 @@ table{
 
 .link--add{
   margin-bottom:1.2rem;
-  display:block;
+  display:inline-block;
 }
 .scrollbar::-webkit-scrollbar, .sidebar .sidebar__nav::-webkit-scrollbar{
   width:10px;
@@ -2398,7 +2398,6 @@ hr, .horizontal-rule{
 
 .badge--icon-error:before{
   content:"\e901";
-  color:#ed6b6a;
   font-family:'icomoon';
 }
 
@@ -2408,7 +2407,6 @@ hr, .horizontal-rule{
 
 .badge--icon-success:before{
   content:"\e900";
-  color:#50bf9e;
   font-family:'icomoon';
 }
 

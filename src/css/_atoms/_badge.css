@@ -94,7 +94,6 @@
 
     &:before {
       content: "\e901";
-      color: var(--gramo-red);
       font-family: 'icomoon';
     }
   }
@@ -104,7 +103,6 @@
 
     &:before {
       content: "\e900";
-      color: var(--gramo-green);
       font-family: 'icomoon';
     }
   }
