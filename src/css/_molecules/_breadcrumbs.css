@@ -2,13 +2,11 @@
   list-style: none;
   padding: 0.7rem 1rem 0.5rem 0;
   margin: 0;
-  @extend .col-sm;
   display: inline-block;
   color: var(--light-gray);
 
   &__item {
     margin-bottom: 0;
-    @extend .col-md;
     display: inline-block;
     padding-right: 0;
 

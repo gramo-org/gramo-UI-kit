@@ -1,6 +1,6 @@
 .form__label {
   position: relative;
-  @extend h4;
+  font-weight: var(--semibold);
   display: block;
   text-align: left;
   @media (--tablet) {

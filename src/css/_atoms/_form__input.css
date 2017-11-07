@@ -68,12 +68,11 @@ input[type="radio"], input[type="checkbox"],
   }
 
   &[disabled] {
-    @extend .form__input[disabled];
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: color(var(--x-light-gray) shade(7%));
     color: var(--base-font-color);
     background-image: none;
     min-width: 0;
-    /*width: 100%;*/
-    /*padding-left: 0;*/
     padding-right: 0;
   }
 }

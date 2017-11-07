@@ -1,6 +1,6 @@
 /* Toggle containers - rows that toggle child rows */
 .fake-table__toggle-container {
-  @extend .container;
+  padding: 0 1rem;
   width: 100%;
   cursor: pointer;
 }
