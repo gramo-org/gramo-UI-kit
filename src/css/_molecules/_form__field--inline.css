@@ -7,8 +7,9 @@
   &--checkbox {
     padding: .5rem 0;
 
-    .form__field__label--required {
-      @extend .form__label--required;
+    .form__field__label--required:before {
+      content: '*';
+      color: var(--gramo-red);
     }
     
     .form__label {

@@ -53,7 +53,10 @@
   }
 
   &__arrow::before {
-    @extend .breadcrumbs__item::before
+    content: "\e904";
+    font-family: 'icomoon';
+    margin: 0 1rem 0 0;
+    font-size: 1rem;
     }
 
   /* breadcrumbs used elsewhere in content */

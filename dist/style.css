@@ -1601,7 +1601,7 @@ table{
 .form__label--is-checked{
   color:#0095da;
 }
-.form__label--required:before, .form__field .form__label--required > span::before, .form__field--inline--checkbox .form__field__label--required:before{
+.form__label--required:before, .form__field .form__label--required > span::before{
   content:'*';
   color:#ed6b6a;
 }
@@ -3256,6 +3256,10 @@ hr, .horizontal-rule{
 .form__field--inline--checkbox{
   padding:.5rem 0;
 }
+.form__field--inline--checkbox .form__field__label--required:before{
+  content:'*';
+  color:#ed6b6a;
+}
 .form__field--inline--checkbox .form__label{
   margin-right:1.5rem;
 }
@@ -3642,7 +3646,7 @@ hr, .horizontal-rule{
   display:inline-block;
   padding-right:0;
 }
-.breadcrumbs__item::before, .breadcrumbs__arrow::before{
+.breadcrumbs__item::before{
   content:"\e904";
   font-family:'icomoon';
   margin:0 1rem 0 0;
@@ -3676,6 +3680,12 @@ hr, .horizontal-rule{
 .breadcrumbs__item--action a{
   text-transform:none;
   color:#0095da!important;
+}
+.breadcrumbs__arrow::before{
+  content:"\e904";
+  font-family:'icomoon';
+  margin:0 1rem 0 0;
+  font-size:1rem;
 }
 .breadcrumbs--in-content{
   color:inherit;
