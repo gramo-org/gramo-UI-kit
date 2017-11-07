@@ -2,14 +2,10 @@
 .box {
   background: var(--gramo-white);
   padding: 2rem;
-  @extend .col-xs-12;
-  @extend .col-sm-5;
-  @extend .col-md-4;
-  @extend .col-lg-2;
-  
+  width: 100%;
   @media (--tablet) { 
-    padding: 3rem; 
-    min-width: 400px;
+    padding: 3rem;
+    width: 400px;
     box-shadow: 0 1px 3px color(var(--slate-gray) a(30%));
     margin: auto;
   }
