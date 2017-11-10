@@ -148,11 +148,11 @@
 }
 .icon--yay2:before {
   content: "\e915";
-  @extend .icon--success;
+  color: var(--gramo-green);
 }
 .icon--altok:before {
   content: "\e916";
-  @extend .icon--success;
+  color: var(--gramo-green);
 }
 
 .icon--yay:before {
@@ -164,7 +164,7 @@
 }
 .icon--paperplane:before {
   content: "\e926";
-  @extend .icon--primary;
+  color: var(--gramo-turkis);
 }
 .icon--paperclip:before {
   font-family: 'icomoon';
@@ -173,7 +173,7 @@
 }
 .icon--no:before {
   content: "\e927";
-  @extend .icon--danger;
+  color: var(--gramo-red);
 }
 .icon--quill:before {
   content: "\e928";

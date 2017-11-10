@@ -23,6 +23,9 @@
       height: 20px;
       width: 100px;
     }
+    a {
+      text-decoration: none;
+    }
   }
   
   &__profile-type {

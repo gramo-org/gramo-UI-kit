@@ -2449,7 +2449,7 @@ tr > td:last-child{
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
-.icon--primary, .icon--paperplane:before{
+.icon--primary{
   color:#88c7d8;
 }
 
@@ -2465,11 +2465,11 @@ tr > td:last-child{
   color:#434D5A;
 }
 
-.icon--danger, .icon--no:before, .statusboard--error .icon{
+.icon--danger, .statusboard--error .icon{
   color:#ed6b6a;
 }
 
-.icon--success, .icon--yay2:before, .icon--altok:before, .statusboard--success .icon{
+.icon--success, .statusboard--success .icon{
   color:#50bf9e;
 }
 .icon--link-ext:before{
@@ -2556,9 +2556,11 @@ tr > td:last-child{
 }
 .icon--yay2:before{
   content:"\e915";
+  color:#50bf9e;
 }
 .icon--altok:before{
   content:"\e916";
+  color:#50bf9e;
 }
 
 .icon--yay:before{
@@ -2570,6 +2572,7 @@ tr > td:last-child{
 }
 .icon--paperplane:before{
   content:"\e926";
+  color:#88c7d8;
 }
 .icon--paperclip:before{
   font-family:'icomoon';
@@ -2577,6 +2580,7 @@ tr > td:last-child{
 }
 .icon--no:before{
   content:"\e927";
+  color:#ed6b6a;
 }
 .icon--quill:before{
   content:"\e928";
@@ -4011,6 +4015,9 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .site-header__branding img{
   height:20px;
   width:100px;
+}
+.site-header__branding a{
+  text-decoration:none;
 }
 .site-header__profile-type{
   margin-left:0.5rem;
