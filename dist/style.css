@@ -4965,6 +4965,7 @@ input[type="text"].search__form__input--large{
 .tooltip-wrapper--inline{
   display:inline-block;
   vertical-align:middle;
+  top:-1px;
 }
 
 .tooltip-wrapper .tooltip{
