@@ -1,6 +1,11 @@
 .tooltip-wrapper {
   position: relative;
   -webkit-transform: translateZ(0); /* webkit flicker fix */
+  
+  &--inline {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .tooltip-wrapper .tooltip {
@@ -28,6 +33,10 @@
       text-align: left;
     }
   }
+}
+
+.tooltip-wrapper--inline .tooltip {
+  left: calc(10% - 260px);
 }
 
 /* Stop tooltip disappearing when you move mouse into it */

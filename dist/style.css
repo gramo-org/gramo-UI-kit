@@ -4962,6 +4962,10 @@ input[type="text"].search__form__input--large{
   position:relative;
   -webkit-transform:translateZ(0);
 }
+.tooltip-wrapper--inline{
+  display:inline-block;
+  vertical-align:middle;
+}
 
 .tooltip-wrapper .tooltip{
   background:#434D5A;
@@ -4986,6 +4990,10 @@ input[type="text"].search__form__input--large{
 .tooltip-wrapper .tooltip__list li{
   margin-bottom:1rem;
   text-align:left;
+}
+
+.tooltip-wrapper--inline .tooltip{
+  left:calc(10% - 260px);
 }
 .tooltip-wrapper .tooltip:before{
   bottom:-20px;
