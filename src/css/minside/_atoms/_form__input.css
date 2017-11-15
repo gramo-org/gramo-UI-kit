@@ -113,6 +113,10 @@ input[type="checkbox"].form__input--toggle-visibility {
   margin: 0;
 }
 
+.form__input--300 {
+  @media (--tablet) { width: 300px; }
+}
+
 .form__input--170 {
   @media (--tablet) { width: 170px; }
 }

@@ -72,6 +72,7 @@
 
 .tooltip-wrapper--in-header {
   margin-left: .5rem;
+  vertical-align: baseline;
   
   .tooltip {
     bottom: auto;

@@ -2706,14 +2706,13 @@ tr > td:last-child{
 .btn{
   font-family:"brandon-regular";
   text-transform:uppercase;
-  font-size:1.2rem;
-  padding:.75rem;
+  font-size:1.4rem;
+  padding:1.2rem 1.25rem;
   font-weight:600;
 }
 @media (min-width: 768px){
 
   .btn{
-    font-size:1.4rem;
     padding:1.2rem 2rem;
   }
 }
@@ -2745,6 +2744,8 @@ tr > td:last-child{
 }
 .btn--compact{
   padding:1.2rem 1rem;
+}
+.btn--inline{
 }
 .form__label.is-valid::after, .form__label.has-error::after{
   color:#504f56;
@@ -3051,6 +3052,13 @@ input[type="checkbox"].form__input--toggle-visibility{
 
 @media (min-width: 768px){
 
+  .form__input--300{
+    width:300px;
+  }
+}
+
+@media (min-width: 768px){
+
   .form__input--170{
     width:170px;
   }
@@ -3106,6 +3114,11 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .form__label--block{
   display:block;
+}
+.form__label__help{
+  font-size:1.4rem;
+  color:#a5a4ab;
+  margin-left:.5rem;
 }
 
 .form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before, legend{
@@ -4068,6 +4081,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   -webkit-align-items:flex-end;
   -ms-flex-align:end;
   align-items:flex-end;
+  margin:0 0 1.2rem 0;
 }
 .form--flex .form__label, .form--flex .btn{
   margin:0 1rem 0 0;
@@ -5034,7 +5048,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
     position:absolute;
     top:calc(100% - 5rem);
     left:auto;
-    min-width:400px;
+    min-width:450px;
   }
 }
 .file-upload__inner.is-visible:before{

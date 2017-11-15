@@ -5029,6 +5029,7 @@ input[type="text"].search__form__input--large{
 
 .tooltip-wrapper--in-header{
   margin-left:.5rem;
+  vertical-align:baseline;
 }
 
 .tooltip-wrapper--in-header .tooltip{

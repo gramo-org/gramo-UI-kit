@@ -14,7 +14,7 @@
       position: absolute;
       top: calc(100% - 5rem);
       left: auto;
-      min-width: 400px;
+      min-width: 450px;
     }
     
     &:before {

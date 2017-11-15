@@ -29,6 +29,12 @@
   &--block {
     display: block;
   }
+  
+  &__help {
+    font-size: 1.4rem;
+    color: var(--off-gray);
+    margin-left: .5rem;
+  }
 }
 
 .form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before,

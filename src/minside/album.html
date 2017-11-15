@@ -96,21 +96,35 @@
               <form class="form">  
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Hovedartist
+                    <label class="form__label form__label--required">Utgivelsestittel
                       <input type="text" class="form__input" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Tittel
+                    <label class="form__label form__label--required">Hovedartist
                       <input type="text" class="form__input" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Alt. tittel
+                    <label class="form__label">Label
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Katalognummer
+                      <input type="text" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Alt. katalognummer
                       <input type="text" class="form__input" disabled>
                     </label>
                   </div>
@@ -120,14 +134,32 @@
                     </label>
                   </div>
                   <div class="row__delete">
-                    <a class="text--small text--light">
+                    <a href="#" class="text--small text--light">
                       <span id="ember2058" class="icon icon--close"></span>
                     </a>
                   </div>
                 </div><!--end .row-->
                 <a class="link--no-line link--add">
-                  Legg til alt. tittel
+                  Legg til alt. katalognummer
                 </a>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-5">
+                    <label class="form__label">Utgivelsesdato
+                      <input type="date" class="form__input form__input--date" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-5">
+                    <label class="form__label">Innspillingsland
+                      <select class="select select--block" disabled>
+                        <option value="">Norge</option>
+                        <option value="">Storbrittania</option>
+                        <option value="">USA</option>
+                      </select>
+                    </label>
+                  </div>
+                </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label form__label--required">Sjanger
@@ -166,78 +198,6 @@
                         <option value="Compilation">Samlealbum</option>
                         <option value="Single">Single</option>
                       </select>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <fieldset class="form__fieldset form__fieldset--group"> 
-                  <legend class="text--hidden">Format</legend> 
-                  <label class="form__label form__label--inline text--normal">
-                    <input type="radio" class="form__input--radio" disabled checked>
-                    <span>Fysisk</span>
-                  </label>
-                  <label class="form__label form__label--inline text--normal">
-                    <input type="radio" class="form__input--radio" disabled>
-                    <span>Digital</span>
-                  </label>
-                </fieldset>
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Katalognummer
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Alt. katalognummer
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                  <div class="col-xs-11 col-sm-6">
-                    <label class="form__label">Beskrivelse
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                  <div class="row__delete">
-                    <a class="text--small text--light">
-                      <span id="ember2058" class="icon icon--close"></span>
-                    </a>
-                  </div>
-                </div><!--end .row-->
-                <a class="link--no-line link--add">
-                  Legg til alt. katalognummer
-                </a>
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Label
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-5">
-                    <label class="form__label">Innspillingsland
-                      <select class="select select--block" disabled>
-                        <option value="">Norge</option>
-                        <option value="">Storbrittania</option>
-                        <option value="">USA</option>
-                      </select>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-5">
-                    <label class="form__label">Produsentland
-                      <select class="select select--block" disabled>
-                        <option value="">Norge</option>
-                        <option value="">Storbrittania</option>
-                        <option value="">USA</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div class="col-xs-12 col-sm-3">
-                    <label class="form__label">Utgivelsesdato
-                      <input type="date" class="form__input form__input--date" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
