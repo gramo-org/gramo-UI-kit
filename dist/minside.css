@@ -903,26 +903,62 @@ p{
 
 @media (min-width: 768px){
 
-  .align--flex-end{
-    -webkit-align-self:flex-end;
-    -ms-flex-item-align:end;
-    align-self:flex-end;
+  .align--items-end{
     -webkit-align-items:flex-end;
     -ms-flex-align:end;
     align-items:flex-end;
   }
 }
 
+.align--items-end--mobile{
+  -webkit-align-items:flex-end;
+  -ms-flex-align:end;
+  align-items:flex-end;
+}
+
 @media (min-width: 768px){
 
-  .align--flex-start{
-    -webkit-align-self:flex-start;
-    -ms-flex-item-align:start;
-    align-self:flex-start;
+  .align--items-start{
     -webkit-align-items:flex-start;
     -ms-flex-align:start;
     align-items:flex-start;
   }
+}
+
+.align--items-start--mobile{
+  -webkit-align-items:flex-start;
+  -ms-flex-align:start;
+  align-items:flex-start;
+}
+
+@media (min-width: 768px){
+
+  .align--self-end{
+    -webkit-align-self:flex-end;
+    -ms-flex-item-align:end;
+    align-self:flex-end;
+  }
+}
+
+.align--self-end--mobile{
+  -webkit-align-self:flex-end;
+  -ms-flex-item-align:end;
+  align-self:flex-end;
+}
+
+@media (min-width: 768px){
+
+  .align--self-start{
+    -webkit-align-self:flex-start;
+    -ms-flex-item-align:start;
+    align-self:flex-start;
+  }
+}
+
+.align--self-start--mobile{
+  -webkit-align-self:flex-start;
+  -ms-flex-item-align:start;
+  align-self:flex-start;
 }
 
 .no-margin{
@@ -2706,13 +2742,14 @@ tr > td:last-child{
 .btn{
   font-family:"brandon-regular";
   text-transform:uppercase;
-  font-size:1.4rem;
+  font-size:1.2rem;
   padding:1.2rem 1.25rem;
   font-weight:600;
 }
 @media (min-width: 768px){
 
   .btn{
+    font-size:1.4rem;
     padding:1.2rem 2rem;
   }
 }
@@ -2746,6 +2783,7 @@ tr > td:last-child{
   padding:1.2rem 1rem;
 }
 .btn--inline{
+  margin-bottom:0;
 }
 .form__label.is-valid::after, .form__label.has-error::after{
   color:#504f56;
@@ -2778,6 +2816,18 @@ tr > td:last-child{
 .form__label.is-valid .form__input, .form__label.has-error .form__input{
   border:1px solid #d9d9dc;
   background-image:none;
+}
+
+.form__label.is-valid--simple::after, .form__label.has-error--simple::after{
+  content:none;
+}
+
+.form__label.has-error--simple .form__input{
+  border:1px solid #ed6b6a;
+}
+
+.form__label.is-valid--simple .form__input{
+  border:1px solid #50bf9e;
 }
 hr, .horizontal-rule{
   height:1px;
@@ -3033,21 +3083,31 @@ input[type="checkbox"].form__input--toggle-visibility{
   margin-bottom:1rem;
 }
 
-.form__input__errors{
+.form__input__errors, .form__input__valid{
   position:relative;
   top:-1rem;
   font-size:1.5rem;
   font-weight:600;
 }
 
-.form__input__errors p{
+.form__input__errors p, .form__input__valid p{
   color:#ed6b6a;
   text-align:left;
+}
+
+.form__input__valid p{
+  color:#50bf9e;
 }
 
 .form__input--small{
   padding:.2rem .5rem;
   margin:0;
+}
+
+.form__input--inline{
+  display:inline-block;
+  width:auto;
+  vertical-align:middle;
 }
 
 @media (min-width: 768px){
@@ -3119,6 +3179,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   font-size:1.4rem;
   color:#a5a4ab;
   margin-left:.5rem;
+  display:block;
 }
 
 .form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before, legend{
@@ -4102,6 +4163,16 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 }
 
 .form__fieldset--group legend{
+  font-weight:600;
+}
+
+.form__fieldset--border{
+  border:1px solid #d9d9dc;
+  padding:2rem;
+}
+
+.form__fieldset--border legend{
+  font-size:2.4rem;
   font-weight:600;
 }
 

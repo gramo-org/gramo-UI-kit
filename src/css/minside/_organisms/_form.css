@@ -28,6 +28,16 @@
   }
 }
 
+.form__fieldset--border {
+  border: 1px solid var(--silver);
+  padding: 2rem;
+  
+  legend {
+    font-size: 2.4rem;
+    font-weight: var(--semibold);
+  }
+}
+
 .form--summary {
   .form__label {
     display: flex;

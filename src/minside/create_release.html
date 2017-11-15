@@ -202,8 +202,8 @@
                   </div>
                 </div><!--end .row-->
                 <div class="form__section--action">
-                  <button class="btn btn--secondary">Avbryt</button>
-                  <button class="btn btn--primary">Gå videre</button>
+                  <button class="btn btn--inline btn--secondary">Avbryt</button>
+                  <button class="btn btn--inline btn--primary">Gå videre</button>
                 </div>
               </form>
             </section>
@@ -217,29 +217,46 @@
               <ol class="list list--numbered">
                 <li>
                   <div class="row">
-                    <div class="col-xs-8 col-sm-5">
+                    <div class="col-xs-12 col--no-flex">
                       <label class="form__label form__label--required">ISRC
-                        <span class="form__label__help">En ny innspilling må ha en unik ISRC kode <em>f.eks: NOXXX1501223</em></span>
-                        <input type="text" class="form__input">
+                        <span class="form__label__help">En ny innspilling må ha en unik ISRC kode</span>
+                        <span>
+                          <input type="text" class="form__input form__input--inline form__input--300" placeholder="f.eks: NOXXX1501223">
+                          <button class="btn btn--inline btn--secondary">Sjekk ISRC</button>
+                        </span>
                       </label>
                     </div>
-                    <div class="col-xs-4 col-sm-3 align--flex-end">
-                      <div class="form__section--action align--flex-start">
-                        <button class="btn btn--secondary">Sjekk ISRC</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-xs-12 col--no-flex">
+                      <label class="form__label form__label--required is-valid--simple">ISRC
+                        <span class="form__label__help">En ny innspilling må ha en unik ISRC kode</span>
+                        <span>
+                          <input type="text" class="form__input form__input--inline form__input--300" placeholder="f.eks: NOXXX1501223">
+                          <button class="btn btn--inline btn--secondary">Sjekk ISRC</button>
+                        </span>
+                      </label>
+                      
+                      <div class="form__input__valid">
+                        <p class="text--em">
+                          ISRC koden kan brukes
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-xs-12 col-sm-5">
                       <label class="form__label">Tittel
-                        <input type="text" class="form__input" disabled>
+                        <input type="text" class="form__input">
                       </label>
                     </div>
                   </div><!-- end .row -->
                   <div class="row">
                     <div class="col-xs-12 col-sm-6">
                       <label class="form__label">Varighet
-                        <input type="number" class="form__input" disabled>
+                        <input type="number" class="form__input">
                       </label>
                     </div>
                   </div><!--end .row-->
@@ -249,6 +266,61 @@
                         <input type="number" min="1" id="numberOfTracks" class="form__input form__input--80">
                       </label>
                     </div>
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="row">
+                    <div class="col-xs-12 col--no-flex">
+                      <label class="form__label form__label--required has-error--simple">ISRC
+                        <span class="form__label__help">En ny innspilling må ha en unik ISRC kode</span>
+                        <span>
+                          <input type="text" class="form__input form__input--inline form__input--300" placeholder="f.eks: NOXXX1501223">
+                          <button class="btn btn--inline btn--secondary">Sjekk ISRC</button>
+                        </span>
+                      </label>
+                      
+                      <div class="form__input__errors">
+                        <p class="text--em">
+                          En innspilling ble funnet
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- end .row -->
+                  <fieldset class="form__fieldset form__fieldset--border">
+                    <legend>Take on Me</legend>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5">
+                        <label class="form__label">ISRC
+                          <input type="text" class="form__input" value="AHAEG09182947" disabled>
+                        </label>
+                      </div>
+                    </div><!-- end .row -->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5">
+                        <label class="form__label">Hovedartist
+                          <input type="text" class="form__input" value="A-Ha" disabled>
+                        </label>
+                      </div>
+                    </div><!-- end .row -->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5">
+                        <label class="form__label">Tittel
+                          <input type="text" class="form__input" value="Take on Me" disabled>
+                        </label>
+                      </div>
+                    </div><!-- end .row -->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <label class="form__label">Varighet
+                          <input type="text" class="form__input form__input--60" value="03:24" disabled>
+                        </label>
+                      </div>
+                    </div><!--end .row-->
+                  </fieldset>
+                  <div class="form__section--action">
+                    <button class="btn btn--inline btn--secondary">Prøv på nytt</button>
+                    <button class="btn btn--inline btn--primary">Bruk denne</button>
                   </div>
                 </li>
               </ol>

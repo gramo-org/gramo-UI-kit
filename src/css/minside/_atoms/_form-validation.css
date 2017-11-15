@@ -22,5 +22,17 @@
   background-image: none;
 }
 
+.form__label.is-valid--simple,
+.form__label.has-error--simple {
+  &::after {
+    content: none;
+  }
+}
 
+.form__label.has-error--simple .form__input {
+  border: 1px solid var(--gramo-red);
+}
 
+.form__label.is-valid--simple .form__input {
+  border: 1px solid var(--gramo-green);
+}

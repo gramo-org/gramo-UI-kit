@@ -91,21 +91,41 @@
   align-self: center;
 }
 
-.align--flex-end {
+.align--items-end {
   @media (--tablet) {
-    align-self: flex-end;
+    align-items: flex-end;
+  }
+  &--mobile {
     align-items: flex-end;
   }
 }
 
-.align--flex-start {
+.align--items-start {
   @media (--tablet) {
-    align-self: flex-start;
+    align-items: flex-start;
+  }
+  &--mobile {
     align-items: flex-start;
   }
 }
 
+.align--self-end {
+  @media (--tablet) {
+    align-self: flex-end;
+  }
+  &--mobile {
+    align-self: flex-end;
+  }
+}
 
+.align--self-start {
+  @media (--tablet) {
+    align-self: flex-start;
+  }
+  &--mobile {
+    align-self: flex-start;
+  }
+}
 
 /* margin overrides */
 
