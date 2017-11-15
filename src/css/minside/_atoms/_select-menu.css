@@ -10,4 +10,10 @@
   &--fluid {
     width: 100%;
   }
+  
+  &[disabled] {
+    border-color: var(--silver);
+    background: color(var(--light-gray) shade(3%));
+    color: var(--off-gray);
+  }
 }

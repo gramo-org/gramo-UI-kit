@@ -1008,6 +1008,22 @@ p{
 .print-header{
   display:none;
 }
+
+.click-here{
+  position:relative;
+}
+
+.click-here:after{
+  content:'';
+  position:absolute;
+  width:30px;
+  height:30px;
+  border-radius:30px;
+  border:5px solid #ed6b6a;
+  opacity:0.5;
+  right:-15px;
+  top:-5px;
+}
 .site-wrapper{
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -2989,6 +3005,11 @@ h2 .badge{
 .select--fluid{
   width:100%;
 }
+.select[disabled]{
+  border-color:#d9d9dc;
+  background:rgb(230, 230, 230);
+  color:#a5a4ab;
+}
 .form__input, .form__input--date, .form__input[type="date"]{
   padding:1.2rem 0.75rem;
   display:block;
@@ -3030,10 +3051,6 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
 .form__input--date::-webkit-calendar-picker-indicator, .form__input--date::-webkit-inner-spin-button, .form__input[type="date"]::-webkit-calendar-picker-indicator, .form__input[type="date"]::-webkit-inner-spin-button{
   opacity:0!important;
   -webkit-appearance:none!important;
-}
-.form__input--date[disabled], .form__input[type="date"][disabled]{
-  background-color:rgba(255, 255, 255, 0.2);
-  border-color:rgb(232, 232, 232);
 }
 _:-ms-lang(x), .form__input[type="date"]{
   line-height:0;

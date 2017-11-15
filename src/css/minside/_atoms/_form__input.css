@@ -46,11 +46,6 @@ input[type="radio"], input[type="checkbox"],
     opacity: 0!important;
     -webkit-appearance: none!important;
   }
-
-  &[disabled] {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: color(var(--x-light-gray) shade(7%));
-  }
 }
 
 /* Hack to vertically center text in input on ie/edge */

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="../img/favicon-gramo.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="../minside.css">
+  
+  
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header profile--performer">
+      <span class="site-header__branding"><img src="../img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
+      <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
+        Meny
+      </a>
+    </header>
+    <nav id="navigation" class="nav--primary">
+      <ul class="vertical__nav">
+        <li>
+          <div class="user">
+            <span class="user__name">
+              Morten Harket
+            </span>
+            <a href="#">Rediger</a>
+          </div>
+        </li>
+        <li class="vertical__nav__heading vertical__nav__heading--colored"><h4>Du ser på</h4></li>
+        <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--album-label"></span>Diskografi</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span>Transaksjoner</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
+        <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
+        <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Produsent</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--quill"></span> Kontaktperson</a></li>
+        <!-- <li class="vertical__nav__item"><a href="#"><span class="icon icon--profile"></span> Legg til ny profil</a></li> -->
+        <li class="vertical__nav__item vertical__nav__item--extend"><a href="#"><span class="icon icon--language"></span> Switch to English</a></li>
+        <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
+      </ul>
+    </nav>
+    <main> 
+      <header class="masthead">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text--center">
+              <h1>Hunting High and Low</h1>
+              <h3>A-ha</h3>
+              <h4>Warner Music Norway AS</h4>
+              <section class="masthead__meta">
+                <h4 class="masthead__meta__item"><span>Antall spor</span>10</h4>
+                <h4 class="masthead__meta__item"><span>Ant. utøvere</span>5</h4>
+                <h4 class="masthead__meta__item"><span>Utgivelsesår</span>1985</h4>
+              </section>
+            </div>
+          </div><!--end .row-->
+        </div>
+      </header>     
+      <section id="album-meta" class="container container--padded container--col-3">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <nav class="nav--secondary">
+              <ul>
+                <li><a href="#" class="active">album info</a></li>
+                <li><a href="#">Spor</a></li>
+                <li><a href="#">Utøvere</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-xs-12 col-sm-9 adjust--to-left">
+            <section id="album-info">
+              <div class="section-header">
+                <header>
+                  <h2>Utgivelsesinfo</h2>
+                </header>
+              </div>
+              <form class="form">  
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label form__label--required">Utgivelsestittel
+                      <input type="text" class="form__input" value="Hunting High and Low">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label form__label--required">Hovedartist
+                      <input type="text" class="form__input" value="A-Ha">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Label
+                      <input type="text" class="form__input" value="Warner Bros. Records">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Katalognummer
+                      <input type="text" class="form__input" value="925 300-1">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Alt. katalognummer
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                  <div class="col-xs-11 col-sm-6">
+                    <label class="form__label">Beskrivelse
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
+                  <div class="row__delete">
+                    <a href="#" class="text--small text--light">
+                      <span id="ember2058" class="icon icon--close"></span>
+                    </a>
+                  </div>
+                </div><!--end .row-->
+                <a class="link--no-line link--add">
+                  Legg til alt. katalognummer
+                </a>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-5">
+                    <label class="form__label">Utgivelsesdato
+                      <input type="date" class="form__input form__input--date" value="1985-10-28">
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-5">
+                    <label class="form__label">Innspillingsland
+                      <select class="select select--block">
+                        <option value="" selected>Norge</option>
+                        <option value="">Storbrittania</option>
+                        <option value="">USA</option>
+                      </select>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label form__label--required">Sjanger
+                      <div class="searchable-list searchable-list form__input">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Pop</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
+                          <ul>
+                            <li class="searchable-list__option">
+                                Pop
+                              </li>
+                              <li class="searchable-list__option">
+                                Alternative
+                              </li>
+                              <li class="searchable-list__option">
+                                Rock
+                              </li>
+                              <li class="searchable-list__option">
+                                Blues
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">
+                      <span>Format</span>
+                      <select tabindex="0" class="select select--block">
+                        <option value="Album" class="x-option" selected>Album</option>
+                        <option value="EP">Ep</option>
+                        <option value="Compilation">Samlealbum</option>
+                        <option value="Single">Single</option>
+                      </select>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="form__section--action">
+                  <button class="btn btn--inline btn--secondary">Avbryt</button>
+                  <a href="create_release-check-ISRC.html#add-recordings" class="btn btn--inline btn--primary click-here">Gå videre</a>
+                </div>
+              </form>
+            </section>    
+          </div>
+        </div>
+      </section>
+    </main>
+</div>
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
+</body>
+</html>
