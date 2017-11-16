@@ -7,3 +7,32 @@
     font-family: 'minside-icons';
   }
 }
+
+.link--edit {
+
+  &:after {
+    content: "\e91c";
+    font-family: 'minside-icons';
+  }
+}
+
+.link--trash {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--slate-gray);
+  /*font-size: 1.4rem;*/
+  
+  &:after {
+    content: "\e91d";
+    font-family: 'minside-icons';
+    margin-left: .5rem;
+  }
+}
+
+.link--trash {  
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 1;
+  /*@media (--tablet) { position: static; }*/
+}

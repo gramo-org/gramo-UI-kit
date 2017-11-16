@@ -8,6 +8,7 @@
     background: var(--light-gray);;
     margin: -2rem -2rem 1rem -2rem;
     padding: 1rem;
+    position: static;
   }
   
   &__header > * {
@@ -27,16 +28,6 @@
     
     & > .btn {
       display: inline-block;
-    }
-    
-    .icon--close {
-      font-size: 3rem;
-      /*line-height: 3;*/
-      color: var(--off-gray);  
-      position: absolute;
-      right: 1rem;
-      top: 1.5rem;
-      @media (--tablet) { position: static; }
     }
   }
   
