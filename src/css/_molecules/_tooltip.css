@@ -25,6 +25,7 @@
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
   left: calc(10% - 267px);
   min-width: 300px;
+  z-index: 1;
   
   &__list {
     @extend %no-list;

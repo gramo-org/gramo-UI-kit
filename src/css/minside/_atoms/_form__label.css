@@ -38,6 +38,20 @@
   }
 }
 
+.form__label--info {
+  border: 1px solid var(--silver);
+  padding: 2rem;
+  p {
+    display: inline;
+  }
+  span {
+    font-weight: var(--normal);
+    @media (--tablet) {
+      margin-left: 2rem;
+    }
+  }
+}
+
 .form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before,
 legend {
   content: '';

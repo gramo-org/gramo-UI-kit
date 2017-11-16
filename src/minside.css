@@ -3200,6 +3200,26 @@ input[type="checkbox"].form__input--toggle-visibility{
   display:block;
 }
 
+.form__label--info{
+  border:1px solid #d9d9dc;
+  padding:2rem;
+}
+
+.form__label--info p{
+  display:inline;
+}
+
+.form__label--info span{
+  font-weight:400;
+}
+
+@media (min-width: 768px){
+
+  .form__label--info span{
+    margin-left:2rem;
+  }
+}
+
 .form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before, legend{
   content:'';
   margin-left:.2rem;
@@ -4732,9 +4752,9 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 }
 
 .section-header > header{
-  -webkit-flex:1 0 auto;
-  -ms-flex:1 0 auto;
-  flex:1 0 auto;
+  -webkit-flex:1 1 auto;
+  -ms-flex:1 1 auto;
+  flex:1 1 auto;
 }
 
 .section-header h2{
