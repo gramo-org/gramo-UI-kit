@@ -715,6 +715,7 @@ body{
 
 a{
   color:#31798d;
+  cursor:pointer;
 }
 
 a:active, a:hover{
