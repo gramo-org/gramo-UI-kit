@@ -280,6 +280,19 @@ $('.help__toggle').click(function(e){
   $(this).parent().toggleClass('help--is-visible');
 });
 
+$('.flash-message__close').click(function(e){
+  e.preventDefault();
+  $(this).parent().remove();
+});
+
+$('.form__input--searchable').bind('blur', function(){ 
+  $(this).next('.searchable-list').removeClass("searchable-list--open") 
+});
+$('.form__input--searchable').bind('focus', function(){ 
+  $(this).next('.searchable-list').addClass("searchable-list--open") 
+});
+
+
 }); // end document ready
 
 //Affix page contents to top of viewport

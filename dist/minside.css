@@ -3172,6 +3172,11 @@ input[type="checkbox"].form__input--toggle-visibility{
   max-width:400px;
   margin-bottom:1.2rem;
 }
+
+.form__input--searchable{
+  background:#fdfdfd url("img/search.svg") right 1rem center no-repeat;
+  background-size:1.8rem;
+}
 .form__label{
   position:relative;
   display:block;
@@ -3930,6 +3935,14 @@ input[type="checkbox"].form__input--toggle-visibility{
 .searchable-list__dropdown ul li.searchable-list__option--active, .searchable-list__dropdown ul li.searchable-list__option:hover{
   color:inherit;
   background-color:#88c7d8;
+}
+
+.searchable-list--for-input{
+  width:100%;
+  max-width:none;
+  top:-1px;
+  border:0;
+  display:block;
 }
 .radio-group{
   -webkit-justify-content:flex-start;

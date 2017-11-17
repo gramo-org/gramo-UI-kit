@@ -77,7 +77,7 @@
           <div class="col-xs-12 col-sm-3">
             <nav class="nav--secondary">
               <ul>
-                <li><a href="#" class="active">album info</a></li>
+                <li><a href="#" class="active">Utgivelsesinfo</a></li>
                 <li><a href="#">Spor</a></li>
                 <li><a href="#">Utøvere</a></li>
               </ul>
@@ -125,23 +125,15 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Alt. katalognummer
-                      <input type="text" class="form__input" disabled>
+                      <input type="text" class="form__input" value="925 300-2" disabled>
                     </label>
                   </div>
                   <div class="col-xs-11 col-sm-6">
                     <label class="form__label">Beskrivelse
-                      <input type="text" class="form__input" disabled>
+                      <input type="text" class="form__input" value="Japanese LP format" disabled>
                     </label>
                   </div>
-                  <div class="row__delete">
-                    <a href="#" class="text--small text--light">
-                      <span id="ember2058" class="icon icon--close"></span>
-                    </a>
-                  </div>
                 </div><!--end .row-->
-                <a class="link--no-line link--add">
-                  Legg til alt. katalognummer
-                </a>
                 <div class="row">
                   <div class="col-xs-12 col-sm-5">
                     <label class="form__label">Utgivelsesdato
@@ -237,19 +229,17 @@
                     <div class="row">
                       <div class="col-xs-12 col-sm-6">
                         <label class="form__label">Varighet
-                          <input type="text" class="form__input" value="03:17" disabled>
+                          <input type="number" class="form__input" value="03:17" disabled>
                         </label>
                       </div>
                     </div><!--end .row-->
                     <div class="row">
-                      <div class="col-xs-12">
+                      <div class="col-xs-4 col-sm-2">
                         <label class="form__label">Side nr.
                           <input type="number" min="1" value="1" class="form__input form__input--80" disabled>
                         </label>
                       </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12">
+                      <div class="col-xs-4 col-sm-2">
                         <label class="form__label">Spor nr.
                           <input type="number" min="1" value="1" class="form__input form__input--80" disabled>
                         </label>
@@ -278,19 +268,17 @@
                     <div class="row">
                       <div class="col-xs-12 col-sm-6">
                         <label class="form__label">Varighet
-                          <input type="text" class="form__input" value="03:24" disabled>
+                          <input type="number" class="form__input" value="03:24" disabled>
                         </label>
                       </div>
                     </div><!--end .row-->
                     <div class="row">
-                      <div class="col-xs-12">
+                      <div class="col-xs-4 col-sm-2">
                         <label class="form__label">Side nr.
                           <input type="number" min="1" value="1" class="form__input form__input--80" disabled>
                         </label>
                       </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12">
+                      <div class="col-xs-4 col-sm-2">
                         <label class="form__label">Spor nr.
                           <input type="number" min="1" value="2" class="form__input form__input--80" disabled>
                         </label>
@@ -305,6 +293,7 @@
               <div class="section-header">
                 <header>
                   <h2>Eierskap</h2>
+                  <p>Eierskap hentes fra label informasjon i utgivelsesinfo</p>
                 </header>
               </div>
               <form class="form">
@@ -319,9 +308,7 @@
                           <input type="date" class="form__input form__input--date" disabled>
                         </label>
                       </div>
-                      <div class="col-xs-5 list__header--action">
-                        <a href="#" class="link--edit">Rediger</a>
-                      </div>
+
                     </div><!--end .row-->
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-5">
@@ -393,10 +380,10 @@
                     <div class="row">
                       <div class="col-xs-12 col-sm-9">
                         <label class="form__label form__label--block form__label--info">
-                          <input type="checkbox" class="form__input form__input--block" checked disabled>
+                          <input type="checkbox" class="form__input form__input--block" checked>
                           <p>Vil du kopiere eierskap til alle nye innspillinger 
                             på denne utgivelsen. <span>Justeringer kan gjøres på én og 
-                            én innspilling på et senere tidspunkt?</span></p>
+                            én innspilling på et senere tidspunkt.</span></p>
                         </label>
                       </div>
                     </div><!--end .row-->
@@ -422,12 +409,13 @@
               <div class="section-header">
                 <header>
                   <h2>Fullfør utgivelsen</h2>
-                  <p>Når du trykker på fullført kan du redigere utgivelsen under egen side</p>
+                  <p>Når du trykker på 'fullfør' blir utgivelsen og innspillingene lagret.</p>
+                  <p>Du kan redigere utgivelsen og innspillingene på egne sider</p>
                 </header>
               </div>
               <div class="form__section--action">
                 <button class="btn btn--inline btn--secondary">Avbryt</button>
-                <button class="btn btn--inline btn--primary">Fulfør utgivelsen</button>
+                <button class="btn btn--inline btn--primary">Fullfør og se utgivelsen</button>
               </div>
             </section>
           </div><!-- end .col-sm-9-->
