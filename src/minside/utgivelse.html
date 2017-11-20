@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="../../img/favicon-gramo.png">
+  <link rel="shortcut icon" href="../img/favicon-gramo.png">
   <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -19,14 +19,14 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
-  <link rel="stylesheet" href="../../minside.css">
+  <link rel="stylesheet" href="../minside.css">
   
   
 </head>
 <body>
   <div class="site-wrapper">
     <header class="site-header profile--performer">
-      <span class="site-header__branding"><img src="../../img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
+      <span class="site-header__branding"><img src="../img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
       <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
         Meny
       </a>
@@ -196,84 +196,144 @@
               </form>
             </section>
             <hr class="horizontal-rule">
-            <section id="add-recordings">
+            <section id="track-info">
               <div class="section-header">
                 <header>
-                  <h2>Registrere innspillinger</h2>
+                  <h2>Spor <span class="badge badge--secondary">10</span></h2>
                 </header>
-              </div>
-              <form class="form">
-                <ol class="list list--numbered">
-                  <li>
-                    <div class="row">
-                      <div class="col-xs-12 col--no-flex">
-                        <label class="form__label form__label--required">ISRC
-                          <span class="form__label__help">En ny innspilling må ha en unik ISRC kode</span>
-                          <span>
-                            <input type="text" class="form__input form__input--inline form__input--300" value="AHAEG09182938" placeholder="f.eks: NOXXX1501223" disabled>
-                            <button class="btn btn--inline btn--secondary" disabled>Sjekk ISRC</button>
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-5">
-                        <label class="form__label">Tittel
-                          <input type="text" class="form__input" value="Train of Thought">
-                        </label>
-                      </div>
-                    </div><!-- end .row -->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6">
-                        <label class="form__label">Varighet
-                          <input type="time" class="form__input" value="03:17">
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-4 col-sm-2">
-                        <label class="form__label">Side nr.
-                          <input type="number" min="1" value="1" class="form__input form__input--80">
-                        </label>
-                      </div>
-                      <div class="col-xs-4 col-sm-2">
-                        <label class="form__label">Spor nr.
-                          <input type="number" min="1" value="1" class="form__input form__input--80">
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                    <a href="#" class="link--trash">Slett</a>
-                  </li>
-                  <li>
-                    <div class="row" id="check-ISRC">
-                      <div class="col-xs-12 col--no-flex">
-                        <label class="form__label form__label--required">ISRC
-                          <span class="form__label__help">En ny innspilling må ha en unik ISRC kode</span>
-                          <span>
-                            <input type="text" class="form__input form__input--inline form__input--300" value="AHAEG09182947" placeholder="f.eks: NOXXX1501223">
-                            <a href="create_release-ISRC-error.html#ISRC-found" class="btn btn--inline btn--secondary click-here">Sjekk ISRC</a>
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                  </li>
-                </ol>
-                <p>
-                  <a href="#" class="link--no-line">Legg til ny innspilling</a>
-                </p>
-                <div class="form__section--action">
-                  <a href="create_release-check-ISRC.html" class="btn btn--inline btn--secondary">Avbryt</a>
-                  <button class="btn btn--inline btn--primary">Lagre og gå videre</button>
+                <div class="section-header__action">
+                  <a href="#" class="link--edit">Rediger</a>
                 </div>
-              </form>    
+              </div>
+              <table class="table table--numeric-tracks table--fluid table--list table--six">
+                <thead>
+                  <tr>
+                    <th>Innspillingstittel</th>
+                    <th>Hovedartist</th>
+                    <th>ISRC</th>
+                    <th>Utgivelsesdato</th>
+                    <th>Tid</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="5" class="table__cell--side-number">Side 1</td>
+                  </tr>
+                  <!-- <tr class="table__row--selected">
+                    <td data-label="Spor nr." class="table__cell--no-label">
+                      <label class="form__label form__label--in-row"><span>Spor nr.</span>
+                        <input type="text" value="1" class="form__input form__input--small form__input--30">
+                      </label>
+                      <label class="form__label form__label--in-row"><span>Innspillingstittel</span>
+                        <input type="text" value="Take on Me" class="form__input form__input--small form__input--170">
+                      </label>
+                    </td>
+                    <td data-label="Hovedartist" class="table__cell--full">A-HA</td>
+                    <td data-label="Utgivelsesdato" class="table__cell--left">2016-09-06</td>
+                    <td data-label="ISRC">
+                      <label class="form__label form__label--in-row"><span>ISRC</span>
+                        <input type="text" value="USJT19900027" class="form__input form__input--small">
+                      </label>
+                    </td>
+                    <td data-label="Tid">03:45</td>
+                    <td class="text--right table__cell--action">
+                      <a href="#"><span class="icon icon--close"></span></a>
+                    </td>
+                  </tr> -->
+                  <tr>
+                    <td data-label="Innspillingstittel"><a href="#">Train of Thought</a></td>
+                    <td data-label="Hovedartist" class="table__cell--full">A-HA</td>
+                    <td data-label="ISRC" class="table__cell--left">AHAEG09182938</td>
+                    <td data-label="Utgivelsesdato" class="table__cell--left">1985-10-28</td>
+                    <td colspan="2" data-label="Tid">03:17</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Innspillingstittel"><a href="#">Take on Me</a></td>
+                    <td data-label="Hovedartist" class="table__cell--full">A-HA</td>
+                    <td data-label="ISRC" class="table__cell--left">AHAEG09182947</td>
+                    <td data-label="Utgivelsesdato" class="table__cell--left">1985-10-28</td>
+                    <td colspan="2" data-label="Tid">03:24</td>
+                  </tr>
+                </tbody>
+                <!-- <tbody>
+                  <tr>
+                    <td colspan="5" class="table__cell--side-number">Side 2</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Innspillingstittel"><a href="#">Take On Me</a></td>
+                    <td data-label="Hovedartist" class="table__cell--full">A-HA</td>
+                    <td data-label="Utgivelsesdato" class="table__cell--left">2016-09-06</td>
+                    <td data-label="ISRC" class="table__cell--left">USJT19900027</td>
+                    <td colspan="2" data-label="Tid">03:45</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Innspillingstittel"><a href="#">Hunting High and Low</a></td>
+                    <td data-label="Hovedartist" class="table__cell--full">A-HA</td>
+                    <td data-label="Utgivelsesdato" class="table__cell--left">2016-09-06</td>
+                    <td data-label="ISRC" class="table__cell--left">USJT19900027</td>
+                    <td colspan="2" data-label="Tid">03:45</td>
+                  </tr>
+                </tbody>  -->
+              </table>
+              <!-- <form class="form form--flex">
+                <label class="form__label">Antall spor
+                  <input type="number" min="1" id="numberOfTracks" class="form__input form__input--small form__input--80">
+                </label>
+                <button class="btn btn--secondary btn--small">Ok</button>
+              </form> -->
+              <!-- <div class="form__section--action">
+                <a href="#" class="link--no-line">Legg til ny side</a>
+                <a href="#" class="link--inline">Legg til nytt spor</a>
+              </div> -->
             </section>
-            
+            <!-- <section class="toolbar">
+              <div class="search">
+                <div action="" class="search__form search__form--left">
+                  <input type="text" class="form__input" value="" placeholder="Søk..." />
+                  <button class="search__submit"></button>
+                </div>
+              </div>
+              <table class="table table--fluid table--list table--five no-pull">
+                <thead>
+                  <tr>
+                    <th>Innspillingstittel</th>
+                    <th>Hovedartist</th>
+                    <th>Varighet</th>
+                    <th>Utgivelsesdato</th>
+                    <th>ISRC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Tittel" class="table__cell--truncated">En ton av tystnad</td>
+                    <td data-label="Hovedartist" class="table__cell--truncated table__cell--left">Frida</td>
+                    <td data-label="Varighet" class="table__cell--truncated table__cell--left">00:04:00</td>
+                    <td data-label="Utgitt" class="table__cell--truncated">2016-09-06</td>
+                    <td data-label="ISRC" class="table__cell--truncated">NOGNA9504060</td>
+                  </tr>
+                  <tr class="table__row--selected">
+                    <td data-label="Tittel" class="table__cell--truncated">På en Liten Kafe</td>
+                    <td data-label="Hovedartist" class="table__cell--truncated table__cell--left">Ivar Ruste</td>
+                    <td data-label="Varighet" class="table__cell--truncated table__cell--left">00:03:00</td>
+                    <td data-label="Utgitt" class="table__cell--truncated">2016-09-06</td>
+                    <td data-label="ISRC" class="table__cell--truncated">NOREG9205400</td>
+                  </tr>
+                </tbody>
+              </table>
+              <form class="form form--flex">
+                <label class="form__label">Spor nr.
+                  <input type="number" min="1" id="numberOfTracks" class="form__input form__input--small form__input--80">
+                </label>
+                <button class="btn btn--primary btn--small">Ok</button>
+              </form>
+            </section><!-- end .toolbar -->
           </div>
         </div>
       </section>
     </main>
 </div>
-<script src="../../js/vendor/jquery-1.11.3.min.js"></script>
-<script src="../../js/default.js"></script>
+<script src="../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../js/default.js"></script>
 </body>
 </html>

@@ -59,7 +59,8 @@ _:-ms-input-placeholder, :root .form__input[type="date"] {
   width: 95%;
 }
 
-input[type="number"] {
+input[type="number"],
+input[type="time"] {
   height: auto;
   @media (--tablet) { max-width: 150px; }
 }
