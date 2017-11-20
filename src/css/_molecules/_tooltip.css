@@ -1,6 +1,7 @@
 .tooltip-wrapper {
   position: relative;
   -webkit-transform: translateZ(0); /* webkit flicker fix */
+  z-index: 1;
   
   &--inline {
     display: inline-block;
@@ -25,7 +26,6 @@
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
   left: calc(10% - 267px);
   min-width: 300px;
-  z-index: 1;
   
   &__list {
     @extend %no-list;

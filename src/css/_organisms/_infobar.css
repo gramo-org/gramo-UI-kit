@@ -19,6 +19,19 @@
     border-bottom: 0;
     padding-bottom: 0;
   }
+  
+  &--has-divider {
+    @media (--hd) {
+      background-image: url(img/line.png);
+      background-repeat: repeat-y;
+      background-position: calc(45% - .75rem) 0;
+    }
+    .infobar__left {
+      @media (--hd) {
+        flex: 0 0 45%;
+      }
+    }
+  }
 
   &__heading {
     span {

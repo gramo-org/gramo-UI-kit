@@ -1,0 +1,25 @@
+.ledger-links {
+  
+  h4 {
+    display: inline-block;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-right: .5rem;
+  }
+  
+  .tooltip-wrapper {
+    top: 2px;
+  }
+  
+  .list--inline {
+    li {
+      margin: 0;
+    }
+    
+    li:not(:last-child):after {
+      content: '|';
+      color: var(--off-gray);
+      margin: 0 .5rem;
+    }
+  }
+}
