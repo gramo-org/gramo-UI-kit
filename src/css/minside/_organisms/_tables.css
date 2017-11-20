@@ -10,7 +10,7 @@
     @media (--desktop) { min-width: 100%; }
   }
 
-  a {
+  a:not(.btn) {
     text-decoration: none;
     color: var(--gramo-sea-green);
     font-weight: var(--semibold);

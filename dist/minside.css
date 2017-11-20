@@ -4376,7 +4376,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
     min-width:100%;
   }
 }
-.table a{
+.table a:not(.btn){
   text-decoration:none;
   color:#31798d;
   font-weight:600;
@@ -5213,4 +5213,17 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 
 .file-upload__list .icon{
   font-size:1.8rem;
+}
+.empty-state{
+  text-align:center;
+  margin-bottom:1.2rem;
+}
+.empty-state:before{
+  content:"\e913";
+  font-family:'minside-icons';
+  font-size:5rem;
+  color:#a5a4ab;
+}
+.empty-state h4{
+  margin-bottom:2.4rem;
 }

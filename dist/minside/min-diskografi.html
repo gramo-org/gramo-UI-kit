@@ -81,7 +81,7 @@
       <section id="discography-info" class="container container--padded container--for-tables">
         <div class="tabs">
           <ul class="tabs__nav tabs__nav--flexible" role="tablist">
-            <li class="tabs__nav__item" role="presentation"><a href="#album" role="tab" aria-controls="album" aria-selected="true">Album <span class="badge">138</span></a></li>
+            <li class="tabs__nav__item" role="presentation"><a href="#releases" role="tab" aria-controls="album" aria-selected="true">Utgivelser <span class="badge">0</span></a></li>
             <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger">Innspillinger <span class="badge">400</span></a></li>
             <li class="tabs__nav__item" role="presentation"><a href="#grupper" role="tab" aria-controls="album">Grupper <span class="badge">1</span></a></li>
           </ul>
@@ -124,24 +124,34 @@
               </tbody>
             </table>
           </section>
-          <section id="album" role="tabpanel" aria-hidden="true" class="tabs__section">
-            <table class="table table--fluid table--list table--four">
+          <section id="releases" role="tabpanel" aria-hidden="true" class="tabs__section">
+            <table class="table table--fluid table--list table--five">
               <thead>
-                <tr>
+                <!-- <tr>
                   <th>Tittel</th>
                   <th>Hovedartist</th>
                   <th>Label</th>
                   <th>Utgitt</th>
-                </tr>
+                  <th>Format</th>
+                </tr> -->
               </thead>
               <tbody>
-                <tr>
+                <!-- <tr>
                   <td data-label="Tittel">
                     <a href="album.html">Searching High and Low</a>
                   </td>
                   <td data-label="Hovedartist" class="table__cell--left">A-ha</td>
                   <td data-label="Label" class="table__cell--left">Sony</td>
                   <td data-label="Utgitt">1994-01-01</td>
+                  <td data-label="Format">Album</td>
+                </tr> -->
+                <tr>
+                  <td colspan="5">
+                    <div class="empty-state">
+                      <h4>Vi kunne ikke finne noen utgivelser</h4>
+                      <a href="create_release/create_release-release-info.html" class="btn btn--primary">Registrér ny utgivelse</a>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
