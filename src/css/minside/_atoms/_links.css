@@ -9,10 +9,21 @@
 }
 
 .link--edit {
+  padding: 1.2rem 2rem;
+  height: 50px;
+  transition-property: none;
 
   &:after {
     content: "\e91c";
     font-family: 'minside-icons';
+  }
+  
+  &--hidden {
+    height: auto;
+    
+    &::after {
+    content: none;
+    }
   }
 }
 

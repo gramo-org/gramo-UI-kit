@@ -3360,9 +3360,23 @@ input[type="checkbox"].form__input--toggle-visibility{
   font-family:'minside-icons';
 }
 
+.link--edit{
+  padding:1.2rem 2rem;
+  height:50px;
+  transition-property:none;
+}
+
 .link--edit:after{
   content:"\e91c";
   font-family:'minside-icons';
+}
+
+.link--edit--hidden{
+  height:auto;
+}
+
+.link--edit--hidden::after{
+  content:none;
 }
 
 .link--trash{
@@ -3555,7 +3569,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   .nav--secondary ul{
     margin:0;
     border:0;
-    padding:0;
+    padding:.7rem 0 0 0;
     text-transform:uppercase;
     font-size:1.5rem;
   }

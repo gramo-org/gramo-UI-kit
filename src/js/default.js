@@ -292,6 +292,20 @@ $('.form__input--searchable').bind('focus', function(){
   $(this).next('.searchable-list').addClass("searchable-list--open") 
 });
 
+$('.link--edit').click(function(e){
+  e.preventDefault();
+  $(this).closest('section').find('.form').find('input, select').not('.locked').prop('disabled', function(i, v) { return !v; });
+  $(this).closest('section').find('.form').find('.searchable-list').not('.locked').toggleClass('searchable-list--disabled');
+  $(this).toggleClass('link--edit--hidden btn btn--secondary');
+  
+  if ( $(this).hasClass('link--edit--hidden') ) {
+    $(this).text('Avbryt');
+    $(this).parent().append('<button class="btn btn--primary">Lagre</button>');
+  } else {
+    $(this).parent().find('.btn--primary').remove();
+    $(this).text('Rediger');
+  }
+});
 
 }); // end document ready
 
