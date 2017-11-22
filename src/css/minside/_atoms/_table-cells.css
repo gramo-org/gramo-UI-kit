@@ -25,14 +25,16 @@
   top: 0;
   left: 0;
   bottom: 0;
+  
   @media (--tablet) {
     position: relative;
   }
   
   & > *:first-child {
     position: absolute;
-    top: 1rem;
+    top: 1.2rem;
     left: .5rem;
+    font-size: 1.6rem;
     @media (--tablet) {
       left: -5rem;
       top: calc(50% - .75rem);
@@ -43,6 +45,7 @@
     position: absolute;
     bottom: 1rem;
     left: .5rem;
+    font-size: 1.6rem;
     @media (--tablet) {
       left: -3rem;
       top: calc(50% - .5rem);

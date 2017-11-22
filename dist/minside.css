@@ -3371,8 +3371,9 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .table__cell--move > *:first-child{
   position:absolute;
-  top:1rem;
+  top:1.2rem;
   left:.5rem;
+  font-size:1.6rem;
 }
 @media (min-width: 768px){
 
@@ -3385,6 +3386,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   position:absolute;
   bottom:1rem;
   left:.5rem;
+  font-size:1.6rem;
 }
 @media (min-width: 768px){
 
@@ -4806,6 +4808,8 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   content:counters(section,".") " ";
   background:#ededed;
   border-right:1px solid #d9d9dc;
+  color:#504f56;
+  font-size:1.6rem;
   min-width:2rem;
   padding:1rem;
   position:absolute;
