@@ -61,7 +61,7 @@ only screen and (max-width: 768px),
       content: none;
     }
     
-    td:not(:first-child):not(.table__cell--no-label):not(.table__cell--action)::before {
+    td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash)::before {
       content: attr(data-label)":";
       display: inline-block;
       margin-right: .5rem;
@@ -192,8 +192,42 @@ only screen and (max-width: 768px),
     }
   }
   
-  
-
+  .table--numeric-tracks {
+    /* Up / down */
+    td:nth-child(1) {
+      order: 1;
+    }
+    /* Tittel */
+    td:nth-child(2) {
+      order: 2;
+    }
+    /* Hovedartist */
+    td:nth-child(3) {
+      order: 3;
+    }
+    /* Label */
+    td:nth-child(4) {
+      order: 5;
+    }
+    /* ISRC */
+    td:nth-child(5) {
+      order: 8;
+    }
+    /* Dato */
+    td:nth-child(6) {
+      order: 6;
+      padding-right: 0;
+    }
+    /* Varighet */
+    td:nth-child(7) {
+      order: 3;
+      padding-right: 0;
+    }
+    /* Trash */
+    td:nth-child(8) {
+      order: 2;
+    }
+  }
   
   .table--standard {
     display: table;

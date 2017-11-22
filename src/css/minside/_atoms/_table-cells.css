@@ -18,3 +18,71 @@
 .table__cell--file-upload {
   order: 2;
 }
+
+/* Table cell containing up / down arrows for reordering tracks */
+.table__cell--move {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  @media (--tablet) {
+    position: relative;
+  }
+  
+  & > *:first-child {
+    position: absolute;
+    top: 1rem;
+    left: .5rem;
+    @media (--tablet) {
+      left: -5rem;
+      top: calc(50% - .75rem);
+    }
+  }
+
+  & > *:last-child {
+    position: absolute;
+    bottom: 1rem;
+    left: .5rem;
+    @media (--tablet) {
+      left: -3rem;
+      top: calc(50% - .5rem);
+    }
+  }
+}
+
+/* Table cell trash can button for deleting tracks */
+.table__cell--trash {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  @media (--tablet) {
+    right: auto;
+    top: auto;
+    position: relative;
+  }
+  
+  & > * {
+    position: absolute;
+    @media (--tablet) { 
+      right: -3rem;
+      top: calc(50% - 1rem);
+    }
+  }
+}
+/* Make release title larger and take up 100% width */
+.table__cell--title {
+  font-size: 2rem;
+  flex: 1 0 100%;
+  
+  @media (--tablet) {
+    font-size: inherit;
+  }
+}
+ /* Don't show data-label attribute or ':' for these cells */
+.table__cell--title,
+.table__cell--move,
+.table__cell--trash {
+  &:before {
+    content: none;
+  }
+}

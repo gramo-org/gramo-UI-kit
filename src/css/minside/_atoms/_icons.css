@@ -11,11 +11,11 @@
 
 @font-face {
   font-family: 'minside-icons';
-  src:  url('fonts/minside.eot?mt8cc2');
-  src:  url('fonts/minside.eot?mt8cc2#iefix') format('embedded-opentype'),
-    url('fonts/minside.ttf?mt8cc2') format('truetype'),
-    url('fonts/minside.woff?mt8cc2') format('woff'),
-    url('fonts/minside.svg?mt8cc2#icomoon') format('svg');
+  src:  url('fonts/minside.eot?pac47j');
+  src:  url('fonts/minside.eot?pac47j#iefix') format('embedded-opentype'),
+    url('fonts/minside.ttf?pac47j') format('truetype'),
+    url('fonts/minside.woff?pac47j') format('woff'),
+    url('fonts/minside.svg?pac47j#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -61,6 +61,12 @@
 }
 
 /* Icons */
+.icon--move-down:before {
+  content: "\e91e";
+}
+.icon--move-up:before {
+  content: "\e91f";
+}
 .icon--edit:before {
   content: "\e91c";
 }

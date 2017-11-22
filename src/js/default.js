@@ -307,6 +307,11 @@ $('.link--edit').click(function(e){
   }
 });
 
+$('.link--trash').click(function(e){
+  e.preventDefault();
+  $(this).closest('li').remove();
+});
+
 }); // end document ready
 
 //Affix page contents to top of viewport

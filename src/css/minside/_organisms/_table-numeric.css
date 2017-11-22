@@ -3,17 +3,39 @@
     counter-reset: section;
   }
   
-  thead th:first-child,
-  tr > td:first-child {
-    padding-left: 4.5rem;
-  }
-  
-  tr:not(:first-child) > td {
+  tbody tr {
     position: relative;
+    padding-left: 3rem;
+    @media (--tablet) {
+      position: static;
+      padding-left: 0;
+    }
   }
   
+  tr:not(:first-child) > td:first-child::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+    background: var(--light-gray);
+    border-right: 1px solid var(--silver);
+    min-width: 2rem;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Row containing Side number */
   tbody tr:first-child {
     background: none;
+    border: 0;
+    padding: 0 0 .5rem 3rem;
+    @media (--tablet) {
+      padding: 2rem 0 0 0;
+    }
     
     & > td {
       border-width: 0 0 1px 0;
@@ -22,27 +44,12 @@
     }
   }
   
-  tr:not(:first-child) > td:first-child::before {
-    counter-increment: section;
-    content: counters(section,".") " ";
-    position: absolute;
-    @extend .badge--numeric;
-    margin-top: -1rem;
-    left: 1.5rem;
-    top: 2.3rem;
-    top: 50%;
-  }
-  
-  tr.table__row--selected {
-    & > td:first-child {
-      padding-left: 1rem;
-      flex: 1 0 80%;
-      z-index: 1;
-    }
-  }
-  
   td.table__cell--side-number {
-    padding: 2rem 0 0 0;
+    font-size: 1.6rem;
+    @media (--tablet) {
+      padding: 2rem 0 0 0;
+    }
+    
     
     &:before {
       content: none;
