@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="../../img/favicon-gramo.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="../../minside.css">
+  <script>
+  window.onload = window.location.hash = 'innspillinger';
+  </script>
+  
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header profile--performer">
+      <span class="site-header__branding"><img src="../../img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
+      <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
+        Meny
+      </a>
+    </header>
+    <nav id="navigation" class="nav--primary">
+      <ul class="vertical__nav">
+        <li>
+          <div class="user">
+            <span class="user__name">
+              Morten Harket
+            </span>
+            <a href="#">Rediger</a>
+          </div>
+        </li>
+        <li class="vertical__nav__heading vertical__nav__heading--colored"><h4>Du ser på</h4></li>
+        <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--album-label"></span>Diskografi</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--bank"></span>Transaksjoner</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
+        <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
+        <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span>Personlig produsent</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Warner Music</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Sony Music</a></li>
+        <!-- <li class="vertical__nav__item"><a href="#"><span class="icon icon--profile"></span> Legg til ny profil</a></li> -->
+        <li class="vertical__nav__item vertical__nav__item--extend"><a href="#"><span class="icon icon--language"></span> Switch to English</a></li>
+        <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!--- Flash message --->
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success" role="alert" aria-live="assertive">
+          <p>Velkommen til nye Gramo</p>
+          <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
+        </div>
+      </div> -->
+
+      <!-- <dialogue class="statusboard statusboard--primary" role="alert">
+        <header class="statusboard__header">
+          <span class="icon icon--yay2 icon--large icon--dark"></span>
+          <span>Utbetaling Vinter 2016</span>
+          <em>226 756,50 kr</em>
+        </header>
+        <footer class="statusboard__footer">
+          <p>Avregningen pågår</p>
+          <a href="#"><span class="icon icon--info"></span></a>
+        </footer>
+        <button class="statusboard__close">
+          <span class="icon--close"></span>
+        </button>
+      </dialogue> -->
+      <div class="message message--agent">
+        <p><span class="icon icon--close"></span>Du ser på: Morten Harket (utøver)</p>
+      </div>
+      <header class="masthead">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text--center">
+              <a href="#" class="link--back">Tilbake til transakjoner</a>
+              <h1>Hoved avregning vinter 2016</h1>
+              <p>12.12.2015</p>
+              <h3>1000,00 kr</h3>
+            </div>
+          </div><!--end .row-->
+        </div>
+      </header>
+    
+      <section id="ledger-info" class="container container--padded container--for-tables">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible" role="tablist">
+            <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger" aria-selected="true">Per Sang</a></li>
+            <li class="tabs__nav__item" role="presentation"><a href="#channel" role="tab" aria-controls="channel">Per Radio</a></li>
+          </ul>
+          <section id="innspillinger" role="tabpanel" class="tabs__section">
+            <table class="table table--fluid table--list table--six">
+              <thead>
+                <tr>
+                  <th>Innspillingstittel</th>
+                  <th>Hovedartist</th>
+                  <th>Poeng</th>
+                  <th class="text--right">Spilletid</th>
+                  <th class="text--right">Sats</th>
+                  <th class="text--right">Beløp (kr)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Innspillingstittel">
+                    <a href="#">Take on Me</a>
+                  </td>
+                  <td data-label="Hovedartist" class="table__cell--left">
+                    A-ha
+                  </td>
+                  <td data-label="Poeng" class="table__cell--left">
+                    A/B - 64 poeng
+                  </td>
+                  <td data-label="Spilletid" class="text--right">
+                    19:04:45
+                  </td>
+                  <td data-label="Sats" class="text--right">
+                    175
+                  </td>
+                  <td data-label="Beløp" class="text--right">
+                    1785,59 <span class="show-on--mobile">kr</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section id="channel" role="tabpanel" class="tabs__section">
+            <table class="table table--fluid table--standard no-margin--top">
+              <thead>
+                <tr>
+                  <th>Radio</th>
+                  <th class="text--right">Antall</th>
+                  <th>Spilletid</th>
+                  <th class="table__cell--no-wrap text--right-always">Beløp (kr)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NRK P1</td>
+                  <td class="text--right">3</td>
+                  <td>00:10:05</td>
+                  <td class="text--bold text--right-always">30,50</td>
+                </tr>
+                <tr>
+                  <td>NRK P1</td>
+                  <td class="text--right">3</td>
+                  <td>00:10:05</td>
+                  <td class="text--bold text--right-always">30,50</td>
+                </tr>
+                <tr>
+                  <td>NRK P1</td>
+                  <td class="text--right">3</td>
+                  <td>00:10:05</td>
+                  <td class="text--bold text--right-always">30,50</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+<script src="../../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../../js/default.js"></script>
+</body>
+</html>

@@ -28,11 +28,20 @@
       margin: 2rem auto;
       columns: 5;
       column-gap: 2rem;
-
     }
     
-    .sitemap section {
+    @media
+    only screen and (max-width: 1298px) {
+      .sitemap {
+        columns: 3;
+      }
+    }
     
+    @media
+    only screen and (max-width: 768px) {
+      .sitemap {
+        columns: 1;
+      }
     }
     
     .sitemap a {
@@ -180,14 +189,16 @@
     <section>
       <h3>Transaksjoner</h3>
       <ul>
-        <li><a target="_blank" href="transactions/transaksjoner_niv1-members.html">transaksjoner_niv1-members</a></li>
-        <li><a target="_blank" href="transactions/transaksjoner_niv1-thirdparty.html">transaksjoner_niv1-thirdparty</a></li>  
-        <li><a target="_blank" href="transactions/transaksjoner_niv2-members.html">transaksjoner_niv2-members</a></li>
-        <li><a target="_blank" href="transactions/transaksjoner_niv2-thirdparty.html">transaksjoner_niv2-thirdparty</a></li>
-        <li><a target="_blank" href="transactions/transaksjoner_niv2-med-utbetaling.html">transaksjoner_niv2-med-utbetaling</a></li>
-        <li><a target="_blank" href="transactions/transaksjoner_niv3-innspilling-detaljer.html">transaksjoner_niv3-innspilling-detaljer</a></li>
-        <li><a target="_blank" href="transactions/transaksjoner_niv3-radio-detaljer.html">transaksjoner_niv3-radio-detaljer</a></li>
-        <li><a target="_blank" href="transactions/transaksjoner_niv3-innspilling-detaljer-thirdparty.html">transaksjoner_niv3-radio-detaljer-thirdparty</a></li>
+        <li><a target="_blank" href="transactions/transaksjoner_members-niv1.html">transaksjoner_members-niv1</a></li>
+        <li><a target="_blank" href="transactions/transaksjoner_members-niv2.html">transaksjoner_members-niv2</a></li>
+        <li><a target="_blank" href="transactions/transaksjoner_members-niv2-payment.html">transaksjoner_members-niv2-payment</a></li>
+        <li><a target="_blank" href="transactions/transaksjoner_members-niv3-radio-details.html">transaksjoner_members-niv3-radio-details</a></li>
+        <li><a target="_blank" href="transactions/transaksjoner_members-niv3-recording-details.html">transaksjoner_members-niv3-recording-details</a></li>
+        <li><a target="_blank" href="transactions/transaksjoner_thirdparty-niv1.html">transaksjoner_thirdparty-niv1</a></li>  
+        <li><a target="_blank" href="transactions/transaksjoner_thirdparty-niv2.html">transaksjoner_thirdparty-niv2</a></li>
+        <li><a target="_blank" href="transactions/transaksjoner_thirdparty-members-niv1.html">transaksjoner_thirdparty-members-niv1</a></li>
+        <li><a target="_blank" href="transactions/transaksjoner_thirdparty-members-niv2.html">transaksjoner_thirdparty-members-niv2</a></li>
+        <li><a target="_blank" href="transactions/transaksjoner_thirdparty-niv3-recording-details.html">transaksjoner_thirdparty-niv3-recording-details</a></li>
         <li><a target="_blank" href="transactions/transaksjoner-info.html">transaksjoner-info</a></li>
       </ul>
     </section>
