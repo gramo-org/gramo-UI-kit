@@ -3187,6 +3187,10 @@ input[type="checkbox"].form__input--toggle-visibility{
   background:#fdfdfd url("img/search.svg") right 1rem center no-repeat;
   background-size:1.8rem;
 }
+
+.form__input--searchable[disabled]{
+  background-image:none;
+}
 .form__label{
   position:relative;
   display:block;
