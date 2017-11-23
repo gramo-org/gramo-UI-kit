@@ -3367,6 +3367,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .table__cell--move{
   position:absolute;
+  height:100%;
   top:0;
   left:0;
   bottom:0;
