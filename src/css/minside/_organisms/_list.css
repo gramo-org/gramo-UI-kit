@@ -66,3 +66,9 @@
     }
   }
 }
+
+.list--plain {
+  & > li:before {
+    content: none;
+  }
+}

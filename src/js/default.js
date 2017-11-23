@@ -306,12 +306,21 @@ $('.link--edit').click(function(e){
     $(this).parent().find('.btn--primary').remove();
     $(this).text('Rediger');
   }
+  
+  if ( $('.row--alternate input').prop('disabled') ) {
+    $('.row--alternate').find('.row__delete').addClass('hide');
+    $('.row--alternate').nextAll('span, a').addClass('hide');
+  } else {
+    $('.row--alternate').find('.row__delete').removeClass('hide');
+    $('.row--alternate').nextAll('span, a').removeClass('hide');
+  }
 });
 
 $('.link--trash').click(function(e){
   e.preventDefault();
   $(this).closest('li').remove();
 });
+
 
 }); // end document ready
 

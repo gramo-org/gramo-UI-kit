@@ -1025,6 +1025,10 @@ p{
   right:-15px;
   top:-5px;
 }
+
+.hide{
+  display:none!important;
+}
 .site-wrapper{
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -4923,6 +4927,10 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   font-size:10rem;
   font-family:"brandon-regular";
   color:#ededed;
+}
+
+.list--plain > li:before{
+  content:none;
 }
 .section__header, .container__header{
   display:block;
