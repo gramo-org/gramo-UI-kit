@@ -38,6 +38,10 @@
     font-family: 'minside-icons';
     margin-left: .5rem;
   }
+  
+  &--hidden {
+    display: none;
+  }
 }
 
 .link--trash {  

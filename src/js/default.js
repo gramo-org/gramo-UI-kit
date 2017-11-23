@@ -297,6 +297,7 @@ $('.link--edit').click(function(e){
   $(this).closest('section').find('.form').find('input, select').not('.locked').prop('disabled', function(i, v) { return !v; });
   $(this).closest('section').find('.form').find('.searchable-list').not('.locked').toggleClass('searchable-list--disabled');
   $(this).toggleClass('link--edit--hidden btn btn--secondary');
+  $(this).closest('section').find('.link--trash').toggleClass('link--trash--hidden');
   
   if ( $(this).hasClass('link--edit--hidden') ) {
     $(this).text('Avbryt');

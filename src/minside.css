@@ -3473,6 +3473,10 @@ input[type="checkbox"].form__input--toggle-visibility{
   margin-left:.5rem;
 }
 
+.link--trash--hidden{
+  display:none;
+}
+
 .link--trash{  
   position:absolute;
   right:2rem;
