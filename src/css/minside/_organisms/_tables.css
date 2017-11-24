@@ -23,7 +23,7 @@
       color: var(--slate-gray);
       padding: 1rem 2rem;
       
-      @media (--tablet) { 
+      @media (--desktop) { 
         padding: 1rem; 
         height: var(--table-row-height); 
       }
@@ -46,7 +46,7 @@
   }
   thead {
     display: none;
-    @media (--tablet) {
+    @media (--desktop) {
       display: table-header-group;
       
     }

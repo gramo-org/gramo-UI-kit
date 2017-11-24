@@ -27,7 +27,7 @@
   left: 0;
   bottom: 0;
   
-  @media (--tablet) {
+  @media (--desktop) {
     position: relative;
   }
   
@@ -36,7 +36,7 @@
     top: 1.2rem;
     left: .5rem;
     font-size: 1.6rem;
-    @media (--tablet) {
+    @media (--desktop) {
       left: -5rem;
       top: calc(50% - .75rem);
     }
@@ -47,7 +47,7 @@
     bottom: 1rem;
     left: .5rem;
     font-size: 1.6rem;
-    @media (--tablet) {
+    @media (--desktop) {
       left: -3rem;
       top: calc(50% - .5rem);
     }
@@ -59,7 +59,7 @@
   position: absolute;
   right: 1.5rem;
   top: 1rem;
-  @media (--tablet) {
+  @media (--desktop) {
     right: auto;
     top: auto;
     position: relative;
@@ -67,7 +67,7 @@
   
   & > * {
     position: absolute;
-    @media (--tablet) { 
+    @media (--desktop) { 
       right: -3rem;
       top: calc(50% - 1rem);
     }
@@ -78,7 +78,7 @@
   font-size: 2rem;
   flex: 1 0 100%;
   
-  @media (--tablet) {
+  @media (--desktop) {
     font-size: inherit;
   }
 }

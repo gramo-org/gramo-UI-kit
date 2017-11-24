@@ -11,7 +11,7 @@
       margin-top: -1px;
     }
     
-    @media (--tablet) {
+    @media (--desktop) {
       display: table-row;
     }
   }
@@ -27,7 +27,7 @@
       font-size: 2rem;
       flex: 1 0 100%;
       
-      @media (--tablet) { 
+      @media (--desktop) { 
         font-size: inherit; 
       }  
     }
@@ -51,12 +51,13 @@
     display: inline-block;
     margin-right: .5rem;
     color: var(--off-gray);
-    @media (--tablet) { content: none; }
+    @media (--desktop) { content: none; }
   }
   
   .table__row--with-arrow {
     position: relative;
     padding-right: 2rem;
+    @media (--desktop) { position: static; }
     
     &:after {
       content: "\e90c";
@@ -67,7 +68,7 @@
       transform: rotate(-90deg);
       position: absolute;
       font-family: 'minside-icons';
-      @media (--tablet) { content: none; }
+      @media (--desktop) { content: none; }
     }
   }
 }
