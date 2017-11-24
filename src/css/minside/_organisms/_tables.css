@@ -1,269 +1,98 @@
 /* Minside */
 .table {
-  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
   width: 100%;
+  text-align: left;
+  table-layout: fixed;
   @extend %margin-bottom;
+  
   @media (--desktop) { min-width: 700px; width: auto; }
   @media (--hd) { min-width: 960px; }
 
   &--fluid {
     @media (--desktop) { min-width: 100%; }
   }
-
-  a:not(.btn) {
-    text-decoration: none;
-    color: var(--gramo-sea-green);
-    font-weight: var(--semibold);
-  }
-}
-
-@media
-only screen and (max-width: 768px),
-(min-device-width: 968px) and (max-device-width: 1024px)  {
-
-  .table--list {
-    tr {
-      display: flex;
-      flex-wrap: wrap;
+  
+  thead,
+  tbody,
+  tfoot {
+    td, th {
       border: 1px solid var(--table-border-color);
-      padding: 1rem;
-      width: calc(100% + 2rem);
-      margin: 0 -1rem;
+      border-width: 1px 0;
+      color: var(--slate-gray);
+      padding: 1rem 2rem;
       
-      &:not(:first-child) {
-        margin-top: -1px;
-      }
-    }
-    
-    td {
-      border: 0!important;
-      flex: 0 0 auto;
-      align-items: flex-end;
-      padding: 0 1rem;
-      margin: 0;
-      
-      &:first-child {
-        font-size: 2rem;
-        flex: 1 0 100%;
+      @media (--tablet) { 
+        padding: 1rem; 
+        height: var(--table-row-height); 
       }
       
-      &.table__cell--left {
-        flex: 1 0 50%;
-        text-align: left!important;
+    }
+    th:first-child,
+    td:first-child {
+      @media (--desktop) { 
+        border-left: 1px solid var(--table-border-color);
+        padding-left: 2rem; 
       }
-      
-      &.table__cell--full {
-        flex: 1 0 100%;
-      }
     }
-    
-    td:first-child::before {
-      content: none;
-    }
-    
-    td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash)::before {
-      content: attr(data-label)":";
-      display: inline-block;
-      margin-right: .5rem;
-      text-transform: none;
-    }
-    
-    .table__row--with-arrow {
-      position: relative;
-      padding-right: 2rem;
-      
-      &:after {
-        content: "\e90c";
-        color: var(--off-gray);
-        top: 50%;
-        right: 1rem;
-        margin-top: -1rem;
-        transform: rotate(-90deg);
-        position: absolute;
-        font-family: 'minside-icons';
+    th:last-child,
+    td:last-child {
+      @media (--desktop) { 
+        padding-right: 2rem;
+        border-right: 1px solid var(--table-border-color);
       }
     }
   }
-  
-  [data-label="Beløp"]::before {
-    display: none!important;
-  }
-  
-  .table--three {
-    
-    td:nth-child(2) {
-      order: 2;
-    }
-    
-    td:nth-child(3) {
-      order: 3;
-    }
-  }
-  
-  .table--four {
-    
-    td:nth-child(2) {
-      order: 2;
-    }
-    
-    td:nth-child(3) {
-      order: 4;
-    }
-    
-    td:nth-child(4) {
-      order: 3;
-    }
-  }
-  
-  .table--five {
-    
-    td:nth-child(2) {
-      order: 2;
-    }
-    
-    td:nth-child(3) {
-      order: 4;
-    }
-    
-    td:nth-child(4) {
-      order: 3;
-    }
-    
-    td:nth-child(5) {
-      order: 5;
-    }
-  }
-  
-  .table--six {
-    
-    td:nth-child(1) {
-      order: 1;
-    }
-    
-    td:nth-child(2) {
-      order: 2;
-    }
-    
-    td:nth-child(3) {
-      order: 4;
-    }
-    
-    td:nth-child(4) {
-      order: 6;
-    }
-    
-    td:nth-child(5) {
-      order: 5;
-    }
-    
-    td:nth-child(6) {
-      order: 3;
-    }
-  }
-  
-  .table--seven {
-    
-    td:nth-child(1) {
-      order: 1;
-    }
-    
-    td:nth-child(2) {
-      order: 2;
-    }
-    
-    td:nth-child(3) {
-      order: 4;
-    }
-    
-    td:nth-child(4) {
-      order: 6;
-    }
-    
-    td:nth-child(5) {
-      order: 3;
-    }
-    
-    td:nth-child(6) {
-      order: 5;
-    }
-    
-    td:nth-child(7) {
-      order: 7;
-    }
-  }
-  
-  .table--numeric-tracks {
-    /* Up / down */
-    td:nth-child(1) {
-      order: 1;
-    }
-    /* Tittel */
-    td:nth-child(2) {
-      order: 2;
-    }
-    /* Hovedartist */
-    td:nth-child(3) {
-      order: 3;
-    }
-    /* Label */
-    td:nth-child(4) {
-      order: 5;
-    }
-    /* ISRC */
-    td:nth-child(5) {
-      order: 8;
-    }
-    /* Dato */
-    td:nth-child(6) {
-      order: 6;
-      padding-right: 0;
-    }
-    /* Varighet */
-    td:nth-child(7) {
-      order: 3;
-      padding-right: 0;
-    }
-    /* Trash */
-    td:nth-child(8) {
-      order: 2;
-    }
-  }
-  
-  .table--standard {
-    display: table;
-    width: calc(100% + 2rem);
-    margin: 0 -1rem;
-    
-    thead {
+  thead {
+    display: none;
+    @media (--tablet) {
       display: table-header-group;
-      border: 0;
+      
     }
-    tbody {
-      display: table-row-group;
-    }
+
     tr {
-      display: table-row;
-      border-width: 0 0 1px 0;
+      background: var(--table-head-background);
     }
-    th, td {
-      display: table-cell;
-      border-width: 1px 0!important;
-    }
-    
-    td::before {
-      content: none;
+
+    th {
+      font-weight: var(--semibold);
+      text-align: left;
     }
   }
-  .no-pull tr {
-    width: auto;
-    margin: 0;
+  tbody > tr {
+    background: var(--gramo-white);
+      
+    &:hover {
+      @media (--tablet) { background: var(--row-hover); }
+    }
   }
 }
 
-.table--standard {
-  @media (--tablet) { margin-top: 2rem; }
-}
 
-[data-label="Beløp"] {
+/* Links in tables */
+.table a:not(.btn)  {
+  text-decoration: none;
+  color: var(--gramo-sea-green);
   font-weight: var(--semibold);
+}
+
+
+/* Table standard */
+.table--standard {
+  width: calc(100% + 2rem);
+  margin: 0 -1rem;
+  @media (--tablet) {
+    width: 100%;
+    margin: 0 0 1.2rem 0;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+/* Remove data-labels */
+  td::before {
+    content: none;
+  }
 }

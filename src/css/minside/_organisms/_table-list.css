@@ -1,0 +1,190 @@
+.table--list {
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--table-border-color);
+    padding: 1rem;
+    width: calc(100% + 2rem);
+    margin: 0 -1rem;
+    
+    &:not(:first-child) {
+      margin-top: -1px;
+    }
+    
+    @media (--tablet) {
+      display: table-row;
+    }
+  }
+  
+  tr td {
+    border: 0;
+    flex: 0 0 auto;
+    align-items: flex-end;
+    padding: 0 1rem;
+    margin: 0;
+    
+    &:first-child {
+      font-size: 2rem;
+      flex: 1 0 100%;
+      
+      @media (--tablet) { 
+        font-size: inherit; 
+      }  
+    }
+    
+    &.table__cell--left {
+      flex: 1 0 50%;
+      text-align: left!important;
+    }
+    
+    &.table__cell--full {
+      flex: 1 0 100%;
+    }
+  }
+  
+  td:first-child::before {
+    content: none;
+  }
+  
+  td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash)::before {
+    content: attr(data-label)":";
+    display: inline-block;
+    margin-right: .5rem;
+    color: var(--off-gray);
+    @media (--tablet) { content: none; }
+  }
+  
+  .table__row--with-arrow {
+    position: relative;
+    padding-right: 2rem;
+    
+    &:after {
+      content: "\e90c";
+      color: var(--off-gray);
+      top: 50%;
+      right: 1rem;
+      margin-top: -1rem;
+      transform: rotate(-90deg);
+      position: absolute;
+      font-family: 'minside-icons';
+      @media (--tablet) { content: none; }
+    }
+  }
+}
+
+[data-label="Beløp"] {
+  font-weight: var(--semibold);
+  
+  &::before {
+    display: none!important;
+  }  
+}
+
+
+.table--three {
+  
+  td:nth-child(2) {
+    order: 2;
+  }
+  
+  td:nth-child(3) {
+    order: 3;
+  }
+}
+
+.table--four {
+  
+  td:nth-child(2) {
+    order: 2;
+  }
+  
+  td:nth-child(3) {
+    order: 4;
+  }
+  
+  td:nth-child(4) {
+    order: 3;
+  }
+}
+
+.table--five {
+  
+  td:nth-child(2) {
+    order: 2;
+  }
+  
+  td:nth-child(3) {
+    order: 4;
+  }
+  
+  td:nth-child(4) {
+    order: 3;
+  }
+  
+  td:nth-child(5) {
+    order: 5;
+  }
+}
+
+.table--six {
+  
+  td:nth-child(1) {
+    order: 1;
+  }
+  
+  td:nth-child(2) {
+    order: 2;
+  }
+  
+  td:nth-child(3) {
+    order: 4;
+  }
+  
+  td:nth-child(4) {
+    order: 6;
+  }
+  
+  td:nth-child(5) {
+    order: 5;
+  }
+  
+  td:nth-child(6) {
+    order: 3;
+  }
+}
+
+.table--seven {
+  
+  td:nth-child(1) {
+    order: 1;
+  }
+  
+  td:nth-child(2) {
+    order: 2;
+  }
+  
+  td:nth-child(3) {
+    order: 4;
+  }
+  
+  td:nth-child(4) {
+    order: 6;
+  }
+  
+  td:nth-child(5) {
+    order: 3;
+  }
+  
+  td:nth-child(6) {
+    order: 5;
+  }
+  
+  td:nth-child(7) {
+    order: 7;
+  }
+}
+
+.no-pull tr {
+  width: auto;
+  margin: 0;
+}
