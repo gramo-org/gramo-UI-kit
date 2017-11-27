@@ -298,6 +298,7 @@ $('.link--edit').click(function(e){
   $(this).closest('section').find('.form').find('.searchable-list').not('.locked').toggleClass('searchable-list--disabled');
   $(this).toggleClass('link--edit--hidden btn btn--secondary');
   $(this).closest('section').find('.link--trash').toggleClass('link--trash--hidden');
+  $(this).closest('section').find('.link--add').toggleClass('link--add--hidden');
   
   if ( $(this).hasClass('link--edit--hidden') ) {
     $(this).text('Avbryt');
@@ -309,10 +310,10 @@ $('.link--edit').click(function(e){
   
   if ( $('.row--alternate input').prop('disabled') ) {
     $('.row--alternate').find('.row__delete').addClass('hide');
-    $('.row--alternate').nextAll('span, a').addClass('hide');
+    $('.row--alternate').next('span').addClass('hide');
   } else {
     $('.row--alternate').find('.row__delete').removeClass('hide');
-    $('.row--alternate').nextAll('span, a').removeClass('hide');
+    $('.row--alternate').next('span').removeClass('hide');
   }
 });
 
