@@ -3939,9 +3939,10 @@ input[type="checkbox"].form__input--toggle-visibility{
 .radio-group .form__label{
   background:#ededed;
   z-index:0;
+  margin:0 1rem 0 0;
 }
 .radio-group .form__label:before{
-  margin-left:-0.2rem!important;
+  margin-left:-0.5rem!important;
 }
 .radio-group .check{
   border:0;
