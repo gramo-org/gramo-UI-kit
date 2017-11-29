@@ -1,10 +1,10 @@
-.table--numeric {
+.table-list--numeric {
   tbody {
     counter-reset: section;
   }
   
   tbody tr {
-    position: relative;
+    position: relative; /* to enable absolute positioning of the first cell and its children */
     padding-left: 3rem;
     @media (--desktop) {
       position: static;
@@ -15,19 +15,12 @@
   tr:not(:first-child) > td:first-child::before {
     counter-increment: section;
     content: counters(section,".") " ";
-    background: var(--light-gray);
-    border-right: 1px solid var(--silver);
     color: var(--slate-gray);
     font-size: 1.6rem;
-    min-width: 2rem;
-    padding: 1rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @media (--desktop) {
+      position: relative;
+      top: 1.6rem;
+    }
   }
   
   /* Row containing Side number */
@@ -59,7 +52,7 @@
   }
 }
 
-.table--numeric {
+.table-list--numeric {
   /* Up / down */
   td:nth-child(1) {
     order: 1;
@@ -93,5 +86,86 @@
   /* Trash */
   td:nth-child(8) {
     order: 2;
+  }
+}
+
+/* Table cell containing up / down arrows for reordering tracks */
+.table__cell--move {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: var(--light-gray);
+  border-right: 1px solid var(--silver);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  @media (--desktop) {
+    position: static;
+    display: table-cell;
+  }
+  
+  & > a {
+    position: absolute;
+    font-size: 1.6rem;
+    
+    @media (--desktop) {
+      position: relative;
+    }
+    
+    .icon {
+      display: block;
+    }
+  }
+  
+  & > a:first-child {
+    top: 1rem;
+    left: .5rem;
+
+    @media (--desktop) {
+      left: -7rem;
+      top: -0.5rem;
+    }
+  }
+
+  & > a:last-child {
+    bottom: 1rem;
+    left: .5rem;
+
+    @media (--desktop) {
+      left: -5rem;
+      top: -2rem;
+    }
+  }
+}
+
+/* Table cell trash can button for deleting tracks */
+.table__cell--trash {
+  
+  & > a {
+    position: relative;
+    right: -1rem;
+    @media (--desktop) {
+      right: -5rem;
+    }
+  }
+}
+/* Make release title larger and take up 100% width */
+.table__cell--title {
+  font-size: 2rem;
+  flex: 1 0 100%;
+  
+  @media (--desktop) {
+    font-size: inherit;
+  }
+}
+ /* Don't show data-label attribute or ':' for these cells */
+.table__cell--title,
+.table__cell--move,
+.table__cell--trash {
+  &:before {
+    content: none;
   }
 }

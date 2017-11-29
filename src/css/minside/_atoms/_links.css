@@ -9,21 +9,12 @@
 }
 
 .link--edit {
-  padding: 1.2rem 2rem;
   height: 49px;
   transition-property: none;
 
   &:after {
     content: "\e91c";
     font-family: 'minside-icons';
-  }
-  
-  &--hidden {
-    height: auto;
-    
-    &::after {
-    content: none;
-    }
   }
 }
 
@@ -41,13 +32,24 @@
     font-family: 'minside-icons';
     margin-left: .5rem;
   }
+}
+
+
+
+/* For prototype (turning edit link into 'avbryt') */
+.link--edit:not(.btn) {
+  padding: 1.2rem 0 1.2rem 2rem;
+}
+/* this is added to edit link via js */
+.link--edit--hidden {
+  height: auto;
   
-  &--hidden {
-    display: none;
+  &::after {
+  content: none;
   }
 }
 
-.link--add {
+.link--add, .link--trash {
   
   &--hidden {
     display: none;
