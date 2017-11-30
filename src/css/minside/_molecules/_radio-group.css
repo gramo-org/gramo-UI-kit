@@ -12,9 +12,8 @@
     background: var(--light-gray);
     z-index: 0;
     margin: 0 1rem 0 0;
-    &:before {
-      margin-left: -0.5rem!important;
-    }
+    display: flex;
+    justify-content: center;
   }
   .check {
     border: 0;

@@ -1334,6 +1334,11 @@ _::-webkit-:not(:root:root), input[type="number"]::-webkit-outer-spin-button, in
   position:relative;
   }
 } }
+@media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none) and (stroke-color:transparent){
+  input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button{
+  position:absolute;
+  }
+}}
 
 input[type="time"]{
   padding-right:2rem;
@@ -2944,7 +2949,6 @@ _:-ms-lang(x), .form__input[type="date"]{
   line-height:0;
 }
 _:-ms-input-placeholder, :root .form__input[type="date"]{
-  box-sizing:content-box;
   padding:1.2rem 0 1.2rem .5rem;
   width:95%;
 }
@@ -3116,7 +3120,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   }
 }
 
-.form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before, legend{
+.form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):not(.radio-group .form__label):before, legend{
   content:'';
   margin-left:.2rem;
 }
@@ -3778,6 +3782,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .search__form .search__submit{
+  display:block;
   padding:0 2rem;
   -webkit-flex:0 0 auto;
   -ms-flex:0 0 auto;
@@ -3859,9 +3864,12 @@ input[type="checkbox"].form__input--toggle-visibility{
   background:#ededed;
   z-index:0;
   margin:0 1rem 0 0;
-}
-.radio-group .form__label:before{
-  margin-left:-0.5rem!important;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
 }
 .radio-group .check{
   border:0;

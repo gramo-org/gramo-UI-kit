@@ -12,6 +12,7 @@
   }
   
   .search__submit {
+    display: block;
     padding: 0 2rem;
     flex: 0 0 auto;
     margin: 0 0 0 -1px;

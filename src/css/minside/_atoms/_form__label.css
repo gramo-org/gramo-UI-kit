@@ -52,7 +52,7 @@
   }
 }
 
-.form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):before,
+.form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):not(.radio-group .form__label):before,
 legend {
   content: '';
   margin-left: .2rem;

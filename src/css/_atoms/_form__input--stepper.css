@@ -37,6 +37,15 @@ _::-webkit-:not(:root:root), input[type="number"]::-webkit-inner-spin-button {
   }
 } }
 
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+  position: absolute;
+  }
+}}
+
 input[type="time"] {
   padding-right: 2rem;
 
