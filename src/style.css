@@ -5008,6 +5008,10 @@ input[type="text"].search__form__input--large{
   font-size:1.4rem;
 }
 
+.tooltip-wrapper .tooltip a{
+  color:#fdfdfd;
+}
+
 .tooltip-wrapper--inline .tooltip{
   left:calc(10% - 260px);
 }

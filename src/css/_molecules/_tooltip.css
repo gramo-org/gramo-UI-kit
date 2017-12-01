@@ -36,6 +36,10 @@
       font-size: var(--base-font-size);
     }
   }
+  
+  a {
+    color: var(--gramo-white);
+  }
 }
 
 .tooltip-wrapper--inline .tooltip {
