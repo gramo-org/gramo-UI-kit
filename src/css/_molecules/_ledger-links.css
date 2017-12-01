@@ -12,11 +12,11 @@
   }
   
   .list--inline {
-    li {
+    & > li {
       margin: 0;
     }
     
-    li:not(:last-child):after {
+    & > li:not(:last-child):after {
       content: '|';
       color: var(--off-gray);
       margin: 0 .5rem;

@@ -5010,6 +5010,7 @@ input[type="text"].search__form__input--large{
 
 .tooltip-wrapper .tooltip a{
   color:#fdfdfd;
+  margin-left:1rem;
 }
 
 .tooltip-wrapper--inline .tooltip{
@@ -5078,10 +5079,10 @@ input[type="text"].search__form__input--large{
 .ledger-links .tooltip-wrapper{
   top:2px;
 }
-.ledger-links .list--inline li{
+.ledger-links .list--inline > li{
   margin:0;
 }
-.ledger-links .list--inline li:not(:last-child):after{
+.ledger-links .list--inline > li:not(:last-child):after{
   content:'|';
   color:#a5a4ab;
   margin:0 .5rem;
