@@ -1,4 +1,4 @@
-.table-list--numeric {
+.table--tracks {
   tbody {
     counter-reset: section;
   }
@@ -52,7 +52,7 @@
   }
 }
 
-.table-list--numeric {
+.table--tracks  {
   /* Up / down */
   td:nth-child(1) {
     order: 1;

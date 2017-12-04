@@ -81,7 +81,7 @@
                 <li><a href="#bankinformasjon" class="active">Bank</a></li>
                 <li><a href="#profil-info">Utøver</a></li>
                 <li><a href="#medlemskap">Medlemskap</a></li>
-                
+                <li><a href="#relations">Relasjoner</a></li>
               </ul>
             </nav>
           </div>
@@ -266,45 +266,141 @@
                 </a>
               </section>
               <hr class="horizontal-rule">
-              <section>
+              <section id="relations">
                 <h2>Relasjoner</h2>
                 <div class="tabs">
                   <ul class="tabs__nav tabs__nav--flexible">
                     <li class="tabs__nav__item">
-                      <a class="link--no-line ">
+                      <a href="#groups" class="link--no-line ">
                         Grupper
                         <span class="badge">1</span>
                       </a>
                     </li>
                     <li class="tabs__nav__item">
-                      <a class="link--no-line">
+                      <a href="#recordings" class="link--no-line">
                         Innspillinger
                         <span class="badge">1</span>
                       </a>
                     </li>
                     <li class="tabs__nav__item">
-                      <a class="link--no-line ">
+                      <a href="#releases" class="link--no-line ">
                         Utgivelser
                         <span class="badge">1</span>
                       </a>
                     </li>
                   </ul>
-                  <section id="recordings" class="tabs__section">
-                    <table class="table table--fluid table--list table--three">
+                  <section id="groups" class="tabs__section">
+                    <table class="table table--fluid table--list table--four">
                       <thead>
                         <tr>
                           <th>Navn</th>
-                          <th>Label</th>
-                          <th>ISRC</th>
+                          <th>Instrument</th>
+                          <th class="text--right">Fra</th>
+                          <th class="text--right">Til</th>
                         </tr>
                       </thead>
                       <tbody>
                           <tr>
-                            <td data-label="title">
-                              <a href="#">En låt</a></td>
-                            <td data-label="Label" class="table__cell--left">Know Not Records</td>
-                            <td data-label="ISRC">NOREG1700000</td>
+                            <td data-label="Navn">
+                              <a href="#">A-ha</a></td>
+                            <td data-label="Instrument" class="table__cell--left">Vokal</td>
+                            <td data-label="Fra" class="text--right">1982</td>
+                            <td data-label="Til" class="text--right">-</td>
                           </tr>
+                      </tbody>
+                    </table>
+                    <ul class="pagination">
+                      <li class="pagination__item pagination__item--previous pagination__item--disabled">
+                        <a href="#">
+                          <i class="icon--pagination-previous"></i>
+                        </a>
+                      </li>
+                      <li class="pagination__item pagination__item--next pagination__item--disabled">
+                        <a href="#">
+                          <i class="icon--pagination-next"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section id="recordings" class="tabs__section">
+                    <table class="table table--fluid table--list table--four">
+                      <thead>
+                        <tr>
+                          <th>Innspillingstittel</th>
+                          <th>Varighet</th>
+                          <th>Utgivelsesdato</th>
+                          <th>Katalognummer</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="Innspillingstittel">
+                            Take on Me
+                          </td>
+                          <td data-label="Varighet" class="table__cell--left">
+                            03:24
+                          </td>
+                          <td data-label="Utgivelsesdato">
+                            1985
+                          </td>
+                          <td data-label="Kat. nr.">
+                            AHAEG09182947
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-label="Innspillingstittel">
+                            Train of Thought
+                          </td>
+                          <td data-label="Varighet" class="table__cell--left">
+                            03:17
+                          </td>
+                          <td data-label="Utgivelsesdato">
+                            1985
+                          </td>
+                          <td data-label="Kat. nr.">
+                            AHAEG09182938
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <ul class="pagination">
+                      <li class="pagination__item pagination__item--previous pagination__item--disabled">
+                        <a href="#">
+                          <i class="icon--pagination-previous"></i>
+                        </a>
+                      </li>
+                      <li class="pagination__item pagination__item--next pagination__item--disabled">
+                        <a href="#">
+                          <i class="icon--pagination-next"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section id="releases" class="tabs__section">
+                    <table class="table table--fluid table--list table--four">
+                      <thead>
+                        <tr>
+                          <th>Tittel</th>
+                          <th>Hovedartist</th>
+                          <th>Label</th>
+                          <th class="text--right">Antall spor</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="Tittel">
+                            Hunting High and Low
+                          </td>
+                          <td data-label="Hovedartist" class="table__cell--left">
+                            A-Ha
+                          </td>
+                          <td data-label="Label">
+                            Warner Bros. Records
+                          </td>
+                          <td data-label="Antall spor" class="text--right">
+                            11
+                          </td>
+                        </tr>
                       </tbody>
                     </table>
                     <ul class="pagination">
