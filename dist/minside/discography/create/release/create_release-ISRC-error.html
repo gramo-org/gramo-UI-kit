@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="../../img/favicon-gramo.png">
+  <link rel="shortcut icon" href="/img/favicon-gramo.png">
   <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -19,14 +19,14 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
-  <link rel="stylesheet" href="../../minside.css">
+  <link rel="stylesheet" href="/minside.css">
   
   
 </head>
 <body>
   <div class="site-wrapper">
     <header class="site-header profile--performer">
-      <span class="site-header__branding"><img src="../../img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
+      <span class="site-header__branding"><img src="/img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
       <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
         Meny
       </a>
@@ -55,7 +55,14 @@
         <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
       </ul>
     </nav>
-    <main> 
+    <main>
+      <!--- Flash message --->
+      <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--error" role="alert" aria-live="assertive">
+          <p>ISRC koden er i bruk</p>
+          <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
+        </div>
+      </div>
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -78,9 +85,9 @@
             <nav class="nav--secondary nav--secondary--fixed">
               <ul>
                 <li><a href="#" class="">1. Utgivelsesinfo</a></li>
-                <li><a href="#" class="">2. Innspillinger</a></li>
-                <li><a href="#" class="">3. Eierskap</a></li>
-                <li><a href="#" class="active">4. Utøvere</a></li>
+                <li><a href="#" class="active">2. Innspillinger</a></li>
+                <li><a href="#" class="link--disabled">3. Eierskap</a></li>
+                <li><a href="#" class="link--disabled">4. Utøvere</a></li>
               </ul>
             </nav>
           </div>
@@ -232,9 +239,6 @@
                 <header>
                   <h2>2. Innspillinger</h2>
                 </header>
-                <div class="section-header__action">
-                  <a href="#" class="link--edit">Rediger</a>
-                </div>
               </div>
               <form class="form">
                 <ol class="list list--numbered">
@@ -253,234 +257,103 @@
                     <div class="row">
                       <div class="col-xs-12 col-sm-5">
                         <label class="form__label">Tittel
-                          <input type="text" class="form__input" value="Train of Thought" disabled>
+                          <input type="text" class="form__input" value="Train of Thought">
                         </label>
                       </div>
                     </div><!-- end .row -->
                     <div class="row">
                       <div class="col-xs-12 col-sm-6">
                         <label class="form__label">Varighet
-                          <input type="time" class="form__input" value="03:17" disabled>
+                          <input type="time" class="form__input" value="03:17">
                         </label>
                       </div>
                     </div><!--end .row-->
                     <div class="row">
                       <div class="col-xs-4 col-sm-2">
                         <label class="form__label">Side nr.
-                          <input type="number" min="1" value="1" class="form__input form__input--80" disabled>
+                          <input type="number" min="1" value="1" class="form__input form__input--80">
                         </label>
                       </div>
                       <div class="col-xs-4 col-sm-2">
                         <label class="form__label">Spor nr.
-                          <input type="number" min="1" value="1" class="form__input form__input--80" disabled>
+                          <input type="number" min="1" value="1" class="form__input form__input--80">
                         </label>
                       </div>
                     </div><!--end .row-->
-                    <a href="#" class="link--trash link--trash--hidden">Forkast</a>
+                    <a href="#" class="link--trash">Forkast</a>
                   </li>
+                  
                   <li>
-                    <div class="row">
+                    <div class="row" id="ISRC-found">
                       <div class="col-xs-12 col--no-flex">
-                        <label class="form__label form__label--required">ISRC
+                        <label class="form__label form__label--required has-error--simple">ISRC
                           <span class="form__label__help">En ny innspilling må ha en unik ISRC kode</span>
                           <span>
-                            <input type="text" class="form__input form__input--inline form__input--300 locked" value="AHAEG09182947" disabled>
-                            <button class="btn btn--inline btn--secondary" disabled>Sjekk ISRC</button>
+                            <input type="text" class="form__input form__input--inline form__input--300" value="AHAEG09182947" placeholder="f.eks: NOXXX1501223">
+                            <button class="btn btn--inline btn--secondary">Sjekk ISRC</button>
                           </span>
                         </label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-5">
-                        <label class="form__label">Tittel
-                          <input type="text" class="form__input locked" value="Take on Me" disabled>
-                        </label>
-                      </div>
-                    </div><!-- end .row -->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6">
-                        <label class="form__label">Varighet
-                          <input type="time" class="form__input locked" value="03:24" disabled>
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-4 col-sm-2">
-                        <label class="form__label">Side nr.
-                          <input type="number" min="1" value="1" class="form__input form__input--80" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-4 col-sm-2">
-                        <label class="form__label">Spor nr.
-                          <input type="number" min="1" value="2" class="form__input form__input--80" disabled>
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                    <a href="#" class="link--trash link--trash--hidden">Forkast</a>
-                  </li>
-                </ol>
-              </form>
-            </section>
-            <hr class="horizontal-rule">
-            <section id="view-ownership">
-              <div class="section-header">
-                <header>
-                  <h2>3. Eierskap</h2>
-                  <p>Eierskap hentes fra label informasjon i utgivelsesinfo og 
-                    vil bli lagt til alle NYE innspillinger på denne utgivelsen.</p>
-                  <p>Du kan søke på endring i eierskap på én og én innspilling på et senere tidspunkt.</p>
-                </header>
-              </div>
-              <form class="form">
-                <ol class="list list--numbered list--plain">
-                  <li>
-                    <div class="row list__header">
-                      <div class="col-xs-11 col-sm-6">
-                        <h3>Warner Bros. Records</h3>
-                      </div>
-
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-5">
-                        <label class="form__label">Produsentnavn
-                          <input type="text" value="Warner Music Group" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <label class="form__label">Produsentland
-                          <input type="text" value="Norge" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-3 col-sm-1">
-                        <label class="form__label form__label--no-wrap">% Andel
-                          <input type="text" value="100" class="form__input form__input--60" disabled>
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                  </li>
-                </ol>
-              </form>
-            </section>
-            <hr class="horizontal-rule">
-            <section id="add-performers">
-              <div class="section-header">
-                <header>
-                  <h2>4. Utøvere</h2>
-                  <p>Utøvere som blir lagt til her kopieres til alle NYE innspillinger på denne utgivelsen.</p>
-                  <p>Justeringer kan gjøres på én og én innspilling på et senere tidspunkt.</p>
-                </header>
-              </div>
-              <form class="form">
-                <ol class="list list--numbered">
-                  <li>
-                    <div class="row list__header">
-                      <div class="col-xs-11 col-sm-6">
-                        <h3>Tore Torst</h3>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 list__header--action">
-                        <a href="#" class="link--trash">Forkast</a>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block"><span>Instrument</span>
-                          <div class="searchable-list form__input form__input--block">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected">Velg instrument</span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  Gitar
-                                </li>
-                                <li class="searchable-list__option">
-                                  Piano
-                                </li>
-                                <li class="searchable-list__option">
-                                  Trommer
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block"><span>Statsborgerskap</span>
-                          <div class="searchable-list searchable-list--disabled form__input form__input--block">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected">Statsborgerskap</span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  Norge
-                                </li>
-                                <li class="searchable-list__option">
-                                  Storbrittania
-                                </li>
-                                <li class="searchable-list__option">
-                                  USA
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4">
-                        <div class="form__label"><span>Rolle</span>
-                          <div class="radio-group">
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>A</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>B</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>C</span>
-                              <span class="check"></span>
-                            </label>
-                          </div>
+                        
+                        <div class="form__input__errors">
+                          <p class="text--em">
+                            En innspilling ble funnet
+                          </p>
                         </div>
                       </div>
-                    </div><!--end .row-->
+                    </div><!-- end .row -->
+                    <fieldset class="form__fieldset form__fieldset--border">
+                      <legend>Take on Me</legend>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5">
+                          <label class="form__label">ISRC
+                            <input type="text" class="form__input" value="AHAEG09182947" disabled>
+                          </label>
+                        </div>
+                      </div><!-- end .row -->
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5">
+                          <label class="form__label">Hovedartist
+                            <input type="text" class="form__input" value="A-Ha" disabled>
+                          </label>
+                        </div>
+                      </div><!-- end .row -->
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5">
+                          <label class="form__label">Tittel
+                            <input type="text" class="form__input locked" value="Take on Me" disabled>
+                          </label>
+                        </div>
+                      </div><!-- end .row -->
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                          <label class="form__label">Varighet
+                            <input type="text" class="form__input form__input--60" value="03:24" disabled>
+                          </label>
+                        </div>
+                      </div><!--end .row-->
+                    </fieldset>
+                    <div class="form__section--action">
+                      <a href="create_release-check-ISRC-2.html#check-ISRC" class="btn btn--inline btn--secondary">Prøv på nytt</a>
+                      <a href="create_release-recordings-done.html#recordings-done" class="btn btn--inline btn--primary click-here">Bruk denne</a>
+                    </div>
                   </li>
                 </ol>
                 <p>
-                  <a href="create_release-add-performers-2a.html#add-performers" class="link--no-line click-here">Legg til Utøvere</a>
+                  <a href="#" class="link--no-line">Legg til ny innspilling</a>
                 </p>
                 <div class="form__section--action">
-                  <a href="create_release-view-ownership.html" class="btn btn--inline btn--secondary">Avbryt</a>
-                  <button class="btn btn--inline btn--primary">Lagre</button>
+                  <a href="create_release-check-ISRC.html" class="btn btn--inline btn--secondary">Avbryt</a>
+                  <button class="btn btn--inline btn--primary" disabled>Lagre og gå videre</button>
                 </div>
               </form>
             </section>
-            <hr class="horizontal-rule">
-            <section id="complete-registration">
-              <div class="section-header">
-                <header>
-                  <h2>Fullfør utgivelsen</h2>
-                  <p>Når du trykker på 'fullfør' blir utgivelsen og innspillingene lagret.</p>
-                  <p>Du kan redigere utgivelsen og innspillingene på egne sider</p>
-                </header>
-              </div>
-              <div class="form__section--action">
-                <button class="btn btn--inline btn--secondary" disabled>Avbryt</button>
-                <button class="btn btn--inline btn--primary" disabled>Fullfør og se utgivelsen</button>
-              </div>
-            </section>
-          </div><!-- end .col-sm-9-->
-        </div><!-- end .row -->
+            
+          </div>
+        </div>
       </section>
     </main>
-  </div>
-  <script src="../../js/vendor/jquery-1.11.3.min.js"></script>
-  <script src="../../js/default.js"></script>
-  </body>
+</div>
+<script src="/js/vendor/jquery-1.11.3.min.js"></script>
+<script src="/js/default.js"></script>
+</body>
 </html>
