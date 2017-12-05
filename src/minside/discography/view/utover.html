@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="../../img/favicon-gramo.png">
+  <link rel="shortcut icon" href="/img/favicon-gramo.png">
   <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -19,14 +19,14 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
-  <link rel="stylesheet" href="../../minside.css">
+  <link rel="stylesheet" href="/minside.css">
   
   
 </head>
 <body>
   <div class="site-wrapper">
     <header class="site-header profile--performer">
-      <span class="site-header__branding"><img src="../../img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
+      <span class="site-header__branding"><img src="/img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
       <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
         Meny
       </a>
@@ -63,11 +63,11 @@
             <div class="col-xs-12 text--center">
               <h1 class="no-margin--bottom">Morten Harket</h1>
               <h3>A-ha</h3>
-              <h4>Utøver, Produsent</h4>
+              <h4>Utøver</h4>
               <section class="masthead__meta">
-                <h4 class="masthead__meta__item"><span>Medlemsnummer</span>8475352628</h4>
                 <h4 class="masthead__meta__item"><span>Fødselsdato</span>19.09.1959</h4>
                 <h4 class="masthead__meta__item"><span>Statsborgerskap</span>Norge</h4>
+                <h4 class="masthead__meta__item"><span>Instrument</span>Vokal, gitar</h4>
               </section>
             </div>
           </div><!--end .row-->
@@ -78,192 +78,76 @@
           <div class="col-xs-12 col-sm-3">
             <nav class="nav--secondary">
               <ul>
-                <li><a href="#bankinformasjon" class="active">Bank</a></li>
-                <li><a href="#profil-info">Utøver</a></li>
-                <li><a href="#medlemskap">Medlemskap</a></li>
-                <li><a href="#relations">Relasjoner</a></li>
+                <li><a href="#profil-info" class="active">Utøver</a></li>
+                <li><a href="#relations">Relasjoner</a></li>                
               </ul>
             </nav>
           </div>
           <div class="col-xs-12 col-sm-9">
-            <form class="form adjust--to-left">
-              <section id="bankinformasjon">
-                <h2>Bankinformasjon</h2>
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Skattekommune
-                      <div id="ember538" class="searchable-list searchable-list form__input">
-                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                          <span class="searchable-list__selected">Velg skattekommune</span>
-                        </div>
-                        <div class="searchable-list__dropdown">
-                          <input type="text" id="ember540" class="ember-text-field searchable-list__search form__input form__input--block">
-                          <ul>
-                            <li class="searchable-list__option">
-                                Åfjord
-                              </li>
-                              <li class="searchable-list__option">
-                                Agdenes
-                              </li>
-                              <li class="searchable-list__option">
-                                Ål
-                              </li>
-                              <li class="searchable-list__option">
-                                KAUTOKEINO/GUOVDAGEAINNU
-                              </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Bank
-                      <select class="select  select--block">
-                        <option value="">Velg kontotype</option>
-                        <option value="">Norsk</option>
-                        <option value="">Andre</option>
-                      </select>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Kontonummer
-                      <input type="text" class="form__input">
-                    </label>
-                  </div>
-                </div>
-              </section>
-              <hr class="horizontal-rule">
+            <form class="form">
               <section id="profile-info">
                 <h2>Utøverinformasjon</h2>
                 <div class="row">
                   <div class="col-xs-11 col-sm-6">
-                    <label class="form__label">Artistnavn
-                      <input type="text" class="form__input" disabled>
+                    <label class="form__label">Navn
+                      <input type="text" value="Morten Harket" class="form__input" disabled>
                     </label>
                   </div>
-                  <div class="row__delete row__delete--half">
-                    <a class="text--small text--light">
-                      <span id="ember2058" class="icon icon--close"></span>
-                    </a>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-11 col-sm-6">
+                    <label class="form__label">Artistnavn
+                      <input type="text" value="Morten Harket" class="form__input" disabled>
+                    </label>
                   </div>
                 </div><!--end .row-->
-                <a class="link--no-line link--add">
-                  Legg til alt. artistnavn
-                </a>
-                
                 <div class="row">
                   <div class="col-xs-11 col-sm-6">
                     <label class="form__label">Hovedinstrument
-                      <input type="text" class="form__input" disabled>
+                      <input type="text" value="Vokal" class="form__input" disabled>
                     </label>
                   </div>
-                  <div class="row__delete row__delete--half">
-                    <a class="text--small text--light">
-                      <span id="ember2058" class="icon icon--close"></span>
-                    </a>
-                  </div>
                 </div><!--end .row-->
-                <a class="link--no-line link--add">
-                  Legg til instrument
-                </a>
                 <div class="row">
                   <div class="col-xs-11 col-sm-6">
-                    <label class="form__label">IPN
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                </div>
-              </section>
-              <hr class="horizontal-rule">
-              <section id="medlemskap">
-                <h2>Gramo medlemskap</h2>
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Vederlagsbyrå
-                      <input type="text" value="Gramo" class="form__input" disabled>
-                    </label>
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Medlemsnummer
-                      <input type="text" value="8475352628" class="form__input" disabled>
+                    <label class="form__label">Andre instrumenter
+                      <input type="text" value="Gitar" class="form__input" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Teritoriemandat
-                      <input type="text" value="Worldwide" class="form__input" disabled>
-                    </label>
-                  </div>
-                  <div class="col-xs-5 col-sm-3">
-                    <label class="form__label form__label--block">
-                      <span>Fra</span>
-                      <input type="date" value="2010-01-01" class="form__input form__label--block form__input--date" disabled>
+                    <label class="form__label">Fødselsdato
+                      <input type="date" value="1959-09-19" class="form__input form__input--date" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
-              </section>
-              <hr class="horizontal-rule">
-              
-              <section id="rettighetshaverorg">
-                <h2>Medlemskap i rettighetshaverorganisasjoner</h2>
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label form__label--block">
-                      <span>Rettighetshaverorganisasjon</span>
-                      <div class="searchable-list searchable-list form__input form__input--block searchable-list--disabled">
+                      <span>Statsborgerskap</span>
+                      <div class="searchable-list searchable-list searchable-list--disabled form__input form__input--block">
                         <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                          <span class="searchable-list__selected">Velg medlemskap</span>
+                          <span class="searchable-list__selected">Norge</span>
                         </div>
                         <div class="searchable-list__dropdown">
                           <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
                           <ul>
                             <li class="searchable-list__option">
-                              Folkorg
+                              AFGANISTAN
                             </li>
                             <li class="searchable-list__option">
-                              Gramart
+                              ÅLAND
                             </li>
                             <li class="searchable-list__option">
-                              MUSIKERNES FELLES ORGANISASJON
+                              ALBANIA
                             </li>
                           </ul>
                         </div>
                       </div>
                     </label>
                   </div>
-                </div><!-- end .row -->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-4">
-                    <label class="form__label">Medlemskaps nr.
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                  <div class="col-xs-5 col-sm-3 off-sm-2">
-                    <label class="form__label form__label--block">
-                      <span>Fra</span>
-                      <input type="date" class="form__input form__label--block form__input--date" disabled>
-                    </label>
-                  </div>
-                  <div class="col-xs-5 col-sm-3">
-                    <label class="form__label form__label--block">
-                      <span>Til</span>
-                      <input type="date" class="form__input form__label--block form__input--date ember-view" disabled>
-                    </label>
-                  </div>
-                  <div class="row__delete">
-                    <a class="text--small text--light">
-                      <span id="ember2058" class="icon icon--close"></span>
-                    </a>
-                  </div>
-                </div><!--end .row-->
-                <a class="link--no-line link--add">
-                  Legg til medlemskap
-                </a>
+                </div>
               </section>
               <hr class="horizontal-rule">
               <section id="relations">
@@ -418,22 +302,13 @@
                   </section>
                 </div>
               </section>
-              <hr class="horizontal-rule">
-              <section class="form__section--action row">
-                <div class="col-xs-6 col-sm-3">
-                  <button class="btn btn--secondary">Avbryt</button>
-                </div>
-                <div class="col-xs-6 col-sm-3">
-                  <button class="btn btn--primary">Lagre</button>
-                </div>
-              </section>
             </form>
           </div>
         </div>
       </section>
     </main>
 </div>
-<script src="../../js/vendor/jquery-1.11.3.min.js"></script>
-<script src="../../js/default.js"></script>
+<script src="/js/vendor/jquery-1.11.3.min.js"></script>
+<script src="/js/default.js"></script>
 </body>
 </html>

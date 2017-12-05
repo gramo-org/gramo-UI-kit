@@ -4664,8 +4664,8 @@ main.pull .bucket{
     right:auto;
     top:auto;
     bottom:0;
-    left:calc(45% + .25rem);
-    width:calc(55% + .75rem);
+    left:calc(45% + .3rem);
+    width:calc(55% + .7rem);
     -webkit-justify-content:flex-start;
     -ms-flex-pack:start;
     justify-content:flex-start;

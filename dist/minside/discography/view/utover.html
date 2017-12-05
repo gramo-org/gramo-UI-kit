@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="../../img/favicon-gramo.png">
+  <link rel="shortcut icon" href="/img/favicon-gramo.png">
   <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -19,14 +19,14 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
-  <link rel="stylesheet" href="../../minside.css">
+  <link rel="stylesheet" href="/minside.css">
   
   
 </head>
 <body>
   <div class="site-wrapper">
     <header class="site-header profile--performer">
-      <span class="site-header__branding"><img src="../../img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
+      <span class="site-header__branding"><img src="/img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
       <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
         Meny
       </a>
@@ -63,7 +63,7 @@
             <div class="col-xs-12 text--center">
               <h1 class="no-margin--bottom">Morten Harket</h1>
               <h3>A-ha</h3>
-              <h4>Utøver, Produsent</h4>
+              <h4>Utøver</h4>
               <section class="masthead__meta">
                 <h4 class="masthead__meta__item"><span>Fødselsdato</span>19.09.1959</h4>
                 <h4 class="masthead__meta__item"><span>Statsborgerskap</span>Norge</h4>
@@ -89,18 +89,65 @@
                 <h2>Utøverinformasjon</h2>
                 <div class="row">
                   <div class="col-xs-11 col-sm-6">
+                    <label class="form__label">Navn
+                      <input type="text" value="Morten Harket" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-11 col-sm-6">
                     <label class="form__label">Artistnavn
-                      <input type="text" class="form__input" disabled>
+                      <input type="text" value="Morten Harket" class="form__input" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-11 col-sm-6">
                     <label class="form__label">Hovedinstrument
-                      <input type="text" class="form__input" disabled>
+                      <input type="text" value="Vokal" class="form__input" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-11 col-sm-6">
+                    <label class="form__label">Andre instrumenter
+                      <input type="text" value="Gitar" class="form__input" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Fødselsdato
+                      <input type="date" value="1959-09-19" class="form__input form__input--date" disabled>
+                    </label>
+                  </div>
+                </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label form__label--block">
+                      <span>Statsborgerskap</span>
+                      <div class="searchable-list searchable-list searchable-list--disabled form__input form__input--block">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Norge</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
+                          <ul>
+                            <li class="searchable-list__option">
+                              AFGANISTAN
+                            </li>
+                            <li class="searchable-list__option">
+                              ÅLAND
+                            </li>
+                            <li class="searchable-list__option">
+                              ALBANIA
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
               </section>
               <hr class="horizontal-rule">
               <section id="relations">
@@ -108,20 +155,20 @@
                 <div class="tabs">
                   <ul class="tabs__nav tabs__nav--flexible">
                     <li class="tabs__nav__item">
-                      <a href="#groups" class="link--no-line ">
-                        Grupper
+                      <a href="#releases" class="link--no-line ">
+                        Utgivelser
                         <span class="badge">1</span>
                       </a>
                     </li>
                     <li class="tabs__nav__item">
                       <a href="#recordings" class="link--no-line">
                         Innspillinger
-                        <span class="badge">1</span>
+                        <span class="badge">2</span>
                       </a>
                     </li>
                     <li class="tabs__nav__item">
-                      <a href="#releases" class="link--no-line ">
-                        Utgivelser
+                      <a href="#groups" class="link--no-line ">
+                        Grupper
                         <span class="badge">1</span>
                       </a>
                     </li>
@@ -261,7 +308,7 @@
       </section>
     </main>
 </div>
-<script src="../../js/vendor/jquery-1.11.3.min.js"></script>
-<script src="../../js/default.js"></script>
+<script src="/js/vendor/jquery-1.11.3.min.js"></script>
+<script src="/js/default.js"></script>
 </body>
 </html>
