@@ -540,7 +540,6 @@ td.text--center, .fake-table__row *.text--center{
 }
 
 .col--for-dates{
-  -webkit-flex:0 0 auto;
   -ms-flex:0 0 auto;
   flex:0 0 auto;
 }

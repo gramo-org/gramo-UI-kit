@@ -563,6 +563,127 @@
                       </tbody>
                     </table>
                   </div>
+                  <form class="form">
+                    <fieldset class="form__fieldset form__fieldset--group">
+                      <header class="row text--medium">
+                        <div class="col">
+                          <span class="text--bold">Fra:</span> 27.11.2015
+                        </div>
+                        <div class="col">
+                          <span class="text--bold">til:</span> 31.12.2015
+                        </div>
+                        <div class="col-xs col--no-flex text--right">
+                          <a href="#" class="link--edit">Rediger</a>
+                        </div>
+                      </header>
+                      <div class="row">
+                        <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
+                          Produsentsnavn
+                        </div>
+                        <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
+                          Territorie
+                        </div>
+                        <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
+                          % Andel
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-lg-3">
+                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                            <input type="text" value="RCA UK" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                            <input type="text" value="Worldwide" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-lg-1">
+                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                            <input type="text" value="50%" class="form__input form__input--block">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-lg-3">
+                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                            <input type="text" value="EMI RECORDED MUSIC NORWAY" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                            <input type="text" value="REGIONAL +" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-lg-1">
+                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                            <input type="text" value="30%" class="form__input form__input--block">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-lg-3">
+                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
+                            <input type="text" value="UKJENT" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
+                            <input type="text" value="-" class="form__input form__input--block">
+                          </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-lg-1">
+                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
+                            <input type="text" value="20%" class="form__input form__input--block">
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div class="form__section--action">
+                      <a class="link--no-line link--inline">Legg til produsent</a>
+                    </div>
+                  </form>
+
+                  <div class="toolbar toolbar--padded block--no-flex">
+                    <h4 class="heading--sub">1. Velg dato rettigheter gjelder for</h4>
+                    <form class="form">
+                      <label class="form__label form__label--date">
+                        Fra
+                        <input type="date" class="form__input from-deviation">
+                      </label>
+                      <label class="form__label form__label--date">
+                        Til
+                        <input type="date" class="form__input to-deviation">
+                      </label>
+                    </form>
+                    <h4 class="heading--sub">2. Velg produsent</h4>
+                    <div class="heading--sub">
+                      <span class="text--bold">Søk etter <span class="text--lower">produsent</span></span>
+                        <span class="break--inline"></span>eller
+                        <span class="break--inline"></span>
+                        <a class="link--no-line">Legg til ukjent(e) produsent(er)</a>
+                    </div>
+                    <form action="" class="search__form">
+                      <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                      <button class="search__submit"></button>
+                    </form>
+                    <table class="table table--fluid table--with-margin">
+                      <thead>
+                        <tr>
+                          <th>Produsentnavn</th>
+                          <th>Territorie</th>
+                          <th>% Andel</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="Produsentnavn">EMI Musikk Norway</td>
+                          <td data-label="Territorie">Regional +</td>
+                          <td data-label="% Andel">30%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div><!--/ .toolbar-->
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
                 <section id="utover" class="container container--padded">
