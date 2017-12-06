@@ -358,6 +358,10 @@ td.text--center,
   vertical-align: middle;
 }
 
+.col--for-dates {
+  flex: 0 0 auto;
+}
+
 /* Truncated text */
 .truncated {
   /*position: relative;*/
