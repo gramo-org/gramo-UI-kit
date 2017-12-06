@@ -538,6 +538,12 @@ td.text--center, .fake-table__row *.text--center{
   display:inline-block;
   vertical-align:middle;
 }
+
+.col--for-dates{
+  -webkit-flex:0 0 auto;
+  -ms-flex:0 0 auto;
+  flex:0 0 auto;
+}
 .truncated, .table__cell--truncated, .table__row--truncated:not(.dd-open) > td:not([data-label="Feil"]){
   white-space:nowrap;
   overflow:hidden;
@@ -4915,6 +4921,7 @@ input[type="text"].search__form__input--large{
   padding:2rem;
   background:#ededed;
   border:1px solid #d9d9dc;
+  margin-bottom:1.2rem;
 }
 
   .form__fieldset--is-editing{

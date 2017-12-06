@@ -1956,6 +1956,7 @@ input[type="text"].search__form__input--large{
   padding:2rem;
   background:#ededed;
   border:1px solid #d9d9dc;
+  margin-bottom:1.2rem;
 }
 
   .form__fieldset--is-editing{
@@ -2420,6 +2421,10 @@ input[type="text"].search__form__input--large{
 
 .icon--medium{
   font-size:4.5rem;
+}
+
+.icon--small{
+  font-size:2rem;
 }
 .box{
   background:#fdfdfd;
