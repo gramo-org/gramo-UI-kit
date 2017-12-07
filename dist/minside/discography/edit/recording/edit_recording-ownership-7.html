@@ -56,7 +56,14 @@
         <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
       </ul>
     </nav>
-    <main> 
+    <main>
+      <!--- Flash message --->
+      <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success" role="alert" aria-live="assertive">
+          <p>Eierskap ble registrert</p>
+          <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
+        </div>
+      </div>
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -258,40 +265,19 @@
               </div>
               <form class="form">
                 <ol class="list list--numbered">
-                  <li>
+                  <li class="hide-labels">
                     <div class="row list__header">
                       <div class="col-xs-7">
                         <label class="form__label">Fra
-                          <input type="date" class="form__input form__input--date" disabled>
+                          <input type="date" class="form__input form__input--date" value="2016-01-01" disabled>
                         </label>
                         <label class="form__label">Til
                           <input type="date" class="form__input form__input--date" disabled>
                         </label>
                       </div>
                       <div class="col-xs-5 list__header--action">
-                        <a href="#" class="link--edit">Rediger</a>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-5">
-                        <label class="form__label">Produsentnavn
-                          <input type="text" value="Sony Music" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <label class="form__label">Produsentland
-                          <input type="text" value="Norge" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-3 col-sm-1">
-                        <label class="form__label form__label--no-wrap">% Andel
-                          <input type="text" value="50" class="form__input form__input--60" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-2 col-sm-2 col--no-flex text--center-always">
-                        <label class="form__label form__label--block text--center-always">Kontrakt</label>
-                        <div class="file-upload" id="file-upload">
-                          <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(0)</span></a>
+                        <div class="file-upload file-upload--required" id="file-upload">
+                          <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(1)</span></a>
                           <div class="file-upload__inner">
                             <header class="file-upload__header">
                               <h2><i class="icon icon--paperclip"></i>Vedlegg</h2>
@@ -318,6 +304,7 @@
                                 </div>
                               </div>
                             </div>
+                            </h1>
                             <div class="file-upload__list">
                               <ul>
                                 <li class="row">
@@ -339,27 +326,37 @@
                         </div>
                       </div>
                     </div><!--end .row-->
-                    <hr class="horizontal-rule">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-5">
-                        <label class="form__label">Produsentnavn
-                          <input type="text" value="Warner Music" class="form__input" disabled>
+                        <label class="form__label"><span>Produsentnavn</span>
+                          <input type="text" value="Sony Music" class="form__input" disabled>
                         </label>
                       </div>
                       <div class="col-xs-12 col-sm-6 col-md-4">
-                        <label class="form__label">Produsentland
+                        <label class="form__label"><span>Produsentland</span>
                           <input type="text" value="Norge" class="form__input" disabled>
                         </label>
                       </div>
                       <div class="col-xs-3 col-sm-1">
-                        <label class="form__label form__label--no-wrap">% Andel
-                          <input type="text" value="50" class="form__input form__input--60" disabled>
+                        <label class="form__label form__label--no-wrap"><span>% Andel</span>
+                          <input type="text" value="100" class="form__input form__input--60" disabled>
                         </label>
                       </div>
-                      <div class="col-xs-2 col-sm-2 col--no-flex text--center-always">
-                        <label class="form__label form__label--block text--center-always">Kontrakt</label>
-                        <div class="file-upload" id="file-upload">
-                          <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(0)</span></a>
+                    </div><!--end .row-->
+                  </li>
+                  <li class="hide-labels">
+                    <div class="row list__header">
+                      <div class="col-xs-7">
+                        <label class="form__label">Fra
+                          <input type="date" class="form__input form__input--date locked" value="2017-01-01" disabled>
+                        </label>
+                        <label class="form__label">Til
+                          <input type="date" class="form__input form__input--date locked" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-5 list__header--action">
+                        <div class="file-upload file-upload--required" id="file-upload">
+                          <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(2)</span></a>
                           <div class="file-upload__inner">
                             <header class="file-upload__header">
                               <h2><i class="icon icon--paperclip"></i>Vedlegg</h2>
@@ -368,7 +365,7 @@
                               </div>
                             </header>
                             <!-- TODO: File upload to be added later -->
-                            <!-- <div class="file-upload__form">
+                            <div class="file-upload__form">
                               <label class="form__label form__label--block form__label--upload">
                                 <input type="file" />
                               </label>
@@ -385,7 +382,8 @@
                                   </div>
                                 </div>
                               </div>
-                            </div> -->
+                            </div>
+                            </h1>
                             <div class="file-upload__list">
                               <ul>
                                 <li class="row">
@@ -394,8 +392,21 @@
                                     <p>Eierskap bevis</p>
                                   </div>
                                   <div class="col-sm text--right">
-                                    <date>11.04.2014</date>
+                                    <date>01.01.2017</date>
                                     <p class="text--italic">av Warner Music</p>
+                                  </div>
+                                  <div class="col-sm-1 align--vertical-center text--right">
+                                    <a class="text--small text--light" href="#"><span class="icon icon--close"></span></a>
+                                  </div>
+                                </li>
+                                <li class="row">
+                                  <div class="col-sm">
+                                    <a href="#">kontrakt.pdf</a>
+                                    <p>Eierskap bevis</p>
+                                  </div>
+                                  <div class="col-sm text--right">
+                                    <date>01.01.2017</date>
+                                    <p class="text--italic">av Sony Music</p>
                                   </div>
                                   <div class="col-sm-1 align--vertical-center text--right">
                                     <a class="text--small text--light" href="#"><span class="icon icon--close"></span></a>
@@ -407,59 +418,44 @@
                         </div>
                       </div>
                     </div><!--end .row-->
-                  </li>
-                  <li>
-                    <div class="row list__header">
-                      <div class="col-xs-7">
-                        <label class="form__label">Fra
-                          <input type="date" class="form__input form__input--date locked">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6 col-md-5">
+                        <label class="form__label"><span>Produsentnavn</span>
+                          <input type="text" value="Warner Music" class="form__input" disabled>
                         </label>
-                        <label class="form__label">Til
-                          <input type="date" class="form__input form__input--date locked">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="form__label"><span>Produsentland</span>
+                          <input type="text" value="Norge" class="form__input" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-3 col-sm-1">
+                        <label class="form__label form__label--no-wrap"><span>% Andel</span>
+                          <input type="text" value="50" class="form__input form__input--60" disabled>
                         </label>
                       </div>
                     </div><!--end .row-->
                     <div class="row">
-                      <div class="col-xs-11">
-                        <h3>Søk etter produsent</h3>
-                        <div class="search">
-                          <div action="" class="search__form search__form--left">
-                            <input type="text" class="form__input locked" value="" placeholder="Søk..." />
-                            <button class="search__submit"></button>
-                          </div>
-                        </div>
-                        <table class="table table--fluid table--standard no-margin--top">
-                          <thead>
-                            <tr>
-                              <th>Navn</th>
-                              <th>Statsborgerskap</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="table__cell--truncated">
-                                TOR EGIL KREKEN
-                              </td>
-                              <td>
-                                Norge
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <div class="col-xs-12 col-sm-6 col-md-5">
+                        <label class="form__label"><span>Produsentnavn</span>
+                          <input type="text" value="Sony Music" class="form__input" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="form__label"><span>Produsentland</span>
+                          <input type="text" value="Norge" class="form__input" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-3 col-sm-1">
+                        <label class="form__label form__label--no-wrap"><span>% Andel</span>
+                          <input type="text" value="50" class="form__input form__input--60" disabled>
+                        </label>
                       </div>
                     </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-6 col-sm-2">
-                        <button class="btn btn--secondary">Avbryt</button>
-                      </div>
-                      <div class="col-xs-6 col-sm-2">
-                        <button class="btn btn--primary">Lagre</button>
-                      </div>
-                    </div><!--end .row-->
+                    <p>Dette eierskapet ventes godkjenning av Gramo <a href="edit_recording.html#ownership-info">Slett eierskap</a></p>
                   </li>
                 </ol>
               </form>
-              <a href="#">Legg til eierskap</a>
               <hr class="horizontal-rule">
             </section>
             
@@ -469,8 +465,7 @@
                   <h2>Utøvere<span class="badge badge--secondary">2</span></h2>
                 </header>
                 <div class="section-header__action">
-                  <a href="edit_recording.html" class="btn btn--secondary">Avbryt</a>
-                  <button class="btn btn--primary">Lagre</button>
+                  <a href="#" class="link--edit">Rediger</a>
                 </div>
               </div>
               <form class="form">
@@ -481,13 +476,13 @@
                         <h3>Magne Furuholmen</h3>
                       </div>
                       <div class="col-xs-12 col-sm-6 list__header--action">
-                        <a href="#" class="link--trash">Forkast</a>
+                        <a href="#" class="link--trash link--trash--hidden">Forkast</a>
                       </div>
                     </div><!--end .row-->
                     <div class="row">
                       <div class="col-xs-12 col-sm-4">
                         <label class="form__label form__label--block"><span>Instrument</span>
-                          <div class="searchable-list form__input form__input--block">
+                          <div class="searchable-list searchable-list--disabled form__input form__input--block">
                             <div tabindex="0" class="searchable-list__heading searchable-list__heading">
                               <span class="searchable-list__selected">Trommer</span>
                             </div>
@@ -531,6 +526,7 @@
                           </div>
                         </label>
                       </div>
+
                     </div><!--end .row-->
                   </li>
                   <li>
@@ -539,13 +535,13 @@
                         <h3>Paul Waaktaar-Savoy</h3>
                       </div>
                       <div class="col-xs-12 col-sm-6 list__header--action">
-                        <a href="#" class="link--trash">Forkast</a>
+                        <a href="#" class="link--trash link--trash--hidden">Forkast</a>
                       </div>
                     </div><!--end .row-->
                     <div class="row">
                       <div class="col-xs-12 col-sm-4">
                         <label class="form__label form__label--block"><span>Instrument</span>
-                          <div class="searchable-list form__input form__input--block">
+                          <div class="searchable-list searchable-list--disabled form__input form__input--block">
                             <div tabindex="0" class="searchable-list__heading searchable-list__heading">
                               <span class="searchable-list__selected">Gitar</span>
                             </div>
@@ -589,42 +585,13 @@
                           </div>
                         </label>
                       </div>
-                    </div><!--end .row-->
-                  </li>
-                  <li>
-                    <div class="row">
-                      <div class="col-xs-11">
-                        <h3>Søk etter utøver</h3>
-                        <div class="search">
-                          <div action="" class="search__form search__form--left">
-                            <input type="text" class="form__input" value="Morten Harket" placeholder="Søk..." />
-                            <button class="search__submit"></button>
-                          </div>
-                        </div>
-                        <table class="table table--fluid table--list table--five no-pull">
-                          <thead>
-                            <tr>
-                              <th>Navn</th>
-                              <th>Artister</th>
-                              <th>Levetid</th>
-                              <th>Instrument</th>
-                              <th>Statsborgerskap</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr class="table__row--disabled">
-                              <td data-label="Navn" class="table__cell--truncated"><a href="edit_recording-performers-3.html" class="click-here link--no-line">Morten Harket</a></td>
-                              <td data-label="Artister" class="table__cell--truncated table__cell--left">Morten Harket</td>
-                              <td data-label="Levetid" class="table__cell--truncated table__cell--left">1959-</td>
-                              <td data-label="Instrument" class="table__cell--truncated">Vokal</td>
-                              <td data-label="Land" class="table__cell--truncated">Norge</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+
                     </div><!--end .row-->
                   </li>
                 </ol>
+                <p>
+                  <a href="edit_recording-performers-1.html" class="link--add link--add--hidden click-here">Legg til utøver</a>
+                </p>
               </form>
             </section>
           </div>

@@ -32,9 +32,15 @@
     font-family: 'minside-icons';
     margin-left: .5rem;
   }
+  
+  &--in-row {
+    bottom: 2.5rem;
+  }
 }
 
-
+.link--add {
+  margin: -0.5rem 0 1rem 0rem;
+}
 
 /* For prototype (turning edit link into 'avbryt') */
 .link--edit:not(.btn) {
