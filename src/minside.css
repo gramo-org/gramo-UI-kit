@@ -982,8 +982,11 @@ p{
   margin-bottom:0!important;
 }
 
-.link--add{
-  margin:-0.5rem 0 1rem 0rem;
+.hide-labels > .row:not(:first-child):not(:nth-child(2)) .form__label span{
+  visibility:hidden;
+  height:0;
+  overflow:hidden;
+  display:block;
 }
 .truncated{
   white-space:nowrap;
@@ -2173,7 +2176,7 @@ input[type="text"].search__form__input--large{
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
-  z-index:1;
+  z-index:2;
   -webkit-flex-direction:column;
   -ms-flex-direction:column;
   flex-direction:column;
@@ -3278,6 +3281,14 @@ input[type="checkbox"].form__input--toggle-visibility{
   content:"\e91d";
   font-family:'minside-icons';
   margin-left:.5rem;
+}
+
+.link--trash--in-row{
+  bottom:2.5rem;
+}
+
+.link--add{
+  margin:-0.5rem 0 1rem 0rem;
 }
 .link--edit:not(.btn){
   padding:1.2rem 0 1.2rem 2rem;
@@ -5295,6 +5306,10 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .file-upload__inner.is-visible:before{
   right:-1rem;
   text-shadow:2px 0 2px rgba(0,0,0,0.3);
+}
+.file-upload--required:before{
+  content:'*';
+  color:#ed6b6a;
 }
 
 .file-upload__header h2{

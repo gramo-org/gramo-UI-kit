@@ -149,8 +149,13 @@
   }
 }
 
-.link--add {
-  margin: -0.5rem 0 1rem 0rem;
+.hide-labels > .row:not(:first-child):not(:nth-child(2)) {
+  .form__label span {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    display: block;
+  }
 }
 
 /* Truncated text */

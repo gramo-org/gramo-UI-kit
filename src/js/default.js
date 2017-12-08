@@ -317,9 +317,15 @@ $('.link--edit').click(function(e){
   }
 });
 
-$('.link--trash').click(function(e){
+$('.link--trash:not(.link--trash--in-row)').click(function(e){
   e.preventDefault();
   $(this).closest('li').remove();
+});
+
+$('.link--trash--in-row').click(function(e){
+  e.preventDefault();
+  $(this).closest('.row').remove().prev().remove();
+  // $(this).closest('.row').prev('hr').remove();
 });
 
 

@@ -6436,7 +6436,7 @@ tr > td:last-child{
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
-  z-index:1;
+  z-index:2;
   -webkit-flex-direction:column;
   -ms-flex-direction:column;
   flex-direction:column;

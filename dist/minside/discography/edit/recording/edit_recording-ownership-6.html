@@ -56,7 +56,14 @@
         <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
       </ul>
     </nav>
-    <main> 
+    <main>
+      <!--- Flash message --->
+      <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--error" role="alert" aria-live="assertive">
+          <p>Du må laste opp eierskapskontrakten</p>
+          <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
+        </div>
+      </div>
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -332,17 +339,123 @@
                       </div>
                       <div class="col-xs-3 col-sm-1">
                         <label class="form__label form__label--no-wrap"><span>% Andel</span>
-                          <input type="text" value="50" class="form__input form__input--60" disabled>
+                          <input type="text" value="100" class="form__input form__input--60" disabled>
                         </label>
+                      </div>
+                    </div><!--end .row-->
+                  </li>
+                  <li class="hide-labels">
+                    <div class="row list__header">
+                      <div class="col-xs-7">
+                        <label class="form__label">Fra
+                          <input type="date" class="form__input form__input--date locked" value="2017-01-01">
+                        </label>
+                        <label class="form__label">Til
+                          <input type="date" class="form__input form__input--date locked">
+                        </label>
+                      </div>
+                      <div class="col-xs-5 list__header--action">
+                        <div class="file-upload file-upload--required" id="file-upload">
+                          <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(0)</span></a>
+                          <div class="file-upload__inner">
+                            <header class="file-upload__header">
+                              <h2><i class="icon icon--paperclip"></i>Vedlegg</h2>
+                              <div class="file-upload__header--action">
+                                <a href="#"><span class="icon icon--close"></span>Lukk</a>
+                              </div>
+                            </header>
+                            <!-- TODO: File upload to be added later -->
+                            <div class="file-upload__form">
+                              <label class="form__label form__label--block form__label--upload">
+                                <input type="file" />
+                              </label>
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-7">
+                                  <label class="form__label form__label--block form__label--comments">Kommentar
+                                    <input class="form__input form__input--block">
+                                  </label>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 align--self-end">
+                                  <div class="form__section--action">
+                                    <button class="btn btn--inline btn--compact btn--secondary">Avbryt</button>
+                                    <button disabled class="btn btn--inline btn--compact btn--primary">Upload</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </h1>
+                            <div class="file-upload__list">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--end .row-->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6 col-md-5">
+                        <label class="form__label"><span>Produsentnavn</span>
+                          <input type="text" value="Warner Music" class="form__input" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="form__label"><span>Produsentland</span>
+                          <input type="text" value="Norge" class="form__input" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-3 col-sm-1">
+                        <label class="form__label form__label--no-wrap"><span>% Andel</span>
+                          <input type="text" value="50" class="form__input form__input--60">
+                        </label>
+                      </div>
+                      <div class="col-xs-2 col-sm-1">
+                        <a href="#" class="link--trash link--trash--in-row">Forkast</a>
+                      </div>
+                    </div><!--end .row-->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6 col-md-5">
+                        <label class="form__label"><span>Produsentnavn</span>
+                          <input type="text" value="Sony Music" class="form__input" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="form__label"><span>Produsentland</span>
+                          <input type="text" value="Norge" class="form__input" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-3 col-sm-1">
+                        <label class="form__label form__label--no-wrap"><span>% Andel</span>
+                          <input type="text" value="50" class="form__input form__input--60">
+                        </label>
+                      </div>
+                      <div class="col-xs-2 col-sm-1">
+                        <a href="#" class="link--trash link--trash--in-row">Forkast</a>
+                      </div>
+                    </div><!--end .row-->
+                    <div class="row">
+                      <div class="col-xs-11">
+                        <h3>Søk etter produsent eller</h3>
+                        <div class="search">
+                          <div action="" class="search__form search__form--left">
+                            <input type="text" class="form__input locked" value="" value="" placeholder="Søk..." />
+                            <button class="search__submit"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--end .row-->
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-2">
+                        <a href="edit_recording.html#ownership-info" class="btn btn--secondary">Avbryt</a>
+                      </div>
+                      <div class="col-xs-6 col-sm-2">
+                        <a href="edit_recording-ownership-7.html#ownership-info" class="btn btn--primary click-here">Lagre</a>
                       </div>
                     </div><!--end .row-->
                   </li>
                 </ol>
               </form>
-              <a href="edit_recording-ownership-1.html#ownership-info" class="click-here">Legg til eierskap</a>
+              <a href="#">Legg til eierskap</a>
               <hr class="horizontal-rule">
             </section>
-
+            
             <section id="performers-info">
               <div class="section-header">
                 <header>
@@ -410,29 +523,9 @@
                           </div>
                         </label>
                       </div>
- <div class="col-xs-12 col-sm-4">
-                        <div class="form__label"><span>Rolle</span>
-                          <div class="radio-group">
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>A</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>B</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>C</span>
-                              <span class="check"></span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
+
                     </div><!--end .row-->
-                   </li>
+                  </li>
                   <li>
                     <div class="row list__header">
                       <div class="col-xs-11 col-sm-6">
@@ -489,27 +582,7 @@
                           </div>
                         </label>
                       </div>
- <div class="col-xs-12 col-sm-4">
-                        <div class="form__label"><span>Rolle</span>
-                          <div class="radio-group">
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>A</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>B</span>
-                              <span class="check"></span>
-                            </label>
-                            <label class="form__label">
-                              <input type="checkbox" name="role2">
-                              <span>C</span>
-                              <span class="check"></span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
+
                     </div><!--end .row-->
                   </li>
                 </ol>
