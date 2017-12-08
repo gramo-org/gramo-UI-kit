@@ -175,11 +175,16 @@
   white-space: nowrap;
 }
 
+.hide {
+  display: none!important;
+}
+
 /* For print */
 .print-header {
   display: none;
 }
 
+/* For prototype (highlight clickable areas) */
 .click-here {
   position: relative;
   &:after {
@@ -193,8 +198,4 @@
     right: -15px;
     top: -5px;
   }
-}
-
-.hide {
-  display: none!important;
 }

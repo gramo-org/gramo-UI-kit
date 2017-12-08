@@ -1009,14 +1009,16 @@ p{
 [class*="--no-wrap"]{
   white-space:nowrap;
 }
+
+.hide{
+  display:none!important;
+}
 .print-header{
   display:none;
 }
-
 .click-here{
   position:relative;
 }
-
 .click-here:after{
   content:'';
   position:absolute;
@@ -1027,10 +1029,6 @@ p{
   opacity:0.5;
   right:-15px;
   top:-5px;
-}
-
-.hide{
-  display:none!important;
 }
 .site-wrapper{
   display:-webkit-flex;
@@ -3298,6 +3296,10 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 .link--edit--hidden::after{
   content:none;
+}
+
+.link--edit.click-here::after{
+  position:static;
 }
 
 .link--add--hidden, .link--trash--hidden{

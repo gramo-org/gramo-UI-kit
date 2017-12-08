@@ -55,6 +55,10 @@
   }
 }
 
+.link--edit.click-here::after {
+  position: static;
+}
+
 .link--add, .link--trash {
   
   &--hidden {
