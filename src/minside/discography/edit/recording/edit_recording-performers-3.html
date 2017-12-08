@@ -1,374 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Gramo - Component based UI kit</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gramo - Component based UI kit</title>
 
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="/img/favicon-gramo.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="/img/favicon-gramo.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-  <!-- Select 2 -searchable select box -->
-  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+    <!-- Select 2 -searchable select box -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
 
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  
-  <link rel="stylesheet" href="/minside.css">
-  
-  
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/minside.css">
+
+
 </head>
+
 <body>
-  <div class="site-wrapper">
-    <header class="site-header profile--performer">
-      <span class="site-header__branding"><img src="/img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
-      <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
+    <div class="site-wrapper">
+        <header class="site-header profile--performer">
+            <span class="site-header__branding"><img src="/img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></span>
+            <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
         Meny
       </a>
-    </header>
-    <nav id="navigation" class="nav--primary">
-      <ul class="vertical__nav">
-        <li>
-          <div class="user">
-            <span class="user__name">
+        </header>
+        <nav id="navigation" class="nav--primary">
+            <ul class="vertical__nav">
+                <li>
+                    <div class="user">
+                        <span class="user__name">
               Morten Harket
             </span>
-            <a href="#">Rediger</a>
-          </div>
-        </li>
-        <li class="vertical__nav__heading vertical__nav__heading--colored"><h4>Du ser på</h4></li>
-        <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--album-label"></span>Diskografi</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span>Transaksjoner</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
-        <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
-        <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span>Personlig produsent</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Warner Music</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Sony Music</a></li>
-        <!-- <li class="vertical__nav__item"><a href="#"><span class="icon icon--profile"></span> Legg til ny profil</a></li> -->
-        <li class="vertical__nav__item vertical__nav__item--extend"><a href="#"><span class="icon icon--language"></span> Switch to English</a></li>
-        <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
-      </ul>
-    </nav>
-    <main> 
-      <header class="masthead">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 text--center">
-              <h1>Take on me live in Oslo</h1>
-              <h3>A-ha, Duran Duran, The Cure</h3>
-              <h4>Test of times live</h4>
-              <section class="masthead__meta">
-                <h4 class="masthead__meta__item"><span>Varighet</span>03:45</h4>
-                <h4 class="masthead__meta__item"><span>Ant. utøvere</span>5</h4>
-                <h4 class="masthead__meta__item"><span>Utgivelsesår</span>1985</h4>
-              </section>
-            </div>
-          </div><!--end .row-->
-        </div>
-      </header>     
-      <section id="personalia" class="container container--padded container--col-3">
-        <div class="row">
-          <div class="col-xs-12 col-sm-3">
-            <nav class="nav--secondary">
-              <ul>
-                <li><a href="#" class="active">Innspillingsinfo</a></li>
-                <li><a href="#">Eierskap</a></li>
-                <li><a href="#">Utøvere</a></li>
-                <li><a href="#">Utgivelser</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-xs-12 col-sm-9 adjust--to-left">
-            <section id="recording-info">
-              <div class="section-header">
-                <header>
-                  <h2>Innspillingsinfo</h2>
-                </header>
-                <div class="section-header__action">
-                  <a href="#" class="link--edit">Rediger</a>
+                        <a href="#">Rediger</a>
+                    </div>
+                </li>
+                <li class="vertical__nav__heading vertical__nav__heading--colored">
+                    <h4>Du ser på</h4></li>
+                <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--artist"></span> Utøver</a></li>
+                <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--album-label"></span>Diskografi</a></li>
+                <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span>Transaksjoner</a></li>
+                <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
+                <li class="vertical__nav__divider">
+                    <hr class="horizontal-rule horizontal-rule--in-list">
+                </li>
+                <li class="vertical__nav__heading">
+                    <h4>Bytt profil til</h4></li>
+                <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span>Personlig produsent</a></li>
+                <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Warner Music</a></li>
+                <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Sony Music</a></li>
+                <!-- <li class="vertical__nav__item"><a href="#"><span class="icon icon--profile"></span> Legg til ny profil</a></li> -->
+                <li class="vertical__nav__item vertical__nav__item--extend"><a href="#"><span class="icon icon--language"></span> Switch to English</a></li>
+                <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header class="masthead">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text--center">
+                            <h1>Take on me live in Oslo</h1>
+                            <h3>A-ha, Duran Duran, The Cure</h3>
+                            <h4>Test of times live</h4>
+                            <section class="masthead__meta">
+                                <h4 class="masthead__meta__item"><span>Varighet</span>03:45</h4>
+                                <h4 class="masthead__meta__item"><span>Ant. utøvere</span>5</h4>
+                                <h4 class="masthead__meta__item"><span>Utgivelsesår</span>1985</h4>
+                            </section>
+                        </div>
+                    </div>
+                    <!--end .row-->
                 </div>
-              </div>
-              <form class="form">
+            </header>
+            <section id="personalia" class="container container--padded container--col-3">
                 <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Hovedartist
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Tittel
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row row--alternate">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Alt. tittel
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                  <div class="col-xs-11 col-sm-6">
-                    <label class="form__label">Beskrivelse
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                  <div class="row__delete hide">
-                    <a class="text--small text--light">
-                      <span id="ember2058" class="icon icon--close"></span>
-                    </a>
-                  </div>
-                </div><!--end .row-->
-                <a class="link--no-line link--add link--add--hidden">
+                    <div class="col-xs-12 col-sm-3">
+                        <nav class="nav--secondary">
+                            <ul>
+                                <li><a href="#" class="active">Innspillingsinfo</a></li>
+                                <li><a href="#">Eierskap</a></li>
+                                <li><a href="#">Utøvere</a></li>
+                                <li><a href="#">Utgivelser</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xs-12 col-sm-9 adjust--to-left">
+                        <section id="recording-info">
+                            <div class="section-header">
+                                <header>
+                                    <h2>Innspillingsinfo</h2>
+                                </header>
+                                <div class="section-header__action">
+                                    <a href="#" class="link--edit">Rediger</a>
+                                </div>
+                            </div>
+                            <form class="form">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <label class="form__label">Hovedartist
+                                            <input type="text" class="form__input" disabled>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <label class="form__label">Tittel
+                                            <input type="text" class="form__input" disabled>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                                <div class="row row--alternate">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <label class="form__label">Alt. tittel
+                                            <input type="text" class="form__input" disabled>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-11 col-sm-6">
+                                        <label class="form__label">Beskrivelse
+                                            <input type="text" class="form__input" disabled>
+                                        </label>
+                                    </div>
+                                    <div class="row__delete hide">
+                                        <a class="text--small text--light">
+                                            <span id="ember2058" class="icon icon--close"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                                <a class="link--no-line link--add link--add--hidden">
                   Legg til alt. tittel
                 </a>
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Varighet
-                      <input type="number" class="form__input" disabled>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs">
-                    <label class="form__label form__label--block">
-                      <input type="checkbox" id="ember829" class="form__input form__input--block" disabled>
-                      <span>Klassisk?</span>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label form__label--required">Komponist
-                      <div class="searchable-list searchable-list--disabled searchable-list form__input">
-                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                          <span class="searchable-list__selected">Velg komponist</span>
-                        </div>
-                        <div class="searchable-list__dropdown">
-                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
-                          <ul>
-                            <li class="searchable-list__option">
-                                Beethoven
-                              </li>
-                              <li class="searchable-list__option">
-                                Mozart
-                              </li>
-                              <li class="searchable-list__option">
-                                Vivaldi
-                              </li>
-                              <li class="searchable-list__option">
-                                Tchaikovsky
-                              </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">ISRC
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row row--alternate">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Alt. ISRC
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                  <div class="col-xs-11 col-sm-6">
-                    <label class="form__label">Beskrivelse
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                  <div class="row__delete hide">
-                    <a class="text--small text--light">
-                      <span id="ember2058" class="icon icon--close"></span>
-                    </a>
-                  </div>
-                </div><!--end .row-->
-                <a class="link--no-line link--add link--add--hidden">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <label class="form__label">Varighet
+                                            <input type="number" class="form__input" disabled>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                                <div class="row">
+                                    <div class="col-xs">
+                                        <label class="form__label form__label--block">
+                                            <input type="checkbox" id="ember829" class="form__input form__input--block" disabled>
+                                            <span>Klassisk?</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <label class="form__label form__label--required">Komponist
+                                            <div class="searchable-list searchable-list--disabled searchable-list form__input">
+                                                <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                                                    <span class="searchable-list__selected">Velg komponist</span>
+                                                </div>
+                                                <div class="searchable-list__dropdown">
+                                                    <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
+                                                    <ul>
+                                                        <li class="searchable-list__option">
+                                                            Beethoven
+                                                        </li>
+                                                        <li class="searchable-list__option">
+                                                            Mozart
+                                                        </li>
+                                                        <li class="searchable-list__option">
+                                                            Vivaldi
+                                                        </li>
+                                                        <li class="searchable-list__option">
+                                                            Tchaikovsky
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <label class="form__label">ISRC
+                                            <input type="text" class="form__input" disabled>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                                <div class="row row--alternate">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <label class="form__label">Alt. ISRC
+                                            <input type="text" class="form__input" disabled>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-11 col-sm-6">
+                                        <label class="form__label">Beskrivelse
+                                            <input type="text" class="form__input" disabled>
+                                        </label>
+                                    </div>
+                                    <div class="row__delete hide">
+                                        <a class="text--small text--light">
+                                            <span id="ember2058" class="icon icon--close"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                                <a class="link--no-line link--add link--add--hidden">
                   Legg til alt. ISRC
                 </a>
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Versjon
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Label
-                      <input type="text" class="form__input" disabled>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-5">
-                    <label class="form__label">Innspillingsland
-                      <select class="select select--block" disabled>
-                        <option value="">Norge</option>
-                        <option value="">Storbrittania</option>
-                        <option value="">USA</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div class="col-xs-12 col-sm-3">
-                    <label class="form__label">Innspillingsdato
-                      <input type="date" class="form__input form__input--date" disabled>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-12 col-sm-5">
-                    <label class="form__label">Produsentland
-                      <select class="select select--block" disabled>
-                        <option value="">Norge</option>
-                        <option value="">Storbrittania</option>
-                        <option value="">USA</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div class="col-xs-12 col-sm-3">
-                    <label class="form__label">Utgivelsesdato
-                      <input type="date" class="form__input form__input--date" disabled>
-                    </label>
-                  </div>
-                </div><!--end .row-->
-              </form>
-              <hr class="horizontal-rule">
-            </section>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <label class="form__label">Versjon
+                                            <input type="text" class="form__input" disabled>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <label class="form__label">Label
+                                            <input type="text" class="form__input" disabled>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-5">
+                                        <label class="form__label">Innspillingsland
+                                            <select class="select select--block" disabled>
+                                                <option value="">Norge</option>
+                                                <option value="">Storbrittania</option>
+                                                <option value="">USA</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <label class="form__label">Innspillingsdato
+                                            <input type="date" class="form__input form__input--date" disabled>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-5">
+                                        <label class="form__label">Produsentland
+                                            <select class="select select--block" disabled>
+                                                <option value="">Norge</option>
+                                                <option value="">Storbrittania</option>
+                                                <option value="">USA</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <label class="form__label">Utgivelsesdato
+                                            <input type="date" class="form__input form__input--date" disabled>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--end .row-->
+                            </form>
+                            <hr class="horizontal-rule">
+                        </section>
 
-            <section id="ownership-info">
-              <div class="section-header">
-                <header>
-                  <h2>Eierskap<span class="badge badge--primary">1</span></h2>
-                </header>
-              </div>
-              <form class="form">
-                <ol class="list list--numbered">
-                  <li>
-                    <div class="row list__header">
-                      <div class="col-xs-7">
-                        <label class="form__label">Fra
-                          <input type="date" class="form__input form__input--date" disabled>
-                        </label>
-                        <label class="form__label">Til
-                          <input type="date" class="form__input form__input--date" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-5 list__header--action">
-                        <a href="#" class="link--edit">Rediger</a>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-5">
-                        <label class="form__label">Produsentnavn
-                          <input type="text" value="Sony Music" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <label class="form__label">Produsentland
-                          <input type="text" value="Norge" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-3 col-sm-1">
-                        <label class="form__label form__label--no-wrap">% Andel
-                          <input type="text" value="50" class="form__input form__input--60" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-2 col-sm-2 col--no-flex text--center-always">
-                        <label class="form__label form__label--block text--center-always">Kontrakt</label>
-                        <div class="file-upload" id="file-upload">
-                          <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(0)</span></a>
-                          <div class="file-upload__inner">
-                            <header class="file-upload__header">
-                              <h2><i class="icon icon--paperclip"></i>Vedlegg</h2>
-                              <div class="file-upload__header--action">
-                                <a href="#"><span class="icon icon--close"></span>Lukk</a>
-                              </div>
-                            </header>
-                            <!-- TODO: File upload to be added later -->
-                            <div class="file-upload__form">
-                              <label class="form__label form__label--block form__label--upload">
-                                <input type="file" />
-                              </label>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-7">
-                                  <label class="form__label form__label--block form__label--comments">Kommentar
-                                    <input class="form__input form__input--block">
-                                  </label>
-                                </div>
-                                <div class="col-xs-12 col-sm-5 align--self-end">
-                                  <div class="form__section--action">
-                                    <button class="btn btn--inline btn--compact btn--secondary">Avbryt</button>
-                                    <button disabled class="btn btn--inline btn--compact btn--primary">Upload</button>
-                                  </div>
-                                </div>
-                              </div>
+                        <section id="ownership-info">
+                            <div class="section-header">
+                                <header>
+                                    <h2>Eierskap<span class="badge badge--primary">1</span></h2>
+                                </header>
                             </div>
-                            <div class="file-upload__list">
-                              <ul>
-                                <li class="row">
-                                  <div class="col-sm">
-                                    <a href="#">kontrakt.pdf</a>
-                                    <p>Eierskap bevis</p>
-                                  </div>
-                                  <div class="col-sm text--right">
-                                    <date>11.04.2014</date>
-                                    <p class="text--italic">av Sony Music</p>
-                                  </div>
-                                  <div class="col-sm-1 align--vertical-center text--right">
-                                    <a class="text--small text--light" href="#"><span class="icon icon--close"></span></a>
-                                  </div>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div><!--end .row-->
-                    <hr class="horizontal-rule">
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-5">
-                        <label class="form__label">Produsentnavn
-                          <input type="text" value="Warner Music" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <label class="form__label">Produsentland
-                          <input type="text" value="Norge" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-3 col-sm-1">
-                        <label class="form__label form__label--no-wrap">% Andel
-                          <input type="text" value="50" class="form__input form__input--60" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-2 col-sm-2 col--no-flex text--center-always">
-                        <label class="form__label form__label--block text--center-always">Kontrakt</label>
-                        <div class="file-upload" id="file-upload">
-                          <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(0)</span></a>
-                          <div class="file-upload__inner">
-                            <header class="file-upload__header">
-                              <h2><i class="icon icon--paperclip"></i>Vedlegg</h2>
-                              <div class="file-upload__header--action">
-                                <a href="#"><span class="icon icon--close"></span>Lukk</a>
-                              </div>
-                            </header>
-                            <!-- TODO: File upload to be added later -->
-                            <!-- <div class="file-upload__form">
+                            <form class="form">
+                                <ol class="list list--numbered">
+                                    <li>
+                                        <div class="row list__header">
+                                            <div class="col-xs-7">
+                                                <label class="form__label">Fra
+                                                    <input type="date" class="form__input form__input--date" disabled>
+                                                </label>
+                                                <label class="form__label">Til
+                                                    <input type="date" class="form__input form__input--date" disabled>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-5 list__header--action">
+                                                <a href="#" class="link--edit">Rediger</a>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-5">
+                                                <label class="form__label">Produsentnavn
+                                                    <input type="text" value="Sony Music" class="form__input" disabled>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                                <label class="form__label">Produsentland
+                                                    <input type="text" value="Norge" class="form__input" disabled>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-1">
+                                                <label class="form__label form__label--no-wrap">% Andel
+                                                    <input type="text" value="50" class="form__input form__input--60" disabled>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-2 col-sm-2 col--no-flex text--center-always">
+                                                <label class="form__label form__label--block text--center-always">Kontrakt</label>
+                                                <div class="file-upload" id="file-upload">
+                                                    <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(0)</span></a>
+                                                    <div class="file-upload__inner">
+                                                        <header class="file-upload__header">
+                                                            <h2><i class="icon icon--paperclip"></i>Vedlegg</h2>
+                                                            <div class="file-upload__header--action">
+                                                                <a href="#"><span class="icon icon--close"></span>Lukk</a>
+                                                            </div>
+                                                        </header>
+                                                        <!-- TODO: File upload to be added later -->
+                                                        <div class="file-upload__form">
+                                                            <label class="form__label form__label--block form__label--upload">
+                                                                <input type="file" />
+                                                            </label>
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-7">
+                                                                    <label class="form__label form__label--block form__label--comments">Kommentar
+                                                                        <input class="form__input form__input--block">
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-5 align--self-end">
+                                                                    <div class="form__section--action">
+                                                                        <button class="btn btn--inline btn--compact btn--secondary">Avbryt</button>
+                                                                        <button disabled class="btn btn--inline btn--compact btn--primary">Upload</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="file-upload__list">
+                                                            <ul>
+                                                                <li class="row">
+                                                                    <div class="col-sm">
+                                                                        <a href="#">kontrakt.pdf</a>
+                                                                        <p>Eierskap bevis</p>
+                                                                    </div>
+                                                                    <div class="col-sm text--right">
+                                                                        <date>11.04.2014</date>
+                                                                        <p class="text--italic">av Sony Music</p>
+                                                                    </div>
+                                                                    <div class="col-sm-1 align--vertical-center text--right">
+                                                                        <a class="text--small text--light" href="#"><span class="icon icon--close"></span></a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                        <hr class="horizontal-rule">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-5">
+                                                <label class="form__label">Produsentnavn
+                                                    <input type="text" value="Warner Music" class="form__input" disabled>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                                <label class="form__label">Produsentland
+                                                    <input type="text" value="Norge" class="form__input" disabled>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-1">
+                                                <label class="form__label form__label--no-wrap">% Andel
+                                                    <input type="text" value="50" class="form__input form__input--60" disabled>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-2 col-sm-2 col--no-flex text--center-always">
+                                                <label class="form__label form__label--block text--center-always">Kontrakt</label>
+                                                <div class="file-upload" id="file-upload">
+                                                    <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(0)</span></a>
+                                                    <div class="file-upload__inner">
+                                                        <header class="file-upload__header">
+                                                            <h2><i class="icon icon--paperclip"></i>Vedlegg</h2>
+                                                            <div class="file-upload__header--action">
+                                                                <a href="#"><span class="icon icon--close"></span>Lukk</a>
+                                                            </div>
+                                                        </header>
+                                                        <!-- TODO: File upload to be added later -->
+                                                        <!-- <div class="file-upload__form">
                               <label class="form__label form__label--block form__label--upload">
                                 <input type="file" />
                               </label>
@@ -386,281 +407,356 @@
                                 </div>
                               </div>
                             </div> -->
-                            <div class="file-upload__list">
-                              <ul>
-                                <li class="row">
-                                  <div class="col-sm">
-                                    <a href="#">kontrakt.pdf</a>
-                                    <p>Eierskap bevis</p>
-                                  </div>
-                                  <div class="col-sm text--right">
-                                    <date>11.04.2014</date>
-                                    <p class="text--italic">av Warner Music</p>
-                                  </div>
-                                  <div class="col-sm-1 align--vertical-center text--right">
-                                    <a class="text--small text--light" href="#"><span class="icon icon--close"></span></a>
-                                  </div>
-                                </li>
-                              </ul>
+                                                        <div class="file-upload__list">
+                                                            <ul>
+                                                                <li class="row">
+                                                                    <div class="col-sm">
+                                                                        <a href="#">kontrakt.pdf</a>
+                                                                        <p>Eierskap bevis</p>
+                                                                    </div>
+                                                                    <div class="col-sm text--right">
+                                                                        <date>11.04.2014</date>
+                                                                        <p class="text--italic">av Warner Music</p>
+                                                                    </div>
+                                                                    <div class="col-sm-1 align--vertical-center text--right">
+                                                                        <a class="text--small text--light" href="#"><span class="icon icon--close"></span></a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                    </li>
+                                    <li>
+                                        <div class="row list__header">
+                                            <div class="col-xs-7">
+                                                <label class="form__label">Fra
+                                                    <input type="date" class="form__input form__input--date locked">
+                                                </label>
+                                                <label class="form__label">Til
+                                                    <input type="date" class="form__input form__input--date locked">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                        <div class="row">
+                                            <div class="col-xs-11">
+                                                <h3>Søk etter produsent eller <a href="#">Legg til ukjent(e) produsent(er)</a></h3>
+                                                <div class="search">
+                                                    <div action="" class="search__form search__form--left">
+                                                        <input type="text" class="form__input locked" value="" placeholder="Søk..." />
+                                                        <button class="search__submit"></button>
+                                                    </div>
+                                                </div>
+                                                <table class="table table--fluid table--standard no-margin--top">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Navn</th>
+                                                            <th>Statsborgerskap</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="table__cell--truncated">
+                                                                TOR EGIL KREKEN
+                                                            </td>
+                                                            <td>
+                                                                Norge
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-2">
+                                                <button class="btn btn--secondary">Avbryt</button>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-2">
+                                                <button class="btn btn--primary">Lagre</button>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                    </li>
+                                </ol>
+                            </form>
+                            <a href="#">Legg til eierskap</a>
+                            <hr class="horizontal-rule">
+                        </section>
+
+                        <section id="performers-info">
+                            <div class="section-header">
+                                <header>
+                                    <h2>Utøvere<span class="badge badge--secondary">2</span></h2>
+                                </header>
+                                <div class="section-header__action">
+                                    <a href="edit_recording.html" class="btn btn--secondary">Avbryt</a>
+                                    <a href="edit_recording-performers-4.html" class="btn btn--primary click-here">Lagre</a>
+                                </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div><!--end .row-->
-                  </li>
-                  <li>
-                    <div class="row list__header">
-                      <div class="col-xs-7">
-                        <label class="form__label">Fra
-                          <input type="date" class="form__input form__input--date locked">
-                        </label>
-                        <label class="form__label">Til
-                          <input type="date" class="form__input form__input--date locked">
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-11">
-                        <h3>Søk etter produsent</h3>
-                        <div class="search">
-                          <div action="" class="search__form search__form--left">
-                            <input type="text" class="form__input locked" value="" placeholder="Søk..." />
-                            <button class="search__submit"></button>
-                          </div>
-                        </div>
-                        <table class="table table--fluid table--standard no-margin--top">
-                          <thead>
-                            <tr>
-                              <th>Navn</th>
-                              <th>Statsborgerskap</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="table__cell--truncated">
-                                TOR EGIL KREKEN
-                              </td>
-                              <td>
-                                Norge
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-6 col-sm-2">
-                        <button class="btn btn--secondary">Avbryt</button>
-                      </div>
-                      <div class="col-xs-6 col-sm-2">
-                        <button class="btn btn--primary">Lagre</button>
-                      </div>
-                    </div><!--end .row-->
-                  </li>
-                </ol>
-              </form>
-              <a href="#">Legg til eierskap</a>
-              <hr class="horizontal-rule">
-            </section>
-            
-            <section id="performers-info">
-              <div class="section-header">
-                <header>
-                  <h2>Utøvere<span class="badge badge--secondary">2</span></h2>
-                </header>
-                <div class="section-header__action">
-                  <a href="edit_recording.html" class="btn btn--secondary">Avbryt</a>
-                  <a href="edit_recording-performers-4.html" class="btn btn--primary click-here">Lagre</a>
+                            <form class="form">
+                                <ol class="list list--numbered">
+                                    <li>
+                                        <div class="row list__header">
+                                            <div class="col-xs-11 col-sm-6">
+                                                <h3>Magne Furuholmen</h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 list__header--action">
+                                                <a href="#" class="link--trash">Forkast</a>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4">
+                                                <label class="form__label form__label--block"><span>Instrument</span>
+                                                    <div class="searchable-list form__input form__input--block">
+                                                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                                                            <span class="searchable-list__selected">Trommer</span>
+                                                        </div>
+                                                        <div class="searchable-list__dropdown">
+                                                            <input type="text" class="searchable-list__search form__input form__input--block">
+                                                            <ul>
+                                                                <li class="searchable-list__option">
+                                                                    Gitar
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    Piano
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    Trommer
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <label class="form__label form__label--block"><span>Statsborgerskap</span>
+                                                    <div class="searchable-list searchable-list--disabled form__input form__input--block locked">
+                                                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                                                            <span class="searchable-list__selected">Norge</span>
+                                                        </div>
+                                                        <div class="searchable-list__dropdown">
+                                                            <input type="text" class="searchable-list__search form__input form__input--block">
+                                                            <ul>
+                                                                <li class="searchable-list__option">
+                                                                    Norge
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    Storbrittania
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    USA
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="form__label"><span>Rolle</span>
+                                                    <div class="radio-group">
+                                                        <label class="form__label">
+                                                            <input type="checkbox" name="role2">
+                                                            <span>A</span>
+                                                            <span class="check"></span>
+                                                        </label>
+                                                        <label class="form__label">
+                                                            <input type="checkbox" name="role2">
+                                                            <span>B</span>
+                                                            <span class="check"></span>
+                                                        </label>
+                                                        <label class="form__label">
+                                                            <input type="checkbox" name="role2">
+                                                            <span>C</span>
+                                                            <span class="check"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                    </li>
+                                    <li>
+                                        <div class="row list__header">
+                                            <div class="col-xs-11 col-sm-6">
+                                                <h3>Paul Waaktaar-Savoy</h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 list__header--action">
+                                                <a href="#" class="link--trash">Forkast</a>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4">
+                                                <label class="form__label form__label--block"><span>Instrument</span>
+                                                    <div class="searchable-list form__input form__input--block">
+                                                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                                                            <span class="searchable-list__selected">Gitar</span>
+                                                        </div>
+                                                        <div class="searchable-list__dropdown">
+                                                            <input type="text" class="searchable-list__search form__input form__input--block">
+                                                            <ul>
+                                                                <li class="searchable-list__option">
+                                                                    Gitar
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    Piano
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    Trommer
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <label class="form__label form__label--block"><span>Statsborgerskap</span>
+                                                    <div class="searchable-list searchable-list--disabled form__input form__input--block locked">
+                                                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                                                            <span class="searchable-list__selected">Norge</span>
+                                                        </div>
+                                                        <div class="searchable-list__dropdown">
+                                                            <input type="text" class="searchable-list__search form__input form__input--block">
+                                                            <ul>
+                                                                <li class="searchable-list__option">
+                                                                    Norge
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    Storbrittania
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    USA
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="form__label"><span>Rolle</span>
+                                                    <div class="radio-group">
+                                                        <label class="form__label">
+                                                            <input type="checkbox" name="role2">
+                                                            <span>A</span>
+                                                            <span class="check"></span>
+                                                        </label>
+                                                        <label class="form__label">
+                                                            <input type="checkbox" name="role2">
+                                                            <span>B</span>
+                                                            <span class="check"></span>
+                                                        </label>
+                                                        <label class="form__label">
+                                                            <input type="checkbox" name="role2">
+                                                            <span>C</span>
+                                                            <span class="check"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                    </li>
+                                    <li>
+                                        <div class="row list__header">
+                                            <div class="col-xs-11 col-sm-6">
+                                                <h3>Morten Harket</h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 list__header--action">
+                                                <a href="#" class="link--trash">Forkast</a>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4">
+                                                <label class="form__label form__label--block"><span>Instrument</span>
+                                                    <div class="searchable-list form__input form__input--block">
+                                                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                                                            <span class="searchable-list__selected">Vokal</span>
+                                                        </div>
+                                                        <div class="searchable-list__dropdown">
+                                                            <input type="text" class="searchable-list__search form__input form__input--block">
+                                                            <ul>
+                                                                <li class="searchable-list__option">
+                                                                    Gitar
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    Piano
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    Trommer
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <label class="form__label form__label--block"><span>Statsborgerskap</span>
+                                                    <div class="searchable-list searchable-list--disabled form__input form__input--block">
+                                                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                                                            <span class="searchable-list__selected">Norge</span>
+                                                        </div>
+                                                        <div class="searchable-list__dropdown">
+                                                            <input type="text" class="searchable-list__search form__input form__input--block">
+                                                            <ul>
+                                                                <li class="searchable-list__option">
+                                                                    Norge
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    Storbrittania
+                                                                </li>
+                                                                <li class="searchable-list__option">
+                                                                    USA
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <div class="form__label"><span>Rolle</span>
+                                                    <div class="radio-group">
+                                                        <label class="form__label">
+                                                            <input type="checkbox" name="role2">
+                                                            <span>A</span>
+                                                            <span class="check"></span>
+                                                        </label>
+                                                        <label class="form__label">
+                                                            <input type="checkbox" name="role2">
+                                                            <span>B</span>
+                                                            <span class="check"></span>
+                                                        </label>
+                                                        <label class="form__label">
+                                                            <input type="checkbox" name="role2">
+                                                            <span>C</span>
+                                                            <span class="check"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end .row-->
+                                    </li>
+                                </ol>
+                                <p>
+                                    <a href="#" class="link--no-line">Legg til Utøvere</a>
+                                </p>
+                            </form>
+                        </section>
+                    </div>
+
                 </div>
-              </div>
-              <form class="form">
-                <ol class="list list--numbered">
-                  <li>
-                    <div class="row list__header">
-                      <div class="col-xs-11 col-sm-6">
-                        <h3>Magne Furuholmen</h3>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 list__header--action">
-                        <a href="#" class="link--trash">Forkast</a>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block"><span>Instrument</span>
-                          <div class="searchable-list form__input form__input--block">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected">Trommer</span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  Gitar
-                                </li>
-                                <li class="searchable-list__option">
-                                  Piano
-                                </li>
-                                <li class="searchable-list__option">
-                                  Trommer
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block"><span>Statsborgerskap</span>
-                          <div class="searchable-list searchable-list--disabled form__input form__input--block locked">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected">Norge</span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  Norge
-                                </li>
-                                <li class="searchable-list__option">
-                                  Storbrittania
-                                </li>
-                                <li class="searchable-list__option">
-                                  USA
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                  </li>
-                  <li>
-                    <div class="row list__header">
-                      <div class="col-xs-11 col-sm-6">
-                        <h3>Paul Waaktaar-Savoy</h3>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 list__header--action">
-                        <a href="#" class="link--trash">Forkast</a>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block"><span>Instrument</span>
-                          <div class="searchable-list form__input form__input--block">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected">Gitar</span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  Gitar
-                                </li>
-                                <li class="searchable-list__option">
-                                  Piano
-                                </li>
-                                <li class="searchable-list__option">
-                                  Trommer
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block"><span>Statsborgerskap</span>
-                          <div class="searchable-list searchable-list--disabled form__input form__input--block locked">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected">Norge</span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  Norge
-                                </li>
-                                <li class="searchable-list__option">
-                                  Storbrittania
-                                </li>
-                                <li class="searchable-list__option">
-                                  USA
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                  </li>
-                  <li>
-                    <div class="row list__header">
-                      <div class="col-xs-11 col-sm-6">
-                        <h3>Morten Harket</h3>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 list__header--action">
-                        <a href="#" class="link--trash">Forkast</a>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block"><span>Instrument</span>
-                          <div class="searchable-list form__input form__input--block">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected">Vokal</span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  Gitar
-                                </li>
-                                <li class="searchable-list__option">
-                                  Piano
-                                </li>
-                                <li class="searchable-list__option">
-                                  Trommer
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4">
-                        <label class="form__label form__label--block"><span>Statsborgerskap</span>
-                          <div class="searchable-list searchable-list--disabled form__input form__input--block">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected">Norge</span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  Norge
-                                </li>
-                                <li class="searchable-list__option">
-                                  Storbrittania
-                                </li>
-                                <li class="searchable-list__option">
-                                  USA
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                  </li>
-                </ol>
-                <p>
-                  <a href="#" class="link--no-line">Legg til Utøvere</a>
-                </p>
-              </form>
             </section>
-          </div>
-        </div>
-      </section>
-    </main>
-</div>
-<script src="/js/vendor/jquery-1.11.3.min.js"></script>
-<script src="/js/default.js"></script>
+        </main>
+    </div>
+    <script src="/js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="/js/default.js"></script>
 </body>
+
 </html>
