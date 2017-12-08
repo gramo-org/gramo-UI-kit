@@ -56,7 +56,14 @@
         <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
       </ul>
     </nav>
-    <main> 
+    <main>
+      <!--- Flash message --->
+      <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success" role="alert" aria-live="assertive">
+          <p>Eierskap ble registrert</p>
+          <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
+        </div>
+      </div>
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -222,9 +229,118 @@
                       </div>
                     </div><!--end .row-->
                   </li>
+                  <li class="hide-labels">
+                    <div class="row list__header">
+                      <div class="col-xs-7">
+                        <label class="form__label">Fra
+                          <input type="date" class="form__input form__input--date locked" value="2017-01-01" disabled>
+                        </label>
+                        <label class="form__label">Til
+                          <input type="date" class="form__input form__input--date locked" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-5 list__header--action">
+                        <div class="file-upload file-upload--required" id="file-upload">
+                          <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(2)</span></a>
+                          <div class="file-upload__inner">
+                            <header class="file-upload__header">
+                              <h2><i class="icon icon--paperclip"></i>Vedlegg</h2>
+                              <div class="file-upload__header--action">
+                                <a href="#"><span class="icon icon--close"></span>Lukk</a>
+                              </div>
+                            </header>
+                            <!-- TODO: File upload to be added later -->
+                            <div class="file-upload__form">
+                              <label class="form__label form__label--block form__label--upload">
+                                <input type="file" />
+                              </label>
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-7">
+                                  <label class="form__label form__label--block form__label--comments">Kommentar
+                                    <input class="form__input form__input--block">
+                                  </label>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 align--self-end">
+                                  <div class="form__section--action">
+                                    <button class="btn btn--inline btn--compact btn--secondary">Avbryt</button>
+                                    <button disabled class="btn btn--inline btn--compact btn--primary">Upload</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </h1>
+                            <div class="file-upload__list">
+                              <ul>
+                                <li class="row">
+                                  <div class="col-sm">
+                                    <a href="#">kontrakt.pdf</a>
+                                    <p>Eierskap bevis</p>
+                                  </div>
+                                  <div class="col-sm text--right">
+                                    <date>01.01.2017</date>
+                                    <p class="text--italic">av Warner Music</p>
+                                  </div>
+                                  <div class="col-sm-1 align--vertical-center text--right">
+                                    <a class="text--small text--light" href="#"><span class="icon icon--close"></span></a>
+                                  </div>
+                                </li>
+                                <li class="row">
+                                  <div class="col-sm">
+                                    <a href="#">kontrakt.pdf</a>
+                                    <p>Eierskap bevis</p>
+                                  </div>
+                                  <div class="col-sm text--right">
+                                    <date>01.01.2017</date>
+                                    <p class="text--italic">av Sony Music</p>
+                                  </div>
+                                  <div class="col-sm-1 align--vertical-center text--right">
+                                    <a class="text--small text--light" href="#"><span class="icon icon--close"></span></a>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--end .row-->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6 col-md-5">
+                        <label class="form__label"><span>Produsentnavn</span>
+                          <input type="text" value="Warner Music" class="form__input" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="form__label"><span>Produsentland</span>
+                          <input type="text" value="Norge" class="form__input" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-3 col-sm-1">
+                        <label class="form__label form__label--no-wrap"><span>% Andel</span>
+                          <input type="text" value="50" class="form__input form__input--60" disabled>
+                        </label>
+                      </div>
+                    </div><!--end .row-->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6 col-md-5">
+                        <label class="form__label"><span>Produsentnavn</span>
+                          <input type="text" value="Sony Music" class="form__input" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-4">
+                        <label class="form__label"><span>Produsentland</span>
+                          <input type="text" value="Norge" class="form__input" disabled>
+                        </label>
+                      </div>
+                      <div class="col-xs-3 col-sm-1">
+                        <label class="form__label form__label--no-wrap"><span>% Andel</span>
+                          <input type="text" value="50" class="form__input form__input--60" disabled>
+                        </label>
+                      </div>
+                    </div><!--end .row-->
+                    <p>Dette eierskapet ventes godkjenning av Gramo <a href="edit_label.html#ownership-info">Slett eierskap</a></p>
+                  </li>
                 </ol>
               </form>
-              <a href="edit_label-ownership-1.html#ownership-info" class="click-here">Legg til eierskap</a>
               <hr class="horizontal-rule">
             </section>
             <section>

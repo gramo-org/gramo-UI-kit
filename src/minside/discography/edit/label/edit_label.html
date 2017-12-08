@@ -43,9 +43,9 @@
         </li>
         <li class="vertical__nav__heading vertical__nav__heading--colored"><h4>Du ser på</h4></li>
         <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--producer"></span>Warner Music</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--album-label"></span>Diskografi</a></li>
+        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--album-label"></span>Diskografi</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span>Transaksjoner</a></li>
-        <li class="vertical__nav__item"><a href="#" class="active"><span class="icon icon--performer"></span> Profil info</a></li>
+        <li class="vertical__nav__item"><a href="#"><span class="icon icon--performer"></span> Profil info</a></li>
         <li class="vertical__nav__divider"><hr class="horizontal-rule horizontal-rule--in-list"></li>
         <li class="vertical__nav__heading"><h4>Bytt profil til</h4></li>
         <!-- <li class="vertical__nav__item"><a href="#"><span class="icon icon--artist"></span>Utøver</a></li>
@@ -143,40 +143,19 @@
               </div>
               <form class="form">
                 <ol class="list list--numbered">
-                  <li>
+                  <li class="hide-labels">
                     <div class="row list__header">
                       <div class="col-xs-7">
                         <label class="form__label">Fra
-                          <input type="date" class="form__input form__input--date" disabled>
+                          <input type="date" class="form__input form__input--date" value="2016-01-01" disabled>
                         </label>
                         <label class="form__label">Til
                           <input type="date" class="form__input form__input--date" disabled>
                         </label>
                       </div>
                       <div class="col-xs-5 list__header--action">
-                        <a href="#" class="link--edit">Rediger</a>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-5">
-                        <label class="form__label">Produsentnavn
-                          <input type="text" value="Sony Music" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <label class="form__label">Produsentland
-                          <input type="text" value="Norge" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-3 col-sm-1">
-                        <label class="form__label form__label--no-wrap">% Andel
-                          <input type="text" value="50" class="form__input form__input--60" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-2 col-sm-2 col--no-flex text--center-always">
-                        <label class="form__label form__label--block text--center-always">Kontrakt</label>
-                        <div class="file-upload" id="file-upload">
-                          <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(0)</span></a>
+                        <div class="file-upload file-upload--required" id="file-upload">
+                          <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(1)</span></a>
                           <div class="file-upload__inner">
                             <header class="file-upload__header">
                               <h2><i class="icon icon--paperclip"></i>Vedlegg</h2>
@@ -185,7 +164,7 @@
                               </div>
                             </header>
                             <!-- TODO: File upload to be added later -->
-                            <!-- <div class="file-upload__form">
+                            <div class="file-upload__form">
                               <label class="form__label form__label--block form__label--upload">
                                 <input type="file" />
                               </label>
@@ -202,7 +181,8 @@
                                   </div>
                                 </div>
                               </div>
-                            </div> -->
+                            </div>
+                            </h1>
                             <div class="file-upload__list">
                               <ul>
                                 <li class="row">
@@ -224,127 +204,27 @@
                         </div>
                       </div>
                     </div><!--end .row-->
-                    <hr class="horizontal-rule">
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-5">
-                        <label class="form__label">Produsentnavn
-                          <input type="text" value="Warner Music" class="form__input" disabled>
+                        <label class="form__label"><span>Produsentnavn</span>
+                          <input type="text" value="Sony Music" class="form__input" disabled>
                         </label>
                       </div>
                       <div class="col-xs-12 col-sm-6 col-md-4">
-                        <label class="form__label">Produsentland
+                        <label class="form__label"><span>Produsentland</span>
                           <input type="text" value="Norge" class="form__input" disabled>
                         </label>
                       </div>
                       <div class="col-xs-3 col-sm-1">
-                        <label class="form__label form__label--no-wrap">% Andel
-                          <input type="text" value="50" class="form__input form__input--60" disabled>
+                        <label class="form__label form__label--no-wrap"><span>% Andel</span>
+                          <input type="text" value="100" class="form__input form__input--60" disabled>
                         </label>
-                      </div>
-                      <div class="col-xs-2 col-sm-2 col--no-flex text--center-always">
-                        <label class="form__label form__label--block text--center-always">Kontrakt</label>
-                        <div class="file-upload" id="file-upload">
-                          <a href="#" class="file-upload__toggle"><span class="icon icon--paperclip"></span><span>(0)</span></a>
-                          <div class="file-upload__inner">
-                            <header class="file-upload__header">
-                              <h2><i class="icon icon--paperclip"></i>Vedlegg</h2>
-                              <div class="file-upload__header--action">
-                                <a href="#"><span class="icon icon--close"></span>Lukk</a>
-                              </div>
-                            </header>
-                            <!-- TODO: File upload to be added later -->
-                            <!-- <div class="file-upload__form">
-                              <label class="form__label form__label--block form__label--upload">
-                                <input type="file" />
-                              </label>
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-7">
-                                  <label class="form__label form__label--block form__label--comments">Kommentar
-                                    <input class="form__input form__input--block">
-                                  </label>
-                                </div>
-                                <div class="col-xs-12 col-sm-5 align--self-end">
-                                  <div class="form__section--action">
-                                    <button class="btn btn--inline btn--compact btn--secondary">Avbryt</button>
-                                    <button disabled class="btn btn--inline btn--compact btn--primary">Upload</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div> -->
-                            <div class="file-upload__list">
-                              <ul>
-                                <li class="row">
-                                  <div class="col-sm">
-                                    <a href="#">kontrakt.pdf</a>
-                                    <p>Eierskap bevis</p>
-                                  </div>
-                                  <div class="col-sm text--right">
-                                    <date>11.04.2014</date>
-                                    <p class="text--italic">av Warner Music</p>
-                                  </div>
-                                  <div class="col-sm-1 align--vertical-center text--right">
-                                    <a class="text--small text--light" href="#"><span class="icon icon--close"></span></a>
-                                  </div>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div><!--end .row-->
-                  </li>
-                  <li>
-                    <div class="row list__header">
-                      <div class="col-xs-7">
-                        <label class="form__label">Fra
-                          <input type="date" class="form__input form__input--date" disabled>
-                        </label>
-                        <label class="form__label">Til
-                          <input type="date" class="form__input form__input--date" disabled>
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-11">
-                        <h3>Søk etter produsent eller <a href="#">Legg til ukjent(e) produsent(er)</a></h3>
-                        <div class="search">
-                          <div action="" class="search__form search__form--left">
-                            <input type="text" class="form__input" value="" placeholder="Søk..." />
-                            <button class="search__submit"></button>
-                          </div>
-                        </div>
-                        <table class="table table--fluid table--standard no-margin--top">
-                          <thead>
-                            <tr>
-                              <th>Navn</th>
-                              <th>Statsborgerskap</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="table__cell--truncated">
-                                TOR EGIL KREKEN
-                              </td>
-                              <td>
-                                Norge
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-6 col-sm-2">
-                        <button class="btn btn--secondary">Avbryt</button>
-                      </div>
-                      <div class="col-xs-6 col-sm-2">
-                        <button class="btn btn--primary">Lagre</button>
                       </div>
                     </div><!--end .row-->
                   </li>
                 </ol>
               </form>
-              <a href="#">Legg til eierskap</a>
+              <a href="edit_label-ownership-1.html#ownership-info" class="click-here">Legg til eierskap</a>
               <hr class="horizontal-rule">
             </section>
             <section>
