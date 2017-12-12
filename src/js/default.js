@@ -292,8 +292,8 @@ $('.form__input--searchable').bind('focus', function(){
   $(this).next('.searchable-list').addClass("searchable-list--open") 
 });
 
-$('.link--edit').click(function(e){
-  e.preventDefault();
+$('.link--edit').click(function(){
+  // e.preventDefault();
   $(this).closest('section').find('.form').find('input, select').not('.locked').prop('disabled', function(i, v) { return !v; });
   $(this).closest('section').find('.form').find('.searchable-list').not('.locked').toggleClass('searchable-list--disabled');
   $(this).toggleClass('link--edit--hidden btn btn--secondary');
@@ -328,6 +328,9 @@ $('.link--trash--in-row').click(function(e){
   // $(this).closest('.row').prev('hr').remove();
 });
 
+$('.link--edit--tracks').click(function(e){
+  $('.table--tracks').toggleClass('table--tracks--edit');
+});  
 
 }); // end document ready
 

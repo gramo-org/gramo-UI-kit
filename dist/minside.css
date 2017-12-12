@@ -4763,28 +4763,6 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .table__cell--move > a .icon{
   display:block;
 }
-.table__cell--move > a:first-child{
-  top:1rem;
-  left:.5rem;
-}
-@media (min-width: 960px){
-
-  .table__cell--move > a:first-child{
-    left:-7rem;
-    top:-0.5rem;
-  }
-}
-.table__cell--move > a:last-child{
-  bottom:1rem;
-  left:.5rem;
-}
-@media (min-width: 960px){
-
-  .table__cell--move > a:last-child{
-    left:-5rem;
-    top:-2rem;
-  }
-}
 .table__cell--trash > a{
   position:relative;
   right:-1rem;
@@ -4809,6 +4787,43 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 }
 .table__cell--title:before, .table__cell--move:before, .table__cell--trash:before{
   content:none;
+}
+.table--tracks .table__cell--move > a, .table--tracks .table__cell--trash > a{
+  visibility:hidden;
+}
+
+.table--tracks--edit .table__cell--move > a, .table--tracks--edit .table__cell--trash > a{
+  visibility:visible;
+}
+
+.table--tracks .table__cell--move > a{
+  left:-1000px;
+}
+
+.table--tracks--edit .table__cell--move > a:first-child{
+  top:1rem;
+  left:.5rem;
+}
+
+@media (min-width: 960px){
+
+  .table--tracks--edit .table__cell--move > a:first-child{
+    left:-7rem;
+    top:-0.5rem;
+  }
+}
+
+.table--tracks--edit .table__cell--move > a:last-child{
+  bottom:1rem;
+  left:.5rem;
+}
+
+@media (min-width: 960px){
+
+  .table--tracks--edit .table__cell--move > a:last-child{
+    left:-5rem;
+    top:-2rem;
+  }
 }
 .list{
   list-style:none;

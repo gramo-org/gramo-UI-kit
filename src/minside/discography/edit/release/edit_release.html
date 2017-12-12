@@ -103,14 +103,53 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label form__label--required">Hovedartist
-                      <input type="text" class="form__input" value="A-Ha" disabled>
+                      <input type="text" class="form__input form__input--searchable" value="A-Ha" disabled>
+                      <div class="searchable-list searchable-list--disabled searchable-list--for-input">
+                        <div class="searchable-list__dropdown">
+                          <ul>
+                            <li class="searchable-list__option">
+                                A-Ha
+                              </li>
+                              <li class="searchable-list__option">
+                                Ah
+                              </li>
+                              <li class="searchable-list__option">
+                                Ah Cama-Sotz
+                              </li>
+                              <li class="searchable-list__option">
+                                Gate Ah
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Label
-                      <input type="text" class="form__input" value="Warner Bros. Records" disabled>
+                      <div class="searchable-list searchable-list searchable-list--disabled form__input">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Warner Bros. Records</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
+                          <ul>
+                            <li class="searchable-list__option">
+                                Atlantic Records Group
+                              </li>
+                              <li class="searchable-list__option">
+                                Warner Bros. Records
+                              </li>
+                              <li class="searchable-list__option">
+                                Parlophone Label Group
+                              </li>
+                              <li class="searchable-list__option">
+                                Rhino Entertainment
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
                     </label>
                   </div>
                 </div><!--end .row-->
@@ -121,18 +160,27 @@
                     </label>
                   </div>
                 </div><!--end .row-->
-                <div class="row">
+                <div class="row row--alternate">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Alt. katalognummer
-                      <input type="text" class="form__input" value="925 300-2" disabled>
+                      <input type="text" class="form__input" disabled>
                     </label>
                   </div>
                   <div class="col-xs-11 col-sm-6">
                     <label class="form__label">Beskrivelse
-                      <input type="text" class="form__input" value="Japanese LP format" disabled>
+                      <input type="text" class="form__input" disabled>
                     </label>
                   </div>
+                  <div class="row__delete hide">
+                    <a href="#" class="text--small text--light">
+                      <span id="ember2058" class="icon icon--close"></span>
+                    </a>
+                  </div>
                 </div><!--end .row-->
+                <span class="hide">Har du gitt ut på flere formater?</span>
+                <a class="link--no-line link--add link--add--hidden">
+                  Legg til alt. katalognummer
+                </a>
                 <div class="row">
                   <div class="col-xs-12 col-sm-5">
                     <label class="form__label">Utgivelsesdato
@@ -143,11 +191,25 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-5">
                     <label class="form__label">Innspillingsland
-                      <select class="select select--block" disabled>
-                        <option value="" selected>Norge</option>
-                        <option value="">Storbrittania</option>
-                        <option value="">USA</option>
-                      </select>
+                      <div class="searchable-list searchable-list--disabled searchable-list form__input">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Norge</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
+                          <ul>
+                            <li class="searchable-list__option">
+                                Norge
+                              </li>
+                              <li class="searchable-list__option">
+                                Storbrittania
+                              </li>
+                              <li class="searchable-list__option">
+                                USA
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
                     </label>
                   </div>
                 </div><!--end .row-->
@@ -159,7 +221,7 @@
                           <span class="searchable-list__selected">Pop</span>
                         </div>
                         <div class="searchable-list__dropdown">
-                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
                           <ul>
                             <li class="searchable-list__option">
                                 Pop
@@ -200,7 +262,7 @@
                 <header>
                   <h2>Spor <span class="badge badge--secondary">2</span></h2>
                 </header>
-<div class="section-header__action">
+                <div class="section-header__action">
                   <a href="#" class="link--edit link--edit--hidden btn btn--secondary">Avbryt</a>
                 <a href="edit_release_view.html"><button class="btn btn--primary click-here">Lagre</button></a></div>
               </div>

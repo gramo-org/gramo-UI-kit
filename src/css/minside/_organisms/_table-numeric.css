@@ -119,26 +119,6 @@
       display: block;
     }
   }
-  
-  & > a:first-child {
-    top: 1rem;
-    left: .5rem;
-
-    @media (--desktop) {
-      left: -7rem;
-      top: -0.5rem;
-    }
-  }
-
-  & > a:last-child {
-    bottom: 1rem;
-    left: .5rem;
-
-    @media (--desktop) {
-      left: -5rem;
-      top: -2rem;
-    }
-  }
 }
 
 /* Table cell trash can button for deleting tracks */
@@ -167,5 +147,51 @@
 .table__cell--trash {
   &:before {
     content: none;
+  }
+}
+
+/* Edit states */
+.table--tracks {
+  .table__cell--move > a, 
+  .table__cell--trash > a {
+    visibility: hidden;
+  }
+}
+
+.table--tracks--edit {
+  .table__cell--move > a,
+  .table__cell--trash > a {
+    visibility: visible;
+  }
+}
+
+.table--tracks {
+  .table__cell--move > a {
+    left: -1000px;
+  }
+}
+
+.table--tracks--edit {
+  .table__cell--move > a {
+    
+    &:first-child {
+      top: 1rem;
+      left: .5rem;
+
+      @media (--desktop) {
+        left: -7rem;
+        top: -0.5rem;
+      }
+    }
+
+    &:last-child {
+      bottom: 1rem;
+      left: .5rem;
+
+      @media (--desktop) {
+        left: -5rem;
+        top: -2rem;
+      }
+    }
   }
 }
