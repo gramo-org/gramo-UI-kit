@@ -4666,17 +4666,16 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   border-width:0 0 1px 0;
   padding-left:1rem;
   font-weight:600;
-}
-.table--tracks td.table__cell--side-number{
   font-size:1.6rem;
+  height:auto;
 }
 @media (min-width: 960px){
 
-  .table--tracks td.table__cell--side-number{
-    padding:2rem 0 0 0;
+  .table--tracks tbody tr.table__row--no-count > td{
+    padding:1.5rem 0 0 0;
   }
 }
-.table--tracks td.table__cell--side-number:before{
+.table--tracks tbody tr.table__row--no-count > td:before{
   content:none;
 }
 
