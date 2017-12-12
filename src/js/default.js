@@ -330,7 +330,11 @@ $('.link--trash--in-row').click(function(e){
 
 $('.link--edit--tracks').click(function(e){
   $('.table--tracks').toggleClass('table--tracks--edit');
-});  
+});
+
+$(".row--clickable").click(function() {
+    window.location = $(this).data("href");
+});
 
 }); // end document ready
 

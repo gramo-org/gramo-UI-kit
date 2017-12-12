@@ -12,7 +12,7 @@
     }
   }
   
-  tr:not(:first-child) > td:first-child::before {
+  tr:not(.table__row--no-count) > td:first-child::before {
     counter-increment: section;
     content: counters(section,".") " ";
     color: var(--slate-gray);
@@ -24,7 +24,7 @@
   }
   
   /* Row containing Side number */
-  tbody tr:first-child {
+  tbody tr.table__row--no-count {
     background: none;
     border: 0;
     padding: 0 0 .5rem 3rem;

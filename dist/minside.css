@@ -1030,6 +1030,10 @@ p{
   right:-15px;
   top:-5px;
 }
+
+.row--clickable{
+  cursor:pointer;
+}
 .site-wrapper{
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -4634,7 +4638,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
     padding-left:0;
   }
 }
-.table--tracks tr:not(:first-child) > td:first-child::before{
+.table--tracks tr:not(.table__row--no-count) > td:first-child::before{
   counter-increment:section;
   content:counters(section,".") " ";
   color:#504f56;
@@ -4642,23 +4646,23 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 }
 @media (min-width: 960px){
 
-  .table--tracks tr:not(:first-child) > td:first-child::before{
+  .table--tracks tr:not(.table__row--no-count) > td:first-child::before{
     position:relative;
     top:1.6rem;
   }
 }
-.table--tracks tbody tr:first-child{
+.table--tracks tbody tr.table__row--no-count{
   background:none;
   border:0;
   padding:0 0 .5rem 3rem;
 }
 @media (min-width: 960px){
 
-  .table--tracks tbody tr:first-child{
+  .table--tracks tbody tr.table__row--no-count{
     padding:2rem 0 0 0;
   }
 }
-.table--tracks tbody tr:first-child > td{
+.table--tracks tbody tr.table__row--no-count > td{
   border-width:0 0 1px 0;
   padding-left:1rem;
   font-weight:600;

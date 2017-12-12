@@ -263,10 +263,11 @@
                   <h2>Spor <span class="badge badge--secondary">2</span></h2>
                 </header>
                 <div class="section-header__action">
-                  <a href="#" class="link--edit">Rediger</a>
+                  <a href="#" class="link--edit link--edit--tracks link--edit--hidden btn btn--secondary">Rediger</a>
+                  <button class="btn btn--primary">Lagre</button>
                 </div>
               </div>
-              <table class="table table--fluid table--list table--tracks">
+              <table class="table table--fluid table--list table--tracks table--tracks--edit">
                 <thead>
                   <tr>
                     <th></th>
@@ -281,7 +282,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr class="table__row--no-count">
                     <td colspan="8" class="table__cell--side-number">Side 1</td>
                   </tr>
                   <tr class="">
@@ -315,31 +316,8 @@
                       <a href="#"><span class="icon icon--trash"></span></a>
                     </td>
                   </tr>
-                  
                 </tbody>
-<!--
-                <tbody>
-                  <tr>
-                    <td colspan="5" class="table__cell--side-number">Side 2</td>
-                  </tr>
-                  
-                </tbody>
--->
               </table>
-<!--
-               <form class="form form--flex">
-                <label class="form__label">Antall spor
-                  <input type="number" min="1" id="numberOfTracks" class="form__input form__input--small form__input--80">
-                </label>
-                <button class="btn btn--secondary btn--small">Ok</button>
-              </form>
--->
-<!--
-              <div class="form__section--action">
-                <a href="#" class="link--no-line">Legg til ny side</a>
-                <a href="#" class="link--inline">Legg til nytt spor</a>
-              </div>
--->
             </section>
              <section class="toolbar">
               <div class="search">
@@ -360,8 +338,8 @@
                 </thead>
                 <tbody>
                
-                <tr class="click-here">
-                    <td data-label="Tittel" class="table__cell--truncated"> <a href="edit_release_add_track_done.html" class="click-here">En ton av tystnad</a></td>
+                <tr class="row--clickable" data-href="edit_release_add_track_done.html#track-info">
+                    <td data-label="Tittel" class="table__cell--truncated"><span class="click-here">En ton av tystnad</span></td>
                     <td data-label="Hovedartist" class="table__cell--truncated table__cell--left">Frida</td>
                     <td data-label="Varighet" class="table__cell--truncated table__cell--left">00:04:00</td>
                     <td data-label="Utgitt" class="table__cell--truncated">2016-09-06</td>
@@ -376,15 +354,6 @@
                   </tr>
                 </tbody>
               </table>
-<!--
-              <form class="form form--flex">
-                <label class="form__label">Spor nr.
-                  <input type="number" min="1" id="numberOfTracks" class="form__input form__input--small form__input--80">
-                </label>
-                <button class="btn btn--primary btn--small">Ok</button>
-              </form>
--->
-            </section><!-- end .toolbar 
           </div>
         </div>
       </section>
