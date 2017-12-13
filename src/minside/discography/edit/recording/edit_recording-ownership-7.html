@@ -105,14 +105,32 @@
               <form class="form">
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Hovedartist
-                      <input type="text" class="form__input" disabled>
+                    <label class="form__label form__label--required">Hovedartist
+                      <input type="text" class="form__input form__input--searchable" value="A-Ha" disabled>
+                      <div class="searchable-list searchable-list--disabled searchable-list--for-input">
+                        <div class="searchable-list__dropdown">
+                          <ul>
+                            <li class="searchable-list__option">
+                                A-Ha
+                              </li>
+                              <li class="searchable-list__option">
+                                Ah
+                              </li>
+                              <li class="searchable-list__option">
+                                Ah Cama-Sotz
+                              </li>
+                              <li class="searchable-list__option">
+                                Gate Ah
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Tittel
+                    <label class="form__label form__label--required">Tittel
                       <input type="text" class="form__input" disabled>
                     </label>
                   </div>
@@ -140,7 +158,7 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Varighet
-                      <input type="number" class="form__input" disabled>
+                      <input type="time" class="form__input" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
@@ -209,14 +227,26 @@
                 </a>
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Versjon
-                      <input type="text" class="form__input" disabled>
+                    <label class="form__label">Label
+                      <div class="searchable-list searchable-list searchable-list--disabled form__input">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Warner Bros. Records</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
+                          <ul>
+                            <li class="searchable-list__option">
+                                Nullstill
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
                     </label>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Label
+                    <label class="form__label">Versjon
                       <input type="text" class="form__input" disabled>
                     </label>
                   </div>
@@ -224,11 +254,25 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-5">
                     <label class="form__label">Innspillingsland
-                      <select class="select select--block" disabled>
-                        <option value="">Norge</option>
-                        <option value="">Storbrittania</option>
-                        <option value="">USA</option>
-                      </select>
+                      <div class="searchable-list searchable-list--disabled searchable-list form__input">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Norge</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
+                          <ul>
+                            <li class="searchable-list__option">
+                                Norge
+                              </li>
+                              <li class="searchable-list__option">
+                                Storbrittania
+                              </li>
+                              <li class="searchable-list__option">
+                                USA
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
                     </label>
                   </div>
                   <div class="col-xs-12 col-sm-3">
@@ -240,11 +284,25 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-5">
                     <label class="form__label">Produsentland
-                      <select class="select select--block" disabled>
-                        <option value="">Norge</option>
-                        <option value="">Storbrittania</option>
-                        <option value="">USA</option>
-                      </select>
+                      <div class="searchable-list searchable-list--disabled searchable-list form__input">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Norge</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
+                          <ul>
+                            <li class="searchable-list__option">
+                                Norge
+                              </li>
+                              <li class="searchable-list__option">
+                                Storbrittania
+                              </li>
+                              <li class="searchable-list__option">
+                                USA
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
                     </label>
                   </div>
                   <div class="col-xs-12 col-sm-3">
