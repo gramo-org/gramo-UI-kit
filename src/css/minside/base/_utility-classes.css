@@ -80,6 +80,17 @@
   height: 0;
 }
 
+.text--help {
+  position: relative;
+  top: -0.5rem;
+  @media (--tablet) {
+    top: 0.5rem;
+  }
+  
+  &--hidden {
+    display: none;
+  }
+}
 
 /* flexbox overrides */
 

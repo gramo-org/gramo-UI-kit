@@ -299,6 +299,7 @@ $('.link--edit').click(function(){
   $(this).toggleClass('link--edit--hidden btn btn--secondary');
   $(this).closest('section').find('.link--trash').toggleClass('link--trash--hidden');
   $(this).closest('section').find('.link--add').toggleClass('link--add--hidden');
+  $(this).closest('section').find('.text--help').toggleClass('text--help--hidden');
   
   if ( $(this).hasClass('link--edit--hidden') ) {
     $(this).text('Avbryt');

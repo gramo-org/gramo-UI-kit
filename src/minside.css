@@ -891,6 +891,22 @@ p{
   height:0;
 }
 
+.text--help{
+  position:relative;
+  top:-0.5rem;
+}
+
+@media (min-width: 768px){
+
+  .text--help{
+    top:0.5rem;
+  }
+}
+
+.text--help--hidden{
+  display:none;
+}
+
 .col--no-flex{
   display:block!important;
 }
