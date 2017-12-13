@@ -1027,7 +1027,7 @@ p{
 }
 
 .hide{
-  display:none!important;
+  display:none;
 }
 .print-header{
   display:none;

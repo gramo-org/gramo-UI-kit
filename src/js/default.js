@@ -337,6 +337,14 @@ $(".row--clickable").click(function() {
     window.location = $(this).data("href");
 });
 
+$('label:contains("Klassisk?") > input[type="checkbox"]').click(function(){
+  if ($(this).is(':checked')) {
+      $(this).closest('.row').next('.row').show();  
+    } else {
+      $(this).closest('.row').next('.row').hide();
+    }
+})
+
 }); // end document ready
 
 //Affix page contents to top of viewport
