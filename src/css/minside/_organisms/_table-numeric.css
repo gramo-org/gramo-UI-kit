@@ -118,6 +118,12 @@
   }
 }
 
+/* Disable first up arrow and last down arrow */
+
+.table__cell--move a.link--disabled span {
+  opacity: 0.5;
+}
+
 /* Table cell trash can button for deleting tracks */
 .table__cell--trash {
   

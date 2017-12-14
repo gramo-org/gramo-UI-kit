@@ -3308,6 +3308,10 @@ input[type="checkbox"].form__input--toggle-visibility{
 .link--add{
   margin:-0.5rem 0 1rem 0rem;
 }
+
+.link--disabled{
+  pointer-events:none;
+}
 .link--edit:not(.btn){
   padding:1.2rem 0 1.2rem 2rem;
 }
@@ -3322,7 +3326,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   position:static;
 }
 
-.link--add--hidden, .link--trash--hidden{
+.link--add--hidden, .link--trash--hidden, .link-prototype--hidden{
   display:none;
 }
 .flash-message-wrapper{
@@ -4781,6 +4785,10 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 }
 .table__cell--move > a .icon{
   display:block;
+}
+
+.table__cell--move a.link--disabled span{
+  opacity:0.5;
 }
 .table__cell--trash > a{
   position:relative;

@@ -42,6 +42,10 @@
   margin: -0.5rem 0 1rem 0rem;
 }
 
+.link--disabled {
+  pointer-events: none;
+}
+
 /* For prototype (turning edit link into 'avbryt') */
 .link--edit:not(.btn) {
   padding: 1.2rem 0 1.2rem 2rem;
@@ -59,7 +63,7 @@
   position: static;
 }
 
-.link--add, .link--trash {
+.link--add, .link--trash, .link-prototype {
   
   &--hidden {
     display: none;
