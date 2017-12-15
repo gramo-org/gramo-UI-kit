@@ -31,9 +31,6 @@
         Meny
       </a>
     </header>
-    <div class="message message--primary">
-      <p>Denne siden er under saksbehandling og kan ikke redigeres</p>
-    </div>
     <nav id="navigation" class="nav--primary">
       <ul class="vertical__nav">
         <li>
@@ -59,14 +56,7 @@
         <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
       </ul>
     </nav>
-    <main>
-      <!--- Flash message --->
-      <div class="flash-message-wrapper">
-        <div class="flash-message flash-message--success" role="alert" aria-live="assertive">
-          <p>Eierskapsøknad er sendt til Gramo for godkjenning</p>
-          <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
-        </div>
-      </div>
+    <main> 
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -101,9 +91,9 @@
                 <header>
                   <h2>Innspillingsinfo</h2>
                 </header>
-                <!-- <div class="section-header__action">
+                <div class="section-header__action">
                   <a href="#" class="link--edit">Rediger</a>
-                </div> -->
+                </div>
               </div>
               <form class="form">
                 <div class="row">
@@ -328,8 +318,6 @@
                           <input type="date" class="form__input form__input--date" disabled>
                         </label>
                       </div>
-                      <div class="col-xs-5 list__header--action">
-                      </div>
                     </div><!--end .row-->
                     <div class="row">
                       <div class="col-xs-12 col-sm-6 col-md-5">
@@ -349,72 +337,20 @@
                       </div>
                     </div><!--end .row-->
                   </li>
-                  <li class="hide-labels">
-                    <div class="row list__header">
-                      <div class="col-xs-7">
-                        <label class="form__label">Fra
-                          <input type="date" class="form__input form__input--date locked" value="2017-01-01" disabled>
-                        </label>
-                        <label class="form__label">Til
-                          <input type="date" class="form__input form__input--date locked" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-5 list__header--action">
-                        <div class="file-upload" id="file-upload">
-                          <span class="icon icon--paperclip"></span><span>(2)</span>
-                          files uploaded
-                        </div>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-5">
-                        <label class="form__label"><span>Produsentnavn</span>
-                          <input type="text" value="Warner Music" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <label class="form__label"><span>Produsentland</span>
-                          <input type="text" value="Norge" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-3 col-sm-1">
-                        <label class="form__label form__label--no-wrap"><span>% Andel</span>
-                          <input type="text" value="50" class="form__input form__input--60" disabled>
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-6 col-md-5">
-                        <label class="form__label"><span>Produsentnavn</span>
-                          <input type="text" value="Sony Music" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <label class="form__label"><span>Produsentland</span>
-                          <input type="text" value="Norge" class="form__input" disabled>
-                        </label>
-                      </div>
-                      <div class="col-xs-3 col-sm-1">
-                        <label class="form__label form__label--no-wrap"><span>% Andel</span>
-                          <input type="text" value="50" class="form__input form__input--60" disabled>
-                        </label>
-                      </div>
-                    </div><!--end .row-->
-                    <p>Dette eierskapet ventes godkjenning av Gramo</p>
-                  </li>
                 </ol>
               </form>
+              <a href="edit_recording-ownership-1.html#ownership-info" class="click-here">Legg til eierskap</a>
               <hr class="horizontal-rule">
             </section>
-            
+
             <section id="performers-info">
               <div class="section-header">
                 <header>
                   <h2>Utøvere<span class="badge badge--primary">2</span></h2>
                 </header>
-                <!-- <div class="section-header__action">
+                <div class="section-header__action">
                   <a href="#" class="link--edit">Rediger</a>
-                </div> -->
+                </div>
               </div>
               <form class="form">
                 <ol class="list list--numbered">
@@ -474,9 +410,29 @@
                           </div>
                         </label>
                       </div>
-
+                      <div class="col-xs-12 col-sm-4">
+                        <div class="form__label"><span>Rolle</span>
+                          <div class="radio-group">
+                            <label class="form__label">
+                              <input type="checkbox" name="role2" checked disabled>
+                              <span>A</span>
+                              <span class="check"></span>
+                            </label>
+                            <label class="form__label">
+                              <input type="checkbox" name="role2" disabled>
+                              <span>B</span>
+                              <span class="check"></span>
+                            </label>
+                            <label class="form__label">
+                              <input type="checkbox" name="role2" disabled>
+                              <span>C</span>
+                              <span class="check"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
                     </div><!--end .row-->
-                  </li>
+                   </li>
                   <li>
                     <div class="row list__header">
                       <div class="col-xs-11 col-sm-6">
@@ -533,12 +489,32 @@
                           </div>
                         </label>
                       </div>
-
+                      <div class="col-xs-12 col-sm-4">
+                        <div class="form__label"><span>Rolle</span>
+                          <div class="radio-group">
+                            <label class="form__label">
+                              <input type="checkbox" name="role2" checked disabled>
+                              <span>A</span>
+                              <span class="check"></span>
+                            </label>
+                            <label class="form__label">
+                              <input type="checkbox" name="role2" disabled>
+                              <span>B</span>
+                              <span class="check"></span>
+                            </label>
+                            <label class="form__label">
+                              <input type="checkbox" name="role2" disabled>
+                              <span>C</span>
+                              <span class="check"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
                     </div><!--end .row-->
                   </li>
                 </ol>
                 <p>
-                  <a href="edit_recording-performers-1.html" class="link--add link--add--hidden click-here">Legg til utøver</a>
+                  <a href="edit_recording-performers-1.html#performers-info" class="link--add link--add--hidden click-here">Legg til utøver</a>
                 </p>
               </form>
               <hr class="horizontal-rule">

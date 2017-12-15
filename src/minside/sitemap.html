@@ -26,8 +26,9 @@
     .sitemap {
       padding: 3rem;
       margin: 2rem auto;
-      columns: 5;
-      column-gap: 2rem;
+      display: grid;
+      grid-gap: 3rem;
+      grid-template-columns: repeat(3, minmax(300px, 1fr));
     }
     
     @media
@@ -51,6 +52,9 @@
       break-inside: avoid;
     }
     
+    .sitemap section {
+    }
+    
     h1 {
       text-align: center;
       margin: 3rem auto 0 auto;
@@ -60,7 +64,8 @@
       max-width: 500px;
     }
     
-    .sitemap label, .sitemap label {
+    .sitemap label {
+      align-self: flex-start;
       display: block;
       text-transform: uppercase;
       font-weight: 400;
@@ -77,21 +82,20 @@
       display: none;
     }
     
-    .sitemap h4, .sitemap h5 {
+    .sitemap h4 {
       font-weight: 600;
-      background: #ddd;
+      background: #eee;
       display: inline-block;
       padding: .5rem;
-      width: 80%;
+      width: 100%;
     }
     
     .sitemap h5 {
-      background: #eee;
       margin: 0;
       padding-left: 1rem;
     }
     
-    .sitemap h5::before {
+    .sitemap h4 span::before {
       content: '›';
       margin-right: .5rem;
     }
@@ -102,14 +106,23 @@
       padding: 0 0 0 5px;
     }
     
-    .sitemap section:not(:first-child) label {
-      margin-top: 3rem;
+    p.check-all {
+      text-align: center;
+      margin: 1rem 0;
     }
+    
+    /* .sitemap section:not(:first-child) label {
+      margin-top: 3rem;
+    } */
   </style>
 </head>
 <body>
   <h1>Sitemap</h1>
-  <main class="sitemap">
+  <p class="check-all">
+    <input type="checkbox" id="checkAll">
+    <label for="checkAll">Collapse all</label>
+  </p>
+  <main class="sitemap">  
     <section>
       <label for="global">Globale</label>
       <input type="checkbox" id="global">
@@ -175,18 +188,14 @@
         <li><a target="_blank" href="discography/min-diskografi_p-produsent.html">min-diskografi_p-produsent</a></li>
         <li><a target="_blank" href="discography/min-diskografi_produsent.html">min-diskografi_produsent</a></li>
         <li><a target="_blank" href="discography/min-diskografi.html">min-diskografi.html</a></li>
-        <li><a target="_blank" href="discography/label.html">label</a></li>
-        <li><h4>Edit</h4></li>
-        <li><h5>Recording - performers</h5></li>
-        <li><a target="_blank" href="discography/edit/recording/edit_recording.html#performers-info">edit_recording</a></li>
+        <li><h4>Edit <span>Recording - performers</span></h4></li>
+        <li><a target="_blank" href="discography/edit/recording/edit_recording-performers.html#performers-info">edit_recording-performers</a></li>
         <!-- <li><a target="_blank" href="discography/edit/recording/edit_recording-performers-1.html">edit_recording-performers-1</a></li>
         <li><a target="_blank" href="discography/edit/recording/edit_recording-performers-2.html">edit_recording-performers-2</a></li>
         <li><a target="_blank" href="discography/edit/recording/edit_recording-performers-3.html">edit_recording-performers-3</a></li>
         <li><a target="_blank" href="discography/edit/recording/edit_recording-performers-4.html">edit_recording-performers-4</a></li> -->
-        <li><h5>Recording - release</h5></li>
-        <li><a target="_blank" href="discography/edit/release/edit_release.html">edit_release</a></li>
-        <li><h5>Recording - ownership</h5></li>
-        <li><a target="_blank" href="discography/edit/recording/edit_recording.html#ownership-info">edit_recording</a></li>
+        <li><h4>Edit <span>Recording - ownership</span></h4></li>
+        <li><a target="_blank" href="discography/edit/recording/edit_recording.html#ownership-info">edit_recording-ownership</a></li>
         <!-- <li><a target="_blank" href="discography/edit/recording/edit_recording-ownership-1.html">edit_recording-ownership-1</a></li>
         <li><a target="_blank" href="discography/edit/recording/edit_recording-ownership-2.html">edit_recording-ownership-2</a></li>
         <li><a target="_blank" href="discography/edit/recording/edit_recording-ownership-3.html">edit_recording-ownership-3</a></li>
@@ -194,8 +203,9 @@
         <li><a target="_blank" href="discography/edit/recording/edit_recording-ownership-5.html">edit_recording-ownership-5</a></li>
         <li><a target="_blank" href="discography/edit/recording/edit_recording-ownership-6.html">edit_recording-ownership-6</a></li>
         <li><a target="_blank" href="discography/edit/recording/edit_recording-ownership-7.html">edit_recording-ownership-7</a></li> -->
-        <li><h4>Edit</h4></li>
-        <li><h5>Label - ownership</h5></li>
+        <li><h4>Edit <span>Release</span></h4></li>
+        <li><a target="_blank" href="discography/edit/release/edit_release.html">edit_release</a></li>
+        <li><h4>Edit <span>Label - ownership</span></h4></li>
         <li><a target="_blank" href="discography/edit/label/edit_label.html#ownership-info">edit_label</a></li>
         <!-- <li><a target="_blank" href="discography/edit/label/edit_label-ownership-1.html">edit_label-ownership-1</a></li>
         <li><a target="_blank" href="discography/edit/label/edit_label-ownership-2.html">edit_label-ownership-2</a></li>
@@ -204,8 +214,7 @@
         <li><a target="_blank" href="discography/edit/label/edit_label-ownership-5.html">edit_label-ownership-5</a></li>
         <li><a target="_blank" href="discography/edit/label/edit_label-ownership-6.html">edit_label-ownership-6</a></li>
         <li><a target="_blank" href="discography/edit/label/edit_label-ownership-7.html">edit_label-ownership-7</a></li> -->
-        <li><h4>Edit</h4></li>
-        <li><h5>Group</h5></li>
+        <li><h4>Edit <span>Group</span></h4></li>
         <li><a target="_blank" href="discography/edit/group/edit_group-members-1.html">edit_group-members-1</a></li>
         <!-- <li><a target="_blank" href="discography/edit/group/edit_group-members-2.html">edit_group-members-2</a></li>
         <li><a target="_blank" href="discography/edit/group/edit_group-members-3.html">edit_group-members-3</a></li>
@@ -215,8 +224,7 @@
         <li><a target="_blank" href="discography/view/utover.html">Performer</a></li>
         <li><a target="_blank" href="discography/view/personlig-produsent.html">Personal producer</a></li>
         <li><a target="_blank" href="discography/view/organisasjon.html">Organisation</a></li>
-        <li><h4>Create</h4></li>
-        <li><h5>Create release</h5></li>
+        <li><h4>Create <span>Create release</span></h4></li>
         <li><a target="_blank" href="discography/create/release/create_release-release-info.html">Opprett utivelse</a></li>
         <!-- <li><a target="_blank" href="discography/create/release/create_release-check-ISRC.html">Sjekk ISRC</a></li>
         <li><a target="_blank" href="discography/create/release/create_release-ISRC-ok.html">ISRC ok</a></li>
@@ -302,5 +310,13 @@
     </section>
     
   </main>
+  <script src="../js/vendor/jquery-1.11.3.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#checkAll").click(function(){
+        $('input:checkbox').not(this).prop('checked', this.checked);
+      });
+    });
+  </script>
 </body>
 </html>
