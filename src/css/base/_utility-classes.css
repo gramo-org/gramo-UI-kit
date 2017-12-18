@@ -95,6 +95,14 @@ td.text--center,
   text-decoration: line-through;
 }
 
+.text--minus {
+  color: var(--gramo-red);
+}
+
+.text--plus {
+  color: var(--gramo-green);
+}
+
 /* Hide on mobile */
 
 .hidden-on-mobile {

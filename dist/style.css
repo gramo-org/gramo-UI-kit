@@ -274,6 +274,14 @@ td.text--center, .fake-table__row *.text--center{
   text-decoration:line-through;
 }
 
+.text--minus{
+  color:#ed6b6a;
+}
+
+.text--plus{
+  color:#50bf9e;
+}
+
 .hidden-on-mobile{
   display:none!important;
 }
