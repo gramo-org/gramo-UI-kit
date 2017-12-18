@@ -90,6 +90,11 @@ td.text--center,
   color: var(--gramo-red);
 }
 
+/* Strike-through for diff. */
+.text--strike {
+  text-decoration: line-through;
+}
+
 /* Hide on mobile */
 
 .hidden-on-mobile {

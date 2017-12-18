@@ -270,6 +270,9 @@ td.text--center, .fake-table__row *.text--center{
 .text--error{
   color:#ed6b6a;
 }
+.text--strike{
+  text-decoration:line-through;
+}
 
 .hidden-on-mobile{
   display:none!important;
@@ -3587,6 +3590,9 @@ hr, .horizontal-rule{
     margin-top:0;
     margin-bottom:0;
   }
+}
+.pagination--boxed{
+  margin-bottom:1.2rem;
 }
 
 .pagination .pagination__item{

@@ -1666,6 +1666,9 @@ input[type="number"].four-digit{
     margin-bottom:0;
   }
 }
+.pagination--boxed{
+  margin-bottom:1.2rem;
+}
 
 .pagination .pagination__item{
   display:none;
