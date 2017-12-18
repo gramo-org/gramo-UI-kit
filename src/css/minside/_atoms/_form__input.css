@@ -150,11 +150,11 @@ input[type="checkbox"].form__input--toggle-visibility {
   margin-bottom: 1.2rem;
 }
 
-.form__input--searchable {
+/* .form__input--searchable {
   background: var(--gramo-white) url("img/search.svg") right 1rem center no-repeat;
   background-size: 1.8rem;
   
   &[disabled] {
     background-image: none;
   }
-}
+} */
