@@ -4451,7 +4451,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .table--list td:first-child::before{
   content:none;
 }
-.table--list td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash)::before{
+.table--list td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash):not(.table__row--no-count td)::before{
   content:attr(data-label)":";
   display:inline-block;
   margin-right:.5rem;
@@ -4459,7 +4459,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 }
 @media (min-width: 960px){
 
-  .table--list td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash)::before{
+  .table--list td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash):not(.table__row--no-count td)::before{
     content:none;
   }
 }
@@ -4665,10 +4665,19 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
     top:1.6rem;
   }
 }
+.table--tracks tr:not(.table__row--no-count){
+  min-height:115px;
+}
+@media (min-width: 960px){
+
+  .table--tracks tr:not(.table__row--no-count){
+    min-height:0;
+  }
+}
 .table--tracks tbody tr.table__row--no-count{
   background:none;
   border:0;
-  padding:0 0 .5rem 3rem;
+  padding:2rem 0 .5rem 2rem;
 }
 @media (min-width: 960px){
 

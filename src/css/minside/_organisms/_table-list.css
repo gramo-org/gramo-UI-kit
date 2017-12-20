@@ -46,7 +46,7 @@
     content: none;
   }
   
-  td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash)::before {
+  td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash):not(.table__row--no-count td)::before {
     content: attr(data-label)":";
     display: inline-block;
     margin-right: .5rem;

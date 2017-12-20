@@ -23,11 +23,19 @@
     }
   }
   
+  /* ensure there is enough room to position the 'move' arrows at top and bottom */
+  tr:not(.table__row--no-count) {
+    min-height: 115px;
+    @media (--desktop) {
+      min-height: 0;
+    }
+  }
+  
   /* Row containing Side number */
   tbody tr.table__row--no-count {
     background: none;
     border: 0;
-    padding: 0 0 .5rem 3rem;
+    padding: 2rem 0 .5rem 2rem;
     @media (--desktop) {
       padding: 2rem 0 0 0;
     }
