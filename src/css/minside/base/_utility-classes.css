@@ -92,6 +92,16 @@
   }
 }
 
+.row--with-border::before,
+.row--with-border::after {
+  content: '';
+  height: 1px;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  border-bottom: 1px solid var(--silver);
+  margin-bottom: 1rem;
+}
+
 /* flexbox overrides */
 
 .col--no-flex {

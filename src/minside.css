@@ -907,6 +907,15 @@ p{
   display:none;
 }
 
+.row--with-border::before, .row--with-border::after{
+  content:'';
+  height:1px;
+  width:calc(100% - 2rem);
+  margin-left:1rem;
+  border-bottom:1px solid #d9d9dc;
+  margin-bottom:1rem;
+}
+
 .col--no-flex{
   display:block!important;
 }
@@ -4451,7 +4460,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .table--list td:first-child::before{
   content:none;
 }
-.table--list td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash):not(.table__row--no-count td)::before{
+.table--list td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash):not(.table__cell--delete)::before{
   content:attr(data-label)":";
   display:inline-block;
   margin-right:.5rem;
@@ -4459,7 +4468,7 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 }
 @media (min-width: 960px){
 
-  .table--list td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash):not(.table__row--no-count td)::before{
+  .table--list td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash):not(.table__cell--delete)::before{
     content:none;
   }
 }
