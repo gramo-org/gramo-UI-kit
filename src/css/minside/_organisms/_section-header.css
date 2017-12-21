@@ -7,12 +7,21 @@
 
 .section-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   @extend %margin-bottom;
   padding-top: 0;
   
+  @media (--desktop) {
+    flex-wrap: nowrap;
+  }
+  
   & > header {
     flex: 1 1 auto; /* was flex: 1 0 auto; */
+    text-align: center;
+    @media (--desktop) {
+      text-align: left;
+    }
   }
   
   h2 {
@@ -24,6 +33,29 @@
     
     & > *:last-child {
       margin-left: 1rem;
+    }
+  }
+}
+
+.section-header__action--disabled {
+  flex-direction: column;
+  flex: 1 0 100%;
+  text-align: center;
+  align-items: center;
+  order: -1;
+  padding: 0 5rem 1rem 5rem;
+  margin-bottom: .6rem;
+  @media (--desktop) {
+    flex-direction: row;
+    flex: 0 0 auto;
+    order: 0;
+    padding: 0;
+  }
+  
+  .icon {
+    font-size: 3.6rem;
+    @media (--desktop) {
+      font-size: 3rem;
     }
   }
 }
