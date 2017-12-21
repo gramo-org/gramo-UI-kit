@@ -4920,15 +4920,18 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   margin-bottom:1.2rem;
 }
 
-.list--numbered > li:before{
-  counter-increment:item;
-  content:counters(item,".") " ";
-  position:absolute;
-  bottom:-3.8rem;
-  right:2rem;
-  font-size:10rem;
-  font-family:"brandon-regular";
-  color:#ededed;
+@media (min-width: 960px){
+
+  .list--numbered > li:before{
+    counter-increment:item;
+    content:counters(item,".") " ";
+    position:absolute;
+    bottom:-3.8rem;
+    right:2rem;
+    font-size:10rem;
+    font-family:"brandon-regular";
+    color:#ededed;
+  }
 }
 
 .list--plain > li:before{

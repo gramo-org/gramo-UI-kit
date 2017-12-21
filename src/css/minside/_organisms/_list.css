@@ -54,15 +54,17 @@
     position: relative;
     margin-bottom: 1.2rem;
     
-    &:before {
-      counter-increment: item;
-      content: counters(item,".") " ";
-      position: absolute;
-      bottom: -3.8rem;
-      right: 2rem;
-      font-size: 10rem;
-      font-family: var(--minside-font-family);
-      color: var(--light-gray);
+    @media (--desktop) {
+      &:before {
+        counter-increment: item;
+        content: counters(item,".") " ";
+        position: absolute;
+        bottom: -3.8rem;
+        right: 2rem;
+        font-size: 10rem;
+        font-family: var(--minside-font-family);
+        color: var(--light-gray);
+      }
     }
   }
 }
