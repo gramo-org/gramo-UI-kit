@@ -96,172 +96,207 @@
 									</div>
 								</div>
 								<form class="form">
-									<div class="row">
-										<div class="col-xs-12 col-sm-6">
-											<label class="form__label">Hovedartist
-											<input type="text" class="form__input" disabled>
-											</label>
-										</div>
-									</div>
-									<!--end .row-->
-									<div class="row">
-										<div class="col-xs-12 col-sm-6">
-											<label class="form__label form__label--required">Tittel
-											<input type="text" class="form__input" disabled>
-											</label>
-										</div>
-									</div>
-									<!--end .row-->
-									<div class="row row--alternate">
-										<div class="col-xs-12 col-sm-6">
-											<label class="form__label">Alt. tittel
-											<input type="text" class="form__input" disabled>
-											</label>
-										</div>
-										<div class="col-xs-11 col-sm-6">
-											<label class="form__label">Beskrivelse
-											<input type="text" class="form__input" disabled>
-											</label>
-										</div>
-										<div class="row__delete hide">
-											<a class="text--small text--light">
-											<span id="ember2058" class="icon icon--close"></span>
-											</a>
-										</div>
-									</div>
-									<!--end .row-->
-									<a class="link--no-line link--add link--add--hidden">
-									Legg til alt. tittel
-									</a>
-									<div class="row">
-										<div class="col-xs-12 col-sm-6">
-											<label class="form__label">Varighet
-											<input type="time" class="form__input" disabled>
-											</label>
-										</div>
-									</div>
-									<!--end .row-->
-									<div class="row">
-										<div class="col-xs">
-											<label class="form__label form__label--block">
-											<input type="checkbox" id="ember829" class="form__input form__input--block" disabled>
-											<span>Klassisk?</span>
-											</label>
-										</div>
-									</div>
-									<!--end .row-->
-									<div class="row">
-										<div class="col-xs-12 col-sm-6">
-											<label class="form__label form__label--required">
-												Komponist
-												<div class="searchable-list searchable-list--disabled searchable-list form__input">
-													<div tabindex="0" class="searchable-list__heading searchable-list__heading">
-														<span class="searchable-list__selected">Velg komponist</span>
-													</div>
-													<div class="searchable-list__dropdown">
-														<input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
-														<ul>
-															<li class="searchable-list__option">
-																Beethoven
-															</li>
-															<li class="searchable-list__option">
-																Mozart
-															</li>
-															<li class="searchable-list__option">
-																Vivaldi
-															</li>
-															<li class="searchable-list__option">
-																Tchaikovsky
-															</li>
-														</ul>
-													</div>
-												</div>
-											</label>
-										</div>
-									</div>
-									<!--end .row-->
-									<div class="row">
-										<div class="col-xs-12 col-sm-6">
-											<label class="form__label">ISRC
-											<input type="text" class="form__input" disabled>
-											</label>
-										</div>
-									</div>
-									<!--end .row-->
-									<div class="row row--alternate">
-										<div class="col-xs-12 col-sm-6">
-											<label class="form__label">Alt. ISRC
-											<input type="text" class="form__input" disabled>
-											</label>
-										</div>
-										<div class="col-xs-11 col-sm-6">
-											<label class="form__label">Beskrivelse
-											<input type="text" class="form__input" disabled>
-											</label>
-										</div>
-										<div class="row__delete hide">
-											<a class="text--small text--light">
-											<span id="ember2058" class="icon icon--close"></span>
-											</a>
-										</div>
-									</div>
-									<!--end .row-->
-									<a class="link--no-line link--add link--add--hidden">
-									Legg til alt. ISRC
-									</a>
-									<div class="row">
-										<div class="col-xs-12 col-sm-6">
-											<label class="form__label">Versjon
-											<input type="text" class="form__input" disabled>
-											</label>
-										</div>
-									</div>
-									<!--end .row-->
-									<div class="row">
-										<div class="col-xs-12 col-sm-6">
-											<label class="form__label">Label
-											<input type="text" class="form__input" disabled>
-											</label>
-										</div>
-									</div>
-									<!--end .row-->
-									<div class="row">
-										<div class="col-xs-12 col-sm-5">
-											<label class="form__label">
-												Innspillingsland
-												<select class="select select--block" disabled>
-													<option value="">Norge</option>
-													<option value="">Storbrittania</option>
-													<option value="">USA</option>
-												</select>
-											</label>
-										</div>
-										<div class="col-xs-12 col-sm-3">
-											<label class="form__label">Innspillingsdato
-											<input type="date" class="form__input form__input--date" disabled>
-											</label>
-										</div>
-									</div>
-									<!--end .row-->
-									<div class="row">
-										<div class="col-xs-12 col-sm-5">
-											<label class="form__label">
-												Produsentland
-												<select class="select select--block" disabled>
-													<option value="">Norge</option>
-													<option value="">Storbrittania</option>
-													<option value="">USA</option>
-												</select>
-											</label>
-										</div>
-										<div class="col-xs-12 col-sm-3">
-											<label class="form__label">Utgivelsesdato
-											<input type="date" class="form__input form__input--date" disabled>
-											</label>
-										</div>
-									</div>
-									<!--end .row-->
-								</form>
+	                <div class="row">
+	                  <div class="col-xs-12 col-sm-6">
+	                    <label class="form__label form__label--required">Hovedartist
+	                      <input type="text" class="form__input form__input--searchable" value="A-Ha" disabled>
+	                      <div class="searchable-list searchable-list--disabled searchable-list--for-input">
+	                        <div class="searchable-list__dropdown">
+	                          <ul>
+	                            <li class="searchable-list__option">
+	                                A-Ha
+	                              </li>
+	                              <li class="searchable-list__option">
+	                                Ah
+	                              </li>
+	                              <li class="searchable-list__option">
+	                                Ah Cama-Sotz
+	                              </li>
+	                              <li class="searchable-list__option">
+	                                Gate Ah
+	                              </li>
+	                          </ul>
+	                        </div>
+	                      </div>
+	                    </label>
+	                  </div>
+	                </div><!--end .row-->
+	                <div class="row">
+	                  <div class="col-xs-12 col-sm-6">
+	                    <label class="form__label form__label--required">Tittel
+	                      <input type="text" value="Take on Me" class="form__input" disabled>
+	                    </label>
+	                  </div>
+	                </div><!--end .row-->
+	                <div class="row row--alternate">
+	                  <div class="col-xs-12 col-sm-6">
+	                    <label class="form__label">Alt. tittel
+	                      <input type="text" value="Take on Me (Live in Oslo)" class="form__input" disabled>
+	                    </label>
+	                  </div>
+	                  <div class="col-xs-11 col-sm-6">
+	                    <label class="form__label">Beskrivelse
+	                      <input type="text" value="Bare et eksempel" class="form__input" disabled>
+	                    </label>
+	                  </div>
+	                  <div class="row__delete hide">
+	                    <a class="text--small text--light">
+	                      <span id="ember2058" class="icon icon--close"></span>
+	                    </a>
+	                  </div>
+	                </div><!--end .row-->
+	                <a class="link--no-line link--add link--add--hidden">
+	                  Legg til alt. tittel
+	                </a>
+	                <div class="row">
+	                  <div class="col-xs-12 col-sm-6">
+	                    <label class="form__label">Varighet
+	                      <input type="time" value="00:03:27" class="form__input" disabled>
+	                    </label>
+	                  </div>
+	                </div><!--end .row-->
+	                <div class="row">
+	                  <div class="col-xs">
+	                    <label class="form__label form__label--block">
+	                      <input type="checkbox" id="ember829" class="form__input form__input--block" disabled>
+	                      <span>Klassisk?</span>
+	                    </label>
+	                  </div>
+	                </div><!--end .row-->
+	                <div class="row hide">
+	                  <div class="col-xs-12 col-sm-6">
+	                    <label class="form__label form__label--required">Komponist
+	                      <div class="searchable-list searchable-list--disabled searchable-list form__input">
+	                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+	                          <span class="searchable-list__selected">Velg komponist</span>
+	                        </div>
+	                        <div class="searchable-list__dropdown">
+	                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
+	                          <ul>
+	                            <li></li>
+	                          </ul>
+	                        </div>
+	                      </div>
+	                    </label>
+	                  </div>
+	                </div><!--end .row-->
+	                <div class="row">
+	                  <div class="col-xs-12 col-sm-6">
+	                    <label class="form__label">ISRC
+	                      <input type="text" value="AHAEG09182947" class="form__input" disabled>
+	                    </label>
+	                  </div>
+	                  <div class="col-xs-12 col-sm-6 align--vertical-center">
+	                    <p class="text--help text--help--hidden">f.eks: NOXXX1501223</p>
+	                  </div>
+	                </div><!--end .row-->
+	                <div class="row row--alternate">
+	                  <div class="col-xs-12 col-sm-6">
+	                    <label class="form__label">Alt. ISRC
+	                      <input type="text" value="AHAEG09182948" class="form__input" disabled>
+	                    </label>
+	                  </div>
+	                  <div class="col-xs-11 col-sm-6">
+	                    <label class="form__label">Beskrivelse
+	                      <input type="text" value="Bare et eksempel" class="form__input" disabled>
+	                    </label>
+	                  </div>
+	                  <div class="row__delete hide">
+	                    <a class="text--small text--light">
+	                      <span id="ember2058" class="icon icon--close"></span>
+	                    </a>
+	                  </div>
+	                </div><!--end .row-->
+	                <a class="link--no-line link--add link--add--hidden">
+	                  Legg til alt. ISRC
+	                </a>
+	                <div class="row">
+	                  <div class="col-xs-12 col-sm-6">
+	                    <label class="form__label">Label
+	                      <div class="searchable-list searchable-list searchable-list--disabled form__input">
+	                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+	                          <span class="searchable-list__selected">Warner Bros. Records</span>
+	                        </div>
+	                        <div class="searchable-list__dropdown">
+	                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
+	                          <ul>
+	                            <li class="searchable-list__option">
+	                                Nullstill
+	                              </li>
+	                          </ul>
+	                        </div>
+	                      </div>
+	                    </label>
+	                  </div>
+	                </div><!--end .row-->
+	                <div class="row">
+	                  <div class="col-xs-12 col-sm-6">
+	                    <label class="form__label">Versjon
+	                      <input type="text" class="form__input" disabled>
+	                    </label>
+	                  </div>
+	                </div><!--end .row-->
+	                <div class="row">
+	                  <div class="col-xs-12 col-sm-5">
+	                    <label class="form__label">Innspillingsland
+	                      <div class="searchable-list searchable-list--disabled searchable-list form__input">
+	                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+	                          <span class="searchable-list__selected">Norge</span>
+	                        </div>
+	                        <div class="searchable-list__dropdown">
+	                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
+	                          <ul>
+	                            <li class="searchable-list__option">
+	                                Norge
+	                              </li>
+	                              <li class="searchable-list__option">
+	                                Storbrittania
+	                              </li>
+	                              <li class="searchable-list__option">
+	                                USA
+	                              </li>
+	                          </ul>
+	                        </div>
+	                      </div>
+	                    </label>
+	                  </div>
+	                  <div class="col-xs-12 col-sm-3">
+	                    <label class="form__label">Innspillingsdato
+	                      <input type="date" value="1985-07-29" class="form__input form__input--date" disabled>
+	                    </label>
+	                  </div>
+	                </div><!--end .row-->
+	                <div class="row">
+	                  <div class="col-xs-12 col-sm-5">
+	                    <label class="form__label">Produsentland
+	                      <div class="searchable-list searchable-list--disabled searchable-list form__input">
+	                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+	                          <span class="searchable-list__selected">Norge</span>
+	                        </div>
+	                        <div class="searchable-list__dropdown">
+	                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block locked">
+	                          <ul>
+	                            <li class="searchable-list__option">
+	                                Norge
+	                              </li>
+	                              <li class="searchable-list__option">
+	                                Storbrittania
+	                              </li>
+	                              <li class="searchable-list__option">
+	                                USA
+	                              </li>
+	                          </ul>
+	                        </div>
+	                      </div>
+	                    </label>
+	                  </div>
+	                  <div class="col-xs-12 col-sm-3">
+	                    <label class="form__label">Utgivelsesdato
+	                      <input type="date" value="1985-07-29" class="form__input form__input--date" disabled>
+	                    </label>
+	                  </div>
+	                </div><!--end .row-->
+	              </form>
 								<hr class="horizontal-rule">
 							</section>
 							<section id="ownership-info">

@@ -2993,13 +2993,7 @@ _:-ms-input-placeholder, :root .form__input[type="date"]{
 
 input[type="number"], input[type="time"]{
   height:auto;
-}
-
-@media (min-width: 768px){
-
-  input[type="number"], input[type="time"]{
-    max-width:150px;
-  }
+  max-width:150px;
 }
 
 .form__input[disabled]{
@@ -4969,14 +4963,6 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   -webkit-flex:1 1 auto;
   -ms-flex:1 1 auto;
   flex:1 1 auto;
-  text-align:center;
-}
-
-@media (min-width: 960px){
-
-  .section-header > header{
-    text-align:left;
-  }
 }
 
 .section-header h2{

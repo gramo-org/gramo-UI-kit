@@ -18,10 +18,6 @@
   
   & > header {
     flex: 1 1 auto; /* was flex: 1 0 auto; */
-    text-align: center;
-    @media (--desktop) {
-      text-align: left;
-    }
   }
   
   h2 {
