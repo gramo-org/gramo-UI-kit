@@ -1771,9 +1771,6 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
 .form__field-to-and-from .form__input[type="date"]{
   max-width:130px;
 }
-input-placeholder{
-  color:#999;
-}
 
 @media (min-width: 768px){
 

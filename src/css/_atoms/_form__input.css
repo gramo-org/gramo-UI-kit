@@ -90,11 +90,6 @@ input[type="radio"], input[type="checkbox"],
   max-width: 130px;
 }
 
-/* Placeholder Colour */
-input-placeholder {
-  color: var(--base-placeholder-color);
-}
-
 /* Custom widths for form inputs */
 
 .form__input--300 {
