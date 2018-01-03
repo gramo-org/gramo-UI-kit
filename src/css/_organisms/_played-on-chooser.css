@@ -1,0 +1,6 @@
+.played-on-chooser {
+  text-align: right;
+  @media (--tablet) {
+    margin-top: -2.6rem;
+  }
+}

@@ -6654,6 +6654,15 @@ tr > td:last-child{
 .wizard-steps > li.selected, .wizard-steps > li.selected a{
   color:#0095da;
 }
+.played-on-chooser{
+  text-align:right;
+}
+@media (min-width: 768px){
+
+  .played-on-chooser{
+    margin-top:-2.6rem;
+  }
+}
 .component-view{
   padding:2rem;
   border:1px solid #ededed;

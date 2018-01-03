@@ -99,7 +99,7 @@
                       <li class="searchable-list__option">P3</li>
                     </ul>
                   </div>
-                </div><!--end searchable list-->
+                </div>
                 <div class="align--center">
                   <a href="#" class="link--inline">Lagre</a>
                 </div>
@@ -114,7 +114,7 @@
                   </ul>
 
                 <div class="toolbar toolbar--above">
-                  <label class="form__label">
+                  <!-- <label class="form__label">
                     <input type="checkbox">
                   </label>
 
@@ -123,7 +123,53 @@
                     <input type="checkbox" class="x-toggle">
                     <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
                     </label>
-                  </span>
+                  </span> -->
+                  <div class="col-xs-12">
+                    <label class="form__label">
+                      <input id="selectAllGroupsCheckbox" type="checkbox">
+                    </label>
+                    <span class="text--medium">Vis alle felter</span>
+                    <span class="x-toggle-container">
+                      <input type="checkbox" class="x-toggle">
+                      <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                      </label>
+                    </span>
+                  </div>
+
+                  <div id="ember1850" class="ember-view col-xs-12 played-on-chooser">
+          
+                    <select tabindex="0" id="ember1851" class="time-period select select--fluid x-select ember-view">
+                      <option id="ember1852" class="x-option ember-view">Spilt i</option>
+                      <option value="2018" id="ember1858" class="x-option ember-view">Spilt i 2018</option>
+                      <option value="2017" id="ember1864" class="x-option ember-view">Spilt i 2017</option>
+                      <option value="2016" id="ember1870" class="x-option ember-view">Spilt i 2016</option>
+                      <option value="2015" id="ember1876" class="x-option ember-view">Spilt i 2015</option>
+                      <option value="2014" id="ember1882" class="x-option ember-view">Spilt i 2014</option>
+                      <option value="custom" id="ember1888" class="x-option ember-view">Egendefinert</option>
+                    </select>
+      
+          
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--date text--small">
+                          Fra
+                          <input type="date" id="ember1918" class="form__input--block no-margin--top form__input ember-view">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-4">
+                        <label class="form__label form__label--block form__label--date text--small">
+                          Til
+                          <input type="date" id="ember1924" class="form__input--block no-margin--top form__input ember-view">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 align--bottom">
+                        <button id="ember1925" class="btn btn--primary ember-view">
+                          Filtrer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
                 </div><!--/.toolbar-->
                 <ul class="fake-table scrollable-area">
                   <li class="fake-table__row fake-table__row--selected">
