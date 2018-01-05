@@ -1,0 +1,44 @@
+.drilldown {
+  
+  tr[data-level="1"] .table-row-toggle {
+    text-align: right;
+    
+    &::after {
+      content: "\e90c";
+      font-family: 'minside-icons';
+      color: var(--gramo-sea-green);
+      display: inline-block;
+      transform: rotate(-90deg);
+      vertical-align: middle;
+    } 
+    
+    &::before {
+      content: attr(data-label);
+      color: var(--gramo-sea-green);
+      @media (--desktop) { content: none; }
+    } 
+  }
+  
+  tr[data-level="1"].dd-open .table-row-toggle::after {
+    transform: rotate(0);
+  }
+  
+  /* tr[data-level="1"].dd-open {
+    background: var(--table-head-background);
+  } */
+  
+  .dd-open, .dd-close {
+    cursor: pointer;
+  }
+  
+  tr[data-level="2"] {
+    background: color(var(--silver) tint(65%));
+  }
+  
+  tr[data-level="1"].dd-open + tr[data-level="2"] {
+    display: flex!important;
+    @media (--desktop) {
+      display: table-row!important;
+    }
+  }
+}

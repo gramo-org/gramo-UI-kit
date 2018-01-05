@@ -92,6 +92,11 @@
   }
 }
 
+/* Strike-through for diff. */
+.text--strike {
+  text-decoration: line-through;
+}
+
 .row--with-border::before,
 .row--with-border::after {
   content: '';
