@@ -191,7 +191,64 @@
   }
 }
 
-.table--nine {
+/* Styles for diff tables */
+
+.table--diff--six {
+  
+  tr td:first-child {
+    font-size: inherit;
+  }
+  
+  td:first-child::before {
+    content: attr(data-label)":";
+    display: inline-block;
+    margin-right: .5rem;
+    color: var(--off-gray);
+    @media (--desktop) { content: none; }
+  }
+
+  
+  td:nth-child(1) {
+    order: 1;
+  }
+  
+  td:nth-child(2) {
+    order: 3;
+  }
+  
+  td:nth-child(3) {
+    order: 5;
+  }
+  
+  td:nth-child(4) {
+    order: 2;
+  }
+  
+  td:nth-child(5) {
+    order: 4;
+  }
+  
+  td:nth-child(6) {
+    order: 6;
+  }
+  
+  tr[data-level="2"] {
+      
+    td:nth-child(2) {
+      order: 1;
+    }
+    
+    td:nth-child(3) {
+      order: 3;
+    }
+    
+    td:nth-child(5) {
+      order: 2;
+    }
+  }
+}
+
+.table--diff--nine {
   
   td:nth-child(1) {
     order: 1;

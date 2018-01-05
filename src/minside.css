@@ -4633,91 +4633,163 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   order:7;
 }
 
-.table--nine td:nth-child(1){
+.table--diff--six tr td:first-child{
+  font-size:inherit;
+}
+
+.table--diff--six td:first-child::before{
+  content:attr(data-label)":";
+  display:inline-block;
+  margin-right:.5rem;
+  color:#a5a4ab;
+}
+
+@media (min-width: 960px){
+
+  .table--diff--six td:first-child::before{
+    content:none;
+  }
+}
+
+.table--diff--six td:nth-child(1){
   -webkit-order:1;
   -ms-flex-order:1;
   order:1;
 }
 
-.table--nine td:nth-child(2){
+.table--diff--six td:nth-child(2){
+  -webkit-order:3;
+  -ms-flex-order:3;
+  order:3;
+}
+
+.table--diff--six td:nth-child(3){
+  -webkit-order:5;
+  -ms-flex-order:5;
+  order:5;
+}
+
+.table--diff--six td:nth-child(4){
   -webkit-order:2;
   -ms-flex-order:2;
   order:2;
 }
 
-.table--nine td:nth-child(3){
+.table--diff--six td:nth-child(5){
   -webkit-order:4;
   -ms-flex-order:4;
   order:4;
 }
 
-.table--nine td:nth-child(4){
+.table--diff--six td:nth-child(6){
   -webkit-order:6;
   -ms-flex-order:6;
   order:6;
 }
 
-.table--nine td:nth-child(5){
-  -webkit-order:8;
-  -ms-flex-order:8;
-  order:8;
-}
-
-.table--nine td:nth-child(6){
-  -webkit-order:7;
-  -ms-flex-order:7;
-  order:7;
-}
-
-.table--nine td:nth-child(7){
-  -webkit-order:3;
-  -ms-flex-order:3;
-  order:3;
-}
-
-.table--nine td:nth-child(8){
-  -webkit-order:5;
-  -ms-flex-order:5;
-  order:5;
-}
-
-.table--nine td:nth-child(9){
-  -webkit-order:9;
-  -ms-flex-order:9;
-  order:9;
-}
-
-.table--nine tr[data-level="2"] td:nth-child(3){
+.table--diff--six tr[data-level="2"] td:nth-child(2){
   -webkit-order:1;
   -ms-flex-order:1;
   order:1;
 }
 
-.table--nine tr[data-level="2"] td:nth-child(4){
+.table--diff--six tr[data-level="2"] td:nth-child(3){
   -webkit-order:3;
   -ms-flex-order:3;
   order:3;
 }
 
-.table--nine tr[data-level="2"] td:nth-child(5){
-  -webkit-order:5;
-  -ms-flex-order:5;
-  order:5;
-}
-
-.table--nine tr[data-level="2"] td:nth-child(6){
-  -webkit-order:4;
-  -ms-flex-order:4;
-  order:4;
-}
-
-.table--nine tr[data-level="2"] td:nth-child(8){
+.table--diff--six tr[data-level="2"] td:nth-child(5){
   -webkit-order:2;
   -ms-flex-order:2;
   order:2;
 }
 
-.table--nine tr[data-level="2"] td:nth-child(9){
+.table--diff--nine td:nth-child(1){
+  -webkit-order:1;
+  -ms-flex-order:1;
+  order:1;
+}
+
+.table--diff--nine td:nth-child(2){
+  -webkit-order:2;
+  -ms-flex-order:2;
+  order:2;
+}
+
+.table--diff--nine td:nth-child(3){
+  -webkit-order:4;
+  -ms-flex-order:4;
+  order:4;
+}
+
+.table--diff--nine td:nth-child(4){
+  -webkit-order:6;
+  -ms-flex-order:6;
+  order:6;
+}
+
+.table--diff--nine td:nth-child(5){
+  -webkit-order:8;
+  -ms-flex-order:8;
+  order:8;
+}
+
+.table--diff--nine td:nth-child(6){
+  -webkit-order:7;
+  -ms-flex-order:7;
+  order:7;
+}
+
+.table--diff--nine td:nth-child(7){
+  -webkit-order:3;
+  -ms-flex-order:3;
+  order:3;
+}
+
+.table--diff--nine td:nth-child(8){
+  -webkit-order:5;
+  -ms-flex-order:5;
+  order:5;
+}
+
+.table--diff--nine td:nth-child(9){
+  -webkit-order:9;
+  -ms-flex-order:9;
+  order:9;
+}
+
+.table--diff--nine tr[data-level="2"] td:nth-child(3){
+  -webkit-order:1;
+  -ms-flex-order:1;
+  order:1;
+}
+
+.table--diff--nine tr[data-level="2"] td:nth-child(4){
+  -webkit-order:3;
+  -ms-flex-order:3;
+  order:3;
+}
+
+.table--diff--nine tr[data-level="2"] td:nth-child(5){
+  -webkit-order:5;
+  -ms-flex-order:5;
+  order:5;
+}
+
+.table--diff--nine tr[data-level="2"] td:nth-child(6){
+  -webkit-order:4;
+  -ms-flex-order:4;
+  order:4;
+}
+
+.table--diff--nine tr[data-level="2"] td:nth-child(8){
+  -webkit-order:2;
+  -ms-flex-order:2;
+  order:2;
+}
+
+.table--diff--nine tr[data-level="2"] td:nth-child(9){
   -webkit-order:9;
   -ms-flex-order:9;
   order:9;
