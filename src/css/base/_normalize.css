@@ -77,7 +77,7 @@ audio:not([controls]) {
 
 [hidden],
 template {
-  display: none!important;
+  display: none;
 }
 
 /* Links
