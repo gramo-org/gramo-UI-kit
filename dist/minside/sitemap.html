@@ -29,12 +29,13 @@
       display: grid;
       grid-gap: 3rem;
       grid-template-columns: repeat(3, minmax(300px, 1fr));
+      columns: 3;
     }
     
     @media
     only screen and (max-width: 1298px) {
       .sitemap {
-        columns: 3;
+        display: block;
       }
     }
     
@@ -52,8 +53,11 @@
       break-inside: avoid;
     }
     
-    .sitemap section {
-    }
+    @supports not (display: grid) {
+      .sitemap section {
+        margin-top: 1rem;
+      }
+    }  
     
     h1 {
       text-align: center;
