@@ -23,7 +23,18 @@
   <script>
   window.onload = window.location.hash = 'innspillinger';
   </script>
-  
+  <style media="screen">
+    /* Override JS on drilldown */
+    
+    tr[data-level="1"].dd-open + tr[data-level="2"] {
+      display: table-row!important;
+    }
+    @media (max-width: 960px){
+      tr[data-level="1"].dd-open + tr[data-level="2"] {
+        display: flex!important;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="site-wrapper">
