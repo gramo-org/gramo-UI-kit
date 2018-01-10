@@ -1,19 +1,22 @@
 .table--list {
   /* make <tr> a flex container on mobile */
   tr {
-    display: flex;
-    flex-wrap: wrap;
     border: 1px solid var(--table-border-color);
-    padding: 1rem;
-    width: calc(100% + 2rem);
-    margin: 0 -1rem;
+    
+    @media (--mobile-tablet-only) {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      width: calc(100% + 2rem);
+      margin: 0 -1rem;
+    }
     /* restore default display on desktop */
-    @media (--desktop) {
+    /* @media (--desktop) {
       display: table-row;
       border-width: 1px 0;
       width: auto;
       margin: 0;
-    }
+    } */
     /* collapse top and bottom borders into each other*/
     &:not(:first-child) {
       margin-top: -1px;

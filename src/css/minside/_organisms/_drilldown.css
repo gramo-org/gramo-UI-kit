@@ -23,10 +23,6 @@
     transform: rotate(0);
   }
   
-  /* tr[data-level="1"].dd-open {
-    background: var(--table-head-background);
-  } */
-  
   .dd-open, .dd-close {
     cursor: pointer;
   }
@@ -36,9 +32,9 @@
   }
   
   tr[data-level="1"].dd-open + tr[data-level="2"] {
-    display: flex!important;
-    @media (--desktop) {
-      display: table-row!important;
+    
+    @media (--mobile-tablet-only) {
+      display: flex;
     }
   }
 }
