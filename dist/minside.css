@@ -4545,9 +4545,12 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
 .table--list tr{
   border:1px solid #d9d9dc;
 }
+.table--list tr:not(:first-child){
+  margin-top:-1px;
+}
 @media (max-width: 960px){
 
-  .table--list tr{
+  .table--list tr:not([hidden]){
     display:-webkit-flex;
     display:-ms-flexbox;
     display:flex;
@@ -4558,9 +4561,6 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
     width:calc(100% + 2rem);
     margin:0 -1rem;
   }
-}
-.table--list tr:not(:first-child){
-  margin-top:-1px;
 }
 .table--list tr td{
   border:0;

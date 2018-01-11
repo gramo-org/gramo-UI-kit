@@ -1,8 +1,15 @@
 .table--list {
-  /* make <tr> a flex container on mobile */
+  
   tr {
     border: 1px solid var(--table-border-color);
-    
+    /* collapse top and bottom borders into each other*/
+    &:not(:first-child) {
+      margin-top: -1px;
+    }
+  }
+  
+  tr:not([hidden]) {
+    /* make <tr> a flex container on mobile */
     @media (--mobile-tablet-only) {
       display: flex;
       flex-wrap: wrap;
@@ -10,19 +17,15 @@
       width: calc(100% + 2rem);
       margin: 0 -1rem;
     }
-    /* restore default display on desktop */
-    /* @media (--desktop) {
-      display: table-row;
-      border-width: 1px 0;
-      width: auto;
-      margin: 0;
-    } */
-    /* collapse top and bottom borders into each other*/
-    &:not(:first-child) {
-      margin-top: -1px;
-    }
   }
-  
+  /* restore default display on desktop */
+  /* @media (--desktop) {
+    display: table-row;
+    border-width: 1px 0;
+    width: auto;
+    margin: 0;
+  } */
+
   tr td {
     border: 0;
     flex: 0 0 auto;
