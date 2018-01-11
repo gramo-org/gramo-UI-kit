@@ -11,6 +11,7 @@
 @import url('minside/base/_base.css');
 @import url('minside/base/_utility-classes.css');
 @import url('minside/base/_layout.css');
+@import url('minside/base/_style-guide.css');
 
 /* Print Styles */
 @media print {

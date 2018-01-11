@@ -1,0 +1,135 @@
+.style-guide {
+  display: flex;
+  padding-bottom: 0;
+  overflow-x: hidden;
+  position: static;
+  
+  &__contents {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-30rem);
+    transition: all .25s ease;
+    background: var(--gramo-white);
+    overflow-y: scroll;
+    z-index: 3;
+    left: 0;
+    padding: 2rem 0;
+    
+    @media (--tablet) {
+      transform: translateX(0);
+      visibility: visible;
+      position: static;
+      flex: 0 0 20%;
+      padding: 2rem;  
+    }
+    
+    ol {
+      padding-left: 1.7rem;
+      
+      li {
+        font-weight: var(--semibold);
+      }
+    }
+    
+    ol ul {
+      @extend %no-list;
+      
+      li a {
+        display: block;
+        padding: .3rem .25rem;
+        font-weight: normal;
+      }
+    }
+    
+    h3 {
+      margin-top: 1rem;
+    }
+  }
+  
+  &__content {
+    flex: 1 0 100%;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    
+    @media (--tablet) {
+      flex: 0 1 80%;
+      position: static;
+    }
+    
+    &__inner {
+      max-width: 850px;
+      margin: 2rem auto;
+      flex: 0 1 auto;
+    }
+  }
+}
+
+
+/* Style scrollbar for .style-guide__contents */
+.style-guide__contents {
+  &::-webkit-scrollbar {
+      width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 1px color(var(--gramo-white) shade(45%));
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      background: color(var(--gramo-white) shade(10%));
+      -webkit-box-shadow: inset 0 0 1px var(--gramo-white);
+  }
+  &::-webkit-scrollbar-thumb:window-inactive {
+  	background: color(var(--gramo-white) shade(15%));
+  }
+}
+
+
+/* Toggle contents */
+#toggle-contents {
+  visibility: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+label[for=toggle-contents] {
+  display: block;
+  align-items: center;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 3;
+  right: 1rem;
+  top: 1.3rem;
+  color: var(--gramo-white);
+  cursor: pointer;
+  
+  &::before {
+    content: "\e90e";
+    font-family: 'minside-icons';
+    font-size: 1.2rem;
+    margin-right: .5rem;
+  }
+  
+  @media (--tablet) {
+    display: none;
+  }
+}
+
+#toggle-contents:checked + aside {
+  transform: translateX(0);
+  visibility: visible;
+  position: relative;
+  flex: 0 0 100%;
+  
+  @media (--tablet) {
+    transform: none;
+    flex: 0 0 20%; 
+  }
+}
