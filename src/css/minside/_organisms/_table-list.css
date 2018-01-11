@@ -1,13 +1,5 @@
 .table--list {
   
-  tr {
-    border: 1px solid var(--table-border-color);
-    /* collapse top and bottom borders into each other*/
-    &:not(:first-child) {
-      margin-top: -1px;
-    }
-  }
-  
   tr:not([hidden]) {
     /* make <tr> a flex container on mobile */
     @media (--mobile-tablet-only) {
@@ -18,13 +10,14 @@
       margin: 0 -1rem;
     }
   }
-  /* restore default display on desktop */
-  /* @media (--desktop) {
-    display: table-row;
-    border-width: 1px 0;
-    width: auto;
-    margin: 0;
-  } */
+  
+  tr {
+    border: 1px solid var(--table-border-color);
+    /* collapse top and bottom borders into each other*/
+    &:not(:first-child) {
+      margin-top: -1px;
+    }
+  }
 
   tr td {
     border: 0;

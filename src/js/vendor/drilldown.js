@@ -23,6 +23,7 @@
       }
       $(this)
         .stop()
+        .prop('hidden', false)
         .show(options.speed);
     });
   };
@@ -43,6 +44,7 @@
       }
       $(this)
         .stop()
+        .prop('hidden', true)
         .hide(options.speed);
     });
   };
