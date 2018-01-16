@@ -67,7 +67,7 @@
     &__inner {
       max-width: 850px;
       margin: 2rem auto;
-      flex: 0 1 auto;
+      flex: 1 0 auto;
     }
   }
 }
