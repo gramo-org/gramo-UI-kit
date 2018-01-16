@@ -42,6 +42,10 @@
       }
     }
     
+    h2 {
+      margin: 1.2rem 0 0.6rem 0;
+    }
+    
     h3 {
       margin-top: 1rem;
     }
@@ -53,6 +57,7 @@
     padding: 2rem;
     display: flex;
     justify-content: center;
+    overflow: auto;
     
     @media (--tablet) {
       flex: 0 1 80%;

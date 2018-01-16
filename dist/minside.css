@@ -1220,6 +1220,9 @@ _:-ms-input-placeholder, :root .container--branded__heading{
   padding:.3rem .25rem;
   font-weight:normal;
 }
+.style-guide__contents h2{
+  margin:1.2rem 0 0.6rem 0;
+}
 .style-guide__contents h3{
   margin-top:1rem;
 }
@@ -1235,6 +1238,7 @@ _:-ms-input-placeholder, :root .container--branded__heading{
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
+  overflow:auto;
 }
 @media (min-width: 768px){
 
