@@ -833,6 +833,10 @@ p{
   color:inherit;
 }
 
+.text--thin{
+  font-weight:300!important;
+}
+
 .text--normal{
   font-weight:400!important;
   font-style:normal;
