@@ -1256,9 +1256,23 @@ _:-ms-input-placeholder, :root .container--branded__heading{
 .style-guide__content__inner{
   max-width:850px;
   margin:2rem auto;
-  -webkit-flex:1 0 auto;
-  -ms-flex:1 0 auto;
-  flex:1 0 auto;
+  -webkit-flex:0 1 auto;
+  -ms-flex:0 1 auto;
+  flex:0 1 auto;
+}
+@media (min-width: 768px){
+
+  .style-guide__content__inner{
+    -webkit-flex:1 0 auto;
+    -ms-flex:1 0 auto;
+    flex:1 0 auto;
+  }
+}
+.style-guide code{
+  display:inline-block;
+  padding:.5rem 1rem;
+  border:1px solid #d9d9dc;
+  background:#ededed;
 }
 .style-guide__contents::-webkit-scrollbar{
   width:10px;
