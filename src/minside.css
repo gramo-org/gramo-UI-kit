@@ -1271,7 +1271,8 @@ _:-ms-input-placeholder, :root .container--branded__heading{
 .style-guide pre{
   display:inline-block;
   vertical-align:middle;
-  margin:.5rem 1rem .5rem 0;
+  margin:.5rem;
+  line-height:1;
 }
 .style-guide pre + span{
   font-weight:600;
@@ -1279,7 +1280,6 @@ _:-ms-input-placeholder, :root .container--branded__heading{
 .style-guide h1 > pre, .style-guide h2 > pre{
   top:-.35rem;
   position:relative;
-  line-height:1;
 }
 .style-guide code{
   display:inline-block;

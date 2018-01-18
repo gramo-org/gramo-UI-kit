@@ -78,7 +78,8 @@
   pre {
     display: inline-block;
     vertical-align: middle;
-    margin: .5rem 1rem .5rem 0;
+    margin: .5rem;
+    line-height: 1;
     
     & + span {
       font-weight: var(--semibold);
@@ -89,7 +90,6 @@
     & > pre {
       top: -.35rem;
       position: relative;
-      line-height: 1;
     }
   }
   
