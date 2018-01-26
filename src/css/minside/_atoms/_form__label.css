@@ -66,6 +66,13 @@ legend {
   visibility: hidden;
 }
 
+.form__label--removed > span {
+  visibility: hidden;
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
 .form__label--toggle {
   position: absolute;
   right: -0.5rem;

@@ -3332,6 +3332,13 @@ input[type="checkbox"].form__input--toggle-visibility{
   visibility:hidden;
 }
 
+.form__label--removed > span{
+  visibility:hidden;
+  display:block;
+  height:0;
+  overflow:hidden;
+}
+
 .form__label--toggle{
   position:absolute;
   right:-0.5rem;
@@ -4064,9 +4071,6 @@ input[type="checkbox"].form__input--toggle-visibility{
   border:0;
   display:block;
 }
-
-
-
 .ember-power-select-search{
     padding:5px;
 }
@@ -4074,8 +4078,6 @@ input[type="checkbox"].form__input--toggle-visibility{
 .ember-power-select-trigger, .ember-power-select-trigger--active, .ember-power-select-trigger:focus{
     border:1px solid #d9d9dc;
 }
-
-
 
 .ember-power-select-dropdown.ember-basic-dropdown-content--below, .ember-power-select-dropdown.ember-basic-dropdown-content--in-place{
     border-bottom:1px solid #d9d9dc;
@@ -4114,6 +4116,8 @@ input[type="checkbox"].form__input--toggle-visibility{
     padding:1.2rem 0.75rem;
     box-sizing:border-box!important;
 }
+
+
 
 .ember-power-select-options li{
   padding:5px;

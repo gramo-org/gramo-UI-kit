@@ -48,9 +48,6 @@
 
 
 /* Ember power select */
-
-
-
 .ember-power-select-search {
     padding: 5px;
 }
@@ -58,18 +55,6 @@
 .ember-power-select-trigger, .ember-power-select-trigger--active, .ember-power-select-trigger:focus {
     border: 1px solid var(--silver);
 }
-
-
-/* .code-example, .doc-page-nav, .section-selector {
-    margin-bottom: 1rem;
-}
-
-.ember-basic-dropdown-trigger--below.ember-power-select-trigger[aria-expanded=true], .ember-basic-dropdown-trigger--in-place.ember-power-select-trigger[aria-expanded=true] {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-} */
-
-
 
 .ember-power-select-dropdown.ember-basic-dropdown-content--below, .ember-power-select-dropdown.ember-basic-dropdown-content--in-place {
     /* border-top: none; */
@@ -87,17 +72,6 @@
     overflow: hidden;
     color: inherit; */
 }
-
-/* .ember-basic-dropdown-content--left {
-    left: 0;
-}
-
-.ember-basic-dropdown-content {
-    position: absolute;
-    width: auto;
-    z-index: 1000;
-    background-color: #fff;
-} */
 
 .ember-power-select-trigger, .ember-power-select-trigger--active, .ember-power-select-trigger:focus {
     border: 1px solid var(--silver);
@@ -120,10 +94,6 @@
     border: 1px solid var(--silver);
 }
 
-/* .ember-basic-dropdown-trigger[aria-expanded=true] .ember-power-select-status-icon {
-    transform: rotate(180deg);
-} */
-
 .ember-power-select-status-icon {
     /* position: absolute;
     display: inline-block;
@@ -137,10 +107,6 @@
     border-color: color(var(--off-gray) shade(15%)) transparent transparent;
     /* right: 5px; */
   }
-  
-  /* .ember-basic-dropdown-content-wormhole-origin {
-    display: inline;
-} */
 
 .ember-power-select-search-input {
     border: 1px solid var(--silver);
@@ -153,11 +119,7 @@
     box-sizing: border-box!important;
 }
 
-/* .ember-power-select-options[role=listbox] {
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    max-height: 12.25em;
-} */
+
 
 .ember-power-select-options {
     /* list-style: none;
@@ -175,3 +137,34 @@
     background-color: var(--gramo-turkis);
     color: #fff;
 }
+
+/*
+.ember-basic-dropdown-trigger--below.ember-power-select-trigger[aria-expanded=true], .ember-basic-dropdown-trigger--in-place.ember-power-select-trigger[aria-expanded=true] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.ember-basic-dropdown-content--left {
+    left: 0;
+}
+
+.ember-basic-dropdown-content {
+    position: absolute;
+    width: auto;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.ember-basic-dropdown-content-wormhole-origin {
+  display: inline;
+}
+
+.ember-power-select-options[role=listbox] {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  max-height: 12.25em;
+}
+
+/* .ember-basic-dropdown-trigger[aria-expanded=true] .ember-power-select-status-icon {
+    transform: rotate(180deg);
+} */

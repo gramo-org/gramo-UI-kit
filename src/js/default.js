@@ -340,11 +340,19 @@ $(".row--clickable").click(function() {
 
 $('label:contains("Klassisk?") > input[type="checkbox"]').click(function(){
   if ($(this).is(':checked')) {
-      $(this).closest('.row').next('.row').show();  
+      $(this).closest('.row').next('.row').show();
+      $('.link--add--classical').show();  
     } else {
-      $(this).closest('.row').next('.row').hide();
+      $(this).closest('.row').nextAll('.row.hide').hide();
+      $('.link--add--classical').show();
+      $('.link--add--classical').hide(); 
     }
-})
+});
+
+$('.link--add--classical').click(function(e){
+  e.preventDefault();
+  $(this).prev('.row').show();
+});
 
 }); // end document ready
 
