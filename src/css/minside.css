@@ -23,7 +23,6 @@
 @import url('_atoms/_select-menu.css');
 @import url('_atoms/_form__input--stepper.css');
 @import url('_atoms/_button.css');
-@import url('_atoms/_spinner.css');
 
 /*Molecules*/
 @import url('_molecules/_searchable-list.css');
