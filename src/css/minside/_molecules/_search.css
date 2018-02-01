@@ -4,11 +4,23 @@
 
 .search__form {
   justify-content: center;
+  max-width: 500px;
+  margin: 2rem;
+  @media (--tablet) {
+    margin: auto;
+  }
+  
+  .form__label {
+    flex: 1 0 auto;
+    margin: 0;
+  }
   
   .form__input {
     margin-top: 0;
-    flex: 1 1 auto;
-    @media (--tablet) { max-width: 400px; }  
+    flex: 0 1 auto;
+    @media (--tablet) {
+      flex: 1 0 auto;
+    }
   }
   
   .search__submit {
@@ -26,4 +38,40 @@
 
 .search__form--left {
   justify-content: flex-start;
+  margin: 0;
+}
+
+/* Global search with select menu */
+
+.search__form--global {
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+  
+  .form__label {
+    margin: 0;
+  }
+  
+  .form__label:first-child {
+    flex: 0 0 auto;
+    
+    .select {
+      margin: 0;
+      border-right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+  }
+  
+  .form__label:nth-child(2n) {
+    flex: 1 0 auto;
+    
+    .form__input {
+      max-width: none;
+      height: 4.8rem;
+    }
+  }
+  
+  .btn {
+    height: 4.8rem;
+  }
 }
