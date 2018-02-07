@@ -354,6 +354,12 @@ $('.link--add--classical').click(function(e){
   $(this).prev('.row').show();
 });
 
+// $('a:contains("Vis filtere")').click(function(e){
+//   e.preventDefault();
+//   $(this).parent().next('div').toggleClass('hide');
+//   $(this).hasClass('hide') ? $(this).text("Vis filtere") : $(this).text("Skjul filtere");
+// });
+
 }); // end document ready
 
 //Affix page contents to top of viewport

@@ -11,11 +11,11 @@
 
 @font-face {
   font-family: 'minside-icons';
-  src:  url('fonts/minside.eot?pac47j');
-  src:  url('fonts/minside.eot?pac47j#iefix') format('embedded-opentype'),
-    url('fonts/minside.ttf?pac47j') format('truetype'),
-    url('fonts/minside.woff?pac47j') format('woff'),
-    url('fonts/minside.svg?pac47j#icomoon') format('svg');
+  src:  url('fonts/minside.eot?dfconb');
+  src:  url('fonts/minside.eot?dfconb#iefix') format('embedded-opentype'),
+    url('fonts/minside.ttf?dfconb') format('truetype'),
+    url('fonts/minside.woff?dfconb') format('woff'),
+    url('fonts/minside.svg?dfconb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -56,11 +56,25 @@
   color: var(--gramo-red);
 }
 
-.icon--success {
+.icon--success, .icon--green {
   color: var(--gramo-green);
 }
 
+.icon--blue {
+  color: var(--gramo-blue);
+}
+
+.icon--purple {
+  color: var(--gramo-purple);
+}
+
 /* Icons */
+.icon--katalog:before {
+  content: "\e920";
+}
+.icon--kladd:before {
+  content: "\e921";
+}
 .icon--move-down:before {
   content: "\e91e";
 }

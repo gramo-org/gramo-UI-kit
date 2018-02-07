@@ -21,3 +21,66 @@
     @media (--tablet) { right: calc(50% - 1.5rem); }
   }
 }
+
+/* Data types for rows */
+
+tr[data-src] {
+  position: relative;
+}
+
+tr[data-src] > td:first-child {
+  @media (--desktop) {
+    position: relative;
+  }
+  
+  &::before {
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    left: 0rem;
+    margin-left: -0.5rem;
+    font-family: 'minside-icons';
+  }
+  
+  &::after {
+    content: '';
+    width: 5px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+tr[data-src="local"] {
+  background: color(var(--gramo-blue) tint(93%))!important;
+  & > td:first-child::before {
+     content: "\e903";
+     color: var(--gramo-blue);
+  }
+  & > td:first-child::after {
+     background-color: var(--gramo-blue);
+  }
+}
+
+tr[data-src="global"] {
+  background: color(var(--gramo-green) tint(90%))!important;
+  & > td:first-child::before {
+     content: "\e920";
+     color: var(--gramo-green);
+  }
+  & > td:first-child::after {
+     background-color: var(--gramo-green);
+  }
+}
+
+tr[data-src="draft"] {
+  background: color(var(--gramo-purple) tint(97%))!important;
+  & > td:first-child::before {
+     content: "\e921";
+     color: var(--gramo-purple);
+  }
+  & > td:first-child::after {
+     background-color: var(--gramo-purple);
+  }
+}

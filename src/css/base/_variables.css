@@ -37,6 +37,7 @@
 --minside-line-height:                           1.5;
 --minside-font-family:                           "brandon-regular";
 --minside-background-color:                      var(--x-light-gray);
+--data-src-color:                                var(--gramo-blue);
 
 /* Font Weights */
 --thin:                                          300;
