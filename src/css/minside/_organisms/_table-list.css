@@ -1,9 +1,8 @@
 .table--list {
   
-  tr:not([hidden]) {
+  tr {
     /* make <tr> a flex container on mobile */
     @media (--mobile-tablet-only) {
-      display: flex;
       flex-wrap: wrap;
       padding: 1rem;
       width: calc(100% + 2rem);
@@ -11,8 +10,16 @@
     }
   }
   
+  tr:not([hidden]) {
+    @media (--mobile-tablet-only) {
+      display: flex;
+    }
+  }
+  
   tr {
     border: 1px solid var(--table-border-color);
+    border-width: 1px 0;
+    
     /* collapse top and bottom borders into each other*/
     &:not(:first-child) {
       margin-top: -1px;

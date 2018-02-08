@@ -26,6 +26,9 @@
 
 tr[data-src] {
   position: relative;
+  @media (--desktop) {
+    position: static;
+  }
 }
 
 tr[data-src] > td:first-child {
@@ -46,8 +49,9 @@ tr[data-src] > td:first-child {
     content: '';
     width: 5px;
     position: absolute;
-    height: 100%;
+    min-height: 4.8rem; /* force height for ie >=10 */
     top: 0;
+    bottom: 0;
     left: 0;
   }
 }

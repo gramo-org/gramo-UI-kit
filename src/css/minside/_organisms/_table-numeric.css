@@ -3,7 +3,7 @@
     counter-reset: section;
   }
   
-  tbody tr {
+  tr {
     position: relative; /* to enable absolute positioning of the first cell and its children */
     padding-left: 3rem;
     @media (--desktop) {
@@ -32,7 +32,7 @@
   }
   
   /* Row containing Side number */
-  tbody tr.table__row--no-count {
+  tr.table__row--no-count {
     background: none;
     border: 0;
     padding: 2rem 0 .5rem 2rem;
