@@ -2842,6 +2842,7 @@ input[type="text"].search__form__input--large{
   min-height:0;
 }
 .btn--solo{
+  display:block;
   min-width:200px;
   max-width:300px;
   margin:2rem auto 0 auto;

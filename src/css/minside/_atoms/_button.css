@@ -24,6 +24,7 @@
     min-height: 0;
   }
   &--solo {
+    display: block;
     min-width: 200px;
     max-width: 300px;
     margin: 2rem auto 0 auto;

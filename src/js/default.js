@@ -354,6 +354,22 @@ $('.link--add--classical').click(function(e){
   $(this).prev('.row').show();
 });
 
+$('a:contains("mobilnummer")').click(function(){
+  if ($(this).next('.row').hasClass('hide')) {
+      $(this).nextAll(':lt(2)').removeClass('hide');
+      $(this).hide();  
+    } else {
+      $(this).nextAll(':lt(2)').addClass('hide');
+      $(this).show(); 
+    }
+  });
+  
+  $('a:contains("mobilnummer")').next().find('.row__delete a').click(function(){
+    $(this).closest('.row').addClass('hide');
+    $(this).closest('.row').next('.row').addClass('hide');
+    $('a:contains("mobilnummer")').show();
+    });
+
 // $('a:contains("Vis filtere")').click(function(e){
 //   e.preventDefault();
 //   $(this).parent().next('div').toggleClass('hide');

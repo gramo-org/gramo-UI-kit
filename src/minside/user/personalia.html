@@ -109,7 +109,7 @@
                 <fieldset class="form__fieldset form__fieldset--group"> 
                   <legend>Kjønn</legend> 
                   <label class="form__label form__label--inline text--normal">
-                    <input type="radio" name="gender" class="form__input--radio">
+                    <input type="radio" name="gender" class="form__input--radio" checked>
                     <span>Mann</span>
                   </label>
                   <label class="form__label form__label--inline text--normal">
@@ -210,17 +210,42 @@
                       <input type="email" class="form__input">
                     </label>
                     <div class="form__input__errors">
-                      <p class="text--em">Feil epost</p>
+                      <!-- <p class="text--em">Feil epost</p> -->
                     </div>
                   </div>
                 </div><!--end .row-->
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Mobilnummer
-                      <input type="tel" class="form__input">
+                      <input type="tel" value="872 92 489" class="form__input">
                     </label>
                   </div>
                 </div><!--end .row-->
+                <a class="link--no-line link--add">
+                  Legg til alt. mobilnummer
+                </a>
+                <div class="row hide">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Alt. mobilnummer
+                      <input type="tel" value="" class="form__input">
+                    </label>
+                  </div>
+                  <div class="row__delete row__delete--half">
+                    <a class="text--small text--light">
+                      <span id="ember2058" class="icon icon--close"></span>
+                    </a>
+                  </div>
+                </div><!--end .row-->
+                <div class="row hide">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Bruk som kontaktnummer
+                      <select class="select  select--block">
+                        <option value="">872 92 489</option>
+                        <option value="">925 92 462</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
                 <div class="row">
                   <div class="col-xs">
                     <label class="form__label form__label--block">
@@ -281,7 +306,7 @@
                   <button class="btn btn--secondary">Avbryt</button>
                 </div>
                 <div class="col-xs-6 col-sm-3">
-                  <button class="btn btn--primary">Lagre</button>
+                  <a class="btn btn--primary">Lagre</a>
                 </div>
               </section>
             </form>
