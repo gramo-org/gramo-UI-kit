@@ -356,10 +356,10 @@ $('.link--add--classical').click(function(e){
 
 $('a:contains("mobilnummer")').click(function(){
   if ($(this).next('.row').hasClass('hide')) {
-      $(this).nextAll(':lt(2)').removeClass('hide');
+      $(this).next('.row').removeClass('hide');
       $(this).hide();  
     } else {
-      $(this).nextAll(':lt(2)').addClass('hide');
+      $(this).next('.row').addClass('hide');
       $(this).show(); 
     }
   });
