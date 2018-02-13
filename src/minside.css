@@ -6176,7 +6176,7 @@ tr[data-src="draft"] > td:first-child::after{
 }
 .empty-state{
   text-align:center;
-  margin-bottom:1.2rem;
+  margin-bottom:2rem;
 }
 .empty-state:before{
   content:"\e913";
@@ -6185,10 +6185,13 @@ tr[data-src="draft"] > td:first-child::after{
   color:#a5a4ab;
 }
 .empty-state h4{
-  margin-bottom:2.4rem;
+  margin-bottom:1.2rem;
 }
-.empty-state--new:before{
-  content:"\e907";
+.empty-state--partial h4{
+  margin-top:1.2rem;
+}
+.empty-state--partial:before{
+  content:none;
 }
 .drilldown tr[data-level="1"] .table-row-toggle{
   text-align:right;
