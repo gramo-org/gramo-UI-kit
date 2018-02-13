@@ -4890,20 +4890,8 @@ tr[data-src="draft"] > td:first-child::after{
 @media (min-width: 960px){
 
   .table{
-    min-width:700px;
-    width:auto;
-  }
-}
-@media (min-width: 1200px){
-
-  .table{
-    min-width:960px;
-  }
-}
-@media (min-width: 960px){
-
-  .table--fluid{
     min-width:100%;
+    width:auto;
   }
 }
 .table thead td, .table thead th, .table tbody td, .table tbody th, .table tfoot td, .table tfoot th{
@@ -4931,15 +4919,6 @@ tr[data-src="draft"] > td:first-child::after{
   .table thead th:last-child, .table thead td:last-child, .table tbody th:last-child, .table tbody td:last-child, .table tfoot th:last-child, .table tfoot td:last-child{
     padding-right:2rem;
     border-right:1px solid #d9d9dc;
-  }
-}
-.table thead{
-  display:none;
-}
-@media (min-width: 960px){
-
-  .table thead{
-    display:table-header-group;
   }
 }
 .table thead tr{
@@ -4974,11 +4953,14 @@ tr[data-src="draft"] > td:first-child::after{
     margin:0 0 1.2rem 0;
   }
 }
-.table--standard thead{
-  display:table-header-group;
-}
 .table--standard td::before{
   content:none;
+}
+@media (max-width: 960px){
+
+  .table--list thead{
+    display:none;
+  }
 }
 @media (max-width: 960px){
 
@@ -6204,6 +6186,9 @@ tr[data-src="draft"] > td:first-child::after{
 }
 .empty-state h4{
   margin-bottom:2.4rem;
+}
+.empty-state--new:before{
+  content:"\e907";
 }
 .drilldown tr[data-level="1"] .table-row-toggle{
   text-align:right;

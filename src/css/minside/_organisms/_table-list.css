@@ -1,5 +1,11 @@
 .table--list {
   
+  thead {
+    @media (--mobile-tablet-only) {
+      display: none;
+    }
+  }
+  
   tr {
     /* make <tr> a flex container on mobile */
     @media (--mobile-tablet-only) {

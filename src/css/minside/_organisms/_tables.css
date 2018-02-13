@@ -6,13 +6,7 @@
   text-align: left;
   table-layout: fixed;
   @extend %margin-bottom;
-  
-  @media (--desktop) { min-width: 700px; width: auto; }
-  @media (--hd) { min-width: 960px; }
-
-  &--fluid {
-    @media (--desktop) { min-width: 100%; }
-  }
+  @media (--desktop) { min-width: 100%; width: auto; }
   
   thead,
   tbody,
@@ -45,11 +39,6 @@
     }
   }
   thead {
-    display: none;
-    @media (--desktop) {
-      display: table-header-group;
-      
-    }
 
     tr {
       background: var(--table-head-background);
@@ -85,10 +74,6 @@
   @media (--tablet) {
     width: 100%;
     margin: 0 0 1.2rem 0;
-  }
-  
-  thead {
-    display: table-header-group;
   }
   
 /* Remove data-labels */
