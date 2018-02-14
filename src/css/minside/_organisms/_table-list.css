@@ -1,6 +1,6 @@
 .table--list {
   width: auto;
-  margin: 0;
+  margin: 0 0 1.2rem 0;
   
   thead {
     @media (--mobile-tablet-only) {

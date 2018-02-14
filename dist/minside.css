@@ -703,7 +703,7 @@ body, .form__input, .form__input--date, .form__input[type="date"], .form__label{
   line-height:1.5;
 }
 
-p.with-margin, .search__form, .form, .table, .section-header{
+p.with-margin, .search__form, .form, .section-header{
   margin-bottom:1.2rem;
 }
 body{
@@ -4884,7 +4884,7 @@ tr[data-src="draft"] > td:first-child::after{
   border-collapse:collapse;
   border-spacing:0;
   width:calc(100% + 2rem);
-  margin:0 -1rem;
+  margin:0 -1rem 1.2rem -1rem;
   text-align:left;
   table-layout:fixed;
 }
@@ -4946,7 +4946,7 @@ tr[data-src="draft"] > td:first-child::after{
 }
 .table--list{
   width:auto;
-  margin:0;
+  margin:0 0 1.2rem 0;
 }
 @media (max-width: 960px){
 
