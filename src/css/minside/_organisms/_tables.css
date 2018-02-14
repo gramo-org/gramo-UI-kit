@@ -2,11 +2,12 @@
 .table {
   border-collapse: collapse;
   border-spacing: 0;
-  width: 100%;
+  width: calc(100% + 2rem);
+  margin: 0 -1rem;
   text-align: left;
   table-layout: fixed;
   @extend %margin-bottom;
-  @media (--desktop) { min-width: 100%; width: auto; }
+  @media (--desktop) { min-width: 100%; width: auto; margin: 0 0 1.2rem 0; }
   
   thead,
   tbody,
@@ -64,20 +65,4 @@
   text-decoration: none;
   color: var(--gramo-sea-green);
   font-weight: var(--semibold);
-}
-
-
-/* Table standard */
-.table--standard {
-  width: calc(100% + 2rem);
-  margin: 0 -1rem;
-  @media (--tablet) {
-    width: 100%;
-    margin: 0 0 1.2rem 0;
-  }
-  
-/* Remove data-labels */
-  td::before {
-    content: none;
-  }
 }

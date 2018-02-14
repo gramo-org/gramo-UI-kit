@@ -1,4 +1,6 @@
 .table--list {
+  width: auto;
+  margin: 0;
   
   thead {
     @media (--mobile-tablet-only) {

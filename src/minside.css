@@ -4883,7 +4883,8 @@ tr[data-src="draft"] > td:first-child::after{
 .table{
   border-collapse:collapse;
   border-spacing:0;
-  width:100%;
+  width:calc(100% + 2rem);
+  margin:0 -1rem;
   text-align:left;
   table-layout:fixed;
 }
@@ -4892,6 +4893,7 @@ tr[data-src="draft"] > td:first-child::after{
   .table{
     min-width:100%;
     width:auto;
+    margin:0 0 1.2rem 0;
   }
 }
 .table thead td, .table thead th, .table tbody td, .table tbody th, .table tfoot td, .table tfoot th{
@@ -4942,19 +4944,9 @@ tr[data-src="draft"] > td:first-child::after{
   color:#31798d;
   font-weight:600;
 }
-.table--standard{
-  width:calc(100% + 2rem);
-  margin:0 -1rem;
-}
-@media (min-width: 768px){
-
-  .table--standard{
-    width:100%;
-    margin:0 0 1.2rem 0;
-  }
-}
-.table--standard td::before{
-  content:none;
+.table--list{
+  width:auto;
+  margin:0;
 }
 @media (max-width: 960px){
 
