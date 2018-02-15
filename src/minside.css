@@ -1254,7 +1254,7 @@ _:-ms-input-placeholder, :root .container--branded__heading{
   }
 }
 .style-guide__content__inner{
-  max-width:850px;
+  max-width:980px;
   margin:2rem auto;
   -webkit-flex:0 1 auto;
   -ms-flex:0 1 auto;
@@ -1357,6 +1357,17 @@ label[for=toggle-contents]::before{
     -ms-flex:0 0 20%;
     flex:0 0 20%;
   }
+}
+
+.section-header{
+  position:relative;
+}
+
+.view-code__inner{
+  position:absolute;
+  left:0;
+  width:100%;
+  background:#504f56;
 }
 @media print{
   *, *:before, *:after{

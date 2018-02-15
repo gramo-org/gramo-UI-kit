@@ -65,7 +65,7 @@
     }
     
     &__inner {
-      max-width: 850px;
+      max-width: 980px;
       margin: 2rem auto;
       flex: 0 1 auto;
       
@@ -165,5 +165,18 @@ label[for=toggle-contents] {
   @media (--tablet) {
     transform: none;
     flex: 0 0 20%; 
+  }
+}
+
+.section-header {
+  position: relative;
+}
+
+.view-code {
+  &__inner {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: var(--slate-gray);
   }
 }
