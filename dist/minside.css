@@ -5626,13 +5626,13 @@ tr[data-src="draft"] > td:first-child::after{
   font-weight:600;
 }
 
-.list--numbered{
+.box-list{
   background:none;
   padding:0;
   counter-reset:item;
 }
 
-.list--numbered > li{
+.box-list > li{
   background:#f3f3f3;
   border:1px solid #d9d9dc;
   padding:2rem;
@@ -5640,9 +5640,13 @@ tr[data-src="draft"] > td:first-child::after{
   margin-bottom:1.2rem;
 }
 
+.box-list--numbered{
+  counter-reset:item; 
+}
+
 @media (min-width: 960px){
 
-  .list--numbered > li:before{
+  .box-list--numbered li:before{
     counter-increment:item;
     content:counters(item,".") " ";
     position:absolute;
@@ -5652,10 +5656,6 @@ tr[data-src="draft"] > td:first-child::after{
     font-family:"brandon-regular";
     color:#ededed;
   }
-}
-
-.list--plain > li:before{
-  content:none;
 }
 .section__header, .container__header{
   display:block;
