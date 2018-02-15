@@ -1268,6 +1268,9 @@ _:-ms-input-placeholder, :root .container--branded__heading{
     flex:1 0 auto;
   }
 }
+.style-guide__content__inner section{
+  margin-bottom:1.2rem;
+}
 .style-guide pre{
   display:inline-block;
   vertical-align:middle;
