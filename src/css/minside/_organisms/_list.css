@@ -60,7 +60,7 @@
   counter-reset: item; 
 }
 
-.box-list--numbered li {
+.box-list--numbered > li {
 
   @media (--desktop) {
     &:before {

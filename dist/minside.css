@@ -3272,7 +3272,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   }
 }
 
-.form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):not(.radio-group .form__label):not(.search__form--global .form__label):before, legend{
+.form__label:not(.form__label--inline):not(.form__label--required):not(.form__label--for-button):not(.radio-group .form__label):not(.search__form .form__label):before, legend{
   content:'';
   margin-left:.2rem;
 }
@@ -5646,7 +5646,7 @@ tr[data-src="draft"] > td:first-child::after{
 
 @media (min-width: 960px){
 
-  .box-list--numbered li:before{
+  .box-list--numbered > li:before{
     counter-increment:item;
     content:counters(item,".") " ";
     position:absolute;
