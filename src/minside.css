@@ -1371,6 +1371,7 @@ label[for=toggle-contents]::before{
   left:0;
   width:100%;
   background:#504f56;
+  z-index:1;
 }
 @media print{
   *, *:before, *:after{

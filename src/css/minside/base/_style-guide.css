@@ -182,5 +182,6 @@ label[for=toggle-contents] {
     left: 0;
     width: 100%;
     background: var(--slate-gray);
+    z-index: 1;
   }
 }
