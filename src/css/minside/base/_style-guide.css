@@ -183,5 +183,11 @@ label[for=toggle-contents] {
     width: 100%;
     background: var(--slate-gray);
     z-index: 1;
+    
+    code {
+      background: none;
+      padding: 1.5rem 1rem;
+      color: var(--light-gray);
+    }
   }
 }
