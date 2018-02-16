@@ -188,6 +188,7 @@ label[for=toggle-contents] {
       background: none;
       padding: 1.5rem 1rem;
       color: var(--light-gray);
+      border: 0;
     }
   }
 }

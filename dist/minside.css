@@ -1378,6 +1378,7 @@ label[for=toggle-contents]::before{
   background:none;
   padding:1.5rem 1rem;
   color:#ededed;
+  border:0;
 }
 @media print{
   *, *:before, *:after{
