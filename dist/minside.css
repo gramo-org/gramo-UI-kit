@@ -1260,7 +1260,7 @@ _:-ms-input-placeholder, :root .container--branded__heading{
   -ms-flex:0 1 auto;
   flex:0 1 auto;
 }
-@media (min-width: 768px){
+@media (min-width: 960px){
 
   .style-guide__content__inner{
     -webkit-flex:1 0 auto;
