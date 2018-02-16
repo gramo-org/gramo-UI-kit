@@ -354,7 +354,7 @@ td.text--center, .fake-table__row *.text--center{
 }
 
 .v-align--bottom{
-  vertical-align:bottom;
+  vertical-align:bottom!important;
 }
 
 @media (min-width: 768px){
