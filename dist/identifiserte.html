@@ -28,16 +28,80 @@
           <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
         </header>
         <nav class="sidebar__nav">
-          <ul class="vertical__nav">
-            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
-              <ul class="vertical__nav vertical__nav--sub">
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+          <nav class="sidebar__nav">
+            <ul class="vertical__nav">
+              <li class="vertical__nav__item">
+                <a href="/" class="active">Dashbord</a>
+              </li>
+              <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
+                <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
+                <ul class="vertical__nav vertical__nav--sub">
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/playtime-reporting/file-statuses">Innleste filer</a>
+                  </li>
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/playtime-reporting/deviations">Avvik</a>
+                  </li>
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/playtime-reporting/broadcasters">Program admin</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="matching" class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+                <a data-ember-action="" data-ember-action-750="750">Matching</a>
+                <ul class="vertical__nav vertical__nav--sub">
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/matching/identified-playback-group-summaries">Identifiserte</a>
+                  </li>
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/matching/unidentified-playback-groups?postponed=null">Ikke identifiserte</a>
+                  </li>
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/matching/unidentified-playback-groups?postponed=true">Restliste</a>
+                  </li>
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/matching/unreleased-music">Ikke utgitt</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="discography" class="vertical__nav__item vertical__nav__item--has-children">
+                <a data-ember-action="" data-ember-action-854="854">Diskografi</a>
+                <ul class="vertical__nav vertical__nav--sub">
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/discography/file-statuses">Innlest kladd</a>
+                  </li>
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/discography/search?query=%20%20&amp;type=releases">Søk</a>
+                  </li>
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/discography/worklist">Arbeidsliste</a></li>
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/discography/federations">Rettighetshaverorg.</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
+                <a data-ember-action="" data-ember-action-965="965">Min side</a>
+                <ul class="vertical__nav vertical__nav--sub">
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a href="/users/min-side">Brukere</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="vertical__nav__item">
+                <a href="/distribution">Avregning</a>
+              </li>
+              <li class="vertical__nav__item">
+                <a href="/payments">Utbetalinger</a>
+              </li>
+              <li class="vertical__nav__item">
+                <a href="/ipd">IPD</a>
+              </li>
+              <li class="vertical__nav__item">
+                <a href="/users/new">Ny bruker</a>
+              </li>
+            </ul>
+          </nav>
         <aside class="user">
           <img src="img/audun-temp.jpg" class="user__avatar">
           <div class="user__name">Audun Haggernes

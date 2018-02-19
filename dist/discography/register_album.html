@@ -22,6 +22,15 @@
   <script>
   window.onload = window.location.hash = 'tab2';
   </script>
+  <style>
+    input[type="text"].search__form__input--fixed-width.search__form__input--fixed-width {
+      min-width: 400px;
+      flex: 0 1 400px;
+    }
+    .scrollable-area {
+    height: calc(100vh - 13rem);
+  }
+  </style>
 </head>
 <body>
   <div class="site-wrapper">
@@ -33,12 +42,75 @@
         </header>
         <nav class="sidebar__nav">
           <ul class="vertical__nav">
-            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+            <li class="vertical__nav__item">
+              <a href="/" class="active">Dashbord</a>
+            </li>
+            <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
               <ul class="vertical__nav vertical__nav--sub">
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/file-statuses">Innleste filer</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/deviations">Avvik</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/broadcasters">Program admin</a>
+                </li>
               </ul>
+            </li>
+            <li id="matching" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-750="750">Matching</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/identified-playback-group-summaries">Identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=null">Ikke identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=true">Restliste</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unreleased-music">Ikke utgitt</a>
+                </li>
+              </ul>
+            </li>
+            <li id="discography" class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+              <a data-ember-action="" data-ember-action-854="854">Diskografi</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/file-statuses">Innlest kladd</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/search?query=%20%20&amp;type=releases">Søk</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/worklist">Arbeidsliste</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/federations">Rettighetshaverorg.</a>
+                </li>
+              </ul>
+            </li>
+            <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-965="965">Min side</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Brukere</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/distribution">Avregning</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/payments">Utbetalinger</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/ipd">IPD</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/users/new">Ny bruker</a>
             </li>
           </ul>
         </nav>
@@ -76,23 +148,180 @@
               </a>
               <a href="#" alt="Lukk" class="tabs__nav__close"></a>
             </li>
+            <li class="tabs__nav__item">
+              <a href="#performer">
+                <span class="tabs__nav__item__type tabs__nav__item__type--performer">Utøver</span>
+                David Robert Jones / David Bowie
+              </a>
+              <a href="#" alt="Lukk" class="tabs__nav__close"></a>
+            </li>
+            <li class="tabs__nav__item">
+              <a href="#group">
+                <span class="tabs__nav__item__type tabs__nav__item__type--group">Group</span>
+                Tin Machine
+              </a>
+              <a href="#" alt="Lukk" class="tabs__nav__close"></a>
+            </li>
+            <li class="tabs__nav__item">
+              <a href="#label">
+                <span class="tabs__nav__item__type tabs__nav__item__type--label">Label</span>
+                Fysisk Format
+              </a>
+              <a href="#" alt="Lukk" class="tabs__nav__close"></a>
+            </li>
           </ul>
 
           <section id="search" class="tabs__section">
+            <div class="toolbar">
+              <div class="search--with-dropdown">
+                <label class="form__label no-margin--right">
+                  <select class="select select--fluid select--with-search align--vertical-center">
+                    <option>Innspilling</option>
+                    <option>Hovedartist</option>
+                    <option>Album</option>
+                    <option>Gruppe</option>
+                    <option>Utøver</option>
+                  </select>
+                </label>
+                <div class="search">
+                  <form action="" class="search__form search__form--in-toolbar">
+                    <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                    <button class="search__submit"></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
+              </div>
+            </div><!--end .toolbar-->
 
+            <div class="tabs">
+              <ul class='tabs__nav tabs__nav--flexible'>
+                <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger<span class="badge badge--numeric badge--numeric--inverse">2</span></a></li>
+                <li class='tabs__nav__item'><a href="#album">Album<span class="badge badge--numeric">2</span></a></li>
+                <li class='tabs__nav__item'><a href="#tab-3">Utøvere<span class="badge badge--numeric">2</span></a></li>
+                <li class='tabs__nav__item'><a href="#tab-4">Personlige produsenter<span class="badge badge--numeric">2</span></a></li>
+              </ul>
+              <section id="search-results" class="tabs__section">
+                <table class="table table--fluid table--numeric">
+                  <thead>
+                    <tr>
+                      <th>
+                        Tittel
+                      </th>
+                      <th>
+                        Hovedartist
+                      </th>
+                      <th>
+                        Årutgitt
+                      </th>
+                      <th>
+                        Label
+                      </th>
+                      <th>
+                        Tid
+                      </th>
+                      <th colspan="2">
+                        ISRC
+                      </th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td data-label="Tittel">
+                      Aladdin Sane
+                      (1913-1928-197?)
+                    </td>
+                    <td data-label="Hovedartist">
+                      David Bowie, Spiders From Mars
+                    </td>
+                    <td data-label="Årutgitt">
+                      1973
+                    </td>
+                    <td data-label="Label">
+                      RCA
+                    </td>
+                    <td data-label="Tid">
+                      00:33:31
+                    </td>
+                    <td data-label="ISRC">
+                      USJT10300113
+                    </td>
+                    <td class="text--right">
+                      <span class="badge badge--draft">Kladd</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Tittel">
+                      Aladdin Sane
+                      (1913-1928-197?)
+                    </td>
+                    <td data-label="Hovedartist">
+                      David Bowie, Spiders From Mars
+                    </td>
+                    <td data-label="Årutgitt">
+                      1973
+                    </td>
+                    <td data-label="Label">
+                      RCA
+                    </td>
+                    <td data-label="Tid">
+                      00:33:31
+                    </td>
+                    <td data-label="ISRC">
+                      USJT10300113
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Tittel">
+                      Aladdin Sane
+                      (1913-1928-197?)
+                    </td>
+                    <td data-label="Hovedartist">
+                      David Bowie, Spiders From Mars
+                    </td>
+                    <td data-label="Årutgitt">
+                      1973
+                    </td>
+                    <td data-label="Label">
+                      RCA
+                    </td>
+                    <td data-label="Tid">
+                      00:33:31
+                    </td>
+                    <td data-label="ISRC">
+                      USJT10300113
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                      <td data-label="Tittel">
+                        Aladdin Sane
+                        (1913-1928-197?)
+                      </td>
+                      <td data-label="Hovedartist">
+                        David Bowie, Spiders From Mars
+                      </td>
+                      <td data-label="Årutgitt">
+                        1973
+                      </td>
+                      <td data-label="Label">
+                        RCA
+                      </td>
+                      <td data-label="Tid">
+                        00:33:31
+                      </td>
+                      <td data-label="ISRC">
+                        USJT10300113
+                      </td>
+                      <td></td>
+                  </tr>
+                </table><!--/.fake-table-->
+              </section><!--/.tabs__section search-results-->
+            </div><!--/.tabs-->
           </section><!--/.tabs__section-->
 
           <section id="tab2" class="tabs__section tabs__section--outline">
-
-              <div class="container">
-                <ul class="row tabs__section__nav">
-                  <li class="tabs__section__nav__item"><a href="#innspillingsinfo" class="active">Albuminfo</a></li>
-                  <li class="tabs__section__nav__item"><a href="#produsenter">Innspillinger</a></li>
-                  <li class="tabs__section__nav__item"><a href="#utover">Hovedartist</a></li>
-                  <li class="tabs__section__nav__item"><a href="#">Utøvere</a></li>
-                  <li class="tabs__section__nav__item"><a href="#">Label</a></li>
-                </ul>
-              </div>
               <div class="scrollable-area">
                 <header class="infobar infobar--in-tabs no-margin--bottom">
                   <div class="infobar__left">
@@ -104,7 +333,7 @@
                     <h3>David Bowie</h3>
                   </div>
                   <div class="infobar__right">
-                    <img src="http://cps-static.rovicorp.com/3/JPG_500/MI0003/889/MI0003889904.jpg?partner=allrovi.com" alt="Hunky Dory" width="71px" height="71px" style="display:block;" />
+                    <img src="http://cps-static.rovicorp.com/3/JPG_500/MI0003/889/MI0003889904.jpg?partner=allrovi.com" alt="Hunky Dory" width="71px" height="71px" style="display:block; border: 3px solid #fff;" />
                   </div>
                 </header>
                 <section id="innspillingsinfo" class="container container--padded container--is-editing">
@@ -259,7 +488,7 @@
 
                   <div class="section-header">
                     <header>
-                      <h2>Innspillinger <span class="badge badge--secondary">11</span></h2>
+                      <h2>Spor <span class="badge badge--secondary">4</span></h2>
                     </header>
                     <div class="section-header__toolbar">
                       <a href="#" class="link--edit">Rediger</a>
@@ -274,13 +503,7 @@
                       <div class="col-sm-2">Utgivelsesdato</div>
                       <div class="col-sm-4">Katalognummer</div>
                     </div>
-                    <form class="form">
-                      <label class="form__label form__label--inline text--inline">
-                        <span>Antall spor</span>
-                        <input type="number" class="form__input form__input--inline form__input--60">
-                      </label>
-                      <button class="btn btn--inline btn--secondary">ok</button>
-                    </form>
+
                     <h4 class="heading--sub">Side 1
                       <span class="badge badge--numeric badge--numeric--inverse">7</span>
                     </h4>
@@ -382,213 +605,217 @@
                       <div id="ember2510" class="search--in-row ember-view">
                         <form class="search__form no-margin--bottom" data-ember-action="2512">
                           <input id="ember2513" placeholder="Søk..." autocomplete="off" type="text" class="ember-view ember-text-field search__form__input search__form__input--fixed-width">
-                          <button type="submit" class="search__submit"></button>
+                          <button type="submit" class="search__submit" id="search-for-tracks"></button>
                         </form>
                       </div>
                       <div class="col-xs">
                         <div class="col-xs fake-table__cell--action fake-table__cell--absolute">
                           <div class="btn-group">
-                            <button class="btn btn--secondary">Avbryt</a></button>
-                            <button class="btn btn--primary">Oppdater</a></button>
+                            <button class="btn btn--secondary" id="cancel-search-for-tracks">Avbryt</a></button>
                           </div>
                         </div>
                       </div>
 
-                          <table class="table table--fluid table--in-row table--selectable table--with-margin">
-                            <tbody>
-                                <tr class="" data-ember-action="2705">
-                                  <td class="table__cell--truncated" data-label="Navn">
-                                    Anabelle Bruen Sr.
-                                  </td>
-                                  <td class="table__cell--truncated"  data-label="Gruppe">
-                                    Lew Stoltenberg, Destany 1
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    <!---->
-                                  </td>
-                                  <td class="table__cell--truncated" data-label="Instrument">
-                                    JAZZ-HORN
-                                  </td>
-                                  <td class="table__cell--truncated" data-label="Bostedsland">
-                                    CANADA
-                                  </td>
-                                  <td><!----></td>
-                                </tr>
-                                <tr class="" data-ember-action="2706">
-                                  <td class="table__cell--truncated" data-label="Navn">
-                                    Thurman Schneider
-                                  </td>
-                                  <td class="table__cell--truncated"  data-label="Gruppe">
-                                    Tamia Hamill
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    <!---->
-                                  </td>
-                                  <td class="table__cell--truncated" data-label="Instrument">
-                                    KONTRATENOR
-                                  </td>
-                                  <td class="table__cell--truncated" data-label="Bostedsland">
-                                    SOMALIA
-                                  </td>
-                                  <td><!----></td>
-                                </tr>
-                                <tr class="" data-ember-action="2707">
-                                  <td class="table__cell--truncated">
-                                    Jade Kilback
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    Ms. Felix Buckridge, Queenie 1
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    <!---->
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    HOSHU
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    BURKINA FASO/ØVRE VOLTA
-                                  </td>
-                                  <td><!----></td>
-                                </tr>
-                                <tr class="" data-ember-action="2708">
-                                  <td class="table__cell--truncated">
-                                    Janiya Ortiz
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    Jasmin Nitzsche, Lucy 1, Mrs. Arnaldo 2
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    <!---->
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    LYRE
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    JERSEY
-                                  </td>
-                                  <td><!----></td>
-                                </tr>
-                                <tr class="" data-ember-action="2709">
-                                  <td class="table__cell--truncated">
-                                    Dewayne Bogan
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    Chauncey Mante
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    <!---->
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    KEYBOARDS
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    URUGUAY
-                                  </td>
-                                  <td><!----></td>
-                                </tr>
-                                <tr class="" data-ember-action="2710">
-                                  <td class="table__cell--truncated">
-                                    Armani Towne
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    Mrs. Trevion Nikolaus, Muhammad 1
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    <!---->
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    TAROGATO
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    TURKS OG CAICOS ØYENE
-                                  </td>
-                                  <td><!----></td>
-                                </tr>
-                                <tr class="" data-ember-action="2711">
-                                  <td class="table__cell--truncated">
-                                    Karelle Lynch
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    Jaclyn Eichmann
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    <!---->
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    KONTRABASS
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    GRENADA
-                                  </td>
-                                  <td><!----></td>
-                                </tr>
-                                <tr class="" data-ember-action="2712">
-                                  <td class="table__cell--truncated">
-                                    Judy Torp Jr.
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    Marina Wiegand, Lucious 1
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    <!---->
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    SOPRANSAX
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    MAN
-                                  </td>
-                                  <td><!----></td>
-                                </tr>
-                                <tr class="" data-ember-action="2713">
-                                  <td class="table__cell--truncated">
-                                    Pietro Cummerata
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    Penelope Kris, Ms. Mckenzie 1
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    <!---->
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    UD
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    AZERBAIDJAN
-                                  </td>
-                                  <td><!----></td>
-                                </tr>
-                                <tr class="" data-ember-action="2714">
-                                  <td class="table__cell--truncated">
-                                    Alejandrin Stiedemann
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    Millie Morissette, Mrs. Mable 1, Brady 2
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    <!---->
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    TENOR HORN
-                                  </td>
-                                  <td class="table__cell--truncated">
-                                    REUNION
-                                  </td>
-                                  <td><!----></td>
-                                </tr>
-                            </tbody>
-                          </table>
-
-
+                      <table class="table table--fluid table--in-row table--selectable table--with-margin" hidden>
+                        <tbody>
+                            <tr class="" data-ember-action="2705">
+                              <td class="table__cell--truncated" data-label="Navn">
+                                Anabelle Bruen Sr.
+                              </td>
+                              <td class="table__cell--truncated"  data-label="Gruppe">
+                                Lew Stoltenberg, Destany 1
+                              </td>
+                              <td class="table__cell--truncated">
+                                <!---->
+                              </td>
+                              <td class="table__cell--truncated" data-label="Instrument">
+                                JAZZ-HORN
+                              </td>
+                              <td class="table__cell--truncated" data-label="Bostedsland">
+                                CANADA
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                            <tr class="" data-ember-action="2706">
+                              <td class="table__cell--truncated" data-label="Navn">
+                                Thurman Schneider
+                              </td>
+                              <td class="table__cell--truncated"  data-label="Gruppe">
+                                Tamia Hamill
+                              </td>
+                              <td class="table__cell--truncated">
+                                <!---->
+                              </td>
+                              <td class="table__cell--truncated" data-label="Instrument">
+                                KONTRATENOR
+                              </td>
+                              <td class="table__cell--truncated" data-label="Bostedsland">
+                                SOMALIA
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                            <tr class="" data-ember-action="2707">
+                              <td class="table__cell--truncated">
+                                Jade Kilback
+                              </td>
+                              <td class="table__cell--truncated">
+                                Ms. Felix Buckridge, Queenie 1
+                              </td>
+                              <td class="table__cell--truncated">
+                                <!---->
+                              </td>
+                              <td class="table__cell--truncated">
+                                HOSHU
+                              </td>
+                              <td class="table__cell--truncated">
+                                BURKINA FASO/ØVRE VOLTA
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                            <tr class="" data-ember-action="2708">
+                              <td class="table__cell--truncated">
+                                Janiya Ortiz
+                              </td>
+                              <td class="table__cell--truncated">
+                                Jasmin Nitzsche, Lucy 1, Mrs. Arnaldo 2
+                              </td>
+                              <td class="table__cell--truncated">
+                                <!---->
+                              </td>
+                              <td class="table__cell--truncated">
+                                LYRE
+                              </td>
+                              <td class="table__cell--truncated">
+                                JERSEY
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                            <tr class="" data-ember-action="2709">
+                              <td class="table__cell--truncated">
+                                Dewayne Bogan
+                              </td>
+                              <td class="table__cell--truncated">
+                                Chauncey Mante
+                              </td>
+                              <td class="table__cell--truncated">
+                                <!---->
+                              </td>
+                              <td class="table__cell--truncated">
+                                KEYBOARDS
+                              </td>
+                              <td class="table__cell--truncated">
+                                URUGUAY
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                            <tr class="" data-ember-action="2710">
+                              <td class="table__cell--truncated">
+                                Armani Towne
+                              </td>
+                              <td class="table__cell--truncated">
+                                Mrs. Trevion Nikolaus, Muhammad 1
+                              </td>
+                              <td class="table__cell--truncated">
+                                <!---->
+                              </td>
+                              <td class="table__cell--truncated">
+                                TAROGATO
+                              </td>
+                              <td class="table__cell--truncated">
+                                TURKS OG CAICOS ØYENE
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                            <tr class="" data-ember-action="2711">
+                              <td class="table__cell--truncated">
+                                Karelle Lynch
+                              </td>
+                              <td class="table__cell--truncated">
+                                Jaclyn Eichmann
+                              </td>
+                              <td class="table__cell--truncated">
+                                <!---->
+                              </td>
+                              <td class="table__cell--truncated">
+                                KONTRABASS
+                              </td>
+                              <td class="table__cell--truncated">
+                                GRENADA
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                            <tr class="" data-ember-action="2712">
+                              <td class="table__cell--truncated">
+                                Judy Torp Jr.
+                              </td>
+                              <td class="table__cell--truncated">
+                                Marina Wiegand, Lucious 1
+                              </td>
+                              <td class="table__cell--truncated">
+                                <!---->
+                              </td>
+                              <td class="table__cell--truncated">
+                                SOPRANSAX
+                              </td>
+                              <td class="table__cell--truncated">
+                                MAN
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                            <tr class="" data-ember-action="2713">
+                              <td class="table__cell--truncated">
+                                Pietro Cummerata
+                              </td>
+                              <td class="table__cell--truncated">
+                                Penelope Kris, Ms. Mckenzie 1
+                              </td>
+                              <td class="table__cell--truncated">
+                                <!---->
+                              </td>
+                              <td class="table__cell--truncated">
+                                UD
+                              </td>
+                              <td class="table__cell--truncated">
+                                AZERBAIDJAN
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                            <tr class="" data-ember-action="2714">
+                              <td class="table__cell--truncated">
+                                Alejandrin Stiedemann
+                              </td>
+                              <td class="table__cell--truncated">
+                                Millie Morissette, Mrs. Mable 1, Brady 2
+                              </td>
+                              <td class="table__cell--truncated">
+                                <!---->
+                              </td>
+                              <td class="table__cell--truncated">
+                                TENOR HORN
+                              </td>
+                              <td class="table__cell--truncated">
+                                REUNION
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                        </tbody>
+                      </table>
                     </li><!--end .fake-table__row-->
                   </ol><!--end .fake-table-->
                   <div class="form__section--action form__section--action--padded">
                     <a class="link--no-line link--inline">Legg til ny side</a>
                     <a class="link--no-line link--inline">Legg til ny spor</a>
+                    <!-- <form class="form">
+                      <label class="form__label form__label--inline text--inline">
+                        <span>Antall spor</span>
+                        <input type="number" class="form__input form__input--inline form__input--60">
+                      </label>
+                      <button class="btn btn--inline btn--secondary">ok</button>
+                    </form> -->
                   </div>
                 </section>
-                <hr class="horizontal-rule horizontal-rule--dashed">
-                <section id="utover" class="container container--padded">
+                <!-- <hr class="horizontal-rule horizontal-rule--dashed"> -->
+                <!-- <section id="utover" class="container container--padded">
 
                   <div class="section-header">
                     <header>
@@ -697,7 +924,7 @@
                       </div>
                     </div>
                   </form>
-                </section>
+                </section> -->
               </div><!-- end /.scrollable-area -->
           </section><!--end /.tabs__section-->
         </div><!--end /.tabs-->
@@ -709,6 +936,18 @@
 
 <script src="../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../js/default.js"></script>
+<script>
+$('#search-for-tracks').click(function(e){
+  e.preventDefault();
+  $(this).closest('li').find('table').prop('hidden', function(index, attr) {
+    return attr == '' ? 'hidden' : '';
+  });
+});
 
+$('#cancel-search-for-tracks').click(function(e){
+  e.preventDefault();
+  $(this).closest('li').find('table').prop('hidden', true);
+});
+</script>
 </body>
 </html>
