@@ -1,4 +1,5 @@
 .table--list {
+  min-width: 100%;
   width: auto;
   margin: 0 0 1.2rem 0;
   
