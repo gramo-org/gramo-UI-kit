@@ -222,15 +222,17 @@ label[for=toggle-contents] {
     border: 0;
   }
   
-  tbody > tr {
-    background: none;
-  }
-  
-  td:first-child {
-    border-left: 0;
-  }
-  
-  td:last-child {
-    border-right: 0;
+  tbody {
+    & > tr {
+      background: none;
+    }
+    
+    td:first-child {
+      border-left: 0;
+    }
+    
+    td:last-child {
+      border-right: 0;
+    }
   }
 }
