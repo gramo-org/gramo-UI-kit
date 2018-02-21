@@ -189,6 +189,7 @@ label[for=toggle-contents] {
       padding: 1.5rem 1rem;
       color: var(--light-gray);
       border: 0;
+      font-size: 1.4rem;
     }
   }
 }
@@ -200,5 +201,12 @@ label[for=toggle-contents] {
   
   & > section {
     flex: 0 1 25%;
+    text-align: center;
+  }
+  
+  code {
+    max-width: 250px;
+    white-space: pre-line;
+    font-size: 1.3rem;
   }
 }

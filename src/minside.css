@@ -1379,6 +1379,7 @@ label[for=toggle-contents]::before{
   padding:1.5rem 1rem;
   color:#ededed;
   border:0;
+  font-size:1.4rem;
 }
 
 .icon-grid{
@@ -1397,6 +1398,13 @@ label[for=toggle-contents]::before{
   -webkit-flex:0 1 25%;
   -ms-flex:0 1 25%;
   flex:0 1 25%;
+  text-align:center;
+}
+
+.icon-grid code{
+  max-width:250px;
+  white-space:pre-line;
+  font-size:1.3rem;
 }
 @media print{
   *, *:before, *:after{
