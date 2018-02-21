@@ -1380,6 +1380,24 @@ label[for=toggle-contents]::before{
   color:#ededed;
   border:0;
 }
+
+.icon-grid{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-flex-wrap:wrap;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+}
+
+.icon-grid > section{
+  -webkit-flex:0 1 25%;
+  -ms-flex:0 1 25%;
+  flex:0 1 25%;
+}
 @media print{
   *, *:before, *:after{
   background:transparent;

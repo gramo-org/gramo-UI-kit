@@ -192,3 +192,13 @@ label[for=toggle-contents] {
     }
   }
 }
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  & > section {
+    flex: 0 1 25%;
+  }
+}
