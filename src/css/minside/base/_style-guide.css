@@ -214,25 +214,3 @@ label[for=toggle-contents] {
     font-size: 3rem;
   }
 }
-
-.table--simple {
-  min-width: 0;
-  
-  th {
-    border: 0;
-  }
-  
-  tbody {
-    & > tr {
-      background: none;
-    }
-    
-    td:first-child {
-      border-left: 0;
-    }
-    
-    td:last-child {
-      border-right: 0;
-    }
-  }
-}
