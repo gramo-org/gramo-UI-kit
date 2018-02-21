@@ -102,6 +102,7 @@
     padding: .5rem 1rem;
     border: 1px solid var(--silver);
     background: var(--light-gray);
+    font-size: 1.4rem;
   }
 }
 
@@ -189,7 +190,6 @@ label[for=toggle-contents] {
       padding: 1.5rem 1rem;
       color: var(--light-gray);
       border: 0;
-      font-size: 1.4rem;
     }
   }
 }
@@ -212,5 +212,25 @@ label[for=toggle-contents] {
   
   .icon::before {
     font-size: 3rem;
+  }
+}
+
+.table--simple {
+  min-width: 0;
+  
+  th {
+    border: 0;
+  }
+  
+  tbody > tr {
+    background: none;
+  }
+  
+  td:first-child {
+    border-left: 0;
+  }
+  
+  td:last-child {
+    border-right: 0;
   }
 }

@@ -1289,6 +1289,7 @@ _:-ms-input-placeholder, :root .container--branded__heading{
   padding:.5rem 1rem;
   border:1px solid #d9d9dc;
   background:#ededed;
+  font-size:1.4rem;
 }
 .style-guide__contents::-webkit-scrollbar{
   width:10px;
@@ -1379,7 +1380,6 @@ label[for=toggle-contents]::before{
   padding:1.5rem 1rem;
   color:#ededed;
   border:0;
-  font-size:1.4rem;
 }
 
 .icon-grid{
@@ -1409,6 +1409,26 @@ label[for=toggle-contents]::before{
 
 .icon-grid .icon::before{
   font-size:3rem;
+}
+
+.table--simple{
+  min-width:0;
+}
+
+.table--simple th{
+  border:0;
+}
+
+.table--simple tbody > tr{
+  background:none;
+}
+
+.table--simple td:first-child{
+  border-left:0;
+}
+
+.table--simple td:last-child{
+  border-right:0;
 }
 @media print{
   *, *:before, *:after{
