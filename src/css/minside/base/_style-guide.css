@@ -209,4 +209,8 @@ label[for=toggle-contents] {
     white-space: pre-line;
     font-size: 1.3rem;
   }
+  
+  .icon {
+    font-size: 3rem;
+  }
 }
