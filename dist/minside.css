@@ -2558,7 +2558,7 @@ input[type="text"].search__form__input--large{
   font-style:normal;
 }
 
-[class^="icon-"], [class*=" icon-"]{
+[class^="icon--"], [class*=" icon--"]{
   font-family:'minside-icons' !important;
   speak:none;
   font-style:normal;
