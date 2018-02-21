@@ -1407,7 +1407,7 @@ label[for=toggle-contents]::before{
   font-size:1.3rem;
 }
 
-.icon-grid .icon{
+.icon-grid .icon::before{
   font-size:3rem;
 }
 @media print{

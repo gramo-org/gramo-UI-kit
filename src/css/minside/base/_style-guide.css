@@ -210,7 +210,7 @@ label[for=toggle-contents] {
     font-size: 1.3rem;
   }
   
-  .icon {
+  .icon::before {
     font-size: 3rem;
   }
 }
