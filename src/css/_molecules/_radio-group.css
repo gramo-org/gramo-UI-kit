@@ -63,9 +63,14 @@
   input:checked ~ span {
     color: var(--gramo-white);
   }
+  
+  input:checked ~ .check {
+    border: 1px solid var(--gramo-blue);
+  }
 
   input:checked ~ .check::before {
     background: var(--gramo-blue);
+    border-radius: 0;
   }
 
   input[disabled] ~ span {
@@ -77,4 +82,27 @@
   display: inline-flex;
   justify-content: flex-start;
   margin-left: -1.4rem;
+}
+
+/* for pending state */
+.form__label.is-added .check {
+  border: 1px solid var(--gramo-green);
+  &::before {
+    background: var(--gramo-green);
+    border-radius: 0;
+  }
+}
+
+.form__label.is-deleted .check {
+  border: 1px solid var(--slate-gray);
+  &::before {
+    background: var(--slate-gray);
+    border-radius: 0;
+  }
+}
+
+.form__label.is-added input ~ span,
+.form__label.is-deleted input ~ span {
+  opacity: 1;
+  color: var(--gramo-white);
 }

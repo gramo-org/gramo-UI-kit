@@ -1,12 +1,20 @@
 .radio-group {
+  display: flex;
   justify-content: flex-start;
   margin-top: .6rem;
+  
+  input {
+    position: absolute;
+    visibility: hidden;
+    margin: 0;
+  }
   
   label, .check, .check:before {
     width: 4rem;
     height: 4rem;
     font-size: 1.8rem;
   }
+
   
   .form__label {
     background: var(--light-gray);
@@ -14,14 +22,43 @@
     margin: 0 1rem 0 0;
     display: flex;
     justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.25s linear;
+    text-align: center;
+    padding-top: .6rem;
   }
+
   .check {
     border: 0;
+    display: block;
+    position: absolute;
+    border-radius: 2px;
+    height: 3rem;
+    width: 3rem;
+    top: 0;
+    left: 0;
+  	z-index: -1;
+  	transition: border .25s linear;
   }
+  
+  .check::before {
+    display: block;
+    position: absolute;
+  	content: '';
+  	transition: background 0.25s linear;
+    border-radius: 2px;
+  }
+  
   input ~ span, input:checked ~ span {
     color: var(--slate-gray);
   }
   input:checked ~ .check::before {
     background: var(--gramo-turkis);
+  }
+  
+  input[disabled] ~ span {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 }

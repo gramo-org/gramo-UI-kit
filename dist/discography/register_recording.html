@@ -8,10 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="img/favicon.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link rel="shortcut icon" href="/img/favicon_prod.ico">
 
   <!-- Select 2 -searchable select box -->
   <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
@@ -33,12 +30,75 @@
         </header>
         <nav class="sidebar__nav">
           <ul class="vertical__nav">
-            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+            <li class="vertical__nav__item">
+              <a href="/" class="active">Dashbord</a>
+            </li>
+            <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
               <ul class="vertical__nav vertical__nav--sub">
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/file-statuses">Innleste filer</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/deviations">Avvik</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/broadcasters">Program admin</a>
+                </li>
               </ul>
+            </li>
+            <li id="matching" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-750="750">Matching</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/identified-playback-group-summaries">Identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=null">Ikke identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=true">Restliste</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unreleased-music">Ikke utgitt</a>
+                </li>
+              </ul>
+            </li>
+            <li id="discography" class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+              <a data-ember-action="" data-ember-action-854="854">Diskografi</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/file-statuses">Innlest kladd</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/search?query=%20%20&amp;type=releases">Søk</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/worklist">Arbeidsliste</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/federations">Rettighetshaverorg.</a>
+                </li>
+              </ul>
+            </li>
+            <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-965="965">Min side</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Brukere</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/distribution">Avregning</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/payments">Utbetalinger</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/ipd">IPD</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/users/new">Ny bruker</a>
             </li>
           </ul>
         </nav>
@@ -84,12 +144,12 @@
               <div class="search--with-dropdown">
                 <label class="form__label no-margin--right">
                   <select class="select select--fluid select--with-search align--vertical-center">
-                    <option>Søktype</option>
-                    <option>Hovedartist</option>
-                    <option>Album</option>
                     <option>Innspilling</option>
+                    <option>Utgivelse</option>
+                    <option>Person</option>
+                    <option>Organisasjon</option>
                     <option>Gruppe</option>
-                    <option>Utøver</option>
+                    <option>Label</option>
                   </select>
                 </label>
                 <div class="search">
@@ -258,7 +318,7 @@
                   <form class="form">
                     <fieldset class="form__fieldset">
                       <div class="form__field">
-                        <div class="ember-view">
+                        <!-- <div class="ember-view">
                           <label class="form__label form__label--required has-error">
                             <span>Hovedartist</span>
                             <input type="text" value="David Bowie" class="form__input form__input--300" disabled>
@@ -268,6 +328,12 @@
                               må fylles ut
                             </p>
                           </div>
+                        </div> -->
+                        <div class="ember-view">
+                          <label class="form__label form__label--required">
+                            <span>Hovedartist</span>
+                            <input type="text" value="David Bowie" class="form__input form__input--300" disabled>
+                          </label>
                         </div>
                       </div><!--end .row-->
                       <div class="form__field">
@@ -279,7 +345,7 @@
                           <a href="#" class="link--no-line">Legg til alt. tittel</a>
                         </div>
                       </div>
-                      <div class="form__field">
+                      <!-- <div class="form__field">
                         <div class="ember-view">
                           <label class="form__label has-error">
                             <span>Alt. Tittel</span>
@@ -297,7 +363,7 @@
                         <div class="form__field__action">
                           <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                         </div>
-                      </div>
+                      </div> -->
                       <div class="form__field">
                         <label class="form__label">
                           <span>Varighet</span>
@@ -310,7 +376,7 @@
                           <input type="checkbox" class="form__input form__input--checkbox" disabled>
                         </label>
                       </div>
-                      <div class="form__field">
+                      <!-- <div class="form__field">
                         <label class="form__label form__label--required">
                           <span>Komponist</span>
                           <div class="searchable-list searchable-list form__input  form__input--300">
@@ -325,7 +391,7 @@
                         <div class="form__field__action">
                           <a class="link--no-line">Legg til komponist</a>
                         </div>
-                      </div>
+                      </div> -->
                       <div class="form__field">
                         <label class="form__label">
                           <span>IRSC</span>
@@ -404,714 +470,578 @@
                 <section id="producers" class="container container--padded">
                   <div class="section-header">
                     <header>
-                      <h2>Eierskap<span class="badge badge--secondary">3</span>
-                      </h2>
+                      <h2>Eierskap<span class="badge badge--secondary">1</span></h2>
                     </header>
                   </div>
-                  <a href="#">Vis alle</a>
-
-                  <div>
-                    <div class="form__section--action">
-                      <a class="link--no-line">Legg til eierskap</a>
+                  
+                  <div class="form__fieldset form__fieldset--group pending pending--added">
+                    <span class="pending__meta">Lagt til av: Morten Harkett den 12.02.2018</span>
+                    <header class="row row--spaced">
+                      <div class="col">
+                        <span class="text--bold">Fra:</span>
+                        06.07.2018
+                      </div>
+                      <div class="col">
+                        <div class="ember-view">
+                          <label class="form__label">
+                            <span class="text--bold">
+                              Til:
+                            </span>
+                            -
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xs col--no-flex text--right">
+                        <div id="ember4163" class="section-header__toolbar ember-view">
+                          <div id="ember4164" class="ember-view">
+                            <button type="secondary" id="ember5320" class="async-button btn default btn--secondary btn--small ember-view">
+                              Avslå
+                            </button>
+                            <button type="primary" id="ember5325" class="async-button btn default btn--primary btn--small ember-view">
+                              Godkjenn
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </header>
+                    <div class="row">
+                      <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
+                        Produsentnavn
+                      </div>
+                      <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
+                        Produsentland
+                      </div>
+                      <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
+                        % Andel
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-lg-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentnavn</span>
+                        </label>
+                        <a href="#" id="ember4106" class="ember-view">Warner Music Norway AS</a></div>
+                      <div class="col-xs-12 col-sm-4 col-lg-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentland</span>
+                          <input type="text" disabled="" value="NORGE" id="ember4111" class="ember-text-field form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2 col-lg-1">
+                        <label class="form__label form__label--block form__label--hidden"><span>% Andel</span>
+                          <input type="text" disabled="" value="100%" id="ember4116" class="ember-text-field form__input form__input--block">
+                        </label>
+                      </div>
                     </div>
                   </div>
-                  <form class="form">
-                    <fieldset class="form__fieldset form__fieldset--group form__fieldset--is-editing">
-                      <h3>Kopiert fra label</h3>
-                      <header class="row text--medium">
-                        <div class="col col--for-dates align--bottom">
-                          <span class="text--bold">Fra:</span> 2005-01-11
-                        </div>
-                        <div class="col col--for-dates align--bottom">
-                          <span class="text--bold">til:</span> 2006-01-01
-                        </div>
-                        <div class="col-xs col--no-flex text--right">
-                          <button href="#" class="btn btn--secondary">Avbryt</button>
-                          <a href="#" class="btn btn--primary">Lagre</a>
-                        </div>
-                      </header>
-                      <hr class="horizontal-rule horizontal-rule--dashed horizontal-rule--spacer">
-                      <div class="row row--spaced">
-                        <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
-                          Produsentsnavn
-                        </div>
-                        <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
-                          Territorie
-                        </div>
-                        <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
-                          % Andel
-                        </div>
+                  
+                  <div class="form__fieldset form__fieldset--group">
+                    <header class="row row--spaced">
+                      <div class="col">
+                        <span class="text--bold">Fra:</span>
+                        06.07.2004
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-5 col-lg-3">
-                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                            <input type="text" value="Kasper Carlsen" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-lg-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                            <input type="text" value="Worldwide" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-lg-1">
-                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                            <input type="text" value="100%" class="form__input form__input--block">
+                      <div class="col">
+                        <div class="ember-view">
+                          <label class="form__label">
+                            <span class="text--bold">
+                              Til:
+                            </span>
+                            -
                           </label>
                         </div>
                       </div>
-
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-5 col-lg-3">
-                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                            <input type="text" value="Lucas Carlsen" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-lg-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                            <input type="text" value="Worldwide" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-lg-1">
-                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                            <input type="text" value="100%" class="form__input form__input--block">
-                          </label>
+                      <div class="col-xs col--no-flex text--right">
+                        <div id="ember4083" class="section-header__toolbar">
+                          <div id="ember4084" class="ember-view">
+                            <a class="link--edit" data-ember-action="" data-ember-action-4308="4308">rediger</a>
+                          </div>
                         </div>
                       </div>
-                    </fieldset>
-                  </form>
-
-                  <div>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>Navn på label</th>
-                          <th>Fra</th>
-                          <th>Til</th>
-                          <th>Eiere</th>
-                          <th>Land</th>
-                          <th>Prosentandel</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr data-level="1" class="dd-close">
-                          <td>Tull</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td>NORGE</td>
-                          <td></td>
-                          <td>
-                            <button class="btn btn--secondary">Kopier eierskap</button>
-                          </td>
-                        </tr>
-                        <tr data-level="2">
-                          <td></td>
-                          <td>2005-01-11</td>
-                          <td>2006-01-01</td>
-                          <td>Kasper Carlsen</td>
-                          <td>NORGE</td>
-                          <td>100</td>
-                          <td></td>
-                        </tr>
-                        <tr data-level="1" class="dd-close">
-                          <td>Tullelabel2</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td>NORGE</td>
-                          <td></td>
-                          <td>
-                            <button class="btn btn--secondary">Kopier eierskap</button>
-                          </td>
-                        </tr>
-                        <tr data-level="2">
-                          <td></td>
-                          <td>2007-01-01</td>
-                          <td>2008-01-01</td>
-                          <td>Lucas Carlsen</td>
-                          <td>NORGE</td>
-                          <td>100</td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <form class="form">
-                    <fieldset class="form__fieldset form__fieldset--group">
-                      <header class="row text--medium">
-                        <div class="col">
-                          <span class="text--bold">Fra:</span> 27.11.2015
-                        </div>
-                        <div class="col">
-                          <span class="text--bold">til:</span> 31.12.2015
-                        </div>
-                        <div class="col-xs col--no-flex text--right">
-                          <a href="#" class="link--edit">Rediger</a>
-                        </div>
-                      </header>
-                      <div class="row">
-                        <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
-                          Produsentsnavn
-                        </div>
-                        <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
-                          Territorie
-                        </div>
-                        <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
-                          % Andel
-                        </div>
+                    </header>
+                    <div class="row">
+                      <div class="col-sm-5 col-lg-3 hidden-on-mobile text--medium text--bold">
+                        Produsentnavn
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-5 col-lg-3">
-                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                            <input type="text" value="RCA UK" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-lg-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                            <input type="text" value="Worldwide" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-lg-1">
-                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                            <input type="text" value="50%" class="form__input form__input--block">
-                          </label>
-                        </div>
+                      <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
+                        Produsentland
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-5 col-lg-3">
-                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                            <input type="text" value="EMI RECORDED MUSIC NORWAY" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-lg-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                            <input type="text" value="REGIONAL +" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-lg-1">
-                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                            <input type="text" value="30%" class="form__input form__input--block">
-                          </label>
-                        </div>
+                      <div class="col-sm-3 col-lg-1 hidden-on-mobile text--medium text--bold">
+                        % Andel
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-5 col-lg-3">
-                          <label class="form__label form__label--block form__label--hidden"><span>Produsentsnavn</span>
-                            <input type="text" value="UKJENT" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-lg-2">
-                          <label class="form__label form__label--block form__label--hidden"><span>Territorie</span>
-                            <input type="text" value="-" class="form__input form__input--block">
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-lg-1">
-                          <label class="form__label form__label--block form__label--hidden"><span>Prosentandel</span>
-                            <input type="text" value="20%" class="form__input form__input--block">
-                          </label>
-                        </div>
-                      </div>
-                    </fieldset>
-                    <div class="form__section--action">
-                      <a class="link--no-line link--inline">Legg til produsent</a>
                     </div>
-                  </form>
-
-                  <div class="toolbar toolbar--padded block--no-flex">
-                    <h4 class="heading--sub">1. Velg dato rettigheter gjelder for</h4>
-                    <form class="form">
-                      <label class="form__label form__label--date">
-                        Fra
-                        <input type="date" class="form__input from-deviation">
-                      </label>
-                      <label class="form__label form__label--date">
-                        Til
-                        <input type="date" class="form__input to-deviation">
-                      </label>
-                    </form>
-                    <h4 class="heading--sub">2. Velg produsent</h4>
-                    <div class="heading--sub">
-                      <span class="text--bold">Søk etter <span class="text--lower">produsent</span></span>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-lg-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentnavn</span>
+                        </label>
+                        <a href="#" id="ember4106" class="ember-view">Joakim Finstad</a></div>
+                      <div class="col-xs-12 col-sm-4 col-lg-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentland</span>
+                          <input type="text" disabled="" id="ember4111" class="ember-text-field form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2 col-lg-1">
+                        <label class="form__label form__label--block form__label--hidden"><span>% Andel</span>
+                          <input type="text" disabled="" id="ember4116" class="ember-text-field form__input form__input--block">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-lg-3">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentnavn</span>
+                        </label>
+                        <a href="#" id="ember4121" class="ember-view">Madeleine Thoresen
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-lg-2">
+                        <label class="form__label form__label--block form__label--hidden"><span>Produsentland</span>
+                          <input type="text" disabled="" id="ember4126" class="ember-text-field form__input form__input--block">
+                        </label>
+                      </div>
+                      <div class="col-xs-12 col-sm-2 col-lg-1">
+                        <label class="form__label form__label--block form__label--hidden"><span>% Andel</span>
+                          <input type="text" disabled="" id="ember4131" class="ember-text-field form__input form__input--block">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="ember4132" class="ember-view">
+                    <div class="form__section--action">
+                      <a class="link--no-line" data-ember-action="" data-ember-action-4133="4133">Legg til eierskap</a>
+                    </div>
+                  </div>
+                  
+                  <div id="ember4132" class="ember-view" hidden>
+                    <div class="toolbar toolbar--padded block--no-flex">
+                      <h4 class="heading--sub">1. Velg dato rettigheter gjelder for</h4>
+                      <div id="ember4355" class="input--inline ember-view">
+                        <label class="form__label ">
+                          <span>Fra</span>
+                          <input type="date" id="ember4356" class="form__input ember-text-field ember-view">
+                        </label>
+                        <div id="ember4357" class="form__input__errors ember-view"><!----></div>
+                      </div>
+                      <div id="ember4364" class="input--inline ember-view">
+                        <label class="form__label ">
+                          <span>Til</span>
+                          <input type="date" id="ember4365" class="form__input ember-text-field ember-view">
+                        </label>
+                        <div id="ember4366" class="form__input__errors ember-view"><!----></div>
+                      </div>
+                      <h4 class="heading--sub">2. Velg produsent</h4>
+                      <div class="heading--sub">
+                        <span class="text--bold">Søk etter <span class="text--lower">produsent</span></span>
                         <span class="break--inline"></span>eller
                         <span class="break--inline"></span>
-                        <a class="link--no-line">Legg til ukjent(e) produsent(er)</a>
-                    </div>
-                    <form action="" class="search__form">
-                      <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
-                      <button class="search__submit"></button>
-                    </form>
-                    <table class="table table--fluid table--with-margin">
-                      <thead>
-                        <tr>
-                          <th>Produsentnavn</th>
-                          <th>Territorie</th>
-                          <th>% Andel</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td data-label="Produsentnavn">EMI Musikk Norway</td>
-                          <td data-label="Territorie">Regional +</td>
-                          <td data-label="% Andel">30%</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div><!--/ .toolbar-->
+                        <a class="link--no-line" data-ember-action="" data-ember-action-4383="4383">Legg til ukjent(e) produsent(er)</a>
+                      </div>
+                      <div id="ember4392" class="ember-view">
+                        <form class="search__form " data-ember-action="" data-ember-action-4393="4393">
+                          <input type="text" autocomplete="off" placeholder="Søk..." id="ember4398" class="ember-text-field search__form__input search__form__input--fixed-width ember-view" data-com.agilebits.onepassword.user-edited="yes">
+                          <button type="submit" id="ember4399" class="search__submit ember-view"></button>
+                        </form>
+                        <table class="table table--fluid table--selectable ">
+                          <thead>
+                            <tr>
+                              <th>Navn</th>
+                              <th>Statsborgerskap</th>
+                              <th><!--already-selected--></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="" data-ember-action="" data-ember-action-4442="4442">
+                              <td class="table__cell--truncated">
+                                Joakim Finstad
+                              </td>
+                              <td class="table__cell--truncated">
+                                
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                            <tr class="" data-ember-action="" data-ember-action-4444="4444">
+                              <td class="table__cell--truncated">
+                                Joakim Finstad
+                              </td>
+                              <td class="table__cell--truncated">
+                                
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                            <tr class="" data-ember-action="" data-ember-action-4446="4446">
+                              <td class="table__cell--truncated">
+                                Carlsen, Pettersen og Finstad
+                              </td>
+                              <td class="table__cell--truncated">
+                                NORGE
+                              </td>
+                              <td><!----></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="form__section--action">
+                        <button id="ember4404" class="btn btn--secondary ember-view">Avbryt</button>
+                        <button type="primary" disabled="" id="ember4409" class="async-button btn default btn--primary ember-view">Lagre</button>
+                      </div>
+                    </div><!--end .toolbar-->
+                  </div>
+                  
+                  <button type="secondary" disabled="" id="ember4138" class="async-button btn default btn--secondary">
+                    Se eierskap fra tilknyttede album
+                  </button>
                 </section>
+                
                 <hr class="horizontal-rule horizontal-rule--dashed">
-                <section id="utover" class="container container--padded">
-                  <div class="section-header section-header--with-toggle">
+                <section id="performers" class="container container--padded container--is-editing ember-view">
+                  <div id="ember4145" class="section-header ember-view">
                     <header>
-                      <h2>Utøvere <span class="badge badge--secondary">3</span></h2>
+                      <h2>Utøvere
+                        <span id="ember4150" class="badge badge--secondary ember-view">1</span>
+                      </h2>
                     </header>
                     <div class="section-header__toggle">
-                      Vis kladd info
+                      <span>Vis kladd info</span>
                       <span class="x-toggle-container">
                         <input type="checkbox" class="x-toggle">
                         <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium"></label>
                       </span>
                     </div>
-                    <div class="section-header__toolbar">
-                      <button href="#" class="btn btn--secondary">Avbryt</button>
-                      <a href="#" class="btn btn--primary">Lagre</a>
+
+                    <div id="ember4163" class="section-header__toolbar ember-view">
+                      <div id="ember4164" class="ember-view">
+                        <div class="section-header__toolbar">
+                          <a href="#" class="link--edit">Rediger</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <form class="form">
-                    <div class="row">
-                      <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
-                        Utøvernavn
-                      </div>
-                      <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
-                        Instrument
-                      </div>
-                      <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
-                        Statsborgerskap
-                      </div>
-                      <div class="col-sm-2 text--center hidden-on-mobile text--medium text--bold">
-                        Rollekode
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-3 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
-                        <a href="#" class="active">David Bowie</a>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-lg-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                          <div class="searchable-list searchable-list searchable-list--fluid form__input form__input--block">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected"></span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  ACHERE
-                                </li>
-                                <li class="searchable-list__option">
-                                  AFUCHE
-                                </li>
-                                <li class="searchable-list__option">
-                                  AGOGO/BLOKKER/KUBJEL
-                                </li>
-                              </ul>
+                  <form class="form row">
+                    <div class="col-md">
+                        <div class="row">
+                          <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                            Utøvernavn
+                          </div>
+                          <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
+                            Instrument
+                          </div>
+                          <div class="col-sm-3 hidden-on-mobile text--medium text--bold">
+                            Statsborgerskap
+                          </div>
+                          <div class="col-sm-2 text--center hidden-on-mobile text--medium text--bold">
+                            Rollekode
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-3 col-lg-3">
+                            <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
+                            <a href="#" id="ember4190" class="ember-view">Martine Borge</a>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 col-lg-2">
+                            <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                              <div id="ember4195" class="searchable-list searchable-list--disabled searchable-list--fluid form__input form__input--block ember-view">
+                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
+                                  <span class="searchable-list__selected">Gitar</span>
+                                </div>
+                                <div class="searchable-list__dropdown">
+                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                                  <ul>
+                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
+                                      Gitar
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-3 col-lg-3">
+                            <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                              <input type="text" disabled="" class="form__input form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-2">
+                            <div id="ember4200" class="ember-view">
+                              <div class="radio-group">
+                                <label class="form__label">
+                                  <input type="radio" value="A" id="ember4202" class="ember-view" disabled>
+                                  <span>A</span>
+                                  <span class="check"></span>
+                                </label>
+                                <label class="form__label">
+                                  <input type="radio" value="B" id="ember4204" class="ember-view" disabled>
+                                  <span>B</span>
+                                  <span class="check"></span>
+                                </label>
+                                <label class="form__label">
+                                  <input type="radio" value="C" id="ember4206" class="ember-view" disabled>
+                                  <span>C</span>
+                                  <span class="check"></span>
+                                </label>
+                              </div>
+                              <div id="ember4207" class="form__input__errors ember-view"></div>
                             </div>
                           </div>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                          <input type="text" disabled="" value="ENGLAND + NORDIRLAND" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <div class="radio-group">
-                          <label class="form__label">
-                            <input type="radio" value="A">
-                            <span>A</span>
-                            <span class="check"></span>
-                          </label>
-                          <label class="form__label">
-                            <input type="radio" value="B">
-                            <span>B</span>
-                            <span class="check"></span>
-                          </label>
-                          <label class="form__label">
-                            <input type="radio" value="C">
-                            <span>C</span>
-                            <span class="check"></span>
-                          </label>    
+                          <!-- <div class="col-xs align--vertical-center">
+                            <a class="text--small text--light"><i id="ember5740" class="icon--x"></i></a>
+                          </div> -->
                         </div>
-                      </div>
-                      <div class="col-xs align--vertical-center">
-                        <a class="text--small text--light"><i class="icon--x"></i></a>
-                      </div>
-                    </div><!-- end .row -->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-3 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
-                        <a href="#" class="active">Mike Garson</a>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-lg-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                          <div class="searchable-list searchable-list searchable-list--fluid form__input form__input--block">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected"></span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  ACHERE
-                                </li>
-                                <li class="searchable-list__option">
-                                  AFUCHE
-                                </li>
-                                <li class="searchable-list__option">
-                                  AGOGO/BLOKKER/KUBJEL
-                                </li>
-                              </ul>
+                        <div class="row row--pending pending pending--added">
+                          <span class="pending__meta">Lagt til av: Morten Harkett den 12.02.2018</span>
+                          <div class="col-xs-12 col-sm-3 col-lg-3">
+                            <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
+                            <a href="#" id="ember4190" class="ember-view">David Bowie</a>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 col-lg-2">
+                            <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                              <div id="ember4195" class="searchable-list searchable-list--disabled searchable-list--fluid form__input form__input--block ember-view">
+                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
+                                  <span class="searchable-list__selected">Gitar</span>
+                                </div>
+                                <div class="searchable-list__dropdown">
+                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                                  <ul>
+                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
+                                      Gitar
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-3 col-lg-3">
+                            <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                              <input type="text" value="ENGLAND + NORDIRLAND" disabled="" class="form__input form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-2">
+                            <div id="ember4200" class="ember-view">
+                              <div class="radio-group">
+                                <label class="form__label">
+                                  <input type="radio" value="A" id="ember4202" class="ember-view" checked>
+                                  <span>A</span>
+                                  <span class="check"></span>
+                                </label>
+                                <label class="form__label">
+                                  <input type="radio" value="B" id="ember4204" class="ember-view" >
+                                  <span>B</span>
+                                  <span class="check"></span>
+                                </label>
+                                <label class="form__label">
+                                  <input type="radio" value="C" id="ember4206" class="ember-view" >
+                                  <span>C</span>
+                                  <span class="check"></span>
+                                </label>
+                              </div>
+                              <div id="ember4207" class="form__input__errors ember-view"></div>
                             </div>
                           </div>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                          <input type="text" disabled="" value="ENGLAND + NORDIRLAND" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <div class="radio-group">
-                          <label class="form__label">
-                            <input type="radio" value="A">
-                            <span>A</span>
-                            <span class="check"></span>
-                          </label>
-                          <label class="form__label">
-                            <input type="radio" value="B">
-                            <span>B</span>
-                            <span class="check"></span>
-                          </label>
-                          <label class="form__label">
-                            <input type="radio" value="C">
-                            <span>C</span>
-                            <span class="check"></span>
-                          </label>    
-                        </div>
-                      </div>
-                      <div class="col-xs align--vertical-center">
-                        <a class="text--small text--light"><i class="icon--x"></i></a>
-                      </div>
-                    </div><!-- end .row -->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-3 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
-                        <a href="#" class="active">David Sanborn</a>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-lg-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                          <div class="searchable-list searchable-list searchable-list--fluid form__input form__input--block">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected"></span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  ACHERE
-                                </li>
-                                <li class="searchable-list__option">
-                                  AFUCHE
-                                </li>
-                                <li class="searchable-list__option">
-                                  AGOGO/BLOKKER/KUBJEL
-                                </li>
-                              </ul>
+                          <div class="col-xs align--vertical-center">
+                            <!-- <a class="text--small text--light"><i id="ember5740" class="icon--x"></i></a> -->
+                            <div id="ember4164" class="ember-view text--right">
+                              <button type="secondary" id="ember5320" class="async-button btn default btn--secondary btn--small ember-view">
+                                Avslå
+                              </button>
+                              <button type="primary" id="ember5325" class="async-button btn default btn--primary btn--small ember-view">
+                                Godkjenn
+                              </button>
                             </div>
                           </div>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                          <input type="text" disabled="" value="ENGLAND + NORDIRLAND" class="form__input form__input--block">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <div class="radio-group">
-                          <label class="form__label">
-                            <input type="radio" value="A">
-                            <span>A</span>
-                            <span class="check"></span>
-                          </label>
-                          <label class="form__label">
-                            <input type="radio" value="B">
-                            <span>B</span>
-                            <span class="check"></span>
-                          </label>
-                          <label class="form__label">
-                            <input type="radio" value="C">
-                            <span>C</span>
-                            <span class="check"></span>
-                          </label>    
                         </div>
-                      </div>
-                      <div class="col-xs align--vertical-center">
-                        <a class="text--small text--light"><i class="icon--x"></i></a>
-                      </div>
-                    </div><!-- end .row -->
-                    <div class="row">
-                      <div class="col-sm-3 hidden-on-mobile text--medium text--bold"></div>
-                      <div class="col-sm-4 col-lg-2 hidden-on-mobile text--medium text--bold">
-                        Antall
-                      </div>
-                      <div class="col-sm-3 col-lg-3 hidden-on-mobile text--medium text--bold"></div>
-                      <div class="col-sm-2 text--center hidden-on-mobile text--medium text--bold"></div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span>
-                          <input type="text" class="form__input form__input--block form__input--unknown">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-lg-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Antall</span>
-                          <input type="number" min="1" class="form__input form__input--block ember-text-field">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Land</span>
-                          <div class="searchable-list searchable-list form__input form__input--block">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected">Velg land</span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  ENGLAND + NORDIRLAND
-                                </li>
-                                <li class="searchable-list__option">
-                                  AFGANISTAN
-                                </li>
-                                <li class="searchable-list__option">
-                                  ÅLAND
-                                </li>
-                              </ul>
+                        
+                        <div class="row row--pending pending pending--changed">
+                          <span class="pending__meta">Endret til av: Morten Harkett den 12.02.2018</span>
+                          <div class="col-xs-12 col-sm-3 col-lg-3">
+                            <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
+                            <a href="#" id="ember4190" class="ember-view">David Bowie</a>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 col-lg-2">
+                            <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                              <div id="ember4195" class="searchable-list searchable-list--disabled searchable-list--fluid form__input form__input--block ember-view">
+                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
+                                  <span class="searchable-list__selected">Gitar</span>
+                                </div>
+                                <div class="searchable-list__dropdown">
+                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                                  <ul>
+                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
+                                      Gitar
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-3 col-lg-3">
+                            <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                              <input type="text" value="ENGLAND + NORDIRLAND" disabled="" class="form__input form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-2">
+                            <div id="ember4200" class="ember-view">
+                              <div class="radio-group">
+                                <label class="form__label is-added">
+                                  <input type="radio" value="A" id="ember4202" class="ember-view" disabled>
+                                  <span>A</span>
+                                  <span class="check"></span>
+                                </label>
+                                <label class="form__label is-deleted">
+                                  <input type="radio" value="B" id="ember4204" class="ember-view" disabled>
+                                  <span>B</span>
+                                  <span class="check"></span>
+                                </label>
+                                <label class="form__label">
+                                  <input type="radio" value="C" id="ember4206" class="ember-view" disabled>
+                                  <span>C</span>
+                                  <span class="check"></span>
+                                </label>
+                              </div>
+                              <div id="ember4207" class="form__input__errors ember-view"></div>
                             </div>
                           </div>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <div class="radio-group">
-                          <label class="form__label">
-                            <input type="radio" value="A">
-                            <span>A</span>
-                            <span class="check"></span>
-                          </label>
-                          <label class="form__label">
-                            <input type="radio" value="B">
-                            <span>B</span>
-                            <span class="check"></span>
-                          </label>
-                          <label class="form__label">
-                            <input type="radio" value="C">
-                            <span>C</span>
-                            <span class="check"></span>
-                          </label>    
-                        </div>
-                      </div>
-                      <div class="col-xs align--vertical-center">
-                        <a class="text--small text--light"><i class="icon--x"></i></a>
-                      </div>
-                    </div><!-- end .row -->
-                    <div class="row row--with-border">
-                      <div class="col-xs col--no-flex text--inline">
-                        <span class="text--bold">Koblet til: </span>
-                        <a href="#">NRK Kringkasting Orkester</a>
-                        <a href="#"><i class="icon--x text--x-small v-align--middle"></i></a>
-                      </div>
-                    </div><!-- end .row -->
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span>
-                          <input type="text" class="form__input form__input--block form__input--unknown">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-4 col-lg-2">
-                        <label class="form__label form__label--block form__label--hidden"><span>Antall</span>
-                          <input type="number" min="1" class="form__input form__input--block ember-text-field">
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-3 col-lg-3">
-                        <label class="form__label form__label--block form__label--hidden"><span>Land</span>
-                          <div class="searchable-list searchable-list form__input form__input--block">
-                            <div tabindex="0" class="searchable-list__heading searchable-list__heading">
-                              <span class="searchable-list__selected">Velg land</span>
-                            </div>
-                            <div class="searchable-list__dropdown">
-                              <input type="text" class="searchable-list__search form__input form__input--block">
-                              <ul>
-                                <li class="searchable-list__option">
-                                  ENGLAND + NORDIRLAND
-                                </li>
-                                <li class="searchable-list__option">
-                                  AFGANISTAN
-                                </li>
-                                <li class="searchable-list__option">
-                                  ÅLAND
-                                </li>
-                              </ul>
+                          <div class="col-xs align--vertical-center">
+                            <!-- <a class="text--small text--light"><i id="ember5740" class="icon--x"></i></a> -->
+                            <div id="ember4164" class="ember-view text--right">
+                              <button type="secondary" id="ember5320" class="async-button btn default btn--secondary btn--small ember-view">
+                                Avslå
+                              </button>
+                              <button type="primary" id="ember5325" class="async-button btn default btn--primary btn--small ember-view">
+                                Godkjenn
+                              </button>
                             </div>
                           </div>
-                        </label>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <div class="radio-group">
-                          <label class="form__label">
-                            <input type="radio" value="A">
-                            <span>A</span>
-                            <span class="check"></span>
-                          </label>
-                          <label class="form__label">
-                            <input type="radio" value="B">
-                            <span>B</span>
-                            <span class="check"></span>
-                          </label>
-                          <label class="form__label">
-                            <input type="radio" value="C">
-                            <span>C</span>
-                            <span class="check"></span>
-                          </label>    
+                        </div>
+                        
+                        <div class="row row--pending pending pending--deleted">
+                          <span class="pending__meta">Fjernet til av: Morten Harkett den 12.02.2018</span>
+                          <div class="col-xs-12 col-sm-3 col-lg-3">
+                            <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
+                            <a href="#" id="ember4190" class="ember-view">David Bowie</a>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 col-lg-2">
+                            <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
+                              <div id="ember4195" class="searchable-list searchable-list--disabled searchable-list--fluid form__input form__input--block ember-view">
+                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
+                                  <span class="searchable-list__selected">Gitar</span>
+                                </div>
+                                <div class="searchable-list__dropdown">
+                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                                  <ul>
+                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
+                                      Gitar
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-3 col-lg-3">
+                            <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
+                              <input type="text" value="ENGLAND + NORDIRLAND" disabled="" class="form__input form__input--block">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-2">
+                            <div id="ember4200" class="ember-view">
+                              <div class="radio-group">
+                                <label class="form__label">
+                                  <input type="radio" value="A" id="ember4202" class="ember-view" disabled>
+                                  <span>A</span>
+                                  <span class="check"></span>
+                                </label>
+                                <label class="form__label">
+                                  <input type="radio" value="B" id="ember4204" class="ember-view" disabled>
+                                  <span>B</span>
+                                  <span class="check"></span>
+                                </label>
+                                <label class="form__label">
+                                  <input type="radio" value="C" id="ember4206" class="ember-view" disabled>
+                                  <span>C</span>
+                                  <span class="check"></span>
+                                </label>
+                              </div>
+                              <div id="ember4207" class="form__input__errors ember-view"></div>
+                            </div>
+                          </div>
+                          <div class="col-xs align--vertical-center">
+                            <!-- <a class="text--small text--light"><i id="ember5740" class="icon--x"></i></a> -->
+                            <div id="ember4164" class="ember-view text--right">
+                              <button type="secondary" id="ember5320" class="async-button btn default btn--secondary btn--small ember-view">
+                                Avslå
+                              </button>
+                              <button type="primary" id="ember5325" class="async-button btn default btn--primary btn--small ember-view">
+                                Godkjenn
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-xs align--vertical-center">
-                        <a class="text--small text--light"><i class="icon--x"></i></a>
-                      </div>
-                    </div><!-- end .row -->
-                    <div class="row row--with-border">
-                      <div class="col-xs col--no-flex">
-                        <label class="form__label">
-                          <input type="checkbox">
-                          Koble til gruppe
-                        </label>
-                      </div>
-                    </div><!-- end .row -->
-                  </form>
+                    </form>
 
-                  <div class="toolbar toolbar--padded block--no-flex">
-                    <div class="form__section--action">
-                      <span class="text--bold">Søk etter <span class="text--lower">Utøver/gruppe</span></span>
-                      <span class="break--inline"></span>eller
-                      <span class="break--inline"></span>
-                      <a class="link--no-line" data-ember-action="" data-ember-action-12376="12376">Legg til ukjent</a>
-                    </div>
-                          <div>
-                            <form class="search__form">
-                              <input type="text" autocomplete="off" placeholder="Søk..." class="ember-text-field search__form__input search__form__input--fixed-width">
-                              <button type="submit" class="search__submit"></button>
-                            </form>
-                      <table class="table drilldown table--fluid table--selectable ">
-                        <thead>
-                          <tr>
+                    <div class="toolbar toolbar--padded block--no-flex" style="display:none!important">
+                      <div class="form__section--action">
+                        <span class="text--bold">
+                          Søk etter
+                          <span class="text--lower">
+                            Utøver,
+                            Gruppe
+                          </span>
+                        </span>
+
+                        <span class="break--inline"></span>
+                        eller
+                        <span class="break--inline"></span>
+
+                        <a class="link--no-line" data-ember-action="" data-ember-action-5757="5757">
+                          Legg til ukjent utøver
+                        </a>
+                      </div>
+                      <div id="ember5762" class="ember-view">
+                        <form class="search__form" data-ember-action="" data-ember-action-5763="5763">
+                          <input type="text" autocomplete="off" placeholder="Søk..." id="ember5768" class="ember-text-field search__form__input search__form__input--fixed-width ember-view" data-com.agilebits.onepassword.user-edited="yes">
+                          <button type="submit" id="ember5769" class="search__submit ember-view"></button>
+                        </form>
+
+                        <table class="table drilldown table--fluid table--selectable">
+                          <thead>
+                            <tr>
                               <th>Navn</th>
                               <th>Artister</th>
                               <th>Levetid</th>
                               <th>Instrument</th>
                               <th>Statsborgerskap</th>
-                            <th><!--already-selected--></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="drilldown-body drilldown-toggle" data-level="1">
-                            <td class="table__cell--truncated">
-                              Led Zeppelin (4)
-                            </td>
-                            <td></td>
-                            <td>1968 - 1980</td>
-                            <td></td>
-                            <td>ENGLAND + NORDIRLAND</td>
-                            <td class="table__cell--action">
-                              <a href="#" class="table-row-toggle"></a>
-                            </td>
-                            
-                          </tr>
-                          <tr class="drilldown-body" data-level="2" style="display:none;">
-                            <td class="table__cell--truncated">
-                              ROBERT PLANT
-                            </td>
-                            <td class="table__cell--truncated">
-                            </td>
-                            <td class="table__cell--truncated">
-                              1948-
-                            </td>
-                            <td class="table__cell--truncated">
-                              VOKAL
-                            </td>
-                            <td class="table__cell--truncated">
-                              ENGLAND + NORDIRLAND
-                            </td>
-                            <td><!----></td>
-                          </tr>
-                          <tr class="drilldown-body" data-level="2" style="display:none;">
-                            <td class="table__cell--truncated">
-                              JAMES PAGE
-                            </td>
-                            <td class="table__cell--truncated">
-                              JIMMY PAGE
-                            </td>
-                            <td class="table__cell--truncated">
-                              1944-
-                            </td>
-                            <td class="table__cell--truncated">
-                              GITAR
-                            </td>
-                            <td class="table__cell--truncated">
-                              ENGLAND + NORDIRLAND
-                            </td>
-                            <td><!----></td>
-                          </tr>
-                          <tr class="drilldown-body" data-level="2" style="display:none;">
-                            <td class="table__cell--truncated">
-                              JOHN PAUL JONES
-                            </td>
-                            <td class="table__cell--truncated">
-                              LED ZEPPELIN
-                            </td>
-                            <td class="table__cell--truncated">
-                              1978-
-                            </td>
-                            <td class="table__cell--truncated">
-                              BASS GITAR
-                            </td>
-                            <td class="table__cell--truncated">
-                              ENGLAND + NORDIRLAND
-                            </td>
-                            <td><!----></td>
-                          </tr>
-                          <tr class="drilldown-body" data-level="2" style="display:none;">
-                            <td class="table__cell--truncated">
-                              JOHN HENRY BONHAM
-                            </td>
-                            <td class="table__cell--truncated">
-                              LED ZEPPELIN
-                            </td>
-                            <td class="table__cell--truncated">
-                              1948-
-                            </td>
-                            <td class="table__cell--truncated">
-                              TROMMER
-                            </td>
-                            <td class="table__cell--truncated">
-                              ENGLAND + NORDIRLAND
-                            </td>
-                            <td><!----></td>
-                          </tr>
-                        </tbody>
-                      </table>
+                              <th><!--already-selected--></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr data-level="1" class="drilldown-body drilldown-toggle " data-ember-action="" data-ember-action-5804="5804">
+                              <td colspan="5">
+                                The Love Machine (1)
+                              </td>
+                              <td class="table__cell--action">
+                                <a href="#" class="table-row-toggle"></a>
+                                <div class="btn-group btn-group--hover">
+                                  <button class="btn btn--primary" data-ember-action="" data-ember-action-5805="5805">Legg til</button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr data-level="2" class="drilldown-body dd-close ">
+                              <td class="table__cell--truncated">Eric Haidara</td>
+                              <td class="table__cell--truncated"></td>
+                              <td class="table__cell--truncated"></td>
+                              <td class="table__cell--truncated"></td>
+                              <td class="table__cell--truncated"></td>
+                              <td></td>
+                            </tr>
+                            <tr class="" data-ember-action="" data-ember-action-5807="5807">
+                              <td class="table__cell--truncated">Martine Jensen</td>
+                              <td class="table__cell--truncated">Meowth</td>
+                              <td class="table__cell--truncated">1961-</td>
+                              <td class="table__cell--truncated"></td>
+                              <td class="table__cell--truncated"></td>
+                              <td>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
-                  </div>
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
                 <section id="utover" class="container container--padded">
@@ -1120,6 +1050,13 @@
                     <header>
                       <h2>Utgivelser <span class="badge badge--secondary">3</span></h2>
                     </header>
+                    <div class="section-header__toggle">
+                      <span>Vis kladd info</span>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle">
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium"></label>
+                      </span>
+                    </div>
                     <div class="section-header__toolbar">
                       <a href="#" class="link--edit">Rediger</a>
                     </div>
