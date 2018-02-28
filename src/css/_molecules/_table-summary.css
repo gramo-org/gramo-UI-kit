@@ -17,6 +17,10 @@
   tr:first-child {
     border-top: 0;
   }
+  
+  th:first-child {
+    padding-left: .75rem;
+  }
 }
 
 .table-summary__cell {

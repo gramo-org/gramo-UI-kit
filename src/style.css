@@ -4174,6 +4174,9 @@ main.pull .bucket{
 .table-summary tr:first-child{
   border-top:0;
 }
+.table-summary th:first-child{
+  padding-left:.75rem;
+}
 
 .table-summary__cell{
   padding-top:2rem;
