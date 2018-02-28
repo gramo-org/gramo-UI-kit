@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+  window.onload = window.location.hash = 'worklist';
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item">
+              <a href="/" class="active">Dashbord</a>
+            </li>
+            <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/file-statuses">Innleste filer</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/deviations">Avvik</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/broadcasters">Program admin</a>
+                </li>
+              </ul>
+            </li>
+            <li id="matching" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-750="750">Matching</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/identified-playback-group-summaries">Identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=null">Ikke identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=true">Restliste</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unreleased-music">Ikke utgitt</a>
+                </li>
+              </ul>
+            </li>
+            <li id="discography" class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+              <a data-ember-action="" data-ember-action-854="854">Diskografi</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/file-statuses">Innlest kladd</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/search?query=%20%20&amp;type=releases">Søk</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/worklist">Arbeidsliste</a></li>
+                  <li class="vertical__nav__item vertical__nav--sub__item">
+                    <a class="active" href="/discography/worklist">Saksbehandling</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/federations">Rettighetshaverorg.</a>
+                </li>
+              </ul>
+            </li>
+            <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-965="965">Min side</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Brukere</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/distribution">Avregning</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/payments">Utbetalinger</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/ipd">IPD</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/users/new">Ny bruker</a>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+      <!--- Flash message --->
+      <div class="flash-message-wrapper">
+        <div class="col-xs-12 no-padding">
+          <!-- <div class="flash-message flash-message--success">
+            <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--borderless">Angre ?</button></p>
+          </div> -->
+        </div>
+      </div>
+
+      <section class="container container--hd">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
+            <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
+            <li class="tabs__nav__item">
+              <a href="#worklist">
+                <span class="tabs__nav__item__type tabs__nav__item__type--worklist">Saksbehandling</span>
+              </a>
+            </li>
+          </ul>
+
+          <section id="search" class="tabs__section">
+            <div class="toolbar">
+              <div class="search--with-dropdown">
+                <label class="form__label no-margin--right">
+                  <select class="select select--fluid select--with-search align--vertical-center">
+                    <option>Innspilling</option>
+                    <option>Utgivelse</option>
+                    <option>Person</option>
+                    <option>Organisasjon</option>
+                    <option>Gruppe</option>
+                    <option>Label</option>
+                  </select>
+                </label>
+                <div class="search">
+                  <form action="" class="search__form search__form--in-toolbar">
+                    <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                    <button class="search__submit"></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
+              </div>
+            </div><!--end .toolbar-->
+
+            <div class="tabs">
+              <ul class='tabs__nav tabs__nav--flexible'>
+                <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger<span class="badge badge--numeric badge--numeric--inverse">2</span></a></li>
+                <li class='tabs__nav__item'><a href="#album">Album<span class="badge badge--numeric">2</span></a></li>
+                <li class='tabs__nav__item'><a href="#tab-3">Utøvere<span class="badge badge--numeric">2</span></a></li>
+                <li class='tabs__nav__item'><a href="#tab-4">Personlige produsenter<span class="badge badge--numeric">2</span></a></li>
+              </ul>
+              <section id="search-results" class="tabs__section">
+                <table class="table table--fluid table--numeric">
+                  <thead>
+                    <tr>
+                      <th>
+                        Tittel
+                      </th>
+                      <th>
+                        Hovedartist
+                      </th>
+                      <th>
+                        Årutgitt
+                      </th>
+                      <th>
+                        Label
+                      </th>
+                      <th>
+                        Tid
+                      </th>
+                      <th colspan="2">
+                        ISRC
+                      </th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td data-label="Tittel">
+                      Aladdin Sane
+                      (1913-1928-197?)
+                    </td>
+                    <td data-label="Hovedartist">
+                      David Bowie, Spiders From Mars
+                    </td>
+                    <td data-label="Årutgitt">
+                      1973
+                    </td>
+                    <td data-label="Label">
+                      RCA
+                    </td>
+                    <td data-label="Tid">
+                      00:33:31
+                    </td>
+                    <td data-label="ISRC">
+                      USJT10300113
+                    </td>
+                    <td class="text--right">
+                      <span class="badge badge--draft">Kladd</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Tittel">
+                      Aladdin Sane
+                      (1913-1928-197?)
+                    </td>
+                    <td data-label="Hovedartist">
+                      David Bowie, Spiders From Mars
+                    </td>
+                    <td data-label="Årutgitt">
+                      1973
+                    </td>
+                    <td data-label="Label">
+                      RCA
+                    </td>
+                    <td data-label="Tid">
+                      00:33:31
+                    </td>
+                    <td data-label="ISRC">
+                      USJT10300113
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Tittel">
+                      Aladdin Sane
+                      (1913-1928-197?)
+                    </td>
+                    <td data-label="Hovedartist">
+                      David Bowie, Spiders From Mars
+                    </td>
+                    <td data-label="Årutgitt">
+                      1973
+                    </td>
+                    <td data-label="Label">
+                      RCA
+                    </td>
+                    <td data-label="Tid">
+                      00:33:31
+                    </td>
+                    <td data-label="ISRC">
+                      USJT10300113
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                      <td data-label="Tittel">
+                        Aladdin Sane
+                        (1913-1928-197?)
+                      </td>
+                      <td data-label="Hovedartist">
+                        David Bowie, Spiders From Mars
+                      </td>
+                      <td data-label="Årutgitt">
+                        1973
+                      </td>
+                      <td data-label="Label">
+                        RCA
+                      </td>
+                      <td data-label="Tid">
+                        00:33:31
+                      </td>
+                      <td data-label="ISRC">
+                        USJT10300113
+                      </td>
+                      <td></td>
+                  </tr>
+                </table><!--/.table-->
+              </section><!--/.tabs__section search-results-->
+            </div><!--/.tabs (inner) for search-->
+          </section><!--/.tabs__section-->
+          <section id="worklist" class="tabs__section">
+            <table class="table table--fluid">
+              <thead class="table__head--always-visible">
+                <tr>
+                  <th>Tittel</th>
+                  <th>Hovedartist</th>
+                  <th>Utgivelsesår</th>
+                  <th>Label</th>
+                  <th>ISRC</th>
+                  <th>Endringsdato</th>
+                  <th>Av</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Tittel">
+                    <a href="#">JI Trafikk - Kjenning m/underlag og anslag LANG</a>
+                  </td>
+                  <td data-label="Hovedartist">Hallgrim Bratberg | Andreas Sørby</td>
+                  <td data-label="Utgivelsesår">2016</td>
+                  <td data-label="Label">47 records</td>
+                  <td data-label="ISRC">NO00158738</td>
+                  <td data-label="Endringsdato">13.02.2018</td>
+                  <td data-label="Av">Morten Harket</td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <a href="#">Let’s Dance</a>
+                  </td>
+                  <td data-label="Hovedartist">David Bowie</td>
+                  <td data-label="Utgivelsesår">99900999</td>
+                  <td data-label="Label">Warner</td>
+                  <td data-label="ISRC">NO00158432</td>
+                  <td data-label="Endringsdato">13.02.2018</td>
+                  <td data-label="Av">Marika Olsen (Kobalt)</td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <a href="#">Feel to follow</a>
+                  </td>
+                  <td data-label="Hovedartist">the Maccabees</td>
+                  <td data-label="Utgivelsesår">2016</td>
+                  <td data-label="Label">Arista</td>
+                  <td data-label="ISRC">US00159738</td>
+                  <td data-label="Endringsdato">13.02.2018</td>
+                  <td data-label="Av">Morten Harket</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text--right">
+              <ul class="pagination">
+                <li class="pagination__item pagination__item--previous pagination__item--disabled">
+                  <a href="#">
+                    <i class="icon--pagination-previous"></i>
+                  </a>
+                </li>
+                <li class="pagination__item pagination__item--next pagination__item--disabled">
+                  <a href="#">
+                    <i class="icon--pagination-next"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section><!--/.tabs__section-->
+        </div><!--/.tabs (outer)-->
+      </section>
+
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="js/vendor/jquery-1.11.3.min.js"></script>
+<script src="js/default.js"></script>
+
+</body>
+</html>

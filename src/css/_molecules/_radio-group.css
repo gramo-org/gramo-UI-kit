@@ -86,18 +86,28 @@
 
 /* for pending state */
 .form__label.is-added .check {
-  border: 1px solid var(--gramo-green);
+  border: 1px solid var(--gramo-blue);
   &::before {
-    background: var(--gramo-green);
+    background: var(--gramo-blue);
     border-radius: 0;
   }
 }
 
 .form__label.is-deleted .check {
-  border: 1px solid var(--slate-gray);
+  border: 1px solid var(--off-gray);
   &::before {
-    background: var(--slate-gray);
+    background: var(--silver);
     border-radius: 0;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 3.8rem;
+    background: var(--off-gray);
+    right: 0;
+    transform: rotate(-45deg);
+    transform-origin: right;
   }
 }
 
@@ -105,4 +115,8 @@
 .form__label.is-deleted input ~ span {
   opacity: 1;
   color: var(--gramo-white);
+}
+
+.form__label.is-deleted input ~ span {
+  color: var(--off-gray);
 }

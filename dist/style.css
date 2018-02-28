@@ -3458,25 +3458,44 @@ hr, .horizontal-rule{
   margin-left:-1.4rem;
 }
 .form__label.is-added .check{
-  border:1px solid #50bf9e;
+  border:1px solid #0095da;
 }
 .form__label.is-added .check::before{
-  background:#50bf9e;
+  background:#0095da;
   border-radius:0;
 }
 
 .form__label.is-deleted .check{
-  border:1px solid #504f56;
+  border:1px solid #a5a4ab;
 }
 
 .form__label.is-deleted .check::before{
-  background:#504f56;
+  background:#d9d9dc;
   border-radius:0;
+}
+
+.form__label.is-deleted .check::after{
+  content:'';
+  position:absolute;
+  height:1px;
+  width:3.8rem;
+  background:#a5a4ab;
+  right:0;
+  -webkit-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  -webkit-transform-origin:right;
+  -ms-transform-origin:right;
+  transform-origin:right;
 }
 
 .form__label.is-added input ~ span, .form__label.is-deleted input ~ span{
   opacity:1;
   color:#fdfdfd;
+}
+
+.form__label.is-deleted input ~ span{
+  color:#a5a4ab;
 }
 .searchable-list{
   display:inline-block;

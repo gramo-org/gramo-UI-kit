@@ -30,12 +30,75 @@
         </header>
         <nav class="sidebar__nav">
           <ul class="vertical__nav">
-            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+            <li class="vertical__nav__item">
+              <a href="/" class="active">Dashbord</a>
+            </li>
+            <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
               <ul class="vertical__nav vertical__nav--sub">
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/file-statuses">Innleste filer</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/deviations">Avvik</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/broadcasters">Program admin</a>
+                </li>
               </ul>
+            </li>
+            <li id="matching" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-750="750">Matching</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/identified-playback-group-summaries">Identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=null">Ikke identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=true">Restliste</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unreleased-music">Ikke utgitt</a>
+                </li>
+              </ul>
+            </li>
+            <li id="discography" class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+              <a data-ember-action="" data-ember-action-854="854">Diskografi</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/file-statuses">Innlest kladd</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/search?query=%20%20&amp;type=releases">Søk</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a class="active" href="/discography/worklist">Arbeidsliste</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/federations">Rettighetshaverorg.</a>
+                </li>
+              </ul>
+            </li>
+            <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-965="965">Min side</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Brukere</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/distribution">Avregning</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/payments">Utbetalinger</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/ipd">IPD</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/users/new">Ny bruker</a>
             </li>
           </ul>
         </nav>
@@ -65,92 +128,465 @@
       </div>
 
       <section class="container container--hd">
-        <div class="panels">
-          <div class="panels__sidebar">
-            <div class="section-header">
-              <header style="flex-shrink:2;">
-                <h1>Arbeidsliste <span class="text--normal">Kladd til godkjenning</span><span class="badge badge--error">5</span></h1>
-              </header>
-            </div>
-            <ul class="filter-items list--inline">
-              <li>
-                <a>
-                  <span class="filter-items__remove"><i class="icon--x"></i></span>
-                  <span>spotify</span>
-                </a>
-              </li>
-            </ul>
-            <div class="toolbar toolbar--above">
-              <span class="text--medium">Vis alle felter</span>
-              <span class="x-toggle-container">
-                <input type="checkbox" class="x-toggle">
-                <label class="x-toggle-btn x-toggle-default medium" data-tg-on="På" data-tg-off="Av">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
+            <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
+            <li class="tabs__nav__item">
+              <a href="#worklist">
+                <span class="tabs__nav__item__type tabs__nav__item__type--worklist">Arbeidsliste</span>
+              </a>
+            </li>
+          </ul>
+
+          <section id="search" class="tabs__section">
+            <div class="toolbar">
+              <div class="search--with-dropdown">
+                <label class="form__label no-margin--right">
+                  <select class="select select--fluid select--with-search align--vertical-center">
+                    <option>Innspilling</option>
+                    <option>Utgivelse</option>
+                    <option>Person</option>
+                    <option>Organisasjon</option>
+                    <option>Gruppe</option>
+                    <option>Label</option>
+                  </select>
                 </label>
-              </span>
-            </div><!--/.toolbar-->
-            <ul class="fake-table fake-table--numeric scrollable-area">
-              <li class="fake-table__row fake-table__row--selected">
-                <div class="col-xs-8">
-                  <span class="text--small text--light">
-                    <a>Spotify</a>
-                  </span>
-                  <h4>View Point</h4>
-                  <span>
-                    <a>Mosca</a>
-                  </span>
+                <div class="search">
+                  <form action="" class="search__form search__form--in-toolbar">
+                    <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                    <button class="search__submit"></button>
+                  </form>
                 </div>
-              </li>
-              <li class="fake-table__row">
-                <div class="col-xs-8">
-                  <span class="text--small text--light">
-                    <a>Spotify</a>
-                  </span>
-                  <h4>View Point</h4>
-                  <span>
-                    <a>Baths</a>
-                  </span>
-                </div>
-              </li>
-              <li class="fake-table__row">
-                <div class="col-xs-8">
-                  <span class="text--small text--light">
-                    <a>Kladd</a>
-                  </span>
-                  <h4>Suckle</h4>
-                  <span>
-                    <a>Commix</a>
-                  </span>
-                </div>
-              </li>
-              <li class="fake-table__row">
-                <div class="col-xs-8">
-                  <span class="text--small text--light">
-                    <a>Spotify</a>
-                  </span>
-                  <h4>Chimes</h4>
-                  <span>
-                    <a>Baths</a>
-                  </span>
-                </div>
-              </li>
-              <li class="fake-table__row">
-                <div class="col-xs-8">
-                  <span class="text--small text--light">
-                    <a>Discogs</a>
-                  </span>
-                  <h4>View Point</h4>
-                  <span>
-                    <a>Commix</a>
-                  </span>
-                </div>
-              </li>
-            </ul><!--end .fake-table-->
-          </div><!--end .panels #sidebar-->
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
+              </div>
+            </div><!--end .toolbar-->
 
-          <div class="panels__main">
+            <div class="tabs">
+              <ul class='tabs__nav tabs__nav--flexible'>
+                <li class='tabs__nav__item'><a href="#innspillinger">Innspillinger<span class="badge badge--numeric badge--numeric--inverse">2</span></a></li>
+                <li class='tabs__nav__item'><a href="#album">Album<span class="badge badge--numeric">2</span></a></li>
+                <li class='tabs__nav__item'><a href="#tab-3">Utøvere<span class="badge badge--numeric">2</span></a></li>
+                <li class='tabs__nav__item'><a href="#tab-4">Personlige produsenter<span class="badge badge--numeric">2</span></a></li>
+              </ul>
+              <section id="search-results" class="tabs__section">
+                <table class="table table--fluid table--numeric">
+                  <thead>
+                    <tr>
+                      <th>
+                        Tittel
+                      </th>
+                      <th>
+                        Hovedartist
+                      </th>
+                      <th>
+                        Årutgitt
+                      </th>
+                      <th>
+                        Label
+                      </th>
+                      <th>
+                        Tid
+                      </th>
+                      <th colspan="2">
+                        ISRC
+                      </th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td data-label="Tittel">
+                      Aladdin Sane
+                      (1913-1928-197?)
+                    </td>
+                    <td data-label="Hovedartist">
+                      David Bowie, Spiders From Mars
+                    </td>
+                    <td data-label="Årutgitt">
+                      1973
+                    </td>
+                    <td data-label="Label">
+                      RCA
+                    </td>
+                    <td data-label="Tid">
+                      00:33:31
+                    </td>
+                    <td data-label="ISRC">
+                      USJT10300113
+                    </td>
+                    <td class="text--right">
+                      <span class="badge badge--draft">Kladd</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Tittel">
+                      Aladdin Sane
+                      (1913-1928-197?)
+                    </td>
+                    <td data-label="Hovedartist">
+                      David Bowie, Spiders From Mars
+                    </td>
+                    <td data-label="Årutgitt">
+                      1973
+                    </td>
+                    <td data-label="Label">
+                      RCA
+                    </td>
+                    <td data-label="Tid">
+                      00:33:31
+                    </td>
+                    <td data-label="ISRC">
+                      USJT10300113
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td data-label="Tittel">
+                      Aladdin Sane
+                      (1913-1928-197?)
+                    </td>
+                    <td data-label="Hovedartist">
+                      David Bowie, Spiders From Mars
+                    </td>
+                    <td data-label="Årutgitt">
+                      1973
+                    </td>
+                    <td data-label="Label">
+                      RCA
+                    </td>
+                    <td data-label="Tid">
+                      00:33:31
+                    </td>
+                    <td data-label="ISRC">
+                      USJT10300113
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                      <td data-label="Tittel">
+                        Aladdin Sane
+                        (1913-1928-197?)
+                      </td>
+                      <td data-label="Hovedartist">
+                        David Bowie, Spiders From Mars
+                      </td>
+                      <td data-label="Årutgitt">
+                        1973
+                      </td>
+                      <td data-label="Label">
+                        RCA
+                      </td>
+                      <td data-label="Tid">
+                        00:33:31
+                      </td>
+                      <td data-label="ISRC">
+                        USJT10300113
+                      </td>
+                      <td></td>
+                  </tr>
+                </table><!--/.table-->
+              </section><!--/.tabs__section search-results-->
+            </div><!--/.tabs (inner) for search-->
+          </section><!--/.tabs__section-->
+          <section id="worklist" class="tabs__section">
+            <div class="toolbar block--no-flex">
+              <div class="col col--inline v-align--bottom">
+                <h2 class="heading--inline">
+                  Arbeidsliste
+                  <span class="badge badge--secondary">10</span>
+                </h2>
+              </div>
+              <div class="col col--inline">
+                <label class="form__label form__label--block text--small">
+                  Matcher
+                </label>
+                <div class="searchable-list searchable-list form__input form__input--180">
+                  <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                    <span class="searchable-list__selected">Velg matcher</span>
+                  </div>
+                  <div class="searchable-list__dropdown">
+                    <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
+                    <ul>
+                      <li class="searchable-list__option">Echo</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col col--inline search__form--right">
+                <label for="filter-input-value" class="form__label form__label--block text--small">
+                  Fri tekst søk
+                </label>
+                <div class="search__form search__form--in-toolbar">
+                  <input type="text" placeholder="Søk etter tittel, hovedartist eller ISRC" class="search__form__input search__form__input--fixed-width">
+                  <button class="search__submit"></button>
+                </div>
+              </div>
+            </div><!--end .toolbar -->
+            <table class="table table--fluid table--with-margin">
+              <thead class="table__head table__head--always-visible">
+                <tr>
+                  <th>
+                    <div>
+                      <span class="table-sort table-sort--null">
+                        Tittel
+                      </span>
+                    </div>
+                  </th>
+                  <th>
+                    <div>
+                      <span class="table-sort table-sort--null">
+                        Hovedartist
+                      </span>
+                    </div>
+                  </th>
+                  <th class="text--center">
+                    <input type="number" min="1000" max="9999" placeholder="År" class="form__input ember-text-field">
+                  </th>
+                  <th>
+                    <div>
+                      <span class="table-sort table-sort--null">
+                        Label
+                      </span>
+                    </div>
+                  </th>
+                  <th class="text--center">
+                    <div>
+                      <span class="table-sort table-sort--null">
+                        Varighet
+                      </span>
+                    </div>
+                  </th>
+                  <th class="text--center">
+                    <div id="ember2080">
+                      <span class="table-sort table-sort--null">
+                        Kilde
+                      </span>
+                    </div>
+                  </th>
+                  <th>
+                    <div id="ember2085">
+                      <span class="table-sort table-sort--null">
+                        ISRC
+                      </span>
+                    </div>
+                  </th>
+                  <th class="text--center">
+                    <div>
+                      <span class="table-sort table-sort--null">
+                        Ant. avsp.
+                      </span>
+                    </div>
+                  </th>
+                  <th class="text--center">
+                    <div>
+                      <span class="table-sort table-sort--null">
+                        Sum spilletid
+                      </span>
+                    </div>
+                  </th>
+                  <th class="text--center"></th>
+                </tr>
+              </thead>
 
-          </div><!--end .panels #main-->
-        </div><!--end .panels-->
+              <tbody>
+                <tr>
+                  <td data-label="Tittel">
+                    <a data-ember-action="" data-ember-action-2105="2105">Sondico</a>
+                  </td>
+                  <td data-label="Hovedartist">easyFun</td>
+                  <td data-label="År" class="text--center">2016</td>
+                  <td data-label="Label">PC Music</td>
+                  <td data-label="Varighet" class="text--center">00:02:50</td>
+                  <td data-label="Kilde" class="text--center">Sony</td>
+                  <td data-label="ISRC">UK9951310103</td>
+                  <td data-label="Ant. avsp." class="text--center">1</td>
+                  <td data-label="Sum spilletid" class="text--center">00:04:04</td>
+                  <td data-label="Angre match" align="right">
+                    <button type="primary" id="ember2142" class="async-button btn default btn--primary">
+                      Angre match
+                    </button>          
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <a data-ember-action="" data-ember-action-2152="2152">Musica Maestro - Radio Edit</a>
+                  </td>
+                  <td data-label="Hovedartist">Felli</td>
+                  <td data-label="År" class="text--center"></td>
+                  <td data-label="Label"></td>
+                  <td data-label="Varighet" class="text--center">00:03:58</td>
+                  <td data-label="Kilde" class="text--center">Spotify</td>
+                  <td data-label="ISRC">USJ3V1212378</td>
+                  <td data-label="Ant. avsp." class="text--center">1</td>
+                  <td data-label="Sum spilletid" class="text--center">00:03:59</td>
+                  <td data-label="Angre match" align="right">
+                    <button type="primary" id="ember2189" class="async-button btn default btn--primary">
+                      Angre match
+                    </button>          
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <a data-ember-action="" data-ember-action-2199="2199">Aldri ei tåre</a>
+                  </td>
+                  <td data-label="Hovedartist">Crashville | Liv Marit Wedvik</td>
+                  <td data-label="År" class="text--center"></td>
+                  <td data-label="Label"></td>
+                  <td data-label="Varighet" class="text--center">00:04:49</td>
+                  <td data-label="Kilde" class="text--center">Spotify</td>
+                  <td data-label="ISRC">SEYOK1319699</td>
+                  <td data-label="Ant. avsp." class="text--center">1</td>
+                  <td data-label="Sum spilletid" class="text--center">00:03:53</td>
+                  <td data-label="Angre match" align="right">
+                    <button type="primary" id="ember2236" class="async-button btn default btn--primary">
+                      Angre match
+                    </button>          
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <a data-ember-action="" data-ember-action-2246="2246">Inn i lyset - Radio Edit</a>
+                  </td>
+                  <td data-label="Hovedartist">Mohr</td>
+                  <td data-label="År" class="text--center"></td>
+                  <td data-label="Label"></td>
+                  <td data-label="Varighet" class="text--center">00:03:33</td>
+                  <td data-label="Kilde" class="text--center">Spotify</td>
+                  <td data-label="ISRC">NOCDE1603031</td>
+                  <td data-label="Ant. avsp." class="text--center">1</td>
+                  <td data-label="Sum spilletid" class="text--center">00:03:53</td>
+                  <td data-label="Angre match" align="right">
+                    <button type="primary" id="ember2283" class="async-button btn default btn--primary">
+                      Angre match
+                    </button>          
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <a data-ember-action="" data-ember-action-2293="2293">Floden</a>
+                  </td>
+                  <td data-label="Hovedartist">Bjørn Eidsvåg | Elvira Nikolaisen</td>
+                  <td data-label="År" class="text--center"></td>
+                  <td data-label="Label"></td>
+                  <td data-label="Varighet" class="text--center">00:04:24</td>
+                  <td data-label="Kilde" class="text--center">Spotify</td>
+                  <td data-label="ISRC">NOAAC1400076</td>
+                  <td data-label="Ant. avsp." class="text--center">1</td>
+                  <td data-label="Sum spilletid" class="text--center">00:03:51</td>
+                  <td data-label="Angre match" align="right">
+                    <button type="primary" id="ember2330" class="async-button btn default btn--primary">
+                      Angre match
+                    </button>          
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <a data-ember-action="" data-ember-action-2340="2340">Seven Nation Army</a>
+                  </td>
+                  <td data-label="Hovedartist">The White Stripes</td>
+                  <td data-label="År" class="text--center"></td>
+                  <td data-label="Label"></td>
+                  <td data-label="Varighet" class="text--center">00:03:51</td>
+                  <td data-label="Kilde" class="text--center">Spotify</td>
+                  <td data-label="ISRC">GBBKS0200608</td>
+                  <td data-label="Ant. avsp." class="text--center">1</td>
+                  <td data-label="Sum spilletid" class="text--center">00:03:48</td>
+                  <td data-label="Angre match" align="right">
+                    <button type="primary" id="ember2377" class="async-button btn default btn--primary">
+                      Angre match
+                    </button>          
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <a data-ember-action="" data-ember-action-2387="2387">I Wanta Thank You</a>
+                  </td>
+                  <td data-label="Hovedartist">The Manhattans</td>
+                  <td data-label="År" class="text--center">2016</td>
+                  <td data-label="Label">Columbia/Legacy</td>
+                  <td data-label="Varighet" class="text--center">00:03:50</td>
+                  <td data-label="Kilde" class="text--center">Sony</td>
+                  <td data-label="ISRC">USSM11402219</td>
+                  <td data-label="Ant. avsp." class="text--center">1</td>
+                  <td data-label="Sum spilletid" class="text--center">00:03:48</td>
+                  <td data-label="Angre match" align="right">
+                    <button type="primary" id="ember2424" class="async-button btn default btn--primary">
+                      Angre match
+                    </button>          
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <a data-ember-action="" data-ember-action-2434="2434">Ch-Ching</a>
+                  </td>
+                  <td data-label="Hovedartist">Chairlift</td>
+                  <td data-label="År" class="text--center"></td>
+                  <td data-label="Label"></td>
+                  <td data-label="Varighet" class="text--center">00:03:47</td>
+                  <td data-label="Kilde" class="text--center">Spotify</td>
+                  <td data-label="ISRC">USSM11503434</td>
+                  <td data-label="Ant. avsp." class="text--center">1</td>
+                  <td data-label="Sum spilletid" class="text--center">00:03:47</td>
+                  <td data-label="Angre match" align="right">
+                    <button type="primary" id="ember2471" class="async-button btn default btn--primary">
+                      Angre match
+                    </button>          
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <a data-ember-action="" data-ember-action-2481="2481">Good For You</a>
+                  </td>
+                  <td data-label="Hovedartist">Selena Gomez | A$AP Rocky</td>
+                  <td data-label="År" class="text--center"></td>
+                  <td data-label="Label"></td>
+                  <td data-label="Varighet" class="text--center">00:03:41</td>
+                  <td data-label="Kilde" class="text--center">Spotify</td>
+                  <td data-label="ISRC">USUM71508741</td>
+                  <td data-label="Ant. avsp." class="text--center">1</td>
+                  <td data-label="Sum spilletid" class="text--center">00:03:40</td>
+                  <td data-label="Angre match" align="right">
+                    <button type="primary" id="ember2518" class="async-button btn default btn--primary">
+                      Angre match
+                    </button>          
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <a data-ember-action="" data-ember-action-2528="2528">The Phantom Opera Ghost</a>
+                  </td>
+                  <td data-label="Hovedartist">Iced Earth</td>
+                  <td data-label="År" class="text--center">2016</td>
+                  <td data-label="Label">Century Media</td>
+                  <td data-label="Varighet" class="text--center">00:08:42</td>
+                  <td data-label="Kilde" class="text--center">Sony</td>
+                  <td data-label="ISRC">US4E41534511</td>
+                  <td data-label="Ant. avsp." class="text--center">1</td>
+                  <td data-label="Sum spilletid" class="text--center">00:03:35</td>
+                  <td data-label="Angre match" align="right">
+                    <button type="primary" id="ember2565" class="async-button btn default btn--primary">
+                      Angre match
+                    </button>          
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text--right">
+              <ul class="pagination">
+                <li class="pagination__item pagination__item--previous pagination__item--disabled">
+                  <a href="#">
+                    <i class="icon--pagination-previous"></i>
+                  </a>
+                </li>
+                <li class="pagination__item pagination__item--next pagination__item--disabled">
+                  <a href="#">
+                    <i class="icon--pagination-next"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section><!--/.tabs__section-->
+        </div><!--/.tabs (outer)-->
       </section>
 
     </main>
