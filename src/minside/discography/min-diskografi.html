@@ -73,7 +73,7 @@
       <section id="discography-info" class="container container--padded container--for-tables">
         <div class="tabs">
           <ul class="tabs__nav tabs__nav--flexible" role="tablist">
-            <li class="tabs__nav__item" role="presentation"><a href="#releases" role="tab" aria-controls="album" aria-selected="true">Utgivelser <span class="badge">0</span></a></li>
+            <li class="tabs__nav__item" role="presentation"><a href="#releases" role="tab" aria-controls="album" aria-selected="true">Utgivelser <span class="badge">10</span></a></li>
             <li class="tabs__nav__item" role="presentation"><a href="#innspillinger" role="tab" aria-controls="innspillinger">Innspillinger <span class="badge">400</span></a></li>
             <li class="tabs__nav__item" role="presentation"><a href="#grupper" role="tab" aria-controls="album">Grupper <span class="badge">1</span></a></li>
           </ul>
@@ -93,39 +93,39 @@
                 <tr>
                   <th>Innspillingstittel</th>
                   <th>Hovedartist</th>
+                  <th class="text--right">Utgitt</th>
                   <th>Label</th>
+                  <th class="text--right">Varighet</th>
                   <th>ISRC</th>
                   <th>Rollekode</th>
-                  <th class="text--right">Varighet</th>
-                  <th class="text--right">Utgivelsesår</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td data-label="Innspillingstittel">
-                    <a href="innspilling.html">TAKE ON ME</a>
+                  <td data-label="Tittel">
+                    <a href="edit/recording/edit_recording-performers.html">TAKE ON ME</a>
                   </td>
                   <td data-label="Hovedartist" class="table__cell--left">A-ha</td>
-                  <td data-label="Label" class="table__cell--left">Label</td>
-                  <td data-label="ISRC" class="table__cell--left">ISRC</td>
-                  <td data-label="Rollekode">B</td>
-                  <td data-label="Varighet" class="text--right">0123:23</td>
-                  <td data-label="Utgivelsesår" class="text--right">1985</td>
+                  <td data-label="Utgitt" class="text--right table__cell--left">1985-01-01</td>
+                  <td data-label="Label" class="table__cell--left">Warner</td>
+                  <td data-label="Varighet" class="text--right">03:23</td>
+                  <td data-label="ISRC">NO34587983</td>
+                  <td data-label="Rollekode">A</td>
                 </tr>
                 <tr>
                   <td data-label="Innspillingstittel">
-                    <a href="innspilling.html">TAKE ON ME</a>
+                    <a href="edit/recording/edit_recording-performers.html">TAKE ON ME (Extended)</a>
                   </td>
-                  <td data-label="Katalognummer" class="table__cell--left">A-ha</td>
+                  <td data-label="Hovedartist" class="table__cell--left">A-ha</td>
+                  <td data-label="Utgitt" class="text--right table__cell--left">1986-01-01</td>
                   <td data-label="Label" class="table__cell--left">Label</td>
+                  <td data-label="Varighet" class="text--right">03:23</td>
                   <td data-label="ISRC" class="table__cell--left">ISRC</td>
                   <td data-label="Rollekode">B</td>
-                  <td class="text--right" data-label="Varighet">0123:23</td>
-                  <td class="text--right" data-label="Utgivelsesdato">1985</td>
                 </tr>
                 <tr>
                   <td colspan="7">
-                    <div class="empty-state">
+                    <div class="empty-state empty-state--partial">
                       <h4>Fant du ikke det du lette etter?</h4>
                       <a href="global-search.html" class="btn btn--primary click-here">Søk i Gramo katalogen</a>
                     </div>
@@ -145,13 +145,14 @@
                 </form>
               </div>
             </div>
-            <table class="table table--list table--five">
+            <table class="table table--list table--six">
               <thead>
                 <tr>
                   <th>Tittel</th>
                   <th>Hovedartist</th>
+                  <th class="text--right">Utgitt</th>
                   <th>Label</th>
-                  <th>Utgitt</th>
+                  <th class="text--right">Katalognummer</th>
                   <th>Format</th>
                 </tr>
               </thead>
@@ -161,22 +162,24 @@
                     <a href="album.html">Hunting High and Low</a>
                   </td>
                   <td data-label="Hovedartist" class="table__cell--left">A-ha</td>
-                  <td data-label="Label" class="table__cell--left">Sony</td>
-                  <td data-label="Utgitt">1994-01-01</td>
+                  <td data-label="Utgitt" class="table__cell--left text--right">1985-01-01</td>
+                  <td data-label="Label"Sony</td>
+                  <td data-label="Kat.nr" class="text--right">9089083098</td>
                   <td data-label="Format">Album</td>
                 </tr>
                 <tr>
                   <td data-label="Tittel">
-                    <a href="album.html">Hunting High and Low</a>
+                    <a href="album.html">Hunting High and Low (Special Edition)</a>
                   </td>
                   <td data-label="Hovedartist" class="table__cell--left">A-ha</td>
-                  <td data-label="Label" class="table__cell--left">Sony</td>
-                  <td data-label="Utgitt">1994-01-01</td>
+                  <td data-label="Utgitt" class="table__cell--left text--right">1986-01-01</td>
+                  <td data-label="Label">Sony</td>
+                  <td data-label="Kat.nr" class="text--right">9089083098</td>
                   <td data-label="Format">Album</td>
                 </tr>
                 <tr>
-                  <td colspan="7">
-                    <div class="empty-state">
+                  <td colspan="6">
+                    <div class="empty-state empty-state--partial">
                       <h4>Fant du ikke det du lette etter?</h4>
                       <a href="global-search-releases.html" class="btn btn--primary click-here">Søk i Gramo katalogen</a>
                     </div>
@@ -219,14 +222,19 @@
               </tbody>
             </table>
           </section>
-          <nav class="text--right">
-            <ol class="pagination">
-              <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
-              <li class="pagination__item"><a href="#">2</a></li>
-              <li class="pagination__item"><a href="#">3</a></li>
-              <li class="pagination__item"><a href="#">4</a></li>
-              <li class="pagination__item"><a href="#">5</a></li>
-            </ol>
+          <nav>
+            <ul class="pagination">
+              <li class="pagination__item pagination__item--previous pagination__item--disabled">
+                <a href="#">
+                  <i class="icon--pagination-previous"></i>
+                </a>
+              </li>
+              <li class="pagination__item pagination__item--next pagination__item--disabled">
+                <a href="#">
+                  <i class="icon--pagination-next"></i>
+                </a>
+              </li>
+            </ul>
           </nav>
         </div>
       </section>

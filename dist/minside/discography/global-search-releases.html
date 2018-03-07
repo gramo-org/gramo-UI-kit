@@ -61,6 +61,7 @@
         <div class="row">
           <header class="masthead">
             <h2>Søk i katalogen</h2>
+            <h3 class="text--normal">Søk f.eks på <span class="text--bold">utgivelsestittel</span> og <span class="text--bold">hovedartist</span></h3>
             <div class="search">
               <form action="" class="search__form search__form--global">
                 <label class="form__label">
@@ -82,21 +83,21 @@
               <input type="checkbox" class="form__input form__input--checkbox" checked>
               <span class="fake-checkbox"></span>
               <span class="icon icon--album icon--blue icon--small"></span>
-              <span>Min diskografi</span>
+              <span>Min diskografi (2)</span>
             </label>
 
             <label class="form__label">
               <input type="checkbox" class="form__input form__input--checkbox" checked>
               <span class="fake-checkbox"></span>
               <span class="icon icon--katalog icon--green icon--small"></span>
-              <span>Katalogen</span>
+              <span>Katalogen (2)</span>
             </label>
 
             <label class="form__label">
               <input type="checkbox" class="form__input form__input--checkbox" checked>
               <span class="fake-checkbox"></span>
               <span class="icon icon--kladd icon--purple icon--small"></span>
-              <span>Kladd</span>
+              <span>Kladd (1)</span>
             </label>
           </div>
         </div>
@@ -110,20 +111,21 @@
       <section id="search-results" class="container container--padded container--for-tables">
         <div class="section-header">
           <header>
-            <h3>2 treff i innspillinger</h3>
+            <h3>Total treff i utgivelser: 5</h3>
           </header>
           <!-- <div class="section-header__action">
             <a href="create/release/create_release-release-info.html" class="btn btn--primary">Opprett utgivelse</a>
           </div> -->
         </div>
 
-        <table class="table table--list table--five">
+        <table class="table table--list table--six">
           <thead>
             <tr>
               <th>Tittel</th>
               <th>Hovedartist</th>
+              <th class="text--right">Utgitt</th>
               <th>Label</th>
-              <th>Utgitt</th>
+              <th class="text--right">Katalognummer</th>
               <th>Format</th>
             </tr>
           </thead>
@@ -133,48 +135,54 @@
                 <a href="album.html">Hunting High and Low</a>
               </td>
               <td data-label="Hovedartist" class="table__cell--left">A-ha</td>
-              <td data-label="Label" class="table__cell--left">Sony</td>
-              <td data-label="Utgitt">1994-01-01</td>
+              <td data-label="Utgitt" class="text--right table__cell--left">1985-01-01</td>
+              <td data-label="Label">Sony</td>
+              <td data-label="Kat.nr" class="text--right">3459084647</td>
               <td data-label="Format">Album</td>
+            </tr>
             <tr data-src="local">
               <td data-label="Tittel">
-                <a href="album.html">Hunting High and Low</a>
+                <a href="album.html">Hunting High and Low (Special Edition)</a>
               </td>
               <td data-label="Hovedartist" class="table__cell--left">A-ha</td>
-              <td data-label="Label" class="table__cell--left">Sony</td>
-              <td data-label="Utgitt">1994-01-01</td>
+              <td data-label="Utgitt" class="text--right table__cell--left">1986-01-01</td>
+              <td data-label="Label">Sony</td>
+              <td data-label="Kat.nr" class="text--right">2238908343</td>
               <td data-label="Format">Album</td>
             </tr>
             <tr data-src="global">
               <td data-label="Tittel">
-                <a href="album.html">Hunting High and Low</a>
+                <a href="album.html">Hunting High and Low (Alternative ed.)</a>
               </td>
               <td data-label="Hovedartist" class="table__cell--left">A-ha</td>
-              <td data-label="Label" class="table__cell--left">Sony</td>
-              <td data-label="Utgitt">1994-01-01</td>
+              <td data-label="Utgitt" class="text--right table__cell--left">1987-01-01</td>
+              <td data-label="Label">Sony</td>
+              <td data-label="Kat.nr" class="text--right">9034573093</td>
               <td data-label="Format">Album</td>
             </tr>
             <tr data-src="global">
               <td data-label="Tittel">
-                <a href="album.html">Hunting High and Low</a>
+                <a href="album.html">Hunting High and Low (Japan)</a>
               </td>
               <td data-label="Hovedartist" class="table__cell--left">A-ha</td>
-              <td data-label="Label" class="table__cell--left">Sony</td>
-              <td data-label="Utgitt">1994-01-01</td>
+              <td data-label="Utgitt" class="text--right table__cell--left">1988-01-01</td>
+              <td data-label="Label">Sony</td>
+              <td data-label="Kat.nr" class="text--right">9089034534</td>
               <td data-label="Format">Album</td>
             </tr>
             <tr data-src="draft">
               <td data-label="Tittel">
-                <a href="album.html">Hunting High and Low</a>
+                <a href="album.html">Hunting High and Low (Remastered)</a>
               </td>
               <td data-label="Hovedartist" class="table__cell--left">A-ha</td>
-              <td data-label="Label" class="table__cell--left">Sony</td>
-              <td data-label="Utgitt">1994-01-01</td>
+              <td data-label="Utgitt" class="text--right table__cell--left">1989-01-01</td>
+              <td data-label="Label">Sony</td>
+              <td data-label="Kat.nr" class="text--right">9038908733</td>
               <td data-label="Format">Album</td>
             </tr>
             <tr>
-              <td colspan="5">
-                <div class="empty-state">
+              <td colspan="6">
+                <div class="empty-state empty-state--partial">
                   <h4>Fant du ikke det du lette etter?</h4>
                   <a href="create/release/create_release-release-info.html" class="btn btn--primary">Opprett utgivelse</a>
                 </div>
@@ -183,14 +191,19 @@
           </tbody>
         </table>
         
-        <nav class="text--right">
-          <ol class="pagination">
-            <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
-            <li class="pagination__item"><a href="#">2</a></li>
-            <li class="pagination__item"><a href="#">3</a></li>
-            <li class="pagination__item"><a href="#">4</a></li>
-            <li class="pagination__item"><a href="#">5</a></li>
-          </ol>
+        <nav>
+          <ul class="pagination">
+            <li class="pagination__item pagination__item--previous pagination__item--disabled">
+              <a href="#">
+                <i class="icon--pagination-previous"></i>
+              </a>
+            </li>
+            <li class="pagination__item pagination__item--next pagination__item--disabled">
+              <a href="#">
+                <i class="icon--pagination-next"></i>
+              </a>
+            </li>
+          </ul>
         </nav>
       </section>
     </main>
