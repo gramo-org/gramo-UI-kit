@@ -79,10 +79,7 @@ input[type="text"].search__form__input {
   }
 
   &--fixed-width {
-    /*@media (--tablet) {
-      flex: 0 1 200px;
-      min-width: 200px;
-    }*/
+
     @media (--desktop) {
       flex: 0 1 400px;
       min-width: 400px;
@@ -92,10 +89,8 @@ input[type="text"].search__form__input {
       min-width: 550px;
     }
   }
-  &--min-width {
-    @media (--desktop) {
-      flex: 1 1 300px;
-    }
+  &--no-width {
+    min-width: 0;
   }
 }
 

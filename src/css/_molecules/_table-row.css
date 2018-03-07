@@ -112,7 +112,7 @@
 }
 
 /* Create empty row style for empty state component in search results */
-.table__row--empty, .table__row--empty:hover {
+.table__row--empty {
   background: none;
   
   & > td:first-child {

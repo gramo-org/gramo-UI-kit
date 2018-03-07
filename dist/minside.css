@@ -703,7 +703,7 @@ body, .form__input, .form__input--date, .form__input[type="date"], .form__label{
   line-height:1.5;
 }
 
-p.with-margin, .search__form, .form, .section-header{
+p.with-margin, .form, .section-header{
   margin-bottom:1.2rem;
 }
 body{
@@ -1942,170 +1942,6 @@ input[type="number"].four-digit{
   margin:2rem;
   font-style:italic;
   color:#a5a4ab;
-}
-.search--with-dropdown{
-  min-width:100%;
-  display:-webkit-flex;
-  display:-ms-flexbox;
-  display:flex;
-  padding:0 1rem;
-}
-@media (min-width: 768px){
-
-  .search--with-dropdown{
-    min-width:0;
-  }
-}
-.search--with-dropdown .search{
-  width:100%;
-}
-@media (min-width: 960px){
-
-  .search--with-dropdown .search{
-    width:auto;
-  }
-}
-.search--with-dropdown .search input[type="text"].search__form__input{
-  border-radius:1px;
-  margin:0;
-}
-
-.search--in-row, .input--in-row{
-  padding:.75rem 1rem!important;
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
-}
-
-.search--in-row{
-  -webkit-flex:1 0 100%;
-  -ms-flex:1 0 100%;
-  flex:1 0 100%;
-}
-
-@media (min-width: 768px){
-
-  .search--in-row{
-    -webkit-flex:1;
-    -ms-flex:1;
-    flex:1;
-  }
-}
-
-.search__form{
-  -webkit-flex:1;
-  -ms-flex:1;
-  flex:1;
-  display:-webkit-flex;
-  display:-ms-flexbox;
-  display:flex;
-  position:relative;
-}
-
-.search__form--center{
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
-}
-
-@media (min-width: 960px){
-
-  .search__form--right{
-    float:right;
-  }
-}
-
-.search__form--in-toolbar{
-  margin-bottom:0;
-}
-
-input[type="text"].search__form__input{
-  padding:0.55rem;
-  padding-right:2rem;
-  font-weight:400;
-  display:block;
-  width:100%;
-  background:#fdfdfd;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  border:1px solid #d9d9dc;
-  border-radius:2px 0 0 2px;
-  outline:none;
-  -webkit-flex:0 1 100%;
-  -ms-flex:0 1 100%;
-  flex:0 1 100%;
-  margin-bottom:0;
-}
-
-@media (min-width: 960px){
-
-  input[type="text"].search__form__input{
-    -webkit-flex:1 0 auto;
-    -ms-flex:1 0 auto;
-    flex:1 0 auto;
-  }
-}
-
-input[type="text"].search__form__input--large{
-  padding:1.2rem;
-}
-
-@media (min-width: 960px){
-
-  input[type="text"].search__form__input--fixed-width{
-    -webkit-flex:0 1 400px;
-    -ms-flex:0 1 400px;
-    flex:0 1 400px;
-    min-width:400px;
-  }
-}
-
-@media (min-width: 1200px){
-
-  input[type="text"].search__form__input--fixed-width{
-    -webkit-flex:0 1 550px;
-    -ms-flex:0 1 550px;
-    flex:0 1 550px;
-    min-width:550px;
-  }
-}
-
-@media (min-width: 960px){
-
-  input[type="text"].search__form__input--min-width{
-    -webkit-flex:1 1 300px;
-    -ms-flex:1 1 300px;
-    flex:1 1 300px;
-  }
-}
-
-.search__submit{
-  -webkit-flex:0 1 40px;
-  -ms-flex:0 1 40px;
-  flex:0 1 40px;
-  border:3px solid rgb(68, 67, 73);
-  border-width:0 0 3px 0;
-  border-radius:0 2px 2px 0;
-  margin-left:-1px;
-  background:#504f56;
-  color:#fdfdfd;
-  padding:.5rem 1.2rem 0 1.3rem;
-}
-
-@media (min-width: 768px){
-
-  .search__submit{
-    -webkit-flex:0 0 auto;
-    -ms-flex:0 0 auto;
-    flex:0 0 auto;
-  }
-}
-
-.search__submit:before{
-  content:"\e91a";
-  font-family:'icomoon';
-  font-size:1.7rem;
 }
 
   .form__fieldset{
@@ -4073,6 +3909,10 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .search__form{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  position:relative;
   -webkit-justify-content:center;
   -ms-flex-pack:center;
   justify-content:center;
@@ -4099,6 +3939,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   -webkit-flex:0 1 auto;
   -ms-flex:0 1 auto;
   flex:0 1 auto;
+  outline:none;
 }
 
 @media (min-width: 768px){
@@ -4111,6 +3952,11 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .search__form .search__submit{
+  background:#504f56;
+  color:#fdfdfd;
+  border:3px solid rgb(68, 67, 73);
+  border-width:0 0 3px 0;
+  border-radius:0 2px 2px 0;
   display:block;
   padding:0 2rem;
   -webkit-flex:0 0 auto;
@@ -4120,6 +3966,8 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .search__form .search__submit::before{
+  content:"\e91a";
+  font-family:'icomoon';
   font-size:2.2rem;
   line-height:2;
 }

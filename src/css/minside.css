@@ -27,7 +27,7 @@
 @import url('_molecules/_searchable-list.css');
 @import url('_molecules/_pagination.css');
 @import url('_molecules/_flash-message.css');
-@import url('_molecules/_search.css');
+
 
 /*Organisms*/
 @import url('_organisms/_form.css');

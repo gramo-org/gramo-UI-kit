@@ -58,7 +58,7 @@ thead {
 
 tbody > tr {
   background: var(--gramo-white);
-  &:hover:not(.table__row--subhead) {
+  &:hover:not(.table__row--subhead):not(.table__row--empty) {
     @media (--tablet) { background: var(--row-hover); }
   }
   &.table__row--selected:not(.table__row--subhead) {
