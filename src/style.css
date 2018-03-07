@@ -5073,6 +5073,9 @@ input[type="text"].search__form__input--large{
 
 input[type="text"].search__form__input--no-width{
   min-width:0;
+  -webkit-flex:0 1 auto;
+  -ms-flex:0 1 auto;
+  flex:0 1 auto;
 }
 
 .search__submit{
