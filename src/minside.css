@@ -4126,7 +4126,6 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .ember-power-select-trigger, .ember-power-select-trigger--active, .ember-power-select-trigger:focus{
-    border:1px solid #d9d9dc;
 }
 
 .ember-power-select-dropdown.ember-basic-dropdown-content--below, .ember-power-select-dropdown.ember-basic-dropdown-content--in-place{
@@ -4145,8 +4144,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .ember-power-select-trigger{
-    border-radius:1px;
-    padding:1.15rem 2.3rem 1.15rem 0.75rem;
+  border-radius:1px;
 }
 
 .ember-power-select-trigger, .ember-power-select-trigger--active, .ember-power-select-trigger:focus{
@@ -4160,7 +4158,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 
 .ember-power-select-search-input{
     border:1px solid #d9d9dc;
-    background:#fdfdfd url("img/search.svg") right 0.5rem center no-repeat;
+    background:#fdfdfd url("img/search.svg") right 1rem center no-repeat;
     background-size:1.8rem;
     border-radius:0;
     padding:1.2rem 0.75rem;
