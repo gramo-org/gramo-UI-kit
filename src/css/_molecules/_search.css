@@ -60,7 +60,6 @@ input[type="text"].search__form__input {
   padding-right: 2rem;
   font-weight: var(--normal);
   display: block;
-  width: 100%;
   background: var(--gramo-white);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -88,10 +87,6 @@ input[type="text"].search__form__input {
       flex: 0 1 550px;
       min-width: 550px;
     }
-  }
-  &--no-width {
-    min-width: 0;
-    flex: 0 1 auto;
   }
 }
 
