@@ -60,6 +60,7 @@ input[type="text"].search__form__input {
   padding-right: 2rem;
   font-weight: var(--normal);
   display: block;
+  max-width: 550px;
   background: var(--gramo-white);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -78,6 +79,7 @@ input[type="text"].search__form__input {
   }
 
   &--fixed-width {
+    max-width: none;
 
     @media (--desktop) {
       flex: 0 1 400px;

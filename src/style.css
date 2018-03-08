@@ -5024,6 +5024,7 @@ input[type="text"].search__form__input{
   padding-right:2rem;
   font-weight:400;
   display:block;
+  max-width:550px;
   background:#fdfdfd;
   overflow:hidden;
   text-overflow:ellipsis;
@@ -5048,6 +5049,10 @@ input[type="text"].search__form__input{
 
 input[type="text"].search__form__input--large{
   padding:1.2rem;
+}
+
+input[type="text"].search__form__input--fixed-width{
+  max-width:none;
 }
 
 @media (min-width: 960px){
