@@ -5031,9 +5031,9 @@ input[type="text"].search__form__input{
   border:1px solid #d9d9dc;
   border-radius:2px 0 0 2px;
   outline:none;
-  -webkit-flex:0 1 100%;
-  -ms-flex:0 1 100%;
-  flex:0 1 100%;
+  -webkit-flex:0 1 550px;
+  -ms-flex:0 1 550px;
+  flex:0 1 550px;
   margin-bottom:0;
 }
 

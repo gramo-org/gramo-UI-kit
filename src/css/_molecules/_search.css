@@ -67,7 +67,7 @@ input[type="text"].search__form__input {
   border: 1px solid var(--silver);
   border-radius: 2px 0 0 2px;
   outline: none;
-  flex: 0 1 100%;
+  flex: 0 1 550px;
   margin-bottom: 0;
 
   &--large {
