@@ -4139,16 +4139,9 @@ input[type="checkbox"].form__input--toggle-visibility{
     border-radius:0;
 }
 
-.ember-power-select-trigger, .ember-power-select-trigger--active, .ember-power-select-trigger:focus{
-    border:1px solid #d9d9dc;
-}
-
 .ember-power-select-trigger{
   border-radius:1px;
-}
-
-.ember-power-select-trigger, .ember-power-select-trigger--active, .ember-power-select-trigger:focus{
-    border:1px solid #d9d9dc;
+  padding:0;
 }
 
 .ember-power-select-status-icon{

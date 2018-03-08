@@ -73,12 +73,9 @@
     color: inherit; */
 }
 
-.ember-power-select-trigger, .ember-power-select-trigger--active, .ember-power-select-trigger:focus {
-    border: 1px solid var(--silver);
-}
-
 .ember-power-select-trigger {
   border-radius: 1px;
+  padding: 0;
     /* position: relative; 
     padding: 1.15rem 2.3rem 1.15rem 0.75rem;
     background-color: #fff;
@@ -88,10 +85,6 @@
     user-select: none;
     -webkit-user-select: none;
     color: inherit; */
-}
-
-.ember-power-select-trigger, .ember-power-select-trigger--active, .ember-power-select-trigger:focus {
-    border: 1px solid var(--silver);
 }
 
 .ember-power-select-status-icon {
