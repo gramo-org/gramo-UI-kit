@@ -4126,6 +4126,7 @@ input[type="checkbox"].form__input--toggle-visibility{
 }
 
 .ember-power-select-trigger, .ember-power-select-trigger--active, .ember-power-select-trigger:focus{
+    border:0;
 }
 
 .ember-power-select-dropdown.ember-basic-dropdown-content--below, .ember-power-select-dropdown.ember-basic-dropdown-content--in-place{
