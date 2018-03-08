@@ -5024,7 +5024,6 @@ input[type="text"].search__form__input{
   padding-right:2rem;
   font-weight:400;
   display:block;
-  max-width:550px;
   background:#fdfdfd;
   overflow:hidden;
   text-overflow:ellipsis;
@@ -5038,29 +5037,13 @@ input[type="text"].search__form__input{
   margin-bottom:0;
 }
 
-@media (min-width: 960px){
-
-  input[type="text"].search__form__input{
-    -webkit-flex:1 0 auto;
-    -ms-flex:1 0 auto;
-    flex:1 0 auto;
-  }
-}
-
 input[type="text"].search__form__input--large{
   padding:1.2rem;
-}
-
-input[type="text"].search__form__input--fixed-width{
-  max-width:none;
 }
 
 @media (min-width: 960px){
 
   input[type="text"].search__form__input--fixed-width{
-    -webkit-flex:0 1 400px;
-    -ms-flex:0 1 400px;
-    flex:0 1 400px;
     min-width:400px;
   }
 }
@@ -5068,9 +5051,6 @@ input[type="text"].search__form__input--fixed-width{
 @media (min-width: 1200px){
 
   input[type="text"].search__form__input--fixed-width{
-    -webkit-flex:0 1 550px;
-    -ms-flex:0 1 550px;
-    flex:0 1 550px;
     min-width:550px;
   }
 }
