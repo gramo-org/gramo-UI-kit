@@ -1,0 +1,3 @@
+.x-toggle:checked + .x-toggle-btn {
+  background-color: var(--gramo-turkis)!important;
+}

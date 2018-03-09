@@ -369,6 +369,10 @@ $('a:contains("mobilnummer")').click(function(){
     $(this).closest('.row').next('.row').addClass('hide');
     $('a:contains("mobilnummer")').show();
     });
+    
+  $('a:contains("Bekreft")').click(function(){
+    $(this).parent().parent().find('div label .searchable-list').addClass('searchable-list--open');
+  });
 
 // $('a:contains("Vis filtere")').click(function(e){
 //   e.preventDefault();

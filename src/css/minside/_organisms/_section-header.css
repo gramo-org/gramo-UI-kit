@@ -55,3 +55,22 @@
     }
   }
 }
+
+.section-header--with-toggle {
+  header {
+    flex: 1 0 100%;
+    @media (--desktop) {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+.section-header__toggle {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  @media (--desktop) {
+    margin-left: 2rem;
+    flex: 0 1 100%;
+  }
+}

@@ -58,6 +58,11 @@
   }
 }
 
+caption {
+  text-align: left;
+  font-weight: var(--semibold);
+  margin: 0 0 1rem .25rem;
+}
 
 /* Links in tables */
 .table a:not(.btn)  {
