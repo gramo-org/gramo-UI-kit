@@ -4542,7 +4542,12 @@ input[type="checkbox"].form__input--toggle-visibility{
     box-sizing:border-box!important;
 }
 
-
+.ember-power-select-trigger[aria-disabled="true"] .ember-power-select-search-input{
+  border-color:#d9d9dc;
+  background:rgb(230, 230, 230);
+  color:#a5a4ab;
+  background-image:none;
+}
 
 .ember-power-select-options li{
   padding:5px;

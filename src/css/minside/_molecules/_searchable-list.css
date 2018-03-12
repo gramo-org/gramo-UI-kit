@@ -112,7 +112,12 @@
     box-sizing: border-box!important;
 }
 
-
+.ember-power-select-trigger[aria-disabled="true"] .ember-power-select-search-input {
+  border-color: var(--silver);
+  background: color(var(--light-gray) shade(3%));
+  color: var(--off-gray);
+  background-image: none;
+}
 
 .ember-power-select-options {
     /* list-style: none;
