@@ -374,15 +374,15 @@ $('a:contains("mobilnummer")').click(function(){
     $(this).parent().parent().find('div label .searchable-list').addClass('searchable-list--open');
   });
   
-  $('button:contains("Godkjenn")').click(function(){
-    $(this).closest('.pending').find('.pending__meta').remove();
-    $(this).closest('.pending').removeClass('pending row--pending pending--changed pending--added pending--deleted');
-    $(this).parent().remove();
-  });
-  
-  $('button:contains("Avslå")').click(function(){
-    $(this).closest('.pending').remove();
-  });
+  // $('button:contains("Godkjenn")').click(function(){
+  //   $(this).closest('.pending').find('.pending__meta').remove();
+  //   $(this).closest('.pending').removeClass('pending row--pending pending--changed pending--added pending--deleted');
+  //   $(this).parent().remove();
+  // });
+  // 
+  // $('button:contains("Avslå")').click(function(){
+  //   $(this).closest('.pending').remove();
+  // });
 
 // $('a:contains("Vis filtere")').click(function(e){
 //   e.preventDefault();
