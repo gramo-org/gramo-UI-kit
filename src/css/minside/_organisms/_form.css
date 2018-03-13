@@ -17,15 +17,17 @@
   margin-top: 2.4rem;
 }
 
+.form__fieldset {
+  legend {
+    font-weight: var(--semibold);
+  }
+}
+
 .form__fieldset--group {
   background: none;
   border: 0;
   margin-top: 1.2rem;
   padding: 1rem 0;
-  
-  legend {
-    font-weight: var(--semibold);
-  }
 }
 
 .form__fieldset--border {

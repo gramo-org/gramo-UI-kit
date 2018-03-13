@@ -4861,6 +4861,12 @@ tr[data-src="draft"] > td:first-child::before{
 tr[data-src="draft"] > td:first-child::after{
   background-color:#a41681;
 }
+.time-input .form__label{
+  display:inline-block;
+}
+.time-input .form__input{
+  max-width:80px;
+}
 .site-header{
   position:relative;
   left:0;
@@ -4962,15 +4968,15 @@ tr[data-src="draft"] > td:first-child::after{
   margin-top:2.4rem;
 }
 
+.form__fieldset legend{
+  font-weight:600;
+}
+
 .form__fieldset--group{
   background:none;
   border:0;
   margin-top:1.2rem;
   padding:1rem 0;
-}
-
-.form__fieldset--group legend{
-  font-weight:600;
 }
 
 .form__fieldset--border{

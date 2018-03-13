@@ -67,6 +67,7 @@
 @import url('minside/_molecules/_card.css');
 @import url('minside/_molecules/_help.css');
 @import url('minside/_molecules/_table-row.css');
+@import url('minside/_molecules/_time-input.css');
 /* Organisms */
 @import url('minside/_organisms/_site-header.css');
 @import url('minside/_organisms/_sidebar.css');
