@@ -269,19 +269,13 @@
                   <li>
                     <div class="row" id="ISRC-ok">
                       <div class="col-xs-12 col--no-flex">
-                        <label class="form__label form__label--required is-valid--simple">ISRC
+                        <label class="form__label form__label--required">ISRC
                           <span class="form__label__help">En ny innspilling må ha en unik ISRC kode</span>
                           <span>
-                            <input type="text" class="form__input form__input--inline form__input--300" value="AHAEG09182938" placeholder="f.eks: NOXXX1501223">
-                            <button class="btn btn--inline btn--secondary">Sjekk ISRC</button>
+                            <input type="text" class="form__input form__input--inline form__input--300" value="AHAEG09182938" placeholder="f.eks: NOXXX1501223" disabled>
+                            <button class="btn btn--inline btn--secondary" disabled>Sjekk ISRC</button>
                           </span>
                         </label>
-                        
-                        <div class="form__input__valid">
-                          <p class="text--em">
-                            1 innspilling funnet i kladd
-                          </p>
-                        </div>
                       </div>
                     </div>
                     <div class="row">
@@ -307,6 +301,58 @@
                       <div class="col-xs-4 col-sm-2">
                         <label class="form__label">Spor nr.
                           <input type="number" min="1" value="1" class="form__input form__input--80">
+                        </label>
+                      </div>
+                    </div><!--end .row-->
+                  </li>
+                  <li>
+                    <div class="row" id="ISRC-ok">
+                      <div class="col-xs-12 col--no-flex">
+                        <label class="form__label form__label--required is-valid--simple">ISRC
+                          <span class="form__label__help">En ny innspilling må ha en unik ISRC kode</span>
+                          <span>
+                            <input type="text" class="form__input form__input--inline form__input--300" value="AHAEG09182938" placeholder="f.eks: NOXXX1501223">
+                            <button class="btn btn--inline btn--secondary">Sjekk ISRC</button>
+                          </span>
+                        </label>
+                        
+                        <div class="form__input__valid">
+                          <p class="text--em">
+                            1 innspilling funnet i kladd
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5">
+                        <label class="form__label">Tittel
+                          <input type="text" class="form__input" value="Take on Me">
+                        </label>
+                      </div>
+                    </div><!-- end .row -->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5">
+                        <label class="form__label">Hovedartist
+                          <input type="text" class="form__input" value="A-ha">
+                        </label>
+                      </div>
+                    </div><!-- end .row -->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <label class="form__label">Varighet
+                          <input type="time" class="form__input" value="03:24">
+                        </label>
+                      </div>
+                    </div><!--end .row-->
+                    <div class="row">
+                      <div class="col-xs-4 col-sm-2">
+                        <label class="form__label">Side nr.
+                          <input type="number" min="1" value="1" class="form__input form__input--80">
+                        </label>
+                      </div>
+                      <div class="col-xs-4 col-sm-2">
+                        <label class="form__label">Spor nr.
+                          <input type="number" min="1" value="2" class="form__input form__input--80">
                         </label>
                       </div>
                     </div><!--end .row-->
