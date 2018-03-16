@@ -370,7 +370,7 @@ $('a:contains("mobilnummer")').click(function(){
     $('a:contains("mobilnummer")').show();
     });
     
-  $('a:contains("Bekreft")').click(function(){
+  $('a:contains("bekreft")').click(function(){
     $(this).parent().parent().find('div label .searchable-list').addClass('searchable-list--open');
   });
   
