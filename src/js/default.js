@@ -374,6 +374,18 @@ $('a:contains("mobilnummer")').click(function(){
     $(this).parent().parent().find('div label .searchable-list').addClass('searchable-list--open');
   });
   
+  function toggleDraftsTable() {
+    var toggle = $('.section-header__toggle span input');
+    var draftsTable = $(toggle).closest('.section-header').next('table');
+    $(toggle).prop('checked') ? $(draftsTable).attr('hidden', false) : $(draftsTable).attr('hidden', true);
+  }
+  
+  toggleDraftsTable();
+  
+  $('.section-header__toggle span input').click(function() {
+    toggleDraftsTable();
+  });
+  
   // $('button:contains("Godkjenn")').click(function(){
   //   $(this).closest('.pending').find('.pending__meta').remove();
   //   $(this).closest('.pending').removeClass('pending row--pending pending--changed pending--added pending--deleted');
