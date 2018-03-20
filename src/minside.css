@@ -4346,6 +4346,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   -ms-flex:0 0 auto;
   flex:0 0 auto;
   margin:0 0 0 -1px;
+  text-decoration:none;
 }
 
 .search__form .search__submit::before{
