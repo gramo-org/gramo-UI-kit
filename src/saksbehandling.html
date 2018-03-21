@@ -294,6 +294,23 @@
             </div><!--/.tabs (inner) for search-->
           </section><!--/.tabs__section-->
           <section id="pending" class="tabs__section">
+            <div class="toolbar">
+              <div class="col-sm align--bottom">
+                <h2 class="heading--inline">
+                  Saksbehandling
+                  <span class="badge badge--secondary">3</span>
+                </h2>
+              </div>
+              <div class="col">
+                <label for="filter-input-value" class="form__label form__label--block text--small">
+                  Fri tekst søk
+                </label>
+                <div class="search__form search__form--in-toolbar">
+                  <input type="text" placeholder="Søk etter tittel, hovedartist eller ISRC" class="search__form__input search__form__input--fixed-width">
+                  <button class="search__submit"></button>
+                </div>
+              </div>
+            </div><!--end .toolbar -->
             <table class="table table--fluid">
               <thead class="table__head--always-visible">
                 <tr>
@@ -371,6 +388,53 @@
 
 <script src="js/vendor/jquery-1.11.3.min.js"></script>
 <script src="js/default.js"></script>
-
+<script>
+  const pending = [
+    {
+      Tittel: "JI Trafikk - Kjenning m/underlag og anslag LANG",
+      Hovedartist: "Hallgrim Bratberg | Andreas Sørby",
+      Utgivelsesår: "2016",
+      Label: "47 records",
+      ISRC: "NO00158738",
+      Endringsdato: "13.02.2018",
+      Av: "Morten Harket"
+    },
+    {
+      Tittel: "Aladdin Sane",
+      Hovedartist: "David Bowie",
+      Utgivelsesår: "1979",
+      Label: "Warner",
+      ISRC: "NO00158432",
+      Endringsdato: "13.02.2018",
+      Av: "Marika Olsen (Kobalt)"
+    },
+    {
+      Tittel: "Feel to follow",
+      Hovedartist: "the Maccabees",
+      Utgivelsesår: "2016",
+      Label: "Arista",
+      ISRC: "US00159738",
+      Endringsdato: "13.02.2018",
+      Av: "Morten Harket"
+    }
+  ]
+  const table = document.querySelector('#pending > table');
+  const sort = table.querySelector('.table-sort');
+  
+  function sortTable() {
+    if (sort.classList.contains('table-sort--null')) {
+      this.classList.add('table-sort--asc');
+      this.classList.remove('table-sort--null');
+    } else if (sort.classList.contains('table-sort--asc')) {
+      this.classList.add('table-sort--desc');
+      this.classList.remove('table-sort--asc');
+    } else if (sort.classList.contains('table-sort--desc')) {
+      this.classList.add('table-sort--null');
+      this.classList.remove('table-sort--desc');
+    }
+  }
+  
+  sort.addEventListener('click', sortTable);
+</script>
 </body>
 </html>
