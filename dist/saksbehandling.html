@@ -330,39 +330,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td data-label="Tittel">
-                    <a href="#">JI Trafikk - Kjenning m/underlag og anslag LANG</a>
-                  </td>
-                  <td data-label="Hovedartist">Hallgrim Bratberg | Andreas Sørby</td>
-                  <td data-label="Utgivelsesår">2016</td>
-                  <td data-label="Label">47 records</td>
-                  <td data-label="ISRC">NO00158738</td>
-                  <td data-label="Endringsdato">13.02.2018</td>
-                  <td data-label="Av"><a href="#">Morten Harket</a></td>
-                </tr>
-                <tr>
-                  <td data-label="Tittel">
-                    <a href="/discography/register_recording.html#tab2">Aladdin Sane</a>
-                  </td>
-                  <td data-label="Hovedartist">David Bowie</td>
-                  <td data-label="Utgivelsesår">99900999</td>
-                  <td data-label="Label">Warner</td>
-                  <td data-label="ISRC">NO00158432</td>
-                  <td data-label="Endringsdato">13.02.2018</td>
-                  <td data-label="Av"><a href="#">Marika Olsen (Kobalt)</a></td>
-                </tr>
-                <tr>
-                  <td data-label="Tittel">
-                    <a href="#">Feel to follow</a>
-                  </td>
-                  <td data-label="Hovedartist">the Maccabees</td>
-                  <td data-label="Utgivelsesår">2016</td>
-                  <td data-label="Label">Arista</td>
-                  <td data-label="ISRC">US00159738</td>
-                  <td data-label="Endringsdato">13.02.2018</td>
-                  <td data-label="Av"><a href="#">Morten Harket</a></td>
-                </tr>
+                
               </tbody>
             </table>
             <div class="text--right">
@@ -389,52 +357,89 @@
 <script src="js/vendor/jquery-1.11.3.min.js"></script>
 <script src="js/default.js"></script>
 <script>
-  const pending = [
+  const table = [
     {
-      Tittel: "JI Trafikk - Kjenning m/underlag og anslag LANG",
-      Hovedartist: "Hallgrim Bratberg | Andreas Sørby",
-      Utgivelsesår: "2016",
-      Label: "47 records",
-      ISRC: "NO00158738",
-      Endringsdato: "13.02.2018",
-      Av: "Morten Harket"
+      tittel: "JI Trafikk - Kjenning m/underlag og anslag LANG",
+      hovedartist: "Hallgrim Bratberg | Andreas Sørby",
+      utgivelsesår: "2016",
+      label: "47 records",
+      isrc: "NO00158738",
+      endringsdato: "13.02.2018",
+      av: "Morten Harket"
     },
     {
-      Tittel: "Aladdin Sane",
-      Hovedartist: "David Bowie",
-      Utgivelsesår: "1979",
-      Label: "Warner",
-      ISRC: "NO00158432",
-      Endringsdato: "13.02.2018",
-      Av: "Marika Olsen (Kobalt)"
+      tittel: "Aladdin Sane",
+      hovedartist: "David Bowie",
+      utgivelsesår: "1979",
+      label: "Warner",
+      isrc: "NO00158432",
+      endringsdato: "13.02.2018",
+      av: "Marika Olsen (Kobalt)"
     },
     {
-      Tittel: "Feel to follow",
-      Hovedartist: "the Maccabees",
-      Utgivelsesår: "2016",
-      Label: "Arista",
-      ISRC: "US00159738",
-      Endringsdato: "13.02.2018",
-      Av: "Morten Harket"
+      tittel: "Feel to follow",
+      hovedartist: "the Maccabees",
+      utgivelsesår: "2016",
+      label: "Arista",
+      isrc: "US00159738",
+      endringsdato: "13.02.2018",
+      av: "Morten Harket"
     }
   ]
-  const table = document.querySelector('#pending > table');
-  const sort = table.querySelector('.table-sort');
+  
+  let sorted = table.slice();
+  
+  function createTable(source) {
+    const tableData = source.map(row => {
+      return `
+        <tr>
+          <td data-label="${row.tittel}"><a href="#">${row.tittel}</a></td>
+          <td data-label="${row.hovedartist}">${row.hovedartist}</td>
+          <td data-label="${row.utgivelsesår}">${row.utgivelsesår}</td>
+          <td data-label="${row.label}">${row.label}</td>
+          <td data-label="${row.isrc}">${row.isrc}</td>
+          <td data-label="${row.endringsdato}">${row.endringsdato}</td>
+          <td data-label="${row.av}"><a href="#">${row.av}</a></td>
+        </tr>
+      `;
+    }).join('');
+    
+    document.querySelector('#pending tbody').innerHTML = tableData;
+  }
+  createTable(table);
+  
+  
+  const sort = document.querySelector('.table-sort');
+  
+  function aToz() {
+    const sortedAZ = sorted.sort((a, b) => a.av > b.av ? 1 : -1)
+    createTable(sortedAZ);
+  }
+  
+  function zToa() {
+    const sortedZA = sorted.sort((a, b) => a.av > b.av ? -1 : 1)
+    createTable(sortedZA);
+  }
+
   
   function sortTable() {
     if (sort.classList.contains('table-sort--null')) {
       this.classList.add('table-sort--asc');
       this.classList.remove('table-sort--null');
+      zToa();
     } else if (sort.classList.contains('table-sort--asc')) {
       this.classList.add('table-sort--desc');
       this.classList.remove('table-sort--asc');
+      aToz();
     } else if (sort.classList.contains('table-sort--desc')) {
       this.classList.add('table-sort--null');
       this.classList.remove('table-sort--desc');
+      createTable(table);
     }
   }
   
   sort.addEventListener('click', sortTable);
+
 </script>
 </body>
 </html>
