@@ -340,7 +340,7 @@ $(".row--clickable").click(function() {
 
 $('label:contains("Klassisk?") > input[type="checkbox"]').click(function(){
   if ($(this).is(':checked')) {
-      $(this).closest('.row').next('.row').show();
+      $(this).closest('.row').next('.row').css('display', 'flex');
       $('.link--add--classical').show();  
     } else {
       $(this).closest('.row').nextAll('.row.hide').hide();
@@ -351,7 +351,7 @@ $('label:contains("Klassisk?") > input[type="checkbox"]').click(function(){
 
 $('.link--add--classical').click(function(e){
   e.preventDefault();
-  $(this).prev('.row').show();
+  $(this).prev('.row').css('display', 'flex');
 });
 
 $('a:contains("mobilnummer")').click(function(){
