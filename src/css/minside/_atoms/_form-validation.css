@@ -3,7 +3,7 @@
   color: var(--slate-gray);
   font-family: 'minside-icons';
   position: absolute;
-  left: 92%;
+  right: 5px;
   top: 55%;
   background: var(--gramo-white);
   content: none;
