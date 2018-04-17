@@ -203,6 +203,10 @@
   display: none;
 }
 
+.pending {
+  opacity: 0.5;
+}
+
 /* For print */
 .print-header {
   display: none;

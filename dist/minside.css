@@ -1029,6 +1029,10 @@ p{
 .hide{
   display:none;
 }
+
+.pending{
+  opacity:0.5;
+}
 .print-header{
   display:none;
 }
