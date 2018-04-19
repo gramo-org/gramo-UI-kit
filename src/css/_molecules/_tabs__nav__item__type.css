@@ -38,7 +38,8 @@
     content: "\e918";
     top: .12rem;
   }
-  &--worklist:before {
+  &--worklist:before,
+  &--change-requests:before {
     content: "\e921";
     top: .13rem;
   }

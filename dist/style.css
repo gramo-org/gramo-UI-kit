@@ -4695,7 +4695,7 @@ main.pull .bucket{
   content:"\e918";
   top:.12rem;
 }
-.tabs__nav__item__type--worklist:before{
+.tabs__nav__item__type--worklist:before, .tabs__nav__item__type--change-requests:before{
   content:"\e921";
   top:.13rem;
 }
