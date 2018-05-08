@@ -5599,7 +5599,7 @@ caption{
   width:auto;
   margin:0;
 }
-.table--tracks tbody{
+.table--tracks > tbody{
   counter-reset:section;
 }
 .table--tracks tr{
@@ -5613,7 +5613,7 @@ caption{
     padding-left:0;
   }
 }
-.table--tracks tr:not(.table__row--no-count) > td:first-child::before{
+.table--tracks > tbody > tr:not(.table__row--no-count) > td:first-child::before{
   counter-increment:section;
   content:counters(section,".") " ";
   color:#504f56;
@@ -5621,7 +5621,7 @@ caption{
 }
 @media (min-width: 960px){
 
-  .table--tracks tr:not(.table__row--no-count) > td:first-child::before{
+  .table--tracks > tbody > tr:not(.table__row--no-count) > td:first-child::before{
     position:relative;
     top:1.6rem;
   }
