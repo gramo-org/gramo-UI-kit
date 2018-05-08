@@ -5845,7 +5845,7 @@ main.pull .section-header--fixed{
   color:#a5a4ab;
 }
 
-[data-type*="performer"]::before, [data-type*="person"]::before, [data-type*="inheritance"]::before, [data-type*="garnishment-debtor"]::before, [data-type*="positions"]::before{
+[data-type*="performer"]::before, [data-type*="person"]::before, [data-type*="inheritance"]::before, [data-type*="garnishment-debtor"]::before, [data-type*="positions"]::before, [data-type*="user"]::before{
   content:"\e916";
 }
 

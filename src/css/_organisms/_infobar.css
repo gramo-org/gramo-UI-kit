@@ -113,7 +113,8 @@
 [data-type*="person"]::before,
 [data-type*="inheritance"]::before,
 [data-type*="garnishment-debtor"]::before,
-[data-type*="positions"]::before {
+[data-type*="positions"]::before,
+[data-type*="user"]::before {
   content: "\e916";
 }
 
