@@ -3624,6 +3624,10 @@ input[type="checkbox"].form__input--toggle-visibility{
   -webkit-animation:sk-circleFadeDelay 1.2s infinite ease-in-out both;
   animation:sk-circleFadeDelay 1.2s infinite ease-in-out both;
 }
+.spinner--minimal{
+  margin:0 auto;
+  height:25px;
+}
 
 .spinner .spinner__circle2{
   -webkit-transform:rotate(30deg);
