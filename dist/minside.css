@@ -3629,7 +3629,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   height:25px;
 }
 .spinner--minimal__circle:before{
-  background-color:#88c7d8;
+  background-color:#fdfdfd;
 }
 
 .spinner .spinner__circle2{

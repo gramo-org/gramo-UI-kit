@@ -27,7 +27,7 @@
     height: 25px;
     
     &__circle:before {
-      background-color: var(--gramo-turkis);
+      background-color: var(--gramo-white);
     }
   }
 }
