@@ -3628,6 +3628,9 @@ input[type="checkbox"].form__input--toggle-visibility{
   margin:0 auto;
   height:25px;
 }
+.spinner--minimal__circle:before{
+  background-color:#88c7d8;
+}
 
 .spinner .spinner__circle2{
   -webkit-transform:rotate(30deg);

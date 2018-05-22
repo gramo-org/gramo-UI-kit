@@ -25,6 +25,10 @@
   &--minimal {
     margin: 0 auto;
     height: 25px;
+    
+    &__circle:before {
+      background-color: var(--gramo-turkis);
+    }
   }
 }
 
