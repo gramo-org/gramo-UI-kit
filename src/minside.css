@@ -3625,10 +3625,13 @@ input[type="checkbox"].form__input--toggle-visibility{
   animation:sk-circleFadeDelay 1.2s infinite ease-in-out both;
 }
 .spinner--minimal{
-  margin:0 auto;
+  margin:0 auto 0 25%;
   height:25px;
 }
-.spinner--minimal__circle:before{
+.spinner--minimal .spinner__circle{
+  width:50%;
+}
+.spinner--minimal .spinner__circle:before{
   background-color:#fdfdfd;
 }
 
