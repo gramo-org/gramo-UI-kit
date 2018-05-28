@@ -6276,6 +6276,48 @@ tr > td:last-child{
 .table--numeric tr > td:first-child::before{
   top:50%;
 }
+
+.table--with-checkboxes tr > td:first-child{
+  padding-left:2rem;
+}
+
+.table--with-checkboxes tr > td:first-child::before{
+  z-index:1;
+}
+
+.table--with-checkboxes .form__input--checkbox{
+  position:relative;
+  top:1px;
+  left:-1px;
+  z-index:0;
+}
+
+.table--with-checkboxes .form__label span{
+  width:2rem;
+  height:2rem;
+  background:#fdfdfd;
+  display:block;
+  position:absolute;
+  top:calc(50% - 1rem);
+  left:-0.5rem;
+  z-index:-1;
+}
+
+.table--with-checkboxes .form__input--checkbox:checked{
+  z-index:3;
+}
+
+.table--with-checkboxes .form__input--checkbox:checked + span{
+  z-index:2;
+}
+
+.table--with-checkboxes tr:hover > td:first-child::before{
+  visibility:hidden;
+}
+
+.table--with-checkboxes tr:hover .form__label span{
+  background:#f9f9f9;
+}
 .tabs{
   position:relative;
 }

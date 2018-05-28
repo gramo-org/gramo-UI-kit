@@ -11,3 +11,56 @@
     top: 50%;
   }
 }
+
+.table--with-checkboxes {
+  /* hide checkboxes underneath number */
+  tr > td:first-child {
+    padding-left: 2rem;
+    
+    &::before {
+      z-index: 1; /* default stacking order for number 1 */
+    }
+  }
+  
+  .form__input--checkbox {
+    position: relative;
+    top: 1px;
+    left: -1px;
+    z-index: 0; /* default stacking order for <input>  0 */
+  }
+  
+  /* <span> used to cover number when row is hovered over and checkbox is :checked */
+  .form__label span {
+    width: 2rem;
+    height: 2rem;
+    background: var(--gramo-white);
+    display: block;
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: -0.5rem;
+    z-index: -1; /* default stacking order for <span>  -1 */
+  }
+  
+    /* stacking order for <input> when :checked  3 */
+  .form__input--checkbox:checked {
+    z-index: 3;
+  }
+  
+  /* stacking order for <span> when input:checked  2 */
+  .form__input--checkbox:checked + span {
+    z-index: 2;
+  }
+  
+  /* when row is hovered over: */
+  tr:hover {
+    /* hide number */
+    & > td:first-child::before {
+      visibility: hidden;
+    }
+    
+    .form__label span {
+      /* make <span> same colour as row background */
+      background: var(--row-hover);
+    }
+  }
+}
