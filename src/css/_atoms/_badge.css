@@ -22,6 +22,12 @@
     }
   }
   
+  &--in-td {
+    vertical-align: baseline;
+    min-width: 60px;
+    text-align: center;
+  }
+  
   &--primary {
     background: var(--gramo-blue);
     color: #fff;

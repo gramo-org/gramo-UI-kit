@@ -31,4 +31,8 @@
   & > li.selected, & > li.selected a {
     color: var(--gramo-blue);
   }
+  
+  &--no-margin {
+    margin: 0;
+  }
 }

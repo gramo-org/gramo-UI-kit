@@ -45,9 +45,7 @@
   }
 
   &--right {
-    @media (--desktop) {
-      float: right;
-    }
+    justify-content: flex-end;
   }
 
   &--in-toolbar {

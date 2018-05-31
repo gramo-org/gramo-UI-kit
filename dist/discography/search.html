@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../style.css">
   <script>
-  window.onload = window.location.hash = 'tab2';
+  window.onload = window.location.hash = 'search';
   </script>
 </head>
 <body>
@@ -130,15 +130,25 @@
       <section class="container container--hd">
         <div class="tabs">
           <ul class="tabs__nav tabs__nav--flexible">
-            <li class="tabs__nav__item tabs__nav__item--search"><a href="#search"><i class="icon--search"></i> Søk</a></li>
-            <!-- <li class="tabs__nav__item">
-              <a href="#tab2">
-                <span class="tabs__nav__item__type tabs__nav__item__type--recording">Innspilling</span>
-                Aladdin Sane
+            <li class="tabs__nav__item tabs__nav__item--search">
+              <a href="#search">
+                <span class="icon--search"></span> 
+                Søk
               </a>
-            </li> -->
+            </li>
+            <li class="tabs__nav__item">
+              <a href="#duplikatliste">
+                <span class="tabs__nav__item__type tabs__nav__item__type--list">Duplikatliste</span>
+                4 innspillinger
+              </a>
+            </li>
+            <li class="tabs__nav__item">
+              <a href="#bulkliste">
+                <span class="tabs__nav__item__type tabs__nav__item__type--list">Bulkliste</span>
+                4 innspillinger
+              </a>
+            </li>
           </ul>
-
           <section id="search" class="tabs__section">
             <div class="toolbar">
               <div class="search--with-dropdown">
@@ -159,11 +169,30 @@
                   </form>
                 </div>
               </div>
+              <div class="col-sm-2 align--vertical-center">
+                <label class="form__label">
+                  <input type="checkbox" checked> Vis duplikater
+                </label>
+              </div>
               <div class="col-xs col--no-flex text--right">
                 <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
               </div>
+              <div class="toolbar__lower">
+                <div class="row">
+                  <div class="col align--vertical-center">
+                    <span class="text--semibold text--pre">4 treff</span>
+                  </div>
+                  <div class="col align--vertical-center">
+                    <a href="#" class="btn btn--secondary text--pre">Velg alle</a>
+                  </div>
+                  <div class="col-sm text--right col--no-flex">
+                    <button class="btn btn--secondary" disabled>Legg til duplikatliste</button>
+                    <button class="btn btn--secondary" disabled>Legg til bulkliste</button>
+                  </div>
+                </div>
+              </div><!--end .toolbar__lower-->
             </div><!--end .toolbar-->
-            <table class="table table--fluid table--numeric table--with-checkboxes">
+            <table class="table drilldown table--fluid table--numeric table--with-checkboxes">
               <thead>
                 <tr>
                   <th>
@@ -173,20 +202,21 @@
                     Hovedartist
                   </th>
                   <th>
-                    Årutgitt
+                    Utgivelsesår
                   </th>
                   <th>
                     Label
                   </th>
                   <th>
-                    Tid
+                    Varighet
                   </th>
-                  <th colspan="2">
+                  <th>
                     ISRC
                   </th>
+                  <th></th>
                 </tr>
               </thead>
-              <tr>
+              <tr class="drilldown-body drilldown-toggle" data-level="1">
                 <td data-label="Tittel">
                   <label class="form__label">
                     <input type="checkbox" class="form__input--checkbox">
@@ -194,24 +224,130 @@
                   </label>
                   Aladdin Sane
                   (1913-1928-197?)
+                  <span class="badge badge--primary badge--in-td">Master</span>
                 </td>
                 <td data-label="Hovedartist">
                   David Bowie, Spiders From Mars
                 </td>
-                <td data-label="Årutgitt">
+                <td data-label="Utgivelsesår">
                   1973
                 </td>
                 <td data-label="Label">
                   RCA
                 </td>
-                <td data-label="Tid">
+                <td data-label="Varighet">
                   00:33:31
                 </td>
                 <td data-label="ISRC">
                   USJT10300113
                 </td>
                 <td class="text--right">
-                  <span class="badge badge--draft">Kladd</span>
+                  <span class="table-row-toggle"></span>
+                </td>
+              </tr>
+              <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                <td colspan="7">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h4>Innspillingsinfo</h4>
+                      <ul class="no-list">
+                        <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                        <li><span class="text--semibold">Version:</span> -</li>
+                        <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                        <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                        <li><span class="text--semibold">Produsentland:</span> USA</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3">
+                      <h4>Eierskap</h4>
+                      <ul class="no-list">
+                        <li>Parlaphone (100%) 1969 -</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <h4>Utøvere</h4>
+                      <ul class="no-list">
+                        <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                        <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                        <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                        <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                        <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                        <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                        <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-2">
+                      <h4>Utgivelser</h4>
+                      <ul class="no-list">
+                        <li>David Bowie</li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="drilldown-body drilldown-toggle row--no-checkbox" data-level="1">
+                <td data-label="Tittel">
+                  Aladdin Sane
+                  (1913-1928-197?)
+                  <span class="badge badge--secondary badge--in-td">Duplicate</span>
+                </td>
+                <td data-label="Hovedartist">
+                  David Bowie, Spiders From Mars
+                </td>
+                <td data-label="Utgivelsesår">
+                  1973
+                </td>
+                <td data-label="Label">
+                  RCA
+                </td>
+                <td data-label="Varighet">
+                  00:33:31
+                </td>
+                <td data-label="ISRC">
+                  USJT10300113
+                </td>
+                <td class="text--right">
+                  <span class="table-row-toggle"></span>
+                </td>
+              </tr>
+              <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                <td colspan="7">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h4>Innspillingsinfo</h4>
+                      <ul class="no-list">
+                        <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                        <li><span class="text--semibold">Version:</span> -</li>
+                        <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                        <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                        <li><span class="text--semibold">Produsentland:</span> USA</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3">
+                      <h4>Eierskap</h4>
+                      <ul class="no-list">
+                        <li>Parlaphone (100%) 1969 -</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <h4>Utøvere</h4>
+                      <ul class="no-list">
+                        <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                        <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                        <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                        <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                        <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                        <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                        <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-2">
+                      <h4>Utgivelser</h4>
+                      <ul class="no-list">
+                        <li>David Bowie</li>
+                      </ul>
+                    </div>
+                  </div>
                 </td>
               </tr>
               <tr>
@@ -226,19 +362,21 @@
                 <td data-label="Hovedartist">
                   David Bowie, Spiders From Mars
                 </td>
-                <td data-label="Årutgitt">
+                <td data-label="Utgivelsesår">
                   1973
                 </td>
                 <td data-label="Label">
                   RCA
                 </td>
-                <td data-label="Tid">
+                <td data-label="Varighet">
                   00:33:31
                 </td>
                 <td data-label="ISRC">
                   USJT10300113
                 </td>
-                <td></td>
+                <td class="text--right">
+                  <span class="table-row-toggle"></span>
+                </td>
               </tr>
               <tr>
                 <td data-label="Tittel">
@@ -252,21 +390,148 @@
                 <td data-label="Hovedartist">
                   David Bowie, Spiders From Mars
                 </td>
-                <td data-label="Årutgitt">
+                <td data-label="Utgivelsesår">
                   1973
                 </td>
                 <td data-label="Label">
                   RCA
                 </td>
-                <td data-label="Tid">
+                <td data-label="Varighet">
                   00:33:31
                 </td>
                 <td data-label="ISRC">
                   USJT10300113
                 </td>
-                <td></td>
+                <td class="text--right">
+                  <span class="table-row-toggle"></span>
+                </td>
               </tr>
-              <tr>
+            </table><!--/.table-->
+          </section><!--/.tabs__section-->
+          <section id="duplikatliste" class="tabs__section">
+            <div class="toolbar">
+              <div class="col-xs col--no-flex">
+                <h1>4 innspillinger</h1>
+              </div>
+              
+              <div class="toolbar__lower">
+                <div class="row">
+                  <div class="col align--vertical-center">
+                    <a href="#" class="btn btn--secondary text--pre">Velg alle</a>
+                  </div>
+                  <div class="col-sm col--no-flex">
+                    <button class="btn btn--secondary" disabled>Ta vekk fra liste</button>
+                  </div>
+                  <div class="col-xs col--no-flex text--right">
+                    <div class="search">
+                      <form action="" class="search__form search__form--right search__form--in-toolbar">
+                        <input type="text" class="search__form__input" value="" placeholder="Filtrér...">
+                        <button class="search__submit"></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div><!--end .toolbar__lower-->
+            </div><!--end .toolbar-->
+            <section class="scrollable-area scrollable-area--with-footer" style="height: calc(100vh - 40rem);">
+              <table class="table drilldown table--fluid table--numeric table--with-checkboxes">
+                <thead>
+                  <tr>
+                    <th>
+                      Tittel
+                    </th>
+                    <th>
+                      Hovedartist
+                    </th>
+                    <th>
+                      Utgivelsesår
+                    </th>
+                    <th>
+                      Label
+                    </th>
+                    <th>
+                      Varighet
+                    </th>
+                    <th>
+                      ISRC
+                    </th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tr class="drilldown-body drilldown-toggle" data-level="1">
+                  <td data-label="Tittel">
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    Aladdin Sane
+                    (1913-1928-197?)
+                    <span class="badge badge--primary badge--in-td">Master</span>
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie, Spiders From Mars
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1973
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:33:31
+                  </td>
+                  <td data-label="ISRC">
+                    USJT10300113
+                  </td>
+                  <td>
+                    <button class="btn btn--primary btn--small">Valgt som master</button>
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                  <td colspan="8">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h4>Innspillingsinfo</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                          <li><span class="text--semibold">Version:</span> -</li>
+                          <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                          <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                          <li><span class="text--semibold">Produsentland:</span> USA</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <h4>Eierskap</h4>
+                        <ul class="no-list">
+                          <li>Parlaphone (100%) 1969 -</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <h4>Utøvere</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                          <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                          <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                          <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                          <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h4>Utgivelser</h4>
+                        <ul class="no-list">
+                          <li>David Bowie</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="drilldown-body drilldown-toggle" data-level="1">
                   <td data-label="Tittel">
                     <label class="form__label">
                       <input type="checkbox" class="form__input--checkbox">
@@ -278,30 +543,409 @@
                   <td data-label="Hovedartist">
                     David Bowie, Spiders From Mars
                   </td>
-                  <td data-label="Årutgitt">
+                  <td data-label="Utgivelsesår">
                     1973
                   </td>
                   <td data-label="Label">
                     RCA
                   </td>
-                  <td data-label="Tid">
+                  <td data-label="Varighet">
                     00:33:31
                   </td>
                   <td data-label="ISRC">
                     USJT10300113
                   </td>
-                  <td></td>
-              </tr>
-            </table><!--/.table-->
-          </section><!--/.tabs__section-->
-          <!-- <section id="tab2" class="tabs__section tabs__section--outline">
-
-              
+                  <td>
+                    <button class="btn btn--secondary btn--small" disabled>Velg som master</button>
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                  <td colspan="8">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h4>Innspillingsinfo</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                          <li><span class="text--semibold">Version:</span> -</li>
+                          <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                          <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                          <li><span class="text--semibold">Produsentland:</span> USA</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <h4>Eierskap</h4>
+                        <ul class="no-list">
+                          <li>Parlaphone (100%) 1969 -</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <h4>Utøvere</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                          <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                          <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                          <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                          <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h4>Utgivelser</h4>
+                        <ul class="no-list">
+                          <li>David Bowie</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    Aladdin Sane
+                    (1913-1928-197?)
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie, Spiders From Mars
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1973
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:33:31
+                  </td>
+                  <td data-label="ISRC">
+                    USJT10300113
+                  </td>
+                  <td>
+                    <button class="btn btn--secondary btn--small" disabled>Velg som master</button>
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    Aladdin Sane
+                    (1913-1928-197?)
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie, Spiders From Mars
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1973
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:33:31
+                  </td>
+                  <td data-label="ISRC">
+                    USJT10300113
+                  </td>
+                  <td>
+                    <button class="btn btn--secondary btn--small" disabled>Velg som master</button>
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+              </table><!--/.table-->
+            </section><!--end /.scrollable-area-->
+            <footer class="footer footer--sticky" style="margin: 0 -3rem;width: calc(100% + 6rem);">
+              <div class="row row--with-border">
+                <div class="col-sm col--no-flex">
+                  <h2>Tilbakevirkendekraft gjelder for:</h2>
+                  <h4 class="heading--space-below">(Spilletid fra duplikatene blir lagt til masteren. Dette vil påvirke korreksjonsavregning)</h4>
+                  <label class="form__label form__label--inline">
+                    <input type="checkbox" class="form__input--checkbox" name="" value="" checked>Produsent
+                  </label>
+                  <label class="form__label form__label--inline">
+                    <input type="checkbox" class="form__input--checkbox" name="" value="" checked>Utøver
+                  </label>
+                </div>
+              </div><!-- end .row -->
+              <div class="row row--spaced">
+                <div class="col-sm col--no-flex">
+                  <a href="#" class="btn btn--primary">Koble duplikater til masteren</a>
+                </div>
+              </div>
+            </footer>
+          </section><!--end /.tabs__section-->
+          <section id="bulkliste" class="tabs__section">
+            <div class="toolbar">
+              <div class="col-xs col--no-flex">
+                <h1>4 innspillinger</h1>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <ol class="wizard-steps wizard-steps--no-margin">
+                  <li class="selected">1. Bulkliste</li>
+                  <li>2. Bulk actions</li>
+                  <li>3. Oppsummering</li>
+                </ol>
+              </div>
+              <div class="toolbar__lower">
+                <div class="row">
+                  <div class="col align--vertical-center">
+                    <a href="#" class="btn btn--secondary text--pre">Velg alle</a>
+                  </div>
+                  <div class="col-sm col--no-flex">
+                    <button class="btn btn--secondary" disabled>Ta vekk fra liste</button>
+                  </div>
+                  <div class="col-xs col--no-flex text--right">
+                    <div class="search">
+                      <form action="" class="search__form search__form--right search__form--in-toolbar">
+                        <input type="text" class="search__form__input" value="" placeholder="Filtrér...">
+                        <button class="search__submit"></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div><!--end .toolbar__lower-->
+            </div><!--end .toolbar-->
+            <section class="scrollable-area scrollable-area--with-footer" style="height: calc(100vh - 33.5rem);">
+              <table class="table drilldown table--fluid table--numeric table--with-checkboxes">
+                <thead>
+                  <tr>
+                    <th>
+                      Tittel
+                    </th>
+                    <th>
+                      Hovedartist
+                    </th>
+                    <th>
+                      Utgivelsesår
+                    </th>
+                    <th>
+                      Label
+                    </th>
+                    <th>
+                      Varighet
+                    </th>
+                    <th>
+                      ISRC
+                    </th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tr class="drilldown-body drilldown-toggle" data-level="1">
+                  <td data-label="Tittel">
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    Aladdin Sane
+                    (1913-1928-197?)
+                    <span class="badge badge--primary badge--in-td">Master</span>
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie, Spiders From Mars
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1973
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:33:31
+                  </td>
+                  <td data-label="ISRC">
+                    USJT10300113
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                  <td colspan="7">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h4>Innspillingsinfo</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                          <li><span class="text--semibold">Version:</span> -</li>
+                          <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                          <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                          <li><span class="text--semibold">Produsentland:</span> USA</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <h4>Eierskap</h4>
+                        <ul class="no-list">
+                          <li>Parlaphone (100%) 1969 -</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <h4>Utøvere</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                          <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                          <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                          <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                          <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h4>Utgivelser</h4>
+                        <ul class="no-list">
+                          <li>David Bowie</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="drilldown-body drilldown-toggle" data-level="1">
+                  <td data-label="Tittel">
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    Aladdin Sane
+                    (1913-1928-197?)
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie, Spiders From Mars
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1973
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:33:31
+                  </td>
+                  <td data-label="ISRC">
+                    USJT10300113
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                  <td colspan="7">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h4>Innspillingsinfo</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                          <li><span class="text--semibold">Version:</span> -</li>
+                          <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                          <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                          <li><span class="text--semibold">Produsentland:</span> USA</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <h4>Eierskap</h4>
+                        <ul class="no-list">
+                          <li>Parlaphone (100%) 1969 -</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <h4>Utøvere</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                          <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                          <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                          <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                          <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h4>Utgivelser</h4>
+                        <ul class="no-list">
+                          <li>David Bowie</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    Aladdin Sane
+                    (1913-1928-197?)
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie, Spiders From Mars
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1973
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:33:31
+                  </td>
+                  <td data-label="ISRC">
+                    USJT10300113
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    Aladdin Sane
+                    (1913-1928-197?)
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie, Spiders From Mars
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1973
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:33:31
+                  </td>
+                  <td data-label="ISRC">
+                    USJT10300113
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+              </table><!--/.table-->
+            </section><!--end /.scrollable-area-->
+            <footer class="footer footer--sticky" style="margin: 0 -3rem; width: calc(100% + 6rem);">
+              <h2 class="heading--space-below">Hva vil du gjøre med innspillingene i bulklisten?</h2>
+              <a href="#" class="btn btn--primary btn--fixed-width">Redigere innspillingsinfo</a>
+              <a href="#" class="btn btn--primary btn--fixed-width">Legg til eierskap</a>
+              <a href="#" class="btn btn--primary btn--fixed-width">Redigere utøvere</a>
+            </footer>
           </section><!--end /.tabs__section-->
         </div><!--end /.tabs-->
-
       </section><!--end /.container-->
-
     </main>
   </div><!--End site-wrapper-->
 

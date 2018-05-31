@@ -39,8 +39,12 @@
     top: .12rem;
   }
   &--worklist:before,
-  &--change-requests:before {
+  &--change-requests:before,
+  &--list:before {
     content: "\e921";
     top: .13rem;
+  }
+  &--duplicate:before {
+    content: "\e911";
   }
 }

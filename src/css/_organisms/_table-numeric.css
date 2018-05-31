@@ -6,38 +6,46 @@
     padding-left: 5rem;
   }
 
-  tr > td:first-child::before {
+  tr:not(.table__row--no-count) > td:first-child::before {
     @extend .fake-table--numeric > .fake-table__row > *:first-child::before;
     top: 50%;
+  }
+  
+  .dd-open > td:first-child::before {
+    color: var(--gramo-white)!important;
+    background: var(--slate-gray)!important;
   }
 }
 
 .table--with-checkboxes {
-  /* hide checkboxes underneath number */
-  tr > td:first-child {
-    padding-left: 2rem;
-    
-    &::before {
-      z-index: 1; /* default stacking order for number 1 */
-    }
+  
+  tr > td:first-child::before {
+    z-index: 1; /* default stacking order for number 1 */
   }
   
   .form__input--checkbox {
     position: relative;
-    top: 1px;
-    left: -1px;
-    z-index: 0; /* default stacking order for <input>  0 */
+    z-index: -1; /* default stacking order for <input>  0 */
+  }
+  
+  .form__label {
+    position: absolute;
+    left: 1.5rem;
+    top: calc(50% - 1.5rem);
+    padding: .5rem .5rem .5rem .3rem;
   }
   
   /* <span> used to cover number when row is hovered over and checkbox is :checked */
   .form__label span {
-    width: 2rem;
-    height: 2rem;
+    width: 100%;
+    height: 100%;
     background: var(--gramo-white);
     display: block;
     position: absolute;
-    top: calc(50% - 1rem);
-    left: -0.5rem;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: -1; /* default stacking order for <span>  -1 */
   }
   
@@ -52,15 +60,32 @@
   }
   
   /* when row is hovered over: */
-  tr:hover {
+  tr:not(.row--no-checkbox):hover {
     /* hide number */
     & > td:first-child::before {
       visibility: hidden;
+    }
+    
+    .form__input--checkbox:not(:checked) {
+      z-index: 0;
     }
     
     .form__label span {
       /* make <span> same colour as row background */
       background: var(--row-hover);
     }
+  }
+  /* Adjust background color of <span> */
+  .dd-open > td:first-child .form__label span {
+    background: var(--table-head-background);
+  }
+  
+  .dd-open:hover > td:first-child .form__label span {
+    background: var(--x-light-gray);
+  }
+  
+  /* Align parent and child row left-margins */
+  .table__row--no-count .row {
+    padding-left: .75rem;
   }
 }

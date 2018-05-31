@@ -46,4 +46,11 @@
   &__column {
     flex: 0 1 20%;
   }
+  
+  &__lower {
+    width: 100%;
+    padding: 1rem 0 0 .5rem;
+    border-top: 1px solid var(--table-border-color);
+    margin: 2rem 1rem 0rem 1rem;
+  }
 }

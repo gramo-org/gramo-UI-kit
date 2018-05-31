@@ -91,4 +91,8 @@
     padding: .5rem 1rem;
     margin: 0;
   }
+  
+  &--fixed-width {
+    min-width: 200px;
+  }
 }
