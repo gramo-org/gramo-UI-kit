@@ -380,7 +380,7 @@ $('a:contains("mobilnummer")').click(function(){
     $(toggle).prop('checked') ? $(draftsTable).attr('hidden', false) : $(draftsTable).attr('hidden', true);
   }
   
-  toggleDraftsTable();
+
   
   $('.section-header__toggle span input').click(function() {
     toggleDraftsTable();
