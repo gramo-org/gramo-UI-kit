@@ -132,3 +132,13 @@
     margin-top: .75rem;
   }
 }
+
+.form__field--with-toggles {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  
+  & > *:first-child {
+    flex: 1;
+  }
+}

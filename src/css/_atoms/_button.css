@@ -49,7 +49,7 @@
   }
 
   &--secondary {
-    border-color: var(--silver);
+    border-color: color(var(--silver) shade(5%));
     background-color: var(--secondary);
     color: var(--gramo-black);
     border-width: 1px 1px 3px 1px!important;
@@ -94,5 +94,6 @@
   
   &--fixed-width {
     min-width: 200px;
+    margin: 0 .5rem;
   }
 }

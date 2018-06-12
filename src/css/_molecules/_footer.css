@@ -1,6 +1,11 @@
 .footer--sticky {
   width: 100%;
   text-align: center;
-  background: var(--silver);
+  background: color(var(--silver) tint(25%));
   padding: 2rem;
+}
+
+.footer--full-width {
+   margin: 0 -3rem;
+   width: calc(100% + 6rem);
 }

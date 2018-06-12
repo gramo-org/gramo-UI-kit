@@ -333,6 +333,10 @@ td.text--center,
   margin-bottom: .4rem;
 }
 
+.row--spaced-large {
+  margin-bottom: 1.2rem;
+}
+
 .row--with-border::after {
   content: '';
   height: 1px;

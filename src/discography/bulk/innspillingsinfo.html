@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="/img/favicon_prod.ico">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script>
+  window.onload = window.location.hash = 'bulkliste';
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item">
+              <a href="/" class="active">Dashbord</a>
+            </li>
+            <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/file-statuses">Innleste filer</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/deviations">Avvik</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/broadcasters">Program admin</a>
+                </li>
+              </ul>
+            </li>
+            <li id="matching" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-750="750">Matching</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/identified-playback-group-summaries">Identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=null">Ikke identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=true">Restliste</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unreleased-music">Ikke utgitt</a>
+                </li>
+              </ul>
+            </li>
+            <li id="discography" class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+              <a data-ember-action="" data-ember-action-854="854">Diskografi</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/file-statuses">Innlest kladd</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/search?query=%20%20&amp;type=releases" class="active">Søk</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/worklist">Arbeidsliste</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/federations">Rettighetshaverorg.</a>
+                </li>
+              </ul>
+            </li>
+            <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-965="965">Min side</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Brukere</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/distribution">Avregning</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/payments">Utbetalinger</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/ipd">IPD</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/users/new">Ny bruker</a>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="../../img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+
+      <!--- Flash message --->
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success">
+          <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--borderless">Angre ?</button></p>
+        </div>
+      </div> -->
+
+      <section class="container container--hd">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
+            <li class="tabs__nav__item tabs__nav__item--search">
+              <a href="#search">
+                <span class="icon--search"></span> 
+                Søk
+              </a>
+            </li>
+            <li class="tabs__nav__item">
+              <a href="#bulkliste">
+                <span class="tabs__nav__item__type tabs__nav__item__type--list">Innspillingsinfo</span>
+                4 innspillinger
+              </a>
+            </li>
+          </ul>
+          <section id="search" class="tabs__section">
+            <div class="toolbar">
+              <div class="search--with-dropdown">
+                <label class="form__label no-margin--right">
+                  <select class="select select--fluid select--with-search align--vertical-center">
+                    <option>Innspilling</option>
+                    <option>Utgivelse</option>
+                    <option>Person</option>
+                    <option>Organisasjon</option>
+                    <option>Gruppe</option>
+                    <option>Label</option>
+                  </select>
+                </label>
+                <div class="search">
+                  <form action="" class="search__form search__form--in-toolbar">
+                    <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                    <button class="search__submit"></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-sm-2 align--vertical-center">
+                <label class="form__label">
+                  <input type="checkbox" checked> Vis duplikater
+                </label>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
+              </div>
+              <div class="toolbar__lower">
+                <div class="row">
+                  <div class="col align--vertical-center">
+                    <span class="text--semibold text--pre">4 treff</span>
+                  </div>
+                  <div class="col align--vertical-center">
+                    <a href="#" class="btn btn--secondary text--pre">Velg alle</a>
+                  </div>
+                  <div class="col-sm text--right col--no-flex">
+                    <button class="btn btn--secondary" disabled>Legg til duplikatliste</button>
+                    <button class="btn btn--secondary" disabled>Legg til bulkliste</button>
+                  </div>
+                </div>
+              </div><!--end .toolbar__lower-->
+            </div><!--end .toolbar-->
+            <table class="table drilldown table--fluid table--numeric table--with-checkboxes">
+              <thead>
+                <tr>
+                  <th>
+                    Tittel
+                  </th>
+                  <th>
+                    Hovedartist
+                  </th>
+                  <th>
+                    Utgivelsesår
+                  </th>
+                  <th>
+                    Label
+                  </th>
+                  <th>
+                    Varighet
+                  </th>
+                  <th>
+                    ISRC
+                  </th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tr class="drilldown-body drilldown-toggle" data-level="1">
+                <td data-label="Tittel">
+                  <label class="form__label">
+                    <input type="checkbox" class="form__input--checkbox">
+                    <span></span>
+                  </label>
+                  <a href="#">Space Oddity</a>
+
+                  <span class="badge badge--primary badge--in-td">Master</span>
+                </td>
+                <td data-label="Hovedartist">
+                  David Bowie
+                </td>
+                <td data-label="Utgivelsesår">
+                  1969
+                </td>
+                <td data-label="Label">
+                  RCA
+                </td>
+                <td data-label="Varighet">
+                  00:05:25
+                </td>
+                <td data-label="ISRC">
+                  B01499JUQ20
+                </td>
+                <td class="text--right">
+                  <span class="table-row-toggle"></span>
+                </td>
+              </tr>
+              <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                <td colspan="7">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h4>Innspillingsinfo</h4>
+                      <ul class="no-list">
+                        <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                        <li><span class="text--semibold">Version:</span> -</li>
+                        <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                        <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                        <li><span class="text--semibold">Produsentland:</span> USA</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3">
+                      <h4>Eierskap</h4>
+                      <ul class="no-list">
+                        <li>Parlaphone (100%) 1969 -</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <h4>Utøvere</h4>
+                      <ul class="no-list">
+                        <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                        <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                        <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                        <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                        <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                        <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                        <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-2">
+                      <h4>Utgivelser</h4>
+                      <ul class="no-list">
+                        <li>David Bowie</li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="drilldown-body drilldown-toggle row--no-checkbox" data-level="1">
+                <td data-label="Tittel">
+                  <a href="#">Space Oddity</a>
+
+                  <span class="badge badge--secondary badge--in-td">Duplicate</span>
+                </td>
+                <td data-label="Hovedartist">
+                  David Bowie
+                </td>
+                <td data-label="Utgivelsesår">
+                  1969
+                </td>
+                <td data-label="Label">
+                  RCA
+                </td>
+                <td data-label="Varighet">
+                  00:05:25
+                </td>
+                <td data-label="ISRC">
+                  B01499JUQ20
+                </td>
+                <td class="text--right">
+                  <span class="table-row-toggle"></span>
+                </td>
+              </tr>
+              <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                <td colspan="7">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h4>Innspillingsinfo</h4>
+                      <ul class="no-list">
+                        <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                        <li><span class="text--semibold">Version:</span> -</li>
+                        <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                        <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                        <li><span class="text--semibold">Produsentland:</span> USA</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3">
+                      <h4>Eierskap</h4>
+                      <ul class="no-list">
+                        <li>Parlaphone (100%) 1969 -</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <h4>Utøvere</h4>
+                      <ul class="no-list">
+                        <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                        <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                        <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                        <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                        <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                        <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                        <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-2">
+                      <h4>Utgivelser</h4>
+                      <ul class="no-list">
+                        <li>David Bowie</li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Tittel">
+                  <label class="form__label">
+                    <input type="checkbox" class="form__input--checkbox">
+                    <span></span>
+                  </label>
+                  <a href="#">Space Oddity</a>
+
+                </td>
+                <td data-label="Hovedartist">
+                  David Bowie
+                </td>
+                <td data-label="Utgivelsesår">
+                  1969
+                </td>
+                <td data-label="Label">
+                  RCA
+                </td>
+                <td data-label="Varighet">
+                  00:05:25
+                </td>
+                <td data-label="ISRC">
+                  B01499JUQ20
+                </td>
+                <td class="text--right">
+                  <span class="table-row-toggle"></span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Tittel">
+                  <label class="form__label">
+                    <input type="checkbox" class="form__input--checkbox">
+                    <span></span>
+                  </label>
+                  <a href="#">Space Oddity</a>
+
+                </td>
+                <td data-label="Hovedartist">
+                  David Bowie
+                </td>
+                <td data-label="Utgivelsesår">
+                  1969
+                </td>
+                <td data-label="Label">
+                  RCA
+                </td>
+                <td data-label="Varighet">
+                  00:05:25
+                </td>
+                <td data-label="ISRC">
+                  B01499JUQ20
+                </td>
+                <td class="text--right">
+                  <span class="table-row-toggle"></span>
+                </td>
+              </tr>
+            </table><!--/.table-->
+          </section><!--/.tabs__section-->
+          <section id="bulkliste" class="tabs__section tabs__section--outline">
+            <div class="toolbar">
+              <div class="col-xs col--no-flex">
+                <h1>4 innspillinger</h1>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <ol class="wizard-steps wizard-steps--no-margin">
+                  <li>1. Bulkliste</li>
+                  <li class="selected">2. Innspillingsinfo</li>
+                  <li>3. Oppsummering</li>
+                </ol>
+              </div>
+            </div><!--end .toolbar-->
+            <section class="scrollable-area scrollable-area--with-footer" style="height: calc(100vh - 23.4rem);">
+              <section id="innspillingsinfo" class="container container--padded">
+                <div class="section-header">
+                  <header>
+                    <h2>Innspillingsinfo</h2>
+                  </header>
+                </div>
+                <form class="form">
+                  <fieldset class="form__fieldset">
+                    <div class="form__field form__field--with-toggles">
+                      <div class="ember-view">
+                        <label class="form__label form__label--required">
+                          <span>Hovedartist</span>
+                          <input type="text" value="David Bowie" class="form__input form__input--300">
+                        </label>
+                      </div>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle" checked>
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                        </label>
+                      </span>
+                    </div><!--end .form__field-->
+                    <div class="form__field form__field--with-toggles">
+                      <label class="form__label">
+                        <span>Klassisk?</span>
+                        <input type="checkbox" class="form__input form__input--checkbox" disabled>
+                      </label>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle">
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                        </label>
+                      </span>
+                    </div><!--end .form__field-->
+                    <!-- <div class="form__field">
+                      <label class="form__label form__label--required">
+                        <span>Komponist</span>
+                        <div class="searchable-list searchable-list form__input  form__input--300">
+                          <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                            <span class="searchable-list__selected">Velg komponist</span>
+                          </div>
+                          <div class="searchable-list__dropdown">
+                            <input type="text" class="searchable-list__search form__input form__input--block">
+                          </div>
+                        </div>
+                      </label>
+                      <div class="form__field__action">
+                        <a class="link--no-line">Legg til komponist</a>
+                      </div>
+                    </div> -->
+                    <div class="form__field form__field--with-toggles">
+                      <label class="form__label">
+                        <span>Label</span>
+                        <div class="searchable-list searchable-list--disabled form__input searchable-list--fluid form__input--300">
+                          <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                            <span class="searchable-list__selected">Velg platemerke</span>
+                          </div>
+                          <div class="searchable-list__dropdown">
+                            <input type="text" class="searchable-list__search form__input form__input--block">
+                            <ul>
+                            </ul>
+                          </div>
+                        </div>
+                      </label>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle">
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                        </label>
+                      </span>
+                    </div>
+                    <div class="form__field form__field--with-toggles">
+                      <label class="form__label">
+                        <span>Versjon</span>
+                        <input type="text" value="Live" class="form__input form__input--130" disabled>
+                      </label>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle">
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                        </label>
+                      </span>
+                    </div>
+                    </fieldset>
+                  <fieldset class="form__fieldset">
+                    <div class="form__field form__field--with-toggles">
+                      <label class="form__label">
+                        <span>Innspillingsland</span>
+                        <div class="searchable-list form__input searchable-list--fluid form__input--300">
+                          <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                            <span class="searchable-list__selected">Velg land</span>
+                          </div>
+                          <div class="searchable-list__dropdown">
+                            <input type="text" class="searchable-list__search form__input form__input--block">
+                            <ul>
+                              <li class="searchable-list__option">Norge</li>
+                              <li class="searchable-list__option">Storbritannia</li>
+                              <li class="searchable-list__option">USA</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </label>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle" checked>
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                        </label>
+                      </span>
+                    </div>
+                    <div class="form__field form__field--with-toggles">
+                      <label class="form__label">
+                        <span>Innspillingsdato</span>
+                        <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--130" disabled>
+                      </label>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle">
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                        </label>
+                      </span>
+                    </div>
+                    <div class="form__field form__field--with-toggles">
+                      <label class="form__label">
+                        <span>Produsentland</span>
+                        <select class="select select--fluid form__input--180" disabled>
+                          <option>Norge</option>
+                          <option>Storbritannia</option>
+                          <option>USA</option>
+                        </select>
+                      </label>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle">
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                        </label>
+                      </span>
+                    </div>
+                    <div class="form__field form__field--with-toggles">
+                      <label class="form__label">
+                        <span>Utgivelsesdato</span>
+                        <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--130" disabled>
+                      </label>
+                      <span class="x-toggle-container">
+                        <input type="checkbox" class="x-toggle">
+                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                        </label>
+                      </span>
+                    </div>
+                  </fieldset>
+                </form>
+              </section><!--end /.innspillingsinfo-->
+            </section><!--end /.scrollable-area-->
+            <footer class="footer footer--sticky">
+              <a href="#" class="btn btn--secondary">Avbryt</a>
+              <a href="#" class="btn btn--primary btn--fixed-width">Gå videre til oppsummering</a>
+            </footer>
+          </section><!--end /.tabs__section-->
+        </div><!--end /.tabs-->
+      </section><!--end /.container-->
+    </main>
+  </div><!--End site-wrapper-->
+
+  <script src="../../js/vendor/jquery-1.11.3.min.js"></script>
+  <script src="../../js/vendor/drilldown.js"></script>
+  <script src="../../js/default.js"></script>
+  <script>
+    $('.drilldown').drilldown({
+      speed: 'fast'
+    });
+  </script>
+
+</body>
+</html>
