@@ -6287,7 +6287,7 @@ tr > td:last-child{
   vertical-align:bottom;
 }
 .table--numeric tr > td:first-child{
-  padding-left:5rem;
+  padding-left:4.7rem;
 }
 .table--numeric tr:not(.table__row--no-count) > td:first-child::before{
   top:50%;
