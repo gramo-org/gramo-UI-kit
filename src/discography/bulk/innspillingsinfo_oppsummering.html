@@ -281,7 +281,7 @@
               </tr>
               <tr class="drilldown-body drilldown-toggle row--no-checkbox" data-level="1">
                 <td data-label="Tittel">
-                  <a href="#">Space Oddity</a>
+                  <a href="#">Unwashed And Somewhat Slightly Dazed</a>
                   <span class="badge badge--secondary badge--in-td">Duplicate</span>
                 </td>
                 <td data-label="Hovedartist">
@@ -349,7 +349,7 @@
                     <input type="checkbox" class="form__input--checkbox">
                     <span></span>
                   </label>
-                  <a href="#">Space Oddity</a>
+                  <a href="#">Janine</a>
 
                 </td>
                 <td data-label="Hovedartist">
@@ -377,7 +377,7 @@
                     <input type="checkbox" class="form__input--checkbox">
                     <span></span>
                   </label>
-                  <a href="#">Space Oddity</a>
+                  <a href="#">Letter to Hermione</a>
 
                 </td>
                 <td data-label="Hovedartist">
@@ -404,13 +404,14 @@
           <section id="bulkliste" class="tabs__section">
             <div class="toolbar">
               <div class="col-xs col--no-flex">
-                <h1>4 innspillinger</h1>
+                <h1>Bulk</h1>
               </div>
               <div class="col-xs col--no-flex text--right">
                 <ol class="wizard-steps wizard-steps--no-margin">
                   <li>1. Bulkliste</li>
-                  <li>2. Bulk actions</li>
+                  <li>2. Innspillingsinfo</li>
                   <li class="selected">3. Oppsummering</li>
+                  <li>4. Rapport</li>
                 </ol>
               </div>
               <div class="toolbar__lower">
@@ -512,7 +513,7 @@
                       <input type="checkbox" class="form__input--checkbox">
                       <span></span>
                     </label>
-                    <a href="#">Space Oddity</a>
+                    <a href="#">Unwashed And Somewhat Slightly Dazed</a>
   
                   </td>
                   <td data-label="Hovedartist">
@@ -560,7 +561,7 @@
                       <input type="checkbox" class="form__input--checkbox">
                       <span></span>
                     </label>
-                    <a href="#">Space Oddity</a>
+                    <a href="#">Janine</a>
   
                   </td>
                   <td data-label="Hovedartist">
@@ -588,7 +589,7 @@
                       <input type="checkbox" class="form__input--checkbox">
                       <span></span>
                     </label>
-                    <a href="#">Space Oddity</a>
+                    <a href="#">Letter to Hermione</a>
   
                   </td>
                   <td data-label="Hovedartist">
@@ -644,7 +645,11 @@
     const confirmBtn = document.querySelector('.btn--fixed-width')
     confirmBtn.addEventListener('click', function(e){
       e.preventDefault();
-      alert('Vær oppmerksom! Du er i ferd til å oppdatere 9 innspillinger.');
+      // alert('Vær oppmerksom! Du er i ferd til å oppdatere 9 innspillinger.');
+      if (window.confirm('Vær oppmerksom! Du er i ferd til å oppdatere 9 innspillinger.')) 
+        {
+        window.location.href='innspillingsinfo_done.html';
+        };
     });
       
   </script>

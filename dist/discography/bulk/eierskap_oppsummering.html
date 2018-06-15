@@ -15,7 +15,10 @@
 
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script>
+  window.onload = window.location.hash = 'bulkliste';
+  </script>
 </head>
 <body>
   <div class="site-wrapper">
@@ -100,7 +103,7 @@
           </ul>
         </nav>
         <aside class="user">
-          <img src="../img/audun-temp.jpg" class="user__avatar">
+          <img src="../../img/audun-temp.jpg" class="user__avatar">
           <div class="user__name">Audun Haggernes
             <span class="user__logout"><a href="#">Logg ut</a></span>
           </div>
@@ -134,14 +137,8 @@
               </a>
             </li>
             <li class="tabs__nav__item">
-              <a href="#duplikatliste">
-                <span class="tabs__nav__item__type tabs__nav__item__type--list">Duplikatliste</span>
-                4 innspillinger
-              </a>
-            </li>
-            <li class="tabs__nav__item">
               <a href="#bulkliste">
-                <span class="tabs__nav__item__type tabs__nav__item__type--list">Bulkliste</span>
+                <span class="tabs__nav__item__type tabs__nav__item__type--list">Oppsummering</span>
                 4 innspillinger
               </a>
             </li>
@@ -284,8 +281,7 @@
               </tr>
               <tr class="drilldown-body drilldown-toggle row--no-checkbox" data-level="1">
                 <td data-label="Tittel">
-                  <a href="#">Space Oddity</a>
-
+                  <a href="#">Unwashed And Somewhat Slightly Dazed</a>
                   <span class="badge badge--secondary badge--in-td">Duplicate</span>
                 </td>
                 <td data-label="Hovedartist">
@@ -353,7 +349,7 @@
                     <input type="checkbox" class="form__input--checkbox">
                     <span></span>
                   </label>
-                  <a href="#">Space Oddity</a>
+                  <a href="#">Janine</a>
 
                 </td>
                 <td data-label="Hovedartist">
@@ -381,7 +377,7 @@
                     <input type="checkbox" class="form__input--checkbox">
                     <span></span>
                   </label>
-                  <a href="#">Space Oddity</a>
+                  <a href="#">Letter to Hermione</a>
 
                 </td>
                 <td data-label="Hovedartist">
@@ -405,294 +401,17 @@
               </tr>
             </table><!--/.table-->
           </section><!--/.tabs__section-->
-          <section id="duplikatliste" class="tabs__section">
-            <div class="toolbar">
-              <div class="col-xs col--no-flex">
-                <h1>4 innspillinger</h1>
-              </div>
-              
-              <div class="toolbar__lower">
-                <div class="row">
-                  <div class="col align--vertical-center">
-                    <a href="#" class="btn btn--secondary text--pre">Velg alle</a>
-                  </div>
-                  <div class="col-sm col--no-flex">
-                    <button class="btn btn--secondary" disabled>Ta vekk fra liste</button>
-                  </div>
-                  <div class="col-xs col--no-flex text--right">
-                    <div class="search">
-                      <form action="" class="search__form search__form--right search__form--in-toolbar">
-                        <input type="text" class="search__form__input" value="" placeholder="Filtrér...">
-                        <button class="search__submit"></button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div><!--end .toolbar__lower-->
-            </div><!--end .toolbar-->
-            <section class="scrollable-area scrollable-area--with-footer" style="height: calc(100vh - 39rem);">
-              <table class="table drilldown table--fluid table--numeric table--with-checkboxes">
-                <thead>
-                  <tr>
-                    <th>
-                      Tittel
-                    </th>
-                    <th>
-                      Hovedartist
-                    </th>
-                    <th>
-                      Utgivelsesår
-                    </th>
-                    <th>
-                      Label
-                    </th>
-                    <th>
-                      Varighet
-                    </th>
-                    <th>
-                      ISRC
-                    </th>
-                    <th></th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tr class="drilldown-body drilldown-toggle" data-level="1">
-                  <td data-label="Tittel">
-                    <label class="form__label">
-                      <input type="checkbox" class="form__input--checkbox">
-                      <span></span>
-                    </label>
-                    <a href="#">Space Oddity</a>
-  
-                    <span class="badge badge--primary badge--in-td">Master</span>
-                  </td>
-                  <td data-label="Hovedartist">
-                    David Bowie
-                  </td>
-                  <td data-label="Utgivelsesår">
-                    1969
-                  </td>
-                  <td data-label="Label">
-                    RCA
-                  </td>
-                  <td data-label="Varighet">
-                    00:05:25
-                  </td>
-                  <td data-label="ISRC">
-                    B01499JUQ20
-                  </td>
-                  <td class="text--right">
-                    <button class="btn btn--primary btn--small">Valgt som master</button>
-                  </td>
-                  <td class="text--right">
-                    <span class="table-row-toggle"></span>
-                  </td>
-                </tr>
-                <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
-                  <td colspan="8">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <h4 class="heading--sub no-margin--top">Innspillingsinfo</h4>
-                        <ul class="no-list">
-                          <li><span class="text--semibold">Klassisk:</span> Nei</li>
-                          <li><span class="text--semibold">Version:</span> -</li>
-                          <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
-                          <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
-                          <li><span class="text--semibold">Produsentland:</span> USA</li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-3">
-                        <h4 class="heading--sub no-margin--top">Eierskap</h4>
-                        <ul class="no-list">
-                          <li>Parlaphone (100%) 1969 -</li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-4">
-                        <h4 class="heading--sub no-margin--top">Utøvere</h4>
-                        <ul class="no-list">
-                          <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
-                          <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
-                          <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
-                          <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
-                          <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
-                          <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
-                          <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-2">
-                        <h4 class="heading--sub no-margin--top">Utgivelser</h4>
-                        <ul class="no-list">
-                          <li>David Bowie</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="drilldown-body drilldown-toggle" data-level="1">
-                  <td data-label="Tittel">
-                    <label class="form__label">
-                      <input type="checkbox" class="form__input--checkbox">
-                      <span></span>
-                    </label>
-                    <a href="#">Space Oddity</a>
-  
-                  </td>
-                  <td data-label="Hovedartist">
-                    David Bowie
-                  </td>
-                  <td data-label="Utgivelsesår">
-                    1969
-                  </td>
-                  <td data-label="Label">
-                    RCA
-                  </td>
-                  <td data-label="Varighet">
-                    00:05:25
-                  </td>
-                  <td data-label="ISRC">
-                    B01499JUQ20
-                  </td>
-                  <td class="text--right">
-                    <button class="btn btn--secondary btn--small" disabled>Velg som master</button>
-                  </td>
-                  <td class="text--right">
-                    <span class="table-row-toggle"></span>
-                  </td>
-                </tr>
-                <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
-                  <td colspan="8">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <h4 class="heading--sub no-margin--top">Innspillingsinfo</h4>
-                        <ul class="no-list">
-                          <li><span class="text--semibold">Klassisk:</span> Nei</li>
-                          <li><span class="text--semibold">Version:</span> -</li>
-                          <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
-                          <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
-                          <li><span class="text--semibold">Produsentland:</span> USA</li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-3">
-                        <h4 class="heading--sub no-margin--top">Eierskap</h4>
-                        <ul class="no-list">
-                          <li>Parlaphone (100%) 1969 -</li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-4">
-                        <h4 class="heading--sub no-margin--top">Utøvere</h4>
-                        <ul class="no-list">
-                          <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
-                          <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
-                          <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
-                          <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
-                          <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
-                          <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
-                          <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-2">
-                        <h4 class="heading--sub no-margin--top">Utgivelser</h4>
-                        <ul class="no-list">
-                          <li>David Bowie</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label="Tittel">
-                    <label class="form__label">
-                      <input type="checkbox" class="form__input--checkbox">
-                      <span></span>
-                    </label>
-                    <a href="#">Space Oddity</a>
-  
-                  </td>
-                  <td data-label="Hovedartist">
-                    David Bowie
-                  </td>
-                  <td data-label="Utgivelsesår">
-                    1969
-                  </td>
-                  <td data-label="Label">
-                    RCA
-                  </td>
-                  <td data-label="Varighet">
-                    00:05:25
-                  </td>
-                  <td data-label="ISRC">
-                    B01499JUQ20
-                  </td>
-                  <td class="text--right">
-                    <button class="btn btn--secondary btn--small" disabled>Velg som master</button>
-                  </td>
-                  <td class="text--right">
-                    <span class="table-row-toggle"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label="Tittel">
-                    <label class="form__label">
-                      <input type="checkbox" class="form__input--checkbox">
-                      <span></span>
-                    </label>
-                    <a href="#">Space Oddity</a>
-  
-                  </td>
-                  <td data-label="Hovedartist">
-                    David Bowie
-                  </td>
-                  <td data-label="Utgivelsesår">
-                    1969
-                  </td>
-                  <td data-label="Label">
-                    RCA
-                  </td>
-                  <td data-label="Varighet">
-                    00:05:25
-                  </td>
-                  <td data-label="ISRC">
-                    B01499JUQ20
-                  </td>
-                  <td class="text--right">
-                    <button class="btn btn--secondary btn--small" disabled>Velg som master</button>
-                  </td>
-                  <td class="text--right">
-                    <span class="table-row-toggle"></span>
-                  </td>
-                </tr>
-              </table><!--/.table-->
-            </section><!--end /.scrollable-area-->
-            <footer class="footer footer--sticky footer--full-width">
-              <div class="row row--spaced-large">
-                <div class="col-sm col--no-flex">
-                  <h2>Tilbakevirkendekraft gjelder for:</h2>
-                  <h4 class="heading--space-below">(Spilletid fra duplikatene blir lagt til masteren. Dette vil påvirke korreksjonsavregning)</h4>
-                  <label class="form__label form__label--inline">
-                    <input type="checkbox" class="form__input--checkbox" name="" value="" checked>Produsent
-                  </label>
-                  <label class="form__label form__label--inline">
-                    <input type="checkbox" class="form__input--checkbox" name="" value="" checked>Utøver
-                  </label>
-                </div>
-              </div><!-- end .row -->
-              <div class="row row--spaced">
-                <div class="col-sm col--no-flex">
-                  <a href="#" class="btn btn--primary">Koble duplikater til masteren</a>
-                </div>
-              </div>
-            </footer>
-          </section><!--end /.tabs__section-->
           <section id="bulkliste" class="tabs__section">
             <div class="toolbar">
               <div class="col-xs col--no-flex">
-                <h1>4 innspillinger</h1>
+                <h1>Bulk</h1>
               </div>
               <div class="col-xs col--no-flex text--right">
                 <ol class="wizard-steps wizard-steps--no-margin">
-                  <li class="selected">1. Bulkliste</li>
-                  <li>2. Bulk actions</li>
-                  <li>3. Oppsummering</li>
+                  <li>1. Bulkliste</li>
+                  <li>2. Eierskap</li>
+                  <li class="selected">3. Oppsummering</li>
+                  <li>4. Rapport</li>
                 </ol>
               </div>
               <div class="toolbar__lower">
@@ -714,7 +433,7 @@
                 </div>
               </div><!--end .toolbar__lower-->
             </div><!--end .toolbar-->
-            <section class="scrollable-area scrollable-area--with-footer" style="height: calc(100vh - 33.5rem);">
+            <section class="scrollable-area scrollable-area--with-footer" style="height: calc(100vh - 29.5rem);">
               <table class="table drilldown table--fluid table--numeric table--with-checkboxes">
                 <thead>
                   <tr>
@@ -772,37 +491,22 @@
                   <td colspan="7">
                     <div class="row">
                       <div class="col-sm-3">
-                        <h4 class="heading--sub no-margin--top">Innspillingsinfo</h4>
+                        <h4 class="heading--sub no-margin--top">Nåværende verdier</h4>
                         <ul class="no-list">
-                          <li><span class="text--semibold">Klassisk:</span> Nei</li>
-                          <li><span class="text--semibold">Version:</span> -</li>
-                          <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
-                          <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
-                          <li><span class="text--semibold">Produsentland:</span> USA</li>
+                          <li><span class="text--semibold">Sony (100%)</span> 1969 - </li>
                         </ul>
                       </div>
                       <div class="col-sm-3">
-                        <h4 class="heading--sub no-margin--top">Eierskap</h4>
+                        <h4 class="heading--sub no-margin--top">Ønskede endringer</h4>
                         <ul class="no-list">
-                          <li>Parlaphone (100%) 1969 -</li>
+                          <li><span class="text--semibold">RCA (100%)</span> 2018 - </li>
                         </ul>
                       </div>
-                      <div class="col-sm-4">
-                        <h4 class="heading--sub no-margin--top">Utøvere</h4>
+                      <div class="col-sm-3">
+                        <h4 class="heading--sub no-margin--top">Vilkår</h4>
                         <ul class="no-list">
-                          <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
-                          <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
-                          <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
-                          <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
-                          <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
-                          <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
-                          <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-2">
-                        <h4 class="heading--sub no-margin--top">Utgivelser</h4>
-                        <ul class="no-list">
-                          <li>David Bowie</li>
+                          <li><span class="text--semibold">Avslut nåværende eierskap</span> Ja</li>
+                          <li><span class="text--semibold">Slett overlappende eierskap</span> Nei</li>
                         </ul>
                       </div>
                     </div>
@@ -814,7 +518,7 @@
                       <input type="checkbox" class="form__input--checkbox">
                       <span></span>
                     </label>
-                    <a href="#">Space Oddity</a>
+                    <a href="#">Unwashed And Somewhat Slightly Dazed</a>
   
                   </td>
                   <td data-label="Hovedartist">
@@ -840,37 +544,22 @@
                   <td colspan="7">
                     <div class="row">
                       <div class="col-sm-3">
-                        <h4 class="heading--sub no-margin--top">Innspillingsinfo</h4>
+                        <h4 class="heading--sub no-margin--top">Nåværende verdier</h4>
                         <ul class="no-list">
-                          <li><span class="text--semibold">Klassisk:</span> Nei</li>
-                          <li><span class="text--semibold">Version:</span> -</li>
-                          <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
-                          <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
-                          <li><span class="text--semibold">Produsentland:</span> USA</li>
+                          <li><span class="text--semibold">Sony (100%)</span> 1969 - 2020</li>
                         </ul>
                       </div>
                       <div class="col-sm-3">
-                        <h4 class="heading--sub no-margin--top">Eierskap</h4>
+                        <h4 class="heading--sub no-margin--top">Ønskede endringer</h4>
                         <ul class="no-list">
-                          <li>Parlaphone (100%) 1969 -</li>
+                          <li><span class="text--semibold">RCA (100%)</span> 2018 - </li>
                         </ul>
                       </div>
-                      <div class="col-sm-4">
-                        <h4 class="heading--sub no-margin--top">Utøvere</h4>
+                      <div class="col-sm-3">
+                        <h4 class="heading--sub no-margin--top">Vilkår</h4>
                         <ul class="no-list">
-                          <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
-                          <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
-                          <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
-                          <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
-                          <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
-                          <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
-                          <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-2">
-                        <h4 class="heading--sub no-margin--top">Utgivelser</h4>
-                        <ul class="no-list">
-                          <li>David Bowie</li>
+                          <li><span class="text--semibold">Avslut nåværende eierskap</span> Ja</li>
+                          <li><span class="text--semibold">Slett overlappende eierskap</span> Nei</li>
                         </ul>
                       </div>
                     </div>
@@ -882,7 +571,7 @@
                       <input type="checkbox" class="form__input--checkbox">
                       <span></span>
                     </label>
-                    <a href="#">Space Oddity</a>
+                    <a href="#">Janine</a>
   
                   </td>
                   <td data-label="Hovedartist">
@@ -910,7 +599,7 @@
                       <input type="checkbox" class="form__input--checkbox">
                       <span></span>
                     </label>
-                    <a href="#">Space Oddity</a>
+                    <a href="#">Letter to Hermione</a>
   
                   </td>
                   <td data-label="Hovedartist">
@@ -946,10 +635,8 @@
               </nav>
             </section><!--end /.scrollable-area-->
             <footer class="footer footer--sticky footer--full-width">
-              <h2 class="heading--space-below">Hva vil du gjøre med innspillingene i bulklisten?</h2>
-              <a href="bulk/innspillingsinfo.html" class="btn btn--primary btn--fixed-width">Redigere innspillingsinfo</a>
-              <a href="bulk/eierskap.html" class="btn btn--primary btn--fixed-width">Legg til eierskap</a>
-              <a href="#" class="btn btn--primary btn--fixed-width">Redigere utøvere</a>
+              <a href="innspillingsinfo.html" class="btn btn--secondary">Tilbake</a>
+              <a href="#" class="btn btn--primary btn--fixed-width">Utfør bulk handlinger</a>
             </footer>
           </section><!--end /.tabs__section-->
         </div><!--end /.tabs-->
@@ -957,13 +644,24 @@
     </main>
   </div><!--End site-wrapper-->
 
-  <script src="../js/vendor/jquery-1.11.3.min.js"></script>
-  <script src="../js/vendor/drilldown.js"></script>
-  <script src="../js/default.js"></script>
+  <script src="../../js/vendor/jquery-1.11.3.min.js"></script>
+  <script src="../../js/vendor/drilldown.js"></script>
+  <script src="../../js/default.js"></script>
   <script>
     $('.drilldown').drilldown({
       speed: 'fast'
     });
+    
+    const confirmBtn = document.querySelector('.btn--fixed-width')
+    confirmBtn.addEventListener('click', function(e){
+      e.preventDefault();
+      // alert('Vær oppmerksom! Du er i ferd til å oppdatere 9 innspillinger.');
+      if (window.confirm('Vær oppmerksom! Du er i ferd til å oppdatere 9 innspillinger.')) 
+        {
+        window.location.href='eierskap_done.html';
+        };
+    });
+      
   </script>
 
 </body>
