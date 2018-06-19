@@ -55,8 +55,8 @@ td.text--center,
 }
 
 /* preformatted */
-.text--pre {
-  white-space: pre;
+.text--nowrap {
+  white-space: nowrap;
 }
 
 /* strikethrough */

@@ -337,8 +337,8 @@ td.text--center, .fake-table__row *.text--center{
 .text--italic{
   font-style:italic;
 }
-.text--pre{
-  white-space:pre;
+.text--nowrap{
+  white-space:nowrap;
 }
 .text--strikethrough{
   text-decoration:line-through;
