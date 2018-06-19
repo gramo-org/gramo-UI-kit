@@ -59,6 +59,11 @@ td.text--center,
   white-space: pre;
 }
 
+/* strikethrough */
+.text--strikethrough {
+  text-decoration: line-through;
+}
+
 /* font-size overrides */
 
 .text--small {
@@ -414,3 +419,22 @@ td.text--center,
   display: none;
 }
 
+/* For prototype (highlight clickable areas) */
+.click-here {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 5px solid var(--gramo-red);
+    opacity: 0.5;
+    right: -15px;
+    top: -5px;
+  }
+}
+
+.row--clickable {
+  cursor: pointer;
+}

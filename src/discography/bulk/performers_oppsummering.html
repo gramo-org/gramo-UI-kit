@@ -138,7 +138,7 @@
             </li>
             <li class="tabs__nav__item">
               <a href="#bulkliste">
-                <span class="tabs__nav__item__type tabs__nav__item__type--list">Eierskap</span>
+                <span class="tabs__nav__item__type tabs__nav__item__type--list">Oppsummering</span>
                 4 innspillinger
               </a>
             </li>
@@ -243,7 +243,7 @@
                 <td colspan="7">
                   <div class="row">
                     <div class="col-sm-3">
-                      <h4>Innspillingsinfo</h4>
+                      <h4 class="heading--sub no-margin--top">Innspillingsinfo</h4>
                       <ul class="no-list">
                         <li><span class="text--semibold">Klassisk:</span> Nei</li>
                         <li><span class="text--semibold">Version:</span> -</li>
@@ -253,13 +253,13 @@
                       </ul>
                     </div>
                     <div class="col-sm-3">
-                      <h4>Eierskap</h4>
+                      <h4 class="heading--sub no-margin--top">Eierskap</h4>
                       <ul class="no-list">
                         <li>Parlaphone (100%) 1969 -</li>
                       </ul>
                     </div>
                     <div class="col-sm-4">
-                      <h4>Utøvere</h4>
+                      <h4 class="heading--sub no-margin--top">Utøvere</h4>
                       <ul class="no-list">
                         <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
                         <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
@@ -271,7 +271,7 @@
                       </ul>
                     </div>
                     <div class="col-sm-2">
-                      <h4>Utgivelser</h4>
+                      <h4 class="heading--sub no-margin--top">Utgivelser</h4>
                       <ul class="no-list">
                         <li>David Bowie</li>
                       </ul>
@@ -282,7 +282,6 @@
               <tr class="drilldown-body drilldown-toggle row--no-checkbox" data-level="1">
                 <td data-label="Tittel">
                   <a href="#">Unwashed And Somewhat Slightly Dazed</a>
-
                   <span class="badge badge--secondary badge--in-td">Duplicate</span>
                 </td>
                 <td data-label="Hovedartist">
@@ -308,7 +307,7 @@
                 <td colspan="7">
                   <div class="row">
                     <div class="col-sm-3">
-                      <h4>Innspillingsinfo</h4>
+                      <h4 class="heading--sub no-margin--top">Innspillingsinfo</h4>
                       <ul class="no-list">
                         <li><span class="text--semibold">Klassisk:</span> Nei</li>
                         <li><span class="text--semibold">Version:</span> -</li>
@@ -318,13 +317,13 @@
                       </ul>
                     </div>
                     <div class="col-sm-3">
-                      <h4>Eierskap</h4>
+                      <h4 class="heading--sub no-margin--top">Eierskap</h4>
                       <ul class="no-list">
                         <li>Parlaphone (100%) 1969 -</li>
                       </ul>
                     </div>
                     <div class="col-sm-4">
-                      <h4>Utøvere</h4>
+                      <h4 class="heading--sub no-margin--top">Utøvere</h4>
                       <ul class="no-list">
                         <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
                         <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
@@ -336,7 +335,7 @@
                       </ul>
                     </div>
                     <div class="col-sm-2">
-                      <h4>Utgivelser</h4>
+                      <h4 class="heading--sub no-margin--top">Utgivelser</h4>
                       <ul class="no-list">
                         <li>David Bowie</li>
                       </ul>
@@ -402,93 +401,218 @@
               </tr>
             </table><!--/.table-->
           </section><!--/.tabs__section-->
-          <section id="bulkliste" class="tabs__section tabs__section--outline">
-            <div class="infobar infobar--in-tabs">
-              <div class="infobar__left">
+          <section id="bulkliste" class="tabs__section">
+            <div class="toolbar">
+              <div class="col-xs col--no-flex">
                 <h1>Bulk</h1>
               </div>
-              <div class="infobar--right align--vertical-center">
+              <div class="col-xs col--no-flex text--right">
                 <ol class="wizard-steps wizard-steps--no-margin">
                   <li>1. Bulkliste</li>
-                  <li class="selected">2. Utøvere</li>
-                  <li>3. Oppsummering</li>
+                  <li>2. Utøvere</li>
+                  <li class="selected">3. Oppsummering</li>
                   <li>4. Rapport</li>
                 </ol>
               </div>
+              <div class="toolbar__lower">
+                <div class="row">
+                  <div class="col align--vertical-center">
+                    <a href="#" class="btn btn--secondary text--pre">Velg alle</a>
+                  </div>
+                  <div class="col-sm col--no-flex">
+                    <button class="btn btn--secondary" disabled>Ta vekk fra liste</button>
+                  </div>
+                  <div class="col-sm col--no-flex align--vertical-center text--inline text--right">
+                    <span class="change-type change-type--added">Legges til</span>
+                    <span class="change-type change-type--edited">Endres</span>
+                    <span class="change-type change-type--deleted">Slettes</span>
+                  </div>
+                  <div class="col-xs col--no-flex text--right">
+                    <div class="search">
+                      <form action="" class="search__form search__form--right search__form--in-toolbar">
+                        <input type="text" class="search__form__input" value="" placeholder="Filtrér...">
+                        <button class="search__submit"></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div><!--end .toolbar__lower-->
             </div><!--end .toolbar-->
-            <section class="scrollable-area scrollable-area--with-footer" style="height: calc(100vh - 23.4rem);">
-              <section id="innspillingsinfo" class="container container--padded">
-                <div class="section-header">
-                  <header>
-                    <h2>Utøvere</h2>
-                  </header>
-                </div>
-                <form class="form">
-                  <fieldset class="form__fieldset">
-                    <label class="form__label form__label--inline">
-                      <input type="radio" name="performer_action" class="form__input--radio" checked>
-                      Legg til utøver
+            <section class="scrollable-area scrollable-area--with-footer" style="height: calc(100vh - 29.5rem);">
+              <table class="table drilldown table--fluid table--numeric table--with-checkboxes">
+                <thead>
+                  <tr>
+                    <th>
+                      Tittel
+                    </th>
+                    <th>
+                      Hovedartist
+                    </th>
+                    <th>
+                      Utgivelsesår
+                    </th>
+                    <th>
+                      Label
+                    </th>
+                    <th>
+                      Varighet
+                    </th>
+                    <th>
+                      ISRC
+                    </th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td data-label="Tittel">
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
                     </label>
-                    <label class="form__label form__label--inline">
-                      <input type="radio" name="performer_action" class="form__input--radio">
-                      Redigere utøver
+                    <a href="#">Space Oddity</a>
+  
+                    <span class="badge badge--primary badge--in-td">Master</span>
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1969
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:05:25
+                  </td>
+                  <td data-label="ISRC">
+                    B01499JUQ20
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
                     </label>
-                    <label class="form__label form__label--inline">
-                      <input type="radio" name="performer_action" class="form__input--radio">
-                      Slett utøver
+                    <a href="#">Unwashed And Somewhat Slightly Dazed</a>
+  
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1969
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:05:25
+                  </td>
+                  <td data-label="ISRC">
+                    B01499JUQ20
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr class="drilldown-body drilldown-toggle" data-level="1">
+                  <td data-label="Tittel">
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
                     </label>
-                  </fieldset>
-                </form>
-                <div class="toolbar toolbar--padded block--no-flex">
-                  <div class="form__section--action">
-                    <span class="text--bold">
-                      Søk etter
-                      <span class="text--lower">
-                        Utøver
-                      </span>
-                    </span>
-                    <span class="break--inline"></span>
-                    eller
-                    <span class="break--inline"></span>
-                    <a class="link--no-line" data-ember-action="" data-ember-action-5757="5757">
-                      Legg til ukjent utøver
-                    </a>
-                  </div>
-                  <div id="ember5762" class="ember-view">
-                    <form class="search__form" data-ember-action="" data-ember-action-5763="5763">
-                      <input type="text" autocomplete="off" placeholder="Søk..." value="David Bowie" id="ember5768" class="search__form__input search__form__input--fixed-width">
-                      <button type="submit" id="ember5769" class="search__submit ember-view"></button>
-                    </form>
-
-                    <table class="table drilldown table--fluid table--selectable">
-                      <thead>
-                        <tr>
-                          <th>Navn</th>
-                          <th>Artister</th>
-                          <th>Levetid</th>
-                          <th>Instrument</th>
-                          <th>Statsborgerskap</th>
-                          <th><!--already-selected--></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="row--clickable" data-href="performers_added.html">
-                          <td class="table__cell--truncated"><span class="click-here">David Robert Jones</span></td>
-                          <td class="table__cell--truncated">David Bowie</td>
-                          <td class="table__cell--truncated">1947 - 2016</td>
-                          <td class="table__cell--truncated">Vokal</td>
-                          <td class="table__cell--truncated">Storbrittania</td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </section><!--end /utøvere-->
+                    <a href="#">Janine</a>
+  
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1969
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:05:25
+                  </td>
+                  <td data-label="ISRC">
+                    B01499JUQ20
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                  <td colspan="7">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <h4 class="heading--sub no-margin--top">Nåværende verdier</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">David Bowie</span> | Storbritannia | Vokal | A</li>
+                          <li><span class="text--semibold">Michael Ronson</span> | Storbritannia | Gitar | A</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <h4 class="heading--sub no-margin--top">Ønskede endringer</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold change-type change-type--added">David Bowie</span> | Storbritannia | Vokal | A</li>
+                          <li><span class="text--semibold change-type change-type--edited">Michael Ronson</span> | Storbritannia | Gitar | A</li>
+                          <li class="text--strikethrough"><span class="text--semibold change-type change-type--deleted">Robert Jones</span> | Storbritannia | Vokal | A</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    <a href="#">Letter to Hermione</a>
+  
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1969
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:05:25
+                  </td>
+                  <td data-label="ISRC">
+                    B01499JUQ20
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+              </table><!--/.table-->
+              <nav role="navigation" class="text--right">
+                <ul class="pagination">
+                  <li class="pagination__item pagination__item--previous pagination__item--disabled"><a href="#"><i class="icon--pagination-previous"></i></a></li>
+                  <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
+                  <li class="pagination__item"><a href="#">2</a></li>
+                  <li class="pagination__item"><a href="#">3</a></li>
+                  <li class="pagination__item"><a href="#">4</a></li>
+                  <li class="pagination__item"><a href="#">5</a></li>
+                  <li class="pagination__item pagination__item--next"><a href="#"><i class="icon--pagination-next"></i></a></li>
+                </ul>
+              </nav>
             </section><!--end /.scrollable-area-->
-            <footer class="footer footer--sticky">
-              <a href="../search.html#bulkliste" class="btn btn--secondary">Avbryt</a>
-              <a href="performers_oppsummering.html" class="btn btn--primary btn--fixed-width">Gå videre til oppsummering</a>
+            <footer class="footer footer--sticky footer--full-width">
+              <a href="innspillingsinfo.html" class="btn btn--secondary">Tilbake</a>
+              <a href="#" class="btn btn--primary btn--fixed-width">Utfør bulk handlinger</a>
             </footer>
           </section><!--end /.tabs__section-->
         </div><!--end /.tabs-->
@@ -503,6 +627,17 @@
     $('.drilldown').drilldown({
       speed: 'fast'
     });
+    
+    const confirmBtn = document.querySelector('.btn--fixed-width')
+    confirmBtn.addEventListener('click', function(e){
+      e.preventDefault();
+      // alert('Vær oppmerksom! Du er i ferd til å oppdatere 9 innspillinger.');
+      if (window.confirm('Vær oppmerksom! Du er i ferd til å oppdatere 9 innspillinger.')) 
+        {
+        window.location.href='performers_done.html';
+        };
+    });
+      
   </script>
 
 </body>
