@@ -91,6 +91,7 @@
 @import url('_organisms/_file-upload.css');
 @import url('_organisms/_wizard-steps.css');
 @import url('_organisms/_played-on-chooser.css');
+@import url('_organisms/_match-form.css');
 
 /* For UI kit homepage */
 @import url('ui-kit/_UI-kit.css');

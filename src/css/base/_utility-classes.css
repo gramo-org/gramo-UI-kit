@@ -14,6 +14,9 @@
 
 .text--center {
   @media (--tablet) { text-align: center!important; }
+  &--always {
+    text-align: center!important;
+  }
 }
 
 /* override text center for table cells on mobile devices */

@@ -58,6 +58,7 @@ $(document).ready(function() {
     });
 
     $(this).on('click', 'a:not(.tabs__nav__close)', function(e) {
+      e.preventDefault();
       $active.removeClass('active');
       $content.hide();
       $active = $(this);
