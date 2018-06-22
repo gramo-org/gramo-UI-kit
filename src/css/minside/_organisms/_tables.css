@@ -56,6 +56,13 @@
       @media (--tablet) { background: var(--row-hover); }
     }
   }
+  
+  /*** Disabled rows in table ***/
+  .table__row--disabled td {
+    background: var(--x-light-gray);
+    color: var(--off-gray);
+    cursor: not-allowed;
+  }
 }
 
 caption {

@@ -5160,6 +5160,11 @@ tr[data-src="draft"] > td:first-child::after{
     background:#f9f9f9;
   }
 }
+.table .table__row--disabled td{
+  background:#f9f9f9;
+  color:#a5a4ab;
+  cursor:not-allowed;
+}
 
 caption{
   text-align:left;
