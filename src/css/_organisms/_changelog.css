@@ -54,14 +54,15 @@
     }
   }
 
-  .changelog__from {
+  .changelog__old {
     display: inline-block;
     margin: 0 .75rem 0 .5rem;
     text-decoration: line-through;
     min-width: 1rem;
   }
   
-  /* .changelog__share::before {
+  .changelog__old::after,
+  .changelog__share::before {
     content: '';
     border-right: 1px solid var(--off-gray);
     height: 1.5rem;
@@ -72,5 +73,5 @@
   
   .changelog__share::before {
     margin: 0 0.5rem;
-  } */
+  }
 }

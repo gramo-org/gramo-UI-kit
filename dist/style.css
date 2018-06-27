@@ -6670,11 +6670,22 @@ tr > td:last-child{
   padding-bottom:0;
   margin-bottom:.6rem;
 }
-.changelog .changelog__from{
+.changelog .changelog__old{
   display:inline-block;
   margin:0 .75rem 0 .5rem;
   text-decoration:line-through;
   min-width:1rem;
+}
+.changelog .changelog__old::after, .changelog .changelog__share::before{
+  content:'';
+  border-right:1px solid #a5a4ab;
+  height:1.5rem;
+  display:inline-block;
+  vertical-align:middle;
+  margin-left:.5rem;
+}
+.changelog .changelog__share::before{
+  margin:0 0.5rem;
 }
 .file-upload{
   position:relative;
