@@ -9,12 +9,37 @@
       @extend .comments__inner:before;
     }
   }
+  
+  .changelog__header {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    align-items: center;
+    
+    h3 {
+      flex: 1 0 auto;
+    }
+    
+    .changelog__download {
+      text-transform: uppercase;
+      color: inherit;
+    }
+  }
+  
+  .changelog__content {
+    @extend .comments .comments__content;
+    padding-top: 1rem;
+
+    li {
+      @extend .comments .comments__content li;
+    }
+  }
 
   &.show-inner > .changelog__inner {
     display: block;
   }
 
-  .changelog__header,
+  .changelog__content__header,
   .changelog__subheader {
     @extend .comments .comment__header;
   }
@@ -25,14 +50,6 @@
 
   .changelog__date {
     @extend .comments .comment__date;
-  }
-
-  .changelog__content {
-    @extend .comments .comments__content;
-
-    li {
-      @extend .comments .comments__content li;
-    }
   }
 
   .toggle-changelog {

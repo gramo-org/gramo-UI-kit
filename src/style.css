@@ -6610,7 +6610,7 @@ tr > td:last-child{
 .comments.show-inner > .comments__inner, .changelog.show-inner > .comments__inner{
   display:block;
 }
-.comments .comment__header, .changelog .comment__header, .changelog .changelog__header, .changelog .changelog__subheader{
+.comments .comment__header, .changelog .comment__header, .changelog .changelog__content__header, .changelog .changelog__subheader{
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
@@ -6655,6 +6655,28 @@ tr > td:last-child{
 }
 .changelog{
   right:150px;
+}
+.changelog .changelog__header{
+  padding:1rem 2rem;
+  border-bottom:1px solid #ededed;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
+}
+.changelog .changelog__header h3{
+  -webkit-flex:1 0 auto;
+  -ms-flex:1 0 auto;
+  flex:1 0 auto;
+}
+.changelog .changelog__header .changelog__download{
+  text-transform:uppercase;
+  color:inherit;
+}
+.changelog .changelog__content{
+  padding-top:1rem;
 }
 .changelog.show-inner > .changelog__inner{
   display:block;
