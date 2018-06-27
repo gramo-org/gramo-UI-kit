@@ -6676,7 +6676,7 @@ tr > td:last-child{
   text-decoration:line-through;
   min-width:1rem;
 }
-.changelog .changelog__from:after{
+.changelog .changelog__from::after, .changelog .changelog__share::before{
   content:'';
   border-right:1px solid #a5a4ab;
   height:1.5rem;
@@ -6684,12 +6684,7 @@ tr > td:last-child{
   vertical-align:middle;
   margin-left:.5rem;
 }
-.changelog .changelog__share:before, .changelog .changelog__share:after{
-  content:'';
-  border-right:1px solid #a5a4ab;
-  height:1.5rem;
-  display:inline-block;
-  vertical-align:middle;
+.changelog .changelog__share::before{
   margin:0 0.5rem;
 }
 .file-upload{
