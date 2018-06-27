@@ -40,7 +40,8 @@
   }
   &--worklist:before,
   &--change-requests:before,
-  &--list:before {
+  &--list:before,
+  &--bulks:before {
     content: "\e921";
     top: .13rem;
   }
