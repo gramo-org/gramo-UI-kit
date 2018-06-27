@@ -61,8 +61,7 @@
     min-width: 1rem;
   }
   
-  .changelog__old::after,
-  .changelog__share::before {
+  .changelog__old::after {
     content: '';
     border-right: 1px solid var(--off-gray);
     height: 1.5rem;
@@ -71,7 +70,7 @@
     margin-left: .5rem;
   }
   
-  .changelog__share::before {
-    margin: 0 0.5rem;
+  .changelog__share{
+    margin-left: 0.5rem;
   }
 }
