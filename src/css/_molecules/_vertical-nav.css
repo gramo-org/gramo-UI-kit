@@ -14,6 +14,11 @@
       display: block;
       border-bottom: 1px solid var(--sidebar-menu-bg);
       background: color(var(--sidebar-menu-bg) shade(15%));
+      
+      &.active,
+      &:hover {
+        color: var(--gramo-turkis);
+      }
     }
 
     &--has-children > a::before {

@@ -28,7 +28,7 @@
         <nav class="sidebar__nav">
           <ul class="vertical__nav">
             <li class="vertical__nav__item">
-              <a href="/" class="active">Dashbord</a>
+              <a href="/">Dashbord</a>
             </li>
             <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
               <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
@@ -84,6 +84,9 @@
                   <a href="/users/min-side">Brukere</a>
                 </li>
               </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/distribution" class="active">VRDB</a>
             </li>
             <li class="vertical__nav__item">
               <a href="/distribution">Avregning</a>
@@ -971,15 +974,15 @@
       speed: 'fast'
     });
     
-    const confirmBtn = document.querySelector('#duplicate-confirm')
-    confirmBtn.addEventListener('click', function(e){
-      e.preventDefault();
-      // alert('Vær oppmerksom! Du er i ferd til å oppdatere 9 innspillinger.');
-      if (window.confirm('Vær oppmerksom! 3 innspilling i duplikatlisten blir nå koblet sammen til masteren. Husk at duplikater mister relasjon til eventuelle utgivelser de er registrert på.')) 
-        {
-        window.location.href='duplicates/report.html';
-        };
-    });
+    // const confirmBtn = document.querySelector('#duplicate-confirm')
+    // confirmBtn.addEventListener('click', function(e){
+    //   e.preventDefault();
+    //   // alert('Vær oppmerksom! Du er i ferd til å oppdatere 9 innspillinger.');
+    //   if (window.confirm('Vær oppmerksom! 3 innspilling i duplikatlisten blir nå koblet sammen til masteren. Husk at duplikater mister relasjon til eventuelle utgivelser de er registrert på.')) 
+    //     {
+    //     window.location.href='duplicates/report.html';
+    //     };
+    // });
   </script>
 
 </body>

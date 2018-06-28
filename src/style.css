@@ -3947,6 +3947,9 @@ hr, .horizontal-rule{
   border-bottom:1px solid #434D5A;
   background:rgb(57, 65, 77);
 }
+.vertical__nav__item a.active, .vertical__nav__item a:hover{
+  color:#88c7d8;
+}
 .vertical__nav__item--has-children > a::before{
   font-family:'icomoon';
   font-size:1rem;
