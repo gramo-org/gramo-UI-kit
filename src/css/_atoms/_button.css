@@ -90,6 +90,8 @@
   &--small {
     padding: .5rem 1rem;
     margin: 0;
+    line-height: 1;
+    min-height: 0;
   }
   
   &--fixed-width {
