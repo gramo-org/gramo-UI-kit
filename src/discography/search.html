@@ -223,9 +223,7 @@
                       <input type="checkbox" class="form__input--checkbox">
                       <span></span>
                     </label>
-                    <a href="#">Space Oddity</a>
-
-                    <span class="badge badge--primary badge--in-td">Master</span>
+                    <a href="#">Space Oddity</a>        
                   </td>
                   <td data-label="Hovedartist">
                     David Bowie
@@ -290,7 +288,6 @@
                   <td data-label="Tittel">
                     <a href="#">Space Oddity</a>
 
-                    <span class="badge badge--secondary badge--in-td">Duplicate</span>
                   </td>
                   <td data-label="Hovedartist">
                     David Bowie
@@ -435,7 +432,7 @@
                 </div>
               </div><!--end .toolbar__lower-->
             </div><!--end .toolbar-->
-            <section class="scrollable-area scrollable-area--with-footer" style="height: calc(100vh - 39rem);">
+            <section class="scrollable-area scrollable-area--with-footer" style="height: calc(100vh - 25rem);">
               <table class="table drilldown table--fluid table--numeric table--with-checkboxes">
                 <thead>
                   <tr>
@@ -469,8 +466,6 @@
                         <span></span>
                       </label>
                       <a href="#">Space Oddity</a>
-    
-                      <span class="badge badge--primary badge--in-td">Master</span>
                     </td>
                     <td data-label="Hovedartist">
                       David Bowie
@@ -488,7 +483,7 @@
                       B01499JUQ20
                     </td>
                     <td class="text--right">
-                      <button class="btn btn--primary btn--small">Valgt som master</button>
+                      <a href="duplicates/duplicate-list.html" class="btn btn--secondary btn--small click-here">Velg som master</a>
                     </td>
                     <td class="text--right">
                       <span class="table-row-toggle"></span>
@@ -559,7 +554,7 @@
                       B01499JUQ20
                     </td>
                     <td class="text--right">
-                      <button class="btn btn--secondary btn--small" disabled>Velg som master</button>
+                      <button class="btn btn--secondary btn--small">Velg som master</button>
                     </td>
                     <td class="text--right">
                       <span class="table-row-toggle"></span>
@@ -630,7 +625,7 @@
                       B01499JUQ20
                     </td>
                     <td class="text--right">
-                      <button class="btn btn--secondary btn--small" disabled>Velg som master</button>
+                      <button class="btn btn--secondary btn--small">Velg som master</button>
                     </td>
                     <td class="text--right">
                       <span class="table-row-toggle"></span>
@@ -661,7 +656,7 @@
                       B01499JUQ20
                     </td>
                     <td class="text--right">
-                      <button class="btn btn--secondary btn--small" disabled>Velg som master</button>
+                      <button class="btn btn--secondary btn--small">Velg som master</button>
                     </td>
                     <td class="text--right">
                       <span class="table-row-toggle"></span>
@@ -670,25 +665,6 @@
                 </tbody>
               </table><!--/.table-->
             </section><!--end /.scrollable-area-->
-            <footer class="footer footer--sticky footer--full-width">
-              <div class="row row--spaced-large">
-                <div class="col-sm col--no-flex">
-                  <h2>Tilbakevirkendekraft gjelder for:</h2>
-                  <h4 class="heading--space-below">(Spilletid fra duplikatene blir lagt til masteren. Dette vil påvirke korreksjonsavregning)</h4>
-                  <label class="form__label form__label--inline">
-                    <input type="checkbox" class="form__input--checkbox" name="" value="" checked>Produsent
-                  </label>
-                  <label class="form__label form__label--inline">
-                    <input type="checkbox" class="form__input--checkbox" name="" value="" checked>Utøver
-                  </label>
-                </div>
-              </div><!-- end .row -->
-              <div class="row row--spaced">
-                <div class="col-sm col--no-flex">
-                  <a href="#" id="duplicate-confirm" class="btn btn--primary">Koble duplikater til masteren</a>
-                </div>
-              </div>
-            </footer>
           </section><!--end /.tabs__section-->
           <section id="bulkliste" class="tabs__section">
             <div class="toolbar">
@@ -755,7 +731,7 @@
                       </label>
                       <a href="#">Space Oddity</a>
     
-                      <span class="badge badge--primary badge--in-td">Master</span>
+                      
                     </td>
                     <td data-label="Hovedartist">
                       David Bowie
@@ -973,17 +949,7 @@
     $('.drilldown').drilldown({
       speed: 'fast'
     });
-    
-    // const confirmBtn = document.querySelector('#duplicate-confirm')
-    // confirmBtn.addEventListener('click', function(e){
-    //   e.preventDefault();
-    //   // alert('Vær oppmerksom! Du er i ferd til å oppdatere 9 innspillinger.');
-    //   if (window.confirm('Vær oppmerksom! 3 innspilling i duplikatlisten blir nå koblet sammen til masteren. Husk at duplikater mister relasjon til eventuelle utgivelser de er registrert på.')) 
-    //     {
-    //     window.location.href='duplicates/report.html';
-    //     };
-    // });
+  
   </script>
-
 </body>
 </html>

@@ -134,7 +134,7 @@
             <li class="tabs__nav__item">
               <a href="#tab2">
                 <span class="tabs__nav__item__type tabs__nav__item__type--recording">Innspilling</span>
-                Space Oddity <span class="badge badge--primary">Master</span>
+                Space Oddity <span class="badge badge--secondary">Duplikat</span>
               </a>
             </li>
           </ul>
@@ -182,7 +182,7 @@
               <div class="scrollable-area" style="height: calc(100vh - 13rem)">
                 <header class="infobar infobar--in-tabs">
                   <div class="infobar__left">
-                    <h1 class="infobar__heading" data-type="recording">Space Oddity</h1>
+                    <h1 class="infobar__heading" data-type="recording">Space Oddity <a href="#" class="text--small v-align--middle">Gå til masteren</a></h1>
                     <h3 data-type="performer">David Bowie</h3>
                   </div>
                 </header>
@@ -192,7 +192,7 @@
                       <h2>Innspillingsinfo</h2>
                     </header>
                     <div class="section-header__toolbar">
-                      <a href="#" class="link--edit">Rediger</a>
+                      Denne innspillingen er låst <span class="icon icon--lock"></span>
                     </div>
                   </div>
                   <form class="form">
@@ -232,9 +232,6 @@
                             <input type="text" value="Space Oddity" class="form__input form__input--300" disabled>
                           </label>
                         </div>
-                        <label class="form__label">
-                          <input type="text" value="Fra duplikat: B01499JUQ20" class="form__input form__input--300" disabled>
-                        </label>
                         <div class="form__field__action">
                           <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                         </div>
@@ -286,9 +283,6 @@
                             <input type="text" value="B01499JUQ22" class="form__input form__input--130" disabled>
                           </label>
                           </div>
-                          <label class="form__label ">
-                            <input type="text" placeholder="Fra duplikat: B01499JUQ20" class="form__input form__input--300" disabled>
-                          </label>
                           <div class="form__field__action">
                             <a class="text--small text--light"><i id="ember3786" class="icon--x ember-view"></i></a>
                           </div>
@@ -375,21 +369,11 @@
                     </thead>
                       <tbody>
                         <tr>
-                          <td>NRK</td>
-                          <td>Space Oddity</td>
-                          <td>David Bowie</td>
-                          <td>DIUF_267653FI0001</td>
-                          <td class="text--center">1</td>
-                          <td class="text--center">00:00:10</td>
-                          <td class="text--right">
-                            <span class="table-row-toggle"></span>
-                          </td>
-                        </tr>
                         <tr>
                           <td>NRK</td>
                           <td>Space Oddity</td>
                           <td>David Bowie</td>
-                          <td>NONRO013731CD0001<br>Overført <a href="#">fra duplikat</a></td>
+                          <td>NONRO013731CD0001</td>
                           <td class="text--center">3</td>
                           <td class="text--center">00:01:22</td>
                           <td class="text--right">
@@ -398,218 +382,6 @@
                         </tr>
                       </tbody>
                   </table>
-                  <div class="section-header section-header--left">
-                    <header>
-                      <h2 id="duplicates">Duplikater
-                        <span class="badge badge--secondary ember-view">3
-                        </span>
-                      </h2>
-                    </header>
-                    <div class="col-sm-1">
-                      <a class="link--no-line" data-ember-action="" data-ember-action-3838="3838">Lukk</a>
-                    </div>
-                    <div class="col-sm col--no-flex">
-                      <span class="text--semibold">Tilbakevirkendekraft gjelder for:</span>
-                      <span>Produsent: ja</span>
-                      |
-                      <span>Utøver: ja</span>
-                    </div>
-                    <div class="col-sm col--no-flex text--right no-padding--right">
-                      <button class="btn btn--secondary">Koble fra masteren</button>
-                    </div>
-                  </div>
-                  <table class="table drilldown table--fluid table--numeric table--with-checkboxes">
-                    <thead>
-                      <tr>
-                        <th>
-                          Tittel
-                        </th>
-                        <th>
-                          Hovedartist
-                        </th>
-                        <th>
-                          Utgivelsesår
-                        </th>
-                        <th>
-                          Label
-                        </th>
-                        <th>
-                          Varighet
-                        </th>
-                        <th>
-                          ISRC
-                        </th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="drilldown-body drilldown-toggle" data-level="1">
-                        <td data-label="Tittel">
-                          <label class="form__label">
-                            <input type="checkbox" class="form__input--checkbox">
-                            <span></span>
-                          </label>
-                          <a href="#">Space Oddity</a>
-
-                          <span class="badge badge--secondary badge--in-td">Duplikat</span>
-                        </td>
-                        <td data-label="Hovedartist">
-                          David Bowie
-                        </td>
-                        <td data-label="Utgivelsesår">
-                          1969
-                        </td>
-                        <td data-label="Label">
-                          RCA
-                        </td>
-                        <td data-label="Varighet">
-                          00:05:25
-                        </td>
-                        <td data-label="ISRC">
-                          B01499JUQ20
-                        </td>
-                        <td class="text--right">
-                          <span class="table-row-toggle"></span>
-                        </td>
-                      </tr>
-                      <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
-                        <td colspan="7">
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h4>Innspillingsinfo</h4>
-                              <ul class="no-list">
-                                <li><span class="text--semibold">Klassisk:</span> Nei</li>
-                                <li><span class="text--semibold">Version:</span> -</li>
-                                <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
-                                <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
-                                <li><span class="text--semibold">Produsentland:</span> USA</li>
-                              </ul>
-                            </div>
-                            <div class="col-sm-3">
-                              <h4>Eierskap</h4>
-                              <ul class="no-list">
-                                <li>Parlaphone (100%) 1969 -</li>
-                              </ul>
-                            </div>
-                            <div class="col-sm-4">
-                              <h4>Utøvere</h4>
-                              <ul class="no-list">
-                                <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
-                                <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
-                                <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
-                                <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
-                                <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
-                                <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
-                                <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
-                              </ul>
-                            </div>
-                            <div class="col-sm-2">
-                              <h4>Utgivelser</h4>
-                              <ul class="no-list">
-                                <li>David Bowie</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="drilldown-body drilldown-toggle" data-level="1">
-                        <td data-label="Tittel">
-                          <a href="#">Space Oddity</a>
-                          <label class="form__label">
-                            <input type="checkbox" class="form__input--checkbox">
-                            <span></span>
-                          </label>
-                          <span class="badge badge--secondary badge--in-td">Duplikat</span>
-                        </td>
-                        <td data-label="Hovedartist">
-                          David Bowie
-                        </td>
-                        <td data-label="Utgivelsesår">
-                          1969
-                        </td>
-                        <td data-label="Label">
-                          RCA
-                        </td>
-                        <td data-label="Varighet">
-                          00:05:25
-                        </td>
-                        <td data-label="ISRC">
-                          B01499JUQ20
-                        </td>
-                        <td class="text--right">
-                          <span class="table-row-toggle"></span>
-                        </td>
-                      </tr>
-                      <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
-                        <td colspan="7">
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h4>Innspillingsinfo</h4>
-                              <ul class="no-list">
-                                <li><span class="text--semibold">Klassisk:</span> Nei</li>
-                                <li><span class="text--semibold">Version:</span> -</li>
-                                <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
-                                <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
-                                <li><span class="text--semibold">Produsentland:</span> USA</li>
-                              </ul>
-                            </div>
-                            <div class="col-sm-3">
-                              <h4>Eierskap</h4>
-                              <ul class="no-list">
-                                <li>Parlaphone (100%) 1969 -</li>
-                              </ul>
-                            </div>
-                            <div class="col-sm-4">
-                              <h4>Utøvere</h4>
-                              <ul class="no-list">
-                                <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
-                                <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
-                                <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
-                                <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
-                                <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
-                                <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
-                                <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
-                              </ul>
-                            </div>
-                            <div class="col-sm-2">
-                              <h4>Utgivelser</h4>
-                              <ul class="no-list">
-                                <li>David Bowie</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td data-label="Tittel">
-                          <label class="form__label">
-                            <input type="checkbox" class="form__input--checkbox">
-                            <span></span>
-                          </label>
-                          <a href="#">Space Oddity</a>
-                          <span class="badge badge--secondary badge--in-td">Duplikat</span>
-                        </td>
-                        <td data-label="Hovedartist">
-                          David Bowie
-                        </td>
-                        <td data-label="Utgivelsesår">
-                          1969
-                        </td>
-                        <td data-label="Label">
-                          RCA
-                        </td>
-                        <td data-label="Varighet">
-                          00:05:25
-                        </td>
-                        <td data-label="ISRC">
-                          B01499JUQ20
-                        </td>
-                        <td class="text--right">
-                          <span class="table-row-toggle"></span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table><!--/.table-->
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
                 
@@ -637,11 +409,7 @@
                         </div>
                       </div>
                       <div class="col-xs col--no-flex text--right">
-                        <div class="section-header__toolbar">
-                          <div id="ember1396" class="ember-view">
-                            <a href="#" class="link--edit">rediger</a>
-                          </div>
-                        </div>
+                        Denne innspillingen er låst <span class="icon icon--lock"></span>
                       </div>
                     </header>
                     <div class="row">
@@ -676,13 +444,9 @@
                   
                   <div id="ember4132" class="ember-view">
                     <div class="form__section--action">
-                      <a class="link--no-line" data-ember-action="" data-ember-action-4133="4133">Legg til eierskap</a>
+                      Denne innspillingen er låst <span class="icon icon--lock"></span>
                     </div>
                   </div>
-                  
-                  <button type="secondary" disabled="" id="ember4138" class="async-button btn default btn--secondary">
-                    Se eierskap fra tilknyttede album
-                  </button>
                 </section>
                 
                 <hr class="horizontal-rule horizontal-rule--dashed">
@@ -704,8 +468,7 @@
                     <div id="ember4163" class="section-header__toolbar ember-view">
                       <div id="ember4164" class="ember-view">
                         <div class="section-header__toolbar">
-                          <a href="#" class="btn btn--secondary">Avbryt</a>
-                          <button class="btn btn--primary">Lagre</button>
+                          Denne innspillingen er låst <span class="icon icon--lock"></span>
                         </div>
                       </div>
                     </div>
@@ -734,7 +497,7 @@
                           </div>
                           <div class="col-xs-12 col-sm-4 col-lg-2">
                             <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
+                              <div id="ember4195" class="searchable-list searchable-list--disabled searchable-list--fluid form__input form__input--block ember-view">
                                 <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
                                   <span class="searchable-list__selected">Vokale</span>
                                 </div>
@@ -758,26 +521,23 @@
                             <div id="ember4200" class="ember-view">
                               <div class="radio-group">
                                 <label class="form__label">
-                                  <input type="radio" value="A" id="ember4202" class="ember-view" checked>
+                                  <input type="radio" value="A" id="ember4202" class="ember-view" disabled checked>
                                   <span>A</span>
                                   <span class="check"></span>
                                 </label>
                                 <label class="form__label">
-                                  <input type="radio" value="B" id="ember4204" class="ember-view">
+                                  <input type="radio" value="B" id="ember4204" class="ember-view" disabled>
                                   <span>B</span>
                                   <span class="check"></span>
                                 </label>
                                 <label class="form__label">
-                                  <input type="radio" value="C" id="ember4206" class="ember-view">
+                                  <input type="radio" value="C" id="ember4206" class="ember-view" disabled>
                                   <span>C</span>
                                   <span class="check"></span>
                                 </label>
                               </div>
                               <div id="ember4207" class="form__input__errors ember-view"></div>
                             </div>
-                          </div>
-                          <div class="col-xs align--vertical-center">
-                            <a class="text--small text--light"><i id="ember5740" class="icon--x"></i></a>
                           </div>
                         </div>
                         
@@ -788,7 +548,7 @@
                           </div>
                           <div class="col-xs-12 col-sm-4 col-lg-2">
                             <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
+                              <div id="ember4195" class="searchable-list searchable-list--disabled searchable-list--fluid form__input form__input--block ember-view">
                                 <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
                                   <span class="searchable-list__selected">Gitar</span>
                                 </div>
@@ -812,17 +572,17 @@
                             <div id="ember4200" class="ember-view">
                               <div class="radio-group">
                                 <label class="form__label">
-                                  <input type="radio" value="A" id="ember4202" class="ember-view" checked>
+                                  <input type="radio" value="A" id="ember4202" class="ember-view" disabled checked>
                                   <span>A</span>
                                   <span class="check"></span>
                                 </label>
                                 <label class="form__label">
-                                  <input type="radio" value="B" id="ember4204" class="ember-view">
+                                  <input type="radio" value="B" id="ember4204" class="ember-view" disabled>
                                   <span>B</span>
                                   <span class="check"></span>
                                 </label>
                                 <label class="form__label">
-                                  <input type="radio" value="C" id="ember4206" class="ember-view">
+                                  <input type="radio" value="C" id="ember4206" class="ember-view" disabled>
                                   <span>C</span>
                                   <span class="check"></span>
                                 </label>
@@ -830,21 +590,18 @@
                               <div id="ember4207" class="form__input__errors ember-view"></div>
                             </div>
                           </div>
-                          <div class="col-xs align--vertical-center">
-                            <a class="text--small text--light"><i id="ember5740" class="icon--x"></i></a>
-                          </div>
                         </div>
                         
                         <div class="row">
                           <div class="col-xs-12 col-sm-3 col-lg-3">
                             <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
-                            <a href="#" id="ember4190" class="ember-view">Herbie Flowers</a>
+                            <a href="#" id="ember4190" class="ember-view">Paul Buckmaster</a>
                           </div>
                           <div class="col-xs-12 col-sm-4 col-lg-2">
                             <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
+                              <div id="ember4195" class="searchable-list searchable-list--disabled searchable-list--fluid form__input form__input--block ember-view">
                                 <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
-                                  <span class="searchable-list__selected">Bass</span>
+                                  <span class="searchable-list__selected">String arrangement</span>
                                 </div>
                                 <div class="searchable-list__dropdown">
                                   <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
@@ -866,17 +623,17 @@
                             <div id="ember4200" class="ember-view">
                               <div class="radio-group">
                                 <label class="form__label">
-                                  <input type="radio" value="A" id="ember4202" class="ember-view" checked>
+                                  <input type="radio" value="A" id="ember4202" class="ember-view" disabled checked>
                                   <span>A</span>
                                   <span class="check"></span>
                                 </label>
                                 <label class="form__label">
-                                  <input type="radio" value="B" id="ember4204" class="ember-view">
+                                  <input type="radio" value="B" id="ember4204" class="ember-view" disabled>
                                   <span>B</span>
                                   <span class="check"></span>
                                 </label>
                                 <label class="form__label">
-                                  <input type="radio" value="C" id="ember4206" class="ember-view">
+                                  <input type="radio" value="C" id="ember4206" class="ember-view" disabled>
                                   <span>C</span>
                                   <span class="check"></span>
                                 </label>
@@ -884,21 +641,18 @@
                               <div id="ember4207" class="form__input__errors ember-view"></div>
                             </div>
                           </div>
-                          <div class="col-xs align--vertical-center">
-                            <a class="text--small text--light"><i id="ember5740" class="icon--x"></i></a>
-                          </div>
                         </div>
                         
                         <div class="row">
                           <div class="col-xs-12 col-sm-3 col-lg-3">
                             <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
-                            <a href="#" id="ember4190" class="ember-view">Terry Cox</a>
+                            <a href="#" id="ember4190" class="ember-view">Tim Renwick</a>
                           </div>
                           <div class="col-xs-12 col-sm-4 col-lg-2">
                             <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
+                              <div id="ember4195" class="searchable-list searchable-list--disabled searchable-list--fluid form__input form__input--block ember-view">
                                 <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
-                                  <span class="searchable-list__selected">Drums</span>
+                                  <span class="searchable-list__selected">Gitar</span>
                                 </div>
                                 <div class="searchable-list__dropdown">
                                   <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
@@ -920,214 +674,38 @@
                             <div id="ember4200" class="ember-view">
                               <div class="radio-group">
                                 <label class="form__label">
-                                  <input type="radio" value="A" id="ember4202" class="ember-view" checked>
+                                  <input type="radio" value="A" id="ember4202" class="ember-view" disabled checked>
                                   <span>A</span>
                                   <span class="check"></span>
                                 </label>
                                 <label class="form__label">
-                                  <input type="radio" value="B" id="ember4204" class="ember-view">
+                                  <input type="radio" value="B" id="ember4204" class="ember-view" disabled>
                                   <span>B</span>
                                   <span class="check"></span>
                                 </label>
                                 <label class="form__label">
-                                  <input type="radio" value="C" id="ember4206" class="ember-view">
+                                  <input type="radio" value="C" id="ember4206" class="ember-view" disabled>
                                   <span>C</span>
                                   <span class="check"></span>
                                 </label>
                               </div>
                               <div id="ember4207" class="form__input__errors ember-view"></div>
                             </div>
-                          </div>
-                          <div class="col-xs align--vertical-center">
-                            <a class="text--small text--light"><i id="ember5740" class="icon--x"></i></a>
                           </div>
                         </div>
                         
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-3 col-lg-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
-                            <a href="#" id="ember4190" class="ember-view">Tony Visconti</a>
-                          </div>
-                          <div class="col-xs-12 col-sm-4 col-lg-2">
-                            <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
-                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
-                                  <span class="searchable-list__selected">Flutes</span>
-                                </div>
-                                <div class="searchable-list__dropdown">
-                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
-                                  <ul>
-                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
-                                      Gitar
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-3 col-lg-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                              <input type="text" disabled="" value="Storbrittania" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-2">
-                            <div id="ember4200" class="ember-view">
-                              <div class="radio-group">
-                                <label class="form__label">
-                                  <input type="radio" value="A" id="ember4202" class="ember-view" checked>
-                                  <span>A</span>
-                                  <span class="check"></span>
-                                </label>
-                                <label class="form__label">
-                                  <input type="radio" value="B" id="ember4204" class="ember-view">
-                                  <span>B</span>
-                                  <span class="check"></span>
-                                </label>
-                                <label class="form__label">
-                                  <input type="radio" value="C" id="ember4206" class="ember-view">
-                                  <span>C</span>
-                                  <span class="check"></span>
-                                </label>
-                              </div>
-                              <div id="ember4207" class="form__input__errors ember-view"></div>
-                            </div>
-                          </div>
-                          <div class="col-xs align--vertical-center">
-                            <a class="text--small text--light"><i id="ember5740" class="icon--x"></i></a>
-                          </div>
-                        </div>
-                        
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-3 col-lg-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
-                            <a href="#" id="ember4190" class="ember-view">Rick Wakeman</a>
-                          </div>
-                          <div class="col-xs-12 col-sm-4 col-lg-2">
-                            <label class="form__label form__label--block form__label--hidden"><span>Instrument</span>
-                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
-                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
-                                  <span class="searchable-list__selected">Piano</span>
-                                </div>
-                                <div class="searchable-list__dropdown">
-                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
-                                  <ul>
-                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
-                                      Gitar
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-3 col-lg-3">
-                            <label class="form__label form__label--block form__label--hidden"><span>Statsborgerskap</span>
-                              <input type="text" disabled="" value="Storbrittania" class="form__input form__input--block">
-                            </label>
-                          </div>
-                          <div class="col-xs-12 col-sm-2">
-                            <div id="ember4200" class="ember-view">
-                              <div class="radio-group">
-                                <label class="form__label">
-                                  <input type="radio" value="A" id="ember4202" class="ember-view" checked>
-                                  <span>A</span>
-                                  <span class="check"></span>
-                                </label>
-                                <label class="form__label">
-                                  <input type="radio" value="B" id="ember4204" class="ember-view">
-                                  <span>B</span>
-                                  <span class="check"></span>
-                                </label>
-                                <label class="form__label">
-                                  <input type="radio" value="C" id="ember4206" class="ember-view">
-                                  <span>C</span>
-                                  <span class="check"></span>
-                                </label>
-                              </div>
-                              <div id="ember4207" class="form__input__errors ember-view"></div>
-                            </div>
-                          </div>
-                          <div class="col-xs align--vertical-center">
-                            <a class="text--small text--light"><i id="ember5740" class="icon--x"></i></a>
-                          </div>
-                        </div>
 
                       </div>
                     </form>
-                    <div id="ember4145" class="section-header">
-                      <div class="section-header__toggle no-margin--left">
-                        <span>Vis duplikat info</span>
-                        <span class="x-toggle-container">
-                          <input type="checkbox" class="x-toggle">
-                          <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium"></label>
-                        </span>
-                      </div>
-                    </div>
-                    <table class="table table--fluid">
-                      <thead>
-                        <tr>
-                          <th>Navn</th>
-                          <th>Instrument</th>
-                          <th>Statsborgerskap</th>
-                          <th>Rollekode</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td data-label="Navn"><a href="#">Paul Buckmaster</a></td>
-                          <td data-label="Instrument">String arrangement</td>
-                          <td data-label="Statsborgerskap">Storbrittania</td>
-                          <td data-label="Rollekode">A</td>
-                          <td><a href="#">Legg til</a></td>
-                        </tr>
-                        <tr>
-                          <td data-label="Navn"><a href="#">Tim Renwick</a></td>
-                          <td data-label="Instrument">Gitar</td>
-                          <td data-label="Statsborgerskap">Storbrittania</td>
-                          <td data-label="Rollekode">A</td>
-                          <td><a href="#">Legg til</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
                 </section>
                 <hr class="horizontal-rule horizontal-rule--dashed">
                 <section id="utover" class="container container--padded">
 
                   <div class="section-header">
                     <header>
-                      <h2>Utgivelser <span class="badge badge--secondary">3</span></h2>
+                      <h2>Utgivelser <span class="badge badge--secondary">0</span></h2>
                     </header>
-                    <div class="section-header__toggle">
-                      <span>Vis kladd info</span>
-                      <span class="x-toggle-container">
-                        <input type="checkbox" class="x-toggle">
-                        <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium"></label>
-                      </span>
-                    </div>
-                  </div>
-
-                  <table class="table table--fluid">
-                    <thead>
-                      <tr>
-                        <th>Tittel</th>
-                        <th>Katalognummer</th>
-                        <th class="text--center">Side</th>
-                        <th class="text--center">Spor</th>
-                        <th>Tittel på spor</th>
-                        <th>ISRC på spor</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td data-label="Tittel"><a href="#">David Bowie</a></td>
-                        <td data-label="Katalognummer">ISBN8242110735</td>
-                        <td data-label="Side" class="text--center">2</td>
-                        <td data-label="Spor" class="text--center">20</td>
-                        <td data-label="Tittel på spor">Space Oddity</td>
-                        <td data-label="ISRC på spor"></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  </div>  
                 </section>
               </div>
 
