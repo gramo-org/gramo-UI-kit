@@ -5125,9 +5125,9 @@ input[type="text"].search__form__input{
   border:1px solid #d9d9dc;
   border-radius:2px 0 0 2px;
   outline:none;
-  -webkit-flex:0 1 550px;
-  -ms-flex:0 1 550px;
-  flex:0 1 550px;
+  -webkit-flex:0 1 500px;
+  -ms-flex:0 1 500px;
+  flex:0 1 500px;
   margin-bottom:0;
 }
 
@@ -5145,7 +5145,7 @@ input[type="text"].search__form__input--large{
 @media (min-width: 1200px){
 
   input[type="text"].search__form__input--fixed-width{
-    min-width:550px;
+    min-width:500px;
   }
 }
 

@@ -65,7 +65,7 @@ input[type="text"].search__form__input {
   border: 1px solid var(--silver);
   border-radius: 2px 0 0 2px;
   outline: none;
-  flex: 0 1 550px;
+  flex: 0 1 500px;
   margin-bottom: 0;
 
   &--large {
@@ -78,7 +78,7 @@ input[type="text"].search__form__input {
       min-width: 400px;
     }
     @media (--hd) {
-      min-width: 550px;
+      min-width: 500px;
     }
   }
 }
