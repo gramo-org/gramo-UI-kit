@@ -324,7 +324,7 @@
                       </div>
                     </div>
                     <fieldset class="form__fieldset form__fieldset--border">
-                      <legend>Take on Me</legend>
+                      <legend class="legend--with-link">Take on Me <a href="#">vis innspillingsinfo</a></legend>
                       <div class="row">
                         <div class="col-xs-12 col-sm-5">
                           <label class="form__label form__label--required">Tittel
@@ -364,7 +364,7 @@
                       <a href="#" class="btn btn--inline btn--primary">Bruk denne</a>
                     </div>
                     <fieldset class="form__fieldset form__fieldset--border">
-                      <legend>Take on Me (radio edit)</legend>
+                      <legend class="legend--with-link">Take on Me (radio edit) <a href="#">vis innspillingsinfo</a></legend>
                       <div class="row">
                         <div class="col-xs-12 col-sm-5">
                           <label class="form__label form__label--required">Tittel
@@ -421,5 +421,13 @@
 </div>
 <script src="../../../../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../../../../js/default.js"></script>
+<script>
+  const legendLinks = document.querySelectorAll('.legend--with-link > a');
+  
+  function toggleRows() {
+    $(this).closest('.form__fieldset--border').find('.row').toggleClass('is-visible');
+  }
+  legendLinks.forEach(legendLink => legendLink.addEventListener('click', toggleRows));
+</script>
 </body>
 </html>

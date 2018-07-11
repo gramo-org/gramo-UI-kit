@@ -858,6 +858,10 @@ p{
   font-size:1.2rem!important;
 }
 
+.text--medium{
+  font-size:1.4rem!important;
+}
+
 .text--upper{
   text-transform:uppercase;
 }
@@ -5003,6 +5007,23 @@ tr[data-src="draft"] > td:first-child::after{
 .form__fieldset--border legend{
   font-size:2.4rem;
   font-weight:600;
+}
+
+.legend--with-link a{
+  font-size:1.4rem;
+  padding:0rem 1rem 0rem 0.25rem;
+  position:relative;
+  top:-.2rem;
+}
+
+.legend--with-link ~ .row{
+  display:none;
+}
+
+.legend--with-link ~ .row.is-visible{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
 }
 
 .form--summary .form__label{
