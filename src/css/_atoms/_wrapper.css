@@ -33,6 +33,12 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   }
 }
 
+.panels__sidebar--25 {
+  @media (--hd) {
+    flex: 0 1 25%;
+  }
+}
+
 .panels__main {
   flex: 1 0 100%;
 

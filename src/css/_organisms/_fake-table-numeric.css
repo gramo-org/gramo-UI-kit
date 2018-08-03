@@ -34,6 +34,12 @@
   }
 }
 
+/* Fake table numeric in panels__sidebar (stop number verically centering) */
+.panels__sidebar .fake-table--numeric > .fake-table__row > *:first-child::before {
+  margin-top: 1.5rem;
+  @media (--tablet) { top: 0; }
+}
+
 /* Fake table numeric with checkboxes */
 .fake-table--numeric--checkboxes {
 

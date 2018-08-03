@@ -2,6 +2,10 @@
   color: var(--base-font-color);
 }
 
+.link--normal {
+  color: var(--gramo-blue)!important;
+}
+
 .link--inline {
   text-decoration: none;
   /*font-weight: 300;*/

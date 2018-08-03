@@ -1,7 +1,7 @@
 @import url('vendor/_x-button.css');
 
 .x-toggle-container {
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .x-toggle {

@@ -1682,6 +1682,10 @@ table{
   color:#3f3e44;
 }
 
+.link--normal{
+  color:#0095da!important;
+}
+
 .link--inline{
   text-decoration:none;
   margin:0 1rem;
@@ -2031,6 +2035,15 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
   }
 }
 
+@media (min-width: 1200px){
+
+  .panels__sidebar--25{
+    -webkit-flex:0 1 25%;
+    -ms-flex:0 1 25%;
+    flex:0 1 25%;
+  }
+}
+
 .panels__main{
   -webkit-flex:1 0 100%;
   -ms-flex:1 0 100%;
@@ -2365,6 +2378,17 @@ hr, .horizontal-rule{
 .btn--fixed-width{
   min-width:200px;
   margin:0 .5rem;
+}
+.form__input--file{
+  width:0.1px;
+	height:0.1px;
+	opacity:0;
+	overflow:hidden;
+	position:absolute;
+	z-index:-1;
+}
+.form__input--file + label{
+  cursor:pointer
 }
 .box{
   background:#fdfdfd;
@@ -3169,7 +3193,6 @@ hr, .horizontal-rule{
 }
 
 .x-toggle-container{
-  vertical-align:middle;
 }
 
 .x-toggle{
@@ -4589,6 +4612,9 @@ main.pull .bucket{
 }
 .fake-table__row--child > .fake-table__row > div[class*="col-"]:first-child{
   padding-left:3rem;
+}
+.fake-table__row--child__header{
+  margin:1rem 0 0 2rem;
 }
 
 .fake-table__row--expanded > .fake-table__row--child{
@@ -6264,6 +6290,15 @@ tr > td:last-child{
   width:calc(100% + 4rem);
   padding-left:0;
 }
+.panels__sidebar .fake-table--numeric > .fake-table__row > *:first-child::before{
+  margin-top:1.5rem;
+}
+@media (min-width: 768px){
+
+  .panels__sidebar .fake-table--numeric > .fake-table__row > *:first-child::before{
+    top:0;
+  }
+}
 .fake-table--numeric--checkboxes .fake-table__row input[type="checkbox"]{
   position:absolute;
   left:-5rem;
@@ -6894,6 +6929,11 @@ tr > td:last-child{
 
 .file-upload__list ul li:first-child{
   margin-top:1rem;
+}
+
+.file-upload__list--free-standing ul{
+  max-height:none;
+  min-height:0;
 }
 
 .file-upload--in-header{

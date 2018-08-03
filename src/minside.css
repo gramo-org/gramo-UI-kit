@@ -1486,6 +1486,10 @@ table{
   color:#3f3e44;
 }
 
+.link--normal{
+  color:#0095da!important;
+}
+
 .link--inline{
   text-decoration:none;
   margin:0 1rem;
@@ -1965,7 +1969,6 @@ input[type="number"].four-digit{
 }
 
 .x-toggle-container{
-  vertical-align:middle;
 }
 
 .x-toggle{
@@ -2572,6 +2575,11 @@ input[type="number"].four-digit{
 
 .file-upload__list ul li:first-child{
   margin-top:1rem;
+}
+
+.file-upload__list--free-standing ul{
+  max-height:none;
+  min-height:0;
 }
 
 .file-upload--in-header{

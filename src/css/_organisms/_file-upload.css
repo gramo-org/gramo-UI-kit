@@ -151,6 +151,11 @@
   }
 }
 
+.file-upload__list--free-standing ul {
+  max-height: none;
+  min-height: 0;
+}
+
 .file-upload--in-header {
   position: absolute;
   top: -3.7rem;

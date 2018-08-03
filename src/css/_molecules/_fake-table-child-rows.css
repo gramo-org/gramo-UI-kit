@@ -27,6 +27,10 @@
   & > .fake-table__row > div[class*="col-"]:first-child {
     padding-left: 3rem;
   }
+  
+  &__header {
+    margin: 1rem 0 0 2rem;
+  }
 }
 
 .fake-table__row--expanded > .fake-table__row--child {
