@@ -327,13 +327,13 @@
 
                             <div class="fake-table__cell--label">Varighet</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced has-error form__label--validation-shared">
+                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
                                 <input type="text" value="00:03:18" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match record-->
                             <div class="form__validation-divider"></div><!--end .col-md-1-->
                             <div class="" data-label="Match result">
-                              <label class="form__label form__label--block form__label--reduced has-error">
+                              <label class="form__label form__label--block form__label--reduced is-valid">
                                 <input type="text" value="00:03:18" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match result-->
@@ -353,27 +353,27 @@
 
                             <div class="fake-table__cell--label">ISRC</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
+                              <label class="form__label form__label--block form__label--reduced has-error form__label--validation-shared">
                                 <input type="text" value="USJT11500155" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match record-->
                             <div class="form__validation-divider"></div><!--end .col-md-1-->
                             <div class="" data-label="Match result">
-                              <label class="form__label form__label--block form__label--reduced is-valid">
-                                <input type="text" value="USJT11500155" class="form__input form__input--block form__input--validation-hidden">
+                              <label class="form__label form__label--block form__label--reduced has-error">
+                                <input type="text" value="USJT11500177" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match result-->
 
-                            <div class="fake-table__cell--label">Album/Kat.nr./Side/Spor</div><!--end .col-md-1-->
+                            <div class="fake-table__cell--label">Album | Kat.nr. | Side | Spor</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                <input type="text" value="03.04.1945" class="form__input form__input--block form__input--validation-hidden">
+                                <input type="text" value="David Bowie | 4741830 | 00 | 1" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
                             <div class="form__validation-divider"></div><!--end .col-md-1-->
                             <div class="" data-label="Match result">
                               <label class="form__label form__label--block form__label--reduced is-valid">
-                                <input type="text" value="03.04.1945" class="form__input form__input--block form__input--validation-hidden">
+                                <input type="text" value="David Bowie | 4741830 | 00 | 1" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match result-->
 
@@ -405,14 +405,14 @@
                             
                             <div class="fake-table__cell--label">Innspillingsland</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
+                              <label class="form__label form__label--block form__label--reduced has-error form__label--validation-shared">
                                 <input type="text" value="Storbrittania" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match record-->
                             <div class="form__validation-divider"></div><!--end .col-md-1-->
                             <div class="" data-label="Match result">
-                              <label class="form__label form__label--block form__label--reduced is-valid">
-                                <input type="text" value="Storbrittania" class="form__input form__input--block form__input--validation-hidden">
+                              <label class="form__label form__label--block form__label--reduced has-error">
+                                <input type="text" value="USA" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match result-->
                             
@@ -455,14 +455,44 @@
                               </label>
                             </div><!--end match result-->
                           </form>
+                          <div class="col-md-12 text--center">
+                            <span class="text--medium">Vis alle felter</span>
+                            <span class="x-toggle-container">
+                              <input type="checkbox" class="x-toggle">
+                              <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                              </label>
+                            </span>
+                            <hr class="horizontal-rule horizontal-rule--dashed no-margin--bottom">
+                          </div><!--end .col-md-->
+                          
                           <div class="col-md">
+                            <h3 class="fake-table__row--child__header">Eierskap</h3>
+                            <div class="row text--center">
+                              <div class="col-sm-6">
+                                <h4>VRDB</h4>
+                              </div>
+                              <div class="col-sm-6">
+                                <h4>ECHO</h4>
+                              </div>
+                            </div>
+                            <div class="row text--center">
+                              <div class="col-sm-6">
+                                RCA | 100% | 2016 -
+                              </div>
+                              <div class="col-sm-6">
+                                RCA | 100% | 2016 -
+                              </div>
+                            </div>
+                            <hr class="horizontal-rule horizontal-rule--dashed no-margin--bottom">
+                          </div><!--end .col-md-->
+                          <div class="col-md" style="display:none">
                             <div class="fake-table__row fake-table__row--foot align--center">
                               <div class="text--center">
                                 <button class="btn btn--block btn--primary">Match innspillinger</button>
                                 <a href="#">Eller opprett innspilling med data fra VRDB</a>
                               </div>
                             </div><!--end .fake-table__row foot-->
-                          </div>
+                          </div><!--end .col-md-->
                         </div><!--end .fake-table__row child-->
                       </li><!--end .fake-table__row expanded-->
                     </ol><!--end .fake-table-with-tabs-->

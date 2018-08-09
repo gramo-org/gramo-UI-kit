@@ -60,7 +60,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   .fake-table__row {
 
     div[class*="col-"]:first-child {
-      justify-content: center;
+      /* justify-content: center; */
     }
   }
 

@@ -98,4 +98,19 @@
     min-width: 200px;
     margin: 0 .5rem;
   }
+  
+  &--add {
+    width: auto;
+    border: 0;
+    position: relative;
+    padding: 0.5rem .9rem;
+    
+    &:after {
+      content: "\e901";
+      font-family: 'icomoon';
+      display: block;
+      transform: rotate(45deg);
+      font-size: 1rem;
+    }
+  }
 }

@@ -78,6 +78,87 @@ tr > td:last-child {
   border-right: 1px solid var(--table-border-color);
 }
 
+.table--basic {
+  margin: 1rem 1rem 0 1rem;
+  
+  thead {
+    border-width: 0 0 1px 0;
+    
+    tr {
+      background: none;
+      border: 0;
+    }
+  }
+  
+  thead:first-child {
+    border-width: 0;
+    
+    th {
+      border: 0;
+      height: auto;
+    }
+  }
+  
+  th {
+    padding: .5rem;
+    
+    &:first-child {
+      padding-left: 0.25rem;
+    }
+    
+    &:last-child {
+      padding-right: 0.25rem;
+    }
+  }
+  
+  tr:first-child {
+    border-top: 0;
+  }
+  
+  tr:hover {
+    background: none!important;
+  }
+  
+  td {
+    padding: .5rem;
+  }
+  
+  td:first-child {
+    border-left: 0;
+    padding-left: 0.25rem;
+  }
+  
+  td:last-child {
+    border-right: 0;
+    padding-right: 0.25rem;
+  }
+  
+  &__divider {
+    position: relative;
+    padding: 1rem!important;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      background: var(--gramo-white);
+      width: 100%;
+      top: 0;
+      bottom: -1px;
+      left: 0;
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background: var(--silver);
+      top: 0;
+      height: calc(100% + 1px);
+    }
+  }
+}
+
 /*** Make table responsive - not mobile first in this case! ***/
 
 @media

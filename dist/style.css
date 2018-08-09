@@ -2070,9 +2070,6 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
 }
 
 .panels__sidebar .fake-table__row div[class*="col-"]:first-child, .panels__main .fake-table__row div[class*="col-"]:first-child{
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
 }
 
 .panels__sidebar .container--is-editing, .panels__main .container--is-editing{
@@ -2379,6 +2376,21 @@ hr, .horizontal-rule{
   min-width:200px;
   margin:0 .5rem;
 }
+.btn--add{
+  width:auto;
+  border:0;
+  position:relative;
+  padding:0.5rem .9rem;
+}
+.btn--add:after{
+  content:"\e901";
+  font-family:'icomoon';
+  display:block;
+  -webkit-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  transform:rotate(45deg);
+  font-size:1rem;
+}
 .form__input--file{
   width:0.1px;
 	height:0.1px;
@@ -2500,6 +2512,21 @@ hr, .horizontal-rule{
   padding:1rem 0 0 .5rem;
   border-top:1px solid #d9d9dc;
   margin:2rem 1rem 0rem 1rem;
+}
+
+.toolbar--tabular{
+  width:calc(100% + 2rem);
+  display:block;
+  padding:0;
+}
+
+.toolbar--tabular .toolbar__head{
+  background:#d9d9dc;
+  padding:.5rem 1rem;
+}
+
+.toolbar--tabular .toolbar__body{
+  padding:1rem;
 }
 .badge{
   display:inline-block;
@@ -4603,10 +4630,6 @@ main.pull .bucket{
   display:block;
   cursor:default;
 }
-.fake-table__row--child > div span{
-  font-weight:300;
-  margin-right:.5rem;
-}
 .fake-table__row--child:nth-child(odd){
   background:#f9f9f9;
 }
@@ -6091,7 +6114,7 @@ tr > td:last-child{
 }
 
 .table--basic{
-  margin:1rem;
+  margin:1rem 1rem 0 1rem;
 }
 
 .table--basic thead{
@@ -6101,6 +6124,15 @@ tr > td:last-child{
 .table--basic thead tr{
   background:none;
   border:0;
+}
+
+.table--basic thead:first-child{
+  border-width:0;
+}
+
+.table--basic thead:first-child th{
+  border:0;
+  height:auto;
 }
 
 .table--basic th{
@@ -6117,6 +6149,10 @@ tr > td:last-child{
 
 .table--basic tr:first-child{
   border-top:0;
+}
+
+.table--basic tr:hover{
+  background:none!important;
 }
 
 .table--basic td{
@@ -7059,6 +7095,7 @@ tr > td:last-child{
   font-size:1.5rem;
   color:#a5a4ab;
   margin-right:1rem;
+  white-space:nowrap;
 }
 .wizard-steps > li a{
   color:#a5a4ab;

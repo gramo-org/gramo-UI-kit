@@ -9,11 +9,6 @@
   & > div {
     display: block;
     cursor: default;
-
-    span {
-      font-weight: 300;
-      margin-right: .5rem;
-    }
   }
 
   &:nth-child(odd) {
