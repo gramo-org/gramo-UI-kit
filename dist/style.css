@@ -2553,6 +2553,7 @@ hr, .horizontal-rule{
   vertical-align:baseline;
   min-width:60px;
   text-align:center;
+  margin-left:0;
 }
 .badge--primary{
   background:#0095da;
@@ -2571,7 +2572,7 @@ hr, .horizontal-rule{
   color:#fff;
 }
 .badge--secondary{
-  background:#a5a4ab;
+  background:rgb(192, 191, 196);
   color:#fff;
 }
 .badge--notification{
@@ -2597,12 +2598,6 @@ hr, .horizontal-rule{
 .badge--draft{
   background:#88c7d8;
   color:#fff;
-  font-size:1.3rem;
-  padding:0.3rem .75rem;
-  max-width:50px;
-  -webkit-align-self:flex-end;
-  -ms-flex-item-align:end;
-  align-self:flex-end;
 }
 
 .badge--icon{
@@ -6513,6 +6508,12 @@ tr > td:last-child{
 }
 .table--numeric tr > td:first-child{
   padding-left:4.7rem;
+}
+@media (min-width: 1200px){
+
+  .table--numeric tr > td:first-child{
+    max-width:120px;
+  }
 }
 .table--numeric tr:not(.table__row--no-count) > td:first-child::before{
   top:50%;

@@ -4,6 +4,7 @@
   tr > td:first-child {
     @extend .fake-table--numeric .fake-table__row;
     padding-left: 4.7rem;
+    @media (--hd) { max-width: 120px; }
   }
 
   tr:not(.table__row--no-count) > td:first-child::before {

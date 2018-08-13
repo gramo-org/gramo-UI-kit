@@ -8,7 +8,10 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="/img/favicon_prod.ico">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
   <!-- Select 2 -searchable select box -->
   <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
@@ -17,7 +20,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../style.css">
   <script>
-  window.onload = window.location.hash = 'duplikatliste';
+  window.onload = window.location.hash = 'vrdb';
   </script>
 </head>
 <body>
@@ -71,12 +74,15 @@
                   <a href="/discography/file-statuses">Innlest kladd</a>
                 </li>
                 <li class="vertical__nav__item vertical__nav--sub__item">
-                  <a href="/discography/search?query=%20%20&amp;type=releases" class="active">Søk</a>
+                  <a href="/discography/search?query=%20%20&amp;type=releases">Søk</a>
                 </li>
                 <li class="vertical__nav__item vertical__nav--sub__item">
                   <a href="/discography/worklist">Arbeidsliste</a></li>
                 <li class="vertical__nav__item vertical__nav--sub__item">
                   <a href="/discography/federations">Rettighetshaverorg.</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/federations" class="active">VRDB import</a>
                 </li>
               </ul>
             </li>
@@ -112,21 +118,12 @@
     </div>
     <!--End Sidebar example-->
     <main>
-
       <header class="site-header">
         <div class="toggle-sidebar open">
           <a href="#">
           </a>
         </div>
       </header>
-
-      <!--- Flash message --->
-      <!-- <div class="flash-message-wrapper">
-        <div class="flash-message flash-message--success">
-          <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--borderless">Angre ?</button></p>
-        </div>
-      </div> -->
-
       <section class="container container--hd">
         <div class="tabs">
           <ul class="tabs__nav tabs__nav--flexible">
@@ -137,9 +134,9 @@
               </a>
             </li>
             <li class="tabs__nav__item">
-              <a href="#duplikatliste">
-                <span class="tabs__nav__item__type tabs__nav__item__type--list">Duplikatliste - rapport</span>
-                4 innspillinger
+              <a href="#vrdb">
+                <span class="tabs__nav__item__type tabs__nav__item__type--list">VRDB</span>
+                Import
               </a>
             </li>
           </ul>
@@ -189,172 +186,54 @@
                 </div>
               </div><!--end .toolbar__lower-->
             </div><!--end .toolbar-->
-            <table class="table drilldown table--fluid table--numeric table--with-checkboxes">
-              <thead>
-                <tr>
-                  <th>
-                    Tittel
-                  </th>
-                  <th>
-                    Hovedartist
-                  </th>
-                  <th>
-                    Utgivelsesår
-                  </th>
-                  <th>
-                    Label
-                  </th>
-                  <th>
-                    Varighet
-                  </th>
-                  <th>
-                    ISRC
-                  </th>
-                  <th></th>
-                </tr>
-              </thead>
-              
-            </table><!--/.table-->
           </section><!--/.tabs__section-->
-          <section id="duplikatliste" class="tabs__section">
+          <section id="vrdb" class="tabs__section">
             <div class="toolbar">
-              <div class="col-xs col--no-flex">
-                <h1>Rapport - følgende innspillinger er nå koblet sammen</h1>
+              <div class="col">
+                <h1 class="text--nowrap">VRDB Import</h1>
+              </div>
+              <div class="col align--vertical-center">
+                <button class="btn btn--secondary text--nowrap">Forkast Import</button>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <ol class="wizard-steps wizard-steps--no-margin">
+                  <li>1. Utøvere</li>
+                  <li class="selected">2. Innspillinger</li>
+                  <li>3. Opptreddene</li>
+                </ol>
               </div>
             </div><!--end .toolbar-->
-            <section class="scrollable-area scrollable-area--with-footer" style="height: calc(100vh - 23rem);">
-              <table class="table table--fluid table--numeric">
-                <thead>
-                  <tr>
-                    <th>
-                      Tittel
-                    </th>
-                    <th>Status</th>
-                    <th>
-                      Hovedartist
-                    </th>
-                    <th>
-                      Utgivelsesår
-                    </th>
-                    <th>
-                      Label
-                    </th>
-                    <th>
-                      Varighet
-                    </th>
-                    <th>
-                      ISRC
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="row--no-checkbox" data-level="1">
-                    <td data-label="Tittel">
-                      <a href="master_recording.html" class="click-here">Space Oddity
-                      </a>
-                    </td>
-                    <td><span class="badge badge--info badge--in-td">Master</span></td>
-                    <td data-label="Hovedartist">
-                      David Bowie
-                    </td>
-                    <td data-label="Utgivelsesår">
-                      1969
-                    </td>
-                    <td data-label="Label">
-                      RCA
-                    </td>
-                    <td data-label="Varighet">
-                      00:05:25
-                    </td>
-                    <td data-label="ISRC">
-                      B01499JUQ20
-                    </td>
-                  </tr>
-                  
-                  <tr class="" data-level="1">
-                    <td data-label="Tittel">
-                      <a href="#">Dazed and Somewhat Slightly Confused
-                      </a>
-                    </td>
-                    <td><span class="badge badge--secondary badge--in-td">Duplikat</span></td>
-                    <td data-label="Hovedartist">
-                      David Bowie
-                    </td>
-                    <td data-label="Utgivelsesår">
-                      1969
-                    </td>
-                    <td data-label="Label">
-                      RCA
-                    </td>
-                    <td data-label="Varighet">
-                      00:05:25
-                    </td>
-                    <td data-label="ISRC">
-                      B01499JUQ20
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td data-label="Tittel">
-                      <a href="#">Janine
-                      </a>
-                    </td>
-                    <td><span class="badge badge--secondary badge--in-td">Duplikat</span></td>
-                    <td data-label="Hovedartist">
-                      David Bowie
-                    </td>
-                    <td data-label="Utgivelsesår">
-                      1969
-                    </td>
-                    <td data-label="Label">
-                      RCA
-                    </td>
-                    <td data-label="Varighet">
-                      00:05:25
-                    </td>
-                    <td data-label="ISRC">
-                      B01499JUQ20
-                    </td>
-                  </tr>
-                  <tr>
-                    <td data-label="Tittel">
-                      <a href="#">Space Oddity
-                      </a>
-                    </td>
-                    <td><span class="badge badge--secondary badge--in-td">Duplikat</span></td>
-                    <td data-label="Hovedartist">
-                      David Bowie
-                    </td>
-                    <td data-label="Utgivelsesår">
-                      1969
-                    </td>
-                    <td data-label="Label">
-                      RCA
-                    </td>
-                    <td data-label="Varighet">
-                      00:05:25
-                    </td>
-                    <td data-label="ISRC">
-                      B01499JUQ20
-                    </td>
-                  </tr>
-                </tbody>
-              </table><!--/.table-->
-            </section><!--end /.scrollable-area-->
+            <div class="panels">
+              <div class="panels__sidebar panels__sidebar--25">
+                <div class="toolbar toolbar--above">
+                  <div class="col-xs-12">
+                    <span class="text--medium">Vis alle felter</span>
+                    <span class="x-toggle-container">
+                      <input type="checkbox" class="x-toggle">
+                      <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                      </label>
+                    </span>
+                  </div>
+                </div>
+                
+              </div><!--end .panels #sidebar-->
+              <div class="panels__main">
+                <div class="empty-state">
+                  <h3>Ingen flere utøvere i import filen <br><span><a href="match-recordings.html">Gå til innspillinger</a></span></h3>
+                    <span class="empty-state__icon">
+                      <i class="icon--empty-state-music"></i>
+                    </span>
+                </div>
+              </div><!--end .panels #main-->
+            </div><!-- end .panels -->
           </section><!--end /.tabs__section-->
         </div><!--end /.tabs-->
       </section><!--end /.container-->
     </main>
   </div><!--End site-wrapper-->
 
-  <script src="../../js/vendor/jquery-1.11.3.min.js"></script>
-  <script src="../../js/vendor/drilldown.js"></script>
-  <script src="../../js/default.js"></script>
-  <script>
-    $('.drilldown').drilldown({
-      speed: 'fast'
-    });
-  </script>
+<script src="../../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../../js/default.js"></script>
 
 </body>
 </html>

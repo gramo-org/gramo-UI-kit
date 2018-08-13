@@ -26,6 +26,7 @@
     vertical-align: baseline;
     min-width: 60px;
     text-align: center;
+    margin-left: 0;
   }
   
   &--primary {
@@ -49,7 +50,7 @@
   }
 
   &--secondary {
-    background: var(--off-gray);
+    background: color(var(--off-gray) tint(30%));
     color: #fff;
   }
 
@@ -74,10 +75,6 @@
 .badge--draft {
   background: var(--info);
   color: #fff;
-  font-size: 1.3rem;
-  padding: 0.3rem .75rem;
-  max-width: 50px;
-  align-self: flex-end;
 }
 
 .badge--icon {
