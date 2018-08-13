@@ -29,17 +29,80 @@
         </header>
         <nav class="sidebar__nav">
           <ul class="vertical__nav">
-            <li class="vertical__nav__item vertical__nav__item--has-children"><a href="#">Gramo UI kit</a>
+            <li class="vertical__nav__item">
+              <a href="/" class="active">Dashbord</a>
+            </li>
+            <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
               <ul class="vertical__nav vertical__nav--sub">
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Innleste filer</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item vertical__nav--sub__item--active"><a href="#">Avvik kontroll</a></li>
-                <li class="vertical__nav__item vertical__nav--sub__item"><a href="#">Program admin</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/file-statuses">Innleste filer</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/deviations">Avvik</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/broadcasters">Program admin</a>
+                </li>
               </ul>
+            </li>
+            <li id="matching" class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+              <a data-ember-action="" data-ember-action-750="750">Matching</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/identified-playback-group-summaries">Identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=null" class="active">Ikke identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=true">Restliste</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unreleased-music">Ikke utgitt</a>
+                </li>
+              </ul>
+            </li>
+            <li id="discography" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-854="854">Diskografi</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/file-statuses">Innlest kladd</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/search?query=%20%20&amp;type=releases">Søk</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/worklist">Arbeidsliste</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/federations">Rettighetshaverorg.</a>
+                </li>
+              </ul>
+            </li>
+            <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-965="965">Min side</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Brukere</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/distribution">Avregning</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/payments">Utbetalinger</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/ipd">IPD</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/users/new">Ny bruker</a>
             </li>
           </ul>
         </nav>
         <aside class="user">
-          <img src="img/audun-temp.jpg" class="user__avatar">
+          <img src="../../img/audun-temp.jpg" class="user__avatar">
           <div class="user__name">Audun Haggernes
             <span class="user__logout"><a href="#">Logg ut</a></span>
           </div>
@@ -55,123 +118,390 @@
         </div>
       </header>
 
-      
       <section class="container container--hd">
-        <div class="section-header section-header--with-border">
-          <header>
-            <h1>Ikke identifiserte
-              <span class="badge badge--error">31</span>
-            </h1>
-          </header>
-        </div>
-      </section>
-
-      <section class="container container--hd">
-        <div class="tabs">
-          <ul class='tabs__nav'>
-            <li class='tabs__nav__item'><a href="#nrk">NRK</a></li>
-            <li class='tabs__nav__item'><a href="#p4">P4 </a></li>
-            <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
-            <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
-          </ul>
-          <section id="nrk" class="tabs__section">
-            <!--Table NRK-->
-            <div class="fake-table">
-              <div class="fake-table__row fake-table__row--head">
-                <div class="col-sm-1">Treff</div>
-                <div class="col-sm-3">Tittel</div>
-                <div class="col-sm-3">HovedArtist</div>
-                <div class="col-sm-2">Ant. Avspillinger</div>
-                <div class="col-sm-2">Sum spilletid</div>
-                <div class="col-sm-1"></div>
-              </div>
-              <div class="fake-table__row">
-                <div class="col-sm-1" data-label="Treff">1</div>
-                <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
-                <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
-                <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
-                <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
-                <div class="col-sm-1 fake-table__cell--action">
-                  <a href="#" class="table-row-toggle"></a>
-                </div>
-              </div>
-              <div class="fake-table__row">
-                <div class="col-sm-1" data-label="Treff">1</div>
-                <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
-                <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
-                <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
-                <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
-                <div class="col-sm-1 fake-table__cell--action">
-                  <a href="#" class="table-row-toggle"></a>
-                </div>
-              </div>
-              <div class="fake-table__row">
-                <div class="col-sm-1" data-label="Treff">1</div>
-                <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
-                <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
-                <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
-                <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
-                <div class="col-sm-1 fake-table__cell--action">
-                  <a href="#" class="table-row-toggle"></a>
-                </div>
-              </div>
-                <div class="fake-table__row fake-table__row--expanded">
-                  <div class="fake-table__toggle-container">
-                    <div class="fake-table__toggle-row">
-                      <div class="col-sm-1" data-label="Treff">1</div>
-                      <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
-                      <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
-                      <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
-                      <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
-                      <div class="col-sm-1 fake-table__cell--action">
-                        <a href="#" class="table-row-toggle"></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="fake-table__row fake-table__row--child">
-                    <div class="col-sm-3 off-xs-1">Tittel: <span>Hell's Bells</span></div>
-                    <div class="col-sm-3">Artist <span>AC/DC</span></div>
-                    <div class="col-sm-3"><span class="badge badge--draft">Kladd</span></div>
-                  </div>
-
-                  <div class="fake-table__row fake-table__row--child">
-                    <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
-                    <div class="col-sm-3">Artist <span>AC/DC</span></div>
-                    <div class="col-sm-3"><span class="badge badge--draft">Kladd</span></div>
-                  </div>
-
-                  <div class="fake-table__row fake-table__row--child">
-                    <div class="col-sm-3 off-xs-1">Tittel  <span>Hell's Bells</span></div>
-                    <div class="col-sm-3">Artist <span>AC/DC</span></div>
-                  </div>
-                </div>
-
-                <div class="fake-table__row">
-                  <div class="col-sm-1" data-label="Treff">1</div>
-                  <div class="col-sm-3" data-label="Tittel">Is That What You Call Love?</div>
-                  <div class="col-sm-3" data-label="HovedArtist">Hawksley Workman</div>
-                  <div class="col-sm-2" data-label="Ant. Avspillinger">234</div>
-                  <div class="col-sm-2" data-label="Sum Spilletid">3:27:51</div>
-                  <div class="col-sm-1 fake-table__cell--action">
-                    <a href="#" class="table-row-toggle"></a>
-                  </div>
-
-                  <div class="fake-table__row fake-table__row--child">
-                    <div>Potensielt treff på denne avspillingen</div>
-                    <div>Potensielt treff på denne avspillingen</div>
-                    <div>Potensielt treff på denne avspillingen</div>
-                  </div>
-                </div>
-
+        <div class="panels">
+          <div class="panels__sidebar">
+            <div class="section-header section-header--with-border">
+              <header>
+                <h1>Ikke identifiserte
+                  <span id="ember6443" class="badge badge--error">1</span>
+                </h1>
+              </header>
             </div>
 
-          </section>
-        </div>
+            <div class="tabs tabs--toggleable tabs--compressed">
+              <input type="checkbox" id="tab-control" class="ember-checkbox">
+              <label for="tab-control">endre kanal</label>
+              <ul class="tabs__nav">
+                <li class="tabs__nav__item">
+                  <a href="#" id="ember1658" class="active">NRK</a>
+                </li>
+              </ul>
+              <div class="toolbar">
+                <div id="ember1672" class="searchable-list">
+                  <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                    <span class="searchable-list__selected">Søk blant kanaler</span>
+                  </div>
+                  <div class="searchable-list__dropdown">
+                    <input type="text" id="ember1674" class="ember-text-field searchable-list__search form__input form__input--block">
+                    <ul>
+                      <li class="searchable-list__option " data-ember-action="" data-ember-action-1729="1729">
+                        P1NO
+                      </li>
+                      <li class="searchable-list__option " data-ember-action="" data-ember-action-1731="1731">
+                        P3
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <span class="align--center">
+                  <a class="link--inline">
+                    Lagre
+                  </a>
+                </span>
+              </div><!--/.toolbar-->
+
+              <section class="tabs__section">
+                <ul class="filter-items list--inline">
+                  <li>
+                    <a>
+                      <span class="filter-items__remove"><i id="ember6445" class="icon--x"></i></span>
+                    </a>
+                    <a>
+                      <span>4741830</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="filter-items__remove"><i id="ember6446" class="icon--x"></i></span>
+                    </a>
+                    <a>
+                      <span>Universal Music Australia</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="toolbar toolbar--above">
+                  <div class="col-xs-12">
+                    <label class="form__label form__label--inline no-margin--right">
+                      <input id="selectAllGroupsCheckbox" type="checkbox" data-ember-action="" data-ember-action-6447="6447">
+                    </label>
+                    <span class="text--medium">Vis alle felter</span>
+                    <span class="x-toggle-container">
+                      <input type="checkbox" class="x-toggle" checked>
+                      <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                      </label>
+                    </span>
+                  </div>
+                  <div id="ember6460" class="col-xs-12 played-on-chooser">
+                    <select tabindex="0" id="ember6461" class="time-period select select--fluid x-select">
+                      <option id="ember6462" class="x-option">Spilt i</option>
+                      <option value="2018" id="ember6467" class="x-option">Spilt i 2018</option>
+                      <option value="2017" id="ember6472" class="x-option">Spilt i 2017</option>
+                      <option value="2016" id="ember6477" class="x-option">Spilt i 2016</option>
+                      <option value="2015" id="ember6482" class="x-option">Spilt i 2015</option>
+                      <option value="2014" id="ember6487" class="x-option">Spilt i 2014</option>
+                      <option value="custom" id="ember6492" class="x-option">Egendefinert</option>
+                    </select>
+                  </div>
+                </div><!--/.toolbar-->
+                <ul id="ember6497" class="fake-table scrollable-area" style="height: calc(100vh - 300.188px);">
+                  <li id="ember6498" class="fake-table__row fake-table__row--selected">
+                    <div class="col-xs-1">
+                      <label class="form__label">
+                        <input type="checkbox" id="ember6499" class="ember-checkbox">
+                      </label>
+                    </div>
+                    <div class="col-xs-8" data-ember-action="" data-ember-action-6500="6500">  
+                      <h4>WILD</h4>
+                      <span><a>Troye Sivan</a></span>
+                      <span class="text--small text--light">
+                        <a>4741830</a>
+                      </span>
+                      <span class="text--small text--light">
+                        <a>Universal Music Australia</a>
+                      </span>
+                    </div>
+                    <div class="col-xs-3 text--right" data-ember-action="" data-ember-action-6501="6501">
+                      <span class="text--small text--bold"><i id="ember6502" class="icon--hits"></i>
+                        0 treff
+                      </span>
+                      <span>00:03:47</span>
+                      <span>1</span>
+                    </div>
+                  </li>
+                </ul>
+              </section><!--end .tabs__section-->
+            </div><!--end .tabs-->
+          </div><!--end .panels__sidebar -->
+          <div class="panels__main">
+            <div class="infobar no-padding--top">
+              <div class="infobar__left">
+                <p class="infobar__meta">
+                  <span>Universal Music Australia</span>
+                  <span></span>
+                </p>
+                <h2 class="infobar__heading">WILD</h2>
+                <h3>Troye Sivan</h3>
+                <h4>Komponist:
+                  <span class="text--normal"> Troye Sivan Mellet,Alex Hope</span>
+                </h4>
+                <h4 class="heading--inline">Side:
+                  <span class="text--normal"> 00</span>
+                </h4>
+                <h4 class="heading--inline">Spor:
+                  <span class="text--normal"> 01</span>
+                </h4>
+                <h4>nrkID:
+                  <span class="text--normal"> NONRE636163HD0001</span>
+                </h4>
+              </div>
+              <div class="infobar__right">
+                <span class="infobar__meta">0 treff</span>
+                <h2 class="infobar__count">00:03:47</h2>
+                <h3>1</h3>
+              </div>
+              <div class="infobar__action">
+                <button type="primary" id="ember6528" class="async-button btn default btn--primary">
+                  <i id="ember6529" class="icon--send"></i>
+                  Restliste
+                </button>
+                <button type="secondary" id="ember6534" class="async-button btn default btn--secondary">
+                  <i id="ember6535" class="icon--ban"></i>
+                  Ikke utgitt
+                </button>
+              </div>
+            </div><!--/ .infobar-->
+            <div class="tabs tabs--transparent">
+              <ul class="tabs__nav">
+                <li class="tabs__nav__item no-padding--left">
+                  <h4>
+                    <a href="/#" id="ember6540">0 treff</a>
+                  </h4>
+                </li>
+                <li class="tabs__nav__item tab__nav__item--right no-padding--right">
+                  <a href="#search-external-sources" id="ember6545" class="btn btn--secondary">Søk</a>
+                </li>
+              </ul>
+
+              <section id="search-external-sources" class="tabs__section">
+                <div class="toolbar align--center">
+                  <div class="search">
+                    <div class="search__form search__form--in-toolbar">
+                      <input type="text" autocomplete="off" placeholder="Søk..." id="ember6551" class="search__form__input search__form__input--fixed-width ember-text-field">
+                      <button id="ember6552" class="search__submit"></button>
+                    </div>
+                  </div>
+              </div><!--end .toolbar-->
+              
+              <ul id="ember6553" class="fake-table fake-table--numeric scrollable-area ember-view" style="height: calc(100vh - 309px);">
+                <li id="ember6554" class="fake-table__row fake-table__row--expanded ember-view">
+                  <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
+                    <div class="fake-table__toggle-row">
+                      <div class="col-xs-3">
+                        <span class="text--bold">
+                          <a href="#">Wild Roses - Radio Edit</a>
+                        </span>
+                      </div>
+                      <div class="col-xs">
+                        <span class="badge badge--info badge--in-td">Master</span>
+                      </div>
+                      <div class="col-xs-3">
+                        John De Sohn
+                      </div>
+                      <div class="col-xs">
+                        SEBGA1400229
+                      </div>
+                      <div class="col-xs text--right">
+                        Diskografi
+                      </div>
+                      <div class="col-xs fake-table__cell--action">
+                        <a href="#" class="table-row-toggle"></a>
+                      </div>
+                    </div><!--end .fake-table__toggle-row-->
+                  </div><!--end .fake-table__toggle-container-->
+
+                  <div class="fake-table__row fake-table__row--child">
+                    <div class="col-md">
+                      <div class="row">
+                        <div class="col-md-1"></div><!--end .col-md-1-->
+                        <div class="col-md-5 text--center">
+                          <h4 class="hidden-on-mobile">
+                            Avspilling
+                          </h4>
+                        </div><!--end .col-md-5-->
+                        <div class="col-md-1"></div><!--end .col-md-1-->
+                        <div class="col-md-5 text--center">
+                          <h4 class="hidden-on-mobile">
+                            Innspilling
+                          </h4>
+                        </div><!--end .col-md-2-->
+                      </div><!--end .row-->
+                      <form>
+                        <div id="ember6569"><div class="row">
+                          <div class="col-xs-12 col-md-1 fake-table__cell--label">Tittel</div><!--end .col-md-1-->
+                          <div data-label="Avspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                form__label--block
+                                form__label--reduced
+                                form__label--validation-shared
+                                ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                          <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                          <div data-label="Innspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                          form__label--block
+                                          form__label--reduced
+                                          ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                        </div><!--end .row-->
+                      </div>
+
+                      <div id="ember6582">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-1 fake-table__cell--label">Artist</div><!--end .col-md-1-->
+                          <div data-label="Avspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                          form__label--block
+                                          form__label--reduced
+                                          form__label--validation-shared
+                                          ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                          <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                          <div data-label="Innspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                          form__label--block
+                                          form__label--reduced
+                                          ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                        </div><!--end .row-->
+                      </div>
+
+                      <div id="ember6595">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-1 fake-table__cell--label">Album</div><!--end .col-md-1-->
+                          <div data-label="Avspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                          form__label--block
+                                          form__label--reduced
+                                          form__label--validation-shared
+                                          ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                          <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                          <div data-label="Innspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                          form__label--block
+                                          form__label--reduced
+                                          ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                        </div><!--end .row-->
+                      </div>
+
+                      <div id="ember6608">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-1 fake-table__cell--label">ISRC</div><!--end .col-md-1-->
+                          <div data-label="Avspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                          form__label--block
+                                          form__label--reduced
+                                          form__label--validation-shared
+                                          ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                          <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                          <div data-label="Innspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                          form__label--block
+                                          form__label--reduced
+                                          ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                        </div><!--end .row-->
+                      </div>
+
+                      <div id="ember6621">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-1 fake-table__cell--label">Katalognr.</div><!--end .col-md-1-->
+                          <div data-label="Avspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                          form__label--block
+                                          form__label--reduced
+                                          form__label--validation-shared
+                                          ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                          <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                          <div data-label="Innspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                          form__label--block
+                                          form__label--reduced
+                                          ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                        </div><!--end .row-->
+                      </div>
+
+                      <div id="ember6634">
+                        <div class="row">
+                          <div class="col-xs-12 col-md-1 fake-table__cell--label">Label</div><!--end .col-md-1-->
+                          <div data-label="Avspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                          form__label--block
+                                          form__label--reduced
+                                          form__label--validation-shared
+                                          ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                          <div class="col-xs-12 col-md-1 form__validation-divider"></div><!--end .col-md-1-->
+                          <div data-label="Innspilling" class="col-xs-12 col-md-5">
+                            <label class="form__label
+                                          form__label--block
+                                          form__label--reduced
+                                          ">
+                              <input type="text" readonly="true" class="form__input form__input--block form__input--validation-hidden">
+                            </label>
+                          </div><!--end .col-md-5-->
+                        </div><!--end .row-->
+                      </div>
+                    </form>
+                    <div class="fake-table__row fake-table__row--foot">
+                      <div class="col-md-5 text--center display--block align--vertical-center">
+                        <span class="text--medium">Vis alle felter</span>
+                        <span class="x-toggle-container">
+                          <input type="checkbox" class="x-toggle">
+                          <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                          </label>
+                        </span>
+                      </div>
+                      <div class="col-md-3">
+                        <button type="primary" id="ember6656" class="async-button btn default btn--primary ember-view">
+                          Match
+                        </button>
+                      </div>
+                    </div><!--end .fake-table__row footer-->
+                  </div><!--end .col-md-12-->
+                </div><!--end .fake-table__row child-->
+              </li>
+            </ul>
+          </div><!--end .panels__main-->
+        </div><!--end .panels-->
       </section>
-
-
-
     </main>
   </div><!--End site-wrapper-->
 
