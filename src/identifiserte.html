@@ -144,48 +144,54 @@
             <li class='tabs__nav__item'><a href="#radio-norge">Radio Norge</a></li>
             <li class='tabs__nav__item'><a href="#local-radio">Lokal Radio</a></li>
           </ul>
-          <div class="toolbar toolbar--padded block--no-flex">
-            <span class="col col--inline">
+          <div class="toolbar block--no-flex">
+            <div class="col col--inline">
               <label for="select-period" class="form__label form__label--block text--small no-margin--right">
                 Velg periode
               </label>
-              <select id="ember4613" tabindex="0" class="time-period select select--fluid x-select">
-                <option value="today" class="x-option">I dag</option>
-                <option value="week" class="x-option">Denne uken</option>
-                <option value="month" class="x-option">Denne måneden</option>
-                <option value="year" class="x-option">I år</option>
-                <option value="custom" class="x-option">Egendefinert</option>
+              <select tabindex="0" id="ember7739" class="time-period select select--fluid x-select ember-view">
+                <option value="today" id="ember7740" class="x-option ember-view">        I dag
+                </option><option value="week" id="ember7745" class="x-option ember-view">        Denne uken
+                </option><option value="month" id="ember7750" class="x-option ember-view">        Denne måneden
+                </option><option value="year" id="ember7755" class="x-option ember-view">        I år
+                </option><option value="custom" id="ember7760" class="x-option ember-view">        Egendefinert
+                </option>
               </select>
-            </span>
-            <span class="col col--inline">
+            </div>
+            <div class="col col--inline">
               <label class="form__label form__label--block text--small">
                 Matcher
               </label>
 
-              <div class="searchable-list">
-                <div class="searchable-list__heading searchable-list__heading" tabindex="0">
-                  <span class="searchable-list__selected">Vis alle</span>
-                </div>
-                <div class="searchable-list__dropdown">
-                  <input type="text" class="searchable-list__search form__input form__input--block">
-                  <ul>
-                    <li class="searchable-list__option " data-ember-action="" data-ember-action-1577="1577">
-                      Thorbjørn Hermansen
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </span>
-            <div class="col col--inline search__form--right">
+              <div id="ember7777" class="searchable-list ember-view">  <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-7778="7778">
+              <span class="searchable-list__selected">Echo</span>
+            </div>
+            <div class="searchable-list__dropdown">
+              <input type="text" id="ember7779" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+              <ul>
+                  <li class="searchable-list__option" data-ember-action="" data-ember-action-7780="7780">
+                    Vis alle
+                  </li>
+                  <li class="searchable-list__option " data-ember-action="" data-ember-action-7782="7782">
+                    Admin
+                  </li>
+                  <li class="searchable-list__option " data-ember-action="" data-ember-action-7784="7784">
+                    Echo
+                  </li>
+              </ul>
+            </div>
+          </div>
+            </div>
+            <div class="col col--inline float--right">
               <label for="filter-input-value" class="form__label form__label--block text--small">
                 Fri tekst søk
               </label>
               <div class="search__form search__form--in-toolbar">
-                <input id="filter-input-value" placeholder="Søk etter tittel eller artist" type="text" class="search__form__input search__form__input--fixed-width">
-                <button class="search__submit"></button>
+                <input type="text" placeholder="Søk etter tittel eller artist" id="filter-input-value" class="ember-text-field search__form__input search__form__input--fixed-width ember-view">
+                <button id="ember7793" class="search__submit ember-view"></button>
               </div>
             </div>
-          </div>
+          <!----></div>
           <section id="nrk" class="tabs__section">
             <div class="fake-table fake-table--detached">
               <div class="fake-table__row fake-table__row--head">
@@ -207,10 +213,13 @@
               <div class="fake-table__row fake-table__row--expanded">
                 <div class="fake-table__toggle-container">
                   <div class="fake-table__toggle-row">
-                    <div class="col-sm-3 fake-table__cell--artists" data-label="Tittel">
+                    <div class="col-sm-2 fake-table__cell--artists" data-label="Tittel">
                       <span>ZARA LARSSON</span>
                       <span>|</span>
                       <span>MNEK</span>
+                    </div>
+                    <div class="col-xs">
+                      <span class="badge badge--info badge--in-td">Master</span>
                     </div>
                     <div class="col-sm-4" data-label="Hovedartist">
                       NEVER FORGET YOU

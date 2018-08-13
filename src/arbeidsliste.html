@@ -158,9 +158,31 @@
                   </form>
                 </div>
               </div>
+              <div class="col--no-flex align--vertical-center">
+                <label class="form__label">
+                  <input type="checkbox" checked> Eksakt søk
+                </label>
+                <label class="form__label">
+                  <input type="checkbox" checked> Vis duplikater
+                </label>
+              </div>
               <div class="col-xs col--no-flex text--right">
                 <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
               </div>
+              <div class="toolbar__lower">
+                <div class="row">
+                  <div class="col align--vertical-center">
+                    <span class="text--semibold text--nowrap">4 treff</span>
+                  </div>
+                  <div class="col align--vertical-center">
+                    <a href="#" class="btn btn--secondary text--nowrap">Velg alle</a>
+                  </div>
+                  <div class="col-sm text--right col--no-flex">
+                    <button class="btn btn--secondary" disabled>Legg til duplikatliste</button>
+                    <button class="btn btn--secondary" disabled>Legg til bulkliste</button>
+                  </div>
+                </div>
+              </div><!--end .toolbar__lower-->
             </div><!--end .toolbar-->
 
             <div class="tabs">
@@ -171,119 +193,221 @@
                 <li class='tabs__nav__item'><a href="#tab-4">Personlige produsenter<span class="badge badge--numeric">2</span></a></li>
               </ul>
               <section id="search-results" class="tabs__section">
-                <table class="table table--fluid table--numeric">
+                <table class="table drilldown table--fluid table--numeric table--with-checkboxes">
                   <thead>
                     <tr>
                       <th>
                         Tittel
                       </th>
+                      <th></th>
                       <th>
                         Hovedartist
                       </th>
                       <th>
-                        Årutgitt
+                        Utgivelsesår
                       </th>
                       <th>
                         Label
                       </th>
                       <th>
-                        Tid
+                        Varighet
                       </th>
-                      <th colspan="2">
+                      <th>
                         ISRC
                       </th>
+                      <th></th>
                     </tr>
                   </thead>
-                  <tr>
-                    <td data-label="Tittel">
-                      Aladdin Sane
-                      (1913-1928-197?)
-                    </td>
-                    <td data-label="Hovedartist">
-                      David Bowie, Spiders From Mars
-                    </td>
-                    <td data-label="Årutgitt">
-                      1973
-                    </td>
-                    <td data-label="Label">
-                      RCA
-                    </td>
-                    <td data-label="Tid">
-                      00:33:31
-                    </td>
-                    <td data-label="ISRC">
-                      USJT10300113
-                    </td>
-                    <td class="text--right">
-                      <span class="badge badge--draft">Kladd</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td data-label="Tittel">
-                      Aladdin Sane
-                      (1913-1928-197?)
-                    </td>
-                    <td data-label="Hovedartist">
-                      David Bowie, Spiders From Mars
-                    </td>
-                    <td data-label="Årutgitt">
-                      1973
-                    </td>
-                    <td data-label="Label">
-                      RCA
-                    </td>
-                    <td data-label="Tid">
-                      00:33:31
-                    </td>
-                    <td data-label="ISRC">
-                      USJT10300113
-                    </td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td data-label="Tittel">
-                      Aladdin Sane
-                      (1913-1928-197?)
-                    </td>
-                    <td data-label="Hovedartist">
-                      David Bowie, Spiders From Mars
-                    </td>
-                    <td data-label="Årutgitt">
-                      1973
-                    </td>
-                    <td data-label="Label">
-                      RCA
-                    </td>
-                    <td data-label="Tid">
-                      00:33:31
-                    </td>
-                    <td data-label="ISRC">
-                      USJT10300113
-                    </td>
-                    <td></td>
-                  </tr>
-                  <tr>
+                  <tbody>
+                    <tr class="drilldown-body drilldown-toggle" data-level="1">
                       <td data-label="Tittel">
-                        Aladdin Sane
-                        (1913-1928-197?)
+                        <label class="form__label">
+                          <input type="checkbox" class="form__input--checkbox">
+                          <span></span>
+                        </label>
+                        <a href="#">Space Oddity</a>
                       </td>
+                      <td><span class="badge badge--info badge--in-td">Kladd</span></td>
                       <td data-label="Hovedartist">
-                        David Bowie, Spiders From Mars
+                        David Bowie
                       </td>
-                      <td data-label="Årutgitt">
-                        1973
+                      <td data-label="Utgivelsesår">
+                        1969
                       </td>
                       <td data-label="Label">
                         RCA
                       </td>
-                      <td data-label="Tid">
-                        00:33:31
+                      <td data-label="Varighet">
+                        00:05:25
                       </td>
                       <td data-label="ISRC">
-                        USJT10300113
+                        B01499JUQ20
+                      </td>
+                      <td class="text--right">
+                        <span class="table-row-toggle"></span>
+                      </td>
+                    </tr>
+                    <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                      <td colspan="8">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h4>Innspillingsinfo</h4>
+                            <ul class="no-list">
+                              <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                              <li><span class="text--semibold">Version:</span> -</li>
+                              <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                              <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                              <li><span class="text--semibold">Produsentland:</span> USA</li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h4>Eierskap</h4>
+                            <ul class="no-list">
+                              <li>Parlaphone (100%) 1969 -</li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-4">
+                            <h4>Utøvere</h4>
+                            <ul class="no-list">
+                              <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                              <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                              <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                              <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                              <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                              <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                              <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-2">
+                            <h4>Utgivelser</h4>
+                            <ul class="no-list">
+                              <li>David Bowie</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="drilldown-body drilldown-toggle row--no-checkbox" data-level="1">
+                      <td data-label="Tittel">
+                        <a href="#">Unwashed And Somewhat Slightly Dazed</a>
+                      </td>
+                      <td><span class="badge badge--info badge--in-td">Kladd</span></td>
+                      <td data-label="Hovedartist">
+                        David Bowie
+                      </td>
+                      <td data-label="Utgivelsesår">
+                        1969
+                      </td>
+                      <td data-label="Label">
+                        RCA
+                      </td>
+                      <td data-label="Varighet">
+                        00:05:25
+                      </td>
+                      <td data-label="ISRC">
+                        B01499JUQ20
+                      </td>
+                      <td class="text--right">
+                        <span class="table-row-toggle"></span>
+                      </td>
+                    </tr>
+                    <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                      <td colspan="8">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h4>Innspillingsinfo</h4>
+                            <ul class="no-list">
+                              <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                              <li><span class="text--semibold">Version:</span> -</li>
+                              <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                              <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                              <li><span class="text--semibold">Produsentland:</span> USA</li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h4>Eierskap</h4>
+                            <ul class="no-list">
+                              <li>Parlaphone (100%) 1969 -</li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-4">
+                            <h4>Utøvere</h4>
+                            <ul class="no-list">
+                              <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                              <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                              <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                              <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                              <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                              <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                              <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-2">
+                            <h4>Utgivelser</h4>
+                            <ul class="no-list">
+                              <li>David Bowie</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Tittel">
+                        <label class="form__label">
+                          <input type="checkbox" class="form__input--checkbox">
+                          <span></span>
+                        </label>
+                        <a href="#">Janine</a>
                       </td>
                       <td></td>
-                  </tr>
+                      <td data-label="Hovedartist">
+                        David Bowie
+                      </td>
+                      <td data-label="Utgivelsesår">
+                        1969
+                      </td>
+                      <td data-label="Label">
+                        RCA
+                      </td>
+                      <td data-label="Varighet">
+                        00:05:25
+                      </td>
+                      <td data-label="ISRC">
+                        B01499JUQ20
+                      </td>
+                      <td class="text--right">
+                        <span class="table-row-toggle"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Tittel">
+                        <label class="form__label">
+                          <input type="checkbox" class="form__input--checkbox">
+                          <span></span>
+                        </label>
+                        <a href="#">Letter to Hermione</a>
+                      </td>
+                      <td></td>
+                      <td data-label="Hovedartist">
+                        David Bowie
+                      </td>
+                      <td data-label="Utgivelsesår">
+                        1969
+                      </td>
+                      <td data-label="Label">
+                        RCA
+                      </td>
+                      <td data-label="Varighet">
+                        00:05:25
+                      </td>
+                      <td data-label="ISRC">
+                        B01499JUQ20
+                      </td>
+                      <td class="text--right">
+                        <span class="table-row-toggle"></span>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table><!--/.table-->
               </section><!--/.tabs__section search-results-->
             </div><!--/.tabs (inner) for search-->
@@ -332,6 +456,7 @@
                       </span>
                     </div>
                   </th>
+                  <th></th>
                   <th>
                     <div>
                       <span class="table-sort table-sort--null">
@@ -393,6 +518,7 @@
                   <td data-label="Tittel">
                     <a data-ember-action="" data-ember-action-2105="2105">Sondico</a>
                   </td>
+                  <td><span class="badge badge--info badge--in-td">Master</span></td>
                   <td data-label="Hovedartist">easyFun</td>
                   <td data-label="År" class="text--center">2016</td>
                   <td data-label="Label">PC Music</td>
@@ -402,7 +528,7 @@
                   <td data-label="Ant. avsp." class="text--center">1</td>
                   <td data-label="Sum spilletid" class="text--center">00:04:04</td>
                   <td data-label="Angre match" align="right">
-                    <button type="primary" id="ember2142" class="async-button btn default btn--primary">
+                    <button type="primary" id="ember2142" class="async-button btn default btn--primary text--nowrap">
                       Angre match
                     </button>          
                   </td>
@@ -411,6 +537,7 @@
                   <td data-label="Tittel">
                     <a data-ember-action="" data-ember-action-2152="2152">Musica Maestro - Radio Edit</a>
                   </td>
+                  <td></td>
                   <td data-label="Hovedartist">Felli</td>
                   <td data-label="År" class="text--center"></td>
                   <td data-label="Label"></td>
@@ -420,7 +547,7 @@
                   <td data-label="Ant. avsp." class="text--center">1</td>
                   <td data-label="Sum spilletid" class="text--center">00:03:59</td>
                   <td data-label="Angre match" align="right">
-                    <button type="primary" id="ember2189" class="async-button btn default btn--primary">
+                    <button type="primary" id="ember2189" class="async-button btn default btn--primary text--nowrap">
                       Angre match
                     </button>          
                   </td>
@@ -429,6 +556,7 @@
                   <td data-label="Tittel">
                     <a data-ember-action="" data-ember-action-2199="2199">Aldri ei tåre</a>
                   </td>
+                  <td></td>
                   <td data-label="Hovedartist">Crashville | Liv Marit Wedvik</td>
                   <td data-label="År" class="text--center"></td>
                   <td data-label="Label"></td>
@@ -438,7 +566,7 @@
                   <td data-label="Ant. avsp." class="text--center">1</td>
                   <td data-label="Sum spilletid" class="text--center">00:03:53</td>
                   <td data-label="Angre match" align="right">
-                    <button type="primary" id="ember2236" class="async-button btn default btn--primary">
+                    <button type="primary" id="ember2236" class="async-button btn default btn--primary text--nowrap">
                       Angre match
                     </button>          
                   </td>
@@ -447,6 +575,7 @@
                   <td data-label="Tittel">
                     <a data-ember-action="" data-ember-action-2246="2246">Inn i lyset - Radio Edit</a>
                   </td>
+                  <td></td>
                   <td data-label="Hovedartist">Mohr</td>
                   <td data-label="År" class="text--center"></td>
                   <td data-label="Label"></td>
@@ -456,7 +585,7 @@
                   <td data-label="Ant. avsp." class="text--center">1</td>
                   <td data-label="Sum spilletid" class="text--center">00:03:53</td>
                   <td data-label="Angre match" align="right">
-                    <button type="primary" id="ember2283" class="async-button btn default btn--primary">
+                    <button type="primary" id="ember2283" class="async-button btn default btn--primary text--nowrap">
                       Angre match
                     </button>          
                   </td>
@@ -465,6 +594,7 @@
                   <td data-label="Tittel">
                     <a data-ember-action="" data-ember-action-2293="2293">Floden</a>
                   </td>
+                  <td></td>
                   <td data-label="Hovedartist">Bjørn Eidsvåg | Elvira Nikolaisen</td>
                   <td data-label="År" class="text--center"></td>
                   <td data-label="Label"></td>
@@ -474,7 +604,7 @@
                   <td data-label="Ant. avsp." class="text--center">1</td>
                   <td data-label="Sum spilletid" class="text--center">00:03:51</td>
                   <td data-label="Angre match" align="right">
-                    <button type="primary" id="ember2330" class="async-button btn default btn--primary">
+                    <button type="primary" id="ember2330" class="async-button btn default btn--primary text--nowrap">
                       Angre match
                     </button>          
                   </td>
@@ -483,6 +613,7 @@
                   <td data-label="Tittel">
                     <a data-ember-action="" data-ember-action-2340="2340">Seven Nation Army</a>
                   </td>
+                  <td></td>
                   <td data-label="Hovedartist">The White Stripes</td>
                   <td data-label="År" class="text--center"></td>
                   <td data-label="Label"></td>
@@ -492,7 +623,7 @@
                   <td data-label="Ant. avsp." class="text--center">1</td>
                   <td data-label="Sum spilletid" class="text--center">00:03:48</td>
                   <td data-label="Angre match" align="right">
-                    <button type="primary" id="ember2377" class="async-button btn default btn--primary">
+                    <button type="primary" id="ember2377" class="async-button btn default btn--primary text--nowrap">
                       Angre match
                     </button>          
                   </td>
@@ -501,6 +632,7 @@
                   <td data-label="Tittel">
                     <a data-ember-action="" data-ember-action-2387="2387">I Wanta Thank You</a>
                   </td>
+                  <td></td>
                   <td data-label="Hovedartist">The Manhattans</td>
                   <td data-label="År" class="text--center">2016</td>
                   <td data-label="Label">Columbia/Legacy</td>
@@ -510,7 +642,7 @@
                   <td data-label="Ant. avsp." class="text--center">1</td>
                   <td data-label="Sum spilletid" class="text--center">00:03:48</td>
                   <td data-label="Angre match" align="right">
-                    <button type="primary" id="ember2424" class="async-button btn default btn--primary">
+                    <button type="primary" id="ember2424" class="async-button btn default btn--primary text--nowrap">
                       Angre match
                     </button>          
                   </td>
@@ -519,6 +651,7 @@
                   <td data-label="Tittel">
                     <a data-ember-action="" data-ember-action-2434="2434">Ch-Ching</a>
                   </td>
+                  <td></td>
                   <td data-label="Hovedartist">Chairlift</td>
                   <td data-label="År" class="text--center"></td>
                   <td data-label="Label"></td>
@@ -528,7 +661,7 @@
                   <td data-label="Ant. avsp." class="text--center">1</td>
                   <td data-label="Sum spilletid" class="text--center">00:03:47</td>
                   <td data-label="Angre match" align="right">
-                    <button type="primary" id="ember2471" class="async-button btn default btn--primary">
+                    <button type="primary" id="ember2471" class="async-button btn default btn--primary text--nowrap">
                       Angre match
                     </button>          
                   </td>
@@ -537,6 +670,7 @@
                   <td data-label="Tittel">
                     <a data-ember-action="" data-ember-action-2481="2481">Good For You</a>
                   </td>
+                  <td></td>
                   <td data-label="Hovedartist">Selena Gomez | A$AP Rocky</td>
                   <td data-label="År" class="text--center"></td>
                   <td data-label="Label"></td>
@@ -546,7 +680,7 @@
                   <td data-label="Ant. avsp." class="text--center">1</td>
                   <td data-label="Sum spilletid" class="text--center">00:03:40</td>
                   <td data-label="Angre match" align="right">
-                    <button type="primary" id="ember2518" class="async-button btn default btn--primary">
+                    <button type="primary" id="ember2518" class="async-button btn default btn--primary text--nowrap">
                       Angre match
                     </button>          
                   </td>
@@ -555,6 +689,7 @@
                   <td data-label="Tittel">
                     <a data-ember-action="" data-ember-action-2528="2528">The Phantom Opera Ghost</a>
                   </td>
+                  <td></td>
                   <td data-label="Hovedartist">Iced Earth</td>
                   <td data-label="År" class="text--center">2016</td>
                   <td data-label="Label">Century Media</td>
@@ -564,7 +699,7 @@
                   <td data-label="Ant. avsp." class="text--center">1</td>
                   <td data-label="Sum spilletid" class="text--center">00:03:35</td>
                   <td data-label="Angre match" align="right">
-                    <button type="primary" id="ember2565" class="async-button btn default btn--primary">
+                    <button type="primary" id="ember2565" class="async-button btn default btn--primary text--nowrap">
                       Angre match
                     </button>          
                   </td>
@@ -593,7 +728,12 @@
   </div><!--End site-wrapper-->
 
 <script src="js/vendor/jquery-1.11.3.min.js"></script>
+<script src="js/vendor/drilldown.js"></script>
 <script src="js/default.js"></script>
-
+<script>
+  $('.drilldown').drilldown({
+    speed: 'fast'
+  });
+</script>
 </body>
 </html>
