@@ -39,6 +39,11 @@
       }
     }
     
+    .icon {
+      display: none;
+      @media (--tablet) { display: inline-block; }
+    }
+    
     .fake-checkbox {
       display: block;
     	position: relative;
@@ -47,6 +52,8 @@
   	  left: 0;
 	    border: 1px solid var(--off-gray);
       border-radius: 1px;
+      margin-right: .5rem;
+      @media (--tablet) { margin-right: 0; }
       
       &::after {
         opacity: 0;
@@ -65,7 +72,7 @@
     }
     
     & > * {
-      @media (--desktop) { margin: 0 .25rem; }
+      @media (--tablet) { margin: 0 .25rem; }
     }
   }
 }

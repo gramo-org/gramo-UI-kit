@@ -3579,6 +3579,17 @@ input[type="checkbox"].form__input--toggle-visibility{
   opacity:1;
 }
 
+.toolbar--for-filters .form__label .icon{
+  display:none;
+}
+
+@media (min-width: 768px){
+
+  .toolbar--for-filters .form__label .icon{
+    display:inline-block;
+  }
+}
+
 .toolbar--for-filters .form__label .fake-checkbox{
   display:block;
   position:relative;
@@ -3587,6 +3598,14 @@ input[type="checkbox"].form__input--toggle-visibility{
   left:0;
   border:1px solid #a5a4ab;
   border-radius:1px;
+  margin-right:.5rem;
+}
+
+@media (min-width: 768px){
+
+  .toolbar--for-filters .form__label .fake-checkbox{
+    margin-right:0;
+  }
 }
 
 .toolbar--for-filters .form__label .fake-checkbox::after{
@@ -3606,7 +3625,7 @@ input[type="checkbox"].form__input--toggle-visibility{
   transform:rotate(-45deg);
 }
 
-@media (min-width: 960px){
+@media (min-width: 768px){
 
   .toolbar--for-filters .form__label > *{
     margin:0 .25rem;
