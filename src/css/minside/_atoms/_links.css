@@ -73,6 +73,12 @@
 .quick-links {
   flex: 1;
   display: flex;
+  margin-bottom: 1rem;
+  
+  &--with-border {
+    border-bottom: 1px solid var(--silver);
+    padding-bottom: .5rem;
+  }
   
   ul {
     @extend %no-list;

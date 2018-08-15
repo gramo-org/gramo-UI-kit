@@ -3879,6 +3879,12 @@ input[type="checkbox"].form__input--toggle-visibility{
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
+  margin-bottom:1rem;
+}
+
+.quick-links--with-border{
+  border-bottom:1px solid #d9d9dc;
+  padding-bottom:.5rem;
 }
 
 .quick-links ul{
