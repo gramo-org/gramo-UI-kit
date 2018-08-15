@@ -802,7 +802,7 @@ p{
   margin-right:1rem;
   vertical-align:middle;
 }
-.no-list, .style-guide__contents ol ul, .file-upload__list ul, .tabs__nav, .nav--primary .vertical__nav{
+.no-list, .style-guide__contents ol ul, .file-upload__list ul, .quick-links ul, .tabs__nav, .nav--primary .vertical__nav{
   list-style:none;
   padding:0;
   margin:0;
@@ -3870,6 +3870,56 @@ input[type="checkbox"].form__input--toggle-visibility{
 
 .link--add--hidden, .link--trash--hidden, .link-prototype--hidden{
   display:none;
+}
+
+.quick-links{
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex:1;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+.quick-links ul{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
+}
+
+.quick-links li{
+  margin-left:.25rem;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
+}
+
+.quick-links li:after{
+  content:"\e909";
+  font-family:'minside-icons';
+  color:#d9d9dc;
+  display:inline-block;
+  -webkit-transform:rotate(-90deg);
+  -ms-transform:rotate(-90deg);
+  transform:rotate(-90deg);
+  margin-left:.25rem;
+}
+
+.quick-links li:last-child::after{
+  content:none;
+}
+
+.quick-links + header{
+  -webkit-flex:0;
+  -ms-flex:0;
+  flex:0;
+  text-align:right;
 }
 .x-toggle:checked + .x-toggle-btn{
   background-color:#88c7d8!important;

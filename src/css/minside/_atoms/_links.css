@@ -69,3 +69,38 @@
     display: none;
   }
 }
+
+.quick-links {
+  flex: 1;
+  display: flex;
+  
+  ul {
+    @extend %no-list;
+    display: flex;
+    align-items: center;
+  }
+  
+  li {
+    margin-left: .25rem;
+    display: flex;
+    align-items: center;
+    
+    &:after {
+      content: "\e909";
+      font-family: 'minside-icons';
+      color: var(--silver);
+      display: inline-block;
+      transform: rotate(-90deg);
+      margin-left: .25rem;
+    }
+    
+    &:last-child::after {
+      content: none;
+    }
+  }
+  
+  & + header {
+   flex: 0;
+   text-align: right;
+  }
+}
