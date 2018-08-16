@@ -5089,6 +5089,12 @@ tr[data-src="draft"] > td:first-child::after{
   font-weight:600;
 }
 
+.form__fieldset__title{
+  margin:-1.5rem 0 2rem 0;
+  font-size:2rem;
+  color:inherit;
+}
+
 .form__fieldset--group{
   background:none;
   border:0;
@@ -5107,7 +5113,7 @@ tr[data-src="draft"] > td:first-child::after{
 }
 
 .legend--with-link a{
-  font-size:1.4rem;
+  font-size:1.6rem;
   padding:0rem 1rem 0rem 0.25rem;
   position:relative;
   top:-.2rem;
