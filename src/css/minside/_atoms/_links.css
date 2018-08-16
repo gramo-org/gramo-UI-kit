@@ -77,7 +77,8 @@
   
   &--with-border {
     border-bottom: 1px solid var(--silver);
-    padding-bottom: .5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
   
   ul {
