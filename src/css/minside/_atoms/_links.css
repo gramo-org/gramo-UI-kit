@@ -81,6 +81,11 @@
     margin-bottom: 2rem;
   }
   
+  span {
+    color: var(--off-gray);
+    margin-right: 0.5rem;
+  }
+  
   ul {
     @extend %no-list;
     display: flex;

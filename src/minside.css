@@ -3888,6 +3888,11 @@ input[type="checkbox"].form__input--toggle-visibility{
   margin-bottom:2rem;
 }
 
+.quick-links span{
+  color:#a5a4ab;
+  margin-right:0.5rem;
+}
+
 .quick-links ul{
   display:-webkit-flex;
   display:-ms-flexbox;
