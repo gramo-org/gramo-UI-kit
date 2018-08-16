@@ -19,6 +19,7 @@
 
 .form__fieldset {
   legend {
+    font-size: 2rem;
     font-weight: var(--semibold);
   }
   
