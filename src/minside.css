@@ -3110,6 +3110,7 @@ hr, .horizontal-rule{
 
 .horizontal-rule--spacer hr{
   background:none;
+  margin:0;
 }
 
 .horizontal-rule--with-arrow:before, .horizontal-rule--with-arrow:after{

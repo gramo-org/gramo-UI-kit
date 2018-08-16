@@ -32,6 +32,7 @@ hr, .horizontal-rule {
   }
   hr {
     background: none; /* compensates for Ember component which is a div containing an <hr> */
+    margin: 0;
   }
 }
 
