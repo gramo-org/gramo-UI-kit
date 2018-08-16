@@ -115,6 +115,6 @@ legend {
     display: none;
   }
 }
-.form__label--stepper.has--error::after {
+.form__label--stepper.has-error::before {
   right: 20px;
 }
