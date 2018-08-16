@@ -5086,14 +5086,7 @@ tr[data-src="draft"] > td:first-child::after{
 }
 
 .form__fieldset legend{
-  font-size:2rem;
   font-weight:600;
-}
-
-.form__fieldset__title{
-  margin:-1.5rem 0 2rem 0;
-  font-size:2rem;
-  color:inherit;
 }
 
 .form__fieldset--group{
@@ -5109,8 +5102,14 @@ tr[data-src="draft"] > td:first-child::after{
 }
 
 .form__fieldset--border legend{
-  font-size:2.4rem;
+  font-size:2rem;
   font-weight:600;
+}
+
+.form__fieldset--border .form__fieldset__title{
+  margin:-1.5rem 0 2rem 0;
+  font-size:2rem;
+  color:inherit;
 }
 
 .legend--with-link a{

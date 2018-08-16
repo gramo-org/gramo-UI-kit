@@ -19,14 +19,7 @@
 
 .form__fieldset {
   legend {
-    font-size: 2rem;
     font-weight: var(--semibold);
-  }
-  
-  &__title {
-    margin: -1.5rem 0 2rem 0;
-    font-size: 2rem;
-    color: inherit;
   }
 }
 
@@ -42,8 +35,14 @@
   padding: 2rem;
   
   legend {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: var(--semibold);
+  }
+  
+  .form__fieldset__title {
+    margin: -1.5rem 0 2rem 0;
+    font-size: 2rem;
+    color: inherit;
   }
 }
 
