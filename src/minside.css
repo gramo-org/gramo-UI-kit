@@ -3108,6 +3108,10 @@ hr, .horizontal-rule{
   content:none;
 }
 
+.horizontal-rule--spacer hr{
+  background:none;
+}
+
 .horizontal-rule--with-arrow:before, .horizontal-rule--with-arrow:after{
   content:'';
   position:absolute;

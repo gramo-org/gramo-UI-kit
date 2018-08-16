@@ -30,6 +30,9 @@ hr, .horizontal-rule {
   &:after {
     content: none;
   }
+  hr {
+    background: none; /* compensates for Ember component which is a div containing an <hr> */
+  }
 }
 
 .horizontal-rule--with-arrow:before,
