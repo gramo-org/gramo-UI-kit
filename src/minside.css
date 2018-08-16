@@ -3519,6 +3519,9 @@ input[type="checkbox"].form__input--toggle-visibility{
 .form__label--in-row span{
   display:none;
 }
+.form__label--stepper.has--error::after{
+  right:20px;
+}
 .toolbar{
   background:#ededed;
   border:1px solid #d9d9dc;
