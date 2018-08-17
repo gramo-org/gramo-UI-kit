@@ -45,6 +45,10 @@
   @extend .form__label.has-error--simple::after;
 }
 
+.form__label--simple-validation.is-valid::after {
+  @extend .form__label.is-valid--simple::after;
+}
+
 .form__label--simple-validation.has-error .form__input {
   @extend .form__label.has-error--simple .form__input;
 }

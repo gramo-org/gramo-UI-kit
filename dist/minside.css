@@ -3064,7 +3064,7 @@ input[type="number"].four-digit{
   background-image:none;
 }
 
-.form__label.is-valid--simple::after, .form__label.has-error--simple::after, .form__label--simple-validation.has-error::after{
+.form__label.is-valid--simple::after, .form__label.has-error--simple::after, .form__label--simple-validation.has-error::after, .form__label--simple-validation.is-valid::after{
   content:none;
 }
 
