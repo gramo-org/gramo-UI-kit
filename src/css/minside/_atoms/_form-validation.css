@@ -36,3 +36,24 @@
 .form__label.is-valid--simple .form__input {
   border: 1px solid var(--gramo-green);
 }
+
+/* Exceptions required for input types that don't fill the width of the label */
+
+.form__label--stepper.has-error::after,
+.form__label--for-searchable-list.has-error::after {
+  @extend .form__label.has-error--simple::after;
+}
+
+.form__label--stepper.has-error .form__input,
+.form__label--for-searchable-list.has-error .form__input {
+  @extend .form__label.has-error--simple .form__input;
+}
+
+.form__label--stepper.is-valid .form__input,
+.form__label--for-searchable-list.is-valid .form__input {
+  @extend .form__label.is-valid--simple .form__input;
+}
+
+.form__label--for-checkbox.has-error::after {
+  content: none;
+}
