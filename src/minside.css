@@ -1136,7 +1136,7 @@ main{
   right:0;
   bottom:0;
   position:fixed;
-  z-index:1;
+  z-index:2;
   padding:0;
   overflow-y:auto;
   padding-top:5.1rem;
@@ -5002,7 +5002,7 @@ tr[data-src="draft"] > td:first-child::after{
   box-shadow:none;
   border:0;
   padding:1rem;
-  z-index:2;
+  z-index:3;
 }
 .site-header__branding{
   display:block;
