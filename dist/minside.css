@@ -3064,15 +3064,15 @@ input[type="number"].four-digit{
   background-image:none;
 }
 
-.form__label.is-valid--simple::after, .form__label.has-error--simple::after, .form__label--stepper.has-error::after, .form__label--for-searchable-list.has-error::after{
+.form__label.is-valid--simple::after, .form__label.has-error--simple::after, .form__label--simple-validation.has-error::after{
   content:none;
 }
 
-.form__label.has-error--simple .form__input, .form__label--stepper.has-error .form__input, .form__label--for-searchable-list.has-error .form__input{
+.form__label.has-error--simple .form__input, .form__label--simple-validation.has-error .form__input{
   border:1px solid #ed6b6a;
 }
 
-.form__label.is-valid--simple .form__input, .form__label--stepper.is-valid .form__input, .form__label--for-searchable-list.is-valid .form__input{
+.form__label.is-valid--simple .form__input, .form__label--simple-validation.is-valid .form__input{
   border:1px solid #50bf9e;
 }
 
