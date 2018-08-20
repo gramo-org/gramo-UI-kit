@@ -48,7 +48,7 @@
 
 .legend--with-link {
   max-width: 200px;
-  max-height: 3rem;
+  height: 3rem;
   @extend .truncated;
   @media (--tablet) { max-width: 350px; }
   @media (--desktop) { max-width: 500px; }
