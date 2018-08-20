@@ -434,7 +434,7 @@
                 </div>
                 <div class="form">
                   <div class="row row--pending pending pending--added">
-                    <span class="pending__meta">Lagt til</span>
+                    <span class="pending__meta">Legges til</span>
                     <div class="col-xs-12 col-sm-3 col-lg-3">
                       <label class="form__label form__label--block form__label--hidden"><span>Utøvernavn</span></label>
                       <a href="#" id="ember4190" class="ember-view">David Bowie</a>
@@ -483,7 +483,10 @@
                         <div id="ember4207" class="form__input__errors ember-view"></div>
                       </div>
                     </div>
-                  </div>
+                    <div class="col-xs align--vertical-center">
+                      <a class="text--small text--light"><i class="icon--x"></i></a>
+                    </div>
+                  </div><!--end .row-->
                 </div>
                 <div class="form__section--action">
                   <a href="#">Ny oppgave</a>
@@ -491,11 +494,11 @@
                 <form class="form">
                   <fieldset class="form__fieldset">
                     <label class="form__label form__label--inline">
-                      <input type="radio" name="performer_action" class="form__input--radio">
+                      <input type="radio" name="performer_action" class="form__input--radio" checked>
                       Legg til utøver
                     </label>
                     <label class="form__label form__label--inline">
-                      <input type="radio" name="performer_action" class="form__input--radio" checked>
+                      <input type="radio" name="performer_action" class="form__input--radio">
                       Redigere utøver
                     </label>
                     <label class="form__label form__label--inline">
@@ -512,35 +515,18 @@
                         Utøver
                       </span>
                     </span>
+                    <span class="break--inline"></span>
+                    eller
+                    <span class="break--inline"></span>
+                    <a href="unknown_performers_added.html" class="link--no-line click-here">
+                      Legg til ukjent utøver
+                    </a>
                   </div>
                   <div id="ember5762" class="ember-view">
                     <form class="search__form" data-ember-action="" data-ember-action-5763="5763">
-                      <input type="text" autocomplete="off" placeholder="Søk..." value="Mick Wayne" id="ember5768" class="search__form__input search__form__input--fixed-width">
+                      <input type="text" autocomplete="off" placeholder="Søk..." value="" id="ember5768" class="search__form__input search__form__input--fixed-width">
                       <button type="submit" id="ember5769" class="search__submit ember-view"></button>
                     </form>
-
-                    <table class="table drilldown table--fluid table--selectable">
-                      <thead>
-                        <tr>
-                          <th>Navn</th>
-                          <th>Artister</th>
-                          <th>Levetid</th>
-                          <th>Instrument</th>
-                          <th>Statsborgerskap</th>
-                          <th><!--already-selected--></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="row--clickable" data-href="performers_changed.html">
-                          <td class="table__cell--truncated"><span class="click-here">Michael Wayne</span></td>
-                          <td class="table__cell--truncated">Mick Wayne</td>
-                          <td class="table__cell--truncated">1947 - 2016</td>
-                          <td class="table__cell--truncated">Gitar</td>
-                          <td class="table__cell--truncated">Storbrittania</td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
                   </div>
                 </div>
               </section><!--end /utøvere-->
