@@ -47,11 +47,21 @@
 }
 
 .legend--with-link {
+  max-width: 200px;
+  max-height: 3rem;
+  @extend .truncated;
+  @media (--tablet) { max-width: 350px; }
+  @media (--desktop) { max-width: 500px; }
+  @media (--hd) { max-width: 600px; }
+  
   a {
     font-size: 1.6rem;
-    padding: 0rem 1rem 0rem 0.25rem;
+    padding: 0rem 0.25rem 0rem 0.25rem;
     position: relative;
     top: -.2rem;
+    position: absolute;
+    right: 1rem;
+    background: var(--mid-light-gray);
   }
   
   & ~ .row {

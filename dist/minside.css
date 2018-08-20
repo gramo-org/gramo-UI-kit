@@ -1008,14 +1008,14 @@ p{
   overflow:hidden;
   display:block;
 }
-.truncated{
+.truncated, .legend--with-link{
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
 }
 @media (min-width: 960px){
 
-  .truncated{
+  .truncated, .legend--with-link{
     max-width:100px;
   }
 }
@@ -5113,11 +5113,40 @@ tr[data-src="draft"] > td:first-child::after{
   color:inherit;
 }
 
+.legend--with-link{
+  max-width:200px;
+  max-height:3rem;  
+}
+
+@media (min-width: 768px){
+
+  .legend--with-link{
+    max-width:350px;
+  }
+}
+
+@media (min-width: 960px){
+
+  .legend--with-link{
+    max-width:500px;
+  }
+}
+
+@media (min-width: 1200px){
+
+  .legend--with-link{
+    max-width:600px;
+  }
+}
+
 .legend--with-link a{
   font-size:1.6rem;
-  padding:0rem 1rem 0rem 0.25rem;
+  padding:0rem 0.25rem 0rem 0.25rem;
   position:relative;
   top:-.2rem;
+  position:absolute;
+  right:1rem;
+  background:#f3f3f3;
 }
 
 .legend--with-link ~ .row{

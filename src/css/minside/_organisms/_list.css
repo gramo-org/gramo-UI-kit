@@ -48,7 +48,7 @@
   counter-reset: item;
   
   & > li {
-    background: #f3f3f3;
+    background: var(--mid-light-gray);
     border: 1px solid var(--silver);
     padding: 2rem;
     position: relative;
