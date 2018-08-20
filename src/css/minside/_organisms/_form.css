@@ -58,7 +58,7 @@
     font-size: 1.6rem;
     padding: 0rem 0.25rem 0rem 0.25rem;
     position: relative;
-    top: -.2rem;
+    top: 0;
     position: absolute;
     right: 1rem;
     background: var(--mid-light-gray);
