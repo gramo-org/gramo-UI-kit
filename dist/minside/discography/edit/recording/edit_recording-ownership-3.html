@@ -372,8 +372,8 @@
                     </div><!--end .row-->
                     <div class="row">
                       <div class="col-xs-11">
-                        <h3>Søk etter produsent</h3>
-                        <div class="search">
+                        <h3 class="form__label--faux">Søk etter produsent</h3>
+                        <div class="search no-padding--top">
                           <label class="search__form search__form--left">
                             <input type="text" class="form__input locked" value="Sony Music" placeholder="Søk..." />
                             <a href="edit_recording-ownership-4.html#ownership-info" class="btn search__submit click-here"></a>
@@ -381,18 +381,18 @@
                         </div>
                       </div>
                     </div><!--end .row-->
-                    <div class="row row--with-border">
-                        <div class="col-xs-12">
-                          <label class="form__label form__label--block form__label--upload form__label--required">Last opp fil
-                            <input class="form__label--block" type="file"/>
-                          </label>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                          <label class="form__label form__label--block form__label--comments">Kommentar
-                            <input class="form__input form__input--block">
-                          </label>
-                        </div>
+                    <div class="file-upload file-upload--in-form">
+                      <h3 class="form__label--faux form__label--required">Last opp eierskapsbevis i PDF format</h3>
+                      <input type="file" name="file" id="file" class="form__input--file">
+                      <label for="file" class="btn btn--secondary btn--small text--nowrap">Velg fil</label>
                     </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <label class="form__label form__label--block form__label--comments">Kommentar
+                          <input class="form__input form__input--block form--input">
+                        </label>
+                      </div>
+                    </div><!--end .row-->
                     <div class="row">
                       <div class="col-xs-6 col-sm-2">
                         <a href="edit_recording.html#ownership-info" class="btn btn--secondary">Avbryt</a>
