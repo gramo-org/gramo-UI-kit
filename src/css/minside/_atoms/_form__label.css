@@ -115,3 +115,7 @@ legend {
     display: none;
   }
 }
+
+.form__label--faux {
+  margin-bottom: .4rem; /* for elements assuming the visual character of form labels */
+}

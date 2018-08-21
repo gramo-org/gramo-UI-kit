@@ -177,6 +177,28 @@
   }
 }
 
+/* padding overrides */
+
+.no-padding {
+  padding: 0!important;
+
+  &--left {
+    @media (--desktop) { padding-left: 0!important; }
+  }
+
+  &--right {
+    @media (--desktop) { padding-right: 0!important; }
+  }
+
+  &--top {
+    @media (--desktop) { padding-top: 0!important; }
+  }
+
+  &--bottom {
+    @media (--desktop) { padding-bottom: 0!important; }
+  }
+}
+
 .hide-labels > .row:not(:first-child):not(:nth-child(2)) {
   .form__label span {
     visibility: hidden;

@@ -1002,6 +1002,38 @@ p{
   margin-bottom:0!important;
 }
 
+.no-padding{
+  padding:0!important;
+}
+
+@media (min-width: 960px){
+
+  .no-padding--left{
+    padding-left:0!important;
+  }
+}
+
+@media (min-width: 960px){
+
+  .no-padding--right{
+    padding-right:0!important;
+  }
+}
+
+@media (min-width: 960px){
+
+  .no-padding--top{
+    padding-top:0!important;
+  }
+}
+
+@media (min-width: 960px){
+
+  .no-padding--bottom{
+    padding-bottom:0!important;
+  }
+}
+
 .hide-labels > .row:not(:first-child):not(:nth-child(2)) .form__label span{
   visibility:hidden;
   height:0;
@@ -2003,6 +2035,17 @@ input[type="number"].four-digit{
 
 .x-toggle:checked + .x-toggle-btn::after{
   content:attr(data-tg-on)!important;
+}
+.form__input--file{
+  width:0.1px;
+	height:0.1px;
+	opacity:0;
+	overflow:hidden;
+	position:absolute;
+	z-index:-1;
+}
+.form__input--file + label{
+  cursor:pointer
 }
 .searchable-list{
   display:inline-block;
@@ -3522,6 +3565,10 @@ input[type="checkbox"].form__input--toggle-visibility{
 
 .form__label--in-row span{
   display:none;
+}
+
+.form__label--faux{
+  margin-bottom:.4rem;
 }
 .toolbar{
   background:#ededed;
@@ -6577,6 +6624,9 @@ caption{
   text-align:inherit;
   margin-top:0;
   display:inline-block;
+}
+.file-upload--in-form{
+  margin-bottom:1.2rem;
 }
 .file-upload__inner.is-visible{
   position:fixed;
