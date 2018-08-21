@@ -225,11 +225,13 @@ td, th{
 
 .pending__meta{
   margin-left:-2rem;
-  padding:0.25rem 0.5rem;
+  padding:0.1rem 0.5rem;
   color:#fdfdfd;
   position:relative;
   top:-2rem;
   font-size:1.3rem;
+  min-width:65px;
+  text-align:center;
 }
 
 .pending__meta + header{
