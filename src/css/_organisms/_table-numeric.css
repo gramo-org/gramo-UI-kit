@@ -90,3 +90,26 @@
     padding-left: .75rem;
   }
 }
+
+.table--with-badges {
+  tr > td:first-child::before {
+    visibility: hidden;
+  }
+  
+  tr > td > .badge--numeric {
+    position: absolute;
+    margin-top: -1rem;
+    left: .5rem;
+    top: 2.3rem;
+    z-index: 1;
+    @media (--tablet) { top: 50%; }
+  }
+  
+  /* when row is hovered over: */
+  tr:not(.row--no-checkbox):hover {
+    /* hide number */
+    .badge--numeric {
+      visibility: hidden;
+    }
+  }
+}

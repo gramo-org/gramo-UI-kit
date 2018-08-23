@@ -6585,6 +6585,29 @@ tr > td:last-child{
 .table--with-checkboxes .table__row--no-count .row{
   padding-left:.75rem;
 }
+
+.table--with-badges tr > td:first-child::before{
+  visibility:hidden;
+}
+
+.table--with-badges tr > td > .badge--numeric{
+  position:absolute;
+  margin-top:-1rem;
+  left:.5rem;
+  top:2.3rem;
+  z-index:1;
+}
+
+@media (min-width: 768px){
+
+  .table--with-badges tr > td > .badge--numeric{
+    top:50%;
+  }
+}
+
+.table--with-badges tr:not(.row--no-checkbox):hover .badge--numeric{
+  visibility:hidden;
+}
 .tabs{
   position:relative;
 }
