@@ -626,14 +626,14 @@ td.text--center, .fake-table__row *.text--center{
   margin-bottom:1.2rem;
 }
 
-.row--with-border::after{
+.row--with-border::before{
   content:'';
   height:1px;
   width:calc(100% - 2rem);
   margin-left:1rem;
-  border-bottom:1px solid #d9d9dc;
-  padding-bottom:1rem;
-  margin-bottom:1rem;
+  border-top:1px solid #d9d9dc;
+  padding-top:1rem;
+  margin-top:1rem;
 }
 
 .col{
