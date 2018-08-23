@@ -15,9 +15,11 @@
 .toolbar--for-filters {
   width: 100%;
   padding: 0;
-  border-width: 0 0 1px 0;
+  border: 0;
+  margin-bottom: -2rem;
+  background: none;
   display: flex;
-  margin-top: -2rem;
+  margin-top: 1rem;
   justify-content: space-around;
   @media (--tablet) {
     justify-content: center;
@@ -41,7 +43,7 @@
     
     .icon {
       display: none;
-      @media (--tablet) { display: inline-block; }
+      @media (--tablet) { display: inline-block; font-size: inherit; }
     }
     
     .fake-checkbox {

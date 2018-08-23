@@ -7,6 +7,9 @@
   background-size: cover;
   color: var(--slate-gray);
   box-shadow: 0 1px 0 var(--silver);
+  @media (--tablet) {
+    min-height: 200px;
+  }
   
   .icon {
     font-size: 6rem;
@@ -33,7 +36,7 @@
     color: var(--slate-gray);
     flex: 1;
     font-size: 1.3rem;
-    border-right: 1px solid var(--off-gray);
+    border-right: 1px solid color(var(--silver) shade(10%));;
     display: flex;
     flex-direction: column;
     align-items: center;
