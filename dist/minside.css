@@ -6243,7 +6243,9 @@ caption{
   padding:2rem 1rem;
   text-align:center;
   width:100%;
-  background:#ededed;
+  background:#ededed url(img/minside-masthead-bg.png) no-repeat;
+  background-position:center bottom 25%;
+  background-size:cover;
   color:#504f56;
   box-shadow:0 1px 0 #d9d9dc;
 }
@@ -6266,7 +6268,7 @@ caption{
   -ms-flex-wrap:wrap;
   flex-wrap:wrap;
 
-  margin:1.5rem -1rem -1rem -1rem;
+  margin:3.5rem -1rem -1rem -1rem;
 }
 
 @media (min-width: 768px){
@@ -6282,7 +6284,7 @@ caption{
   -ms-flex:1;
   flex:1;
   font-size:1.3rem;
-  border-right:1px solid #d9d9dc;
+  border-right:1px solid #a5a4ab;
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
@@ -6292,9 +6294,9 @@ caption{
   -webkit-align-items:center;
   -ms-flex-align:center;
   align-items:center;
-  -webkit-justify-content:center;
-  -ms-flex-pack:center;
-  justify-content:center;
+  -webkit-justify-content:flex-end;
+  -ms-flex-pack:end;
+  justify-content:flex-end;
   padding:0 1rem;
   font-weight:600;
 }
@@ -6314,22 +6316,8 @@ caption{
   font-weight:400;
 }
 
-@media (min-width: 768px){
-
-  .masthead__meta__item:first-child{
-    border-left:1px solid #d9d9dc;
-  }
-}
-
 .masthead__meta__item:last-child{
   border-right-width:0;
-}
-
-@media (min-width: 768px){
-
-  .masthead__meta__item:last-child{
-    border-right-width:1px;
-  }
 }
 .message{
   color:#fdfdfd;
