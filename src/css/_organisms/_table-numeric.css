@@ -91,6 +91,7 @@
   }
 }
 
+/* Table with badges */
 .table--with-badges {
   tr > td:first-child::before {
     visibility: hidden;
@@ -111,5 +112,11 @@
     .badge--numeric {
       visibility: hidden;
     }
+  }
+  
+  /* Adjust background color of badge */
+  .dd-open > td:first-child .badge--numeric {
+    background: var(--slate-gray);
+    color: var(--gramo-white);
   }
 }
