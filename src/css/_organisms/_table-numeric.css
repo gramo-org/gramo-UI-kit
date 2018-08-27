@@ -20,46 +20,49 @@
 
 .table--with-checkboxes {
   
-  tr > td:first-child::before {
-    z-index: 1; /* default stacking order for number 1 */
+  tr > td:first-child {
+    &::before {
+      z-index: 1; /* default stacking order for number 1 */
+    }
+    
+    
+    .form__input--checkbox {
+      position: relative;
+      z-index: -1; /* default stacking order for <input>  0 */
+    }
+    
+    .form__label {
+      position: absolute;
+      left: 1.5rem;
+      top: calc(50% - 1.5rem);
+      padding: .5rem .5rem .5rem .3rem;
+    }
+    
+    /* <span> used to cover number when row is hovered over and checkbox is :checked */
+    .form__label span {
+      width: 100%;
+      height: 100%;
+      background: var(--gramo-white);
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1; /* default stacking order for <span>  -1 */
+    }
+    
+      /* stacking order for <input> when :checked  3 */
+    .form__input--checkbox:checked {
+      z-index: 3;
+    }
+    
+    /* stacking order for <span> when input:checked  2 */
+    .form__input--checkbox:checked + span {
+      z-index: 2;
+    }
   }
-  
-  .form__input--checkbox {
-    position: relative;
-    z-index: -1; /* default stacking order for <input>  0 */
-  }
-  
-  .form__label {
-    position: absolute;
-    left: 1.5rem;
-    top: calc(50% - 1.5rem);
-    padding: .5rem .5rem .5rem .3rem;
-  }
-  
-  /* <span> used to cover number when row is hovered over and checkbox is :checked */
-  .form__label span {
-    width: 100%;
-    height: 100%;
-    background: var(--gramo-white);
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1; /* default stacking order for <span>  -1 */
-  }
-  
-    /* stacking order for <input> when :checked  3 */
-  .form__input--checkbox:checked {
-    z-index: 3;
-  }
-  
-  /* stacking order for <span> when input:checked  2 */
-  .form__input--checkbox:checked + span {
-    z-index: 2;
-  }
-  
+    
   /* when row is hovered over: */
   tr:not(.row--no-checkbox):hover {
     /* hide number */

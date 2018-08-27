@@ -182,15 +182,16 @@
               </div>
               <div class="toolbar__lower">
                 <div class="row">
-                  <div class="col align--vertical-center">
+                  <div class="col-sm col--no-flex align--vertical-center text--inline">
                     <span class="text--semibold text--nowrap">4 treff</span>
+                    <a href="#" class="">Velg alle</a>
+
+                    <button class="btn btn--small btn--secondary">Legg til duplikatliste</button>
+                    <button class="btn btn--small btn--secondary">Legg til bulkliste</button>
                   </div>
-                  <div class="col align--vertical-center">
-                    <a href="#" class="btn btn--secondary text--nowrap">Velg alle</a>
-                  </div>
-                  <div class="col-sm text--right col--no-flex">
-                    <button class="btn btn--secondary" disabled>Legg til duplikatliste</button>
-                    <button class="btn btn--secondary" disabled>Legg til bulkliste</button>
+                  <div class="col align--vertical-center text--nowrap">
+                    <a href="#">Åpne duplikatliste</a> |
+                    <a href="#">Åpne bulkliste</a>
                   </div>
                 </div>
               </div><!--end .toolbar__lower-->
@@ -199,6 +200,9 @@
               <thead>
                 <tr>
                   <th>
+                    <!-- <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                    </label> -->
                     Tittel
                   </th>
                   <th>

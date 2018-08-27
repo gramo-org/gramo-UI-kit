@@ -6533,19 +6533,19 @@ tr > td:last-child{
   z-index:1;
 }
 
-.table--with-checkboxes .form__input--checkbox{
+.table--with-checkboxes tr > td:first-child .form__input--checkbox{
   position:relative;
   z-index:-1;
 }
 
-.table--with-checkboxes .form__label{
+.table--with-checkboxes tr > td:first-child .form__label{
   position:absolute;
   left:1.5rem;
   top:calc(50% - 1.5rem);
   padding:.5rem .5rem .5rem .3rem;
 }
 
-.table--with-checkboxes .form__label span{
+.table--with-checkboxes tr > td:first-child .form__label span{
   width:100%;
   height:100%;
   background:#fdfdfd;
@@ -6558,11 +6558,11 @@ tr > td:last-child{
   z-index:-1;
 }
 
-.table--with-checkboxes .form__input--checkbox:checked{
+.table--with-checkboxes tr > td:first-child .form__input--checkbox:checked{
   z-index:3;
 }
 
-.table--with-checkboxes .form__input--checkbox:checked + span{
+.table--with-checkboxes tr > td:first-child .form__input--checkbox:checked + span{
   z-index:2;
 }
 
