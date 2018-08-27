@@ -117,7 +117,7 @@
       background: var(--gramo-white);
     }
 
-    a {
+    a:not(.btn) {
       color: var(--base-link-color);
     }
   }
@@ -191,7 +191,7 @@
   /* Disables the effect of the .fake-table__row--foot:after gap */
   &:last-child .fake-table__row--foot {
     margin-bottom: 0;
-    padding-bottom: 2px;
+    padding-bottom: /*2px*/1rem;
   }
 
   & > .fake-table__toggle-container {

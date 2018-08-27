@@ -713,6 +713,10 @@ td.text--center, .fake-table__row *.text--center{
 .row--clickable{
   cursor:pointer;
 }
+
+.hidden{
+  display:none!important;
+}
 *, *:before, *:after{
   box-sizing:border-box;
 }
@@ -4522,7 +4526,7 @@ main.pull .bucket{
 .fake-table__row--foot:hover{
   background:#fdfdfd;
 }
-.fake-table__row--foot a{
+.fake-table__row--foot a:not(.btn){
   color:#0095da;
 }
 .fake-table__row--subfoot{
@@ -4584,7 +4588,7 @@ main.pull .bucket{
 
 .fake-table__row--expanded:last-child .fake-table__row--foot{
   margin-bottom:0;
-  padding-bottom:2px;
+  padding-bottom:1rem;
 }
 
 .fake-table__row--expanded > .fake-table__toggle-container{

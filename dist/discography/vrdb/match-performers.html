@@ -240,7 +240,7 @@
                 <div class="tabs tabs--transparent">
                   <ul class="tabs__nav">
                     <li class="tabs__nav__item"><h4><a href="#ipd-results">Viser 2 treff i IPD for IPN: 493202</a></h4></li>
-                    <li class="tabs__nav__item tab__nav__item--right no-padding--right"><a class="btn btn--secondary btn--small" href="#search-echo">Søk i Echo</a></li>
+                    <li class="tabs__nav__item tab__nav__item--right no-padding--right"><a class="btn btn--secondary btn--small" href="#search-echo"><span class="click-here">Søk i Echo</span></a></li>
                   </ul>
 
                   <section id="ipd-results" class="tabs__section">
@@ -294,7 +294,7 @@
 
                             <div class="fake-table__cell--label">IPN</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced has-error form__label--validation-shared">
+                              <label class="form__label form__label--block form__label--reduced form__label--validation-shared">
                                 <input type="text" value="493202" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match record-->
@@ -360,9 +360,10 @@
                           </form>
                           <div class="col-md">
                             <div class="fake-table__row fake-table__row--foot align--center">
-                              <div class="text--center">
-                                <button class="btn btn--block btn--primary">Kopiere IPN til ECHO</button>
-                                <a href="#">Opprett utøver med data fra IPD</a>
+                              <div class="col-md-4">
+                                <div class="text--center">
+                                  <a href="#">Opprett utøver med data fra IPD</a>
+                                </div>
                               </div>
                             </div><!--end .fake-table__row foot-->
                           </div>
@@ -372,7 +373,7 @@
                         <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
                           <div class="fake-table__toggle-row">
                             <div class="col-xs-3">
-                              <span class="text--bold"><a href="#">Mick Wayne</a></span>
+                              <span class="text--bold"><a href="#">Micky Wayne</a></span>
                             </div>
                             <div class="col-xs-3">
                               Storbrittania
@@ -386,73 +387,73 @@
                           </div><!--end .fake-table__toggle-row-->
                         </div><!--end .fake-table__toggle-container-->
                         <div class="fake-table__row fake-table__row--child">
-                          <h4 class="hidden-on-mobile col-sm-6 heading--sub text--center">IPD</h4>
-                          <h4 class="hidden-on-mobile col-sm-6 heading--sub text--center">ECHO</h4>
-                          <form class="match-form">
+                          <form class="match-form match-form--no-result" data-match-status="Det finnes ingen forslag">
+                            <h4 class="match-form__header">IPD</h4>
+                            <h4 class="match-form__header">ECHO</h4>
                             <div class="fake-table__cell--label">Fornavn</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                <input type="text" value="Michael" class="form__input form__input--block form__input--validation-hidden">
+                                <input type="text" value="Micky" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
-                            <div class=""></div><!--end .col-md-1-->
+                            </div><!--end match record-->
+                            <div class="form__validation-divider"></div><!--end .col-md-1-->
                             <div class="" data-label="Match result">
                               <label class="form__label form__label--block form__label--reduced is-valid">
-                                <input type="text" value="Michael" class="form__input form__input--block form__input--validation-hidden">
+                                <input type="text" value="Micky" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
 
                             <div class="fake-table__cell--label">Etternavn</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
                                 <input type="text" value="Wayne" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
                             <div class="form__validation-divider"></div><!--end .col-md-1-->
                             <div class="" data-label="Match result">
                               <label class="form__label form__label--block form__label--reduced is-valid">
                                 <input type="text" value="Wayne" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
 
                             <div class="fake-table__cell--label">IPN</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced has-error form__label--validation-shared">
+                              <label class="form__label form__label--block form__label--reduced form__label--validation-shared">
                                 <input type="text" value="493202" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
                             <div class="form__validation-divider"></div><!--end .col-md-1-->
                             <div class="" data-label="Match result">
                               <label class="form__label form__label--block form__label--reduced has-error">
                                 <input type="text" value="" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
 
                             <div class="fake-table__cell--label">Artistnavn</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
                                 <input type="text" value="Mick Wayne" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
                             <div class="form__validation-divider"></div><!--end .col-md-1-->
                             <div class="" data-label="Match result">
                               <label class="form__label form__label--block form__label--reduced is-valid">
                                 <input type="text" value="Mick Wayne" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
 
                             <div class="fake-table__cell--label">Statsborgerskap</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
                                 <input type="text" value="Storbrittania" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
                             <div class="form__validation-divider"></div><!--end .col-md-1-->
                             <div class="" data-label="Match result">
                               <label class="form__label form__label--block form__label--reduced is-valid">
                                 <input type="text" value="Storbrittania" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
 
                             <div class="fake-table__cell--label">Fødselsdato</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
@@ -465,44 +466,45 @@
                               <label class="form__label form__label--block form__label--reduced is-valid">
                                 <input type="text" value="03.04.1945" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
 
                             <div class="fake-table__cell--label">Medlemskap</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
                                 <input type="text" value="PPL UK" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
                             <div class="form__validation-divider"></div><!--end .col-md-1-->
                             <div class="" data-label="Match result">
                               <label class="form__label form__label--block form__label--reduced is-valid">
                                 <input type="text" value="PPL UK" class="form__input form__input--block form__input--validation-hidden">
                               </label>
-                            </div><!--end .col-md-5-->
+                            </div><!--end match record-->
                               
                           </form>
                           <div class="col-md">
                             <div class="fake-table__row fake-table__row--foot align--center">
-                              <div class="col-md-4 text--center">
-                                <button class="btn btn--block btn--primary">Kopiere IPN til ECHO</button>
-                                <a href="#">Opprett utøver med data fra IPD</a>
+                              <div class="col-md-4">
+                                <div class="text--center">
+                                  <a href="#">Opprett utøver med data fra IPD</a>
+                                </div>
                               </div>
                             </div><!--end .fake-table__row foot-->
                           </div>
                         </div><!--end .fake-table__row child-->
-                      </li><!--end .fake-table__row-->
+                      </li><!--end .fake-table__row expanded-->
                     </ol><!--end .fake-table-with-tabs-->
                   </section><!--end section #discography-->
 
                   <section id="search-echo" class="tabs__section">
                     <div class="toolbar">
                       <form action="" class="search__form search__form--center no-margin--bottom">
-                        <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                        <input type="text" class="search__form__input search__form__input--fixed-width" value="Mick Wayne" placeholder="Søk..." />
                         <button class="search__submit"></button>
                       </form>
                     </div><!--/ .toolbar-->
                     <ol class="fake-table fake-table--numeric scrollable-area">
-                      <li class="fake-table__row">
+                      <li class="fake-table__row fake-table__row--expanded">
                         <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
                           <div class="fake-table__toggle-row">
                             <div class="col-xs-3">
@@ -618,130 +620,8 @@
                           <div class="col-md">
                             <div class="fake-table__row fake-table__row--foot align--center">
                               <div class="col-md-4 text--center">
-                                <button class="btn btn--block btn--primary">Kopiere IPN til ECHO</button>
-                                <a href="#">Opprett utøver med data fra IPD</a>
-                              </div>
-                            </div><!--end .fake-table__row foot-->
-                          </div>
-                        </div><!--end .fake-table__row child-->
-                      </li><!--end .fake-table__row-->
-                      <li class="fake-table__row">
-                        <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
-                          <div class="fake-table__toggle-row">
-                            <div class="col-xs-3">
-                              <span class="text--bold"><a href="#">Mick Wayne</a></span>
-                            </div>
-                            <div class="col-xs-3">
-                              Storbrittania
-                            </div>
-                            <div class="col-xs-4 text--right">
-                              1945 - 1994
-                            </div>
-                            <div class="col-xs fake-table__cell--action">
-                              <a href="#" class="table-row-toggle"></a>
-                            </div>
-                          </div><!--end .fake-table__toggle-row-->
-                        </div><!--end .fake-table__toggle-container-->
-                        <div class="fake-table__row fake-table__row--child">
-                          <h4 class="hidden-on-mobile col-sm-6 heading--sub text--center">IPD</h4>
-                          <h4 class="hidden-on-mobile col-sm-6 heading--sub text--center">ECHO</h4>
-                          <form class="match-form">
-                            <div class="fake-table__cell--label">Fornavn</div><!--end .col-md-1-->
-                            <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                <input type="text" value="Michael" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-                            <div class=""></div><!--end .col-md-1-->
-                            <div class="" data-label="Match result">
-                              <label class="form__label form__label--block form__label--reduced is-valid">
-                                <input type="text" value="Michael" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-
-                            <div class="fake-table__cell--label">Etternavn</div><!--end .col-md-1-->
-                            <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                <input type="text" value="Wayne" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-                            <div class="form__validation-divider"></div><!--end .col-md-1-->
-                            <div class="" data-label="Match result">
-                              <label class="form__label form__label--block form__label--reduced is-valid">
-                                <input type="text" value="Wayne" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-
-                            <div class="fake-table__cell--label">IPN</div><!--end .col-md-1-->
-                            <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced has-error form__label--validation-shared">
-                                <input type="text" value="493202" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-                            <div class="form__validation-divider"></div><!--end .col-md-1-->
-                            <div class="" data-label="Match result">
-                              <label class="form__label form__label--block form__label--reduced has-error">
-                                <input type="text" value="" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-
-                            <div class="fake-table__cell--label">Artistnavn</div><!--end .col-md-1-->
-                            <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                <input type="text" value="Mick Wayne" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-                            <div class="form__validation-divider"></div><!--end .col-md-1-->
-                            <div class="" data-label="Match result">
-                              <label class="form__label form__label--block form__label--reduced is-valid">
-                                <input type="text" value="Mick Wayne" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-
-                            <div class="fake-table__cell--label">Statsborgerskap</div><!--end .col-md-1-->
-                            <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                <input type="text" value="Storbrittania" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-                            <div class="form__validation-divider"></div><!--end .col-md-1-->
-                            <div class="" data-label="Match result">
-                              <label class="form__label form__label--block form__label--reduced is-valid">
-                                <input type="text" value="Storbrittania" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-
-                            <div class="fake-table__cell--label">Fødselsdato</div><!--end .col-md-1-->
-                            <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                <input type="text" value="03.04.1945" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-                            <div class="form__validation-divider"></div><!--end .col-md-1-->
-                            <div class="" data-label="Match result">
-                              <label class="form__label form__label--block form__label--reduced is-valid">
-                                <input type="text" value="03.04.1945" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-
-                            <div class="fake-table__cell--label">Medlemskap</div><!--end .col-md-1-->
-                            <div class="" data-label="Match record">
-                              <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
-                                <input type="text" value="PPL UK" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-                            <div class="form__validation-divider"></div><!--end .col-md-1-->
-                            <div class="" data-label="Match result">
-                              <label class="form__label form__label--block form__label--reduced is-valid">
-                                <input type="text" value="PPL UK" class="form__input form__input--block form__input--validation-hidden">
-                              </label>
-                            </div><!--end .col-md-5-->
-                              
-                          </form>
-                          <div class="col-md">
-                            <div class="fake-table__row fake-table__row--foot align--center">
-                              <div class="col-md-4 text--center">
-                                <button class="btn btn--block btn--primary">Kopiere IPN til ECHO</button>
+                                <button class="btn btn--block btn--primary">Kopiere feltene til ECHO</button>
+                                <a href="match-performers-2.html" class="btn btn--block btn--primary hidden">Ferdigstill</a>
                                 <a href="#">Opprett utøver med data fra IPD</a>
                               </div>
                             </div><!--end .fake-table__row foot-->
@@ -761,6 +641,26 @@
 
 <script src="../../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../../js/default.js"></script>
+<script type="text/javascript">
 
+  $('.click-here').on('click', function(){
+    $(this).removeClass('click-here');
+    $(copyBtn).addClass('click-here');
+  })
+
+  const copyBtn = $('button:contains(Kopiere)');
+  const ipn = $(copyBtn).closest('li').find('.has-error');
+  const ipnVal = $(ipn).find('input').val();
+  const target = $(ipn).parent().next('.form__validation-divider').next(['Match result']);
+  
+  $(copyBtn).on('click', function() {
+    $(this).addClass('hidden').next('a').removeClass('hidden').addClass('click-here');
+    $(ipn).removeClass('has-error').addClass('is-valid');
+    $(target).find('input').val(ipnVal);
+  });
+  
+  
+
+</script>
 </body>
 </html>
