@@ -73,6 +73,7 @@ Used e.g. for fake tables allowing the table to be scrollable while a toolbar/he
   height: calc(100vh - 25rem);
   overflow-y: auto;
   margin-bottom: 0; /* to prevent vertical scrolling */
+  paddding-bottom: 2rem;
 
   &--with-footer {
     height: calc(100vh - 30rem);

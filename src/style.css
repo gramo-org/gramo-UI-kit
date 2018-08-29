@@ -2086,6 +2086,7 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
   height:calc(100vh - 25rem);
   overflow-y:auto;
   margin-bottom:0;
+  paddding-bottom:2rem;
 }
 
 .scrollable-area--with-footer{
