@@ -213,7 +213,7 @@
               <h2>Listen er tom
                 
               </h2>
-              <h3><a href="#">Kom i gang med innspillinger</a></h3>
+              <h3><a href="match-recordings.html">Gå videre til innspillinger</a></h3>
 
               <div class="row">
                 <div class="col-md">
@@ -231,19 +231,6 @@
 
 <script src="../../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../../js/default.js"></script>
-<script type="text/javascript">
 
-  const copyBtn = $('button:contains(Kopiere)');
-  const ipn = $(copyBtn).closest('li').find('.has-error');
-  const ipnVal = $(ipn).find('input').val();
-  const target = $(ipn).parent().next('.form__validation-divider').next(['Match result']);
-  
-  $(copyBtn).on('click', function() {
-    $(this).addClass('hidden').next('a').removeClass('hidden');
-    $(ipn).removeClass('has-error').addClass('is-valid');
-    $(target).find('input').val(ipnVal);
-  });
-
-</script>
 </body>
 </html>

@@ -353,7 +353,8 @@
                             <div class="fake-table__row fake-table__row--foot align--center">
                               <div class="col-md-4">
                                 <div class="text--center">
-                                  <a href="match-performers-3.html">Opprett utøver med data fra IPD</a>
+                                  <a href="#" class="click-here">Opprett utøver med data fra IPD</a>
+                                  <a href="match-performers-3.html" class="btn btn--block btn--primary hidden click-here">Ferdigstill</a>
                                 </div>
                               </div>
                             </div><!--end .fake-table__row foot-->
@@ -391,15 +392,19 @@
 <script src="../../js/default.js"></script>
 <script type="text/javascript">
 
-  const copyBtn = $('button:contains(Kopiere)');
-  const ipn = $(copyBtn).closest('li').find('.has-error');
-  const ipnVal = $(ipn).find('input').val();
-  const target = $(ipn).parent().next('.form__validation-divider').next(['Match result']);
+  const createBtn = $('a:contains(Opprett)');
+  const mainTabs = $('.tabs__nav--flexible');
   
-  $(copyBtn).on('click', function() {
+  $(createBtn).on('click', function() {
+    console.log('clicked');
     $(this).addClass('hidden').next('a').removeClass('hidden');
-    $(ipn).removeClass('has-error').addClass('is-valid');
-    $(target).find('input').val(ipnVal);
+    $(mainTabs).append(`
+      <li class="tabs__nav__item">
+        <a href="#new-person">
+          <span class="tabs__nav__item__type tabs__nav__item__type--performer">Person</span>
+          Ny
+        </a>
+    </li>`)
   });
 
 </script>

@@ -242,19 +242,7 @@
                       <span class="text--small">3 treff</span>
                     </div>
                   </li><!--end .fake-table__row-->
-                  <li class="fake-table__row">
-                    <div class="col-xs-8">
-                      <h4><a href="#">Unwashed And Somewhat Slightly Dazed</a></h4>
-                      <a href="#" class="text--small">David Bowie</a>
-                      <span class="text--small text--inline"><a href="#">9483785</a></span>
-                      <a href="#" class="text--small">RCA</a>
-                    </div>
-                    <div class="col-xs-4 text--right">
-                      <span>304835</span>
-                      <a href="#" class="text--small">PPL</a>
-                      <span class="text--small">3 treff</span>
-                    </div>
-                  </li><!--end .fake-table__row-->
+
                 </ol><!--end .fake-table-->
               </div><!--end .panels #sidebar-->
               <div class="panels__main">
@@ -461,7 +449,7 @@
                           <div class="col-md-12 text--center no-padding--bottom">
                             <span class="text--medium">Vis alle felter</span>
                             <span class="x-toggle-container">
-                              <input type="checkbox" class="x-toggle">
+                              <input type="checkbox" class="x-toggle" checked>
                               <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
                               </label>
                             </span>
@@ -635,11 +623,12 @@
                               </tbody>
                             </table>
                           </div>
-                          <div class="col-md" style="display:none">
+                          <div class="col-md">
                             <div class="fake-table__row fake-table__row--foot align--center">
                               <div class="text--center">
-                                <button class="btn btn--block btn--primary">Match innspillinger</button>
-                                <a href="#">Eller opprett innspilling med data fra VRDB</a>
+                                <button class="btn btn--block btn--primary click-here">Match innspillinger</button>
+                                <a href="match-recordings-2.html" class="btn btn--block btn--primary hidden">Ferdigstill</a>
+                                <a href="#">Opprett innspilling med data fra VRDB</a>
                               </div>
                             </div><!--end .fake-table__row foot-->
                           </div><!--end .col-md-->
@@ -655,6 +644,13 @@
                         <button class="search__submit"></button>
                       </form>
                     </div><!--/ .toolbar-->
+                    <div class="empty-state">
+                      <h3 class="heading--sub text--light">Ingen treff i diskografien</h3>
+                      
+                      <span class="empty-state__icon">
+                        <i class="icon--empty-state-music"></i>
+                      </span>
+                    </div>
                   </section><!--end section #search-external-sources-->
                 </div><!--/ .tabs-transparent-->
               </div><!--end .panels #main-->
@@ -667,6 +663,22 @@
 
 <script src="../../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../../js/default.js"></script>
+<script type="text/javascript">
 
+  const copyBtn = $('button:contains(Match)');
+  const fields = $(copyBtn).closest('li').find('.has-error');
+  const fieldsVal = $(fields).find('input').val();
+  const target = $(fields).parent().next('.form__validation-divider').next(['Match result']);
+  
+  $(copyBtn).on('click', function() {
+    $(this).addClass('hidden').next('a').removeClass('hidden').addClass('click-here');
+    $(fields).removeClass('has-error').addClass('is-valid');
+    $(target).find('input').val(fieldsVal);
+    $(this).next('a').next('a').addClass('hidden');
+  });
+  
+  
+
+</script>
 </body>
 </html>

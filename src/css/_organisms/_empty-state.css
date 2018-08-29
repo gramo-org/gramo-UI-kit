@@ -2,13 +2,17 @@
   padding-top: 2rem;
   text-align: center;
 
-  h3 {
-    span {
+  h2, h3, h4 {
+    margin-bottom: 2rem;
+    /* font-style: italic; */
+    font-weight: var(--normal);
+    color: var(--off-gray);
+    
+    & > * {
       display: block;
       margin-top: 1.5rem;
-      font-weight: 300;
-      color: var(--off-gray);
       margin-bottom: 7.5rem;
+      /* font-style: normal; */
     }
   }
 
