@@ -7,5 +7,5 @@
 
 .footer--full-width {
    margin: 0 -3rem;
-   width: calc(100% + 6rem);
+   width: calc(100% + 3rem);
 }

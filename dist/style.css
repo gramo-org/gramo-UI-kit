@@ -5239,7 +5239,7 @@ input[type="text"].search__form__input--large{
 
 .footer--full-width{
    margin:0 -3rem;
-   width:calc(100% + 6rem);
+   width:calc(100% + 3rem);
 }
 .tooltip-wrapper{
   position:relative;
