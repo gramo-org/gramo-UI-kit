@@ -3440,6 +3440,9 @@ input[type="checkbox"].form__input--toggle-visibility{
   max-width:400px;
   margin-bottom:1.2rem;
 }
+input:-webkit-autofill{
+    -webkit-box-shadow:0 0 0px 1000px #fdfdfd inset;
+}
 .form__label{
   position:relative;
   display:block;

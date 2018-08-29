@@ -158,3 +158,8 @@ input[type="checkbox"].form__input--toggle-visibility {
     background-image: none;
   }
 } */
+
+/* overrides chrome autofill yellow background */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px var(--gramo-white) inset;
+}
