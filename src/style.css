@@ -2672,12 +2672,15 @@ hr, .horizontal-rule{
   background:#504f56;
 }
 
-.badge-wrapper{
-  margin:0 0 0 1rem;
-  -webkit-align-self:center;
-  -ms-flex-item-align:center;
-  -ms-grid-row-align:center;
-  align-self:center;
+.badge--for-id{
+  font-size:70%;
+  padding:0 0.5em 0 0;
+}
+
+.badge--for-id > span{
+  font-weight:400;
+  display:inline-block;
+  padding:0.1em 0.15em 0.1em 0.5em;
 }
 .drag-handle, .fake-table__row__handle, .fake-table--numeric__divider[draggable=true]:hover::before{
   width:16px;

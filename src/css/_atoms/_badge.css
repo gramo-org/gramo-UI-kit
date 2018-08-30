@@ -142,7 +142,13 @@
   }
 }
 
-.badge-wrapper {
-  margin: 0 0 0 1rem;
-  align-self: center;
+.badge--for-id {
+  font-size: 70%;
+  padding: 0 0.5em 0 0;
+  
+  & > span {
+    font-weight: var(--normal);
+    display: inline-block;
+    padding: 0.1em 0.15em 0.1em 0.5em;
+  }
 }
