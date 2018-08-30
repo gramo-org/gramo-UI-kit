@@ -72,9 +72,14 @@
   }
 }
 
+.badge--master {
+  background: var(--gramo-green);
+  color: var(--gramo-white);
+}
+
 .badge--draft {
   background: var(--info);
-  color: #fff;
+  color: var(--gramo-white);
 }
 
 .badge--icon {
