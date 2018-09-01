@@ -706,7 +706,7 @@ td.text--center, .fake-table__row *.text--center{
   border-radius:30px;
   border:5px solid #ed6b6a;
   opacity:0.5;
-  right:-15px;
+  right:-12px;
   top:-5px;
 }
 
@@ -2389,7 +2389,7 @@ hr, .horizontal-rule{
   position:relative;
   padding:0.5rem .9rem;
 }
-.btn--add:after{
+.btn--add:before{
   content:"\e901";
   font-family:'icomoon';
   display:block;

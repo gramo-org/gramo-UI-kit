@@ -433,7 +433,7 @@ td.text--center,
     border-radius: 30px;
     border: 5px solid var(--gramo-red);
     opacity: 0.5;
-    right: -15px;
+    right: -12px;
     top: -5px;
   }
 }

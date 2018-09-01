@@ -369,9 +369,47 @@
                               <input type="text" value="Trommer" disabled class="form__input form__input--80">
                             </td>
                             <td class="table--basic__divider"></td>
-                            <td colspan="4"></td>
+                            <td><a href="#">10080713</a></td>
+                            <td>Paolo Vinaccia</td>
+                            <td>
+                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
+                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
+                                  <span class="searchable-list__selected">Trommer</span>
+                                </div>
+                                <div class="searchable-list__dropdown">
+                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                                  <ul>
+                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
+                                      Gitar
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div id="ember4200" class="ember-view">
+                                <div class="radio-group">
+                                  <label class="form__label">
+                                    <input type="radio" value="A" id="ember4202" class="ember-view">
+                                    <span>A</span>
+                                    <span class="check"></span>
+                                  </label>
+                                  <label class="form__label">
+                                    <input type="radio" value="B" id="ember4204" class="ember-view" checked>
+                                    <span>B</span>
+                                    <span class="check"></span>
+                                  </label>
+                                  <label class="form__label">
+                                    <input type="radio" value="C" id="ember4206" class="ember-view">
+                                    <span>C</span>
+                                    <span class="check"></span>
+                                  </label>
+                                </div>
+                                <div id="ember4207" class="form__input__errors ember-view"></div>
+                              </div>
+                            </td>
                             <td class="text--center">
-                              <a href="match-performances-2.html" class="btn btn--primary btn--add click-here"></a>
+                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                             </td>
                           </tr>
                           
@@ -477,7 +515,7 @@
                               </div>
                             </td>
                             <td class="text--center">
-                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                              <a class="text--small text--light" href="match-performances-3.html"><i class="icon--x"></i></a>
                             </td>
                           </tr>
                           
@@ -490,9 +528,11 @@
                               <input type="text" value="Violin" disabled class="form__input form__input--80">
                             </td>
                             <td class="table--basic__divider"></td>
-                            <td colspan="4"></td>
+                            <td colspan="4">
+                              <p class="text--error text--right text--semibold hidden">Kun en opptred pr. utøver</p>
+                            </td>
                             <td class="text--center">
-                              <button class="btn btn--primary btn--add"></button>
+                              <button class="btn btn--primary btn--add click-here"></button>
                             </td>
                           </tr>
                           
@@ -672,9 +712,9 @@
                           </div>
                         </div>
                         <div class="form__section--action text--center">
-                          <button class="btn btn--secondary hidden">Avbryt</button>
-                          <button class="btn btn--primary" disabled>Lagre opptreddene</button>
-                          <!-- <br> -->
+                          <button class="btn btn--secondary">Avbryt</button>
+                          <button class="btn btn--primary">Lagre opptreddene</button>
+                          <br>
                         </div><!--end .form__section-action -->
                         <div class="row align--center">
                           <a href="#" class="link--normal">Godkjenn og gå til neste</a>
@@ -693,6 +733,15 @@
 
 <script src="../../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../../js/default.js"></script>
+<script type="text/javascript">
+  const clickHere = $('.click-here');
+  const errorText = $('.text--error');
 
+  $(clickHere).on('click',function(){
+    $(errorText).removeClass('hidden');
+    $(this).removeClass('click-here');
+    $(this).closest('tr').prev('tr').find('td:last-child a').addClass('click-here')
+  });
+</script>
 </body>
 </html>

@@ -105,7 +105,7 @@
     position: relative;
     padding: 0.5rem .9rem;
     
-    &:after {
+    &:before {
       content: "\e901";
       font-family: 'icomoon';
       display: block;
