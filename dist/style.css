@@ -1727,6 +1727,15 @@ table{
   margin-bottom:1.2rem;
   display:inline-block;
 }
+
+.link--with-divider{
+  margin-right:.25rem;
+}
+
+.link--with-divider:after{
+  content:'|';
+  margin-left:.5rem;
+}
 .scrollbar::-webkit-scrollbar, .sidebar .sidebar__nav::-webkit-scrollbar{
   width:10px;
 }

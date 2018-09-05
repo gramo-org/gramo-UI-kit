@@ -1557,6 +1557,15 @@ table{
   margin-bottom:1.2rem;
   display:inline-block;
 }
+
+.link--with-divider{
+  margin-right:.25rem;
+}
+
+.link--with-divider:after{
+  content:'|';
+  margin-left:.5rem;
+}
 .select{
   border:1px solid #d9d9dc;
   width:100%;
@@ -3118,8 +3127,7 @@ input[type="number"].four-digit{
 .form__label.is-valid--simple .form__input, .form__label--simple-validation.is-valid .form__input{
   border:1px solid #50bf9e;
 }
-
-.form__label--for-checkbox.has-error::after{
+.form__label--checkbox.has-error::after{
   content:none;
 }
 hr, .horizontal-rule{

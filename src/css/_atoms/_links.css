@@ -42,3 +42,11 @@
   margin-bottom: 1.2rem;
   display: inline-block;
 }
+
+.link--with-divider {
+  margin-right: .25rem;
+  &:after {
+    content: '|';
+    margin-left: .5rem;
+  }
+}

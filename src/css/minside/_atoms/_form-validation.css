@@ -57,6 +57,7 @@
   @extend .form__label.is-valid--simple .form__input;
 }
 
-.form__label--for-checkbox.has-error::after {
+/* Make sure checkboxes don't have 'x' or 'check' next to them */
+.form__label--checkbox.has-error::after {
   content: none;
 }
