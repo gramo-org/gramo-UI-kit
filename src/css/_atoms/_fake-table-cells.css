@@ -35,3 +35,7 @@
 .fake-table__cell--delete {
   text-align: right;
 }
+
+.fake-table__cell--empty {
+  padding-left: 2rem;
+}
