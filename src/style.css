@@ -2912,10 +2912,6 @@ hr, .horizontal-rule{
 .fake-table__cell--delete{
   text-align:right;
 }
-
-.fake-table__cell--empty{
-  padding-left:2rem;
-}
 .x-toggle{
     display:none;
 }
@@ -6416,7 +6412,7 @@ tr > td:last-child{
   position:relative;
   padding-left:4rem;
 }
-.fake-table--numeric > .fake-table__row > div[class*="col-"]:first-child, .table--numeric > .fake-table__row > div[class*="col-"]:first-child{
+.fake-table--numeric > .fake-table__row > div[class*="col-"]:first-child:not(.fake-table__cell--empty), .table--numeric > .fake-table__row > div[class*="col-"]:first-child:not(.fake-table__cell--empty){
   padding-left:1rem
 }
 .fake-table--numeric > .fake-table__row > div[class*="col-"]:last-child, .table--numeric > .fake-table__row > div[class*="col-"]:last-child{

@@ -7,7 +7,7 @@
     padding-left: 4rem;
   }
 
-  & > .fake-table__row > div[class*="col-"]:first-child {
+  & > .fake-table__row > div[class*="col-"]:first-child:not(.fake-table__cell--empty) {
     padding-left: 1rem
   }
 
