@@ -11,11 +11,11 @@
   padding-left: 5rem;
   position: relative; /* To position the numeric badge */
 
-  .fake-table__toggle-row > div[class*="col-"]:first-child {
+  .fake-table__toggle-row > div[class*="col-"]:first-child:not(.fake-table__cell--empty) {
     padding-left: 1rem
   }
 
-  .fake-table__toggle-row > div[class*="col-"]:last-child {
+  .fake-table__toggle-row > div[class*="col-"]:last-child:not(.fake-table__cell--empty) {
     padding-left: 1rem
   }
 }

@@ -7,11 +7,11 @@
     padding-left: 4rem;
   }
 
-  & > .fake-table__row > div[class*="col-"]:first-child:not(.fake-table__cell--empty) {
+  & > .fake-table__row > div[class*="col-"]:first-child {
     padding-left: 1rem
   }
 
-  & > .fake-table__row > div[class*="col-"]:last-child:not(.fake-table__cell--empty) {
+  & > .fake-table__row > div[class*="col-"]:last-child {
     padding-right: 1rem;
   }
 
