@@ -11,7 +11,7 @@
     padding-left: 1rem
   }
 
-  & > .fake-table__row > div[class*="col-"]:last-child {
+  & > .fake-table__row > div[class*="col-"]:last-child:not(.fake-table__cell--empty) {
     padding-right: 1rem;
   }
 

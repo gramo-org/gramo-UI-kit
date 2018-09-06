@@ -6415,7 +6415,7 @@ tr > td:last-child{
 .fake-table--numeric > .fake-table__row > div[class*="col-"]:first-child:not(.fake-table__cell--empty), .table--numeric > .fake-table__row > div[class*="col-"]:first-child:not(.fake-table__cell--empty){
   padding-left:1rem
 }
-.fake-table--numeric > .fake-table__row > div[class*="col-"]:last-child, .table--numeric > .fake-table__row > div[class*="col-"]:last-child{
+.fake-table--numeric > .fake-table__row > div[class*="col-"]:last-child:not(.fake-table__cell--empty), .table--numeric > .fake-table__row > div[class*="col-"]:last-child:not(.fake-table__cell--empty){
   padding-right:1rem;
 }
 .fake-table--numeric > .fake-table__row > *:first-child::before, .table--numeric > .fake-table__row > *:first-child::before, .table--numeric tr:not(.table__row--no-count) > td:first-child::before{
