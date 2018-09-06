@@ -23,7 +23,7 @@
   a:not(.btn) {
     color: inherit;
   }
-  
+
 /* except in .row--align-vertical (group members) */
   &.row--align-vertical a {
     color: var(--base-link-color);
@@ -34,12 +34,12 @@
   &--selected:hover {
     background: var(--table-head-background);
   }
-  
+
   &--active {
     box-shadow: 4px 0px 0px var(--success) inset;
     background: var(--gramo-white);
   }
-  
+
   /*** Inactive rows in fake-table ***/
   &--inactive * {
     color: var(--off-gray)!important;
@@ -48,6 +48,14 @@
   & > div[class*="col-"] {
     padding: 1.4rem 1rem; /* give cols elements padding in .fake-table__row -- changed from 1.25rem 1rem */
     min-height: var(--table-row-height);
+  }
+
+  & > div[class*="col-"]:first-child {
+    padding-left: 2rem
+  }
+
+  & > div[class*="col-"]:last-child {
+    padding-right: 2rem;
   }
 
   div[class*="col-"] {
@@ -80,7 +88,7 @@
     @media (--tablet) {
       text-align: left;
     }
-    
+
     /*** Compress select menu and inputs in .fake-table__row--head ***/
 
     .select, .form__input {
@@ -88,12 +96,12 @@
       padding: .25rem 2rem .25rem .5rem;
     }
   }
-  
+
   &--head:not(.always-visible) {
     display: none;
     @media (--tablet) { display: flex; }
   }
-  
+
   /* fake-table__row--foot */
   &--foot {
     border: 0;
@@ -141,11 +149,11 @@
       background: var(--base-background-color);
     }
   }
-  
+
   /* Vertically center rows with input fields */
   &--with-inputs {
     align-items: center;
-    
+
     .form__input {
       @media (--tablet) {
         margin-top: -1rem;
@@ -164,11 +172,6 @@
   &--detached {
     border-bottom: 1px solid var(--table-border-color);
     margin-bottom: 1rem;
-  }
-
-  /* Extra padding use !important to overide .fake-table__row--child */
-  &--padded {
-    @media (--hd) { padding: .5rem 2rem!important; }
   }
 
   &--success {

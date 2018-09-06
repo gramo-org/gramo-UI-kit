@@ -35,9 +35,9 @@
   &__item:hover,
   &__item a.active {
     background: var(--light-gray);
-    position: relative;  
+    position: relative;
   }
-  
+
   &__item a.active::after {
     content: '';
     height: 1px;
@@ -48,7 +48,7 @@
     width: 100%;
     z-index: 1;
   }
-  
+
   &__item--disabled {
     & > a {
       color: color(var(--silver) shade(10%));;
@@ -56,11 +56,11 @@
     }
     &:hover {
       background: var(--x-light-gray);
-      
+
       &::after {
         content: none;
       }
-    }  
+    }
   }
 
   &__item a.active {
@@ -108,10 +108,14 @@
     & > a {
        padding-left: 1rem;
        padding-right: 1.5rem;
-       max-width: 200px;
+       max-width: 210px;
        overflow: hidden;
        text-overflow: ellipsis;
        white-space: nowrap;
+    }
+
+    & > a:first-child {
+      padding-left: 2rem;
     }
   }
 }

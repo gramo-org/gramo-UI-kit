@@ -7,6 +7,14 @@
     padding-left: 4rem;
   }
 
+  & > .fake-table__row > div[class*="col-"]:first-child {
+    padding-left: 1rem
+  }
+
+  & > .fake-table__row > div[class*="col-"]:last-child {
+    padding-right: 1rem;
+  }
+
   & > .fake-table__row > *:first-child::before {
     counter-increment: section;
     content: counters(section,".") " ";

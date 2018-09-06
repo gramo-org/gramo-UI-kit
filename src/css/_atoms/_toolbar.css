@@ -1,17 +1,17 @@
 .toolbar {
   background: var(--table-head-background);
   border: 1px solid var(--table-border-color);
-  padding: 1.2rem;
+  padding: 1.2rem 0.6rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   @extend %margin-bottom;
-  
+
   &--padded {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  
+
   &--in-tabs {
     border-width: 0 0 1px 0;
   }
@@ -50,7 +50,7 @@
   &__column {
     flex: 0 1 20%;
   }
-  
+
   &__lower {
     width: 100%;
     padding: 1rem 0 0 .5rem;
@@ -63,12 +63,12 @@
   width: calc(100% + 2rem);
   display: block;
   padding: 0;
-  
+
   .toolbar__head {
     background: var(--table-border-color);
     padding: .5rem 1rem;
   }
-  
+
   .toolbar__body {
     padding: 1rem;
   }
