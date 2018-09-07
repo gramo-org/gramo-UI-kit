@@ -856,6 +856,7 @@ p{
 
 .text--small{
   font-size:1.2rem!important;
+  line-height:1.5rem;
 }
 
 .text--medium{
@@ -6195,9 +6196,7 @@ caption{
   padding:2rem 1rem;
   text-align:center;
   width:100%;
-  background:#ededed url(img/minside-masthead-bg.png) no-repeat;
-  background-position:center bottom 25%;
-  background-size:cover;
+  background:#ededed;
   color:#504f56;
   box-shadow:0 1px 0 #d9d9dc;
 }

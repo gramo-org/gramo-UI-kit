@@ -2,23 +2,24 @@
   padding: 2rem 1rem;
   text-align: center;
   width: 100%;
-  background: var(--light-gray) url(img/minside-masthead-bg.png) no-repeat;
+  background: var(--light-gray);
+  /* background: var(--light-gray) url(img/minside-masthead-bg.png) no-repeat;
   background-position: center bottom 25%;
-  background-size: cover;
+  background-size: cover; */
   color: var(--slate-gray);
   box-shadow: 0 1px 0 var(--silver);
   @media (--tablet) {
     min-height: 200px;
   }
-  
+
   .icon {
     font-size: 6rem;
   }
-  
+
   h1 {
     margin: 0;
   }
-  
+
   & > p {
     padding: 1rem 2rem;
     width: 100%; /* for IE */
@@ -31,7 +32,7 @@
 
   margin: 3.5rem -1rem -1rem -1rem;
   @media (--tablet) { padding: 0 20%; }
-    
+
   &__item {
     color: var(--slate-gray);
     flex: 1;
@@ -44,13 +45,13 @@
     padding: 0 1rem;
     font-weight: var(--semibold);
     @media (--tablet) { font-size: inherit; }
-    
+
     span {
       margin-right: .5rem;
       order: 1;
       font-weight: var(--normal);
     }
-        
+
     &:last-child {
       border-right-width: 0;
     }
