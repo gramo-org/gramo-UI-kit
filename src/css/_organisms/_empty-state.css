@@ -7,7 +7,7 @@
     /* font-style: italic; */
     font-weight: var(--normal);
     color: var(--off-gray);
-    
+
     & > * {
       display: block;
       margin-top: 1.5rem;
@@ -29,10 +29,10 @@
       border-radius: 6px;
     }
   }
-  
+
   &--small {
     min-height: 300px;
-    
+
     .empty-state__icon i {
       font-size: 5rem;
       width: 5rem;
@@ -41,4 +41,8 @@
       border: 0;
     }
   }
+}
+
+.empty-state__action {
+  margin: 1.2rem 0;
 }

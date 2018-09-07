@@ -129,7 +129,7 @@
           <ul class="tabs__nav tabs__nav--flexible">
             <li class="tabs__nav__item tabs__nav__item--search">
               <a href="#search">
-                <span class="icon--search"></span> 
+                <span class="icon--search"></span>
                 Søk
               </a>
             </li>
@@ -303,6 +303,19 @@
                               </label>
                             </div><!--end match result-->
 
+                            <div class="fake-table__cell--label">VRDB2_ID</div><!--end .col-md-1-->
+                            <div class="" data-label="Match record">
+                              <label class="form__label form__label--block form__label--reduced form__label--validation-shared">
+                                <input type="text" value="493202" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end match record-->
+                            <div class="form__validation-divider"></div><!--end .col-md-1-->
+                            <div class="" data-label="Match result">
+                              <label class="form__label form__label--block form__label--reduced is-valid">
+                                <input type="text" value="" class="form__input form__input--block form__input--validation-hidden">
+                              </label>
+                            </div><!--end match result-->
+
                             <div class="fake-table__cell--label">Hovedartist</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
@@ -380,7 +393,7 @@
                                 <input type="text" value="RCA" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match result-->
-                            
+
                             <div class="fake-table__cell--label">Versjon</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
@@ -393,7 +406,7 @@
                                 <input type="text" value="" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match result-->
-                            
+
                             <div class="fake-table__cell--label">Innspillingsland</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced has-error form__label--validation-shared">
@@ -406,7 +419,7 @@
                                 <input type="text" value="USA" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match result-->
-                            
+
                             <div class="fake-table__cell--label">Innspillingsdato</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
@@ -419,7 +432,7 @@
                                 <input type="text" value="21/08/1969" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match result-->
-                            
+
                             <div class="fake-table__cell--label">Produsentland</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
@@ -432,7 +445,7 @@
                                 <input type="text" value="USA" class="form__input form__input--block form__input--validation-hidden">
                               </label>
                             </div><!--end match result-->
-                            
+
                             <div class="fake-table__cell--label">Utgivelsesdato</div><!--end .col-md-1-->
                             <div class="" data-label="Match record">
                               <label class="form__label form__label--block form__label--reduced is-valid form__label--validation-shared">
@@ -455,7 +468,7 @@
                             </span>
                             <hr class="horizontal-rule horizontal-rule--dashed no-margin--bottom">
                           </div><!--end .col-md-->
-                          
+
                           <div class="col-md-12 no-padding--bottom no-padding--top">
                             <h2 class="fake-table__row--child__header">Eierskap</h2>
                             <div class="row text--center">
@@ -485,8 +498,8 @@
                                   <th colspan="5" class="text--center text--normal"><h3>ECHO</h3> Featured (2) Non featured (4)</th>
                                 </tr>
                               </thead>
-                                
-                      
+
+
                               <thead>
                                 <tr>
                                   <th>IPN</th>
@@ -646,7 +659,7 @@
                     </div><!--/ .toolbar-->
                     <div class="empty-state">
                       <h3 class="heading--sub text--light">Ingen treff i diskografien</h3>
-                      
+
                       <span class="empty-state__icon">
                         <i class="icon--empty-state-music"></i>
                       </span>
@@ -669,15 +682,15 @@
   const fields = $(copyBtn).closest('li').find('.has-error');
   const fieldsVal = $(fields).find('input').val();
   const target = $(fields).parent().next('.form__validation-divider').next(['Match result']);
-  
+
   $(copyBtn).on('click', function() {
     $(this).addClass('hidden').next('a').removeClass('hidden').addClass('click-here');
     $(fields).removeClass('has-error').addClass('is-valid');
     $(target).find('input').val(fieldsVal);
     $(this).next('a').next('a').addClass('hidden');
   });
-  
-  
+
+
 
 </script>
 </body>
