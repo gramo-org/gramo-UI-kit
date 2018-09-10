@@ -34,7 +34,7 @@
         <nav class="sidebar__nav">
           <ul class="vertical__nav">
             <li class="vertical__nav__item">
-              <a href="/" class="active">Dashbord</a>
+              <a href="/" class="">Dashbord</a>
             </li>
             <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
               <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
@@ -67,7 +67,7 @@
                 </li>
               </ul>
             </li>
-            <li id="discography" class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+            <li id="discography" class="vertical__nav__item vertical__nav__item--has-children">
               <a data-ember-action="" data-ember-action-854="854">Diskografi</a>
               <ul class="vertical__nav vertical__nav--sub">
                 <li class="vertical__nav__item vertical__nav--sub__item">
@@ -81,10 +81,10 @@
                 <li class="vertical__nav__item vertical__nav--sub__item">
                   <a href="/discography/federations">Rettighetshaverorg.</a>
                 </li>
-                <li class="vertical__nav__item vertical__nav--sub__item">
-                  <a href="/discography/federations" class="active">VRDB import</a>
-                </li>
               </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="#" class="active">VRDB import</a>
             </li>
             <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
               <a data-ember-action="" data-ember-action-965="965">Min side</a>
@@ -208,20 +208,20 @@
                 <ol class="fake-table fake-table--numeric scrollable-area">
                   <li class="fake-table__row fake-table__row--selected">
                     <div class="col-xs-8">
-                      <h3><a href="#">Mick Wayne</a></h3>
+                      <h3>Mick Wayne</h3>
                     </div>
                     <div class="col-xs-4 text--right">
                       <span>493202</span>
-                      <span class="text--small text--bold">2 treff</span>
+                      <!-- <span class="text--small text--bold">2 treff</span> -->
                     </div>
                   </li><!--end .fake-table__row-->
                   <li class="fake-table__row">
                     <div class="col-xs-8">
-                      <h3><a href="#">Terry Cox</a></h3>
+                      <h3>Terry Cox</h3>
                     </div>
                     <div class="col-xs-4 text--right">
                       <span>304835</span>
-                      <span class="text--small text--bold">1 treff</span>
+                      <!-- <span class="text--small text--bold">1 treff</span> -->
                     </div>
                   </li><!--end .fake-table__row-->
                 </ol><!--end .fake-table-->
@@ -233,13 +233,13 @@
                     <h3>IPN: 493202</h3>
                   </div>
                   <div class="infobar__right">
-                    <span class="infobar__meta">2 treff</span>
+                    <!-- <span class="infobar__meta">2 treff</span> -->
                   </div>
                 </div><!--/ .infobar-->
 
                 <div class="tabs tabs--transparent">
                   <ul class="tabs__nav">
-                    <li class="tabs__nav__item"><h4><a href="#ipd-results">Viser 2 treff i IPD for IPN: 493202</a></h4></li>
+                    <li class="tabs__nav__item"><h4><a href="#ipd-results">Viser treff i ECHO for IPN: 493202</a></h4></li>
                     <li class="tabs__nav__item tab__nav__item--right no-padding--right"><a class="btn btn--secondary btn--small" href="#search-echo"><span class="click-here">Søk i Echo</span></a></li>
                   </ul>
 
@@ -377,8 +377,7 @@
                           <div class="col-md">
                             <div class="fake-table__row fake-table__row--foot align--center">
                               <div class="col-md-4 text--center">
-                                <button class="btn btn--block btn--primary click-here">Kopiere feltene til ECHO</button>
-                                <a href="match-performers-2.html" class="btn btn--block btn--primary hidden">Ferdigstill</a>
+                                <a href="match-performers-2.html" class="btn btn--block btn--primary click-here">Match</a>
                                 <a href="#">Opprett utøver med data fra IPD</a>
                               </div>
                             </div><!--end .fake-table__row foot-->
@@ -405,7 +404,7 @@
     $(copyBtn).addClass('click-here');
   })
 
-  const copyBtn = $('button:contains(Kopiere)');
+  const copyBtn = $('button:contains(Match)');
   const ipn = $(copyBtn).closest('li').find('.has-error');
   const ipnVal = $(ipn).find('input').val();
   const target = $(ipn).parent().next('.form__validation-divider').next(['Match result']);
