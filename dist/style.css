@@ -1389,6 +1389,12 @@ main > section:first-of-type{
 .container--is-editing::after{
   bottom:-1.2rem;
 }
+
+.container--with-bg{
+  background:#fdfdfd;
+  border:1px solid #ededed;
+  padding-top:1rem;
+}
 @media print{
   *, *:before, *:after{
   background:transparent;
@@ -2534,7 +2540,6 @@ hr, .horizontal-rule{
 }
 
 .toolbar--tabular{
-  width:calc(100% + 2rem);
   display:block;
   padding:0;
 }
@@ -6151,10 +6156,6 @@ tr > td:first-child{
 
 tr > td:last-child{
   border-right:1px solid #d9d9dc;
-}
-
-.table--basic{
-  margin:1rem 1rem 0 1rem;
 }
 
 .table--basic thead{

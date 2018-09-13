@@ -95,4 +95,10 @@ main > section:first-of-type {
       bottom: -1.2rem;
     }
   }
+
+  &--with-bg {
+    background: var(--gramo-white);
+    border: 1px solid var(--light-gray);
+    padding-top: 1rem;
+  }
 }

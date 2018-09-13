@@ -209,8 +209,8 @@
                   <div class="col-xs-12">
                     <span class="text--medium">Vis alle felter</span>
                     <span class="x-toggle-container">
-                      <input type="checkbox" class="x-toggle">
-                      <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                      <input type="checkbox" id="toggle" class="x-toggle">
+                      <label for="toggle" data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
                       </label>
                     </span>
                   </div>
@@ -220,7 +220,7 @@
                     <div class="col-xs-8">
                       <h4>Space Oddity</h4>
                       <a href="#" class="text--small">David Bowie</a>
-                      <span class="text--small text--inline"><a href="#">9483785</a> <a href="#" class="link--normal">Vis 19 til</a></span>
+                      <span class="text--small text--inline hidden"><a href="#">David Bowie: 9483785</a> <a href="#" class="link--normal">Vis 19 til</a></span>
                       <a href="#" class="text--small">RCA</a>
                     </div>
                     <div class="col-xs-4 text--right">
@@ -308,6 +308,16 @@ $(createBtn).on('click', function() {
 });
 
 
+const toggle = $('#toggle');
+const extraFields = $('.text--inline');
+
+$(toggle).change(function(){
+  if ($(this).is(":checked")) {
+    $(extraFields).removeClass('hidden');
+  } else {
+    $(extraFields).addClass('hidden');
+  }
+});
 
 </script>
 </body>

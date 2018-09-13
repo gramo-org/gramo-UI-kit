@@ -60,7 +60,6 @@
 }
 
 .toolbar--tabular {
-  width: calc(100% + 2rem);
   display: block;
   padding: 0;
 

@@ -205,23 +205,23 @@
             </div><!--end .toolbar-->
             <div class="panels">
               <div class="panels__sidebar panels__sidebar--25">
-                <!-- <div class="toolbar toolbar--above">
+                <div class="toolbar toolbar--above">
                   <div class="col-xs-12">
                     <span class="text--medium">Vis alle felter</span>
                     <span class="x-toggle-container">
-                      <input type="checkbox" class="x-toggle">
-                      <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
+                      <input type="checkbox" id="toggle" class="x-toggle">
+                      <label for="toggle" data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
                       </label>
                     </span>
                   </div>
-                </div> -->
+                </div>
                 <ol class="fake-table fake-table--numeric scrollable-area">
                   <li class="fake-table__row fake-table__row--selected">
                     <div class="col-xs-7">
                       <h4>Janine</h4>
                       David Bowie
-                      <!-- <span class="text--small text--inline"><a href="#">4741830</a></span>
-                      <a href="#" class="text--small">RCA</a> -->
+                      <span class="text--small text--inline hidden"><a href="#">David Bowie: 4741830</a></span>
+                      <a href="#" class="text--small text--inline hidden">RCA</a>
                     </div>
                     <div class="col-xs-5 text--right text--small">
                       <span><span class="text--semibold">VRDB</span> F/NF: 2/5</span>
@@ -232,8 +232,8 @@
                     <div class="col-xs-7">
                       <h4>Space Oddity</h4>
                       David Bowie
-                      <!-- <span class="text--small text--inline"><a href="#">9483785</a> <a href="#" class="link--normal">Vis 19 til</a></span>
-                      <a href="#" class="text--small">RCA</a> -->
+                      <span class="text--small text--inline hidden"><a href="#">David Bowie: 9483785</a> <a href="#" class="link--normal">Vis 19 til</a></span>
+                      <a href="#" class="text--small text--inline hidden">RCA</a>
                     </div>
                     <div class="col-xs-5 text--right text--small">
                       <span><span class="text--semibold">VRDB</span> F/NF: 2/5</span>
@@ -249,430 +249,398 @@
                     <h3>VRDB2 ID: 493202</h3>
                   </div>
                 </div><!--/ .infobar-->
-                <ol class="fake-table fake-table--numeric scrollable-area" style="height: calc(100vh - 28rem);">
-                  <li class="fake-table__row fake-table__row--expanded">
-                    <div class="fake-table__toggle-container fake-table__toggle-container--numeric">
-                      <div class="fake-table__toggle-row">
-                        <div class="col-xs-3">
-                          <span class="text--bold"><a href="#">Janine</a></span>
-                        </div>
-                        <div class="col-xs-3">
-                          David Bowie
-                        </div>
-                        <div class="col-xs-2">
-                          RCA
-                        </div>
-                        <div class="col-xs-2">
-                          USJT11500177
-                        </div>
-                        <div class="col-xs fake-table__cell--action">
-                          <a href="#" class="table-row-toggle"></a>
-                        </div>
-                      </div><!--end .fake-table__toggle-row-->
-                    </div><!--end .fake-table__toggle-container-->
-                    <div class="fake-table__row fake-table__row--child">
-                      <table class="table--basic">
-                        <thead>
-                          <tr>
-                            <th colspan="6" class="text--center text--normal"><h3>VRDB</h3> Featured (2) Non featured (5)</th>
-                            <th colspan="5" class="text--center text--normal"><h3>ECHO</h3> Featured (2) Non featured (4)</th>
-                          </tr>
-                        </thead>
-
-
-                        <thead>
-                          <tr>
-                            <th>IPN</th>
-                            <th>Navn</th>
-                            <th>Rolle/Bidrag</th>
-                            <th>R/kode</th>
-                            <th>Instrument</th>
-                            <th></th>
-                            <th>IPN</th>
-                            <th>Navn</th>
-                            <th>Instrument</th>
-                            <th>Rollekode</th>
-                            <th></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><a href="#">10080337</a></td>
-                            <td>Iver Kleive</td>
-                            <td>BP/NF</td>
-                            <td>B</td>
-                            <td>
-                              <input type="text" value="Orgel" disabled class="form__input form__input--80">
-                            </td>
-                            <td class="table--basic__divider"></td>
-                            <td><a href="#">10080337</a></td>
-                            <td>Iver Kleive</td>
-                            <td>
-                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
-                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
-                                  <span class="searchable-list__selected">Tangenter</span>
-                                </div>
-                                <div class="searchable-list__dropdown">
-                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
-                                  <ul>
-                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
-                                      Gitar
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </td>
-                            <td>
-                              <div id="ember4200" class="ember-view">
-                                <div class="radio-group">
-                                  <label class="form__label">
-                                    <input type="radio" value="A" id="ember4202" class="ember-view">
-                                    <span>A</span>
-                                    <span class="check"></span>
-                                  </label>
-                                  <label class="form__label">
-                                    <input type="radio" value="B" id="ember4204" class="ember-view" checked>
-                                    <span>B</span>
-                                    <span class="check"></span>
-                                  </label>
-                                  <label class="form__label">
-                                    <input type="radio" value="C" id="ember4206" class="ember-view">
-                                    <span>C</span>
-                                    <span class="check"></span>
-                                  </label>
-                                </div>
-                                <div id="ember4207" class="form__input__errors ember-view"></div>
-                              </div>
-                            </td>
-                            <td class="text--center">
-                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><a href="#">10080713</a></td>
-                            <td>Paolo Vinaccia</td>
-                            <td>BP/NF</td>
-                            <td>B</td>
-                            <td>
-                              <input type="text" value="Trommer" disabled class="form__input form__input--80">
-                            </td>
-                            <td class="table--basic__divider"></td>
-                            <td colspan="4"></td>
-                            <td class="text--center">
-                              <a href="match-performances-2.html" class="btn btn--primary btn--add click-here"></a>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td><a href="#">10080778</a></td>
-                            <td>Sondre Bratland</td>
-                            <td>MS/F</td>
-                            <td>A</td>
-                            <td>
-                              <input type="text" value="Vokal" disabled class="form__input form__input--80">
-                            </td>
-                            <td class="table--basic__divider"></td>
-                            <td><a href="#">10080778</a></td>
-                            <td>Sondre Bratland</td>
-                            <td>
-                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
-                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
-                                  <span class="searchable-list__selected">Vokal</span>
-                                </div>
-                                <div class="searchable-list__dropdown">
-                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
-                                  <ul>
-                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
-                                      Gitar
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </td>
-                            <td>
-                              <div id="ember4200" class="ember-view">
-                                <div class="radio-group">
-                                  <label class="form__label">
-                                    <input type="radio" value="A" id="ember4202" class="ember-view" checked>
-                                    <span>A</span>
-                                    <span class="check"></span>
-                                  </label>
-                                  <label class="form__label">
-                                    <input type="radio" value="B" id="ember4204" class="ember-view">
-                                    <span>B</span>
-                                    <span class="check"></span>
-                                  </label>
-                                  <label class="form__label">
-                                    <input type="radio" value="C" id="ember4206" class="ember-view">
-                                    <span>C</span>
-                                    <span class="check"></span>
-                                  </label>
-                                </div>
-                                <div id="ember4207" class="form__input__errors ember-view"></div>
-                              </div>
-                            </td>
-                            <td class="text--center">
-                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td><a href="#">10081014</a></td>
-                            <td>Erik Hillestad</td>
-                            <td>CO/F</td>
-                            <td>C</td>
-                            <td>
-                              <input type="text" value="Dirigent" disabled class="form__input form__input--80">
-                            </td>
-                            <td class="table--basic__divider"></td>
-                            <td><a href="#">10081014</a></td>
-                            <td>Erik Hillestad</td>
-                            <td>
-                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
-                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
-                                  <span class="searchable-list__selected">Dirigent</span>
-                                </div>
-                                <div class="searchable-list__dropdown">
-                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
-                                  <ul>
-                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
-                                      Gitar
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </td>
-                            <td>
-                              <div id="ember4200" class="ember-view">
-                                <div class="radio-group">
-                                  <label class="form__label">
-                                    <input type="radio" value="A" id="ember4202" class="ember-view">
-                                    <span>A</span>
-                                    <span class="check"></span>
-                                  </label>
-                                  <label class="form__label">
-                                    <input type="radio" value="B" id="ember4204" class="ember-view">
-                                    <span>B</span>
-                                    <span class="check"></span>
-                                  </label>
-                                  <label class="form__label">
-                                    <input type="radio" value="C" id="ember4206" class="ember-view" checked>
-                                    <span>C</span>
-                                    <span class="check"></span>
-                                  </label>
-                                </div>
-                                <div id="ember4207" class="form__input__errors ember-view"></div>
-                              </div>
-                            </td>
-                            <td class="text--center">
-                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td><a href="#">10081014</a></td>
-                            <td>Erik Hillestad</td>
-                            <td>CO/F</td>
-                            <td>C</td>
-                            <td>
-                              <input type="text" value="Violin" disabled class="form__input form__input--80">
-                            </td>
-                            <td class="table--basic__divider"></td>
-                            <td colspan="4">
-                              <p class="text--right text--light text--small text--italic">Kun en opptred pr. utøver</p>
-                            </td>
-                            <td class="text--center">
-                              <button class="btn btn--primary btn--add" disabled></button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td colspan="5"></td>
-                            <td class="table--basic__divider"></td>
-                            <td><a href="#">10080337</a></td>
-                            <td>Paolo Jazzo</td>
-                            <td>
-                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
-                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
-                                  <span class="searchable-list__selected">Trommer</span>
-                                </div>
-                                <div class="searchable-list__dropdown">
-                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
-                                  <ul>
-                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
-                                      Gitar
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </td>
-                            <td>
-                              <div id="ember4200" class="ember-view">
-                                <div class="radio-group">
-                                  <label class="form__label">
-                                    <input type="radio" value="A" id="ember4202" class="ember-view">
-                                    <span>A</span>
-                                    <span class="check"></span>
-                                  </label>
-                                  <label class="form__label">
-                                    <input type="radio" value="B" id="ember4204" class="ember-view" checked>
-                                    <span>B</span>
-                                    <span class="check"></span>
-                                  </label>
-                                  <label class="form__label">
-                                    <input type="radio" value="C" id="ember4206" class="ember-view">
-                                    <span>C</span>
-                                    <span class="check"></span>
-                                  </label>
-                                </div>
-                                <div id="ember4207" class="form__input__errors ember-view"></div>
-                              </div>
-                            </td>
-                            <td class="text--center">
-                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td colspan="5"></td>
-                            <td class="table--basic__divider"></td>
-                            <td><a href="#">Ingen IPN</a></td>
-                            <td>Suheil Khoury</td>
-                            <td>
-                              <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
-                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
-                                  <span class="searchable-list__selected">Klarinet</span>
-                                </div>
-                                <div class="searchable-list__dropdown">
-                                  <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
-                                  <ul>
-                                    <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
-                                      Gitar
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </td>
-                            <td>
-                              <div id="ember4200" class="ember-view">
-                                <div class="radio-group">
-                                  <label class="form__label">
-                                    <input type="radio" value="A" id="ember4202" class="ember-view">
-                                    <span>A</span>
-                                    <span class="check"></span>
-                                  </label>
-                                  <label class="form__label">
-                                    <input type="radio" value="B" id="ember4204" class="ember-view" checked>
-                                    <span>B</span>
-                                    <span class="check"></span>
-                                  </label>
-                                  <label class="form__label">
-                                    <input type="radio" value="C" id="ember4206" class="ember-view">
-                                    <span>C</span>
-                                    <span class="check"></span>
-                                  </label>
-                                </div>
-                                <div id="ember4207" class="form__input__errors ember-view"></div>
-                              </div>
-                            </td>
-                            <td class="text--center">
-                              <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <div class="col-md">
-                        <div class="row text--right">
-                          <div class="col-md-12 col--no-flex">
-                            <button class="btn btn--secondary">Legg til alle fra VRDB</button>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6 off-md-6 no-padding--left" style="position: relative; left: -2rem;">
-                            <h3 class="heading--sub">Ukjente utøvere</h3>
-                            <div class="toolbar toolbar--tabular">
-                              <div class="toolbar__head text--semibold">
-                                <div class="row">
-                                  <div class="col-xs-12 col-sm-3">
-                                    Utøvernavn
-                                  </div>
-                                  <div class="col-xs-12 col-sm-2">
-                                    Antall
-                                  </div>
-                                  <div class="col-xs-12 col-sm-3">
-                                    Statsborgerskap
-                                  </div>
-                                  <div class="col-xs-12 col-sm-3">
-                                    Rollekode
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="toolbar__body">
-                                <div class="row">
-                                  <div class="col-xs-12 col-sm-3">
-                                    <label class="form__label form__label--block form__label--hidden">
-                                      <span>Utøvernavn</span>
-                                      <input type="text" id="ember4275" class="form__input form__input--block form__input--unknown ember-text-field ember-view">
-                                    </label>
-                                  </div>
-                                  <div class="col-xs-12 col-sm-2">
-                                    <label class="form__label form__label--block form__label--hidden">
-                                      <span>Antall</span>
-                                      <input min="1" type="number" id="ember4281" class="form__input form__input--block ember-text-field ember-view">
-                                    </label>
-                                  </div>
-                                  <div class="col-xs-12 col-sm-3">
-                                    <label class="form__label form__label--block form__label--hidden">
-                                      <span>Land</span>
-                                      <div id="ember4292" class="searchable-list searchable-list form__input form__input--block ember-view">
-                                        <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-6213="6213">
-                                          <span class="searchable-list__selected">NORGE</span>
-                                        </div>
-                                        <div class="searchable-list__dropdown">
-                                          <input type="text" id="ember6214" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
-                                        </div>
-                                      </div>
-                                    </label>
-                                  </div>
-                                  <div class="col-xs-12 col-sm-3">
-                                    <div class="radio-group">
-                                      <label class="form__label">
-                                        <input type="radio" value="A" id="ember4298">
-                                        <span>A</span>
-                                        <span class="check"></span>
-                                      </label>
-                                      <label class="form__label">
-                                        <input type="radio" value="B" id="ember4300" checked>
-                                        <span>B</span>
-                                        <span class="check"></span>
-                                      </label>
-                                      <label class="form__label">
-                                        <input type="radio" value="C" id="ember4302">
-                                        <span>C</span>
-                                        <span class="check"></span>
-                                      </label>
-                                    </div>
-                                  </div>
-                                  <div class="col-xs align--vertical-center">
-                                    <a class="text--small text--light"><i id="ember6464" class="icon--x ember-view"></i></a>
-                                  </div>
-                                </div>
-                              </div>
+                <section class="container container--with-bg scrollable-area" style="height: calc(100vh - 28rem);">
+                  <table class="table--basic">
+                    <thead>
+                      <tr>
+                        <th colspan="6" class="text--center text--normal"><h3>VRDB</h3> Featured (2) Non featured (5)</th>
+                        <th colspan="5" class="text--center text--normal"><h3>ECHO</h3> Featured (2) Non featured (4)</th>
+                      </tr>
+                    </thead>
+                    <thead>
+                      <tr>
+                        <th>IPN</th>
+                        <th>Navn</th>
+                        <th>Rolle/Bidrag</th>
+                        <th>R/kode</th>
+                        <th>Instrument</th>
+                        <th></th>
+                        <th>IPN</th>
+                        <th>Navn</th>
+                        <th>Instrument</th>
+                        <th>Rollekode</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="#">10080337</a></td>
+                        <td>Iver Kleive</td>
+                        <td>BP/NF</td>
+                        <td>B</td>
+                        <td>
+                          <input type="text" value="Orgel" disabled class="form__input form__input--80">
+                        </td>
+                        <td class="table--basic__divider"></td>
+                        <td><a href="#">10080337</a></td>
+                        <td>Iver Kleive</td>
+                        <td>
+                          <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
+                            <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
+                              <span class="searchable-list__selected">Tangenter</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                              <ul>
+                                <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
+                                  Gitar
+                                </li>
+                              </ul>
                             </div>
                           </div>
-                        </div>
-                        <div class="form__section--action text--center">
-                          <button class="btn btn--secondary hidden">Avbryt</button>
-                          <button class="btn btn--primary hidden" disabled>Lagre opptreddene</button>
-                          <!-- <br> -->
-                        </div><!--end .form__section-action -->
-                        <div class="row align--center">
-                          <a href="#" class="btn btn--primary">Godkjenn og gå til neste</a>
+                        </td>
+                        <td>
+                          <div id="ember4200" class="ember-view">
+                            <div class="radio-group">
+                              <label class="form__label">
+                                <input type="radio" value="A" id="ember4202" class="ember-view">
+                                <span>A</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="B" id="ember4204" class="ember-view" checked>
+                                <span>B</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="C" id="ember4206" class="ember-view">
+                                <span>C</span>
+                                <span class="check"></span>
+                              </label>
+                            </div>
+                            <div id="ember4207" class="form__input__errors ember-view"></div>
+                          </div>
+                        </td>
+                        <td class="text--center">
+                          <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">10080713</a></td>
+                        <td>Paolo Vinaccia</td>
+                        <td>BP/NF</td>
+                        <td>B</td>
+                        <td>
+                          <input type="text" value="Trommer" disabled class="form__input form__input--80">
+                        </td>
+                        <td class="table--basic__divider"></td>
+                        <td colspan="4"></td>
+                        <td class="text--center">
+                          <a href="match-performances-2.html" class="btn btn--primary btn--add click-here"></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td><a href="#">10080778</a></td>
+                        <td>Sondre Bratland</td>
+                        <td>MS/F</td>
+                        <td>A</td>
+                        <td>
+                          <input type="text" value="Vokal" disabled class="form__input form__input--80">
+                        </td>
+                        <td class="table--basic__divider"></td>
+                        <td><a href="#">10080778</a></td>
+                        <td>Sondre Bratland</td>
+                        <td>
+                          <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
+                            <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
+                              <span class="searchable-list__selected">Vokal</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                              <ul>
+                                <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
+                                  Gitar
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div id="ember4200" class="ember-view">
+                            <div class="radio-group">
+                              <label class="form__label">
+                                <input type="radio" value="A" id="ember4202" class="ember-view" checked>
+                                <span>A</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="B" id="ember4204" class="ember-view">
+                                <span>B</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="C" id="ember4206" class="ember-view">
+                                <span>C</span>
+                                <span class="check"></span>
+                              </label>
+                            </div>
+                            <div id="ember4207" class="form__input__errors ember-view"></div>
+                          </div>
+                        </td>
+                        <td class="text--center">
+                          <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td><a href="#">10081014</a></td>
+                        <td>Erik Hillestad</td>
+                        <td>CO/F</td>
+                        <td>C</td>
+                        <td>
+                          <input type="text" value="Dirigent" disabled class="form__input form__input--80">
+                        </td>
+                        <td class="table--basic__divider"></td>
+                        <td><a href="#">10081014</a></td>
+                        <td>Erik Hillestad</td>
+                        <td>
+                          <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
+                            <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
+                              <span class="searchable-list__selected">Dirigent</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                              <ul>
+                                <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
+                                  Gitar
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div id="ember4200" class="ember-view">
+                            <div class="radio-group">
+                              <label class="form__label">
+                                <input type="radio" value="A" id="ember4202" class="ember-view">
+                                <span>A</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="B" id="ember4204" class="ember-view">
+                                <span>B</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="C" id="ember4206" class="ember-view" checked>
+                                <span>C</span>
+                                <span class="check"></span>
+                              </label>
+                            </div>
+                            <div id="ember4207" class="form__input__errors ember-view"></div>
+                          </div>
+                        </td>
+                        <td class="text--center">
+                          <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td><a href="#">10081014</a></td>
+                        <td>Erik Hillestad</td>
+                        <td>CO/F</td>
+                        <td>C</td>
+                        <td>
+                          <input type="text" value="Violin" disabled class="form__input form__input--80">
+                        </td>
+                        <td class="table--basic__divider"></td>
+                        <td colspan="4">
+                          <p class="text--right text--light text--small text--italic">Kun en opptred pr. utøver</p>
+                        </td>
+                        <td class="text--center">
+                          <button class="btn btn--primary btn--add" disabled></button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="5"></td>
+                        <td class="table--basic__divider"></td>
+                        <td><a href="#">10080337</a></td>
+                        <td>Paolo Jazzo</td>
+                        <td>
+                          <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
+                            <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
+                              <span class="searchable-list__selected">Trommer</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                              <ul>
+                                <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
+                                  Gitar
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div id="ember4200" class="ember-view">
+                            <div class="radio-group">
+                              <label class="form__label">
+                                <input type="radio" value="A" id="ember4202" class="ember-view">
+                                <span>A</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="B" id="ember4204" class="ember-view" checked>
+                                <span>B</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="C" id="ember4206" class="ember-view">
+                                <span>C</span>
+                                <span class="check"></span>
+                              </label>
+                            </div>
+                            <div id="ember4207" class="form__input__errors ember-view"></div>
+                          </div>
+                        </td>
+                        <td class="text--center">
+                          <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="5"></td>
+                        <td class="table--basic__divider"></td>
+                        <td><a href="#">Ingen IPN</a></td>
+                        <td>Suheil Khoury</td>
+                        <td>
+                          <div id="ember4195" class="searchable-list searchable-list--fluid form__input form__input--block ember-view">
+                            <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-5330="5330">
+                              <span class="searchable-list__selected">Klarinet</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" id="ember5331" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                              <ul>
+                                <li class="searchable-list__option " data-ember-action="" data-ember-action-5332="5332">
+                                  Gitar
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div id="ember4200" class="ember-view">
+                            <div class="radio-group">
+                              <label class="form__label">
+                                <input type="radio" value="A" id="ember4202" class="ember-view">
+                                <span>A</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="B" id="ember4204" class="ember-view" checked>
+                                <span>B</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="C" id="ember4206" class="ember-view">
+                                <span>C</span>
+                                <span class="check"></span>
+                              </label>
+                            </div>
+                            <div id="ember4207" class="form__input__errors ember-view"></div>
+                          </div>
+                        </td>
+                        <td class="text--center">
+                          <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="form__section--action">
+                    <p class="text--right">
+                      <button class="btn btn--secondary">Legg til alle fra VRDB</button>
+                    </p>
+                    <h3 class="heading--sub">Ukjente utøvere</h3>
+                    <div class="toolbar toolbar--tabular">
+                      <div class="toolbar__head text--semibold">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-3">
+                            Utøvernavn
+                          </div>
+                          <div class="col-xs-12 col-sm-2">
+                            Antall
+                          </div>
+                          <div class="col-xs-12 col-sm-3">
+                            Statsborgerskap
+                          </div>
+                          <div class="col-xs-12 col-sm-3 text--center">
+                            Rollekode
+                          </div>
                         </div>
                       </div>
-                    </div><!--end .fake-table__row child-->
-                  </li><!--end .fake-table__row expanded-->
-                </ol><!--end .fake-table-with-tabs-->
+                      <div class="toolbar__body">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-3">
+                            <label class="form__label form__label--block form__label--hidden">
+                              <span>Utøvernavn</span>
+                              <input type="text" id="ember4275" class="form__input form__input--block form__input--unknown ember-text-field ember-view">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-2">
+                            <label class="form__label form__label--block form__label--hidden">
+                              <span>Antall</span>
+                              <input min="1" type="number" id="ember4281" class="form__input form__input--block ember-text-field ember-view">
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-3">
+                            <label class="form__label form__label--block form__label--hidden">
+                              <span>Land</span>
+                              <div id="ember4292" class="searchable-list searchable-list form__input form__input--block ember-view">
+                                <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-6213="6213">
+                                  <span class="searchable-list__selected">NORGE</span>
+                                </div>
+                                <div class="searchable-list__dropdown">
+                                  <input type="text" id="ember6214" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="col-xs-12 col-sm-3">
+                            <div class="radio-group">
+                              <label class="form__label">
+                                <input type="radio" value="A" id="ember4298">
+                                <span>A</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="B" id="ember4300" checked>
+                                <span>B</span>
+                                <span class="check"></span>
+                              </label>
+                              <label class="form__label">
+                                <input type="radio" value="C" id="ember4302">
+                                <span>C</span>
+                                <span class="check"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-xs align--vertical-center">
+                            <a class="text--small text--light"><i id="ember6464" class="icon--x ember-view"></i></a>
+                          </div>
+                        </div>
+                        <div class="form__section__action">
+                          <a href="#" class="link--normal">Legg til flere ukjente</a>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="horizontal-rule horizontal-rule--spacer">
+                    <div class="form__section--action text--center">
+                      <a href="#" class="btn btn--primary">Godkjenn og gå til neste</a>
+                    </div>
+                  </div>
+                </section><!--end .fake-table-with-tabs-->
               </div><!--end .panels #main-->
             </div><!-- end .panels -->
           </section><!--end /.tabs__section-->
@@ -683,6 +651,17 @@
 
 <script src="../../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../../js/default.js"></script>
+<script type="text/javascript">
+  const toggle = $('#toggle');
+  const extraFields = $('.text--inline');
 
+  $(toggle).change(function(){
+    if ($(this).is(":checked")) {
+      $(extraFields).removeClass('hidden');
+    } else {
+      $(extraFields).addClass('hidden');
+    }
+  });
+</script>
 </body>
 </html>
