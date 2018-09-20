@@ -231,11 +231,20 @@
                 <div class="tabs tabs--transparent">
                   <ul class="tabs__nav">
                     <li class="tabs__nav__item"><h4><a href="#ipd-results">Viser treff i Echo for IPN: 304835</a></h4></li>
-                    <li class="tabs__nav__item tab__nav__item--right no-padding--right"><a class="btn btn--secondary btn--small" href="#search-echo">Søk i Echo</a></li>
+                    <li class="tabs__nav__item tab__nav__item--right no-padding--right"><a class="btn btn--secondary btn--small" href="#search-echo"><span class="click-here">Søk i Echo</span></a></li>
                   </ul>
 
                   <section id="ipd-results" class="tabs__section">
+                    <div class="empty-state">
+                      <h3 class="heading--sub text--light">Ingen treff i IPD</h3>
 
+                      <span class="empty-state__icon">
+                        <i class="icon--empty-state-music"></i>
+                      </span>
+                      <div class="empty-state__action">
+                        <!-- <a href="match-performers-3.html" class="btn btn--primary btn--fixed-width hidden click-here">Ferdigstill</a> -->
+                      </div>
+                    </div>
                   </section><!--end section #discography-->
 
                   <section id="search-echo" class="tabs__section">
@@ -272,6 +281,10 @@
 
   const createBtn = $('a:contains(Opprett)');
   const mainTabs = $('.tabs__nav--flexible');
+
+  $('.click-here').click(function(){
+    $(this).removeClass('click-here');
+  })
 
   $(createBtn).on('click', function() {
     console.log('clicked');

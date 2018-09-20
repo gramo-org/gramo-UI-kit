@@ -1823,6 +1823,9 @@ table{
 .form__label--disabled{
   opacity:0.5;
 }
+.form__label--checkbox-in-th{
+  left:-0.2rem;
+}
 .form__label--new{
   position:relative;
 }

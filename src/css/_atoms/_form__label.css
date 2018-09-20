@@ -60,9 +60,13 @@
   &--padded {
     padding-top: .65rem;
   }
-  
+
   &--disabled {
     opacity: 0.5;
+  }
+
+  &--checkbox-in-th {
+    left: -0.2rem;
   }
 }
 
@@ -84,7 +88,7 @@
     color: var(--gramo-white);
     text-align: center;
   }
-  
+
   .form__input {
     padding-left: 3rem;
   }
