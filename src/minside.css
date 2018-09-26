@@ -5308,9 +5308,14 @@ tr[data-src="draft"] > td:first-child::after{
   }
 }
 .table .table__row--disabled td{
-  background:#f9f9f9;
   color:#a5a4ab;
   cursor:not-allowed;
+}
+@media (min-width: 960px){
+
+  .table .table__row--disabled td{
+    background:#f9f9f9;
+  }
 }
 
 caption{
@@ -6037,24 +6042,23 @@ caption{
 .box-list > li{
   background:#f3f3f3;
   border:1px solid #d9d9dc;
-  padding:2rem;
+  padding:1rem;
   position:relative;
   margin-bottom:1.2rem;
+}
+
+@media (min-width: 960px){
+
+  .box-list > li{
+    padding:2rem;
+  }
 }
 
 .box-list--numbered{
   counter-reset:item; 
 }
 
-.box-list--numbered > li{
-  padding:1rem;
-}
-
 @media (min-width: 960px){
-
-  .box-list--numbered > li{
-    padding:2rem;
-  }
 
   .box-list--numbered > li:before{
     counter-increment:item;

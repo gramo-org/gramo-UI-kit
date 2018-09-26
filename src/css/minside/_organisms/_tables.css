@@ -59,9 +59,11 @@
   
   /*** Disabled rows in table ***/
   .table__row--disabled td {
-    background: var(--x-light-gray);
     color: var(--off-gray);
     cursor: not-allowed;
+    @media (--desktop) {
+      background: var(--x-light-gray);
+    }
   }
 }
 

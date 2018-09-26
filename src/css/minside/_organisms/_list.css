@@ -54,9 +54,12 @@
   & > li {
     background: var(--mid-light-gray);
     border: 1px solid var(--silver);
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
-    margin-bottom: 1.2rem;    
+    margin-bottom: 1.2rem;
+    @media (--desktop) {
+      padding: 2rem;
+    }
   }
 }
 
@@ -65,10 +68,9 @@
 }
 
 .box-list--numbered > li {
-  padding: 1rem;
+  
 
   @media (--desktop) {
-    padding: 2rem;
     &:before {
       counter-increment: item;
       content: counters(item,".") " ";
