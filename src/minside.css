@@ -3022,7 +3022,7 @@ input[type="number"].four-digit{
   color:#504f56;
   font-family:'minside-icons';
   position:absolute;
-  right:5px;
+  right:7px;
   top:55%;
   background:#fdfdfd;
   content:none;
@@ -4643,6 +4643,12 @@ input:-webkit-autofill{
   transition:all 0.25s linear;
   text-align:center;
   padding-top:.6rem;
+}
+.radio-group .form__label.has-error{
+  border:1px solid #ed6b6a;
+}
+.radio-group .form__label.has-error:after{
+  content:none;
 }
 .radio-group .check{
   border:0;

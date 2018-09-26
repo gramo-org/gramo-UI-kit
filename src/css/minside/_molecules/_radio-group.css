@@ -27,6 +27,14 @@
     transition: all 0.25s linear;
     text-align: center;
     padding-top: .6rem;
+    
+    &.has-error {
+      border: 1px solid var(--gramo-red);
+    }
+
+    &.has-error:after {
+      content: none;
+    }
   }
 
   .check {
