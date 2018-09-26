@@ -6,9 +6,13 @@
   
   &__header {
     background: var(--light-gray);;
-    margin: -2rem -2rem 1rem -2rem;
-    padding: 1rem;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 1rem 1rem 1rem 0;
     position: static;
+    @media (--desktop) {
+      margin: -2rem -2rem 1rem -2rem;
+      padding: 1rem;
+    }  
   }
   
   &__header > * {
@@ -61,8 +65,10 @@
 }
 
 .box-list--numbered > li {
+  padding: 1rem;
 
   @media (--desktop) {
+    padding: 2rem;
     &:before {
       counter-increment: item;
       content: counters(item,".") " ";

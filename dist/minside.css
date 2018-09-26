@@ -5987,9 +5987,16 @@ caption{
 }
 .list__header{
   background:#ededed;
-  margin:-2rem -2rem 1rem -2rem;
-  padding:1rem;
+  margin:-1rem -1rem 1rem -1rem;
+  padding:1rem 1rem 1rem 0;
   position:static;
+}
+@media (min-width: 960px){
+
+  .list__header{
+    margin:-2rem -2rem 1rem -2rem;
+    padding:1rem;
+  }
 }
 .list__header > *{
   display:block;
@@ -6039,7 +6046,15 @@ caption{
   counter-reset:item; 
 }
 
+.box-list--numbered > li{
+  padding:1rem;
+}
+
 @media (min-width: 960px){
+
+  .box-list--numbered > li{
+    padding:2rem;
+  }
 
   .box-list--numbered > li:before{
     counter-increment:item;
