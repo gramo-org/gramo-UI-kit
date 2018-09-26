@@ -4754,7 +4754,6 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   margin:0;
   padding:2rem;
   border-radius:1px;
-  z-index:-1;
 }
 @media (min-width: 768px){
 
