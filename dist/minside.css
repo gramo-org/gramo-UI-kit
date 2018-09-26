@@ -5797,9 +5797,15 @@ caption{
     padding-left:0;
   }
 }
+@media (min-width: 960px){
+
+  .table--tracks tr td:first-child{
+    padding:0 1rem;
+  }
+}
 .table--tracks > tbody > tr:not(.table__row--no-count) > td:first-child::before{
   counter-increment:section;
-  content:counters(section,".") " ";
+  content:counters(section,".", decimal-leading-zero) " ";
   color:#504f56;
   font-size:1.6rem;
 }
@@ -5977,7 +5983,7 @@ caption{
 
 .table--tracks--edit .table__cell--move > a:first-child{
   top:1rem;
-  left:.5rem;
+  left:1rem;
 }
 
 @media (min-width: 960px){
@@ -5990,7 +5996,7 @@ caption{
 
 .table--tracks--edit .table__cell--move > a:last-child{
   bottom:1rem;
-  left:.5rem;
+  left:1rem;
 }
 
 @media (min-width: 960px){

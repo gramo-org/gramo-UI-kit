@@ -10,11 +10,15 @@
       position: static;
       padding-left: 0;
     }
+    
+    td:first-child {
+      @media (--desktop) { padding: 0 1rem; }
+    }
   }
   
   & > tbody > tr:not(.table__row--no-count) > td:first-child::before {
     counter-increment: section;
-    content: counters(section,".") " ";
+    content: counters(section,".", decimal-leading-zero) " ";
     color: var(--slate-gray);
     font-size: 1.6rem;
     @media (--desktop) {
@@ -187,7 +191,7 @@
     
     &:first-child {
       top: 1rem;
-      left: .5rem;
+      left: 1rem;
 
       @media (--desktop) {
         left: -7rem;
@@ -197,7 +201,7 @@
 
     &:last-child {
       bottom: 1rem;
-      left: .5rem;
+      left: 1rem;
 
       @media (--desktop) {
         left: -5rem;
