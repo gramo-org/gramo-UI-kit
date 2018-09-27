@@ -3181,6 +3181,8 @@ h2 .badge{
 
   .tabs__nav__item .badge{
     display:inline-block;
+    vertical-align:middle;
+    padding:0 1rem;
   }
 }
 .tabs__nav__item .active .badge{

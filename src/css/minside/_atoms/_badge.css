@@ -34,7 +34,11 @@ h2 .badge {
     background: var(--silver);
     color: var(--slate-gray);
     display: none;
-    @media (--desktop) { display: inline-block; }
+    @media (--desktop) { 
+      display: inline-block; 
+      vertical-align: middle; 
+      padding: 0 1rem; 
+    }
   }
   .active .badge {
     background: var(--gramo-turkis);
