@@ -59,8 +59,10 @@
 .section-header--with-toggle {
   header {
     flex: 1 0 100%;
+    margin-bottom: 1rem;
     @media (--desktop) {
       flex: 1 0 auto;
+      margin-bottom: 0;
     }
   }
 }

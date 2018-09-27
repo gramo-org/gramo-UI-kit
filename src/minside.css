@@ -6190,6 +6190,7 @@ caption{
   -webkit-flex:1 0 100%;
   -ms-flex:1 0 100%;
   flex:1 0 100%;
+  margin-bottom:1rem;
 }
 
 @media (min-width: 960px){
@@ -6198,6 +6199,7 @@ caption{
     -webkit-flex:1 0 auto;
     -ms-flex:1 0 auto;
     flex:1 0 auto;
+    margin-bottom:0;
   }
 }
 
