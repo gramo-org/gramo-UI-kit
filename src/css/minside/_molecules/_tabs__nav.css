@@ -28,12 +28,14 @@
     padding: 1rem 0;
     flex: 1 0 auto;
     display: block;
+    box-shadow: 0 1px 0 var(--silver);
   }
 
   &__item:hover,
   &__item a.active {
     background: var(--light-gray);
     position: relative;
+    box-shadow: 0 1px 0 var(--light-gray);
     
     &::after {
       content: none;
@@ -41,27 +43,11 @@
   }
 }
 
-.tabs__nav__item a:not(.active):after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: calc(100% + 1px);
-  height: 5px;
-  background: var(--light-gray);
-  left: -1px;
-  border-top: 1px solid var(--silver);
-  z-index: 1;
-}
-
-.tabs__nav__item:first-child a:not(.active):after {
-  left: 0;
-}
-
 .tabs__nav--flexible {
   display: flex;
   flex-wrap: nowrap;
   margin: 0 -1rem;
-  @media (--desktop) { display: inline-flex; margin: 0;}
+  @media (--desktop) { display: inline-flex; margin: 0; }
   
   .tabs__nav__item {
     flex: 1 0 auto;

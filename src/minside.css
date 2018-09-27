@@ -3969,29 +3969,15 @@ input:-webkit-autofill{
   -ms-flex:1 0 auto;
   flex:1 0 auto;
   display:block;
+  box-shadow:0 1px 0 #d9d9dc;
 }
 .tabs__nav__item:hover, .tabs__nav__item a.active{
   background:#ededed;
   position:relative;
+  box-shadow:0 1px 0 #ededed;
 }
 .tabs__nav__item:hover::after, .tabs__nav__item a.active::after{
   content:none;
-}
-
-.tabs__nav__item a:not(.active):after{
-  content:'';
-  position:absolute;
-  bottom:0;
-  width:calc(100% + 1px);
-  height:5px;
-  background:#ededed;
-  left:-1px;
-  border-top:1px solid #d9d9dc;
-  z-index:1;
-}
-
-.tabs__nav__item:first-child a:not(.active):after{
-  left:0;
 }
 
 .tabs__nav--flexible{
