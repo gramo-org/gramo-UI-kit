@@ -58,8 +58,8 @@
     <main>
       <!--- Flash message --->
       <div class="flash-message-wrapper">
-        <div class="flash-message flash-message--success" role="alert" aria-live="assertive">
-          <p>ISRC koden kan brukes</p>
+        <div class="flash-message flash-message--error" role="alert" aria-live="assertive">
+          <p>ISRC koden er i bruk</p>
           <a href="#" class="flash-message__close"><span class="icon icon--close"></span></a>
         </div>
       </div>
@@ -267,21 +267,15 @@
               <form class="form">
                 <ol class="list box-list box-list--numbered">
                   <li>
-                    <div class="row" id="ISRC-ok">
+                    <div class="row">
                       <div class="col-xs-12 col--no-flex">
-                        <label class="form__label form__label--required is-valid--simple">ISRC
+                        <label class="form__label form__label--required">ISRC
                           <span class="form__label__help">En ny innspilling må ha en unik ISRC kode</span>
                           <span>
-                            <input type="text" class="form__input form__input--inline form__input--300" value="AHAEG09182938" placeholder="f.eks: NOXXX1501223">
-                            <button class="btn btn--inline btn--secondary">Sjekk ISRC</button>
+                            <input type="text" class="form__input form__input--inline form__input--300 locked" value="AHAEG09182938" placeholder="f.eks: NOXXX1501223" disabled>
+                            <button class="btn btn--inline btn--secondary" disabled>Sjekk ISRC</button>
                           </span>
                         </label>
-
-                        <div class="form__input__valid">
-                          <p class="text--em">
-                            ISRC koden kan brukes
-                          </p>
-                        </div>
                       </div>
                     </div>
                     <div class="row">
@@ -310,17 +304,156 @@
                         </label>
                       </div>
                     </div><!--end .row-->
+                    <a href="#" class="link--trash">Forkast</a>
+                  </li>
+
+                  <li>
+                    <div class="row" id="ISRC-ok">
+                      <div class="col-xs-12 col--no-flex">
+                        <label class="form__label form__label--required">ISRC
+                          <span class="form__label__help">En ny innspilling må ha en unik ISRC kode</span>
+                          <span>
+                            <input type="text" class="form__input form__input--inline form__input--300" value="AHAEG09182938" placeholder="f.eks: NOXXX1501223" disabled>
+                            <button class="btn btn--inline btn--secondary" disabled>Sjekk ISRC</button>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5">
+                        <label class="form__label form__label--required">Tittel
+                          <input type="text" class="form__input" value="Take on Me">
+                        </label>
+                      </div>
+                    </div><!-- end .row -->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5">
+                        <label class="form__label form__label--required">Hovedartist
+                          <input type="text" class="form__input" value="A-ha">
+                        </label>
+                      </div>
+                    </div><!-- end .row -->
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <label class="form__label">Varighet
+                          <input type="time" class="form__input" value="03:24">
+                        </label>
+                      </div>
+                    </div><!--end .row-->
+                    <div class="row">
+                      <div class="col-xs-4 col-sm-2">
+                        <label class="form__label">Side nr.
+                          <input type="number" min="1" value="1" class="form__input form__input--80">
+                        </label>
+                      </div>
+                      <div class="col-xs-4 col-sm-2">
+                        <label class="form__label">Spor nr.
+                          <input type="number" min="1" value="2" class="form__input form__input--80">
+                        </label>
+                      </div>
+                    </div><!--end .row-->
+                  </li>
+
+                  <li>
+                    <div class="row" id="ISRC-found">
+                      <div class="col-xs-12 col--no-flex">
+                        <label class="form__label form__label--required has-error--simple">ISRC
+                          <span class="form__label__help">En ny innspilling må ha en unik ISRC kode</span>
+                          <span>
+                            <input type="text" class="form__input form__input--inline form__input--300" value="AHAEG09182947" placeholder="f.eks: NOXXX1501223">
+                            <button class="btn btn--inline btn--secondary">Sjekk ISRC</button>
+                          </span>
+                        </label>
+
+                        <div class="form__input__errors">
+                          <p class="text--em">
+                            2 innspilling ble funnet i Gramo register
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- end .row -->
+                    <fieldset class="form__fieldset form__fieldset--border">
+                      <legend>Hunting High and Low</legend>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5">
+                          <label class="form__label">ISRC
+                            <input type="text" class="form__input" value="AHAEG09182236" disabled>
+                          </label>
+                        </div>
+                      </div><!-- end .row -->
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5">
+                          <label class="form__label form__label--required">Tittel
+                            <input type="text" class="form__input locked" value="Hunting High and Low" disabled>
+                          </label>
+                        </div>
+                      </div><!-- end .row -->
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5">
+                          <label class="form__label form__label--required">Hovedartist
+                            <input type="text" class="form__input" value="A-Ha" disabled>
+                          </label>
+                        </div>
+                      </div><!-- end .row -->
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                          <label class="form__label">Varighet
+                            <input type="text" class="form__input form__input--60" value="03:36" disabled>
+                          </label>
+                        </div>
+                      </div><!--end .row-->
+                    </fieldset>
+                    <div class="form__section--action form__section--flex">
+                      <a href="create_release-check-ISRC-2.html#check-ISRC" class="btn btn--inline btn--secondary">Prøv på nytt</a>
+                      <a href="create_release-recordings-done.html#recordings-done" class="btn btn--inline btn--primary click-here">Bruk denne</a>
+                    </div>
+                    <fieldset class="form__fieldset form__fieldset--border">
+                      <legend>Hunting High and Low (radio edit)</legend>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5">
+                          <label class="form__label">ISRC (Alternativ)
+                            <input type="text" class="form__input" value="AHAEG09182236" disabled>
+                          </label>
+                        </div>
+                      </div><!-- end .row -->
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5">
+                          <label class="form__label form__label--required">Tittel
+                            <input type="text" class="form__input locked" value="Hunting High and Low" disabled>
+                          </label>
+                        </div>
+                      </div><!-- end .row -->
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-5">
+                          <label class="form__label form__label--required">Hovedartist
+                            <input type="text" class="form__input" value="A-Ha" disabled>
+                          </label>
+                        </div>
+                      </div><!-- end .row -->
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                          <label class="form__label">Varighet
+                            <input type="text" class="form__input form__input--60" value="03:36" disabled>
+                          </label>
+                        </div>
+                      </div><!--end .row-->
+                    </fieldset>
+                    <div class="form__section--action form__section--flex">
+                      <a href="create_release-check-ISRC-2.html#check-ISRC" class="btn btn--inline btn--secondary">Prøv på nytt</a>
+                      <a href="create_release-recordings-done.html#recordings-done" class="btn btn--inline btn--primary click-here">Bruk denne</a>
+                    </div>
                   </li>
                 </ol>
                 <p>
-                  <a href="create_release-check-ISRC-same.html#check-ISRC" class="link--no-line click-here">Legg til ny innspilling</a>
+                  <a href="#" class="link--no-line">Legg til ny innspilling</a>
                 </p>
                 <div class="form__section--action form__section--flex">
                   <a href="create_release-check-ISRC.html" class="btn btn--inline btn--secondary">Avbryt</a>
-                  <button class="btn btn--inline btn--primary">Lagre og gå videre</button>
+                  <button class="btn btn--inline btn--primary" disabled>Lagre og gå videre</button>
                 </div>
               </form>
             </section>
+
           </div>
         </div>
       </section>
