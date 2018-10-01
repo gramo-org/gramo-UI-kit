@@ -65,10 +65,12 @@
     margin-bottom: 1px;
   }
   
-  &--with-btn {
-    display: flex;
+  &--with-btn, &--with-toggle {
     align-items: center;
-    text-align: left;
+    @media (--tablet) {
+      display: flex;
+      text-align: left;
+    }
     
     .message__text {
       flex: 1;
@@ -76,6 +78,22 @@
     
     .btn {
       margin-left: .5rem;
+    }
+  }
+  
+  &--with-toggle {
+    
+    .message__text {
+      flex: 0 0 auto;
+      margin: 0 0 .5rem 0;
+      
+      @media (--tablet) {
+        margin: 0 .5rem 0 0;
+      }
+    }
+    
+    .message__toggle {
+      justify-content: center;
     }
   }
 }

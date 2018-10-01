@@ -6361,22 +6361,44 @@ caption{
   box-shadow:0 1px 0 0 rgba(0,0,0,0.1);
   margin-bottom:1px;
 }
-.message--with-btn{
-  display:-webkit-flex;
-  display:-ms-flexbox;
-  display:flex;
+.message--with-btn, .message--with-toggle{
   -webkit-align-items:center;
   -ms-flex-align:center;
   align-items:center;
-  text-align:left;
 }
-.message--with-btn .message__text{
+@media (min-width: 768px){
+
+  .message--with-btn, .message--with-toggle{
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    text-align:left;
+  }
+}
+.message--with-btn .message__text, .message--with-toggle .message__text{
   -webkit-flex:1;
   -ms-flex:1;
   flex:1;
 }
-.message--with-btn .btn{
+.message--with-btn .btn, .message--with-toggle .btn{
   margin-left:.5rem;
+}
+.message--with-toggle .message__text{
+  -webkit-flex:0 0 auto;
+  -ms-flex:0 0 auto;
+  flex:0 0 auto;
+  margin:0 0 .5rem 0;
+}
+@media (min-width: 768px){
+
+  .message--with-toggle .message__text{
+    margin:0 .5rem 0 0;
+  }
+}
+.message--with-toggle .message__toggle{
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
 }
 .statusboard{
   text-align:center;
