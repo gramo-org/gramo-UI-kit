@@ -4569,10 +4569,10 @@ main.pull .bucket{
 .fake-table__row--foot:after{
   content:'';
   height:10px;
-  width:calc(100% + 2px);
+  width:calc(100% + 2.2rem);
   background:#f3f3f3;
   position:absolute;
-  left:-1px;
+  left:-1.1rem;
   bottom:-16px;
   z-index:2;
   border-top:1px solid #d9d9dc;

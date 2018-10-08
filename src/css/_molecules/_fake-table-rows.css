@@ -112,10 +112,10 @@
     &:after {
       content: '';
       height: 10px;
-      width: calc(100% + 2px);
+      width: calc(100% + 2.2rem);
       background: var(--base-background-color);
       position: absolute;
-      left: -1px;
+      left: -1.1rem;
       bottom: -16px; /* changed from -14px */
       z-index: 2;
       border-top: 1px solid var(--table-border-color);
