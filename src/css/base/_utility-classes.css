@@ -398,16 +398,12 @@ td.text--center,
   @media (--desktop) {
     max-width: 100px;
   }
+}
 
-  /*&::after {
-    content:'';
-    width:100%;
-    height:100%;
-    position:absolute;
-    left:0;
-    top:0;
-    background:linear-gradient(to right, transparent 120px, var(--gramo-white));
-  }*/
+.text--truncated {
+  display: inline-block;
+  vertical-align: middle;
+  @extend .truncated;
 }
 
 /* Clearfix */
