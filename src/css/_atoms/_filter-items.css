@@ -6,6 +6,10 @@
 
   a {
     text-decoration: none;
+    
+    &:last-child {
+      vertical-align: middle;
+    }
   }
 
   &__remove {

@@ -3419,6 +3419,9 @@ hr, .horizontal-rule{
 .filter-items a{
   text-decoration:none;
 }
+.filter-items a:last-child{
+  vertical-align:middle;
+}
 .filter-items__remove{
   font-size:55%;
   text-decoration:none;
