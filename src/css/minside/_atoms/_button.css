@@ -94,4 +94,33 @@
     display: inline-block;
     margin-bottom: 0;
   }
+  
+  &--add {
+    background: none;
+    border: 0;
+    color: var(--gramo-sea-green);
+    padding-left: 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.6rem;
+    
+    &:before {
+      content: '+';
+      background: var(--gramo-sea-green);
+      text-align: center;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 2rem;
+      display: inline-block;
+      margin-right: .5rem;
+      color: var(--gramo-white);
+      font-size: 2.3rem;
+      line-height: .79;
+      font-weight: 300;
+    }
+    
+    &:hover {
+      background: none;
+    }
+  }
 }

@@ -3018,6 +3018,36 @@ input[type="number"].four-digit{
   display:inline-block;
   margin-bottom:0;
 }
+.btn--add{
+  background:none;
+  border:0;
+  color:#31798d;
+  padding-left:0;
+  display:-webkit-inline-flex;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
+  font-size:1.6rem;
+}
+.btn--add:before{
+  content:'+';
+  background:#31798d;
+  text-align:center;
+  height:2rem;
+  width:2rem;
+  border-radius:2rem;
+  display:inline-block;
+  margin-right:.5rem;
+  color:#fdfdfd;
+  font-size:2.3rem;
+  line-height:.79;
+  font-weight:300;
+}
+.btn--add:hover{
+  background:none;
+}
 .form__label.is-valid::after, .form__label.has-error::after{
   color:#504f56;
   font-family:'minside-icons';
