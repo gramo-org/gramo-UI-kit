@@ -3101,7 +3101,7 @@ hr, .horizontal-rule{
   padding:0;
   position:relative;
   text-align:center;
-  margin:4rem 0 3rem 0;
+  margin:2.4rem 0;
   background:#d9d9dc;
   clear:both;
 }
@@ -3156,9 +3156,6 @@ hr, .horizontal-rule{
   border-top-color:#f9f9f9;
   border-width:9px;
   left:50%;
-}
-hr.horizontal-rule{
-  margin:2.4rem 0;
 }
 hr.horizontal-rule--in-list{
   margin:.6rem 0;
