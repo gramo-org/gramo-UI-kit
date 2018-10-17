@@ -3023,6 +3023,7 @@ input[type="number"].four-digit{
   border:0;
   color:#31798d;
   padding-left:0;
+  padding-right:0;
   display:-webkit-inline-flex;
   display:-ms-inline-flexbox;
   display:inline-flex;

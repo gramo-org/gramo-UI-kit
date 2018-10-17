@@ -301,7 +301,7 @@ $('.link--edit').click(function(){
     $(this).closest('section').find('.form').find('.searchable-list').not('.locked').toggleClass('searchable-list--disabled');
     $(this).toggleClass('link--edit--hidden btn btn--secondary');
     $(this).closest('section').find('.link--trash').toggleClass('link--trash--hidden');
-    $(this).closest('section').find('.link--add').toggleClass('link--add--hidden');
+    $(this).closest('section').find('.btn--add').toggleClass('link--add--hidden');
     $(this).closest('section').find('.text--help').toggleClass('text--help--hidden');
     $(this).closest('section').find('.link-prototype').toggleClass('link-prototype--hidden');
     
