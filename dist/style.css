@@ -6239,6 +6239,10 @@ tr > td:last-child{
   height:calc(100% + 1px);
 }
 
+.table--basic td:not(.table--basic__divider):empty{
+  min-width:100px;
+}
+
 @media only screen and (max-width: 768px),
 (min-device-width: 968px) and (max-device-width: 1024px){
   table, caption, thead, tbody, th, td, tr{

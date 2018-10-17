@@ -150,6 +150,10 @@ tr > td:last-child {
       height: calc(100% + 1px);
     }
   }
+  /* stops table jumping when one side is empty */
+  td:not(.table--basic__divider):empty {
+  min-width: 100px;
+  }
 }
 
 /*** Make table responsive - not mobile first in this case! ***/
