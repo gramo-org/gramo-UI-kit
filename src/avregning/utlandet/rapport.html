@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script>
+  window.onload = window.location.hash = 'import';
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item">
+              <a href="/" class="">Dashbord</a>
+            </li>
+            <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/file-statuses">Innleste filer</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/deviations">Avvik</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/broadcasters">Program admin</a>
+                </li>
+              </ul>
+            </li>
+            <li id="matching" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-750="750">Matching</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/identified-playback-group-summaries">Identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=null">Ikke identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=true">Restliste</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unreleased-music">Ikke utgitt</a>
+                </li>
+              </ul>
+            </li>
+            <li id="discography" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-854="854">Diskografi</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/file-statuses">Innlest kladd</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/search?query=%20%20&amp;type=releases">Søk</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/worklist">Arbeidsliste</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/federations">Rettighetshaverorg.</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="#" class="active">VRDB import</a>
+            </li>
+            <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-965="965">Min side</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Brukere</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/distribution">Avregning</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/payments">Utbetalinger</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/ipd">IPD</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/users/new">Ny bruker</a>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="../../img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+      <section class="container container--hd">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
+            <li class="tabs__nav__item tabs__nav__item--search">
+              <a href="#search">
+                <span class="icon--search"></span> 
+                Søk
+              </a>
+            </li>
+            <li class="tabs__nav__item">
+              <a href="#import">
+                <span class="tabs__nav__item__type tabs__nav__item__type--royalties">Vederlag</span>
+                Import
+              </a>
+            </li>
+          </ul>
+          <section id="search" class="tabs__section">
+            <div class="toolbar">
+              <div class="search--with-dropdown">
+                <label class="form__label no-margin--right">
+                  <select class="select select--fluid select--with-search align--vertical-center">
+                    <option>Innspilling</option>
+                    <option>Utgivelse</option>
+                    <option>Person</option>
+                    <option>Organisasjon</option>
+                    <option>Gruppe</option>
+                    <option>Label</option>
+                  </select>
+                </label>
+                <div class="search">
+                  <form action="" class="search__form search__form--in-toolbar">
+                    <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                    <button class="search__submit"></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col--no-flex align--vertical-center">
+                <label class="form__label">
+                  <input type="checkbox" checked> Eksakt søk
+                </label>
+                <label class="form__label">
+                  <input type="checkbox" checked> Vis duplikater
+                </label>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
+              </div>
+              <div class="toolbar__lower">
+                <div class="row">
+                  <div class="col align--vertical-center">
+                    <span class="text--semibold text--nowrap">4 treff</span>
+                  </div>
+                  <div class="col align--vertical-center">
+                    <a href="#" class="btn btn--secondary text--nowrap">Velg alle</a>
+                  </div>
+                  <div class="col-sm text--right col--no-flex">
+                    <button class="btn btn--secondary" disabled>Legg til duplikatliste</button>
+                    <button class="btn btn--secondary" disabled>Legg til bulkliste</button>
+                  </div>
+                </div>
+              </div><!--end .toolbar__lower-->
+            </div><!--end .toolbar-->
+          </section><!--/.tabs__section-->
+          <section id="vrdb" class="tabs__section">
+            <div class="toolbar">
+              <div class="col">
+                <h1 class="text--nowrap">Innlesing vederlag utland</h1>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <ol class="wizard-steps wizard-steps--no-margin">
+                  <li>1. Opplastning</li>
+                  <li>2. Klargjøring</li>
+                  <li>3. Postering</li>
+                  <li class="selected">4. Rapport</li>
+                </ol>
+              </div>
+              
+              
+            </div><!--end .toolbar-->
+            <div class="section-header">
+              <div class="section-header--divided">
+                <div class="section-header__meta section-header__meta--cols">
+                  <div class="col align--vertical-center">
+                    <h2>PPL_import_011218.xml</h2>
+                  </div>
+                  <span class="col--arrow"></span>
+                  <div class="col">
+                    <h2 class="text--thin">1039,00</h2>
+                    <h4>Ikke postert</h4>
+                  </div>
+                  <div class="col">
+                    <h2 class="text--thin">200.000</h2>
+                    <h4>Postert</h4>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-xs col--no-flex text--right no-padding">
+                <a href="#" class="btn btn--primary">Last ned bokføringsbilag</a>
+              </div>
+            </div>
+            <table class="table table--fluid">
+              <thead>
+                <tr>
+                  <th>IPN</th>
+                  <th>Navn</th>
+                  <th>Gramo ID</th>
+                  <th>Lokal ID</th>
+                  <th>Beløp (GBP)</th>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>304835</td>
+                  <td>John Doe</td>
+                  <td></td>
+                  <td>2091093</td>
+                  <td>-249.00</td>
+                  <td>
+                    <div class="tooltip-wrapper">
+                      <i class="icon--warning"></i>
+                      <div class="tooltip">
+                        <ul class="tooltip__list">
+                          <li>Utøver ikke funnet</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>493202</td>
+                  <td>Sara Chang</td>
+                  <td></td>
+                  <td>8483767</td>
+                  <td>1023.40</td>
+                  <td>
+                    <div class="tooltip-wrapper">
+                      <i class="icon--warning"></i>
+                      <div class="tooltip">
+                        <ul class="tooltip__list">
+                          <li>Utøver ikke funnet</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>204735</td>
+                  <td>Richie Smith</td>
+                  <td></td>
+                  <td>9829747</td>
+                  <td>139.00</td>
+                  <td>
+                    <div class="tooltip-wrapper">
+                      <i class="icon--warning"></i>
+                      <div class="tooltip">
+                        <ul class="tooltip__list">
+                          <li>Utøver ikke funnet</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section><!--end /.tabs__section-->
+        </div><!--end /.tabs-->
+      </section><!--end /.container-->
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="../../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../../js/default.js"></script>
+
+</body>
+</html>

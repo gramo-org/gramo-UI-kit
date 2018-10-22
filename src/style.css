@@ -2221,6 +2221,12 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
     width:auto;
   }
 }
+@media (min-width: 768px){
+
+  .select--inline{
+    width:auto;
+  }
+}
 .select--fixed-width{
   max-width:135px;
 }
@@ -4887,7 +4893,7 @@ main.pull .bucket{
 .tabs__nav__item__type--album:before{
   content:"\e917";
 }
-.tabs__nav__item__type--performer:before, .tabs__nav__item__type--group:before, .tabs__nav__item__type--person:before, .tabs__nav__item__type--inheritance:before{
+.tabs__nav__item__type--performer:before, .tabs__nav__item__type--group:before, .tabs__nav__item__type--person:before, .tabs__nav__item__type--inheritance:before, .tabs__nav__item__type--royalties:before{
   content:"\e916";
   top:.12rem;
 }
@@ -7129,9 +7135,25 @@ tr > td:last-child{
   margin-top:1rem;
 }
 
+.file-upload__list ul li:only-child{
+  border:0;
+  margin-bottom:0;
+}
+
+.file-upload__list--free-standing{
+  background:#ededed;
+  border:1px solid #d9d9dc;
+  padding:1rem 2rem;
+  margin-bottom:1.2rem;
+}
+
 .file-upload__list--free-standing ul{
   max-height:none;
   min-height:0;
+}
+
+.file-upload__list--free-standing ul li{
+  border-bottom-color:#a5a4ab;
 }
 
 .file-upload--in-header{

@@ -29,7 +29,8 @@
   &--performer:before,
   &--group:before,
   &--person:before,
-  &--inheritance:before {
+  &--inheritance:before,
+  &--royalties:before {
     content: "\e916";
     top: .12rem;
   }

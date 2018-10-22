@@ -32,6 +32,10 @@
     min-width: 0;
     @media (--tablet) { width: auto; }
   }
+  
+  &--inline {
+    @media (--tablet) { width: auto; }
+  }
 
   &--fixed-width {
     max-width: 135px;
