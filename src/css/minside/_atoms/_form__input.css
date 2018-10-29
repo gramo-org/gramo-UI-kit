@@ -187,11 +187,11 @@ input:-webkit-autofill {
   visibility: hidden;
   position: absolute;
   top: 55%;
-  left: 155px;
+  right: 28px;
   
   @media (--desktop) { visibility: visible; }
   
   a {
-    color: var(--silver);
+    color: var(--gramo-red);
   }
 }
