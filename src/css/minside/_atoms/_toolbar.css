@@ -33,7 +33,8 @@
     }
     
     .form__input {
-      visibility: hidden;
+      /* visibility: hidden; */
+      opacity: 0;
       position: absolute;
       
       &:checked + .fake-checkbox::after {
