@@ -192,6 +192,6 @@ input:-webkit-autofill {
   @media (--desktop) { visibility: visible; }
   
   a {
-    color: var(--gramo-red);
+    color: var(--off-gray);
   }
 }
