@@ -6275,6 +6275,12 @@ caption{
   }
 }
 
+.section-header--with-toggle .section__header__action{
+  -webkit-flex:1 0 auto;
+  -ms-flex:1 0 auto;
+  flex:1 0 auto;
+}
+
 .section-header__toggle{
   -webkit-flex:1 0 auto;
   -ms-flex:1 0 auto;
