@@ -90,6 +90,10 @@
     content: "\e911";
 }
 
+.icon--empty-state-error:before {
+    content: "\e90e";
+}
+
 .icon--music:before {
     content: "\e913";
 }

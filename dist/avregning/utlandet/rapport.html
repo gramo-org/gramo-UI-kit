@@ -84,7 +84,7 @@
               </ul>
             </li>
             <li class="vertical__nav__item">
-              <a href="#" class="active">VRDB import</a>
+              <a href="#">VRDB import</a>
             </li>
             <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
               <a data-ember-action="" data-ember-action-965="965">Min side</a>
@@ -94,11 +94,19 @@
                 </li>
               </ul>
             </li>
-            <li class="vertical__nav__item">
-              <a href="/distribution">Avregning</a>
-            </li>
-            <li class="vertical__nav__item">
-              <a href="/payments">Utbetalinger</a>
+            <li class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+              <a href="/distribution">Avr. og utbetaling</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Avregning</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side" class="active">Vederlag fra utland</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Utbetalinger</a>
+                </li>
+              </ul>
             </li>
             <li class="vertical__nav__item">
               <a href="/ipd">IPD</a>
@@ -211,11 +219,11 @@
                   </div>
                   <span class="col--arrow"></span>
                   <div class="col">
-                    <h2 class="text--thin">1039,00</h2>
+                    <h2 class="text--thin">9130,40 kr</h2>
                     <h4>Ikke postert</h4>
                   </div>
                   <div class="col">
-                    <h2 class="text--thin">200.000</h2>
+                    <h2 class="text--thin">200000,32 kr</h2>
                     <h4>Postert</h4>
                   </div>
                 </div>
@@ -225,68 +233,35 @@
                 <a href="#" class="btn btn--primary">Last ned bokføringsbilag</a>
               </div>
             </div>
-            <table class="table table--fluid">
+            <hr class="horizontal-rule">
+            <div class="section-header">
+              <h2>Utøvere ikke funnet</h2>
+            </div>
+            <table class="table">
               <thead>
                 <tr>
-                  <th>IPN</th>
                   <th>Navn</th>
-                  <th>Gramo ID</th>
-                  <th>Lokal ID</th>
-                  <th>Beløp (GBP)</th>
-                  <td></td>
+                  <th>IPN</th>
+                  <th class="text--right">Beløp (GBP)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>304835</td>
-                  <td>John Doe</td>
-                  <td></td>
-                  <td>2091093</td>
-                  <td>-249.00</td>
-                  <td>
-                    <div class="tooltip-wrapper">
-                      <i class="icon--warning"></i>
-                      <div class="tooltip">
-                        <ul class="tooltip__list">
-                          <li>Utøver ikke funnet</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>493202</td>
                   <td>Sara Chang</td>
-                  <td></td>
-                  <td>8483767</td>
-                  <td>1023.40</td>
-                  <td>
-                    <div class="tooltip-wrapper">
-                      <i class="icon--warning"></i>
-                      <div class="tooltip">
-                        <ul class="tooltip__list">
-                          <li>Utøver ikke funnet</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
+                  <td>493202</td>
+                  <td class="text--right">1023,40</td>
                 </tr>
+                
                 <tr>
-                  <td>204735</td>
+                  <td>John Doe</td>
+                  <td>304835</td>
+                  <td class="text--right">-249,00</td>
+                </tr>
+                
+                <tr>
                   <td>Richie Smith</td>
-                  <td></td>
-                  <td>9829747</td>
-                  <td>139.00</td>
-                  <td>
-                    <div class="tooltip-wrapper">
-                      <i class="icon--warning"></i>
-                      <div class="tooltip">
-                        <ul class="tooltip__list">
-                          <li>Utøver ikke funnet</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
+                  <td>204735</td>
+                  <td class="text--right">139,00</td>
                 </tr>
               </tbody>
             </table>

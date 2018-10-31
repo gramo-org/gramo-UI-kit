@@ -1559,6 +1559,10 @@ table{
     content:"\e911";
 }
 
+.icon--empty-state-error:before{
+    content:"\e90e";
+}
+
 .icon--music:before{
     content:"\e913";
 }
@@ -6783,6 +6787,12 @@ tr > td:last-child{
 }
 .empty-state__icon{
   margin-top:5rem;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
 }
 .empty-state__icon i{
   color:#d9d9dc;
@@ -6792,6 +6802,18 @@ tr > td:last-child{
   height:18rem;
   line-height:1;
   border-radius:6px;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
+}
+.empty-state__icon i.icon--empty-state-error{
+  font-size:12rem;
 }
 .empty-state--small{
   min-height:300px;

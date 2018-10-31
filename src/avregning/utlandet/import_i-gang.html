@@ -84,7 +84,7 @@
               </ul>
             </li>
             <li class="vertical__nav__item">
-              <a href="#" class="active">VRDB import</a>
+              <a href="#">VRDB import</a>
             </li>
             <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
               <a data-ember-action="" data-ember-action-965="965">Min side</a>
@@ -94,11 +94,19 @@
                 </li>
               </ul>
             </li>
-            <li class="vertical__nav__item">
-              <a href="/distribution">Avregning</a>
-            </li>
-            <li class="vertical__nav__item">
-              <a href="/payments">Utbetalinger</a>
+            <li class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+              <a href="/distribution">Avr. og utbetaling</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Avregning</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side" class="active">Vederlag fra utland</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Utbetalinger</a>
+                </li>
+              </ul>
             </li>
             <li class="vertical__nav__item">
               <a href="/ipd">IPD</a>
@@ -191,10 +199,6 @@
             <div class="toolbar">
               <div class="col">
                 <h1 class="text--nowrap">Innlesing vederlag utland</h1>
-              </div>
-              <div class="col align--vertical-center">
-                <input type="file" name="file" id="file" class="form__input--file">
-                <label for="file" class="btn btn--secondary text--nowrap">Velg fil</label>
               </div>
               <div class="col-xs col--no-flex text--right">
                 <ol class="wizard-steps wizard-steps--no-margin">
