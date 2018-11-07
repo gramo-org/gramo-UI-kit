@@ -1935,6 +1935,10 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
   -webkit-appearance:none;
 }
 
+.form__input--with-italic-placeholder::-webkit-input-placeholder{
+  font-style:italic;
+}
+
 .form__field-to-and-from .form__input[type="date"]{
   max-width:130px;
 }

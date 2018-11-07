@@ -84,6 +84,12 @@ input[type="radio"], input[type="checkbox"],
   }
 }
 
+.form__input--with-italic-placeholder {
+  &::-webkit-input-placeholder {
+    font-style: italic;
+  }
+}
+
 /* Limit width of date input when there are two per row */
 
 .form__field-to-and-from .form__input[type="date"] {
