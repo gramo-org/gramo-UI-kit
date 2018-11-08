@@ -133,138 +133,67 @@
         </div>
       </header>
       <section class="container container--hd">
-        <div class="tabs">
-          <ul class="tabs__nav tabs__nav--flexible">
-            <li class="tabs__nav__item tabs__nav__item--search">
-              <a href="#search">
-                <span class="icon--search"></span> 
-                Søk
-              </a>
-            </li>
-            <li class="tabs__nav__item">
-              <a href="#import">
-                <span class="tabs__nav__item__type tabs__nav__item__type--royalties">Vederlag</span>
-                Import
-              </a>
-            </li>
-          </ul>
-          <section id="search" class="tabs__section">
-            <div class="toolbar">
-              <div class="search--with-dropdown">
-                <label class="form__label no-margin--right">
-                  <select class="select select--fluid select--with-search align--vertical-center">
-                    <option>Innspilling</option>
-                    <option>Utgivelse</option>
-                    <option>Person</option>
-                    <option>Organisasjon</option>
-                    <option>Gruppe</option>
-                    <option>Label</option>
-                  </select>
-                </label>
-                <div class="search">
-                  <form action="" class="search__form search__form--in-toolbar">
-                    <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
-                    <button class="search__submit"></button>
-                  </form>
-                </div>
+        <div class="section-header section-header--divided section-header--with-border">
+          <header>
+            <h1 class="heading--inline">Innlesing vederlag utland</h1>
+            <ol class="wizard-steps">
+              <li>1. Opplastning</li>
+              <li>2. Klargjøring</li>
+              <li>3. Postering</li>
+              <li class="selected">4. Rapport</li>
+            </ol>
+          </header>
+          <div class="section-header__below">
+            <div class="section-header__meta section-header__meta--cols">
+              <div class="col align--vertical-center">
+                <h2>PPL_import_011218.xml</h2>
               </div>
-              <div class="col--no-flex align--vertical-center">
-                <label class="form__label">
-                  <input type="checkbox" checked> Eksakt søk
-                </label>
-                <label class="form__label">
-                  <input type="checkbox" checked> Vis duplikater
-                </label>
-              </div>
-              <div class="col-xs col--no-flex text--right">
-                <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
-              </div>
-              <div class="toolbar__lower">
-                <div class="row">
-                  <div class="col align--vertical-center">
-                    <span class="text--semibold text--nowrap">4 treff</span>
-                  </div>
-                  <div class="col align--vertical-center">
-                    <a href="#" class="btn btn--secondary text--nowrap">Velg alle</a>
-                  </div>
-                  <div class="col-sm text--right col--no-flex">
-                    <button class="btn btn--secondary" disabled>Legg til duplikatliste</button>
-                    <button class="btn btn--secondary" disabled>Legg til bulkliste</button>
-                  </div>
-                </div>
-              </div><!--end .toolbar__lower-->
-            </div><!--end .toolbar-->
-          </section><!--/.tabs__section-->
-          <section id="vrdb" class="tabs__section">
-            <div class="toolbar">
+              <span class="col--arrow"></span>
               <div class="col">
-                <h1 class="text--nowrap">Innlesing vederlag utland</h1>
+                <h2 class="text--thin">9130,40 kr</h2>
+                <h4>Ikke postert</h4>
               </div>
-              <div class="col-xs col--no-flex text--right">
-                <ol class="wizard-steps wizard-steps--no-margin">
-                  <li>1. Opplastning</li>
-                  <li>2. Klargjøring</li>
-                  <li>3. Postering</li>
-                  <li class="selected">4. Rapport</li>
-                </ol>
-              </div>
-              
-              
-            </div><!--end .toolbar-->
-            <div class="section-header">
-              <div class="section-header--divided">
-                <div class="section-header__meta section-header__meta--cols">
-                  <div class="col align--vertical-center">
-                    <h2>PPL_import_011218.xml</h2>
-                  </div>
-                  <span class="col--arrow"></span>
-                  <div class="col">
-                    <h2 class="text--thin">9130,40 kr</h2>
-                    <h4>Ikke postert</h4>
-                  </div>
-                  <div class="col">
-                    <h2 class="text--thin">200000,32 kr</h2>
-                    <h4>Postert</h4>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-xs col--no-flex text--right no-padding">
-                <a href="#" class="btn btn--primary">Last ned bokføringsbilag</a>
+              <span class="col--arrow"></span>
+              <div class="col">
+                <h2 class="text--thin">200000,32 kr</h2>
+                <h4>Postert</h4>
               </div>
             </div>
-            <hr class="horizontal-rule">
-            <div class="section-header">
-              <h2>Utøvere ikke funnet</h2>
+            <div class="section-header__toolbar">
+              <a href="#" class="btn btn--primary">Last ned bokføringsbilag</a>
             </div>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Navn</th>
-                  <th>IPN</th>
-                  <th class="text--right">Beløp (GBP)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>John Doe</td>
-                  <td>304835</td>
-                  <td class="text--right">-249,00</td>
-                </tr>              
-                <tr>
-                  <td>Richie Smith</td>
-                  <td>204735</td>
-                  <td class="text--right">139,00</td>
-                </tr>  
-                <tr>
-                  <td>Sara Chang</td>
-                  <td>493202</td>
-                  <td class="text--right">1023,40</td>
-                </tr>
-              </tbody>
-            </table>
-          </section><!--end /.tabs__section-->
-        </div><!--end /.tabs-->
+          </div>
+        </div>
+
+        <div class="section-header">
+          <h2>Utøvere ikke funnet</h2>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Navn</th>
+              <th>IPN</th>
+              <th class="text--right">Beløp (GBP)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>304835</td>
+              <td class="text--right">-249,00</td>
+            </tr>              
+            <tr>
+              <td>Richie Smith</td>
+              <td>204735</td>
+              <td class="text--right">139,00</td>
+            </tr>  
+            <tr>
+              <td>Sara Chang</td>
+              <td>493202</td>
+              <td class="text--right">1023,40</td>
+            </tr>
+          </tbody>
+        </table>
       </section><!--end /.container-->
     </main>
   </div><!--End site-wrapper-->
