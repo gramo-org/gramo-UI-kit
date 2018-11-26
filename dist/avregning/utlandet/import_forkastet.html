@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../style.css">
+  <script>
+  window.onload = window.location.hash = 'import';
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item">
+              <a href="/" class="">Dashbord</a>
+            </li>
+            <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/file-statuses">Innleste filer</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/deviations">Avvik</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/broadcasters">Program admin</a>
+                </li>
+              </ul>
+            </li>
+            <li id="matching" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-750="750">Matching</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/identified-playback-group-summaries">Identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=null">Ikke identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=true">Restliste</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unreleased-music">Ikke utgitt</a>
+                </li>
+              </ul>
+            </li>
+            <li id="discography" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-854="854">Diskografi</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/file-statuses">Innlest kladd</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/search?query=%20%20&amp;type=releases">Søk</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/worklist">Arbeidsliste</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/federations">Rettighetshaverorg.</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="#">VRDB import</a>
+            </li>
+            <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-965="965">Min side</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Brukere</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+              <a href="/distribution">Avr. og utbetaling</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Avregning</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side" class="active">Vederlag fra utland</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Utbetalinger</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/ipd">IPD</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/users/new">Ny bruker</a>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="../../img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+      <section class="container container--hd">
+        <div class="section-header section-header--divided section-header--with-border">
+          <header>
+            <h1 class="heading--inline">Innlesing vederlag utland</h1>
+            <ol class="wizard-steps">
+              <li>1. Opplastning</li>
+              <li class="selected">2. Klargjøring</li>
+              <li>3. Postering</li>
+              <li>4. Rapport</li>
+            </ol>
+          </header>
+        </div>
+        <hr class="horizontal-rule horizontal-rule--spacer">
+        <div class="empty-state">
+          <h3>Filen ble forkastet</h3>
+          <a href="import-file.html">Last opp en ny fil</a>
+          <div class="empty-state__icon">
+            <i class="icon--empty-state-trash"></i>
+          </div>
+        </div>
+      </section><!--end /.container-->
+    </main>
+  </div><!--End site-wrapper-->
+
+<script src="../../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../../js/default.js"></script>
+
+</body>
+</html>
