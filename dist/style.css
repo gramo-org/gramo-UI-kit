@@ -1873,6 +1873,27 @@ table{
 .form__label--new .form__input{
   padding-left:3rem;
 }
+.form__label--inside{
+  position:relative;
+}
+.form__label--inside span{
+  position:absolute;
+  top:.65rem;
+  left:.6rem;
+  color:#a5a4ab;
+  font-weight:400;
+}
+.form__label--inside .form__input{
+  padding-left:2.4rem;
+}
+
+.form__label--fractional{
+  margin-left:-3.1rem;
+}
+
+.form__label--fractional .form__input{
+  padding-left:3rem;
+}
 .form__input{
   border:1px solid #d9d9dc;
   padding:0.55rem;

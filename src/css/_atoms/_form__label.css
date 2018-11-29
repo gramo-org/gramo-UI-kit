@@ -93,3 +93,28 @@
     padding-left: 3rem;
   }
 }
+
+/* Monetary inputs with 2 parts main and fractional */
+.form__label--inside {
+  position: relative;
+  
+  span {
+    position: absolute;
+    top: .65rem;
+    left: .6rem;
+    color: var(--off-gray);
+    font-weight: var(--normal);
+  }
+  
+  .form__input {
+    padding-left: 2.4rem;
+  }
+}
+
+.form__label--fractional {
+  margin-left: -3.1rem;
+  
+  .form__input {
+    padding-left: 3rem;
+  }
+}
