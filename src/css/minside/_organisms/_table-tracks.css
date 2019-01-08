@@ -210,3 +210,33 @@
     }
   }
 }
+
+.table__row--new {
+  display: block;
+  @media (--desktop) {
+    display: table-row;
+  }
+  .table__cell--move,
+  .table__cell--trash {
+    vertical-align: top;
+  }
+  
+  .table__cell--trash a {
+    @media (--desktop) { top: 1.5rem; }
+  }
+}
+
+.table__cell-for-search {
+  width: 100%;
+  &::before {
+    content: none!important;
+  }
+}
+
+.table--in-row {
+  tr {
+    margin: 0 1px;
+    padding-left: 0;
+    border-width: 1px;
+  }
+}

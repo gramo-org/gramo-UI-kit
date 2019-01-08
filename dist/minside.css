@@ -5455,7 +5455,7 @@ caption{
 }
 @media (max-width: 960px){
 
-  .table--list tr:not([hidden]){
+  .table--list tr:not([hidden]):not(.table__row--new){
     display:-webkit-flex;
     display:-ms-flexbox;
     display:flex;
@@ -6077,6 +6077,42 @@ caption{
     left:-5rem;
     top:-2rem;
   }
+}
+
+.table__row--new{
+  display:block;
+}
+
+@media (min-width: 960px){
+
+  .table__row--new{
+    display:table-row;
+  }
+}
+
+.table__row--new .table__cell--move, .table__row--new .table__cell--trash{
+  vertical-align:top;
+}
+
+@media (min-width: 960px){
+
+  .table__row--new .table__cell--trash a{
+    top:1.5rem;
+  }
+}
+
+.table__cell-for-search{
+  width:100%;
+}
+
+.table__cell-for-search::before{
+  content:none!important;
+}
+
+.table--in-row tr{
+  margin:0 1px;
+  padding-left:0;
+  border-width:1px;
 }
 .list{
   list-style:none;

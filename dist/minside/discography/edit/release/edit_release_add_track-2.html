@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
   <link rel="stylesheet" href="../../../../minside.css">
-
+   
   
 </head>
 <body>
@@ -271,8 +271,8 @@
                   
                   <tr class="">
                     <td class="table__cell--move">
-                      <a href="edit_release_add_track_move_up.html#track-info"><span class="icon icon--move-up click-here">
-                      <a href="#"><span class="icon icon--move-down"></span></a>
+                      <a href="#"><span class="icon icon--move-up"></span></a>
+                      <a href="#" class="link--disabled"><span class="icon icon--move-down"></span></a>
                     </td>
                     <td data-label="Innspillingstittel" class="table__cell--left table__cell--title"><a href="#">Take on Me</a></td>
                     <td data-label="Hovedartist" class="table__cell--left">A-HA</td>
@@ -284,40 +284,59 @@
                       <a href="#"><span class="icon icon--trash"></span></a>
                     </td>
                   </tr>
-                  <tr class="table__row--no-count">
-                    <td colspan="8">
-                      <a href="#" class="link--no-line link--add btn btn--inline btn--primary">Legg til nytt spor</a>
-                    </td>
-                  </tr>
                 </tbody>
                 <tbody>
                   <tr class="table__row--no-count">
                     <td colspan="7" class="table__cell--side-number table__cell--left">Side 2</td>
                     <td class="text--right table__cell--delete"><a href="#" class="link-prototype"><span class="icon icon--close"></span></a></td>
                   </tr>
-                  <tr class="">
+                  <tr class="table__row--new">
                     <td class="table__cell--move">
-                      <a href="edit_release_move_side.html#track-info"><span class="icon icon--move-up click-here"></span></a>
+                      <a href="#"><span class="icon icon--move-up"></span></a>
                       <a href="#" class="link--disabled"><span class="icon icon--move-down"></span></a>
                     </td>
-                    <td data-label="Innspillingstittel" class="table__cell--left table__cell--title"><a href="#">The Sun Always Shines on TV</a></td>
-                    <td data-label="Hovedartist" class="table__cell--left">A-HA</td>
-                    <td data-label="Label" class="table__cell--left">Warner Bros. Records</td>
-                    <td data-label="ISRC" class="table__cell--left">AHAEG09182947</td>
-                    <td data-label="Dato" class="text--right">1985-10-28</td>
-                    <td data-label="Varighet" class="text--right">03:24</td>
+                    <td colspan="6" class="table__cell-for-search">
+                      <div class="search">
+                        <label class="search__form search__form--left">
+                          <input type="text" class="form__input" value="The Sun" placeholder="Søk..." />
+                          <button class="search__submit"></button>
+                        </label>
+                      </div>
+                      <table class="table table--list table--five text--normal table--in-row">
+                        <thead>
+                          <tr>
+                            <th>Innspillingstittel</th>
+                            <th>Hovedartist</th>
+                            <th>Varighet</th>
+                            <th>Utgivelsesdato</th>
+                            <th>ISRC</th>
+                          </tr> 
+                        </thead>
+                        <tbody>
+                          <tr class="row--clickable" data-href="edit_release_add_track_done.html#track-info">
+                            <td data-label="Tittel" class="table__cell--truncated"><span class="click-here">The Sun Always Shines On T.V.</span></td>
+                            <td data-label="Hovedartist" class="table__cell--truncated table__cell--left">A-ha</td>
+                            <td data-label="Varighet" class="table__cell--truncated table__cell--left">00:04:00</td>
+                            <td data-label="Utgitt" class="table__cell--truncated">2016-09-06</td>
+                            <td data-label="ISRC" class="table__cell--truncated">NOGNA9504060</td>
+                          </tr>
+                          <tr class="table__row--selected">
+                            <td data-label="Tittel" class="table__cell--truncated">The Sun Rising</td>
+                            <td data-label="Hovedartist" class="table__cell--truncated table__cell--left">Beloved</td>
+                            <td data-label="Varighet" class="table__cell--truncated table__cell--left">00:03:00</td>
+                            <td data-label="Utgitt" class="table__cell--truncated">2016-09-06</td>
+                            <td data-label="ISRC" class="table__cell--truncated">NOREG9205400</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
                     <td class="text--right table__cell--trash">
-                      <a href="edit_release_add_side_done.html#track-info"><span class="icon icon--trash click-here"></span></a>
+                      <a href="#"><span class="icon icon--trash"></span></a>
                     </td>
                   </tr>
-                  <tr class="table__row--no-count">
-                    <td colspan="8">
-                      <a href="#" class="link--no-line link--add btn btn--inline btn--primary">Legg til nytt spor</a>
-                    </td>
-                  </tr>
-                </tbody> 
+                </tbody>
               </table>
-              <a href="#" class="btn btn--add">Legg til ny side</a>
+              
             </section>
           </div>
         </div>

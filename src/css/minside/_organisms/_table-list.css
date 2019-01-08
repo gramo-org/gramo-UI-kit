@@ -19,7 +19,7 @@
     }
   }
   
-  tr:not([hidden]) {
+  tr:not([hidden]):not(.table__row--new) {
     @media (--mobile-tablet-only) {
       display: flex;
     }
