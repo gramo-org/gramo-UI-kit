@@ -91,6 +91,11 @@
   }
 }
 
+.heading--sub {
+  margin-top: 1.2rem;
+  margin-bottom: .6rem;
+}
+
 /* Strike-through for diff. */
 .text--strike {
   text-decoration: line-through;
