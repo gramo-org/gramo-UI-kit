@@ -214,6 +214,11 @@ $(document).ready(function() {
        $(this).closest('.changelog').toggleClass('show-inner');
      });
      
+     $('.toggle-reports').click(function(e){
+       e.preventDefault();
+       $(this).closest('.reports').toggleClass('show-inner');
+     });
+     
 
     // //Scroll spy
     // function scrollSpy(menu) {

@@ -80,6 +80,8 @@
               <ul>
                 <li><a href="#" class="active">Personalia</a></li>
                 <li><a href="#">Kontaktinfo</a></li>
+                <li><a href="#">Skatt</a></li>
+                <li><a href="#">Årsrapporter</a></li>
               </ul>
             </nav>
           </div>
@@ -265,7 +267,7 @@
                 </div><!--end .row-->
               </section>
               <hr class="horizontal-rule">
-              <section id="innstillinger">
+              <!-- <section id="innstillinger">
                 <h2>Mine innstillinger</h2>
                 <fieldset class="form__fieldset form__fieldset--group">
                   <legend>Jeg ønsker å motta informasjon fra Gramo</legend>
@@ -288,7 +290,41 @@
                       </select>
                     </label>
                   </div>
+                </div>
+              </section> -->
+              
+              <section id="taxation">
+                <h2>Skatt</h2>
+                <fieldset class="form__fieldset form__fieldset--group">
+                  <legend>Velg type skattbetaling:</legend>
+                  <label class="form__label form__label--inline text--normal">
+                    <input type="radio" name="info" class="form__input--radio">
+                    <span>Kapital</span>
+                  </label>
+                  <label class="form__label form__label--inline text--normal">
+                    <input type="radio" name="info" class="form__input--radio">
+                    <span>Næring</span>
+                  </label>
+                </fieldset>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <label class="form__label">Org. nummer
+                      <input type="text" class="form__input">
+                    </label>
+                  </div>
                 </div><!--end .row-->
+                <div class="row">
+                  <div class="col-xs-5 col-sm-3">
+                    <label class="form__label">Fra
+                      <input type="date" class="form__input form__input--date">
+                    </label>
+                  </div>
+                  <div class="col-xs-5 col-sm-3">
+                    <label class="form__label">Til
+                      <input type="date" class="form__input form__input--date">
+                    </label>
+                  </div>
+                </div>
               </section>
               <hr class="horizontal-rule">
               <section class="form__section--action form__section--flex">
@@ -296,6 +332,35 @@
                 <a class="btn btn--primary">Lagre</a>
               </section>
             </form>
+            <section id="rapporter">
+              <h2>Årsrapporter</h2>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Fil</th>
+                    <th>Dato</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Årsrapport 2018</td>
+                    <td>31. desember 2018</td>
+                    <td><a href="#">Last ned PDF</a></td>
+                  </tr>
+                  <tr>
+                    <td>Årsrapport 2017</td>
+                    <td>31. desember 2017</td>
+                    <td><a href="#">Last ned PDF</a></td>
+                  </tr>
+                  <tr>
+                    <td>Årsrapport 2016</td>
+                    <td>31. desember 2016</td>
+                    <td><a href="#">Last ned PDF</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
           </div>
         </div>
       </section>

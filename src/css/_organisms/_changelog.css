@@ -57,6 +57,11 @@
 
     &:before {
       @extend .comments .toggle-comments:before;
+      content: "\e924";
+      font-size: 2rem;
+      line-height: 1rem;
+      position: relative;
+      top: 4px;
     }
   }
   
@@ -89,5 +94,31 @@
   
   .changelog__share{
     margin-left: 0.5rem;
+  }
+}
+
+.reports {
+  @extend .changelog;
+  right: 430px;
+  
+  &__inner {
+    @extend .comments__inner;
+
+    &:before {
+      @extend .comments__inner:before;
+    }
+  }
+  
+  &.show-inner > .reports__inner {
+    display: block;
+  }
+}
+
+.toggle-reports {
+  @extend .comments .toggle-comments;
+
+  &:before {
+    @extend .comments .toggle-comments:before;
+    content: "\e91e";
   }
 }

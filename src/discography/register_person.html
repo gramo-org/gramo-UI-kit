@@ -510,6 +510,46 @@
                           </label>
                         </div>
                       </fieldset>
+                      <h3 class="heading--sub">Skatteinformasjon</h3>
+                      <fieldset class="form__fieldset">
+                        <div class="form__field form__field--inline form__field--inline--checkbox">
+                          <span class="form__field__text">Type</span>
+                          <label class="form__label">
+                            <input type="radio" class="form__input--checkbox">
+                            <span>Kapital</span>
+                          </label>
+                          <label class="form__label">
+                            <input type="radio" class="form__input--checkbox">
+                            <span>Næring</span>
+                          </label>
+                        </div>
+                        <div class="form__field">
+                          <div>
+                            <label class="form__label">
+                              <span>Organisasjonsnr.</span>
+                              <input type="text" class="form__input form__input--180" disabled>
+                            </label>
+                          </div>
+                          <div class="form__field__action no-padding--top">
+                            <button type="secondary" class="async-button btn default btn--secondary">
+                              Hent fra BRREG
+                            </button>
+                          </div>
+                        </div>
+                        <div class="form__field form__field-to-and-from">
+                          <label class="form__label">
+                            <span>Fra</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                          </label>
+                          <label class="form__label">
+                            <span>Til</span>
+                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                          </label>
+                          <!-- <div class="form__field__action">
+                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
+                          </div> -->
+                        </div>
+                      </fieldset>
                       <h3 class="heading--sub">Kontakt informasjon</h3>
                       <fieldset class="form__fieldset">
                         <div class="form__field">
@@ -1425,6 +1465,7 @@
               <a href="#" class="add-comment link--no-line">Legg til kommentar</a>
             </div>
           </div>
+          
           <div class="changelog">
             <a class="toggle-changelog link--no-line">Endringslogg</a> (1)
             <div class="changelog__inner">
@@ -1663,6 +1704,29 @@
                   </ul>
                 </li>
               </ul><!-- end .changelog__content -->
+            </div>
+          </div>
+          <div class="reports">
+            <a class="toggle-reports link--no-line">Årsrapporter</a> (1)
+            <div class="reports__inner">
+              <header class="changelog__header">
+                <h3>Årsrapporter</h3>
+              </header>
+              <div class="file-upload__list">
+                <ul>
+                  <li class="row">
+                    <div class="col-sm">
+                      <a href="#">Årsrapport_2018.pdf</a>
+                      <p>Årsrapport for 2018</p>
+                    </div>
+                    <div class="col-sm text--right">
+                      <date>11.01.2019</date>
+                      <p class="text--italic">av Morten Møller</p>
+                    </div>
+
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div><!--end /.tabs-->
