@@ -296,35 +296,28 @@
               <section id="taxation">
                 <h2>Skatt</h2>
                 <fieldset class="form__fieldset form__fieldset--group">
-                  <legend>Velg type skattbetaling:</legend>
+                  <legend>Velg inntektstype for innrapportering til Skatteetaten:</legend>
                   <label class="form__label form__label--inline text--normal">
-                    <input type="radio" name="info" class="form__input--radio">
-                    <span>Kapital</span>
+                    <input type="radio" name="info" class="form__input--radio" checked onclick="hideOrg();">
+                    <span>Kapitalinntekt</span>
                   </label>
                   <label class="form__label form__label--inline text--normal">
-                    <input type="radio" name="info" class="form__input--radio">
-                    <span>Næring</span>
+                    <input type="radio" name="info" class="form__input--radio" onclick="showOrg();">
+                    <span>Næringsinntekt</span>
                   </label>
                 </fieldset>
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <label class="form__label">Org. nummer
-                      <input type="text" class="form__input">
+                <div class="row hidden" id="org">
+                  <div class="col-xs-5 col-sm-3">
+                    <label class="form__label">Org. nummer <span class="text--normal text--italic">(Valgfritt)</span>
+                      <input type="text" class="form__input" value="995913453">
+                    </label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5">
+                    <label class="form__label">Org. navn<span class="text--normal text--italic">(Fra BRREG)</span>
+                      <input type="text" class="form__input" value="Berntsen-Løken" disabled>
                     </label>
                   </div>
                 </div><!--end .row-->
-                <div class="row">
-                  <div class="col-xs-5 col-sm-3">
-                    <label class="form__label">Fra
-                      <input type="date" class="form__input form__input--date">
-                    </label>
-                  </div>
-                  <div class="col-xs-5 col-sm-3">
-                    <label class="form__label">Til
-                      <input type="date" class="form__input form__input--date">
-                    </label>
-                  </div>
-                </div>
               </section>
               <hr class="horizontal-rule">
               <section class="form__section--action form__section--flex">
@@ -368,5 +361,13 @@
 </div>
 <script src="../../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../../js/default.js"></script>
+<script>
+  function showOrg(){
+    document.getElementById('org').style.display = 'flex';
+  }
+  function hideOrg(){
+    document.getElementById('org').style.display = 'none';
+  }
+</script>
 </body>
 </html>

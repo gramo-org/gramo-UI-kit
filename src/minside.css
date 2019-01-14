@@ -1096,6 +1096,10 @@ p{
 .row--clickable{
   cursor:pointer;
 }
+
+.hidden{
+  display:none;
+}
 .site-wrapper{
   display:-webkit-flex;
   display:-ms-flexbox;
