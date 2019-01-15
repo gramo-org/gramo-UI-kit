@@ -515,39 +515,31 @@
                         <div class="form__field form__field--inline form__field--inline--checkbox">
                           <span class="form__field__text">Type</span>
                           <label class="form__label">
-                            <input type="radio" class="form__input--checkbox">
-                            <span>Kapital</span>
+                            <input type="radio" name="info" class="form__input--checkbox" checked onclick="hideOrg();">
+                            <span>Kapitalinntekt</span>
                           </label>
                           <label class="form__label">
-                            <input type="radio" class="form__input--checkbox">
-                            <span>Næring</span>
+                            <input type="radio" name="info" class="form__input--checkbox" onclick="showOrg();">
+                            <span>Næringsinntekt</span>
                           </label>
                         </div>
-                        <div class="form__field">
+                        <div class="form__field" id="org" style="display:none;">
                           <div>
                             <label class="form__label">
                               <span>Organisasjonsnr.</span>
-                              <input type="text" class="form__input form__input--180" disabled>
+                              <input type="text" value="995913453" class="form__input form__input--180" disabled>
                             </label>
                           </div>
                           <div class="form__field__action no-padding--top">
-                            <button type="secondary" class="async-button btn default btn--secondary">
+                            <button type="secondary" class="async-button btn default btn--secondary" disabled>
                               Hent fra BRREG
                             </button>
                           </div>
                         </div>
-                        <div class="form__field form__field-to-and-from">
-                          <label class="form__label">
-                            <span>Fra</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
+                        <div class="form__field" id="org2" style="display:none;">
+                          <label class="form__label"><span>Org. navn (Fra BRREG)</span>
+                            <input type="text" class="form__input" value="Berntsen-Løken" disabled>
                           </label>
-                          <label class="form__label">
-                            <span>Til</span>
-                            <input type="date" placeholder="mm/dd/yyyy" class="form__input form__input--date form__input--130">
-                          </label>
-                          <!-- <div class="form__field__action">
-                            <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
-                          </div> -->
                         </div>
                       </fieldset>
                       <h3 class="heading--sub">Kontakt informasjon</h3>
@@ -1736,6 +1728,15 @@
 
 <script src="../js/vendor/jquery-1.11.3.min.js"></script>
 <script src="../js/default.js"></script>
-
+<script>
+  function showOrg(){
+    document.getElementById('org').style.display = 'flex';
+    document.getElementById('org2').style.display = 'flex';
+  }
+  function hideOrg(){
+    document.getElementById('org').style.display = 'none';
+    document.getElementById('org2').style.display = 'none';
+  }
+</script>
 </body>
 </html>
