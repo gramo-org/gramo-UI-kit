@@ -99,7 +99,7 @@
 
 .reports {
   @extend .changelog;
-  right: 420px;
+  right: 415px;
   
   &__inner {
     @extend .comments__inner;
