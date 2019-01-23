@@ -4905,14 +4905,18 @@ main.pull .bucket{
 .tabs__nav--flexible .tabs__nav__item > a{
   padding-left:1rem;
   padding-right:1.5rem;
-  max-width:210px;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
 }
 
 .tabs__nav--flexible .tabs__nav__item > a:first-child{
   padding-left:2rem;
+}
+
+.tabs__nav--flexible .tabs__nav__item__text{
+  max-width:210px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  display:inline-block;
 }
 .tabs__nav__item__type{
   text-align:left;

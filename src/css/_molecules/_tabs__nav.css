@@ -108,15 +108,20 @@
     & > a {
        padding-left: 1rem;
        padding-right: 1.5rem;
-       max-width: 210px;
-       overflow: hidden;
-       text-overflow: ellipsis;
-       white-space: nowrap;
+       
     }
 
     & > a:first-child {
       padding-left: 2rem;
     }
+  }
+  
+  .tabs__nav__item__text {
+    max-width: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
   }
 }
 
