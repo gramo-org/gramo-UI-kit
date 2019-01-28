@@ -86,7 +86,7 @@
   }
 
   .section-header__below {
-    padding: 1.2rem 1rem;
+    padding: 1.2rem .1rem;
     border-top: 1px solid var(--silver);
 
     & > *:first-child {
