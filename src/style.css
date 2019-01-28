@@ -6139,7 +6139,7 @@ caption{
 caption span:first-child{
   float:left;
 }
-caption span:last-child{
+caption span:last-child:not(:only-child){
   float:right;
 }
 table{
