@@ -5781,7 +5781,6 @@ input[type="text"].search__form__input--large{
 @media (min-width: 768px){
 
   .section-header header h1{
-    margin-left:1rem;
     text-align:left;
     display:block;
   }
@@ -5823,7 +5822,6 @@ input[type="text"].search__form__input--large{
   -ms-flex-item-align:center;
   -ms-grid-row-align:center;
   align-self:center;
-  padding-right:.5rem;
 }
 
 .section-header--ordered header{
