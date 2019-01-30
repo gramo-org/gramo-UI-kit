@@ -292,7 +292,7 @@
     width: calc(100% + 2.4rem);
   }
   
-  .form, .table {
+  .form, .table, .box-list {
     @media (--desktop) {
       width: calc(100% + 4.5rem);
     }
