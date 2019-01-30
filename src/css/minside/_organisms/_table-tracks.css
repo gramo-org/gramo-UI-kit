@@ -147,10 +147,13 @@
     }
   }
 }
-/* Make release title larger and take up 100% width */
+/* Make release title take up 100% width */
 .table__cell--title {
-  font-size: 2rem;
   flex: 1 0 100%;
+}
+/* Make release title larger and */
+.table__cell--title:not(.table__cell-for-search) {
+  font-size: 2rem;
   
   @media (--desktop) {
     font-size: inherit;

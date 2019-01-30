@@ -6036,14 +6036,16 @@ caption{
   }
 }
 .table__cell--title{
-  font-size:2rem;
   -webkit-flex:1 0 100%;
   -ms-flex:1 0 100%;
   flex:1 0 100%;
 }
+.table__cell--title:not(.table__cell-for-search){
+  font-size:2rem;
+}
 @media (min-width: 960px){
 
-  .table__cell--title{
+  .table__cell--title:not(.table__cell-for-search){
     font-size:inherit;
   }
 }
