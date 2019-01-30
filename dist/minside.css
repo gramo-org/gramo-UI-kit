@@ -6172,7 +6172,7 @@ caption{
 
 @media (min-width: 960px){
 
-  .table__cell-for-search .form, .table__cell-for-search .table, .table__cell-for-search .box-list{
+  .table__cell-for-search .table, .table__cell-for-search .box-list{
     width:calc(100% + 4.5rem);
   }
 }
