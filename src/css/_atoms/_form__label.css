@@ -99,6 +99,7 @@
   position: relative;
   
   span {
+    width: auto!important;
     position: absolute;
     top: .65rem;
     left: .6rem;

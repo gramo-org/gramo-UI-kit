@@ -1877,6 +1877,7 @@ table{
   position:relative;
 }
 .form__label--inside span{
+  width:auto!important;
   position:absolute;
   top:.65rem;
   left:.6rem;
