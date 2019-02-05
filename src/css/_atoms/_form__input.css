@@ -156,6 +156,6 @@ input[type="radio"], input[type="checkbox"],
 /* For Currency input Ember component */
 /* allows correct layout of currency input in .form__field */
 .currency-input {
-  display: inline;
+  display: inline-block;
   vertical-align: middle;
 }

@@ -2067,7 +2067,7 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
   padding-left:5rem;
 }
 .currency-input{
-  display:inline;
+  display:inline-block;
   vertical-align:middle;
 }
 .panels{
