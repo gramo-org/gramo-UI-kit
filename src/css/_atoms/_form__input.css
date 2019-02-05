@@ -152,3 +152,10 @@ input[type="radio"], input[type="checkbox"],
   background: var(--gramo-white) url(img/ukjent.svg) left .5rem top 1rem no-repeat;
   padding-left: 5rem;
 }
+
+/* For Currency input Ember component */
+/* allows correct layout of currency input in .form__field */
+.currency-input {
+  display: inline;
+  vertical-align: middle;
+}
