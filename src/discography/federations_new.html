@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="/img/favicon_prod.ico">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+  window.onload = window.location.hash = 'ny';
+  </script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!--Sidebar example-->
+    <div class="sidebar sidebar--is-expanded">
+      <section class="sidebar__content">
+        <header class="sidebar__header">
+          <h1 class="sidebar__header__title"><i class="icon--logo-echo"></i></h1>
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="vertical__nav">
+            <li class="vertical__nav__item">
+              <a href="/">Dashbord</a>
+            </li>
+            <li id="playtime-reporting" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-659="659">Innlesning</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/file-statuses">Innleste filer</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/deviations">Avvik</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/playtime-reporting/broadcasters">Program admin</a>
+                </li>
+              </ul>
+            </li>
+            <li id="matching" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-750="750">Matching</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/identified-playback-group-summaries">Identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=null">Ikke identifiserte</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unidentified-playback-groups?postponed=true">Restliste</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/matching/unreleased-music">Ikke utgitt</a>
+                </li>
+              </ul>
+            </li>
+            <li id="discography" class="vertical__nav__item vertical__nav__item--has-children vertical__nav__item--is-expanded">
+              <a data-ember-action="" data-ember-action-854="854">Diskografi</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/file-statuses">Innlest kladd</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/search?query=%20%20&amp;type=releases" class="active">Søk</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/worklist">Arbeidsliste</a></li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/discography/federations">Rettighetshaverorg.</a>
+                </li>
+              </ul>
+            </li>
+            <li id="min-side" class="vertical__nav__item vertical__nav__item--has-children">
+              <a data-ember-action="" data-ember-action-965="965">Min side</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Brukere</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/distribution" class="active">VRDB</a>
+            </li>
+            <li class="vertical__nav__item vertical__nav__item--has-children">
+              <a href="/distribution">Avr. og utbetaling</a>
+              <ul class="vertical__nav vertical__nav--sub">
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Avregning</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Vederlag fra utland</a>
+                </li>
+                <li class="vertical__nav__item vertical__nav--sub__item">
+                  <a href="/users/min-side">Utbetalinger</a>
+                </li>
+              </ul>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/ipd">IPD</a>
+            </li>
+            <li class="vertical__nav__item">
+              <a href="/users/new">Ny bruker</a>
+            </li>
+          </ul>
+        </nav>
+        <aside class="user">
+          <img src="../img/audun-temp.jpg" class="user__avatar">
+          <div class="user__name">Audun Haggernes
+            <span class="user__logout"><a href="#">Logg ut</a></span>
+          </div>
+        </aside>
+      </section>
+    </div>
+    <!--End Sidebar example-->
+    <main>
+
+      <header class="site-header">
+        <div class="toggle-sidebar open">
+          <a href="#">
+          </a>
+        </div>
+      </header>
+
+      <!--- Flash message --->
+      <!-- <div class="flash-message-wrapper">
+        <div class="flash-message flash-message--success">
+          <p>6 avspillinger ble flyttet til <a href="#">ikke utgitt</a> <button class="btn btn--small btn--inline btn--borderless">Angre ?</button></p>
+        </div>
+      </div> -->
+
+      <section class="container container--hd">
+        <div class="tabs">
+          <ul class="tabs__nav tabs__nav--flexible">
+            <li class="tabs__nav__item tabs__nav__item--search">
+              <a href="#search">
+                <span class="icon--search"></span>
+                Søk
+              </a>
+            </li>
+            <li class="tabs__nav__item">
+              <a href="#rettighetshaverorg">
+                <span class="tabs__nav__item__type">Rettighetshaverorg.</span>
+                Alle
+              </a>
+            </li>
+            <li class="tabs__nav__item">
+              <a href="#ny">
+                <span class="tabs__nav__item__type">Rettighetshaverorg.</span>
+                Ny
+              </a>
+            </li>
+          </ul>
+          <section id="search" class="tabs__section">
+            <div class="toolbar">
+              <div class="search--with-dropdown">
+                <label class="form__label no-margin--right">
+                  <select class="select select--fluid select--with-search align--vertical-center">
+                    <option>Innspilling</option>
+                    <option>Utgivelse</option>
+                    <option>Person</option>
+                    <option>Organisasjon</option>
+                    <option>Gruppe</option>
+                    <option>Label</option>
+                  </select>
+                </label>
+                <div class="search">
+                  <form action="" class="search__form search__form--in-toolbar">
+                    <input type="text" class="search__form__input search__form__input--fixed-width" value="" placeholder="Søk..." />
+                    <button class="search__submit"></button>
+                  </form>
+                </div>
+              </div>
+              <div class="col--no-flex align--vertical-center">
+                <label class="form__label">
+                  <input type="checkbox" checked> Eksakt søk
+                </label>
+                <label class="form__label">
+                  <input type="checkbox" checked> Vis duplikater
+                </label>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <a href="#" class="btn btn--primary">Opprett en ny innspilling</a>
+              </div>
+              <div class="toolbar__lower">
+                <div class="row">
+                  <div class="col-sm col--no-flex align--vertical-center text--inline">
+
+                    <!-- <a href="#" class="">Velg alle</a> -->
+
+                    <button class="btn btn--secondary btn--small">Legg til duplikatliste</button>
+                    <button class="btn btn--secondary btn--small">Legg til bulkliste</button>
+                  </div>
+                  <div class="col align--vertical-center text--nowrap">
+                    <a href="#" class="link--with-divider">Åpne duplikatliste</a>
+                    <a href="#">Åpne bulkliste</a>
+                  </div>
+                </div>
+              </div><!--end .toolbar__lower-->
+            </div><!--end .toolbar-->
+            <h4 class="text--light heading--sub">Viser 10 av 2070 resultater</h4>
+            <table class="table drilldown table--fluid table--numeric table--with-checkboxes table--with-badges">
+              <thead>
+                <tr>
+                  <th>
+                    <label class="form__label form__label--checkbox-in-th v-align--bottom">
+                      <input type="checkbox" class="form__input--checkbox">
+                    </label>
+                    Tittel
+                  </th>
+                  <th></th>
+                  <th>
+                    Hovedartist
+                  </th>
+                  <th>
+                    Utgivelsesår
+                  </th>
+                  <th>
+                    Label
+                  </th>
+                  <th>
+                    Varighet
+                  </th>
+                  <th>
+                    ISRC
+                  </th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="drilldown-body drilldown-toggle" data-level="1">
+                  <td data-label="Tittel">
+                    <span class="badge badge--numeric">1</span>
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    <a href="#">Space Oddity</a>
+                  </td>
+                  <td>
+                    <span class="badge badge--master badge--in-td">Master</span>
+                  </td>
+                  <td data-label="Hovedartist">
+                    David Bowie
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1969
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:05:25
+                  </td>
+                  <td data-label="ISRC">
+                    B01499JUQ20
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                  <td colspan="8">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h4 class="heading--sub no-margin--top">Innspillingsinfo</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                          <li><span class="text--semibold">Version:</span> -</li>
+                          <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                          <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                          <li><span class="text--semibold">Produsentland:</span> USA</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <h4 class="heading--sub no-margin--top">Eierskap</h4>
+                        <ul class="no-list">
+                          <li>Parlaphone (100%) 1969 -</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <h4 class="heading--sub no-margin--top">Utøvere</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                          <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                          <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                          <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                          <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h4 class="heading--sub no-margin--top">Utgivelser</h4>
+                        <ul class="no-list">
+                          <li>David Bowie</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="drilldown-body drilldown-toggle" data-level="1">
+                  <td data-label="Tittel">
+                    <span class="badge badge--numeric">2</span>
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    <a href="#">Space Oddity (1972 version)</a>
+                  </td>
+                  <td><span class="badge badge--secondary badge--in-td">Duplikat</span></td>
+                  <td data-label="Hovedartist">
+                    David Bowie
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1969
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:05:25
+                  </td>
+                  <td data-label="ISRC">
+                    B01499JUQ20
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr class="drilldown-body table__row--no-count" data-level="2" style="display:none;">
+                  <td colspan="8">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h4 class="heading--sub no-margin--top">Innspillingsinfo</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">Klassisk:</span> Nei</li>
+                          <li><span class="text--semibold">Version:</span> -</li>
+                          <li><span class="text--semibold">Innspillingsland:</span> Storbrittania</li>
+                          <li><span class="text--semibold">Innspillingsdato:</span> 28/08/1969</li>
+                          <li><span class="text--semibold">Produsentland:</span> USA</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <h4 class="heading--sub no-margin--top">Eierskap</h4>
+                        <ul class="no-list">
+                          <li>Parlaphone (100%) 1969 -</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <h4 class="heading--sub no-margin--top">Utøvere</h4>
+                        <ul class="no-list">
+                          <li><span class="text--semibold">David Bowie</span> (vocals), Storbrittania, A</li>
+                          <li><span class="text--semibold">Mick Wayne</span> (lead guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Herbie Flowers</span> (bass guitar), Storbrittania, A</li>
+                          <li><span class="text--semibold">Terry Cox</span> (drums), Storbrittania, A</li>
+                          <li><span class="text--semibold">Paul Buckmaster</span> (string arrangement), Storbrittania, A</li>
+                          <li><span class="text--semibold">Tony Visconti</span> (flutes, woodwinds), Storbrittania, A</li>
+                          <li><span class="text--semibold">Rick Wakeman</span> (Mellotron), Storbrittania, A</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-2">
+                        <h4 class="heading--sub no-margin--top">Utgivelser</h4>
+                        <ul class="no-list">
+                          <li>David Bowie</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <span class="badge badge--numeric">3</span>
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    <a href="#">Space Oddity (Extended Space Mix)</a>
+                  </td>
+                  <td><span class="badge badge--secondary badge--in-td">Duplikat</span></td>
+                  <td data-label="Hovedartist">
+                    David Bowie
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1969
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:05:25
+                  </td>
+                  <td data-label="ISRC">
+                    B01499JUQ20
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <span class="badge badge--numeric">4</span>
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    <a href="#">Space Oddity (Remix)</a>
+                  </td>
+                  <td><span class="badge badge--secondary badge--in-td">Duplikat</span></td>
+                  <td data-label="Hovedartist">
+                    David Bowie
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1969
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:05:25
+                  </td>
+                  <td data-label="ISRC">
+                    B01499JUQ20
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Tittel">
+                    <span class="badge badge--numeric">4</span>
+                    <label class="form__label">
+                      <input type="checkbox" class="form__input--checkbox">
+                      <span></span>
+                    </label>
+                    <a href="#">Space Oddity</a>
+                  </td>
+                  <td><span class="badge badge--draft badge--in-td">Kladd</span></td>
+                  <td data-label="Hovedartist">
+                    David Bowie
+                  </td>
+                  <td data-label="Utgivelsesår">
+                    1969
+                  </td>
+                  <td data-label="Label">
+                    RCA
+                  </td>
+                  <td data-label="Varighet">
+                    00:05:25
+                  </td>
+                  <td data-label="ISRC">
+                    B01499JUQ20
+                  </td>
+                  <td class="text--right">
+                    <span class="table-row-toggle"></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table><!--/.table-->
+          </section><!--/.tabs__section-->
+          <section id="rettighetshaverorg" class="tabs__section">
+            <div class="toolbar">
+              <div class="col">
+                <h2>Rettighetshaverorg.</h2>
+              </div>
+              <div class="col-xs col--no-flex text--right">
+                <a href="#ny" class="btn btn--primary">Opprett ny</a>
+              </div>
+            </div>
+            <table class="table table--fluid table--with-margin">
+              <thead class="table__head table__head--always-visible">
+                <tr>
+                  <th>
+                    Navn
+                  </th>
+                  <th>
+                    Alternativt navn
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                    <tr>
+                      <td>
+            <a href="/discography/organizations/federation/f7c9f5c5-350f-4713-8f52-8bd2740b29be" id="ember3625" class="ember-view">              NORA
+            </a>          </td>
+                      <td></td>
+                    </tr>
+              </tbody>
+            </table>
+          </section>
+          <section id="ny" class="tabs__section tabs__section--outline">
+            <header id="ember4171" class="infobar infobar--in-tabs ember-view">
+              <div class="infobar__left">
+                <h1 data-type="producer-company" class="infobar__heading">
+                  NORA
+                  <!---->
+                </h1>
+                <h3 data-type="organization-number">916669089</h3>
+              </div>
+              <div class="infobar__right">
+                <div class="ledger-links">
+                    <h4>Reskontro:</h4>
+                    <ul class="list--inline">
+                    </ul>
+                </div>
+              </div>
+            </header>
+            <section id="producer-company-info" class="container container--padded ember-view">
+              <div id="ember4180" class="section-header ember-view">
+                <header>
+                <h2>Informasjon</h2>
+              </header>
+              <div id="ember4369" class="section-header__toolbar ember-view"><div id="ember4370" class="ember-view"><!---->
+                <button type="secondary" id="ember4425" class="async-button btn default btn--secondary ember-view">          Avbryt
+
+                </button>
+                <button type="primary" id="ember4430" class="async-button btn default btn--primary ember-view">          Lagre
+
+                </button></div>
+                </div>
+              </div>
+              <div class="form">
+                 <fieldset class="form__fieldset">
+                    <div class="form__field">
+                       <label class="form__label form__label--required">
+                          <span>Land</span>
+                          <div id="ember4193" class="searchable-list searchable-list form__input form__input--180 searchable-list--disabled ember-view">
+                             <div class="searchable-list__heading searchable-list__heading">
+                                <span class="searchable-list__selected">NORGE</span>
+                             </div>
+                          </div>
+                       </label>
+                    </div>
+                    <div class="form__field">
+                       <div id="ember4200" class="ember-view">
+                          <label class="form__label form__label--required">
+                          <span>Organisasjonsnr.</span>
+                          <input type="text" id="ember4201" class="form__input form__input--180 ember-text-field ember-view">
+                          </label>
+                          <div id="ember4202" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                       <!---->
+                    </div>
+                    <div class="form__field">
+                       <div id="ember4209" class="ember-view">
+                          <label class="form__label form__label--required">
+                          <span>Navn</span>
+                          <input type="text" id="ember4210" class="form__input form__input--300 ember-text-field ember-view">
+                          </label>
+                          <div id="ember4211" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                    </div>
+                 </fieldset>
+                 <fieldset class="form__fieldset">
+                    <h3 class="heading--sub">
+                       Kontaktinformasjon
+                    </h3>
+                    <div class="form__field">
+                       <div id="ember4223" class="ember-view">
+                          <label class="form__label ">
+                          <span>E-post</span>
+                          <input type="text" id="ember4224" class="form__input form__input--180 ember-text-field ember-view">
+                          </label>
+                          <div id="ember4225" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                    </div>
+                    <div class="form__field">
+                       <div id="ember4232" class="ember-view">
+                          <label class="form__label ">
+                          <span>Mobil</span>
+                          <input type="text" id="ember4233" class="form__input form__input--180 ember-text-field ember-view">
+                          </label>
+                          <div id="ember4234" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                    </div>
+                    <div class="form__field">
+                       <div id="ember4241" class="ember-view">
+                          <label class="form__label ">
+                          <span>Telefon</span>
+                          <input type="text" id="ember4242" class="form__input form__input--180 ember-text-field ember-view">
+                          </label>
+                          <div id="ember4243" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                    </div>
+                    <div class="form__field">
+                       <div id="ember4250" class="ember-view">
+                          <label class="form__label ">
+                          <span>Nettside</span>
+                          <input type="text" id="ember4251" class="form__input form__input--180 ember-text-field ember-view">
+                          </label>
+                          <div id="ember4252" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                    </div>
+                    <div class="form__field form__field--inline form__field--inline--checkbox">
+                       <div id="ember4259" class="ember-view">
+                          <label class="form__label ">
+                          <span>Norsk adresse?</span>
+                          <input type="checkbox" id="ember4260" class="form__input ember-checkbox ember-view">
+                          </label>
+                          <div id="ember4261" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                    </div>
+                    <div class="form__field">
+                       <div id="ember4268" class="ember-view">
+                          <label class="form__label ">
+                          <span>C/O</span>
+                          <input type="text" id="ember4269" class="form__input form__input--180 ember-text-field ember-view">
+                          </label>
+                          <div id="ember4270" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                    </div>
+                    <div class="form__field">
+                       <div id="ember4277" class="ember-view">
+                          <label class="form__label ">
+                          <span>Adresse</span>
+                          <input type="text" id="ember4278" class="form__input form__input--180 ember-text-field ember-view">
+                          </label>
+                          <div id="ember4279" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                    </div>
+                    <div class="form__field">
+                       <div id="ember4286" class="ember-view">
+                          <label class="form__label ">
+                          <span>Postnummer</span>
+                          <input type="text" id="ember4287" class="form__input form__input--180 ember-text-field ember-view">
+                          </label>
+                          <div id="ember4288" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                    </div>
+                    <div class="form__field">
+                       <div id="ember4295" class="ember-view">
+                          <label class="form__label ">
+                          <span>Poststed</span>
+                          <input type="text" id="ember4296" class="form__input form__input--180 ember-text-field ember-view">
+                          </label>
+                          <div id="ember4297" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                    </div>
+                 </fieldset>
+              </div>
+          </section>
+        
+          <section id="contacts" class="container container--padded ember-view">
+             <div id="ember4364" class="section-header ember-view">
+                <header>
+                   <h2>
+                      Kontaktpersoner
+                      <!----><!---->    
+                   </h2>
+                </header>
+                <div id="ember4369" class="section-header__toolbar ember-view">
+                   <div id="ember4370" class="ember-view">    <a class="link--edit" data-ember-action="" data-ember-action-4447="4447">rediger</a></div>
+                </div>
+             </div>
+             <h3 class="heading--sub">Kontaktpersoninformasjon</h3>
+             <div class="form__field">
+                <div id="ember4380" class="ember-view">
+                   <fieldset class="form__fieldset">
+                      <table class="table table--with-margin">
+                         <thead>
+                            <tr>
+                               <th>Navn</th>
+                               <th>Stilling</th>
+                               <th>Telefon</th>
+                               <th>E-post</th>
+                               <th>
+                                  <!-- Remove contact button -->
+                               </th>
+                               <!---->      
+                            </tr>
+                         </thead>
+                         <tbody>
+                            <!---->    
+                         </tbody>
+                      </table>
+                   </fieldset>
+                   <!---->
+                </div>
+             </div>
+          </section>
+
+
+          </section>
+        </div><!--end /.tabs-->
+      </section><!--end /.container-->
+    </main>
+  </div><!--End site-wrapper-->
+
+  <script src="../js/vendor/jquery-1.11.3.min.js"></script>
+  <script src="../js/vendor/drilldown.js"></script>
+  <script src="../js/default.js"></script>
+  <script>
+    $('.drilldown').drilldown({
+      speed: 'fast'
+    });
+
+  </script>
+</body>
+</html>
