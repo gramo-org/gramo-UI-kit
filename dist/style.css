@@ -652,8 +652,8 @@ td.text--center, .fake-table__row *.text--center{
     margin-bottom:0;
   }
 }
-.form__field .col{
-  padding:0;
+.form__field .col:first-child{
+  padding-left:0;
 }
 
 .col--for-numeric-input{

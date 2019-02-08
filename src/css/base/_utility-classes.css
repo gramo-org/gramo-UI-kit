@@ -367,8 +367,8 @@ td.text--center,
 }
 
 /* Remove horizontal padding when in .form__field */
-.form__field .col {
-  padding: 0;
+.form__field .col:first-child {
+  padding-left: 0;
 }
 
 .col--for-numeric-input {
