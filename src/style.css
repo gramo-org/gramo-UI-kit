@@ -652,6 +652,9 @@ td.text--center, .fake-table__row *.text--center{
     margin-bottom:0;
   }
 }
+.form__field .col{
+  padding:0;
+}
 
 .col--for-numeric-input{
   max-width:65px;

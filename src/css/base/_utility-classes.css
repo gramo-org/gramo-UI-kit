@@ -366,6 +366,11 @@ td.text--center,
   }
 }
 
+/* Remove horizontal padding when in .form__field */
+.form__field .col {
+  padding: 0;
+}
+
 .col--for-numeric-input {
   max-width: 65px;
   
