@@ -975,13 +975,13 @@ address{
     flex-basis:16.66667%;
     max-width:16.66667%;
   }
-  .col-sm-3, .summary__row div:first-child{
+  .col-sm-3{
     -webkit-flex-basis:25%;
     -ms-flex-preferred-size:25%;
     flex-basis:25%;
     max-width:25%;
   }
-  .col-sm-4{
+  .col-sm-4, .summary__row div:first-child{
     -webkit-flex-basis:33.33333%;
     -ms-flex-preferred-size:33.33333%;
     flex-basis:33.33333%;
@@ -1005,13 +1005,13 @@ address{
     flex-basis:58.33333%;
     max-width:58.33333%;
   }
-  .col-sm-8{
+  .col-sm-8, .summary__row div:last-child{
     -webkit-flex-basis:66.66667%;
     -ms-flex-preferred-size:66.66667%;
     flex-basis:66.66667%;
     max-width:66.66667%;
   }
-  .col-sm-9, .summary__row div:last-child{
+  .col-sm-9{
     -webkit-flex-basis:75%;
     -ms-flex-preferred-size:75%;
     flex-basis:75%;

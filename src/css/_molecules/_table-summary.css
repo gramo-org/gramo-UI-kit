@@ -81,13 +81,13 @@
   }
   
   div:first-child {
-    @extend .col-sm-3;
+    @extend .col-sm-4;
     text-align: right;
     font-weight: var(--semibold);
   }
   
   div:last-child {
-    @extend .col-sm-9;
+    @extend .col-sm-8;
   }
   
   span {
