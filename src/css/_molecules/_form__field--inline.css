@@ -27,3 +27,12 @@
     }
   }
 }
+
+.form__field--stacked-checkbox {
+  .form__input__errors > p {
+    max-width: none;
+    margin-left: 0!important;
+    font-weight: normal;
+    color: var(--gramo-red);
+  }
+}

@@ -3622,6 +3622,13 @@ hr, .horizontal-rule{
     margin-left:24px;
   }
 }
+
+.form__field--stacked-checkbox .form__input__errors > p{
+  max-width:none;
+  margin-left:0!important;
+  font-weight:normal;
+  color:#ed6b6a;
+}
 .producer-registrant-codes .form__field:not(:first-child) .form__label > span{
   visibility:hidden;
 }
