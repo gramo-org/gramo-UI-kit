@@ -107,3 +107,7 @@
   font-size: 110%;
   margin-top: 1rem;
 }
+
+.summary__row--dark {
+  background: var(--silver);
+}

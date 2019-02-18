@@ -4532,6 +4532,10 @@ main.pull .bucket{
   font-size:110%;
   margin-top:1rem;
 }
+
+.summary__row--dark{
+  background:#d9d9dc;
+}
 .fake-table__row{
   background:#fdfdfd;
   border:1px solid #d9d9dc;
