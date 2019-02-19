@@ -4499,7 +4499,7 @@ main.pull .bucket{
 }
 
 .summary__footer{
-  margin:2rem 0;
+  margin:2rem -1rem;
   text-align:center;
 }
 
