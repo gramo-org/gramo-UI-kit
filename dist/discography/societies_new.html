@@ -489,12 +489,12 @@
               </thead>
 
               <tbody>
-                    <tr>
-                      <td>
-            <a href="/discography/organizations/federation/f7c9f5c5-350f-4713-8f52-8bd2740b29be" id="ember3625" class="ember-view">              NORA
-            </a>          </td>
-                      <td></td>
-                    </tr>
+                <tr>
+                  <td>
+                    <a href="#" id="ember3625" class="ember-view">NORA</a>
+                  </td>
+                  <td></td>
+                </tr>
               </tbody>
             </table>
           </section>
@@ -545,6 +545,17 @@
                        <div id="ember4209" class="ember-view">
                           <label class="form__label form__label--required">
                           <span>Navn</span>
+                          <input type="text" id="ember4210" class="form__input form__input--180 ember-text-field ember-view">
+                          </label>
+                          <div id="ember4211" class="form__input__errors ember-view">
+                             <!---->
+                          </div>
+                       </div>
+                    </div>
+                    <div class="form__field">
+                       <div id="ember4209" class="ember-view">
+                          <label class="form__label">
+                          <span>SCAPR kode</span>
                           <input type="text" id="ember4210" class="form__input form__input--180 ember-text-field ember-view">
                           </label>
                           <div id="ember4211" class="form__input__errors ember-view">
@@ -656,18 +667,64 @@
                           </div>
                        </div>
                     </div>
-                    <div class="form__field">
-                      <label class="form__label ">
-                        <span>Kontotype</span>
-                        <select tabindex="0" id="ember4175" class="select select--fluid form__input--180 align--vertical-center x-select ember-view">
-                          <option value="blank" id="ember4176" class="x-option ember-view">Ingen kontotype valgt</option>
-                          <option value="norwegian" id="ember4181" class="x-option ember-view">Norsk</option>
-                          <option value="iban" id="ember4186" class="x-option ember-view">IBAN</option>
-                          <option value="bic-swift" id="ember4191" class="x-option ember-view">BIC/SWIFT</option>
-                          <option value="american" id="ember4196" class="x-option ember-view">Amerikansk</option>
-                        </select>
-                      </label>
-                    </div>
+                 </fieldset>
+                 <fieldset class="form__fieldset">
+                   <h3 class="heading--sub">
+                      Utbetalingsinformasjon
+                   </h3>
+                   <div class="form__field">
+                     <label class="form__label ">
+                       <span>Kontotype</span>
+                       <select tabindex="0" id="ember4175" class="select select--fluid form__input--180 align--vertical-center x-select ember-view">
+                         <option value="blank" id="ember4176" class="x-option ember-view">Ingen kontotype valgt</option>
+                         <option value="norwegian" id="ember4181" class="x-option ember-view">Norsk</option>
+                         <option value="iban" id="ember4186" class="x-option ember-view">IBAN</option>
+                         <option value="bic-swift" id="ember4191" class="x-option ember-view" selected>BIC/SWIFT</option>
+                         <option value="american" id="ember4196" class="x-option ember-view">Amerikansk</option>
+                       </select>
+                     </label>
+                   </div>
+                   <div class="form__field">
+                     <div id="ember8861" class="ember-view"><div class="form__field">
+                       <div id="ember8862" class="ember-view">
+                         <label class="form__label form__label--required">
+                           <span>Kontonummer</span>
+                           <input type="text" required="" id="ember8867" class="ember-text-field form__input form__input--180 ember-view">
+                         </label>
+                         <div id="ember8868" class="form__input__errors ember-view"><!----></div>
+                       </div></div>
+                       <div class="form__field">
+                         <div id="ember8869" class="ember-view">
+                           <label class="form__label  form__label--required">
+                             <span>BIC/SWIFT</span>
+                             <input type="text" required="" id="ember8874" class="ember-text-field form__input form__input--180 ember-view">
+                           </label>
+                           <div id="ember8875" class="form__input__errors ember-view"><!----></div>
+                         </div></div>
+                         <div class="form__field">
+                           <div id="ember8876" class="ember-view">
+                             <label class="form__label form__label--required">
+                               <span>Valuta</span>
+                               <div id="ember8882" class="searchable-list searchable-list form__input form__input--180 ember-view">
+                                 <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-8884="8884">
+                                   <span class="searchable-list__selected"></span>
+                                 </div>
+                                 <div class="searchable-list__dropdown">
+                                   <input type="text" id="ember8885" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                                   <ul>
+                                     <li class="searchable-list__option " data-ember-action="" data-ember-action-8887="8887">
+                                       AFN (Afghani)
+                                     </li>
+                                   </ul>
+                                 </div>
+                               </div>
+                             </label>
+                             <div id="ember8883" class="form__input__errors ember-view">
+                             </div>
+                           </div>
+                         </div>
+                        </div>
+                      </div>
                  </fieldset>
               </div>
           </section>
