@@ -79,8 +79,11 @@
 .form__field {
   .form__input__errors > p,
   p.error--form-field {
+    color: var(--off-gray);
+    font-style: italic;
+    margin-bottom: .5rem;
     @media (--tablet) {
-      max-width: 100px;
+      max-width: 200px; /* changed from 100px */
     }
   }
 }
@@ -140,5 +143,10 @@
   
   & > *:first-child {
     flex: 1;
+  }
+  
+  .x-toggle-container {
+    align-self: flex-start;
+    margin-top: .25rem;
   }
 }

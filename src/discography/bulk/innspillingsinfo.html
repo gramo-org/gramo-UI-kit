@@ -504,22 +504,27 @@
                     </fieldset>
                   <fieldset class="form__fieldset">
                     <div class="form__field form__field--with-toggles">
-                      <label class="form__label">
-                        <span>Innspillingsland</span>
-                        <div class="searchable-list form__input searchable-list--fluid form__input--300">
-                          <div class="searchable-list__heading searchable-list__heading" tabindex="0">
-                            <span class="searchable-list__selected">Velg land</span>
+                      <div class="">
+                        <label class="form__label">
+                          <span>Innspillingsland</span>
+                          <div class="searchable-list form__input searchable-list--fluid form__input--300">
+                            <div class="searchable-list__heading searchable-list__heading" tabindex="0">
+                              <span class="searchable-list__selected">Velg land</span>
+                            </div>
+                            <div class="searchable-list__dropdown">
+                              <input type="text" class="searchable-list__search form__input form__input--block">
+                              <ul>
+                                <li class="searchable-list__option">Norge</li>
+                                <li class="searchable-list__option">Storbritannia</li>
+                                <li class="searchable-list__option">USA</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="searchable-list__dropdown">
-                            <input type="text" class="searchable-list__search form__input form__input--block">
-                            <ul>
-                              <li class="searchable-list__option">Norge</li>
-                              <li class="searchable-list__option">Storbritannia</li>
-                              <li class="searchable-list__option">USA</li>
-                            </ul>
-                          </div>
+                        </label>
+                        <div class="form__input__errors">
+                          <p>Kan ikke være før</p>
                         </div>
-                      </label>
+                      </div>
                       <span class="x-toggle-container">
                         <input type="checkbox" class="x-toggle" checked>
                         <label data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium">
