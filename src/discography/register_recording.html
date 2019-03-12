@@ -366,11 +366,33 @@
                           <a class="text--small text--light" href="#"><i class="icon--x"></i></a>
                         </div>
                       </div> -->
-                      <div class="form__field">
+                      <!-- <div class="form__field">
                         <label class="form__label">
                           <span>Varighet</span>
                           <input type="time" value="05:07" class="form__input form__input--100" disabled>
                         </label>
+                      </div> -->
+                      <div class="form__field">
+                        <div id="ember1455" class="ember-view">
+                          <fieldset class="form__fieldset--for-duration">
+                              <label class="form__label">
+                                <span>Varighet</span>
+                                <input data-test-time-input-type="hours" placeholder="Timer" type="number" class="form__input">
+                              </label>
+
+                              <label class="form__label">
+                                <span>Minutter</span>
+                                <input data-test-time-input-type="minutes" placeholder="Minutter" type="number" class="form__input">
+                              </label>
+
+                              <label class="form__label">
+                                <span>Sekunder</span>
+                                <input data-test-time-input-type="seconds" placeholder="sekunder" type="number" class="form__input">
+                              </label>
+
+                          </fieldset>
+                          <div id="ember1484" class="form__input__errors ember-view"><!----></div>
+                        </div>
                       </div>
                       <div class="form__field">
                         <label class="form__label">

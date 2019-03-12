@@ -3616,6 +3616,15 @@ hr, .horizontal-rule{
   align-self:flex-start;
   margin-top:.25rem;
 }
+
+.form__fieldset--for-duration{
+  border:0;
+  padding:0;
+}
+
+.form__fieldset--for-duration .form__label:not(:first-child) span{
+  display:none;
+}
 .form__field--inline > *{
   vertical-align:top;
 }
