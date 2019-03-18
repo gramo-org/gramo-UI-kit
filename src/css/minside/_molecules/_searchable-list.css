@@ -18,6 +18,10 @@
     background: color(var(--light-gray) shade(3%));
     color: var(--off-gray);
   }
+  
+  &--full-width {
+    max-width: none;
+  }
 }
 
 .searchable-list__dropdown {

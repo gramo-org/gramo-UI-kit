@@ -4636,6 +4636,9 @@ input:-webkit-autofill{
   background:rgb(230, 230, 230);
   color:#a5a4ab;
 }
+.searchable-list--full-width{
+  max-width:none;
+}
 
 .searchable-list__dropdown{
   width:100%;

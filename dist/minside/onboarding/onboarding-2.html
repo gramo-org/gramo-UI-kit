@@ -68,17 +68,36 @@
         </header>
         <div class="box__inner">
           <form class="form">
-            <label class="form__label form__label--block">Skattekommune
-              <select class="select  select--block">
+            <!-- <label class="form__label form__label--block">Skattekommune
+              <select class="select select--fluid">
                 <option value="">Oslo</option>
                 <option value="">Aksershus</option>
                 <option value="">Bergen</option>
               </select>
-            </label>
+            </label> -->
+            <div class="row">
+              <div class="col-xs-12">
+                <label class="form__label form__label--block">Skattekommune
+                  <div id="ember889" class="searchable-list searchable-list--open form__input form__input--block searchable-list--full-width ember-view">
+                    <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-890="890">
+                      <span class="searchable-list__selected">OSLO</span>
+                    </div>
+                    <div class="searchable-list__dropdown">
+                      <input type="text" id="ember891" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
+                      <ul>
+                        <li class="searchable-list__option " data-ember-action="" data-ember-action-893="893">
+                          Åfjord
+                        </li>    
+                      </ul>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
             <div class="row">
               <div class="col-xs-12">
                 <label class="form__label form__label--block">Kontotype
-                  <select class="select  select--block">
+                  <select class="select select--fluid">
                     <option value="blank">Ingen kontotype valgt</option>
                     <option value="norwegian">Norsk</option>
                     <option value="iban">IBAN</option>
