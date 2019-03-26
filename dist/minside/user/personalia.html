@@ -307,10 +307,23 @@
                   </label>
                 </fieldset>
                 <div class="row hidden" id="org">
-                  <div class="col-xs-5 col-sm-3">
+                  <!-- <div class="col-xs-5 col-sm-3">
                     <label class="form__label">Org. nummer <span class="text--normal text--italic">(Valgfritt)</span>
                       <input type="text" class="form__input" value="995913453">
                     </label>
+                  </div> -->
+                  <div class="col-xs-5 col-sm-3">
+                    <div id="ember907" class="ember-view">
+                      <label class="form__label form__label--block has-error">
+                        Org. nummer <span class="text--normal text--italic">(Valgfritt)</span>  
+                        <input type="text" class="form__input form__input--block" value="995913453">
+                      </label>
+                      <div data-test-show-errors="" id="ember909" class="form__input__errors ember-view">
+                        <p class="text--em ">
+                          Ugyldig organisasjonsnummer
+                        </p>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-xs-5 col-sm-5">
                     <label class="form__label">Org. navn<span class="text--normal text--italic">(Fra BRREG)</span>
@@ -327,7 +340,8 @@
             </form>
             <section id="reports">
               <h2>Årsrapporter</h2>
-              <table class="table">
+              <p>Du har ingen årsrapporter å vise</p>
+              <!-- <table class="table">
                 <thead>
                   <tr>
                     <th>Fil</th>
@@ -352,7 +366,7 @@
                     <td><a href="#">Last ned PDF</a></td>
                   </tr>
                 </tbody>
-              </table>
+              </table> -->
             </section>
           </div>
         </div>
