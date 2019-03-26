@@ -7085,6 +7085,7 @@ tr > td:last-child{
 
 .reports{
   right:415px;
+  z-index:7;
 }
 
 .reports.show-inner > .reports__inner{

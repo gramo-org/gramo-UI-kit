@@ -100,6 +100,7 @@
 .reports {
   @extend .changelog;
   right: 415px;
+  z-index: 7;
   
   &__inner {
     @extend .comments__inner;
