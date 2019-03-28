@@ -61,4 +61,8 @@ input[type="number"] {
   &.four-digit {
     max-width: 60px;
   }
+  
+  &.fluid {
+    max-width: none;
+  }
 }

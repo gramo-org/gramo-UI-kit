@@ -1682,6 +1682,10 @@ input[type="number"]{
 input[type="number"].four-digit{
   max-width:60px;
 }
+
+input[type="number"].fluid{
+  max-width:none;
+}
 .x-toggle{
     display:none;
 }
