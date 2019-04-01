@@ -454,6 +454,10 @@ td.text--center, .fake-table__row *.text--center{
   align-self:flex-end;
 }
 
+.v-align--top{
+  vertical-align:top!important;
+}
+
 .v-align--middle{
   vertical-align:middle!important;
 }
