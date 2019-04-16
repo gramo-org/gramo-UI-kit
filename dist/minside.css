@@ -3814,7 +3814,7 @@ input:-webkit-autofill{
   margin:0;
   height:16px;
   position:absolute;
-  bottom:-2px;
+  bottom:-1px;
   left:calc(50% - 2.5rem);
 }
 
