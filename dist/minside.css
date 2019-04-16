@@ -3812,9 +3812,9 @@ input:-webkit-autofill{
 
 .spinner--minimal{
   margin:0;
-  height:20px;
+  height:16px;
   position:absolute;
-  bottom:-1px;
+  bottom:-2px;
   left:calc(50% - 2.5rem);
 }
 
