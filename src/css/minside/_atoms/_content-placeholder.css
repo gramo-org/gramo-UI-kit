@@ -1,0 +1,23 @@
+@keyframes contentPlaceholder {
+  0%{
+      background-position: -40rem 0
+  }
+  100%{
+      background-position: 40rem 0
+  }
+}
+
+.content-placeholder {
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: contentPlaceholder;
+  animation-timing-function: linear;
+  background: var(--light-gray);
+  border-radius: 5px;
+  background: linear-gradient(to right, var(--light-gray) 8%, var(--silver) 18%, var(--light-gray) 33%);
+  background-size: 100rem 10rem;
+  height: 1rem;
+  position: relative;
+  margin: 1rem 0;
+}
