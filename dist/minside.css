@@ -2772,8 +2772,14 @@ input[type="number"].fluid{
 .icon--arrow-back:before{
   content:"\e908";
 }
-.icon--carret_down:before{
+.icon--carret_down:before, .table-sort--desc:after{
   content:"\e909";
+}
+.icon--carret_up:before, .table-sort--asc:after{
+  content:"\e909";
+  -webkit-transform:rotate(-180deg);
+  -ms-transform:rotate(-180deg);
+  transform:rotate(-180deg);
 }
 .icon--checkmark:before{
   content:"\e90a";
@@ -3960,6 +3966,17 @@ input:-webkit-autofill{
   height:1rem;
   position:relative;
   margin:1rem 0;
+}
+.table-sort{
+  position:relative;
+  display:inline-block;
+  cursor:pointer;
+}
+.table-sort--asc:after, .table-sort--desc:after{
+  font-family:'minside-icons';
+  font-size:80%;
+  margin-left:.35rem;
+  display:inline-block;
 }
 .flash-message-wrapper{
   left:0;

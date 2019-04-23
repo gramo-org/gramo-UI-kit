@@ -139,6 +139,10 @@
 .icon--carret_down:before {
   content: "\e909";
 }
+.icon--carret_up:before {
+  content: "\e909";
+  transform: rotate(-180deg);
+}
 .icon--checkmark:before {
   content: "\e90a";
 }

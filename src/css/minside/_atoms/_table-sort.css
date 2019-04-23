@@ -1,0 +1,21 @@
+.table-sort {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  
+  &--asc:after,
+  &--desc:after {
+    font-family: 'minside-icons';
+    font-size: 80%;
+    margin-left: .35rem;
+    display: inline-block;
+  }
+  
+  &--desc:after {
+    @extend .icon--carret_down:before;
+  }
+  
+  &--asc:after {
+    @extend .icon--carret_up:before;
+  }
+}

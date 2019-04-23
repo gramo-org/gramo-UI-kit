@@ -55,6 +55,7 @@
 @import url('minside/_atoms/_links.css');
 @import url('minside/_atoms/_toggle.css');
 @import url('minside/_atoms/_content-placeholder.css');
+@import url('minside/_atoms/_table-sort.css');
 /* Molecules */
 @import url('minside/_molecules/_flash-message.css');
 @import url('minside/_molecules/_tabs__nav.css');
