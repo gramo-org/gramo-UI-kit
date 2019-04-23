@@ -52,13 +52,14 @@
   position: absolute;
   bottom: -1px;
   left: calc(50% - 2.5rem);
+  z-index: 2;
 }
 
 .btn--primary {
   .spinner--minimal {
     & > div {
       background-color: var(--gramo-white);
-      opacity: 0.5;
+      opacity: 0.4;
     }
   }
 }
@@ -66,7 +67,7 @@
 .btn--secondary {
   .spinner--minimal {
     & > div {
-      background-color: var(--off-gray);
+      background-color: var(--silver);
       opacity: 0.5;
     }
   }

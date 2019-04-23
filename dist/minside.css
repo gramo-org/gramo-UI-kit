@@ -3816,15 +3816,16 @@ input:-webkit-autofill{
   position:absolute;
   bottom:-1px;
   left:calc(50% - 2.5rem);
+  z-index:2;
 }
 
 .btn--primary .spinner--minimal > div{
   background-color:#fdfdfd;
-  opacity:0.5;
+  opacity:0.4;
 }
 
 .btn--secondary .spinner--minimal > div{
-  background-color:#a5a4ab;
+  background-color:#d9d9dc;
   opacity:0.5;
 }
 .table__cell--action{
