@@ -88,6 +88,12 @@
   }
 }
 
+.form__field--for-stepper {
+  .form__input__errors > p {
+    max-width: 100px;
+  }
+}
+
 /* Make help text line up with inputs */
 .form__field__help,
 .form__field__add {
