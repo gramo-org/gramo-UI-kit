@@ -3820,7 +3820,7 @@ input:-webkit-autofill{
   margin:0;
   height:16px;
   position:absolute;
-  bottom:-1px;
+  bottom:-2px;
   left:calc(50% - 2.5rem);
   z-index:2;
 }
@@ -3830,7 +3830,7 @@ input:-webkit-autofill{
   opacity:0.4;
 }
 
-.btn--secondary .spinner--minimal > div{
+.btn--secondary .spinner--minimal > div, .search__submit .spinner--minimal > div{
   background-color:#d9d9dc;
   opacity:0.5;
 }
@@ -4483,6 +4483,7 @@ input:-webkit-autofill{
   flex:0 0 auto;
   margin:0 0 0 -1px;
   text-decoration:none;
+  position:relative;
 }
 
 .search__form .search__submit::before{
@@ -4490,6 +4491,10 @@ input:-webkit-autofill{
   font-family:'icomoon';
   font-size:2.2rem;
   line-height:2;
+}
+
+.search__form .search__submit[disabled]::before{
+  opacity:0.25;
 }
 
 .search__form--left{
@@ -4503,9 +4508,6 @@ input:-webkit-autofill{
 }
 .search--filter .search__form{
   max-width:400px;
-}
-.search--filter .form__input{
-  padding:.75rem;
 }
 .search--filter .search__submit::before{
   line-height:inherit;

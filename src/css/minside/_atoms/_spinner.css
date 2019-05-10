@@ -50,7 +50,7 @@
   margin: 0;
   height: 16px;
   position: absolute;
-  bottom: -1px;
+  bottom: -2px;
   left: calc(50% - 2.5rem);
   z-index: 2;
 }
@@ -64,7 +64,7 @@
   }
 }
 
-.btn--secondary {
+.btn--secondary, .search__submit {
   .spinner--minimal {
     & > div {
       background-color: var(--silver);
