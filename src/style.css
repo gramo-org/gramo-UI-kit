@@ -6106,9 +6106,9 @@ main.pull .section-header--fixed{
 .infobar__heading, .infobar__count{
 }
 .infobar__left{
-  -webkit-flex:1 1 auto;
-  -ms-flex:1 1 auto;
-  flex:1 1 auto;
+  -webkit-flex:1 1 75%;
+  -ms-flex:1 1 75%;
+  flex:1 1 75%;
   padding-right:2rem;
 }
 @media (min-width: 768px){
@@ -6181,7 +6181,7 @@ main.pull .section-header--fixed{
   content:"\e919";
 }
 
-[data-type*="label"]::before, [data-type*="producer"]::before{
+[data-type*="label"]::before, [data-type*="producer"]::before, [data-type*="organisation"]::before{
   content:"\e918";
 }
 

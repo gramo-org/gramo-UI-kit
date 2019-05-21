@@ -54,7 +54,7 @@
   }
 
   &__left {
-    flex: 1 1 auto;
+    flex: 1 1 75%;
     padding-right: 2rem;
   }
 
@@ -127,7 +127,8 @@
 }
 
 [data-type*="label"]::before,
-[data-type*="producer"]::before {
+[data-type*="producer"]::before,
+[data-type*="organisation"]::before {
   content: "\e918";
 }
 
