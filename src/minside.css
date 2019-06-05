@@ -3865,6 +3865,9 @@ input:-webkit-autofill{
   -ms-flex-order:2;
   order:2;
 }
+[data-label="Utgitt"]{
+  white-space:nowrap;
+}
 .link--back{
   text-decoration:none;
 }
@@ -3971,6 +3974,7 @@ input:-webkit-autofill{
   position:relative;
   display:inline-block;
   cursor:pointer;
+  white-space:nowrap;
 }
 .table-sort--asc:after, .table-sort--desc:after{
   font-family:'minside-icons';

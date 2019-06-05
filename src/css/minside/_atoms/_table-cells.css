@@ -18,3 +18,8 @@
 .table__cell--file-upload {
   order: 2;
 }
+
+/* Prevent text-wrap in table cells showing date */
+[data-label="Utgitt"] {
+  white-space: nowrap;
+}
