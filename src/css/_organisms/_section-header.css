@@ -33,7 +33,7 @@
     }
   }
 
-  h2 {
+  h2, .heading--with-icon {
     display: flex;
     align-items: center;
   }

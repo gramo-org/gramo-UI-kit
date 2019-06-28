@@ -139,3 +139,21 @@
 [data-type*="member"]::before {
   content: "\e91e";
 }
+
+[data-type*="radio"]::before,
+[data-type*="tv"]::before {
+  content: "";
+  background-image: url(/img/radio.svg);
+  background-size: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: relative;
+  top: -4px;
+}
+
+[data-type*="tv"]::before {
+  background-image: url(/img/tv.svg);
+  top: 0px;
+}
