@@ -8,9 +8,9 @@
   background-size: cover; */
   color: var(--slate-gray);
   box-shadow: 0 1px 0 var(--silver);
-  @media (--tablet) {
+  /* @media (--tablet) {
     min-height: 200px;
-  }
+  } */
 
   .icon {
     font-size: 6rem;
