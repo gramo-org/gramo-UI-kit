@@ -5,18 +5,31 @@
   white-space: nowrap;
   
   &--asc:after,
-  &--desc:after {
-    font-family: 'minside-icons';
-    font-size: 80%;
+  &--desc:after,
+  &--null::after {
+    content: '';
     margin-left: .35rem;
     display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 2px;
   }
   
   &--desc:after {
-    @extend .icon--carret_down:before;
+    background-image: url(img/table-sort--desc.svg);
+
   }
   
   &--asc:after {
-    @extend .icon--carret_up:before;
+    background-image: url(img/table-sort--asc.svg);
+
+  }
+  
+  &--null::after {
+    background-image: url(img/table-sort.svg);
+
   }
 }

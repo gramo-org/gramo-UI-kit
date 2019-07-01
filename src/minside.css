@@ -2772,10 +2772,10 @@ input[type="number"].fluid{
 .icon--arrow-back:before{
   content:"\e908";
 }
-.icon--carret_down:before, .table-sort--desc:after{
+.icon--carret_down:before{
   content:"\e909";
 }
-.icon--carret_up:before, .table-sort--asc:after{
+.icon--carret_up:before{
   content:"\e909";
   -webkit-transform:rotate(-180deg);
   -ms-transform:rotate(-180deg);
@@ -3976,11 +3976,25 @@ input:-webkit-autofill{
   cursor:pointer;
   white-space:nowrap;
 }
-.table-sort--asc:after, .table-sort--desc:after{
-  font-family:'minside-icons';
-  font-size:80%;
+.table-sort--asc:after, .table-sort--desc:after, .table-sort--null::after{
+  content:'';
   margin-left:.35rem;
   display:inline-block;
+  position:relative;
+  width:16px;
+  height:16px;
+  background-repeat:no-repeat;
+  background-size:contain;
+  top:2px;
+}
+.table-sort--desc:after{
+  background-image:url(img/table-sort--desc.svg);
+}
+.table-sort--asc:after{
+  background-image:url(img/table-sort--asc.svg);
+}
+.table-sort--null::after{
+  background-image:url(img/table-sort.svg);
 }
 .flash-message-wrapper{
   left:0;
