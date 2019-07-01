@@ -5481,6 +5481,9 @@ caption{
     display:flex;
   }
 }
+.table--list tbody tr:nth-child(even){
+  background:#f3f3f3;
+}
 .table--list tr{
   border:1px solid #d9d9dc;
   border-width:1px 0;

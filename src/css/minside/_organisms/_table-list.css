@@ -25,6 +25,11 @@
     }
   }
   
+  tbody tr:nth-child(even) {
+    background: var(--mid-light-gray);
+  }
+  
+  
   tr {
     border: 1px solid var(--table-border-color);
     border-width: 1px 0;
