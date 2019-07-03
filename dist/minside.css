@@ -3985,7 +3985,7 @@ input:-webkit-autofill{
   height:14px;
   background-repeat:no-repeat;
   background-size:contain;
-  top:2px;
+  top:1px;
 }
 .table-sort--desc:after{
   background-image:url(img/table-sort--desc.svg);
