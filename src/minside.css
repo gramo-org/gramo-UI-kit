@@ -3825,6 +3825,10 @@ input:-webkit-autofill{
   z-index:2;
 }
 
+.searchable-list__loading .spinner--minimal{
+  bottom:2px;
+}
+
 .btn--primary .spinner--minimal > div{
   background-color:#fdfdfd;
   opacity:0.4;
@@ -4655,6 +4659,10 @@ input:-webkit-autofill{
 .searchable-list__dropdown ul li.searchable-list__option--active, .searchable-list__dropdown ul li.searchable-list__option:hover{
   color:inherit;
   background-color:#88c7d8;
+}
+
+.searchable-list__loading{
+  padding:1rem .5rem;
 }
 
 .searchable-list--for-input{

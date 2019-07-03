@@ -55,6 +55,12 @@
   z-index: 2;
 }
 
+.searchable-list__loading {
+  .spinner--minimal {
+    bottom: 2px;
+  }
+}
+
 .btn--primary {
   .spinner--minimal {
     & > div {

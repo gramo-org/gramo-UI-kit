@@ -132,11 +132,20 @@
                           <span class="searchable-list__selected">Warner Bros. Records</span>
                         </div>
                         <div class="searchable-list__dropdown">
-                          <input type="text" class="ember-text-field searchable-list__search form__input form__input--block">
+                          <input type="text" placeholder="Søk etter label..." class="ember-text-field searchable-list__search form__input form__input--block">
                           <ul>
-                            <li class="searchable-list__option">
+                            <li class="searchable-list__loading">
+                              <div class="spinner spinner--minimal">
+                                <div class="spinner__rect1"></div>
+                                <div class="spinner__rect2"></div>
+                                <div class="spinner__rect3"></div>
+                                <div class="spinner__rect4"></div>
+                                <div class="spinner__rect5"></div>
+                              </div>
+                            </li>
+                            <!-- <li class="searchable-list__option">
                                 Nullstill
-                              </li>
+                              </li> -->
                           </ul>
                         </div>
                       </div>

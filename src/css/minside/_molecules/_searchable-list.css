@@ -41,6 +41,10 @@
   }
 }
 
+.searchable-list__loading {
+  padding: 1rem .5rem;
+}
+
 .searchable-list--for-input {
   width: 100%;
   max-width: none;
