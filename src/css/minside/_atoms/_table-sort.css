@@ -8,11 +8,11 @@
   &--desc:after,
   &--null::after {
     content: '';
-    margin-left: .35rem;
+    margin-left: .25rem;
     display: inline-block;
     position: relative;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     background-repeat: no-repeat;
     background-size: contain;
     top: 2px;
