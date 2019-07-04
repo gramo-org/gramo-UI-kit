@@ -43,6 +43,7 @@
 
 .searchable-list__loading {
   padding: 1rem .5rem;
+  position: relative;
 }
 
 .searchable-list--for-input {
