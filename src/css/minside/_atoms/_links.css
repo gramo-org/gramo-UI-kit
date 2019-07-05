@@ -69,3 +69,7 @@
     display: none;
   }
 }
+
+.link--to-dashboard {
+  margin-left: .5rem;
+}

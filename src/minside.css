@@ -3935,6 +3935,10 @@ input:-webkit-autofill{
 .link--add--hidden, .link--trash--hidden, .link-prototype--hidden{
   display:none;
 }
+
+.link--to-dashboard{
+  margin-left:.5rem;
+}
 .x-toggle:checked + .x-toggle-btn{
   background-color:#88c7d8!important;
 }
