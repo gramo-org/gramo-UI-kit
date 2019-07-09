@@ -10,11 +10,18 @@
 
 .link--edit {
   height: 49px;
+  /* height: auto; */
+  border: 1px solid rgba(49,121,141,0.3);
+  border-radius: 2px;
+  font-weight: 600;
   transition-property: none;
 
   &:after {
     content: "\e91c";
     font-family: 'minside-icons';
+    font-weight: normal;
+    margin: -3px 0 0 5px;
+    display: inline-block;
   }
 }
 
@@ -48,7 +55,8 @@
 
 /* For prototype (turning edit link into 'avbryt') */
 .link--edit:not(.btn) {
-  padding: 1.2rem 0 1.2rem 2rem;
+  /* padding: 1.2rem 0 1.2rem 2rem; */
+  padding: 1.1rem 1.4rem 1.1rem 2rem;
 }
 /* this is added to edit link via js */
 .link--edit--hidden {

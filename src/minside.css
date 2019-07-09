@@ -3889,12 +3889,18 @@ input:-webkit-autofill{
 
 .link--edit{
   height:49px;
+  border:1px solid rgba(49,121,141,0.3);
+  border-radius:2px;
+  font-weight:600;
   transition-property:none;
 }
 
 .link--edit:after{
   content:"\e91c";
   font-family:'minside-icons';
+  font-weight:normal;
+  margin:-3px 0 0 5px;
+  display:inline-block;
 }
 
 .link--trash{
@@ -3925,7 +3931,7 @@ input:-webkit-autofill{
   pointer-events:none;
 }
 .link--edit:not(.btn){
-  padding:1.2rem 0 1.2rem 2rem;
+  padding:1.1rem 1.4rem 1.1rem 2rem;
 }
 .link--edit--hidden{
   height:auto;
