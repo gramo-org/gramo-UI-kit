@@ -73,3 +73,14 @@
 .link--to-dashboard {
   margin-left: .5rem;
 }
+
+.link--external {
+  margin-left: .5rem;
+  text-decoration: none;
+  
+  &:after {
+    content: "\e91b";
+    font-family: 'minside-icons';
+    color: var(--gramo-sea-green);
+  }
+}

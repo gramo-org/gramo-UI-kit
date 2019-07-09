@@ -3939,6 +3939,17 @@ input:-webkit-autofill{
 .link--to-dashboard{
   margin-left:.5rem;
 }
+
+.link--external{
+  margin-left:.5rem;
+  text-decoration:none;
+}
+
+.link--external:after{
+  content:"\e91b";
+  font-family:'minside-icons';
+  color:#31798d;
+}
 .x-toggle:checked + .x-toggle-btn{
   background-color:#88c7d8!important;
 }
