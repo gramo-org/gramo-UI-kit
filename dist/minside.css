@@ -4219,15 +4219,17 @@ input:-webkit-autofill{
   right:0;
   top:0;
   bottom:0;
-  padding:1.4rem;
+  padding:1.4rem 3rem;
   margin:0;
   color:#fdfdfd;
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
-  -webkit-align-items:flex-end;
-  -ms-flex-align:end;
-  align-items:flex-end;
+  font-size:1.9rem;
+  text-transform:uppercase;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
   transition:all .25s ease;
   z-index:2;
 }
@@ -4237,7 +4239,7 @@ input:-webkit-autofill{
   font-size:1.4rem;
   margin-left:1rem;
   position:relative;
-  top:0;
+  top:2px;
 }
 
 .nav-toggle[aria-expanded="true"]::after{
