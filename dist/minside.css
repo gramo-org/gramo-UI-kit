@@ -4632,13 +4632,21 @@ input:-webkit-autofill{
   }
 }
 .pagination .pagination__item{
-  border-color:#d9d9dc;
+  border:0;
   background:#f9f9f9;
   color:#31798d;
 }
-.pagination .pagination__item--current, .pagination .pagination__item a:hover{
+.pagination .pagination__item a{
+  border:1px solid #d9d9dc;
+  border-radius:2px;
+}
+.pagination .pagination__item--current a, .pagination .pagination__item a:hover{
   background:#31798d;
   border-color:#31798d;
+}
+.pagination .icon--pagination-previous, .pagination .icon--pagination-next{
+  position:relative;
+  top:1px;
 }
 .searchable-list{
   padding:0;

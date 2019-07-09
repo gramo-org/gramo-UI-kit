@@ -1,12 +1,23 @@
 .pagination {
   .pagination__item {
-    border-color: var(--silver);
+    border: 0;
     background: var(--x-light-gray);
     color: var(--gramo-sea-green);
     
-    &--current, a:hover {
+    a {
+      border: 1px solid var(--silver);
+      border-radius: 2px;
+    }
+    
+    &--current a, a:hover {
       background: var(--gramo-sea-green);
       border-color: var(--gramo-sea-green);
     }
+  }
+  
+  .icon--pagination-previous, 
+  .icon--pagination-next {
+    position: relative;
+    top: 1px;
   }
 }
