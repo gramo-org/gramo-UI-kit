@@ -40,6 +40,12 @@
       &:checked + .fake-checkbox::after {
         opacity: 1;
       }
+      
+      &:focus + .fake-checkbox {
+        outline-offset: -1px;
+text-decoration: none;
+outline: var(--gramo-blue) solid 1px;
+      }
     }
     
     .icon {

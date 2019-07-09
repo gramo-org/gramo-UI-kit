@@ -3693,6 +3693,12 @@ input:-webkit-autofill{
   opacity:1;
 }
 
+.toolbar--for-filters .form__label .form__input:focus + .fake-checkbox{
+  outline-offset:-1px;
+  text-decoration:none;
+  outline:#0095da solid 1px;
+}
+
 .toolbar--for-filters .form__label .icon{
   display:none;
 }
