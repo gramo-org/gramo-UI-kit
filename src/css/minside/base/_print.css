@@ -1,5 +1,25 @@
 .statusboard, 
-.help,
-.form__label {
+.help
+/*.form__label*/ {
   display: none!important;
+}
+
+.box-list--numbered div[class*="col-"] {
+  display: inline-block;
+  max-width: 200px;
+}
+
+.list__header .col-xs-7 {
+  max-width: none!important;
+}
+
+.list__header .form__label {
+  width: 150px!important;
+  float: left!important;
+  display: inline-block!important;
+}
+
+.radio-group input {
+  visibility: visible!important;
+  bottom: -5px;
 }
