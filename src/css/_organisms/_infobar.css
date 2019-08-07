@@ -143,8 +143,8 @@
 [data-type*="radio"]::before,
 [data-type*="tv"]::before {
   content: "";
-  background-image: url(/img/radio.svg);
-  background-size: no-repeat;
+  background-image: url(../img/radio.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   width: 30px;
   height: 30px;
@@ -154,6 +154,6 @@
 }
 
 [data-type*="tv"]::before {
-  background-image: url(/img/tv.svg);
+  background-image: url(../img/tv.svg);
   top: 0px;
 }
