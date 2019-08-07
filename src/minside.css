@@ -4666,6 +4666,7 @@ input:-webkit-autofill{
   }
 }
 .pagination .pagination__item{
+  display:inline-block;
   border:0;
   background:#f9f9f9;
   color:#31798d;

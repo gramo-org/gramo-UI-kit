@@ -1,5 +1,6 @@
 .pagination {
   .pagination__item {
+    display: inline-block;
     border: 0;
     background: var(--x-light-gray);
     color: var(--gramo-sea-green);
