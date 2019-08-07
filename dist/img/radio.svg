@@ -1,0 +1,9 @@
+<svg width="49" height="47" viewBox="0 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="33" cy="31" r="8" fill="#504F55"/>
+<circle cx="14" cy="31" r="5" fill="#504F55"/>
+<mask id="path-3-inside-1" fill="white">
+<rect y="15" width="49" height="32" rx="2"/>
+</mask>
+<rect y="15" width="49" height="32" rx="2" stroke="#504F55" stroke-width="6" mask="url(#path-3-inside-1)"/>
+<path d="M14.5 15.1667H8C8 15.1667 10.1667 12.662 10.1667 10.8333V1.08333C10.1667 0.485333 10.652 0 11.25 0C11.848 0 12.3333 0.485333 12.3333 1.08333V10.8333C12.3333 12.7638 14.5 15.1667 14.5 15.1667Z" fill="#504F55"/>
+</svg>
