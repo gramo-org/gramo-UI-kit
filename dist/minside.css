@@ -5093,6 +5093,10 @@ tr[data-src="draft"] > td:first-child::before{
 tr[data-src="draft"] > td:first-child::after{
   background-color:#a41681;
 }
+
+.table tbody > tr.table__row--with-payment{
+  background:#f3f3f3;
+}
 .time-input .form__label{
   display:inline-block;
 }
@@ -5547,9 +5551,6 @@ caption{
     display:-ms-flexbox;
     display:flex;
   }
-}
-.table--list tbody tr:nth-child(even){
-  background:#f3f3f3;
 }
 .table--list tr{
   border:1px solid #d9d9dc;

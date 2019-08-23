@@ -88,3 +88,7 @@ tr[data-src="draft"] {
      background-color: var(--gramo-purple);
   }
 }
+
+.table tbody > tr.table__row--with-payment {
+  background: var(--mid-light-gray);
+}
