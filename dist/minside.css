@@ -3864,6 +3864,12 @@ input:-webkit-autofill{
   background-color:#d9d9dc;
   opacity:0.5;
 }
+
+.spinner--inline{
+  position:static;
+  height:18px;
+  margin-top:2px;
+}
 .table__cell--action{
   -webkit-order:1!important;
   -ms-flex-order:1!important;
@@ -3981,6 +3987,18 @@ input:-webkit-autofill{
   content:"\e91b";
   font-family:'minside-icons';
   color:#31798d;
+}
+
+.link--to-balance{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+  align-items:center;
 }
 .x-toggle:checked + .x-toggle-btn{
   background-color:#88c7d8!important;

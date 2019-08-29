@@ -78,3 +78,9 @@
     }
   }
 }
+
+.spinner--inline {
+  position: static;
+  height: 18px;
+  margin-top: 2px;
+}
