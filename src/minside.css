@@ -5036,6 +5036,13 @@ a.card.active .icon, a.card.active .card__header, a.card:hover .icon, a.card:hov
   }
 }
 
+@media (min-width: 768px){
+
+  .row__delete--for-select{
+    left:calc(280px + 1.5rem);
+  }
+}
+
 tr[data-src]{
   position:relative;
 }

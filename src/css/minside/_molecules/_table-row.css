@@ -20,6 +20,10 @@
   &--half {
     @media (--tablet) { right: calc(50% - 1.5rem); }
   }
+  
+  &--for-select {
+    @media (--tablet) { left: calc(280px + 1.5rem); }
+  }
 }
 
 /* Data types for rows */

@@ -168,10 +168,25 @@
                 <div class="row">
                   <div class="col-xs-11 col-sm-6">
                     <label class="form__label">Hovedinstrument
-                      <input type="text" class="form__input" disabled>
+                      <div id="ember538" class="searchable-list searchable-list--disabled searchable-list form__input">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Velg skattekommune</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" id="ember540" class="ember-text-field searchable-list__search form__input form__input--block" disabled>
+                          <ul>
+                            <li class="searchable-list__option">
+                                Bass
+                            </li>
+                            <li class="searchable-list__option">
+                              Gitar
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </label>
                   </div>
-                  <div class="row__delete row__delete--half">
+                  <div class="row__delete row__delete--for-select">
                     <a class="text--small text--light">
                       <span id="ember2058" class="icon icon--close"></span>
                     </a>
@@ -182,9 +197,29 @@
                 </a>
                 <div class="row">
                   <div class="col-xs-11 col-sm-6">
-                    <label class="form__label">IPN
-                      <input type="text" class="form__input" disabled>
+                    <label class="form__label">Instrument
+                      <div id="ember538" class="searchable-list searchable-list form__input">
+                        <div tabindex="0" class="searchable-list__heading searchable-list__heading">
+                          <span class="searchable-list__selected">Velg instrument</span>
+                        </div>
+                        <div class="searchable-list__dropdown">
+                          <input type="text" id="ember540" class="ember-text-field searchable-list__search form__input form__input--block" disabled>
+                          <ul>
+                            <li class="searchable-list__option">
+                                Bass
+                            </li>
+                            <li class="searchable-list__option">
+                              Gitar
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </label>
+                  </div>
+                  <div class="row__delete row__delete--for-select">
+                    <a class="text--small text--light">
+                      <span id="ember2058" class="icon icon--close"></span>
+                    </a>
                   </div>
                 </div>
               </section>
