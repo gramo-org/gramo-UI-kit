@@ -3532,6 +3532,18 @@ input:-webkit-autofill{
   content:'*';
   color:#ed6b6a;
 }
+.form__label--required span{
+  font-weight:400;
+  font-style:italic;
+  margin-left:.15rem;
+  color:#767676;
+}
+.form__label--required span::before{
+  content:'(';
+}
+.form__label--required span::after{
+  content:')';
+}
 .form__label--inline{
   display:inline-block;
   vertical-align:middle;

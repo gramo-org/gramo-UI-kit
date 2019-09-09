@@ -18,6 +18,21 @@
       content: '*';
       color: var(--gramo-red);
     }
+    
+    span {
+      font-weight: var(--normal);
+      font-style: italic;
+      margin-left: .15rem;
+      color: var(--uu-light-gray);
+      
+      &::before {
+        content: '(';
+      }
+      
+      &::after {
+        content: ')';
+      }
+    }
   }
   
   &--inline {
