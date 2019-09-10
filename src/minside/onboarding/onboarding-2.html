@@ -59,10 +59,10 @@
 
     <section class="overlay">
       <div class="box box--overlay">
-        <div class="message message--primary">
-          <p>Og en ting til,</p>
-          <p>Ser dine bankinformasjon riktig ut?</p>
-        </div>
+        <h1 class="container--branded__heading box__header">
+          Og en ting til,<br>
+          Ser dine bankinformasjon riktig ut?
+        </h1>
         <header class="container--padded text--center">
           <span class="icon icon--bank icon--large icon--primary"></span>
         </header>
@@ -78,7 +78,7 @@
             <div class="row">
               <div class="col-xs-12">
                 <label class="form__label form__label--block">Skattekommune
-                  <div id="ember889" class="searchable-list searchable-list--open form__input form__input--block searchable-list--full-width ember-view">
+                  <div id="ember889" class="searchable-list form__input form__input--block searchable-list--full-width ember-view">
                     <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-890="890">
                       <span class="searchable-list__selected">OSLO</span>
                     </div>
@@ -123,11 +123,14 @@
               </button>
             </div>
           </form>
-          <ol class="wizard-steps wizard-steps--overlay">
-            <li><span>1. Personalia</span></li>
-            <li class="selected"><span>2. Bankinformasjon</span></li>
-          </ol>
         </div>
+        <div class="stepper">
+          <p class="stepper__text">Steg 2 av 2</p>
+          <ol>
+            <li class="stepper__item stepper__item--done"><span>1. Personalia</span></li>
+            <li class="stepper__item stepper__item--done"><span>2. Bankinformasjon</span></li>
+          </ol>
+        </div><!-- end .stepper -->
       </div>
     </section>
     <main>

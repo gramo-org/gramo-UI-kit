@@ -12,14 +12,12 @@
 }
 
 .box--login {
-  background: none;
   padding: 0;
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 170px);
   @media (--tablet) { 
     display: block;
-    margin-top: 2rem; 
     min-height: 350px;
     box-shadow: none;
     border: 1px solid var(--silver);
@@ -27,7 +25,7 @@
   
   .box__inner {
     flex: 1;
-    padding: 2rem 2rem 0 2rem;
+    padding: 1rem 2rem 0 2rem;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -42,7 +40,7 @@
     
     &--centered {
       justify-content: center;
-      @media (--tablet) { padding-top: 8rem; }
+      @media (--tablet) { padding: 5rem 0; }
     }
   }
 }
@@ -55,7 +53,6 @@
 .box--overlay {
   @extend .box--login;
   border: 0;
-  background: var(--light-gray);
   margin: 0 auto;
   box-shadow: 0 2px 5px 0 color(var(--gramo-black));
 }

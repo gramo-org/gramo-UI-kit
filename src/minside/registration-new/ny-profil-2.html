@@ -59,58 +59,31 @@
 
     <section class="overlay">
       <div class="box box--overlay">
-        <h1 class="container--branded__heading box__header">
-          Og en ting til,<br>
-          Ser dine bankinformasjon riktig ut?
-        </h1>
-        <header class="container--padded text--center">
-          <span class="icon icon--bank icon--large icon--primary"></span>
+        <h1 class="container--branded__heading box__header">Vi fant dette selskapet</h1>
+        <header class="box__header">
+          <span class="icon icon--yay icon--success icon--large"></span>
         </header>
         <div class="box__inner">
           <form class="form">
-            <!-- <label class="form__label form__label--block">Skattekommune
-              <select class="select select--fluid">
-                <option value="">Oslo</option>
-                <option value="">Aksershus</option>
-                <option value="">Bergen</option>
-              </select>
-            </label> -->
+            <label class="form__label form__label--block">Selskapet
+              <input type="text" value="Nordmann Management AS" class="form__input" disabled>
+            </label>
             <div class="row">
               <div class="col-xs-12">
-                <label class="form__label form__label--block">Skattekommune
-                  <div id="ember889" class="searchable-list form__input form__input--block searchable-list--full-width ember-view">
-                    <div tabindex="0" class="searchable-list__heading searchable-list__heading" data-ember-action="" data-ember-action-890="890">
-                      <span class="searchable-list__selected">OSLO</span>
-                    </div>
-                    <div class="searchable-list__dropdown">
-                      <input type="text" id="ember891" class="ember-text-field searchable-list__search form__input form__input--block ember-view">
-                      <ul>
-                        <li class="searchable-list__option " data-ember-action="" data-ember-action-893="893">
-                          Åfjord
-                        </li>    
-                      </ul>
-                    </div>
-                  </div>
-                </label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-12">
-                <label class="form__label form__label--block">Kontotype
-                  <select class="select select--fluid">
-                    <option value="blank">Ingen kontotype valgt</option>
-                    <option value="norwegian">Norsk</option>
-                    <option value="iban">IBAN</option>
-                    <option value="bic-swift">BIC/SWIFT</option>
-                    <option value="american">Amerikansk</option>
-                  </select>
+                <label class="form__label">Adresse
+                  <input type="text" value="adressegata 12A" class="form__input" disabled>
                 </label>
               </div>
             </div><!--end .row-->
             <div class="row">
-              <div class="col-xs-12">
-                <label class="form__label">Kontonummer
-                  <input type="text" class="form__input">
+              <div class="col-xs-6">
+                <label class="form__label">Postnummer
+                  <input type="text" value="0123" class="form__input" disabled>
+                </label>
+              </div>
+              <div class="col-xs-6">
+                <label class="form__label form__label--hidden"><span>Poststed</span>
+                  <input type="text" value="Oslo" class="form__input form__input--discreet" disabled>
                 </label>
               </div>
             </div><!--end .row-->
@@ -123,16 +96,18 @@
               </button>
             </div>
           </form>
-        </div>
+        </div><!-- end .box-inner -->
         <div class="stepper">
-          <p class="stepper__text">Steg 2 av 2</p>
+          <p class="stepper__text">Steg 2 av 3</p>
           <ol>
             <li class="stepper__item stepper__item--done"><span>1. Personalia</span></li>
-            <li class="stepper__item stepper__item--done"><span>2. Bankinformasjon</span></li>
+            <li class="stepper__item stepper__item--done"><span>2. Bekreft</span></li>
+            <li class="stepper__item"><span>3. Bankinformasjon</span></li>
           </ol>
         </div><!-- end .stepper -->
-      </div>
+      </div><!-- end .box -->
     </section>
+
     <main>
       <!--- Flash message --->
       <!-- <div class="flash-message-wrapper">

@@ -1,0 +1,53 @@
+/* Min Side */
+.stepper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  top: 6px;
+  left: 0;
+  z-index: 3;
+  
+  @media (--tablet) {
+    position: static;
+    background: var(--x-light-gray);
+    border-top: 1px solid var(--silver);
+    text-align: center;
+  }
+  
+  .stepper__text {
+    color: var(--gramo-white);
+    margin-right: 2rem;
+    
+    @media (--tablet) {
+      color: inherit;
+    }
+  }
+  
+  ol {
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    background: var(--off-gray);
+    height: 1rem;
+    display: flex;
+    width: 100%;
+  }
+  
+  .stepper__item {
+    background: var(--silver);
+    height: 1rem;
+    flex: 1 0 auto;
+  }
+  
+  .stepper__item span {
+    display: none;
+  }
+  
+  .stepper__item--done {
+    background: var(--gramo-green);
+  }
+}

@@ -75,6 +75,7 @@
 @import url('minside/_organisms/_sidebar.css');
 @import url('minside/_organisms/_form.css');
 @import url('minside/_organisms/_wizard-steps.css');
+@import url('minside/_organisms/_stepper.css');
 @import url('minside/_organisms/_tables.css');
 @import url('minside/_organisms/_table-list.css');
 @import url('minside/_organisms/_table-tracks.css');

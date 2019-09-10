@@ -20,9 +20,14 @@
     margin: 0;
   }
 
-  & > p {
+  & > p, & > h3 {
     padding: 1rem 2rem;
     width: 100%; /* for IE */
+  }
+  
+  &--in-box {
+    background: none;
+    box-shadow: none;
   }
 }
 
