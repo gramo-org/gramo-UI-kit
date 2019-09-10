@@ -31,12 +31,14 @@ html {
 
 /* Basic layout */
 body {
-  background: var(--minside-background-color);
+  background: var(--gramo-white);
   @extend %font-size;
   font-family: var(--base-font-family);
   font-weight: var(--base-font-weight);
   color: var(--base-font-color);
-}
+  @media (--tablet) {
+    background: var(--minside-background-color);
+  }}
 
 a {
   color: var(--gramo-sea-green);

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gramo - Component based UI kit</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="../../img/favicon-gramo.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Select 2 -searchable select box -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="../../minside.css">
+
+
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="site-header__branding"><img src="../../img/gramo-logo.svg" width="100" alt="Gramo logo"></div>
+    </header>
+    <main>
+      <div class="flash-message-wrapper--full-width flash-message-wrapper">
+      </div>
+      <section class="container container--branded">
+        <h1 class="container--branded__heading">Først skal vi prøve å finne deg igjen</h1>
+        <div class="row">
+          <div class="box box--login">
+            <header class="masthead masthead--in-box">
+              <p>Venligst skriv ditt fødselsnummer eller organisasjonsnummer nedenfor,
+                så sjekker vi om du er Gramo medlem.</p>
+            </header>
+            <div class="box__inner">
+              <form class="form">
+                <label class="form__label form__label--block form__label--required">Fødselsnummer eller org. nummer <span>påkrevd</span>
+                  <input type="text" value="17629823952" autofocus="" class="form__input form__input--block">
+                </label>
+                <div class="form__section--action form__section--flex">
+                  <a href="#" class="btn btn--secondary">
+                    Avbryt
+                  </a>
+                  <a href="registrering-2.html" class="btn btn--primary btn--flex">
+                    Finn profil
+                  </a>
+                </div>
+              </form>
+            </div>
+            <div class="stepper">
+              <p class="stepper__text">Steg 1 av 3</p>
+              <ol>
+                <li class="stepper__item stepper__item--done"><span>1. Medlemskap</span></li>
+                <li class="stepper__item"><span>2. Profil</span></li>
+                <li class="stepper__item"><span>3. Logg inn</span></li>
+              </ol>
+            </div><!-- end .stepper -->
+          </div><!-- end .box -->
+        </div><!-- end .row -->
+      </section>
+    </main>
+    <footer class="site-footer site-footer--for-cookies">
+      <p>Vi bruker cookies (informasjonskapsler) for å forbedre din opplevelse av Min Side <a href="cookies.html">Les mer om cookies her</a></p>
+      <a href="#" class="site-footer__close"><span class="icon icon--close"></span></a>
+    </footer>
+  </div>
+<script src="../../js/vendor/jquery-1.11.3.min.js"></script>
+<script src="../../js/default.js"></script>
+
+</body>
+</html>
