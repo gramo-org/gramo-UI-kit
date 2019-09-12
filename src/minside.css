@@ -3549,12 +3549,6 @@ input:-webkit-autofill{
   margin-left:.15rem;
   color:#767676;
 }
-.form__label--required span::before{
-  content:'(';
-}
-.form__label--required span::after{
-  content:')';
-}
 .form__label--inline{
   display:inline-block;
   vertical-align:middle;
