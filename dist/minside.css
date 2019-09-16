@@ -4130,6 +4130,10 @@ input:-webkit-autofill{
   flex:1;
 }
 
+.flash-message a{
+  color:#fdfdfd;
+}
+
 .flash-message__close{
   -webkit-align-self:flex-end;
   -ms-flex-item-align:end;

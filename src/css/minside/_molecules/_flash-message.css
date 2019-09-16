@@ -22,6 +22,10 @@
     flex: 1;
   }
   
+  a {
+    color: var(--gramo-white);
+  }
+  
   &__close {
     align-self: flex-end;
     font-size: 1.5rem;
