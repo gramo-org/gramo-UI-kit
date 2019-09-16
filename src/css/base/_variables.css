@@ -15,6 +15,7 @@
 --gramo-purple:                                  #a41681;
 --gramo-sea-green:                               #31798d;
 
+--text-color:                                    #121212;
 --dark-gray:                                     #3f3e44;
 --slate-gray:                                    #504f56;
 --ui-gray:                                       #434D5A;
@@ -30,7 +31,7 @@
 --base-font-size:                                1.4rem;
 --base-line-height:                              1.4;
 --base-font-weight:                              400;
---base-font-color:                               var(--dark-gray);
+--base-font-color:                               var(--text-color);/*var(--dark-gray);*/
 --base-link-color:                               var(--gramo-blue);
 --heading-color:                                 var(--slate-gray);
 

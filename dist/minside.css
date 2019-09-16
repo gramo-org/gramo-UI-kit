@@ -710,7 +710,7 @@ body{
   background:#fdfdfd;
   font-family:'Source Sans Pro', sans-serif;
   font-weight:400;
-  color:#3f3e44;}
+  color:#121212;}
 @media (min-width: 768px){
 
   body{
@@ -1563,7 +1563,7 @@ table{
 }
 }
 .link--no-style{
-  color:#3f3e44;
+  color:#121212;
 }
 
 .link--normal{
@@ -1595,7 +1595,7 @@ table{
 }
 
 .link--disabled{
-  color:#3f3e44;
+  color:#121212;
   pointer-events:none;
   text-decoration:none;
   cursor:default;
@@ -3903,14 +3903,14 @@ input:-webkit-autofill{
   align-self:flex-end;
   margin-top:-3rem;
   position:relative;
-  top:-.25rem;
   text-align:right;
 }
-@media (min-width: 768px){
+@media (min-width: 960px){
 
   .table__cell--action{
     margin-top:0;
     top:.25rem;
+    position:static;
   }
 }
 .table__cell--action a{
@@ -3948,6 +3948,18 @@ input:-webkit-autofill{
   font-weight:normal;
   margin:-3px 0 0 5px;
   display:inline-block;
+}
+
+.link--show-details{
+  position:absolute;
+  right:0;
+}
+
+@media (min-width: 960px){
+
+  .link--show-details{
+    position:static;
+  }
 }
 
 .link--trash{
@@ -5553,7 +5565,6 @@ tr[data-src="draft"] > td:first-child::after{
 .table thead td, .table thead th, .table tbody td, .table tbody th, .table tfoot td, .table tfoot th{
   border:1px solid #d9d9dc;
   border-width:1px 0;
-  color:#504f56;
   padding:1rem 2rem;
 }
 @media (min-width: 960px){
@@ -5583,6 +5594,7 @@ tr[data-src="draft"] > td:first-child::after{
 .table thead th{
   font-weight:600;
   text-align:left;
+  color:#504f56;
 }
 .table tbody > tr{
   background:#fdfdfd;
@@ -6048,6 +6060,148 @@ caption{
   -ms-flex-order:9;
   order:9;
 }
+
+.no-pull tr{
+  width:auto;
+  margin:0;
+}
+.table--list-new{
+  min-width:100%;
+  width:auto;
+  margin:0 0 1.2rem 0;
+}
+@media (max-width: 960px){
+
+  .table--list-new thead{
+    display:none;
+  }
+}
+@media (max-width: 960px){
+
+  .table--list-new tr{
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    padding:1rem;
+    width:calc(100% + 2rem);
+    margin:0 -1rem;
+  }
+}
+@media (max-width: 960px){
+
+  .table--list-new tr:not([hidden]):not(.table__row--new){
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+  }
+}
+.table--list-new tr{
+  border:1px solid #d9d9dc;
+  border-width:1px 0;
+}
+.table--list-new tr:not(:first-child){
+  margin-top:-1px;
+}
+.table--list-new tr td{
+  border:0;
+  -webkit-flex:1 0 100%;
+  -ms-flex:1 0 100%;
+  flex:1 0 100%;
+  padding:0 1rem;
+  margin:0;
+}
+.table--list-new tr td:first-child{
+  font-size:2rem;
+  -webkit-flex:1 0 100%;
+  -ms-flex:1 0 100%;
+  flex:1 0 100%;
+}
+@media (min-width: 960px){
+
+  .table--list-new tr td:first-child{
+    font-size:inherit;
+  }
+}
+.table--list-new tr td:first-child h3{
+  max-width:70%;
+}
+@media (min-width: 960px){
+
+  .table--list-new tr td:first-child h3{
+    max-width:none;
+  }
+}
+.table--list-new tr td.text--right{
+  text-align:left!important;
+}
+@media (min-width: 960px){
+
+  .table--list-new tr td.text--right{
+    text-align:right!important;
+  }
+}
+.table--list-new td:first-child::before{
+  content:none;
+}
+.table--list-new td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash):not(.table__cell--delete):not(.table-row-toggle)::before{
+  content:attr(data-label)":";
+  display:inline-block;
+  margin-right:.5rem;
+  color:#767676;
+}
+@media (min-width: 960px){
+
+  .table--list-new td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash):not(.table__cell--delete):not(.table-row-toggle)::before{
+    content:none;
+  }
+}
+.table--list-new .table__row--with-arrow{
+  position:relative;
+  padding-right:2rem;
+}
+@media (min-width: 960px){
+
+  .table--list-new .table__row--with-arrow{
+    position:static;
+  }
+}
+.table--list-new .table__row--with-arrow:after{
+  content:"\e90c";
+  color:#a5a4ab;
+  top:50%;
+  right:1rem;
+  margin-top:-1rem;
+  -webkit-transform:rotate(-90deg);
+  -ms-transform:rotate(-90deg);
+  transform:rotate(-90deg);
+  position:absolute;
+  font-family:'minside-icons';
+}
+@media (min-width: 960px){
+
+  .table--list-new .table__row--with-arrow:after{
+    content:none;
+  }
+}
+
+[data-label="Beløp"], [data-label="Endring"]{
+  font-weight:600;
+}
+
+[data-label="Beløp"]::before, [data-label="Endring"]::before{
+  display:none!important;
+}
+
+.table__cell--empty::before{
+  content:none!important;
+}
+
+.table__cell--action{
+  -webkit-order:-1!important;
+  -ms-flex-order:-1!important;
+  order:-1!important;  
+}
+ 
 
 .no-pull tr{
   width:auto;

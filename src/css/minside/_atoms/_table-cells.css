@@ -4,11 +4,12 @@
   align-self: flex-end;
   margin-top: -3rem;
   position: relative;
-  top: -.25rem;
+  /* top: -.25rem; */
   text-align: right;
-  @media (--tablet) {
+  @media (--desktop) {
     margin-top: 0;
     top: .25rem;
+    position: static;
   }
   a {
     color: inherit;

@@ -1,0 +1,127 @@
+.table--list-new {
+  min-width: 100%;
+  width: auto;
+  margin: 0 0 1.2rem 0;
+  
+  thead {
+    @media (--mobile-tablet-only) {
+      display: none;
+    }
+  }
+  
+  tr {
+    /* make <tr> a flex container on mobile */
+    @media (--mobile-tablet-only) {
+      flex-wrap: wrap;
+      padding: 1rem;
+      width: calc(100% + 2rem);
+      margin: 0 -1rem;
+    }
+  }
+  
+  tr:not([hidden]):not(.table__row--new) {
+    @media (--mobile-tablet-only) {
+      display: flex;
+    }
+  }
+  
+  
+  tr {
+    border: 1px solid var(--table-border-color);
+    border-width: 1px 0;
+    
+    /* collapse top and bottom borders into each other*/
+    &:not(:first-child) {
+      margin-top: -1px;
+    }
+  }
+
+  tr td {
+    border: 0;
+    flex: 1 0 100%;
+    /*align-items: flex-end;*/
+    padding: 0 1rem;
+    margin: 0;
+    
+    &:first-child {
+      font-size: 2rem;
+      flex: 1 0 100%;
+      
+      @media (--desktop) { 
+        font-size: inherit;
+      }
+      
+      h3 {
+        max-width: 70%;
+        @media (--desktop) { max-width: none; }
+      } 
+    }
+    
+    /* &.table__cell--left {
+      flex: 1 0 50%;
+      @media (--mobile-tablet-only) {
+        text-align: left!important;
+      }
+    } */
+    
+    &.text--right {
+      text-align: left!important;
+      
+      @media (--desktop) { 
+        text-align: right!important;
+      }
+    }
+  }
+  
+  td:first-child::before {
+    content: none;
+  }
+  
+  td:not(:first-child):not(.table__cell--title):not(.table__cell--action):not(.table__cell--trash):not(.table__cell--delete):not(.table-row-toggle)::before {
+    content: attr(data-label)":";
+    display: inline-block;
+    margin-right: .5rem;
+    color: var(--uu-light-gray);
+    @media (--desktop) { content: none; }
+  }
+  
+  .table__row--with-arrow {
+    position: relative;
+    padding-right: 2rem;
+    @media (--desktop) { position: static; }
+    
+    &:after {
+      content: "\e90c";
+      color: var(--off-gray);
+      top: 50%;
+      right: 1rem;
+      margin-top: -1rem;
+      transform: rotate(-90deg);
+      position: absolute;
+      font-family: 'minside-icons';
+      @media (--desktop) { content: none; }
+    }
+  }
+}
+
+[data-label="Beløp"], [data-label="Endring"] {
+  font-weight: var(--semibold); 
+  
+  &::before {
+    display: none!important;
+  }
+}
+
+.table__cell--empty::before {
+  content: none!important;
+}
+
+.table__cell--action {
+  order: -1!important;  
+}
+ 
+
+.no-pull tr {
+  width: auto;
+  margin: 0;
+}
