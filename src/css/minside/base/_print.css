@@ -1,5 +1,10 @@
+main {
+  position: absolute;
+}
+
 .statusboard, 
-.help
+.help,
+.search
 /*.form__label*/ {
   display: none!important;
 }

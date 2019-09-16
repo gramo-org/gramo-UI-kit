@@ -1534,7 +1534,11 @@ table{
 [class*=--screen]{
   display:none!important;
 }
-  .statusboard, .help{
+  main{
+  position:absolute;
+}
+
+.statusboard, .help, .search{
   display:none!important;
 }
 
