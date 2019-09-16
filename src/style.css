@@ -747,7 +747,7 @@ body{
   font-family:'Source Sans Pro', sans-serif;
   font-size:1.4rem;
   line-height:1.4;
-  color:#3f3e44;
+  color:#121212;
   font-weight:400;
   background:#f3f3f3;
 }
@@ -1725,7 +1725,7 @@ table{
   margin:.5rem -1rem -1rem -1rem;
 }
 .link--no-style{
-  color:#3f3e44;
+  color:#121212;
 }
 
 .link--normal{
@@ -1757,7 +1757,7 @@ table{
 }
 
 .link--disabled{
-  color:#3f3e44;
+  color:#121212;
   pointer-events:none;
   text-decoration:none;
   cursor:default;
@@ -1971,7 +1971,7 @@ input[type="radio"], input[type="checkbox"], .form__input--checkbox, .form__inpu
 .form__input--date[disabled], .form__input[type="date"][disabled]{
   background-color:rgba(255, 255, 255, 0.2);
   border-color:rgb(232, 232, 232);
-  color:#3f3e44;
+  color:#121212;
   background-image:none;
   min-width:0;
   padding-right:0;

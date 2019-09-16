@@ -25,6 +25,13 @@
   }
 }
 
+.link--show-details {
+  position: absolute;
+  right: 0;
+  
+  @media (--desktop) { position: static; }
+}
+
 .link--trash {
   text-decoration: none;
   text-transform: uppercase;

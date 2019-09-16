@@ -14,7 +14,7 @@
     td, th {
       border: 1px solid var(--table-border-color);
       border-width: 1px 0;
-      color: var(--slate-gray);
+      /* color: var(--slate-gray); */
       padding: 1rem 2rem;
       
       @media (--desktop) { 
@@ -47,6 +47,7 @@
     th {
       font-weight: var(--semibold);
       text-align: left;
+      color: var(--slate-gray);
     }
   }
   tbody > tr {
