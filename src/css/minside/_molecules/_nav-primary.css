@@ -135,6 +135,10 @@
       margin-right: .5rem;
       margin-top: .2rem;
     }
+    
+    .icon--info {
+      font-size: 2rem;
+    }
   }
   
   .vertical__nav__item--extend {
@@ -144,7 +148,7 @@
     
     a {
       border: 1px solid var(--silver);
-      border-width: 1px 0 0 0;
+      border-width: 1px 0 1px 0;
       flex: 1;
     }
   }
