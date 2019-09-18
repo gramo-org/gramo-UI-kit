@@ -19,7 +19,7 @@
       color: var(--gramo-red);
     }
     
-    & > span {
+    .required-descr {
       font-weight: var(--normal);
       font-style: italic;
       margin-left: .15rem;
