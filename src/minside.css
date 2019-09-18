@@ -3547,7 +3547,7 @@ input:-webkit-autofill{
   content:'*';
   color:#ed6b6a;
 }
-.form__label--required span{
+.form__label--required > span{
   font-weight:400;
   font-style:italic;
   margin-left:.15rem;
