@@ -87,11 +87,19 @@
           </div>
           <div class="col-xs-12 col-sm-9">
             <form class="form adjust--to-left">
+              <div class="section-header">
+                <header>
+                  <h2>Profilinformasjon</h2>
+                </header>
+                <div class="section-header__action">
+                  <a href="#" class="link--edit">Rediger</a>
+                </div>
+              </div>
               <section class="message message--secondary message--with-toggle">
                   <h3 class="message__text">Bruk denne profilen ved innlogging</h3>
                   <div class="message__toggle">
                     <span class="x-toggle-container">
-                      <input id="toggle" type="checkbox" class="x-toggle">
+                      <input id="toggle" type="checkbox" class="x-toggle" disabled>
                       <label for="toggle" data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium"></label>
                     </span>
                   </div>
@@ -102,7 +110,7 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Skattekommune
-                      <div id="ember538" class="searchable-list searchable-list form__input">
+                      <div id="ember538" class="searchable-list searchable-list--disabled searchable-list form__input">
                         <div tabindex="0" class="searchable-list__heading searchable-list__heading">
                           <span class="searchable-list__selected">Velg skattekommune</span>
                         </div>
@@ -130,7 +138,7 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Bank
-                      <select class="select  select--block">
+                      <select class="select  select--block" disabled>
                         <option value="">Velg kontotype</option>
                         <option value="">Norsk</option>
                         <option value="">Andre</option>
@@ -141,7 +149,7 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <label class="form__label">Kontonummer
-                      <input type="text" class="form__input">
+                      <input type="text" class="form__input" disabled>
                     </label>
                   </div>
                 </div>
