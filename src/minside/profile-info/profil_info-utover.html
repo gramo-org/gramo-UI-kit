@@ -88,14 +88,22 @@
           <div class="col-xs-12 col-sm-9">
             <form class="form adjust--to-left">
               <section>
-                <h2>Profil</h2>
-                  <p>
-                    <span>Bruk denne profilen ved innlogging</span>
-                    <span class="x-toggle-container">
-                      <input id="toggle" type="checkbox" class="x-toggle">
-                      <label for="toggle" data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium"></label>
-                    </span>
-                  </p>
+                <div class="section-header">
+                  <header>
+                    <h2>Profil</h2>
+                  </header>
+                  <div class="section-header__action">
+                    <a href="#" class="link--edit">Rediger</a>
+                  </div>
+                </div>
+                <div class="form">
+                  <span>Bruk denne profilen ved innlogging</span>
+                  <span class="x-toggle-container">
+                    <input id="toggle" type="checkbox" class="x-toggle" disabled>
+                    <label for="toggle" data-tg-on="På" data-tg-off="Av" class="x-toggle-btn x-toggle-default medium"></label>
+                  </span>
+                </div>
+                  
               </section>
               <hr class="horizontal-rule">
               <section id="bankinformasjon">
