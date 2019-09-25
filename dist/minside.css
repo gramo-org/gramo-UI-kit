@@ -5197,7 +5197,13 @@ tr[data-src="draft"] > td:first-child::after{
   transform:translateX(10px);
   transition:all .25s ease-out;
   left:calc(100% + 15px);
-  min-width:300px;
+}
+
+@media (min-width: 768px){
+
+  .tooltip-wrapper .tooltip{
+    min-width:300px;
+  }
 }
 .tooltip-wrapper .tooltip:before{
   bottom:-20px;
@@ -5213,7 +5219,7 @@ tr[data-src="draft"] > td:first-child::after{
   border:solid transparent;
   border-right-color:#504f56;
   border-width:10px;
-  top:50%;
+  top:3.3rem;
   content:" ";
   width:0;
   height:0;
