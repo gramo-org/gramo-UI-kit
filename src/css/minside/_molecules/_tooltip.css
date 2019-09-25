@@ -11,7 +11,12 @@
   
   .icon {
     font-size: 2.5rem;
+    color: var(--off-gray);
     @media (--tablet) { font-size: 2rem; }
+  }
+  
+  &.isVisible .icon {
+    color: var(--slate-gray);
   }
 }
 
@@ -55,12 +60,12 @@
 .tooltip-wrapper .tooltip:after {
   border: solid transparent;
   border-top-color: var(--slate-gray);
-  border-width: 10px;
-  bottom: -20px;
+  border-width: 8px;
+  bottom: -16px;
   content: " ";
   width: 0;
   height: 0;
-  right: 0px;
+  right: 5px;
   position: absolute;
   
   @media (--tablet) {
@@ -68,10 +73,12 @@
     border-top-color: transparent;
     top: 2.3rem;
     right: 100%;
+    border-width: 10px;
+    bottom: -20px;
   }
 }
   
-/*.tooltip-wrapper:hover .tooltip,*/ .tooltip.tooltip--visible {
+/*.tooltip-wrapper:hover .tooltip,*/ .isVisible .tooltip {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0px);

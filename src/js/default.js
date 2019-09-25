@@ -390,7 +390,7 @@ $('a:contains("mobilnummer")').click(function(){
   }
   
   $('.tooltip-wrapper > .icon').click(function(){
-    $(this).parent().find('.tooltip').toggleClass('tooltip--visible');
+    $(this).parent().toggleClass('isVisible');
   });
   
   $('.section-header__toggle span input').click(function() {

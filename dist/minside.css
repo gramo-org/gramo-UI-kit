@@ -5185,12 +5185,16 @@ tr[data-src="draft"] > td:first-child::after{
 }
 .tooltip-wrapper .icon{
   font-size:2.5rem;
+  color:#a5a4ab;
 }
 @media (min-width: 768px){
 
   .tooltip-wrapper .icon{
     font-size:2rem;
   }
+}
+.tooltip-wrapper.isVisible .icon{
+  color:#504f56;
 }
 
 .tooltip-wrapper .tooltip{
@@ -5239,12 +5243,12 @@ tr[data-src="draft"] > td:first-child::after{
 .tooltip-wrapper .tooltip:after{
   border:solid transparent;
   border-top-color:#504f56;
-  border-width:10px;
-  bottom:-20px;
+  border-width:8px;
+  bottom:-16px;
   content:" ";
   width:0;
   height:0;
-  right:0px;
+  right:5px;
   position:absolute;
 }  
 
@@ -5255,8 +5259,10 @@ tr[data-src="draft"] > td:first-child::after{
     border-top-color:transparent;
     top:2.3rem;
     right:100%;
+    border-width:10px;
+    bottom:-20px;
   }
-} .tooltip.tooltip--visible{
+} .isVisible .tooltip{
   opacity:1;
   pointer-events:auto;
   -webkit-transform:translateY(0px);
