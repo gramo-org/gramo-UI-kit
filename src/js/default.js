@@ -389,7 +389,9 @@ $('a:contains("mobilnummer")').click(function(){
     $(toggle).prop('checked') ? $(draftsTable).attr('hidden', false) : $(draftsTable).attr('hidden', true);
   }
   
-
+  $('.tooltip-wrapper > .icon').click(function(){
+    $(this).parent().find('.tooltip').toggleClass('tooltip--visible');
+  });
   
   $('.section-header__toggle span input').click(function() {
     toggleDraftsTable();
