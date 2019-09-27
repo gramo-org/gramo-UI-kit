@@ -76,9 +76,7 @@ caption {
 
 /* Links in tables */
 .table a:not(.btn)  {
-  text-decoration: none;
   color: var(--gramo-sea-green);
-  font-weight: var(--semibold);
 }
 
 /* For style guide - put here to avoid cascade issues (styleguide lower in cascade) */

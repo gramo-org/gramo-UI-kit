@@ -5723,9 +5723,7 @@ caption{
   margin:0 0 1rem .25rem;
 }
 .table a:not(.btn){
-  text-decoration:none;
   color:#31798d;
-  font-weight:600;
 }
 .table--simple{
   min-width:0;
