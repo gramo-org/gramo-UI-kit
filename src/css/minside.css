@@ -39,6 +39,10 @@
 ----------------------------------------------------------------
 */
 
+/* Dev only */
+/* To make sure that existing styles are not overriden with the new styles */
+@import url('minside/_minside_v2.css');
+
 /* Atoms */
 @import url('minside/_atoms/_icons.css');
 @import url('minside/_atoms/_box.css');
