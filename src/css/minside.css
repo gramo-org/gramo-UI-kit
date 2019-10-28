@@ -96,3 +96,5 @@
 @import url('minside/_organisms/_file-upload.css');
 @import url('minside/_organisms/_empty-state.css');
 @import url('minside/_organisms/_drilldown.css');
+/* Dev only styles to override */
+@import url('minside/_minside_v2_overrides.css');
