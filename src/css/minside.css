@@ -41,7 +41,7 @@
 
 /* Dev only */
 /* To make sure that existing styles are not overriden with the new styles */
-@import url('minside/_minside_v2.css');
+@import url('minside/_new/_minside_v2.css');
 
 /* Atoms */
 @import url('minside/_atoms/_icons.css');
@@ -96,5 +96,6 @@
 @import url('minside/_organisms/_file-upload.css');
 @import url('minside/_organisms/_empty-state.css');
 @import url('minside/_organisms/_drilldown.css');
-/* Dev only styles to override */
-@import url('minside/_minside_v2_overrides.css');
+/* Dev only */
+/* styles to override */
+@import url('minside/_new/_minside_v2_overrides.css');

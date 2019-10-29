@@ -28,13 +28,12 @@
     <header class="site-header profile--performer">
       <div class="site-header__branding"><img src="../../img/gramo-logo.svg" width="100" alt="Gramo logo"><span class="site-header__profile-type">/ Utøver</span></div>
       <a href="#" role="button" class="link--no-line nav-toggle" aria-label="navigation menu" aria-expanded="false" aria-controls="navigation">
-        Lukk
+        Menu
       </a>
     </header>
     <nav id="navigation" class="nav--primary">
-      <section>
-        <h1 class="hidden">Profile</h1>
-        <div class="sidebar-profile">
+      <ul class="vertical__nav">
+        <li class="sidebar-profile">
           <div class="sidebar-profile__content">
             <div class="sidebar-profile__avatar">
               <svg class="avatar-icon" width="54" height="55" viewBox="0 0 54 55" xmlns="http://www.w3.org/2000/svg">
@@ -53,17 +52,14 @@
             <a class="sidebar-profile__link" href="#">Vis Profil</a>
           </div>
           <ul class="sidebar-profile__dropdown profile-dropdown">
-            <li class="profile-dropdown__item"><a class="profile-dropdown__link" href="#">Personlig Producent</a></li>
+            <li class="profile-dropdown__item profile-dropdown__item--active"><a class="profile-dropdown__link" href="#">Personlig Producent</a></li>
             <li class="profile-dropdown__item"><a class="profile-dropdown__link" href="#">Sony Records</a></li>
             <li class="profile-dropdown__item"><a class="profile-dropdown__link" href="#">Warner Records</a></li>
           </ul>
-        </div>
-      </section>
-      <ul class="vertical__nav">
-        <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--album-label"></span>Dashboard</a></li>
+        </li>
+        <li class="vertical__nav__item vertical__nav__item--active"><a href="#" class="active"><span class="icon icon--dashboard"></span>Dashboard</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--album-label"></span>Diskografi</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span>Transaksjoner</a></li>
-        <li class="vertical__nav__item"><a href="#"><span class="icon icon--bank"></span>To Be Section</a></li>
         <!-- <li>
           <div class="user">
             <span class="user__name">
@@ -83,7 +79,7 @@
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Warner Music</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--producer"></span> Sony Music</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--profile"></span> Legg til ny profil</a></li> -->
-        <li class="vertical__nav__item vertical__nav__item--extend"><a href="#"><span class="icon icon--language"></span> Hjelp og kontakt</a></li>
+        <li class="vertical__nav__item vertical__nav__item--extend"><a href="#"><span class="icon icon--info"></span> Hjelp og kontakt</a></li>
         <li class="vertical__nav__item"><a href="#"><span class="icon icon--language"></span> Switch to English</a></li>
         <li class="vertical__nav__item "><a href="#"><span class="icon icon--logout"></span> Logg ut</a></li>
       </ul>

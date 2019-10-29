@@ -1,3 +1,4 @@
+/* src/css/minside/_molecules/_nav-primary.css */
 .nav-toggle {
   &::after {
     content: none;
@@ -13,10 +14,12 @@
   }
 }
 
+/* src/css/minside/_molecules/_nav-primary.css */
 .nav-toggle[aria-expanded="true"]::after {
   content: none;
 }
 
+/* src/css/minside/_molecules/_nav-primary.css */
 .nav-toggle[aria-expanded="true"]::before {
   content: "\e90b";
   font-size: 2rem;
@@ -25,15 +28,15 @@
   top: 1px;
 }
 
+/* src/css/minside/_molecules/_nav-primary.css */
 .nav--primary {
   .vertical__nav {
-    /* height: auto; */
-    padding-top: 0.8rem;
 
     &__item a, &__item--disabled {
       font-weight: var(--normal);
       font-size: 16px;
-      padding: 0.7rem 2rem;
+
+      padding: 1.1rem 3rem;
     }
 
     .icon {
@@ -53,12 +56,13 @@
       font-weight: var(--normal);
     }
 
-    li:last-child {
+    & > li:last-child {
       background: inherit;
       border: none;
 
       a {
         font-weight: var(--semibold);
+        padding-bottom: 3rem;
       }
     }
   }
@@ -68,10 +72,12 @@
       border: none;
       border-top: 1px solid var(--silver);
       border-width: 1px 0 1px 0;
+      padding-top: 2rem;
     }
   }
 }
 
+/* src/css/minside/_molecules/_user.css */
 .profile--performer + nav .vertical__nav__item--active {
   background: inherit;
   border: none;

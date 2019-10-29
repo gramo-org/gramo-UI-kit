@@ -296,6 +296,9 @@ $(document).ready(function() {
     $(this).attr('aria-expanded', function(index, attr) {
       return attr == 'true' ? 'false' : 'true'
     })
+    $(this).text(function(_, text) {
+      return text.toLowerCase().includes('menu') ? 'Lukk' : 'Menu'
+    })
     $(this)
       .parent()
       .next('nav')

@@ -2557,7 +2557,8 @@ input[type="number"].fluid{
   position:relative;
 
   background-color:#88C3D8;
-  padding-top:20px;
+  padding-top:2rem;
+  margin-bottom:0.8rem;
 }
 .sidebar-profile__content{
   display:-ms-flexbox;
@@ -2625,6 +2626,7 @@ input[type="number"].fluid{
 .profile-dropdown{
   position:absolute;
   visibility:hidden;
+  padding-top:.5rem;
 
   opacity:0;
   transition:all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
@@ -2646,14 +2648,17 @@ input[type="number"].fluid{
 
 .profile-dropdown__item{
   width:100%;
-  padding:5px 0;
+  padding:1.5rem 0;
   padding-left:36px;
-  margin:8px 0;
   font-size:14px;
   line-height:18px;
 }
 
 .profile-dropdown__item:hover{
+  background-color:rgba(244, 245, 245, 0.4);
+}
+
+.profile-dropdown__item--active{
   background-color:rgba(244, 245, 245, 0.4);
 }
 
@@ -2869,6 +2874,10 @@ input[type="number"].fluid{
 }
 .icon--quill:before{
   content:"\e928";
+}
+
+.icon--dashboard:before{
+  content:"\e922";
 }
 
 .icon--pagination-next:before{
@@ -4337,11 +4346,11 @@ input:-webkit-autofill{
   color:#a5a4ab;
 }
 
-.nav--primary .vertical__nav li:last-child{
+.nav--primary .vertical__nav > li:last-child{
   background:#ededed;
 }
 
-.nav--primary .vertical__nav li:last-child{
+.nav--primary .vertical__nav > li:last-child{
   border-top:1px solid #d9d9dc;
 }
 
@@ -7106,14 +7115,10 @@ caption{
   top:1px;
 }
 
-.nav--primary .vertical__nav{
-  padding-top:0.8rem;
-}
-
 .nav--primary .vertical__nav__item a, .nav--primary .vertical__nav__item--disabled{
   font-weight:400;
   font-size:16px;
-  padding:0.7rem 2rem;
+  padding:1.1rem 3rem;
 }
 
 .nav--primary .vertical__nav .icon{
@@ -7130,19 +7135,21 @@ caption{
   font-weight:400;
 }
 
-.nav--primary .vertical__nav li:last-child{
+.nav--primary .vertical__nav > li:last-child{
   background:inherit;
   border:none;
 }
 
-.nav--primary .vertical__nav li:last-child a{
+.nav--primary .vertical__nav > li:last-child a{
   font-weight:600;
+  padding-bottom:3rem;
 }
 
 .nav--primary .vertical__nav__item--extend a{
   border:none;
   border-top:1px solid #d9d9dc;
   border-width:1px 0 1px 0;
+  padding-top:2rem;
 }
 
 .profile--performer + nav .vertical__nav__item--active{

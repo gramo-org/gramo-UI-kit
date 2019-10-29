@@ -209,6 +209,10 @@
   content: "\e928";
 }
 
+.icon--dashboard:before {
+  content: "\e922";
+}
+
 .icon--pagination-next:before {
 	content: "\e909";
   font-size: inherit;
