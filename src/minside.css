@@ -2573,6 +2573,7 @@ input[type="number"].fluid{
 .sidebar-profile__avatar .avatar-icon{
   fill:#222222;
   opacity:0.7;
+  font-size:5.5rem !important;
 }
 .sidebar-profile__name{
   font-weight:600;
@@ -2878,6 +2879,10 @@ input[type="number"].fluid{
 
 .icon--dashboard:before{
   content:"\e922";
+}
+
+.icon--avatar:before{
+  content:"\e923";
 }
 
 .icon--pagination-next:before{
@@ -7102,11 +7107,9 @@ caption{
   position:relative;
   top:2px;
 }
-
 .nav-toggle[aria-expanded="true"]::after{
   content:none;
 }
-
 .nav-toggle[aria-expanded="true"]::before{
   content:"\e90b";
   font-size:2rem;
@@ -7114,44 +7117,36 @@ caption{
   margin-right:.4rem;
   top:1px;
 }
-
 .nav--primary .vertical__nav__item a, .nav--primary .vertical__nav__item--disabled{
   font-weight:400;
   font-size:16px;
   padding:1.1rem 3rem;
 }
-
 .nav--primary .vertical__nav .icon{
   margin-right:1rem;
 }
-
 .nav--primary .vertical__nav__item--active a.active, .nav--primary .vertical__nav__item--active.vertical__nav__item--disabled, .nav--primary .vertical__nav__item--active.vertical__nav__item--disabled:hover{
   color:#31798D;
   font-weight:600;
 }
-
 .nav--primary .vertical__nav__item--active.vertical__nav__item--disabled .icon, .nav--primary .vertical__nav__item--active a.active .icon{
   color:#74A9B8;
   font-weight:400;
 }
-
 .nav--primary .vertical__nav > li:last-child{
   background:inherit;
   border:none;
 }
-
 .nav--primary .vertical__nav > li:last-child a{
   font-weight:600;
   padding-bottom:3rem;
 }
-
 .nav--primary .vertical__nav__item--extend a{
   border:none;
   border-top:1px solid #d9d9dc;
   border-width:1px 0 1px 0;
   padding-top:2rem;
 }
-
 .profile--performer + nav .vertical__nav__item--active{
   background:inherit;
   border:none;

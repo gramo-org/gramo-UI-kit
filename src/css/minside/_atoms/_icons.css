@@ -213,6 +213,10 @@
   content: "\e922";
 }
 
+.icon--avatar:before {
+  content: "\e923";
+}
+
 .icon--pagination-next:before {
 	content: "\e909";
   font-size: inherit;
