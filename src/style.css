@@ -2686,7 +2686,6 @@ hr, .horizontal-rule{
   left:-2rem;
   top:2rem;
   padding-right:2rem;
-  cursor:-webkit-grab;
   cursor:grab;
 }
 .table-row-toggle, .fake-table__toggle{
@@ -4425,7 +4424,6 @@ main.pull .bucket{
   }
 }
 .fake-table__row[draggable=true]{
-  cursor:-webkit-grab;
   cursor:grab;
 }
 .fake-table__row[draggable=true]:active{
@@ -6368,7 +6366,6 @@ tr > td:last-child{
 }
 
 .fake-table--numeric__divider[draggable=true]{
-  cursor:-webkit-grab;
   cursor:grab;
 }
 

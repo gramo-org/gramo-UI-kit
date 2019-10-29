@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  overflow-x: hidden;  
+  overflow-x: hidden;
 }
 
 main {
@@ -17,19 +17,19 @@ main {
 
 .container {
   padding: 0 1rem;
-  
+
   &--padded {
     padding: 2.5rem 1rem 0 1rem;
   }
-  
+
   &--branded {
     background-image: none;
-    
-    @media (--tablet) { 
-      padding-top: 5rem; 
+
+    @media (--tablet) {
+      padding-top: 5rem;
       background: none;
     }
-    
+
     &__heading {
       font-size: 2.4rem;
       text-transform: none;
@@ -37,27 +37,27 @@ main {
       max-width: 400px;
       text-align: center;
       font-weight: var(--thin);
-      
+
       @media (--tablet) {
         margin: 2rem auto;
       }
     }
   }
-  
+
   &--col-1 {
     max-width: 840px;
     margin: auto;
-    
+
     &-min {
       @media (--tablet) { min-width: 800px; }
     }
   }
-  
+
   &--for-tables {
     max-width: 1080px;
     margin: auto;
   }
-  
+
   &--col-3 {
     max-width: 1100px;
     margin: auto;
@@ -100,12 +100,12 @@ _:-ms-input-placeholder, :root .container--branded__heading {
 /* Adjust container to left to avoid scrollbar caused by .row__delete */
 .adjust--to-left {
   position: static;
-  
+
   @media (--tablet) {
     position: relative;
     left: -2rem;
   }
-  
+
   @media (--hd) {
     position: static;
   }
