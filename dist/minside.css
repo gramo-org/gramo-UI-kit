@@ -2815,7 +2815,7 @@ input[type="number"].fluid{
   display:flex;
   -ms-flex-direction:column;
   flex-direction:column;
-  min-height:calc(100vh - 170px);
+  min-height:calc(100vh - 300px);
 }
 
 @media (min-width: 768px){
