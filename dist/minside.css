@@ -3745,6 +3745,10 @@ input:-webkit-autofill{
 .form__label--faux{
   margin-bottom:.4rem;
 }
+.phone-number-field .form__label > span{
+  display:block;
+  margin-bottom:3px;
+}
 .toolbar{
   background:#ededed;
   padding:1.2rem;
