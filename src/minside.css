@@ -2556,9 +2556,10 @@ input[type="number"].fluid{
   display:block;
   position:relative;
 
-  background-color:#88C3D8;
+  background-color:#D9EFF9;
   padding-top:2rem;
   margin-bottom:0.8rem;
+  border-bottom:2px solid #0095DA;
 }
 .sidebar-profile__content{
   display:-ms-flexbox;
@@ -2644,7 +2645,7 @@ input[type="number"].fluid{
 
   list-style-type:none;
   border-top:1px solid #E0E0E0;
-  background-color:#88C3D8;
+  background-color:#D9EFF9;
 }
 
 .profile-dropdown__item{
@@ -2656,11 +2657,11 @@ input[type="number"].fluid{
 }
 
 .profile-dropdown__item:hover{
-  background-color:rgba(244, 245, 245, 0.4);
+  background-color:rgba(136, 199, 216, 0.35);
 }
 
 .profile-dropdown__item--active{
-  background-color:rgba(244, 245, 245, 0.4);
+  background-color:rgba(136, 199, 216, 0.35);
 }
 
 .profile-dropdown__link{
