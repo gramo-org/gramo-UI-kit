@@ -7,6 +7,8 @@
   font-size: 85%;
   vertical-align: top;
   color: var(--slate-gray);
+  color: #4D4C53; 
+
   padding: 0.15rem 1rem;
   
   &--primary {
@@ -32,7 +34,9 @@ h2 .badge {
 .tabs__nav__item {
   .badge {
     background: var(--silver);
-    color: var(--slate-gray);
+    /* contrast 4.32
+    color: var(--slate-gray);*/
+    color: #4D4C53; /* contrast 4.53 */
     display: none;
     @media (--desktop) { 
       display: inline-block; 

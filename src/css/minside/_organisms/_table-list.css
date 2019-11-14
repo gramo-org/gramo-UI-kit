@@ -68,7 +68,9 @@
     content: attr(data-label)":";
     display: inline-block;
     margin-right: .5rem;
-    color: var(--off-gray);
+    /* color contrast 2.3 
+     color: var(--off-gray); */
+    color: #767676; /* color contrast 4.54 */
     @media (--desktop) { content: none; }
   }
   
@@ -219,7 +221,9 @@
     content: attr(data-label)":";
     display: inline-block;
     margin-right: .5rem;
+    /* contrast 2.3 */
     color: var(--off-gray);
+    /* color: #767676; contrast 4.54 */
     @media (--desktop) { content: none; }
   }
 

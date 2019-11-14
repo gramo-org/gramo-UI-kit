@@ -46,7 +46,11 @@
   &--primary {
     background: var(--gramo-turkis);
     border-color: color(var(--gramo-turkis) shade(15%));
-    color: var(--slate-gray);
+    /* contast 4.32
+    color: var(--slate-gray); */
+    color: #4D4C53;  /* contrast 4.53 */
+
+
     
     &:hover {
        background-color: color(var(--gramo-turkis) shade(25%));
