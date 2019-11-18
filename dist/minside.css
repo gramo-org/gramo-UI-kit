@@ -3669,6 +3669,13 @@ input:-webkit-autofill{
   display:block;
   margin-bottom:3px;
 }
+.label-select-help{
+  -webkit-align-self:flex-end;
+  -ms-flex-item-align:end;
+  align-self:flex-end;
+  top:-.5rem;
+  position:relative;
+}
 .toolbar{
   background:#ededed;
   padding:1.2rem;

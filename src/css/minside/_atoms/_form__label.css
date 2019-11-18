@@ -132,3 +132,10 @@ legend {
   display: block;
   margin-bottom: 3px;
 }
+
+/* Label select menu help text */
+.label-select-help {
+  align-self: flex-end;
+  top: -.5rem;
+  position: relative;
+}
