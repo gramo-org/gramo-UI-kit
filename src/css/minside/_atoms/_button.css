@@ -103,7 +103,10 @@
   &--add {
     background: none;
     border: 0;
+    /*
     color: var(--gramo-sea-green);
+    */
+    color: #31798d;  /* use of hex code instead of variable if it fixes #1248 */
     padding-left: 0;
     padding-right: 0;
     display: inline-flex;
