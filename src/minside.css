@@ -2832,8 +2832,7 @@ input[type="number"].fluid{
   -ms-flex:1;
   flex:1;
   padding:1rem 2rem 0 2rem;
-  display:-ms-flexbox;
-  display:flex;
+  /display:flex;
   -ms-flex-direction:column;
   flex-direction:column;
   position:relative;
@@ -2876,6 +2875,10 @@ input[type="number"].fluid{
 
 .box--meta{
   background:#d9d9dc;
+}
+
+.onboard{
+  padding:2rem 2rem 0 2rem !important;
 }
 .btn{
   font-family:"brandon-regular";
@@ -3540,7 +3543,6 @@ input:-webkit-autofill{
   margin-bottom:3px;
 }
 .label-select-help{
-  -webkit-align-self:flex-end;
   -ms-flex-item-align:end;
   align-self:flex-end;
   top:-.5rem;

@@ -60,3 +60,7 @@
 .box--meta {
   background: var(--silver);
 }
+
+.onboard{
+  padding: 2rem 2rem 0 2rem !important;
+}
