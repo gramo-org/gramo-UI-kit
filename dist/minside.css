@@ -2832,7 +2832,8 @@ input[type="number"].fluid{
   -ms-flex:1;
   flex:1;
   padding:1rem 2rem 0 2rem;
-  /display:flex;
+  display:-ms-flexbox;
+  display:flex;
   -ms-flex-direction:column;
   flex-direction:column;
   position:relative;
@@ -4121,6 +4122,21 @@ input:-webkit-autofill{
     text-decoration:none;
   }
 }
+
+.group-label{
+  margin:0.5em 0em 0.5em -2em;
+  color:#605f67;
+}
+  @media (max-width: 768px){ 
+    .group-label{ 
+    display:none;}
+  }
+
+  @media (max-width: 1156px){ 
+    .group-label{ 
+      margin:0.5em 0em 0.5em 0em;
+    }
+  }
 .nav-toggle{
   -ms-flex:0 0 auto;
   flex:0 0 auto;

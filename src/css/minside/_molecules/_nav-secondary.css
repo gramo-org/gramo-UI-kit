@@ -34,3 +34,21 @@
     }
   }
 }
+
+.group-label{
+  margin: 0.5em 0em 0.5em -2em;
+  color: #605f67;
+}
+  @media (--mobile-only) { 
+    .group-label
+    { 
+    display: none;}
+  }
+
+  @media (max-width: 1156px) { 
+    .group-label
+    { 
+      margin: 0.5em 0em 0.5em 0em;
+    }
+  }
+ 
