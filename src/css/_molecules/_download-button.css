@@ -1,0 +1,34 @@
+.btn--download {
+  padding: .5rem 0;
+  
+  font-weight: 300;
+  text-transform: none;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.3;
+
+  display: inline-block;
+  background-image: url("/assets/img/download.svg");
+  background-position: right 1.4rem center;
+  background-repeat: no-repeat;
+
+
+}
+
+.download-title {
+  display: none;
+}
+
+@media (--desktop) {
+  padding-right: 3.5rem;
+
+  .download-icon {
+    margin-top: 0rem;
+    padding: 0;
+  }
+  .download-title {
+    display: inline;
+  }
+}
