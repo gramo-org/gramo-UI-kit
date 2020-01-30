@@ -1,7 +1,7 @@
 .btn--download {
   padding: .5rem 0;
   
-  font-weight: 300;
+  font-weight: var(--thin);
   text-transform: none;
 
   padding-left: 2rem;
