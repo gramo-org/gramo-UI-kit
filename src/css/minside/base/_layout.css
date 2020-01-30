@@ -73,9 +73,9 @@ main {
   &--for-table-side-controls {
     margin-left: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 2rem;
-    margin-top: 1rem;
+    margin-top: 3.5rem;
   }
 
   &--col-3 {
