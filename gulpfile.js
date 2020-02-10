@@ -1,25 +1,23 @@
 // Base Gulp File
-var gulp = require("gulp"),
-  watch = require("gulp-watch"),
-  path = require("path"),
-  postcss = require("gulp-postcss"),
-  inlinesource = require("gulp-inline-source"),
-  browserSync = require("browser-sync"),
-  imagemin = require("gulp-imagemin"),
-  cache = require("gulp-cache"),
-  uglify = require("gulp-uglify"),
-  runSequence = require("run-sequence");
+const gulp = require("gulp")
+const postcss = require("gulp-postcss")
+const inlinesource = require("gulp-inline-source")
+const browserSync = require("browser-sync").create()
+const imagemin = require("gulp-imagemin")
+const cache = require("gulp-cache")
+const uglify = require("gulp-uglify")
+const runSequence = require("run-sequence") // TODO: Can be removed?
 
 // Task to compile SCSS
 gulp.task("postcss", function() {
-  var autoprefixer = require("autoprefixer"),
-    pImport = require("postcss-import"),
-    customProps = require("postcss-custom-properties"),
-    customMedia = require("postcss-custom-media"),
-    comments = require("postcss-discard-comments"),
-    color = require("postcss-color-function"),
-    nested = require("postcss-nested"),
-    simpleExtend = require("postcss-extend");
+  const autoprefixer = require("autoprefixer")
+  const pImport = require("postcss-import")
+  const customProps = require("postcss-custom-properties")
+  const customMedia = require("postcss-custom-media")
+  const comments = require("postcss-discard-comments")
+  const color = require("postcss-color-function")
+  const nested = require("postcss-nested")
+  const simpleExtend = require("postcss-extend");
 
   return gulp
     .src(["./src/css/style.css", "./src/css/minside.css"], {base: "./src/css/"})
@@ -35,13 +33,13 @@ gulp.task("postcss", function() {
         customMedia(),
         color(),
         autoprefixer({
-          browsers: ["last 6 versions"],
+          browsers: ["last 6 versions"], // TODO: 6?
           cascade: false,
         }),
       ])
     )
-    .pipe(gulp.dest("./src/"))
-    .pipe(gulp.dest("./dist/"))
+    .pipe(gulp.dest("./src/")) // TODO: Why do we build in to src? Seems like cos browserSync serves from src.. Hm ..
+    // .pipe(gulp.dest("./dist/"))  // TODO: Why is this here and what is this VS build task?
     .pipe(
       browserSync.reload({
         stream: true,
@@ -83,8 +81,8 @@ gulp.task("imagemin", function() {
 });
 
 // BrowserSync Task (Live reload)
-gulp.task("browserSync", function() {
-  browserSync({
+gulp.task("browserSync", async () => {
+  browserSync.init({
     open: false,
     port: process.env.PORT || '3000',
     server: {
@@ -104,14 +102,13 @@ gulp.task("inlinesource", function() {
     .pipe(gulp.dest("./dist/"));
 });
 
-// Gulp Watch Task
-gulp.task("watch", ["browserSync"], function() {
-  gulp.watch("./src/css/**/*", ["postcss"]);
-  gulp.watch("./src/**/*.html").on("change", browserSync.reload);
-});
-
 // Gulp Default Task
-gulp.task("default", ["watch"]);
+const initWatchers = () => {
+  gulp.watch("./src/css/**/*", gulp.series('postcss'));
+  gulp.watch("./src/**/*.html").on("change", browserSync.reload);
+}
+
+gulp.task("default", gulp.series('browserSync', initWatchers));
 
 // Gulp Build Task
 gulp.task("build", function() {
