@@ -1,4 +1,4 @@
-FROM node:8.9.2
+FROM node:12.15.0
 
 ### DEPENDENCIES ###
 
