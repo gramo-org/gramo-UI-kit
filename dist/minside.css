@@ -7068,14 +7068,14 @@ caption{
     display:flex;
   }
 }
-.tab__bar{
+.tabs__bar{
     display:-ms-flexbox;
     display:flex;
     -ms-flex-align:center;
     align-items:center;
 }
 
-.tab__download{
+.tabs__download{
     padding-left:2rem;
     margin-left:auto;
 }

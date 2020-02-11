@@ -1,9 +1,9 @@
-.tab__bar {
+.tabs__bar {
     display: flex;
     align-items: center;
 }
 
-.tab__download {
+.tabs__download {
     padding-left: 2rem;
     margin-left: auto;
 }
