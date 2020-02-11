@@ -1109,6 +1109,31 @@ main{
   margin:auto;
 }
 
+.container--for-table-controls{
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack:center;
+  justify-content:center;
+  padding-right:1rem;
+  padding-left:1rem;
+  padding-bottom:1rem;
+}
+
+.container--for-table-date-control{
+  -ms-flex:1;
+  flex:1;
+}
+
+.container--for-table-side-controls{
+  margin-left:auto;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-align:start;
+  align-items:flex-start;
+  padding-left:2rem;
+  margin-top:3.5rem;
+}
+
 .container--col-3{
   max-width:1100px;
   margin:auto;

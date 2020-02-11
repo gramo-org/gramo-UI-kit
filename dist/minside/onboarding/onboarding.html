@@ -66,29 +66,34 @@
         <!-- <header class="box__header">
           <span class="icon icon--address icon--large"></span>
         </header> -->
-        <div class="box__inner">
+        <div class="box__inner onboard">
           <form class="form">
             <label class="form__label form__label--block">
               <input type="checkbox" class="form__input form__input--block">
-              <span>Utenlandsk adresse?</span>
+              <span>Adresse utenfor Norge?</span>
             </label>
-            <label class="form__label form__label--block">
-              <span class="text--semibold">Adresse</span>
+            <label class="form__label form__label--block form__label--required">
+              <span class="text--semibold">Adresse (påkrevd)</span>
               <textarea class="form__input form__input--textarea form__input--block"></textarea>
             </label>
-            <label class="form__label form__label--block">Adresse
+            <label class="form__label form__label--block form__label--required">Adresse (påkrevd)
               <input type="text" value="Kongens Gate 11" class="form__input form__input--block">
             </label>
             <div class="row">
               <div class="col-xs-6">
-                <label class="form__label">Postnummer
+                <label class="form__label form__label--required">Postnummer (påkrevd)
                   <input type="text" value="0152" class="form__input">
                 </label>
               </div>
               <div class="col-xs-6">
+                  <label class="form__label form__label--required"><span>Poststed (påkrevd)</span>
+                    <input type="text" value="Oslo" class="form__input">
+                  </label>
+                <!--
                 <label class="form__label form__label--hidden"><span>Poststed</span>
                   <input type="text" value="Oslo" class="form__input form__input--discreet" disabled>
                 </label>
+                -->
               </div>
             </div><!--end .row-->
             <div class="form__section--action form__section--flex">
