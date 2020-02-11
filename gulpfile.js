@@ -7,6 +7,24 @@ const imagemin = require("gulp-imagemin")
 const cache = require("gulp-cache")
 const uglify = require("gulp-uglify")
 
+/**
+ * TODO
+ *
+ * The development env and the build process is a bit strange here as:
+ *
+ * 1. Compiled CSS is written to ./src. (It does this, as browserSync serves files from src)
+ * 2. Compiled CSS when developing is also written to "./dest"
+ * 3. The "build" task does more than what happens when file changes, as it moves fonts, process images etc.
+ *
+ *
+ * I think it would be better to have things a bit more separated:
+ *
+ * 1. Only have src files under src, not compiled CSS.
+ *   1. Change the way where browserSync serves files from.
+ * 2. Do the same when file changes we run gulp build(?).
+ * 3. Maybe use GitHub's packages repository to release new version of ui kit?
+ */
+
 // Task to compile SCSS
 gulp.task("postcss", function() {
   const autoprefixer = require("autoprefixer")
@@ -34,8 +52,8 @@ gulp.task("postcss", function() {
         autoprefixer({ cascade: false }),
       ])
     )
-    .pipe(gulp.dest("./src/")) // TODO: Why do we build in to src? Seems like cos browserSync serves from src.. Hm ..
-    // .pipe(gulp.dest("./dist/"))  // TODO: Why is this here and what is this VS build task?
+    .pipe(gulp.dest("./src/"))
+    .pipe(gulp.dest("./dist/"))
     .pipe(
       browserSync.reload({
         stream: true,
