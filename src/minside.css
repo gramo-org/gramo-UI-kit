@@ -5091,6 +5091,39 @@ tr[data-src="draft"] > td:first-child::after{
   -ms-transform:translateY(0px);
   transform:translateY(0px);
 }
+.btn--download{
+  padding:.5rem 0;
+  
+  font-weight:300;
+  text-transform:none;
+
+  margin-top:0;
+  padding-left:2rem;
+  padding-right:2rem;
+
+  display:inline-block;
+  background-image:url("/assets/img/download.svg");
+  background-position:right 1.3rem center;
+  background-repeat:no-repeat;
+}
+
+.download-title{
+  display:none;
+}
+
+@media (min-width: 768px){
+  .btn--download{
+    padding-right:3.5rem;
+    padding-left:1rem;
+  }
+  .download-icon{
+    margin-top:0rem;
+    padding:0;
+  }
+  .download-title{
+    display:inline;
+  }
+}
 .site-header{
   position:relative;
   left:0;
@@ -7034,4 +7067,15 @@ caption{
     display:-ms-flexbox;
     display:flex;
   }
+}
+.tab__bar{
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-align:center;
+    align-items:center;
+}
+
+.tab__download{
+    padding-left:2rem;
+    margin-left:auto;
 }

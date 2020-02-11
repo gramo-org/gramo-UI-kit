@@ -6540,6 +6540,7 @@ tr > td:last-child{
 }
 .tabs{
   position:relative;
+
 }
 .tabs--toggleable > .tabs__nav, .tabs--toggleable > .toolbar{
   display:none;
@@ -6562,16 +6563,6 @@ tr > td:last-child{
 }
 .tabs__section--outline{
   border:1px solid #d9d9dc;
-}
-.tabs__bar{
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-align:center;
-  align-items:center;
-}
-.tabs__download{
-  padding-left:2rem;
-  margin-left:auto;
 }
 .tabs--compressed .tabs__nav{
   margin-top:-1px;
