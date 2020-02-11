@@ -37,15 +37,6 @@
     border: 1px solid var(--table-border-color);
   }
 
-  &__bar {
-    display: flex;
-    align-items: center;
-  }
-
-  &__download {
-    padding-left: 2rem;
-    margin-left: auto;
-  }
 }
 
 /* Narrow width tabs */
