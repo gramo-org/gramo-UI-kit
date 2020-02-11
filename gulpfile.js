@@ -6,7 +6,6 @@ const browserSync = require("browser-sync").create()
 const imagemin = require("gulp-imagemin")
 const cache = require("gulp-cache")
 const uglify = require("gulp-uglify")
-const runSequence = require("run-sequence") // TODO: Can be removed?
 
 // Task to compile SCSS
 gulp.task("postcss", function() {
@@ -17,7 +16,7 @@ gulp.task("postcss", function() {
   const comments = require("postcss-discard-comments")
   const color = require("postcss-color-function")
   const nested = require("postcss-nested")
-  const simpleExtend = require("postcss-extend");
+  const simpleExtend = require("postcss-extend")
 
   return gulp
     .src(["./src/css/style.css", "./src/css/minside.css"], {base: "./src/css/"})
@@ -29,13 +28,10 @@ gulp.task("postcss", function() {
         comments({
           discardAll: true,
         }),
-        customProps(),
+        customProps({preserve: false}), // NOTE: Added this to get the same CSS as before after upgraded lib.
         customMedia(),
         color(),
-        autoprefixer({
-          browsers: ["last 6 versions"], // TODO: 6?
-          cascade: false,
-        }),
+        autoprefixer({ cascade: false }),
       ])
     )
     .pipe(gulp.dest("./src/")) // TODO: Why do we build in to src? Seems like cos browserSync serves from src.. Hm ..
@@ -44,26 +40,26 @@ gulp.task("postcss", function() {
       browserSync.reload({
         stream: true,
       })
-    );
-});
+    )
+})
 
 // Task to move compiled CSS to `dist` folder
 gulp.task("movecss", function() {
-  return gulp.src("./src/style.css").pipe(gulp.dest("./dist/"));
-});
+  return gulp.src("./src/style.css").pipe(gulp.dest("./dist/"))
+})
 
 // Task to move compiled CSS to `dist` folder
 gulp.task("movefonts", function() {
-  return gulp.src("./src/fonts/*.*").pipe(gulp.dest("./dist/fonts"));
-});
+  return gulp.src("./src/fonts/*.*").pipe(gulp.dest("./dist/fonts"))
+})
 
 // Task to Minify JS
 gulp.task("jsmin", function() {
   return gulp
     .src("./src/js/**/*.js")
     .pipe(uglify())
-    .pipe(gulp.dest("./dist/js/"));
-});
+    .pipe(gulp.dest("./dist/js/"))
+})
 
 // Minify Images
 gulp.task("imagemin", function() {
@@ -77,8 +73,8 @@ gulp.task("imagemin", function() {
           })
         )
       )
-      .pipe(gulp.dest("./dist/img")) );
-});
+      .pipe(gulp.dest("./dist/img")) )
+})
 
 // BrowserSync Task (Live reload)
 gulp.task("browserSync", async () => {
@@ -88,8 +84,8 @@ gulp.task("browserSync", async () => {
     server: {
       baseDir: "./src/",
     },
-  });
-});
+  })
+})
 
 // Gulp Inline Source Task
 // Embed scripts, CSS or images inline (make sure to add an inline attribute to the linked files)
@@ -99,25 +95,23 @@ gulp.task("inlinesource", function() {
   return gulp
     .src("./src/**/*.html")
     .pipe(inlinesource())
-    .pipe(gulp.dest("./dist/"));
-});
+    .pipe(gulp.dest("./dist/"))
+})
 
 // Gulp Default Task
 const initWatchers = () => {
-  gulp.watch("./src/css/**/*", gulp.series('postcss'));
-  gulp.watch("./src/**/*.html").on("change", browserSync.reload);
+  gulp.watch("./src/css/**/*", gulp.series('postcss'))
+  gulp.watch("./src/**/*.html").on("change", browserSync.reload)
 }
 
-gulp.task("default", gulp.series('browserSync', initWatchers));
+gulp.task("default", gulp.series('browserSync', initWatchers))
 
 // Gulp Build Task
-gulp.task("build", function() {
-  runSequence(
-    "postcss",
-    "movecss",
-    "movefonts",
-    "imagemin",
-    "jsmin",
-    "inlinesource"
-  );
-});
+gulp.task("build", gulp.series(
+  "postcss",
+  "movecss",
+  "movefonts",
+  "imagemin",
+  "jsmin",
+  "inlinesource"
+))
