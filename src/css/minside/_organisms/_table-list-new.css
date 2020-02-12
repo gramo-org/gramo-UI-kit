@@ -81,7 +81,8 @@
     content: attr(data-label)":";
     display: inline-block;
     margin-right: .5rem;
-    color: var(--uu-light-gray);
+    color: var(--uu-light-gray); 
+    color: #767676;
     @media (--desktop) { content: none; }
   }
   

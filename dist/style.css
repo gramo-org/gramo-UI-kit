@@ -6540,6 +6540,7 @@ tr > td:last-child{
 }
 .tabs{
   position:relative;
+
 }
 .tabs--toggleable > .tabs__nav, .tabs--toggleable > .toolbar{
   display:none;

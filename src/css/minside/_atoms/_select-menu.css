@@ -14,6 +14,8 @@
   &[disabled] {
     border-color: var(--silver);
     background: color(var(--light-gray) shade(3%));
-    color: var(--off-gray);
+    /* contrast 2.1
+    color: var(--off-gray); */
+    color: #626168; /* contrast 4.8 */
   }
 }

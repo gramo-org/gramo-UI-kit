@@ -85,6 +85,8 @@ gulp.task("imagemin", function() {
 // BrowserSync Task (Live reload)
 gulp.task("browserSync", function() {
   browserSync({
+    open: false,
+    port: process.env.PORT || '3000',
     server: {
       baseDir: "./src/",
     },

@@ -126,3 +126,16 @@ legend {
 .form__label--faux {
   margin-bottom: .4rem; /* for elements assuming the visual character of form labels */
 }
+
+/* For phone number fields */
+.phone-number-field .form__label > span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+/* Label select menu help text */
+.label-select-help {
+  align-self: flex-end;
+  top: -.5rem;
+  position: relative;
+}

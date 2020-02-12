@@ -16,7 +16,9 @@
   &--disabled {
     border-color: var(--silver);
     background: color(var(--light-gray) shade(3%));
-    color: var(--off-gray);
+    /* contrast 1.98
+    color: var(--off-gray); */
+    color: #666666; /* color contrast 4.6 */
   }
   
   &--full-width {

@@ -58,6 +58,26 @@ main {
     margin: auto;
   }
 
+  &--for-table-controls {
+    display: flex;
+    justify-content: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &--for-table-date-control {
+    flex: 1;
+  }
+
+  &--for-table-side-controls {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 2rem;
+    margin-top: 3.5rem;
+  }
+
   &--col-3 {
     max-width: 1100px;
     margin: auto;
@@ -108,5 +128,15 @@ _:-ms-input-placeholder, :root .container--branded__heading {
 
   @media (--hd) {
     position: static;
+  }
+}
+
+.login-page__wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (--tablet) {
+    margin-top: -5rem;
+    margin-bottom: -5rem;
   }
 }

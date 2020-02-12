@@ -66,9 +66,11 @@ input[type="time"] {
 }
 
 .form__input[disabled] {
-  border-color: var(--silver);
+  border-color: var(--silver); 
   background-color: color(var(--light-gray) shade(3%));
-  color: var(--off-gray);
+  /* contrast ratio 2.1 
+  color: var(--off-gray);*/
+  color: #626168;  /* contrast 4.8 */
   cursor: not-allowed;
 }
 

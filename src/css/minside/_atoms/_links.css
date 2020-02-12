@@ -28,6 +28,7 @@
 .link--show-details {
   position: absolute;
   right: 0;
+  white-space: nowrap;
   
   @media (--desktop) { position: static; }
 }
