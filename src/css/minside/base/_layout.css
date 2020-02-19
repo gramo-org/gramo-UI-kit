@@ -64,6 +64,7 @@ main {
     padding-right: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
+    position: relative;
   }
 
   &--for-table-date-control {
@@ -76,6 +77,11 @@ main {
     align-items: flex-start;
     padding-left: 2rem;
     margin-top: 3.5rem;
+    @media(--desktop) {
+      position: absolute;
+      right: 2rem;
+      top: 0;
+    }
   }
 
   &--col-3 {

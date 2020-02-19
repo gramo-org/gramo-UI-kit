@@ -1146,6 +1146,7 @@ main{
   padding-right:1rem;
   padding-left:1rem;
   padding-bottom:1rem;
+  position:relative;
 }
 
 .container--for-table-date-control{
@@ -1164,6 +1165,15 @@ main{
   align-items:flex-start;
   padding-left:2rem;
   margin-top:3.5rem;
+}
+
+@media(min-width: 960px){
+
+  .container--for-table-side-controls{
+    position:absolute;
+    right:2rem;
+    top:0;
+  }
 }
 
 .container--col-3{
