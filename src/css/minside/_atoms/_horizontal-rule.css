@@ -16,7 +16,7 @@ hr, .horizontal-rule {
   text-align: center;
   margin: 2rem 0;
   background: var(--silver);
-  
+
   hr {
     height: 1px;
     border: 0;
@@ -77,7 +77,7 @@ hr.horizontal-rule--choice {
     top: -1.5rem;
     font-size: 1.8rem;
     color: var(--off-gray);
-    background: var(--x-light-gray);
+    background: var(--gramo-white);
     padding: 0 0.75rem;
     font-style: italic;
   }
