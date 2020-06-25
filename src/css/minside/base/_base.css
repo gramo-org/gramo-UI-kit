@@ -41,9 +41,9 @@ body {
   }}
 
 a {
-  color: var(--gramo-sea-green);
+  color: var(--dark-gray);
   cursor: pointer;
-  
+
   &:active,
   &:hover {
     outline: 0;
@@ -59,7 +59,7 @@ h1 {
 h2 {
   font-size: var(--h2-font-size);
   margin: 0;
-  
+
   &.text--thin {
     font-size: var(--h1-font-size);
     margin: 0;
@@ -114,7 +114,7 @@ h4 {
 
 p {
   margin: 0;
-  
+
   &.with-margin {
     @extend %margin-bottom;
   }
